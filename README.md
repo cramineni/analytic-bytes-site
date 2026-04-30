@@ -1,13 +1,10 @@
-# Analytic Bytes V7 — White Decision Surface
+# Analytic Bytes V8 Final
 
-White / deep navy direction with:
-- real AB monogram
-- native decision-system visual first
-- Signal to Action card embedded later as artifact/proof
-- reduced text
+White / deep navy decision-surface direction.
 
 Upload/replace:
 - index.html
 - styles.css
 - ab-monogram.png
-- from-signal-to-action.png
+
+Optional: leave any older from-signal-to-action.png in the repo; V8 does not use it.
