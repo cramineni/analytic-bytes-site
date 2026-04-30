@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  background: #FFFFFF;
+  color: #06101F;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: #0EA5E9; color: #FFFFFF; }
+
+/* Reveal-on-scroll */
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* Architecture visual animation */
+@keyframes pulse-travel {
+  0%   { transform: translateX(0);     opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { transform: translateX(960px); opacity: 0; }
+}
+.arch-pulse {
+  animation: pulse-travel 4.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes node-blink-1 { 0%,4%{fill:#0EA5E9} 20%,100%{fill:#3A4658} }
+@keyframes node-blink-2 { 0%,28%{fill:#3A4658} 33%,38%{fill:#0EA5E9} 50%,100%{fill:#3A4658} }
+@keyframes node-blink-3 { 0%,62%{fill:#3A4658} 67%,72%{fill:#0EA5E9} 84%,100%{fill:#3A4658} }
+@keyframes action-glow { 0%,88%{opacity:0.25;transform:scale(1)} 96%{opacity:0.6;transform:scale(1.5)} 100%{opacity:0.25;transform:scale(1)} }
+@keyframes action-pulse { 0%,88%{fill:#0EA5E9} 94%,100%{fill:#38BDF8} }
+.arch-node-1 { animation: node-blink-1 4.5s ease-in-out infinite; }
+.arch-node-2 { animation: node-blink-2 4.5s ease-in-out infinite; }
+.arch-node-3 { animation: node-blink-3 4.5s ease-in-out infinite; }
+.arch-action-glow { animation: action-glow 4.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.arch-action-square { animation: action-pulse 4.5s ease-in-out infinite; }
+
+/* Respect users who've requested reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
+/* Mobile: keep architecture visual readable */
+@media (max-width: 640px) {
+  .arch-svg-wrap { min-height: 200px; }
+}
+
+/* Full-bleed wrapper — breaks out of container max-width */
+.arch-bleed {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 60px 0 40px;
+  background: linear-gradient(180deg, transparent, #FAFAF8 50%, transparent);
+}
+.arch-svg-wrap {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 32px;
+  overflow: visible;
+}
+@media (max-width: 640px) {
+  .arch-svg-wrap { padding: 0 16px; }
+}
+.arch-svg { display: block; width: 100%; height: auto; overflow: visible; }
