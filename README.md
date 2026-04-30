@@ -1,14 +1,10 @@
-# Analytic Bytes Website
+# Analytic Bytes Website V3 Tightened
 
-This is a static one-page site for Analytic Bytes.
+Vercel-ready static site.
 
-## Quick local preview
-Open `index.html` in your browser.
-
-## Vercel deploy
-1. Go to https://vercel.com
-2. Create a new project
-3. Upload or drag this folder
-4. Deploy
-
-No build command is needed. This is plain HTML/CSS.
+## How to update
+1. Unzip this folder.
+2. In GitHub, open your `analytic-bytes-site` repository.
+3. Replace the existing `index.html` and `styles.css` with these versions.
+4. Commit changes.
+5. Vercel will redeploy automatically.
