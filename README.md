@@ -1,15 +1,13 @@
-# Analytic Bytes V4 — Decision Surface
+# Analytic Bytes V4.1 — Clean Decision Surface
 
-Static Vercel-ready site.
+Cleaner, tighter version:
+- less text
+- sharper navy/teal
+- smaller type scale
+- no fake oversized wordmark
+- uses the existing Signal to Action framework image
 
-## Update instructions
-1. Unzip this folder.
-2. In GitHub, open the `analytic-bytes-site` repository.
-3. Upload/replace:
-   - `index.html`
-   - `styles.css`
-   - the `assets` folder
-4. Commit changes.
-5. Vercel will redeploy automatically.
-
-This version uses the AB "From Signal to Action" framework card as the signature visual artifact.
+Upload/replace:
+- index.html
+- styles.css
+- assets/from-signal-to-action.png
