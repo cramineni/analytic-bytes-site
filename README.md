@@ -1,13 +1,9 @@
-# Analytic Bytes V4.1 — Clean Decision Surface
+# Analytic Bytes V5 — Ultra Minimal
 
-Cleaner, tighter version:
-- less text
-- sharper navy/teal
-- smaller type scale
-- no fake oversized wordmark
-- uses the existing Signal to Action framework image
-
-Upload/replace:
+Upload/replace these files in GitHub:
 - index.html
 - styles.css
-- assets/from-signal-to-action.png
+- ab-monogram.png
+- from-signal-to-action.png
+
+No assets folder required.
