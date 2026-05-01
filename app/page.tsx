@@ -43,8 +43,9 @@ const ARC_PHASES = [
     range: "PHASE_03 · DAYS 180—270",
     bullets: [
       "Turn early wins into repeatable playbooks.",
+      "Develop the talent that will own it — frontline through leadership.",
       "Align with product, ops & strategy.",
-      "Define the next horizon — and hand it off.",
+      "Define the next horizon — and hand off.",
     ],
   },
 ];
@@ -83,7 +84,7 @@ export default function Home() {
                 <span className="text-accent">●</span>
                 &nbsp;&nbsp;{HERO.eyebrow}
               </div>
-              <h1 className="font-extrabold leading-[0.95] tracking-[-0.035em] mt-6 text-[48px] sm:text-[80px] lg:text-[96px] text-ink">
+              <h1 className="font-extrabold leading-[0.95] tracking-[-0.035em] mt-6 text-[40px] sm:text-[72px] lg:text-[96px] text-ink">
                 {HERO.headline[0]}<br />
                 {HERO.headline[1]}<br />
                 <span className="text-accent">{HERO.headline[2]}</span>
@@ -123,7 +124,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
                   <div className="font-mono text-[13px] text-ink-2">The 90·90·90 operating arc</div>
-                  <h2 className="font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] text-right text-ink max-w-[14ch]">
+                  <h2 className="section-head-title-right font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] sm:text-right text-ink sm:max-w-[14ch]">
                     Fast. On point.<br />
                     <span className="text-accent">Every ninety days.</span>
                   </h2>
@@ -131,9 +132,9 @@ export default function Home() {
               </div>
 
               <p className="text-ink-2 text-[18px] max-w-[680px] leading-[1.55] mb-14">
-                Custom decision-system architecture, delivered in 90-day arcs.{" "}
-                <span className="text-ink font-medium">Measurement and AI for rigor and speed</span>{" "}
-                — at every step.
+                Custom decision-system architecture, delivered in 90-day arcs —{" "}
+                <span className="text-ink font-medium">boardroom to frontline</span>.{" "}
+                Stack-light, context-rich, built to be handed off. Measurement and AI for rigor and speed at every step.
               </p>
             </Reveal>
 
@@ -198,7 +199,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
                   <div className="font-mono text-[13px] text-ink-2">Proof of work</div>
-                  <h2 className="font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] text-right text-ink max-w-[14ch]">
+                  <h2 className="section-head-title-right font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] sm:text-right text-ink sm:max-w-[14ch]">
                     The same systems move.<br />
                     <span className="text-accent">Different work.</span>
                   </h2>
@@ -238,7 +239,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
                   <div className="font-mono text-[13px] text-ink-2">Work with AB</div>
-                  <h2 className="font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] text-right text-ink max-w-[14ch]">
+                  <h2 className="section-head-title-right font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] sm:text-right text-ink sm:max-w-[14ch]">
                     Three ways to<br />
                     <span className="text-accent">plug us in.</span>
                   </h2>

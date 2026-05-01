@@ -5,9 +5,11 @@ import Link from "next/link";
 import { Brand } from "./Logo";
 
 const links = [
-  { href: "#architecture", label: "Architecture" },
-  { href: "#proof", label: "Proof" },
-  { href: "#work", label: "Work" },
+  { href: "/#architecture", label: "Architecture" },
+  { href: "/#arc", label: "Operating Arc" },
+  { href: "/#proof", label: "Proof" },
+  { href: "/#work", label: "Work" },
+  { href: "/library", label: "Library" },
 ];
 
 export default function Nav() {

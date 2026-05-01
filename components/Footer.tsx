@@ -1,10 +1,11 @@
 import Logo, { Wordmark } from "./Logo";
 
 const links = [
-  { href: "#architecture", label: "/architecture" },
-  { href: "#proof", label: "/proof" },
-  { href: "#arc", label: "/arc" },
-  { href: "#work", label: "/work" },
+  { href: "/#architecture", label: "/architecture" },
+  { href: "/#arc", label: "/arc" },
+  { href: "/#proof", label: "/proof" },
+  { href: "/#work", label: "/work" },
+  { href: "/library", label: "/library" },
   { href: "mailto:hello@analyticbytes.systems", label: "/contact" },
 ];
 

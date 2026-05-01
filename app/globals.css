@@ -56,6 +56,12 @@ html, body {
 /* Mobile: keep architecture visual readable */
 @media (max-width: 640px) {
   .arch-svg-wrap { min-height: 200px; }
+  /* Bump SVG text on mobile so labels stay readable */
+  .arch-svg text { font-size: 1.4em; }
+  /* Section header right-aligned titles → left-aligned on mobile so they stack cleanly */
+  .section-head-title-right { text-align: left !important; max-width: 100% !important; }
+  /* Prevent oversized horizontal padding eating content width */
+  .arch-bleed { padding: 32px 0 24px; }
 }
 
 /* Full-bleed wrapper — breaks out of container max-width */
