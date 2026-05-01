@@ -6,6 +6,7 @@ const links = [
   { href: "/#proof", label: "/proof" },
   { href: "/#work", label: "/work" },
   { href: "/library", label: "/library" },
+  { href: "/about", label: "/about" },
   { href: "mailto:hello@analyticbytes.systems", label: "/contact" },
 ];
 
@@ -27,19 +28,16 @@ export default function Footer() {
             <div className="font-mono text-ink-3 text-[11px] mt-1.5 tracking-[0.04em] uppercase">
               Measurement &amp; Impact &middot; in 90-day arcs
             </div>
+            {/* ABOUT — light footer line. Full bio lives at /about */}
             <div className="text-[13px] text-ink-2 mt-[18px] tracking-[-0.005em]">
               Built by{" "}
               <a
-                href={LINKEDIN_URL}
-                target="_blank"
-                rel="noopener"
+                href="/about"
                 className="text-ink font-semibold border-b border-line-2 hover:border-accent transition-colors no-underline pb-px"
               >
                 Chaitanya Ramineni
               </a>
-              <span className="text-ink-3 ml-0.5 text-[11px]" style={{ transform: "translateY(-1px)" }}>
-                {" "}↗
-              </span>
+              .
             </div>
           </div>
           <div className="flex gap-6 text-[12.5px] font-mono">

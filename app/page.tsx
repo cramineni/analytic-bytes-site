@@ -60,7 +60,7 @@ const PROOF_ROWS = [
 
 const OFFERS = [
   { num: "→ 01", title: "Decision audit", desc: "A four-week diagnostic. Where decisions stall, who owns them, and the single highest-leverage place to intervene." },
-  { num: "→ 02", title: "Embedded operator", desc: "A 90-day arc inside your team. We ship the first decision-ready outputs and the rhythm to keep them moving." },
+  { num: "→ 02", title: "Operator residency", desc: "A 90-day embedded arc. Full capability — tech and talent — at fractional cost. We ship decision-ready outputs and coach your in-house operators alongside us, so when we leave the work compounds." },
   { num: "→ 03", title: "Build the spine", desc: "A long arc for teams ready to make data the way they operate — not a quarterly review artifact." },
 ];
 
@@ -164,6 +164,16 @@ export default function Home() {
                     </ul>
                   </div>
                 ))}
+              </div>
+            </Reveal>
+
+            {/* Closing line — the coaching philosophy as a quiet footnote, not a banner */}
+            <Reveal>
+              <div className="mt-12 pt-8 border-t border-line">
+                <p className="text-[16px] sm:text-[18px] text-ink-2 italic max-w-[44ch] leading-[1.5]">
+                  We don&rsquo;t build dependencies.{" "}
+                  <span className="text-ink font-medium not-italic">We build operating teams.</span>
+                </p>
               </div>
             </Reveal>
           </div>
