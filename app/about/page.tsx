@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/chaitanyaramineni/";
+const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
 
 // =====================================================================
 // BIO — paste your LinkedIn About text into the BIO_PARAGRAPHS array.
@@ -31,6 +32,57 @@ const HIGHLIGHTS: { label: string; value: string }[] = [
   // { label: "Based in", value: "City, State" },
 ];
 
+// =====================================================================
+// PRINCIPLES — what AB stands for. Public-facing version of BRAND_SOUL.md.
+// Edit/reorder/add — keep them tight (1 line title + 1 line description).
+// =====================================================================
+
+const PRINCIPLES: { title: string; desc: string }[] = [
+  {
+    title: "Human-serving, always.",
+    desc: "The system serves humans — not the inverse. Every layer, every choice.",
+  },
+  {
+    title: "Asset-based, not deficit-based.",
+    desc: "We start from what you have, not what you lack. New tools and headcount come second — if at all.",
+  },
+  {
+    title: "We don't build dependencies.",
+    desc: "Every engagement strengthens your in-house team. Our success is measured by your independence after we leave.",
+  },
+  {
+    title: "Stack-light, context-rich.",
+    desc: "Simple infrastructure, deep institutional knowledge. The cheapest stack that holds; the richest context that compounds.",
+  },
+  {
+    title: "The frontline matters.",
+    desc: "Decisions that work are the ones the people closest to the work can act on. Boardroom AND frontline.",
+  },
+  {
+    title: "Mission-driven shouldn't mean self-breaking.",
+    desc: "Caring about the work shouldn't cost the people doing it. Body-breaking and mind-breaking aren't proof of commitment.",
+  },
+];
+
+// =====================================================================
+// RIGHT FIT — explicit signal for who's a match and who isn't.
+// Helps clients self-select. Bravery requires the "not a fit" half.
+// =====================================================================
+
+const FIT_YES: string[] = [
+  "Operators and leaders who value clarity over comfort",
+  "Mission-driven organizations ready to think bigger about their data and decisions",
+  "Teams open to coaching alongside the build — not just hiring a vendor",
+  "Buyers who want their in-house team strengthened, not their dependency on us",
+];
+
+const FIT_NO: string[] = [
+  "Teams looking for a fractional time-share executive (we build full systems at fractional cost — different model)",
+  "Buyers expecting expensive enterprise stacks before any conversation about decisions",
+  "Engagements where success is measured by ongoing dependency on us",
+  "Organizations where \"we've always done it this way\" is the operating mode",
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -41,10 +93,21 @@ export default function AboutPage() {
         <section className="pt-20 pb-10 sm:pt-24 sm:pb-14">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
+              {/*
+                Chaitanya's photo — drop a square portrait in `public/chaitanya.jpg`
+                (recommended ~800x800, JPG). If the file isn't there, you'll see a
+                broken-image icon (intentional reminder). Replace with photo when ready.
+              */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/chaitanya.jpg"
+                alt="Chaitanya Ramineni"
+                className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover mb-8 border border-line"
+              />
               <div className="font-mono text-[12px] text-ink-3">
                 <span className="text-accent">●</span>&nbsp;&nbsp;About
               </div>
-              <h1 className="font-extrabold leading-[0.95] tracking-[-0.035em] mt-6 text-[40px] sm:text-[64px] lg:text-[80px] text-ink max-w-[18ch]">
+              <h1 className="font-extrabold leading-[1.05] tracking-[-0.025em] mt-6 text-[28px] sm:text-[40px] lg:text-[52px] text-ink max-w-[18ch]">
                 Built by <span className="text-accent">Chaitanya Ramineni.</span>
               </h1>
             </Reveal>
@@ -52,7 +115,7 @@ export default function AboutPage() {
         </section>
 
         {/* BIO */}
-        <section className="pb-24">
+        <section className="pb-16">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="border-t border-line pt-10 max-w-[68ch]">
@@ -77,8 +140,90 @@ export default function AboutPage() {
                     ))}
                   </div>
                 ) : null}
+              </div>
+            </Reveal>
+          </div>
+        </section>
 
-                <div className="mt-12 flex flex-wrap gap-3">
+        {/* PRINCIPLES */}
+        <section className="pb-16">
+          <div className="max-w-page mx-auto px-5 sm:px-8">
+            <Reveal>
+              <div className="border-t border-line pt-10 max-w-[68ch]">
+                <div className="font-mono text-[11px] text-ink-3 tracking-[0.18em] uppercase mb-8">
+                  Principles
+                </div>
+                <ul className="list-none p-0 m-0">
+                  {PRINCIPLES.map((p, i) => (
+                    <li
+                      key={i}
+                      className={`py-5 ${i > 0 ? "border-t border-line" : ""}`}
+                    >
+                      <div className="text-ink font-bold text-[18px] sm:text-[20px] tracking-[-0.015em] mb-1.5">
+                        {p.title}
+                      </div>
+                      <div className="text-ink-2 text-[15px] leading-[1.55]">
+                        {p.desc}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* RIGHT FIT */}
+        <section className="pb-24">
+          <div className="max-w-page mx-auto px-5 sm:px-8">
+            <Reveal>
+              <div className="border-t border-line pt-10 max-w-[68ch]">
+                <div className="font-mono text-[11px] text-ink-3 tracking-[0.18em] uppercase mb-8">
+                  Right fit
+                </div>
+
+                <div className="mb-8">
+                  <div className="text-ink font-bold text-[18px] sm:text-[20px] tracking-[-0.015em] mb-3">
+                    AB works best with
+                  </div>
+                  <ul className="list-none p-0 m-0">
+                    {FIT_YES.map((item, i) => (
+                      <li
+                        key={i}
+                        className="text-ink-2 text-[15px] leading-[1.5] py-2 pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-accent"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="text-ink font-bold text-[18px] sm:text-[20px] tracking-[-0.015em] mb-3">
+                    AB is probably not a fit for
+                  </div>
+                  <ul className="list-none p-0 m-0">
+                    {FIT_NO.map((item, i) => (
+                      <li
+                        key={i}
+                        className="text-ink-2 text-[15px] leading-[1.5] py-2 pl-5 relative before:content-['—'] before:absolute before:left-0 before:text-ink-3"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* CTAs at the bottom */}
+                <div className="mt-12 flex flex-wrap gap-3 pt-8 border-t border-line">
+                  <a
+                    href={CALENDLY_URL}
+                    target="_blank"
+                    rel="noopener"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
+                  >
+                    Let&rsquo;s talk <span>→</span>
+                  </a>
                   <a
                     href={LINKEDIN_URL}
                     target="_blank"
@@ -86,12 +231,6 @@ export default function AboutPage() {
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md border border-line-2 text-ink hover:bg-ink/[0.04] transition-colors text-[13.5px] font-medium"
                   >
                     Connect on LinkedIn <span aria-hidden>↗</span>
-                  </a>
-                  <a
-                    href="mailto:hello@analyticbytes.systems"
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
-                  >
-                    Book a 30-min call <span>→</span>
                   </a>
                 </div>
               </div>

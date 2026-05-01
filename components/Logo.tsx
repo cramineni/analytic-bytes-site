@@ -99,7 +99,7 @@ export function Brand() {
       <div className="flex flex-col gap-[3px]">
         <Wordmark height={13} />
         <div className="font-mono text-[11px] text-ink-3 tracking-[0.04em] uppercase whitespace-nowrap hidden md:block">
-          Decision Systems Architecture
+          Human-Serving Decision Systems
         </div>
       </div>
     </div>

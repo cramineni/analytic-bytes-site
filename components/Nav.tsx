@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Brand } from "./Logo";
 
+// Single source of truth — update Calendly URL here if it ever changes
+const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
+
 const links = [
   { href: "/#architecture", label: "Architecture" },
   { href: "/#arc", label: "Operating Arc" },
@@ -44,10 +47,12 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener"
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
           >
-            Book a call <span aria-hidden>→</span>
+            Let&rsquo;s talk <span aria-hidden>→</span>
           </a>
         </div>
       </div>
