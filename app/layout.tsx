@@ -16,33 +16,34 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Analytic Bytes — Decision systems architecture, built fast.",
+export const metadata = {
+  title: "Analytic Bytes — Decision Systems Architecture",
   description:
-    "Most data problems are decision problems. Analytic Bytes builds custom decision-system architecture in 90-day arcs — measurement and AI for rigor and speed.",
-  metadataBase: new URL("https://analyticbytes.systems"),
+    "Decision systems architecture for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
   openGraph: {
-    title: "Analytic Bytes — Decision systems architecture, built fast.",
+    title: "Analytic Bytes — Decision Systems Architecture",
     description:
-      "Most data problems are decision problems. Fix the system. 90-day operating arcs for decision-grade outcomes.",
-    type: "website",
+      "Decision systems architecture for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
     url: "https://analyticbytes.systems",
-    images: ["/og-image.png"],
+    siteName: "Analytic Bytes",
+    images: [
+      {
+        url: "https://analyticbytes.systems/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Analytic Bytes — From fragmented to decision-ready",
+      },
+    ],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Analytic Bytes — Decision systems architecture, built fast.",
-    description: "Most data problems are decision problems. Fix the system.",
-    images: ["/og-image.png"],
+    title: "Analytic Bytes — Decision Systems Architecture",
+    description:
+      "Decision systems architecture for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
+    images: ["https://analyticbytes.systems/og-image.jpg"],
   },
-  themeColor: "#FFFFFF",
-  icons: {
-    icon: [
-      { url: "/logo.png", type: "image/png" },
-    ],
-  },
-};
-
+}
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
