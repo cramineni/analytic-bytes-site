@@ -27,6 +27,7 @@ const BIO_PARAGRAPHS: string[] = [
 // Optional: short list of credibility/highlight bullets to show after the bio.
 // Set to [] (empty array) to hide this section.
 const HIGHLIGHTS: { label: string; value: string }[] = [
+  { label: "Background", value: "PhD, Educational Measurement · Building decision systems for mission-driven orgs" },
   // { label: "Sectors", value: "Education · Healthcare · Grant-funded" },
   // { label: "Roles", value: "Data leader · Strategic advisor · Operator-coach" },
   // { label: "Based in", value: "City, State" },
