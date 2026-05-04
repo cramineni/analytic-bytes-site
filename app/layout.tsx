@@ -19,11 +19,11 @@ const jetbrains = JetBrains_Mono({
 export const metadata = {
   title: "Analytic Bytes — Decision Systems Architecture",
   description:
-    "Decision systems architecture for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
+    "Decision systems architecture with senior leadership depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
   openGraph: {
     title: "Analytic Bytes — Decision Systems Architecture",
     description:
-      "Decision systems architecture for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
+      "Decision systems architecture with senior leadership depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
     url: "https://analyticbytes.systems",
     siteName: "Analytic Bytes",
     images: [
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Analytic Bytes — Decision Systems Architecture",
     description:
-      "Decision systems architecture for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
+      "Decision systems architecture with senior leadership depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
     images: ["https://analyticbytes.systems/og-image.jpg"],
   },
 }
