@@ -239,6 +239,17 @@ export default function Home() {
                 ))}
               </div>
             </Reveal>
+            <Reveal>
+              <div className="mt-10 sm:mt-12 flex justify-end">
+                
+                  href="/case-studies"
+                  className="inline-flex items-center gap-2 text-ink hover:text-accent transition-colors text-[14px] sm:text-[15px] font-semibold no-underline border-b border-line-2 hover:border-accent pb-1"
+                >
+                  See the engagements behind these capabilities
+                  <span aria-hidden>→</span>
+                </a>
+              </div>
+            </Reveal>
           </div>
         </section>
 
