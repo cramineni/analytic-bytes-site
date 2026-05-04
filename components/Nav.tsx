@@ -10,7 +10,7 @@ const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
 const links = [
   { href: "/#architecture", label: "Architecture" },
   { href: "/#arc", label: "Operating Arc" },
-  { href: "/#proof", label: "Proof" },
+  { href: "/case-studies", label: "Proof" },
   { href: "/#work", label: "Work" },
   { href: "/library", label: "Library" },
   { href: "/about", label: "About" },
