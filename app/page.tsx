@@ -239,6 +239,7 @@ export default function Home() {
                 ))}
               </div>
             </Reveal>
+            
             <Reveal>
               <div className="mt-10 sm:mt-12 flex justify-end">
                 
