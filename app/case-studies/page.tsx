@@ -338,6 +338,22 @@ export default function CaseStudiesPage() {
                     </span>
                   </p>
                   <p>
+                    Across the five: a vendor-built warehouse operationalized with
+                    in-house DevOps and the existing data team (analyst + senior
+                    data scientist); an inherited single-analyst team augmented by
+                    in-house SIS and Ops leadership and a hybrid in-house/external
+                    enrollment workstream; two contract engineers on an EDW POC,
+                    plus an in-house workflow assistant and an Otsuka-side data
+                    scientist on the Mitram pilot; an inherited SQL specialist and
+                    graduate intern, plus a statistical analyst and market research
+                    analyst added — a four-person function; solo and intern
+                    collaborations on founding engagements.{" "}
+                    <span className="text-ink font-medium">
+                      The team configuration changed every time too — never a
+                      default &ldquo;add headcount&rdquo; move.
+                    </span>
+                  </p>
+                  <p>
                     In every engagement, the work organized around the same questions. What&rsquo;s
                     already in motion that nobody&rsquo;s named as an asset? What&rsquo;s being
                     collected but not surfaced? What&rsquo;s sitting on the books underutilized?
