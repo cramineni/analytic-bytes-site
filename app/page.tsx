@@ -242,7 +242,7 @@ export default function Home() {
 
             <Reveal>
               <div className="mt-10 sm:mt-12 flex justify-end">
-                
+                <a
                   href="/case-studies"
                   className="inline-flex items-center gap-2 text-ink hover:text-accent transition-colors text-[14px] sm:text-[15px] font-semibold no-underline border-b border-line-2 hover:border-accent pb-1"
                 >
