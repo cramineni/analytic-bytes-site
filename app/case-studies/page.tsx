@@ -58,7 +58,7 @@ const CASE_STUDIES: CaseStudy[] = [
     stack:
       "BigQuery + Google Sheets + Tableau Cloud + Looker — consolidated from three reporting platforms running in parallel.",
     unlocked:
-      "40% faster turnaround on key reports (10 → 6 days). 70% lift in dashboard adoption across Principals/ADs and School/Network Ops. Ad-hoc reporting from 100% to <30%. Enrollment forecasting at 99% accuracy.",
+      "40% faster turnaround on key reports (10 → 6 days). 70% lift in dashboard adoption across Principals/ADs and School/Network Ops. Ad-hoc reporting from 100% to <30%. Enrollment forecasting at 99% accuracy. Zipcode-targeted recruitment — digital marketing, promotional campaigns, and tabling events — delivered on a reduced budget.",
   },
   {
     id: "behavioral-health",
@@ -80,9 +80,9 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "test-prep",
     sector: "Test-prep company",
     context:
-      "National test-prep brand; 30+ business-side FTEs across product, marketing, sales, and operations; 320 reports/year on a legacy SQL/static-report environment.",
+      "National test-prep brand; 30+ business-side FTEs across product, marketing, sales, and operations; 300+ ad-hoc requests for reports and insights in queue on a legacy SQL/static-report environment.",
     alreadyThere:
-      "A legacy SQL Server environment producing 320 reports a year. Three analytics FTEs plus roughly 10% of 30+ business-side FTEs spending time on manual data wrangling. A 55% annual reporting completion rate. A standing 8–12-request weekly inventory. Booking data flowing through six channels (Internet, Inbound Call, Local Office, Enrollment Advisor, Service Center, Marketing) across SAT/ACT/MCAT/GRE/GMAT/LSAT product lines. Score-gain data sitting unused for cross-tier analysis. Stakeholder voices across VP Ops, CMO, and National Product Manager that hadn't been collected into a single proposal.",
+      "A legacy SQL Server environment with 300+ ad-hoc requests for reports and insights in the queue. Three analytics FTEs plus roughly 10% of 30+ business-side FTEs spending time on manual data wrangling. A 55% annual reporting completion rate. A standing 8–12-request weekly inventory. Booking data flowing through six channels (Internet, Inbound Call, Local Office, Enrollment Advisor, Service Center, Marketing) across SAT/ACT/MCAT/GRE/GMAT/LSAT product lines. Score-gain data sitting unused for cross-tier analysis. Stakeholder voices across VP Ops, CMO, and National Product Manager that hadn't been collected into a single proposal.",
     missing:
       "A BI platform of record. Repeatable booking analytics across six product lines and six channels. Efficacy research the marketing and product teams could actually use. Cross-functional decision support across A/B testing, customer profiling, cancel/refund analysis, scheduling, and location-level enrollment.",
     weBuilt:
@@ -101,7 +101,7 @@ const CASE_STUDIES: CaseStudy[] = [
     missing:
       "A defensible set of log-data measures. A platform-design frame the product team could build against. A defensible analytical frame for comparing student outcomes between traditional and hybrid sections of the same course.",
     weBuilt:
-      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts — enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyses between traditional and hybrid sections of the same course (NYU / Office of Educational Technology).",
+      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts — enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyses between traditional and hybrid sections of the same course.",
     stack: "Log data + SPSS + R + conceptual dashboard designs as simulated charts.",
     unlocked:
       "A defensible measurement frame for the NextGen test-prep platform. Conceptual dashboards that unblocked product decisions ahead of the warehouse. A defensible outcomes-comparison frame across traditional vs. hybrid course sections on the university side.",
