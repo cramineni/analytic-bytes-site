@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Case Studies — Analytic Bytes",
   description:
-    "It was never about the stack. Five engagements, five sectors, five stacks — one discipline. Decision systems built from what was already there.",
+    "It was never about the stack. Five engagements, five stacks — one discipline. Decision systems built from what was already there.",
 };
 
 const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
@@ -16,6 +16,14 @@ const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
 // Each follows: context → already there → missing → what we built → stack → unlocked
 // =====================================================================
 
+type StackFlow = {
+  sources: string[];
+  integration: string[];
+  storage: string[];
+  analytics: string[];
+  decisionSurface: string[];
+};
+
 type CaseStudy = {
   id: string;
   sector: string;
@@ -24,6 +32,7 @@ type CaseStudy = {
   missing: string;
   weBuilt: string;
   stack: string;
+  stackFlow: StackFlow;
   unlocked: string[];
 };
 
@@ -32,19 +41,27 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "mental-health",
     sector: "National mental health nonprofit",
     context:
-      "Survey program reaching 150+ schools and 25+ districts; multi-year, multi-respondent (students, faculty, principals).",
+      "Survey program reaching 150+ schools and 25+ districts — 1.5M+ rows of multi-year, multi-respondent data (students, faculty, principals).",
     alreadyThere:
       "A Snowflake warehouse stood up by a vendor but stalled — dev/staging/prod schemas built but not in active use, Fivetran connections defined but not turned on. Multi-year survey data spanning four to six successive instrument versions sitting in Qualtrics. Salesforce capturing partnership phases, consultant caseloads, and assessment-cycle scheduling. Legacy operational data in Azure. A theory-of-change framework leadership already used to talk about impact.",
     missing:
       "A semantic dataset across multi-year surveys. An executive analytics surface for program operations. An impact-reporting workflow that mapped data back to the theory-of-change — instead of being authored alongside it. A targeted-funding view — surfacing where burden and disparity diverge across states, sized against public-health datasets.",
     weBuilt:
-      "Activated the stalled warehouse with DevOps — turned on the Fivetran connections, validated freshness, brought the dev/staging/prod schemas into analytical use. Designed the semantic dataset architecture for multi-year survey analysis so the data team could build the report-ready layer underneath. Stood up a ThoughtSpot trial as a demonstration vehicle for executive dashboards on Salesforce program operations and national dataset DWH analytics — proof of value ahead of any procurement decision. Demonstrated targeted-funding analytics on the same trial — CDC Wonder dataset analyses surfaced as a burden-vs-disparity quadrant by state, framing where need and underinvestment co-occur for grant-strategy use. Prototyped AI-assisted impact reporting using Snowflake Cortex, Streamlit, Gemini, and Python — mapping outputs to the theory-of-change domains so impact narrative could be drafted from data instead of authored separately.",
+      "Activated the stalled warehouse with DevOps — turned on the Fivetran connections, validated freshness, brought the dev/staging/prod schemas into analytical use. Designed the semantic dataset architecture for multi-year survey analysis so the data team could build the report-ready layer underneath. Stood up a ThoughtSpot trial as a demonstration vehicle for executive dashboards on Salesforce program operations and national dataset DWH analytics — proof of value ahead of any procurement decision. Brought CDC Wonder data into the warehouse — moving multi-year trend and subgroup analyses from piece-meal Google Sheets queries into DWH-based workflow. Extended the same data into a targeted-funding view — a burden-vs-disparity quadrant by state, framing where need and underinvestment co-occur for grant-strategy use. Prototyped AI-assisted impact reporting using Snowflake Cortex, Streamlit, Gemini, and Python — mapping outputs to the theory-of-change domains so impact narrative could be drafted from data instead of authored separately.",
     stack:
       "Fivetran + Snowflake + Snowflake Cortex + Streamlit + Gemini + Python + ThoughtSpot + PowerBI + Looker + Google Sheets + CDC Wonder.",
+    stackFlow: {
+      sources: ["Qualtrics", "Salesforce", "Azure", "CDC Wonder"],
+      integration: ["Fivetran"],
+      storage: ["Snowflake"],
+      analytics: ["Snowflake Cortex", "Streamlit", "Gemini", "Python"],
+      decisionSurface: ["ThoughtSpot", "PowerBI", "Looker", "Google Sheets"],
+    },
     unlocked: [
       "A semantic survey dataset spanning instrument versions",
       "Executive analytics on program operations",
       "AI-drafted impact reporting tied directly to the theory-of-change",
+      "CDC Wonder data warehoused — enabling multi-year trend and subgroup analyses to run from DWH instead of piece-meal Google Sheets queries",
       "Targeted-funding analytics — burden-vs-disparity by state — demonstrated as a grant-strategy view",
     ],
   },
@@ -52,7 +69,7 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "k8-charter",
     sector: "K–8 charter network",
     context:
-      "Multi-site network in the Bronx; single-analyst team inherited after the prior data lead and compliance manager had departed.",
+      "Multi-site network in the Bronx — one site closing and another opening during the engagement; single-analyst team inherited after the prior data lead and compliance manager had departed.",
     alreadyThere:
       "Three reporting platforms running in parallel — Looker, Tableau Cloud, Tableau Public. Tableau Cloud licenses on the books for two years, mostly unused. Student-level academic dashboards on public infrastructure with no governance. Daily attendance reporting that duplicated what the SIS already showed. Google Sheets workflows running quietly under most decisions. HubSpot, SchoolMint, PowerSchool, NWEA MAP, Illuminate, Google Forms, MailChimp, and a call center workflow — all real, all uneven.",
     missing:
@@ -61,6 +78,13 @@ const CASE_STUDIES: CaseStudy[] = [
       "Authored a data maturity assessment and phased roadmap (Stage 0 Siloed → Stage 1 Developing → Stage 2 Predictive). Consolidated three platforms into Tableau Cloud, operationalizing the licenses already on the books. Migrated student-level dashboards off Tableau Public for governance. Built the semantic data foundation on Google Sheets → Tableau, working around the missing BigQuery ETL. Drove enrollment forecasting at 99% accuracy via ARIMA — correcting an inherited attrition-rate error in the Looker model. Modernized recruitment from ad-hoc tabling into a measurable acquisition funnel integrating HubSpot, SchoolMint, PowerSchool, lead scoring, zipcode-based digital marketing, MailChimp, and the call center workflow with tiered ops/enrollment-team follow-ups.",
     stack:
       "BigQuery + Google Sheets + Tableau Cloud + Looker — consolidated from three reporting platforms running in parallel.",
+    stackFlow: {
+      sources: ["SchoolMint", "PowerSchool", "NWEA MAP", "Illuminate", "HubSpot", "Google Forms", "MailChimp"],
+      integration: ["Google Sheets (semantic layer)"],
+      storage: ["BigQuery", "Google Sheets"],
+      analytics: ["ARIMA forecasting", "Lead scoring"],
+      decisionSurface: ["Tableau Cloud", "Looker (legacy)"],
+    },
     unlocked: [
       "Daily-refresh dashboards on key reports (enrollment and academic), faster turnaround on ad-hoc reports, and metric banks codified for compliance reporting cycles",
       "70% lift in dashboard adoption across Principals/ADs and School/Network Ops",
@@ -73,7 +97,7 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "behavioral-health",
     sector: "Behavioral health nonprofit",
     context:
-      "Nine clinics across Westchester and Rockland; 3,300+ active clients; clinical, claims, program operations, and population data spanning multiple service lines.",
+      "Nine clinics across Westchester and Rockland; CCBHC grant recipient; 3,300+ active clients; clinical, claims, program operations, and population data spanning multiple service lines.",
     alreadyThere:
       "Validated psychometric instruments (PHQ-9, GAD-7, C-SSRS Adult and Child, NIDA Quick Screen, CAGE-AID, plus SIS, PAQ, Q-LES-Q, FIBSER) historically captured at 3-month visits only. A smartphone app being piloted to collect these as patient-reported every 2 to 4 weeks instead — supporting measurement-based care between visits. 837i claims feeds across multiple payers (Beacon Health, Fidelis Care NY, Health First, Partners Health Plan, United Healthcare) sitting separately. HL7/CCDA hospital encounter feeds from regional EDs, uncoordinated. Program operations data across Article 31, OnTrack NY, and Health Home. HR and financials in their own systems. Demographic and zipcode-level data the org had access to but wasn't analyzing.",
     missing:
@@ -82,6 +106,13 @@ const CASE_STUDIES: CaseStudy[] = [
       "Architected a HIPAA-compliant Snowflake EDW POC with two contract engineers, integrating clinical assessments, 837i claims, HL7/CCDA hospital encounter feeds via Mirth Connect (real-time care coordination alerts), referrals, ED utilization, Article 31 / OnTrack NY / Health Home program operations, HR and financials, and demographic + zipcode data into a unified patient-360 analytical foundation. Built Tableau dashboards across the validated instruments, alongside operational and financial dashboards on caseload by clinician and managing office, claims by clinician, 837i payer submissions, ED utilization across regional hospitals, 30-day re-admission alerts, and SDOH + chronic-condition risk scoring. Designed the Mitram measurement-based care workflow with Otsuka — a pilot with 30+ patients across two waves drove +40% engagement after reminder automation and follow-ups. Integrated NSDUH prevalence data into the population-health view.",
     stack:
       "S3 + Matillion + Apache NiFi + Mirth Connect + Snowflake + Tableau + SPSS + PowerBI + Excel.",
+    stackFlow: {
+      sources: ["Clinical instruments", "837i claims feeds", "HL7/CCDA encounter feeds", "Article 31 / OnTrack NY / Health Home", "HR + financials", "NSDUH"],
+      integration: ["Mirth Connect", "Matillion", "Apache NiFi"],
+      storage: ["S3", "Snowflake"],
+      analytics: ["SPSS"],
+      decisionSurface: ["Tableau", "PowerBI", "Excel"],
+    },
     unlocked: [
       "Patient-360 analytical foundation across clinical, claims, encounter, and operational feeds",
       "Real-time care coordination alerts off ED utilization",
@@ -103,6 +134,13 @@ const CASE_STUDIES: CaseStudy[] = [
       "Authored an Analytics & Reporting 2.0 strategic proposal — diagnosed the legacy environment, captured stakeholder voices, ran a six-vendor BI evaluation (Tableau, Spotfire, Sisense, Domo, Periscope, Looker), and presented tiered investment scenarios. Selected Sisense as the platform of record. Implemented Sisense ElastiCube ETL across booking analytics for six product lines — daily/monthly pacing, budget-vs-actual, YoY trends, channel attribution, product mix. Conducted efficacy research on test-prep products — score-gain analyses across SAT, GRE, MCAT by instructor, location/PSO, and product tier. Delivered cross-functional decision support: A/B testing, high-value customer profiling, cancel/refund driver analysis, promotional-campaign performance, scheduling optimization, location-level enrollment data for leasing decisions.",
     stack:
       "SQL Server (storage, views, marts) + Sisense (ElastiCubes, dashboards) + R/SPSS (efficacy research).",
+    stackFlow: {
+      sources: ["Booking systems (6 channels)", "Score-gain data", "Product line data (SAT/ACT/MCAT/GRE/GMAT/LSAT)"],
+      integration: ["SQL Server views + marts"],
+      storage: ["SQL Server"],
+      analytics: ["Sisense ElastiCubes", "R", "SPSS"],
+      decisionSurface: ["Sisense dashboards"],
+    },
     unlocked: [
       "Sisense as the platform of record after a six-vendor evaluation",
       "Repeatable booking analytics across six product lines and six channels",
@@ -121,6 +159,13 @@ const CASE_STUDIES: CaseStudy[] = [
     weBuilt:
       "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts — enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyses between traditional and hybrid sections of the same course.",
     stack: "Log data + SPSS + R + conceptual dashboard designs as simulated charts.",
+    stackFlow: {
+      sources: ["Platform log data", "Course outcome data"],
+      integration: [],
+      storage: [],
+      analytics: ["SPSS", "R"],
+      decisionSurface: ["Conceptual dashboards (simulated charts)"],
+    },
     unlocked: [
       "A defensible measurement frame for the NextGen test-prep platform",
       "Conceptual dashboards that unblocked product decisions ahead of the warehouse",
@@ -248,7 +293,12 @@ export default function CaseStudiesPage() {
                   />
 
                   {/* The stack — as a consequence */}
-                  <CaseBlock label="The stack — as a consequence" body={cs.stack} mono />
+                  <div className="mb-8">
+                    <div className="font-mono text-[11px] text-ink-3 tracking-[0.18em] uppercase mb-4">
+                      The stack — as a consequence
+                    </div>
+                    <StackDiagram flow={cs.stackFlow} />
+                  </div>
 
                   {/* What it unlocked — accent callout list */}
                   <div className="mt-10 pt-8 border-t border-line">
@@ -374,6 +424,50 @@ function CaseBlock({
       >
         {body}
       </p>
+    </div>
+  );
+}
+
+function StackDiagram({ flow }: { flow: StackFlow }) {
+  const stages: { label: string; items: string[] }[] = [
+    { label: "Sources", items: flow.sources },
+    { label: "Integration", items: flow.integration },
+    { label: "Storage", items: flow.storage },
+    { label: "Analytics & AI", items: flow.analytics },
+    { label: "Decision Surface", items: flow.decisionSurface },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-5 gap-x-3 gap-y-7 mt-2">
+      {stages.map((stage, i) => (
+        <div key={stage.label} className="relative">
+          <div className="font-mono text-[10px] text-accent tracking-[0.15em] uppercase pb-2 mb-3 border-b border-line-2">
+            {stage.label}
+          </div>
+          <ul className="list-none p-0 m-0 space-y-1.5">
+            {stage.items.length > 0 ? (
+              stage.items.map((item, j) => (
+                <li
+                  key={j}
+                  className="text-ink text-[12px] sm:text-[13px] font-medium leading-[1.4]"
+                >
+                  {item}
+                </li>
+              ))
+            ) : (
+              <li className="text-ink-3 text-[12px] italic">—</li>
+            )}
+          </ul>
+          {i < stages.length - 1 && (
+            <div
+              aria-hidden
+              className="hidden sm:block absolute -right-2.5 top-0 text-ink-3 text-[14px] leading-[1.5]"
+            >
+              →
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 }
