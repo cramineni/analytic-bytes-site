@@ -24,7 +24,7 @@ type CaseStudy = {
   missing: string;
   weBuilt: string;
   stack: string;
-  unlocked: string;
+  unlocked: string[];
 };
 
 const CASE_STUDIES: CaseStudy[] = [
@@ -41,8 +41,12 @@ const CASE_STUDIES: CaseStudy[] = [
       "Activated the stalled warehouse with DevOps — turned on the Fivetran connections, validated freshness, brought the dev/staging/prod schemas into analytical use. Designed the semantic dataset architecture for multi-year survey analysis so the data team could build the report-ready layer underneath. Stood up a ThoughtSpot trial as a demonstration vehicle for executive dashboards on Salesforce program operations and national dataset DWH analytics — proof of value ahead of any procurement decision. Demonstrated targeted-funding analytics on the same trial — CDC Wonder dataset analyses surfaced as a burden-vs-disparity quadrant by state, framing where need and underinvestment co-occur for grant-strategy use. Prototyped AI-assisted impact reporting using Snowflake Cortex, Streamlit, Gemini, and Python — mapping outputs to the theory-of-change domains so impact narrative could be drafted from data instead of authored separately.",
     stack:
       "Fivetran + Snowflake + Snowflake Cortex + Streamlit + Gemini + Python + ThoughtSpot + PowerBI + Looker + Google Sheets + CDC Wonder.",
-    unlocked:
-      "A semantic survey dataset spanning instrument versions. Executive analytics on program operations. AI-drafted impact reporting tied directly to the theory-of-change. Targeted-funding analytics — burden-vs-disparity by state — demonstrated as a grant-strategy view.",
+    unlocked: [
+      "A semantic survey dataset spanning instrument versions",
+      "Executive analytics on program operations",
+      "AI-drafted impact reporting tied directly to the theory-of-change",
+      "Targeted-funding analytics — burden-vs-disparity by state — demonstrated as a grant-strategy view",
+    ],
   },
   {
     id: "k8-charter",
@@ -57,8 +61,13 @@ const CASE_STUDIES: CaseStudy[] = [
       "Authored a data maturity assessment and phased roadmap (Stage 0 Siloed → Stage 1 Developing → Stage 2 Predictive). Consolidated three platforms into Tableau Cloud, operationalizing the licenses already on the books. Migrated student-level dashboards off Tableau Public for governance. Built the semantic data foundation on Google Sheets → Tableau, working around the missing BigQuery ETL. Drove enrollment forecasting at 99% accuracy via ARIMA — correcting an inherited attrition-rate error in the Looker model. Modernized recruitment from ad-hoc tabling into a measurable acquisition funnel integrating HubSpot, SchoolMint, PowerSchool, lead scoring, zipcode-based digital marketing, MailChimp, and the call center workflow with tiered ops/enrollment-team follow-ups.",
     stack:
       "BigQuery + Google Sheets + Tableau Cloud + Looker — consolidated from three reporting platforms running in parallel.",
-    unlocked:
-      "40% faster turnaround on key reports (10 → 6 days). 70% lift in dashboard adoption across Principals/ADs and School/Network Ops. Ad-hoc reporting from 100% to <30%. Enrollment forecasting at 99% accuracy. Zipcode-targeted recruitment — digital marketing, promotional campaigns, and tabling events — delivered on a reduced budget.",
+    unlocked: [
+      "Daily-refresh dashboards on key reports (enrollment and academic), faster turnaround on ad-hoc reports, and metric banks codified for compliance reporting cycles",
+      "70% lift in dashboard adoption across Principals/ADs and School/Network Ops",
+      "Ad-hoc reporting from 100% to <30%",
+      "Enrollment forecasting at 99% accuracy",
+      "Zipcode-targeted recruitment — digital marketing, promotional campaigns, and tabling events — delivered on a reduced budget",
+    ],
   },
   {
     id: "behavioral-health",
@@ -73,8 +82,13 @@ const CASE_STUDIES: CaseStudy[] = [
       "Architected a HIPAA-compliant Snowflake EDW POC with two contract engineers, integrating clinical assessments, 837i claims, HL7/CCDA hospital encounter feeds via Mirth Connect (real-time care coordination alerts), referrals, ED utilization, Article 31 / OnTrack NY / Health Home program operations, HR and financials, and demographic + zipcode data into a unified patient-360 analytical foundation. Built Tableau dashboards across the validated instruments, alongside operational and financial dashboards on caseload by clinician and managing office, claims by clinician, 837i payer submissions, ED utilization across regional hospitals, 30-day re-admission alerts, and SDOH + chronic-condition risk scoring. Designed the Mitram measurement-based care workflow with Otsuka — a pilot with 30+ patients across two waves drove +40% engagement after reminder automation and follow-ups. Integrated NSDUH prevalence data into the population-health view.",
     stack:
       "S3 + Matillion + Apache NiFi + Mirth Connect + Snowflake + Tableau + SPSS + PowerBI + Excel.",
-    unlocked:
-      "Patient-360 analytical foundation across clinical, claims, encounter, and operational feeds. Real-time care coordination alerts off ED utilization. Mitram pilot drove +40% patient engagement (30+ patients, two waves). SDOH and chronic-condition risk scoring. NSDUH state-level prevalence integrated into the population-health view.",
+    unlocked: [
+      "Patient-360 analytical foundation across clinical, claims, encounter, and operational feeds",
+      "Real-time care coordination alerts off ED utilization",
+      "Mitram pilot drove +40% patient engagement (30+ patients, two waves)",
+      "SDOH and chronic-condition risk scoring",
+      "NSDUH state-level prevalence integrated into the population-health view",
+    ],
   },
   {
     id: "test-prep",
@@ -89,8 +103,12 @@ const CASE_STUDIES: CaseStudy[] = [
       "Authored an Analytics & Reporting 2.0 strategic proposal — diagnosed the legacy environment, captured stakeholder voices, ran a six-vendor BI evaluation (Tableau, Spotfire, Sisense, Domo, Periscope, Looker), and presented tiered investment scenarios. Selected Sisense as the platform of record. Implemented Sisense ElastiCube ETL across booking analytics for six product lines — daily/monthly pacing, budget-vs-actual, YoY trends, channel attribution, product mix. Conducted efficacy research on test-prep products — score-gain analyses across SAT, GRE, MCAT by instructor, location/PSO, and product tier. Delivered cross-functional decision support: A/B testing, high-value customer profiling, cancel/refund driver analysis, promotional-campaign performance, scheduling optimization, location-level enrollment data for leasing decisions.",
     stack:
       "SQL Server (storage, views, marts) + Sisense (ElastiCubes, dashboards) + R/SPSS (efficacy research).",
-    unlocked:
-      "Sisense as the platform of record after a six-vendor evaluation. Repeatable booking analytics across six product lines and six channels. Efficacy research operational for marketing and product. Cross-functional decision support spanning A/B testing, customer profiling, cancel/refund driver analysis, and location-level leasing.",
+    unlocked: [
+      "Sisense as the platform of record after a six-vendor evaluation",
+      "Repeatable booking analytics across six product lines and six channels",
+      "Efficacy research operational for marketing and product",
+      "Cross-functional decision support spanning A/B testing, customer profiling, cancel/refund driver analysis, and location-level leasing",
+    ],
   },
   {
     id: "founding-engagements",
@@ -103,8 +121,11 @@ const CASE_STUDIES: CaseStudy[] = [
     weBuilt:
       "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts — enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyses between traditional and hybrid sections of the same course.",
     stack: "Log data + SPSS + R + conceptual dashboard designs as simulated charts.",
-    unlocked:
-      "A defensible measurement frame for the NextGen test-prep platform. Conceptual dashboards that unblocked product decisions ahead of the warehouse. A defensible outcomes-comparison frame across traditional vs. hybrid course sections on the university side.",
+    unlocked: [
+      "A defensible measurement frame for the NextGen test-prep platform",
+      "Conceptual dashboards that unblocked product decisions ahead of the warehouse",
+      "A defensible outcomes-comparison frame across traditional vs. hybrid course sections on the university side",
+    ],
   },
 ];
 
@@ -125,7 +146,7 @@ export default function CaseStudiesPage() {
                 It was never about the <span className="text-accent">stack.</span>
               </h1>
               <p className="text-ink-2 text-[18px] max-w-[600px] mt-7 leading-[1.55]">
-                Five engagements. Five sectors. Five stacks. One discipline.
+                Five engagements. Five stacks. One discipline.
               </p>
             </Reveal>
           </div>
@@ -144,7 +165,7 @@ export default function CaseStudiesPage() {
                   <span className="text-ink font-medium">They don&rsquo;t. Not on their own.</span>
                 </p>
                 <p>
-                  Across five engagements over the last decade — five sectors, five different
+                  Across five engagements over the last decade — five different
                   stacks, five different vintages of &ldquo;modern&rdquo; — the working decision
                   system never started with the tools. It started with what was already there —
                   clean systems running quietly, underutilized platforms sitting on the books,
@@ -156,7 +177,7 @@ export default function CaseStudiesPage() {
                   The stack changes every time. The discipline doesn&rsquo;t.
                 </p>
                 <p>
-                  Below: five engagements, anonymized by org, named by sector. In each one, the
+                  Below: five engagements, anonymized by org. In each one, the
                   stack you see at the bottom is the consequence of the design — not the headline.
                 </p>
               </div>
@@ -229,14 +250,21 @@ export default function CaseStudiesPage() {
                   {/* The stack — as a consequence */}
                   <CaseBlock label="The stack — as a consequence" body={cs.stack} mono />
 
-                  {/* What it unlocked — accent callout */}
+                  {/* What it unlocked — accent callout list */}
                   <div className="mt-10 pt-8 border-t border-line">
-                    <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-3">
+                    <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
                       What it unlocked
                     </div>
-                    <p className="text-ink text-[16px] sm:text-[17px] font-medium leading-[1.6]">
-                      {cs.unlocked}
-                    </p>
+                    <ul className="list-none p-0 m-0 space-y-2.5">
+                      {cs.unlocked.map((item, i) => (
+                        <li
+                          key={i}
+                          className="text-ink text-[16px] sm:text-[17px] font-medium leading-[1.55] pl-6 relative before:content-['—'] before:absolute before:left-0 before:text-accent"
+                        >
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </Reveal>
