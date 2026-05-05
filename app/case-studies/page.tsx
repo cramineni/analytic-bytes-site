@@ -32,17 +32,17 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "mental-health",
     sector: "National mental health nonprofit",
     context:
-      "Survey program reaching ~152 schools and ~40 districts; multi-year, multi-respondent (students, faculty, principals).",
+      "Survey program reaching 150+ schools and 25+ districts; multi-year, multi-respondent (students, faculty, principals).",
     alreadyThere:
       "A Snowflake warehouse stood up by a vendor but stalled — dev/staging/prod schemas built but not in active use, Fivetran connections defined but not turned on. Multi-year survey data spanning four to six successive instrument versions sitting in Qualtrics. Salesforce capturing partnership phases, consultant caseloads, and assessment-cycle scheduling. Legacy operational data in Azure. A theory-of-change framework leadership already used to talk about impact.",
     missing:
-      "A semantic dataset across multi-year surveys. An executive analytics surface for program operations. An impact-reporting workflow that mapped data back to the theory-of-change — instead of being authored alongside it.",
+      "A semantic dataset across multi-year surveys. An executive analytics surface for program operations. An impact-reporting workflow that mapped data back to the theory-of-change — instead of being authored alongside it. A targeted-funding view — surfacing where burden and disparity diverge across states, sized against public-health datasets.",
     weBuilt:
-      "Activated the stalled warehouse with DevOps — turned on the Fivetran connections, validated freshness, brought the dev/staging/prod schemas into analytical use. Designed the semantic dataset architecture for multi-year survey analysis so the data team could build the report-ready layer underneath. Stood up a ThoughtSpot trial as a demonstration vehicle for executive dashboards on Salesforce program operations and national dataset DWH analytics — proof of value ahead of any procurement decision. Prototyped AI-assisted impact reporting using Snowflake Cortex, Streamlit, and GPT, mapping outputs to the theory-of-change domains so impact narrative could be drafted from data instead of authored separately.",
+      "Activated the stalled warehouse with DevOps — turned on the Fivetran connections, validated freshness, brought the dev/staging/prod schemas into analytical use. Designed the semantic dataset architecture for multi-year survey analysis so the data team could build the report-ready layer underneath. Stood up a ThoughtSpot trial as a demonstration vehicle for executive dashboards on Salesforce program operations and national dataset DWH analytics — proof of value ahead of any procurement decision. Demonstrated targeted-funding analytics on the same trial — CDC Wonder dataset analyses surfaced as a burden-vs-disparity quadrant by state, framing where need and underinvestment co-occur for grant-strategy use. Prototyped AI-assisted impact reporting using Snowflake Cortex, Streamlit, Gemini, and Python — mapping outputs to the theory-of-change domains so impact narrative could be drafted from data instead of authored separately.",
     stack:
-      "Fivetran + Snowflake + Snowflake Cortex + Streamlit + GPT + ThoughtSpot + PowerBI + Looker + Google Sheets.",
+      "Fivetran + Snowflake + Snowflake Cortex + Streamlit + Gemini + Python + ThoughtSpot + PowerBI + Looker + Google Sheets + CDC Wonder.",
     unlocked:
-      "A semantic survey dataset spanning instrument versions. Executive analytics on program operations. AI-drafted impact reporting tied directly to the theory-of-change.",
+      "A semantic survey dataset spanning instrument versions. Executive analytics on program operations. AI-drafted impact reporting tied directly to the theory-of-change. Targeted-funding analytics — burden-vs-disparity by state — demonstrated as a grant-strategy view.",
   },
   {
     id: "k8-charter",
@@ -58,7 +58,7 @@ const CASE_STUDIES: CaseStudy[] = [
     stack:
       "BigQuery + Google Sheets + Tableau Cloud + Looker — consolidated from three reporting platforms running in parallel.",
     unlocked:
-      "40% faster turnaround on key reports (10 → 6 days). 70% lift in dashboard adoption across Principals/ADs and School/Network Ops. Data completeness from ~60% to >90% in SIS records. Ad-hoc reporting from 100% to <30%. Enrollment forecasting at 99% accuracy.",
+      "40% faster turnaround on key reports (10 → 6 days). 70% lift in dashboard adoption across Principals/ADs and School/Network Ops. Ad-hoc reporting from 100% to <30%. Enrollment forecasting at 99% accuracy.",
   },
   {
     id: "behavioral-health",
@@ -66,15 +66,15 @@ const CASE_STUDIES: CaseStudy[] = [
     context:
       "Nine clinics across Westchester and Rockland; 3,300+ active clients; clinical, claims, program operations, and population data spanning multiple service lines.",
     alreadyThere:
-      "Validated psychometric instruments (PHQ-9, GAD-7, C-SSRS Adult and Child, NIDA Quick Screen, CAGE-AID, plus SIS, PAQ, Q-LES-Q, FIBSER) collected at intake and follow-up but not surfaced back to clinicians. 837i claims feeds across multiple payers (Beacon Health, Fidelis Care NY, Health First, Partners Health Plan, United Healthcare) sitting separately. HL7/CCDA hospital encounter feeds from regional EDs, uncoordinated. Program operations data across Article 31, OnTrack NY, and Health Home. HR and financials in their own systems. Demographic and zipcode-level data the org had access to but wasn't analyzing.",
+      "Validated psychometric instruments (PHQ-9, GAD-7, C-SSRS Adult and Child, NIDA Quick Screen, CAGE-AID, plus SIS, PAQ, Q-LES-Q, FIBSER) historically captured at 3-month visits only. A smartphone app being piloted to collect these as patient-reported every 2 to 4 weeks instead — supporting measurement-based care between visits. 837i claims feeds across multiple payers (Beacon Health, Fidelis Care NY, Health First, Partners Health Plan, United Healthcare) sitting separately. HL7/CCDA hospital encounter feeds from regional EDs, uncoordinated. Program operations data across Article 31, OnTrack NY, and Health Home. HR and financials in their own systems. Demographic and zipcode-level data the org had access to but wasn't analyzing.",
     missing:
-      "A HIPAA-compliant patient-360 foundation. Real-time care coordination off ED and hospital encounter feeds. Instrument-level dashboards back in front of clinicians. A measurement-based care workflow that closed the loop after the visit. SDOH and chronic-condition risk scoring at the zipcode level. NSDUH state-level prevalence integrated into population-health analytics.",
+      "A HIPAA-compliant patient-360 foundation. Real-time care coordination off ED and hospital encounter feeds. Instrument-level dashboards back in front of clinicians. A measurement-based care workflow that closed the loop after the visit. SDOH and chronic-condition risk scoring. NSDUH state-level prevalence integrated into population-health analytics.",
     weBuilt:
-      "Architected a HIPAA-compliant Snowflake EDW POC with two contract engineers, integrating clinical assessments, 837i claims, HL7/CCDA hospital encounter feeds via Mirth Connect (real-time care coordination alerts), referrals, ED utilization, Article 31 / OnTrack NY / Health Home program operations, HR and financials, and demographic + zipcode data into a unified patient-360 analytical foundation. Built Tableau dashboards across the validated instruments, alongside operational and financial dashboards on caseload by clinician and managing office, claims by clinician, 837i payer submissions, ED utilization across regional hospitals, 30-day re-admission alerts, and SDOH + chronic-condition risk scoring by zipcode. Designed the Mitram measurement-based care workflow with Otsuka — a pilot with 30+ patients across two waves drove +40% engagement after reminder automation and faster clinician response. Integrated NSDUH prevalence data into the population-health view.",
+      "Architected a HIPAA-compliant Snowflake EDW POC with two contract engineers, integrating clinical assessments, 837i claims, HL7/CCDA hospital encounter feeds via Mirth Connect (real-time care coordination alerts), referrals, ED utilization, Article 31 / OnTrack NY / Health Home program operations, HR and financials, and demographic + zipcode data into a unified patient-360 analytical foundation. Built Tableau dashboards across the validated instruments, alongside operational and financial dashboards on caseload by clinician and managing office, claims by clinician, 837i payer submissions, ED utilization across regional hospitals, 30-day re-admission alerts, and SDOH + chronic-condition risk scoring. Designed the Mitram measurement-based care workflow with Otsuka — a pilot with 30+ patients across two waves drove +40% engagement after reminder automation and follow-ups. Integrated NSDUH prevalence data into the population-health view.",
     stack:
       "S3 + Matillion + Apache NiFi + Mirth Connect + Snowflake + Tableau + SPSS + PowerBI + Excel.",
     unlocked:
-      "Patient-360 analytical foundation across clinical, claims, encounter, and operational feeds. Real-time care coordination alerts off ED utilization. Mitram pilot drove +40% patient engagement (30+ patients, two waves). Population-health risk scoring by zipcode integrated with NSDUH state prevalence.",
+      "Patient-360 analytical foundation across clinical, claims, encounter, and operational feeds. Real-time care coordination alerts off ED utilization. Mitram pilot drove +40% patient engagement (30+ patients, two waves). SDOH and chronic-condition risk scoring. NSDUH state-level prevalence integrated into the population-health view.",
   },
   {
     id: "test-prep",
@@ -97,14 +97,14 @@ const CASE_STUDIES: CaseStudy[] = [
     sector: "Early test-prep + university advisory",
     context: "Founding AB engagements (2016–2017): test-prep platform launch + university learning analytics.",
     alreadyThere:
-      "Existing platform log data. Course-level student outcome data on the university side. Stakeholders thinking about a next-generation test-prep product without a measurement frame.",
+      "Existing platform log data. Course-level student outcome data on the university side — traditional and hybrid sections of the same course running in parallel. Stakeholders thinking about a next-generation test-prep product without a measurement frame.",
     missing:
-      "A defensible set of log-data measures. A platform-design frame the product team could build against. Predictive models that surfaced at-risk learners earlier in the course cycle.",
+      "A defensible set of log-data measures. A platform-design frame the product team could build against. A defensible analytical frame for comparing student outcomes between traditional and hybrid sections of the same course.",
     weBuilt:
-      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts — enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. Built predictive models for at-risk learners on the university side.",
+      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts — enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyses between traditional and hybrid sections of the same course (NYU / Office of Educational Technology).",
     stack: "Log data + SPSS + R + conceptual dashboard designs as simulated charts.",
     unlocked:
-      "A defensible measurement frame for the NextGen test-prep platform. Conceptual dashboards that unblocked product decisions ahead of the warehouse. Early-warning models for at-risk learners on the university side.",
+      "A defensible measurement frame for the NextGen test-prep platform. Conceptual dashboards that unblocked product decisions ahead of the warehouse. A defensible outcomes-comparison frame across traditional vs. hybrid course sections on the university side.",
   },
 ];
 
