@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,48 +17,45 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-export const metadata = {
-  title: "Analytic Bytes — Decision Systems Architecture",
+export const metadata: Metadata = {
+  title: "Analytic Bytes — Decision systems architecture, built fast.",
   description:
-    "Decision systems architecture with senior leadership depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
+    "Most data problems are decision problems. Analytic Bytes builds custom decision-system architecture in 90-day arcs — measurement and AI for rigor and speed.",
+  metadataBase: new URL("https://analyticbytes.systems"),
   openGraph: {
-    title: "Analytic Bytes — Decision Systems Architecture",
+    title: "Analytic Bytes — Decision systems architecture, built fast.",
     description:
-      "Decision systems architecture with senior leadership depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
-    url: "https://analyticbytes.systems",
-    siteName: "Analytic Bytes",
-    images: [
-      {
-        url: "https://analyticbytes.systems/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Analytic Bytes — From fragmented to decision-ready",
-      },
-    ],
+      "Most data problems are decision problems. Fix the system. 90-day operating arcs for decision-grade outcomes.",
     type: "website",
+    url: "https://analyticbytes.systems",
+    images: ["/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Analytic Bytes — Decision Systems Architecture",
-    description:
-      "Decision systems architecture with senior leadership depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
-    images: ["https://analyticbytes.systems/og-image.jpg"],
+    title: "Analytic Bytes — Decision systems architecture, built fast.",
+    description: "Most data problems are decision problems. Fix the system.",
+    images: ["/og-image.png"],
   },
+  themeColor: "#FFFFFF",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180" },
+      { url: "/logo.png", type: "image/png" },
     ],
   },
-}
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrains.variable}`}>
-      <body className="font-sans bg-bg text-ink">{children}</body>
+      <body className="font-sans bg-bg text-ink">
+        {children}
+        {/* Cloudflare Web Analytics — privacy-respecting, cookieless */}
+        <Script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "f88e873520b34ca4ac7638d3e75478ef"}'
+        />
+      </body>
     </html>
   );
 }
