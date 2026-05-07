@@ -3,7 +3,7 @@ import Logo, { Wordmark } from "./Logo";
 const links = [
   { href: "/#architecture", label: "/architecture" },
   { href: "/#arc", label: "/arc" },
-  { href: "/#proof", label: "/proof" },
+  { href: "/case-studies", label: "/proof" },
   { href: "/#work", label: "/work" },
   { href: "/library", label: "/library" },
   { href: "/about", label: "/about" },
@@ -26,7 +26,7 @@ export default function Footer() {
               From fragmented to decision-ready.
             </div>
             <div className="font-mono text-ink-3 text-[11px] mt-1.5 tracking-[0.04em] uppercase">
-              Measurement &amp; Impact &middot; in 90-day arcs
+              Decision Systems &middot; in 90-day arcs
             </div>
             {/* ABOUT — light footer line. Full bio lives at /about */}
             <div className="text-[13px] text-ink-2 mt-[18px] tracking-[-0.005em]">
