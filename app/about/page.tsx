@@ -27,7 +27,6 @@ const BIO_PARAGRAPHS: string[] = [
 // Optional: short list of credibility/highlight bullets to show after the bio.
 // Set to [] (empty array) to hide this section.
 const HIGHLIGHTS: { label: string; value: string }[] = [
-  { label: "Background", value: "PhD, Educational Measurement · Building decision systems for mission-driven orgs" },
   // { label: "Sectors", value: "Education · Healthcare · Grant-funded" },
   // { label: "Roles", value: "Data leader · Strategic advisor · Operator-coach" },
   // { label: "Based in", value: "City, State" },
@@ -40,8 +39,8 @@ const HIGHLIGHTS: { label: string; value: string }[] = [
 
 const PRINCIPLES: { title: string; desc: string }[] = [
   {
-    title: "Human-serving, always.",
-    desc: "The system serves humans — not the inverse. Every layer, every choice.",
+    title: "Built around the human, not the system.",
+    desc: "The people inside the system AND the people the system serves. Every layer, every choice.",
   },
   {
     title: "Asset-based, not deficit-based.",
