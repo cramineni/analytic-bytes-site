@@ -20,12 +20,12 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Analytic Bytes — Decision systems architecture, built fast.",
   description:
-    "Most data problems are decision problems. Analytic Bytes builds custom decision-system architecture in 90-day arcs — measurement and AI for rigor and speed.",
+    "Decision systems architecture with measurement-science depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
   metadataBase: new URL("https://analyticbytes.systems"),
   openGraph: {
     title: "Analytic Bytes — Decision systems architecture, built fast.",
     description:
-      "Most data problems are decision problems. Fix the system. 90-day operating arcs for decision-grade outcomes.",
+      "Decision systems architecture with measurement-science depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
     type: "website",
     url: "https://analyticbytes.systems",
     images: ["/og-image.png"],
@@ -33,7 +33,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Analytic Bytes — Decision systems architecture, built fast.",
-    description: "Most data problems are decision problems. Fix the system.",
+    description:
+      "Decision systems architecture with measurement-science depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
     images: ["/og-image.png"],
   },
   themeColor: "#FFFFFF",
