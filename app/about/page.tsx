@@ -27,9 +27,11 @@ const BIO_PARAGRAPHS: string[] = [
 // Optional: short list of credibility/highlight bullets to show after the bio.
 // Set to [] (empty array) to hide this section.
 const HIGHLIGHTS: { label: string; value: string }[] = [
-  // { label: "Sectors", value: "Education · Healthcare · Grant-funded" },
-  // { label: "Roles", value: "Data leader · Strategic advisor · Operator-coach" },
-  // { label: "Based in", value: "City, State" },
+  {
+    label: "Background",
+    value:
+      "PhD, Educational Measurement (University of Delaware) · Seven years of AI-evaluation research at ETS · Operational data practice across education and mental health organizations · Stanford Executive Education in AI-Driven Leadership",
+  },
 ];
 
 // =====================================================================
