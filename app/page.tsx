@@ -65,7 +65,6 @@ const OFFERS = [
 ];
 
 const EMAIL = "hello@analyticbytes.systems";
-const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
 
 // =====================================================================
 // PAGE
@@ -96,9 +95,7 @@ export default function Home() {
               </p>
               <div className="flex gap-3 mt-9 flex-wrap">
                 <a
-                  href={CALENDLY_URL}
-                  target="_blank"
-                  rel="noopener"
+                  href={`mailto:${EMAIL}`}
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                 >
                   Let&rsquo;s talk <span>→</span>
@@ -313,18 +310,10 @@ export default function Home() {
               </h2>
               <div className="flex gap-3 mt-12 flex-wrap">
                 <a
-                  href={CALENDLY_URL}
-                  target="_blank"
-                  rel="noopener"
+                  href={`mailto:${EMAIL}`}
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                 >
                   Let&rsquo;s talk <span>→</span>
-                </a>
-                <a
-                  href={`mailto:${EMAIL}`}
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md border border-line-2 text-ink hover:bg-ink/[0.04] transition-colors text-[13.5px] font-medium"
-                >
-                  {EMAIL}
                 </a>
               </div>
             </Reveal>
