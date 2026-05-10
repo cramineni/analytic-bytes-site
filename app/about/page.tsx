@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/chaitanyaramineni/";
-const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
+const EMAIL = "hello@analyticbytes.systems";
 
 // =====================================================================
 // BIO — paste your LinkedIn About text into the BIO_PARAGRAPHS array.
@@ -219,9 +219,7 @@ export default function AboutPage() {
                 {/* CTAs at the bottom */}
                 <div className="mt-12 flex flex-wrap gap-3 pt-8 border-t border-line">
                   <a
-                    href={CALENDLY_URL}
-                    target="_blank"
-                    rel="noopener"
+                    href={`mailto:${EMAIL}`}
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                   >
                     Let&rsquo;s talk <span>→</span>
