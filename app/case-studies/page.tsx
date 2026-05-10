@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "It was never about the stack. Five engagements, five stacks — one discipline. Decision systems built from what was already there.",
 };
 
-const CALENDLY_URL = "https://calendly.com/chaitanya-ramineni/30min";
+const EMAIL = "hello@analyticbytes.systems";
 
 // =====================================================================
 // CASE STUDIES — five engagements, anonymized by org, named by sector.
@@ -392,9 +392,7 @@ export default function CaseStudiesPage() {
                 </h2>
                 <div className="flex gap-3 flex-wrap">
                   <a
-                    href={CALENDLY_URL}
-                    target="_blank"
-                    rel="noopener"
+                    href={`mailto:${EMAIL}`}
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                   >
                     Let&rsquo;s talk <span>→</span>
