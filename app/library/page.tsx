@@ -6,76 +6,52 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Library — Analytic Bytes",
   description:
-    "Essays, artifacts, notes, and samples on decision systems, measurement, and operating-team data work.",
+    "Essays, artifacts, and field notes on decision systems, measurement, and operating-team data work.",
 };
 
 // =====================================================================
 // CONTENT — add new entries here. Newest first.
 // =====================================================================
 //
-// type:    one of 'essay' | 'artifact' | 'note' | 'sample'
-// title:   short title
-// date:    YYYY-MM-DD
-// summary: 1–2 line description
-// url:     external link (LinkedIn, Substack, etc.) OR leave empty for placeholder
+// type:     'essay' | 'artifact' | 'field-note'
+// title:    short title
+// date:     YYYY-MM-DD
+// summary:  1–2 line description (for essays/field-notes) OR caption (for artifacts)
+// url:      external link (LinkedIn post, Substack, etc.) OR leave empty
+// image:    OPTIONAL — for artifacts. Path to image in /public/library/[file]
+//           Example: "/library/from-signal-to-action.png"
+//           Recommended: 1200x900 or similar, optimized for web
 // =====================================================================
 
 type Entry = {
-  type: "essay" | "artifact" | "note" | "sample";
+  type: "essay" | "artifact" | "field-note";
   title: string;
   date: string;
   summary: string;
   url?: string;
+  image?: string;
 };
 
 const ENTRIES: Entry[] = [
-  // Add your real entries here. Examples below to seed the page.
-  {
-    type: "artifact",
-    title: "From signal to action — the decision system architecture",
-    date: "2026-01-15",
-    summary:
-      "The four-stage flow that anchors every decision-system engagement: Signal, Interpretation, Decision, Action.",
-    url: "",
-  },
-  {
-    type: "essay",
-    title: "A system is not the dashboard. It's what happens after.",
-    date: "2026-01-10",
-    summary:
-      "Most teams stop at signal. The work that compounds — interpretation, decision, action — lives downstream.",
-    url: "",
-  },
-  {
-    type: "artifact",
-    title: "The 90·90·90 operating loop",
-    date: "2026-01-05",
-    summary:
-      "A 270-day pattern for repeatable execution: deliver signal, build the system, scale & extend.",
-    url: "",
-  },
-  {
-    type: "note",
-    title: "Most data problems are decision problems",
-    date: "2025-12-22",
-    summary:
-      "Dashboards show signal. Decisions require systems. The reframe that drives every Analytic Bytes engagement.",
-    url: "",
-  },
+  // Add your real entries here. Empty array = "More soon." state.
+  // Artifacts go first (visual content); essays and field-notes published when ready.
+  //
+  // Example artifact entry (uncomment + customize when adding):
+  //
+  // {
+  //   type: "artifact",
+  //   title: "From Signal to Action — the decision system architecture",
+  //   date: "2026-05-09",
+  //   summary: "The four-stage flow that anchors every decision-system engagement: Signal → Interpretation → Decision → Action.",
+  //   url: "https://www.linkedin.com/posts/...", // optional LinkedIn post link
+  //   image: "/library/from-signal-to-action.png",
+  // },
 ];
-
-const TYPE_COLORS: Record<Entry["type"], string> = {
-  essay: "text-accent",
-  artifact: "text-accent",
-  note: "text-ink-3",
-  sample: "text-ink-3",
-};
 
 const TYPE_LABELS: Record<Entry["type"], string> = {
   essay: "Essay",
   artifact: "Artifact",
-  note: "Note",
-  sample: "Sample",
+  "field-note": "Field Note",
 };
 
 function formatDate(iso: string) {
@@ -104,7 +80,7 @@ export default function LibraryPage() {
                 Notes from the <span className="text-accent">decision system.</span>
               </h1>
               <p className="text-ink-2 text-[17px] max-w-[600px] mt-6 leading-[1.55]">
-                Essays, artifacts, notes, and samples — on decision-system architecture,
+                Essays, artifacts, and field notes — on decision-system architecture,
                 measurement, and the operating teams that ship them.
               </p>
             </Reveal>
@@ -147,6 +123,75 @@ export default function LibraryPage() {
 }
 
 function Entry({ entry }: { entry: Entry }) {
+  // Artifact entries get an image-led layout; essays/field-notes get a text-row layout
+  if (entry.type === "artifact") {
+    return <ArtifactEntry entry={entry} />;
+  }
+  return <TextEntry entry={entry} />;
+}
+
+function ArtifactEntry({ entry }: { entry: Entry }) {
+  const isLink = entry.url && entry.url.length > 0;
+  const Wrap = isLink
+    ? ({ children }: { children: React.ReactNode }) => (
+        <a
+          href={entry.url}
+          target={entry.url?.startsWith("http") ? "_blank" : undefined}
+          rel="noopener"
+          className="block group no-underline"
+        >
+          {children}
+        </a>
+      )
+    : ({ children }: { children: React.ReactNode }) => (
+        <div className="block">{children}</div>
+      );
+
+  return (
+    <Wrap>
+      <article className="py-10 border-b border-line">
+        <div className="grid grid-cols-1 sm:grid-cols-[120px_120px_1fr] gap-2 sm:gap-8 mb-5">
+          <time className="font-mono text-[12px] text-ink-3 tracking-[0.04em] uppercase pt-1.5">
+            {formatDate(entry.date)}
+          </time>
+          <div className="font-mono text-[11px] tracking-[0.18em] uppercase pt-2 text-accent">
+            {TYPE_LABELS[entry.type]}
+          </div>
+          <h3 className="text-[18px] sm:text-[22px] lg:text-[24px] font-bold tracking-[-0.015em] text-ink leading-[1.25] min-w-0">
+            {entry.title}
+            {isLink && (
+              <span className="ml-2 text-ink-3 text-[18px] inline-block group-hover:text-accent group-hover:translate-x-0.5 transition-all">
+                ↗
+              </span>
+            )}
+          </h3>
+        </div>
+        {entry.image ? (
+          <div className="sm:ml-[256px] mb-4 rounded-md overflow-hidden border border-line bg-bg-alt">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={entry.image}
+              alt={entry.title}
+              className="w-full h-auto block"
+              loading="lazy"
+            />
+          </div>
+        ) : (
+          <div className="sm:ml-[256px] mb-4 rounded-md border border-dashed border-line-2 bg-bg-alt aspect-[4/3] sm:aspect-[16/10] flex items-center justify-center text-ink-3 text-[12px] font-mono">
+            (image pending — drop file at {`/public${entry.image ?? "/library/..."}`})
+          </div>
+        )}
+        {entry.summary ? (
+          <p className="sm:ml-[256px] text-ink-2 text-[14px] sm:text-[15px] leading-[1.55] max-w-[64ch]">
+            {entry.summary}
+          </p>
+        ) : null}
+      </article>
+    </Wrap>
+  );
+}
+
+function TextEntry({ entry }: { entry: Entry }) {
   const isLink = entry.url && entry.url.length > 0;
   const Wrap = isLink
     ? ({ children }: { children: React.ReactNode }) => (
@@ -169,9 +214,7 @@ function Entry({ entry }: { entry: Entry }) {
         <time className="font-mono text-[12px] text-ink-3 tracking-[0.04em] uppercase pt-1.5">
           {formatDate(entry.date)}
         </time>
-        <div
-          className={`font-mono text-[11px] tracking-[0.18em] uppercase pt-2 ${TYPE_COLORS[entry.type]}`}
-        >
+        <div className="font-mono text-[11px] tracking-[0.18em] uppercase pt-2 text-accent">
           {TYPE_LABELS[entry.type]}
         </div>
         <div className="min-w-0">
