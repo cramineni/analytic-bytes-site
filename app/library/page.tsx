@@ -33,19 +33,50 @@ type Entry = {
 };
 
 const ENTRIES: Entry[] = [
-  // Add your real entries here. Empty array = "More soon." state.
-  // Artifacts go first (visual content); essays and field-notes published when ready.
-  //
-  // Example artifact entry (uncomment + customize when adding):
-  //
-  // {
-  //   type: "artifact",
-  //   title: "From Signal to Action — the decision system architecture",
-  //   date: "2026-05-09",
-  //   summary: "The four-stage flow that anchors every decision-system engagement: Signal → Interpretation → Decision → Action.",
-  //   url: "https://www.linkedin.com/posts/...", // optional LinkedIn post link
-  //   image: "/library/from-signal-to-action.png",
-  // },
+  // Artifacts — visual cards from LinkedIn posts. Newest first.
+  // Add `url` field with the LinkedIn post link when you have time to grab them.
+
+  // ----- Carousel post on LinkedIn (AB page), May 6, 2026 -----
+  // "Most data work stops at the dashboard. That..."
+  {
+    type: "artifact",
+    title: "Enrollment as a decision system",
+    date: "2026-05-06",
+    summary:
+      "Signal-to-action mapping for enrollment: demand, conversion, geography, capacity → staffing, scheduling, access, resources. Better decisions. Faster response. Stronger outcomes.",
+    image: "/library/enrollment-decision-system.png",
+    url: "https://www.linkedin.com/posts/analytic-bytes_most-data-work-stops-at-the-dashboard-that-activity-7457788236564680704-9lj-",
+  },
+  {
+    type: "artifact",
+    title: "Attendance as a decision system",
+    date: "2026-05-06",
+    summary:
+      "Signal-to-action mapping for attendance: trends, absences, patterns, at-risk indicators → interventions, outreach, support, follow-up. The value of a signal is how quickly it changes action.",
+    image: "/library/attendance-decision-system.png",
+    url: "https://www.linkedin.com/posts/analytic-bytes_most-data-work-stops-at-the-dashboard-that-activity-7457788236564680704-9lj-",
+  },
+  {
+    type: "artifact",
+    title: "Capacity as a decision system",
+    date: "2026-05-06",
+    summary:
+      "Signal-to-action mapping for capacity: demand pressure, utilization, constraints, capacity gaps → align staffing, optimize scheduling, allocate resources, expand or adjust. The goal isn't just to understand signals — it's to build capacity to respond.",
+    image: "/library/capacity-decision-system.png",
+    url: "https://www.linkedin.com/posts/analytic-bytes_most-data-work-stops-at-the-dashboard-that-activity-7457788236564680704-9lj-",
+  },
+
+  // ----- Foundational framework post on LinkedIn (AB page), May 4, 2026 -----
+  // "Data doesn't fail at visibility. It fails..."
+  {
+    type: "artifact",
+    title: "From Signal to Action — the decision system architecture",
+    date: "2026-05-04",
+    summary:
+      "The four-stage flow that anchors every decision-system engagement: Signal → Interpretation → Decision → Action. A system is not the dashboard — it's what happens after.",
+    image: "/library/from-signal-to-action.png",
+    url: "https://www.linkedin.com/posts/analytic-bytes_data-doesnt-fail-at-visibility-it-fails-activity-7457094343435169792-OtkE",
+  },
 ];
 
 const TYPE_LABELS: Record<Entry["type"], string> = {
