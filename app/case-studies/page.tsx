@@ -41,7 +41,7 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "mental-health",
     sector: "National mental health nonprofit",
     context:
-      "Survey program reaching 150+ schools and 25+ districts — 1.5M+ rows of multi-year, multi-respondent data (students, faculty, principals).",
+      "Survey program reaching 150+ K-12 schools across 25+ districts and 500+ college campuses — 1.5M+ rows of multi-year, multi-respondent data across students, faculty, and school/campus leadership.",
     alreadyThere:
       "A Snowflake warehouse stood up by a vendor but stalled — dev/staging/prod schemas built but not in active use, Fivetran connections defined but not turned on. Multi-year survey data spanning four to six successive instrument versions sitting in Qualtrics. Salesforce capturing partnership phases, consultant caseloads, and assessment-cycle scheduling. Legacy operational data in Azure. A theory-of-change framework leadership already used to talk about impact.",
     missing:
@@ -69,7 +69,7 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "k8-charter",
     sector: "K–8 charter network",
     context:
-      "Multi-site network in the Bronx — one site closing and another opening during the engagement; single-analyst team inherited after the prior data lead and compliance manager had departed.",
+      "Multi-site K-8 charter network in the Bronx — 5 sites serving ~1,800 students, the only single-gender public charter network in NYC; one site closing and another opening during the engagement; single-analyst team inherited after the prior data lead and compliance manager had departed.",
     alreadyThere:
       "Three reporting platforms running in parallel — Looker, Tableau Cloud, Tableau Public. Tableau Cloud licenses on the books for two years, mostly unused. Student-level academic dashboards on public infrastructure with no governance. Daily attendance reporting that duplicated what the SIS already showed. Google Sheets workflows running quietly under most decisions. HubSpot, SchoolMint, PowerSchool, NWEA MAP, Illuminate, Google Forms, MailChimp, and a call center workflow — all real, all uneven.",
     missing:
@@ -89,7 +89,7 @@ const CASE_STUDIES: CaseStudy[] = [
       "Daily-refresh dashboards on key reports (enrollment and academic), faster turnaround on ad-hoc reports, and metric banks codified for compliance reporting cycles",
       "70% lift in dashboard adoption across Principals/ADs and School/Network Ops",
       "Ad-hoc reporting from 100% to <30%",
-      "Enrollment forecasting at 99% accuracy",
+      "Enrollment forecasting at 99% accuracy — informing capacity, staffing, and real-estate obligation decisions across the network's facility portfolio",
       "Zipcode-targeted recruitment — digital marketing, promotional campaigns, and tabling events — delivered on a reduced budget",
     ],
   },
@@ -125,7 +125,7 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "test-prep",
     sector: "Test-prep company",
     context:
-      "National test-prep brand; 30+ business-side FTEs across product, marketing, sales, and operations; 300+ ad-hoc requests for reports and insights in queue on a legacy SQL/static-report environment.",
+      "National test-prep and tutoring brand with data dispersed across two legacy systems; test-prep alone spanned 6+ product lines (SAT/ACT/MCAT/GRE/GMAT/LSAT), 8+ channels, and multiple modalities; 300+ ad-hoc requests in queue on a legacy SQL/static-report environment.",
     alreadyThere:
       "A legacy SQL Server environment with 300+ ad-hoc requests for reports and insights in the queue. Three analytics FTEs plus roughly 10% of 30+ business-side FTEs spending time on manual data wrangling. A 55% annual reporting completion rate. A standing 8–12-request weekly inventory. Booking data flowing through six channels (Internet, Inbound Call, Local Office, Enrollment Advisor, Service Center, Marketing) across SAT/ACT/MCAT/GRE/GMAT/LSAT product lines. Score-gain data sitting unused for cross-tier analysis. Stakeholder voices across Product, Ops, Marketing that hadn't been collected into a single proposal.",
     missing:
