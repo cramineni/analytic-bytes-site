@@ -41,7 +41,7 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "mental-health",
     sector: "National mental health nonprofit",
     context:
-      "Survey program reaching 150+ K-12 schools across 25+ districts and 500+ college campuses — 1.5M+ rows of multi-year, multi-respondent data across students, faculty, and school/campus leadership.",
+      "Mental-health programs spanning 150+ high schools, 25+ school districts, 500+ college campuses, and growing community-based programs; 1.5M+ rows of multi-year survey assessments across students, faculty, and school/campus leadership.",
     alreadyThere:
       "A Snowflake warehouse stood up by a vendor but stalled — dev/staging/prod schemas built but not in active use, Fivetran connections defined but not turned on. Multi-year survey data spanning four to six successive instrument versions sitting in Qualtrics. Salesforce capturing partnership phases, consultant caseloads, and assessment-cycle scheduling. Legacy operational data in Azure. A theory-of-change framework leadership already used to talk about impact.",
     missing:
