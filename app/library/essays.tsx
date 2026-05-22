@@ -144,6 +144,46 @@ function EssayTable({
   );
 }
 
+/** Horizontal bar figure for in-body statistics. */
+function BarFigure({
+  label,
+  bars,
+  source,
+}: {
+  label: string;
+  bars: { name: string; value: number }[];
+  source: string;
+}) {
+  return (
+    <figure className="my-9 border border-line rounded-md bg-bg-alt px-5 py-6 sm:px-7">
+      <figcaption className="font-mono text-[11px] text-accent tracking-[0.14em] uppercase mb-5">
+        {label}
+      </figcaption>
+      <div className="space-y-3.5">
+        {bars.map((b) => (
+          <div key={b.name} className="flex items-center gap-3 sm:gap-4">
+            <div className="w-[112px] sm:w-[136px] shrink-0 font-mono text-[12px] sm:text-[13px] text-ink-2 leading-[1.3]">
+              {b.name}
+            </div>
+            <div className="flex-1 h-7 rounded-sm bg-bg border border-line relative overflow-hidden">
+              <div
+                className="absolute inset-y-0 left-0 bg-ink"
+                style={{ width: `${b.value}%` }}
+              />
+            </div>
+            <div className="w-[42px] shrink-0 text-right font-mono text-[13px] sm:text-[14px] font-semibold text-ink tabular-nums">
+              {b.value}%
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="mt-5 font-mono text-[11px] text-ink-3 tracking-[0.03em]">
+        {source}
+      </div>
+    </figure>
+  );
+}
+
 /** Closing meta-note — publication date + caveats. */
 function MetaNote({ children }: { children: ReactNode }) {
   return (
@@ -180,7 +220,7 @@ export const ESSAYS: Essay[] = [
     number: "01",
     title: "Three Surfaces, One Keystone",
     subtitle: "Why BI tool selection is the last decision, not the first.",
-    date: "2026-05-22",
+    date: "2026-05-08",
     readingTime: "11 min read",
     summary:
       "Why BI tool selection is the last decision, not the first — and the three reporting surfaces most analytics products owe their audiences.",
@@ -239,8 +279,9 @@ export const ESSAYS: Essay[] = [
           on where each capability actually belongs.
         </P>
         <P>
-          In any analytics product that serves more than one audience — which
-          is most of them — there are three reporting surfaces, not one. They
+          An analytics product that serves more than one audience — which is
+          most of them — is really serving three reporting surfaces, not one.
+          They
           differ on five structural dimensions: audience, cadence, governance,
           permission model, and output format. None of those dimensions
           compromise gracefully. When you force a single tool to span all
@@ -326,7 +367,7 @@ export const ESSAYS: Essay[] = [
           underweight the gap.
         </P>
         <P>
-          Every BI vendor on a typical evaluation matrix assumes the deliverable
+          Most BI tools on a typical evaluation matrix assume the deliverable
           is a screen rendered live against a data source. The publication
           problem needs the inverse: a templated document with branded
           typography, headers, footers, footnotes, and language that comms or
@@ -345,8 +386,8 @@ export const ESSAYS: Essay[] = [
           split, and most don&rsquo;t try.
         </P>
         <P>
-          The right architecture for Surface A is the same one every
-          formal-publication system uses — legal contracts, financial
+          The right architecture for Surface A is the same one
+          formal-publication systems use — legal contracts, financial
           statements, regulatory filings, clinical trial reports. Templated
           layout owned by the layout team, tokenized data inserted at render
           time, snapshotted at publication. Concretely, that&rsquo;s a Word or
@@ -434,7 +475,7 @@ export const ESSAYS: Essay[] = [
           places, and any one of them can drift independently.
         </P>
         <P>
-          This is the most common failure mode in analytics products.
+          This is one of the most common failure modes in analytics products.
           It&rsquo;s slow. It rarely triggers a single alarm. It just gradually
           corrodes the credibility of every artifact the team produces, until
           people stop quoting numbers in meetings and start saying &ldquo;I&rsquo;d
@@ -547,7 +588,7 @@ export const ESSAYS: Essay[] = [
     title: "Grounding the AI Layer",
     subtitle:
       "Where AI belongs in the modern data stack, and what keeps it honest.",
-    date: "2026-05-22",
+    date: "2026-05-13",
     readingTime: "12 min read",
     summary:
       "Where AI belongs in the modern data stack, and the single contract that keeps every AI feature honest.",
@@ -686,7 +727,7 @@ export const ESSAYS: Essay[] = [
           guardrail. The MCP server pattern, or whatever your equivalent is,
           lets a chatbot call{" "}
           <C>get_domain_score(school_id, domain_id, wave_id)</C> instead of
-          writing SQL. That single move eliminates eighty percent of the
+          writing SQL. That single move removes the biggest source of
           hallucination risk in a portal chatbot, and the work to set it up is
           mostly already done — you just need to decide that the dbt semantic
           layer is the canonical contract every AI feature reads through.
@@ -820,8 +861,9 @@ export const ESSAYS: Essay[] = [
         <P>
           The implementation rule that makes this safe: the LLM has access only
           to the structured snapshot. No tool use, no follow-up queries, no SQL
-          generation. That bounds the failure mode — at worst you get a confused
-          summary, never a fabricated number.
+          generation. That bounds the failure mode — the worst case is a
+          confused summary built from the right row, not a confident number
+          drawn from the wrong data.
         </P>
 
         <H3>Chatbot</H3>
@@ -1041,7 +1083,7 @@ export const ESSAYS: Essay[] = [
     title: "When GenAI Redesigned My Dashboard",
     subtitle:
       "The redesign was uglier and clearer. What that taught me about data teams and AI tools.",
-    date: "2026-05-22",
+    date: "2026-05-18",
     readingTime: "7 min read",
     summary:
       "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
@@ -1095,10 +1137,9 @@ export const ESSAYS: Essay[] = [
           at exposing it.
         </P>
         <P>
-          This is what came out of the four-phase capstone. It&rsquo;s also what
-          I carried into the next engagement, where I let ThoughtSpot Spotter
-          and GPT suggest visualizations <I>before</I> I designed any. The
-          discipline of letting AI propose first changed the work.
+          This is what came out of the four-phase capstone. The discipline it
+          surfaced — let AI propose first, then curate — changed how I approach
+          dashboard work.
         </P>
 
         <H2>The discipline: AI proposes, human curates</H2>
@@ -1184,8 +1225,8 @@ export const ESSAYS: Essay[] = [
           content-generator-last, three things shift.
         </P>
         <P>
-          <B>The first deliverable gets faster.</B> A first-draft dashboard goes
-          from days of design iteration to hours of curation on top of an AI
+          <B>The first deliverable gets faster.</B> A first-draft dashboard can
+          go from days of design iteration to hours of curation on top of an AI
           proposal. The team&rsquo;s bandwidth concentrates on judgment calls —
           what&rsquo;s right for this stakeholder, what governance demands, what
           brand voice requires — instead of on building from a blank canvas.
@@ -1353,7 +1394,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           <B>NAS</B> (National Achievement Survey). Sample-based, high-quality
-          achievement assessment, fielded once every four years. Reports state
+          achievement assessment, fielded only every few years. Reports state
           and group averages. Strong on national snapshots and inter-state
           comparison. Weak on improvement tracking, classroom-level signal, and
           cross-cycle comparability when grades sampled change. Best used for:
@@ -1406,6 +1447,17 @@ export const ESSAYS: Essay[] = [
           learning-outcomes domain. Thirty-nine percent of teachers reported
           overload of work.
         </P>
+
+        <BarFigure
+          label="At or below basic — Class X"
+          bars={[
+            { name: "Mathematics", value: 80 },
+            { name: "Science", value: 94 },
+            { name: "Social Science", value: 86 },
+          ]}
+          source="Andhra Pradesh · National Achievement Survey, 2021"
+        />
+
         <P>
           These signals come from national data. They&rsquo;re real.
           They&rsquo;re useful for federal allocation, for state-level
@@ -1541,9 +1593,10 @@ export const ESSAYS: Essay[] = [
           different cadences.
         </P>
         <P>
-          Healthcare answered this question over decades — CDC + NSDUH + claims +
-          EHR + patient-reported outcomes, integrated through population-health
-          platforms and clinical decision-support systems. Education
+          Healthcare has spent decades building toward this — CDC + NSDUH +
+          claims + EHR + patient-reported outcomes, increasingly integrated
+          through population-health platforms and clinical decision-support
+          systems, though it is far from finished even there. Education
           hasn&rsquo;t yet built the equivalent. LO 2.0 is one shape that
           integration architecture could take.
         </P>
