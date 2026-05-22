@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import type { Metadata } from "next";
+import { ESSAYS } from "./essays";
 
 export const metadata: Metadata = {
   title: "Library — Analytic Bytes",
@@ -32,8 +33,10 @@ type Entry = {
   image?: string;
 };
 
-const ENTRIES: Entry[] = [
-  // Artifacts — visual cards from LinkedIn posts. Newest first.
+// Artifact entries — visual cards from LinkedIn posts. Essays are NOT listed
+// here; they are derived from the ESSAYS registry (./essays.tsx) in the
+// composed ENTRIES feed below. Only artifacts / field-notes are hand-listed.
+const ARTIFACTS: Entry[] = [
   // Add `url` field with the LinkedIn post link when you have time to grab them.
 
   // ----- Carousel post on LinkedIn (AB page), May 6, 2026 -----
@@ -77,6 +80,23 @@ const ENTRIES: Entry[] = [
     image: "/library/from-signal-to-action.png",
     url: "https://www.linkedin.com/posts/analytic-bytes_data-doesnt-fail-at-visibility-it-fails-activity-7457094343435169792-OtkE",
   },
+];
+
+// Full library feed — published essays and field notes (derived from the
+// ESSAYS registry, in registry order), then artifacts. Essay and field-note
+// entries link to their on-site pages at /library/[slug]; artifacts keep
+// their external URLs.
+const ENTRIES: Entry[] = [
+  ...ESSAYS.map(
+    (e): Entry => ({
+      type: e.kind,
+      title: e.title,
+      date: e.date,
+      summary: e.summary,
+      url: `/library/${e.slug}`,
+    })
+  ),
+  ...ARTIFACTS,
 ];
 
 const TYPE_LABELS: Record<Entry["type"], string> = {
