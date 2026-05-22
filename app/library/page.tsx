@@ -82,10 +82,10 @@ const ARTIFACTS: Entry[] = [
   },
 ];
 
-// Full library feed — published essays and field notes (derived from the
-// ESSAYS registry, in registry order), then artifacts. Essay and field-note
-// entries link to their on-site pages at /library/[slug]; artifacts keep
-// their external URLs.
+// Full library feed — published essays and field notes (from the ESSAYS
+// registry) plus artifacts, sorted newest-first by date. Essay and
+// field-note entries link to their on-site pages at /library/[slug];
+// artifacts keep their external URLs.
 const ENTRIES: Entry[] = [
   ...ESSAYS.map(
     (e): Entry => ({
@@ -97,7 +97,7 @@ const ENTRIES: Entry[] = [
     })
   ),
   ...ARTIFACTS,
-];
+].sort((a, b) => b.date.localeCompare(a.date));
 
 const TYPE_LABELS: Record<Entry["type"], string> = {
   essay: "Essay",

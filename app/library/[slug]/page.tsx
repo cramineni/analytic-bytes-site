@@ -101,7 +101,7 @@ export default function EssayPage({
         <section className="pb-10 sm:pb-14">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
-              <div className="max-w-[68ch]">
+              <div className="max-w-[820px]">
                 <div className="rounded-md overflow-hidden border border-line bg-bg-alt">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
