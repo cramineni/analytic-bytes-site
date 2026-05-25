@@ -57,6 +57,10 @@ const PRINCIPLES: { title: string; desc: string }[] = [
     desc: "Simple infrastructure, deep institutional knowledge. The cheapest stack that holds; the richest context that compounds.",
   },
   {
+    title: "AI-augmented, human-owned.",
+    desc: "AB runs the way it tells clients to run — AI tools used deliberately across research, writing, and delivery, with human judgment owning every decision.",
+  },
+  {
     title: "The frontline matters.",
     desc: "Decisions that work are the ones the people closest to the work can act on. Boardroom AND frontline.",
   },

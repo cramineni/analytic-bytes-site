@@ -6,15 +6,17 @@ import type { ReactNode } from "react";
 // Each piece renders on its own route at /library/[slug] via app/library/[slug]/page.tsx.
 // `kind` distinguishes essays (standalone arguments) from field notes (reports
 // from specific practice). Each kind carries its own number sequence.
-// To add a piece: append an object to the ESSAYS array with a `kind` and a body
-// composed of the prose primitives below. To edit copy, edit the body JSX directly.
+//
+// Every piece here has passed AB_Editorial_Standard.md — the eight-gate
+// pre-publish standard (soul, voice, de-AI, overreach, facts, balance, rigor,
+// sourcing). Edit copy in the body JSX directly; re-run the standard after.
 // =====================================================================
 
 // ---------------------------------------------------------------------
 // PROSE PRIMITIVES — the only place essay styling lives.
 // ---------------------------------------------------------------------
 
-/** The "In brief" callout block at the top of each essay. */
+/** The "In brief" callout block at the top of each piece. */
 function Brief({ children }: { children: ReactNode }) {
   return (
     <aside className="my-10 border-l-2 border-accent bg-bg-alt rounded-r-md pl-6 pr-6 py-6">
@@ -74,7 +76,7 @@ function C({ children }: { children: ReactNode }) {
   );
 }
 
-/** Punchy standalone line — for the essay's load-bearing sentences. */
+/** Punchy standalone line — for the piece's load-bearing sentences. */
 function Pull({ children }: { children: ReactNode }) {
   return (
     <p className="my-9 text-ink font-bold tracking-[-0.015em] text-[20px] sm:text-[24px] leading-[1.35]">
@@ -194,7 +196,7 @@ function MetaNote({ children }: { children: ReactNode }) {
 }
 
 // ---------------------------------------------------------------------
-// ESSAY TYPE + REGISTRY
+// PIECE TYPE + REGISTRY
 // ---------------------------------------------------------------------
 
 export type Essay = {
@@ -232,18 +234,17 @@ export const ESSAYS: Essay[] = [
             Most leaders meet this problem as a procurement decision. A budget
             request lands for a BI platform — Tableau, Power BI, Looker, Sisense
             — with an evaluation matrix attached and a recommendation at the
-            bottom. Approve it, and reporting is, on paper, handled.
+            bottom. Approve it, and on paper reporting is handled.
           </p>
           <p>
-            It isn&rsquo;t — and the reason is worth a leader&rsquo;s attention
-            before the signature goes on. The tool is the last decision in a
-            sequence, not the first. The decisions that actually determine
-            whether your reporting changes how the organization acts come
-            earlier, and they are not technology decisions. They are decisions
-            about which calls your teams are trying to make, and whether
-            everyone is working from the same numbers. This is a
-            decision-system question wearing a procurement question&rsquo;s
-            clothes.
+            It isn’t, and the reason is worth a leader’s attention before the
+            signature goes on. The tool is the last decision in the sequence,
+            not the first. The decisions that determine whether your reporting
+            changes how the organization acts come earlier, and they are not
+            technology decisions. They are decisions about which calls your
+            teams are trying to make, and whether everyone is working from the
+            same numbers. This is a decision-system question wearing a
+            procurement question’s clothes.
           </p>
           <p>
             What follows is written for the person who has to build the thing,
@@ -264,38 +265,34 @@ export const ESSAYS: Essay[] = [
           Leadership has stopped opening the executive dashboard.
         </P>
         <P>
-          The matrix is a real exercise — every product team has to run it
+          The matrix is a real exercise; every product team has to run it
           eventually. The trap is running it first, before clarifying what
-          kinds of reporting actually need different surfaces.
+          kinds of reporting need different surfaces.
         </P>
         <P>
-          In most product organizations I&rsquo;ve watched, the result of
-          skipping that step is recognizable: sprawl. Multiple tool licenses,
-          lack of cohesion across reports and dashboards, users still running
-          workarounds because no single tool quite fit the work it was
-          assigned. AI features amplify the pattern — more vendors offering more
-          in-tool AI capabilities, more incentive to bolt features in across the
-          stack, more risk of overpaying and overdipping into AI without clarity
-          on where each capability actually belongs.
+          In most product organizations I’ve watched, skipping that step
+          produces something recognizable: sprawl. Multiple tool licenses, no
+          cohesion across reports and dashboards, users still running
+          workarounds because no single tool quite fit the job it was handed.
+          AI features amplify it. More vendors offer more in-tool AI, there is
+          more incentive to bolt features in across the stack, and more risk of
+          overpaying for AI without knowing where each capability belongs.
         </P>
         <P>
-          An analytics product that serves more than one audience — which is
-          most of them — is really serving three reporting surfaces, not one.
-          They
-          differ on five structural dimensions: audience, cadence, governance,
-          permission model, and output format. None of those dimensions
-          compromise gracefully. When you force a single tool to span all
-          three, the result is mediocre on each axis, and &ldquo;mediocre on
-          each axis&rdquo; is exactly the kind of failure mode that doesn&rsquo;t
-          trip an alarm. It just produces a system nobody actually relies on.
+          An analytics product that serves more than one audience, and that is
+          most of them, is really serving three reporting surfaces, not one.
+          They differ on five dimensions: audience, cadence, governance,
+          permission model, output format. None of the five compromises
+          gracefully. Force a single tool to span all three surfaces and the
+          result is mediocre on every axis — the kind of failure that never
+          trips an alarm. It just produces a system nobody relies on.
         </P>
         <P>
-          The first decision is not which BI tool. It&rsquo;s recognizing that
-          the surfaces are different products and giving each one the
-          architecture it deserves. The second decision is what sits underneath
-          them all — and that one matters more than any of the surface choices.
-          Vendor selection comes last, and once the rest is done, it almost
-          doesn&rsquo;t matter.
+          The first decision is not which BI tool. It is recognizing that the
+          surfaces are different products, and giving each the architecture it
+          deserves. The second decision is what sits underneath all three, and
+          it matters more than any of the surface choices. Vendor selection
+          comes last. Once the rest is done, it barely matters.
         </P>
 
         <H2>The three surfaces</H2>
@@ -303,36 +300,33 @@ export const ESSAYS: Essay[] = [
           <B>Surface A is the program report.</B> A school report, a quarterly
           client deck, a regulatory filing, a board appendix. The audience is
           specific — one school, one client, one regulator — and the cadence is
-          per cycle. Every output goes through review: program lead reads, comms
-          revises the language, legal sometimes signs off, then it gets
-          published. The artifact persists. Three years from now somebody will
+          per cycle. Every output goes through review: a program lead reads it,
+          comms revises the language, legal sometimes signs off, and it gets
+          published. The artifact persists. Three years from now someone will
           pull the Spring 2024 version and expect it to render identically.
-          Sentence-level language matters because the readers are non-technical
-          and emotionally invested in what the data says about them.
+          Sentence-level language matters here, because the readers are
+          non-technical and personally invested in what the data says about
+          them.
         </P>
         <P>
           <B>Surface B is the operator console.</B> Internal staff, opened
-          whenever they open it, governance essentially nil because nothing is
-          published from it. The user wants &ldquo;what&rsquo;s mine,
-          what&rsquo;s overdue, what changed since last week.&rdquo; The output
-          is the workflow itself — the user does work <I>in</I> the surface;
-          they don&rsquo;t read it and walk away. The failure mode is being out
-          of date by 24 hours.
+          whenever they open it, governance essentially nil because nothing gets
+          published from it. The user wants “what’s mine, what’s overdue, what
+          changed since last week.” The output is the workflow itself. The user
+          does work in the surface; they don’t read it and walk away. Its
+          failure mode is being a day out of date.
         </P>
         <P>
           <B>Surface C is the executive view.</B> Leadership and board,
           quarterly cadence, governance light because the audience already
-          trusts the source. The user wants &ldquo;are we winning at the
-          portfolio level,&rdquo; not site-level granularity. The artifact is
-          usually projected in a meeting, occasionally exported to a PDF nobody
-          reads carefully.
+          trusts the source. The user wants “are we winning at the portfolio
+          level,” not site-level granularity. The artifact is usually projected
+          in a meeting, occasionally exported to a PDF nobody reads carefully.
         </P>
         <P>
-          These are different products. They have different audiences with
-          different tolerances, different cadences with different consistency
-          requirements, different governance with different review chains,
-          different permission models with different access patterns, and
-          different outputs with different durability expectations.
+          These are three different products. Who reads them, how often, under
+          what review, with what access, how long the output must last — they
+          differ on every one of those, and not one of them bends gracefully.
         </P>
 
         <EssayTable
@@ -352,100 +346,96 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          You cannot ship one tool that&rsquo;s good at all of this. What you{" "}
-          <I>can</I> ship is one tool that&rsquo;s good at one surface and
-          acceptable at the others, which is what most BI vendor selections
-          actually deliver. The version of the org chart where one person owns
-          &ldquo;BI&rdquo; and one tool owns &ldquo;all reporting&rdquo; is what
-          guarantees this outcome.
+          You cannot ship one tool that is good at all of this. What you can
+          ship is one tool that is good at one surface and acceptable at the
+          others, which is what most BI selections deliver. The org chart where
+          one person owns “BI” and one tool owns “all reporting” is what
+          guarantees that outcome.
         </P>
 
         <H2>Why no BI vendor solves the publication problem</H2>
         <P>
-          The interesting case is Surface A, because that&rsquo;s where the BI
-          vendor pitch breaks down hardest and where most organizations
-          underweight the gap.
+          The interesting case is Surface A, because that is where the BI vendor
+          pitch breaks down hardest and where most organizations underweight the
+          gap.
         </P>
         <P>
-          Most BI tools on a typical evaluation matrix assume the deliverable
-          is a screen rendered live against a data source. The publication
-          problem needs the inverse: a templated document with branded
-          typography, headers, footers, footnotes, and language that comms or
-          design owns <I>separately</I> from the analyst. PDF export from a BI
-          tool produces a screenshot, not a structured document. The artifact a
-          board member emails to a colleague is a Word file or a PDF that looks
-          like one — not a link to a dashboard with credentials.
+          Most BI tools on a typical evaluation matrix assume the deliverable is
+          a screen rendered live against a data source. The publication problem
+          needs the inverse: a templated document with branded typography,
+          headers, footers, footnotes, and language that comms or design owns
+          separately from the analyst. PDF export from a BI tool produces a
+          screenshot, not a structured document. The artifact a board member
+          emails to a colleague is a Word file, or a PDF that looks like one.
+          Not a link to a dashboard with credentials.
         </P>
         <P>
-          There&rsquo;s also a layout-ownership problem. In a BI tool, the
-          analyst owns the visual layout because the layout <I>is</I> the
-          dashboard. In a real publication system, comms or design owns the
-          template and the analyst owns the data. Those should be different
-          people with different review authority and different release
-          cadences. BI vendors don&rsquo;t have a credible answer for that
-          split, and most don&rsquo;t try.
+          There is also a layout-ownership problem. In a BI tool, the analyst
+          owns the visual layout because the layout is the dashboard. In a real
+          publication system, comms or design owns the template and the analyst
+          owns the data. Those should be different people with different review
+          authority and different release cadences. BI vendors don’t have a
+          credible answer for that split, and most don’t try.
         </P>
         <P>
-          The right architecture for Surface A is the same one
-          formal-publication systems use — legal contracts, financial
-          statements, regulatory filings, clinical trial reports. Templated
-          layout owned by the layout team, tokenized data inserted at render
-          time, snapshotted at publication. Concretely, that&rsquo;s a Word or
-          PowerPoint template registry, a token resolver that pulls metric
-          values from your warehouse at render time, a snapshotting layer that
-          records exactly what data each published artifact was generated from,
-          and a review-state machine: draft, commented, approved, published.
+          The right architecture for Surface A is the one formal-publication
+          systems already use: legal contracts, financial statements,
+          regulatory filings, clinical trial reports. Templated layout owned by
+          the layout team, data tokens inserted at render time, the result
+          snapshotted at publication. Concretely: a Word or PowerPoint template
+          registry, a token resolver that pulls metric values from the
+          warehouse at render time, a snapshotting layer that records what data
+          each published artifact came from, and a review-state machine — draft,
+          commented, approved, published.
         </P>
         <P>
-          This is unglamorous plumbing. It doesn&rsquo;t have a vendor logo. But
-          it gives you four properties no BI tool can match. Reproducibility —
-          same metric snapshot plus same template equals byte-identical output
-          forever. Layout independence — comms can rewrite the template without
-          involving engineering. Sentence-level governance — every published
-          string has a known author, reviewer, and approval timestamp. And LLM
-          compatibility under guardrails — narrative tokens can be filled by a
-          model operating on a single metric row, with the reviewer-approval
-          state recorded before publication.
+          This is unglamorous plumbing. It has no vendor logo. But it gives you
+          four things no BI tool can match. The output is reproducible: the same
+          metric snapshot and the same template produce a byte-identical file
+          forever. The layout is independent: comms can rewrite the template
+          without involving engineering. The governance reaches sentence level:
+          every published string has a known author, reviewer, and timestamp.
+          And it stays LLM-safe: a model can fill narrative tokens from a single
+          metric row, with the reviewer’s sign-off recorded before anything
+          publishes.
         </P>
         <P>
           The mistake organizations make is being talked into replacing this
-          path with &ldquo;embed a Tableau dashboard in a PDF&rdquo; because it
-          sounds like one less system. It isn&rsquo;t one less system.
-          It&rsquo;s one less <I>correctly-shaped</I> system.
+          path with “embed a Tableau dashboard in a PDF” because it sounds like
+          one less system. It isn’t one less system. It’s one less
+          correctly-shaped system.
         </P>
 
         <H2>The keystone: one canonical computation per concept</H2>
         <P>
-          The keystone argument is the one most worth holding firm on, because
-          it&rsquo;s the difference between a system that scales and a system
-          that quietly poisons trust over time.
+          The keystone argument is the one most worth holding firm on. It is the
+          difference between a system that scales and a system that poisons
+          trust over time.
         </P>
         <P>
           Whatever combination of surfaces gets built, all of them should read
           from a single semantic layer where every metric is defined exactly
           once, in code, tested, and version-controlled. <C>dbt</C> is the
           dominant choice for this on the warehouse side, but the principle is
-          older than the tool. It&rsquo;s just <I>one canonical computation per
-          concept.</I>
+          older than the tool. It is just one canonical computation per concept.
         </P>
         <P>
-          In practice, this means each metric has a single materialization.
-          Domain rollups, scoring rules, trajectory classifications — each
-          defined in one file with one PR-able diff. Tests run automatically:
-          grain uniqueness, score-range bounds, mapping coverage, completeness
+          In practice, each metric has a single materialization. Domain
+          rollups, scoring rules, trajectory classifications: each defined in
+          one file, with one reviewable diff. Tests run automatically — grain
+          uniqueness, score-range bounds, mapping coverage, completeness
           thresholds. The build graph tracks which downstream artifacts depend
           on each upstream change, so when an item map advances from V3 to V4,
-          you know exactly which dashboards and reports need re-validation.
+          you know which dashboards and reports need re-validation.
         </P>
         <P>
           All three surfaces then read from the same materialized marts. The
-          publication template token resolves a row from{" "}
-          <C>marts.f_cycle_metrics</C>. The operator console queries{" "}
-          <C>marts.f_open_actions</C>. The executive dashboard reads from{" "}
-          <C>marts.f_portfolio_rollup</C>. There is exactly one source of truth
-          for any given metric, and the cost of that property is roughly one
-          engineer-month of upfront modeling work plus the ongoing discipline of
-          not adding shadow definitions.
+          publication template resolves a row from <C>marts.f_cycle_metrics</C>.
+          The operator console queries <C>marts.f_open_actions</C>. The
+          executive dashboard reads <C>marts.f_portfolio_rollup</C>. There is
+          one source of truth for any metric, and it costs about one
+          engineer-month of upfront modeling plus the standing discipline of not
+          adding shadow definitions.
         </P>
         <P>
           That discipline is the part that fails. Which is why the architecture
@@ -454,58 +444,57 @@ export const ESSAYS: Essay[] = [
 
         <H2>The drift war story</H2>
         <P>
-          The reason this matters — and the reason &ldquo;do the keystone
-          first&rdquo; is non-negotiable — is the failure mode it prevents.
+          This matters, and “do the keystone first” is non-negotiable, because
+          of the failure mode it prevents.
         </P>
         <P>
           Without a single semantic layer, this is what happens. The publication
           template uses <C>select avg(item_value)…</C> written by an analyst in
-          2023. The dashboard uses Tableau&rsquo;s calculated-field syntax with a
+          2023. The dashboard uses Tableau’s calculated-field syntax with a
           slightly different filter for null handling. The Streamlit prototype
           uses pandas with <C>.mean()</C> and forgets to drop incomplete
           responses. The operator console uses a Python helper that hardcodes
-          which items belong to which domain. Each calculates &ldquo;Domain 4
-          score&rdquo; with technically reasonable but slightly different rules.
+          which items belong to which domain. Each calculates “Domain 4 score”
+          with technically reasonable but slightly different rules.
         </P>
         <P>
-          Three artifacts for the same site in the same cycle show three
-          different numbers. A program lead notices. They escalate. The analyst
-          spends a week reconciling. The next quarter it happens again because
-          nothing structurally changed — three definitions still exist in three
-          places, and any one of them can drift independently.
+          Three artifacts, same site, same cycle, three different numbers. A
+          program lead notices. They escalate. The analyst spends a week
+          reconciling. Next quarter it happens again, because nothing
+          structurally changed: three definitions still live in three places,
+          and any one of them can drift on its own.
         </P>
         <P>
           This is one of the most common failure modes in analytics products.
-          It&rsquo;s slow. It rarely triggers a single alarm. It just gradually
+          It’s slow. It rarely triggers a single alarm. It just gradually
           corrodes the credibility of every artifact the team produces, until
-          people stop quoting numbers in meetings and start saying &ldquo;I&rsquo;d
-          want to verify that.&rdquo; Once that phrase shows up, the product is
-          functionally dead even if it&rsquo;s still being maintained.
+          people stop quoting numbers in meetings and start saying “I’d want to
+          verify that.” Once that phrase shows up, the product is functionally
+          dead even if it’s still being maintained.
         </P>
         <P>
           This is what a decision-system problem looks like traced to its root:
-          not a missing dashboard, but a missing source of truth, quietly taxing
-          every decision downstream with the cost of re-verification. Every
-          number now arrives with a question attached, and the question is load
-          the decision-maker has to carry before they can act.
+          not a missing dashboard, but a missing source of truth, taxing every
+          decision downstream with the cost of re-verification. Every number now
+          arrives with a question attached, and that question is load the
+          decision-maker carries before they can act.
         </P>
         <P>
-          The semantic layer prevents drift not by being a discipline but by
-          removing the alternative. If the only way to compute &ldquo;Domain 4
-          score&rdquo; is to read from <C>marts.f_school_domain_wave</C>, drift
-          can&rsquo;t happen between surfaces because there is no second
-          definition to drift toward. That&rsquo;s the keystone property: it
-          isn&rsquo;t that everyone agrees to be careful. It&rsquo;s that
-          there&rsquo;s nothing to be careless about.
+          The semantic layer prevents drift by removing the alternative. If the
+          only way to compute “Domain 4 score” is to read{" "}
+          <C>marts.f_school_domain_wave</C>, drift cannot happen between
+          surfaces, because there is no second definition to drift toward. That
+          is the keystone property. It is not that everyone agrees to be
+          careful; it is that there is nothing to be careless about.
         </P>
 
         <H2>Sequencing</H2>
         <P>
           This is where most teams get it wrong, including teams that nominally
           agree with everything above. The instinct is to start with the
-          visible surface — pick a BI tool, build a dashboard, show progress to
-          leadership. The result is a polished surface over an ungrounded data
-          layer, which is worse than the prototype it replaced because it now
+          visible surface: pick a BI tool, build a dashboard, show leadership
+          progress. The result is a polished surface over an ungrounded data
+          layer, which is worse than the prototype it replaced, because now it
           looks credible.
         </P>
         <P>The right sequence is:</P>
@@ -529,44 +518,42 @@ export const ESSAYS: Essay[] = [
           </NumItem>
           <NumItem n={4}>
             <B>Then Surface C</B> if needed at all, and the vendor question is
-            small at this point. Tableau, Power BI, Looker — they all read from
-            a properly-modeled warehouse competently. Pick whatever the org
+            small at this point. Tableau, Power BI, Looker: they all read from a
+            properly-modeled warehouse competently. Pick whatever the org
             already has skills in. This is the last decision and the least
             consequential one.
           </NumItem>
         </NumList>
         <P>
           The vendor-evaluation matrix that arrives at the start of this work is
-          not wrong. It&rsquo;s premature. Run it after the semantic layer
-          exists and you&rsquo;ll discover the choice barely matters. Run it
-          before, and you&rsquo;ll spend six months optimizing the wrong
-          variable while the foundation that determines actual outcomes goes
-          unbuilt.
+          not wrong. It is premature. Run it after the semantic layer exists and
+          you will find the choice barely matters. Run it before, and you will
+          spend six months optimizing the wrong variable while the foundation
+          that determines the outcome goes unbuilt.
         </P>
 
         <H2>Closing</H2>
         <P>
-          The question &ldquo;which BI tool should we use&rdquo; feels like a
-          real decision because there&rsquo;s a matrix and there are vendors and
-          there are demos. But it&rsquo;s the last decision in a sequence, and
-          the sequence is what determines whether the product works.
+          The question “which BI tool should we use” feels like a real decision:
+          there is a matrix, there are vendors, there are demos. But it is the
+          last decision in the sequence, and the sequence is what determines
+          whether the product works.
         </P>
         <Pull>Three surfaces. One keystone. Vendor last.</Pull>
         <P>
           If a BI evaluation matrix lands on your desk, the right first response
-          is to ask which surface it&rsquo;s for, then to ask what sits
-          underneath. If the answer to either is unclear, the matrix isn&rsquo;t
-          ready to be filled in yet.
+          is to ask which surface it’s for, then to ask what sits underneath. If
+          the answer to either is unclear, the matrix isn’t ready to be filled
+          in yet.
         </P>
         <P>
           Underneath all of it is one discipline: a reporting system is only as
-          good as the decision it was built to serve, and most reporting gets
-          built backward — from the tool the organization happened to buy —
-          instead of forward from the decision someone actually has to make.
-          Name the decisions. Give each its own surface. Put one canonical
-          computation beneath them all. The vendor is the last and smallest
-          choice. <I>From fragmented to decision-ready</I> is the distance that
-          sequence closes.
+          good as the decision it was built to serve. Most reporting gets built
+          backward, from the tool the organization happened to buy, instead of
+          forward from the decision someone has to make. Name the decisions.
+          Give each its own surface. Put one canonical computation beneath them
+          all. The vendor is the last and smallest choice. <I>From fragmented to
+          decision-ready</I> is the distance that sequence closes.
         </P>
 
         <MetaNote>
@@ -598,110 +585,107 @@ export const ESSAYS: Essay[] = [
         <Brief>
           <p>
             A leader rarely sees AI architecture as architecture. It arrives as
-            a series of small, reasonable approvals — an AI-assisted connector
+            a series of small, reasonable approvals: an AI-assisted connector
             here, a copilot there, a natural-language layer on the BI tool, a
             chatbot for the client portal. Each has a working demo and a
             plausible champion. Say yes to each on its own merits, and the
-            result six months on is a stack full of AI features and <I>less</I>{" "}
-            trust in the numbers than before.
+            result six months on is a stack full of AI features and less trust
+            in the numbers than before.
           </p>
           <p>
             What follows is written for the person who has to build this, but
             the leadership point belongs up front. Every AI feature is a small
             delegation of a decision to a model. Where you place that model, and
-            what you ground it against, matters far more than which
-            vendor&rsquo;s model it is. Placement and grounding are leadership
-            decisions about authority and trust; vendor selection is the small
-            choice that comes after. Treat them in that order and AI compounds.
-            Treat them in reverse and it drifts — and because the drift shows up
-            as confident language rather than wrong numbers, nobody catches it
-            for months.
+            what you ground it against, matters far more than which vendor’s
+            model it is. Placement and grounding are leadership decisions about
+            authority and trust; vendor selection is the small choice that comes
+            after. Treat them in that order and AI compounds. Treat them in
+            reverse and it drifts. And because the drift shows up as confident
+            language rather than wrong numbers, nobody catches it for months.
           </p>
         </Brief>
 
         <P>
           Every quarter, somebody hands you a list of AI features to evaluate.
-          Fivetran&rsquo;s AI-assisted connectors. Snowflake Cortex. dbt
-          Copilot. Whatever the BI vendor renamed their NL feature to last week.
-          The list looks reasonable, the demos work, and the question that
-          emerges is &ldquo;which of these should we adopt?&rdquo; Six months
-          later you have eight AI features deployed across the stack and trust
-          in numbers is <I>worse</I> than it was before, because the LLM in the
-          chatbot says one thing, the AI summary above the dashboard says
-          another, and the auto-generated alert email says a third. Nobody can
-          tell which one is right. Several of them are.
+          Fivetran’s AI-assisted connectors. Snowflake Cortex. dbt Copilot.
+          Whatever the BI vendor renamed their NL feature to last week. The list
+          looks reasonable, the demos work, and the question that emerges is
+          “which of these should we adopt?” Six months later you have eight AI
+          features deployed across the stack and trust in numbers is worse than
+          it was before, because the LLM in the chatbot says one thing, the AI
+          summary above the dashboard says another, and the auto-generated alert
+          email says a third. Nobody can tell which one is right. Several of
+          them are.
         </P>
         <P>
-          The shopping-list exercise is a real one — every data org has to make
-          decisions about where AI fits, and the vendor pitches make those
-          decisions feel pressing. The trap is treating it as a vendor question
-          before deciding where each kind of AI compute belongs in the stack
-          and how the language outputs across the stack stay consistent with
-          the structured outputs underneath.
+          The shopping-list exercise is a real one. Every data org has to decide
+          where AI fits, and the vendor pitches make those decisions feel
+          pressing. The trap is treating it as a vendor question before deciding
+          where each kind of AI compute belongs in the stack, and how the
+          language outputs across the stack stay consistent with the structured
+          outputs underneath.
         </P>
         <P>
-          &ldquo;What AI features should we adopt&rdquo; is a vendor question.
-          The architectural question — the one that determines whether your AI
-          investments compound or quietly poison the data product — is where
-          each kind of AI compute belongs and what grounds it. Place AI in the
-          wrong layer and it gets expensive, slow, and untrustworthy. Place it
-          in the right layer with no grounding contract and it confabulates.
-          Place it correctly and ground it against the same canonical metric
-          definitions as your BI and your reports, and it earns trust the same
-          way the rest of the stack does.
+          “What AI features should we adopt” is a vendor question. The
+          architectural question is where each kind of AI compute belongs and
+          what grounds it, and it is the one that decides whether your AI
+          investments compound or poison the data product. Place AI in the wrong
+          layer and it gets expensive, slow, and untrustworthy. Place it in the
+          right layer with no grounding contract and it confabulates. Place it
+          correctly, ground it against the same canonical metric definitions as
+          your BI and your reports, and it earns trust the way the rest of the
+          stack does.
         </P>
         <P>
           This is the argument, in three parts. AI compute has a natural
           placement at each layer of the stack, and placement is more
           consequential than feature selection. The dbt semantic layer is the
-          grounding contract for AI features, the same way it&rsquo;s the
-          grounding contract for BI surfaces — drift between AI features is the
-          same problem as drift between dashboards, except harder to detect,
-          because the symptoms are language, not numbers. And in the client
-          portal where dashboards and reports live, AI shows up as alerts,
-          summaries, and chat. Each of these earns its place by doing something
-          the deterministic layer can&rsquo;t, and none of them get to invent
-          metrics.
+          grounding contract for AI features, the same way it is the grounding
+          contract for BI surfaces; drift between AI features is the same
+          problem as drift between dashboards, only harder to detect, because
+          the symptoms are language, not numbers. And in the client portal where
+          dashboards and reports live, AI shows up as alerts, summaries, and
+          chat. Each earns its place by doing something the deterministic layer
+          cannot, and none of them get to invent metrics.
         </P>
 
         <H2>AI by layer: placement is the question</H2>
         <P>Working bottom up.</P>
         <P>
           <B>Fivetran, or whatever your ingestion layer is.</B> The temptation
-          is to do &ldquo;AI-driven data quality&rdquo; at the connector. Resist
-          it. Use the AI features the vendor gives you for what they&rsquo;re
-          good at — schema-drift alerts, anomaly detection on row counts,
-          AI-assisted custom connector creation — and stop there. Data-quality
-          logic with semantic stakes (this respondent is suspicious, this batch
-          should be excluded from reports, this null means absent vs unknown)
-          belongs in dbt where it&rsquo;s testable, version-controlled, and
-          auditable. A vendor&rsquo;s black-box quality model that drops rows
-          for reasons you can&rsquo;t reproduce is exactly the kind of
-          dependency that breaks during a stakeholder review cycle and you
-          can&rsquo;t explain why.
+          is to do “AI-driven data quality” at the connector. Resist it. Use the
+          vendor’s AI features for what they are good at — schema-drift alerts,
+          anomaly detection on row counts, AI-assisted connector creation — and
+          stop there. Data-quality logic with semantic stakes (this respondent
+          is suspicious, this batch should be excluded from reports, this null
+          means absent rather than unknown) belongs in dbt, where it is
+          testable, version-controlled, and auditable. A vendor’s black-box
+          quality model that drops rows for reasons you cannot reproduce is the
+          kind of dependency that breaks during a stakeholder review and leaves
+          you unable to explain why.
         </P>
         <P>
-          <B>Snowflake, or whatever your warehouse is.</B> This is where most
-          of your AI compute should live, because the data is already there and
+          <B>Snowflake, or whatever your warehouse is.</B> This is where most of
+          your AI compute should live, because the data is already there and
           governance gets easier when nothing leaves the boundary. The pieces
           that earn their keep:
         </P>
         <P>
           Cortex Search for retrieval over program docs, item glossaries,
           methodology notes, and historical reports. This is the RAG primitive
-          everything else builds on. Don&rsquo;t build your own.
+          everything else builds on. Don’t build your own.
         </P>
         <P>
-          ML Functions — anomaly detection, forecast, top insights — for the
-          deterministic &ldquo;something is unusual&rdquo; detection. This is
-          the workhorse for alerts. Cheap, batch, no LLM required. Most &ldquo;AI
-          alerts&rdquo; should start here, with an LLM only on top for copy.
+          ML Functions (anomaly detection, forecast, top insights) for the
+          deterministic “something is unusual” detection. This is the workhorse
+          for alerts: cheap, batch, no LLM required. Most “AI alerts” should
+          start here, with an LLM only on top for copy.
         </P>
         <P>
           Cortex Analyst, or whichever text-to-SQL surface your warehouse
-          offers, for analyst-facing exploration, <I>only</I> when fed your dbt
+          offers, for analyst-facing exploration, only when fed your dbt
           semantic layer as the YAML model. Without that grounding it
-          confabulates metric names. Don&rsquo;t expose it to clients in v1.
+          confabulates metric names. Don’t expose it to clients in v1.
         </P>
         <P>
           Cortex COMPLETE / SUMMARIZE / EMBED_TEXT for narrative generation and
@@ -710,12 +694,12 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Document AI if you have any PDF intake — consent forms, partner
-          packets, prior reports — that you&rsquo;d otherwise extract by hand.
+          packets, prior reports — that you’d otherwise extract by hand.
         </P>
         <P>
           The architectural rule: deterministic statistics and search live in
           the warehouse. Open-ended language generation can live there too if
-          PHI matters, but more often it lives in the application layer where
+          PHI matters, but more often it lives in the application layer, where
           you can swap models and version prompts independently of your data
           platform.
         </P>
@@ -723,42 +707,38 @@ export const ESSAYS: Essay[] = [
           <B>dbt.</B> dbt Copilot for model and test generation is fine but
           minor. The real AI play at this layer is the inverse: making the dbt
           project legible to AI features. Every metric definition becomes a tool
-          description. Every domain becomes a typed entity. Every test becomes a
-          guardrail. The MCP server pattern, or whatever your equivalent is,
-          lets a chatbot call{" "}
-          <C>get_domain_score(school_id, domain_id, wave_id)</C> instead of
-          writing SQL. That single move removes the biggest source of
-          hallucination risk in a portal chatbot, and the work to set it up is
-          mostly already done — you just need to decide that the dbt semantic
-          layer is the canonical contract every AI feature reads through.
+          description, every domain a typed entity, every test a guardrail. The
+          MCP server pattern, or whatever your equivalent is, lets a chatbot
+          call <C>get_domain_score(school_id, domain_id, wave_id)</C> instead of
+          writing SQL. That single move eliminates most of the hallucination
+          risk in a portal chatbot, and the setup work is mostly already done.
+          You just have to decide that the dbt semantic layer is the canonical
+          contract every AI feature reads through.
         </P>
         <P>
           <B>BI tools.</B> Tableau Pulse, Power BI Copilot, ThoughtSpot Spotter,
-          Looker Explore Assistant — they&rsquo;re all variants of &ldquo;ask a
-          question, get a chart.&rdquo; Useful for internal exploration. Bad for
-          client-facing surfaces, for the same reason BI tools are bad at the
-          publication problem: they read directly from BI semantic models, which
-          drift from your dbt semantic layer the moment a Tableau analyst adds a
-          calculated field. The BI tool&rsquo;s job is rendering the dashboard.
-          If you want chatbot-style features in your client portal, build them
-          against the dbt semantic layer through your own API, not against the
-          BI tool&rsquo;s NL interface. AI goes around the BI tool, not through
-          it.
+          Looker Explore Assistant are all variants of “ask a question, get a
+          chart.” Useful for internal exploration. Bad for client-facing
+          surfaces, for the same reason BI tools are bad at the publication
+          problem: they read directly from BI semantic models, which drift from
+          your dbt semantic layer the moment a Tableau analyst adds a calculated
+          field. The BI tool’s job is rendering the dashboard. If you want
+          chatbot-style features in your client portal, build them against the
+          dbt semantic layer through your own API, not against the BI tool’s NL
+          interface. AI goes around the BI tool, not through it.
         </P>
         <P>
-          That&rsquo;s the placement story in one paragraph per layer. The
-          harder question is what grounds the AI features once you&rsquo;ve
-          placed them.
+          That is the placement story, one paragraph per layer. The harder
+          question is what grounds the AI features once you have placed them.
         </P>
 
         <H2>The semantic layer is also the AI contract</H2>
         <P>
-          The keystone argument from the companion piece,{" "}
-          <I>Three Surfaces, One Keystone</I>, extends one step. There, the
-          claim was that all three reporting surfaces — program report, operator
-          console, executive view — must read from a single dbt-defined semantic
-          layer or they drift, and drift is the failure mode that quietly kills
-          trust.
+          The keystone argument from the companion piece, <I>Three Surfaces, One
+          Keystone</I>, extends one step. There, the claim was that all three
+          reporting surfaces — program report, operator console, executive view
+          — must read from a single dbt-defined semantic layer or they drift,
+          and drift is the failure mode that kills trust.
         </P>
         <P>
           The same argument applies, more strongly, to AI features. Three
@@ -769,15 +749,15 @@ export const ESSAYS: Essay[] = [
           number of dashboards, each owned by an analyst who can be talked to.
           With AI features you have potentially every alert, every summary,
           every chatbot answer, every auto-generated email, each of which can
-          independently drift from the canonical metric. There&rsquo;s no single
+          independently drift from the canonical metric. There is no single
           owner to call.
         </P>
         <P>
           <B>The drift symptom is language, not numbers.</B> When two dashboards
-          show different numbers, somebody notices. When a chatbot says &ldquo;Domain
-          4 is improving at most schools&rdquo; and an alert email says &ldquo;Domain
-          4 has plateaued,&rdquo; nobody catches it for months. The discrepancy
-          is buried in prose, and prose is harder to diff than numbers.
+          show different numbers, somebody notices. When a chatbot says “Domain
+          4 is improving at most schools” and an alert email says “Domain 4 has
+          plateaued,” nobody catches it for months. The discrepancy is buried in
+          prose, and prose is harder to diff than numbers.
         </P>
         <P>
           <B>The drift cost is reputational.</B> A wrong number in a dashboard
@@ -793,18 +773,18 @@ export const ESSAYS: Essay[] = [
           <C>marts.f_school_domain_wave</C> and feeds it to the LLM as the only
           input the model can see. The AI summary card on the dashboard reads
           the same row the dashboard rendered from, and the LLM has no tool
-          access — only the snapshot.
+          access, only the snapshot.
         </P>
         <P>
-          In every case the LLM is producing language <I>about</I> a structured
-          input. It is never the source of truth for any number it mentions. The
+          In every case the LLM is producing language about a structured input.
+          It is never the source of truth for any number it mentions. The
           semantic layer is.
         </P>
         <P>
           This is the discipline that makes the rest of the AI architecture
           safe. Without it, every AI feature is a small bet that nobody on the
           team will let it drift. With it, drift is structurally prevented
-          because there&rsquo;s nothing to drift toward.
+          because there is nothing to drift toward.
         </P>
 
         <H2>In the portal: three AI surfaces</H2>
@@ -816,54 +796,53 @@ export const ESSAYS: Essay[] = [
 
         <H3>Alerts</H3>
         <P>
-          The &ldquo;your report is ready&rdquo; alert is mostly mechanical. The
-          portal already knows which report, which school, which cycle, from a{" "}
-          <C>report.published</C> event emitted by a warehouse task. The AI
-          value is a one-line preview — &ldquo;Spring Cycle 2026, fourteen
-          schools, biggest movers in Domain 4&rdquo; — generated from the
-          structured snapshot. Use a small model. Cache aggressively. The same
-          alert goes to many recipients.
+          The “your report is ready” alert is mostly mechanical. The portal
+          already knows which report, which school, which cycle, from a{" "}
+          <C>report.published</C> event emitted by a warehouse task. The AI value
+          is a one-line preview (“Spring Cycle 2026, fourteen schools, biggest
+          movers in Domain 4”), generated from the structured snapshot. Use a
+          small model. Cache aggressively. The same alert goes to many
+          recipients.
         </P>
         <P>
-          The &ldquo;your next phase is coming&rdquo; alert is calendar-driven,
-          not AI-driven. The schedule is in your data. AI value is
-          personalization: drafting a message that references what the school
-          did in the prior cycle and what to prepare for. Optional but
-          high-leverage for engagement.
+          The “your next phase is coming” alert is calendar-driven, not
+          AI-driven. The schedule is in your data. AI value is personalization:
+          drafting a message that references what the school did in the prior
+          cycle and what to prepare for. Optional but high-leverage for
+          engagement.
         </P>
         <P>
-          The &ldquo;you should look at this&rdquo; alert is where AI does real
-          work. The signal comes from the deterministic anomaly or trajectory
-          layer — warehouse ML functions, or your own materialized{" "}
-          <C>f_trajectory</C> table. The AI generates the <I>interpretation</I>{" "}
-          of that signal: &ldquo;Domain 3 at School X dropped into declining
-          with high confidence. Recommended next action: review trusted-adult
-          training participation.&rdquo; That paragraph is grounded on a single
-          structured row plus a playbook reference, snapshotted in the audit log
-          alongside the alert ID.
+          The “you should look at this” alert is where AI does real work. The
+          signal comes from the deterministic anomaly or trajectory layer:
+          warehouse ML functions, or your own materialized <C>f_trajectory</C>{" "}
+          table. The AI generates the interpretation of that signal: “Domain 3 at
+          School X dropped into declining with high confidence. Recommended next
+          action: review trusted-adult training participation.” That paragraph
+          is grounded on a single structured row plus a playbook reference,
+          snapshotted in the audit log alongside the alert ID.
         </P>
         <P>
           The pattern across all three: detection is deterministic,
-          interpretation is generative. Don&rsquo;t let the LLM decide what to
-          alert on. Let it decide how to phrase the alert, given a structured
-          event payload.
+          interpretation is generative. Don’t let the LLM decide what to alert
+          on. Let it decide how to phrase the alert, given a structured event
+          payload.
         </P>
 
         <H3>AI summaries on dashboards</H3>
         <P>
-          Above each embedded BI view, render a card that calls your
-          portal&rsquo;s narrative service. The service takes the same metric
-          snapshot the dashboard rendered from, runs it through a prompt with
-          the program glossary and benchmarks attached, and returns two or three
-          sentences. The card shows the summary, a &ldquo;regenerate&rdquo;
-          button (rate-limited), and a citation back to the metric snapshot.
+          Above each embedded BI view, render a card that calls your portal’s
+          narrative service. The service takes the same metric snapshot the
+          dashboard rendered from, runs it through a prompt with the program
+          glossary and benchmarks attached, and returns two or three sentences.
+          The card shows the summary, a “regenerate” button (rate-limited), and
+          a citation back to the metric snapshot.
         </P>
         <P>
           The implementation rule that makes this safe: the LLM has access only
           to the structured snapshot. No tool use, no follow-up queries, no SQL
-          generation. That bounds the failure mode — the worst case is a
-          confused summary built from the right row, not a confident number
-          drawn from the wrong data.
+          generation. That bounds the failure mode: at worst a confused summary
+          built from the right row, not a confident number drawn from the wrong
+          data.
         </P>
 
         <H3>Chatbot</H3>
@@ -879,29 +858,29 @@ export const ESSAYS: Essay[] = [
           value.
         </P>
         <P>
-          <I>Metric lookup.</I> The chatbot calls typed tools —{" "}
+          <I>Metric lookup.</I> The chatbot calls typed tools (
           <C>get_school_summary(school_id, wave)</C>,{" "}
           <C>get_domain_trajectory(school_id, domain_id)</C>,{" "}
-          <C>compare_to_norm(school_id, domain_id)</C> — defined as wrappers
-          over the dbt semantic layer. The model receives structured JSON and
-          renders it. No SQL generation in the user path.
+          <C>compare_to_norm(school_id, domain_id)</C>) defined as wrappers over
+          the dbt semantic layer. The model receives structured JSON and renders
+          it. No SQL generation in the user path.
         </P>
         <P>
-          <I>Report status.</I> &ldquo;When is my Spring report ready?&rdquo; —
-          looks up <C>f_report_publication</C>, returns state.
+          <I>Report status.</I> “When is my Spring report ready?” looks up{" "}
+          <C>f_report_publication</C>, returns state.
         </P>
         <P>
-          Anything outside those scopes routes to a human or a &ldquo;I
-          can&rsquo;t answer that, want me to flag it for your program
-          lead?&rdquo; response. The temptation to use full text-to-SQL on the
-          user-facing chatbot is real and should be resisted in v1. It&rsquo;s
-          the right tool for an internal analyst console, the wrong tool for a
-          client portal where the surface area is too large to keep grounded.
+          Anything outside those scopes routes to a human, or to an “I can’t
+          answer that, want me to flag it for your program lead?” response. The
+          temptation to use full text-to-SQL on the user-facing chatbot is real
+          and should be resisted in v1. It is the right tool for an internal
+          analyst console, the wrong tool for a client portal where the surface
+          area is too large to keep grounded.
         </P>
         <P>
           Every chatbot answer that includes a number must show the source row
-          it pulled from, with a &ldquo;view underlying data&rdquo; link.
-          Citations are not optional in this domain.
+          it pulled from, with a “view underlying data” link. Citations are not
+          optional in this domain.
         </P>
 
         <H2>The architecture in one paragraph</H2>
@@ -913,14 +892,14 @@ export const ESSAYS: Essay[] = [
           wraps the dbt semantic layer, the event spine routes warehouse-emitted
           events (<C>report.published</C>, <C>phase.due_soon</C>,{" "}
           <C>trajectory.changed</C>, <C>anomaly.detected</C>) to subscribers. AI
-          features in the portal — chatbot, alert copy, summary cards, phase
-          guidance — call into the metric API for grounding and into a model
+          features in the portal (chatbot, alert copy, summary cards, phase
+          guidance) call into the metric API for grounding and into a model
           gateway for generation, with outputs snapshotted into an audit table.
           The React portal embeds BI dashboards as opaque panels and renders the
-          AI features around them. The BI tool&rsquo;s own AI features are
-          unused or used only by internal analysts. There is one canonical
-          computation per metric, one canonical event per state change, and one
-          canonical audit row per AI-drafted output.
+          AI features around them. The BI tool’s own AI features are unused, or
+          used only by internal analysts. There is one canonical computation per
+          metric, one canonical event per state change, and one canonical audit
+          row per AI-drafted output.
         </P>
 
         <H2>The operational principles</H2>
@@ -935,32 +914,31 @@ export const ESSAYS: Essay[] = [
           the keystone applied one level up.
         </P>
         <P>
-          <B>Pre-compute when possible, generate when needed.</B> Most &ldquo;AI
-          insights&rdquo; are pre-computable rules with LLM-drafted prose on top.
+          <B>Pre-compute when possible, generate when needed.</B> Most “AI
+          insights” are pre-computable rules with LLM-drafted prose on top.
           Trajectory classification is deterministic; the explanation is
           generated. Anomaly detection is deterministic; the alert copy is
-          generated. Resist building &ldquo;live AI&rdquo; anywhere a cached
-          version would do — it&rsquo;s cheaper, faster, and audits more
-          cleanly.
+          generated. Resist building “live AI” anywhere a cached version would
+          do; it is cheaper, faster, and audits more cleanly.
         </P>
         <P>
-          <B>Grounded generation everywhere.</B> Every LLM output that includes
-          a number comes from a structured input row, snapshotted alongside the
+          <B>Grounded generation everywhere.</B> Every LLM output that includes a
+          number comes from a structured input row, snapshotted alongside the
           output. If the metric layer changes, you can re-render the narrative.
           If a stakeholder asks where a sentence came from, you can answer in
           seconds.
         </P>
         <P>
           <B>Schema-constrained output.</B> When the LLM is producing anything
-          structured — alert payloads, classification calls, action
-          recommendations — constrain the output schema. JSON mode, function
+          structured (alert payloads, classification calls, action
+          recommendations), constrain the output schema. JSON mode, function
           calling, or guidance/outlines libraries. Free-text generation is for
           narrative only, never for control flow.
         </P>
         <P>
-          <B>Async by default.</B> Don&rsquo;t put LLMs in the critical path of
-          a page load or a notification dispatch. Generate copy on schedule or
-          on event, store it, render the cached version. Streaming chat is the
+          <B>Async by default.</B> Don’t put LLMs in the critical path of a page
+          load or a notification dispatch. Generate copy on schedule or on
+          event, store it, render the cached version. Streaming chat is the
           exception, and even there have a non-streaming fallback.
         </P>
         <P>
@@ -975,19 +953,18 @@ export const ESSAYS: Essay[] = [
           pattern as the companion piece on reporting surfaces, extended. Every
           AI-drafted alert, summary, narrative, and chatbot answer gets a row
           recording prompt template version, model name and version, input
-          snapshot, output, timestamp, recipient. This is decision
-          observability applied to AI: for any decision the system shaped, you
-          can say what the model saw, what it produced, and which version of
-          which prompt stood behind it. A decision you cannot reconstruct is a
-          decision you cannot defend — and in a regulated or sensitive domain,
-          that is the difference between an answerable question and an
-          unanswerable one.
+          snapshot, output, timestamp, recipient. This is decision observability
+          applied to AI: for any decision the system shaped, you can say what
+          the model saw, what it produced, and which version of which prompt
+          stood behind it. A decision you cannot reconstruct is a decision you
+          cannot defend. In a regulated or sensitive domain, that is the
+          difference between an answerable question and an unanswerable one.
         </P>
         <P>
           <B>Read-only by default.</B> No AI feature writes to the database
-          without a human approval state. Even &ldquo;schedule the next
-          phase&rdquo; or &ldquo;assign this action&rdquo; should land in a
-          draft state for a program lead to confirm.
+          without a human approval state. Even “schedule the next phase” or
+          “assign this action” should land in a draft state for a program lead
+          to confirm.
         </P>
 
         <H2>What to skip in v1</H2>
@@ -996,10 +973,10 @@ export const ESSAYS: Essay[] = [
           return.
         </P>
         <P>
-          <B>Generative dashboards</B> — LLMs producing a new chart for every
-          question. The trust math isn&rsquo;t there yet, and your audience
-          can&rsquo;t tell good charts from bad ones at a glance. Stick with
-          curated dashboards plus AI summaries above them.
+          <B>Generative dashboards:</B> LLMs producing a new chart for every
+          question. The trust math isn’t there yet, and your audience can’t tell
+          good charts from bad ones at a glance. Stick with curated dashboards
+          plus AI summaries above them.
         </P>
         <P>
           <B>Free-text NL-to-SQL in the user-facing chatbot.</B> The right tool
@@ -1010,11 +987,11 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Voice or multi-turn agentic chat.</B> Single-turn, scoped Q&amp;A
           works in a regulated context. Agentic loops are a brand risk before
-          they&rsquo;re a feature.
+          they’re a feature.
         </P>
         <P>
           <B>LLM-generated subject lines as A/B tests.</B> Tempting, low-stakes,
-          but you&rsquo;ll spend more time monitoring quality than you save.
+          but you’ll spend more time monitoring quality than you save.
         </P>
 
         <H2>Closing</H2>
@@ -1029,8 +1006,8 @@ export const ESSAYS: Essay[] = [
             governance, and the latency profile of the surface that consumes it.
           </NumItem>
           <NumItem n={2}>
-            What grounds every output — what&rsquo;s the canonical contract that
-            every AI feature reads metrics through.
+            What grounds every output: what is the canonical contract every AI
+            feature reads metrics through.
           </NumItem>
           <NumItem n={3}>
             Which features earn their place, given that detection is
@@ -1040,27 +1017,26 @@ export const ESSAYS: Essay[] = [
         </NumList>
         <P>
           If those three questions have clean answers, the vendor question is
-          small. Cortex, Claude, GPT, an open-weights model behind a gateway —
-          the choice is small once placement and grounding are decided. If they
-          don&rsquo;t have clean answers, no vendor will save you, because the
-          stack you&rsquo;ll build will drift and the AI features will
-          accelerate the drift.
+          small. Cortex, Claude, GPT, an open-weights model behind a gateway:
+          the choice barely matters once placement and grounding are decided. If
+          they don’t have clean answers, no vendor will save you, because the
+          stack you build will drift and the AI features will accelerate the
+          drift.
         </P>
         <Pull>
           Place compute by layer. Ground language by contract. Snapshot
           everything that generates.
         </Pull>
-        <P>The keystone hasn&rsquo;t changed. The surface has.</P>
+        <P>The keystone hasn’t changed. The surface has.</P>
         <P>
           One reframe to carry out of this. Every AI feature is a small
-          delegation of a decision to a model. The architecture&rsquo;s whole
-          job is to keep those delegations deliberate — placed on purpose,
-          grounded against one source of truth, observable after the fact. Where
-          AI authority sits in a workflow is a design choice; make it, rather
-          than inheriting it from whichever vendor demo shipped last. That is
-          what it takes to carry a data stack <I>from fragmented to
-          decision-ready</I> — with the AI layer held to the same standard as
-          everything beneath it.
+          delegation of a decision to a model. The architecture’s whole job is
+          to keep those delegations deliberate: placed on purpose, grounded
+          against one source of truth, observable after the fact. Where AI
+          authority sits in a workflow is a design choice. Make it, rather than
+          inheriting it from whichever vendor demo shipped last. That is what it
+          takes to carry a data stack <I>from fragmented to decision-ready</I>,
+          with the AI layer held to the same standard as everything beneath it.
         </P>
 
         <MetaNote>
@@ -1094,7 +1070,7 @@ export const ESSAYS: Essay[] = [
           <p>
             This one starts with a small professional embarrassment, so the
             leadership point may as well go first: the dashboards a data team is
-            proud of and the dashboards a busy decision-maker actually uses are
+            proud of and the dashboards a busy decision-maker uses are
             frequently not the same dashboard. The gap between them is quiet. It
             rarely shows up in a status update. And it is where a great deal of
             analytics investment goes to die.
@@ -1102,11 +1078,11 @@ export const ESSAYS: Essay[] = [
           <p>
             What follows is written for the people building dashboards, but the
             method inside it is small enough for a leader to hold a team to. Let
-            an AI tool propose what the audience needs to see <I>before</I> the
-            team&rsquo;s craft instincts lock in — then curate from there. The
-            claim is not that AI designs better. It is that AI doesn&rsquo;t yet
-            carry your team&rsquo;s aesthetic habits, which makes it a useful
-            mirror for a bias every data team has and few can see in themselves.
+            an AI tool propose what the audience needs to see before the team’s
+            craft instincts lock in, then curate from there. The claim is not
+            that AI designs better. It is that AI doesn’t yet carry your team’s
+            aesthetic habits, which makes it a useful mirror for a bias every
+            data team has and few can see in themselves.
           </p>
         </Brief>
 
@@ -1130,16 +1106,14 @@ export const ESSAYS: Essay[] = [
           for action.
         </Pull>
         <P>
-          That gap — between the dashboards data teams build because
-          they&rsquo;re satisfying to make, and the dashboards decision-makers
-          actually use to decide — is the gap that matters in mission-driven
-          analytics. And GenAI tools, used the right way, are surprisingly good
-          at exposing it.
+          That gap is the one that matters in mission-driven analytics: the gap
+          between the dashboards data teams build because they are satisfying to
+          make and the dashboards decision-makers use to decide. And GenAI
+          tools, used the right way, are surprisingly good at exposing it.
         </P>
         <P>
-          This is what came out of the four-phase capstone. The discipline it
-          surfaced — let AI propose first, then curate — changed how I approach
-          dashboard work.
+          This is what came out of the four-phase capstone. The discipline of
+          letting AI propose first changed the work.
         </P>
 
         <H2>The discipline: AI proposes, human curates</H2>
@@ -1155,48 +1129,44 @@ export const ESSAYS: Essay[] = [
           <NumItem n={1}>
             <B>Hand the dataset to a GenAI tool with the question.</B>{" "}
             <I>
-              &ldquo;This is school-level data on attendance, mastery,
-              persistence, behavior. The audience is school leaders deciding
-              which two schools to visit this week. What should they see?&rdquo;
+              “This is school-level data on attendance, mastery, persistence,
+              behavior. The audience is school leaders deciding which two
+              schools to visit this week. What should they see?”
             </I>
           </NumItem>
           <NumItem n={2}>
             <B>
-              Take the AI&rsquo;s first proposal seriously even when it&rsquo;s
-              uglier than what you would have built.
+              Take the AI’s first proposal seriously even when it’s uglier than
+              what you would have built.
             </B>{" "}
-            The AI won&rsquo;t reach for a meter chart unless asked. It will
-            reach for the simplest visualization that answers the question. That
+            The AI won’t reach for a meter chart unless asked. It will reach for
+            the simplest visualization that answers the question. That
             simplicity is usually what the stakeholder needs.
           </NumItem>
           <NumItem n={3}>
-            <B>Curate. Don&rsquo;t rebuild.</B> The AI&rsquo;s proposal is the
-            starting point, not the deliverable. The data team adjusts for tone,
-            brand, governance, edge cases. But the structure — what&rsquo;s
-            prominent, what&rsquo;s secondary, what&rsquo;s omitted — is anchored
-            on the AI&rsquo;s interpretation of <I>what the audience needs to
-            see</I>, not on the data team&rsquo;s interpretation of <I>what&rsquo;s
-            beautiful to build</I>.
+            <B>Curate. Don’t rebuild.</B> The AI’s proposal is the starting
+            point, not the deliverable. The data team adjusts for tone, brand,
+            governance, edge cases. But the structure — what is prominent, what
+            is secondary, what is omitted — is anchored on the AI’s reading of
+            what the audience needs to see, not the data team’s reading of
+            what’s satisfying to build.
           </NumItem>
         </NumList>
         <P>
           This is closer to user-research methodology than to traditional BI
-          design. The AI is acting as a fast proxy for the stakeholder&rsquo;s
-          actual cognitive needs — not because the AI knows the stakeholder, but
-          because the AI doesn&rsquo;t yet have the data team&rsquo;s aesthetic
-          biases.
+          design. The AI is acting as a fast proxy for the stakeholder’s
+          cognitive needs, not because the AI knows the stakeholder, but because
+          the AI doesn’t yet carry the data team’s aesthetic biases.
         </P>
 
         <H2>Where each tool fits in the discipline</H2>
         <P>The tools have different strengths inside this workflow.</P>
         <P>
-          <B>
-            ChatGPT, with its data-analysis tooling, is strong at the first
-            proposal step.
-          </B>{" "}
+          <B>ChatGPT, with its data-analysis tooling, is strong at the first
+          proposal step.</B>{" "}
           Hand it a dataset and a question; it produces summary statistics,
-          suggests metrics, and prototypes a structure. The analyst&rsquo;s job
-          is to interpret the proposal, not to start from scratch.
+          suggests metrics, and prototypes a structure. The analyst’s job is to
+          interpret the proposal, not to start from scratch.
         </P>
         <P>
           <B>Claude is strong at the curation and narrative-overlay step.</B>{" "}
@@ -1209,14 +1179,14 @@ export const ESSAYS: Essay[] = [
             Gemini is useful when the question pairs internal data with external
             context.
           </B>{" "}
-          Recent research, sector benchmarks, regulatory framing — the
-          search-augmented variant handles those questions when they come up.
+          Recent research, sector benchmarks, regulatory framing: the
+          search-augmented variant handles those when they come up.
         </P>
         <P>
-          These specific advantages will shift as capabilities converge —
-          that&rsquo;s already happening. The discipline doesn&rsquo;t shift. The
-          discipline is: let AI propose what the stakeholder needs to see before
-          the data team&rsquo;s preferences lock in. Curate from there.
+          These specific advantages will shift as capabilities converge; that is
+          already happening. The discipline doesn’t shift. The discipline is:
+          let AI propose what the stakeholder needs to see before the data
+          team’s preferences lock in. Curate from there.
         </P>
 
         <H2>What this changes about data-team workflow</H2>
@@ -1227,23 +1197,23 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>The first deliverable gets faster.</B> A first-draft dashboard can
           go from days of design iteration to hours of curation on top of an AI
-          proposal. The team&rsquo;s bandwidth concentrates on judgment calls —
-          what&rsquo;s right for this stakeholder, what governance demands, what
+          proposal. The team’s bandwidth concentrates on the judgment calls —
+          what is right for this stakeholder, what governance demands, what
           brand voice requires — instead of on building from a blank canvas.
         </P>
         <P>
           <B>The aesthetic-vs-decision tension surfaces earlier.</B> When the AI
           proposes the simplest viable chart and the data team wants to add a
-          more sophisticated one, the conversation is now explicit. <I>Is the
-          sophistication serving the decision, or serving the team&rsquo;s
-          desire to build something interesting?</I> That&rsquo;s a productive
-          conversation to have early instead of after the dashboard ships.
+          more sophisticated one, the conversation is now explicit. Is the
+          sophistication serving the decision, or serving the team’s desire to
+          build something interesting? That is a productive conversation to have
+          early instead of after the dashboard ships.
         </P>
         <P>
           <B>Stakeholder interpretation becomes part of the design process.</B>{" "}
-          AI proposals are easy to test against actual users. <I>Does a school
-          principal read this faster than the original?</I> You can find out in
-          a week instead of after launch.
+          AI proposals are easy to test against actual users. Does a school
+          principal read this faster than the original? You can find out in a
+          week instead of after launch.
         </P>
 
         <H2>What the discipline cannot replace</H2>
@@ -1252,59 +1222,56 @@ export const ESSAYS: Essay[] = [
           human judgment.
         </P>
         <P>
-          <B>Brand and tone.</B> The AI doesn&rsquo;t know your
-          organization&rsquo;s conventions, the words your audience trusts, the
-          colors you&rsquo;ve standardized. Curation owns that.
+          <B>Brand and tone.</B> The AI doesn’t know your organization’s
+          conventions, the words your audience trusts, the colors you’ve
+          standardized. Curation owns that.
         </P>
         <P>
           <B>Edge cases and governance.</B> The AI proposes from the dataset it
-          sees. It doesn&rsquo;t know which subgroups need cell suppression,
-          which metrics have known data-quality issues, which interpretations
-          would mislead a board reader. The data team owns that.
+          sees. It doesn’t know which subgroups need cell suppression, which
+          metrics have known data-quality issues, which interpretations would
+          mislead a board reader. The data team owns that.
         </P>
         <P>
           <B>The question itself.</B> The AI is great at proposing how to
-          display an answer once it has the question. It&rsquo;s worse at
-          deciding which question matters most. That&rsquo;s still the
-          analyst&rsquo;s call, and the closest thing to a human-only step in
-          the workflow.
+          display an answer once it has the question. It is worse at deciding
+          which question matters most. That is still the analyst’s call, and the
+          closest thing to a human-only step in the workflow.
         </P>
 
         <H2>The reframe</H2>
         <P>
           The traditional dashboard-design conversation centers on what the data
-          team can build. The discipline I&rsquo;d recommend now centers on what
-          the audience can read in fifteen seconds and act on. That is the
+          team can build. The discipline I’d recommend now centers on what the
+          audience can read in fifteen seconds and act on. That is the
           difference between building for the immediate task — display the data,
-          and display it accurately — and building for the intended outcome the
-          dashboard exists to support: a better decision, made sooner, by the
-          person it was built for. A dashboard can be flawless at the first and
-          useless at the second. AI tools are useful here not because
-          they&rsquo;re better designers, but because they don&rsquo;t share our
-          aesthetic biases. Letting them propose first surfaces the gap between
-          sophistication and usefulness — and most data teams default to the
-          wrong side of that gap.
+          accurately — and building for the intended outcome the dashboard
+          exists to support: a better decision, made sooner, by the person it
+          was built for. A dashboard can be flawless at the first and useless at
+          the second. AI tools help here not because they are better designers,
+          but because they don’t share our aesthetic biases. Letting them
+          propose first surfaces the gap between sophistication and usefulness,
+          and most data teams default to the wrong side of that gap.
         </P>
         <Pull>
-          Beautiful dashboards aren&rsquo;t the same as decision-driving ones.
-          AI tools are a discipline against our own biases. Use them that way.
+          Beautiful dashboards aren’t the same as decision-driving ones. AI
+          tools are a discipline against our own biases. Use them that way.
         </Pull>
         <P>
           And the discipline generalizes well past dashboards. Design every
           surface backward from the decision it is meant to change, not forward
           from the data you happen to hold. Ask it of a report, an alert, a
-          model&rsquo;s output: what decision does this serve, and does it
-          measurably move it? The fifteen-second dashboard a principal can act
-          on is just one surface answering that question honestly. <I>From
-          fragmented to decision-ready</I> is the distance a data team closes
-          when it stops designing for itself and starts designing for the
-          decision.
+          model’s output: what decision does this serve, and does it measurably
+          move it? The fifteen-second dashboard a principal can act on is just
+          one surface answering that question honestly. <I>From fragmented to
+          decision-ready</I> is the distance a data team closes when it stops
+          designing for itself and starts designing for the decision.
         </P>
 
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. Tool capabilities and
           product names cited reflect that period, and capabilities are
-          converging quickly. The discipline — let AI propose what the
+          converging quickly. The discipline it names — let AI propose what the
           stakeholder needs to see, then curate — is intended to outlast
           specific tool advantages.
         </MetaNote>
@@ -1321,7 +1288,7 @@ export const ESSAYS: Essay[] = [
     number: "02",
     title: "LO 2.0 — Stitching the Layers",
     subtitle:
-      "Why national education data, classroom assessments, and local instruments are most useful when used together — and what the integration architecture looks like.",
+      "Why national education data, classroom assessments, and local instruments are most useful when used together, and what the integration architecture looks like.",
     date: "2026-05-22",
     readingTime: "8 min read",
     summary:
@@ -1335,47 +1302,46 @@ export const ESSAYS: Essay[] = [
             sector should recognize the shape of the problem inside the first
             thirty seconds. An organization has spent years collecting data.
             Multiple systems, real coverage, genuine cost. And still nobody can
-            answer the question the data was supposed to answer — here, <I>which
+            answer the question the data was supposed to answer: here, <I>which
             classrooms need which support this term.</I>
           </p>
           <p>
             That is not a data-collection problem. It is an integration
-            problem: the layers exist and don&rsquo;t talk to each other, so no
-            decision-maker can see the whole picture at the granularity their
-            own decision requires. The fix is not another portal. It is an
+            problem: the layers exist and don’t talk to each other, so no
+            decision-maker sees the whole picture at the granularity their own
+            decision requires. The fix is not another portal. It is an
             architecture that stitches the layers you already have into decision
-            surfaces for the people who actually have to act. Different surface,
-            same discipline — the one that applies as readily to a
-            behavioral-health nonprofit or a charter network as it does to a
-            state education ministry.
+            surfaces for the people who have to act. Different surface, same
+            discipline — the one that applies as readily to a behavioral-health
+            nonprofit or a charter network as to a state education ministry.
           </p>
         </Brief>
 
         <P>
-          In healthcare, you don&rsquo;t pick one data source and use it for
+          In healthcare, you don’t pick one data source and use it for
           everything. You stitch CDC mortality data with NSDUH prevalence,
           claims data with electronic health records, patient-reported outcomes
           with hospital encounter feeds. Each layer measures something
           different. Each runs at a different cadence. Each serves a different
-          decision. The work is in the integration — what kind of question goes
+          decision. The work is in the integration: what kind of question goes
           to which layer, and how the layers compose into a coherent picture of
           a population, a patient, a program.
         </P>
         <P>
           Education has the same opportunity. India, specifically, has an
-          unusually rich set of national data systems — UDISE+ for school-level
+          unusually rich set of national data systems: UDISE+ for school-level
           infrastructure and enrollment, NAS for sample-based achievement, PGI
           for composite ranking, SEQI for composite quality. Below that, schools
           have classroom assessments, board exam results, NCERT-aligned learning
           materials, and increasingly digital assessment platforms in some
-          districts. The layers exist. The integration architecture isn&rsquo;t
-          yet built.
+          districts. The layers exist. The integration architecture isn’t yet
+          built.
         </P>
         <P>
-          That integration architecture — what stitches national, district,
-          school, and classroom layers into coherent decision support for
-          teachers, headmasters, district officers, ministries, and policy
-          designers — is what LO 2.0 proposes.
+          That integration architecture is what LO 2.0 proposes: the thing that
+          stitches national, district, school, and classroom layers into
+          coherent decision support for teachers, headmasters, district
+          officers, ministries, and policy designers.
         </P>
         <P>
           This is the analytical landscape, the state-level evidence that
@@ -1415,7 +1381,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           <B>Local classroom assessments.</B> Whatever each school or district
-          has built — weekly tests, board-exam practice, digital adaptive
+          has built: weekly tests, board-exam practice, digital adaptive
           platforms in some districts. Strong on classroom-level cadence and
           granularity. Weak on standardization, comparability across schools,
           and aggregation upward.
@@ -1436,16 +1402,15 @@ export const ESSAYS: Essay[] = [
         <H2>The picture for one state</H2>
         <P>
           Andhra Pradesh, 2021. NAS data shows Class X performance below 50% on
-          every measured learning outcome and below the national average on 16
+          every measured learning outcome, and below the national average on 16
           of them. Eighty percent of students at or below basic level in Math;
           94% at or below basic in Science; 86% at or below basic in Social
-          Science. The pattern compounds with grade — at-or-below-basic in Math
-          goes from 63% in Class III to 80% in Class X. State schools
-          significantly underperform private — 85% at or below basic in Math at
-          state schools versus 73% at private. AP graded Akanshi-1 overall on
-          PGI 2022–23 (third-lowest band); Akanshi-2 specifically on the
-          learning-outcomes domain. Thirty-nine percent of teachers reported
-          overload of work.
+          Science. The pattern compounds with grade: at-or-below-basic in Math
+          goes from 63% in Class III to 80% in Class X. State schools badly
+          underperform private, 85% at or below basic in Math at state schools
+          against 73% at private. AP graded Akanshi-1 overall on PGI 2022–23
+          (third-lowest band), and Akanshi-2 on the learning-outcomes domain.
+          Thirty-nine percent of teachers reported overload of work.
         </P>
 
         <BarFigure
@@ -1459,16 +1424,15 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          These signals come from national data. They&rsquo;re real.
-          They&rsquo;re useful for federal allocation, for state-level
-          priority-setting, for policy design.
+          These signals come from national data. They’re real. They’re useful
+          for federal allocation, for state-level priority-setting, for policy
+          design.
         </P>
         <P>
-          What they don&rsquo;t yet tell anyone is <I>which classrooms in which
-          districts need which kind of support this term.</I> That answer
-          requires the local layer — student-level continuous assessment,
-          teacher-feedback loops, principal observation — running in tandem with
-          the national signal.
+          What they don’t yet tell anyone is which classrooms in which districts
+          need which kind of support this term. That answer requires the local
+          layer — student-level continuous assessment, teacher-feedback loops,
+          principal observation — running in tandem with the national signal.
         </P>
         <P>
           A district officer reading the NAS data alone gets <I>AP is
@@ -1550,8 +1514,7 @@ export const ESSAYS: Essay[] = [
           <B>Funding and resource allocation grounded in granular need.</B>{" "}
           Federal allocation has historically run on UDISE+ infrastructure data
           and PGI rankings. Stitched data lets allocation also reflect
-          classroom-level outcome trajectories — closer to where the need
-          actually is.
+          classroom-level outcome trajectories, closer to where the need is.
         </P>
         <P>
           <B>Policy that can read both signals.</B> A state ministry reading
@@ -1560,15 +1523,15 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           This is the same parallel as healthcare. CDC + NSDUH + claims + EHR +
-          patient-reported outcomes don&rsquo;t replace each other; they enable
+          patient-reported outcomes don’t replace each other; they enable
           different decisions for different actors at different cadences. The
           integration architecture is what makes it possible.
         </P>
 
         <H2>The pilot</H2>
         <P>
-          Ten to twelve weeks (February–April 2025), Class X, Math and Science, a
-          selected low/medium-performing district, state curriculum (with CBSE
+          Ten to twelve weeks (February–April 2025), Class X, Math and Science,
+          a selected low/medium-performing district, state curriculum (with CBSE
           optionally included for Class VIII or IX). Pre- and post-assessment to
           measure efficacy. Weekly assessments to track growth. Real-time
           dashboards informing instruction. Pre-built differentiated lesson
@@ -1585,39 +1548,36 @@ export const ESSAYS: Essay[] = [
 
         <H2>Closing note</H2>
         <P>
-          Education-policy debates often frame &ldquo;national data systems vs.
-          classroom assessments&rdquo; as a binary. They aren&rsquo;t. Each
-          layer does something the other can&rsquo;t. The question isn&rsquo;t
-          which to invest in; it&rsquo;s what integration architecture lets them
-          serve different decision-makers running different decisions at
-          different cadences.
+          Education-policy debates often frame “national data systems vs.
+          classroom assessments” as a binary. They aren’t. Each layer does
+          something the other can’t. The question isn’t which to invest in; it’s
+          what integration architecture lets them serve different
+          decision-makers running different decisions at different cadences.
         </P>
         <P>
-          Healthcare has spent decades building toward this — CDC + NSDUH +
-          claims + EHR + patient-reported outcomes, increasingly integrated
-          through population-health platforms and clinical decision-support
-          systems, though it is far from finished even there. Education
-          hasn&rsquo;t yet built the equivalent. LO 2.0 is one shape that
-          integration architecture could take.
+          Healthcare has spent decades building toward this, integrating CDC +
+          NSDUH + claims + EHR + patient-reported outcomes through
+          population-health platforms and clinical decision-support systems,
+          though it is far from finished even there. Education hasn’t yet built
+          the equivalent. LO 2.0 is one shape that integration architecture
+          could take.
         </P>
         <P>
-          The proposal didn&rsquo;t materialize as a paid engagement. The
-          framework remains current. The state-level findings (NAS 2021, PGI
-          2022–23) would benefit from a refresh against more recent NAS 2024
-          results.
+          The proposal didn’t materialize as a paid engagement. The framework
+          remains current. The state-level findings (NAS 2021, PGI 2022–23)
+          would benefit from a refresh against more recent NAS 2024 results.
         </P>
         <P>
-          The opportunity isn&rsquo;t a new portal. It&rsquo;s stitching the
-          layers we already have into decision surfaces for the people who
-          actually need to act.
+          The opportunity isn’t a new portal. It’s stitching the layers we
+          already have into decision surfaces for the people who need to act.
         </P>
         <P>
           That is decision-systems architecture at state-government scale: start
           from the assets already in place rather than the ones that are
-          missing, route each decision to the layer that can actually answer it,
-          and give every decision-maker — teacher, headmaster, district officer,
-          ministry — a surface built for the call in front of them. The portal
-          was never the point. <I>From fragmented to decision-ready</I> is —
+          missing, route each decision to the layer that can answer it, and give
+          every decision-maker — teacher, headmaster, district officer, ministry
+          — a surface built for the call in front of them. The portal was never
+          the point. The work is to go <I>from fragmented to decision-ready</I>,
           whether the fragments are clinics, schools, or a national education
           system.
         </P>
