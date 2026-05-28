@@ -21,7 +21,7 @@ export default function Footer() {
               <Logo height={48} gradientId="abG-foot" />
               <Wordmark height={11} />
             </div>
-            <div className="text-ink text-sm font-semibold mt-3.5 tracking-[-0.005em]">
+            <div className="text-accent text-sm font-semibold mt-3.5 tracking-[-0.005em]">
               From fragmented to decision-ready.
             </div>
             <div className="font-mono text-ink-3 text-[11px] mt-1.5 tracking-[0.04em] uppercase">
