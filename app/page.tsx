@@ -2,13 +2,14 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import Architecture from "@/components/Architecture";
+import { ESSAYS } from "./library/essays";
 
 // =====================================================================
 // CONTENT — edit copy here. Each constant maps to one section.
 // =====================================================================
 
 const HERO = {
-  eyebrow: "Decision Systems",
+  eyebrow: "Human-serving Systems",
   headline: ["Most data problems", "are decision problems.", "Fix the system."],
   lede: {
     head: "Dashboards show signal.",
@@ -66,6 +67,20 @@ const OFFERS = [
 
 const EMAIL = "hello@analyticbytes.systems";
 
+// Set to true to surface the "Work with AB" offerings section again.
+// Hidden during the Princeton role-search window to keep the site aligned
+// with the transitional-practice framing of the bio. When flipped back to
+// true, also re-add { href: "/#work", label: "Work" } to the nav links in
+// components/Nav.tsx and update the section counters from "/ 05" to "/ 06"
+// (this section's internal counter is already 06/06).
+const SHOW_WORK = false;
+
+// Recent Library entries surfaced on the homepage in section 02. Auto-pulled
+// from the ESSAYS registry, sorted newest-first, top 4.
+const RECENT_LIBRARY = [...ESSAYS]
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 4);
+
 // =====================================================================
 // PAGE
 // =====================================================================
@@ -98,7 +113,7 @@ export default function Home() {
                   href={`mailto:${EMAIL}`}
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                 >
-                  Let&rsquo;s talk <span>→</span>
+                  Contact
                 </a>
                 <a
                   href="#architecture"
@@ -114,8 +129,8 @@ export default function Home() {
         {/* 01 ARCHITECTURE */}
         <Architecture />
 
-        {/* 02 OPERATING ARC */}
-        <section id="arc" className="py-32 sm:py-36">
+        {/* 02 LIBRARY */}
+        <section id="library-preview" className="py-32 sm:py-36">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="flex items-start gap-6 border-t border-line pt-7 mb-12">
@@ -123,16 +138,77 @@ export default function Home() {
                   02<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
+                  <div className="font-mono text-[13px] text-ink-2">Library</div>
+                  <h2 className="section-head-title-right font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] sm:text-right text-ink sm:max-w-[14ch]">
+                    Notes from the<br />
+                    <span className="text-accent">decision system.</span>
+                  </h2>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal>
+              <div className="grid grid-cols-1 mt-12">
+                {RECENT_LIBRARY.map((e, i) => (
+                  <a
+                    key={e.slug}
+                    href={`/library/${e.slug}`}
+                    className={`group grid grid-cols-1 sm:grid-cols-[200px_1fr_auto] gap-2 sm:gap-12 py-9 border-t border-line hover:bg-bg-alt transition-colors no-underline ${
+                      i === RECENT_LIBRARY.length - 1 ? "border-b" : ""
+                    }`}
+                  >
+                    <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase pt-2">
+                      {e.kind === "essay" ? "Essay" : "Field Note"} {e.number}
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-ink text-[18px] sm:text-[20px] lg:text-[22px] font-bold tracking-[-0.015em] leading-[1.3] group-hover:text-accent transition-colors">
+                        {e.title}
+                      </div>
+                      <div className="text-ink-2 text-[14px] sm:text-[15px] mt-2 max-w-[64ch] leading-[1.55]">
+                        {e.subtitle}
+                      </div>
+                    </div>
+                    <div className="text-ink-3 text-2xl group-hover:text-accent group-hover:translate-x-1.5 transition-all hidden sm:block self-center">
+                      →
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </Reveal>
+
+            <Reveal>
+              <div className="mt-10 sm:mt-12 flex justify-end">
+                <a
+                  href="/library"
+                  className="inline-flex items-center gap-2 text-ink hover:text-accent transition-colors text-[14px] sm:text-[15px] font-semibold no-underline border-b border-line-2 hover:border-accent pb-1"
+                >
+                  All essays, artifacts &amp; field notes
+                  <span aria-hidden>→</span>
+                </a>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* 03 OPERATING ARC */}
+        <section id="arc" className="py-32 sm:py-36">
+          <div className="max-w-page mx-auto px-5 sm:px-8">
+            <Reveal>
+              <div className="flex items-start gap-6 border-t border-line pt-7 mb-12">
+                <div className="font-mono text-[12px] text-ink-3 min-w-[80px]">
+                  03<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
+                </div>
+                <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
                   <div className="font-mono text-[13px] text-ink-2">The 90·90·90 operating arc</div>
                   <h2 className="section-head-title-right font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] sm:text-right text-ink sm:max-w-[14ch]">
-                    Fast. On point.<br />
-                    <span className="text-accent">Every ninety days.</span>
+                    Signal, system, scale.<br />
+                    <span className="text-accent">Three ninety-day phases.</span>
                   </h2>
                 </div>
               </div>
 
               <p className="text-ink-2 text-[18px] max-w-[680px] leading-[1.55] mb-14">
-                Custom decision-system architecture, delivered in 90-day arcs —{" "}
+                How a decision-system intervention takes shape over 270 days —{" "}
                 <span className="text-ink font-medium">boardroom to frontline</span>.{" "}
                 Stack-light, context-rich, built to be handed off. Measurement and AI for rigor and speed at every step.
               </p>
@@ -179,13 +255,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 03 THESIS */}
+        {/* 04 THESIS */}
         <section className="py-32 sm:py-36">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="flex items-start gap-6 border-t border-line pt-7 mb-16">
                 <div className="font-mono text-[12px] text-ink-3 min-w-[80px]">
-                  03<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
+                  04<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
                   <div className="font-mono text-[13px] text-ink-2">Thesis</div>
@@ -199,13 +275,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 04 PROOF OF WORK */}
+        {/* 05 PROOF OF WORK */}
         <section id="proof" className="py-32 sm:py-36">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="flex items-start gap-6 border-t border-line pt-7 mb-12">
                 <div className="font-mono text-[12px] text-ink-3 min-w-[80px]">
-                  04<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
+                  05<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
                   <div className="font-mono text-[13px] text-ink-2">Proof of work</div>
@@ -251,13 +327,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 05 WORK WITH AB */}
+        {/* 06 WORK WITH AB — hidden during Princeton window. Flip SHOW_WORK to true to surface. */}
+        {SHOW_WORK && (
         <section id="work" className="py-32 sm:py-36">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="flex items-start gap-6 border-t border-line pt-7 mb-16">
                 <div className="font-mono text-[12px] text-ink-3 min-w-[80px]">
-                  05<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
+                  06<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">06</span>
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
                   <div className="font-mono text-[13px] text-ink-2">Work with AB</div>
@@ -295,6 +372,7 @@ export default function Home() {
             </Reveal>
           </div>
         </section>
+        )}
 
         {/* CTA */}
         <section id="contact" className="pt-44 pb-36">
@@ -302,18 +380,18 @@ export default function Home() {
             <Reveal>
               <div className="font-mono text-[12px] text-ink-3">
                 <span className="text-accent">●</span>
-                &nbsp;&nbsp;Work With AB
+                &nbsp;&nbsp;Get in touch
               </div>
               <h2 className="font-extrabold tracking-[-0.03em] leading-[0.98] mt-6 text-[40px] sm:text-[60px] lg:text-[76px] max-w-[16ch] text-ink">
-                Bring the messy problem.<br />
-                <span className="text-accent">Let&rsquo;s make the system visible.</span>
+                If any of this resonates.<br />
+                <span className="text-accent">Send a note.</span>
               </h2>
               <div className="flex gap-3 mt-12 flex-wrap">
                 <a
                   href={`mailto:${EMAIL}`}
                   className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                 >
-                  Let&rsquo;s talk <span>→</span>
+                  Contact
                 </a>
               </div>
             </Reveal>

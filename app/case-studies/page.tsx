@@ -383,25 +383,25 @@ export default function CaseStudiesPage() {
             <Reveal>
               <div className="border-t border-line pt-12 max-w-[68ch]">
                 <div className="font-mono text-[12px] text-ink-3 mb-4">
-                  <span className="text-accent">●</span>&nbsp;&nbsp;Work With AB
+                  <span className="text-accent">●</span>&nbsp;&nbsp;Get in touch
                 </div>
                 <h2 className="font-extrabold tracking-[-0.03em] leading-[1.0] text-[32px] sm:text-[48px] lg:text-[60px] max-w-[16ch] text-ink mb-8">
-                  Bring the messy problem.
+                  If any of this resonates.
                   <br />
-                  <span className="text-accent">Let&rsquo;s make the system visible.</span>
+                  <span className="text-accent">Send a note.</span>
                 </h2>
                 <div className="flex gap-3 flex-wrap">
                   <a
                     href={`mailto:${EMAIL}`}
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                   >
-                    Let&rsquo;s talk <span>→</span>
+                    Contact
                   </a>
                   <a
-                    href="/#work"
+                    href="/#arc"
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md border border-line-2 text-ink hover:bg-ink/[0.04] transition-colors text-[13.5px] font-medium"
                   >
-                    See engagement options
+                    See the operating arc
                   </a>
                 </div>
               </div>
