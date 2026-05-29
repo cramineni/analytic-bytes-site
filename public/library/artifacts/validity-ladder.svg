@@ -1,0 +1,47 @@
+<svg viewBox="0 0 820 740" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="ttl">The Validity Ladder</title>
+<desc id="desc">Five rungs of evidence for a scoring model, weakest at bottom to strongest at top. Face validity; inter-rater reliability; model-human agreement (where most AI scoring stops); criterion validity (highlighted — predicts writing in the first-year graduate course, the real bar); consequential validity.</desc>
+<rect width="820" height="740" fill="#FFFFFF"/>
+
+<text x="48" y="46" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">THE VALIDITY LADDER</text>
+<text x="48" y="84" font-size="23" fill="#0E2A47" font-weight="700">Agreement with humans is the third rung — <tspan fill="#0EA5E9">not the top.</tspan></text>
+
+<line x1="92" y1="690" x2="92" y2="150" stroke="#0EA5E9" stroke-width="1.5"/>
+<path d="M92,150 l-5,9 l10,0 z" fill="#0EA5E9"/>
+<text transform="translate(72,420) rotate(-90)" font-size="11.5" letter-spacing="1.5" fill="#0EA5E9" font-weight="600" text-anchor="middle">STRENGTH OF EVIDENCE</text>
+
+<rect x="150" y="150" width="600" height="74" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<circle cx="186" cy="187" r="15" fill="#0E2A47"/><text x="186" y="192" font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle">5</text>
+<text x="218" y="182" font-size="18" fill="#0E2A47" font-weight="600">Consequential validity</text>
+<text x="218" y="204" font-size="13" fill="#6B7A8C">Are the decisions made from the score sound and fair?</text>
+
+<rect x="150" y="238" width="600" height="74" rx="8" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2.5"/>
+<circle cx="186" cy="275" r="15" fill="#0EA5E9"/><text x="186" y="280" font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle">4</text>
+<text x="218" y="270" font-size="18" fill="#0E2A47" font-weight="700">Criterion validity</text>
+<text x="218" y="292" font-size="13" fill="#3A4A5A">Predicts writing in the first-year graduate course</text>
+<rect x="628" y="246" width="110" height="20" rx="10" fill="#0EA5E9"/>
+<text x="683" y="260" font-size="10.5" letter-spacing="0.8" fill="#FFFFFF" font-weight="600" text-anchor="middle">THE REAL BAR</text>
+
+<rect x="150" y="326" width="600" height="74" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<circle cx="186" cy="363" r="15" fill="#0E2A47"/><text x="186" y="368" font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle">3</text>
+<text x="218" y="358" font-size="18" fill="#0E2A47" font-weight="600">Model–human agreement</text>
+<text x="218" y="380" font-size="13" fill="#6B7A8C">The AI matches the human scores</text>
+<rect x="596" y="334" width="142" height="20" rx="10" fill="#F1F5F8" stroke="#6B7A8C" stroke-width="1"/>
+<text x="667" y="348" font-size="10.5" letter-spacing="0.4" fill="#6B7A8C" font-weight="600" text-anchor="middle">most AI scoring stops here</text>
+
+<rect x="150" y="414" width="600" height="74" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<circle cx="186" cy="451" r="15" fill="#0E2A47"/><text x="186" y="456" font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle">2</text>
+<text x="218" y="446" font-size="18" fill="#0E2A47" font-weight="600">Inter-rater reliability</text>
+<text x="218" y="468" font-size="13" fill="#6B7A8C">Trained humans agree with each other</text>
+
+<rect x="150" y="502" width="600" height="74" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<circle cx="186" cy="539" r="15" fill="#0E2A47"/><text x="186" y="544" font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle">1</text>
+<text x="218" y="534" font-size="18" fill="#0E2A47" font-weight="600">Face validity</text>
+<text x="218" y="556" font-size="13" fill="#6B7A8C">It looks like a writing test</text>
+
+<text x="48" y="628" font-size="13.5" fill="#0E2A47" font-weight="600">Most AI scoring is validated at rung 3 — agreement with humans.</text>
+<text x="48" y="650" font-size="13.5" fill="#0E2A47" font-weight="600">The measurement question is rung 4: <tspan fill="#0EA5E9">does the score predict what we actually care about?</tspan></text>
+
+<text x="48" y="706" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="200" y="706" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>

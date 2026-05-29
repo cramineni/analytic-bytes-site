@@ -195,6 +195,15 @@ function MetaNote({ children }: { children: ReactNode }) {
   );
 }
 
+/** Compact framed note — sensitivity / crisis-line callouts. */
+function Note({ children }: { children: ReactNode }) {
+  return (
+    <p className="my-9 border-l-2 border-line-2 bg-bg-alt rounded-r-md pl-5 pr-5 py-4 text-ink-2 text-[14px] sm:text-[15px] leading-[1.65]">
+      {children}
+    </p>
+  );
+}
+
 // ---------------------------------------------------------------------
 // PIECE TYPE + REGISTRY
 // ---------------------------------------------------------------------
@@ -1587,6 +1596,1285 @@ export const ESSAYS: Essay[] = [
           reflect NAS 2021 and PGI 2022–23 cycles; subsequent NAS 2024 and PGI
           releases would refine the picture. The integration-architecture
           argument is intended to outlast specific cycle data.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 03 — Where Should Data Sit
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "where-should-data-sit",
+    number: "03",
+    title: "Where Should Data Sit?",
+    subtitle:
+      "Who owns data infrastructure — and the principle that should settle it.",
+    date: "2026-05-25",
+    readingTime: "10 min read",
+    summary:
+      "Who owns data infrastructure is one of the org chart’s most muddled questions. The fix is not a better title; it is a principle — report to the integration seat, never to a single function.",
+    cover: "/library/covers/where-should-data-sit.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            In most organizations, one line on the org chart was never really
+            decided. It was inherited. Who owns data infrastructure? The
+            function ended up reporting wherever the first analyst was hired, or
+            under IT because data felt technical, or under finance because data
+            felt like an asset to safeguard. It was rarely a deliberate choice,
+            and it tends to stay wherever it landed.
+          </p>
+          <p>
+            That accident has consequences. Where data infrastructure reports
+            decides what the function is allowed to become, and it drives a
+            hiring problem that looks unrelated. This piece argues there is a
+            right answer. Not a right title; a right principle. It is written
+            for anyone drawing, or redrawing, an org chart with a data function
+            on it, and it is an argued position: I will make the honest case for
+            each alternative before I make mine.
+          </p>
+        </Brief>
+
+        <P>
+          Start with the confusion. It is real, and it is a clue. Ask ten
+          organizations who owns data infrastructure and you get a tour of the
+          alphabet: the CTO, the CIO, the CFO, the CFAO, the COO, a CDO, a CDAO,
+          a Chief AI Officer, a Chief Innovation Officer, sometimes a Chief
+          Impact Officer, occasionally a CPO. Several of those titles mean
+          different things at different organizations. The acronym soup is not a
+          trivia problem; it is the symptom. The field has not agreed what this
+          function <I>is</I>, so it has not agreed who should own it. Every
+          organization improvises.
+        </P>
+        <P>
+          So set the title question aside. It is the wrong question, and
+          answering it first is how organizations end up improvising. Ask the
+          prior one. What does data infrastructure actually need from its place
+          on the org chart? Answer that, and the seat stops being a matter of
+          taste.
+        </P>
+        <P>
+          I first met this argument in a narrower form: the
+          monitoring-and-evaluation data of mission-driven organizations, the
+          data that tells a funder whether a program worked. That data usually
+          belongs to a technology or digital-products team, and it gets bent
+          toward that team’s priorities rather than the evaluators’. The fix
+          there and the fix here are one argument at two scales. Data should not
+          be owned by a function whose incentives point somewhere else. What
+          follows is that argument at full-organization scale.
+        </P>
+
+        <H2>The four reasonable answers</H2>
+        <P>
+          There are four defensible places to put data infrastructure. Each
+          deserves its honest case before I argue against it.
+        </P>
+        <P>
+          <B>Under the CTO or CIO.</B> The case is strong. Data runs on
+          technical infrastructure: pipelines, warehouses, access controls,
+          uptime. That is engineering, and engineering muscle lives under the
+          CTO. Put data where the people who can build and run the plumbing
+          already sit. The cost shows up later. Under the CTO, data gets read as
+          a system to keep running, and what gets resourced is what the CTO is
+          measured on: reliability, security, uptime. The semantic layer, the
+          part that makes data <I>mean</I> something to a program lead or a
+          board, becomes nobody’s priority. The function slowly turns into a
+          service desk, quick to answer a request and absent from the decision.
+        </P>
+        <P>
+          <B>Under the CFO or CFAO.</B> Also a real case. Data is a governed,
+          risk-bearing asset, and finance already runs enterprise reporting, has
+          audit discipline, and treats numbers as things that must reconcile and
+          withstand scrutiny. Few functions are better at custody. The cost is
+          orientation. Finance looks backward by instinct, and it looks at
+          compliance: the close, the audit, the filing. Under finance, the data
+          function optimizes for the report being correct rather than the
+          decision being better, and forward-looking operational work is always
+          the thing finance will get to later.
+        </P>
+        <P>
+          <B>Its own seat, a CDO or CDAO.</B> This is the strongest alternative,
+          and it should be conceded as one. Data is strategic enough to warrant
+          a peer-level seat: uncaptured, visible, carrying a standing none of the
+          embedded options confer. The role exists to solve the placement
+          problem. The cost is the gap between a seat and traction. A CDO with a
+          title but no integration mandate produces strategy (frameworks,
+          roadmaps, decks) and not adopted systems, because nothing structurally
+          obliges the other functions to change how they work. The seat becomes
+          an island. And for most mid-size and mission-driven organizations the
+          seat is unaffordable; prescribing it prescribes nothing they can act
+          on.
+        </P>
+        <P>
+          <B>Under the CPO, in service of the product.</B> Where data{" "}
+          <I>is</I> the product, or feeds it directly, this is correct and
+          barely needs defending. Where data is not the product, it is the
+          narrowest capture of all: the function answers the product’s questions
+          well and the rest of the organization’s not at all.
+        </P>
+        <P>
+          All four placements share one flaw. Each puts data infrastructure
+          inside a single function, and a single function bends data toward its
+          own incentive. The executives aren’t at fault; it is what reporting
+          lines do. A cross-functional capability owned by one function gets
+          narrowed by it.
+        </P>
+
+        <H2>What the function actually needs</H2>
+        <P>
+          So name what data infrastructure needs from its place on the chart.
+          Four things.
+        </P>
+        <NumList>
+          <NumItem n={1}>
+            It needs to <B>see across every function</B>, because it serves all
+            of them: programs, finance, operations, development, the executive
+            team.
+          </NumItem>
+          <NumItem n={2}>
+            It needs to stay <B>uncaptured</B>. The moment it bends toward one
+            function’s incentive, the other functions stop trusting it as
+            theirs.
+          </NumItem>
+          <NumItem n={3}>
+            It needs <B>traction</B>. Sight is not enough; it needs the standing
+            to make functions adopt shared definitions and use what it produces.
+            Sight without traction is a research office nobody acts on.
+          </NumItem>
+          <NumItem n={4}>
+            It needs to report at the <B>altitude where its decisions live</B>.
+            Data infrastructure’s daily work is the recurring operating
+            decisions that run across functions, not the strategic decisions
+            that sit with the CEO and the board.
+          </NumItem>
+        </NumList>
+        <P>
+          No single-function seat provides all four. A function seat fails the
+          second test the day it is created.
+        </P>
+
+        <H2>The seat that is left</H2>
+        <P>
+          Strip away the four embedded options and one seat is left: the one
+          already accountable for how the whole organization runs together. Call
+          it the integration seat. In most organizations, it is the Chief
+          Operating Officer.
+        </P>
+        <P>
+          The COO is not a single function. The COO is the place the functions
+          already meet, which clears the capture test, and the COO sees across
+          all of operations, which clears the sight test. The third test is the
+          one a standalone CDO cannot pass: the COO has the standing to make a
+          shared definition stick. When the COO says every team will use one
+          definition of an active client, teams use it. When a peer says it,
+          they negotiate. Traction is a property of the seat, not the person.
+          And the altitude matches: the COO’s job is how the organization
+          operates day to day, which is where data infrastructure’s decisions
+          live.
+        </P>
+        <P>
+          Why not put data under the CEO, then? More authority still. The answer
+          is that authority is not the binding constraint. Altitude is. The
+          CEO’s seat is strategy, the board, fundraising, the outside world. A
+          data function reporting to the CEO tends to collect the title and not
+          the operating attention; the CEO will not run the weekly cadence that
+          turns a data function into an adopted one. It ends up high-status and
+          under-used, an orphan with a good address.
+        </P>
+        <P>
+          There is one real exception, and it matters, because it describes most
+          of the organizations I work with. Many organizations have no COO. In
+          smaller and mission-driven organizations, the executive director or
+          CEO <I>is</I> the operating integrator. There is no second seat.
+          There, data infrastructure should sit with the CEO or ED, not because
+          that office is senior enough, but because in that organization it is
+          the integration seat. As the organization grows and adds a COO,
+          ownership should migrate to it.
+        </P>
+        <P>
+          That is the principle, and it is worth stating without a single
+          acronym in it:
+        </P>
+        <Pull>
+          Data infrastructure should report to the integration seat, never to a
+          single-function seat.
+        </Pull>
+        <P>
+          That seat is the COO by default, the CEO or executive director where
+          there is no COO, and ownership should move between them as the
+          organization formalizes. The title changes from org to org, and over
+          time. The principle does not. That is the real resolution of the
+          acronym soup. The field keeps trying to settle a <I>function</I>{" "}
+          question with a <I>naming</I> answer, and it never works, because the
+          answer was never a name.
+        </P>
+        <P>
+          The principle is not anti-CTO. The CTO owns the pipes: the engineering
+          of the platform, the security, the uptime, and owns them well. Data
+          infrastructure, placed at the integration seat, owns the semantic
+          layer and the decision-serving built on top of those pipes. Two
+          functions, one clean handoff. Placing data at the integration seat
+          does not take it away from engineering. It ends the pretense that the
+          semantic-and-decision layer is an engineering by-product.
+        </P>
+        <P>
+          I have watched this from inside more org charts than most people get
+          to. The same data capability, sometimes the same people, sat under a
+          research division at one organization, under the business at another,
+          under a COO at a third. At one, it was moved mid-year from one
+          executive to another and renamed on the way. The capability did not
+          change across those moves. Its reach did. Under the integrator it
+          served the whole organization. Everywhere else it served whoever it
+          reported to, and the rest of the organization learned to route around
+          it.
+        </P>
+
+        <H2>The unicorn that isn’t</H2>
+        <P>
+          There is a hiring problem that looks unrelated to all of this. It
+          isn’t.
+        </P>
+        <P>
+          Mission-driven organizations keep writing job descriptions for data
+          leaders that read as impossible. One person who can architect the
+          infrastructure, and carry real measurement depth, and run the
+          analytics, and hold their own with the C-suite. Search committees
+          circulate these, then sigh that the candidate is a unicorn and the
+          role cannot be filled.
+        </P>
+        <P>
+          Most of the time, the unicorn is not a talent problem. It is a
+          placement problem wearing a talent problem’s clothes. When data
+          infrastructure is buried under IT, or scattered across programs, or
+          housed in finance, the person hired to lead it has to personally span
+          every layer the org chart failed to connect. They are the only
+          integration the organization built. The role looks heroic because it
+          is doing, in one body, the structural work a correct reporting line
+          would have done for free.
+        </P>
+        <P>
+          Place ownership at the integration seat and the heroics subside.
+          Full-stack capability stops being a unicorn requirement. It becomes a
+          senior role <I>supported</I> by its position instead of compensating
+          for the lack of one. The role was never impossible. It was mis-housed,
+          and the job description was billing one person for the org chart’s
+          unpaid debt.
+        </P>
+
+        <H2>Where this is going</H2>
+        <P>
+          The field is slowly moving toward all of this. Data spent two decades
+          under IT, a cost center with the lights kept on. The Chief Data
+          Officer emerged to pull it up and out, and the title has since
+          absorbed analytics and then AI, cycling through CDO, CDAO, Chief AI
+          Officer. The direction of travel is real: data climbing from the
+          basement toward the place decisions get made.
+        </P>
+        <P>
+          But the climb has mostly reached large enterprises. Mid-size and
+          mission-driven organizations are still placing data by accident. And
+          the churn of titles is the field, again, trying to solve a function
+          problem with a naming solution.
+        </P>
+        <P>
+          Agentic AI is about to make the question impossible to keep
+          improvising. Agents do not just inform decisions; they make them, and
+          every agent needs a manager and an owner. An organization that never
+          decided where its <I>data</I> infrastructure sits is now going to be
+          asked where its <I>agents</I> sit, and who is accountable when one
+          acts. The placement question does not get easier. It gets unavoidable.
+        </P>
+        <P>
+          The answer, when an organization finally faces it, will not be a
+          title. It will be a decision about what the function is <I>for</I>:
+          serving decisions across the whole organization. Once that is named,
+          the seat is named with it — the one place already accountable for the
+          whole organization running together. Put data there and it stops being
+          a service desk, a compliance engine, or an island. It becomes the
+          thing it was always meant to be. <I>From fragmented to
+          decision-ready</I>, and that begins, before a single dashboard is
+          built, with where the function sits.
+        </P>
+
+        <MetaNote>
+          Written May 2026 for the Analytic Bytes Library. An argued position
+          piece; the honest case for each alternative is made in earnest before
+          the argument lands.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 03 — Burden, Disparity, and the Next Dollar
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "burden-disparity-and-the-next-dollar",
+    number: "03",
+    title: "Burden, Disparity, and the Next Dollar",
+    subtitle:
+      "A reliability-filtered read of CDC suicide-mortality data — and why the single headline rate sends prevention money to the wrong map.",
+    date: "2026-05-29",
+    readingTime: "9 min read",
+    summary:
+      "Burden and disparity are two different signals in the same CDC mortality data. The priority list you build from one is not the list you build from the other — and a framework that shows both changes where the next prevention dollar goes.",
+    cover: "/library/covers/burden-disparity-and-the-next-dollar.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            A funder with a fixed prevention budget, or a state health officer
+            with one, faces the same question every cycle: where does the next
+            dollar go? The instinct is to follow the headline and fund the
+            states with the highest suicide rate. That instinct isn’t wrong. It
+            is just one signal, and on its own it sends money to the wrong map.
+          </p>
+          <p>
+            This is a field note, not a study. It is an exploratory,
+            reliability-filtered read of seven years of CDC WONDER mortality
+            data, and its only real claim is structural: burden and disparity
+            are two different signals, the priority list you would build from
+            one is not the list you would build from the other, and a
+            prioritization framework that shows both, and stays honest about
+            what it can’t see, changes the allocation decision. Written for the
+            person who has to defend that decision after it’s made.
+          </p>
+        </Brief>
+
+        <H2>The headline that hides the signal</H2>
+        <P>
+          Start with the good news, because it is real. Across the younger age
+          bands, suicide rates fell between 2021 and 2024, and not slightly.
+          Ages 10–14 down about 16 percent. Ages 15–19 down 13 percent. Ages
+          20–24 down 13 percent. Ages 25–34 down 12 percent. Four bands, every
+          one of them moving the right direction.
+        </P>
+        <P>
+          Now split the same dataset differently. The mid-life bands moved the
+          other way over the same three years: ages 35–44 up roughly 3 percent,
+          and 45–54 up about 3.5 percent. The decline among the young and the
+          rise after 35 are happening at the same time, in the same country, in
+          the same data.
+        </P>
+        <P>
+          A single national rate blends those opposite movements into one
+          number, and because the youngest bands are falling fast, that number
+          still reads as progress. The blend hides the reversal underneath it:
+          for every age band past 35, the trend has already turned. An average
+          cannot tell a funder that, and a funder who reads only the average
+          will not know to look. The lesson isn’t really about age. It is that
+          any rolled-up number is a decision hazard. It blends signals moving in
+          opposite directions, and the blend erases the contrast a resource
+          decision depends on. You have to disaggregate before you can allocate.
+          Age is one cut. The one this note is about is harder.
+        </P>
+
+        <H2>Two signals, not one</H2>
+        <P>
+          When prevention dollars get prioritized by geography, the working
+          number is almost always <I>burden</I>: the state’s overall suicide
+          rate, deaths relative to population. It is the obvious signal, and a
+          sound one. It answers a real question: how large is the problem here.
+        </P>
+        <P>
+          It is not the only question. The second signal is <I>disparity</I>:
+          within a state, how much higher the rate runs for the most-affected
+          racial group than for the White population. Expressed as relative
+          risk, a value of 2.0 means that group’s rate is twice as high.
+          Disparity doesn’t measure how big the problem is. It measures how
+          unevenly it falls.
+        </P>
+        <P>
+          Burden and disparity are different instruments, and they answer to
+          different commitments. A funder optimizing to prevent the most deaths
+          leans on burden. A funder optimizing to close the widest gap leans on
+          disparity. Most prioritization exercises pick one, usually burden,
+          because it is the number that sorts cleanly into a ranked list, and
+          never see the other at all.
+        </P>
+
+        <H2>The map burden draws, and the map disparity draws</H2>
+        <P>
+          Rank states by burden for 2024, ages 10–54, and the top of the list is
+          Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4),
+          New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado,
+          Oklahoma, Maine, Idaho, Arkansas. It is, broadly, a Mountain-West and
+          rural map.
+        </P>
+        <P>
+          Now rank by disparity instead. The strongest reliable relative-risk
+          signals are Minnesota (3.6×, the rate for American Indian and Alaska
+          Native residents against the White rate), South Dakota (3.1×), Alaska
+          (2.9×), Montana (1.9×), Hawaii (1.8×, here for residents identified as
+          more than one race), Arizona (1.6×), and California (1.5×).
+        </P>
+        <P>
+          The two lists overlap in some places and split hard in others.
+          Minnesota and California both carry serious disparity signals while
+          sitting at or below the middle of the burden table; a burden-only
+          funder never sees them. Wyoming and New Mexico sit near the top of the
+          burden table with no reliable disparity signal at the state level; a
+          disparity-only funder never sees <I>them</I>. Same data, same year.
+          Two different priority lists, depending only on which signal you let
+          do the sorting.
+        </P>
+
+        <H2>One map, four groups</H2>
+        <P>
+          Put both signals on the same axes — burden along the horizontal,
+          disparity along the vertical — and the states sort into four groups.
+        </P>
+        <P>
+          <B>High burden and credible disparity</B> — the upper-right. Alaska,
+          South Dakota, Montana, Arizona, Hawaii. Both signals fire: a high
+          overall rate and a measurable, reliable equity gap inside the state.
+          This is the strongest and most defensible case for the next dollar,
+          because it answers to both commitments at once.
+        </P>
+        <P>
+          <B>High burden only</B> — the lower-right. Wyoming, New Mexico,
+          Colorado, North Dakota, Oklahoma, and more. A real, large problem,
+          with no reliable evidence of a racial disparity at the state level.
+          Investment here is well-justified on volume of harm alone.
+        </P>
+        <P>
+          <B>Credible disparity, lower burden</B> — the upper-left. Minnesota
+          and California. The statewide rate is not alarming, but a specific
+          population inside the state is carrying a markedly higher rate than its
+          White neighbors: about one and a half times higher in California, more
+          than three times higher in Minnesota. Investment here is justified on
+          equity, and it is the case a burden ranking renders invisible.
+        </P>
+        <P>
+          <B>Monitor</B> — the lower-left. Neither signal fires reliably. Not
+          “safe,” and not dismissed, just not where this dataset points a
+          limited budget first.
+        </P>
+        <P>
+          One pattern runs through nearly every disparity signal on the map. In
+          six of the seven states with a reliable signal, the most-affected
+          group is American Indian and Alaska Native communities; in Hawaii, it
+          is residents of more than one race. That is the clearest pattern in
+          the disparity signals. It should shape not only where the dollar goes
+          but who helps design what it funds; a prevention dollar spent{" "}
+          <I>on</I> a community tends to underperform a dollar spent <I>with</I>{" "}
+          one.
+        </P>
+
+        <H2>Where the next dollar goes</H2>
+        <P>
+          The framework doesn’t hand a funder an answer. It does something more
+          useful. It makes the question explicit. A dollar can be spent to
+          prevent the most deaths or to close the widest gap, and those are
+          different ethical commitments that lead to different states. A serious
+          allocation decision says which one it is optimizing, or splits the
+          budget across both on purpose, instead of letting the choice get made
+          implicitly by whichever number happened to be on the slide.
+        </P>
+        <P>
+          The overlap group is where the argument is easiest. Alaska, South
+          Dakota, Montana, Arizona, and Hawaii satisfy both commitments
+          simultaneously, and for most funders that is where a first tranche
+          belongs. The harder and more revealing conversations are the
+          off-diagonal ones. Is a Minnesota (an unremarkable statewide rate
+          hiding a more-than-threefold disparity) a priority for your mission? A
+          burden ranking already answered “no” on your behalf, silently, before
+          anyone in the room got to weigh in. The quadrant’s value is that it
+          puts the state back on the table and forces the answer to be given on
+          purpose.
+        </P>
+
+        <H2>The honest version</H2>
+        <P>
+          This is a field note, and being precise about what the data cannot do
+          is part of the method, not a disclaimer bolted to the end.
+        </P>
+        <P>
+          The figures are <I>provisional</I>. CDC WONDER mortality counts for
+          2018–2024 are revised over time; the picture will shift.
+        </P>
+        <P>
+          The disparity signals are <I>reliability-filtered</I>. A signal
+          counted here only if there were at least 20 deaths in both the
+          comparison group and the White comparison group, a relative risk of at
+          least 1.25, and a positive absolute rate difference. Below those
+          thresholds, small counts produce rates that swing wildly from year to
+          year, and an unfiltered ranking would be mostly noise wearing the
+          costume of precision.
+        </P>
+        <P>
+          <I>Absence of a signal is not evidence of equity.</I> Several states,
+          Montana and South Dakota among them, carry a suppression-caution flag:
+          the comparison is real but thin, built on few enough visible groups
+          that it should be read carefully. And “no reliable disparity signal”
+          almost never means a state has no disparity. It usually means the
+          affected groups are too small, in that state, for this dataset to
+          surface one safely.
+        </P>
+        <P>
+          Most important: this is an <I>exploratory prioritization signal</I>,
+          not an allocation formula. It is a map of where to look harder and ask
+          sharper questions, not a number that should move money on its own. A
+          measure that triggers investigation and a measure that drives
+          allocation are not the same instrument, and treating the first as if
+          it were the second is one of the most common ways well-meant analysis
+          does harm.
+        </P>
+
+        <H2>What this is really about</H2>
+        <P>
+          Strip the subject matter away and this is a decision-systems problem.
+          An organization has a real decision to make (where prevention
+          resources go) and the data it holds is being read through a single
+          number that cannot carry the decision. The fix is not more data. It is
+          a framework that disaggregates the signals the decision genuinely
+          rests on, shows them together, and stays disciplined about its own
+          limits.
+        </P>
+        <P>
+          That move is the same whether the decision is a state’s prevention
+          budget, a school district’s intervention dollars, or a clinical
+          network’s capacity plan: name the decision, find the distinct signals
+          it truly depends on, and refuse to let one rolled-up average stand in
+          for all of them.
+        </P>
+        <P>
+          The next dollar gets spent either way. A framework like this one
+          doesn’t spend it for you, and it shouldn’t. What it does is make sure
+          that when you spend it, you were looking at the whole map: both
+          signals, and the honest edges of what the data can and cannot say.{" "}
+          <I>From fragmented to decision-ready.</I>
+        </P>
+
+        <Note>
+          This piece discusses suicide. If you or someone you know is
+          struggling, the 988 Suicide &amp; Crisis Lifeline (call or text 988)
+          is available 24/7 in the US.
+        </Note>
+
+        <MetaNote>
+          Exploratory analysis of CDC WONDER provisional mortality data,
+          2018–2024 (ages 10–54). Written May 2026 for the Analytic Bytes
+          Library. This is a signal framework for strategic prioritization, not
+          a causal analysis, an epidemiological ranking, or a definitive
+          allocation system. Reliability filters are described in the text.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 04 — Actions, Not Answers
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "actions-not-answers",
+    number: "04",
+    title: "Actions, Not Answers",
+    subtitle:
+      "Agentic AI is not a smarter tool — it is a decision-system redesign, and the checkpoint that used to come free now has to be built.",
+    date: "2026-06-02",
+    readingTime: "9 min read",
+    summary:
+      "Agentic AI produces actions, not answers — and the human checkpoint that came free with every answer is gone unless you design it back in. Why agentic adoption is a decision-system question, not a technology one.",
+    cover: "/library/covers/actions-not-answers.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Agentic AI is being sold to leaders right now as a capability
+            upgrade: the same AI you already use, except now it can act on its
+            own. Approve it the way you would approve any tool upgrade (a budget
+            line, a pilot, a vendor) and you will have missed the one thing that
+            changed.
+          </p>
+          <p>
+            What changed is not the model. It is the unit of work. AI used to
+            produce answers, and an answer has a human reading it before
+            anything happens. Agentic AI produces actions, and an action does
+            not wait to be read. The human checkpoint that came free with every
+            answer is gone, unless you design it back in. That makes agentic
+            adoption a decision-system question, not a technology one. What
+            follows is written for the leader who has to decide, concretely,
+            what their organization will let an agent do.
+          </p>
+        </Brief>
+
+        <P>
+          Start with what an “agent” is, because the demo obscures it. An agent
+          is not a new kind of model. It is the same kind of model with two
+          things added: tools it can call, and a change in how its output is
+          read. The same text a chatbot would hand back as a reply, an agent
+          treats as a program — an instruction to go do something. Read as a
+          reply, the output is an answer. Read as a program, it is an action.
+          That interpretive shift, plus the tools, is the whole of it.
+        </P>
+        <P>
+          It sounds small. It is not. It is the difference between a tool you
+          use and a system you manage, and most of what a leader needs to weigh
+          follows from that one line.
+        </P>
+        <P>
+          A working definition, the kind you would say at the start of a
+          meeting: agentic AI is a software system that takes a goal, plans its
+          own next moves across your tools and data, and produces actions rather
+          than answers. Hold onto “actions rather than answers.” Everything else
+          is downstream of it.
+        </P>
+
+        <H2>The checkpoint that used to be free</H2>
+        <P>
+          When an AI system produces an answer, a decision still has to happen.
+          Someone reads the answer, judges it, and acts on it, or doesn’t. That
+          human decision point is not something anyone designed in. It comes
+          free, built into the format. An answer is inert until a person picks
+          it up, and the picking-up is the checkpoint.
+        </P>
+        <P>
+          When an AI system produces actions, that checkpoint is gone by
+          default. The agent books the appointment, sends the message, moves the
+          money. The decision still gets made; each of those is a decision. But
+          now the system makes it, at its own speed, unless a human was
+          deliberately designed into the path.
+        </P>
+        <P>
+          The move underneath is a relocation. Agentic AI does not add a
+          decision to your organization; it relocates one. It takes a decision
+          that used to belong, by default, to a human who got it for free, and
+          hands it, by default, to a model. Every “let the agent handle that” is
+          a decision about who holds decision authority, made whether or not
+          anyone in the room noticed they were making it.
+        </P>
+        <P>
+          That is why this is a decision-system redesign and not a tooling
+          upgrade. A tooling upgrade changes how a step gets performed. This
+          changes who performs the deciding.
+        </P>
+
+        <H2>Most data problems are still decision problems</H2>
+        <P>
+          There is a claim at the center of how Analytic Bytes reads every one
+          of these situations: most organizations do not have a data problem.
+          They have a decision-system problem. The decisions are unnamed,
+          unowned, made by default, or resting on signals nobody checks.
+        </P>
+        <P>
+          Agentic AI does not change that claim. It sharpens it to a point. An
+          organization that never named which decisions its workflows make, who
+          carries them, and what evidence they stand on has a decision-system
+          problem whether or not AI is anywhere near it. Hand that organization
+          a set of agents and it does not get those questions answered. It gets
+          them executed: unanswered, at machine speed, by a system that will not
+          pause to ask. The confusion was survivable when a human sat in every
+          loop, slow enough to catch it. Agents remove the human and keep the
+          speed.
+        </P>
+        <Pull>
+          The unexamined decision system does not get fixed. It gets automated.
+        </Pull>
+        <P>
+          So the readiness question for agentic AI is not “is the technology
+          good enough.” The technology is mostly good enough. The question is
+          whether the decision system underneath is clear enough to be worth
+          speeding up.
+        </P>
+
+        <H2>Putting the checkpoint back, on purpose</H2>
+        <P>
+          If the free checkpoint is gone, the work is to build a deliberate one.
+          Two disciplines do most of that work.
+        </P>
+        <P>
+          The first is a threshold map. For any workflow you are considering
+          handing to an agent, draw the line three ways. Where may the agent act
+          entirely on its own? Where must it stop and escalate to a human? And
+          where must a human originate the decision, with the agent not acting
+          at all, only assisting? Most teams never draw this map. They let the
+          vendor’s default draw it, which means the line ends up wherever the
+          demo happened to put it.
+        </P>
+        <P>
+          The second is the recognition that autonomy is not a switch. It is a
+          dial. An agent is not “autonomous” or “not.” For each task, in each
+          context, it sits somewhere on a range: from only returning
+          pre-verified responses, to acting within tight rules, to acting with
+          every consequential move reviewed first, to acting freely and checked
+          only by exception. The discipline is to set that dial per decision, by
+          stakes, not once and globally by habit. A low-stakes, highly
+          repeatable decision can sit far along the dial. A decision that is
+          rare, hard to reverse, or lands on a vulnerable person should not,
+          however capable the model looks in a demo.
+        </P>
+        <P>
+          Readers of earlier pieces will recognize the shape: it is the same
+          risk-and-repeatability logic that decides where AI authority sits in
+          any deployment. Agentic AI does not introduce that question. It raises
+          the stakes on getting the answer written down.
+        </P>
+
+        <H2>The job becomes management, not use</H2>
+        <P>
+          This is the consequence leaders most often miss. When AI produced
+          answers, the human’s relationship to it was use, the way you use a
+          calculator or a search box. When AI produces actions, that
+          relationship has to become management. Every agent needs a manager: a
+          specific, named person accountable for what it does.
+        </P>
+        <P>
+          And managing an agent is not a lighter version of using a tool. It is
+          a new job, with responsibilities no prior role quite contained. The
+          manager calibrates the thresholds as the agent’s behavior drifts — and
+          it will drift, because the model underneath gets upgraded by a vendor
+          on a schedule nobody consulted you about. The manager decides which
+          patterns the agent carries forward and which it lets go. And the
+          manager does the hardest thing of all: refusal. Deciding, in real
+          time, that a particular case is one the agent should not touch, and
+          being able to defend that call.
+        </P>
+        <P>
+          An organization that deploys agents without naming who manages each
+          one has done something precise and dangerous. It has installed a
+          decision-maker and left the accountability seat empty.
+        </P>
+
+        <H2>You cannot bolt safety onto the model</H2>
+        <P>
+          Two design truths close the loop, and both cut against instinct.
+        </P>
+        <P>
+          The first: do not rely on the model to keep itself safe. The
+          temptation is to make the model careful, with better instructions and
+          sterner prompts. But a system whose safety depends on the model
+          choosing well, every single time, has no safety at all. Safety has to
+          be built into the structure around the model: hard limits it cannot
+          cross because they are enforced in code rather than requested in a
+          prompt; actions designed to be reversible; an independent second check
+          that does not share the first model’s blind spots; a human escalation
+          path more than one person deep. Defense in depth, because any single
+          layer will eventually fail, and the design has to assume it.
+        </P>
+        <P>
+          The second is the comparison that matters, the one boards most often
+          get wrong. The question to ask of an agent is not “does it make
+          mistakes?” Of course it does. So does the human process it would
+          replace. The honest question is whether this agent, with its
+          safeguards, produces better decisions than the process it replaces, on
+          the dimensions that matter. That reframe keeps the conversation off a
+          fantasy, agent versus perfection, and on the real choice:
+          agent-with-safeguards against a status quo that had its own error rate
+          all along, usually unmeasured.
+        </P>
+        <P>
+          And evaluation does not end at launch. Because the model drifts, an
+          agent has to be watched continuously: its override rate, its
+          disagreement signals, its slow slide as the ground shifts. Its
+          monitoring surface is not a quarterly report. It is a conversation you
+          are now having, continuously, with a system still out there making
+          decisions in your name.
+        </P>
+
+        <H2>What this asks of a leader</H2>
+        <P>
+          Strip it all back and the leader’s question was never “should we adopt
+          agentic AI.” It is narrower and harder, and it is a list: for which
+          decisions, at what point on the autonomy dial, with what checkpoint,
+          managed by whom, watched how. Not one of those is a technology
+          question. Every one is a decision-system question, and they were the
+          right questions to ask long before agents existed. Agentic AI’s real
+          effect is that it removed the option of leaving them unasked.
+        </P>
+        <P>
+          An organization that has done the decision-system work (named its
+          decisions, assigned their owners, grounded them in signals it trusts)
+          can hand a workflow to an agent and gain real speed without losing the
+          thread. An organization that has not will hand an agent its confusion,
+          and get it back faster, with no human in the loop slow enough to
+          notice.
+        </P>
+        <P>
+          The discipline is not in any single safeguard. It is in the
+          architecture, the cadence, and the refusal to relax the bound at the
+          precise moment relaxing it would be convenient. <I>From fragmented to
+          decision-ready</I> was always the work. Agentic AI did not change
+          that. It only raised the price of skipping it.
+        </P>
+
+        <MetaNote>
+          Written May 2026 for the Analytic Bytes Library, drawing on frameworks
+          explored through MIT Sloan’s Agentic AI Development program. The
+          argument is intended to outlast specific products and platforms.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 04 — The Take-Home Test
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "the-take-home-test",
+    number: "04",
+    title: "The Take-Home Test",
+    subtitle:
+      "More than a dozen interview take-home tasks, done cold for a dozen organizations, read as one long experiment in how teams relate to their own decisions.",
+    date: "2026-06-06",
+    readingTime: "8 min read",
+    summary:
+      "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
+    cover: "/library/covers/the-take-home-test.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            The interview take-home is a strange little genre. A stranger hands
+            you their messiest data situation, gives you somewhere between two
+            hours and five days, and asks you to diagnose it and design
+            something. Cold — no colleagues, no institutional memory, a clock
+            running. Most people do one or two over a career and never think
+            about them again.
+          </p>
+          <p>
+            Over the past decade I did more than a dozen, for organizations
+            across K-12 charter networks, national education nonprofits, youth
+            mental health, and assessment. Read one at a time, they were job
+            interviews. Read as a set, they are something more useful: the same
+            diagnostic, run on a dozen organizations, by the same person, under
+            the same constraints. A natural experiment, and it has a result. A
+            small number of failures showed up in almost every one. This piece
+            is what the set revealed. It is written for any leader who has
+            opened a data role, approved a dashboard, and wondered why the
+            decisions never got sharper.
+          </p>
+        </Brief>
+
+        <P>
+          A take-home is a compressed, unusually honest instrument. The clock is
+          short, so the organization cannot dress the problem up. It has to hand
+          you the thing it wants help with. And what an organization reaches for
+          when it wants help tells you, with some precision, how it understands
+          its own data. Do enough of them and the individual scenarios blur, but
+          the shape underneath stops being noise. The same handful of things are
+          wrong, and wrong in the same order.
+        </P>
+        <P>
+          Say this plainly first: none of these organizations was bad at data.
+          That is the part worth sitting with. Most had real systems, real
+          analysts, real dashboards. They were good at data and still stuck.
+          That is the whole point, and the rest of this piece is why.
+        </P>
+
+        <H2>The brief that names everything but the decision</H2>
+        <P>
+          Here is a take-home, lightly abstracted. A principal writes: the
+          seniors just took their college-entrance exam, I am presenting at
+          professional development this afternoon, I need this back in an hour.
+          Then a list. Averages by subject, the share above a threshold score,
+          which homeroom did best, how one student group performed against two
+          others, whether GPA tracks the score, how the teachers compare. And
+          the last line: anything else you find interesting.
+        </P>
+        <P>
+          It is a completely reasonable request. Read closely, it is also a
+          request for outputs, not a decision. Six questions, a slide deck, an
+          hour, and nothing about what gets <I>done</I> differently once the
+          slides go up. “Anything else you find interesting” is the tell. If a
+          decision were driving the request, “interesting” would already be
+          defined — interesting <I>toward what</I>. Its absence means the
+          analysis has become the destination.
+        </P>
+        <P>
+          Nearly every take-home had this shape. Build the dashboard. Write the
+          trends report. Produce the plan. A surprising share did not ask for
+          analysis-toward-a-decision at all. They asked for <I>compliance</I>:
+          get the new state attendance codes computing correctly, get the
+          course-collection feed accurate and auditable. That is necessary work.
+          But compliance is the purest form of the pattern, an output the
+          organization must produce with no decision attached to it at all. When
+          most of what a data function is handed is outputs and filings, it
+          becomes a service desk. And a service desk, however fast, however
+          good, never gets to the decision.
+        </P>
+
+        <H2>The two-line change that touches seven systems</H2>
+        <P>
+          One task asked, in effect: your state just introduced two new
+          attendance codes. What would you change?
+        </P>
+        <P>
+          The honest answer was uncomfortably long. To make two codes compute
+          correctly you would touch a database view, a stored procedure, the
+          student information system’s configuration, the outbound fields in the
+          state report, the data-validation checks, the way front-office staff
+          enter attendance each morning, and the historical records already on
+          file. Two codes. Seven systems.
+        </P>
+        <P>
+          That task is not hard because attendance is conceptually difficult. It
+          is hard because the concept “attendance” is defined in seven places,
+          with no single place to change it. This is the fault line under half
+          the take-homes: the organization has no canonical definition of its
+          own core measures, so every measure exists in several slightly
+          different versions, and any change, or any disagreement about a
+          number, becomes an archaeology project. An organization in that state
+          is not one tool away from fixed. It is one decision away — the
+          decision that each measure means one thing, computed in one place.
+        </P>
+
+        <H2>A dashboard is not a decision surface</H2>
+        <P>
+          Almost every take-home asked for a dashboard or a report, and asked
+          for it the same way: as an <I>artifact</I>. Build a monthly enrollment
+          dashboard for the board. Produce a topline executive trends report.
+          Submit a dashboard you have made. The deliverable is the thing —
+          built, presented, monthly.
+        </P>
+        <P>
+          Not once was a dashboard requested as <I>the surface a named person
+          uses to make a specific recurring call</I>. The enrollment dashboard
+          was never framed as “what the enrollment lead opens every Monday to
+          decide where this week’s outreach goes.” It was framed as a
+          board-reporting object.
+        </P>
+        <P>
+          The difference is not cosmetic. An organization that asks for “a
+          dashboard” and an organization that asks for “the Monday-morning
+          surface the enrollment lead decides from” will get two different
+          objects. The first is a display. The second is a decision surface,
+          built backward from a decision, an owner, and a cadence. Both have
+          charts on them. Only the second changes what happens on Monday. Most
+          briefs ask for the first and hope for the second.
+        </P>
+
+        <H2>The organization hires a person to be the system it never built</H2>
+        <P>
+          Several take-homes asked for leadership-grade systems thinking: a
+          first-ninety-days plan, a risk-and-change-management plan for
+          replacing core systems across several regions at once, a strategy for
+          collecting and safeguarding sensitive personal data. Anticipate
+          resistance. Build buy-in. See around corners.
+        </P>
+        <P>
+          These are the right things to ask of a senior hire. But the
+          implication is quiet and worth catching. The organization knows it has
+          a systems gap, and its plan for closing it is to hire a person who
+          will carry the system in their head: hold the definitions, broker the
+          cross-functional agreements, remember the edge cases, watch the
+          corners.
+        </P>
+        <P>
+          A person is not a system. A person takes vacation, gets pulled into a
+          crisis, and eventually leaves. When they go, the systems thinking
+          walks out with them. The take-home that asks for a brilliant
+          ninety-day plan is, underneath, an organization hoping a hire will
+          substitute for an architecture. The best version of that hire spends
+          the ninety days building the architecture instead, so the organization
+          stops depending on any one person’s memory, including their own.
+        </P>
+
+        <H2>One dataset, four audiences, no infrastructure</H2>
+        <P>
+          The last pattern was the most repetitive, and the most expensive.
+          Present this to leadership and to teachers. Adapt this report for
+          school leaders, for staff, for families. Prepare talking points for
+          two executives walking into two different meetings.
+        </P>
+        <P>
+          Every organization needs the same underlying numbers spoken in three
+          or four registers: board, operator, frontline, external partner. None
+          had a system that did the translation. So every cycle someone
+          re-renders the same data by hand into each new voice, and that manual
+          work competes for the same scarce hours as the analysis itself. The
+          result is a data function permanently busy and permanently behind, not
+          because the analysis is hard, but because the <I>distribution</I> of
+          it was never built as a system.
+        </P>
+
+        <H2>What the set adds up to</H2>
+        <P>
+          Read together, more than a dozen take-homes point at one thing, and it
+          is not a skills gap. These organizations had analysts, tools, and
+          dashboards. What they did not have was the layer between the analysis
+          and the decision: a canonical definition of each measure, a surface
+          built backward from a specific recurring call, a distribution system
+          that speaks to every audience without redoing the work, and an
+          architecture that outlives the person who built it.
+        </P>
+        <P>
+          That layer has a name. It is the decision system. And the take-home is
+          an honest instrument because it catches an organization in the act of
+          reaching for more analysis, under real pressure and in good faith,
+          when the thing missing is the system that connects analysis to a
+          decision.
+        </P>
+
+        <H2>The reframe</H2>
+        <P>
+          A decade of take-homes taught me one habit, and it is the one I would
+          hand to anyone who commissions this kind of work. When an organization
+          gives you a data problem, the first job is not to answer it. It is to
+          find the decision underneath, the one the brief did not name, and
+          answer <I>that</I>. The slides the principal asked for take an hour.
+          The question of which students get which support this term, who owns
+          that call, and from what surface they make it — that is the work, and
+          the brief never mentioned it.
+        </P>
+        <P>
+          Do that a dozen times and something shifts in how you see. You stop
+          seeing data problems. You start seeing decision systems with one part
+          missing, and more often than not you can name the missing part before
+          lunch. That is the whole of it. Most organizations do not have a data
+          problem. They have a decision-system problem, and a take-home is a
+          short, honest way to watch one happen. <I>From fragmented to
+          decision-ready</I> is the distance between the brief they wrote and the
+          brief they meant.
+        </P>
+
+        <MetaNote>
+          Written May 2026 for the Analytic Bytes Library. Drawn from interview
+          performance tasks completed between 2017 and 2026; organizations and
+          task specifics are abstracted throughout, and no individual
+          organization’s task, scenario detail, or data is reproduced.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 05 — What is this system actually measuring?
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "what-is-this-system-measuring",
+    number: "05",
+    title: "What is this system actually measuring?",
+    subtitle: "The evaluation gap in higher education’s AI moment.",
+    date: "2026-06-10",
+    readingTime: "8 min read",
+    summary:
+      "Universities have built the scaffolding to govern AI and left out a load-bearing beam: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
+    cover: "/library/covers/what-is-this-system-measuring.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Most universities have done the visible work of responding to AI:
+            use policies, committees, a first wave of pilots across student
+            services and administration. They have become fluent in two
+            questions — should we use it, and what are the rules. Both are
+            necessary. Neither tells you whether a given AI system is doing its
+            job.
+          </p>
+          <p>
+            The question that settles that is narrower and harder: does this
+            specific system measure what we claim it measures? It is the
+            ordinary question of measurement science, and the one most easily
+            skipped — invisible when it works, expensive to do well. This piece
+            argues that higher education already owns the discipline to answer
+            it, and has not yet pointed it at the AI systems now moving into
+            administrative use. Written for anyone adopting, governing, or
+            evaluating one.
+          </p>
+        </Brief>
+
+        <P>
+          By the start of 2026, most universities had done the visible work of
+          responding to artificial intelligence. They had written policies on
+          student and faculty use. They had stood up AI committees and working
+          groups. They had run pilots: assistants for student services, drafting
+          tools for administrative staff, models that flag students who might be
+          slipping. The scaffolding went up quickly, and under genuine pressure.
+          Enrollment is contracting as the demographic cliff arrives. The public
+          is questioning the return on a degree. Federal funding and tax
+          conditions have tightened. Deloitte’s 2026 higher education outlook
+          describes a sector moving from a long period of growth into one of
+          disciplined focus on core priorities, with the business model itself
+          under scrutiny and risk management demanding tighter coordination
+          across offices that once operated apart. AI arrived in the middle of
+          all of it, as both another pressure and a promised relief.
+        </P>
+        <P>
+          The role of the technology executive has shifted with it. In
+          Deloitte’s 2026 study of technology leaders, the large majority of
+          CIOs described their primary job as implementing AI across the
+          institution or serving as evangelists for it, moving, in the report’s
+          phrase, <I>from keeping the lights on to lighting the way forward</I>.
+          That shift is real and, on balance, healthy. But it carries a quiet
+          cost. When the mandate becomes adoption, evaluation tends to be
+          assumed rather than performed.
+        </P>
+        <H2>The question that gets skipped</H2>
+        <P>
+          There is a gap I keep noticing. Universities have become fluent in two
+          questions about AI: should we use it, and what are the rules for using
+          it. Those are the questions a policy answers and a committee debates,
+          and they are necessary. But they are not the question that determines
+          whether a given AI system is doing its job. That question is narrower
+          and harder: does this specific system do what we claim it does?
+        </P>
+        <P>
+          It is an easy question to skip. A tool gets adopted because it is
+          plausible, because a vendor demonstrated it well, because a respected
+          peer institution uses it, because a pilot felt successful. None of
+          those is evidence that the system measures or predicts what it
+          purports to. Adoption and policy have outrun evaluation. We have built
+          the scaffolding for governing AI and left out a load-bearing beam.
+        </P>
+        <H2>What seven years of scoring engines taught me</H2>
+        <P>
+          I spent seven years at the Educational Testing Service evaluating
+          AI-driven scoring systems — the engines that score essays and spoken
+          responses on large-scale assessments. That work taught me something I
+          have never been able to un-see, and it is the reason this gap worries
+          me.
+        </P>
+        <P>
+          When you build an automated scoring model, the obvious way to judge it
+          is agreement: how often does the machine’s score match a trained human
+          rater’s score? It is a clean number, and it is reassuring. It is also
+          not sufficient. A model can agree with human raters at a high rate and
+          still be measuring the wrong thing. It can learn that longer essays
+          tend to score higher, and quietly reward length. It can lean on
+          vocabulary, sentence count, surface fluency: features that correlate
+          with quality without being quality. The scores look right. The
+          agreement statistics look right. And underneath, the system is
+          measuring something other than what its label claims.
+        </P>
+        <P>
+          The discipline of measurement science exists, in large part, to catch
+          exactly that. The question it trains you to ask is the one I have
+          carried into every kind of data work since: what is this system
+          actually measuring, and does that match what we say it measures? Not
+          whether the output looks plausible, but whether the thing being
+          measured is the thing we intended. An automated scoring engine that
+          earns its agreement by rewarding length is not a writing-quality
+          measure. It is a length measure wearing a writing-quality label.
+        </P>
+        <H2>Every system makes a claim</H2>
+        <P>
+          Every AI system a university adopts makes a claim like that label, and
+          most of the claims are never written down. An early-alert model claims
+          to identify students at academic risk. An advising assistant claims to
+          surface the guidance a student needs. An admissions-support tool
+          claims to predict yield, or fit, or success. A staff-facing assistant
+          claims to produce work accurate enough to act on. Each is a statement
+          about an intended outcome. And each can be wrong in the specific,
+          quiet way an automated scoring engine can be wrong, tracking a surface
+          signal while missing the substance, because the claim was implicit and
+          no one was assigned to check it.
+        </P>
+        <P>
+          The early-alert model is the cleanest example. Built without care, it
+          can learn that the strongest predictor of risk in the historical
+          record is a demographic pattern, or a single missed assignment, or
+          enrollment in one difficult course. It will flag students, and the
+          flags will even be partly accurate. But a model that flags students by
+          proxy is not measuring academic risk; it is measuring the proxy, and
+          routing the institution’s attention and resources accordingly. No one
+          set out to build that system. It is what results when a tool is
+          adopted on plausibility and never asked the intended-outcome question.
+        </P>
+        <P>
+          Generative and agentic tools make the problem harder, not easier. A
+          predictive model at least produces a score that can be tested against
+          an outcome. A generative assistant produces fluent, confident prose
+          whose quality is difficult to assess at a glance, and fluency is itself
+          a proxy the human eye is inclined to reward. The 2026 enterprise-AI
+          research is consistent on this point: only a small share of
+          organizations report a mature model for governing autonomous AI
+          agents, and the real constraints on scaling AI are rarely the
+          technology itself. They are data quality, security, and the absence of
+          evaluation discipline. The newer the system, the more easily
+          plausibility substitutes for proof.
+        </P>
+        <H2>The discipline already exists</H2>
+        <P>
+          This is the missing discipline inside AI governance. EDUCAUSE’s 2026
+          priorities name the human edge of AI, and data analytics for
+          institutional decision-making, among the issues that matter most.
+          University technology leaders have been clear that the next phase of
+          AI work is operational, moving from written policy to running
+          practice. Evaluation is the part of that practice most easily skipped,
+          because it is invisible when it is working and expensive to do well.
+          It is also the part that decides whether everything else is real.
+        </P>
+        <P>
+          Applying the discipline does not mean slowing adoption, and it does
+          not mean another layer of bureaucracy. It means a small set of hard
+          questions, asked consistently: before a system is trusted, and
+          periodically after.
+        </P>
+        <NumList>
+          <NumItem n={1}>
+            Is the system measuring the intended construct, or a proxy for it?
+          </NumItem>
+          <NumItem n={2}>
+            When it is wrong, what happens downstream, and to whom?
+          </NumItem>
+          <NumItem n={3}>
+            Does it perform consistently across the different groups of people
+            it touches, or does its accuracy concentrate where the training data
+            was richest?
+          </NumItem>
+          <NumItem n={4}>
+            What human decision is the system meant to support, and does its
+            output improve that decision?
+          </NumItem>
+        </NumList>
+        <P>
+          None of these questions is exotic. They are the ordinary questions of
+          measurement. A university that has an institutional research office
+          and an assessment culture already employs people who know how to ask
+          them. Those people have not yet been pointed at the AI systems moving
+          into administrative use.
+        </P>
+        <H2>Seeing the student whole</H2>
+        <P>
+          There is a deeper version of the intended-outcome question, and in a
+          university it is the one that matters most. When we ask what a system
+          is actually measuring, we are often really asking whether it sees a
+          person whole. An early-alert model that optimizes a retention number
+          is not the same as one that helps an institution understand and
+          support a student. The first reduces the student to the outcome the
+          institution wants to protect. The second treats the number as a signal
+          that points back toward a person, one with a context, a trajectory,
+          and reasons. Asked seriously, the intended-outcome question is a check
+          against the quiet drift toward measuring students as proxies for the
+          metrics we happen to collect. A university, of all institutions,
+          should want its systems to see students whole. That is not a
+          sentiment. It is an evaluation standard, it is answerable, and it is
+          the standard worth holding AI to.
+        </P>
+        <H2>An old discipline, a new set of systems</H2>
+        <P>
+          The institutions that handle this moment well will not be the ones
+          with the most AI, or the fastest adoption, or the longest policy. They
+          will be the ones that can tell the difference between AI that works
+          and AI that only looks like it works, and tell it on purpose, through
+          a discipline, rather than discovering it after a system has been
+          shaping decisions, unnoticed, for two years.
+        </P>
+        <P>
+          That discipline does not need to be invented. Higher education has
+          spent decades building the science of measuring hard things well and
+          holding the measurements accountable to what they claim. The same
+          rigor that asks whether an essay score reflects writing or length can
+          ask whether an early-alert flag reflects risk or a proxy for it. The
+          question travels intact; it is the same question. Higher education’s
+          AI moment does not need a new framework so much as it needs to turn an
+          old and well-tested one toward a new set of systems, and to ask, of
+          every system it adopts, the plain and demanding question: what is this
+          actually measuring, and is that what we meant?
+        </P>
+
+        <MetaNote>
+          Written May 2026 for the Analytic Bytes Library. The argument draws on
+          measurement-science practice and is intended to outlast specific AI
+          products and platforms.
         </MetaNote>
       </>
     ),

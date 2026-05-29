@@ -1,0 +1,37 @@
+<svg viewBox="0 0 820 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="ttl">Decision Load vs Decision Capacity</title>
+<desc id="desc">A conceptual chart. The X-axis is decision load (volume times velocity of decisions); the Y-axis is decision capacity (time, judgment, system slack). A diagonal waterline marks where load equals capacity. Below and right of the line is the overload zone, where the leader becomes the buffer and burnout follows. As AI accelerates the volume and velocity of decisions, organizations drift right into overload faster than they add capacity. The fix is a system where fewer decisions wait on one person.</desc>
+<rect width="820" height="660" fill="#FFFFFF"/>
+
+<text x="48" y="46" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">DECISION LOAD vs CAPACITY</text>
+<text x="48" y="84" font-size="25" fill="#0E2A47" font-weight="700">Most teams aren't short on data. <tspan fill="#0EA5E9">They're past capacity.</tspan></text>
+
+<path d="M120,500 L740,500 L740,130 Z" fill="#F1F5F8"/>
+
+<line x1="120" y1="500" x2="740" y2="130" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="610" y="210" font-size="12.5" fill="#0EA5E9" font-weight="600" transform="rotate(-31 610 210)">load = capacity</text>
+
+<line x1="120" y1="130" x2="120" y2="500" stroke="#0E2A47" stroke-width="1.8"/>
+<line x1="120" y1="500" x2="740" y2="500" stroke="#0E2A47" stroke-width="1.8"/>
+
+<text x="430" y="545" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">DECISION LOAD  →</text>
+<text x="430" y="565" font-size="12" fill="#6B7A8C" text-anchor="middle">volume × velocity of decisions</text>
+<text transform="translate(70,315) rotate(-90)" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">DECISION CAPACITY  ↑</text>
+<text transform="translate(90,315) rotate(-90)" font-size="12" fill="#6B7A8C" text-anchor="middle">time · judgment · system slack</text>
+
+<text x="190" y="210" font-size="17" fill="#0E2A47" font-weight="700">HEALTHY</text>
+<text x="190" y="231" font-size="13" fill="#6B7A8C">capacity absorbs the load</text>
+
+<text x="505" y="430" font-size="17" fill="#0E2A47" font-weight="700">OVERLOAD</text>
+<text x="505" y="451" font-size="13" fill="#6B7A8C">the leader becomes the buffer</text>
+<text x="505" y="468" font-size="13" fill="#6B7A8C">— and burnout follows</text>
+
+<path d="M250,300 Q430,300 590,405" fill="none" stroke="#0E2A47" stroke-width="2"/>
+<path d="M590,405 l-11,-1 l5,-9 z" fill="#0E2A47"/>
+<circle cx="250" cy="300" r="5" fill="#0EA5E9"/>
+<text x="262" y="288" font-size="12.5" fill="#0E2A47" font-weight="600">as AI accelerates decisions →</text>
+
+<text x="48" y="600" font-size="14" fill="#0E2A47" font-weight="600">The fix isn't more capacity. It's a system where <tspan fill="#0EA5E9">fewer decisions wait on one person.</tspan></text>
+<text x="48" y="640" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="200" y="640" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>

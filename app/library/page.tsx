@@ -27,46 +27,80 @@ export const metadata: Metadata = {
 type Entry = {
   type: "essay" | "artifact" | "field-note";
   title: string;
-  date: string;
+  date?: string; // essays/field-notes are dated; artifacts are not
   summary: string;
   url?: string;
   image?: string;
 };
 
 // Artifacts — figures from the analytical work (architecture diagrams,
-// data charts, flowcharts). Essays are NOT listed here; they are derived
-// from the ESSAYS registry (./essays.tsx) in the composed ENTRIES feed
-// below. Only artifacts / field-notes are hand-listed.
-//
-// Cleared during the Princeton role-search window. The LinkedIn-post
-// artifacts that used to live here have been removed; the category is
-// being re-anchored from "social posts about the work" to "figures from
-// the work itself" — e.g. the burden × disparity quadrant from the CDC
-// field note, the at-or-below-basic bar chart from LO 2.0, the age-band
-// suicide-rate trend chart, and other diagrams pulled from the analysis.
-//
-// To add an entry:
-//   { type: "artifact", title, date: "YYYY-MM-DD", summary, image, url? }
-// Place the image at /public/library/<file>.png|svg (1200×900 recommended,
-// matching the navy/teal/white visual language of the essay covers).
-const ARTIFACTS: Entry[] = [];
+// data charts, flowcharts). Dateless on purpose; they render in their own
+// gallery below the dated essays/field-notes feed. SVGs live in
+// /public/library/artifacts/. Essays are NOT listed here — they come from
+// the ESSAYS registry (./essays.tsx).
+const ARTIFACTS: Entry[] = [
+  {
+    type: "artifact",
+    title: "The Decision System — reference architecture",
+    summary:
+      "A tool-agnostic reference architecture: sources through integration, warehouse, and the semantic-layer keystone to AI and the reporting surfaces, with a governance rail across every layer and a learning loop that closes the system.",
+    image: "/library/artifacts/decision-system-reference-architecture.svg",
+  },
+  {
+    type: "artifact",
+    title: "One Architecture, Three Stacks",
+    summary:
+      "The same six-layer architecture instantiated three ways — Microsoft/Fabric, the modern data stack, and lean/open — showing the tools swap while the architecture holds. The semantic layer is the keystone in all three.",
+    image: "/library/artifacts/one-architecture-three-stacks.svg",
+  },
+  {
+    type: "artifact",
+    title: "Decision Load vs Decision Capacity",
+    summary:
+      "Why AI raises an organization's decision load faster than its decision capacity — and what happens in the overload zone, where a leader quietly becomes the buffer the system never built.",
+    image: "/library/artifacts/decision-load-vs-capacity.svg",
+  },
+  {
+    type: "artifact",
+    title: "Reliability vs Validity",
+    summary:
+      "The four-target view of the AI scoring trap: a model can agree with human raters at a high rate (reliable) and still measure the wrong thing (invalid) — a tight cluster, off the bullseye.",
+    image: "/library/artifacts/reliability-vs-validity.svg",
+  },
+  {
+    type: "artifact",
+    title: "The Validity Ladder",
+    summary:
+      "Five rungs of evidence for an AI system. Most AI scoring stops at rung three — agreement with human raters — when the real bar is rung four: does the score predict the outcome it was built to predict?",
+    image: "/library/artifacts/validity-ladder.svg",
+  },
+  {
+    type: "artifact",
+    title: "Fair for Whom?",
+    summary:
+      "Fairness reframed as validity asked one subgroup at a time. An aggregate accuracy number can look fine while the model quietly degrades for smaller groups — differential prediction hiding under the average.",
+    image: "/library/artifacts/fair-for-whom.svg",
+  },
+  {
+    type: "artifact",
+    title: "The Evidence Spine",
+    summary:
+      "The measurement-and-evaluation architecture that turns monitoring into learning: a living theory of change as keystone, harmonized assessments, and one semantic layer so every audience sees numbers that agree.",
+    image: "/library/artifacts/evidence-spine.svg",
+  },
+];
 
-// Full library feed — published essays and field notes (from the ESSAYS
-// registry) plus artifacts, sorted newest-first by date. Essay and
-// field-note entries link to their on-site pages at /library/[slug];
-// artifacts keep their external URLs.
-const ENTRIES: Entry[] = [
-  ...ESSAYS.map(
-    (e): Entry => ({
-      type: e.kind,
-      title: e.title,
-      date: e.date,
-      summary: e.summary,
-      url: `/library/${e.slug}`,
-    })
-  ),
-  ...ARTIFACTS,
-].sort((a, b) => b.date.localeCompare(a.date));
+// Dated feed — published essays and field notes (from the ESSAYS registry),
+// newest-first. Artifacts are dateless and render in their own gallery below.
+const ENTRIES: Entry[] = ESSAYS.map(
+  (e): Entry => ({
+    type: e.kind,
+    title: e.title,
+    date: e.date,
+    summary: e.summary,
+    url: `/library/${e.slug}`,
+  })
+).sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
 const TYPE_LABELS: Record<Entry["type"], string> = {
   essay: "Essay",
@@ -74,7 +108,8 @@ const TYPE_LABELS: Record<Entry["type"], string> = {
   "field-note": "Field Note",
 };
 
-function formatDate(iso: string) {
+function formatDate(iso?: string) {
+  if (!iso) return "";
   const d = new Date(iso + "T00:00:00");
   return d.toLocaleDateString("en-US", {
     year: "numeric",
@@ -107,34 +142,52 @@ export default function LibraryPage() {
           </div>
         </section>
 
-        {/* ENTRIES */}
-        <section className="pb-32">
+        {/* WRITINGS — essays & field notes, dated feed */}
+        <section className="pb-16">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="border-t border-line">
-                {ENTRIES.length === 0 ? (
-                  <div className="py-16 text-center text-ink-3 font-mono text-[13px]">
-                    More soon.
-                  </div>
-                ) : (
-                  ENTRIES.map((entry, i) => (
-                    <Entry key={`${entry.date}-${i}`} entry={entry} />
-                  ))
-                )}
-              </div>
-              <div className="mt-16 text-ink-3 text-sm">
-                More entries coming. Have a topic you want me to write about?{" "}
-                <a
-                  href="mailto:hello@analyticbytes.systems"
-                  className="text-ink underline-offset-4 underline decoration-line-2 hover:decoration-accent"
-                >
-                  Send a note
-                </a>
-                .
+                {ENTRIES.map((entry, i) => (
+                  <Entry key={`${entry.date}-${i}`} entry={entry} />
+                ))}
               </div>
             </Reveal>
           </div>
         </section>
+
+        {/* ARTIFACTS — dateless visual gallery */}
+        {ARTIFACTS.length > 0 ? (
+          <section className="pb-32">
+            <div className="max-w-page mx-auto px-5 sm:px-8">
+              <Reveal>
+                <div className="border-t border-line pt-7">
+                  <div className="font-mono text-[11px] text-ink-3 tracking-[0.18em] uppercase mb-2">
+                    Artifacts
+                  </div>
+                  <p className="text-ink-2 text-[15px] max-w-[600px] mb-10 leading-[1.55]">
+                    Diagrams and figures from the work — architecture, measurement,
+                    and decision-system frames.
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
+                    {ARTIFACTS.map((entry, i) => (
+                      <ArtifactCard key={`artifact-${i}`} entry={entry} />
+                    ))}
+                  </div>
+                </div>
+                <div className="mt-16 text-ink-3 text-sm">
+                  More entries coming. Have a topic you want me to write about?{" "}
+                  <a
+                    href="mailto:hello@analyticbytes.systems"
+                    className="text-ink underline-offset-4 underline decoration-line-2 hover:decoration-accent"
+                  >
+                    Send a note
+                  </a>
+                  .
+                </div>
+              </Reveal>
+            </div>
+          </section>
+        ) : null}
       </main>
 
       <Footer />
@@ -143,71 +196,46 @@ export default function LibraryPage() {
 }
 
 function Entry({ entry }: { entry: Entry }) {
-  // Artifact entries get an image-led layout; essays/field-notes get a text-row layout
-  if (entry.type === "artifact") {
-    return <ArtifactEntry entry={entry} />;
-  }
   return <TextEntry entry={entry} />;
 }
 
-function ArtifactEntry({ entry }: { entry: Entry }) {
-  const isLink = entry.url && entry.url.length > 0;
-  const Wrap = isLink
-    ? ({ children }: { children: React.ReactNode }) => (
-        <a
-          href={entry.url}
-          target={entry.url?.startsWith("http") ? "_blank" : undefined}
-          rel="noopener"
-          className="block group no-underline"
-        >
-          {children}
-        </a>
-      )
-    : ({ children }: { children: React.ReactNode }) => (
-        <div className="block">{children}</div>
-      );
-
-  return (
-    <Wrap>
-      <article className="py-10 border-b border-line">
-        <div className="grid grid-cols-1 sm:grid-cols-[120px_120px_1fr] gap-2 sm:gap-8 mb-5">
-          <time className="font-mono text-[12px] text-ink-3 tracking-[0.04em] uppercase pt-1.5">
-            {formatDate(entry.date)}
-          </time>
-          <div className="font-mono text-[11px] tracking-[0.18em] uppercase pt-2 text-accent">
-            {TYPE_LABELS[entry.type]}
-          </div>
-          <h3 className="text-[18px] sm:text-[22px] lg:text-[24px] font-bold tracking-[-0.015em] text-ink leading-[1.25] min-w-0">
-            {entry.title}
-            {isLink && (
-              <span className="ml-2 text-ink-3 text-[18px] inline-block group-hover:text-accent group-hover:translate-x-0.5 transition-all">
-                ↗
-              </span>
-            )}
-          </h3>
-        </div>
-        {entry.image ? (
-          <div className="sm:ml-[256px] mb-4 rounded-md overflow-hidden border border-line bg-bg-alt">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={entry.image}
-              alt={entry.title}
-              className="w-full h-auto block"
-              loading="lazy"
-            />
-          </div>
-        ) : (
-          <div className="sm:ml-[256px] mb-4 rounded-md border border-dashed border-line-2 bg-bg-alt aspect-[4/3] sm:aspect-[16/10] flex items-center justify-center text-ink-3 text-[12px] font-mono">
-            (image pending — drop file at {`/public${entry.image ?? "/library/..."}`})
-          </div>
-        )}
-        {entry.summary ? (
-          <p className="sm:ml-[256px] text-ink-2 text-[14px] sm:text-[15px] leading-[1.55] max-w-[64ch]">
-            {entry.summary}
-          </p>
-        ) : null}
-      </article>
-    </Wrap>
+// Dateless, image-led card for the artifacts gallery.
+function ArtifactCard({ entry }: { entry: Entry }) {
+  const inner = (
+    <>
+      <div className="rounded-md overflow-hidden border border-line bg-bg-alt mb-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={entry.image}
+          alt={entry.title}
+          className="w-full h-auto block"
+          loading="lazy"
+        />
+      </div>
+      <div className="font-mono text-[11px] tracking-[0.18em] uppercase text-accent mb-2">
+        Artifact
+      </div>
+      <h3 className="text-[18px] sm:text-[20px] font-bold tracking-[-0.015em] text-ink leading-[1.3]">
+        {entry.title}
+      </h3>
+      {entry.summary ? (
+        <p className="text-ink-2 text-[14px] sm:text-[15px] leading-[1.55] mt-2 max-w-[60ch]">
+          {entry.summary}
+        </p>
+      ) : null}
+    </>
+  );
+  return entry.url ? (
+    <a
+      href={entry.url}
+      target={entry.url.startsWith("http") ? "_blank" : undefined}
+      rel="noopener"
+      className="group block no-underline"
+    >
+      {inner}
+    </a>
+  ) : (
+    <div className="block">{inner}</div>
   );
 }
 

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 880 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="ttl">One Architecture, Three Stacks</title>
+<desc id="desc">The same decision-system architecture instantiated three ways — a Microsoft/Fabric stack, a modern data stack, and a lean/open stack. Each shows the tool used at each layer: integration, warehouse, semantic layer (the keystone, highlighted), AI/ML, and surfaces. The point: the architecture is constant, the tools swap.</desc>
+<rect width="880" height="660" fill="#FFFFFF"/>
+
+<text x="40" y="46" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">ONE ARCHITECTURE. THREE STACKS.</text>
+<text x="40" y="84" font-size="26" fill="#0E2A47" font-weight="700">Same design. Different tools. <tspan fill="#0EA5E9">Same outcome.</tspan></text>
+
+<text x="312" y="146" font-size="17" fill="#0E2A47" font-weight="700" text-anchor="middle">Microsoft / Fabric</text>
+<line x1="270" y1="156" x2="354" y2="156" stroke="#0EA5E9" stroke-width="2"/>
+<text x="525" y="146" font-size="17" fill="#0E2A47" font-weight="700" text-anchor="middle">Modern Data Stack</text>
+<line x1="480" y1="156" x2="570" y2="156" stroke="#0EA5E9" stroke-width="2"/>
+<text x="738" y="146" font-size="17" fill="#0E2A47" font-weight="700" text-anchor="middle">Lean / Open</text>
+<line x1="703" y1="156" x2="773" y2="156" stroke="#0EA5E9" stroke-width="2"/>
+
+<text x="195" y="208" font-size="16" fill="#0E2A47" font-weight="600" text-anchor="end">Integration</text>
+<text x="195" y="288" font-size="16" fill="#0E2A47" font-weight="600" text-anchor="end">Warehouse</text>
+<text x="195" y="362" font-size="16" fill="#0E2A47" font-weight="700" text-anchor="end">Semantic Layer</text>
+<text x="195" y="380" font-size="10.5" letter-spacing="1.2" fill="#0EA5E9" font-weight="600" text-anchor="end">KEYSTONE</text>
+<text x="195" y="448" font-size="16" fill="#0E2A47" font-weight="600" text-anchor="end">AI · ML</text>
+<text x="195" y="528" font-size="16" fill="#0E2A47" font-weight="600" text-anchor="end">Surfaces</text>
+
+<rect x="215" y="180" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="312" y="214" font-size="15" fill="#3A4A5A" text-anchor="middle">Data Factory</text>
+<rect x="428" y="180" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="525" y="214" font-size="15" fill="#3A4A5A" text-anchor="middle">Fivetran · Airbyte</text>
+<rect x="641" y="180" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="738" y="214" font-size="15" fill="#3A4A5A" text-anchor="middle">Python · Airbyte</text>
+
+<rect x="215" y="260" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="312" y="294" font-size="15" fill="#3A4A5A" text-anchor="middle">Fabric / Synapse</text>
+<rect x="428" y="260" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="525" y="294" font-size="15" fill="#3A4A5A" text-anchor="middle">Snowflake</text>
+<rect x="641" y="260" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="738" y="294" font-size="15" fill="#3A4A5A" text-anchor="middle">Postgres · DuckDB</text>
+
+<rect x="215" y="340" width="195" height="56" rx="7" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2"/>
+<text x="312" y="374" font-size="15" fill="#0E2A47" font-weight="600" text-anchor="middle">Power BI models</text>
+<rect x="428" y="340" width="195" height="56" rx="7" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2"/>
+<text x="525" y="374" font-size="15" fill="#0E2A47" font-weight="600" text-anchor="middle">dbt</text>
+<rect x="641" y="340" width="195" height="56" rx="7" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2"/>
+<text x="738" y="374" font-size="15" fill="#0E2A47" font-weight="600" text-anchor="middle">dbt Core</text>
+
+<rect x="215" y="420" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="312" y="454" font-size="15" fill="#3A4A5A" text-anchor="middle">Azure AI</text>
+<rect x="428" y="420" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="525" y="454" font-size="15" fill="#3A4A5A" text-anchor="middle">OpenAI · Anthropic</text>
+<rect x="641" y="420" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="738" y="454" font-size="15" fill="#3A4A5A" text-anchor="middle">APIs · open models</text>
+
+<rect x="215" y="500" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="312" y="534" font-size="15" fill="#3A4A5A" text-anchor="middle">Power BI</text>
+<rect x="428" y="500" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="525" y="534" font-size="15" fill="#3A4A5A" text-anchor="middle">Tableau · Looker</text>
+<rect x="641" y="500" width="195" height="56" rx="7" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.3"/>
+<text x="738" y="534" font-size="15" fill="#3A4A5A" text-anchor="middle">Streamlit · Metabase</text>
+
+<text x="40" y="600" font-size="14" fill="#0E2A47" font-weight="600">The keystone never moves: <tspan fill="#0EA5E9">one canonical definition per metric</tspan> — whatever computes it.</text>
+<text x="40" y="630" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="192" y="630" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>

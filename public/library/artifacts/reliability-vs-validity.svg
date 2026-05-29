@@ -1,0 +1,53 @@
+<svg viewBox="0 0 820 790" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="ttl">Reliability vs Validity</title>
+<desc id="desc">The classic four-target measurement diagram. Columns are reliability (left scattered, right tight). Each bullseye is the construct you intend to measure. Top-left: valid but not reliable. Top-right: reliable and valid, the goal. Bottom-left: neither. Bottom-right: reliable but not valid — the AI trap, where a model agrees with human raters every time but measures the wrong thing.</desc>
+<rect width="820" height="790" fill="#FFFFFF"/>
+
+<text x="48" y="46" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">RELIABILITY vs VALIDITY</text>
+<text x="48" y="80" font-size="22" fill="#0E2A47" font-weight="700">A model can agree with every human rater —</text>
+<text x="48" y="108" font-size="22" fill="#0EA5E9" font-weight="700">and still measure the wrong thing.</text>
+
+<text x="250" y="166" font-size="13" letter-spacing="1.2" fill="#6B7A8C" font-weight="600" text-anchor="middle">LOW RELIABILITY · scattered</text>
+<text x="560" y="166" font-size="13" letter-spacing="1.2" fill="#6B7A8C" font-weight="600" text-anchor="middle">HIGH RELIABILITY · tight</text>
+
+<circle cx="250" cy="278" r="76" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="250" cy="278" r="49" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="250" cy="278" r="23" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="250" cy="278" r="3" fill="#9DB2C4"/>
+<circle cx="228" cy="266" r="5.5" fill="#0E2A47"/><circle cx="272" cy="290" r="5.5" fill="#0E2A47"/><circle cx="244" cy="252" r="5.5" fill="#0E2A47"/><circle cx="262" cy="304" r="5.5" fill="#0E2A47"/><circle cx="236" cy="294" r="5.5" fill="#0E2A47"/>
+<text x="250" y="386" font-size="16" fill="#0E2A47" font-weight="700" text-anchor="middle">Valid, not reliable</text>
+<text x="250" y="406" font-size="12.5" fill="#6B7A8C" text-anchor="middle">right on average · noisy</text>
+
+<circle cx="560" cy="278" r="80" fill="none" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="4 3"/>
+<circle cx="560" cy="278" r="76" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="560" cy="278" r="49" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="560" cy="278" r="23" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="560" cy="278" r="3" fill="#9DB2C4"/>
+<circle cx="553" cy="275" r="5.5" fill="#0EA5E9"/><circle cx="566" cy="280" r="5.5" fill="#0EA5E9"/><circle cx="560" cy="271" r="5.5" fill="#0EA5E9"/><circle cx="556" cy="284" r="5.5" fill="#0EA5E9"/><circle cx="564" cy="278" r="5.5" fill="#0EA5E9"/>
+<text x="560" y="386" font-size="16" fill="#0EA5E9" font-weight="700" text-anchor="middle">Reliable + valid</text>
+<text x="560" y="406" font-size="12.5" fill="#6B7A8C" text-anchor="middle">consistent · on the construct</text>
+
+<circle cx="250" cy="500" r="76" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="250" cy="500" r="49" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="250" cy="500" r="23" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="250" cy="500" r="3" fill="#9DB2C4"/>
+<circle cx="214" cy="472" r="5.5" fill="#0E2A47"/><circle cx="240" cy="490" r="5.5" fill="#0E2A47"/><circle cx="226" cy="466" r="5.5" fill="#0E2A47"/><circle cx="208" cy="496" r="5.5" fill="#0E2A47"/><circle cx="248" cy="514" r="5.5" fill="#0E2A47"/>
+<text x="250" y="608" font-size="16" fill="#0E2A47" font-weight="700" text-anchor="middle">Neither</text>
+<text x="250" y="628" font-size="12.5" fill="#6B7A8C" text-anchor="middle">noisy · off the construct</text>
+
+<circle cx="560" cy="500" r="76" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="560" cy="500" r="49" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="560" cy="500" r="23" fill="none" stroke="#CBD6E0" stroke-width="1.5"/>
+<circle cx="560" cy="500" r="3" fill="#9DB2C4"/>
+<circle cx="588" cy="472" r="5.5" fill="#0E2A47"/><circle cx="596" cy="478" r="5.5" fill="#0E2A47"/><circle cx="584" cy="474" r="5.5" fill="#0E2A47"/><circle cx="592" cy="467" r="5.5" fill="#0E2A47"/><circle cx="589" cy="481" r="5.5" fill="#0E2A47"/>
+<text x="560" y="608" font-size="16" fill="#0E2A47" font-weight="700" text-anchor="middle">Reliable, not valid</text>
+<text x="560" y="628" font-size="12.5" fill="#6B7A8C" text-anchor="middle">agrees every time · wrong target</text>
+<rect x="503" y="640" width="114" height="22" rx="11" fill="#0EA5E9"/>
+<text x="560" y="655" font-size="11" letter-spacing="1" fill="#FFFFFF" font-weight="600" text-anchor="middle">THE AI TRAP</text>
+
+<text x="48" y="704" font-size="13.5" fill="#0E2A47" font-weight="600">Agreeing with human raters is reliability. Measuring the construct is validity.</text>
+<text x="48" y="726" font-size="13.5" fill="#0E2A47" font-weight="600">AI evaluation usually stops at the first.</text>
+
+<text x="48" y="766" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="200" y="766" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>
