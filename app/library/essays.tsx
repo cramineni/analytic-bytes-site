@@ -204,6 +204,34 @@ function Note({ children }: { children: ReactNode }) {
   );
 }
 
+/** Image figure with caption — for charts and diagrams embedded in an essay body. */
+function Figure({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption?: string;
+}) {
+  return (
+    <figure className="my-9 border border-line rounded-md bg-bg-alt p-4 sm:p-5">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={alt}
+        className="w-full h-auto block rounded-sm"
+        loading="lazy"
+      />
+      {caption ? (
+        <figcaption className="mt-3 px-1 text-ink-3 text-[12.5px] sm:text-[13px] leading-[1.55] italic">
+          {caption}
+        </figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
 // ---------------------------------------------------------------------
 // PIECE TYPE + REGISTRY
 // ---------------------------------------------------------------------
@@ -218,6 +246,7 @@ export type Essay = {
   readingTime: string; // "11 min read"
   summary: string; // 1–2 lines, for the /library index
   cover: string; // /library/covers/[file].svg
+  hidden?: boolean; // if true, hidden from /library feed, homepage Library section, and route generation
   body: ReactNode;
 };
 
@@ -2028,6 +2057,13 @@ export const ESSAYS: Essay[] = [
           Put both signals on the same axes — burden along the horizontal,
           disparity along the vertical — and the states sort into four groups.
         </P>
+
+        <Figure
+          src="/library/figures/cdc-burden-disparity-quadrant.png"
+          alt="Scatter plot of US states with overall suicide rate on the horizontal axis and disparity relative risk on the vertical axis. States in the upper-right quadrant carry both high burden and a credible disparity signal."
+          caption="Burden × disparity signal map, ages 10–54, 2024. Each point is a state: horizontal position is the overall suicide rate, vertical position is the disparity signal (relative risk for the most-affected racial group vs. the White population). States with no reliable disparity signal are plotted at 1.0. Source: CDC WONDER provisional mortality data."
+        />
+
         <P>
           <B>High burden and credible disparity</B> — the upper-right. Alaska,
           South Dakota, Montana, Arizona, Hawaii. Both signals fire: a high
@@ -2427,6 +2463,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
     cover: "/library/covers/the-take-home-test.svg",
+    hidden: true,
     body: (
       <>
         <Brief>
@@ -2635,7 +2672,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. Drawn from interview
+          Written June 2026 for the Analytic Bytes Library. Drawn from interview
           performance tasks completed between 2017 and 2026; organizations and
           task specifics are abstracted throughout, and no individual
           organization’s task, scenario detail, or data is reproduced.
@@ -2658,6 +2695,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Universities have built the scaffolding to govern AI and left out a load-bearing beam: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
     cover: "/library/covers/what-is-this-system-measuring.svg",
+    hidden: true,
     body: (
       <>
         <Brief>
@@ -2872,7 +2910,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. The argument draws on
+          Written June 2026 for the Analytic Bytes Library. The argument draws on
           measurement-science practice and is intended to outlast specific AI
           products and platforms.
         </MetaNote>
@@ -2888,5 +2926,5 @@ export const ESSAYS: Essay[] = [
 export const ESSAY_SLUGS = ESSAYS.map((e) => e.slug);
 
 export function getEssay(slug: string): Essay | undefined {
-  return ESSAYS.find((e) => e.slug === slug);
+  return ESSAYS.find((e) => e.slug === slug && !e.hidden);
 }

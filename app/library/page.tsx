@@ -106,7 +106,7 @@ const ARTIFACTS: Entry[] = [
 
 // Dated feed — published essays and field notes (from the ESSAYS registry),
 // newest-first. Artifacts are dateless and render in their own gallery below.
-const ENTRIES: Entry[] = ESSAYS.map(
+const ENTRIES: Entry[] = ESSAYS.filter((e) => !e.hidden).map(
   (e): Entry => ({
     type: e.kind,
     title: e.title,

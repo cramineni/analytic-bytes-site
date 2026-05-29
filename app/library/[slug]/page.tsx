@@ -6,9 +6,10 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ESSAYS, getEssay } from "../essays";
 
-// Pre-render every essay route at build time.
+// Pre-render every essay route at build time. Hidden essays are skipped —
+// they 404 in production until their `hidden` flag is removed.
 export function generateStaticParams() {
-  return ESSAYS.map((e) => ({ slug: e.slug }));
+  return ESSAYS.filter((e) => !e.hidden).map((e) => ({ slug: e.slug }));
 }
 
 export function generateMetadata({
