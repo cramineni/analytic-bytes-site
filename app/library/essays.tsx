@@ -1989,6 +1989,13 @@ export const ESSAYS: Essay[] = [
           rise after 35 are happening at the same time, in the same country, in
           the same data.
         </P>
+
+        <Figure
+          src="/library/figures/cdc-age-rate-change-2021-2024.png"
+          alt="Bar chart of percent change in crude suicide rate by age band, 2021 to 2024, ages 10–54. Four younger bands (10–14, 15–19, 20–24, 25–34) declined 12–16 percent; two mid-life bands (35–44, 45–54) rose 3 to 3.5 percent."
+          caption="Percent change in crude suicide rate by age band, 2021 to 2024, ages 10–54. Source: CDC WONDER provisional mortality data. Descriptive comparison; not causal."
+        />
+
         <P>
           A single national rate blends those opposite movements into one
           number, and because the youngest bands are falling fast, that number
@@ -2031,9 +2038,16 @@ export const ESSAYS: Essay[] = [
           Rank states by burden for 2024, ages 10–54, and the top of the list is
           Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4),
           New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado,
-          Oklahoma, Maine, Idaho, Arkansas. It is, broadly, a Mountain-West and
+          Oklahoma, Maine, Arkansas, Idaho. It is, broadly, a Mountain-West and
           rural map.
         </P>
+
+        <Figure
+          src="/library/figures/cdc-top-burden-states-2024.png"
+          alt="Horizontal bar chart of the top 15 US states by overall suicide rate, ages 10–54, 2024. Mountain West and rural states lead."
+          caption="Top 15 states by overall suicide rate, ages 10–54, 2024. High burden does not imply a credible within-state disparity signal. Source: CDC WONDER provisional mortality data."
+        />
+
         <P>
           Now rank by disparity instead. The strongest reliable relative-risk
           signals are Minnesota (3.6×, the rate for American Indian and Alaska
@@ -2041,6 +2055,13 @@ export const ESSAYS: Essay[] = [
           (2.9×), Montana (1.9×), Hawaii (1.8×, here for residents identified as
           more than one race), Arizona (1.6×), and California (1.5×).
         </P>
+
+        <Figure
+          src="/library/figures/cdc-top-disparity-states-2024.png"
+          alt="Horizontal bar chart of US states passing all reliability filters, ranked by relative risk of suicide for the most-affected racial group versus the White population, ages 10–54, 2024."
+          caption="States passing all reliability filters, ranked by relative risk vs. the White population, ages 10–54, 2024. Signal rules: deaths ≥ 20 in both comparison groups; RR ≥ 1.25; positive absolute rate difference. Source: CDC WONDER."
+        />
+
         <P>
           The two lists overlap in some places and split hard in others.
           Minnesota and California both carry serious disparity signals while
@@ -2054,39 +2075,39 @@ export const ESSAYS: Essay[] = [
 
         <H2>One map, four groups</H2>
         <P>
-          Put both signals on the same axes — burden along the horizontal,
-          disparity along the vertical — and the states sort into four groups.
+          Put both signals on the same axes and the states sort into four
+          groups.
         </P>
 
         <Figure
           src="/library/figures/cdc-burden-disparity-quadrant.png"
           alt="Scatter plot of US states with overall suicide rate on the horizontal axis and disparity relative risk on the vertical axis. States in the upper-right quadrant carry both high burden and a credible disparity signal."
-          caption="Burden × disparity signal map, ages 10–54, 2024. Each point is a state: horizontal position is the overall suicide rate, vertical position is the disparity signal (relative risk for the most-affected racial group vs. the White population). States with no reliable disparity signal are plotted at 1.0. Source: CDC WONDER provisional mortality data."
+          caption="Burden × disparity signal map, ages 10–54, 2024. Each point is a state: horizontal position is the overall suicide rate, vertical position is the relative risk for the most-affected racial group vs. the White population. States with no reliable disparity signal are plotted at 1.0. Signal rules: deaths ≥ 20 in both comparison groups; RR ≥ 1.25; positive absolute rate difference. Source: CDC WONDER provisional mortality data."
         />
 
         <P>
-          <B>High burden and credible disparity</B> — the upper-right. Alaska,
-          South Dakota, Montana, Arizona, Hawaii. Both signals fire: a high
-          overall rate and a measurable, reliable equity gap inside the state.
+          <B>High burden and credible disparity:</B> the upper-right. Alaska,
+          South Dakota, Montana, Arizona, Hawaii. Both signals fire — a high
+          overall rate <I>and</I> a measurable, reliable equity gap inside the state.
           This is the strongest and most defensible case for the next dollar,
           because it answers to both commitments at once.
         </P>
         <P>
-          <B>High burden only</B> — the lower-right. Wyoming, New Mexico,
+          <B>High burden only:</B> the lower-right. Wyoming, New Mexico,
           Colorado, North Dakota, Oklahoma, and more. A real, large problem,
           with no reliable evidence of a racial disparity at the state level.
           Investment here is well-justified on volume of harm alone.
         </P>
         <P>
-          <B>Credible disparity, lower burden</B> — the upper-left. Minnesota
+          <B>Credible disparity, lower burden:</B> the upper-left. Minnesota
           and California. The statewide rate is not alarming, but a specific
           population inside the state is carrying a markedly higher rate than its
-          White neighbors: about one and a half times higher in California, more
+          White neighbors — about one and a half times higher in California, more
           than three times higher in Minnesota. Investment here is justified on
           equity, and it is the case a burden ranking renders invisible.
         </P>
         <P>
-          <B>Monitor</B> — the lower-left. Neither signal fires reliably. Not
+          <B>Monitor:</B> the lower-left. Neither signal fires reliably. Not
           “safe,” and not dismissed, just not where this dataset points a
           limited budget first.
         </P>
