@@ -584,7 +584,7 @@ export const ESSAYS: Essay[] = [
     title: "Grounding the AI Layer",
     subtitle:
       "Where AI belongs in the modern data stack, and what keeps it honest.",
-    date: "2026-05-13",
+    date: "2026-05-15",
     readingTime: "12 min read",
     summary:
       "Where AI belongs in the modern data stack, and the single contract that keeps every AI feature honest.",
@@ -1068,7 +1068,7 @@ export const ESSAYS: Essay[] = [
     title: "When GenAI Redesigned My Dashboard",
     subtitle:
       "The redesign was uglier and clearer. What that taught me about data teams and AI tools.",
-    date: "2026-05-18",
+    date: "2026-05-11",
     readingTime: "7 min read",
     summary:
       "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
@@ -1298,7 +1298,7 @@ export const ESSAYS: Essay[] = [
     title: "LO 2.0 — Stitching the Layers",
     subtitle:
       "Why national education data, classroom assessments, and local instruments are most useful when used together, and what the integration architecture looks like.",
-    date: "2026-05-22",
+    date: "2026-05-18",
     readingTime: "8 min read",
     summary:
       "Why national education data, classroom assessments, and local instruments are most useful stitched together — and what the integration architecture looks like.",
@@ -1611,7 +1611,7 @@ export const ESSAYS: Essay[] = [
     title: "Where Should Data Sit?",
     subtitle:
       "Who owns data infrastructure — and the principle that should settle it.",
-    date: "2026-05-25",
+    date: "2026-05-22",
     readingTime: "10 min read",
     summary:
       "Who owns data infrastructure is one of the org chart’s most muddled questions. The fix is not a better title; it is a principle — report to the integration seat, never to a single function.",
@@ -1918,7 +1918,7 @@ export const ESSAYS: Essay[] = [
     title: "Burden, Disparity, and the Next Dollar",
     subtitle:
       "A reliability-filtered read of CDC suicide-mortality data — and why the single headline rate sends prevention money to the wrong map.",
-    date: "2026-05-29",
+    date: "2026-05-25",
     readingTime: "9 min read",
     summary:
       "Burden and disparity are two different signals in the same CDC mortality data. The priority list you build from one is not the list you build from the other — and a framework that shows both changes where the next prevention dollar goes.",
@@ -2177,7 +2177,7 @@ export const ESSAYS: Essay[] = [
     title: "Actions, Not Answers",
     subtitle:
       "Agentic AI is not a smarter tool — it is a decision-system redesign, and the checkpoint that used to come free now has to be built.",
-    date: "2026-06-02",
+    date: "2026-05-29",
     readingTime: "9 min read",
     summary:
       "Agentic AI produces actions, not answers — and the human checkpoint that came free with every answer is gone unless you design it back in. Why agentic adoption is a decision-system question, not a technology one.",
@@ -2422,7 +2422,7 @@ export const ESSAYS: Essay[] = [
     title: "The Take-Home Test",
     subtitle:
       "More than a dozen interview take-home tasks, done cold for a dozen organizations, read as one long experiment in how teams relate to their own decisions.",
-    date: "2026-06-06",
+    date: "2026-06-01",
     readingTime: "8 min read",
     summary:
       "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
@@ -2653,7 +2653,7 @@ export const ESSAYS: Essay[] = [
     number: "05",
     title: "What is this system actually measuring?",
     subtitle: "The evaluation gap in higher education’s AI moment.",
-    date: "2026-06-10",
+    date: "2026-06-05",
     readingTime: "8 min read",
     summary:
       "Universities have built the scaffolding to govern AI and left out a load-bearing beam: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",

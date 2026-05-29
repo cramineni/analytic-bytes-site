@@ -55,6 +55,13 @@ const ARTIFACTS: Entry[] = [
   },
   {
     type: "artifact",
+    title: "The Agent System",
+    summary:
+      "An agentic-AI architecture: five named agents — Data, Analysis, Insight, Execution, Monitoring — operating the Signal–Decision–Action loop, with monitoring closing the loop and a human-in-the-loop rail across every agent. The system around the model, not the model itself, is the architecture.",
+    image: "/library/artifacts/agent-system.svg",
+  },
+  {
+    type: "artifact",
     title: "Decision Load vs Decision Capacity",
     summary:
       "Why AI raises an organization's decision load faster than its decision capacity — and what happens in the overload zone, where a leader quietly becomes the buffer the system never built.",
@@ -87,6 +94,13 @@ const ARTIFACTS: Entry[] = [
     summary:
       "The measurement-and-evaluation architecture that turns monitoring into learning: a living theory of change as keystone, harmonized assessments, and one semantic layer so every audience sees numbers that agree.",
     image: "/library/artifacts/evidence-spine.svg",
+  },
+  {
+    type: "artifact",
+    title: "Commercial = Mission-Driven",
+    summary:
+      "A translation table from commercial vocabulary — GTM, KPIs, ROI, LTV, churn, A/B testing, funnel, conversion — to its mission-driven equivalents. Different bottom line; the discipline is the same.",
+    image: "/library/artifacts/commercial-equals-mission.svg",
   },
 ];
 
