@@ -2711,12 +2711,11 @@ export const ESSAYS: Essay[] = [
     number: "05",
     title: "What is this system actually measuring?",
     subtitle: "The evaluation gap in higher education’s AI moment.",
-    date: "2026-06-05",
+    date: "2026-05-31",
     readingTime: "8 min read",
     summary:
       "Universities have built the scaffolding to govern AI and left out a load-bearing beam: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
     cover: "/library/covers/what-is-this-system-measuring.svg",
-    hidden: true,
     body: (
       <>
         <Brief>
@@ -2931,7 +2930,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <MetaNote>
-          Written June 2026 for the Analytic Bytes Library. The argument draws on
+          Written May 2026 for the Analytic Bytes Library. The argument draws on
           measurement-science practice and is intended to outlast specific AI
           products and platforms.
         </MetaNote>
