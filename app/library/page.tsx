@@ -99,7 +99,7 @@ const ARTIFACTS: Entry[] = [
     type: "artifact",
     title: "Commercial = Mission-Driven",
     summary:
-      "A twelve-term translation table from commercial vocabulary — GTM, funnel, conversion, KPIs, OKRs, ROI, LTV, runway, churn, A/B testing, MVP, CI/CD — to its mission-driven equivalents. Different bottom line; the discipline is the same.",
+      "A fourteen-term translation table from commercial vocabulary — GTM, audience, segmentation, funnel, conversion, KPIs, OKRs, ROI, LTV, runway, churn, A/B testing, MVP, CI/CD — to its mission-driven equivalents. Different bottom line; the discipline is the same.",
     image: "/library/artifacts/commercial-equals-mission.svg",
   },
 ];
