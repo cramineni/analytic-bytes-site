@@ -64,7 +64,7 @@ const ARTIFACTS: Entry[] = [
     type: "artifact",
     title: "Decision Load vs Decision Capacity",
     summary:
-      "Why AI raises an organization's decision load faster than its decision capacity — and what happens in the overload zone, where a leader quietly becomes the buffer the system never built.",
+      "AI raises both an organization's decision load and its decision capacity. Whether the gap closes or opens is a design choice. Deploy without redesign and a leader quietly becomes the buffer the system never built. Design for capacity expansion and the system absorbs what was previously personal.",
     image: "/library/artifacts/decision-load-vs-capacity.svg",
   },
   {
@@ -99,7 +99,7 @@ const ARTIFACTS: Entry[] = [
     type: "artifact",
     title: "Commercial = Mission-Driven",
     summary:
-      "A translation table from commercial vocabulary — GTM, KPIs, ROI, LTV, churn, A/B testing, funnel, conversion — to its mission-driven equivalents. Different bottom line; the discipline is the same.",
+      "A twelve-term translation table from commercial vocabulary — GTM, funnel, conversion, KPIs, OKRs, ROI, LTV, runway, churn, A/B testing, MVP, CI/CD — to its mission-driven equivalents. Different bottom line; the discipline is the same.",
     image: "/library/artifacts/commercial-equals-mission.svg",
   },
 ];
