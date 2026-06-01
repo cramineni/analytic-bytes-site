@@ -2795,12 +2795,13 @@ export const ESSAYS: Essay[] = [
           is agreement: how often does the machine’s score match a trained human
           rater’s score? It is a clean number, and it is reassuring. It is also
           not sufficient. A model can agree with human raters at a high rate and
-          still be measuring the wrong thing. It can learn that longer essays
-          tend to score higher, and quietly reward length. It can lean on
-          vocabulary, sentence count, surface fluency: features that correlate
-          with quality without being quality. The scores look right. The
-          agreement statistics look right. And underneath, the system is
-          measuring something other than what its label claims.
+          still be measuring only part of what it claims to measure. It can
+          learn that longer essays tend to score higher, and quietly come to
+          lean on length. It can rest on vocabulary, sentence count, surface
+          fluency — features that correlate with writing quality without
+          constituting it. The scores look right. The agreement statistics look
+          right. And underneath, the system is measuring something narrower than
+          its label suggests.
         </P>
         <P>
           The discipline of measurement science exists, in large part, to catch
@@ -2809,13 +2810,74 @@ export const ESSAYS: Essay[] = [
           actually measuring, and does that match what we say it measures? Not
           whether the output looks plausible, but whether the thing being
           measured is the thing we intended. An automated scoring engine that
-          earns its agreement by rewarding length is not a writing-quality
-          measure. It is a length measure wearing a writing-quality label.
+          earns its agreement primarily through length is not measuring writing
+          quality directly. It is measuring a feature that correlates with
+          writing quality. The difference looks small in aggregate. It is
+          enormous for the writers the correlation doesn’t hold for.
         </P>
+
+        <H2>The harder question</H2>
+        <P>
+          The methodological alternative is older than machine learning, and it
+          is what measurement science was built on. A test like GRE Writing is
+          not, at its core, asking whether an AI can match a human rater on a
+          30-minute timed essay. It is making a claim: that performance on a
+          short, timed task — two prompts, an Issue essay and an Argument essay,
+          written under pressure — predicts performance on something quite
+          different in shape. The longer, drafted-and-revised writing students
+          produce over weeks in a first-year graduate course. Two different
+          formats. Different rubrics. Different human evaluators. Two ways of
+          capturing the same underlying writing construct, with the test
+          asserting a relationship between them.
+        </P>
+        <P>
+          Validating an AI scoring engine against that relationship — does the
+          AI’s score on the timed essay predict instructor evaluations of the
+          student’s actual coursework writing — is a different question than
+          validating it against immediate rater agreement on the timed essay
+          itself. Both questions involve human judgment. The difference is where
+          it sits: at the immediate output, where the human is the rater the AI
+          is trained to match, or at the downstream construct expression, where
+          the human is the instructor evaluating what the test was built to
+          predict. The first is reliability, often pursued because it is faster
+          and cheaper. The second is validity — and it is what the test was
+          claiming to do in the first place. The AI-scoring conversation has
+          mostly been running on the easier question.
+        </P>
+        <P>
+          There is a second reason it has stayed there, and it is honest to
+          name. The harder validity work — gathering downstream outcomes,
+          instructor evaluations of subsequent coursework, longitudinal
+          tracking — was historically expensive.
+          Reliability-against-human-raters was what could be done at scale. The
+          cost economics favored the easier question. That economics has
+          changed. The same AI capability that made faster scoring possible —
+          cheap compute, cheap storage, cheap data integration — has also
+          lowered the cost of running the harder question. The validity work
+          that was once prohibitively expensive is newly affordable. The
+          methodology was built for an older cost structure. The cost structure
+          has moved. The methodology hasn’t.
+        </P>
+        <P>
+          This is not an argument against keeping humans in the loop. It is an
+          argument against confusing two different roles humans play in that
+          loop. Humans as decision-makers — the people who act on a score, who
+          decide what an early-alert flag means in a specific student’s life,
+          who weigh the AI’s output against the rest of what they know — should
+          stay, and should stay clearly in charge. Humans as the
+          immediate-output validation target — the rater the AI is trained to
+          match — is the harder question. That rater is always a proxy for the
+          construct, not the construct itself. Validating against the downstream
+          criterion still involves human judgment, but a human judgment anchored
+          at what the test was built to predict, not at the score itself. Keep
+          humans deciding. Anchor the validation farther downstream.
+        </P>
+
         <H2>Every system makes a claim</H2>
         <P>
-          Every AI system a university adopts makes a claim like that label, and
-          most of the claims are never written down. An early-alert model claims
+          Every AI system a university adopts carries a label of its own — a
+          claim about what it measures — and most of those claims are never
+          written down. An early-alert model claims
           to identify students at academic risk. An advising assistant claims to
           surface the guidance a student needs. An admissions-support tool
           claims to predict yield, or fit, or success. A staff-facing assistant
