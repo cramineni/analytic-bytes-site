@@ -2798,7 +2798,7 @@ export const ESSAYS: Essay[] = [
           still be measuring only part of what it claims to measure. It can
           learn that longer essays tend to score higher, and quietly come to
           lean on length. It can rest on vocabulary, sentence count, surface
-          fluency — features that correlate with writing quality without
+          fluency: features that correlate with writing quality without
           constituting it. The scores look right. The agreement statistics look
           right. And underneath, the system is measuring something narrower than
           its label suggests.
@@ -2821,39 +2821,42 @@ export const ESSAYS: Essay[] = [
           The methodological alternative is older than machine learning, and it
           is what measurement science was built on. A test like GRE Writing is
           not, at its core, asking whether an AI can match a human rater on a
-          30-minute timed essay. It is making a claim: that performance on a
-          short, timed task — two prompts, an Issue essay and an Argument essay,
-          written under pressure — predicts performance on something quite
-          different in shape. The longer, drafted-and-revised writing students
+          30-minute timed essay. The GRE Writing test asks students to write
+          two essays under timed pressure, an Issue essay and an Argument
+          essay. It is making a claim about the relationship between
+          performance on those timed tasks and performance on something quite
+          different in shape: the longer, drafted-and-revised writing students
           produce over weeks in a first-year graduate course. Two different
           formats. Different rubrics. Different human evaluators. Two ways of
           capturing the same underlying writing construct, with the test
           asserting a relationship between them.
         </P>
         <P>
-          Validating an AI scoring engine against that relationship — does the
-          AI’s score on the timed essay predict instructor evaluations of the
-          student’s actual coursework writing — is a different question than
-          validating it against immediate rater agreement on the timed essay
-          itself. Both questions involve human judgment. The difference is where
-          it sits: at the immediate output, where the human is the rater the AI
-          is trained to match, or at the downstream construct expression, where
+          Validating an AI scoring engine against that relationship is a
+          different question than validating it against immediate rater
+          agreement on the timed essay itself. The relationship question is
+          whether the AI’s score on the timed essay predicts instructor
+          evaluations of the student’s actual coursework writing. Both
+          questions involve human judgment. The difference is where it sits:
+          at the immediate output, where the human is the rater the AI is
+          trained to match, or at the downstream construct expression, where
           the human is the instructor evaluating what the test was built to
-          predict. The first is reliability, often pursued because it is faster
-          and cheaper. The second is validity — and it is what the test was
-          claiming to do in the first place. The AI-scoring conversation has
+          predict. The first is reliability, often pursued because it is
+          faster and cheaper. The second is validity, and it is what the test
+          was claiming to do in the first place. The AI-scoring conversation has
           mostly been running on the easier question.
         </P>
         <P>
           There is a second reason it has stayed there, and it is honest to
-          name. The harder validity work — gathering downstream outcomes,
-          instructor evaluations of subsequent coursework, longitudinal
-          tracking — was historically expensive.
-          Reliability-against-human-raters was what could be done at scale. The
-          cost economics favored the easier question. That economics has
-          changed. The same AI capability that made faster scoring possible —
-          cheap compute, cheap storage, cheap data integration — has also
-          lowered the cost of running the harder question. The validity work
+          name. The harder validity work was historically expensive. It
+          required gathering downstream outcomes, running instructor
+          evaluations of subsequent coursework, tracking students
+          longitudinally. Reliability-against-human-raters was what could be
+          done at scale. The cost economics favored the easier question. That
+          economics has changed. The same AI capability that made faster
+          scoring possible, the cheap compute and cheap storage and cheap data
+          integration of the last decade, has also lowered the cost of running
+          the harder question. The validity work
           that was once prohibitively expensive is newly affordable. The
           methodology was built for an older cost structure. The cost structure
           has moved. The methodology hasn’t.
@@ -2861,12 +2864,12 @@ export const ESSAYS: Essay[] = [
         <P>
           This is not an argument against keeping humans in the loop. It is an
           argument against confusing two different roles humans play in that
-          loop. Humans as decision-makers — the people who act on a score, who
-          decide what an early-alert flag means in a specific student’s life,
-          who weigh the AI’s output against the rest of what they know — should
-          stay, and should stay clearly in charge. Humans as the
-          immediate-output validation target — the rater the AI is trained to
-          match — is the harder question. That rater is always a proxy for the
+          loop. Humans as decision-makers are the people who act on a score,
+          who decide what an early-alert flag means in a specific student’s
+          life, who weigh the AI’s output against the rest of what they know.
+          They should stay, and should stay clearly in charge. Humans as the
+          immediate-output validation target, the rater the AI is trained to
+          match, is the harder question. That rater is always a proxy for the
           construct, not the construct itself. Validating against the downstream
           criterion still involves human judgment, but a human judgment anchored
           at what the test was built to predict, not at the score itself. Keep
@@ -2875,8 +2878,8 @@ export const ESSAYS: Essay[] = [
 
         <H2>Every system makes a claim</H2>
         <P>
-          Every AI system a university adopts carries a label of its own — a
-          claim about what it measures — and most of those claims are never
+          Every AI system a university adopts carries a label of its own, a
+          claim about what it measures, and most of those claims are never
           written down. An early-alert model claims
           to identify students at academic risk. An advising assistant claims to
           surface the guidance a student needs. An admissions-support tool

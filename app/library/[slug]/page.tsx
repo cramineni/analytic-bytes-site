@@ -55,9 +55,12 @@ export default function EssayPage({
   const essay = getEssay(params.slug);
   if (!essay) notFound();
 
-  const idx = ESSAYS.findIndex((e) => e.slug === essay.slug);
-  const prev = idx > 0 ? ESSAYS[idx - 1] : null;
-  const next = idx < ESSAYS.length - 1 ? ESSAYS[idx + 1] : null;
+  // Build the prev/next walker over VISIBLE essays only — hidden essays
+  // shouldn't surface in keep-reading nav even on adjacent published pieces.
+  const visible = ESSAYS.filter((e) => !e.hidden);
+  const idx = visible.findIndex((e) => e.slug === essay.slug);
+  const prev = idx > 0 ? visible[idx - 1] : null;
+  const next = idx >= 0 && idx < visible.length - 1 ? visible[idx + 1] : null;
 
   return (
     <>
