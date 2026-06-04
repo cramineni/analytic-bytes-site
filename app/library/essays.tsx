@@ -299,7 +299,7 @@ export const ESSAYS: Essay[] = [
           narrative reporting. The exercise looks reasonable, the cells fill in,
           and a winner emerges. Six months later the product underperforms in
           ways nobody can quite articulate. Reports look like screenshots. The
-          operator console is mostly used as a launcher for other tools.
+          ops team opens the dashboard only to click through to other systems.
           Leadership has stopped opening the executive dashboard.
         </P>
         <P>
@@ -384,11 +384,12 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          You cannot ship one tool that is good at all of this. What you can
-          ship is one tool that is good at one surface and acceptable at the
-          others, which is what most BI selections deliver. The org chart where
-          one person owns “BI” and one tool owns “all reporting” is what
-          guarantees that outcome.
+          No single tool is good at all three surfaces. What most teams end up
+          with is a tool that is strong on one and just acceptable on the
+          others, accepted as “the BI stack” by default. That is not a tool
+          problem. It is what the org chart produces: one person who owns
+          “BI,” one tool that owns “all reporting.” It will reproduce with
+          whichever vendor you pick next, until the structure changes.
         </P>
 
         <H2>Why no BI vendor solves the publication problem</H2>
@@ -447,7 +448,7 @@ export const ESSAYS: Essay[] = [
         <H2>The keystone: one canonical computation per concept</H2>
         <P>
           The keystone argument is the one most worth holding firm on. It is the
-          difference between a system that scales and a system that poisons
+          difference between a system that scales and a system that erodes
           trust over time.
         </P>
         <P>
@@ -604,6 +605,250 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
+  // FIELD NOTE 01 — When GenAI Redesigned My Dashboard
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "when-genai-redesigned-my-dashboard",
+    number: "01",
+    title: "When GenAI Redesigned My Dashboard",
+    subtitle:
+      "The redesign was uglier and clearer. What that taught me about data teams and AI tools.",
+    date: "2026-05-11",
+    readingTime: "7 min read",
+    summary:
+      "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
+    cover: "/library/covers/when-genai-redesigned-my-dashboard.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            This one starts with a small professional embarrassment, so the
+            leadership point may as well go first: the dashboards a data team is
+            proud of and the dashboards a busy decision-maker uses are
+            frequently not the same dashboard. The gap between them is quiet. It
+            rarely shows up in a status update. And it is where a lot of
+            analytics work stops earning its keep.
+          </p>
+          <p>
+            What follows is written for the people building dashboards, but the
+            method is small enough for a leader to hold a team to: let an AI
+            tool propose what the audience needs to see before the team’s craft
+            instincts lock in, then curate from there. The claim is not
+            that AI designs better. It is that AI doesn’t yet carry your team’s
+            aesthetic habits, which makes it a useful mirror for a bias every
+            data team has and few can see in themselves.
+          </p>
+        </Brief>
+
+        <P>
+          A few years ago I built a school-performance dashboard in Looker for a
+          charter network. It was sophisticated. Meter charts for percentile
+          readings. Multi-layered filters. Polished visual treatment that took
+          weeks to get right. I was proud of it.
+        </P>
+        <P>
+          For my Stanford AI-Driven Leadership capstone, I put a similar
+          dashboard back in front of GenAI tools — ChatGPT, Claude, Gemini — and
+          asked them what they would change. The redesign was uglier than my
+          original. It was also clearer to school leaders. The meter charts went
+          away. The filters got fewer. The headline metric got bigger and
+          earlier. The dashboard turned into something a busy principal could
+          read in fifteen seconds and act on.
+        </P>
+        <Pull>
+          I had been designing for sophistication. The AI tools were designing
+          for action.
+        </Pull>
+
+        <Figure
+          src="/library/figures/genai-dashboard-cr-looker-original.png"
+          alt="The original Looker-style enrollment dashboard prototype, with six tiles, gauges, and donut charts covering every category."
+          caption="The original prototype. Six tiles with gauges and donuts, every cut on screen, every category sliced. A dashboard the data team is proud of."
+        />
+
+        <Figure
+          src="/library/figures/genai-dashboard-gpt-redesign.png"
+          alt="The AI-proposed redesign of the enrollment dashboard, a 2x2 grid of four focused bar charts: enrollment vs target, subgroup enrollment vs target, retention funnel, and ELL enrollment gap."
+          caption="The AI-proposed redesign. Four charts, each tied to a question a leader would actually act on: am I on target, where is the subgroup gap, where is the retention funnel leaking, which gap needs immediate attention. Uglier than the original. Clearer in fifteen seconds."
+        />
+
+        <P>
+          That gap is the one that matters in mission-driven analytics: the gap
+          between the dashboards data teams build because they are satisfying to
+          make and the dashboards decision-makers use to decide. And GenAI
+          tools, used the right way, are surprisingly good at exposing it.
+        </P>
+        <P>
+          This is what came out of the four-phase capstone. The discipline of
+          letting AI propose first changed the work.
+        </P>
+
+        <H2>The discipline: AI proposes, human curates</H2>
+        <P>
+          The traditional dashboard-building pattern goes: analyst pulls the
+          data, designer drafts the layout, dashboard-builder implements,
+          stakeholder reviews. Each step adds aesthetic and analytic
+          preferences. The output reflects what the data team wanted to build,
+          often more than what the stakeholder will use.
+        </P>
+        <P>The pattern I now use looks different.</P>
+        <NumList>
+          <NumItem n={1}>
+            <B>Hand the dataset to a GenAI tool with the question.</B>{" "}
+            <I>
+              “This is school-level data on attendance, mastery, persistence,
+              behavior. The audience is school leaders deciding which two
+              schools to visit this week. What should they see?”
+            </I>
+          </NumItem>
+          <NumItem n={2}>
+            <B>
+              Take the AI’s first proposal seriously even when it’s uglier than
+              what you would have built.
+            </B>{" "}
+            The AI won’t reach for a meter chart unless asked. It will reach for
+            the simplest visualization that answers the question. That
+            simplicity is usually what the stakeholder needs.
+          </NumItem>
+          <NumItem n={3}>
+            <B>Curate. Don’t rebuild.</B> The AI’s proposal is the starting
+            point, not the deliverable. The data team adjusts for tone, brand,
+            governance, edge cases. But the structure — what is prominent, what
+            is secondary, what is omitted — is anchored on the AI’s reading of
+            what the audience needs to see, not the data team’s reading of
+            what’s satisfying to build.
+          </NumItem>
+        </NumList>
+        <P>
+          This is closer to user-research methodology than to traditional BI
+          design. The AI is acting as a fast proxy for the stakeholder’s
+          cognitive needs, not because the AI knows the stakeholder, but because
+          the AI doesn’t yet carry the data team’s aesthetic biases.
+        </P>
+
+        <H2>Where each tool fits in the discipline</H2>
+        <P>The tools have different strengths inside this workflow.</P>
+        <P>
+          <B>ChatGPT, with its data-analysis tooling, is strong at the first
+          proposal step.</B>{" "}
+          Hand it a dataset and a question; it produces summary statistics,
+          suggests metrics, and prototypes a structure. The analyst’s job is to
+          interpret the proposal, not to start from scratch.
+        </P>
+        <P>
+          <B>Claude is strong at the curation and narrative-overlay step.</B>{" "}
+          Once the dashboard structure is clear, Claude is better at writing the
+          audience-appropriate headline copy, the metric definitions, and the
+          interpretive callouts that turn a chart into a decision surface.
+        </P>
+        <P>
+          <B>
+            Gemini is useful when the question pairs internal data with external
+            context.
+          </B>{" "}
+          Recent research, sector benchmarks, regulatory framing: the
+          search-augmented variant handles those when they come up.
+        </P>
+        <P>
+          These specific advantages will shift as capabilities converge; that is
+          already happening. The discipline doesn’t shift. The discipline is:
+          let AI propose what the stakeholder needs to see before the data
+          team’s preferences lock in. Curate from there.
+        </P>
+
+        <H2>What this changes about data-team workflow</H2>
+        <P>
+          When AI is positioned as design-collaborator-first rather than as
+          content-generator-last, three things shift.
+        </P>
+        <P>
+          <B>The first deliverable gets faster.</B> A first-draft dashboard can
+          go from days of design iteration to hours of curation on top of an AI
+          proposal. The team’s bandwidth concentrates on the judgment calls —
+          what is right for this stakeholder, what governance demands, what
+          brand voice requires — instead of on building from a blank canvas.
+        </P>
+        <P>
+          <B>The aesthetic-vs-decision tension surfaces earlier.</B> When the AI
+          proposes the simplest viable chart and the data team wants to add a
+          more sophisticated one, the conversation is now explicit. Is the
+          sophistication serving the decision, or serving the team’s desire to
+          build something interesting? That is a productive conversation to have
+          early instead of after the dashboard ships.
+        </P>
+        <P>
+          <B>Stakeholder interpretation becomes part of the design process.</B>{" "}
+          AI proposals are easy to test against actual users. Does a school
+          principal read this faster than the original? You can find out in a
+          week instead of after launch.
+        </P>
+
+        <H2>What the discipline cannot replace</H2>
+        <P>
+          The AI proposal is rarely the final answer. Three things still require
+          human judgment.
+        </P>
+        <P>
+          <B>Brand and tone.</B> The AI doesn’t know your organization’s
+          conventions, the words your audience trusts, the colors you’ve
+          standardized. Curation owns that.
+        </P>
+        <P>
+          <B>Edge cases and governance.</B> The AI proposes from the dataset it
+          sees. It doesn’t know which subgroups need cell suppression, which
+          metrics have known data-quality issues, which interpretations would
+          mislead a board reader. The data team owns that.
+        </P>
+        <P>
+          <B>The question itself.</B> The AI is great at proposing how to
+          display an answer once it has the question. It is worse at deciding
+          which question matters most. That is still the analyst’s call, and the
+          closest thing to a human-only step in the workflow.
+        </P>
+
+        <H2>The reframe</H2>
+        <P>
+          The traditional dashboard-design conversation centers on what the data
+          team can build. The discipline I’d recommend now centers on what the
+          audience can read in fifteen seconds and act on. That is the
+          difference between building for the immediate task — show every cut
+          of the data with all the craft the team can bring — and building for
+          the intended outcome the dashboard exists to support: a better
+          decision, made sooner, by the person it
+          was built for. A dashboard can be flawless at the first and useless at
+          the second. AI tools help here not because they are better designers,
+          but because they don’t share our aesthetic biases. Letting them
+          propose first surfaces the gap between sophistication and usefulness,
+          and most data teams default to the wrong side of that gap.
+        </P>
+        <Pull>
+          Beautiful dashboards aren’t the same as decision-driving ones. AI
+          tools are a discipline against our own biases. Use them that way.
+        </Pull>
+        <P>
+          And the discipline generalizes well past dashboards. Design every
+          surface backward from the decision it is meant to change, not forward
+          from the data you happen to hold. Ask it of a report, an alert, a
+          model’s output: what decision does this serve, and does it measurably
+          move it? The fifteen-second dashboard a principal can act on is just
+          one surface answering that question honestly. <I>From fragmented to
+          decision-ready</I> is the distance a data team closes when it stops
+          designing for itself and starts designing for the decision.
+        </P>
+
+        <MetaNote>
+          Written May 2026 for the Analytic Bytes Library. Tool capabilities and
+          product names cited reflect that period, and capabilities are
+          converging quickly. The discipline it names — let AI propose what the
+          stakeholder needs to see, then curate — is intended to outlast
+          specific tool advantages.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
   // ESSAY 02 — Grounding the AI Layer
   // ===================================================================
   {
@@ -667,9 +912,9 @@ export const ESSAYS: Essay[] = [
           “What AI features should we adopt” is a vendor question. The
           architectural question is where each kind of AI compute belongs and
           what grounds it, and it is the one that decides whether your AI
-          investments compound or poison the data product. Place AI in the wrong
+          investments compound or corrupt the data product. Place AI in the wrong
           layer and it gets expensive, slow, and untrustworthy. Place it in the
-          right layer with no grounding contract and it confabulates. Place it
+          right layer with no grounding contract and it makes things up. Place it
           correctly, ground it against the same canonical metric definitions as
           your BI and your reports, and it earns trust the way the rest of the
           stack does.
@@ -723,7 +968,7 @@ export const ESSAYS: Essay[] = [
           Cortex Analyst, or whichever text-to-SQL surface your warehouse
           offers, for analyst-facing exploration, only when fed your dbt
           semantic layer as the YAML model. Without that grounding it
-          confabulates metric names. Don’t expose it to clients in v1.
+          invents metric names. Don’t expose it to clients in v1.
         </P>
         <P>
           Cortex COMPLETE / SUMMARIZE / EMBED_TEXT for narrative generation and
@@ -1088,236 +1333,6 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 01 — When GenAI Redesigned My Dashboard
-  // ===================================================================
-  {
-    kind: "field-note",
-    slug: "when-genai-redesigned-my-dashboard",
-    number: "01",
-    title: "When GenAI Redesigned My Dashboard",
-    subtitle:
-      "The redesign was uglier and clearer. What that taught me about data teams and AI tools.",
-    date: "2026-05-11",
-    readingTime: "7 min read",
-    summary:
-      "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
-    cover: "/library/covers/when-genai-redesigned-my-dashboard.svg",
-    body: (
-      <>
-        <Brief>
-          <p>
-            This one starts with a small professional embarrassment, so the
-            leadership point may as well go first: the dashboards a data team is
-            proud of and the dashboards a busy decision-maker uses are
-            frequently not the same dashboard. The gap between them is quiet. It
-            rarely shows up in a status update. And it is where a great deal of
-            analytics investment goes to die.
-          </p>
-          <p>
-            What follows is written for the people building dashboards, but the
-            method inside it is small enough for a leader to hold a team to. Let
-            an AI tool propose what the audience needs to see before the team’s
-            craft instincts lock in, then curate from there. The claim is not
-            that AI designs better. It is that AI doesn’t yet carry your team’s
-            aesthetic habits, which makes it a useful mirror for a bias every
-            data team has and few can see in themselves.
-          </p>
-        </Brief>
-
-        <P>
-          A few years ago I built a school-performance dashboard in Looker for a
-          charter network. It was sophisticated. Meter charts for percentile
-          readings. Multi-layered filters. Polished visual treatment that took
-          weeks to get right. I was proud of it.
-        </P>
-        <P>
-          For my Stanford AI-Driven Leadership capstone, I put a similar
-          dashboard back in front of GenAI tools — ChatGPT, Claude, Gemini — and
-          asked them what they would change. The redesign was uglier than my
-          original. It was also clearer to school leaders. The meter charts went
-          away. The filters got fewer. The headline metric got bigger and
-          earlier. The dashboard turned into something a busy principal could
-          read in fifteen seconds and act on.
-        </P>
-        <Pull>
-          I had been designing for sophistication. The AI tools were designing
-          for action.
-        </Pull>
-        <P>
-          That gap is the one that matters in mission-driven analytics: the gap
-          between the dashboards data teams build because they are satisfying to
-          make and the dashboards decision-makers use to decide. And GenAI
-          tools, used the right way, are surprisingly good at exposing it.
-        </P>
-        <P>
-          This is what came out of the four-phase capstone. The discipline of
-          letting AI propose first changed the work.
-        </P>
-
-        <H2>The discipline: AI proposes, human curates</H2>
-        <P>
-          The traditional dashboard-building pattern goes: analyst pulls the
-          data, designer drafts the layout, dashboard-builder implements,
-          stakeholder reviews. Each step adds aesthetic and analytic
-          preferences. The output reflects what the data team wanted to build,
-          often more than what the stakeholder will use.
-        </P>
-        <P>The pattern I now use looks different.</P>
-        <NumList>
-          <NumItem n={1}>
-            <B>Hand the dataset to a GenAI tool with the question.</B>{" "}
-            <I>
-              “This is school-level data on attendance, mastery, persistence,
-              behavior. The audience is school leaders deciding which two
-              schools to visit this week. What should they see?”
-            </I>
-          </NumItem>
-          <NumItem n={2}>
-            <B>
-              Take the AI’s first proposal seriously even when it’s uglier than
-              what you would have built.
-            </B>{" "}
-            The AI won’t reach for a meter chart unless asked. It will reach for
-            the simplest visualization that answers the question. That
-            simplicity is usually what the stakeholder needs.
-          </NumItem>
-          <NumItem n={3}>
-            <B>Curate. Don’t rebuild.</B> The AI’s proposal is the starting
-            point, not the deliverable. The data team adjusts for tone, brand,
-            governance, edge cases. But the structure — what is prominent, what
-            is secondary, what is omitted — is anchored on the AI’s reading of
-            what the audience needs to see, not the data team’s reading of
-            what’s satisfying to build.
-          </NumItem>
-        </NumList>
-        <P>
-          This is closer to user-research methodology than to traditional BI
-          design. The AI is acting as a fast proxy for the stakeholder’s
-          cognitive needs, not because the AI knows the stakeholder, but because
-          the AI doesn’t yet carry the data team’s aesthetic biases.
-        </P>
-
-        <H2>Where each tool fits in the discipline</H2>
-        <P>The tools have different strengths inside this workflow.</P>
-        <P>
-          <B>ChatGPT, with its data-analysis tooling, is strong at the first
-          proposal step.</B>{" "}
-          Hand it a dataset and a question; it produces summary statistics,
-          suggests metrics, and prototypes a structure. The analyst’s job is to
-          interpret the proposal, not to start from scratch.
-        </P>
-        <P>
-          <B>Claude is strong at the curation and narrative-overlay step.</B>{" "}
-          Once the dashboard structure is clear, Claude is better at writing the
-          audience-appropriate headline copy, the metric definitions, and the
-          interpretive callouts that turn a chart into a decision surface.
-        </P>
-        <P>
-          <B>
-            Gemini is useful when the question pairs internal data with external
-            context.
-          </B>{" "}
-          Recent research, sector benchmarks, regulatory framing: the
-          search-augmented variant handles those when they come up.
-        </P>
-        <P>
-          These specific advantages will shift as capabilities converge; that is
-          already happening. The discipline doesn’t shift. The discipline is:
-          let AI propose what the stakeholder needs to see before the data
-          team’s preferences lock in. Curate from there.
-        </P>
-
-        <H2>What this changes about data-team workflow</H2>
-        <P>
-          When AI is positioned as design-collaborator-first rather than as
-          content-generator-last, three things shift.
-        </P>
-        <P>
-          <B>The first deliverable gets faster.</B> A first-draft dashboard can
-          go from days of design iteration to hours of curation on top of an AI
-          proposal. The team’s bandwidth concentrates on the judgment calls —
-          what is right for this stakeholder, what governance demands, what
-          brand voice requires — instead of on building from a blank canvas.
-        </P>
-        <P>
-          <B>The aesthetic-vs-decision tension surfaces earlier.</B> When the AI
-          proposes the simplest viable chart and the data team wants to add a
-          more sophisticated one, the conversation is now explicit. Is the
-          sophistication serving the decision, or serving the team’s desire to
-          build something interesting? That is a productive conversation to have
-          early instead of after the dashboard ships.
-        </P>
-        <P>
-          <B>Stakeholder interpretation becomes part of the design process.</B>{" "}
-          AI proposals are easy to test against actual users. Does a school
-          principal read this faster than the original? You can find out in a
-          week instead of after launch.
-        </P>
-
-        <H2>What the discipline cannot replace</H2>
-        <P>
-          The AI proposal is rarely the final answer. Three things still require
-          human judgment.
-        </P>
-        <P>
-          <B>Brand and tone.</B> The AI doesn’t know your organization’s
-          conventions, the words your audience trusts, the colors you’ve
-          standardized. Curation owns that.
-        </P>
-        <P>
-          <B>Edge cases and governance.</B> The AI proposes from the dataset it
-          sees. It doesn’t know which subgroups need cell suppression, which
-          metrics have known data-quality issues, which interpretations would
-          mislead a board reader. The data team owns that.
-        </P>
-        <P>
-          <B>The question itself.</B> The AI is great at proposing how to
-          display an answer once it has the question. It is worse at deciding
-          which question matters most. That is still the analyst’s call, and the
-          closest thing to a human-only step in the workflow.
-        </P>
-
-        <H2>The reframe</H2>
-        <P>
-          The traditional dashboard-design conversation centers on what the data
-          team can build. The discipline I’d recommend now centers on what the
-          audience can read in fifteen seconds and act on. That is the
-          difference between building for the immediate task — display the data,
-          accurately — and building for the intended outcome the dashboard
-          exists to support: a better decision, made sooner, by the person it
-          was built for. A dashboard can be flawless at the first and useless at
-          the second. AI tools help here not because they are better designers,
-          but because they don’t share our aesthetic biases. Letting them
-          propose first surfaces the gap between sophistication and usefulness,
-          and most data teams default to the wrong side of that gap.
-        </P>
-        <Pull>
-          Beautiful dashboards aren’t the same as decision-driving ones. AI
-          tools are a discipline against our own biases. Use them that way.
-        </Pull>
-        <P>
-          And the discipline generalizes well past dashboards. Design every
-          surface backward from the decision it is meant to change, not forward
-          from the data you happen to hold. Ask it of a report, an alert, a
-          model’s output: what decision does this serve, and does it measurably
-          move it? The fifteen-second dashboard a principal can act on is just
-          one surface answering that question honestly. <I>From fragmented to
-          decision-ready</I> is the distance a data team closes when it stops
-          designing for itself and starts designing for the decision.
-        </P>
-
-        <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. Tool capabilities and
-          product names cited reflect that period, and capabilities are
-          converging quickly. The discipline it names — let AI propose what the
-          stakeholder needs to see, then curate — is intended to outlast
-          specific tool advantages.
-        </MetaNote>
-      </>
-    ),
-  },
-
-  // ===================================================================
   // FIELD NOTE 02 — LO 2.0, Stitching the Layers
   // ===================================================================
   {
@@ -1444,9 +1459,9 @@ export const ESSAYS: Essay[] = [
           of them. Eighty percent of students at or below basic level in Math;
           94% at or below basic in Science; 86% at or below basic in Social
           Science. The pattern compounds with grade: at-or-below-basic in Math
-          goes from 63% in Class III to 80% in Class X. State schools badly
-          underperform private, 85% at or below basic in Math at state schools
-          against 73% at private. AP graded Akanshi-1 overall on PGI 2022–23
+          goes from 63% in Class III to 80% in Class X. The state-private gap
+          is wide — 85% at or below basic in Math at state schools against 73%
+          at private, a 12-point spread. AP graded Akanshi-1 overall on PGI 2022–23
           (third-lowest band), and Akanshi-2 on the learning-outcomes domain.
           Thirty-nine percent of teachers reported overload of work.
         </P>
@@ -1566,9 +1581,9 @@ export const ESSAYS: Essay[] = [
           integration architecture is what makes it possible.
         </P>
 
-        <H2>The pilot</H2>
+        <H2>The pilot proposal</H2>
         <P>
-          Ten to twelve weeks (February–April 2025), Class X, Math and Science,
+          Ten to twelve weeks, Class X, Math and Science,
           a selected low/medium-performing district, state curriculum (with CBSE
           optionally included for Class VIII or IX). Pre- and post-assessment to
           measure efficacy. Weekly assessments to track growth. Real-time
@@ -1601,9 +1616,12 @@ export const ESSAYS: Essay[] = [
           could take.
         </P>
         <P>
-          The proposal didn’t materialize as a paid engagement. The framework
-          remains current. The state-level findings (NAS 2021, PGI 2022–23)
-          would benefit from a refresh against more recent NAS 2024 results.
+          The integration argument is illustrative. State-level findings reflect
+          NAS 2021 and PGI 2022–23; a refresh against the NAS 2024 cycle would
+          update the picture without changing the architecture. Pilot timing
+          and scope are sketched for orientation; an actual engagement would
+          scale to the district’s existing assessment infrastructure and
+          academic calendar.
         </P>
         <P>
           The opportunity isn’t a new portal. It’s stitching the layers we
@@ -1625,6 +1643,293 @@ export const ESSAYS: Essay[] = [
           reflect NAS 2021 and PGI 2022–23 cycles; subsequent NAS 2024 and PGI
           releases would refine the picture. The integration-architecture
           argument is intended to outlast specific cycle data.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 03 — Burden, Disparity, and the Next Dollar
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "burden-disparity-and-the-next-dollar",
+    number: "03",
+    title: "Burden, Disparity, and the Next Dollar",
+    subtitle:
+      "A reliability-filtered read of CDC suicide-mortality data — and why the single headline rate sends prevention money to the wrong map.",
+    date: "2026-05-25",
+    readingTime: "9 min read",
+    summary:
+      "Burden and disparity are two different signals in the same CDC mortality data. The priority list you build from one is not the list you build from the other — and a framework that shows both changes where the next prevention dollar goes.",
+    cover: "/library/covers/burden-disparity-and-the-next-dollar.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            A funder with a fixed prevention budget, or a state health officer
+            with one, faces the same question every cycle: where does the next
+            dollar go? The instinct is to follow the headline and fund the
+            states with the highest suicide rate. That instinct isn’t wrong. It
+            is just one signal, and on its own it sends money to the wrong map.
+          </p>
+          <p>
+            This is a field note, not a study. It is an exploratory,
+            reliability-filtered read of seven years of CDC WONDER mortality
+            data, and its only real claim is structural: burden and disparity
+            are two different signals, the priority list you would build from
+            one is not the list you would build from the other, and a
+            prioritization framework that shows both, and stays honest about
+            what it can’t see, changes the allocation decision. Written for the
+            person who has to defend that decision after it’s made.
+          </p>
+        </Brief>
+
+        <H2>The headline that hides the signal</H2>
+        <P>
+          Start with the good news, because it is real. Across the younger age
+          bands, suicide rates fell between 2021 and 2024, and not slightly.
+          Ages 10–14 down about 16 percent. Ages 15–19 down 13 percent. Ages
+          20–24 down 13 percent. Ages 25–34 down 12 percent. Four bands, every
+          one of them moving the right direction.
+        </P>
+        <P>
+          Now split the same dataset differently. The mid-life bands moved the
+          other way over the same three years: ages 35–44 up roughly 3 percent,
+          and 45–54 up about 3.5 percent. The decline among the young and the
+          rise after 35 are happening at the same time, in the same country, in
+          the same data.
+        </P>
+
+        <Figure
+          src="/library/figures/cdc-age-rate-change-2021-2024.png"
+          alt="Bar chart of percent change in crude suicide rate by age band, 2021 to 2024, ages 10–54. Four younger bands (10–14, 15–19, 20–24, 25–34) declined 12–16 percent; two mid-life bands (35–44, 45–54) rose 3 to 3.5 percent."
+          caption="Percent change in crude suicide rate by age band, 2021 to 2024, ages 10–54. Source: CDC WONDER provisional mortality data. Descriptive comparison; not causal."
+        />
+
+        <P>
+          A single national rate blends those opposite movements into one
+          number, and because the youngest bands are falling fast, that number
+          still reads as progress. The blend hides the reversal underneath it:
+          for every age band past 35, the trend has already turned. An average
+          cannot tell a funder that, and a funder who reads only the average
+          will not know to look. The lesson isn’t really about age. It is that
+          any rolled-up number is a decision hazard. It blends signals moving in
+          opposite directions, and the blend erases the contrast a resource
+          decision depends on. You have to disaggregate before you can allocate.
+          Age is one cut. The one this note is about is harder.
+        </P>
+
+        <H2>Two signals, not one</H2>
+        <P>
+          When prevention dollars get prioritized by geography, the working
+          number is almost always <I>burden</I>: the state’s overall suicide
+          rate, deaths relative to population. It is the obvious signal, and a
+          sound one. It answers a real question: how large is the problem here.
+        </P>
+        <P>
+          It is not the only question. The second signal is <I>disparity</I>:
+          within a state, how much higher the rate runs for the most-affected
+          racial group than for the White population. Expressed as relative
+          risk, a value of 2.0 means that group’s rate is twice as high.
+          Disparity doesn’t measure how big the problem is. It measures how
+          unevenly it falls.
+        </P>
+        <P>
+          Burden and disparity are different instruments, and they answer to
+          different commitments. A funder optimizing to prevent the most deaths
+          leans on burden. A funder optimizing to close the widest gap leans on
+          disparity. Most prioritization exercises pick one, usually burden,
+          because it is the number that sorts cleanly into a ranked list, and
+          never see the other at all.
+        </P>
+
+        <H2>The map burden draws, and the map disparity draws</H2>
+        <P>
+          Rank states by burden for 2024, ages 10–54, and the top of the list is
+          Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4),
+          New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado,
+          Oklahoma, Maine, Arkansas, Idaho. It is, broadly, a Mountain-West and
+          rural map.
+        </P>
+
+        <Figure
+          src="/library/figures/cdc-top-burden-states-2024.png"
+          alt="Horizontal bar chart of the top 15 US states by overall suicide rate, ages 10–54, 2024. Mountain West and rural states lead."
+          caption="Top 15 states by overall suicide rate, ages 10–54, 2024. High burden does not imply a credible within-state disparity signal. Source: CDC WONDER provisional mortality data."
+        />
+
+        <P>
+          Now rank by disparity instead. The strongest reliable relative-risk
+          signals are Minnesota (3.6×, the rate for American Indian and Alaska
+          Native residents against the White rate), South Dakota (3.1×), Alaska
+          (2.9×), Montana (1.9×), Hawaii (1.8×, here for residents identified as
+          more than one race), Arizona (1.6×), and California (1.5×).
+        </P>
+
+        <Figure
+          src="/library/figures/cdc-top-disparity-states-2024.png"
+          alt="Horizontal bar chart of US states passing all reliability filters, ranked by relative risk of suicide for the most-affected racial group versus the White population, ages 10–54, 2024."
+          caption="States passing all reliability filters, ranked by relative risk vs. the White population, ages 10–54, 2024. Signal rules: deaths ≥ 20 in both comparison groups; RR ≥ 1.25; positive absolute rate difference. Source: CDC WONDER."
+        />
+
+        <P>
+          The two lists overlap in some places and split hard in others.
+          Minnesota and California both carry serious disparity signals while
+          sitting at or below the middle of the burden table; a burden-only
+          funder never sees them. Wyoming and New Mexico sit near the top of the
+          burden table with no reliable disparity signal at the state level; a
+          disparity-only funder never sees <I>them</I>. Same data, same year.
+          Two different priority lists, depending only on which signal you let
+          do the sorting.
+        </P>
+
+        <H2>One map, four groups</H2>
+        <P>
+          Put both signals on the same axes and the states sort into four
+          groups.
+        </P>
+
+        <Figure
+          src="/library/figures/cdc-burden-disparity-quadrant.png"
+          alt="Scatter plot of US states with overall suicide rate on the horizontal axis and disparity relative risk on the vertical axis. States in the upper-right quadrant carry both high burden and a credible disparity signal."
+          caption="Burden × disparity signal map, ages 10–54, 2024. Each point is a state: horizontal position is the overall suicide rate, vertical position is the relative risk for the most-affected racial group vs. the White population. States with no reliable disparity signal are plotted at 1.0. Signal rules: deaths ≥ 20 in both comparison groups; RR ≥ 1.25; positive absolute rate difference. Source: CDC WONDER provisional mortality data."
+        />
+
+        <P>
+          <B>High burden and credible disparity:</B> the upper-right. Alaska,
+          South Dakota, Montana, Arizona, Hawaii. Both signals fire — a high
+          overall rate <I>and</I> a measurable, reliable equity gap inside the state.
+          This is the strongest and most defensible case for the next dollar,
+          because it answers to both commitments at once.
+        </P>
+        <P>
+          <B>High burden only:</B> the lower-right. Wyoming, New Mexico,
+          Colorado, North Dakota, Oklahoma, and more. A real, large problem,
+          with no reliable evidence of a racial disparity at the state level.
+          Investment here is well-justified on volume of harm alone.
+        </P>
+        <P>
+          <B>Credible disparity, lower burden:</B> the upper-left. Minnesota
+          and California. The statewide rate is not alarming, but a specific
+          population inside the state is carrying a markedly higher rate than its
+          White neighbors — about one and a half times higher in California, more
+          than three times higher in Minnesota. Investment here is justified on
+          equity, and it is the case a burden ranking renders invisible.
+        </P>
+        <P>
+          <B>Monitor:</B> the lower-left. Neither signal fires reliably. Not
+          “safe,” and not dismissed, just not where this dataset points a
+          limited budget first.
+        </P>
+        <P>
+          One pattern runs through nearly every disparity signal on the map. In
+          six of the seven states with a reliable signal, the most-affected
+          group is American Indian and Alaska Native communities; in Hawaii, it
+          is residents of more than one race. That is the clearest pattern in
+          the disparity signals. It should shape not only where the dollar goes
+          but who helps design what it funds; a prevention dollar spent{" "}
+          <I>on</I> a community tends to underperform a dollar spent <I>with</I>{" "}
+          one.
+        </P>
+
+        <H2>Where the next dollar goes</H2>
+        <P>
+          The framework doesn’t hand a funder an answer. It does something more
+          useful. It makes the question explicit. A dollar can be spent to
+          prevent the most deaths or to close the widest gap, and those are
+          different ethical commitments that lead to different states. A serious
+          allocation decision says which one it is optimizing, or splits the
+          budget across both on purpose, instead of letting the choice get made
+          implicitly by whichever number happened to be on the slide.
+        </P>
+        <P>
+          The overlap group is where the argument is easiest. Alaska, South
+          Dakota, Montana, Arizona, and Hawaii satisfy both commitments
+          simultaneously, and for most funders that is where a first tranche
+          belongs. The harder and more revealing conversations are the
+          off-diagonal ones. Is a Minnesota (an unremarkable statewide rate
+          hiding a more-than-threefold disparity) a priority for your mission? A
+          burden ranking already answered “no” on your behalf, silently, before
+          anyone in the room got to weigh in. The quadrant’s value is that it
+          puts the state back on the table and forces the answer to be given on
+          purpose.
+        </P>
+
+        <H2>The honest version</H2>
+        <P>
+          This is a field note, and being precise about what the data cannot do
+          is part of the method, not a disclaimer bolted to the end.
+        </P>
+        <P>
+          The figures are <I>provisional</I>. CDC WONDER mortality counts for
+          2018–2024 are revised over time; the picture will shift.
+        </P>
+        <P>
+          The disparity signals are <I>reliability-filtered</I>. A signal
+          counted here only if there were at least 20 deaths in both the
+          comparison group and the White comparison group, a relative risk of at
+          least 1.25, and a positive absolute rate difference. Below those
+          thresholds, small counts produce rates that swing wildly from year to
+          year, and an unfiltered ranking would be mostly noise wearing the
+          costume of precision.
+        </P>
+        <P>
+          <I>Absence of a signal is not evidence of equity.</I> Several states,
+          Montana and South Dakota among them, carry a suppression-caution flag:
+          the comparison is real but thin, built on few enough visible groups
+          that it should be read carefully. And “no reliable disparity signal”
+          almost never means a state has no disparity. It usually means the
+          affected groups are too small, in that state, for this dataset to
+          surface one safely.
+        </P>
+        <P>
+          Most important: this is an <I>exploratory prioritization signal</I>,
+          not an allocation formula. It is a map of where to look harder and ask
+          sharper questions, not a number that should move money on its own. A
+          measure that triggers investigation and a measure that drives
+          allocation are not the same instrument, and treating the first as if
+          it were the second is one of the most common ways well-meant analysis
+          does harm.
+        </P>
+
+        <H2>What this is really about</H2>
+        <P>
+          Strip the subject matter away and this is a decision-systems problem.
+          An organization has a real decision to make (where prevention
+          resources go) and the data it holds is being read through a single
+          number that cannot carry the decision. The fix is not more data. It is
+          a framework that disaggregates the signals the decision genuinely
+          rests on, shows them together, and stays disciplined about its own
+          limits.
+        </P>
+        <P>
+          That move is the same whether the decision is a state’s prevention
+          budget, a school district’s intervention dollars, or a clinical
+          network’s capacity plan: name the decision, find the distinct signals
+          it truly depends on, and refuse to let one rolled-up average stand in
+          for all of them.
+        </P>
+        <P>
+          The next dollar gets spent either way. A framework like this one
+          doesn’t spend it for you, and it shouldn’t. What it does is make sure
+          that when you spend it, you were looking at the whole map: both
+          signals, and the honest edges of what the data can and cannot say.{" "}
+          <I>From fragmented to decision-ready.</I>
+        </P>
+
+        <Note>
+          This piece discusses suicide. If you or someone you know is
+          struggling, the 988 Suicide &amp; Crisis Lifeline (call or text 988)
+          is available 24/7 in the US.
+        </Note>
+
+        <MetaNote>
+          Exploratory analysis of CDC WONDER provisional mortality data,
+          2018–2024 (ages 10–54). Written May 2026 for the Analytic Bytes
+          Library. This is a signal framework for strategic prioritization, not
+          a causal analysis, an epidemiological ranking, or a definitive
+          allocation system. Reliability filters are described in the text.
         </MetaNote>
       </>
     ),
@@ -1938,293 +2243,6 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 03 — Burden, Disparity, and the Next Dollar
-  // ===================================================================
-  {
-    kind: "field-note",
-    slug: "burden-disparity-and-the-next-dollar",
-    number: "03",
-    title: "Burden, Disparity, and the Next Dollar",
-    subtitle:
-      "A reliability-filtered read of CDC suicide-mortality data — and why the single headline rate sends prevention money to the wrong map.",
-    date: "2026-05-25",
-    readingTime: "9 min read",
-    summary:
-      "Burden and disparity are two different signals in the same CDC mortality data. The priority list you build from one is not the list you build from the other — and a framework that shows both changes where the next prevention dollar goes.",
-    cover: "/library/covers/burden-disparity-and-the-next-dollar.svg",
-    body: (
-      <>
-        <Brief>
-          <p>
-            A funder with a fixed prevention budget, or a state health officer
-            with one, faces the same question every cycle: where does the next
-            dollar go? The instinct is to follow the headline and fund the
-            states with the highest suicide rate. That instinct isn’t wrong. It
-            is just one signal, and on its own it sends money to the wrong map.
-          </p>
-          <p>
-            This is a field note, not a study. It is an exploratory,
-            reliability-filtered read of seven years of CDC WONDER mortality
-            data, and its only real claim is structural: burden and disparity
-            are two different signals, the priority list you would build from
-            one is not the list you would build from the other, and a
-            prioritization framework that shows both, and stays honest about
-            what it can’t see, changes the allocation decision. Written for the
-            person who has to defend that decision after it’s made.
-          </p>
-        </Brief>
-
-        <H2>The headline that hides the signal</H2>
-        <P>
-          Start with the good news, because it is real. Across the younger age
-          bands, suicide rates fell between 2021 and 2024, and not slightly.
-          Ages 10–14 down about 16 percent. Ages 15–19 down 13 percent. Ages
-          20–24 down 13 percent. Ages 25–34 down 12 percent. Four bands, every
-          one of them moving the right direction.
-        </P>
-        <P>
-          Now split the same dataset differently. The mid-life bands moved the
-          other way over the same three years: ages 35–44 up roughly 3 percent,
-          and 45–54 up about 3.5 percent. The decline among the young and the
-          rise after 35 are happening at the same time, in the same country, in
-          the same data.
-        </P>
-
-        <Figure
-          src="/library/figures/cdc-age-rate-change-2021-2024.png"
-          alt="Bar chart of percent change in crude suicide rate by age band, 2021 to 2024, ages 10–54. Four younger bands (10–14, 15–19, 20–24, 25–34) declined 12–16 percent; two mid-life bands (35–44, 45–54) rose 3 to 3.5 percent."
-          caption="Percent change in crude suicide rate by age band, 2021 to 2024, ages 10–54. Source: CDC WONDER provisional mortality data. Descriptive comparison; not causal."
-        />
-
-        <P>
-          A single national rate blends those opposite movements into one
-          number, and because the youngest bands are falling fast, that number
-          still reads as progress. The blend hides the reversal underneath it:
-          for every age band past 35, the trend has already turned. An average
-          cannot tell a funder that, and a funder who reads only the average
-          will not know to look. The lesson isn’t really about age. It is that
-          any rolled-up number is a decision hazard. It blends signals moving in
-          opposite directions, and the blend erases the contrast a resource
-          decision depends on. You have to disaggregate before you can allocate.
-          Age is one cut. The one this note is about is harder.
-        </P>
-
-        <H2>Two signals, not one</H2>
-        <P>
-          When prevention dollars get prioritized by geography, the working
-          number is almost always <I>burden</I>: the state’s overall suicide
-          rate, deaths relative to population. It is the obvious signal, and a
-          sound one. It answers a real question: how large is the problem here.
-        </P>
-        <P>
-          It is not the only question. The second signal is <I>disparity</I>:
-          within a state, how much higher the rate runs for the most-affected
-          racial group than for the White population. Expressed as relative
-          risk, a value of 2.0 means that group’s rate is twice as high.
-          Disparity doesn’t measure how big the problem is. It measures how
-          unevenly it falls.
-        </P>
-        <P>
-          Burden and disparity are different instruments, and they answer to
-          different commitments. A funder optimizing to prevent the most deaths
-          leans on burden. A funder optimizing to close the widest gap leans on
-          disparity. Most prioritization exercises pick one, usually burden,
-          because it is the number that sorts cleanly into a ranked list, and
-          never see the other at all.
-        </P>
-
-        <H2>The map burden draws, and the map disparity draws</H2>
-        <P>
-          Rank states by burden for 2024, ages 10–54, and the top of the list is
-          Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4),
-          New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado,
-          Oklahoma, Maine, Arkansas, Idaho. It is, broadly, a Mountain-West and
-          rural map.
-        </P>
-
-        <Figure
-          src="/library/figures/cdc-top-burden-states-2024.png"
-          alt="Horizontal bar chart of the top 15 US states by overall suicide rate, ages 10–54, 2024. Mountain West and rural states lead."
-          caption="Top 15 states by overall suicide rate, ages 10–54, 2024. High burden does not imply a credible within-state disparity signal. Source: CDC WONDER provisional mortality data."
-        />
-
-        <P>
-          Now rank by disparity instead. The strongest reliable relative-risk
-          signals are Minnesota (3.6×, the rate for American Indian and Alaska
-          Native residents against the White rate), South Dakota (3.1×), Alaska
-          (2.9×), Montana (1.9×), Hawaii (1.8×, here for residents identified as
-          more than one race), Arizona (1.6×), and California (1.5×).
-        </P>
-
-        <Figure
-          src="/library/figures/cdc-top-disparity-states-2024.png"
-          alt="Horizontal bar chart of US states passing all reliability filters, ranked by relative risk of suicide for the most-affected racial group versus the White population, ages 10–54, 2024."
-          caption="States passing all reliability filters, ranked by relative risk vs. the White population, ages 10–54, 2024. Signal rules: deaths ≥ 20 in both comparison groups; RR ≥ 1.25; positive absolute rate difference. Source: CDC WONDER."
-        />
-
-        <P>
-          The two lists overlap in some places and split hard in others.
-          Minnesota and California both carry serious disparity signals while
-          sitting at or below the middle of the burden table; a burden-only
-          funder never sees them. Wyoming and New Mexico sit near the top of the
-          burden table with no reliable disparity signal at the state level; a
-          disparity-only funder never sees <I>them</I>. Same data, same year.
-          Two different priority lists, depending only on which signal you let
-          do the sorting.
-        </P>
-
-        <H2>One map, four groups</H2>
-        <P>
-          Put both signals on the same axes and the states sort into four
-          groups.
-        </P>
-
-        <Figure
-          src="/library/figures/cdc-burden-disparity-quadrant.png"
-          alt="Scatter plot of US states with overall suicide rate on the horizontal axis and disparity relative risk on the vertical axis. States in the upper-right quadrant carry both high burden and a credible disparity signal."
-          caption="Burden × disparity signal map, ages 10–54, 2024. Each point is a state: horizontal position is the overall suicide rate, vertical position is the relative risk for the most-affected racial group vs. the White population. States with no reliable disparity signal are plotted at 1.0. Signal rules: deaths ≥ 20 in both comparison groups; RR ≥ 1.25; positive absolute rate difference. Source: CDC WONDER provisional mortality data."
-        />
-
-        <P>
-          <B>High burden and credible disparity:</B> the upper-right. Alaska,
-          South Dakota, Montana, Arizona, Hawaii. Both signals fire — a high
-          overall rate <I>and</I> a measurable, reliable equity gap inside the state.
-          This is the strongest and most defensible case for the next dollar,
-          because it answers to both commitments at once.
-        </P>
-        <P>
-          <B>High burden only:</B> the lower-right. Wyoming, New Mexico,
-          Colorado, North Dakota, Oklahoma, and more. A real, large problem,
-          with no reliable evidence of a racial disparity at the state level.
-          Investment here is well-justified on volume of harm alone.
-        </P>
-        <P>
-          <B>Credible disparity, lower burden:</B> the upper-left. Minnesota
-          and California. The statewide rate is not alarming, but a specific
-          population inside the state is carrying a markedly higher rate than its
-          White neighbors — about one and a half times higher in California, more
-          than three times higher in Minnesota. Investment here is justified on
-          equity, and it is the case a burden ranking renders invisible.
-        </P>
-        <P>
-          <B>Monitor:</B> the lower-left. Neither signal fires reliably. Not
-          “safe,” and not dismissed, just not where this dataset points a
-          limited budget first.
-        </P>
-        <P>
-          One pattern runs through nearly every disparity signal on the map. In
-          six of the seven states with a reliable signal, the most-affected
-          group is American Indian and Alaska Native communities; in Hawaii, it
-          is residents of more than one race. That is the clearest pattern in
-          the disparity signals. It should shape not only where the dollar goes
-          but who helps design what it funds; a prevention dollar spent{" "}
-          <I>on</I> a community tends to underperform a dollar spent <I>with</I>{" "}
-          one.
-        </P>
-
-        <H2>Where the next dollar goes</H2>
-        <P>
-          The framework doesn’t hand a funder an answer. It does something more
-          useful. It makes the question explicit. A dollar can be spent to
-          prevent the most deaths or to close the widest gap, and those are
-          different ethical commitments that lead to different states. A serious
-          allocation decision says which one it is optimizing, or splits the
-          budget across both on purpose, instead of letting the choice get made
-          implicitly by whichever number happened to be on the slide.
-        </P>
-        <P>
-          The overlap group is where the argument is easiest. Alaska, South
-          Dakota, Montana, Arizona, and Hawaii satisfy both commitments
-          simultaneously, and for most funders that is where a first tranche
-          belongs. The harder and more revealing conversations are the
-          off-diagonal ones. Is a Minnesota (an unremarkable statewide rate
-          hiding a more-than-threefold disparity) a priority for your mission? A
-          burden ranking already answered “no” on your behalf, silently, before
-          anyone in the room got to weigh in. The quadrant’s value is that it
-          puts the state back on the table and forces the answer to be given on
-          purpose.
-        </P>
-
-        <H2>The honest version</H2>
-        <P>
-          This is a field note, and being precise about what the data cannot do
-          is part of the method, not a disclaimer bolted to the end.
-        </P>
-        <P>
-          The figures are <I>provisional</I>. CDC WONDER mortality counts for
-          2018–2024 are revised over time; the picture will shift.
-        </P>
-        <P>
-          The disparity signals are <I>reliability-filtered</I>. A signal
-          counted here only if there were at least 20 deaths in both the
-          comparison group and the White comparison group, a relative risk of at
-          least 1.25, and a positive absolute rate difference. Below those
-          thresholds, small counts produce rates that swing wildly from year to
-          year, and an unfiltered ranking would be mostly noise wearing the
-          costume of precision.
-        </P>
-        <P>
-          <I>Absence of a signal is not evidence of equity.</I> Several states,
-          Montana and South Dakota among them, carry a suppression-caution flag:
-          the comparison is real but thin, built on few enough visible groups
-          that it should be read carefully. And “no reliable disparity signal”
-          almost never means a state has no disparity. It usually means the
-          affected groups are too small, in that state, for this dataset to
-          surface one safely.
-        </P>
-        <P>
-          Most important: this is an <I>exploratory prioritization signal</I>,
-          not an allocation formula. It is a map of where to look harder and ask
-          sharper questions, not a number that should move money on its own. A
-          measure that triggers investigation and a measure that drives
-          allocation are not the same instrument, and treating the first as if
-          it were the second is one of the most common ways well-meant analysis
-          does harm.
-        </P>
-
-        <H2>What this is really about</H2>
-        <P>
-          Strip the subject matter away and this is a decision-systems problem.
-          An organization has a real decision to make (where prevention
-          resources go) and the data it holds is being read through a single
-          number that cannot carry the decision. The fix is not more data. It is
-          a framework that disaggregates the signals the decision genuinely
-          rests on, shows them together, and stays disciplined about its own
-          limits.
-        </P>
-        <P>
-          That move is the same whether the decision is a state’s prevention
-          budget, a school district’s intervention dollars, or a clinical
-          network’s capacity plan: name the decision, find the distinct signals
-          it truly depends on, and refuse to let one rolled-up average stand in
-          for all of them.
-        </P>
-        <P>
-          The next dollar gets spent either way. A framework like this one
-          doesn’t spend it for you, and it shouldn’t. What it does is make sure
-          that when you spend it, you were looking at the whole map: both
-          signals, and the honest edges of what the data can and cannot say.{" "}
-          <I>From fragmented to decision-ready.</I>
-        </P>
-
-        <Note>
-          This piece discusses suicide. If you or someone you know is
-          struggling, the 988 Suicide &amp; Crisis Lifeline (call or text 988)
-          is available 24/7 in the US.
-        </Note>
-
-        <MetaNote>
-          Exploratory analysis of CDC WONDER provisional mortality data,
-          2018–2024 (ages 10–54). Written May 2026 for the Analytic Bytes
-          Library. This is a signal framework for strategic prioritization, not
-          a causal analysis, an epidemiological ranking, or a definitive
-          allocation system. Reliability filters are described in the text.
-        </MetaNote>
-      </>
-    ),
-  },
-
-  // ===================================================================
   // ESSAY 04 — Actions, Not Answers
   // ===================================================================
   {
@@ -2464,239 +2482,6 @@ export const ESSAYS: Essay[] = [
           Written May 2026 for the Analytic Bytes Library, drawing on frameworks
           explored through MIT Sloan’s Agentic AI Development program. The
           argument is intended to outlast specific products and platforms.
-        </MetaNote>
-      </>
-    ),
-  },
-
-  // ===================================================================
-  // FIELD NOTE 04 — The Take-Home Test
-  // ===================================================================
-  {
-    kind: "field-note",
-    slug: "the-take-home-test",
-    number: "04",
-    title: "The Take-Home Test",
-    subtitle:
-      "More than a dozen interview take-home tasks, done cold for a dozen organizations, read as one long experiment in how teams relate to their own decisions.",
-    date: "2026-06-01",
-    readingTime: "8 min read",
-    summary:
-      "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
-    cover: "/library/covers/the-take-home-test.svg",
-    hidden: true,
-    body: (
-      <>
-        <Brief>
-          <p>
-            The interview take-home is a strange little genre. A stranger hands
-            you their messiest data situation, gives you somewhere between two
-            hours and five days, and asks you to diagnose it and design
-            something. Cold — no colleagues, no institutional memory, a clock
-            running. Most people do one or two over a career and never think
-            about them again.
-          </p>
-          <p>
-            Over the past decade I did more than a dozen, for organizations
-            across K-12 charter networks, national education nonprofits, youth
-            mental health, and assessment. Read one at a time, they were job
-            interviews. Read as a set, they are something more useful: the same
-            diagnostic, run on a dozen organizations, by the same person, under
-            the same constraints. A natural experiment, and it has a result. A
-            small number of failures showed up in almost every one. This piece
-            is what the set revealed. It is written for any leader who has
-            opened a data role, approved a dashboard, and wondered why the
-            decisions never got sharper.
-          </p>
-        </Brief>
-
-        <P>
-          A take-home is a compressed, unusually honest instrument. The clock is
-          short, so the organization cannot dress the problem up. It has to hand
-          you the thing it wants help with. And what an organization reaches for
-          when it wants help tells you, with some precision, how it understands
-          its own data. Do enough of them and the individual scenarios blur, but
-          the shape underneath stops being noise. The same handful of things are
-          wrong, and wrong in the same order.
-        </P>
-        <P>
-          Say this plainly first: none of these organizations was bad at data.
-          That is the part worth sitting with. Most had real systems, real
-          analysts, real dashboards. They were good at data and still stuck.
-          That is the whole point, and the rest of this piece is why.
-        </P>
-
-        <H2>The brief that names everything but the decision</H2>
-        <P>
-          Here is a take-home, lightly abstracted. A principal writes: the
-          seniors just took their college-entrance exam, I am presenting at
-          professional development this afternoon, I need this back in an hour.
-          Then a list. Averages by subject, the share above a threshold score,
-          which homeroom did best, how one student group performed against two
-          others, whether GPA tracks the score, how the teachers compare. And
-          the last line: anything else you find interesting.
-        </P>
-        <P>
-          It is a completely reasonable request. Read closely, it is also a
-          request for outputs, not a decision. Six questions, a slide deck, an
-          hour, and nothing about what gets <I>done</I> differently once the
-          slides go up. “Anything else you find interesting” is the tell. If a
-          decision were driving the request, “interesting” would already be
-          defined — interesting <I>toward what</I>. Its absence means the
-          analysis has become the destination.
-        </P>
-        <P>
-          Nearly every take-home had this shape. Build the dashboard. Write the
-          trends report. Produce the plan. A surprising share did not ask for
-          analysis-toward-a-decision at all. They asked for <I>compliance</I>:
-          get the new state attendance codes computing correctly, get the
-          course-collection feed accurate and auditable. That is necessary work.
-          But compliance is the purest form of the pattern, an output the
-          organization must produce with no decision attached to it at all. When
-          most of what a data function is handed is outputs and filings, it
-          becomes a service desk. And a service desk, however fast, however
-          good, never gets to the decision.
-        </P>
-
-        <H2>The two-line change that touches seven systems</H2>
-        <P>
-          One task asked, in effect: your state just introduced two new
-          attendance codes. What would you change?
-        </P>
-        <P>
-          The honest answer was uncomfortably long. To make two codes compute
-          correctly you would touch a database view, a stored procedure, the
-          student information system’s configuration, the outbound fields in the
-          state report, the data-validation checks, the way front-office staff
-          enter attendance each morning, and the historical records already on
-          file. Two codes. Seven systems.
-        </P>
-        <P>
-          That task is not hard because attendance is conceptually difficult. It
-          is hard because the concept “attendance” is defined in seven places,
-          with no single place to change it. This is the fault line under half
-          the take-homes: the organization has no canonical definition of its
-          own core measures, so every measure exists in several slightly
-          different versions, and any change, or any disagreement about a
-          number, becomes an archaeology project. An organization in that state
-          is not one tool away from fixed. It is one decision away — the
-          decision that each measure means one thing, computed in one place.
-        </P>
-
-        <H2>A dashboard is not a decision surface</H2>
-        <P>
-          Almost every take-home asked for a dashboard or a report, and asked
-          for it the same way: as an <I>artifact</I>. Build a monthly enrollment
-          dashboard for the board. Produce a topline executive trends report.
-          Submit a dashboard you have made. The deliverable is the thing —
-          built, presented, monthly.
-        </P>
-        <P>
-          Not once was a dashboard requested as <I>the surface a named person
-          uses to make a specific recurring call</I>. The enrollment dashboard
-          was never framed as “what the enrollment lead opens every Monday to
-          decide where this week’s outreach goes.” It was framed as a
-          board-reporting object.
-        </P>
-        <P>
-          The difference is not cosmetic. An organization that asks for “a
-          dashboard” and an organization that asks for “the Monday-morning
-          surface the enrollment lead decides from” will get two different
-          objects. The first is a display. The second is a decision surface,
-          built backward from a decision, an owner, and a cadence. Both have
-          charts on them. Only the second changes what happens on Monday. Most
-          briefs ask for the first and hope for the second.
-        </P>
-
-        <H2>The organization hires a person to be the system it never built</H2>
-        <P>
-          Several take-homes asked for leadership-grade systems thinking: a
-          first-ninety-days plan, a risk-and-change-management plan for
-          replacing core systems across several regions at once, a strategy for
-          collecting and safeguarding sensitive personal data. Anticipate
-          resistance. Build buy-in. See around corners.
-        </P>
-        <P>
-          These are the right things to ask of a senior hire. But the
-          implication is quiet and worth catching. The organization knows it has
-          a systems gap, and its plan for closing it is to hire a person who
-          will carry the system in their head: hold the definitions, broker the
-          cross-functional agreements, remember the edge cases, watch the
-          corners.
-        </P>
-        <P>
-          A person is not a system. A person takes vacation, gets pulled into a
-          crisis, and eventually leaves. When they go, the systems thinking
-          walks out with them. The take-home that asks for a brilliant
-          ninety-day plan is, underneath, an organization hoping a hire will
-          substitute for an architecture. The best version of that hire spends
-          the ninety days building the architecture instead, so the organization
-          stops depending on any one person’s memory, including their own.
-        </P>
-
-        <H2>One dataset, four audiences, no infrastructure</H2>
-        <P>
-          The last pattern was the most repetitive, and the most expensive.
-          Present this to leadership and to teachers. Adapt this report for
-          school leaders, for staff, for families. Prepare talking points for
-          two executives walking into two different meetings.
-        </P>
-        <P>
-          Every organization needs the same underlying numbers spoken in three
-          or four registers: board, operator, frontline, external partner. None
-          had a system that did the translation. So every cycle someone
-          re-renders the same data by hand into each new voice, and that manual
-          work competes for the same scarce hours as the analysis itself. The
-          result is a data function permanently busy and permanently behind, not
-          because the analysis is hard, but because the <I>distribution</I> of
-          it was never built as a system.
-        </P>
-
-        <H2>What the set adds up to</H2>
-        <P>
-          Read together, more than a dozen take-homes point at one thing, and it
-          is not a skills gap. These organizations had analysts, tools, and
-          dashboards. What they did not have was the layer between the analysis
-          and the decision: a canonical definition of each measure, a surface
-          built backward from a specific recurring call, a distribution system
-          that speaks to every audience without redoing the work, and an
-          architecture that outlives the person who built it.
-        </P>
-        <P>
-          That layer has a name. It is the decision system. And the take-home is
-          an honest instrument because it catches an organization in the act of
-          reaching for more analysis, under real pressure and in good faith,
-          when the thing missing is the system that connects analysis to a
-          decision.
-        </P>
-
-        <H2>The reframe</H2>
-        <P>
-          A decade of take-homes taught me one habit, and it is the one I would
-          hand to anyone who commissions this kind of work. When an organization
-          gives you a data problem, the first job is not to answer it. It is to
-          find the decision underneath, the one the brief did not name, and
-          answer <I>that</I>. The slides the principal asked for take an hour.
-          The question of which students get which support this term, who owns
-          that call, and from what surface they make it — that is the work, and
-          the brief never mentioned it.
-        </P>
-        <P>
-          Do that a dozen times and something shifts in how you see. You stop
-          seeing data problems. You start seeing decision systems with one part
-          missing, and more often than not you can name the missing part before
-          lunch. That is the whole of it. Most organizations do not have a data
-          problem. They have a decision-system problem, and a take-home is a
-          short, honest way to watch one happen. <I>From fragmented to
-          decision-ready</I> is the distance between the brief they wrote and the
-          brief they meant.
-        </P>
-
-        <MetaNote>
-          Written June 2026 for the Analytic Bytes Library. Drawn from interview
-          performance tasks completed between 2017 and 2026; organizations and
-          task specifics are abstracted throughout, and no individual
-          organization’s task, scenario detail, or data is reproduced.
         </MetaNote>
       </>
     ),
@@ -2998,6 +2783,239 @@ export const ESSAYS: Essay[] = [
           Written May 2026 for the Analytic Bytes Library. The argument draws on
           measurement-science practice and is intended to outlast specific AI
           products and platforms.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 04 — The Take-Home Test
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "the-take-home-test",
+    number: "04",
+    title: "The Take-Home Test",
+    subtitle:
+      "More than a dozen interview take-home tasks, done cold for a dozen organizations, read as one long experiment in how teams relate to their own decisions.",
+    date: "2026-06-03",
+    readingTime: "8 min read",
+    summary:
+      "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
+    cover: "/library/covers/the-take-home-test.svg",
+    hidden: false,
+    body: (
+      <>
+        <Brief>
+          <p>
+            The interview take-home is a strange little genre. A stranger hands
+            you their messiest data situation, gives you somewhere between two
+            hours and five days, and asks you to diagnose it and design
+            something. Cold — no colleagues, no institutional memory, a clock
+            running. Most people do one or two over a career and never think
+            about them again.
+          </p>
+          <p>
+            Over the past decade I did more than a dozen, for organizations
+            across K-12 charter networks, national education nonprofits, youth
+            mental health, and assessment. Read one at a time, they were job
+            interviews. Read as a set, they are something more useful: the same
+            diagnostic, run on a dozen organizations, by the same person, under
+            the same constraints. A natural experiment, and it has a result. A
+            small number of failures showed up in almost every one. This piece
+            is what the set revealed. It is written for any leader who has
+            opened a data role, approved a dashboard, and wondered why the
+            decisions never got sharper.
+          </p>
+        </Brief>
+
+        <P>
+          A take-home is a compressed, unusually honest instrument. The clock is
+          short, so the organization cannot dress the problem up. It has to hand
+          you the thing it wants help with. And what an organization reaches for
+          when it wants help tells you, with some precision, how it understands
+          its own data. Do enough of them and the individual scenarios blur, but
+          the shape underneath stops being noise. The same handful of things are
+          wrong, and wrong in the same order.
+        </P>
+        <P>
+          Say this plainly first: none of these organizations was bad at data.
+          That is the part worth sitting with. Most had real systems, real
+          analysts, real dashboards. They were good at data and still stuck.
+          That is the whole point, and the rest of this piece is why.
+        </P>
+
+        <H2>The brief that names everything but the decision</H2>
+        <P>
+          Here is a take-home, lightly abstracted. A principal writes: the
+          seniors just took their college-entrance exam, I am presenting at
+          professional development this afternoon, I need this back in an hour.
+          Then a list. Averages by subject, the share above a threshold score,
+          which homeroom did best, how one student group performed against two
+          others, whether GPA tracks the score, how the teachers compare. And
+          the last line: anything else you find interesting.
+        </P>
+        <P>
+          It is a completely reasonable request. Read closely, it is also a
+          request for outputs, not a decision. Six questions, a slide deck, an
+          hour, and nothing about what gets <I>done</I> differently once the
+          slides go up. “Anything else you find interesting” is the tell. If a
+          decision were driving the request, “interesting” would already be
+          defined — interesting <I>toward what</I>. Its absence means the
+          analysis has become the destination.
+        </P>
+        <P>
+          Nearly every take-home had this shape. Build the dashboard. Write the
+          trends report. Produce the plan. A surprising share did not ask for
+          analysis-toward-a-decision at all. They asked for <I>compliance</I>:
+          get the new state attendance codes computing correctly, get the
+          course-collection feed accurate and auditable. That is necessary work.
+          But compliance is the purest form of the pattern, an output the
+          organization must produce with no decision attached to it at all. When
+          most of what a data function is handed is outputs and filings, it
+          becomes a service desk. And a service desk, however fast, however
+          good, never gets to the decision.
+        </P>
+
+        <H2>The two-line change that touches seven systems</H2>
+        <P>
+          One task asked, in effect: your state just introduced two new
+          attendance codes. What would you change?
+        </P>
+        <P>
+          The honest answer was uncomfortably long. To make two codes compute
+          correctly you would touch a database view, a stored procedure, the
+          student information system’s configuration, the outbound fields in the
+          state report, the data-validation checks, the way front-office staff
+          enter attendance each morning, and the historical records already on
+          file. Two codes. Seven systems.
+        </P>
+        <P>
+          That task is not hard because attendance is conceptually difficult. It
+          is hard because the concept “attendance” is defined in seven places,
+          with no single place to change it. This is the fault line under half
+          the take-homes: the organization has no canonical definition of its
+          own core measures, so every measure exists in several slightly
+          different versions, and any change, or any disagreement about a
+          number, becomes an archaeology project. An organization in that state
+          is not one tool away from fixed. It is one decision away — the
+          decision that each measure means one thing, computed in one place.
+        </P>
+
+        <H2>A dashboard is not a decision surface</H2>
+        <P>
+          Almost every take-home asked for a dashboard or a report, and asked
+          for it the same way: as an <I>artifact</I>. Build a monthly enrollment
+          dashboard for the board. Produce a topline executive trends report.
+          Submit a dashboard you have made. The deliverable is the thing —
+          built, presented, monthly.
+        </P>
+        <P>
+          Not once was a dashboard requested as <I>the surface a named person
+          uses to make a specific recurring call</I>. The enrollment dashboard
+          was never framed as “what the enrollment lead opens every Monday to
+          decide where this week’s outreach goes.” It was framed as a
+          board-reporting object.
+        </P>
+        <P>
+          The difference is not cosmetic. An organization that asks for “a
+          dashboard” and an organization that asks for “the Monday-morning
+          surface the enrollment lead decides from” will get two different
+          objects. The first is a display. The second is a decision surface,
+          built backward from a decision, an owner, and a cadence. Both have
+          charts on them. Only the second changes what happens on Monday. Most
+          briefs ask for the first and hope for the second.
+        </P>
+
+        <H2>The organization hires a person to be the system it never built</H2>
+        <P>
+          Several take-homes asked for leadership-grade systems thinking: a
+          first-ninety-days plan, a risk-and-change-management plan for
+          replacing core systems across several regions at once, a strategy for
+          collecting and safeguarding sensitive personal data. Anticipate
+          resistance. Build buy-in. See around corners.
+        </P>
+        <P>
+          These are the right things to ask of a senior hire. But the
+          implication is quiet and worth catching. The organization knows it has
+          a systems gap, and its plan for closing it is to hire a person who
+          will carry the system in their head: hold the definitions, broker the
+          cross-functional agreements, remember the edge cases, watch the
+          corners.
+        </P>
+        <P>
+          A person is not a system. A person takes vacation, gets pulled into a
+          crisis, and eventually leaves. When they go, the systems thinking
+          walks out with them. The take-home that asks for a brilliant
+          ninety-day plan is, underneath, an organization hoping a hire will
+          substitute for an architecture. The best version of that hire spends
+          the ninety days building the architecture instead, so the organization
+          stops depending on any one person’s memory, including their own.
+        </P>
+
+        <H2>One dataset, four audiences, no infrastructure</H2>
+        <P>
+          The last pattern was the most repetitive, and the most expensive.
+          Present this to leadership and to teachers. Adapt this report for
+          school leaders, for staff, for families. Prepare talking points for
+          two executives walking into two different meetings.
+        </P>
+        <P>
+          Every organization needs the same underlying numbers spoken in three
+          or four registers: board, operator, frontline, external partner. None
+          had a system that did the translation. So every cycle someone
+          re-renders the same data by hand into each new voice, and that manual
+          work competes for the same scarce hours as the analysis itself. The
+          result is a data function permanently busy and permanently behind, not
+          because the analysis is hard, but because the <I>distribution</I> of
+          it was never built as a system.
+        </P>
+
+        <H2>What the set adds up to</H2>
+        <P>
+          Read together, more than a dozen take-homes point at one thing, and it
+          is not a skills gap. These organizations had analysts, tools, and
+          dashboards. What they did not have was the layer between the analysis
+          and the decision: a canonical definition of each measure, a surface
+          built backward from a specific recurring call, a distribution system
+          that speaks to every audience without redoing the work, and an
+          architecture that outlives the person who built it.
+        </P>
+        <P>
+          That layer has a name. It is the decision system. And the take-home is
+          an honest instrument because it catches an organization in the act of
+          reaching for more analysis, under real pressure and in good faith,
+          when the thing missing is the system that connects analysis to a
+          decision.
+        </P>
+
+        <H2>The reframe</H2>
+        <P>
+          A decade of take-homes taught me one habit, and it is the one I would
+          hand to anyone who commissions this kind of work. When an organization
+          gives you a data problem, the first job is not to answer it. It is to
+          find the decision underneath, the one the brief did not name, and
+          answer <I>that</I>. The slides the principal asked for take an hour.
+          The question of which students get which support this term, who owns
+          that call, and from what surface they make it — that is the work, and
+          the brief never mentioned it.
+        </P>
+        <P>
+          Do that a dozen times and something shifts in how you see. You stop
+          seeing data problems. You start seeing decision systems with one part
+          missing, and more often than not you can name the missing part before
+          lunch. That is the whole of it. Most organizations do not have a data
+          problem. They have a decision-system problem, and a take-home is a
+          short, honest way to watch one happen. <I>From fragmented to
+          decision-ready</I> is the distance between the brief they wrote and the
+          brief they meant.
+        </P>
+
+        <MetaNote>
+          Written June 2026 for the Analytic Bytes Library. Drawn from interview
+          performance tasks completed between 2017 and 2026; organizations and
+          task specifics are abstracted throughout, and no individual
+          organization’s task, scenario detail, or data is reproduced.
         </MetaNote>
       </>
     ),
