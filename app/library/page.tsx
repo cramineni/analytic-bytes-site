@@ -97,6 +97,13 @@ const ARTIFACTS: Entry[] = [
   },
   {
     type: "artifact",
+    title: "K-12 = Healthcare",
+    summary:
+      "An eighteen-row translation table mapping K-12 data and analytics vocabulary onto healthcare equivalents — across outcomes, intervention workflow, infrastructure, regulation, accountability, and integrative philosophy. Different sectors; the discipline is the same.",
+    image: "/library/artifacts/k12-equals-healthcare.svg",
+  },
+  {
+    type: "artifact",
     title: "Commercial = Mission-Driven",
     summary:
       "A fourteen-term translation table from commercial vocabulary — GTM, audience, segmentation, funnel, conversion, KPIs, OKRs, ROI, LTV, runway, churn, A/B testing, MVP, CI/CD — to its mission-driven equivalents. Different bottom line; the discipline is the same.",

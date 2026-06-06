@@ -52,7 +52,7 @@ const ARC_PHASES = [
 ];
 
 const PROOF_ROWS = [
-  { tag: "360 Views", desc: "Student 360, Patient 360 — scattered signals fused into the one decision-grade view." },
+  { tag: "360 Views", desc: "Student 360, Patient 360, Institutional 360 — scattered signals fused into the one decision-grade view." },
   { tag: "Channel & Conversion", desc: "Channel attribution, lead scoring, geo analysis, and yield modeling — wherever marketing dollars meet enrollment, advancement, or revenue." },
   { tag: "Operations", desc: "Attendance, caseload, billing, capacity, hardware, and talent — operating signals across multi-site, brick-and-mortar, and online." },
   { tag: "Measurement & Impact", desc: "Baseline/post reporting, longitudinal program evaluation, domain KPIs, survey pipelines, executive narratives, and state/federal/accreditation compliance reporting." },
