@@ -3,8 +3,8 @@
 <desc id="desc">A tool-agnostic reference architecture for a decision system. Raw data flows down through integration, warehouse, semantic layer, AI/ML/data science, and reporting surfaces to become decisions and actions. The semantic layer is the keystone. A governance, security, privacy and observability rail spans every layer including decisions. A learning loop returns outcomes as new signal, closing the system. The value transformation — data, information, insight, decision, action — runs down the left edge.</desc>
 <rect width="820" height="820" fill="#FFFFFF"/>
 
-<text x="208" y="50" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">THE DECISION SYSTEM</text>
-<text x="208" y="90" font-size="29" fill="#0E2A47" font-weight="700">The tools change. <tspan fill="#0EA5E9">The architecture doesn't.</tspan></text>
+<text x="48" y="50" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">THE DECISION SYSTEM</text>
+<text x="48" y="90" font-size="29" fill="#0E2A47" font-weight="700">The tools change. <tspan fill="#0EA5E9">The architecture doesn't.</tspan></text>
 
 <path d="M215,726 H104 Q90,726 90,712 V164 Q90,150 104,150 H203" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5 4"/>
 <path d="M203,150 l-9,-4 l0,8 z" fill="#0EA5E9"/>
@@ -57,6 +57,6 @@
 <path d="M443,553 l6,6 l6,-6" fill="none" stroke="#0EA5E9" stroke-width="2"/>
 <path d="M443,641 l6,6 l6,-6" fill="none" stroke="#0EA5E9" stroke-width="2"/>
 
-<text x="208" y="784" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
-<text x="360" y="784" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+<text x="48" y="784" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="200" y="784" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
 </svg>

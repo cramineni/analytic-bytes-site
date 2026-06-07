@@ -3,9 +3,9 @@
 <desc id="desc">A MEL reference architecture. A living theory of change (the keystone) — one that adapts across populations and is refined by evidence over time — flows down through assessment portfolio, measurement scheme, and data quality and integrity, to credible evidence where one semantic layer makes program, funder and board reports agree. A cross-population equating rail, keeping the same theory of change comparable as it is modified for different populations, spans every layer. A learning loop returns evidence to refine the theory of change.</desc>
 <rect width="820" height="720" fill="#FFFFFF"/>
 
-<text x="208" y="50" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">THE EVIDENCE SPINE</text>
-<text x="208" y="80" font-size="22" fill="#0E2A47" font-weight="700">Anchor every measure to the theory of change.</text>
-<text x="208" y="108" font-size="22" fill="#0EA5E9" font-weight="700">Then every report tells one story.</text>
+<text x="48" y="50" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">THE EVIDENCE SPINE</text>
+<text x="48" y="80" font-size="22" fill="#0E2A47" font-weight="700">Anchor every measure to the theory of change.</text>
+<text x="48" y="108" font-size="22" fill="#0EA5E9" font-weight="700">Then every report tells one story.</text>
 
 <path d="M215,600 H104 Q90,600 90,586 V172 Q90,158 104,158 H203" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5 4"/>
 <path d="M203,158 l-9,-4 l0,8 z" fill="#0EA5E9"/>
@@ -48,6 +48,6 @@
 <path d="M443,417 l6,6 l6,-6" fill="none" stroke="#0EA5E9" stroke-width="2"/>
 <path d="M443,514 l6,6 l6,-6" fill="none" stroke="#0EA5E9" stroke-width="2"/>
 
-<text x="208" y="668" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
-<text x="360" y="668" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+<text x="48" y="668" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="200" y="668" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
 </svg>
