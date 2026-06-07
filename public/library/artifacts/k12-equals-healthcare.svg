@@ -1,14 +1,14 @@
-<svg viewBox="0 0 1200 2000" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 0 1200 1750" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>K-12 = Healthcare: Different sectors. Same discipline.</title>
 <desc>Translation table on white showing how K-12 data and analytics vocabulary maps to healthcare equivalents across eighteen paired concepts spanning outcomes, intervention workflow, infrastructure, regulation, accountability, and integrative philosophy, with a two-line navy and teal headline above and an Analytic Bytes signature beneath.</desc>
-<rect width="1200" height="2000" fill="#FFFFFF"/>
+<rect width="1200" height="1750" fill="#FFFFFF"/>
 
 <!-- Top eyebrow -->
-<text x="48" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="500" letter-spacing="6" fill="#0EA5E9">K-12  =  HEALTHCARE</text>
+<text x="48" y="67" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3.7" fill="#0EA5E9">K-12  =  HEALTHCARE</text>
 
 <!-- Headline -->
-<text x="48" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="600" letter-spacing="-0.5" fill="#0F2A4A">Different sectors.</text>
-<text x="48" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="600" font-style="italic" letter-spacing="-0.5" fill="#0EA5E9">Same discipline.</text>
+<text x="48" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.3" fill="#0F2A4A">Different sectors.</text>
+<text x="48" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.3" fill="#0EA5E9">Same discipline.</text>
 
 
 <!-- Column headers -->
@@ -125,18 +125,11 @@
 <circle cx="600" cy="1520" r="3" fill="#0EA5E9"/>
 <text x="660" y="1525" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Whole-person care</text>
 
-<!-- Closing divider -->
-<line x1="540" y1="1610" x2="660" y2="1610" stroke="#94A3B8" stroke-width="1"/>
-
-<!-- Footer line 1 -->
-<text x="600" y="1690" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.3" fill="#0F2A4A" text-anchor="middle">The K-12 vocabulary translates.</text>
-<text x="600" y="1730" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" font-style="italic" letter-spacing="-0.3" fill="#0EA5E9" text-anchor="middle">The discipline is the same.</text>
-
-<!-- Footer line 2 -->
-<text x="600" y="1810" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">Both sectors built this under accountability and equity pressure.</text>
-<text x="600" y="1835" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">The translation is portable.</text>
+<!-- Closing prose -->
+<text x="48" y="1600" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">The K-12 vocabulary translates. <tspan fill="#0EA5E9">The discipline is the same.</tspan></text>
+<text x="48" y="1632" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Both sectors built this under accountability and equity pressure. The translation is portable.</text>
 
 <!-- AB tag -->
-<text x="48" y="1960" font-family="Inter,Helvetica,Arial,sans-serif" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
-<text x="200" y="1960" font-family="Inter,Helvetica,Arial,sans-serif" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+<text x="48" y="1700" font-family="Inter,Helvetica,Arial,sans-serif" font-size="19" letter-spacing="3" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="270" y="1700" font-family="Inter,Helvetica,Arial,sans-serif" font-size="19" fill="#0EA5E9">From fragmented to decision-ready.</text>
 </svg>
