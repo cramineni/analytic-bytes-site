@@ -133,6 +133,22 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* WHAT I DO — concept visual */}
+        <section className="pb-16">
+          <div className="max-w-page mx-auto px-5 sm:px-8">
+            <Reveal>
+              <div className="border-t border-line pt-10 max-w-[820px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/about/what-i-do.svg"
+                  alt="What I do — a three-stage decision-systems diagram. Signals to Intelligence to Execution, anchored in measurement, evidence, analytics, AI, operations, and learning, across education, mental health, healthcare, and mission-driven sectors."
+                  className="w-full h-auto block"
+                />
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* PRINCIPLES */}
         <section className="pb-16">
           <div className="max-w-page mx-auto px-5 sm:px-8">
