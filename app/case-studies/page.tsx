@@ -513,12 +513,12 @@ function PillarMap({ pillars }: { pillars: Pillars }) {
         {rows.map((r) => (
           <li
             key={r.label}
-            className="text-ink-2 text-[15px] sm:text-[16px] leading-[1.6]"
+            className="grid grid-cols-[105px_1fr] sm:grid-cols-[130px_1fr] gap-x-3 sm:gap-x-4 text-ink-2 text-[15px] sm:text-[16px] leading-[1.6]"
           >
-            <span className="font-mono text-[11px] text-ink tracking-[0.18em] uppercase mr-3 inline-block w-[105px] sm:w-[120px] align-baseline">
+            <span className="font-mono text-[11px] text-ink tracking-[0.18em] uppercase pt-[3px]">
               {r.label}
             </span>
-            {r.body}
+            <span>{r.body}</span>
           </li>
         ))}
       </ul>
