@@ -24,10 +24,17 @@ type StackFlow = {
   decisionSurface: string[];
 };
 
+type Pillars = {
+  signals: string;
+  intelligence: string;
+  execution: string;
+};
+
 type CaseStudy = {
   id: string;
   sector: string;
   context: string;
+  pillars: Pillars;
   alreadyThere: string;
   missing: string;
   weBuilt: string;
@@ -42,6 +49,14 @@ const CASE_STUDIES: CaseStudy[] = [
     sector: "National mental health nonprofit",
     context:
       "Mental-health programs spanning 150+ high schools, 25+ school districts, 500+ college campuses, and growing community-based programs; 1.5M+ rows of multi-year survey assessments across students, faculty, and school/campus leadership.",
+    pillars: {
+      signals:
+        "Multi-year survey instrument reconciled across four to six versions into a semantic dataset; CDC Wonder warehoused for trend and subgroup analysis.",
+      intelligence:
+        "Executive analytics on program operations; burden-vs-disparity targeting view by state for grant strategy.",
+      execution:
+        "AI-assisted impact reporting tied to the theory-of-change, drafted from data instead of authored separately.",
+    },
     alreadyThere:
       "A Snowflake warehouse stood up by a vendor but stalled — dev/staging/prod schemas built but not in active use, Fivetran connections defined but not turned on. Multi-year survey data spanning four to six successive instrument versions sitting in Qualtrics. Salesforce capturing partnership phases, consultant caseloads, and assessment-cycle scheduling. Legacy operational data in Azure. A theory-of-change framework leadership already used to talk about impact.",
     missing:
@@ -70,6 +85,14 @@ const CASE_STUDIES: CaseStudy[] = [
     sector: "K–8 charter network",
     context:
       "Multi-site K-8 charter network in the Bronx — 5 sites serving ~1,800 students, the only single-gender public charter network in NYC; one site closing and another opening during the engagement; single-analyst team inherited after the prior data lead and compliance manager had departed.",
+    pillars: {
+      signals:
+        "Three reporting platforms consolidated into a governed Tableau Cloud foundation; semantic data layer built on Google Sheets around the missing BigQuery ETL.",
+      intelligence:
+        "Enrollment forecasting at 99% accuracy via ARIMA; dashboards refocused from daily attendance onto chronic absenteeism and persistence.",
+      execution:
+        "Recruitment funnel that ops, enrollment, and the call center could act on through the cycle — zipcode-targeted, tiered, delivered on a reduced budget.",
+    },
     alreadyThere:
       "Three reporting platforms running in parallel — Looker, Tableau Cloud, Tableau Public. Tableau Cloud licenses on the books for two years, mostly unused. Student-level academic dashboards on public infrastructure with no governance. Daily attendance reporting that duplicated what the SIS already showed. Google Sheets workflows running quietly under most decisions. HubSpot, SchoolMint, PowerSchool, NWEA MAP, Illuminate, Google Forms, MailChimp, and a call center workflow — all real, all uneven.",
     missing:
@@ -98,6 +121,14 @@ const CASE_STUDIES: CaseStudy[] = [
     sector: "Behavioral health nonprofit",
     context:
       "Nine clinics across Westchester and Rockland; CCBHC grant recipient; 3,300+ active clients; clinical, claims, program operations, and population data spanning multiple service lines.",
+    pillars: {
+      signals:
+        "HIPAA-compliant patient-360 integrating clinical assessments, 837i claims, HL7/CCDA hospital encounter feeds, program operations, HR/financials, and SDOH.",
+      intelligence:
+        "Instrument-level clinical dashboards; SDOH and chronic-condition risk scoring; NSDUH state prevalence integrated into the population-health view.",
+      execution:
+        "Mitram measurement-based care workflow with Otsuka — +40% engagement across two pilot waves after reminder automation and follow-ups.",
+    },
     alreadyThere:
       "Validated psychometric instruments (PHQ-9, GAD-7, C-SSRS Adult and Child, NIDA Quick Screen, CAGE-AID, plus SIS, PAQ, Q-LES-Q, FIBSER) historically captured at 3-month visits only. A smartphone app being piloted to collect these as patient-reported every 2 to 4 weeks instead — supporting measurement-based care between visits. 837i claims feeds across multiple payers (Beacon Health, Fidelis Care NY, Health First, Partners Health Plan, United Healthcare) sitting separately. HL7/CCDA hospital encounter feeds from regional EDs, uncoordinated. Program operations data across Article 31, OnTrack NY, and Health Home. HR and financials in their own systems. Demographic and zipcode-level data the org had access to but wasn't analyzing.",
     missing:
@@ -126,6 +157,14 @@ const CASE_STUDIES: CaseStudy[] = [
     sector: "Test-prep company",
     context:
       "National test-prep and tutoring brand with data dispersed across two legacy systems; test-prep alone spanned 6+ product lines (SAT/ACT/MCAT/GRE/GMAT/LSAT), 8+ channels, and multiple modalities; 300+ ad-hoc requests in queue on a legacy SQL/static-report environment.",
+    pillars: {
+      signals:
+        "Sisense ElastiCubes across booking analytics for six product lines and six channels; score-gain data restructured for cross-tier analysis.",
+      intelligence:
+        "Efficacy research on test-prep products by instructor, location/PSO, and tier; cross-functional decision support across A/B testing, customer profiling, and cancel/refund drivers.",
+      execution:
+        "Sisense as platform of record after a six-vendor evaluation; location-level enrollment data feeding leasing decisions; promotional-campaign performance feeding marketing.",
+    },
     alreadyThere:
       "A legacy SQL Server environment with 300+ ad-hoc requests for reports and insights in the queue. Three analytics FTEs plus roughly 10% of 30+ business-side FTEs spending time on manual data wrangling. A 55% annual reporting completion rate. A standing 8–12-request weekly inventory. Booking data flowing through six channels (Internet, Inbound Call, Local Office, Enrollment Advisor, Service Center, Marketing) across SAT/ACT/MCAT/GRE/GMAT/LSAT product lines. Score-gain data sitting unused for cross-tier analysis. Stakeholder voices across Product, Ops, Marketing that hadn't been collected into a single proposal.",
     missing:
@@ -152,6 +191,14 @@ const CASE_STUDIES: CaseStudy[] = [
     id: "founding-engagements",
     sector: "Early test-prep + university advisory",
     context: "Founding AB engagements (2016–2017): test-prep platform launch + university learning analytics.",
+    pillars: {
+      signals:
+        "Log-data measures designed for the NextGen test-prep platform; course outcome data structured for traditional vs. hybrid section comparison.",
+      intelligence:
+        "Conceptual dashboards as simulated charts; defensible outcomes-comparison frame across course modalities.",
+      execution:
+        "A measurement frame the product team could build the platform against; product decisions unblocked ahead of the warehouse.",
+    },
     alreadyThere:
       "Existing platform log data. Course-level student outcome data on the university side — traditional and hybrid sections of the same course running in parallel. Stakeholders thinking about a next-generation test-prep product without a measurement frame.",
     missing:
@@ -230,6 +277,39 @@ export default function CaseStudiesPage() {
           </div>
         </section>
 
+        {/* OPERATING FRAME — Signals · Intelligence · Execution, mirroring the About page */}
+        <section className="pb-16">
+          <div className="max-w-page mx-auto px-5 sm:px-8">
+            <Reveal>
+              <div className="border-t border-line pt-12 max-w-[68ch]">
+                <div className="font-mono text-[11px] text-ink-3 tracking-[0.18em] uppercase mb-6">
+                  What every case maps to
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-6">
+                  {[
+                    { label: "Signals", line: "Measure what matters." },
+                    { label: "Intelligence", line: "Turn data into insight." },
+                    { label: "Execution", line: "Turn insight into action." },
+                  ].map((p) => (
+                    <div key={p.label} className="relative">
+                      <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-2">
+                        {p.label}
+                      </div>
+                      <div className="text-ink text-[15px] sm:text-[16px] font-medium leading-[1.5]">
+                        {p.line}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-ink-3 text-[14px] sm:text-[15px] leading-[1.6] mt-7 italic">
+                  Each case below names what it evidences across the three —
+                  before the situation, before the build, before the stack.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* TABLE OF CONTENTS — anchor links to each case */}
         <section className="pb-20">
           <div className="max-w-page mx-auto px-5 sm:px-8">
@@ -276,9 +356,12 @@ export default function CaseStudiesPage() {
                   <h2 className="font-extrabold tracking-[-0.025em] leading-[1.05] text-[28px] sm:text-[40px] lg:text-[52px] text-ink mb-4">
                     {cs.sector}
                   </h2>
-                  <p className="text-ink-2 text-[15px] sm:text-[16px] italic leading-[1.6] mb-12">
+                  <p className="text-ink-2 text-[15px] sm:text-[16px] italic leading-[1.6] mb-10">
                     {cs.context}
                   </p>
+
+                  {/* Pillar mapping — Signals · Intelligence · Execution */}
+                  <PillarMap pillars={cs.pillars} />
 
                   {/* What was already there */}
                   <CaseBlock label="What was already there" body={cs.alreadyThere} />
@@ -412,6 +495,34 @@ export default function CaseStudiesPage() {
 
       <Footer />
     </>
+  );
+}
+
+function PillarMap({ pillars }: { pillars: Pillars }) {
+  const rows: { label: string; body: string }[] = [
+    { label: "Signals", body: pillars.signals },
+    { label: "Intelligence", body: pillars.intelligence },
+    { label: "Execution", body: pillars.execution },
+  ];
+  return (
+    <div className="mb-12 border-l-2 border-accent pl-5 sm:pl-6">
+      <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+        What this case evidences
+      </div>
+      <ul className="list-none p-0 m-0 space-y-3">
+        {rows.map((r) => (
+          <li
+            key={r.label}
+            className="text-ink-2 text-[15px] sm:text-[16px] leading-[1.6]"
+          >
+            <span className="font-mono text-[11px] text-ink tracking-[0.18em] uppercase mr-3 inline-block w-[105px] sm:w-[120px] align-baseline">
+              {r.label}
+            </span>
+            {r.body}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
