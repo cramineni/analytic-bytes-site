@@ -97,6 +97,20 @@ const ARTIFACTS: Entry[] = [
   },
   {
     type: "artifact",
+    title: "Measurement = Diagnostics",
+    summary:
+      "A sixteen-row translation table from educational measurement vocabulary to medical diagnostics — across foundations (validity, reliability), models (IRT and ROC, standard setting and thresholds, equating and calibration), bias and equity, stakes and decisions, standards and integrity, and the inferential closer: validity argument and differential diagnosis. Different instruments; the discipline is the same.",
+    image: "/library/artifacts/measurement-equals-diagnostics.svg",
+  },
+  {
+    type: "artifact",
+    title: "Higher Ed = Healthcare",
+    summary:
+      "An eighteen-row translation table mapping higher-education data and analytics vocabulary onto healthcare equivalents — across outcomes, throughput, advising and care navigation, support programs, infrastructure (SIS/EHR, NSC/HIE, 1EdTech/FHIR), regulation, accountability, equity, and integrative philosophy. Different sectors; the discipline is the same.",
+    image: "/library/artifacts/higher-ed-equals-healthcare.svg",
+  },
+  {
+    type: "artifact",
     title: "K-12 = Healthcare",
     summary:
       "An eighteen-row translation table mapping K-12 data and analytics vocabulary onto healthcare equivalents — across outcomes, intervention workflow, infrastructure, regulation, accountability, and integrative philosophy. Different sectors; the discipline is the same.",

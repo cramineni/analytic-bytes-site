@@ -1,0 +1,132 @@
+<svg viewBox="0 0 1200 1750" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Higher Ed = Healthcare: Different sectors. Same discipline.</title>
+<desc>Translation table on white showing how higher-education data and analytics vocabulary maps to healthcare equivalents across eighteen paired concepts spanning outcomes, throughput, advising, support programs, infrastructure, regulation, accountability, equity, and integrative philosophy, with a two-line navy and teal headline above and an Analytic Bytes signature beneath.</desc>
+<rect width="1200" height="1750" fill="#FFFFFF"/>
+
+<!-- Top eyebrow -->
+<text x="48" y="67" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3.7" fill="#0EA5E9">HIGHER ED  =  HEALTHCARE</text>
+
+<!-- Headline -->
+<text x="48" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.3" fill="#0F2A4A">Different sectors.</text>
+<text x="48" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.3" fill="#0EA5E9">Same discipline.</text>
+
+<!-- Column headers -->
+<text x="540" y="365" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#475569" text-anchor="end">HIGHER ED</text>
+<text x="660" y="365" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#475569" text-anchor="start">HEALTHCARE</text>
+
+<!-- Row 1 -->
+<text x="540" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Student persistence</text>
+<circle cx="600" cy="420" r="3" fill="#0EA5E9"/>
+<text x="660" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Patient continuity of care</text>
+
+<!-- Row 2 -->
+<text x="540" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Course engagement</text>
+<circle cx="600" cy="470" r="3" fill="#0EA5E9"/>
+<text x="660" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Treatment adherence</text>
+
+<!-- Row 3 -->
+<text x="540" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Cohort tracking</text>
+<circle cx="600" cy="520" r="3" fill="#0EA5E9"/>
+<text x="660" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Population health management</text>
+
+<!-- Row 4 -->
+<text x="540" y="575" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Early-alert system</text>
+<circle cx="600" cy="570" r="3" fill="#0EA5E9"/>
+<text x="660" y="575" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Risk stratification</text>
+
+<!-- Row 5 -->
+<text x="540" y="625" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Time to degree</text>
+<circle cx="600" cy="620" r="3" fill="#0EA5E9"/>
+<text x="660" y="625" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Length of stay</text>
+
+<!-- Row 6 -->
+<text x="540" y="675" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Academic advising</text>
+<circle cx="600" cy="670" r="3" fill="#0EA5E9"/>
+<text x="660" y="675" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Care navigation</text>
+
+<!-- Row 7 -->
+<text x="540" y="725" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">First-year experience</text>
+<text x="540" y="748" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">structured support during sector entry</text>
+<circle cx="600" cy="732" r="3" fill="#0EA5E9"/>
+<text x="660" y="725" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Transitional care</text>
+<text x="660" y="748" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">structured support across care transitions</text>
+
+<!-- Row 8 -->
+<text x="540" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Student success ecosystem</text>
+<text x="540" y="823" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">longitudinal support across student stages</text>
+<circle cx="600" cy="807" r="3" fill="#0EA5E9"/>
+<text x="660" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Care continuum</text>
+<text x="660" y="823" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">longitudinal care across settings</text>
+
+<!-- Row 9 -->
+<text x="540" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Student Success Team</text>
+<circle cx="600" cy="870" r="3" fill="#0EA5E9"/>
+<text x="660" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Care Team</text>
+
+<!-- Row 10 -->
+<text x="540" y="925" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Mental health screening</text>
+<circle cx="600" cy="920" r="3" fill="#0EA5E9"/>
+<text x="660" y="925" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Behavioral health screening</text>
+
+<!-- Row 11 -->
+<text x="540" y="975" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">SIS</text>
+<text x="540" y="998" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">student information system</text>
+<circle cx="600" cy="982" r="3" fill="#0EA5E9"/>
+<text x="660" y="975" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">EHR</text>
+<text x="660" y="998" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">electronic health record</text>
+
+<!-- Row 12 -->
+<text x="540" y="1050" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">National Student Clearinghouse</text>
+<text x="540" y="1073" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">cross-institution student data exchange</text>
+<circle cx="600" cy="1057" r="3" fill="#0EA5E9"/>
+<text x="660" y="1050" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">HIE</text>
+<text x="660" y="1073" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">health information exchange</text>
+
+<!-- Row 13 -->
+<text x="540" y="1125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">1EdTech</text>
+<text x="540" y="1148" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">ed-tech interoperability standards</text>
+<circle cx="600" cy="1132" r="3" fill="#0EA5E9"/>
+<text x="660" y="1125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">FHIR</text>
+<text x="660" y="1148" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">healthcare API interoperability standard</text>
+
+<!-- Row 14 -->
+<text x="540" y="1200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">FERPA</text>
+<text x="540" y="1223" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">student record privacy law</text>
+<circle cx="600" cy="1207" r="3" fill="#0EA5E9"/>
+<text x="660" y="1200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">HIPAA</text>
+<text x="660" y="1223" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">protected health information law</text>
+
+<!-- Row 15 -->
+<text x="540" y="1275" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">IPEDS / accreditation</text>
+<text x="540" y="1298" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">federal accountability &amp; Title IV compliance</text>
+<circle cx="600" cy="1282" r="3" fill="#0EA5E9"/>
+<text x="660" y="1275" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">CMS quality reporting</text>
+<text x="660" y="1298" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">HEDIS, MIPS, value-based care</text>
+
+<!-- Row 16 -->
+<text x="540" y="1350" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Basic needs insecurity</text>
+<text x="540" y="1373" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">housing, food security, transportation, finances</text>
+<circle cx="600" cy="1357" r="3" fill="#0EA5E9"/>
+<text x="660" y="1350" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Social determinants of health</text>
+<text x="660" y="1373" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">housing, food security, transportation, income</text>
+
+<!-- Row 17 -->
+<text x="540" y="1425" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Equity gap analysis</text>
+<text x="540" y="1448" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">by race, Pell status, first-gen, gender</text>
+<circle cx="600" cy="1432" r="3" fill="#0EA5E9"/>
+<text x="660" y="1425" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Health disparity analysis</text>
+<text x="660" y="1448" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">by race, ethnicity, language, gender, SES</text>
+
+<!-- Row 18 -->
+<text x="540" y="1500" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Whole student</text>
+<circle cx="600" cy="1495" r="3" fill="#0EA5E9"/>
+<text x="660" y="1500" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Whole-person care</text>
+
+<!-- Closing prose -->
+<text x="48" y="1600" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">The vocabulary translates. <tspan fill="#0EA5E9">The discipline stays the same.</tspan></text>
+<text x="48" y="1632" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Both sectors built this under accountability and equity pressure. The translation is portable.</text>
+
+<!-- AB tag -->
+<text x="48" y="1700" font-family="Inter,Helvetica,Arial,sans-serif" font-size="19" letter-spacing="3" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="270" y="1700" font-family="Inter,Helvetica,Arial,sans-serif" font-size="19" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>

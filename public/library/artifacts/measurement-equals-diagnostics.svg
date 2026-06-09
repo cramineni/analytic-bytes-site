@@ -1,0 +1,128 @@
+<svg viewBox="0 0 1200 1750" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Measurement = Diagnostics: Different instruments. Same discipline.</title>
+<desc>Translation table on white showing how educational measurement vocabulary maps to medical diagnostics across sixteen paired concepts spanning foundations, models, bias and equity, stakes and decisions, standards and integrity, and integrative inference, with a two-line navy and teal headline above and an Analytic Bytes signature beneath.</desc>
+<rect width="1200" height="1750" fill="#FFFFFF"/>
+
+<!-- Top eyebrow -->
+<text x="48" y="67" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3.7" fill="#0EA5E9">MEASUREMENT  =  DIAGNOSTICS</text>
+
+<!-- Headline -->
+<text x="48" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.3" fill="#0F2A4A">Different instruments.</text>
+<text x="48" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-0.3" fill="#0EA5E9">Same discipline.</text>
+
+<!-- Column headers -->
+<text x="540" y="365" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#475569" text-anchor="end">MEASUREMENT</text>
+<text x="660" y="365" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#475569" text-anchor="start">DIAGNOSTICS</text>
+
+<!-- Row 1 -->
+<text x="540" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Validity</text>
+<text x="540" y="448" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">is the test measuring what it claims</text>
+<circle cx="600" cy="432" r="3" fill="#0EA5E9"/>
+<text x="660" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Validity</text>
+<text x="660" y="448" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">is the test detecting what it claims</text>
+
+<!-- Row 2 -->
+<text x="540" y="500" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Reliability</text>
+<text x="540" y="523" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">consistency across forms, raters, time</text>
+<circle cx="600" cy="507" r="3" fill="#0EA5E9"/>
+<text x="660" y="500" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Reliability</text>
+<text x="660" y="523" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">consistency across instruments, operators, repeats</text>
+
+<!-- Row 3 -->
+<text x="540" y="575" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Construct validity</text>
+<text x="540" y="598" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">score reflects the unobservable trait</text>
+<circle cx="600" cy="582" r="3" fill="#0EA5E9"/>
+<text x="660" y="575" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Biomarker validation</text>
+<text x="660" y="598" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">marker reflects the underlying biology</text>
+
+<!-- Row 4 -->
+<text x="540" y="650" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Criterion validity</text>
+<text x="540" y="673" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">predicts an external outcome</text>
+<circle cx="600" cy="657" r="3" fill="#0EA5E9"/>
+<text x="660" y="650" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Predictive value</text>
+<text x="660" y="673" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">PPV / NPV &#8212; predicts the condition</text>
+
+<!-- Row 5 -->
+<text x="540" y="725" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Item Response Theory</text>
+<text x="540" y="748" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">probability of response by ability</text>
+<circle cx="600" cy="732" r="3" fill="#0EA5E9"/>
+<text x="660" y="725" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">ROC curves</text>
+<text x="660" y="748" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">probability of detection by threshold</text>
+
+<!-- Row 6 -->
+<text x="540" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Standard setting</text>
+<text x="540" y="823" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">where &#8216;proficient&#8217; begins</text>
+<circle cx="600" cy="807" r="3" fill="#0EA5E9"/>
+<text x="660" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Diagnostic thresholds</text>
+<text x="660" y="823" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">where &#8216;positive&#8217; begins</text>
+
+<!-- Row 7 -->
+<text x="540" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Equating</text>
+<text x="540" y="898" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">comparable scores across test forms</text>
+<circle cx="600" cy="882" r="3" fill="#0EA5E9"/>
+<text x="660" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Calibration &amp; harmonization</text>
+<text x="660" y="898" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">comparable readings across labs &amp; instruments</text>
+
+<!-- Row 8 -->
+<text x="540" y="950" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Differential Item Functioning</text>
+<text x="540" y="973" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">item performs differently by subgroup</text>
+<circle cx="600" cy="957" r="3" fill="#0EA5E9"/>
+<text x="660" y="950" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Disparate calibration</text>
+<text x="660" y="973" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">algorithm performs differently by subgroup</text>
+
+<!-- Row 9 -->
+<text x="540" y="1025" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Universal Design for Assessment</text>
+<text x="540" y="1048" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">accessible to all test takers by design</text>
+<circle cx="600" cy="1032" r="3" fill="#0EA5E9"/>
+<text x="660" y="1025" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Inclusive trial design</text>
+<text x="660" y="1048" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">representative populations by design</text>
+
+<!-- Row 10 -->
+<text x="540" y="1100" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">High-stakes assessment</text>
+<circle cx="600" cy="1095" r="3" fill="#0EA5E9"/>
+<text x="660" y="1100" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">High-consequence diagnostic</text>
+
+<!-- Row 11 -->
+<text x="540" y="1150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Pass / fail decision</text>
+<circle cx="600" cy="1145" r="3" fill="#0EA5E9"/>
+<text x="660" y="1150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Treat / don&#8217;t treat decision</text>
+
+<!-- Row 12 -->
+<text x="540" y="1200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">AERA / NCME / APA Standards</text>
+<text x="540" y="1223" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">Standards for Educational &amp; Psychological Testing</text>
+<circle cx="600" cy="1207" r="3" fill="#0EA5E9"/>
+<text x="660" y="1200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">FDA validation</text>
+<text x="660" y="1223" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">510(k), PMA, CLIA</text>
+
+<!-- Row 13 -->
+<text x="540" y="1275" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Norming sample</text>
+<text x="540" y="1298" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">comparison group for score interpretation</text>
+<circle cx="600" cy="1282" r="3" fill="#0EA5E9"/>
+<text x="660" y="1275" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Reference population</text>
+<text x="660" y="1298" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">population for normal ranges</text>
+
+<!-- Row 14 -->
+<text x="540" y="1350" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Test security</text>
+<circle cx="600" cy="1345" r="3" fill="#0EA5E9"/>
+<text x="660" y="1350" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Specimen chain of custody</text>
+
+<!-- Row 15 -->
+<text x="540" y="1400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Whole-construct measurement</text>
+<circle cx="600" cy="1395" r="3" fill="#0EA5E9"/>
+<text x="660" y="1400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Whole-patient diagnosis</text>
+
+<!-- Row 16 -->
+<text x="540" y="1450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="end">Validity argument</text>
+<text x="540" y="1473" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="end">chain of evidence supporting the inference</text>
+<circle cx="600" cy="1457" r="3" fill="#0EA5E9"/>
+<text x="660" y="1450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#0F2A4A" text-anchor="start">Differential diagnosis</text>
+<text x="660" y="1473" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="start">weighing competing explanations against evidence</text>
+
+<!-- Closing prose -->
+<text x="48" y="1600" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">The vocabulary translates. <tspan fill="#0EA5E9">The discipline stays the same.</tspan></text>
+<text x="48" y="1632" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Both fields learned the hard way: an instrument can agree with itself &#8212; and still be wrong about the world.</text>
+
+<!-- AB tag -->
+<text x="48" y="1700" font-family="Inter,Helvetica,Arial,sans-serif" font-size="19" letter-spacing="3" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="270" y="1700" font-family="Inter,Helvetica,Arial,sans-serif" font-size="19" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>

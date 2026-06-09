@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Notes No. 07: The numbers don't agree because the words don't.</title>
+<desc>White background with a navy line-work mark — the word Enrollment in italic teal sits at the top, a short stem and a small junction dot below it, and three lines branch down to three different percentage values (87%, 82%, 91%), showing the same metric producing different numbers under different definitions. Title and italic slate subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field notes  ·  No. 07</text>
+<g transform="translate(600, 240)">
+  <text x="0" y="-62" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#0EA5E9" text-anchor="middle">Enrollment</text>
+  <line x1="0" y1="-44" x2="0" y2="-15" stroke="#0F2A4A" stroke-width="1.5"/>
+  <circle cx="0" cy="-15" r="3" fill="#0F2A4A"/>
+  <line x1="0" y1="-15" x2="-100" y2="55" stroke="#0F2A4A" stroke-width="1.5"/>
+  <line x1="0" y1="-15" x2="0" y2="55" stroke="#0F2A4A" stroke-width="1.5"/>
+  <line x1="0" y1="-15" x2="100" y2="55" stroke="#0F2A4A" stroke-width="1.5"/>
+  <text x="-100" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500" fill="#0F2A4A" text-anchor="middle">87%</text>
+  <text x="0" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500" fill="#0F2A4A" text-anchor="middle">82%</text>
+  <text x="100" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500" fill="#0F2A4A" text-anchor="middle">91%</text>
+</g>
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">The numbers don&#8217;t agree because the words don&#8217;t.</text>
+<text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">Why information and analytics governance lives or dies on shared definitions.</text>
+<line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+</svg>

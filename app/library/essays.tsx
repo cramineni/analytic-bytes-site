@@ -3020,6 +3020,279 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+  {
+    kind: "field-note",
+    slug: "numbers-dont-agree",
+    number: "05",
+    title: "The numbers don’t agree because the words don’t.",
+    subtitle:
+      "Why information and analytics governance lives or dies on shared definitions.",
+    date: "2026-06-09",
+    readingTime: "7 min read",
+    summary:
+      "Two people read different student-persistence numbers from the same data. The governance council is functioning. The framework looks complete. What's broken is definitional — and the work to fix it is the work most councils skip.",
+    cover: "/library/covers/numbers-dont-agree.svg",
+    hidden: false,
+    body: (
+      <>
+        <Brief>
+          <p>
+            Two people in the same meeting cite a different
+            student-persistence number. Both are reading from a real report,
+            prepared by competent people, drawn from the institution’s real
+            data. A third person at the table has a third number. The
+            institution has a data governance council. It has a published data
+            policy. It has named stewards. None of that stops the meeting from
+            getting stuck.
+          </p>
+          <p>
+            Most “data problems” are not data problems. They are definitional
+            disagreements wearing a technical disguise. The work to fix them is
+            not a better framework — it is the slow, distributed work that
+            lives inside the framework, and it is the work most governance
+            councils skip.
+          </p>
+        </Brief>
+
+        <P>
+          “Student persistence” — the rate at which enrolled students continue
+          from one period to the next — can mean keeping a student from the
+          first day of the school year to the last day. It can mean keeping
+          them from one annual official census date to the next census date a
+          year later, which is how state accountability typically counts. It
+          can mean keeping them from the first day of school to that same
+          year’s census date, which is a different and shorter window. Each of
+          those is a valid and useful definition. Each is what some real
+          obligation requires. They do not agree with one another, and the
+          institution cannot act on data it cannot agree on.
+        </P>
+
+        <H2>The framework is necessary but insufficient</H2>
+
+        <P>
+          Governance councils default to architecture, and they have
+          well-developed frames to draw on. DAMA’s Data Management Body of
+          Knowledge organizes the field into eleven knowledge areas with
+          governance at the center — architecture, modeling, integration,
+          quality, metadata, master and reference data, and the rest. EDUCAUSE’s
+          data-empowered-institution model distills the higher-education version
+          to five components: data quality, integration, governance, management,
+          and literacy. Both frames are correct about what to build. Both are
+          necessary. Both are also insufficient. The actual operational work
+          that makes governance hold — getting the registrar, financial aid,
+          institutional research, and the deans into the same room to decide
+          which version of “persistence” gets used where, and why each version
+          exists — is slow, unglamorous, and often unwritten. Most councils
+          never do it. The framework looks complete. The numbers still do not
+          agree.
+        </P>
+
+        <H2>Three definitions, one number, eight recalculations</H2>
+
+        <P>
+          At a multi-school K–8 charter network where I led data and technology
+          strategy, student persistence was formally defined at least three
+          different ways at the same time. From day one of the school year to
+          the last day, for program-completion reporting. From one annual state
+          census day to the next year’s census day, for state accountability.
+          From the first day of school to that same year’s census date, for
+          early-year persistence reporting. Those translations fed into still
+          more obligations — S&amp;P bond-rating reporting, principal incentive
+          calculations, enrollment forecasting, federal accountability — each
+          of which required a particular version. None of the definitions could
+          be discarded; each existed because a real obligation required exactly
+          that version. In one year alone, the same persistence number was
+          independently recalculated eight or more times across the network’s
+          reports — every recalculation correct under its own definition, none
+          of them agreeing with the others. And yet the institution still had
+          to be able to talk about persistence without the conversation
+          fragmenting into a definitional argument every time it came up.
+        </P>
+
+        <P>
+          The work that closed the gap was not a framework. It was definitional
+          reconciliation. We mapped every reporting obligation to its required
+          definition. We named each definition explicitly. We established the
+          relationships among them — how one translated to another, which
+          report drew which number from where, what shared baseline assumptions
+          sat underneath. Then we built a small set of trusted, governed
+          numbers that fed every obligation with the correct version, so that
+          one set of dashboards could serve all of them without any of them
+          being wrong. Data completeness rose from 60 percent to 90 percent.
+          Principal dashboard adoption rose to 70 percent. The reporting lag
+          dropped by 40 percent. The framework looked the same after that work
+          as it had before. The numbers started agreeing because the words
+          started meaning the same thing in the same place.
+        </P>
+
+        <H2>The same problem across time: crosswalks</H2>
+
+        <P>
+          The other shape of the same problem appears across time. At a
+          national youth-mental-health foundation, the work was to keep a
+          governed reporting foundation coherent while the instruments
+          underneath it kept changing. Survey versions were updated as the
+          theory of change matured. The constructs the programs were trying to
+          measure shifted as the field learned what mattered. Items were added,
+          edited, retired. Data-quality standards tightened. Each of those
+          changes was legitimate; none of them could be paused while the field
+          caught up. And yet the institution still had to be able to look at
+          three years of program data and say something true about it.
+        </P>
+
+        <P>
+          What held that work together was, in modern data-stack terms, a
+          semantic layer — explicit canonical definitions encoded in dbt
+          models, version-controlled like code, owned across teams — and the
+          discipline of crosswalks: documented translations of how a question
+          asked in one survey version mapped to the same construct asked
+          slightly differently in the next. The framework was not the answer.
+          The semantic layer, the crosswalks, and the discipline of owning
+          every definitional change were what held the reporting foundation
+          honest as the underlying questions kept evolving.
+        </P>
+
+        <H2>Granularity is its own governance problem</H2>
+
+        <P>
+          Granularity is its own governance problem, and aggregation is where
+          many institutions quietly compromise it. At the same K–8 network,
+          daily attendance was a single data stream with at least three
+          different operational lives. A single absence on a given day
+          triggered an immediate workflow — outreach, follow-up, resolution —
+          owned by an operations coordinator. Three consecutive days of absence
+          triggered a different workflow, owned by a teacher or
+          student-support counselor. Chronic absenteeism — eighteen or more
+          days in a year, or more than ten percent of school days as a running
+          rate — triggered a third workflow, owned by the principal. The same
+          data, three aggregations, three views, three sets of decision rights,
+          three stakeholders. Governance at the granularity layer was not
+          deciding whether to compute these numbers. It was deciding which view
+          triggered which workflow, who owned each decision, and what the
+          legitimate translation among them was — knowing that a daily count
+          cannot be disaggregated from a chronic-absenteeism rate without
+          losing what it actually measured.
+        </P>
+
+        <H2>Architecture is governance</H2>
+
+        <P>
+          Architecture is governance too. When a student-information system is
+          replaced, or a behavioral-health electronic record is migrated to a
+          new platform, the definitional question is not the migration. It is
+          whether what the new system records is the same thing the old one
+          recorded. Field mappings have to be made explicit; new fields added
+          where the schema changed; legacy fields retired only after every use
+          case is accounted for; data-entry personnel trained on the new
+          system’s expectations for completeness, accuracy, and timeliness.
+          None of that is technical work. It is definitional work conducted at
+          the architectural layer. The same discipline appears between systems
+          that exchange data in production — a student-information system
+          reading from or writing to enrollment-tracking infrastructure, or an
+          electronic health record exchanging data with a state psychiatric
+          system or a regional health-information exchange. The questions are
+          the same: who reads, who writes, on what cadence, with what
+          contracts around append versus delete, with what traceability when a
+          record is corrected, with what reversibility when something goes
+          wrong. The contracts between systems govern as much of the
+          institution’s data integrity as the policies inside any single system
+          do.
+        </P>
+
+        <P>
+          Those contracts also include the freshness contract. When data drives
+          action — a financial-aid hold, an early-alert outreach, a billing
+          reconciliation, a clinical follow-up — the actor needs to know when
+          the data they are acting on was last refreshed, and the institution
+          needs to have caught the failure points where stale data could be
+          acted on as if it were current. Systems that exchange data have to
+          update in sync, or have to expose their lag honestly enough that the
+          consumer can decide whether the number is fresh enough to act on.
+          Automation without monitoring is just delayed surprise. Timestamps
+          are not metadata. They are part of the decision.
+        </P>
+
+        <H2>Stewardship is what makes it stick</H2>
+
+        <P>
+          Quality is not a one-time achievement. It is a continuous practice
+          owned by the people closest to the data. The principal dashboard
+          adoption rate of 70 percent at the K–8 network was not just a usage
+          statistic. It was evidence of distributed stewardship. The principals
+          were not merely consumers of their numbers; they were the ones who
+          noticed anomalies, raised corrections, pushed back on definitions
+          that did not serve their schools, and held the institution
+          accountable to its own standards. A central data office that owns
+          quality alone is fragile. A network of stewards who own their own
+          data — with shared definitions they help refresh — is durable. This
+          is the model that survives leadership turnover, budget cycles, and
+          reorganization.
+        </P>
+
+        <P>
+          Stewardship of that kind requires operational discipline at the
+          configuration and training layer, because the biggest risk in any
+          compliance or reporting process is rarely one dramatic mistake. It
+          is drift. If a gradebook is configured one way at one school and a
+          different way at another, GPA calculations diverge before any
+          dashboard sees them. The same instance has to be replicated across
+          sites — same scales, same formulae, same business rules — with a
+          checking cadence and alerts in place to catch unintended drift or
+          misconfiguration before errors propagate. Definitional work also has
+          to reach the personnel who actually enter the data. Whether an
+          in-house suspension is coded as “present” or “absent” in the
+          student-information system is a definitional decision data-entry
+          personnel make every day. If they have not been trained on which
+          version the institution is using, no framework above them can
+          compensate. Quality is held together one configuration, one alert,
+          and one training conversation at a time.
+        </P>
+
+        <H2>Why universities need this most</H2>
+
+        <P>
+          Universities are structurally decentralized in ways most
+          organizations are not. School autonomy, faculty governance, and
+          distributed authority by design — these are features, not bugs.
+          Governance imposed from the center has a poor track record in higher
+          education because the autonomy is rightly defended. Governance
+          embedded through definitions has a much better one. A definition
+          agreed across the registrar, financial aid, institutional research,
+          and the relevant deans is much harder to walk back, because each
+          domain steward owns it. A policy written by the governance council,
+          however thorough, can be politely ignored by a department running
+          its own numbers. The framework’s real authority is not the document.
+          It is the working set of shared definitions that domain leaders
+          maintain together.
+        </P>
+
+        <H2>What working governance actually looks like</H2>
+
+        <P>
+          When a dean and the registrar can agree on what a number means — and
+          can recover, on demand, why three other versions of the same number
+          exist, where each one is used, how this year’s definition relates to
+          last year’s, and how the system that produces it connects to the
+          systems that consume it — governance is working. When the policy
+          document is elegant and the numbers still do not agree, it is not.
+          The work to do is not a better framework. It is the slow, distributed
+          work that lives inside the framework: definitional reconciliation,
+          crosswalks, aggregation governance, architectural mapping, and
+          stewardship — the work most governance councils skip, and the work
+          the institution’s hardest questions cannot be answered until someone
+          does.
+        </P>
+
+        <MetaNote>
+          Written June 2026 for the Analytic Bytes Library. Cases described are
+          drawn from the author’s practice across a K–8 charter network and a
+          national youth-mental-health foundation; organizational details are
+          abstracted and no individual record, person, or proprietary number is
+          reproduced.
+        </MetaNote>
+      </>
+    ),
+  },
 ];
 
 // ---------------------------------------------------------------------
