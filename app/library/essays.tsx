@@ -318,7 +318,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           An analytics product that serves more than one audience, and that is
-          most of them, is really serving three reporting surfaces, not one.
+          most of them, is serving three reporting surfaces at once.
           They differ on five dimensions: audience, cadence, governance,
           permission model, output format. None of the five compromises
           gracefully. Force a single tool to span all three surfaces and the
@@ -406,7 +406,7 @@ export const ESSAYS: Essay[] = [
           separately from the analyst. PDF export from a BI tool produces a
           screenshot, not a structured document. The artifact a board member
           emails to a colleague is a Word file, or a PDF that looks like one.
-          Not a link to a dashboard with credentials.
+          Nobody forwards a dashboard URL with a login prompt behind it.
         </P>
         <P>
           There is also a layout-ownership problem. In a BI tool, the analyst
@@ -441,8 +441,8 @@ export const ESSAYS: Essay[] = [
         <P>
           The mistake organizations make is being talked into replacing this
           path with “embed a Tableau dashboard in a PDF” because it sounds like
-          one less system. It isn’t one less system. It’s one less
-          correctly-shaped system.
+          one less system. The system that goes missing is the one that was
+          shaped for the job.
         </P>
 
         <H2>The keystone: one canonical computation per concept</H2>
@@ -566,9 +566,9 @@ export const ESSAYS: Essay[] = [
         <P>
           The vendor-evaluation matrix that arrives at the start of this work is
           not wrong. It is premature. Run it after the semantic layer exists and
-          you will find the choice barely matters. Run it before, and you will
-          spend six months optimizing the wrong variable while the foundation
-          that determines the outcome goes unbuilt.
+          you will find the choice barely matters. Run it before, and the six
+          months you spend on it will go toward tuning the wrong variable,
+          while the layer that decides the outcome still hasn’t been built.
         </P>
 
         <H2>Closing</H2>
@@ -723,8 +723,8 @@ export const ESSAYS: Essay[] = [
         <P>
           This is closer to user-research methodology than to traditional BI
           design. The AI is acting as a fast proxy for the stakeholder’s
-          cognitive needs, not because the AI knows the stakeholder, but because
-          the AI doesn’t yet carry the data team’s aesthetic biases.
+          cognitive needs. It hasn’t spent five years in your design reviews,
+          which is what makes it useful at this step.
         </P>
 
         <H2>Where each tool fits in the discipline</H2>
@@ -780,8 +780,9 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Stakeholder interpretation becomes part of the design process.</B>{" "}
           AI proposals are easy to test against actual users. Does a school
-          principal read this faster than the original? You can find out in a
-          week instead of after launch.
+          principal read this faster than the original? That is a question you
+          can answer with five principals and a week, which is most of the
+          point.
         </P>
 
         <H2>What the discipline cannot replace</H2>
@@ -803,8 +804,9 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>The question itself.</B> The AI is great at proposing how to
           display an answer once it has the question. It is worse at deciding
-          which question matters most. That is still the analyst’s call, and the
-          closest thing to a human-only step in the workflow.
+          which question matters most. The analyst keeps that call; it’s
+          the part of the workflow that hasn’t softened under any tool I’ve
+          tried.
         </P>
 
         <H2>The reframe</H2>
@@ -1011,8 +1013,8 @@ export const ESSAYS: Essay[] = [
           interface. AI goes around the BI tool, not through it.
         </P>
         <P>
-          That is the placement story, one paragraph per layer. The harder
-          question is what grounds the AI features once you have placed them.
+          That is the placement story, one paragraph per layer. Grounding,
+          which is the next part, is where most stacks come apart.
         </P>
 
         <H2>The semantic layer is also the AI contract</H2>
@@ -1132,8 +1134,8 @@ export const ESSAYS: Essay[] = [
         <P>
           Most portal chatbots fail because they try to be helpful about
           everything. The version that works has narrow, explicit scope, and the
-          LLM is wrapped in tool-use, not given freeform SQL. Three permitted
-          scopes.
+          LLM is wrapped in tool-use, not given freeform SQL. In practice the
+          scope shrinks to a handful of permitted intents.
         </P>
         <P>
           <I>Program documentation.</I> RAG over a Cortex Search index of
@@ -1162,8 +1164,9 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Every chatbot answer that includes a number must show the source row
-          it pulled from, with a “view underlying data” link. Citations are not
-          optional in this domain.
+          it pulled from, with a “view underlying data” link. A school
+          superintendent who can’t see where the number came from won’t use it
+          twice.
         </P>
 
         <H2>The architecture in one paragraph</H2>
@@ -1262,10 +1265,10 @@ export const ESSAYS: Essay[] = [
           plus AI summaries above them.
         </P>
         <P>
-          <B>Free-text NL-to-SQL in the user-facing chatbot.</B> The right tool
-          for an internal analyst console, the wrong tool for a client portal
-          where the surface area is too large to keep grounded. Use typed tool
-          calls into the metric API instead.
+          <B>Free-text NL-to-SQL in the user-facing chatbot.</B> Fine for an
+          analyst who can sanity-check the SQL; a liability for a client whose
+          first run-in with a wrong answer is the only one that counts. Use
+          typed tool calls into the metric API instead.
         </P>
         <P>
           <B>Voice or multi-turn agentic chat.</B> Single-turn, scoped Q&amp;A
@@ -1312,8 +1315,8 @@ export const ESSAYS: Essay[] = [
         </Pull>
         <P>The keystone hasn’t changed. The surface has.</P>
         <P>
-          One reframe to carry out of this. Every AI feature is a small
-          delegation of a decision to a model. The architecture’s whole job is
+          Every AI feature is a small delegation of a decision to a model.
+          The architecture’s whole job is
           to keep those delegations deliberate: placed on purpose, grounded
           against one source of truth, observable after the fact. Where AI
           authority sits in a workflow is a design choice. Make it, rather than
@@ -1421,11 +1424,12 @@ export const ESSAYS: Essay[] = [
           resource-prioritization signals.
         </P>
         <P>
-          <B>PGI 2.0</B> (Performance Grading Index). Composite index, 73
-          indicators, 1,000-point scale. Combines UDISE+ and NAS data into
-          ranking grades. Strong for state-level comparison, federal incentive
-          frameworks, publicly visible accountability. Weak for improvement work
-          or operational decisions.
+          <B>PGI 2.0</B> (Performance Grading Index). Built for state-level
+          comparison, federal incentive frameworks, and publicly visible
+          accountability. A composite index that combines UDISE+ and NAS into
+          ranking grades across 73 indicators on a 1,000-point scale. Don’t
+          reach for it when the question is operational or improvement-shaped;
+          it won’t carry the weight.
         </P>
         <P>
           <B>SEQI</B> (School Education Quality Index). Composite ranking,
@@ -1446,10 +1450,10 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The pattern is recognizable: each layer does something well, and each
-          layer has a clear failure mode. None alone is sufficient. All of them
-          combined, with the right integration architecture, can support
-          different decision-makers running different decisions at different
-          cadences.
+          layer has a clear failure mode. None alone is sufficient. Stitched
+          through an integration architecture, they can serve a teacher, a
+          headmaster, a district officer, and a policy designer reading the same
+          assets at different cadences.
         </P>
 
         <H2>The picture for one state</H2>
@@ -1577,8 +1581,8 @@ export const ESSAYS: Essay[] = [
         <P>
           This is the same parallel as healthcare. CDC + NSDUH + claims + EHR +
           patient-reported outcomes don’t replace each other; they enable
-          different decisions for different actors at different cadences. The
-          integration architecture is what makes it possible.
+          different decisions for different actors at different cadences,
+          provided the layers between them are stitched.
         </P>
 
         <H2>The pilot proposal</H2>
@@ -1624,8 +1628,9 @@ export const ESSAYS: Essay[] = [
           academic calendar.
         </P>
         <P>
-          The opportunity isn’t a new portal. It’s stitching the layers we
-          already have into decision surfaces for the people who need to act.
+          The opportunity is sitting in the layers already collected. The work
+          is to stitch them into decision surfaces for the people who have to
+          act.
         </P>
         <P>
           That is decision-systems architecture at state-government scale: start
@@ -1899,7 +1904,7 @@ export const ESSAYS: Essay[] = [
           An organization has a real decision to make (where prevention
           resources go) and the data it holds is being read through a single
           number that cannot carry the decision. The fix is not more data. It is
-          a framework that disaggregates the signals the decision genuinely
+          a framework that disaggregates the signals the decision
           rests on, shows them together, and stays disciplined about its own
           limits.
         </P>
@@ -1954,7 +1959,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In most organizations, one line on the org chart was never really
+            In most organizations, one line on the org chart was never
             decided. It was inherited. Who owns data infrastructure? The
             function ended up reporting wherever the first analyst was hired, or
             under IT because data felt technical, or under finance because data
@@ -1986,7 +1991,7 @@ export const ESSAYS: Essay[] = [
         <P>
           So set the title question aside. It is the wrong question, and
           answering it first is how organizations end up improvising. Ask the
-          prior one. What does data infrastructure actually need from its place
+          prior one. What does data infrastructure need from its place
           on the org chart? Answer that, and the seat stops being a matter of
           taste.
         </P>
@@ -2013,13 +2018,13 @@ export const ESSAYS: Essay[] = [
           CTO. Put data where the people who can build and run the plumbing
           already sit. The cost shows up later. Under the CTO, data gets read as
           a system to keep running, and what gets resourced is what the CTO is
-          measured on: reliability, security, uptime. The semantic layer, the
+          measured on: reliability, security, uptime, incident response. The semantic layer, the
           part that makes data <I>mean</I> something to a program lead or a
           board, becomes nobody’s priority. The function slowly turns into a
           service desk, quick to answer a request and absent from the decision.
         </P>
         <P>
-          <B>Under the CFO or CFAO.</B> Also a real case. Data is a governed,
+          <B>The CFO or CFAO option.</B> Also a real case. Data is a governed,
           risk-bearing asset, and finance already runs enterprise reporting, has
           audit discipline, and treats numbers as things that must reconcile and
           withstand scrutiny. Few functions are better at custody. The cost is
@@ -2193,9 +2198,8 @@ export const ESSAYS: Essay[] = [
           Place ownership at the integration seat and the heroics subside.
           Full-stack capability stops being a unicorn requirement. It becomes a
           senior role <I>supported</I> by its position instead of compensating
-          for the lack of one. The role was never impossible. It was mis-housed,
-          and the job description was billing one person for the org chart’s
-          unpaid debt.
+          for the lack of one. The role was mis-housed, and the job description
+          was billing one person for the org chart’s unpaid debt.
         </P>
 
         <H2>Where this is going</H2>
@@ -2345,8 +2349,8 @@ export const ESSAYS: Essay[] = [
           a set of agents and it does not get those questions answered. It gets
           them executed: unanswered, at machine speed, by a system that will not
           pause to ask. The confusion was survivable when a human sat in every
-          loop, slow enough to catch it. Agents remove the human and keep the
-          speed.
+          loop, slow enough to catch it. Take the human out of the loop and the
+          confusion is what runs.
         </P>
         <Pull>
           The unexamined decision system does not get fixed. It gets automated.
@@ -2412,8 +2416,10 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           An organization that deploys agents without naming who manages each
-          one has done something precise and dangerous. It has installed a
-          decision-maker and left the accountability seat empty.
+          one has installed a decision-maker without an accountable owner. When
+          the agent makes a bad call, the question of who carries it has no
+          answer prepared, and the cycle that follows tends to be slower than
+          the call that caused it.
         </P>
 
         <H2>You cannot bolt safety onto the model</H2>
@@ -2448,7 +2454,7 @@ export const ESSAYS: Essay[] = [
           agent has to be watched continuously: its override rate, its
           disagreement signals, its slow slide as the ground shifts. Its
           monitoring surface is not a quarterly report. It is a conversation you
-          are now having, continuously, with a system still out there making
+          are now having with a system still out there making
           decisions in your name.
         </P>
 
@@ -2473,7 +2479,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The discipline is not in any single safeguard. It is in the
           architecture, the cadence, and the refusal to relax the bound at the
-          precise moment relaxing it would be convenient. <I>From fragmented to
+          moment relaxing it would be convenient. <I>From fragmented to
           decision-ready</I> was always the work. Agentic AI did not change
           that. It only raised the price of skipping it.
         </P>
@@ -2583,8 +2589,8 @@ export const ESSAYS: Essay[] = [
           still be measuring only part of what it claims to measure. It can
           learn that longer essays tend to score higher, and quietly come to
           lean on length. It can rest on vocabulary, sentence count, surface
-          fluency: features that correlate with writing quality without
-          constituting it. The scores look right. The agreement statistics look
+          fluency, the rhythm of transition words: features that correlate with
+          writing quality without constituting it. The scores look right. The agreement statistics look
           right. And underneath, the system is measuring something narrower than
           its label suggests.
         </P>
@@ -2643,8 +2649,8 @@ export const ESSAYS: Essay[] = [
           integration of the last decade, has also lowered the cost of running
           the harder question. The validity work
           that was once prohibitively expensive is newly affordable. The
-          methodology was built for an older cost structure. The cost structure
-          has moved. The methodology hasn’t.
+          methodology was built for an older cost structure, and most of the
+          field has kept running on it out of habit rather than necessity.
         </P>
         <P>
           This is not an argument against keeping humans in the loop. It is an
@@ -2697,7 +2703,8 @@ export const ESSAYS: Essay[] = [
           agents, and the real constraints on scaling AI are rarely the
           technology itself. They are data quality, security, and the absence of
           evaluation discipline. The newer the system, the more easily
-          plausibility substitutes for proof.
+          plausibility substitutes for proof, and the harder it is to notice
+          the substitution happening.
         </P>
         <H2>The discipline already exists</H2>
         <P>
