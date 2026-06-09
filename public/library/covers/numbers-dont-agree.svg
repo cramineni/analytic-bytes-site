@@ -1,10 +1,10 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Field Notes No. 07: The numbers don't agree because the words don't.</title>
-<desc>White background with a navy line-work mark — the word Enrollment in italic teal sits at the top, a short stem and a small junction dot below it, and three lines branch down to three different percentage values (87%, 82%, 91%), showing the same metric producing different numbers under different definitions. Title and italic slate subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
+<title>Essay No. 06: The numbers don't agree because the words don't.</title>
+<desc>White background with a navy line-work mark — the word Persistence in italic teal sits at the top, a short stem and a small junction dot below it, and three lines branch down to three different percentage values (87%, 82%, 91%), showing the same metric producing different numbers under different definitions. Title and italic slate subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
-<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field notes  ·  No. 07</text>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 06</text>
 <g transform="translate(600, 240)">
-  <text x="0" y="-62" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#0EA5E9" text-anchor="middle">Enrollment</text>
+  <text x="0" y="-62" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#0EA5E9" text-anchor="middle">Persistence</text>
   <line x1="0" y1="-44" x2="0" y2="-15" stroke="#0F2A4A" stroke-width="1.5"/>
   <circle cx="0" cy="-15" r="3" fill="#0F2A4A"/>
   <line x1="0" y1="-15" x2="-100" y2="55" stroke="#0F2A4A" stroke-width="1.5"/>
