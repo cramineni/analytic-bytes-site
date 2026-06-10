@@ -27,7 +27,7 @@ const HIGHLIGHTS: { label: string; value: string }[] = [
   {
     label: "Background",
     value:
-      "PhD, Educational Measurement (University of Delaware) · Seven years of AI-evaluation research at ETS · Operational data practice across education and mental health organizations · Stanford Executive Education in AI-Driven Leadership",
+      "PhD, Educational Measurement (University of Delaware) · Seven years of AI-evaluation research at ETS · Operational data practice across education and mental health organizations · Stanford Executive Education in AI-Driven Leadership · MIT Sloan Executive Education in Implementing Agentic AI",
   },
 ];
 

@@ -1680,19 +1680,19 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             This is a field note, not a study. It is an exploratory,
-            reliability-filtered read of seven years of CDC WONDER mortality
-            data, and its only real claim is structural: burden and disparity
+            reliability-filtered read of CDC WONDER mortality data from 2021
+            to 2024, and its only real claim is structural: burden and disparity
             are two different signals, the priority list you would build from
             one is not the list you would build from the other, and a
             prioritization framework that shows both, and stays honest about
-            what it can’t see, changes the allocation decision. Written for the
-            person who has to defend that decision after it’s made.
+            what it can’t see, changes the allocation decision. This piece is
+            for the person who has to defend that decision after it’s made.
           </p>
         </Brief>
 
         <H2>The headline that hides the signal</H2>
         <P>
-          Start with the good news, because it is real. Across the younger age
+          Let’s start with the good news, because it is real. Across the younger age
           bands, suicide rates fell between 2021 and 2024, and not slightly.
           Ages 10–14 down about 16 percent. Ages 15–19 down 13 percent. Ages
           20–24 down 13 percent. Ages 25–34 down 12 percent. Four bands, every
@@ -1900,9 +1900,9 @@ export const ESSAYS: Essay[] = [
 
         <H2>What this is really about</H2>
         <P>
-          Strip the subject matter away and this is a decision-systems problem.
+          Underneath the subject matter, this is a decision-systems problem.
           An organization has a real decision to make (where prevention
-          resources go) and the data it holds is being read through a single
+          resources go), and the data it holds is being read through a single
           number that cannot carry the decision. The fix is not more data. It is
           a framework that disaggregates the signals the decision
           rests on, shows them together, and stays disciplined about its own
@@ -1978,7 +1978,7 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          Start with the confusion. It is real, and it is a clue. Ask ten
+          Let’s start with the confusion. It is real, and it is a clue. Ask ten
           organizations who owns data infrastructure and you get a tour of the
           alphabet: the CTO, the CIO, the CFO, the CFAO, the COO, a CDO, a CDAO,
           a Chief AI Officer, a Chief Innovation Officer, sometimes a Chief
@@ -2097,10 +2097,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>The seat that is left</H2>
         <P>
-          Strip away the four embedded options and one seat is left: the one
-          already accountable for how the whole organization runs together. Call
-          it the integration seat. In most organizations, it is the Chief
-          Operating Officer.
+          The seat that’s left, once the four embedded options are set aside,
+          is the one already accountable for how the whole organization runs
+          together. Call it the integration seat. In most organizations, it is
+          the Chief Operating Officer.
         </P>
         <P>
           The COO is not a single function. The COO is the place the functions
@@ -2460,8 +2460,8 @@ export const ESSAYS: Essay[] = [
 
         <H2>What this asks of a leader</H2>
         <P>
-          Strip it all back and the leader’s question was never “should we adopt
-          agentic AI.” It is narrower and harder, and it is a list: for which
+          The leader’s real question was never “should we adopt agentic AI.”
+          It is narrower and harder, and it is a list: for which
           decisions, at what point on the autonomy dial, with what checkpoint,
           managed by whom, watched how. Not one of those is a technology
           question. Every one is a decision-system question, and they were the
@@ -2525,7 +2525,7 @@ export const ESSAYS: Essay[] = [
             skipped — invisible when it works, expensive to do well. This piece
             argues that higher education already owns the discipline to answer
             it, and has not yet pointed it at the AI systems now moving into
-            administrative use. Written for anyone adopting, governing, or
+            administrative use. This piece is for anyone adopting, governing, or
             evaluating one.
           </p>
         </Brief>
