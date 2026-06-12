@@ -318,7 +318,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           An analytics product that serves more than one audience, and that is
-          most of them, is serving three reporting surfaces at once.
+          most of them, is really serving three reporting surfaces, not one.
           They differ on five dimensions: audience, cadence, governance,
           permission model, output format. None of the five compromises
           gracefully. Force a single tool to span all three surfaces and the
@@ -406,7 +406,7 @@ export const ESSAYS: Essay[] = [
           separately from the analyst. PDF export from a BI tool produces a
           screenshot, not a structured document. The artifact a board member
           emails to a colleague is a Word file, or a PDF that looks like one.
-          Nobody forwards a dashboard URL with a login prompt behind it.
+          Not a link to a dashboard with credentials.
         </P>
         <P>
           There is also a layout-ownership problem. In a BI tool, the analyst
@@ -441,8 +441,8 @@ export const ESSAYS: Essay[] = [
         <P>
           The mistake organizations make is being talked into replacing this
           path with “embed a Tableau dashboard in a PDF” because it sounds like
-          one less system. The system that goes missing is the one that was
-          shaped for the job.
+          one less system. It isn’t one less system. It’s one less
+          correctly-shaped system.
         </P>
 
         <H2>The keystone: one canonical computation per concept</H2>
@@ -566,9 +566,9 @@ export const ESSAYS: Essay[] = [
         <P>
           The vendor-evaluation matrix that arrives at the start of this work is
           not wrong. It is premature. Run it after the semantic layer exists and
-          you will find the choice barely matters. Run it before, and the six
-          months you spend on it will go toward tuning the wrong variable,
-          while the layer that decides the outcome still hasn’t been built.
+          you will find the choice barely matters. Run it before, and you will
+          spend six months optimizing the wrong variable while the foundation
+          that determines the outcome goes unbuilt.
         </P>
 
         <H2>Closing</H2>
@@ -723,8 +723,8 @@ export const ESSAYS: Essay[] = [
         <P>
           This is closer to user-research methodology than to traditional BI
           design. The AI is acting as a fast proxy for the stakeholder’s
-          cognitive needs. It hasn’t spent five years in your design reviews,
-          which is what makes it useful at this step.
+          cognitive needs, not because the AI knows the stakeholder, but because
+          the AI doesn’t yet carry the data team’s aesthetic biases.
         </P>
 
         <H2>Where each tool fits in the discipline</H2>
@@ -780,9 +780,8 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Stakeholder interpretation becomes part of the design process.</B>{" "}
           AI proposals are easy to test against actual users. Does a school
-          principal read this faster than the original? That is a question you
-          can answer with five principals and a week, which is most of the
-          point.
+          principal read this faster than the original? You can find out in a
+          week instead of after launch.
         </P>
 
         <H2>What the discipline cannot replace</H2>
@@ -804,9 +803,8 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>The question itself.</B> The AI is great at proposing how to
           display an answer once it has the question. It is worse at deciding
-          which question matters most. The analyst keeps that call; it’s
-          the part of the workflow that hasn’t softened under any tool I’ve
-          tried.
+          which question matters most. That is still the analyst’s call, and the
+          closest thing to a human-only step in the workflow.
         </P>
 
         <H2>The reframe</H2>
@@ -1013,8 +1011,8 @@ export const ESSAYS: Essay[] = [
           interface. AI goes around the BI tool, not through it.
         </P>
         <P>
-          That is the placement story, one paragraph per layer. Grounding,
-          which is the next part, is where most stacks come apart.
+          That is the placement story, one paragraph per layer. The harder
+          question is what grounds the AI features once you have placed them.
         </P>
 
         <H2>The semantic layer is also the AI contract</H2>
@@ -1134,8 +1132,8 @@ export const ESSAYS: Essay[] = [
         <P>
           Most portal chatbots fail because they try to be helpful about
           everything. The version that works has narrow, explicit scope, and the
-          LLM is wrapped in tool-use, not given freeform SQL. In practice the
-          scope shrinks to a handful of permitted intents.
+          LLM is wrapped in tool-use, not given freeform SQL. Three permitted
+          scopes.
         </P>
         <P>
           <I>Program documentation.</I> RAG over a Cortex Search index of
@@ -1164,9 +1162,8 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Every chatbot answer that includes a number must show the source row
-          it pulled from, with a “view underlying data” link. A school
-          superintendent who can’t see where the number came from won’t use it
-          twice.
+          it pulled from, with a “view underlying data” link. Citations are not
+          optional in this domain.
         </P>
 
         <H2>The architecture in one paragraph</H2>
@@ -1265,10 +1262,10 @@ export const ESSAYS: Essay[] = [
           plus AI summaries above them.
         </P>
         <P>
-          <B>Free-text NL-to-SQL in the user-facing chatbot.</B> Fine for an
-          analyst who can sanity-check the SQL; a liability for a client whose
-          first run-in with a wrong answer is the only one that counts. Use
-          typed tool calls into the metric API instead.
+          <B>Free-text NL-to-SQL in the user-facing chatbot.</B> The right tool
+          for an internal analyst console, the wrong tool for a client portal
+          where the surface area is too large to keep grounded. Use typed tool
+          calls into the metric API instead.
         </P>
         <P>
           <B>Voice or multi-turn agentic chat.</B> Single-turn, scoped Q&amp;A
@@ -1315,8 +1312,8 @@ export const ESSAYS: Essay[] = [
         </Pull>
         <P>The keystone hasn’t changed. The surface has.</P>
         <P>
-          Every AI feature is a small delegation of a decision to a model.
-          The architecture’s whole job is
+          One reframe to carry out of this. Every AI feature is a small
+          delegation of a decision to a model. The architecture’s whole job is
           to keep those delegations deliberate: placed on purpose, grounded
           against one source of truth, observable after the fact. Where AI
           authority sits in a workflow is a design choice. Make it, rather than
@@ -1424,12 +1421,11 @@ export const ESSAYS: Essay[] = [
           resource-prioritization signals.
         </P>
         <P>
-          <B>PGI 2.0</B> (Performance Grading Index). Built for state-level
-          comparison, federal incentive frameworks, and publicly visible
-          accountability. A composite index that combines UDISE+ and NAS into
-          ranking grades across 73 indicators on a 1,000-point scale. Don’t
-          reach for it when the question is operational or improvement-shaped;
-          it won’t carry the weight.
+          <B>PGI 2.0</B> (Performance Grading Index). Composite index, 73
+          indicators, 1,000-point scale. Combines UDISE+ and NAS data into
+          ranking grades. Strong for state-level comparison, federal incentive
+          frameworks, publicly visible accountability. Weak for improvement work
+          or operational decisions.
         </P>
         <P>
           <B>SEQI</B> (School Education Quality Index). Composite ranking,
@@ -1450,10 +1446,10 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The pattern is recognizable: each layer does something well, and each
-          layer has a clear failure mode. None alone is sufficient. Stitched
-          through an integration architecture, they can serve a teacher, a
-          headmaster, a district officer, and a policy designer reading the same
-          assets at different cadences.
+          layer has a clear failure mode. None alone is sufficient. All of them
+          combined, with the right integration architecture, can support
+          different decision-makers running different decisions at different
+          cadences.
         </P>
 
         <H2>The picture for one state</H2>
@@ -1581,8 +1577,8 @@ export const ESSAYS: Essay[] = [
         <P>
           This is the same parallel as healthcare. CDC + NSDUH + claims + EHR +
           patient-reported outcomes don’t replace each other; they enable
-          different decisions for different actors at different cadences,
-          provided the layers between them are stitched.
+          different decisions for different actors at different cadences. The
+          integration architecture is what makes it possible.
         </P>
 
         <H2>The pilot proposal</H2>
@@ -1628,9 +1624,8 @@ export const ESSAYS: Essay[] = [
           academic calendar.
         </P>
         <P>
-          The opportunity is sitting in the layers already collected. The work
-          is to stitch them into decision surfaces for the people who have to
-          act.
+          The opportunity isn’t a new portal. It’s stitching the layers we
+          already have into decision surfaces for the people who need to act.
         </P>
         <P>
           That is decision-systems architecture at state-government scale: start
@@ -1680,19 +1675,19 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             This is a field note, not a study. It is an exploratory,
-            reliability-filtered read of CDC WONDER mortality data from 2021
-            to 2024, and its only real claim is structural: burden and disparity
+            reliability-filtered read of seven years of CDC WONDER mortality
+            data, and its only real claim is structural: burden and disparity
             are two different signals, the priority list you would build from
             one is not the list you would build from the other, and a
             prioritization framework that shows both, and stays honest about
-            what it can’t see, changes the allocation decision. This piece is
-            for the person who has to defend that decision after it’s made.
+            what it can’t see, changes the allocation decision. Written for the
+            person who has to defend that decision after it’s made.
           </p>
         </Brief>
 
         <H2>The headline that hides the signal</H2>
         <P>
-          Let’s start with the good news, because it is real. Across the younger age
+          Start with the good news, because it is real. Across the younger age
           bands, suicide rates fell between 2021 and 2024, and not slightly.
           Ages 10–14 down about 16 percent. Ages 15–19 down 13 percent. Ages
           20–24 down 13 percent. Ages 25–34 down 12 percent. Four bands, every
@@ -1900,11 +1895,11 @@ export const ESSAYS: Essay[] = [
 
         <H2>What this is really about</H2>
         <P>
-          Underneath the subject matter, this is a decision-systems problem.
+          Strip the subject matter away and this is a decision-systems problem.
           An organization has a real decision to make (where prevention
-          resources go), and the data it holds is being read through a single
+          resources go) and the data it holds is being read through a single
           number that cannot carry the decision. The fix is not more data. It is
-          a framework that disaggregates the signals the decision
+          a framework that disaggregates the signals the decision genuinely
           rests on, shows them together, and stays disciplined about its own
           limits.
         </P>
@@ -1959,7 +1954,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In most organizations, one line on the org chart was never
+            In most organizations, one line on the org chart was never really
             decided. It was inherited. Who owns data infrastructure? The
             function ended up reporting wherever the first analyst was hired, or
             under IT because data felt technical, or under finance because data
@@ -1978,7 +1973,7 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          Let’s start with the confusion. It is real, and it is a clue. Ask ten
+          Start with the confusion. It is real, and it is a clue. Ask ten
           organizations who owns data infrastructure and you get a tour of the
           alphabet: the CTO, the CIO, the CFO, the CFAO, the COO, a CDO, a CDAO,
           a Chief AI Officer, a Chief Innovation Officer, sometimes a Chief
@@ -1991,7 +1986,7 @@ export const ESSAYS: Essay[] = [
         <P>
           So set the title question aside. It is the wrong question, and
           answering it first is how organizations end up improvising. Ask the
-          prior one. What does data infrastructure need from its place
+          prior one. What does data infrastructure actually need from its place
           on the org chart? Answer that, and the seat stops being a matter of
           taste.
         </P>
@@ -2018,13 +2013,13 @@ export const ESSAYS: Essay[] = [
           CTO. Put data where the people who can build and run the plumbing
           already sit. The cost shows up later. Under the CTO, data gets read as
           a system to keep running, and what gets resourced is what the CTO is
-          measured on: reliability, security, uptime, incident response. The semantic layer, the
+          measured on: reliability, security, uptime. The semantic layer, the
           part that makes data <I>mean</I> something to a program lead or a
           board, becomes nobody’s priority. The function slowly turns into a
           service desk, quick to answer a request and absent from the decision.
         </P>
         <P>
-          <B>The CFO or CFAO option.</B> Also a real case. Data is a governed,
+          <B>Under the CFO or CFAO.</B> Also a real case. Data is a governed,
           risk-bearing asset, and finance already runs enterprise reporting, has
           audit discipline, and treats numbers as things that must reconcile and
           withstand scrutiny. Few functions are better at custody. The cost is
@@ -2097,10 +2092,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>The seat that is left</H2>
         <P>
-          The seat that’s left, once the four embedded options are set aside,
-          is the one already accountable for how the whole organization runs
-          together. Call it the integration seat. In most organizations, it is
-          the Chief Operating Officer.
+          Strip away the four embedded options and one seat is left: the one
+          already accountable for how the whole organization runs together. Call
+          it the integration seat. In most organizations, it is the Chief
+          Operating Officer.
         </P>
         <P>
           The COO is not a single function. The COO is the place the functions
@@ -2198,8 +2193,9 @@ export const ESSAYS: Essay[] = [
           Place ownership at the integration seat and the heroics subside.
           Full-stack capability stops being a unicorn requirement. It becomes a
           senior role <I>supported</I> by its position instead of compensating
-          for the lack of one. The role was mis-housed, and the job description
-          was billing one person for the org chart’s unpaid debt.
+          for the lack of one. The role was never impossible. It was mis-housed,
+          and the job description was billing one person for the org chart’s
+          unpaid debt.
         </P>
 
         <H2>Where this is going</H2>
@@ -2349,8 +2345,8 @@ export const ESSAYS: Essay[] = [
           a set of agents and it does not get those questions answered. It gets
           them executed: unanswered, at machine speed, by a system that will not
           pause to ask. The confusion was survivable when a human sat in every
-          loop, slow enough to catch it. Take the human out of the loop and the
-          confusion is what runs.
+          loop, slow enough to catch it. Agents remove the human and keep the
+          speed.
         </P>
         <Pull>
           The unexamined decision system does not get fixed. It gets automated.
@@ -2416,10 +2412,8 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           An organization that deploys agents without naming who manages each
-          one has installed a decision-maker without an accountable owner. When
-          the agent makes a bad call, the question of who carries it has no
-          answer prepared, and the cycle that follows tends to be slower than
-          the call that caused it.
+          one has done something precise and dangerous. It has installed a
+          decision-maker and left the accountability seat empty.
         </P>
 
         <H2>You cannot bolt safety onto the model</H2>
@@ -2454,14 +2448,14 @@ export const ESSAYS: Essay[] = [
           agent has to be watched continuously: its override rate, its
           disagreement signals, its slow slide as the ground shifts. Its
           monitoring surface is not a quarterly report. It is a conversation you
-          are now having with a system still out there making
+          are now having, continuously, with a system still out there making
           decisions in your name.
         </P>
 
         <H2>What this asks of a leader</H2>
         <P>
-          The leader’s real question was never “should we adopt agentic AI.”
-          It is narrower and harder, and it is a list: for which
+          Strip it all back and the leader’s question was never “should we adopt
+          agentic AI.” It is narrower and harder, and it is a list: for which
           decisions, at what point on the autonomy dial, with what checkpoint,
           managed by whom, watched how. Not one of those is a technology
           question. Every one is a decision-system question, and they were the
@@ -2479,7 +2473,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The discipline is not in any single safeguard. It is in the
           architecture, the cadence, and the refusal to relax the bound at the
-          moment relaxing it would be convenient. <I>From fragmented to
+          precise moment relaxing it would be convenient. <I>From fragmented to
           decision-ready</I> was always the work. Agentic AI did not change
           that. It only raised the price of skipping it.
         </P>
@@ -2505,7 +2499,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-05-31",
     readingTime: "8 min read",
     summary:
-      "Universities have built the scaffolding to govern AI and left out a load-bearing beam: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
+      "Universities have built the scaffolding to govern AI and left out a load-bearing pillar: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
     cover: "/library/covers/what-is-this-system-measuring.svg",
     body: (
       <>
@@ -2513,7 +2507,7 @@ export const ESSAYS: Essay[] = [
           <p>
             Most universities have done the visible work of responding to AI:
             use policies, committees, a first wave of pilots across student
-            services and administration. They have become fluent in two
+            services and administration. They have become literate in two
             questions — should we use it, and what are the rules. Both are
             necessary. Neither tells you whether a given AI system is doing its
             job.
@@ -2525,14 +2519,14 @@ export const ESSAYS: Essay[] = [
             skipped — invisible when it works, expensive to do well. This piece
             argues that higher education already owns the discipline to answer
             it, and has not yet pointed it at the AI systems now moving into
-            administrative use. This piece is for anyone adopting, governing, or
+            administrative use. Written for anyone adopting, governing, or
             evaluating one.
           </p>
         </Brief>
 
         <P>
           By the start of 2026, most universities had done the visible work of
-          responding to artificial intelligence. They had written policies on
+          putting AI on the institutional agenda. They had written policies on
           student and faculty use. They had stood up AI committees and working
           groups. They had run pilots: assistants for student services, drafting
           tools for administrative staff, models that flag students who might be
@@ -2543,7 +2537,7 @@ export const ESSAYS: Essay[] = [
           describes a sector moving from a long period of growth into one of
           disciplined focus on core priorities, with the business model itself
           under scrutiny and risk management demanding tighter coordination
-          across offices that once operated apart. AI arrived in the middle of
+          across offices that once operated siloed. AI arrived in the middle of
           all of it, as both another pressure and a promised relief.
         </P>
         <P>
@@ -2558,20 +2552,21 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>The question that gets skipped</H2>
         <P>
-          There is a gap I keep noticing. Universities have become fluent in two
+          There is a gap I keep noticing. Universities have become literate in two
           questions about AI: should we use it, and what are the rules for using
           it. Those are the questions a policy answers and a committee debates,
           and they are necessary. But they are not the question that determines
-          whether a given AI system is doing its job. That question is narrower
-          and harder: does this specific system do what we claim it does?
+          whether a given AI system — the deployed model plus the workflow it
+          is sitting inside — is doing its job. That question is narrower and
+          harder: does this specific system do what we claim it does?
         </P>
         <P>
           It is an easy question to skip. A tool gets adopted because it is
           plausible, because a vendor demonstrated it well, because a respected
           peer institution uses it, because a pilot felt successful. None of
           those is evidence that the system measures or predicts what it
-          purports to. Adoption and policy have outrun evaluation. We have built
-          the scaffolding for governing AI and left out a load-bearing beam.
+          claims to. Adoption and policy have outrun evaluation. We have built
+          the scaffolding for governing AI and left out a load-bearing pillar.
         </P>
         <H2>What seven years of scoring engines taught me</H2>
         <P>
@@ -2589,8 +2584,8 @@ export const ESSAYS: Essay[] = [
           still be measuring only part of what it claims to measure. It can
           learn that longer essays tend to score higher, and quietly come to
           lean on length. It can rest on vocabulary, sentence count, surface
-          fluency, the rhythm of transition words: features that correlate with
-          writing quality without constituting it. The scores look right. The agreement statistics look
+          fluency: features that correlate with writing quality without
+          constituting it. The scores look right. The agreement statistics look
           right. And underneath, the system is measuring something narrower than
           its label suggests.
         </P>
@@ -2604,7 +2599,7 @@ export const ESSAYS: Essay[] = [
           earns its agreement primarily through length is not measuring writing
           quality directly. It is measuring a feature that correlates with
           writing quality. The difference looks small in aggregate. It is
-          enormous for the writers the correlation doesn’t hold for.
+          decisive for the writers the correlation doesn’t hold for.
         </P>
 
         <H2>The harder question</H2>
@@ -2634,7 +2629,7 @@ export const ESSAYS: Essay[] = [
           the human is the instructor evaluating what the test was built to
           predict. The first is reliability, often pursued because it is
           faster and cheaper. The second is validity, and it is what the test
-          was claiming to do in the first place. The AI-scoring conversation has
+          claims to do in the first place. The AI-scoring conversation has
           mostly been running on the easier question.
         </P>
         <P>
@@ -2649,8 +2644,8 @@ export const ESSAYS: Essay[] = [
           integration of the last decade, has also lowered the cost of running
           the harder question. The validity work
           that was once prohibitively expensive is newly affordable. The
-          methodology was built for an older cost structure, and most of the
-          field has kept running on it out of habit rather than necessity.
+          methodology was built for an older cost structure. The cost structure
+          has moved. The methodology hasn’t.
         </P>
         <P>
           This is not an argument against keeping humans in the loop. It is an
@@ -2663,8 +2658,9 @@ export const ESSAYS: Essay[] = [
           match, is the harder question. That rater is always a proxy for the
           construct, not the construct itself. Validating against the downstream
           criterion still involves human judgment, but a human judgment anchored
-          at what the test was built to predict, not at the score itself. Keep
-          humans deciding. Anchor the validation farther downstream.
+          at what the test is built to predict, not at the score itself. Keep
+          humans deciding. Anchor the validation at the prediction target — the
+          coursework — not at the score.
         </P>
 
         <H2>Every system makes a claim</H2>
@@ -2703,8 +2699,7 @@ export const ESSAYS: Essay[] = [
           agents, and the real constraints on scaling AI are rarely the
           technology itself. They are data quality, security, and the absence of
           evaluation discipline. The newer the system, the more easily
-          plausibility substitutes for proof, and the harder it is to notice
-          the substitution happening.
+          plausibility substitutes for proof.
         </P>
         <H2>The discipline already exists</H2>
         <P>
@@ -2741,7 +2736,7 @@ export const ESSAYS: Essay[] = [
           </NumItem>
         </NumList>
         <P>
-          None of these questions is exotic. They are the ordinary questions of
+          None of these questions is esoteric. They are the ordinary questions of
           measurement. A university that has an institutional research office
           and an assessment culture already employs people who know how to ask
           them. Those people have not yet been pointed at the AI systems moving
@@ -3023,277 +3018,6 @@ export const ESSAYS: Essay[] = [
           performance tasks completed between 2017 and 2026; organizations and
           task specifics are abstracted throughout, and no individual
           organization’s task, scenario detail, or data is reproduced.
-        </MetaNote>
-      </>
-    ),
-  },
-  {
-    kind: "essay",
-    slug: "numbers-dont-agree",
-    number: "06",
-    title: "The numbers don’t agree because the words don’t.",
-    subtitle:
-      "Why information and analytics governance lives or dies on shared definitions.",
-    date: "2026-06-09",
-    readingTime: "7 min read",
-    summary:
-      "Two people read different student-persistence numbers from the same data. The governance council is functioning. The framework looks complete. What's broken is definitional, and the work to fix it is the work most councils skip.",
-    cover: "/library/covers/numbers-dont-agree.svg",
-    hidden: false,
-    body: (
-      <>
-        <Brief>
-          <p>
-            Two people in the same meeting cite a different
-            student-persistence number. Both are reading from a real report,
-            prepared by competent people, drawn from the institution’s real
-            data. A third person at the table has a third. The institution has
-            a data governance council, a published data policy, and named
-            stewards. None of that stops the meeting from getting stuck.
-          </p>
-          <p>
-            Most “data problems” are not data problems. They are definitional
-            disagreements wearing a technical disguise, and the work to fix
-            them is not a better framework. It is the slow, distributed work
-            that lives inside the framework, and it is the work most governance
-            councils skip.
-          </p>
-        </Brief>
-
-        <P>
-          “Student persistence,” the rate at which enrolled students continue
-          from one period to the next, can mean keeping a student from the
-          first day of the school year to the last day. It can mean keeping
-          them from one annual official census date to the next census date a
-          year later, which is how state accountability typically counts. Or
-          it can mean keeping them from the first day of school to that same
-          year’s census date, a different and shorter window. Each is a valid
-          and useful definition. Each is what some real obligation requires.
-          They do not agree with one another, and the institution cannot act
-          on data it cannot agree on.
-        </P>
-
-        <H2>The framework is necessary but insufficient</H2>
-
-        <P>
-          Governance councils default to architecture, and they have
-          well-developed frames to draw on. DAMA’s Data Management Body of
-          Knowledge organizes the field into eleven knowledge areas with
-          governance at the center: architecture, modeling, integration,
-          quality, metadata, master and reference data, and the rest.
-          EDUCAUSE’s data-empowered-institution model distills the
-          higher-education version to five components: data quality,
-          integration, governance, management, and literacy. Both frames are
-          correct about what to build. Both are also insufficient. The
-          operational work that makes governance hold is getting the
-          registrar, financial aid, institutional research, and the deans into
-          the same room to decide which version of “persistence” gets used
-          where, and why each version exists. That work is slow, unglamorous,
-          often unwritten. Most councils never do it. The framework looks
-          complete; the numbers still do not agree.
-        </P>
-
-        <H2>Three definitions, one number, eight recalculations</H2>
-
-        <P>
-          At a multi-school K–8 charter network where I led data and technology
-          strategy, student persistence was formally defined at least three
-          different ways at the same time. From day one of the school year to
-          the last day, for program-completion reporting. From one annual state
-          census day to the next year’s census day, for state accountability.
-          From the first day of school to that same year’s census date, for
-          early-year persistence reporting. Those translations fed into still
-          more obligations: S&amp;P bond-rating reporting, principal incentive
-          calculations, enrollment forecasting, federal accountability. Each
-          required a particular version, and none of the definitions could be
-          discarded. In one year alone, the same persistence number was
-          independently recalculated eight or more times across the network’s
-          reports. Every recalculation was correct under its own definition,
-          and none of them agreed with the others. The institution still had
-          to be able to talk about persistence without the conversation
-          fragmenting into a definitional argument every time it came up.
-        </P>
-
-        <P>
-          The work that closed the gap was not a framework. It was definitional
-          reconciliation. We mapped every reporting obligation to its required
-          definition. We named each definition explicitly. We established the
-          relationships among them: how one translated to another, which
-          report drew which number from where, what shared baseline assumptions
-          sat underneath. Then we built a small set of trusted, governed
-          numbers that fed every obligation with the correct version, so that
-          one set of dashboards could serve all of them without any of them
-          being wrong. Data completeness rose from 60 percent to 90 percent,
-          principal dashboard adoption rose to 70 percent, and the reporting
-          lag dropped by 40 percent. The framework looked the same after that
-          work as it had before. The numbers started agreeing because the
-          words started meaning the same thing in the same place.
-        </P>
-
-        <H2>The same problem across time: crosswalks</H2>
-
-        <P>
-          The other shape of the same problem appears across time. At a
-          national youth-mental-health foundation, the work was to keep a
-          governed reporting foundation coherent while the instruments
-          underneath it kept changing. Survey versions were updated as the
-          theory of change matured. The constructs the programs were trying to
-          measure shifted as the field learned what mattered. Items were added,
-          edited, and retired; data-quality standards tightened. Each of those
-          changes was legitimate, and none of them could be paused while the
-          field caught up. The institution still had to be able to look at
-          three years of program data and say something true about it.
-        </P>
-
-        <P>
-          What held that work together was, in modern data-stack terms, a
-          semantic layer: explicit canonical definitions encoded in dbt models,
-          version-controlled like code, owned across teams. Alongside it ran
-          the discipline of crosswalks, documented translations of how a
-          question asked in one survey version mapped to the same construct
-          asked slightly differently in the next. The framework was not the
-          answer. The semantic layer, the crosswalks, and the discipline of
-          owning every definitional change were what held the reporting
-          foundation honest as the underlying questions kept evolving.
-        </P>
-
-        <H2>Granularity is its own governance problem</H2>
-
-        <P>
-          Granularity is its own governance problem, and aggregation is where
-          many institutions quietly compromise it. At the same K–8 network,
-          daily attendance was a single data stream with at least three
-          different operational lives. A single absence on a given day
-          triggered an immediate outreach workflow owned by an operations
-          coordinator. Three consecutive days of absence triggered a different
-          workflow, owned by a teacher or student-support counselor. Chronic
-          absenteeism (eighteen or more days in a year, or more than ten
-          percent of school days as a running rate) triggered a third
-          workflow, owned by the principal. The same data, three aggregations,
-          three views, three sets of decision rights, three stakeholders.
-          Governance at the granularity layer was not deciding whether to
-          compute these numbers. It was deciding which view triggered which
-          workflow, who owned each decision, and what the legitimate
-          translation among them was, knowing that a daily count cannot be
-          disaggregated from a chronic-absenteeism rate without losing what it
-          actually measured.
-        </P>
-
-        <H2>Architecture is governance</H2>
-
-        <P>
-          Architecture is governance too. When a student-information system is
-          replaced, or a behavioral-health electronic record is migrated to a
-          new platform, the definitional question is not the migration. It is
-          whether what the new system records is the same thing the old one
-          recorded. Field mappings have to be made explicit. New fields are
-          added where the schema changed. Legacy fields are retired only
-          after every use case is accounted for. Data-entry personnel are
-          trained on the new system’s expectations for completeness, accuracy,
-          and timeliness. None of that is technical work; it is definitional
-          work conducted at the architectural layer. The same discipline
-          appears between systems that exchange data in production: a
-          student-information system reading from or writing to
-          enrollment-tracking infrastructure, or an electronic health record
-          exchanging data with a state psychiatric system or a regional
-          health-information exchange. The questions are the same. Who reads,
-          who writes, on what cadence, with what contracts around append
-          versus delete, with what traceability when a record is corrected,
-          with what reversibility when something goes wrong. The contracts
-          between systems govern as much of the institution’s data integrity
-          as the policies inside any single system do.
-        </P>
-
-        <P>
-          Those contracts also include the freshness contract. When data
-          drives action, a financial-aid hold, an early-alert outreach, a
-          billing reconciliation, a clinical follow-up, the actor needs to
-          know when the data they are acting on was last refreshed, and the
-          institution needs to have caught the failure points where stale
-          data could be acted on as if it were current. Systems that exchange
-          data have to update in sync, or have to expose their lag honestly
-          enough that the consumer can decide whether the number is fresh
-          enough to act on. Automation without monitoring is delayed surprise.
-          Timestamps are part of the decision.
-        </P>
-
-        <H2>Stewardship is what makes it stick</H2>
-
-        <P>
-          Quality is not a one-time achievement. It is a continuous practice
-          owned by the people closest to the data. The principal
-          dashboard-adoption rate of 70 percent at the K–8 network was not
-          just a usage statistic. It was evidence of distributed stewardship.
-          The principals were not merely consumers of their numbers. They
-          were the ones who noticed anomalies, raised corrections, pushed back
-          on definitions that did not serve their schools, and held the
-          institution accountable to its own standards. A central data office
-          that owns quality alone is fragile. A network of stewards who own
-          their own data, with shared definitions they help refresh, is
-          durable. That is the model that survives leadership turnover,
-          budget cycles, and reorganization.
-        </P>
-
-        <P>
-          Stewardship of that kind requires operational discipline at the
-          configuration and training layer, because the biggest risk in any
-          compliance or reporting process is rarely one dramatic mistake. It
-          is drift. If a gradebook is configured one way at one school and a
-          different way at another, GPA calculations diverge before any
-          dashboard sees them. The same instance has to be replicated across
-          sites with the same scales, the same formulae, and the same
-          business rules, with a checking cadence and alerts in place to
-          catch unintended drift or misconfiguration before errors propagate.
-          Definitional work also has to reach the personnel who actually
-          enter the data. Whether an in-house suspension is coded as
-          “present” or “absent” in the student-information system is a
-          definitional decision data-entry personnel make every day. If they
-          have not been trained on which version the institution is using, no
-          framework above them can compensate. Quality is held together one
-          configuration, one alert, and one training conversation at a time.
-        </P>
-
-        <H2>Why universities need this most</H2>
-
-        <P>
-          Universities are structurally decentralized in ways most
-          organizations are not. School autonomy, faculty governance, and
-          distributed authority by design are features, not bugs. Governance
-          imposed from the center has a poor track record in higher education
-          because the autonomy is rightly defended. Governance embedded
-          through definitions has a much better one. A definition agreed
-          across the registrar, financial aid, institutional research, and
-          the relevant deans is hard to walk back, because each domain
-          steward owns it. A policy written by the governance council,
-          however thorough, can be politely ignored by a department running
-          its own numbers. The framework’s real authority is not the
-          document. It is the working set of shared definitions that domain
-          leaders maintain together.
-        </P>
-
-        <H2>What working governance actually looks like</H2>
-
-        <P>
-          When a dean and the registrar can agree on what a number means, and
-          can recover on demand why three other versions of the same number
-          exist, where each one is used, how this year’s definition relates
-          to last year’s, and how the system that produces it connects to the
-          systems that consume it, governance is working. When the policy
-          document is elegant and the numbers still do not agree, it isn’t.
-          The work to do is not a better framework. It is the slow,
-          distributed work that lives inside the framework: definitional
-          reconciliation, crosswalks, aggregation governance, architectural
-          mapping, and stewardship. That is the work most governance councils
-          skip, and the work the institution’s hardest questions cannot be
-          answered until someone does.
-        </P>
-
-        <MetaNote>
-          Written June 2026 for the Analytic Bytes Library. Cases described
-          are drawn from the author’s practice across a K–8 charter network
-          and a national youth-mental-health foundation; organizational
-          details are abstracted and no individual record, person, or
-          proprietary number is reproduced.
         </MetaNote>
       </>
     ),
