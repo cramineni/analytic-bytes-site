@@ -1675,8 +1675,7 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             This is a field note, not a study. It is an exploratory,
-            reliability-filtered read of seven years of CDC WONDER mortality
-            data, and its only real claim is structural: burden and disparity
+            reliability-filtered read of CDC WONDER mortality data, and its only real claim is structural: burden and disparity
             are two different signals, the priority list you would build from
             one is not the list you would build from the other, and a
             prioritization framework that shows both, and stays honest about
@@ -1717,7 +1716,7 @@ export const ESSAYS: Essay[] = [
           any rolled-up number is a decision hazard. It blends signals moving in
           opposite directions, and the blend erases the contrast a resource
           decision depends on. You have to disaggregate before you can allocate.
-          Age is one cut. The one this note is about is harder.
+          Age is one cut; the cut this note is about is harder.
         </P>
 
         <H2>Two signals, not one</H2>
@@ -1828,9 +1827,9 @@ export const ESSAYS: Essay[] = [
           group is American Indian and Alaska Native communities; in Hawaii, it
           is residents of more than one race. That is the clearest pattern in
           the disparity signals. It should shape not only where the dollar goes
-          but who helps design what it funds; a prevention dollar spent{" "}
-          <I>on</I> a community tends to underperform a dollar spent <I>with</I>{" "}
-          one.
+          but who helps design what it funds; a prevention dollar designed for
+          a community without their participation tends to underperform a
+          dollar designed in partnership with them.
         </P>
 
         <H2>Where the next dollar goes</H2>
@@ -1863,13 +1862,13 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The figures are <I>provisional</I>. CDC WONDER mortality counts for
-          2018–2024 are revised over time; the picture will shift.
+          2021–2024 are revised over time; the picture will shift.
         </P>
         <P>
-          The disparity signals are <I>reliability-filtered</I>. A signal
-          counted here only if there were at least 20 deaths in both the
-          comparison group and the White comparison group, a relative risk of at
-          least 1.25, and a positive absolute rate difference. Below those
+          The disparity signals are <I>reliability-filtered</I>. A signal was
+          counted here only if there were at least 20 deaths in both comparison
+          groups, a relative risk of at least 1.25, and a positive absolute
+          rate difference. Below those
           thresholds, small counts produce rates that swing wildly from year to
           year, and an unfiltered ranking would be mostly noise wearing the
           costume of precision.
@@ -1926,7 +1925,7 @@ export const ESSAYS: Essay[] = [
 
         <MetaNote>
           Exploratory analysis of CDC WONDER provisional mortality data,
-          2018–2024 (ages 10–54). Written May 2026 for the Analytic Bytes
+          2021–2024 (ages 10–54). Written May 2026 for the Analytic Bytes
           Library. This is a signal framework for strategic prioritization, not
           a causal analysis, an epidemiological ranking, or a definitive
           allocation system. Reliability filters are described in the text.
