@@ -2431,6 +2431,13 @@ export const ESSAYS: Essay[] = [
           in ways the agent can’t yet weigh, and the cost of getting it wrong
           is months of misdirected engagement.
         </P>
+
+        <Figure
+          src="/library/figures/ab-autonomy-range.svg"
+          alt="A horizontal autonomy spectrum with four decisions from AB's Deliver Signal workflow plotted at different points. Diagnostic prioritization and Frontline-versus-boardroom framing sit near the human-only end. Gap ranking is mid-spectrum, escalation-heavy. Source-inventory tagging sits well along the spectrum toward agent autonomy."
+          caption="Autonomy range for AB's Deliver Signal workflow: same engagement, four decisions, each with its own calibration. Stakes set the position, not capability."
+        />
+
         <P>
           Readers of earlier pieces will recognize the shape: it is the same
           risk-and-repeatability logic that decides where AI authority sits in

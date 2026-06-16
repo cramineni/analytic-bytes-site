@@ -1,0 +1,65 @@
+<svg viewBox="0 0 820 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="ttl">Autonomy Range — AB Deliver Signal</title>
+<desc id="desc">A horizontal autonomy spectrum with four decisions from AB's Deliver Signal workflow plotted at different points. Diagnostic prioritization sits at the human-only end. Frontline-versus-boardroom framing is left of center, slightly higher autonomy. Gap ranking is mid-spectrum, escalation-heavy. Source-inventory tagging is well along the spectrum toward agent autonomy. The thesis: the same engagement carries multiple decisions, each with its own calibration.</desc>
+<rect width="820" height="580" fill="#FFFFFF"/>
+
+<!-- Eyebrow -->
+<text x="48" y="46" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">AUTONOMY RANGE</text>
+
+<!-- Main title -->
+<text x="48" y="80" font-size="23" fill="#0E2A47" font-weight="700">Same engagement,</text>
+<text x="48" y="108" font-size="23" fill="#0EA5E9" font-weight="700">different calibrations.</text>
+
+<!-- Subtitle -->
+<text x="48" y="138" font-size="14" fill="#6B7A8C" font-style="italic">AB Deliver Signal — where each decision sits, by stakes.</text>
+
+<!-- Axis endpoint labels (above axis) -->
+<text x="80" y="225" font-size="11" letter-spacing="1.5" fill="#6B7A8C" font-weight="600">LOW AUTONOMY</text>
+<text x="80" y="242" font-size="11" fill="#94A3B8" font-style="italic">human originates</text>
+<text x="740" y="225" font-size="11" letter-spacing="1.5" fill="#6B7A8C" font-weight="600" text-anchor="end">HIGH AUTONOMY</text>
+<text x="740" y="242" font-size="11" fill="#94A3B8" font-style="italic" text-anchor="end">checked by exception</text>
+
+<!-- Spectrum axis with arrows -->
+<line x1="80" y1="270" x2="740" y2="270" stroke="#0E2A47" stroke-width="2"/>
+<polygon points="80,270 92,264 92,276" fill="#0E2A47"/>
+<polygon points="740,270 728,264 728,276" fill="#0E2A47"/>
+
+<!-- Plot point 1: Diagnostic prioritization (x=180, far left, human-only) -->
+<circle cx="180" cy="270" r="8" fill="#0E2A47"/>
+<line x1="180" y1="278" x2="180" y2="305" stroke="#0E2A47" stroke-width="1.5"/>
+<text x="180" y="324" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">Diagnostic</text>
+<text x="180" y="342" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">prioritization</text>
+<text x="180" y="364" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">political readiness,</text>
+<text x="180" y="378" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">sponsor energy</text>
+
+<!-- Plot point 2: Frontline-vs-boardroom framing (x=275, lower vertical to avoid overlap) -->
+<circle cx="275" cy="270" r="8" fill="#0E2A47"/>
+<line x1="275" y1="278" x2="275" y2="425" stroke="#0E2A47" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="275" y="445" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">Frontline-vs-boardroom</text>
+<text x="275" y="463" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">framing</text>
+<text x="275" y="485" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">most consultants</text>
+<text x="275" y="499" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">get this wrong</text>
+
+<!-- Plot point 3: Gap ranking (x=443, mid spectrum, teal) -->
+<circle cx="443" cy="270" r="8" fill="#0EA5E9"/>
+<line x1="443" y1="278" x2="443" y2="305" stroke="#0EA5E9" stroke-width="1.5"/>
+<text x="443" y="324" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">Gap ranking</text>
+<text x="443" y="346" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">synthesizer-reviewer</text>
+<text x="443" y="360" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">with escalation</text>
+
+<!-- Plot point 4: Source-inventory tagging (x=621, right of center, teal) -->
+<circle cx="621" cy="270" r="8" fill="#0EA5E9"/>
+<line x1="621" y1="278" x2="621" y2="305" stroke="#0EA5E9" stroke-width="1.5"/>
+<text x="621" y="324" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">Source-inventory</text>
+<text x="621" y="342" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">tagging</text>
+<text x="621" y="364" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">pattern-matchable,</text>
+<text x="621" y="378" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">recoverable cost</text>
+
+<!-- Bottom thesis lines -->
+<text x="48" y="528" font-size="13.5" fill="#0E2A47" font-weight="600">Calibrate per decision, by stakes — not once and globally by habit.</text>
+<text x="48" y="546" font-size="13" fill="#6B7A8C">The same engagement carries multiple decisions, each with its own range.</text>
+
+<!-- AB footer -->
+<text x="48" y="572" font-size="11" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="170" y="572" font-size="11" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>
