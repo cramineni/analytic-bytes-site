@@ -2284,8 +2284,9 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          Start with what an “agent” is, because the demo obscures it. An agent
-          is not a new kind of model. It is the same kind of model with two
+          Let’s start with what an “agent” is, because the demo obscures it.
+          An agent is not a new kind of model. It is the same kind of model
+          with two
           things added: tools it can call, and a change in how its output is
           read. The same text a chatbot would hand back as a reply, an agent
           treats as a program — an instruction to go do something. Read as a
@@ -2299,10 +2300,25 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           A working definition, the kind you would say at the start of a
-          meeting: agentic AI is a software system that takes a goal, plans its
-          own next moves across your tools and data, and produces actions rather
-          than answers. Hold onto “actions rather than answers.” Everything else
-          is downstream of it.
+          meeting (I drafted this for my MIT capstone playbook and use it now
+          in client conversations): agentic AI is a software system that takes
+          a goal, plans its own next moves across your tools and data, and
+          produces actions rather than answers. Hold onto “actions rather than
+          answers.” Everything else is downstream of it.
+        </P>
+
+        <P>
+          Throughout the rest of this piece, I’ll keep coming back to one
+          workflow as the worked example: AB’s “Deliver Signal,” the first
+          ninety days of how I take a mission-driven client from fragmented
+          sources to one decision-ready surface an executive and a frontline
+          operator can both act on. It is the candidate workflow I worked
+          through in detail for my MIT capstone, and it is also the work I am
+          doing, currently end-to-end myself, with AI augmentation in code,
+          prose, and analysis. It surfaces every decision this essay
+          will walk through: where the human checkpoint sits, where the
+          agent’s autonomy ends, what safeguards have to hold, and who owns
+          the result.
         </P>
 
         <H2>The checkpoint that used to be free</H2>
@@ -2369,24 +2385,51 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The first is a threshold map. For any workflow you are considering
-          handing to an agent, draw the line three ways. Where may the agent act
-          entirely on its own? Where must it stop and escalate to a human? And
-          where must a human originate the decision, with the agent not acting
-          at all, only assisting? Most teams never draw this map. They let the
-          vendor’s default draw it, which means the line ends up wherever the
-          demo happened to put it.
+          handing to an agent, draw the line three ways. Where may the agent
+          act entirely on its own? Where must it stop and pass the decision up
+          to a human? And where must the human start the decision in the first
+          place, with the agent not acting at all, only assisting? Most teams
+          never draw this map. They let the vendor’s default draw it, which
+          means the line ends up wherever the demo happened to put it.
         </P>
         <P>
-          The second is the recognition that autonomy is not a switch. It is a
-          dial. An agent is not “autonomous” or “not.” For each task, in each
+          For AB’s Deliver Signal workflow, the three zones look concrete.
+          Take source-inventory tagging, where the agent categorizes each new
+          client data source by ownership, freshness, and criticality. The
+          agent acts on its own when ownership is clear, freshness signals
+          agree, and the source fits a known pattern from AB’s procedural
+          memory. It escalates when ownership is ambiguous, freshness signals
+          conflict, or the source is a new-to-AB system type. And I originate
+          the decision before the agent touches any metadata when the source
+          carries regulated data: student PII, EHR records, claims data. The
+          same workflow has different lines for different decisions inside
+          it. Drawing the map once is not the discipline. Drawing it per
+          decision is.
+        </P>
+        <P>
+          The second move is recognizing that autonomy isn’t a binary setting.
+          An agent isn’t “autonomous” or “not.” For each task, in each
           context, it sits somewhere on a range: from only returning
           pre-verified responses, to acting within tight rules, to acting with
-          every consequential move reviewed first, to acting freely and checked
-          only by exception. The discipline is to set that dial per decision, by
-          stakes, not once and globally by habit. A low-stakes, highly
-          repeatable decision can sit far along the dial. A decision that is
-          rare, hard to reverse, or lands on a vulnerable person should not,
-          however capable the model looks in a demo.
+          every consequential move reviewed first, to acting freely and
+          checked only by exception. The discipline is to calibrate that
+          range per decision, by stakes, not once and globally by habit. A
+          low-stakes, highly repeatable decision can sit well along the
+          range. A decision that is rare, hard to reverse, or lands on a
+          vulnerable person should not, however capable the model looks in a
+          demo.
+        </P>
+        <P>
+          In AB’s case, that calibration looks different across the same
+          engagement. Source-inventory tagging sits well along the range,
+          because the criteria are pattern-matchable and the cost of an
+          individual wrong tag is low and recoverable. Diagnostic
+          prioritization, choosing which of the client’s many problems is the
+          highest-leverage gap to close first, sits much closer to the
+          human-only end. The criteria there (political readiness, sponsor
+          energy, data quality, frontline pain) trade off against each other
+          in ways the agent can’t yet weigh, and the cost of getting it wrong
+          is months of misdirected engagement.
         </P>
         <P>
           Readers of earlier pieces will recognize the shape: it is the same
@@ -2395,86 +2438,125 @@ export const ESSAYS: Essay[] = [
           the stakes on getting the answer written down.
         </P>
 
-        <H2>The job becomes management, not use</H2>
-        <P>
-          This is the consequence leaders most often miss. When AI produced
-          answers, the human’s relationship to it was use, the way you use a
-          calculator or a search box. When AI produces actions, that
-          relationship has to become management. Every agent needs a manager: a
-          specific, named person accountable for what it does.
-        </P>
-        <P>
-          And managing an agent is not a lighter version of using a tool. It is
-          a new job, with responsibilities no prior role quite contained. The
-          manager calibrates the thresholds as the agent’s behavior drifts — and
-          it will drift, because the model underneath gets upgraded by a vendor
-          on a schedule nobody consulted you about. The manager decides which
-          patterns the agent carries forward and which it lets go. And the
-          manager does the hardest thing of all: refusal. Deciding, in real
-          time, that a particular case is one the agent should not touch, and
-          being able to defend that call.
-        </P>
-        <P>
-          An organization that deploys agents without naming who manages each
-          one has installed a decision-maker without an accountable owner. When
-          the agent makes a bad call, the question of who carries it has no
-          answer prepared, and the cycle that follows tends to be slower than
-          the call that caused it.
-        </P>
-
         <H2>You cannot bolt safety onto the model</H2>
         <P>
           Two design truths close the loop, and both cut against instinct.
         </P>
         <P>
           The first: do not rely on the model to keep itself safe. The
-          temptation is to make the model careful, with better instructions and
-          sterner prompts. But a system whose safety depends on the model
-          choosing well, every single time, has no safety at all. Safety has to
-          be built into the structure around the model: hard limits it cannot
-          cross because they are enforced in code rather than requested in a
-          prompt; actions designed to be reversible; an independent second check
-          that does not share the first model’s blind spots; a human escalation
-          path more than one person deep. Defense in depth, because any single
-          layer will eventually fail, and the design has to assume it.
+          temptation is to make the model careful, with better instructions
+          and sterner prompts. But a system whose safety depends on the model
+          choosing well, every single time, has no safety at all. Safety has
+          to be built into the structure around the model. Start with
+          reversibility: an action designed to be undone has margin for the
+          other layers to fail. Then hard limits the agent cannot cross
+          because they are enforced in code, not requested in a prompt. Then
+          an independent second check that does not share the first model’s
+          blind spots. Then a human escalation path more than one person
+          deep. Layered defense, because any single layer will eventually
+          fail, and the design has to assume it.
         </P>
         <P>
-          The second is the comparison that matters, the one boards most often
-          get wrong. The question to ask of an agent is not “does it make
-          mistakes?” Of course it does. So does the human process it would
-          replace. The honest question is whether this agent, with its
-          safeguards, produces better decisions than the process it replaces, on
-          the dimensions that matter. That reframe keeps the conversation off a
-          fantasy, agent versus perfection, and on the real choice:
-          agent-with-safeguards against a status quo that had its own error rate
-          all along, usually unmeasured.
+          For AB’s Deliver Signal workflow, that stack looks specific. The
+          agent’s outputs (source tags, gap rankings, draft dashboards) are
+          all reversible because the artifact lives in AB’s working
+          environment, not in client production systems, until I sign off.
+          The hard limits live in code: the agent cannot touch regulated-data
+          systems without my explicit pre-approval, and it cannot ship a
+          deliverable to a client. The independent check is a separate model
+          reviewing the synthesizer’s gap rankings before they make it into a
+          draft. The human escalation path is short by design (there is only
+          me), but the design assumes that short path is the wrong long-term
+          answer.
         </P>
         <P>
-          And evaluation does not end at launch. Because the model drifts, an
+          The second design truth is the comparison the conversation most
+          often gets wrong. The question to ask of an agent is not “does it
+          make mistakes?” Of course it does. So does the human process it
+          would replace. The honest question is whether this agent, with its
+          safeguards, produces better decisions than the process it replaces,
+          on the dimensions that matter. That reframe keeps the conversation
+          off a fantasy (agent versus perfection) and on the real choice: the
+          agent and its safeguards together, weighed against a status quo
+          that had its own error rate all along, usually unmeasured.
+        </P>
+        <P>
+          This is also where AB’s ed-tech and behavioral-health client
+          conversations diverge before the comparison can even be made. In
+          ed-tech, “agent” tends to mean an LLM-wrapped assistant that helps
+          a teacher draft a lesson, and the comparison is straightforward,
+          against the lesson the teacher would have written. In
+          behavioral-health, “agent” gets confused with regulated staff roles
+          (intake agent, case management agent) or with RPA bots already
+          approved under HIPAA review. The comparison cannot be made until
+          that definitional confusion is cleared with the Chief Clinical
+          Officer or whoever holds the regulated-data accountability.
+        </P>
+        <P>
+          Evaluation does not end at launch. Because the model drifts, an
           agent has to be watched continuously: its override rate, its
-          disagreement signals, its slow slide as the ground shifts. Its
-          monitoring surface is not a quarterly report. It is a conversation you
-          are now having with a system still out there making
-          decisions in your name.
+          disagreement signals, its slow slide as the ground shifts. The
+          monitoring surface is not a quarterly report. It is a conversation
+          you are now having with a system still out there making decisions
+          in your name.
+        </P>
+
+        <H2>The job becomes management, not use</H2>
+        <P>
+          This is the consequence leaders most often miss. When AI produced
+          answers, the human’s relationship to it was use, the way you use a
+          calculator or a search box. When AI produces actions, that
+          relationship has to become management. Every agent has to have a
+          named owner: a specific person accountable for what it does.
+        </P>
+        <P>
+          Managing an agent is not a lighter version of using a tool. It is a
+          new job, with responsibilities no prior role quite contained. The
+          owner calibrates the thresholds as the agent’s behavior drifts, and
+          it will drift, because the model underneath gets upgraded by a
+          vendor on a schedule nobody consulted you about. The owner decides
+          which patterns the agent carries forward and which it lets go. And
+          the owner does the hardest thing of all: refusal. Deciding, in real
+          time, that a particular case is one the agent should not touch, and
+          being able to defend that call.
+        </P>
+        <P>
+          For AB’s first agentic workflow, I’m the day-to-day owner. That’s
+          uncomfortable but honest: at AB’s current scale there is no other
+          person, and the agent’s job is to do work I would otherwise do
+          myself. The role becomes a formal hire only once the operating
+          standard is documented well enough that an AB associate could
+          supervise the agent against it, and once at least one engagement
+          has run through the agent cleanly enough to know what “right” looks
+          like. The first agent-owner hire is then a deliberate role, not a
+          generic engineer.
+        </P>
+        <P>
+          An organization that deploys agents without naming who owns each
+          one has installed a decision-maker without an accountable seat.
+          When the agent makes a bad call, the question of who carries it has
+          no answer prepared, and the cycle that follows tends to be slower
+          than the call that caused it.
         </P>
 
         <H2>What this asks of a leader</H2>
         <P>
           The leader’s real question was never “should we adopt agentic AI.”
-          It is narrower and harder, and it is a list: for which
-          decisions, at what point on the autonomy dial, with what checkpoint,
-          managed by whom, watched how. Not one of those is a technology
-          question. Every one is a decision-system question, and they were the
-          right questions to ask long before agents existed. Agentic AI’s real
+          It is narrower and harder, and it is a list: for which decisions,
+          at what point on the autonomy range, with what checkpoint, owned by
+          whom, watched how. Not one of those is a technology question. Every
+          one is a decision-system question, and they were the right
+          questions to ask long before agents existed. Agentic AI’s real
           effect is that it removed the option of leaving them unasked.
         </P>
         <P>
-          An organization that has done the decision-system work (named its
-          decisions, assigned their owners, grounded them in signals it trusts)
-          can hand a workflow to an agent and gain real speed without losing the
-          thread. An organization that has not will hand an agent its confusion,
-          and get it back faster, with no human in the loop slow enough to
-          notice.
+          For AB, working through that list is the work, not a preliminary to
+          the work. The Deliver Signal workflow gets handed to an agent only
+          after the decisions inside it have been named, the owners assigned,
+          the thresholds drawn, the safeguards built. An organization that
+          does this first can gain real speed without losing the thread. An
+          organization that hands an agent its confusion gets the confusion
+          back faster, with no human in the loop slow enough to notice.
         </P>
         <P>
           The discipline is not in any single safeguard. It is in the
@@ -2485,9 +2567,17 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library, drawing on frameworks
-          explored through MIT Sloan’s Agentic AI Development program. The
-          argument is intended to outlast specific products and platforms.
+          Written May 2026 for the Analytic Bytes Library. The argument adapts
+          several frameworks from MIT Sloan’s Agentic AI Development program:
+          the autonomy spectrum, the four safeguard layers, the
+          human-in-the-loop threshold pattern, the comparison-that-matters
+          reframe, and the “every agent needs a manager” positioning. The
+          working definition and the AB Deliver Signal worked example come
+          from the author’s program capstone playbook. The original
+          contribution here is the “free checkpoint” framing and the
+          decision-system reading of agentic adoption. A future field note
+          will revisit this argument once AB’s first agentic workflow has
+          been deployed and run.
         </MetaNote>
       </>
     ),
@@ -3127,8 +3217,8 @@ export const ESSAYS: Essay[] = [
           being wrong. Data completeness rose from 60 percent to 90 percent,
           principal dashboard adoption rose to 70 percent, and the reporting
           lag dropped by 40 percent. The framework looked the same after that
-          work as it had before. The numbers started agreeing because the
-          words started meaning the same thing in the same place.
+          work as it had before. The numbers stopped fighting each other
+          because the words started meaning the same thing in the same place.
         </P>
 
         <H2>The same problem across time: crosswalks</H2>
