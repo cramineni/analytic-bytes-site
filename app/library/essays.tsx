@@ -3521,8 +3521,9 @@ export const ESSAYS: Essay[] = [
         <P>
           What changes less than institutions hope is the governance layer
           on top of the artifact. A youth-mental-health foundation, working
-          with what had been a dormant Snowflake warehouse the prior team
-          had stood up and left, had Azure and Qualtrics running as two
+          with a Snowflake warehouse a prior contractor had stood up at the
+          dev/prod schema layer but never finished integrating data into,
+          had Azure and Qualtrics running as two
           parallel data-collection platforms, with survey data accumulating
           across four to six instrument versions of the same construct over
           multiple years and external standardized survey instruments and
@@ -3664,7 +3665,7 @@ export const ESSAYS: Essay[] = [
           enters the cycle, because the agent acts at machine cadence and
           the human stakeholder still has to stand behind the action. The
           earliest agentic example I have worked on is a reporting
-          prototype at the same foundation, where Snowflake Cortex reads
+          prototype where Snowflake Cortex reads
           from governed Snowflake schemas, Streamlit fronts a Python
           pattern that reads against the warehouse, and Gemini is used at
           a bounded scope to verify significance-test results and the
