@@ -3417,7 +3417,7 @@ export const ESSAYS: Essay[] = [
             agencies have been buying integration for a long time. Warehouses
             get built. Pipes get plumbed. Connectors land. The bytes move from
             the system that wrote them to the system that reads them. And then,
-            very often, the leader looking for institutional intelligence, a
+            very often, the leader looking for institutional intelligence — a
             360 view for the CEO, role-specific intelligence for a program
             officer or a principal or a clinician or a dean, a number a
             District Education Officer can act on this week, discovers that the
@@ -3428,11 +3428,11 @@ export const ESSAYS: Essay[] = [
             stacked on top of each other, and institutions have been treating
             them as one. The first is engineering: do the bytes move from where
             they were written to where they will be read, in the right shape,
-            on a defensible cadence, without breaking. The second is
-            governance: when the bytes arrive, can anyone act on them. Who is
+            on a defensible cadence, without breaking? The second is
+            governance: when the bytes arrive, can anyone act on them? Who is
             allowed to read them, who is allowed to write them, on what
             cadence, under what consent envelope, with what authority, with
-            what reversibility, with what audit trail if they are wrong. The
+            what reversibility, with what audit trail if they are wrong? The
             first question has good answers in every era’s stack. The second
             has answered itself in almost no institution I have worked inside,
             in any era.
@@ -3450,21 +3450,22 @@ export const ESSAYS: Essay[] = [
         <H2>Legacy era: contracts in someone’s head</H2>
 
         <P>
-          A network of seven public schools in New York operating under one
-          back office. Three reporting platforms, all live, none speaking to
-          the others. Roughly fifty Google Sheets carrying the semantic data
-          foundation, because the BigQuery ETL the prior team had planned
-          never got built. Recruitment running across HubSpot, SchoolMint,
-          PowerSchool, MailChimp, and a call-center workflow with tiered ops
-          and enrollment follow-ups. The CEO needs to see network-level
-          recruitment performance for the next board meeting. The principal
-          needs to see their campus’s funnel. The director of enrollment
-          needs to know which families are stalling and where in the funnel
-          they are stuck. The integration engineering is finishable:
-          consolidate the reporting onto Tableau Cloud, treat the Google
-          Sheets layer as the explicit semantic contract over a still-legacy
-          substrate, define the funnel stages, plumb them through. The funnel
-          report exists at the end of that work. The dashboard runs.
+          A network of seven public schools operating under one back office,
+          with three reporting platforms all live and none speaking to the
+          others, roughly fifty Google Sheets carrying the semantic data
+          foundation because the BigQuery ETL the prior team had planned
+          never got built, and recruitment running across HubSpot,
+          SchoolMint, PowerSchool, MailChimp, and a call-center workflow
+          with tiered ops and enrollment follow-ups. The CEO needs to see
+          network-level recruitment performance for the next board meeting.
+          The principal needs to see their campus’s funnel. The director of
+          enrollment needs to know which families are stalling and where in
+          the funnel they are stuck. The integration engineering is
+          finishable: consolidate the reporting onto Tableau Cloud, treat
+          the Google Sheets layer as the explicit semantic contract over
+          what remains a legacy stack underneath, define the funnel stages,
+          plumb them through. At the end of that work, the funnel report
+          exists and the dashboard runs.
         </P>
 
         <P>
@@ -3476,63 +3477,65 @@ export const ESSAYS: Essay[] = [
           status code rolled up to which funnel stage, and what changed in
           the overnight refresh. In the legacy era that someone is a
           steward. The contracts are in their head. The decision interface
-          depends on them not leaving. That is what legacy-era integration
-          governance was: implicit, tacit, dependent on a person who held the
-          institution’s working agreements about its own data in working
-          memory and could vouch for a number when a stakeholder was about
-          to act on it.
+          depends on them not leaving. That is not a failure of engineering.
+          It is what legacy-era integration governance was — implicit,
+          tacit, dependent on a person who held the institution’s working
+          agreements about its own data in working memory and could vouch
+          for a number when a stakeholder was about to act on it.
         </P>
 
         <P>
-          The contracts were never absent. They were everywhere, in vendor
+          The contracts were never absent. They were everywhere — in vendor
           documentation, in file format conventions, in batch cadences, in
           the append-versus-delete semantics buried in scheduled jobs, in the
           implicit understanding that “an applicant is who SchoolMint says
-          they are unless HubSpot has them flagged for enrichment.” The
-          contracts existed. They lived in tacit institutional knowledge. The
-          principal could act on the number because a steward vouched for
-          it. When the steward left, the integration still ran and the
-          number stopped being actionable, because the contract that
+          they are unless HubSpot has them flagged for follow-up.” The
+          contracts existed. They simply lived in tacit institutional
+          knowledge. The principal could act on the number because a steward
+          vouched for it. When the steward left, the integration still ran
+          and the number stopped being actionable, because the contract that
           connected the integration to the decision had walked out the door.
         </P>
 
         <P>
           Move the same problem into a public-sector frame and the fragility
-          shows differently. Andhra Pradesh runs four parallel state
+          shows differently. An Indian state runs four parallel state
           systems. UDISE+ is the annual school census, owned by the Ministry
           of Education. NAS is the National Achievement Survey, run every
-          four years on a sample, with a grade band in 2021 that did not
-          match the grade band of the prior cycle. PGI is the state
-          Performance Grading Index, a composite the state being graded did
-          not design. SEQI is the School Education Quality Index, with its
-          own definitions of the same outcome variables. Technically the
-          four systems integrate: states submit, NIEPA and the central
-          ministry consolidate, the dashboards land. What can a District
-          Education Officer or a Mandal Education Officer act on, this
-          month, in their block? UDISE+ tells them how many children are
-          enrolled. NAS tells them what a sample, in a grade band that may
-          not match this year’s intake, looked like several years ago. PGI
-          tells them their state’s rank against a composite the state did
-          not define. SEQI tells them something different again. The
-          contracts between these four state systems were never written.
-          There is no single steward who holds them. The integration runs.
-          The decision interface does not exist.
+          four years on a sample, with grade-band shifts between cycles that
+          make any given year’s results not directly comparable to the prior
+          cycle’s. PGI is the state Performance Grading Index, a composite
+          the state being graded did not design. SEQI is the School
+          Education Quality Index, with its own definitions of the same
+          outcome variables. Technically the four systems integrate: states
+          submit, the central agencies consolidate, the dashboards land.
+          What can a District Education Officer or a Mandal Education
+          Officer act on, this month, in their block? UDISE+ tells them how
+          many children are enrolled. NAS tells them what a sample looked
+          like several cycles ago, in a grade band that may or may not align
+          with the population in front of them today. PGI tells them their
+          state’s rank against a composite the state did not define. SEQI
+          tells them something different again. The contracts between these
+          four state systems were never written. There is no single steward
+          who holds them. The integration runs. The decision interface does
+          not exist.
         </P>
 
         <P>
           The legacy-era test was the steward’s test: can the steward vouch
           for the number a stakeholder is about to act on, because the
-          implicit contracts held. In K–8 networks the answer was sometimes
+          implicit contracts held? In K–8 networks the answer was sometimes
           yes, when one institutional research lead or data manager held the
           full picture. In multi-ministry state systems the answer was
           rarely yes, because no single steward held the contracts across
           four systems owned by four different bodies. Higher education’s
-          legacy era looked more like the school-network case. Banner sat on
-          top of a legacy database. PeopleSoft Campus Solutions fed several
-          downstream warehouses. Multiple legacy financial systems fed the
-          budget office. The contracts were implicit and lived in the
-          institutional research team. The Provost and the CFO could act on
-          numbers because a senior IR analyst vouched for them. The
+          legacy era looked more like the school-network case at much larger
+          scale: Banner sitting on top of a legacy database, PeopleSoft
+          Campus Solutions feeding several downstream warehouses, multiple
+          legacy financial systems feeding the budget office on separate
+          cycles. The contracts were implicit, lived in the institutional
+          research team, and were held in the head of a senior IR analyst
+          whose vouching let the Provost and the CFO act on a number. The
           decision interface was a person. That worked, in the institutions
           where it worked, only as long as the person stayed and the
           questions stayed within their working memory.
@@ -3542,41 +3545,43 @@ export const ESSAYS: Essay[] = [
 
         <P>
           The modern era was supposed to fix this, and at the engineering
-          layer it largely has. Snowflake or Databricks for the warehouse.
-          Fivetran or Airbyte for ingestion. dbt for transformation. A
-          semantic layer for shared definitions. Freshness SLAs in the
-          lineage tooling. Data-contract testing in the build pipeline. The
-          contract is now explicit, written, and version-controlled. The
-          artifact exists, in a file, where it can be reviewed.
+          layer it largely has. The stack is now familiar: Snowflake or
+          Databricks for the warehouse, Fivetran or Airbyte for ingestion,
+          dbt for transformation, a semantic layer for shared definitions,
+          freshness SLAs in the lineage tooling, and data-contract testing
+          in the build pipeline. The contract is now explicit, written, and
+          version-controlled. The artifact exists, in a file, where it can
+          be reviewed.
         </P>
 
         <P>
           What changes less than institutions hope is the governance layer
           on top of the artifact. A youth-mental-health foundation, working
           with what had been a dormant Snowflake warehouse the prior team
-          had stood up and left, with Azure and Qualtrics as two parallel
-          data-collection platforms feeding survey data across four to six
-          instrument versions of the same construct over multiple years and
-          CDC Wonder pulled in as a public-data reference. The activation
-          work was technical: Fivetran connectors, DevOps cleanup, Snowflake
+          had stood up and left, had Azure and Qualtrics running as two
+          parallel data-collection platforms, with survey data accumulating
+          across four to six instrument versions of the same construct over
+          multiple years and external standardized survey instruments and
+          public datasets pulled in for context. The activation work was
+          technical — Fivetran connectors, DevOps cleanup, and Snowflake
           schema design that reconciled the two collection platforms and
           the instrument versions into a unified semantic layer, with named
           definitions for what “engaged participant” meant in the canonical
-          schema and how instrument version 3.1 mapped into it. The
-          artifact existed at the end. The integration ran on a defensible
-          cadence. That is the engineering layer.
+          schema and how each instrument version mapped into it. At the end
+          of that work, the artifact existed and the integration ran on a
+          defensible cadence. That is the engineering layer.
         </P>
 
         <P>
           What turned that work into institutional intelligence was not the
           schema design. It was the council, however lightweight, that sat
           on top of it. Who is allowed to ship a change to the “engaged
-          participant” definition. Who has to be told before the change
-          ships. How long does it take for the quarterly report a program
-          officer is about to act on to reflect the change. Is the prior
+          participant” definition? Who has to be told before the change
+          ships? How long does it take for the quarterly report a program
+          officer is about to act on to reflect the change? Is the prior
           quarter’s figure still defensible after the change, and if not,
           who explains that to the partner clinicians and the funders before
-          they read the new report. Modern integration gives an institution
+          they read the new report? Modern integration gives an institution
           the contract artifact. It does not give the institution the
           governance interface that decides who reads the contract, who can
           change it, and how downstream stakeholders trigger their actions
@@ -3588,23 +3593,25 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The same gap shows up at a different scale and a higher cost
-          stack in behavioral health. A regional agency in lower Hudson
-          Valley running Certified Community Behavioral Health Clinic
-          services. The architecture had to integrate hospital encounter
-          feeds via HL7 v2 and CCDA, a regional Health Information Exchange
-          via FHIR, payer authorizations, the financial system, HR, and a
-          population-health analytics layer. A hybrid HIPAA-compliant
-          design: source systems, an integration layer with Mirth Connect
-          handling the hospital feeds, ETL and validation, a cloud
-          warehouse, BI on top. Privacy-by-design as architectural
-          components, HIPAA and Otsuka’s HCP-specific rules, consent
-          tracking, de-identification, role-based access. The cost stack is
-          instructive. Roughly four to five thousand per integration pipe.
-          Twelve to sixty-five thousand for ETL and validation. Ten to a
-          hundred fifty thousand for analytics tooling. A hundred fifty to
-          five hundred thousand for population-health management once it
-          had to drive care decisions and not only describe them.
+          The same gap shows up at a different scale and a higher cost stack
+          in behavioral health. A regional behavioral-health agency running
+          Certified Community Behavioral Health Clinic services had to
+          integrate hospital encounter feeds via HL7 v2 and CCDA, a regional
+          Health Information Exchange via FHIR, payer authorizations, the
+          financial system, HR, and a population-health analytics layer. The
+          hybrid HIPAA-compliant design moved source-system feeds through an
+          integration layer where Mirth Connect handled the hospital data,
+          through ETL and validation, into a cloud warehouse with BI on top
+          — and privacy-by-design lived as architectural components rather
+          than afterthoughts, with HIPAA and additional pharma-partner
+          privacy rules at the access layer, consent tracking integrated
+          through the stack, de-identification at extract, and role-based
+          access through the BI layer. The cost stack is instructive:
+          roughly four to five thousand per integration pipe, twelve to
+          sixty-five thousand for ETL and validation, ten to one hundred
+          fifty thousand for analytics tooling, and one hundred fifty to
+          five hundred thousand for population-health management once it had
+          to drive care decisions rather than only describe them.
           Engineering money buys a lot of pipes. The pipes do not, on their
           own, buy a decision interface.
         </P>
@@ -3620,46 +3627,48 @@ export const ESSAYS: Essay[] = [
           source system? When the patient’s status updates at the partner
           clinic, how long until the central view reflects it, and what
           action is the clinician expected to take in the lag window? HL7
-          carries the message. The schema models the field. The governance
-          contract, written, agreed, enforced across the partner clinics and
-          the central agency, is what tells the clinician whether the
+          carries the message. The schema defines the fields. The governance
+          contract (written, agreed, enforced across the partner clinics
+          and the central agency) is what tells the clinician whether the
           number on their screen is a decision interface or only a
           description.
         </P>
 
         <P>
-          The same agency ran a measurement-based-care pilot called Mitram
-          that made the freshness-contract question concrete at clinical
-          cadence. A patient opens the app, completes a brief symptom
-          inventory in the morning. The result lands on the clinician’s
-          dashboard before the day’s appointments. The clinician adjusts
-          treatment planning based on the symptom trajectory. The dashboard
-          feeds the warehouse. The warehouse feeds adherence and engagement
-          analytics. The pilot ran with thirty-plus patients across two
-          waves, produced a forty percent engagement lift after reminder
-          automation, surfaced earlier clinician response, and began to
-          show predictive patterns in adherence and symptom improvement.
-          There is a human clinician acting on integrated data at a faster
-          cadence than weekly review can sustain, and the freshness contract
-          is already load-bearing in that loop, even with no agent in the
-          cycle. If the morning symptom score reaches the clinician three
-          days late, the treatment planning at the noon appointment is
-          being done on a stale number. The contract that has to be
-          specified is not “the data is integrated.” It is “the cadence at
-          which the patient’s status is fresh enough for the clinician to
-          adjust treatment planning is X; if it slips below X, the
-          clinician must be told, and the action they take changes.”
+          A measurement-based-care pilot run through a patient-facing
+          smartphone app, built into the same behavioral-health setting,
+          made the freshness-contract question concrete at clinical cadence.
+          A patient opens the app and completes a brief symptom inventory in
+          the morning; the result lands on the clinician’s dashboard before
+          the day’s appointments, and the clinician adjusts treatment
+          planning based on the symptom trajectory. The dashboard feeds the
+          warehouse, which in turn feeds adherence and engagement analytics.
+          The pilot ran with thirty-plus patients across two waves, produced
+          a forty percent engagement lift after reminder automation,
+          surfaced earlier clinician response, and began to show predictive
+          patterns in adherence and symptom improvement. There is a human
+          clinician acting on integrated data at a faster cadence than
+          weekly review can sustain — and the freshness contract is already
+          what holds that loop together, even with no agent in the cycle. If
+          the morning symptom score reaches the clinician three days late,
+          the treatment planning at the noon appointment is being done on a
+          stale number. The contract that has to be specified is not “the
+          data is integrated.” It is “the cadence at which the patient’s
+          status is fresh enough for the clinician to adjust treatment
+          planning is X; if it slips below X, the clinician must be told,
+          and the action they take changes.”
         </P>
 
         <P>
-          EL Haynes, a public charter school in Washington, DC, works
-          inside an explicit modern-era integration contract whose author
-          is a state agency. DC’s Office of the State Superintendent of
-          Education writes the course-collection policy: schools have to
-          submit course registration, attendance codes, and reporting
-          cadences on the state’s schedule, in the state’s format, against
-          the state’s definitions. The contract is not optional and not
-          invented by the school. The state writes it; the school
+          There is a quieter version of this same gap that shows up when the
+          contract author is external. A public charter school operating
+          inside a state’s accountability framework works inside an explicit
+          modern-era integration contract whose author is the state agency
+          itself. The state writes the course-collection policy: schools
+          have to submit course registration, attendance codes, and
+          reporting cadences on the state’s schedule, in the state’s format,
+          against the state’s definitions. The contract is not optional and
+          not invented by the school. The state writes it; the school
           conforms. That gives the principal a usable decision interface,
           because they know exactly what counts, why it counts, when it
           counts, and who reads it. The example matters because most
@@ -3673,12 +3682,12 @@ export const ESSAYS: Essay[] = [
         <H2>Higher ed’s modern era</H2>
 
         <P>
-          Higher education’s modern era looks much like the foundation
-          example. Most institutions are now standing up, or have stood up,
-          a warehouse, a semantic layer, some dbt, some lineage. The
-          integration engineering is being done. The Provost still cannot
-          get a 360 view because the council that owns the decision
-          interface on top of the artifact has not been formed. The CIO has
+          Higher education is standing in this same gap at scale right now.
+          Most institutions are standing up, or have stood up, a warehouse,
+          a semantic layer, some dbt, and some lineage, and the integration
+          engineering is largely being done. What is missing is the council
+          that owns the decision interface on top of the artifact, and so
+          the Provost still cannot get a 360 view even after the CIO has
           built the warehouse. The data governance committee, where one
           exists, often meets quarterly to debate naming conventions. The
           decision interface is unowned.
@@ -3689,18 +3698,18 @@ export const ESSAYS: Essay[] = [
         <P>
           The agentic era changes what the contract has to specify and
           raises what the stakes are when it does not exist. The
-          freshness-contract pattern that was already load-bearing in
-          modern-era clinical loops like Mitram becomes more so when an
-          agent enters the cycle, because the agent acts at machine cadence
-          and the human stakeholder still has to stand behind the action.
-          The earliest agentic example I have worked on is a reporting
-          prototype at the same foundation. Snowflake Cortex reading from
-          governed Snowflake schemas. Streamlit fronting a Python pattern
-          that reads and drafts and writes against the warehouse. Gemini
-          drafting impact-report sections that a human reviewer edits
-          before publication. The same impact narrative may be drafted by
-          an LLM, edited by a human, and revised by another LLM in the next
-          cycle. The contract has to extend to provenance categories the
+          freshness-contract pattern that was already central to modern-era
+          clinical loops becomes more demanding when an agent enters the
+          cycle, because the agent acts at machine cadence and the human
+          stakeholder still has to stand behind the action. The earliest
+          agentic example I have worked on is a reporting prototype at the
+          same foundation, where Snowflake Cortex reads from governed
+          Snowflake schemas, Streamlit fronts a Python pattern that reads
+          and drafts and writes against the warehouse, and Gemini drafts
+          impact-report sections that a human reviewer edits before
+          publication. The same impact narrative may be drafted by an LLM,
+          edited by a human, and revised by another LLM in the next cycle.
+          The contract has to extend to provenance categories the
           data-integration era did not have to name. Was this paragraph
           human-authored, deterministic-pipeline-generated, or
           LLM-inferred? On the warehouse side, was this record written by a
@@ -3715,14 +3724,14 @@ export const ESSAYS: Essay[] = [
         <P>
           The contract has to extend to consent semantics for machine
           write actions. A human writing to a patient’s chart operates
-          under a known consent envelope: what the patient agreed to at
+          under a known consent envelope — what the patient agreed to at
           intake, what the clinician’s role-based access permits, what
           HIPAA’s minimum-necessary rule treats as defensible. An LLM
           writing to a chart raises a different consent question. Did the
-          patient consent to LLM-inferred annotations on their record. Did
-          the clinician supervise the inference. Can the inference be
-          reversed. What is the audit trail that lets a regulator answer
-          “what wrote this, and when” months after the fact. The
+          patient consent to LLM-inferred annotations on their record? Did
+          the clinician supervise the inference? Can the inference be
+          reversed? What is the audit trail that lets a regulator answer
+          “what wrote this, and when” months after the fact? The
           data-integration era’s contracts did not have to answer any of
           those questions. The agentic era’s contracts do, before any
           agent goes into production rather than after.
@@ -3754,11 +3763,11 @@ export const ESSAYS: Essay[] = [
           landing. The institution will have the integration. It will
           have, mostly, the engineering. What it will not have, in most
           cases, is the contract layer. Who is allowed to write a gradebook
-          entry on behalf of an AI tutor. What is the consent envelope
+          entry on behalf of an AI tutor? What is the consent envelope
           under which a financial-aid agent moves a student between aid
-          scenarios. When the advising assistant writes a recommendation
+          scenarios? When the advising assistant writes a recommendation
           into a student’s record that the advisor never reviewed, what is
-          the reversibility window, and who tells the advisor. The
+          the reversibility window, and who tells the advisor? The
           architectural question is the same one the behavioral-health
           case faces. The systems differ. The contract questions are
           identical.
@@ -3768,32 +3777,33 @@ export const ESSAYS: Essay[] = [
 
         <P>
           The freshness contract, the discipline of treating timestamps not
-          as metadata but as part of the decision, was already load-bearing
-          in the modern era, because reports drove decisions on a weekly or
+          as metadata but as part of the decision, already mattered in the
+          modern era, because reports drove decisions on a weekly or
           monthly cadence and stale numbers produced wrong reports. In the
-          agentic era it becomes load-bearing in a stronger sense. An LLM
-          acting on stale data at machine cadence produces wrong outcomes
-          faster than a human at the same staleness, and faster than the
-          decision interface can be re-anchored once it has started
-          producing decisions that look fluent and are not. The timestamp
-          is no longer a field next to the record. It is the boundary
-          between an actionable number and a misleading one.
+          agentic era it matters in a different way. An LLM acting on stale
+          data at machine cadence produces wrong outcomes faster than a
+          human at the same staleness, and faster than the decision
+          interface can be re-anchored once it has started producing
+          decisions that look fluent and are not. The timestamp is no
+          longer a field next to the record. It is the boundary between an
+          actionable number and a misleading one.
         </P>
 
         <P>
           That is what makes integration governance a layer the institution
           cannot leave to engineering or architecture in any era.
           Engineering moves the bytes. Architecture stages them. Governance
-          contracts, who reads, who writes, on what cadence, with what
+          contracts (who reads, who writes, on what cadence, with what
           consent, with what provenance, with what reversibility, with what
-          authority to act, turn integrated bytes into decisions
-          stakeholders can stand behind. Without those contracts, the
-          integration runs and the institution learns nothing it can act
-          on. With those contracts, integrated bytes become institutional
-          intelligence: a 360 view for the CEO, role-specific intelligence
-          for program officers and principals and clinicians and deans and
-          District Education Officers, and a decision interface that
-          triggers action.
+          authority to act) turn fragmented bytes into decision-ready
+          institutional intelligence stakeholders can stand behind. Without
+          those contracts, the integration runs and the data on the other
+          side stays fragmented to anyone trying to act on it. With those
+          contracts, fragmented bytes become decision-ready intelligence: a
+          360 view for the CEO, role-specific intelligence for program
+          officers and principals and clinicians and deans and District
+          Education Officers, and a decision interface that triggers
+          action.
         </P>
 
         <P>
