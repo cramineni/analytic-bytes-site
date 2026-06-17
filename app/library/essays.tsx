@@ -2608,69 +2608,53 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Most universities have done the visible work of responding to AI:
-            use policies, committees, a first wave of pilots across student
-            services and administration. They have become literate in two
-            questions — should we use it, and what are the rules. Both are
-            necessary. Neither tells you whether a given AI system is doing its
-            job.
+            By the start of 2026, most universities had done the visible work of
+            putting AI on the institutional agenda. They had written policies on
+            student and faculty use, stood up AI committees and working groups,
+            and run pilots — assistants for student services, drafting tools for
+            administrative staff, models that flag students who might be
+            slipping. The scaffolding went up quickly, and under genuine
+            pressure: a contracting enrollment as the demographic cliff arrives,
+            public skepticism about the return on a degree, tightened federal
+            funding and tax conditions, and a sector that Deloitte’s 2026 higher
+            education outlook describes as moving from a long period of growth
+            into one of disciplined focus, with the business model under
+            scrutiny and risk management demanding tighter coordination across
+            offices that once operated siloed. AI arrived in the middle of all
+            of it, as both another pressure and a promised relief.
           </p>
           <p>
-            The question that settles that is narrower and harder: does this
-            specific system measure what we claim it measures? It is the
-            ordinary question of measurement science, and the one most easily
-            skipped — invisible when it works, expensive to do well. This piece
-            argues that higher education already owns the discipline to answer
-            it, and has not yet pointed it at the AI systems now moving into
-            administrative use. This piece is for anyone adopting, governing, or
-            evaluating one.
+            The role of the technology executive has shifted with it. In
+            Deloitte’s 2026 study of technology leaders, the large majority of
+            CIOs described their primary job as implementing AI or evangelizing
+            for it across the institution, a shift the report frames as moving
+            from keeping the lights on to lighting the way forward. That shift
+            is real and, on balance, healthy. But it carries a quiet cost: when
+            the mandate becomes adoption, evaluation tends to be assumed rather
+            than performed.
           </p>
         </Brief>
 
-        <P>
-          By the start of 2026, most universities had done the visible work of
-          putting AI on the institutional agenda. They had written policies on
-          student and faculty use. They had stood up AI committees and working
-          groups. They had run pilots: assistants for student services, drafting
-          tools for administrative staff, models that flag students who might be
-          slipping. The scaffolding went up quickly, and under genuine pressure.
-          Enrollment is contracting as the demographic cliff arrives. The public
-          is questioning the return on a degree. Federal funding and tax
-          conditions have tightened. Deloitte’s 2026 higher education outlook
-          describes a sector moving from a long period of growth into one of
-          disciplined focus on core priorities, with the business model itself
-          under scrutiny and risk management demanding tighter coordination
-          across offices that once operated siloed. AI arrived in the middle of
-          all of it, as both another pressure and a promised relief.
-        </P>
-        <P>
-          The role of the technology executive has shifted with it. In
-          Deloitte’s 2026 study of technology leaders, the large majority of
-          CIOs described their primary job as implementing AI across the
-          institution or serving as evangelists for it, moving, in the report’s
-          phrase, <I>from keeping the lights on to lighting the way forward</I>.
-          That shift is real and, on balance, healthy. But it carries a quiet
-          cost. When the mandate becomes adoption, evaluation tends to be
-          assumed rather than performed.
-        </P>
         <H2>The question that gets skipped</H2>
         <P>
-          There is a gap I keep noticing. Universities have become literate in two
-          questions about AI: should we use it, and what are the rules for using
-          it. Those are the questions a policy answers and a committee debates,
-          and they are necessary. But they are not the question that determines
-          whether a given AI system (the deployed model plus the workflow it
-          is sitting inside) is doing its job. That question is narrower and
-          harder: does this specific system do what we claim it does?
+          There is a gap I keep noticing. Universities have become literate in
+          two questions about AI: should we use it, and what are the rules for
+          using it. Those are the questions a policy answers and a committee
+          debates, and they are necessary. But they are not the question that
+          determines whether a given AI system (the deployed model plus the
+          workflow it is sitting inside) is doing its job. That question is
+          narrower and harder: does this specific system do what we claim it
+          does?
         </P>
         <P>
           It is an easy question to skip. A tool gets adopted because it is
           plausible, because a vendor demonstrated it well, because a respected
           peer institution uses it, because a pilot felt successful. None of
-          those is evidence that the system measures or predicts what it
-          claims to. Adoption and policy have outrun evaluation. We have built
-          the scaffolding for governing AI and left out a load-bearing pillar.
+          those is evidence that the system measures or predicts what it claims
+          to. Adoption and policy have outrun evaluation. We have built the
+          scaffolding for governing AI and left out a load-bearing pillar.
         </P>
+
         <H2>What seven years of scoring engines taught me</H2>
         <P>
           I spent seven years at the Educational Testing Service evaluating
@@ -2745,10 +2729,10 @@ export const ESSAYS: Essay[] = [
           economics has changed. The same AI capability that made faster
           scoring possible, the cheap compute and cheap storage and cheap data
           integration of the last decade, has also lowered the cost of running
-          the harder question. The validity work
-          that was once prohibitively expensive is newly affordable. The
-          methodology was built for an older cost structure. The cost structure
-          has moved. The methodology hasn’t.
+          the harder question. The validity work that was once prohibitively
+          expensive is newly affordable. The methodology was built for an older
+          cost structure. The cost structure has moved. The methodology
+          hasn’t.
         </P>
         <P>
           This is not an argument against keeping humans in the loop. It is an
@@ -2759,51 +2743,53 @@ export const ESSAYS: Essay[] = [
           They should stay, and should stay clearly in charge. Humans as the
           immediate-output validation target, the rater the AI is trained to
           match, is the harder question. That rater is always a proxy for the
-          construct, not the construct itself. Validating against the downstream
-          criterion still involves human judgment, but a human judgment anchored
-          at what the test is built to predict, not at the score itself. Keep
-          humans deciding. Anchor the validation at the prediction target, the
-          coursework, not at the score.
+          construct, not the construct itself. Validating against the
+          downstream criterion still involves human judgment, but a human
+          judgment anchored at what the test is built to predict, not at the
+          score itself. Keep humans deciding. Anchor the validation at the
+          prediction target (the coursework) not at the score.
         </P>
 
         <H2>Every system makes a claim</H2>
         <P>
           Every AI system a university adopts carries a label of its own, a
           claim about what it measures, and most of those claims are never
-          written down. An early-alert model claims
-          to identify students at academic risk. An advising assistant claims to
-          surface the guidance a student needs. An admissions-support tool
-          claims to predict yield, or fit, or success. A staff-facing assistant
-          claims to produce work accurate enough to act on. Each is a statement
-          about an intended outcome. And each can be wrong in the specific,
-          quiet way an automated scoring engine can be wrong, tracking a surface
-          signal while missing the substance, because the claim was implicit and
-          no one was assigned to check it.
+          written down. An early-alert model claims to identify students at
+          academic risk. An advising assistant claims to surface the guidance a
+          student needs. An admissions-support tool claims to predict yield, or
+          fit, or success. A staff-facing assistant claims to produce work
+          accurate enough to act on. Each is a statement about an intended
+          outcome. And each can be wrong in the specific, quiet way an
+          automated scoring engine can be wrong, tracking a surface signal
+          while missing the substance, because the claim was implicit and no
+          one was assigned to check it.
         </P>
         <P>
           The early-alert model is the cleanest example. Built without care, it
           can learn that the strongest predictor of risk in the historical
           record is a demographic pattern, or a single missed assignment, or
           enrollment in one difficult course. It will flag students, and the
-          flags will even be partly accurate. But a model that flags students by
-          proxy is not measuring academic risk; it is measuring the proxy, and
-          routing the institution’s attention and resources accordingly. No one
-          set out to build that system. It is what results when a tool is
-          adopted on plausibility and never asked the intended-outcome question.
+          flags will even be partly accurate. But a model that flags students
+          by proxy is not measuring academic risk; it is measuring the proxy,
+          and routing the institution’s attention and resources accordingly.
+          No one set out to build that system. It is what results when a tool
+          is adopted on plausibility and never asked the intended-outcome
+          question.
         </P>
         <P>
           Generative and agentic tools make the problem harder, not easier. A
           predictive model at least produces a score that can be tested against
           an outcome. A generative assistant produces fluent, confident prose
-          whose quality is difficult to assess at a glance, and fluency is itself
-          a proxy the human eye is inclined to reward. The 2026 enterprise-AI
-          research is consistent on this point: only a small share of
-          organizations report a mature model for governing autonomous AI
-          agents, and the real constraints on scaling AI are rarely the
-          technology itself. They are data quality, security, and the absence of
-          evaluation discipline. The newer the system, the more easily
+          whose quality is difficult to assess at a glance, and fluency is
+          itself a proxy the human eye is inclined to reward. The 2026
+          enterprise-AI research is consistent on this point: only a small
+          share of organizations report a mature model for governing autonomous
+          AI agents, and the real constraints on scaling AI are rarely the
+          technology itself. They are data quality, security, and the absence
+          of evaluation discipline. The newer the system, the more easily
           plausibility substitutes for proof.
         </P>
+
         <H2>The discipline already exists</H2>
         <P>
           This is the missing discipline inside AI governance. EDUCAUSE’s 2026
@@ -2811,65 +2797,54 @@ export const ESSAYS: Essay[] = [
           institutional decision-making, among the issues that matter most.
           University technology leaders have been clear that the next phase of
           AI work is operational, moving from written policy to running
-          practice. Evaluation is the part of that practice most easily skipped,
-          because it is invisible when it is working and expensive to do well.
-          It is also the part that decides whether everything else is real.
+          practice. Evaluation is the part of that practice most easily
+          skipped, because it is invisible when it is working and expensive to
+          do well. It is also the part that decides whether everything else is
+          real.
         </P>
         <P>
           Applying the discipline does not mean slowing adoption, and it does
           not mean another layer of bureaucracy. It means a small set of hard
           questions, asked consistently: before a system is trusted, and
-          periodically after.
-        </P>
-        <NumList>
-          <NumItem n={1}>
-            Is the system measuring the intended construct, or a proxy for it?
-          </NumItem>
-          <NumItem n={2}>
-            When it is wrong, what happens downstream, and to whom?
-          </NumItem>
-          <NumItem n={3}>
-            Does it perform consistently across the different groups of people
-            it touches, or does its accuracy concentrate where the training data
-            was richest?
-          </NumItem>
-          <NumItem n={4}>
-            What human decision is the system meant to support, and does its
-            output improve that decision?
-          </NumItem>
-        </NumList>
-        <P>
-          None of these questions is esoteric. They are the ordinary questions of
+          periodically after. Is the system measuring the intended construct,
+          or a proxy for it? When it is wrong, what happens downstream, and to
+          whom? Does it perform consistently across the different groups of
+          people it touches, or does its accuracy concentrate where the
+          training data was richest? What human decision is the system meant to
+          support, and does its output improve that decision? None of these
+          questions is esoteric. They are the ordinary questions of
           measurement. A university that has an institutional research office
           and an assessment culture already employs people who know how to ask
-          them. Those people have not yet been pointed at the AI systems moving
-          into administrative use.
+          them. Those people have simply not yet been pointed at the AI systems
+          moving into administrative use.
         </P>
+
         <H2>Seeing the student whole</H2>
         <P>
           There is a deeper version of the intended-outcome question, and in a
-          university it is the one that matters most. When we ask what a system
-          is actually measuring, we are often really asking whether it sees a
-          person whole. An early-alert model that optimizes a retention number
-          is not the same as one that helps an institution understand and
-          support a student. The first reduces the student to the outcome the
-          institution wants to protect. The second treats the number as a signal
-          that points back toward a person, one with a context, a trajectory,
-          and reasons. Asked seriously, the intended-outcome question is a check
-          against the quiet drift toward measuring students as proxies for the
-          metrics we happen to collect. A university, of all institutions,
-          should want its systems to see students whole. That is not a
-          sentiment. It is an evaluation standard, it is answerable, and it is
-          the standard worth holding AI to.
+          university it is the one that matters most. When we ask what a
+          system is actually measuring, we are often really asking whether it
+          sees a person whole. An early-alert model that optimizes a retention
+          number is not the same as one that helps an institution understand
+          and support a student. The first reduces the student to the outcome
+          the institution wants to protect. The second treats the number as a
+          signal that points back toward a person, one with a context, a
+          trajectory, and reasons. Asked seriously, the intended-outcome
+          question is a check against the quiet drift toward measuring students
+          as proxies for the metrics we happen to collect. A university, of
+          all institutions, should want its systems to see students whole.
+          That is not a sentiment. It is an evaluation standard, it is
+          answerable, and it is the standard worth holding AI to.
         </P>
+
         <H2>An old discipline, a new set of systems</H2>
         <P>
           The institutions that handle this moment well will not be the ones
-          with the most AI, or the fastest adoption, or the longest policy. They
-          will be the ones that can tell the difference between AI that works
-          and AI that only looks like it works, and tell it on purpose, through
-          a discipline, rather than discovering it after a system has been
-          shaping decisions, unnoticed, for two years.
+          with the most AI, or the fastest adoption, or the longest policy.
+          They will be the ones that can tell the difference between AI that
+          works and AI that only looks like it works, and tell it on purpose,
+          through a discipline, rather than discovering it after a system has
+          been shaping decisions, unnoticed, for two years.
         </P>
         <P>
           That discipline does not need to be invented. Higher education has
@@ -2878,16 +2853,16 @@ export const ESSAYS: Essay[] = [
           rigor that asks whether an essay score reflects writing or length can
           ask whether an early-alert flag reflects risk or a proxy for it. The
           question travels intact; it is the same question. Higher education’s
-          AI moment does not need a new framework so much as it needs to turn an
-          old and well-tested one toward a new set of systems, and to ask, of
-          every system it adopts, the plain and demanding question: what is this
-          actually measuring, and is that what we meant?
+          AI moment does not need a new framework so much as it needs to turn
+          an old and well-tested one toward a new set of systems, and to ask,
+          of every system it adopts, the plain and demanding question: what is
+          this actually measuring, and is that what we meant?
         </P>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. The argument draws on
-          measurement-science practice and is intended to outlast specific AI
-          products and platforms.
+          Written May 2026 for the Analytic Bytes Library. The argument draws
+          on measurement-science practice and is intended to outlast specific
+          AI products and platforms.
         </MetaNote>
       </>
     ),
@@ -3145,31 +3120,26 @@ export const ESSAYS: Essay[] = [
             Two people in the same meeting cite a different
             student-persistence number. Both are reading from a real report,
             prepared by competent people, drawn from the institution’s real
-            data. A third person at the table has a third. The institution has
-            a data governance council, a published data policy, and named
-            stewards. None of that stops the meeting from getting stuck.
+            data. A third person at the table has a third number. The
+            institution has a data governance council. It has a published
+            data policy. It has named stewards. None of that stops the
+            meeting from getting stuck.
           </p>
           <p>
             Most “data problems” are not data problems. They are definitional
-            disagreements wearing a technical disguise, and the work to fix
-            them is not a better framework. It is the slow, distributed work
-            that lives inside the framework, and it is the work most governance
-            councils skip.
+            disagreements wearing a technical disguise. “Student persistence”
+            — the rate at which enrolled students continue from one period to
+            the next, can mean keeping a student from the first day of the
+            school year to the last day. It can mean keeping them from one
+            annual official census date to the next census date a year later,
+            which is how state accountability typically counts. It can mean
+            keeping them from the first day of school to that same year’s
+            census date, which is a different and shorter window. Each of
+            those is a valid and useful definition. Each is what some real
+            obligation requires. They do not agree with one another, and the
+            institution cannot act on data it cannot agree on.
           </p>
         </Brief>
-
-        <P>
-          “Student persistence,” the rate at which enrolled students continue
-          from one period to the next, can mean keeping a student from the
-          first day of the school year to the last day. It can mean keeping
-          them from one annual official census date to the next census date a
-          year later, which is how state accountability typically counts. Or
-          it can mean keeping them from the first day of school to that same
-          year’s census date, a different and shorter window. Each is a valid
-          and useful definition. Each is what some real obligation requires.
-          They do not agree with one another, and the institution cannot act
-          on data it cannot agree on.
-        </P>
 
         <H2>The framework is necessary but insufficient</H2>
 
@@ -3180,52 +3150,58 @@ export const ESSAYS: Essay[] = [
           governance at the center: architecture, modeling, integration,
           quality, metadata, master and reference data, and the rest.
           EDUCAUSE’s data-empowered-institution model distills the
-          higher-education version to five components: data quality,
+          higher-education version to five components — data quality,
           integration, governance, management, and literacy. Both frames are
-          correct about what to build. Both are also insufficient. The
-          operational work that makes governance hold is getting the
-          registrar, financial aid, institutional research, and the deans into
-          the same room to decide which version of “persistence” gets used
-          where, and why each version exists. That work is slow, unglamorous,
-          often unwritten. Most councils never do it. The framework looks
-          complete; the numbers still do not agree.
+          correct about what to build. Both are necessary. Both are also
+          insufficient. The actual operational work that makes governance
+          hold (getting the registrar, financial aid, institutional research,
+          and the deans into the same room to decide which version of
+          “persistence” gets used where, and why each version exists) is
+          slow, unglamorous, and often unwritten. Most councils never do it.
+          The framework looks complete. The numbers still do not agree.
         </P>
 
         <H2>Three definitions, one number, eight recalculations</H2>
 
         <P>
-          At a multi-school K–8 charter network where I led data and technology
-          strategy, student persistence was formally defined at least three
-          different ways at the same time. From day one of the school year to
-          the last day, for program-completion reporting. From one annual state
-          census day to the next year’s census day, for state accountability.
-          From the first day of school to that same year’s census date, for
-          early-year persistence reporting. Those translations fed into still
-          more obligations: S&amp;P bond-rating reporting, principal incentive
-          calculations, enrollment forecasting, federal accountability. Each
-          required a particular version, and none of the definitions could be
-          discarded. In one year alone, the same persistence number was
+          At a multi-school K–8 charter network where I led data and
+          technology strategy, student persistence was formally defined at
+          least three different ways at the same time. From day one of the
+          school year to the last day, for program-completion reporting. From
+          one annual state census day to the next year’s census day, for
+          state accountability. From the first day of school to that same
+          year’s census day, for early-year persistence reporting. Those
+          translations fed into still more obligations (S&amp;P bond-rating
+          reporting, principal incentive calculations, enrollment
+          forecasting, federal accountability) each of which required a
+          particular version. None of the definitions could be discarded;
+          each existed because a real obligation required exactly that
+          version. In one year alone, the same persistence number was
           independently recalculated eight or more times across the network’s
-          reports. Every recalculation was correct under its own definition,
-          and none of them agreed with the others. The institution still had
+          reports: every recalculation correct under its own definition, none
+          of them agreeing with the others. And yet the institution still had
           to be able to talk about persistence without the conversation
           fragmenting into a definitional argument every time it came up.
         </P>
 
         <P>
-          The work that closed the gap was not a framework. It was definitional
-          reconciliation. We mapped every reporting obligation to its required
-          definition. We named each definition explicitly. We established the
-          relationships among them: how one translated to another, which
-          report drew which number from where, what shared baseline assumptions
-          sat underneath. Then we built a small set of trusted, governed
-          numbers that fed every obligation with the correct version, so that
-          one set of dashboards could serve all of them without any of them
-          being wrong. Data completeness rose from 60 percent to 90 percent,
-          principal dashboard adoption rose to 70 percent, and the reporting
-          lag dropped by 40 percent. The framework looked the same after that
-          work as it had before. The numbers stopped fighting each other
-          because the words started meaning the same thing in the same place.
+          The work that closed the gap was not a framework. It was
+          definitional reconciliation. We mapped every reporting obligation
+          to its required definition. We named each definition explicitly.
+          We established the relationships among them: how one translated to
+          another, which report drew which number from where, what shared
+          baseline assumptions sat underneath. Then we built a small set of
+          trusted, governed numbers that fed every obligation with the
+          correct version, so that one set of dashboards could serve all of
+          them without any of them being wrong. With that definitional
+          reconciliation as the foundation, data completeness rose from 60
+          percent to 90 percent, principal dashboard adoption reached 70
+          percent, and reporting lag dropped by 40 percent. The framework
+          looked the same after that work as it had before. The numbers
+          themselves did not become identical; the framework still required
+          several different ones, for several different obligations. What
+          changed was that the words underneath each one started meaning the
+          same thing in the same place, and the disagreements stopped.
         </P>
 
         <H2>The same problem across time: crosswalks</H2>
@@ -3235,19 +3211,20 @@ export const ESSAYS: Essay[] = [
           national youth-mental-health foundation, the work was to keep a
           governed reporting foundation coherent while the instruments
           underneath it kept changing. Survey versions were updated as the
-          theory of change matured. The constructs the programs were trying to
-          measure shifted as the field learned what mattered. Items were added,
-          edited, and retired; data-quality standards tightened. Each of those
-          changes was legitimate, and none of them could be paused while the
-          field caught up. The institution still had to be able to look at
-          three years of program data and say something true about it.
+          theory of change matured. The constructs the programs were trying
+          to measure shifted as the field learned what mattered. Items were
+          added, edited, retired. Data-quality standards tightened. Each of
+          those changes was legitimate; none of them could be paused while
+          the field caught up. And yet the institution still had to be able
+          to look at three years of program data and say something true
+          about it.
         </P>
 
         <P>
           What held that work together was, in modern data-stack terms, a
-          semantic layer: explicit canonical definitions encoded in dbt models,
-          version-controlled like code, owned across teams. Alongside it ran
-          the discipline of crosswalks, documented translations of how a
+          semantic layer — explicit canonical definitions encoded in dbt
+          models, version-controlled like code, owned across teams, and the
+          discipline of crosswalks: documented translations of how a
           question asked in one survey version mapped to the same construct
           asked slightly differently in the next. The framework was not the
           answer. The semantic layer, the crosswalks, and the discipline of
@@ -3258,97 +3235,75 @@ export const ESSAYS: Essay[] = [
         <H2>Granularity is its own governance problem</H2>
 
         <P>
-          Granularity is its own governance problem, and aggregation is where
-          many institutions quietly compromise it. At the same K–8 network,
-          daily attendance was a single data stream with at least three
-          different operational lives. A single absence on a given day
-          triggered an immediate outreach workflow owned by an operations
-          coordinator. Three consecutive days of absence triggered a different
-          workflow, owned by a teacher or student-support counselor. Chronic
-          absenteeism (eighteen or more days in a year, or more than ten
-          percent of school days as a running rate) triggered a third
-          workflow, owned by the principal. The same data, three aggregations,
-          three views, three sets of decision rights, three stakeholders.
-          Governance at the granularity layer was not deciding whether to
-          compute these numbers. It was deciding which view triggered which
-          workflow, who owned each decision, and what the legitimate
-          translation among them was, knowing that a daily count cannot be
-          disaggregated from a chronic-absenteeism rate without losing what it
-          measured.
+          Granularity is its own governance problem, and aggregation is
+          where many institutions quietly compromise it. At the same K–8
+          network, daily attendance was a single data stream with at least
+          three different operational lives. A single absence on a given day
+          triggered an immediate workflow (outreach, follow-up, resolution)
+          owned by an operations coordinator. Three consecutive days of
+          absence triggered a different workflow, owned by a teacher or
+          student-support counselor. Chronic absenteeism (eighteen or more
+          days in a year, or more than ten percent of school days as a
+          running rate) triggered a third workflow, owned by the principal.
+          The same data, three aggregations, three views, three sets of
+          decision rights, three stakeholders. Governance at the granularity
+          layer was not deciding whether to compute these numbers. It was
+          deciding which view triggered which workflow, who owned each
+          decision, and what the legitimate translation among them was,
+          knowing that a daily count cannot be disaggregated from a
+          chronic-absenteeism rate without losing what it actually measured.
         </P>
 
         <H2>Architecture is governance</H2>
 
         <P>
-          Architecture is governance too. When a student-information system is
-          replaced, or a behavioral-health electronic record is migrated to a
-          new platform, the definitional question is not the migration. It is
-          whether what the new system records is the same thing the old one
-          recorded. Field mappings have to be made explicit. New fields are
-          added where the schema changed. Legacy fields are retired only
-          after every use case is accounted for. Data-entry personnel are
-          trained on the new system’s expectations for completeness, accuracy,
-          and timeliness. None of that is technical work; it is definitional
-          work conducted at the architectural layer. The same discipline
-          appears between systems that exchange data in production: a
-          student-information system reading from or writing to
-          enrollment-tracking infrastructure, or an electronic health record
-          exchanging data with a state psychiatric system or a regional
-          health-information exchange. The questions are the same. Who reads,
-          who writes, on what cadence, with what contracts around append
-          versus delete, with what traceability when a record is corrected,
-          with what reversibility when something goes wrong. The contracts
-          between systems govern as much of the institution’s data integrity
-          as the policies inside any single system do.
-        </P>
-
-        <P>
-          Those contracts also include the freshness contract. When data
-          drives action, a financial-aid hold, an early-alert outreach, a
-          billing reconciliation, a clinical follow-up, the actor needs to
-          know when the data they are acting on was last refreshed, and the
-          institution needs to have caught the failure points where stale
-          data could be acted on as if it were current. Systems that exchange
-          data have to update in sync, or have to expose their lag honestly
-          enough that the consumer can decide whether the number is fresh
-          enough to act on. Automation without monitoring is delayed surprise.
-          Timestamps are part of the decision.
+          Architecture is governance too. When a student-information system
+          is replaced, or a behavioral-health electronic record is migrated
+          to a new platform, the definitional question is not the migration.
+          It is whether what the new system records is the same thing the
+          old one recorded. Field mappings have to be made explicit; new
+          fields added where the schema changed; legacy fields retired only
+          after every use case is accounted for; data-entry personnel
+          trained on the new system’s expectations for completeness,
+          accuracy, and timeliness. None of that is technical work. It is
+          definitional work conducted at the architectural layer.
         </P>
 
         <H2>Stewardship is what makes it stick</H2>
 
         <P>
           Quality is not a one-time achievement. It is a continuous practice
-          owned by the people closest to the data. The principal
-          dashboard-adoption rate of 70 percent at the K–8 network was not
-          just a usage statistic. It was evidence of distributed stewardship.
-          The principals were not merely consumers of their numbers. They
-          were the ones who noticed anomalies, raised corrections, pushed back
-          on definitions that did not serve their schools, and held the
-          institution accountable to its own standards. A central data office
-          that owns quality alone is fragile. A network of stewards who own
-          their own data, with shared definitions they help refresh, is
-          durable. That is the model that survives leadership turnover,
+          owned by the people closest to the data. The principal dashboard
+          adoption rate of 70 percent at the K–8 network was not just a
+          usage statistic. It was evidence of distributed stewardship. The
+          principals were not merely consumers of their numbers; they were
+          the ones who noticed anomalies, raised corrections, pushed back on
+          definitions that did not serve their schools, and held the
+          institution accountable to its own standards. A central data
+          office that owns quality alone is fragile. A network of stewards
+          who own their own data, with shared definitions they help refresh,
+          is durable. This is the model that survives leadership turnover,
           budget cycles, and reorganization.
         </P>
 
         <P>
           Stewardship of that kind requires operational discipline at the
           configuration and training layer, because the biggest risk in any
-          compliance or reporting process is rarely one dramatic mistake. It
-          is drift. If a gradebook is configured one way at one school and a
-          different way at another, GPA calculations diverge before any
-          dashboard sees them. The same instance has to be replicated across
-          sites with the same scales, the same formulae, and the same
-          business rules, with a checking cadence and alerts in place to
-          catch unintended drift or misconfiguration before errors propagate.
-          Definitional work also has to reach the personnel who actually
-          enter the data. Whether an in-house suspension is coded as
-          “present” or “absent” in the student-information system is a
-          definitional decision data-entry personnel make every day. If they
-          have not been trained on which version the institution is using, no
-          framework above them can compensate. Quality is held together one
-          configuration, one alert, and one training conversation at a time.
+          compliance or reporting process is rarely one dramatic mistake.
+          It is drift. If a gradebook is configured one way at one school
+          and a different way at another, GPA calculations diverge before
+          any dashboard sees them. The same instance has to be replicated
+          across sites (same scales, same formulae, same business rules)
+          with a checking cadence and alerts in place to catch unintended
+          drift or misconfiguration before errors propagate. Definitional
+          work also has to reach the personnel who actually enter the data.
+          Whether an in-house suspension is coded as “present” or “absent”
+          in the student-information system is a definitional decision
+          data-entry personnel make every day. If they have not been
+          trained on which version the institution is using, no framework
+          above them can compensate. Quality is held together one
+          configuration, one alert, and one training conversation at a
+          time.
         </P>
 
         <H2>Why universities need this most</H2>
@@ -3356,34 +3311,34 @@ export const ESSAYS: Essay[] = [
         <P>
           Universities are structurally decentralized in ways most
           organizations are not. School autonomy, faculty governance, and
-          distributed authority by design are features, not bugs. Governance
-          imposed from the center has a poor track record in higher education
-          because the autonomy is rightly defended. Governance embedded
-          through definitions has a much better one. A definition agreed
-          across the registrar, financial aid, institutional research, and
-          the relevant deans is hard to walk back, because each domain
-          steward owns it. A policy written by the governance council,
-          however thorough, can be politely ignored by a department running
-          its own numbers. The framework’s real authority is not the
-          document. It is the working set of shared definitions that domain
-          leaders maintain together.
+          distributed authority by design: these are features, not bugs.
+          Governance imposed from the center has a poor track record in
+          higher education because the autonomy is rightly defended.
+          Governance embedded through definitions has a much better one. A
+          definition agreed across the registrar, financial aid,
+          institutional research, and the relevant deans is much harder to
+          walk back, because each domain steward owns it. A policy written
+          by the governance council, however thorough, can be politely
+          ignored by a department running its own numbers. The framework’s
+          real authority is not the document. It is the working set of
+          shared definitions that domain leaders maintain together.
         </P>
 
         <H2>What working governance actually looks like</H2>
 
         <P>
-          When a dean and the registrar can agree on what a number means, and
-          can recover on demand why three other versions of the same number
-          exist, where each one is used, how this year’s definition relates
-          to last year’s, and how the system that produces it connects to the
-          systems that consume it, governance is working. When the policy
-          document is elegant and the numbers still do not agree, it isn’t.
-          The work to do is not a better framework. It is the slow,
-          distributed work that lives inside the framework: definitional
-          reconciliation, crosswalks, aggregation governance, architectural
-          mapping, and stewardship. That is the work most governance councils
-          skip, and the work the institution’s hardest questions cannot be
-          answered until someone does.
+          When a dean and the registrar can agree on what a number means,
+          and can recover, on demand, why three other versions of the same
+          number exist, where each one is used, how this year’s definition
+          relates to last year’s, and how the system that produces it
+          connects to the systems that consume it, governance is working.
+          When the policy document is elegant and the numbers still do not
+          agree, it is not. The work to do is not a better framework. It is
+          the slow, distributed work that lives inside the framework:
+          definitional reconciliation, crosswalks, aggregation governance,
+          architectural mapping, and stewardship — the work most governance
+          councils skip, and the work the institution’s hardest questions
+          cannot be answered until someone does.
         </P>
 
         <MetaNote>
@@ -3417,35 +3372,37 @@ export const ESSAYS: Essay[] = [
             agencies have been buying integration for a long time. Warehouses
             get built. Pipes get plumbed. Connectors land. The bytes move from
             the system that wrote them to the system that reads them. And then,
-            very often, the leader looking for institutional intelligence — a
+            very often, the leader looking for institutional intelligence (a
             360 view for the CEO, role-specific intelligence for a program
             officer or a principal or a clinician or a dean, a number a
-            District Education Officer can act on this week, discovers that the
-            integration ran and the institution still cannot decide.
+            District Education Officer can act on this week) discovers that
+            the integration ran and the institution still cannot decide.
           </p>
           <p>
             That is the gap I want to name. Integration is two questions
             stacked on top of each other, and institutions have been treating
-            them as one. The first is engineering: do the bytes move from where
-            they were written to where they will be read, in the right shape,
-            on a defensible cadence, without breaking? The second is
+            them as one. The first is engineering: do the bytes move from
+            where they were written to where they will be read, in the right
+            shape, on a defensible cadence, without breaking? The second is
             governance: when the bytes arrive, can anyone act on them? Who is
             allowed to read them, who is allowed to write them, on what
             cadence, under what consent envelope, with what authority, with
             what reversibility, with what audit trail if they are wrong? The
             first question has good answers in every era’s stack. The second
-            has answered itself in almost no institution I have worked inside,
-            in any era.
+            has answered itself in almost no institution I have worked
+            inside, in any era.
+          </p>
+          <p>
+            Those second-question elements together are what I will call the
+            governance contract: the explicit, named understanding that turns
+            integrated bytes into something a stakeholder can act on with
+            authority. This essay is about that contract, and about what it
+            has looked like across three eras of integration: legacy, modern,
+            and the agentic era now arriving. The engineering changes. The
+            contract has to change with it. The governance gap, in most
+            institutions, does not.
           </p>
         </Brief>
-
-        <P>
-          This essay is about the second question, and about what it has
-          looked like across three eras of integration: legacy, modern, and
-          the agentic era now arriving. The engineering changes. The
-          contracts have to change with it. The governance gap, in most
-          institutions, does not.
-        </P>
 
         <H2>Legacy era: contracts in someone’s head</H2>
 
@@ -3476,23 +3433,16 @@ export const ESSAYS: Essay[] = [
           definition of “applicant” versus “enrolled,” which call-center
           status code rolled up to which funnel stage, and what changed in
           the overnight refresh. In the legacy era that someone is a
-          steward. The contracts are in their head. The decision interface
-          depends on them not leaving. That is not a failure of engineering.
-          It is what legacy-era integration governance was — implicit,
-          tacit, dependent on a person who held the institution’s working
-          agreements about its own data in working memory and could vouch
-          for a number when a stakeholder was about to act on it.
-        </P>
-
-        <P>
-          The contracts were never absent. They were everywhere — in vendor
-          documentation, in file format conventions, in batch cadences, in
-          the append-versus-delete semantics buried in scheduled jobs, in the
-          implicit understanding that “an applicant is who SchoolMint says
-          they are unless HubSpot has them flagged for follow-up.” The
-          contracts existed. They simply lived in tacit institutional
-          knowledge. The principal could act on the number because a steward
-          vouched for it. When the steward left, the integration still ran
+          steward. The contracts were not absent: they were everywhere, in
+          vendor documentation, in file format conventions, in batch
+          cadences, in the append-versus-delete semantics buried in
+          scheduled jobs, in the implicit understanding that “an applicant
+          is who SchoolMint says they are unless HubSpot has them flagged
+          for follow-up.” They simply lived in tacit institutional
+          knowledge, held in the head of the steward who could vouch for a
+          number when a stakeholder was about to act on it. That is not a
+          failure of engineering. It is what legacy-era integration
+          governance was. When the steward left, the integration still ran
           and the number stopped being actionable, because the contract that
           connected the integration to the decision had walked out the door.
         </P>
@@ -3500,25 +3450,19 @@ export const ESSAYS: Essay[] = [
         <P>
           Move the same problem into a public-sector frame and the fragility
           shows differently. An Indian state runs four parallel state
-          systems. UDISE+ is the annual school census, owned by the Ministry
-          of Education. NAS is the National Achievement Survey, run every
-          four years on a sample, with grade-band shifts between cycles that
-          make any given year’s results not directly comparable to the prior
-          cycle’s. PGI is the state Performance Grading Index, a composite
-          the state being graded did not design. SEQI is the School
-          Education Quality Index, with its own definitions of the same
-          outcome variables. Technically the four systems integrate: states
-          submit, the central agencies consolidate, the dashboards land.
-          What can a District Education Officer or a Mandal Education
-          Officer act on, this month, in their block? UDISE+ tells them how
-          many children are enrolled. NAS tells them what a sample looked
-          like several cycles ago, in a grade band that may or may not align
-          with the population in front of them today. PGI tells them their
-          state’s rank against a composite the state did not define. SEQI
-          tells them something different again. The contracts between these
-          four state systems were never written. There is no single steward
-          who holds them. The integration runs. The decision interface does
-          not exist.
+          systems — UDISE+ for the annual school census, NAS for a
+          sample-based achievement survey on a four-year cycle with
+          grade-band shifts between cycles, PGI as a centrally-designed
+          state grading index, and SEQI as a state quality index with its
+          own definitions of the same outcome variables. Technically the
+          four integrate: states submit, the central agencies consolidate,
+          the dashboards land. What can a District Education Officer or a
+          Mandal Education Officer act on, this month, in their block? Each
+          system tells them something different in a different language
+          about overlapping populations on incompatible cycles. The
+          contracts between these four state systems were never written.
+          There is no single steward who holds them. The integration runs.
+          The decision interface does not exist.
         </P>
 
         <P>
@@ -3580,38 +3524,35 @@ export const ESSAYS: Essay[] = [
           ships? How long does it take for the quarterly report a program
           officer is about to act on to reflect the change? Is the prior
           quarter’s figure still defensible after the change, and if not,
-          who explains that to the partner clinicians and the funders before
-          they read the new report? Modern integration gives an institution
-          the contract artifact. It does not give the institution the
-          governance interface that decides who reads the contract, who can
-          change it, and how downstream stakeholders trigger their actions
-          when it changes. Most institutions in this era buy the tooling and
-          skip the council. They have the warehouse, the semantic layer, the
-          freshness SLAs. They do not have anyone who can answer the program
-          officer when the number moves and the question is whether to act
-          on it or wait.
+          who explains that to the partner clinicians and the funders
+          before they read the new report? Modern integration gives an
+          institution the contract artifact. It does not give the
+          institution the governance interface that decides who reads the
+          contract, who can change it, and how downstream stakeholders
+          trigger their actions when it changes. Most institutions in this
+          era buy the tooling and skip the council, and end up with no one
+          who can answer the program officer when the number moves and the
+          question is whether to act on it or wait.
         </P>
 
         <P>
-          The same gap shows up at a different scale and a higher cost stack
-          in behavioral health. A regional behavioral-health agency running
-          Certified Community Behavioral Health Clinic services had to
-          integrate hospital encounter feeds via HL7 v2 and CCDA, a regional
-          Health Information Exchange via FHIR, payer authorizations, the
-          financial system, HR, and a population-health analytics layer. The
-          hybrid HIPAA-compliant design moved source-system feeds through an
-          integration layer where Mirth Connect handled the hospital data,
-          through ETL and validation, into a cloud warehouse with BI on top
-          — and privacy-by-design lived as architectural components rather
-          than afterthoughts, with HIPAA and additional pharma-partner
-          privacy rules at the access layer, consent tracking integrated
-          through the stack, de-identification at extract, and role-based
-          access through the BI layer. The cost stack is instructive:
-          roughly four to five thousand per integration pipe, twelve to
-          sixty-five thousand for ETL and validation, ten to one hundred
-          fifty thousand for analytics tooling, and one hundred fifty to
-          five hundred thousand for population-health management once it had
-          to drive care decisions rather than only describe them.
+          The same gap shows up at a different scale and a higher cost
+          stack in behavioral health. A regional behavioral-health agency
+          running Certified Community Behavioral Health Clinic services had
+          to integrate hospital encounter feeds via HL7 v2 and CCDA, a
+          regional Health Information Exchange via FHIR, payer
+          authorizations, the financial system, HR, and a population-health
+          analytics layer. The hybrid HIPAA-compliant design moved
+          source-system feeds through an integration layer where Mirth
+          Connect handled the hospital data, through ETL and validation,
+          into a cloud warehouse with BI on top — and privacy-by-design
+          lived as architectural components rather than afterthoughts, with
+          HIPAA and additional pharma-partner privacy rules at the access
+          layer, consent tracking integrated through the stack,
+          de-identification at extract, and role-based access through the
+          BI layer. The cost stack ran from thousands per integration pipe
+          to hundreds of thousands for population-health management once it
+          had to drive care decisions rather than only describe them.
           Engineering money buys a lot of pipes. The pipes do not, on their
           own, buy a decision interface.
         </P>
@@ -3619,78 +3560,78 @@ export const ESSAYS: Essay[] = [
         <P>
           The architecture work made the governance question visible in a
           way the engineering work could not answer. When a clinician at a
-          partner clinic opens the chart and the integrated population-health
-          view shows the patient has had three no-shows in sixty days, what
-          is the contract that says the clinician is allowed to act on that
-          number? At what cadence does the no-show count have to be fresh
-          enough to support an outreach call without first re-checking the
-          source system? When the patient’s status updates at the partner
-          clinic, how long until the central view reflects it, and what
-          action is the clinician expected to take in the lag window? HL7
-          carries the message. The schema defines the fields. The governance
-          contract (written, agreed, enforced across the partner clinics
-          and the central agency) is what tells the clinician whether the
-          number on their screen is a decision interface or only a
-          description.
+          partner clinic opens the chart and the integrated
+          population-health view shows the patient has had three no-shows
+          in sixty days, what is the contract that says the clinician is
+          allowed to act on that number? At what cadence does the no-show
+          count have to be fresh enough to support an outreach call without
+          first re-checking the source system? When the patient’s status
+          updates at the partner clinic, how long until the central view
+          reflects it, and what action is the clinician expected to take
+          in the lag window? HL7 carries the message. The schema defines
+          the fields. The governance contract (written, agreed, enforced
+          across the partner clinics and the central agency) is what
+          tells the clinician whether the number on their screen is a
+          decision interface or only a description.
         </P>
 
         <P>
           A measurement-based-care pilot run through a patient-facing
           smartphone app, built into the same behavioral-health setting,
-          made the freshness-contract question concrete at clinical cadence.
-          A patient opens the app and completes a brief symptom inventory in
-          the morning; the result lands on the clinician’s dashboard before
-          the day’s appointments, and the clinician adjusts treatment
-          planning based on the symptom trajectory. The dashboard feeds the
-          warehouse, which in turn feeds adherence and engagement analytics.
-          The pilot ran with thirty-plus patients across two waves, produced
-          a forty percent engagement lift after reminder automation,
-          surfaced earlier clinician response, and began to show predictive
-          patterns in adherence and symptom improvement. There is a human
-          clinician acting on integrated data at a faster cadence than
-          weekly review can sustain — and the freshness contract is already
-          what holds that loop together, even with no agent in the cycle. If
-          the morning symptom score reaches the clinician three days late,
-          the treatment planning at the noon appointment is being done on a
-          stale number. The contract that has to be specified is not “the
-          data is integrated.” It is “the cadence at which the patient’s
-          status is fresh enough for the clinician to adjust treatment
-          planning is X; if it slips below X, the clinician must be told,
-          and the action they take changes.”
+          made the freshness-contract question concrete at clinical
+          cadence. A patient opens the app and completes a brief symptom
+          inventory in the morning; the result lands on the clinician’s
+          dashboard before the day’s appointments, and the clinician
+          adjusts treatment planning based on the symptom trajectory. The
+          dashboard feeds the warehouse, which in turn feeds adherence and
+          engagement analytics. The pilot ran with thirty-plus patients
+          across two waves, produced a forty percent engagement lift after
+          reminder automation, surfaced earlier clinician response, and
+          began to show predictive patterns in adherence and symptom
+          improvement. There is a human clinician acting on integrated
+          data at a faster cadence than weekly review can sustain, and the
+          freshness contract is already what holds that loop together,
+          even with no agent in the cycle. If the morning symptom score
+          reaches the clinician three days late, the treatment planning at
+          the noon appointment is being done on a stale number. The
+          contract that has to be specified is not “the data is
+          integrated.” It is “the cadence at which the patient’s status
+          stays fresh enough for the clinician to adjust treatment
+          planning, and what happens when it slips below that threshold.”
         </P>
 
         <P>
-          There is a quieter version of this same gap that shows up when the
-          contract author is external. A public charter school operating
-          inside a state’s accountability framework works inside an explicit
-          modern-era integration contract whose author is the state agency
-          itself. The state writes the course-collection policy: schools
-          have to submit course registration, attendance codes, and
-          reporting cadences on the state’s schedule, in the state’s format,
-          against the state’s definitions. The contract is not optional and
-          not invented by the school. The state writes it; the school
-          conforms. That gives the principal a usable decision interface,
-          because they know exactly what counts, why it counts, when it
-          counts, and who reads it. The example matters because most
-          institutional contexts have no equivalent author. There is no
-          state agency writing the contracts inside the foundation, inside
-          the school network, inside the regional behavioral-health agency,
-          inside the university. If the institution does not write the
-          contracts itself, no one does.
+          There is a quieter version of this same gap that shows up when
+          the contract author is external. A public charter school
+          operating inside a state’s accountability framework works inside
+          an explicit modern-era integration contract whose author is the
+          state agency itself, which writes the course-collection policy:
+          schools submit course registration, attendance codes, and
+          reporting cadences on the state’s schedule, in the state’s
+          format, against the state’s definitions. The contract is not
+          optional and not invented by the school. The state writes it;
+          the school conforms. That gives the principal a usable decision
+          interface, because they know exactly what counts, why it counts,
+          when it counts, and who reads it. The example matters because
+          most institutional contexts have no equivalent author. There is
+          no state agency writing the contracts inside the foundation, the
+          school network, the regional behavioral-health agency, or the
+          university. If the institution does not write the contracts
+          itself, no one does.
         </P>
 
         <H2>Higher ed’s modern era</H2>
 
         <P>
-          Higher education is standing in this same gap at scale right now.
-          Most institutions are standing up, or have stood up, a warehouse,
-          a semantic layer, some dbt, and some lineage, and the integration
-          engineering is largely being done. What is missing is the council
-          that owns the decision interface on top of the artifact, and so
-          the Provost still cannot get a 360 view even after the CIO has
-          built the warehouse. The data governance committee, where one
-          exists, often meets quarterly to debate naming conventions. The
-          decision interface is unowned.
+          Higher education is standing in this same gap at scale right
+          now. Most institutions are standing up (or have stood up) a
+          warehouse, a semantic layer, some dbt, and some lineage, and the
+          integration engineering is largely being done. What is missing
+          is the council that owns the decision interface on top of the
+          artifact, and so the Provost still cannot get a 360 view even
+          after the CIO has built the warehouse. The data governance
+          committee, where one exists, often meets quarterly to debate
+          naming conventions. The decision interface is unowned.
         </P>
 
         <H2>The agentic era: provenance, consent, reversibility</H2>
@@ -3712,8 +3653,8 @@ export const ESSAYS: Essay[] = [
           The contract has to extend to provenance categories the
           data-integration era did not have to name. Was this paragraph
           human-authored, deterministic-pipeline-generated, or
-          LLM-inferred? On the warehouse side, was this record written by a
-          human program officer, by the nightly ingestion job, or by the
+          LLM-inferred? On the warehouse side, was this record written by
+          a human program officer, by the nightly ingestion job, or by the
           agent acting on the program officer’s behalf? Provenance is now
           part of the data, not metadata about it. A program officer
           reading the impact report has to know which sentences were
@@ -3748,9 +3689,10 @@ export const ESSAYS: Essay[] = [
           the conditions under which it is automatic versus reviewed, and
           the downstream stakeholders who have to be notified that the
           records they were acting on may have just moved. The contract is
-          no longer “did the upstream system honor the schema it promised.”
-          It is “if the machine writes something wrong, can the institution
-          take it back before a decision has been triggered on it.”
+          no longer “did the upstream system honor the schema it
+          promised.” It is “if the machine writes something wrong, can the
+          institution take it back before a decision has been triggered on
+          it.”
         </P>
 
         <H2>Higher ed and the agentic era</H2>
@@ -3762,64 +3704,66 @@ export const ESSAYS: Essay[] = [
           advising notes are landing. AI tutors writing to gradebooks are
           landing. The institution will have the integration. It will
           have, mostly, the engineering. What it will not have, in most
-          cases, is the contract layer. Who is allowed to write a gradebook
-          entry on behalf of an AI tutor? What is the consent envelope
-          under which a financial-aid agent moves a student between aid
-          scenarios? When the advising assistant writes a recommendation
-          into a student’s record that the advisor never reviewed, what is
-          the reversibility window, and who tells the advisor? The
-          architectural question is the same one the behavioral-health
-          case faces. The systems differ. The contract questions are
-          identical.
+          cases, is the contract layer. Who is allowed to write a
+          gradebook entry on behalf of an AI tutor? What is the consent
+          envelope under which a financial-aid agent moves a student
+          between aid scenarios? When the advising assistant writes a
+          recommendation into a student’s record that the advisor never
+          reviewed, what is the reversibility window, and who tells the
+          advisor? The architectural question is the same one the
+          behavioral-health case faces. The systems differ. The contract
+          questions are identical.
         </P>
 
         <H2>The freshness contract becomes load-bearing</H2>
 
         <P>
-          The freshness contract, the discipline of treating timestamps not
-          as metadata but as part of the decision, already mattered in the
-          modern era, because reports drove decisions on a weekly or
-          monthly cadence and stale numbers produced wrong reports. In the
-          agentic era it matters in a different way. An LLM acting on stale
-          data at machine cadence produces wrong outcomes faster than a
-          human at the same staleness, and faster than the decision
-          interface can be re-anchored once it has started producing
-          decisions that look fluent and are not. The timestamp is no
-          longer a field next to the record. It is the boundary between an
-          actionable number and a misleading one.
+          The freshness contract (the discipline of treating timestamps
+          not as metadata but as part of the decision) already mattered
+          in the modern era, because reports drove decisions on a weekly
+          or monthly cadence and stale numbers produced wrong reports. In
+          the agentic era it matters in a different way. An LLM acting on
+          stale data at machine cadence produces wrong outcomes faster
+          than a human at the same staleness, and faster than the
+          decision interface can be re-anchored once it has started
+          producing decisions that look fluent and are not. The timestamp
+          is no longer a field next to the record. It is the boundary
+          between an actionable number and a misleading one.
         </P>
 
         <P>
-          That is what makes integration governance a layer the institution
-          cannot leave to engineering or architecture in any era.
-          Engineering moves the bytes. Architecture stages them. Governance
-          contracts (who reads, who writes, on what cadence, with what
-          consent, with what provenance, with what reversibility, with what
-          authority to act) turn fragmented bytes into decision-ready
-          institutional intelligence stakeholders can stand behind. Without
-          those contracts, the integration runs and the data on the other
-          side stays fragmented to anyone trying to act on it. With those
-          contracts, fragmented bytes become decision-ready intelligence: a
-          360 view for the CEO, role-specific intelligence for program
-          officers and principals and clinicians and deans and District
-          Education Officers, and a decision interface that triggers
-          action.
+          That is what makes integration governance a layer the
+          institution cannot leave to engineering or architecture in any
+          era. Engineering moves the bytes. Architecture stages them.
+          Governance contracts (who reads, who writes, on what cadence,
+          with what consent, with what provenance, with what reversibility,
+          with what authority to act) turn fragmented bytes into
+          decision-ready institutional intelligence stakeholders can stand
+          behind. Without those contracts, the integration runs and the
+          data on the other side stays fragmented to anyone trying to act
+          on it. With those contracts, fragmented bytes become
+          decision-ready intelligence: a 360 view for the CEO,
+          role-specific intelligence for program officers and principals
+          and clinicians and deans and District Education Officers, and a
+          decision interface that triggers action.
         </P>
 
         <P>
           The contracts have to be written. By someone, named, inside the
-          institution. In every era they were already needed. In the next
-          one they will be load-bearing.
+          institution. Where in the institution that role should sit is a
+          question worth its own treatment, and one I have taken up
+          directly elsewhere. In every era these contracts were already
+          needed. In the next one they will be load-bearing.
         </P>
 
         <MetaNote>
           This essay was written in June 2026 for the Analytic Bytes
           Library. It draws on the author’s practice across K–8 charter
           networks, a youth-mental-health foundation, a regional
-          behavioral-health agency, a DC public charter school context, and
-          Andhra Pradesh state systems. Organizational details are
-          abstracted where appropriate. The argument is intended to outlast
-          specific products and platforms.
+          behavioral-health agency, a DC public charter school context,
+          and Andhra Pradesh state systems. Organizational details are
+          abstracted where appropriate. The argument is intended to
+          outlast specific products and platforms.
         </MetaNote>
       </>
     ),
