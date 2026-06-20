@@ -6,7 +6,7 @@ const links = [
   { href: "/#arc", label: "/arc" },
   { href: "/case-studies", label: "/proof" },
   { href: "/about", label: "/about" },
-  { href: "mailto:hello@analyticbytes.systems", label: "/contact" },
+  { href: "mailto:hello@analyticbytes.systems", label: "/hello" },
 ];
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/chaitanyaramineni/";
