@@ -290,7 +290,6 @@ export default function Home() {
                 poster="/videos/AB_WholePersonStack_v1_poster.jpg"
                 autoPlay
                 muted
-                loop
                 playsInline
                 preload="metadata"
                 className="w-full h-auto rounded-lg border border-line"
