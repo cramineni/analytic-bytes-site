@@ -127,6 +127,37 @@ export default function Home() {
           </div>
         </section>
 
+        {/* WHOLE-PERSON VIDEO — the 90-second visual thesis */}
+        <section className="pt-8 pb-24 sm:pt-12 sm:pb-32">
+          <div className="max-w-page mx-auto px-5 sm:px-8">
+            <Reveal>
+              <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-6">
+                The 90-second version
+              </div>
+              <video
+                src="/videos/AB_WholePersonStack_v1.mp4"
+                poster="/videos/AB_WholePersonStack_v1_poster.jpg"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                className="w-full h-auto rounded-lg border border-line"
+                aria-label="The AB whole-person stack: framework, 360 view, contract, integration. From fragmented to decision-ready."
+              />
+              <div className="mt-8 flex justify-end">
+                <a
+                  href="/library"
+                  className="inline-flex items-center gap-2 text-ink hover:text-accent transition-colors text-[14px] sm:text-[15px] font-semibold no-underline border-b border-line-2 hover:border-accent pb-1"
+                >
+                  Read the Library
+                  <span aria-hidden>→</span>
+                </a>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* 01 ARCHITECTURE */}
         <Architecture />
 
