@@ -395,7 +395,7 @@ export default function CaseStudiesPage() {
                     href={`mailto:${EMAIL}`}
                     className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-accent text-white font-semibold text-[13.5px] hover:bg-accent-2 hover:-translate-y-px transition-all border border-accent"
                   >
-                    Say hello.
+                    <span>Say hello<span className="text-[18px] leading-none">.</span></span>
                   </a>
                   <a
                     href="/#arc"
