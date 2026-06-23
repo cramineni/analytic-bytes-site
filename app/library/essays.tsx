@@ -3852,7 +3852,7 @@ export const ESSAYS: Essay[] = [
         <P>
           For most of my career, when people asked what I do, I’d say
           <I> data plumbing</I>. It was a useful shorthand. Everyone got
-          it. The pipes, the joints, the connections between systems —
+          it. The pipes, the joints, the connections between systems,
           the unglamorous infrastructure that makes everything else
           possible. Plumbers don’t get a lot of credit. But the building
           doesn’t work without them.
@@ -3866,7 +3866,7 @@ export const ESSAYS: Essay[] = [
           When I started in this work, <I>plumbing</I> was where the
           difficulty lived. Moving data between two enterprise systems
           took months. Integration was a strategic asset. Today the
-          pipes have been industrialized — Fivetran, dbt, Snowflake, the
+          pipes have been industrialized: Fivetran, dbt, Snowflake, the
           cloud data platforms. The difficulty is no longer inventing
           the pipe; it’s mostly paying the subscription and managing
           the configuration. The plumbing got upgraded. It’s a solved
@@ -4024,7 +4024,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           But the truth is, the unglamorous part isn’t the pipes
-          anymore. The unglamorous part is the water — what’s in it,
+          anymore. The unglamorous part is the water: what’s in it,
           who decided what gets in, who’s responsible if it makes
           someone sick. The pipes are fine. The pipes were never the
           problem most institutions thought they were.
