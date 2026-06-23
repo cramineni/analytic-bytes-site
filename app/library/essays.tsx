@@ -3816,7 +3816,7 @@ export const ESSAYS: Essay[] = [
         <Brief>
           <p>
             The data integration layer is mostly solved. The pipes have
-            been industrialized — Fivetran, dbt, Snowflake, the cloud
+            been industrialized: Fivetran, dbt, Snowflake, the cloud
             data platforms. The questions that stay hard are no longer
             about the pipes.
           </p>
