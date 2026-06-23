@@ -276,25 +276,35 @@ export default function Home() {
           </div>
         </section>
 
-        {/* WHOLE-PERSON VIDEO — sits between the Thesis statement and the
-            Proof of Work section. Reads as the visual answer to the Thesis
-            line above it, and as the primer for the 360 Views row below. */}
+        {/* LATEST FIELD NOTE VIDEO — sits between the Thesis statement and the
+            Proof of Work section. The 60-second visual primer for the most
+            recent published field note, with CTA linking to the full long-form. */}
         <section className="pt-8 pb-24 sm:pt-12 sm:pb-32">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-8">
-                Seeing the person whole
+                Latest field note
               </div>
               <video
-                src="/videos/AB_WholePersonStack_v1.mp4"
-                poster="/videos/AB_WholePersonStack_v1_poster.jpg"
+                src="/videos/AB_PlumbingFallacy_v6_6.mp4"
+                poster="/videos/AB_PlumbingFallacy_v6_6_poster.jpg"
                 autoPlay
                 muted
                 playsInline
                 preload="metadata"
+                controls
                 className="w-full h-auto rounded-lg border border-line"
-                aria-label="Seeing the person whole — the AB framework, the 360 view, the governance contract, and the integration work. From fragmented to decision-ready."
+                aria-label="Plumbing got upgraded, the water didn’t — a 60-second visual primer for the field note of the same name."
               />
+              <div className="mt-8 flex justify-end">
+                <a
+                  href="/library/plumbing-got-upgraded-water-didnt"
+                  className="inline-flex items-center gap-2 text-ink hover:text-accent transition-colors text-[14px] sm:text-[15px] font-semibold no-underline border-b border-line-2 hover:border-accent pb-1"
+                >
+                  Read &ldquo;Plumbing got upgraded. The water didn&rsquo;t.&rdquo;
+                  <span aria-hidden>→</span>
+                </a>
+              </div>
             </Reveal>
           </div>
         </section>

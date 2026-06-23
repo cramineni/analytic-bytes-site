@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Plumbing got upgraded. The water didn't.</title>
+<desc>AB Field Note cover. Faded background pipes (commoditized infrastructure) feed a clean navy wall-mounted faucet at center. A single teal drop emerges from the spout — the load-bearing element of the metaphor. Eyebrow at top, two-line title beneath the visual, tagline at the foot.</desc>
+
+<rect width="1200" height="800" fill="#FFFFFF"/>
+
+<!-- Eyebrow -->
+<text x="600" y="92" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="5" fill="#475569" text-anchor="middle">ANALYTIC BYTES  ·  FIELD NOTE</text>
+
+<!-- ============================================== -->
+<!-- BACKGROUND: faded pipes (commoditized layer)   -->
+<!-- Almost ghosted — visible but visually quiet.   -->
+<!-- ============================================== -->
+<g opacity="0.22">
+  <!-- Four horizontal pipes feeding in from the left -->
+  <g stroke="#0F2A4A" stroke-width="2" fill="none" stroke-linecap="round">
+    <line x1="110" y1="300" x2="490" y2="300"/>
+    <line x1="110" y1="355" x2="490" y2="355"/>
+    <line x1="110" y1="410" x2="490" y2="410"/>
+    <line x1="110" y1="465" x2="490" y2="465"/>
+  </g>
+  <!-- Joint dots — give the pipes a "system" feel -->
+  <g fill="#0F2A4A">
+    <circle cx="220" cy="300" r="3"/>
+    <circle cx="220" cy="355" r="3"/>
+    <circle cx="220" cy="410" r="3"/>
+    <circle cx="220" cy="465" r="3"/>
+    <circle cx="350" cy="300" r="3"/>
+    <circle cx="350" cy="355" r="3"/>
+    <circle cx="350" cy="410" r="3"/>
+    <circle cx="350" cy="465" r="3"/>
+  </g>
+  <!-- Vertical bend joining the pipes near the wall -->
+  <line x1="490" y1="300" x2="490" y2="465" stroke="#0F2A4A" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- ============================================== -->
+<!-- WALL PLATE                                     -->
+<!-- ============================================== -->
+<rect x="490" y="260" width="38" height="240" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="2.5"/>
+<!-- Two faint mounting lines on the plate -->
+<line x1="490" y1="290" x2="528" y2="290" stroke="#0F2A4A" stroke-width="1" opacity="0.3"/>
+<line x1="490" y1="470" x2="528" y2="470" stroke="#0F2A4A" stroke-width="1" opacity="0.3"/>
+
+<!-- ============================================== -->
+<!-- FAUCET — navy linework, the structural moment  -->
+<!-- ============================================== -->
+<g fill="none" stroke="#0F2A4A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Horizontal arm extending from the wall plate -->
+  <line x1="528" y1="340" x2="640" y2="340"/>
+  <!-- Curved descending spout (quarter-bend) -->
+  <path d="M 640 340 Q 685 340 685 395 L 685 470"/>
+  <!-- Spout opening flare -->
+  <line x1="668" y1="470" x2="702" y2="470"/>
+</g>
+
+<!-- Handle (top of wall plate) -->
+<g stroke="#0F2A4A" fill="#FFFFFF">
+  <line x1="509" y1="260" x2="509" y2="240" stroke-width="3" stroke-linecap="round"/>
+  <line x1="492" y1="240" x2="526" y2="240" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="509" cy="225" r="6" stroke-width="2"/>
+</g>
+
+<!-- ============================================== -->
+<!-- THE DROP — teal, the only saturated element    -->
+<!-- This is what the field note is about.          -->
+<!-- No icon-style highlight. Two subtle internal   -->
+<!-- specks signal "something is in the water" —    -->
+<!-- which is the essay's actual question.          -->
+<!-- ============================================== -->
+<path d="M 685 488 Q 663 524 663 555 Q 663 588 685 588 Q 707 588 707 555 Q 707 524 685 488 Z" fill="#0EA5E9"/>
+<!-- Internal specks: faint navy marks, hinting at "what's in the water" -->
+<circle cx="678" cy="548" r="2" fill="#0F2A4A" opacity="0.35"/>
+<circle cx="692" cy="565" r="1.4" fill="#0F2A4A" opacity="0.28"/>
+
+<!-- ============================================== -->
+<!-- TITLE — two lines, big, navy                    -->
+<!-- ============================================== -->
+<text x="600" y="660" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="500" fill="#0F2A4A" text-anchor="middle">Plumbing got upgraded.</text>
+<text x="600" y="720" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="500" fill="#0F2A4A" text-anchor="middle">The water didn't.</text>
+
+<!-- Tagline -->
+<text x="600" y="762" font-family="Helvetica, Arial, sans-serif" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">On where the difficulty migrated.</text>
+
+</svg>

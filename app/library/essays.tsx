@@ -3795,6 +3795,267 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+
+  // ===================================================================
+  // FIELD NOTE 05 — Plumbing got upgraded. The water didn't.
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "plumbing-got-upgraded-water-didnt",
+    number: "05",
+    title: "Plumbing got upgraded. The water didn’t.",
+    subtitle:
+      "The pipes got industrialized. The water got harder to govern.",
+    date: "2026-06-23",
+    readingTime: "6 min read",
+    summary:
+      "The data integration layer is mostly solved — the pipes have been industrialized. The work that remains is closer to running a water authority: sourcing, testing, pressure, authority, who’s allowed to drink. The unglamorous part isn’t the pipes anymore. It’s the water.",
+    cover: "/library/covers/plumbing-got-upgraded-water-didnt.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            For most of my career, when people asked what I do, I’d say
+            <I> data plumbing</I>. It was a useful shorthand. The pipes,
+            the joints, the connections between systems — the unglamorous
+            infrastructure that makes everything else possible.
+          </p>
+          <p>
+            Lately I’ve stopped using the word. Not because it was wrong.
+            Because the word stopped meaning what it used to mean. The
+            pipes got industrialized. The questions that stay hard are no
+            longer about the pipes. They’re about the water — what’s in
+            it, who decided what gets in, who’s responsible if it makes
+            someone sick.
+          </p>
+        </Brief>
+
+        {/* Visual primer — 60s silent captioned video pairing with this field note */}
+        <div className="my-10">
+          <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+            The 60-second version
+          </div>
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+          <video
+            src="/videos/AB_PlumbingFallacy_v6_6.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_6_poster.jpg"
+            autoPlay
+            muted
+            playsInline
+            preload="metadata"
+            controls
+            className="w-full h-auto rounded-lg border border-line"
+            aria-label="Plumbing got upgraded, the water didn’t — a 60-second visual primer for this field note."
+          />
+        </div>
+
+        <P>
+          For most of my career, when people asked what I do, I’d say
+          <I> data plumbing</I>. It was a useful shorthand. Everyone got
+          it. The pipes, the joints, the connections between systems —
+          the unglamorous infrastructure that makes everything else
+          possible. Plumbers don’t get a lot of credit. But the building
+          doesn’t work without them.
+        </P>
+        <P>Lately I’ve stopped using the word.</P>
+        <P>
+          Not because it was wrong. Because the word stopped meaning
+          what it used to mean.
+        </P>
+        <P>
+          When I started in this work, <I>plumbing</I> was where the
+          difficulty lived. Moving data between two enterprise systems
+          took months. Integration was a strategic asset. Today the
+          pipes have been industrialized — Fivetran, dbt, Snowflake, the
+          cloud data platforms. The difficulty is no longer inventing
+          the pipe; it’s mostly paying the subscription and managing
+          the configuration. The plumbing got upgraded. It’s a solved
+          problem class, even if individual lines still get clogged.
+        </P>
+        <P>
+          So if “plumbing” was the right word for the hard part of the
+          work, and the hard part is no longer the hard part, the word
+          doesn’t fit anymore.
+        </P>
+
+        <H2>The faucet, not the pipes</H2>
+        <P>
+          Imagine your house has plumbing. Pipes run through the walls.
+          Water comes from a treatment plant somewhere. It reaches a
+          faucet. You turn the handle. Something comes out.
+        </P>
+        <P>
+          The work of getting pipes into the walls — that’s plumbing in
+          the old sense. Most modern houses have it. It’s table stakes.
+        </P>
+        <P>
+          The work that actually determines whether you can drink the
+          water, cook with it, give it to a child, wash a wound — that
+          work isn’t in the pipes. It’s: What’s the source. Is the
+          source clean. Did anything get added or removed upstream.
+          What’s the pressure at the faucet — too high and it sprays,
+          too low and you can’t fill a pot. Who’s allowed to open which
+          tap. What happens when the system fails. Who notices.
+        </P>
+        <P>
+          None of that is plumbing. All of it is the actual experience
+          of having water.
+        </P>
+
+        <H2>Speed was the only knob we turned</H2>
+        <P>
+          There’s a useful way to think about what AI actually changed
+          in all this.
+        </P>
+        <P>
+          For a long time, the only knob most data systems could really
+          turn was speed. Faster pipes. More frequent refreshes.
+          Real-time dashboards. Speed got cheap — that’s most of what
+          the modern stack delivered.
+        </P>
+        <P>But speed isn’t the only knob. Two others have been sitting there the whole time.</P>
+        <P>
+          <I>Resolution</I> — how granular a picture you can carry
+          through the pipe. Whether the thing arriving at the
+          decision-maker is the full pattern, or a flattened score that
+          stands in for it.
+        </P>
+        <P>
+          <I>Context</I> — what surrounds the data point. The history,
+          the cross-system signals, the constraints that change what a
+          number actually means.
+        </P>
+        <P>
+          AI made all three knobs more accessible. The speed knob was
+          already turned up; that’s the part most institutions invested
+          in. The resolution and context knobs are still mostly at their
+          default positions. That’s the gap — not that we lack speed,
+          but that we haven’t spent the other two.
+        </P>
+
+        <H2>The Thursday afternoon</H2>
+        <P>
+          Consider a Thursday afternoon in a college advisor’s office. A
+          junior student-athlete has skipped three classes and tripped
+          the LMS risk flag. The bursar’s stack shows their aid
+          disbursement is on hold for a missing verification document.
+          The campus dining system hasn’t seen a swipe in forty-eight
+          hours. All three systems know something. None of them are
+          talking to the advisor across the desk. The plumbing ran
+          perfectly. The student still slipped through the seam.
+        </P>
+        <P>
+          When I look at what I spend my time on now, it’s almost
+          entirely those kinds of moments, applied to data. Not <I>can
+          we connect these two systems</I> — yes, almost always, fine.
+          The questions that stay hard are: what does the field actually
+          measure, whose number wins when two systems disagree, who’s
+          allowed to read what, who’s allowed to change it, on what
+          cadence, and when it goes wrong, who notices.
+        </P>
+        <P>That’s not plumbing. That’s closer to running a water authority.</P>
+        <P>
+          The same Thursday afternoon happens in a clinic. In a
+          behavioral health agency. In a foundation reviewing grantees.
+          In a workforce board trying to know whether a participant is
+          on track. The shape doesn’t change. The systems hold pieces.
+          Nobody has the picture.
+        </P>
+
+        <H2>The water authority</H2>
+        <P>The analogy keeps holding up.</P>
+        <P>
+          The water treatment plant — the place that decides what
+          counts as drinkable water and tests every batch — that’s the
+          construct question. Are we measuring what we say we’re
+          measuring. Is the thing in the pipe still what it was when we
+          sampled it last quarter.
+        </P>
+        <P>
+          The municipal authority — who decides which neighborhoods get
+          pressure, who sets the testing cadence, who’s responsible
+          when the boil-water advisory goes out — that’s the governance
+          contract. Who reads. Who writes. Cadence. Authority. This is
+          the contract at the seam: the point where the architecture
+          stops and a person has to act on what comes through. Most
+          institutions have a contract for the pipes — vendor SLAs,
+          integration agreements, data-sharing terms. Few have one for
+          what happens at the faucet.
+        </P>
+        <P>
+          The faucet itself — the moment someone turns the handle —
+          that’s the decision. A dosage adjustment, a budget call, an
+          eligibility flag, a credit limit, a clinical alert. That’s
+          where the entire stack either works or doesn’t. And the
+          agentic era is already installing faucets that turn themselves
+          on, mix their own temperature, and pour before a human can
+          taste what’s coming out of the tap.
+        </P>
+        <P>
+          The engineers who used to be your bottleneck, the integration
+          specialists — they’re more like the contractors who installed
+          the pipes in the first place. Important, but not who you call
+          when the water tastes wrong.
+        </P>
+
+        <H2>The contract at the seam</H2>
+        <P>
+          If I had to describe the contract at the seam in plain terms,
+          it has four pieces.
+        </P>
+        <P><I>Who</I> is allowed to act on the signal.</P>
+        <P><I>What data</I> they see, and at what resolution.</P>
+        <P><I>On what cadence</I> the signal reaches them.</P>
+        <P><I>What kind of decision</I> the system is built to support.</P>
+        <P>
+          That last piece — what kind of decision — is the one most
+          institutions skip. They build for monitoring, then ask the
+          same plumbing to support intervention, and the seam fails.
+          The work is matching the architecture to the decision the
+          institution actually needs to make.
+        </P>
+
+        <H2>The water is the work</H2>
+        <P>
+          I think the reason I’m slow to give up the old word is that
+          “plumbing” has a kind of working-class honesty to it. It
+          signals: <I>I do the unglamorous part. I don’t oversell.</I>
+          That register matters in a field full of overselling.
+        </P>
+        <P>
+          But the truth is, the unglamorous part isn’t the pipes
+          anymore. The unglamorous part is the water — what’s in it,
+          who decided what gets in, who’s responsible if it makes
+          someone sick. The pipes are fine. The pipes were never the
+          problem most institutions thought they were.
+        </P>
+        <P>
+          If I had to describe what I do now without picking a clever
+          new name for it, I’d just say it’s water authority work.
+          Sourcing. Testing. Pressure. Authority. Who’s allowed to
+          drink. The integration layer is solved enough to not need
+          most senior people’s time. The layer that determines whether
+          what comes out of the faucet is fit for purpose — that layer
+          is barely staffed at most institutions, barely contracted
+          for, barely measured. It’s the gap between <I>we have a data
+          warehouse</I> and <I>we can make a decision.</I>
+        </P>
+        <P>Plumbing got upgraded. The water didn’t.</P>
+        <P>That’s the work.</P>
+
+        <MetaNote>
+          This field note was written in June 2026 for the Analytic
+          Bytes Library. The longer arguments referenced here live in
+          other library pieces: <I>What Is This System Actually
+          Measuring?</I> (the water-safety question), <I>The numbers
+          don’t agree because the words don’t</I> (when two pipes feed
+          the same tap), <I>The Contracts Between Systems</I> and
+          related work on who writes the contract (authority at the
+          seam).
+        </MetaNote>
+      </>
+    ),
+  },
 ];
 
 // ---------------------------------------------------------------------
