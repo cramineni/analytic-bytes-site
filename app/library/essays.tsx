@@ -3815,18 +3815,18 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            For most of my career, when people asked what I do, I’d say
-            <I> data plumbing</I>. It was a useful shorthand. The pipes,
-            the joints, the connections between systems — the unglamorous
-            infrastructure that makes everything else possible.
+            The data integration layer is mostly solved. The pipes have
+            been industrialized — Fivetran, dbt, Snowflake, the cloud
+            data platforms. The questions that stay hard are no longer
+            about the pipes.
           </p>
           <p>
-            Lately I’ve stopped using the word. Not because it was wrong.
-            Because the word stopped meaning what it used to mean. The
-            pipes got industrialized. The questions that stay hard are no
-            longer about the pipes. They’re about the water — what’s in
-            it, who decided what gets in, who’s responsible if it makes
-            someone sick.
+            This is a field note about why <I>plumbing</I> stopped being
+            the right word for the work, and what the work is now: the
+            water itself — sourcing, testing, pressure, authority, who’s
+            allowed to drink. The contract at the seam, not the pipe in
+            the wall. The gap between <I>we have a data warehouse</I>
+            and <I>we can make a decision.</I>
           </p>
         </Brief>
 
