@@ -11,7 +11,7 @@ const links = [
   { href: "/#architecture", label: "Architecture" },
   { href: "/library", label: "Library" },
   { href: "/#arc", label: "Operating Arc" },
-  { href: "/case-studies", label: "Proof" },
+  { href: "/case-studies", label: "The work" },
   { href: "/about", label: "About" },
 ];
 

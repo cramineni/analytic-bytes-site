@@ -308,7 +308,7 @@ export default function Home() {
                   05<span className="opacity-50 mx-1.5">/</span><span className="opacity-50">05</span>
                 </div>
                 <div className="flex-1 flex flex-wrap items-start justify-between gap-8">
-                  <div className="font-mono text-[13px] text-ink-2">Proof of work</div>
+                  <div className="font-mono text-[13px] text-ink-2">The work</div>
                   <h2 className="section-head-title-right font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] sm:text-right text-ink sm:max-w-[14ch]">
                     The same systems move.<br />
                     <span className="text-accent">Different work.</span>

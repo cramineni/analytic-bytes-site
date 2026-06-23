@@ -4,7 +4,7 @@ const links = [
   { href: "/#architecture", label: "/architecture" },
   { href: "/library", label: "/library" },
   { href: "/#arc", label: "/arc" },
-  { href: "/case-studies", label: "/proof" },
+  { href: "/case-studies", label: "/work" },
   { href: "/about", label: "/about" },
   { href: "mailto:hello@analyticbytes.systems", label: "/hello" },
 ];
