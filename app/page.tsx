@@ -100,7 +100,7 @@ export default function Home() {
                 <span className="text-accent">●</span>
                 &nbsp;&nbsp;{HERO.eyebrow}
               </div>
-              <h1 className="font-extrabold leading-[0.95] tracking-[-0.035em] mt-6 text-[40px] sm:text-[72px] lg:text-[96px] text-ink">
+              <h1 className="font-extrabold leading-[0.95] tracking-[-0.035em] mt-6 text-[40px] sm:text-[64px] lg:text-[84px] text-ink">
                 {HERO.headline[0]}<br />
                 {HERO.headline[1]}<br />
                 <span className="text-accent">{HERO.headline[2]}</span>
