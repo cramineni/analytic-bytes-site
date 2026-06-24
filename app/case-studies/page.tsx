@@ -30,6 +30,17 @@ type Pillars = {
   execution: string;
 };
 
+// Optional embed: forward-state seam-contract architecture sitting on top of
+// what this engagement built. Caption explicitly bridges the layer relationship
+// so the video isn't read as engagement evidence — it's what AB designs next.
+type NextLayerVideo = {
+  src: string;
+  poster: string;
+  captionHead: string; // bold lead — e.g. "What this foundation makes possible."
+  captionBody: string; // the bridge to the next layer
+  ariaLabel: string;
+};
+
 type CaseStudy = {
   id: string;
   sector: string;
@@ -41,6 +52,7 @@ type CaseStudy = {
   stack: string;
   stackFlow: StackFlow;
   unlocked: string[];
+  nextLayerVideo?: NextLayerVideo;
 };
 
 const CASE_STUDIES: CaseStudy[] = [
@@ -79,6 +91,15 @@ const CASE_STUDIES: CaseStudy[] = [
       "CDC Wonder data warehoused — enabling multi-year trend and subgroup analyses to run from DWH instead of piece-meal Google Sheets queries",
       "Targeted-funding analytics — burden-vs-disparity by state — demonstrated as a grant-strategy view",
     ],
+    nextLayerVideo: {
+      src: "/videos/AB_PlumbingFallacy_v6_6_MEL.mp4",
+      poster: "/videos/AB_PlumbingFallacy_v6_6_MEL_poster.jpg",
+      captionHead: "What this measurement infrastructure makes possible at the decision layer.",
+      captionBody:
+        "The engagement above built the semantic dataset, the executive analytics, and the grant-strategy framing. The architecture below shows the seam-contract layer that turns those measurement signals into a program officer’s next move — capacity grant, baseline revisit, portfolio adjustment.",
+      ariaLabel:
+        "AB Plumbing Fallacy — MEL / Foundations vertical cut. Forward-state seam-contract architecture sitting on top of this engagement’s measurement infrastructure.",
+    },
   },
   {
     id: "k8-charter",
@@ -115,6 +136,15 @@ const CASE_STUDIES: CaseStudy[] = [
       "Enrollment forecasting at 99% accuracy — informing capacity, staffing, and real-estate obligation decisions across the network's facility portfolio",
       "Zipcode-targeted recruitment — digital marketing, promotional campaigns, and tabling events — delivered on a reduced budget",
     ],
+    nextLayerVideo: {
+      src: "/videos/AB_PlumbingFallacy_v6_6_K12.mp4",
+      poster: "/videos/AB_PlumbingFallacy_v6_6_K12_poster.jpg",
+      captionHead: "What this foundation makes possible.",
+      captionBody:
+        "The engagement above built the integration and analytics base for the network. The architecture below is what AB now designs at the next layer — student-level MTSS triage, where rich data has to compress into a counselor’s next action.",
+      ariaLabel:
+        "AB Plumbing Fallacy — K-12 vertical cut. Forward-state seam-contract architecture sitting on top of this engagement’s integration and analytics foundation.",
+    },
   },
   {
     id: "behavioral-health",
@@ -151,6 +181,15 @@ const CASE_STUDIES: CaseStudy[] = [
       "SDOH and chronic-condition risk scoring",
       "NSDUH state-level prevalence integrated into the population-health view",
     ],
+    nextLayerVideo: {
+      src: "/videos/AB_PlumbingFallacy_v6_6_BH.mp4",
+      poster: "/videos/AB_PlumbingFallacy_v6_6_BH_poster.jpg",
+      captionHead: "How the foundation above operates at the seam.",
+      captionBody:
+        "The integration this engagement built is what real-time clinical decision support sits on. The architecture below shows the seam-contract layer that turns those signals into a care coordinator’s next action.",
+      ariaLabel:
+        "AB Plumbing Fallacy — Behavioral Health vertical cut. Forward-state seam-contract architecture sitting on top of this engagement’s clinical integration foundation.",
+    },
   },
   {
     id: "test-prep",
@@ -407,6 +446,39 @@ export default function CaseStudiesPage() {
                       ))}
                     </ul>
                   </div>
+
+                  {/* NEXT LAYER — forward-state seam-contract architecture (only on
+                      case studies that have a matching vertical cut). Eyebrow + caption
+                      explicitly bridge the layer relationship so the video is read as
+                      "what AB designs on top of this foundation," not as engagement evidence. */}
+                  {cs.nextLayerVideo && (
+                    <div className="mt-10 pt-8 border-t border-line">
+                      <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+                        Next layer · AB seam-contract architecture
+                      </div>
+                      <p className="text-ink-2 text-[16px] sm:text-[17px] leading-[1.6] mb-6 max-w-[68ch]">
+                        <span className="text-ink font-semibold">
+                          {cs.nextLayerVideo.captionHead}
+                        </span>{" "}
+                        {cs.nextLayerVideo.captionBody}
+                      </p>
+                      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+                      <video
+                        src={cs.nextLayerVideo.src}
+                        poster={cs.nextLayerVideo.poster}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        className="w-full h-auto rounded-lg border border-line"
+                        aria-label={cs.nextLayerVideo.ariaLabel}
+                      />
+                      <p className="text-ink-3 text-[12px] sm:text-[12.5px] mt-3 italic">
+                        AB Plumbing Fallacy — vertical cut, June 2026.
+                      </p>
+                    </div>
+                  )}
                 </div>
               </Reveal>
             </div>
