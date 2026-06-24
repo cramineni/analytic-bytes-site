@@ -272,6 +272,14 @@ export default function CaseStudiesPage() {
                   Below: five engagements, anonymized by org. In each one, the
                   stack you see at the bottom is the consequence of the design — not the headline.
                 </p>
+                <p className="text-ink-3 text-[14px] sm:text-[15px] leading-[1.6] border-l-2 border-line-2 pl-5 mt-8 italic">
+                  Attribution note. These engagements were conducted across a
+                  decade of full-time and consulting roles at the listed
+                  organizations, largely as solo practitioner work. The
+                  architectural moves, integration patterns, and decision-system
+                  designs shown here now form the working basis of Analytic Bytes&rsquo;
+                  independent consulting practice.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -369,9 +377,9 @@ export default function CaseStudiesPage() {
                   {/* What was missing */}
                   <CaseBlock label="What was missing" body={cs.missing} />
 
-                  {/* The decision system we stood up */}
+                  {/* The decision system stood up — attribution-neutral, matches body voice */}
                   <CaseBlock
-                    label="The decision system we stood up"
+                    label="The decision system stood up"
                     body={cs.weBuilt}
                   />
 

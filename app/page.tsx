@@ -10,7 +10,7 @@ import { ESSAYS } from "./library/essays";
 
 const HERO = {
   eyebrow: "Human-serving Systems",
-  headline: ["Most data problems", "are decision problems.", "Fix the system."],
+  headline: ["Most data problems", "are decision problems.", "Calibrate the system."],
   lede: {
     head: "Dashboards show signal.",
     accent: "Decisions require systems.",
@@ -61,7 +61,7 @@ const PROOF_ROWS = [
 
 const OFFERS = [
   { num: "→ 01", title: "Decision audit", desc: "A four-week diagnostic. Where decisions stall, who owns them, and the single highest-leverage place to intervene." },
-  { num: "→ 02", title: "Operator residency", desc: "A 90-day embedded arc. Full capability — tech and talent — at fractional cost. We ship decision-ready outputs and coach your in-house operators alongside us, so when we leave the work compounds." },
+  { num: "→ 02", title: "Operator residency", desc: "A 90-day embedded arc. Full capability — tech and talent — at fractional cost. Decision-ready outputs delivered alongside the in-house operators who'll own the work after handoff, so the work compounds once the residency ends." },
   { num: "→ 03", title: "Build the spine", desc: "A long arc for teams ready to make data the way they operate — not a quarterly review artifact." },
 ];
 
@@ -248,8 +248,8 @@ export default function Home() {
             <Reveal>
               <div className="mt-12 pt-8 border-t border-line">
                 <p className="text-[16px] sm:text-[18px] text-ink-2 italic max-w-[44ch] leading-[1.5]">
-                  We don&rsquo;t build dependencies.{" "}
-                  <span className="text-ink font-medium not-italic">We build operating teams.</span>
+                  Build operating teams,{" "}
+                  <span className="text-ink font-medium not-italic">not dependencies.</span>
                 </p>
               </div>
             </Reveal>
@@ -374,7 +374,7 @@ export default function Home() {
                   <div className="font-mono text-[13px] text-ink-2">Work with AB</div>
                   <h2 className="section-head-title-right font-extrabold tracking-[-0.03em] leading-[1.02] text-[28px] sm:text-[44px] lg:text-[60px] sm:text-right text-ink sm:max-w-[14ch]">
                     Three ways to<br />
-                    <span className="text-accent">plug us in.</span>
+                    <span className="text-accent">work together.</span>
                   </h2>
                 </div>
               </div>

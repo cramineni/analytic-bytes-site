@@ -43,11 +43,11 @@ const PRINCIPLES: { title: string; desc: string }[] = [
   },
   {
     title: "Asset-based, not deficit-based.",
-    desc: "We start from what you have, not what you lack. New tools and headcount come second — if at all.",
+    desc: "Start from what's already there, not what's missing. New tools and headcount come second, if at all.",
   },
   {
-    title: "We don't build dependencies.",
-    desc: "Every engagement strengthens your in-house team. Our success is measured by your independence after we leave.",
+    title: "Build operating teams, not dependencies.",
+    desc: "Every engagement strengthens the in-house team. Success is measured by their independence after handoff.",
   },
   {
     title: "Stack-light, context-rich.",
