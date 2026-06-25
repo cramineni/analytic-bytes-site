@@ -10,7 +10,7 @@ import { ESSAYS } from "./library/essays";
 
 const HERO = {
   eyebrow: "Human-serving Systems",
-  headline: ["Most data problems", "are decision problems.", "Calibrate the system."],
+  headline: ["Most data problems", "are decision problems.", "Design the system."],
   lede: {
     head: "Dashboards show signal.",
     accent: "Decisions require systems.",
