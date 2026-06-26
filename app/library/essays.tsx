@@ -3896,7 +3896,7 @@ export const ESSAYS: Essay[] = [
             the right word for the work, and what the work is now: the
             water itself — sourcing, testing, pressure, authority, who’s
             allowed to drink. The contract at the seam, not the pipe in
-            the wall. The gap between <I>we have a data warehouse</I>
+            the wall. The gap between <I>we have a data warehouse</I>{" "}
             and <I>we can make a decision.</I>
           </p>
         </Brief>
@@ -4032,7 +4032,7 @@ export const ESSAYS: Essay[] = [
         <P>That’s not plumbing. That’s closer to running a water authority.</P>
         <P>
           It’s worth naming the distinction directly. Most institutions
-          have invested heavily in <I>data governance</I> — the
+          have some form of <I>data governance</I> in place — the
           policies that decide who can access which table, how a field
           is defined in the catalog, how lineage is tracked. That work
           is real and necessary. But data governance is governance of

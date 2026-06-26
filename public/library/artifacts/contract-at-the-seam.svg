@@ -1,0 +1,74 @@
+<svg viewBox="0 0 820 740" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="ttl">The Contract at the Seam</title>
+<desc id="desc">A tool- and sector-agnostic reference diagram. Two source systems each hold one signal; integration delivers the joined data across the seam — the solved part. The contract at the seam specifies the four things integration cannot: WHO owns the action (a named person, not a dashboard), WHAT data and resolution (the joined signal at the grain of one case), CADENCE (how often it is read), and DECISION (the action the signal should trigger). Only with the contract does delivered data become a made decision and the outcome move.</desc>
+<rect width="820" height="740" fill="#FFFFFF"/>
+
+<text x="205" y="50" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">THE CONTRACT AT THE SEAM</text>
+<text x="205" y="80" font-size="22" fill="#0E2A47" font-weight="700">Integration moves the data.</text>
+<text x="205" y="108" font-size="22" fill="#0EA5E9" font-weight="700">The contract makes the judgment.</text>
+
+<!-- Top: two source systems + integration pipe (the solved part) -->
+<rect x="205" y="150" width="218" height="60" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<text x="231" y="180" font-size="18" fill="#0E2A47" font-weight="600">Source system A</text>
+<text x="231" y="200" font-size="12.5" fill="#6B7A8C">holds one signal</text>
+
+<rect x="475" y="150" width="218" height="60" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<text x="501" y="180" font-size="18" fill="#0E2A47" font-weight="600">Source system B</text>
+<text x="501" y="200" font-size="12.5" fill="#6B7A8C">holds another</text>
+
+<!-- integration pipe across the seam -->
+<line x1="423" y1="180" x2="475" y2="180" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="449" cy="180" r="4" fill="#0EA5E9"/>
+<text x="449" y="138" font-size="11" letter-spacing="1.5" fill="#6B7A8C" font-weight="600" text-anchor="middle">INTEGRATION · PIPES DELIVER THE DATA  (SOLVED)</text>
+
+<!-- arrow down into the contract -->
+<line x1="449" y1="210" x2="449" y2="244" stroke="#0E2A47" stroke-width="2"/>
+<path d="M443,238 l6,8 l6,-8 z" fill="#0E2A47"/>
+
+<!-- left rail: the work integration can't do -->
+<rect x="96" y="252" width="50" height="372" rx="8" fill="#F4F8FB" stroke="#0E2A47" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text transform="translate(123,438) rotate(-90)" font-size="11.5" letter-spacing="1.2" fill="#0E2A47" font-weight="600" text-anchor="middle">INTEGRATION CAN&#8217;T DO THIS</text>
+
+<!-- micro-labels at left of each row -->
+<text x="196" y="318" font-size="12" letter-spacing="1.5" fill="#0EA5E9" font-weight="600" text-anchor="end">OWNER</text>
+<text x="196" y="394" font-size="12" letter-spacing="1.5" fill="#0EA5E9" font-weight="600" text-anchor="end">SIGNAL</text>
+<text x="196" y="470" font-size="12" letter-spacing="1.5" fill="#0EA5E9" font-weight="600" text-anchor="end">RHYTHM</text>
+<text x="196" y="556" font-size="12" letter-spacing="1.5" fill="#0EA5E9" font-weight="600" text-anchor="end">ACTION</text>
+
+<!-- contract header strip (keystone) -->
+<rect x="205" y="252" width="488" height="42" rx="8" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2.5"/>
+<text x="229" y="279" font-size="16" fill="#0E2A47" font-weight="700">The Seam Contract</text>
+<rect x="586" y="262" width="92" height="22" rx="11" fill="#0EA5E9"/>
+<text x="632" y="277" font-size="11" letter-spacing="1.2" fill="#FFFFFF" font-weight="600" text-anchor="middle">KEYSTONE</text>
+
+<!-- WHO -->
+<rect x="205" y="304" width="488" height="64" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<text x="229" y="332" font-size="19" fill="#0E2A47" font-weight="600">WHO</text>
+<text x="229" y="354" font-size="13.5" fill="#6B7A8C">owns the action — a named person, not a dashboard</text>
+
+<!-- WHAT -->
+<rect x="205" y="380" width="488" height="64" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<text x="229" y="408" font-size="19" fill="#0E2A47" font-weight="600">WHAT</text>
+<text x="229" y="430" font-size="13.5" fill="#6B7A8C">data + resolution — the joined signal at the grain of one case</text>
+
+<!-- CADENCE -->
+<rect x="205" y="456" width="488" height="64" rx="8" fill="#FFFFFF" stroke="#0E2A47" stroke-width="1.5"/>
+<text x="229" y="484" font-size="19" fill="#0E2A47" font-weight="600">CADENCE</text>
+<text x="229" y="506" font-size="13.5" fill="#6B7A8C">how often it is read — the rhythm the decision actually needs</text>
+
+<!-- DECISION (payoff, filled) -->
+<rect x="205" y="532" width="488" height="80" rx="8" fill="#0EA5E9"/>
+<text x="229" y="566" font-size="20" fill="#FFFFFF" font-weight="700">DECISION</text>
+<text x="229" y="590" font-size="13.5" fill="#E8F6FD">what changes — the action the signal should trigger</text>
+
+<!-- chevrons between rows -->
+<path d="M443,371 l6,6 l6,-6" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+<path d="M443,447 l6,6 l6,-6" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+<path d="M443,523 l6,6 l6,-6" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+
+<!-- outcome line below -->
+<text x="205" y="652" font-size="14.5" fill="#0E2A47" font-weight="600">Delivered data becomes a made decision — and the outcome can move.</text>
+
+<text x="205" y="700" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="357" y="700" font-size="13" fill="#0EA5E9">The water moves only when someone writes the contract.</text>
+</svg>

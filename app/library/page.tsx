@@ -41,6 +41,13 @@ type Entry = {
 const ARTIFACTS: Entry[] = [
   {
     type: "artifact",
+    title: "The Contract at the Seam",
+    summary:
+      "Integration moves the data. The contract makes the judgment. A tool- and sector-agnostic diagram of what the contract specifies that integration cannot — who owns the action, what data and at what resolution, on what cadence, and what decision the signal should trigger. The seam between delivered data and made decisions.",
+    image: "/library/artifacts/contract-at-the-seam.svg",
+  },
+  {
+    type: "artifact",
     title: "The Decision System — reference architecture",
     summary:
       "A tool-agnostic reference architecture: sources through integration, warehouse, and the semantic-layer keystone to AI and the reporting surfaces, with a governance rail across every layer and a learning loop that closes the system.",
