@@ -5,7 +5,7 @@
 <rect width="1200" height="800" fill="#FFFFFF"/>
 
 <!-- Eyebrow -->
-<text x="600" y="92" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="5" fill="#475569" text-anchor="middle">ANALYTIC BYTES  ·  FIELD NOTE</text>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 05</text>
 
 <!-- ============================================== -->
 <!-- BACKGROUND: faded pipes (commoditized layer)   -->
@@ -80,6 +80,9 @@
 <text x="600" y="720" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="500" fill="#0F2A4A" text-anchor="middle">The water didn't.</text>
 
 <!-- Tagline -->
-<text x="600" y="762" font-family="Helvetica, Arial, sans-serif" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">On where the difficulty migrated.</text>
+<text x="600" y="755" font-family="Helvetica, Arial, sans-serif" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">On where the difficulty migrated.</text>
+
+<!-- Footer — matches the convention used across other field note covers -->
+<text x="600" y="788" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
 
 </svg>

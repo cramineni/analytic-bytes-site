@@ -2859,10 +2859,81 @@ export const ESSAYS: Essay[] = [
           this actually measuring, and is that what we meant?
         </P>
 
+        {/* DOWNLOAD BUNDLE — three operating documents that turn this essay's
+            argument into a leadership-meeting move. Free, no gate. Soft attribution
+            line invites response without barricading the read. */}
+        <div className="my-14 border-t border-b border-line py-10">
+          <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+            Operating kit
+          </div>
+          <h3 className="text-ink font-bold tracking-[-0.015em] text-[20px] sm:text-[22px] leading-[1.3] mb-3">
+            The AI Evaluation Kit
+          </h3>
+          <p className="text-ink-2 text-[15px] sm:text-[16px] leading-[1.65] mb-7 max-w-[62ch]">
+            Three documents that turn the argument above into a leadership-meeting
+            move. The full kit names twelve evaluation questions across signals,
+            intelligence, and execution. The one-page diagnostic is the scorecard
+            a leadership team can run through in a single meeting. The 90-day cadence
+            is the wrapper that turns the diagnostic into a quarterly operating
+            practice. Free, no gate.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4">
+            <div>
+              <div className="text-ink font-semibold text-[14.5px] mb-2">
+                The Kit
+              </div>
+              <div className="text-ink-3 text-[12.5px] leading-[1.5] mb-3">
+                Twelve questions across the three pillars. The main asset.
+              </div>
+              <div className="flex gap-3 text-[13px] font-mono">
+                <a href="/downloads/AB_AI_Evaluation_Kit.pdf" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDF</a>
+                <a href="/downloads/AB_AI_Evaluation_Kit.docx" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">DOCX</a>
+              </div>
+            </div>
+            <div>
+              <div className="text-ink font-semibold text-[14.5px] mb-2">
+                The Diagnostic
+              </div>
+              <div className="text-ink-3 text-[12.5px] leading-[1.5] mb-3">
+                One page. Twelve questions as a leadership-meeting scorecard.
+              </div>
+              <div className="flex gap-3 text-[13px] font-mono">
+                <a href="/downloads/AB_AI_Evaluation_Diagnostic.pdf" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDF</a>
+                <a href="/downloads/AB_AI_Evaluation_Diagnostic.docx" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">DOCX</a>
+              </div>
+            </div>
+            <div>
+              <div className="text-ink font-semibold text-[14.5px] mb-2">
+                The 90-Day Cadence
+              </div>
+              <div className="text-ink-3 text-[12.5px] leading-[1.5] mb-3">
+                Implementation wrapper. Turns the diagnostic into operating practice.
+              </div>
+              <div className="flex gap-3 text-[13px] font-mono">
+                <a href="/downloads/AB_AI_Evaluation_90Day_Cadence.pdf" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDF</a>
+                <a href="/downloads/AB_AI_Evaluation_90Day_Cadence.docx" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">DOCX</a>
+              </div>
+            </div>
+          </div>
+          <p className="text-ink-3 text-[13px] sm:text-[13.5px] italic leading-[1.55] mt-8 max-w-[62ch]">
+            If this changes how you evaluate AI in your context, I’d love to hear
+            about it —{" "}
+            <a
+              href="mailto:hello@analyticbytes.systems"
+              className="text-ink-2 not-italic font-medium border-b border-line-2 hover:border-accent transition-colors no-underline pb-px"
+            >
+              hello@analyticbytes.systems
+            </a>
+            .
+          </p>
+        </div>
+
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. The argument draws
           on measurement-science practice and is intended to outlast specific
-          AI products and platforms.
+          AI products and platforms. The downloadable operating kit (above) is
+          the Q3 2026 v3 release, refreshed for procurement-grade vendor
+          stress-testing and tighter operator voice.
         </MetaNote>
       </>
     ),
@@ -3867,15 +3938,14 @@ export const ESSAYS: Essay[] = [
           difficulty lived. Moving data between two enterprise systems
           took months. Integration was a strategic asset. Today the
           pipes have been industrialized: Fivetran, dbt, Snowflake, the
-          cloud data platforms. The difficulty is no longer inventing
+          cloud data platforms. The difficulty is no longer engineering
           the pipe; it’s mostly paying the subscription and managing
           the configuration. The plumbing got upgraded. It’s a solved
           problem class, even if individual lines still get clogged.
         </P>
         <P>
-          So if “plumbing” was the right word for the hard part of the
-          work, and the hard part is no longer the hard part, the word
-          doesn’t fit anymore.
+          So if “plumbing” was what I called the hard part of the work,
+          and the hard part has moved, the word doesn’t fit anymore.
         </P>
 
         <H2>The faucet, not the pipes</H2>
@@ -3921,8 +3991,8 @@ export const ESSAYS: Essay[] = [
           stands in for it.
         </P>
         <P>
-          <I>Context</I> — what surrounds the data point. The history,
-          the cross-system signals, the constraints that change what a
+          <I>Context</I> — what surrounds the data point. The
+          cross-system signals and the constraints that change what a
           number actually means.
         </P>
         <P>
@@ -3930,7 +4000,13 @@ export const ESSAYS: Essay[] = [
           already turned up; that’s the part most institutions invested
           in. The resolution and context knobs are still mostly at their
           default positions. That’s the gap — not that we lack speed,
-          but that we haven’t spent the other two.
+          but that we haven’t spent the other two.{" "}
+          <I>
+            (There is a fourth dimension worth naming separately —
+            whether the construct in the pipe is still the construct
+            you sampled last quarter. That one gets its own treatment
+            in “The construct keeps moving.”)
+          </I>
         </P>
 
         <H2>The Thursday afternoon</H2>
@@ -3955,8 +4031,22 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>That’s not plumbing. That’s closer to running a water authority.</P>
         <P>
+          It’s worth naming the distinction directly. Most institutions
+          have invested heavily in <I>data governance</I> — the
+          policies that decide who can access which table, how a field
+          is defined in the catalog, how lineage is tracked. That work
+          is real and necessary. But data governance is governance of
+          the pipe. <I>Decision governance</I> is governance of the
+          faucet — who’s allowed to act on what comes out, at what
+          resolution, on what cadence, and what kind of decision the
+          architecture is built to support. An institution can have
+          mature data governance and almost no decision governance, and
+          the seam still fails.
+        </P>
+        <P>
           The same Thursday afternoon happens in a clinic. In a
-          behavioral health agency. In a foundation reviewing grantees.
+          behavioral health agency. In a K-12 district trying to act on
+          an early-warning flag. In a foundation reviewing grantees.
           In a workforce board trying to know whether a participant is
           on track. The shape doesn’t change. The systems hold pieces.
           Nobody has the picture.
