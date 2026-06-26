@@ -3892,11 +3892,11 @@ export const ESSAYS: Essay[] = [
             about the pipes.
           </p>
           <p>
-            This is a field note about why <I>plumbing</I> stopped being
-            the right word for the work, and what the work is now: the
-            water itself — sourcing, testing, pressure, authority, who’s
-            allowed to drink. The contract at the seam, not the pipe in
-            the wall. The gap between <I>we have a data warehouse</I>{" "}
+            Why <I>plumbing</I> stopped being the right word for the
+            work, and what the work is now: the water itself —
+            sourcing, testing, pressure, authority, who’s allowed to
+            drink. The contract at the seam, not the pipe in the wall.
+            The gap between <I>we have a data warehouse</I>{" "}
             and <I>we can make a decision.</I>
           </p>
         </Brief>
