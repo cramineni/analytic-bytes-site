@@ -1979,9 +1979,8 @@ export const ESSAYS: Essay[] = [
         <P>
           Let’s start with the confusion. It is real, and it is a clue. Ask ten
           organizations who owns data infrastructure and you get a tour of the
-          alphabet: the CTO, the CIO, the CFO, the CFAO, the COO, a CDO, a CDAO,
-          a Chief AI Officer, a Chief Innovation Officer, sometimes a Chief
-          Impact Officer, occasionally a CPO. Several of those titles mean
+          alphabet: the CIO, the CTO, the CFO, the COO, the CPO, a CDO, a CDAO,
+          a Chief Innovation Officer, sometimes a Chief Impact Officer, a CAIDO. Several of those titles mean
           different things at different organizations. The acronym soup is not a
           trivia problem; it is the symptom. The field has not agreed what this
           function <I>is</I>, so it has not agreed who should own it. Every
@@ -1995,14 +1994,14 @@ export const ESSAYS: Essay[] = [
           taste.
         </P>
         <P>
-          I first met this argument in a narrower form: the
-          monitoring-and-evaluation data of mission-driven organizations, the
-          data that tells a funder whether a program worked. That data usually
-          belongs to a technology or digital-products team, and it gets bent
-          toward that team’s priorities rather than the evaluators’. The fix
-          there and the fix here are one argument at two scales. Data should not
-          be owned by a function whose incentives point somewhere else. What
-          follows is that argument at full-organization scale.
+          I first met this argument in a narrower form, in a single
+          mission-driven organization: the monitoring-and-evaluation data — what
+          tells a funder whether a program worked — sat with the digital-products
+          team, and it got bent toward that team’s priorities rather than the
+          evaluators’. The fix there and the fix here are one argument at two
+          scales: data should not be owned by a function whose incentives point
+          somewhere else. What follows is that argument at full-organization
+          scale.
         </P>
 
         <H2>The four reasonable answers</H2>
@@ -2020,7 +2019,9 @@ export const ESSAYS: Essay[] = [
           measured on: reliability, security, uptime, incident response. The semantic layer, the
           part that makes data <I>mean</I> something to a program lead or a
           board, becomes nobody’s priority. The function slowly turns into a
-          service desk, quick to answer a request and absent from the decision.
+          service desk — requests arrive through a ticketing queue, analysts
+          close them quickly, and the decision happens somewhere else without
+          them.
         </P>
         <P>
           <B>The CFO or CFAO option.</B> Also a real case. Data is a governed,
@@ -2049,9 +2050,12 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Under the CPO, in service of the product.</B> Where data{" "}
           <I>is</I> the product, or feeds it directly, this is correct and
-          barely needs defending. Where data is not the product, it is the
-          narrowest capture of all: the function answers the product’s questions
-          well and the rest of the organization’s not at all.
+          barely needs defending. The trap is the boundary case: when a product
+          team is building a customer-facing surface that incorporates data
+          delivery, it tends to claim the data infrastructure as part of the
+          product itself. Where data is not the product, it is the narrowest
+          capture of all: the function answers the product’s questions well and
+          the rest of the organization’s not at all.
         </P>
         <P>
           All four placements share one flaw. Each puts data infrastructure
@@ -2083,10 +2087,14 @@ export const ESSAYS: Essay[] = [
             Sight without traction is a research office nobody acts on.
           </NumItem>
           <NumItem n={4}>
-            It needs to report at the <B>altitude where its decisions live</B>.
-            Data infrastructure’s daily work is the recurring operating
-            decisions that run across functions, not the strategic decisions
-            that sit with the CEO and the board.
+            It needs to report at the{" "}
+            <B>altitude where its daily decisions live</B>. Data infrastructure
+            does feed strategy — board reviews, capital decisions, multi-year
+            bets — but those are episodic. The function’s daily rhythm is the
+            recurring operating decisions that run across functions. Place
+            ownership where the recurring rhythm lives, and the episodic work
+            still gets served. Place it at the strategic altitude and the daily
+            rhythm starves.
           </NumItem>
         </NumList>
         <P>
@@ -2208,17 +2216,18 @@ export const ESSAYS: Essay[] = [
           Place ownership at the integration seat and the heroics subside.
           Full-stack capability stops being a unicorn requirement. It becomes a
           senior role <I>supported</I> by its position instead of compensating
-          for the lack of one. The role was mis-housed, and the job description
-          was billing one person for the org chart’s unpaid debt.
+          for the lack of one. The role was never impossible. It was
+          mis-housed, and the job description was billing one person for the
+          org chart’s unpaid debt.
         </P>
 
         <H2>Where this is going</H2>
         <P>
           The field is slowly moving toward all of this. Data spent two decades
-          under IT, a cost center with the lights kept on. The Chief Data
-          Officer emerged to pull it up and out, and the title has since
-          absorbed analytics and then AI, cycling through CDO, CDAO, Chief AI
-          Officer. The direction of travel is real: data climbing from the
+          under IT, treated as a cost to control rather than a capability to
+          build. The Chief Data Officer emerged to pull it up and out, and the
+          title has since absorbed analytics and then AI, cycling through CDO,
+          CDAO, CAIDO. The direction of travel is real: data climbing from the
           basement toward the place decisions get made.
         </P>
         <P>
