@@ -2150,6 +2150,15 @@ export const ESSAYS: Essay[] = [
           the seat just isn’t always called what the principle expects.
         </P>
         <P>
+          In clinical organizations — hospitals, health systems, integrated
+          care networks — the same role is often the Chief Medical Information
+          Officer (CMIO), who sits at the bridge between clinical operations,
+          IT, and data. Where the CMIO’s mandate covers cross-functional
+          adoption — clinical, operational, financial — rather than just EHR
+          governance, the principle holds: it is the integration seat for
+          clinical analytics, even though the title looks sector-specific.
+        </P>
+        <P>
           That is the principle, and it is worth stating without a single
           acronym in it:
         </P>
