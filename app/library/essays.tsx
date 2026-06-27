@@ -3293,6 +3293,27 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
+          The same gap now carries a second cost, and it arrives as
+          consumption rather than confusion. When an analyst recalculated
+          persistence eight ways, the institution was spending labor it had
+          already paid for in salary. When an agent does that work, each
+          version it computes is a metered call against a model. Ask an agent
+          for the persistence rate against ungoverned definitions and it has
+          no basis to pick one; it can compute every plausible version, or
+          recompute the same one on every request, because nothing in the
+          data told it which definition the question meant. The stuck meeting
+          was the human-scale symptom of missing definitional reconciliation.
+          Metered recomputation is the machine-scale symptom of the same
+          missing thing. A governed number that names which definition feeds
+          which obligation does not just end the disagreement; it keeps the
+          agent from paying to generate versions no one asked for. The
+          semantic layer was always a correctness control. Pointed at an
+          agent that runs at machine cadence and bills per call, it becomes
+          a consumption control too, and the spend, like the disagreement,
+          traces back to whether the words were settled first.
+        </P>
+
+        <P>
           The work that closed the gap was not a framework. It was
           definitional reconciliation. The team mapped every reporting
           obligation to its required definition. Each definition was named
@@ -3521,11 +3542,22 @@ export const ESSAYS: Essay[] = [
             Those second-question elements together are what I will call
             the governance contract: the explicit, named understanding
             that turns integrated bytes into something a stakeholder can
-            act on with authority. This essay is about that contract, and
+            act on with authority — an operational agreement the
+            institution writes for itself and can enforce internally, not
+            a legal document. This essay is about that contract, and
             about what it has looked like across three eras of
-            integration — legacy, modern, and the agentic era now
+            integration: legacy, modern, and the agentic era now
             arriving. The engineering changes. The contract has to change
             with it. The governance gap, in most institutions, does not.
+            I have named this same gap, in a field note, a{" "}
+            <a
+              href="/library/blown-assignment"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              blown assignment
+            </a>
+            : the dashboard runs and nobody wrote the contract that says
+            who acts on the number, with what authority, on what cadence.
           </p>
         </Brief>
 
@@ -3827,6 +3859,27 @@ export const ESSAYS: Essay[] = [
           it.”
         </P>
 
+        <P>
+          Consumption is the fourth extension, and the one institutions
+          notice last because it arrives as an invoice rather than an
+          incident. When a human runs a query, the cost is a salary the
+          institution has already paid. When an agent runs a query, the
+          institution pays per call, and an agent that reads across six
+          systems to answer one question can run that question hundreds of
+          times a day without anyone having decided it should. The contract
+          that governed who is allowed to write a record now has to govern
+          what an agent is allowed to spend to produce one: which workloads
+          may call a premium model and which are routed to a cheaper one,
+          and how the consumption is attributed back to the program or
+          department whose workflow generated it, so the spend has an owner
+          who can be asked about it. An institution that writes the read,
+          write, consent, provenance, and reversibility contracts and skips
+          the consumption contract discovers the gap the way it discovers
+          every other ungoverned seam: after the fact, when the bill
+          arrives and no one can say which workflow produced it or whether
+          it was worth producing.
+        </P>
+
         <H2>Higher ed and the agentic era</H2>
 
         <P>
@@ -3836,8 +3889,20 @@ export const ESSAYS: Essay[] = [
           advising notes are landing. AI tutors writing to gradebooks are
           landing. The institution will have the integration. It will
           have, mostly, the engineering. What it will not have, in most
-          cases, is the contract layer. Who is allowed to write a
-          gradebook entry on behalf of an AI tutor? What is the consent
+          cases, is the contract layer. That gap is not unique to higher
+          education: in a{" "}
+          <a
+            href="https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            2026 Deloitte survey of more than three thousand technology and
+            business leaders
+          </a>
+          , only about one in five reported a mature governance model for
+          agentic AI, while adoption ran well ahead of it. Who is allowed
+          to write a gradebook entry on behalf of an AI tutor? What is the consent
           envelope under which a financial-aid agent moves a student
           between aid scenarios? When the advising assistant writes a
           recommendation into a student’s record that the advisor never
@@ -3869,9 +3934,9 @@ export const ESSAYS: Essay[] = [
           era. Engineering moves the bytes. Architecture stages them.
           Governance contracts (who reads, who writes, on what cadence,
           with what consent, with what provenance, with what reversibility,
-          with what authority to act) turn fragmented bytes into
-          decision-ready institutional intelligence stakeholders can stand
-          behind. Without those contracts, the integration runs and the
+          with what consumption, with what authority to act) turn
+          fragmented bytes into decision-ready institutional intelligence
+          stakeholders can stand behind. Without those contracts, the integration runs and the
           data on the other side stays fragmented to anyone trying to act
           on it. With those contracts, fragmented bytes become
           decision-ready intelligence: a 360 view for the CEO,
