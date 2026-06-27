@@ -21,6 +21,7 @@ export function generateMetadata({
   if (!essay) {
     return { title: "Essay not found — Analytic Bytes" };
   }
+  const coverUrl = `https://analyticbytes.systems${essay.cover}`;
   return {
     title: `${essay.title} — Analytic Bytes`,
     description: essay.subtitle,
@@ -29,11 +30,20 @@ export function generateMetadata({
       description: essay.subtitle,
       type: "article",
       url: `https://analyticbytes.systems/library/${essay.slug}`,
+      images: [
+        {
+          url: coverUrl,
+          width: 1200,
+          height: 630,
+          alt: `Cover illustration for ${essay.title}`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${essay.title} — Analytic Bytes Library`,
       description: essay.subtitle,
+      images: [coverUrl],
     },
   };
 }

@@ -295,6 +295,23 @@ function SeeAlsoItem({
 // PIECE TYPE + REGISTRY
 // ---------------------------------------------------------------------
 
+/** Soft taxonomy for navigating the library. Each piece belongs to one
+ * primary arc; pieces that bridge arcs (e.g. CBS sits across seam-contracts
+ * and governance) get the most-central arc. Used to render the arc pill on
+ * /library and as a future filter dimension. */
+export type Arc =
+  | "decision-systems"
+  | "measurement"
+  | "seam-contracts"
+  | "governance";
+
+export const ARC_LABELS: Record<Arc, string> = {
+  "decision-systems": "Decision systems",
+  measurement: "Measurement",
+  "seam-contracts": "Seam contracts",
+  governance: "Governance",
+};
+
 export type Essay = {
   kind: "essay" | "field-note";
   slug: string;
@@ -305,6 +322,7 @@ export type Essay = {
   readingTime: string; // "11 min read"
   summary: string; // 1–2 lines, for the /library index
   cover: string; // /library/covers/[file].svg
+  arc: Arc; // primary arc for navigation + future filtering
   hidden?: boolean; // if true, hidden from /library feed, homepage Library section, and route generation
   body: ReactNode;
 };
@@ -324,6 +342,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why BI tool selection is the last decision, not the first — and the three reporting surfaces most analytics products owe their audiences.",
     cover: "/library/covers/three-surfaces-one-keystone.svg",
+    arc: "decision-systems",
     body: (
       <>
         <Brief>
@@ -654,21 +673,21 @@ export const ESSAYS: Essay[] = [
           decision-ready</I> is the distance that sequence closes.
         </P>
 
-        <SeeAlso>
+                <SeeAlso>
           <SeeAlsoItem
             slug="where-should-data-sit"
             title="Where Should Data Sit?"
             gloss="Who owns the function that owes these surfaces, and where it sits on the org chart."
           />
           <SeeAlsoItem
-            slug="the-contracts-between-systems"
-            title="The contracts between systems"
-            gloss="What the bytes have to carry between systems to make the surfaces actionable."
-          />
-          <SeeAlsoItem
             slug="the-take-home-test"
             title="The Take-Home Test"
             gloss="What it looks like when an organization asks for a dashboard instead of a decision."
+          />
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The measurement integrity behind whatever number ends up on the surface."
           />
         </SeeAlso>
 
@@ -696,6 +715,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
     cover: "/library/covers/when-genai-redesigned-my-dashboard.svg",
+    arc: "decision-systems",
     body: (
       <>
         <Brief>
@@ -916,16 +936,21 @@ export const ESSAYS: Essay[] = [
           designing for itself and starts designing for the decision.
         </P>
 
-        <SeeAlso>
+                <SeeAlso>
           <SeeAlsoItem
             slug="three-surfaces-one-keystone"
             title="Three Surfaces, One Keystone"
             gloss="Why the surface mattered in the first place — and which of the three this redesign served."
           />
           <SeeAlsoItem
-            slug="what-is-this-system-measuring"
-            title="What is this system actually measuring?"
-            gloss="What a GenAI redesign cannot fix, because it isn’t a measurement question."
+            slug="the-take-home-test"
+            title="The Take-Home Test"
+            gloss="The pattern this redesign worked against: organizations asking for a dashboard instead of a decision."
+          />
+          <SeeAlsoItem
+            slug="actions-not-answers"
+            title="Actions, Not Answers"
+            gloss="The related discipline: a surface should drive action, not just describe."
           />
         </SeeAlso>
 
@@ -955,6 +980,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Where AI belongs in the modern data stack, and the single contract that keeps every AI feature honest.",
     cover: "/library/covers/grounding-the-ai-layer.svg",
+    arc: "measurement",
     body: (
       <>
         <Brief>
@@ -1458,6 +1484,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why national education data, classroom assessments, and local instruments are most useful stitched together — and what the integration architecture looks like.",
     cover: "/library/covers/lo-2-0-stitching-the-layers.svg",
+    arc: "decision-systems",
     body: (
       <>
         <Brief>
@@ -1789,6 +1816,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Burden and disparity are two different signals in the same CDC mortality data. The priority list you build from one is not the list you build from the other — and a framework that shows both changes where the next prevention dollar goes.",
     cover: "/library/covers/burden-disparity-and-the-next-dollar.svg",
+    arc: "measurement",
     body: (
       <>
         <Brief>
@@ -2088,6 +2116,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Who owns data infrastructure is one of the org chart’s most muddled questions. The fix is not a better title; it is a principle — report to the integration seat, never to a single function.",
     cover: "/library/covers/where-should-data-sit.svg",
+    arc: "decision-systems",
     body: (
       <>
         <Brief>
@@ -2403,7 +2432,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="plumbing-got-upgraded-water-didnt"
             title="Plumbing got upgraded. The water didn’t."
-            gloss="The work-side argument for the same seat question: what people call plumbing has become governance, which is why it shouldn’t sit under the CTO."
+            gloss="The work-side argument: what people call plumbing has become water-authority work — which is what makes the seat question worth asking."
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
@@ -2441,6 +2470,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Agentic AI produces actions, not answers — and the human checkpoint that came free with every answer is gone unless you design it back in. Why agentic adoption is a decision-system question, not a technology one.",
     cover: "/library/covers/actions-not-answers.svg",
+    arc: "governance",
     body: (
       <>
         <Brief>
@@ -2802,6 +2832,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Universities have built the scaffolding to govern AI and left out a load-bearing pillar: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
     cover: "/library/covers/what-is-this-system-measuring.svg",
+    arc: "measurement",
     body: (
       <>
         <Brief>
@@ -3170,6 +3201,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
     cover: "/library/covers/the-take-home-test.svg",
+    arc: "decision-systems",
     hidden: false,
     body: (
       <>
@@ -3423,6 +3455,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Two people read different student-persistence numbers from the same data. The governance council is functioning. The framework looks complete. What's broken is definitional, and the work to fix it is the work most councils skip.",
     cover: "/library/covers/numbers-dont-agree.svg",
+    arc: "governance",
     hidden: false,
     body: (
       <>
@@ -3732,6 +3765,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Integration is two questions stacked on top of each other: do the bytes move, and when they arrive, can anyone act on them. Institutions have answered the first across three eras and skipped the second, and the agentic era is about to make that gap load-bearing.",
     cover: "/library/covers/the-contracts-between-systems.svg",
+    arc: "seam-contracts",
     hidden: false,
     body: (
       <>
@@ -4218,6 +4252,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "The data integration layer is mostly solved — the pipes have been industrialized. The work that remains is closer to running a water authority: sourcing, testing, pressure, authority, who’s allowed to drink. The unglamorous part isn’t the pipes anymore. It’s the water.",
     cover: "/library/covers/plumbing-got-upgraded-water-didnt.svg",
+    arc: "seam-contracts",
     body: (
       <>
         <Brief>
@@ -4523,6 +4558,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Most cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead — alignment, assignment, execution — and each phase fails differently. A communication-issue diagnosis collapses all three and fixes none.",
     cover: "/library/covers/blown-assignment.svg",
+    arc: "seam-contracts",
     body: (
       <>
         <Brief>

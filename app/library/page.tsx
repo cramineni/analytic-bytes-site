@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import type { Metadata } from "next";
-import { ESSAYS } from "./essays";
+import { ESSAYS, ARC_LABELS, type Arc } from "./essays";
 
 export const metadata: Metadata = {
   title: "Library — Analytic Bytes",
@@ -31,6 +31,7 @@ type Entry = {
   summary: string;
   url?: string;
   image?: string;
+  arc?: Arc; // only set on essays/field-notes; artifacts are arc-less
 };
 
 // Artifacts — figures from the analytical work (architecture diagrams,
@@ -141,6 +142,7 @@ const ENTRIES: Entry[] = ESSAYS.filter((e) => !e.hidden).map(
     date: e.date,
     summary: e.summary,
     url: `/library/${e.slug}`,
+    arc: e.arc,
   })
 ).sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
@@ -315,6 +317,13 @@ function TextEntry({ entry }: { entry: Entry }) {
             <p className="text-ink-2 text-[14px] sm:text-[15px] mt-2 leading-[1.5] max-w-[64ch]">
               {entry.summary}
             </p>
+          ) : null}
+          {entry.arc ? (
+            <div className="mt-3">
+              <span className="inline-flex items-center font-mono text-[10.5px] tracking-[0.12em] uppercase text-ink-2 border border-line-2 rounded-sm px-2 py-0.5">
+                {ARC_LABELS[entry.arc]}
+              </span>
+            </div>
           ) : null}
           {!isLink ? (
             <p className="text-ink-3 text-[11px] mt-2 font-mono tracking-[0.04em] uppercase">
