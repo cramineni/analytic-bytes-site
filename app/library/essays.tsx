@@ -4207,8 +4207,8 @@ export const ESSAYS: Essay[] = [
           <p>
             The three failures are different in shape, and each needs a
             different fix. None of those fixes is another meeting. Football
-            coaches have a frame for naming them that travels into
-            cross-functional work better than it has any right to.
+            coaches have a frame for naming them that transfers cleanly into
+            cross-functional work.
           </p>
         </Brief>
 
