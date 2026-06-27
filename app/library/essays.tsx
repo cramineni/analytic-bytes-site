@@ -281,8 +281,8 @@ export const ESSAYS: Essay[] = [
             changes how the organization acts come earlier, and they are not
             technology decisions. They are decisions about which calls your
             teams are trying to make, and whether everyone is working from the
-            same numbers. This is a decision-system question wearing a
-            procurement question’s clothes.
+            same numbers. This is a decision-system question misread as a
+            procurement question.
           </p>
           <p>
             What follows is written for the person who has to build the thing,
@@ -1876,8 +1876,7 @@ export const ESSAYS: Essay[] = [
           comparison group and the White comparison group, a relative risk of at
           least 1.25, and a positive absolute rate difference. Below those
           thresholds, small counts produce rates that swing wildly from year to
-          year, and an unfiltered ranking would be mostly noise wearing the
-          costume of precision.
+          year, and an unfiltered ranking would look precise without being it.
         </P>
         <P>
           <I>Absence of a signal is not evidence of equity.</I> Several states,
@@ -3215,7 +3214,7 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             Most “data problems” are not data problems. They are
-            definitional disagreements wearing a technical disguise.
+            definitional disagreements misread as technical ones.
             “Student persistence” (the rate at which enrolled students
             continue from one period to the next) can mean keeping a
             student from the first day of the school year to the last day.
