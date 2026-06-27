@@ -2134,6 +2134,15 @@ export const ESSAYS: Essay[] = [
           ownership should migrate to it.
         </P>
         <P>
+          In MEL-heavy organizations — foundations, intermediaries with a
+          strong measurement mandate — the Chief Impact Officer can function as
+          the integration seat for measurement and program data. That holds
+          when the role’s scope actually covers cross-functional adoption
+          rather than just impact reporting. Where it does, it is the
+          integration seat for that organization, and the principle holds —
+          the seat just isn’t always called what the principle expects.
+        </P>
+        <P>
           That is the principle, and it is worth stating without a single
           acronym in it:
         </P>
@@ -2164,11 +2173,13 @@ export const ESSAYS: Essay[] = [
           to. The same data capability, sometimes the same people, sat under a
           research division at one organization, under the business at another,
           under a COO at a third. At one, it was moved mid-year from one
-          executive to another and renamed on the way. The capability did not
-          change across those moves. Its reach did. Under the integrator it
-          served the whole organization. Everywhere else it served whoever it
-          reported to, and the rest of the organization learned to route around
-          it.
+          executive to another and renamed on the way. At another, the role was
+          dissolved and quietly rehired by a different function a year later,
+          which is the placement principle running its own correction in slow
+          motion. The capability did not change across those moves. Its reach
+          did. Under the integrator it served the whole organization. Everywhere
+          else it served whoever it reported to, and the rest of the organization
+          learned to route around it.
         </P>
 
         <H2>The unicorn that isn’t</H2>
@@ -2185,8 +2196,8 @@ export const ESSAYS: Essay[] = [
           role cannot be filled.
         </P>
         <P>
-          Most of the time, the unicorn is not a talent problem. It is a
-          placement problem wearing a talent problem’s clothes. When data
+          Most of the time, the unicorn is not a talent problem. What looks
+          like a talent problem is a placement problem. When data
           infrastructure is buried under IT, or scattered across programs, or
           housed in finance, the person hired to lead it has to personally span
           every layer the org chart failed to connect. They are the only
@@ -3078,6 +3089,12 @@ export const ESSAYS: Essay[] = [
           briefs ask for the first and hope for the second.
         </P>
 
+        <Figure
+          src="/library/figures/dashboard-vs-decision-surface.svg"
+          alt="Two enrollment objects side by side. The left object is a generic dashboard with charts and an unspecified audience. The right object is a decision surface labeled with the owner, the recurring call, and the cadence."
+          caption="Same enrollment data, rendered two ways. The left object is built for an audience; the owner and the call are unspecified. The right object is built backward from a recurring call — where this week’s outreach hours go — with the owner, the cadence, and the decision named on the surface itself."
+        />
+
         <H2>The organization hires a person to be the system it never built</H2>
         <P>
           Several take-homes asked for leadership-grade systems thinking: a
@@ -3157,13 +3174,13 @@ export const ESSAYS: Essay[] = [
           missing, and more often than not you can name the missing part before
           lunch. That is the whole of it. Most organizations do not have a data
           problem. They have a decision-system problem, and a take-home is a
-          short, honest way to watch one happen. <I>From fragmented to
+          short, honest way to surface one. <I>From fragmented to
           decision-ready</I> is the distance between the brief they wrote and the
           brief they meant.
         </P>
 
         <MetaNote>
-          Written June 2026 for the Analytic Bytes Library. Drawn from interview
+          Written May 2026 for the Analytic Bytes Library. Drawn from interview
           performance tasks completed between 2017 and 2026; organizations and
           task specifics are abstracted throughout, and no individual
           organization’s task, scenario detail, or data is reproduced.

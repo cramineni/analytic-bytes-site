@@ -1,0 +1,167 @@
+<svg viewBox="0 0 1600 720" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Dashboard as artifact vs dashboard as decision surface — embed</title>
+<desc>Two-panel comparison for inline use within The Take-Home Test essay. Left: the same enrollment data rendered as a generic monthly board dashboard with no owner, no cadence, no decision. Right: the same data rendered as the Monday-morning surface the enrollment lead decides from, with owner, cadence, and the specific recurring call named. No top header or bottom AB band — those are carried by the page.</desc>
+
+<!-- Background -->
+<rect width="1600" height="720" fill="#FFFFFF"/>
+
+<!-- ===== LEFT PANEL: A DISPLAY ===== -->
+<g transform="translate(80, 20)">
+  <!-- Panel frame -->
+  <rect x="0" y="0" width="680" height="680" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Panel eyebrow -->
+  <rect x="0" y="0" width="680" height="44" fill="#0F2A4A"/>
+  <text x="22" y="29" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#FFFFFF">DASHBOARD AS ARTIFACT</text>
+
+  <!-- Dashboard title -->
+  <text x="22" y="88" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#0F2A4A">Monthly Enrollment Dashboard</text>
+  <text x="22" y="115" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="500" fill="#64748B">Audience: Board · Updated monthly</text>
+
+  <!-- 2x2 chart grid - generic, equally-weighted -->
+
+  <!-- Chart 1: Total enrollment trend line -->
+  <g transform="translate(22, 145)">
+    <rect x="0" y="0" width="305" height="170" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="14" y="22" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#64748B">TOTAL ENROLLMENT</text>
+    <text x="14" y="48" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="800" fill="#0F2A4A">4,827</text>
+    <polyline points="14,135 60,128 106,120 152,115 198,110 244,105 290,102" fill="none" stroke="#0EA5E9" stroke-width="2"/>
+    <line x1="14" y1="155" x2="290" y2="155" stroke="#E2E8F0" stroke-width="1"/>
+  </g>
+
+  <!-- Chart 2: Conversion donut -->
+  <g transform="translate(353, 145)">
+    <rect x="0" y="0" width="305" height="170" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="14" y="22" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#64748B">CONVERSION RATE</text>
+    <text x="14" y="48" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="800" fill="#0F2A4A">63%</text>
+    <!-- donut -->
+    <circle cx="225" cy="105" r="42" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+    <circle cx="225" cy="105" r="42" fill="none" stroke="#0EA5E9" stroke-width="14" stroke-dasharray="166 264" transform="rotate(-90 225 105)"/>
+  </g>
+
+  <!-- Chart 3: Bar chart by region -->
+  <g transform="translate(22, 335)">
+    <rect x="0" y="0" width="305" height="170" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="14" y="22" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#64748B">BY REGION</text>
+    <rect x="40" y="60" width="32" height="80" fill="#0EA5E9"/>
+    <rect x="92" y="80" width="32" height="60" fill="#0EA5E9"/>
+    <rect x="144" y="50" width="32" height="90" fill="#0EA5E9"/>
+    <rect x="196" y="95" width="32" height="45" fill="#0EA5E9"/>
+    <rect x="248" y="70" width="32" height="70" fill="#0EA5E9"/>
+    <line x1="14" y1="145" x2="290" y2="145" stroke="#94A3B8" stroke-width="1"/>
+  </g>
+
+  <!-- Chart 4: KPI tiles -->
+  <g transform="translate(353, 335)">
+    <rect x="0" y="0" width="305" height="170" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="14" y="22" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#64748B">YEAR-OVER-YEAR</text>
+    <text x="14" y="68" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="800" fill="#0F2A4A">+4.2%</text>
+    <text x="14" y="92" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#64748B">vs prior year</text>
+    <text x="14" y="135" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#0EA5E9">▲ on plan</text>
+  </g>
+
+  <!-- Missing fields - explicit gaps -->
+  <g transform="translate(22, 530)">
+    <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#94A3B8">OWNER</text>
+    <text x="0" y="34" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8">unspecified</text>
+    <text x="210" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#94A3B8">CADENCE</text>
+    <text x="210" y="34" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#475569">monthly</text>
+    <text x="420" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#94A3B8">DECISION</text>
+    <text x="420" y="34" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8">unspecified</text>
+  </g>
+
+  <!-- Bottom label -->
+  <line x1="22" y1="600" x2="658" y2="600" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="22" y="640" font-family="Impact, 'Helvetica Neue', 'Arial Black', sans-serif" font-size="36" font-weight="900" letter-spacing="-1" fill="#0F2A4A">A display.</text>
+  <text x="22" y="664" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#64748B">Built for the audience. No call attached.</text>
+</g>
+
+<!-- ===== DIVIDER ===== -->
+<g transform="translate(795, 20)">
+  <line x1="0" y1="20" x2="0" y2="660" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="4 6"/>
+  <circle cx="0" cy="340" r="22" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2"/>
+  <text x="0" y="346" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle" fill="#0EA5E9">VS</text>
+</g>
+
+<!-- ===== RIGHT PANEL: A DECISION SURFACE ===== -->
+<g transform="translate(840, 20)">
+  <!-- Panel frame -->
+  <rect x="0" y="0" width="680" height="680" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2"/>
+
+  <!-- Panel eyebrow -->
+  <rect x="0" y="0" width="680" height="44" fill="#0EA5E9"/>
+  <text x="22" y="29" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#FFFFFF">DASHBOARD AS DECISION SURFACE</text>
+
+  <!-- Dashboard title -->
+  <text x="22" y="88" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#0F2A4A">Enrollment Lead — Monday 8:30 am</text>
+  <text x="22" y="115" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="500" fill="#64748B">Audience: Enrollment Lead · Refreshed weekly</text>
+
+  <!-- The decision, called out at top -->
+  <g transform="translate(22, 145)">
+    <rect x="0" y="0" width="636" height="56" fill="#0F2A4A"/>
+    <text x="18" y="22" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#0EA5E9">THIS WEEK'S CALL</text>
+    <text x="18" y="46" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF">Where do the next 40 outreach hours go?</text>
+  </g>
+
+  <!-- One focused chart: zip codes ranked by gap-to-target -->
+  <g transform="translate(22, 220)">
+    <rect x="0" y="0" width="636" height="280" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="18" y="26" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#475569">ZIP CODES · GAP TO ENROLLMENT TARGET · WEEK 14</text>
+
+    <!-- Bars: horizontal, sorted by gap, color-coded by recommended action -->
+    <g transform="translate(18, 50)">
+      <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">10453</text>
+      <rect x="68" y="2" width="380" height="16" fill="#0EA5E9"/>
+      <text x="456" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#0F2A4A">−112</text>
+      <text x="510" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#0EA5E9">→ SEND TEAM</text>
+    </g>
+    <g transform="translate(18, 82)">
+      <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">11226</text>
+      <rect x="68" y="2" width="298" height="16" fill="#0EA5E9"/>
+      <text x="374" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#0F2A4A">−88</text>
+      <text x="510" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#0EA5E9">→ SEND TEAM</text>
+    </g>
+    <g transform="translate(18, 114)">
+      <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">10458</text>
+      <rect x="68" y="2" width="220" height="16" fill="#0EA5E9" opacity="0.7"/>
+      <text x="296" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#0F2A4A">−65</text>
+      <text x="510" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#0F2A4A">→ CALL LIST</text>
+    </g>
+    <g transform="translate(18, 146)">
+      <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">10467</text>
+      <rect x="68" y="2" width="142" height="16" fill="#0EA5E9" opacity="0.5"/>
+      <text x="218" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#0F2A4A">−41</text>
+      <text x="510" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#0F2A4A">→ CALL LIST</text>
+    </g>
+    <g transform="translate(18, 178)">
+      <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">11216</text>
+      <rect x="68" y="2" width="62" height="16" fill="#94A3B8"/>
+      <text x="138" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#475569">−18</text>
+      <text x="510" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#64748B">→ MONITOR</text>
+    </g>
+    <g transform="translate(18, 210)">
+      <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">11221</text>
+      <rect x="68" y="2" width="32" height="16" fill="#94A3B8"/>
+      <text x="108" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#475569">−9</text>
+      <text x="510" y="15" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#64748B">→ MONITOR</text>
+    </g>
+
+    <text x="18" y="262" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#64748B">Sorted by absolute gap. Recommended action drawn from prior-year conversion lift per outreach hour.</text>
+  </g>
+
+  <!-- Named fields - explicit -->
+  <g transform="translate(22, 530)">
+    <text x="0" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0EA5E9">OWNER</text>
+    <text x="0" y="34" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">Enrollment Lead</text>
+    <text x="210" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0EA5E9">CADENCE</text>
+    <text x="210" y="34" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">Every Mon, 8:30 am</text>
+    <text x="420" y="14" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#0EA5E9">DECISION</text>
+    <text x="420" y="34" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">Where outreach goes</text>
+  </g>
+
+  <!-- Bottom label -->
+  <line x1="22" y1="600" x2="658" y2="600" stroke="#0EA5E9" stroke-width="1"/>
+  <text x="22" y="640" font-family="Impact, 'Helvetica Neue', 'Arial Black', sans-serif" font-size="36" font-weight="900" letter-spacing="-1" fill="#0EA5E9">A decision surface.</text>
+  <text x="22" y="664" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#64748B">Built backward from a decision, an owner, and a cadence.</text>
+</g>
+</svg>
