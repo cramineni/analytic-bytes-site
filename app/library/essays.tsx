@@ -232,6 +232,65 @@ function Figure({
   );
 }
 
+/** Inline cross-link to another library piece. Use mid-essay when prose
+ * naturally invokes another piece's argument. Looks the same as an external
+ * link; the slug-based href keeps the navigation consistent. */
+function InternalLink({
+  slug,
+  children,
+}: {
+  slug: string;
+  children: ReactNode;
+}) {
+  return (
+    <a
+      href={`/library/${slug}`}
+      className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+    >
+      {children}
+    </a>
+  );
+}
+
+/** End-of-essay "Read next" block — pairs the piece with 2-3 related pieces
+ * along the same arc. Rendered before the MetaNote so the navigation lands
+ * while the reader is still in the mood to follow it. */
+function SeeAlso({ children }: { children: ReactNode }) {
+  return (
+    <aside className="mt-12 pt-6 border-t border-line">
+      <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+        Read next
+      </div>
+      <ul className="list-none p-0 m-0 space-y-3">{children}</ul>
+    </aside>
+  );
+}
+
+/** A single item inside a SeeAlso block. Title links to /library/[slug];
+ * gloss is a short one-line description of the connection (not a summary
+ * of the linked piece). */
+function SeeAlsoItem({
+  slug,
+  title,
+  gloss,
+}: {
+  slug: string;
+  title: string;
+  gloss: string;
+}) {
+  return (
+    <li className="leading-[1.55] text-[14.5px] sm:text-[15px]">
+      <a
+        href={`/library/${slug}`}
+        className="text-ink hover:text-accent no-underline font-semibold"
+      >
+        {title}
+      </a>
+      <span className="text-ink-2"> — {gloss}</span>
+    </li>
+  );
+}
+
 // ---------------------------------------------------------------------
 // PIECE TYPE + REGISTRY
 // ---------------------------------------------------------------------
@@ -595,6 +654,24 @@ export const ESSAYS: Essay[] = [
           decision-ready</I> is the distance that sequence closes.
         </P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where Should Data Sit?"
+            gloss="Who owns the function that owes these surfaces, and where it sits on the org chart."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="What the bytes have to carry between systems to make the surfaces actionable."
+          />
+          <SeeAlsoItem
+            slug="the-take-home-test"
+            title="The Take-Home Test"
+            gloss="What it looks like when an organization asks for a dashboard instead of a decision."
+          />
+        </SeeAlso>
+
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. Tool capabilities and
           product names cited reflect that period; the architectural argument is
@@ -838,6 +915,19 @@ export const ESSAYS: Essay[] = [
           decision-ready</I> is the distance a data team closes when it stops
           designing for itself and starts designing for the decision.
         </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="three-surfaces-one-keystone"
+            title="Three Surfaces, One Keystone"
+            gloss="Why the surface mattered in the first place — and which of the three this redesign served."
+          />
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="What a GenAI redesign cannot fix, because it isn’t a measurement question."
+          />
+        </SeeAlso>
 
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. Tool capabilities and
@@ -1325,6 +1415,24 @@ export const ESSAYS: Essay[] = [
           with the AI layer held to the same standard as everything beneath it.
         </P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The measurement-science question every adopted AI system should answer."
+          />
+          <SeeAlsoItem
+            slug="lo-2-0-stitching-the-layers"
+            title="LO 2.0, Stitching the Layers"
+            gloss="How the layers below the AI layer get composed into something usable."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="What the agentic-era contract has to specify, beyond engineering integration."
+          />
+        </SeeAlso>
+
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. Tool capabilities,
           product names, and feature specifics cited reflect that period; the
@@ -1643,6 +1751,19 @@ export const ESSAYS: Essay[] = [
           system.
         </P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="grounding-the-ai-layer"
+            title="Grounding the AI Layer"
+            gloss="Why the AI layer needs the layers beneath it to actually hold."
+          />
+          <SeeAlsoItem
+            slug="three-surfaces-one-keystone"
+            title="Three Surfaces, One Keystone"
+            gloss="The three surfaces the stitched-together layers exist to feed."
+          />
+        </SeeAlso>
+
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. State-level findings
           reflect NAS 2021 and PGI 2022–23 cycles; subsequent NAS 2024 and PGI
@@ -1927,6 +2048,19 @@ export const ESSAYS: Essay[] = [
           struggling, the 988 Suicide &amp; Crisis Lifeline (call or text 988)
           is available 24/7 in the US.
         </Note>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="actions-not-answers"
+            title="Actions, Not Answers"
+            gloss="What it takes to turn a disparity signal into a decision someone owns."
+          />
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The measurement discipline beneath a fairness claim."
+          />
+        </SeeAlso>
 
         <MetaNote>
           Exploratory analysis of CDC WONDER provisional mortality data,
@@ -2265,6 +2399,24 @@ export const ESSAYS: Essay[] = [
           built, with where the function sits.
         </P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="three-surfaces-one-keystone"
+            title="Three Surfaces, One Keystone"
+            gloss="The reporting surfaces the function owes once it has the right seat."
+          />
+          <SeeAlsoItem
+            slug="the-take-home-test"
+            title="The Take-Home Test"
+            gloss="What happens when the function is asked for outputs without a decision attached."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="The integration layer that decision-serving sits on top of."
+          />
+        </SeeAlso>
+
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. An argued position
           piece; the honest case for each alternative is made in earnest before
@@ -2600,6 +2752,19 @@ export const ESSAYS: Essay[] = [
           decision-ready</I> was always the work. Agentic AI did not change
           that. It only raised the price of skipping it.
         </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="burden-disparity-and-the-next-dollar"
+            title="Burden, Disparity, and the Next Dollar"
+            gloss="A disparity signal that needed an action, not an answer."
+          />
+          <SeeAlsoItem
+            slug="numbers-dont-agree"
+            title="The numbers don’t agree because the words don’t"
+            gloss="When the words underneath the answer were never settled to begin with."
+          />
+        </SeeAlso>
 
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. The argument adapts
@@ -2956,6 +3121,24 @@ export const ESSAYS: Essay[] = [
           </p>
         </div>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="grounding-the-ai-layer"
+            title="Grounding the AI Layer"
+            gloss="What grounding means before any measurement question gets asked."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="The agentic-era contract that says who can stand behind an AI-inferred number."
+          />
+          <SeeAlsoItem
+            slug="blown-assignment"
+            title="It’s a blown assignment"
+            gloss="When what looks like a measurement problem is actually a missing assignment."
+          />
+        </SeeAlso>
+
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. The argument draws
           on measurement-science practice and is intended to outlast specific
@@ -3195,6 +3378,24 @@ export const ESSAYS: Essay[] = [
           decision-ready</I> is the distance between the brief they wrote and the
           brief they meant.
         </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="three-surfaces-one-keystone"
+            title="Three Surfaces, One Keystone"
+            gloss="The surface the take-home asks for vs. the surface that would actually serve a decision."
+          />
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where Should Data Sit?"
+            gloss="The placement question that the take-home brief rarely names."
+          />
+          <SeeAlsoItem
+            slug="blown-assignment"
+            title="It’s a blown assignment"
+            gloss="What gets called a data problem on the surface and turns out not to be."
+          />
+        </SeeAlso>
 
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. Drawn from interview
@@ -3486,6 +3687,24 @@ export const ESSAYS: Essay[] = [
           answered until someone does.
         </P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="The integration governance that sits on top of definitional reconciliation."
+          />
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where Should Data Sit?"
+            gloss="The seat that has the standing to make a shared definition stick."
+          />
+          <SeeAlsoItem
+            slug="blown-assignment"
+            title="It’s a blown assignment"
+            gloss="When the disagreement is read as a communication problem."
+          />
+        </SeeAlso>
+
         <MetaNote>
           Written June 2026 for the Analytic Bytes Library by Chaitanya
           Ramineni. Cases described are drawn from the author’s practice
@@ -3550,12 +3769,7 @@ export const ESSAYS: Essay[] = [
             arriving. The engineering changes. The contract has to change
             with it. The governance gap, in most institutions, does not.
             I have named this same gap, in a field note, a{" "}
-            <a
-              href="/library/blown-assignment"
-              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-            >
-              blown assignment
-            </a>
+            <InternalLink slug="blown-assignment">blown assignment</InternalLink>
             : the dashboard runs and nobody wrote the contract that says
             who acts on the number, with what authority, on what cadence.
           </p>
@@ -3953,6 +4167,24 @@ export const ESSAYS: Essay[] = [
           needed. In the next one they will be load-bearing.
         </P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="plumbing-got-upgraded-water-didnt"
+            title="Plumbing got upgraded. The water didn’t."
+            gloss="Why the pipes got industrialized and the contracts didn’t."
+          />
+          <SeeAlsoItem
+            slug="blown-assignment"
+            title="It’s a blown assignment"
+            gloss="The same gap as a missed assignment on a play, in field-note form."
+          />
+          <SeeAlsoItem
+            slug="numbers-dont-agree"
+            title="The numbers don’t agree because the words don’t"
+            gloss="The shared definitions the contracts have to govern."
+          />
+        </SeeAlso>
+
         <MetaNote>
           This essay was written in June 2026 for the Analytic Bytes
           Library. It draws on the author’s practice across K–8 charter
@@ -4232,6 +4464,24 @@ export const ESSAYS: Essay[] = [
         <P>Plumbing got upgraded. The water didn’t.</P>
         <P>That’s the work.</P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="What the water-authority layer actually has to specify across three eras."
+          />
+          <SeeAlsoItem
+            slug="blown-assignment"
+            title="It’s a blown assignment"
+            gloss="Why the dashboard runs and the play doesn’t."
+          />
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The water-safety question for AI systems specifically."
+          />
+        </SeeAlso>
+
         <MetaNote>
           This field note was written in June 2026 for the Analytic
           Bytes Library. The longer arguments referenced here live in
@@ -4371,6 +4621,24 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>The plumbing got upgraded. The play didn’t.</P>
         <P>That’s the work.</P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="plumbing-got-upgraded-water-didnt"
+            title="Plumbing got upgraded. The water didn’t."
+            gloss="Why the play isn’t in the box the modern data stack ships."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="What the written-down play actually has to specify."
+          />
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where Should Data Sit?"
+            gloss="Who has the standing to hold the cross-functional contract."
+          />
+        </SeeAlso>
 
         <MetaNote>
           Written June 2026 for the Analytic Bytes Library. Composite of
