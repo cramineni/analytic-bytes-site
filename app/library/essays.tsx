@@ -4200,18 +4200,14 @@ export const ESSAYS: Essay[] = [
         <Brief>
           <p>
             Most cross-functional breakdowns get diagnosed as a communication
-            issue and answered with another meeting. But cross-functional work
-            isn’t a conversation. It’s a football play — eleven specialists,
-            one designed sequence, executed in a coordinated burst against a
-            defense built to break it.
+            issue and answered with another meeting. The diagnosis collapses
+            three different failure modes into one, and the meeting can name
+            the breakdown without repairing any of them.
           </p>
           <p>
-            Football coaches drill three words for the play. Alignment.
-            Assignment. Execute. Know where you stand. Know what you do. Run
-            the play. Three phases, three failure modes, three different fixes.
-            A “communication issue” diagnosis collapses all of them into one
-            and fixes none. This piece names the three and what each one
-            actually needs.
+            This field note names the three using a frame football coaches
+            drill for the play, points to where each failure actually breaks,
+            and shows why the meeting can’t close any of them.
           </p>
         </Brief>
 
