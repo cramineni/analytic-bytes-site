@@ -252,6 +252,26 @@ function InternalLink({
   );
 }
 
+/** Inline link to an artifact in the /library gallery. Use mid-essay only
+ * when prose explicitly invokes the diagram or frame the artifact depicts.
+ * Anchors directly to the artifact card via id="artifact-{slug}". */
+function ArtifactLink({
+  slug,
+  children,
+}: {
+  slug: string;
+  children: ReactNode;
+}) {
+  return (
+    <a
+      href={`/library#artifact-${slug}`}
+      className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+    >
+      {children}
+    </a>
+  );
+}
+
 /** End-of-essay "Read next" block — pairs the piece with 2-3 related pieces
  * along the same arc. Rendered before the MetaNote so the navigation lands
  * while the reader is still in the mood to follow it. */
@@ -534,6 +554,12 @@ export const ESSAYS: Essay[] = [
           once, in code, tested, and version-controlled. <C>dbt</C> is the
           dominant choice for this on the warehouse side, but the principle is
           older than the tool. It is just one canonical computation per concept.
+          The{" "}
+          <ArtifactLink slug="decision-system-reference-architecture">
+            reference architecture
+          </ArtifactLink>{" "}
+          places the semantic layer as the keystone of the whole stack, feeding
+          AI and reporting alike — so every surface sees the same number.
         </P>
         <P>
           In practice, each metric has a single materialization. Domain
@@ -4265,9 +4291,13 @@ export const ESSAYS: Essay[] = [
             Why <I>plumbing</I> stopped being the right word for the
             work, and what the work is now: the water itself —
             sourcing, testing, pressure, authority, who’s allowed to
-            drink. The contract at the seam, not the pipe in the wall.
-            The gap between <I>we have a data warehouse</I>{" "}
-            and <I>we can make a decision.</I>
+            drink. The{" "}
+            <ArtifactLink slug="contract-at-the-seam">
+              contract at the seam
+            </ArtifactLink>
+            , not the pipe in the wall. The gap between{" "}
+            <I>we have a data warehouse</I> and{" "}
+            <I>we can make a decision.</I>
           </p>
         </Brief>
 
@@ -4664,8 +4694,9 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The fix is the play. Written down. Owned by named roles. With the
-          contingencies designed in. That’s the seam contract. That’s the
-          artifact the modern data stack does not ship in the box.
+          contingencies designed in. That’s the{" "}
+          <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>
+          . That’s the artifact the modern data stack does not ship in the box.
         </P>
         <P>The plumbing got upgraded. The play didn’t.</P>
         <P>That’s the work.</P>

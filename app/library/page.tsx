@@ -32,6 +32,7 @@ type Entry = {
   url?: string;
   image?: string;
   arc?: Arc; // only set on essays/field-notes; artifacts are arc-less
+  slug?: string; // only set on artifacts; used to render anchor id for cross-links
 };
 
 // Artifacts — figures from the analytical work (architecture diagrams,
@@ -46,6 +47,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "Integration moves the data. The contract makes the judgment. A tool- and sector-agnostic diagram of what the contract specifies that integration cannot — who owns the action, what data and at what resolution, on what cadence, and what decision the signal should trigger. The seam between delivered data and made decisions.",
     image: "/library/artifacts/contract-at-the-seam.svg",
+    slug: "contract-at-the-seam",
   },
   {
     type: "artifact",
@@ -53,6 +55,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "A tool-agnostic reference architecture: sources through integration, warehouse, and the semantic-layer keystone to AI and the reporting surfaces, with a governance rail across every layer and a learning loop that closes the system.",
     image: "/library/artifacts/decision-system-reference-architecture.svg",
+    slug: "decision-system-reference-architecture",
   },
   {
     type: "artifact",
@@ -60,6 +63,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "The same six-layer architecture instantiated three ways — Microsoft/Fabric, the modern data stack, and lean/open — showing the tools swap while the architecture holds. The semantic layer is the keystone in all three.",
     image: "/library/artifacts/one-architecture-three-stacks.svg",
+    slug: "one-architecture-three-stacks",
   },
   {
     type: "artifact",
@@ -67,6 +71,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "An agentic-AI architecture: five named agents — Data, Analysis, Insight, Execution, Monitoring — operating the Signal–Decision–Action loop, with monitoring closing the loop and a human-in-the-loop rail across every agent. The system around the model, not the model itself, is the architecture.",
     image: "/library/artifacts/agent-system.svg",
+    slug: "agent-system",
   },
   {
     type: "artifact",
@@ -74,6 +79,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "AI raises both an organization's decision load and its decision capacity. Whether the gap closes or opens is a design choice. Deploy without redesign and a leader quietly becomes the buffer the system never built. Design for capacity expansion and the system absorbs what was previously personal.",
     image: "/library/artifacts/decision-load-vs-capacity.svg",
+    slug: "decision-load-vs-capacity",
   },
   {
     type: "artifact",
@@ -81,6 +87,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "The four-target view of the AI scoring trap: a model can agree with human raters at a high rate (reliable) and still measure the wrong thing (invalid) — a tight cluster, off the bullseye.",
     image: "/library/artifacts/reliability-vs-validity.svg",
+    slug: "reliability-vs-validity",
   },
   {
     type: "artifact",
@@ -88,6 +95,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "Five rungs of evidence for an AI system. Most AI scoring stops at rung three — agreement with human raters — when the real bar is rung four: does the score predict the outcome it was built to predict?",
     image: "/library/artifacts/validity-ladder.svg",
+    slug: "validity-ladder",
   },
   {
     type: "artifact",
@@ -95,6 +103,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "Fairness reframed as validity asked one subgroup at a time. An aggregate accuracy number can look fine while the model quietly degrades for smaller groups — differential prediction hiding under the average.",
     image: "/library/artifacts/fair-for-whom.svg",
+    slug: "fair-for-whom",
   },
   {
     type: "artifact",
@@ -102,6 +111,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "The measurement-and-evaluation architecture that turns monitoring into learning: a living theory of change as keystone, harmonized assessments, and one semantic layer so every audience sees numbers that agree.",
     image: "/library/artifacts/evidence-spine.svg",
+    slug: "evidence-spine",
   },
   {
     type: "artifact",
@@ -109,6 +119,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "A sixteen-row translation table from educational measurement vocabulary to medical diagnostics — across foundations (validity, reliability), models (IRT and ROC, standard setting and thresholds, equating and calibration), bias and equity, stakes and decisions, standards and integrity, and the inferential closer: validity argument and differential diagnosis. Different instruments; the discipline is the same.",
     image: "/library/artifacts/measurement-equals-diagnostics.svg",
+    slug: "measurement-equals-diagnostics",
   },
   {
     type: "artifact",
@@ -116,6 +127,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "An eighteen-row translation table mapping higher-education data and analytics vocabulary onto healthcare equivalents — across outcomes, throughput, advising and care navigation, support programs, infrastructure (SIS/EHR, NSC/HIE, 1EdTech/FHIR), regulation, accountability, equity, and integrative philosophy. Different sectors; the discipline is the same.",
     image: "/library/artifacts/higher-ed-equals-healthcare.svg",
+    slug: "higher-ed-equals-healthcare",
   },
   {
     type: "artifact",
@@ -123,6 +135,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "An eighteen-row translation table mapping K-12 data and analytics vocabulary onto healthcare equivalents — across outcomes, intervention workflow, infrastructure, regulation, accountability, and integrative philosophy. Different sectors; the discipline is the same.",
     image: "/library/artifacts/k12-equals-healthcare.svg",
+    slug: "k12-equals-healthcare",
   },
   {
     type: "artifact",
@@ -130,6 +143,7 @@ const ARTIFACTS: Entry[] = [
     summary:
       "A fourteen-term translation table from commercial vocabulary — GTM, audience, segmentation, funnel, conversion, KPIs, OKRs, ROI, LTV, runway, churn, A/B testing, MVP, CI/CD — to its mission-driven equivalents. Different bottom line; the discipline is the same.",
     image: "/library/artifacts/commercial-equals-mission.svg",
+    slug: "commercial-equals-mission",
   },
 ];
 
@@ -269,17 +283,21 @@ function ArtifactCard({ entry }: { entry: Entry }) {
       ) : null}
     </>
   );
+  const anchorId = entry.slug ? `artifact-${entry.slug}` : undefined;
   return entry.url ? (
     <a
+      id={anchorId}
       href={entry.url}
       target={entry.url.startsWith("http") ? "_blank" : undefined}
       rel="noopener"
-      className="group block no-underline"
+      className="group block no-underline scroll-mt-24"
     >
       {inner}
     </a>
   ) : (
-    <div className="block">{inner}</div>
+    <div id={anchorId} className="block scroll-mt-24">
+      {inner}
+    </div>
   );
 }
 
