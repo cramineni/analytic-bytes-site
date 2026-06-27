@@ -2399,21 +2399,21 @@ export const ESSAYS: Essay[] = [
           built, with where the function sits.
         </P>
 
-        <SeeAlso>
+                <SeeAlso>
+          <SeeAlsoItem
+            slug="plumbing-got-upgraded-water-didnt"
+            title="Plumbing got upgraded. The water didn’t."
+            gloss="The work-side argument for the same seat question: what people call plumbing has become governance, which is why it shouldn’t sit under the CTO."
+          />
+          <SeeAlsoItem
+            slug="numbers-dont-agree"
+            title="The numbers don’t agree because the words don’t"
+            gloss="Why the seat needs the standing to make a shared definition stick across functions."
+          />
           <SeeAlsoItem
             slug="three-surfaces-one-keystone"
             title="Three Surfaces, One Keystone"
             gloss="The reporting surfaces the function owes once it has the right seat."
-          />
-          <SeeAlsoItem
-            slug="the-take-home-test"
-            title="The Take-Home Test"
-            gloss="What happens when the function is asked for outputs without a decision attached."
-          />
-          <SeeAlsoItem
-            slug="the-contracts-between-systems"
-            title="The contracts between systems"
-            gloss="The integration layer that decision-serving sits on top of."
           />
         </SeeAlso>
 
@@ -2753,16 +2753,21 @@ export const ESSAYS: Essay[] = [
           that. It only raised the price of skipping it.
         </P>
 
-        <SeeAlso>
+                <SeeAlso>
           <SeeAlsoItem
-            slug="burden-disparity-and-the-next-dollar"
-            title="Burden, Disparity, and the Next Dollar"
-            gloss="A disparity signal that needed an action, not an answer."
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="What the agentic-era contract has to specify so an action a machine takes is one a human can stand behind."
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
             title="The numbers don’t agree because the words don’t"
             gloss="When the words underneath the answer were never settled to begin with."
+          />
+          <SeeAlsoItem
+            slug="burden-disparity-and-the-next-dollar"
+            title="Burden, Disparity, and the Next Dollar"
+            gloss="A disparity signal that needed an action, not an answer."
           />
         </SeeAlso>
 
@@ -3121,21 +3126,21 @@ export const ESSAYS: Essay[] = [
           </p>
         </div>
 
-        <SeeAlso>
+                <SeeAlso>
           <SeeAlsoItem
             slug="grounding-the-ai-layer"
             title="Grounding the AI Layer"
             gloss="What grounding means before any measurement question gets asked."
           />
           <SeeAlsoItem
-            slug="the-contracts-between-systems"
-            title="The contracts between systems"
-            gloss="The agentic-era contract that says who can stand behind an AI-inferred number."
+            slug="burden-disparity-and-the-next-dollar"
+            title="Burden, Disparity, and the Next Dollar"
+            gloss="Measurement discipline applied to a real dataset — defining the construct, filtering for reliability, naming what the data cannot do."
           />
           <SeeAlsoItem
-            slug="blown-assignment"
-            title="It’s a blown assignment"
-            gloss="When what looks like a measurement problem is actually a missing assignment."
+            slug="numbers-dont-agree"
+            title="The numbers don’t agree because the words don’t"
+            gloss="The cousin question one layer down: when the words underneath a number were never settled to begin with."
           />
         </SeeAlso>
 
@@ -3687,7 +3692,7 @@ export const ESSAYS: Essay[] = [
           answered until someone does.
         </P>
 
-        <SeeAlso>
+                <SeeAlso>
           <SeeAlsoItem
             slug="the-contracts-between-systems"
             title="The contracts between systems"
@@ -3699,9 +3704,9 @@ export const ESSAYS: Essay[] = [
             gloss="The seat that has the standing to make a shared definition stick."
           />
           <SeeAlsoItem
-            slug="blown-assignment"
-            title="It’s a blown assignment"
-            gloss="When the disagreement is read as a communication problem."
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The construct-validity cousin — what the AI claims to measure vs. what it is actually measuring."
           />
         </SeeAlso>
 
@@ -4464,7 +4469,7 @@ export const ESSAYS: Essay[] = [
         <P>Plumbing got upgraded. The water didn’t.</P>
         <P>That’s the work.</P>
 
-        <SeeAlso>
+                <SeeAlso>
           <SeeAlsoItem
             slug="the-contracts-between-systems"
             title="The contracts between systems"
@@ -4476,20 +4481,28 @@ export const ESSAYS: Essay[] = [
             gloss="Why the dashboard runs and the play doesn’t."
           />
           <SeeAlsoItem
-            slug="what-is-this-system-measuring"
-            title="What is this system actually measuring?"
-            gloss="The water-safety question for AI systems specifically."
+            slug="where-should-data-sit"
+            title="Where Should Data Sit?"
+            gloss="Where the integration seat that owns the water work sits on the org chart."
           />
         </SeeAlso>
 
         <MetaNote>
           This field note was written in June 2026 for the Analytic
           Bytes Library. The longer arguments referenced here live in
-          other library pieces: <I>What Is This System Actually
-          Measuring?</I> (the water-safety question), <I>The numbers
-          don’t agree because the words don’t</I> (when two pipes feed
-          the same tap), <I>The Contracts Between Systems</I> and
-          related work on who writes the contract (authority at the
+          other library pieces:{" "}
+          <InternalLink slug="what-is-this-system-measuring">
+            What Is This System Actually Measuring?
+          </InternalLink>{" "}
+          (the water-safety question),{" "}
+          <InternalLink slug="numbers-dont-agree">
+            The numbers don’t agree because the words don’t
+          </InternalLink>{" "}
+          (when two pipes feed the same tap),{" "}
+          <InternalLink slug="the-contracts-between-systems">
+            The Contracts Between Systems
+          </InternalLink>{" "}
+          and related work on who writes the contract (authority at the
           seam).
         </MetaNote>
       </>
@@ -4645,11 +4658,19 @@ export const ESSAYS: Essay[] = [
           cross-functional patterns observed across K-12, behavioral health,
           and higher-ed engagements; specific examples are abstracted. The
           longer arguments referenced here live in companion pieces:{" "}
-          <I>Plumbing got upgraded. The water didn’t.</I> (why integration
-          isn’t the decision), <I>The Contracts Between Systems</I> and{" "}
-          <I>Who Writes the Contract</I> (what lives in a seam contract), and{" "}
-          <I>What Is This System Actually Measuring?</I> (whether the
-          construct is still the right one).
+          <InternalLink slug="plumbing-got-upgraded-water-didnt">
+            Plumbing got upgraded. The water didn’t.
+          </InternalLink>{" "}
+          (why integration isn’t the decision),{" "}
+          <InternalLink slug="the-contracts-between-systems">
+            The Contracts Between Systems
+          </InternalLink>{" "}
+          and <I>Who Writes the Contract</I> (what lives in a seam contract),
+          and{" "}
+          <InternalLink slug="what-is-this-system-measuring">
+            What Is This System Actually Measuring?
+          </InternalLink>{" "}
+          (whether the construct is still the right one).
         </MetaNote>
       </>
     ),
