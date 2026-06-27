@@ -295,21 +295,20 @@ function SeeAlsoItem({
 // PIECE TYPE + REGISTRY
 // ---------------------------------------------------------------------
 
-/** Soft taxonomy for navigating the library. Each piece belongs to one
- * primary arc; pieces that bridge arcs (e.g. CBS sits across seam-contracts
- * and governance) get the most-central arc. Used to render the arc pill on
- * /library and as a future filter dimension. */
+/** Soft taxonomy for navigating the library. Three disciplines AB writes
+ * about — parallel to how an essay can argue within each. Each piece
+ * belongs to one primary arc; bridging pieces get the discipline whose
+ * frame they live inside, not the layer they touch. Used to render the
+ * arc pill on /library and as a future filter dimension. */
 export type Arc =
-  | "decision-systems"
   | "measurement"
-  | "seam-contracts"
-  | "governance";
+  | "integration-governance"
+  | "decision-system-architecture";
 
 export const ARC_LABELS: Record<Arc, string> = {
-  "decision-systems": "Decision systems",
   measurement: "Measurement",
-  "seam-contracts": "Seam contracts",
-  governance: "Governance",
+  "integration-governance": "Integration governance",
+  "decision-system-architecture": "Decision-system architecture",
 };
 
 export type Essay = {
@@ -342,7 +341,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why BI tool selection is the last decision, not the first — and the three reporting surfaces most analytics products owe their audiences.",
     cover: "/library/covers/three-surfaces-one-keystone.svg",
-    arc: "decision-systems",
+    arc: "decision-system-architecture",
     body: (
       <>
         <Brief>
@@ -715,7 +714,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
     cover: "/library/covers/when-genai-redesigned-my-dashboard.svg",
-    arc: "decision-systems",
+    arc: "decision-system-architecture",
     body: (
       <>
         <Brief>
@@ -980,7 +979,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Where AI belongs in the modern data stack, and the single contract that keeps every AI feature honest.",
     cover: "/library/covers/grounding-the-ai-layer.svg",
-    arc: "measurement",
+    arc: "decision-system-architecture",
     body: (
       <>
         <Brief>
@@ -1484,7 +1483,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why national education data, classroom assessments, and local instruments are most useful stitched together — and what the integration architecture looks like.",
     cover: "/library/covers/lo-2-0-stitching-the-layers.svg",
-    arc: "decision-systems",
+    arc: "decision-system-architecture",
     body: (
       <>
         <Brief>
@@ -2116,7 +2115,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Who owns data infrastructure is one of the org chart’s most muddled questions. The fix is not a better title; it is a principle — report to the integration seat, never to a single function.",
     cover: "/library/covers/where-should-data-sit.svg",
-    arc: "decision-systems",
+    arc: "integration-governance",
     body: (
       <>
         <Brief>
@@ -2470,7 +2469,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Agentic AI produces actions, not answers — and the human checkpoint that came free with every answer is gone unless you design it back in. Why agentic adoption is a decision-system question, not a technology one.",
     cover: "/library/covers/actions-not-answers.svg",
-    arc: "governance",
+    arc: "decision-system-architecture",
     body: (
       <>
         <Brief>
@@ -3201,7 +3200,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
     cover: "/library/covers/the-take-home-test.svg",
-    arc: "decision-systems",
+    arc: "decision-system-architecture",
     hidden: false,
     body: (
       <>
@@ -3455,7 +3454,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Two people read different student-persistence numbers from the same data. The governance council is functioning. The framework looks complete. What's broken is definitional, and the work to fix it is the work most councils skip.",
     cover: "/library/covers/numbers-dont-agree.svg",
-    arc: "governance",
+    arc: "integration-governance",
     hidden: false,
     body: (
       <>
@@ -3765,7 +3764,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Integration is two questions stacked on top of each other: do the bytes move, and when they arrive, can anyone act on them. Institutions have answered the first across three eras and skipped the second, and the agentic era is about to make that gap load-bearing.",
     cover: "/library/covers/the-contracts-between-systems.svg",
-    arc: "seam-contracts",
+    arc: "integration-governance",
     hidden: false,
     body: (
       <>
@@ -4252,7 +4251,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "The data integration layer is mostly solved — the pipes have been industrialized. The work that remains is closer to running a water authority: sourcing, testing, pressure, authority, who’s allowed to drink. The unglamorous part isn’t the pipes anymore. It’s the water.",
     cover: "/library/covers/plumbing-got-upgraded-water-didnt.svg",
-    arc: "seam-contracts",
+    arc: "integration-governance",
     body: (
       <>
         <Brief>
@@ -4558,7 +4557,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Most cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead — alignment, assignment, execution — and each phase fails differently. A communication-issue diagnosis collapses all three and fixes none.",
     cover: "/library/covers/blown-assignment.svg",
-    arc: "seam-contracts",
+    arc: "integration-governance",
     body: (
       <>
         <Brief>
