@@ -4180,6 +4180,150 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+
+  // ===================================================================
+  // FIELD NOTE 06 — It's not a communication issue. It's a blown assignment.
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "blown-assignment",
+    number: "06",
+    title: "It’s not a communication issue. It’s a blown assignment.",
+    subtitle: "Cross-functional work is a football play. Three phases, three failure modes, one fix that isn’t another meeting.",
+    date: "2026-06-27",
+    readingTime: "4 min read",
+    summary:
+      "Most cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead — alignment, assignment, execution — and each phase fails differently. A communication-issue diagnosis collapses all three and fixes none.",
+    cover: "/library/covers/blown-assignment.svg",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Most cross-functional breakdowns get diagnosed as a communication
+            issue and answered with another meeting. But cross-functional work
+            isn’t a conversation. It’s a football play — eleven specialists,
+            one designed sequence, executed in a coordinated burst against a
+            defense built to break it.
+          </p>
+          <p>
+            Football coaches drill three words for the play. Alignment.
+            Assignment. Execute. Know where you stand. Know what you do. Run
+            the play. Three phases, three failure modes, three different fixes.
+            A “communication issue” diagnosis collapses all of them into one
+            and fixes none. This piece names the three and what each one
+            actually needs.
+          </p>
+        </Brief>
+
+        <H2>The frame</H2>
+        <P>
+          Cross-functional work feels less like collaboration and more like a
+          football play. Eleven specialists, one designed play, executed in a
+          single coordinated burst against a defense built to break it.
+        </P>
+        <P>
+          Football coaches drill the same three-word mantra every year:{" "}
+          <B>Alignment. Assignment. Execute.</B>
+        </P>
+        <P>Know where you stand. Know what you do. Run the play.</P>
+        <P>
+          That’s the whole frame. It does most of what cross-functional teams
+          actually need.
+        </P>
+
+        <H2>Three phases, three failure modes</H2>
+        <P>
+          <B>Alignment</B> is where you fit relative to everyone else. In
+          football, it’s where you stand on the field. In cross-functional
+          work, it’s where your function sits relative to the others. Who you
+          partner with upstream. Who you hand off to downstream. Whose problem
+          becomes your problem when something doesn’t move.
+        </P>
+        <P>
+          Alignment failures look like this. The school counselor, the
+          behavioral health clinic, and the family are all aware of the same
+          student. None of them know who is supposed to be carrying the
+          picture. The student is not missed because no one cared. They are
+          missed because everyone thought they were on someone else’s coverage.
+        </P>
+        <P>
+          <B>Assignment</B> is what you do on this specific play. In football,
+          it’s the difference between blocking the inside gap and pulling left
+          to lead block. Same player, two completely different jobs depending
+          on the call.
+        </P>
+        <P>
+          Assignment failures look like this. The data architecture is fine.
+          Three systems flow into a dashboard. The advisor sees the dashboard.
+          Then nothing happens, because nobody wrote what should happen. There
+          is no contract that says{" "}
+          <I>
+            if the score crosses this line, who acts, with what authority, on
+            what cadence.
+          </I>{" "}
+          The dashboard isn’t the problem. The missing assignment is.
+        </P>
+        <P>
+          <B>Execution</B> is the actual play running. The line moves on the
+          snap. The receiver runs the route. The quarterback reads and throws.
+          The timing has to be inside a fraction of a second.
+        </P>
+        <P>
+          Execution failures look like this. The alignment is right. The
+          assignment is right. The operational handoff still fumbles. The
+          discharge plan was written. The follow-up was assigned to the care
+          coordinator. The care coordinator was out for a week, and nothing
+          escalated. The play was called. The play didn’t run.
+        </P>
+        <P>Three phases. Three different failure modes. One play.</P>
+
+        <H2>Why “a communication issue” is the wrong diagnosis</H2>
+        <P>
+          Most institutions diagnose all three as the same problem.{" "}
+          <I>We have a communication issue.</I> Then they schedule another
+          meeting.
+        </P>
+        <P>
+          A communication issue treats all breakdowns as if they were the same
+          flat thing. They aren’t. An alignment failure needs a clearer
+          organizational map. An assignment failure needs a written contract.
+          An execution failure needs operational redundancy: a backup when the
+          named person is out. Three different fixes. Three different
+          conversations. Three different artifacts.
+        </P>
+        <P>The meeting can name the breakdown. It can’t fix any of them.</P>
+
+        <H2>Where the AB lane sits</H2>
+        <P>
+          Most of the work we get pulled into looks like a data problem on the
+          surface. A dashboard nobody uses. A handoff that doesn’t stick. A
+          metric that lives in someone’s email instead of moving into a
+          workflow. None of those are data problems. They are alignment
+          problems, assignment problems, or execution problems misread as data
+          problems.
+        </P>
+        <P>
+          The fix is the play. Written down. Owned by named roles. With the
+          contingencies designed in. That’s the seam contract. That’s the
+          artifact the modern data stack does not ship in the box.
+        </P>
+        <P>The plumbing got upgraded. The play didn’t.</P>
+        <P>That’s the work.</P>
+
+        <MetaNote>
+          Written June 2026 for the Analytic Bytes Library. Composite of
+          cross-functional patterns observed across K-12, behavioral health,
+          and higher-ed engagements; specific examples are abstracted. The
+          longer arguments referenced here live in companion pieces:{" "}
+          <I>Plumbing got upgraded. The water didn’t.</I> (why integration
+          isn’t the decision), <I>The Contracts Between Systems</I> and{" "}
+          <I>Who Writes the Contract</I> (what lives in a seam contract), and{" "}
+          <I>What Is This System Actually Measuring?</I> (whether the
+          construct is still the right one).
+        </MetaNote>
+      </>
+    ),
+  },
 ];
 
 // ---------------------------------------------------------------------
