@@ -4205,9 +4205,10 @@ export const ESSAYS: Essay[] = [
             the breakdown without repairing any of them.
           </p>
           <p>
-            This field note names the three using a frame football coaches
-            drill for the play, points to where each failure actually breaks,
-            and shows why the meeting can’t close any of them.
+            The three failures are different in shape, and each needs a
+            different fix. None of those fixes is another meeting. Football
+            coaches have a frame for naming them that travels into
+            cross-functional work better than it has any right to.
           </p>
         </Brief>
 
