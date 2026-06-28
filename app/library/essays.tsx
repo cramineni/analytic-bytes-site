@@ -254,8 +254,9 @@ function InternalLink({
 
 /** Inline link to an artifact in the /library gallery. Use mid-essay only
  * when prose explicitly invokes the diagram or frame the artifact depicts.
- * Anchors directly to the artifact card via id="artifact-{slug}". */
-function ArtifactLink({
+ * Anchors directly to the artifact card via id="artifact-{slug}".
+ * Exported so other pages (e.g. case-studies) can reuse the styling. */
+export function ArtifactLink({
   slug,
   children,
 }: {
@@ -2689,9 +2690,10 @@ export const ESSAYS: Essay[] = [
           temptation is to make the model careful, with better instructions
           and sterner prompts. But a system whose safety depends on the model
           choosing well, every single time, has no safety at all. Safety has
-          to be built into the structure around the model. Start with
-          reversibility: an action designed to be undone has margin for the
-          other layers to fail. Then hard limits the agent cannot cross
+          to be built into the{" "}
+          <ArtifactLink slug="agent-system">structure around the model</ArtifactLink>
+          . Start with reversibility: an action designed to be undone has
+          margin for the other layers to fail. Then hard limits the agent cannot cross
           because they are enforced in code, not requested in a prompt. Then
           an independent second check that does not share the first model’s
           blind spots. Then a human escalation path more than one person
@@ -2940,7 +2942,11 @@ export const ESSAYS: Essay[] = [
           earns its agreement primarily through length is not measuring writing
           quality directly. It is measuring a feature that correlates with
           writing quality. The difference looks small in aggregate. It is
-          decisive for the writers the correlation doesn’t hold for.
+          decisive for{" "}
+          <ArtifactLink slug="fair-for-whom">
+            the writers the correlation doesn’t hold for
+          </ArtifactLink>
+          .
         </P>
 
         <H2>The harder question</H2>
@@ -2968,10 +2974,12 @@ export const ESSAYS: Essay[] = [
           at the immediate output, where the human is the rater the AI is
           trained to match, or at the downstream construct expression, where
           the human is the instructor evaluating what the test was built to
-          predict. The first is reliability, often pursued because it is
-          faster and cheaper. The second is validity, and it is what the test
-          claims to do in the first place. The AI-scoring conversation has
-          mostly been running on the easier question.
+          predict. The first is{" "}
+          <ArtifactLink slug="reliability-vs-validity">reliability</ArtifactLink>
+          , often pursued because it is faster and cheaper. The second is{" "}
+          <ArtifactLink slug="validity-ladder">validity</ArtifactLink>, and it
+          is what the test claims to do in the first place. The AI-scoring
+          conversation has mostly been running on the easier question.
         </P>
         <P>
           There is a second reason it has stayed there, and it is honest to

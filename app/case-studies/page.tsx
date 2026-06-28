@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import { ArtifactLink } from "@/app/library/essays";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -305,7 +306,9 @@ export default function CaseStudiesPage() {
                   loop back to the people doing the work, a decision someone could actually make.
                 </p>
                 <p className="text-ink font-medium">
-                  The stack changes every time. The discipline doesn&rsquo;t.
+                  <ArtifactLink slug="one-architecture-three-stacks">
+                    The stack changes every time. The discipline doesn&rsquo;t.
+                  </ArtifactLink>
                 </p>
                 <p>
                   Below: five engagements, anonymized by org. In each one, the
