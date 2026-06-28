@@ -501,10 +501,16 @@ export const ESSAYS: Essay[] = [
           a screen rendered live against a data source. The publication problem
           needs the inverse: a templated document with branded typography,
           headers, footers, footnotes, and language that comms or design owns
-          separately from the analyst. PDF export from a BI tool produces a
-          screenshot, not a structured document. The artifact a board member
-          emails to a colleague is a Word file, or a PDF that looks like one.
-          Nobody forwards a dashboard URL with a login prompt behind it.
+          separately from the analyst. PDF export from the dashboarding mode of
+          most BI tools produces a screenshot, not a structured document.
+          Paginated-reporting features (SSRS-style modules inside Power BI and
+          their equivalents elsewhere) are the real exception, designed for
+          exactly this use, and a publication-grade option when an institution
+          already has the skillset; they are a different toolset than the
+          dashboarding mode that dominates BI demos. The artifact a board
+          member emails to a colleague is a Word file, or a PDF that looks
+          like one. Nobody forwards a dashboard URL with a login prompt behind
+          it.
         </P>
         <P>
           There is also a layout-ownership problem. In a BI tool, the analyst
@@ -846,8 +852,25 @@ export const ESSAYS: Essay[] = [
         <P>
           This is closer to user-research methodology than to traditional BI
           design. The AI is acting as a fast proxy for the stakeholder’s
-          cognitive needs. It hasn’t spent five years in your design reviews,
-          which is what makes it useful at this step.
+          cognitive needs — or more precisely, as a regression toward the
+          average of the human design corpus it was trained on. It hasn’t
+          spent five years in your design reviews; what makes it useful at
+          this step is that it hasn’t yet adopted the local in-group
+          aesthetics that pull dashboards away from clarity. The AI’s
+          neutrality is averaged-design neutrality, not stakeholder
+          neutrality. Useful for the first cut. Not a substitute for a
+          real reading of who is going to look at this and why.
+        </P>
+        <P>
+          One caveat the AI’s clarity-first instinct won’t supply on its
+          own: regulated contexts often require what looks like uglier
+          design for compliance reasons. FERPA cell-suppression for small-N
+          subgroups, HIPAA minimum-necessary framing, mandatory disclaimer
+          footers, IRB-style consent language — none of these make a
+          dashboard cleaner, and none can be cut for design simplicity. An
+          AI redesign that simplifies past those constraints isn’t cleaner;
+          it’s noncompliant in a way that looks like clarity. The curation
+          step has to put those constraints back in.
         </P>
 
         <H2>Where each tool fits in the discipline</H2>
@@ -2176,6 +2199,22 @@ export const ESSAYS: Essay[] = [
           organization improvises.
         </P>
         <P>
+          Recent industry data backs the improvising read. In{" "}
+          <a
+            href="https://static1.squarespace.com/static/62adf3ca029a6808a6c5be30/t/67642c0d40b42a7d7e684f49/1734618125933/2025+AI+&+Data+Leadership+Executive+Benchmark+Survey+120624.pdf"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            NewVantage Partners’ 2025 benchmark survey of data and AI executives
+          </a>
+          , 53.7% of CDOs and CDAOs reported being in role under three years,
+          and fewer than half (47.6%) characterized the role as “very
+          successful.” The seat keeps turning over before it has time to
+          settle, and the people sitting in it don’t agree on whether the
+          seat is working.
+        </P>
+        <P>
           So set the title question aside. It is the wrong question, and
           answering it first is how organizations end up improvising. Ask the
           prior one. What does data infrastructure need from its place
@@ -2571,6 +2610,22 @@ export const ESSAYS: Essay[] = [
           money. The decision still gets made; each of those is a decision. But
           now the system makes it, at its own speed, unless a human was
           deliberately designed into the path.
+        </P>
+        <P>
+          None of this is new in principle. Algorithmic trading has taken
+          actions without human checkpoints for decades. Industrial control
+          systems, autopilots, ad-bidding engines, and anti-fraud rule
+          engines all already produce actions, not answers, at speeds no
+          human can review. What is new about agentic AI is breadth and
+          generality. A trading algorithm acts inside a narrow envelope its
+          quants modeled in advance; an LLM agent is being handed envelopes
+          nobody has modeled yet, across decision categories an organization
+          has never had to ask the design question for, with reasoning steps
+          the deploying team usually cannot inspect. The principle that
+          machines act is old. The scope at which the principle is now being
+          applied is new, and that is what makes the design question — who
+          holds which decisions — load-bearing across more of the
+          organization than it ever had to be before.
         </P>
         <P>
           The move underneath is a relocation. Agentic AI does not add a
@@ -3098,6 +3153,17 @@ export const ESSAYS: Essay[] = [
           That is not a sentiment. It is an evaluation standard, it is
           answerable, and it is the standard worth holding AI to.
         </P>
+        <P>
+          One clarification, because the easiest misread of this argument is
+          that it’s anti-proxy. It is not. Institutional modeling at scale
+          has to use proxies; that is how the work runs. The discipline being
+          asked for is not the abandonment of proxies but the validity work
+          underneath them — knowing which construct each proxy stands in for,
+          which part of the construct it actually captures, and where the
+          proxy quietly substitutes itself for the construct it was supposed
+          to serve. Pro-proxy, with the validity work done out loud. That is
+          the standard.
+        </P>
 
         <H2>An old discipline, a new set of systems</H2>
         <P>
@@ -3441,8 +3507,8 @@ export const ESSAYS: Essay[] = [
         <P>
           Do that a dozen times and something shifts in how you see. You stop
           seeing data problems. You start seeing decision systems with one part
-          missing, and more often than not you can name the missing part before
-          lunch. That is the whole of it. Most organizations do not have a data
+          missing, and often you can name the missing part inside the first
+          honest conversation. That is the whole of it. Most organizations do not have a data
           problem. They have a decision-system problem, and a take-home is a
           short, honest way to surface one. <I>From fragmented to
           decision-ready</I> is the distance between the brief they wrote and the
@@ -3581,8 +3647,11 @@ export const ESSAYS: Essay[] = [
           agent from paying to generate versions no one asked for. The
           semantic layer was always a correctness control. Pointed at an
           agent that runs at machine cadence and bills per call, it becomes
-          a consumption control too, and the spend, like the disagreement,
-          traces back to whether the words were settled first.
+          a consumption control for the definitional-recomputation stream
+          specifically — one of several agent cost streams (reasoning
+          tokens, planning cycles, tool calls all run on their own meters),
+          but the stream that traces directly back to whether the words
+          were settled first.
         </P>
 
         <P>
@@ -3782,6 +3851,11 @@ export const ESSAYS: Essay[] = [
           across a K–8 charter network and longitudinal-measurement
           settings; organizational details are abstracted and no
           individual record, person, or proprietary number is reproduced.
+          The performance figures cited from the K–8 case — data
+          completeness, principal dashboard adoption, reporting lag — come
+          from the author’s working records and internal reports compiled
+          during the engagement; the figures appear consistent with their
+          documented use in the author’s case-studies record.
         </MetaNote>
       </>
     ),
@@ -4349,7 +4423,13 @@ export const ESSAYS: Essay[] = [
           cloud data platforms. The difficulty is no longer engineering
           the pipe; it’s mostly paying the subscription and managing
           the configuration. The plumbing got upgraded. It’s a solved
-          problem class, even if individual lines still get clogged.
+          problem class, even if individual lines still get clogged. A
+          caveat worth naming: this describes the modern-stack majority.
+          For regulated industries — health systems still bridging
+          mainframe-era EHRs, banks still bridging core systems older
+          than the cloud — engineering the pipe remains a real piece of
+          work. The argument that follows applies most cleanly to the
+          institutions that have already crossed that bridge.
         </P>
         <P>
           So if “plumbing” was what I called the hard part of the work,
@@ -4684,10 +4764,14 @@ export const ESSAYS: Essay[] = [
         <P>
           A communication issue treats all breakdowns as if they were the same
           flat thing. They aren’t. An alignment failure needs a clearer
-          organizational map. An assignment failure needs a written contract.
-          An execution failure needs operational redundancy: a backup when the
-          named person is out. Three different fixes. Three different
-          conversations. Three different artifacts.
+          organizational map. An assignment failure needs a written contract
+          with named owners, defined triggers, and standing — not another SOP
+          on a shared drive. Most institutions already have SOPs and SLAs that
+          nobody reads; the seam contract is what those documents fail to
+          become when they don’t carry authority. An execution failure needs
+          operational redundancy: a backup when the named person is out.
+          Three different fixes. Three different conversations. Three
+          different artifacts.
         </P>
         <P>The meeting can name the breakdown. It can’t fix any of them.</P>
 
