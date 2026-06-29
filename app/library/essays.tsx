@@ -1878,13 +1878,22 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             This is a field note, not a study. It is an exploratory,
-            reliability-filtered read of CDC WONDER mortality data from 2021
-            to 2024, and its only real claim is structural: burden and disparity
-            are two different signals, the priority list you would build from
-            one is not the list you would build from the other, and a
-            prioritization framework that shows both, and stays honest about
-            what it can’t see, changes the allocation decision. This piece is
-            for the person who has to defend that decision after it’s made.
+            reliability-filtered read of{" "}
+            <a
+              href="https://wonder.cdc.gov/"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              CDC WONDER
+            </a>{" "}
+            mortality data from 2021 to 2024, and its only real claim is
+            structural: burden and disparity are two different signals, the
+            priority list you would build from one is not the list you would
+            build from the other, and a prioritization framework that shows
+            both, and stays honest about what it can’t see, changes the
+            allocation decision. This piece is for the person who has to
+            defend that decision after it’s made.
           </p>
         </Brief>
 
@@ -2925,21 +2934,46 @@ export const ESSAYS: Essay[] = [
             and run pilots — assistants for student services, drafting tools for
             administrative staff, models that flag students who might be
             slipping. The scaffolding went up quickly, and under genuine
-            pressure: a contracting enrollment as the demographic cliff arrives,
-            public skepticism about the return on a degree, tightened federal
-            funding and tax conditions, and a sector that Deloitte’s 2026 higher
-            education outlook describes as moving from a long period of growth
-            into one of disciplined focus, with the business model under
-            scrutiny and risk management demanding tighter coordination across
-            offices that once operated siloed. AI arrived in the middle of all
+            pressure: a contracting enrollment as the{" "}
+            <a
+              href="https://www.press.jhu.edu/books/title/11859/demographics-and-demand-higher-education"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              demographic cliff
+            </a>{" "}
+            arrives, public skepticism about the return on a degree, tightened
+            federal funding and tax conditions, and a sector that{" "}
+            <a
+              href="https://www.deloitte.com/us/en/insights/industry/articles-on-higher-education/2026-higher-education-trends.html"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              Deloitte’s 2026 higher education outlook
+            </a>{" "}
+            describes as moving from a long period of growth into one of
+            disciplined focus, with the business model under scrutiny and risk
+            management demanding tighter coordination across offices that once
+            operated siloed. AI arrived in the middle of all
             of it, as both another pressure and a promised relief.
           </p>
           <p>
-            The role of the technology executive has shifted with it. In
-            Deloitte’s 2026 study of technology leaders, the large majority of
-            CIOs described their primary job as implementing AI or evangelizing
-            for it across the institution, a shift the report frames as moving
-            from keeping the lights on to lighting the way forward. That shift
+            The role of the technology executive has shifted with it. In{" "}
+            <a
+              href="https://www.deloitte.com/us/en/programs/chief-information-officer/articles/global-technology-leadership-study.html"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              Deloitte’s 2026 Global Technology Leadership Study
+            </a>
+            , based on responses from more than 660 tech leaders, the large
+            majority of CIOs described their primary job as implementing AI or
+            evangelizing for it across the institution, a shift the report
+            frames as moving from keeping the lights on to lighting the way
+            forward. That shift
             is real and, on balance, healthy. But it carries a quiet cost: when
             the mandate becomes adoption, evaluation tends to be assumed rather
             than performed.
@@ -3007,17 +3041,25 @@ export const ESSAYS: Essay[] = [
         <H2>The harder question</H2>
         <P>
           The methodological alternative is older than machine learning, and it
-          is what measurement science was built on. A test like GRE Writing is
-          not, at its core, asking whether an AI can match a human rater on a
-          30-minute timed essay. The GRE Writing test asks students to write
-          two essays under timed pressure, an Issue essay and an Argument
-          essay. It is making a claim about the relationship between
-          performance on those timed tasks and performance on something quite
-          different in shape: the longer, drafted-and-revised writing students
-          produce over weeks in a first-year graduate course. Two different
-          formats. Different rubrics. Different human evaluators. Two ways of
-          capturing the same underlying writing construct, with the test
-          asserting a relationship between them.
+          is what measurement science was built on. A test like the{" "}
+          <a
+            href="https://www.ets.org/gre/test-takers/general-test/prepare/content/analytical-writing.html"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            GRE Analytical Writing measure
+          </a>{" "}
+          is not, at its core, asking whether an AI can match a human rater on
+          a 30-minute timed essay. The test asks students to produce a single
+          timed analytical essay — the Issue task — and is making a claim
+          about the relationship between performance on that timed task and
+          performance on something quite different in shape: the longer,
+          drafted-and-revised writing students produce over weeks in a
+          first-year graduate course. Two different formats. Different rubrics.
+          Different human evaluators. Two ways of capturing the same underlying
+          writing construct, with the test asserting a relationship between
+          them.
         </P>
         <P>
           Validating an AI scoring engine against that relationship is a
@@ -3098,10 +3140,17 @@ export const ESSAYS: Essay[] = [
           predictive model at least produces a score that can be tested against
           an outcome. A generative assistant produces fluent, confident prose
           whose quality is difficult to assess at a glance, and fluency is
-          itself a proxy the human eye is inclined to reward. The 2026
-          enterprise-AI research is consistent on this point: only a small
-          share of organizations report a mature model for governing autonomous
-          AI agents, and the real constraints on scaling AI are rarely the
+          itself a proxy the human eye is inclined to reward.{" "}
+          <a
+            href="https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            The 2026 enterprise-AI research
+          </a>{" "}
+          is consistent on this point: only a small share of organizations
+          report a mature model for governing autonomous AI agents, and the real constraints on scaling AI are rarely the
           technology itself. They are data quality, security, and the absence
           of evaluation discipline. The newer the system, the more easily
           plausibility substitutes for proof.
@@ -3109,9 +3158,17 @@ export const ESSAYS: Essay[] = [
 
         <H2>The discipline already exists</H2>
         <P>
-          This is the missing discipline inside AI governance. EDUCAUSE’s 2026
-          priorities name the human edge of AI, and data analytics for
-          institutional decision-making, among the issues that matter most.
+          This is the missing discipline inside AI governance.{" "}
+          <a
+            href="https://www.educause.edu/research-and-publications/research/top-10-it-issues-technologies-and-trends/2026"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            EDUCAUSE’s 2026 Top 10 IT Issues
+          </a>{" "}
+          name the human edge of AI, and data analytics for institutional
+          decision-making, among the issues that matter most.
           University technology leaders have been clear that the next phase of
           AI work is operational, moving from written policy to running
           practice. Evaluation is the part of that practice most easily
@@ -3589,13 +3646,28 @@ export const ESSAYS: Essay[] = [
 
         <P>
           Governance councils default to architecture, and they have
-          well-developed frames to draw on. DAMA’s Data Management Body of
-          Knowledge organizes the field into eleven knowledge areas with
-          governance at the center: architecture, modeling, integration,
-          quality, metadata, master and reference data, and the rest.
-          EDUCAUSE’s data-empowered-institution model distills the
-          higher-education version to five components — data quality,
-          integration, governance, management, and literacy. Both frames
+          well-developed frames to draw on.{" "}
+          <a
+            href="https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            DAMA’s Data Management Body of Knowledge
+          </a>{" "}
+          organizes the field into eleven knowledge areas with governance at
+          the center: architecture, modeling, integration, quality, metadata,
+          master and reference data, and the rest.{" "}
+          <a
+            href="https://www.educause.edu/showcase-series/2025/the-data-empowered-institution"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            EDUCAUSE’s data-empowered-institution model
+          </a>{" "}
+          distills the higher-education version to five components — data
+          quality, integration, governance, management, and literacy. Both frames
           are correct about what to build. Both are necessary. Both are
           also insufficient. The actual operational work that makes
           governance hold (getting the registrar, financial aid,
