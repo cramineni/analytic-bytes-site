@@ -1590,7 +1590,15 @@ export const ESSAYS: Essay[] = [
 
         <H2>The layers and what each is good for</H2>
         <P>
-          <B>UDISE+</B> (Unified District Information System Education Plus).
+          <a
+            href="https://udiseplus.gov.in/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            <B>UDISE+</B>
+          </a>{" "}
+          (Unified District Information System Education Plus).
           Census-style coverage of every school. Strong on infrastructure
           adequacy, demographic patterns, enrollment trends, attendance
           aggregates. Weak on learning outcomes, individual student tracking,
@@ -1599,7 +1607,15 @@ export const ESSAYS: Essay[] = [
           allocation.
         </P>
         <P>
-          <B>NAS</B> (National Achievement Survey). Sample-based, high-quality
+          <a
+            href="https://nas.gov.in/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            <B>NAS</B>
+          </a>{" "}
+          (National Achievement Survey). Sample-based, high-quality
           achievement assessment, fielded only every few years. Reports state
           and group averages. Strong on national snapshots and inter-state
           comparison. Weak on improvement tracking, classroom-level signal, and
@@ -1608,7 +1624,15 @@ export const ESSAYS: Essay[] = [
           resource-prioritization signals.
         </P>
         <P>
-          <B>PGI 2.0</B> (Performance Grading Index). Built for state-level
+          <a
+            href="https://pgi.udiseplus.gov.in/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            <B>PGI 2.0</B>
+          </a>{" "}
+          (Performance Grading Index). Built for state-level
           comparison, federal incentive frameworks, and publicly visible
           accountability. A composite index that combines UDISE+ and NAS into
           ranking grades across 73 indicators on a 1,000-point scale. Don’t
@@ -4039,11 +4063,37 @@ export const ESSAYS: Essay[] = [
         <P>
           Move the same problem into a public-sector frame and the fragility
           shows differently. An Indian state runs four parallel state
-          systems — UDISE+ for the annual school census, NAS for a
-          sample-based achievement survey on a four-year cycle with
-          grade-band shifts between cycles, PGI as a centrally-designed
-          state grading index, and SEQI as a state quality index with its
-          own definitions of the same outcome variables. Technically the
+          systems —{" "}
+          <a
+            href="https://udiseplus.gov.in/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            UDISE+
+          </a>{" "}
+          for the annual school census,{" "}
+          <a
+            href="https://nas.gov.in/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            NAS
+          </a>{" "}
+          for a sample-based achievement survey on a four-year cycle with
+          grade-band shifts between cycles,{" "}
+          <a
+            href="https://pgi.udiseplus.gov.in/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            PGI
+          </a>{" "}
+          as a centrally-designed state grading index, and SEQI as a state
+          quality index with its own definitions of the same outcome
+          variables. Technically the
           four integrate: states submit, the central agencies consolidate,
           the dashboards land. What can a District Education Officer or a
           Mandal Education Officer act on, this month, in their block? Each
