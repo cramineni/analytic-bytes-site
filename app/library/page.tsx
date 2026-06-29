@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import type { Metadata } from "next";
-import { ESSAYS, ARC_LABELS, type Arc } from "./essays";
+import { ESSAYS, ARC_LABELS, ArtifactLink, type Arc } from "./essays";
 
 export const metadata: Metadata = {
   title: "Library — Analytic Bytes",
@@ -43,6 +43,14 @@ type Entry = {
 const ARTIFACTS: Entry[] = [
   {
     type: "artifact",
+    title: "Decision-System Architecture — the four disciplines",
+    summary:
+      "The umbrella frame of the Analytic Bytes Library at a glance. A central node — Decision-System Architecture — surrounded by the four disciplines that compose it: Measurement, Integration governance, AI systems, and Organizational design. Each cluster names three load-bearing concepts inside its discipline. The arc pill on every library card maps to one of these four. For the technical stack the disciplines describe, see the reference architecture below.",
+    image: "/library/artifacts/decision-system-architecture-frame.svg",
+    slug: "decision-system-architecture-frame",
+  },
+  {
+    type: "artifact",
     title: "The Contract at the Seam",
     summary:
       "Integration moves the data. The contract makes the judgment. A tool- and sector-agnostic diagram of what the contract specifies that integration cannot — who owns the action, what data and at what resolution, on what cadence, and what decision the signal should trigger. The seam between delivered data and made decisions.",
@@ -53,7 +61,7 @@ const ARTIFACTS: Entry[] = [
     type: "artifact",
     title: "The Decision System — reference architecture",
     summary:
-      "A tool-agnostic reference architecture: sources through integration, warehouse, and the semantic-layer keystone to AI and the reporting surfaces, with a governance rail across every layer and a learning loop that closes the system.",
+      "A tool-agnostic reference architecture: sources through integration, warehouse, and the semantic-layer keystone to AI and the reporting surfaces, with a governance rail across every layer and a learning loop that closes the system. For the editorial frame that organizes the library around this stack, see the four-disciplines view above.",
     image: "/library/artifacts/decision-system-reference-architecture.svg",
     slug: "decision-system-reference-architecture",
   },
@@ -197,8 +205,11 @@ export default function LibraryPage() {
                 measurement, and the operating teams that ship them.
               </p>
               <p className="text-ink-3 text-[14.5px] sm:text-[15px] max-w-[600px] mt-4 leading-[1.6]">
-                Decision-system architecture is the umbrella frame for this
-                library — composed of four disciplines:{" "}
+                <ArtifactLink slug="decision-system-architecture-frame">
+                  Decision-system architecture
+                </ArtifactLink>{" "}
+                is the umbrella frame for this library — composed of four
+                disciplines:{" "}
                 <span className="text-ink-2">Measurement</span>,{" "}
                 <span className="text-ink-2">Integration governance</span>,{" "}
                 <span className="text-ink-2">AI systems</span>, and{" "}
@@ -366,22 +377,23 @@ function TextEntry({ entry }: { entry: Entry }) {
 }
 
 // Arc pill — small mono-uppercase label with a leading marker that varies
-// per arc. Marker uses AB's existing palette only (teal + navy + slate).
+// per arc. Marker uses AB's existing palette only (teal + navy). Three
+// circles plus one diamond keep the visual distinction clean at 6px.
 // Measurement: solid teal dot. Integration governance: solid navy dot.
 // AI systems: hollow teal ring (signals an emerging discipline). Org
-// design: solid slate dot.
+// design: navy diamond (signals structural / architectural work).
 function ArcPill({ arc }: { arc: Arc }) {
   const markerClass: Record<Arc, string> = {
-    measurement: "bg-accent",
-    "integration-governance": "bg-ink",
-    "ai-systems": "bg-bg border border-accent",
-    "organizational-design": "bg-ink-2",
+    measurement: "bg-accent rounded-full",
+    "integration-governance": "bg-ink rounded-full",
+    "ai-systems": "bg-bg border border-accent rounded-full",
+    "organizational-design": "bg-ink rotate-45",
   };
   return (
     <span className="inline-flex items-center gap-1.5 font-mono text-[10.5px] tracking-[0.12em] uppercase text-ink-2 border border-line-2 rounded-sm pl-1.5 pr-2 py-0.5">
       <span
         aria-hidden
-        className={`inline-block w-1.5 h-1.5 rounded-full shrink-0 ${markerClass[arc]}`}
+        className={`inline-block w-1.5 h-1.5 shrink-0 ${markerClass[arc]}`}
       />
       {ARC_LABELS[arc]}
     </span>
