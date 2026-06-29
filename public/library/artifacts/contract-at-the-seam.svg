@@ -71,6 +71,6 @@
 <!-- outcome line below -->
 <text x="205" y="652" font-size="14.5" fill="#0E2A47" font-weight="600">Delivered data becomes a made decision — and the outcome can move.</text>
 
-<text x="205" y="700" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
-<text x="357" y="700" font-size="13" fill="#0EA5E9">The water moves only when someone writes the contract.</text>
+<text x="48" y="700" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="200" y="700" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
 </svg>
