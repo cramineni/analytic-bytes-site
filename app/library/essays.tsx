@@ -1590,14 +1590,16 @@ export const ESSAYS: Essay[] = [
 
         <H2>The layers and what each is good for</H2>
         <P>
-          <a
-            href="https://udiseplus.gov.in/"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            <B>UDISE+</B>
-          </a>{" "}
+          <B>
+            <a
+              href="https://udiseplus.gov.in/"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              UDISE+
+            </a>
+          </B>{" "}
           (Unified District Information System Education Plus).
           Census-style coverage of every school. Strong on infrastructure
           adequacy, demographic patterns, enrollment trends, attendance
@@ -1607,14 +1609,16 @@ export const ESSAYS: Essay[] = [
           allocation.
         </P>
         <P>
-          <a
-            href="https://nas.gov.in/"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            <B>NAS</B>
-          </a>{" "}
+          <B>
+            <a
+              href="https://parakh.ncert.gov.in/nas-dashboard"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              NAS
+            </a>
+          </B>{" "}
           (National Achievement Survey). Sample-based, high-quality
           achievement assessment, fielded only every few years. Reports state
           and group averages. Strong on national snapshots and inter-state
@@ -1624,14 +1628,16 @@ export const ESSAYS: Essay[] = [
           resource-prioritization signals.
         </P>
         <P>
-          <a
-            href="https://pgi.udiseplus.gov.in/"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            <B>PGI 2.0</B>
-          </a>{" "}
+          <B>
+            <a
+              href="https://pgi.udiseplus.gov.in/"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              PGI 2.0
+            </a>
+          </B>{" "}
           (Performance Grading Index). Built for state-level
           comparison, federal incentive frameworks, and publicly visible
           accountability. A composite index that combines UDISE+ and NAS into
@@ -1640,7 +1646,17 @@ export const ESSAYS: Essay[] = [
           it won’t carry the weight.
         </P>
         <P>
-          <B>SEQI</B> (School Education Quality Index). Composite ranking,
+          <B>
+            <a
+              href="https://niti.gov.in/sites/default/files/2019-09/seqi_document_0.pdf"
+              target="_blank"
+              rel="noopener"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              SEQI
+            </a>
+          </B>{" "}
+          (School Education Quality Index). Composite ranking,
           evaluative framing. Last report 2019. Useful as historical baseline;
           less useful as current signal.
         </P>
@@ -4074,7 +4090,7 @@ export const ESSAYS: Essay[] = [
           </a>{" "}
           for the annual school census,{" "}
           <a
-            href="https://nas.gov.in/"
+            href="https://parakh.ncert.gov.in/nas-dashboard"
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
@@ -4091,9 +4107,17 @@ export const ESSAYS: Essay[] = [
           >
             PGI
           </a>{" "}
-          as a centrally-designed state grading index, and SEQI as a state
-          quality index with its own definitions of the same outcome
-          variables. Technically the
+          as a centrally-designed state grading index, and{" "}
+          <a
+            href="https://niti.gov.in/sites/default/files/2019-09/seqi_document_0.pdf"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            SEQI
+          </a>{" "}
+          as a state quality index with its own definitions of the same
+          outcome variables. Technically the
           four integrate: states submit, the central agencies consolidate,
           the dashboards land. What can a District Education Officer or a
           Mandal Education Officer act on, this month, in their block? Each
