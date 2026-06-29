@@ -196,6 +196,16 @@ export default function LibraryPage() {
                 Essays, artifacts, and field notes — on decision-system architecture,
                 measurement, and the operating teams that ship them.
               </p>
+              <p className="text-ink-3 text-[14.5px] sm:text-[15px] max-w-[600px] mt-4 leading-[1.6]">
+                Decision-system architecture is the umbrella frame for this
+                library — composed of four disciplines:{" "}
+                <span className="text-ink-2">Measurement</span>,{" "}
+                <span className="text-ink-2">Integration governance</span>,{" "}
+                <span className="text-ink-2">AI systems</span>, and{" "}
+                <span className="text-ink-2">Organizational design</span>.
+                Each piece sits in one of the four; the arc pill on each
+                card names which.
+              </p>
             </Reveal>
           </div>
         </section>
@@ -338,9 +348,7 @@ function TextEntry({ entry }: { entry: Entry }) {
           ) : null}
           {entry.arc ? (
             <div className="mt-3">
-              <span className="inline-flex items-center font-mono text-[10.5px] tracking-[0.12em] uppercase text-ink-2 border border-line-2 rounded-sm px-2 py-0.5">
-                {ARC_LABELS[entry.arc]}
-              </span>
+              <ArcPill arc={entry.arc} />
             </div>
           ) : null}
           {!isLink ? (
@@ -354,5 +362,28 @@ function TextEntry({ entry }: { entry: Entry }) {
         </div>
       </article>
     </Wrap>
+  );
+}
+
+// Arc pill — small mono-uppercase label with a leading marker that varies
+// per arc. Marker uses AB's existing palette only (teal + navy + slate).
+// Measurement: solid teal dot. Integration governance: solid navy dot.
+// AI systems: hollow teal ring (signals an emerging discipline). Org
+// design: solid slate dot.
+function ArcPill({ arc }: { arc: Arc }) {
+  const markerClass: Record<Arc, string> = {
+    measurement: "bg-accent",
+    "integration-governance": "bg-ink",
+    "ai-systems": "bg-bg border border-accent",
+    "organizational-design": "bg-ink-2",
+  };
+  return (
+    <span className="inline-flex items-center gap-1.5 font-mono text-[10.5px] tracking-[0.12em] uppercase text-ink-2 border border-line-2 rounded-sm pl-1.5 pr-2 py-0.5">
+      <span
+        aria-hidden
+        className={`inline-block w-1.5 h-1.5 rounded-full shrink-0 ${markerClass[arc]}`}
+      />
+      {ARC_LABELS[arc]}
+    </span>
   );
 }

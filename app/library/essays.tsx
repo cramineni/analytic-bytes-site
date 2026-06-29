@@ -316,20 +316,23 @@ function SeeAlsoItem({
 // PIECE TYPE + REGISTRY
 // ---------------------------------------------------------------------
 
-/** Soft taxonomy for navigating the library. Three disciplines AB writes
- * about — parallel to how an essay can argue within each. Each piece
+/** Soft taxonomy for navigating the library. Four disciplines that
+ * compose AB's umbrella frame — Decision-System Architecture. Each piece
  * belongs to one primary arc; bridging pieces get the discipline whose
- * frame they live inside, not the layer they touch. Used to render the
- * arc pill on /library and as a future filter dimension. */
+ * frame they live inside, not the layer they touch. The umbrella itself
+ * is the library, not a slice of it. Used to render the arc pill on
+ * /library and as a future filter dimension. */
 export type Arc =
   | "measurement"
   | "integration-governance"
-  | "decision-system-architecture";
+  | "ai-systems"
+  | "organizational-design";
 
 export const ARC_LABELS: Record<Arc, string> = {
   measurement: "Measurement",
   "integration-governance": "Integration governance",
-  "decision-system-architecture": "Decision-system architecture",
+  "ai-systems": "AI systems",
+  "organizational-design": "Organizational design",
 };
 
 export type Essay = {
@@ -362,7 +365,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why BI tool selection is the last decision, not the first — and the three reporting surfaces most analytics products owe their audiences.",
     cover: "/library/covers/three-surfaces-one-keystone.svg",
-    arc: "decision-system-architecture",
+    arc: "organizational-design",
     body: (
       <>
         <Brief>
@@ -747,7 +750,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
     cover: "/library/covers/when-genai-redesigned-my-dashboard.svg",
-    arc: "decision-system-architecture",
+    arc: "ai-systems",
     body: (
       <>
         <Brief>
@@ -1029,7 +1032,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Where AI belongs in the modern data stack, and the single contract that keeps every AI feature honest.",
     cover: "/library/covers/grounding-the-ai-layer.svg",
-    arc: "decision-system-architecture",
+    arc: "ai-systems",
     body: (
       <>
         <Brief>
@@ -1533,7 +1536,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why national education data, classroom assessments, and local instruments are most useful stitched together — and what the integration architecture looks like.",
     cover: "/library/covers/lo-2-0-stitching-the-layers.svg",
-    arc: "decision-system-architecture",
+    arc: "integration-governance",
     body: (
       <>
         <Brief>
@@ -2214,7 +2217,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Who owns data infrastructure is one of the org chart’s most muddled questions. The fix is not a better title; it is a principle — report to the integration seat, never to a single function.",
     cover: "/library/covers/where-should-data-sit.svg",
-    arc: "integration-governance",
+    arc: "organizational-design",
     body: (
       <>
         <Brief>
@@ -2584,7 +2587,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Agentic AI produces actions, not answers — and the human checkpoint that came free with every answer is gone unless you design it back in. Why agentic adoption is a decision-system question, not a technology one.",
     cover: "/library/covers/actions-not-answers.svg",
-    arc: "decision-system-architecture",
+    arc: "ai-systems",
     body: (
       <>
         <Brief>
@@ -3397,7 +3400,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
     cover: "/library/covers/the-take-home-test.svg",
-    arc: "decision-system-architecture",
+    arc: "organizational-design",
     hidden: false,
     body: (
       <>
