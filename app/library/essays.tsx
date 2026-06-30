@@ -169,7 +169,7 @@ function BarFigure({
             </div>
             <div className="flex-1 h-7 rounded-sm bg-bg border border-line relative overflow-hidden">
               <div
-                className="absolute inset-y-0 left-0 bg-ink"
+                className="absolute inset-y-0 left-0 bg-accent"
                 style={{ width: `${b.value}%` }}
               />
             </div>
