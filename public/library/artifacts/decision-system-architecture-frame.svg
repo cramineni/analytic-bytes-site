@@ -17,12 +17,11 @@
 <line x1="358" y1="532" x2="330" y2="560" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3 4" opacity="0.55"/>
 <line x1="462" y1="532" x2="490" y2="560" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3 4" opacity="0.55"/>
 
-<!-- CENTER NODE — Decision-System Architecture -->
-<circle cx="410" cy="470" r="82" fill="#0F2A4A"/>
-<circle cx="410" cy="470" r="82" fill="none" stroke="#0EA5E9" stroke-width="1.5" stroke-opacity="0.55"/>
+<!-- CENTER NODE — Decision-System Architecture (teal-wash keystone treatment) -->
+<circle cx="410" cy="470" r="82" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2.5"/>
 <text x="410" y="452" text-anchor="middle" font-size="10" letter-spacing="2" fill="#0EA5E9" font-weight="600">THE FRAME</text>
-<text x="410" y="478" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">Decision-System</text>
-<text x="410" y="497" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">Architecture</text>
+<text x="410" y="478" text-anchor="middle" font-size="14" fill="#0F2A4A" font-weight="700">Decision-System</text>
+<text x="410" y="497" text-anchor="middle" font-size="14" fill="#0F2A4A" font-weight="700">Architecture</text>
 
 <!-- CLUSTER 1 — MEASUREMENT (top-left) -->
 <rect x="40" y="220" width="290" height="160" fill="none" stroke="#CBD6E0" stroke-width="1"/>
