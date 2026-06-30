@@ -4,7 +4,7 @@
 <rect width="820" height="660" fill="#FFFFFF"/>
 
 <text x="48" y="46" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">DECISION LOAD vs CAPACITY</text>
-<text x="48" y="82" font-size="22" fill="#0E2A47" font-weight="700">AI raises both load and capacity.</text>
+<text x="48" y="82" font-size="22" fill="#0F2A4A" font-weight="700">AI raises both load and capacity.</text>
 <text x="48" y="110" font-size="22" fill="#0EA5E9" font-weight="700">The gap closes or opens by design.</text>
 
 <path d="M120,500 L740,500 L740,130 Z" fill="#F1F5F8"/>
@@ -12,33 +12,33 @@
 <line x1="120" y1="500" x2="740" y2="130" stroke="#6B7A8C" stroke-width="1.6" stroke-dasharray="6 4"/>
 <text x="650" y="180" font-size="12" fill="#6B7A8C" font-weight="600" transform="rotate(-31 650 180)">load = capacity</text>
 
-<line x1="120" y1="130" x2="120" y2="500" stroke="#0E2A47" stroke-width="1.8"/>
-<line x1="120" y1="500" x2="740" y2="500" stroke="#0E2A47" stroke-width="1.8"/>
+<line x1="120" y1="130" x2="120" y2="500" stroke="#0F2A4A" stroke-width="1.8"/>
+<line x1="120" y1="500" x2="740" y2="500" stroke="#0F2A4A" stroke-width="1.8"/>
 
-<text x="430" y="545" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">DECISION LOAD  →</text>
+<text x="430" y="545" font-size="14" fill="#0F2A4A" font-weight="600" text-anchor="middle">DECISION LOAD  →</text>
 <text x="430" y="565" font-size="12" fill="#6B7A8C" text-anchor="middle">volume × velocity of decisions</text>
-<text transform="translate(70,315) rotate(-90)" font-size="14" fill="#0E2A47" font-weight="600" text-anchor="middle">DECISION CAPACITY  ↑</text>
+<text transform="translate(70,315) rotate(-90)" font-size="14" fill="#0F2A4A" font-weight="600" text-anchor="middle">DECISION CAPACITY  ↑</text>
 <text transform="translate(90,315) rotate(-90)" font-size="12" fill="#6B7A8C" text-anchor="middle">time · judgment · system slack</text>
 
 <text x="180" y="195" font-size="17" fill="#0EA5E9" font-weight="700">HEALTHY</text>
 <text x="180" y="216" font-size="13" fill="#6B7A8C">capacity absorbs the load</text>
 
-<text x="510" y="430" font-size="17" fill="#0E2A47" font-weight="700">OVERLOAD</text>
+<text x="510" y="430" font-size="17" fill="#0F2A4A" font-weight="700">OVERLOAD</text>
 <text x="510" y="451" font-size="13" fill="#6B7A8C">the leader becomes the buffer</text>
 <text x="510" y="468" font-size="13" fill="#6B7A8C">— and burnout follows</text>
 
-<circle cx="290" cy="398" r="6" fill="#0E2A47"/>
-<text x="290" y="385" font-size="11" fill="#0E2A47" font-weight="600" text-anchor="middle" letter-spacing="0.5">AI deployed</text>
+<circle cx="290" cy="398" r="6" fill="#0F2A4A"/>
+<text x="290" y="385" font-size="11" fill="#0F2A4A" font-weight="600" text-anchor="middle" letter-spacing="0.5">AI deployed</text>
 
-<path d="M290,398 Q450,428 600,440" fill="none" stroke="#0E2A47" stroke-width="2.2"/>
-<path d="M600,440 L590,444 L590,434 Z" fill="#0E2A47"/>
-<text x="445" y="478" font-size="12.5" fill="#0E2A47" font-weight="600" text-anchor="middle">AI without system redesign  →</text>
+<path d="M290,398 Q450,428 600,440" fill="none" stroke="#0F2A4A" stroke-width="2.2"/>
+<path d="M600,440 L590,444 L590,434 Z" fill="#0F2A4A"/>
+<text x="445" y="478" font-size="12.5" fill="#0F2A4A" font-weight="600" text-anchor="middle">AI without system redesign  →</text>
 
 <path d="M290,398 Q430,265 560,215" fill="none" stroke="#0EA5E9" stroke-width="2.2"/>
 <path d="M560,215 L553,224 L549,214 Z" fill="#0EA5E9"/>
 <text x="430" y="305" font-size="12.5" fill="#0EA5E9" font-weight="600" text-anchor="middle">AI designed for capacity expansion  →</text>
 
-<text x="48" y="600" font-size="14.5" fill="#0E2A47" font-weight="600">Same tool. Two outcomes. <tspan fill="#0EA5E9">Design is the difference.</tspan></text>
+<text x="48" y="600" font-size="14.5" fill="#0F2A4A" font-weight="600">Same tool. Two outcomes. <tspan fill="#0EA5E9">Design is the difference.</tspan></text>
 
 <text x="48" y="640" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
 <text x="200" y="640" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
