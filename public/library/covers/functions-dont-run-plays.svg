@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Note No. 08: Functions don't run plays.</title>
+<desc>White background with a navy line-work diagram. Four vertical stacks of navy-outlined boxes (white interiors) labeled PROGRAMS, DATA, OPS, and FINANCE — the functional org chart. The middle row of each stack is missing; in its place, a horizontal teal band cuts across all four columns. Inside the band, where it intersects each column, a teal-filled circle stands in for the role pulled into the play. The band carries no caption — the visual story stands alone. Two-line title beneath: a lighter gray "The org chart is vertical." above a navy "Functions don't run plays." Italic subtitle "The unit of work is the play." Analytic Bytes signature at the bottom.</desc>
+
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Eyebrow -->
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 08</text>
+
+<!-- Diagram, centered at (600, 270) -->
+<g transform="translate(600, 270)">
+
+  <!-- Function stacks: 4 outlined boxes per column (top two + bottom two; middle row replaced by the play) -->
+
+  <!-- Column 1: PROGRAMS at x = -180 -->
+  <rect x="-210" y="-63" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="-210" y="-37" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="-210" y="15"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="-210" y="41"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+
+  <!-- Column 2: DATA at x = -60 -->
+  <rect x="-90" y="-63" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="-90" y="-37" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="-90" y="15"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="-90" y="41"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+
+  <!-- Column 3: OPS at x = 60 -->
+  <rect x="30" y="-63" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="30" y="-37" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="30" y="15"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="30" y="41"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+
+  <!-- Column 4: FINANCE at x = 180 -->
+  <rect x="150" y="-63" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="150" y="-37" width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="150" y="15"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <rect x="150" y="41"  width="60" height="22" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+
+  <!-- Horizontal play band: teal stripe across all 4 columns where the middle row would have been -->
+  <rect x="-260" y="-14" width="520" height="28" fill="#0EA5E9" opacity="0.15"/>
+  <!-- Band edges in teal stroke for definition -->
+  <line x1="-260" y1="-14" x2="260" y2="-14" stroke="#0EA5E9" stroke-width="1.5"/>
+  <line x1="-260" y1="14"  x2="260" y2="14"  stroke="#0EA5E9" stroke-width="1.5"/>
+
+  <!-- Play members: teal-filled circles inside the band, one per column -->
+  <circle cx="-180" cy="0" r="11" fill="#0EA5E9"/>
+  <circle cx="-60"  cy="0" r="11" fill="#0EA5E9"/>
+  <circle cx="60"   cy="0" r="11" fill="#0EA5E9"/>
+  <circle cx="180"  cy="0" r="11" fill="#0EA5E9"/>
+
+  <!-- Function name labels under each column -->
+  <text x="-180" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">PROGRAMS</text>
+  <text x="-60"  y="88" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">DATA</text>
+  <text x="60"   y="88" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">OPS</text>
+  <text x="180"  y="88" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">FINANCE</text>
+
+</g>
+
+<!-- Title line 1 -->
+<text x="600" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="400" letter-spacing="-0.3" fill="#64748B" text-anchor="middle">The org chart is vertical.</text>
+
+<!-- Title line 2 -->
+<text x="600" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="600" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Functions don&#8217;t run plays.</text>
+
+<!-- Subtitle -->
+<text x="600" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">The unit of work is the play.</text>
+
+<!-- Bottom divider -->
+<line x1="570" y1="560" x2="630" y2="560" stroke="#94A3B8" stroke-width="1"/>
+
+<!-- AB signature -->
+<text x="600" y="590" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+
+</svg>

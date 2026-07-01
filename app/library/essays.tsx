@@ -4811,12 +4811,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 06 — It's not a communication issue. It's a blown assignment.
+  // FIELD NOTE 07 — It's not a communication issue. It's a blown assignment.
   // ===================================================================
   {
     kind: "field-note",
     slug: "blown-assignment",
-    number: "06",
+    number: "07",
     title: "It’s not a communication issue. It’s a blown assignment.",
     subtitle: "Cross-functional work is a football play. Three phases, three failure modes, one fix that isn’t another meeting.",
     date: "2026-06-27",
@@ -4978,6 +4978,178 @@ export const ESSAYS: Essay[] = [
             What Is This System Actually Measuring?
           </InternalLink>{" "}
           (whether the construct is still the right one).
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 08 — Functions don't run plays.
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "functions-dont-run-plays",
+    number: "08",
+    title: "Functions don’t run plays.",
+    subtitle:
+      "The org chart is vertical. The work is horizontal. Why the patches don’t hold, and what a flash-team frame proposes instead.",
+    date: "2026-06-30",
+    readingTime: "3 min read",
+    summary:
+      "Most modern work is cross-functional and time-bound. Most org charts are functional and indefinite. The mismatch is structural, the usual patches don’t fix it, and the agentic era intensifies it. The unit of work is the play; the unit of organization should match it.",
+    cover: "/library/covers/functions-dont-run-plays.svg",
+    arc: "organizational-design",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Most modern work is cross-functional and time-bound. Most org
+            charts are functional and indefinite. The mismatch is structural.
+            It does not go away when the people are smart and well-meaning.
+          </p>
+          <p>
+            The usual patches — standing cross-functional meetings, matrix
+            reporting lines, the heroic senior hire — name the mismatch
+            without fixing it. The flash-team frame names the fix: the team is
+            the unit of work, and the unit of work should determine the unit
+            of organization. Not the other way around.
+          </p>
+        </Brief>
+
+        <H2>The mismatch</H2>
+        <P>
+          The work is horizontal: a specific deliverable, a specific clock,
+          expertise drawn from several functions. The org chart is vertical:
+          each function reporting up to its own executive, evaluated against
+          its own scorecard, accountable to its own incentives. The mismatch
+          is structural. It does not go away when the people are smart and
+          well-meaning. It is the structure.
+        </P>
+        <P>
+          So institutions patch it. The patches are familiar. A standing
+          cross-functional meeting names the breakdown without fixing it. A
+          matrix reporting line multiplies the bosses without changing the
+          unit of work. A <I>communication issue</I> diagnosis schedules
+          another meeting. The heroic senior hire is expected to span every
+          layer the org chart failed to connect, then gets sighed about as a
+          unicorn when one person cannot.
+        </P>
+
+        <H2>A more serious answer: the flash team</H2>
+        <P>
+          Melissa Valentine and her collaborators at Stanford named it the{" "}
+          <I>flash team</I>: an on-demand assembly of expertise, scoped to a
+          specific deliverable, time-bound, with explicit roles and handoffs.
+          When the deliverable is done, the team ends. The composition is
+          drawn from across functions. The duration is bounded by the work.
+        </P>
+        <P>
+          Variants sit alongside it. Agile pods. Scrum teams. Tiger teams.
+          Project teams of various names. What is distinctive about the
+          flash-teams framing is the explicit move it makes:{" "}
+          <B>
+            the team is the unit of work, and the unit of work should
+            determine the unit of organization.
+          </B>{" "}
+          Not the other way around.
+        </P>
+        <P>
+          That is the move most institutions still resist. They keep the org
+          chart vertical and try to make the work fit it, instead of letting
+          the work shape the unit.
+        </P>
+
+        <H2>Not anti-function</H2>
+        <P>
+          Flash teams are not anti-function. Functions are where deep
+          expertise lives and grows. An evaluator reports into research and
+          evaluation. An advisor reports into student success. A clinician
+          reports into clinical operations. The function is the home of the
+          role, and that does not change.
+        </P>
+        <P>What changes is what runs the play.</P>
+        <P>
+          The flash team draws from the functions for a specific deliverable.
+          It carries its own contract — who acts, what they see, on what
+          cadence, when it ends. It is authorized to form across functions by
+          an integration seat that has the standing to make the formation
+          stick. When the deliverable lands, the team dissolves. The
+          expertise returns to the function. The next play composes a
+          different team.
+        </P>
+        <P>
+          The football piece in the library called this the play. The
+          plumbing piece called it the water-authority work. This piece names
+          the structure underneath both. The team-around-the-problem is the
+          unit that runs across the vertical org chart. The seam contract is
+          what holds it together while the work is being done.
+        </P>
+
+        <H2>The agentic era intensifies this</H2>
+        <P>
+          The agentic era does not change this argument. It intensifies it.
+        </P>
+        <P>
+          Agents are arriving as new expertise nodes. They join plays. They
+          take handoffs. They have owners, cadences, and decision authorities
+          of their own. An institution that already organizes around the play
+          absorbs them more naturally than an institution that tries to slot
+          them under a function. A function-shaped org chart will spend the
+          next five years arguing about which function owns the agent. A
+          play-shaped organization already knows. The play does, for the
+          duration of the play.
+        </P>
+        <P>
+          The patches will not hold. The work is horizontal. The org chart is
+          vertical. The mismatch only grows.
+        </P>
+        <P>The unit of work is the play. The unit of organization should match it.</P>
+        <P>That’s the work.</P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="plumbing-got-upgraded-water-didnt"
+            title="Plumbing got upgraded. The water didn’t."
+            gloss="Why integration stopped being the hard part."
+          />
+          <SeeAlsoItem
+            slug="blown-assignment"
+            title="It’s not a communication issue. It’s a blown assignment."
+            gloss="The play as the unit of cross-functional work."
+          />
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where Should Data Sit?"
+            gloss="Which seat has standing to authorize the play to form."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The Contracts Between Systems"
+            gloss="What binds a flash team while it is running."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written June 2026 for the Analytic Bytes Library. The flash-team
+          construct comes from Melissa Valentine and collaborators at
+          Stanford. The longer arguments referenced here live in companion
+          pieces:{" "}
+          <InternalLink slug="plumbing-got-upgraded-water-didnt">
+            Plumbing got upgraded. The water didn’t.
+          </InternalLink>{" "}
+          (why integration stopped being the hard part),{" "}
+          <InternalLink slug="blown-assignment">
+            It’s not a communication issue. It’s a blown assignment.
+          </InternalLink>{" "}
+          (the play as the unit of cross-functional work),{" "}
+          <InternalLink slug="where-should-data-sit">
+            Where Should Data Sit?
+          </InternalLink>{" "}
+          (the seat that authorizes the play to form), and{" "}
+          <InternalLink slug="the-contracts-between-systems">
+            The Contracts Between Systems
+          </InternalLink>{" "}
+          (what a flash team’s contract has to specify).
         </MetaNote>
       </>
     ),
