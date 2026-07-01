@@ -3864,7 +3864,11 @@ export const ESSAYS: Essay[] = [
           data-entry personnel trained on the new system’s expectations
           for completeness, accuracy, and timeliness. None of that is
           technical work. It is definitional work conducted at the
-          architectural layer.
+          architectural layer — the layer{" "}
+          <InternalLink slug="the-contracts-between-systems">
+            the contract between systems
+          </InternalLink>{" "}
+          has to govern.
         </P>
 
         <H2>Stewardship is what makes it stick</H2>
@@ -3910,8 +3914,8 @@ export const ESSAYS: Essay[] = [
         <P>
           Universities are structurally decentralized in ways most
           organizations are not. School autonomy, faculty governance, and
-          distributed authority by design — these are features, not bugs.
-          Governance imposed from the center has a poor track record in
+          distributed authority by design are how the institution is
+          meant to work. Governance imposed from the center has a poor track record in
           higher education because the autonomy is rightly defended.
           Governance embedded through definitions has a much better one. A
           definition agreed across the registrar, financial aid,
@@ -4572,13 +4576,7 @@ export const ESSAYS: Essay[] = [
           cloud data platforms. The difficulty is no longer engineering
           the pipe; it’s mostly paying the subscription and managing
           the configuration. The plumbing got upgraded. It’s a solved
-          problem class, even if individual lines still get clogged. A
-          caveat worth naming: this describes the modern-stack majority.
-          For regulated industries — health systems still bridging
-          mainframe-era EHRs, banks still bridging core systems older
-          than the cloud — engineering the pipe remains a real piece of
-          work. The argument that follows applies most cleanly to the
-          institutions that have already crossed that bridge.
+          problem class, even if individual lines still get clogged.
         </P>
         <P>
           So if “plumbing” was what I called the hard part of the work,
@@ -4596,7 +4594,7 @@ export const ESSAYS: Essay[] = [
           the old sense. Most modern houses have it. It’s table stakes.
         </P>
         <P>
-          The work that actually determines whether you can drink the
+          The work that determines whether you can drink the
           water, cook with it, give it to a child, wash a wound — that
           work isn’t in the pipes. It’s: What’s the source. Is the
           source clean. Did anything get added or removed upstream.
@@ -4611,7 +4609,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Speed was the only knob we turned</H2>
         <P>
-          There’s a useful way to think about what AI actually changed
+          There’s a useful way to think about what AI changed
           in all this.
         </P>
         <P>
@@ -4739,7 +4737,7 @@ export const ESSAYS: Essay[] = [
           institutions skip. They build for monitoring, then ask the
           same plumbing to support intervention, and the seam fails.
           The work is matching the architecture to the decision the
-          institution actually needs to make.
+          institution needs to make.
         </P>
 
         <H2>The water is the work</H2>
@@ -4785,6 +4783,11 @@ export const ESSAYS: Essay[] = [
             slug="where-should-data-sit"
             title="Where Should Data Sit?"
             gloss="Where the integration seat that owns the water work sits on the org chart."
+          />
+          <SeeAlsoItem
+            slug="functions-dont-run-plays"
+            title="Functions don’t run plays."
+            gloss="The org-side of the same mismatch — why the plumbing gets upgraded and the work still doesn’t hold."
           />
         </SeeAlso>
 
@@ -4992,11 +4995,11 @@ export const ESSAYS: Essay[] = [
     number: "08",
     title: "Functions don’t run plays.",
     subtitle:
-      "The org chart is vertical. The work is horizontal. Why the patches don’t hold, and what a flash-team frame proposes instead.",
+      "The org chart is vertical. The work is horizontal. Multiple honest structural forms can carry the play — councils, flash teams, standing squads — and none of them works without a seam contract underneath.",
     date: "2026-06-30",
-    readingTime: "3 min read",
+    readingTime: "4 min read",
     summary:
-      "Most modern work is cross-functional and time-bound. Most org charts are functional and indefinite. The mismatch is structural, the usual patches don’t fix it, and the agentic era intensifies it. The unit of work is the play; the unit of organization should match it.",
+      "The mismatch between horizontal work and vertical org charts is structural. Multiple honest forms can carry it — councils that deliberate and hand playbooks back to functions, flash teams that merge for the deliverable, standing squads drawn permanently from across functions. All rely on the same seam contract underneath. Without that contract, none of them holds.",
     cover: "/library/covers/functions-dont-run-plays.svg",
     arc: "organizational-design",
     body: (
@@ -5008,11 +5011,14 @@ export const ESSAYS: Essay[] = [
             It does not go away when the people are smart and well-meaning.
           </p>
           <p>
-            The usual patches — standing cross-functional meetings, matrix
-            reporting lines, the heroic senior hire — name the mismatch
-            without fixing it. The flash-team frame names the fix: the team is
-            the unit of work, and the unit of work should determine the unit
-            of organization. Not the other way around.
+            More than one honest structural form can carry that mismatch —
+            councils that deliberate and hand a playbook back to each
+            function; flash teams that merge across functions for a
+            deliverable and dissolve; standing squads drawn permanently from
+            across functions. What is common to all three is a seam contract:
+            who acts, on what signal, at what cadence, with what authority.
+            The container is the institution&rsquo;s choice. The contract is
+            not optional.
           </p>
         </Brief>
 
@@ -5035,54 +5041,98 @@ export const ESSAYS: Essay[] = [
           unicorn when one person cannot.
         </P>
 
-        <H2>A more serious answer: the flash team</H2>
+        <H2>More than one honest answer</H2>
         <P>
-          Melissa Valentine and her collaborators at Stanford named it the{" "}
-          <I>flash team</I>: an on-demand assembly of expertise, scoped to a
-          specific deliverable, time-bound, with explicit roles and handoffs.
-          When the deliverable is done, the team ends. The composition is
-          drawn from across functions. The duration is bounded by the work.
+          There is more than one honest structural answer to the mismatch,
+          and the field of practice is diverse. Councils. Steering
+          committees. Advisory boards. Working groups. Task forces. Tiger
+          teams. Flash teams. Agile squads. Product teams. Centers of
+          excellence. Each carries a different profile on permanence,
+          authority, composition, and purpose. Each has a legitimate role in
+          the institutional toolkit.
         </P>
+        <P>Three archetypes cover most of the actual practice.</P>
+
+        <H3>Deliberate together, execute locally</H3>
         <P>
-          Variants sit alongside it. Agile pods. Scrum teams. Tiger teams.
-          Project teams of various names. What is distinctive about the
-          flash-teams framing is the explicit move it makes:{" "}
-          <B>
-            the team is the unit of work, and the unit of work should
-            determine the unit of organization.
-          </B>{" "}
-          Not the other way around.
+          A cross-functional body — a council, a steering committee, a
+          working group — deliberates and writes a shared playbook. The
+          playbook names the definitions, the handoffs, the timing, the
+          cadences, and the decisions the cross-functional work depends on.
+          Each function then takes the playbook back to its own team and
+          runs its portion inside its existing operating context.
+          Advancement, facilities, research management, and academic affairs
+          contribute to the same playbook in council, then execute their
+          piece each in their own house. Widespread in universities,
+          foundations, and mission-driven organizations. Can run for
+          decades.
         </P>
+
+        <H3>Merge for the deliverable</H3>
         <P>
-          That is the move most institutions still resist. They keep the org
-          chart vertical and try to make the work fit it, instead of letting
-          the work shape the unit.
+          Flash teams (Melissa Valentine and her collaborators at Stanford
+          named this pattern), tiger teams, project teams, task forces.
+          Expertise is drawn from across functions and merged into a single
+          team for the duration of the work. When the work is done, the
+          team dissolves. Expertise returns to the function. More common in
+          tech, product, and consulting.
+        </P>
+
+        <H3>Standing cross-functional composition</H3>
+        <P>
+          Agile squads, product teams, centers of excellence, matrix teams.
+          Ongoing teams drawn permanently or semi-permanently from across
+          functions. Common in software organizations and in mature
+          product-led institutions.
+        </P>
+
+        <P>
+          These are structurally different. They carry different rhythms,
+          different authority patterns, different membership assumptions.
+          Which one fits depends on the institution and the work — the
+          operating rhythm, the permanence of the effort, the culture that
+          already exists to receive it. What is common to all three is what
+          the football piece called a{" "}
+          <InternalLink slug="blown-assignment">seam contract</InternalLink>:
+          who acts, on what signal, at what cadence, with what authority.{" "}
+          <I>
+            The container is the institution&rsquo;s choice. The contract is
+            not optional.
+          </I>
         </P>
 
         <H2>Not anti-function</H2>
         <P>
-          Flash teams are not anti-function. Functions are where deep
-          expertise lives and grows. An evaluator reports into research and
+          None of this is anti-function. Functions are where deep expertise
+          lives and grows. An evaluator reports into research and
           evaluation. An advisor reports into student success. A clinician
           reports into clinical operations. The function is the home of the
           role, and that does not change.
         </P>
         <P>What changes is what runs the play.</P>
         <P>
-          The flash team draws from the functions for a specific deliverable.
-          It carries its own contract — who acts, what they see, on what
-          cadence, when it ends. It is authorized to form across functions by
-          an integration seat that has the standing to make the formation
-          stick. When the deliverable lands, the team dissolves. The
-          expertise returns to the function. The next play composes a
-          different team.
+          Whichever container carries the work — a merged team, a council
+          with a playbook, a standing squad — it draws expertise from the
+          functions for a specific deliverable and carries its own seam
+          contract. It is authorized to form across functions by an
+          integration seat that has the standing to make the arrangement
+          stick. When the work lands, the container&rsquo;s rhythm adjusts.
+          A flash team dissolves. A council closes a chapter. A squad rolls
+          onto its next mission. The expertise stays home. The next play
+          composes a different container.
         </P>
         <P>
-          The football piece in the library called this the play. The
-          plumbing piece called it the water-authority work. This piece names
-          the structure underneath both. The team-around-the-problem is the
-          unit that runs across the vertical org chart. The seam contract is
-          what holds it together while the work is being done.
+          The football piece in the library named the artifact underneath
+          all of this: the seam contract. The plumbing piece described the
+          same artifact at a different layer, between architecture and
+          human.{" "}
+          <InternalLink slug="the-contracts-between-systems">
+            Contracts Between Systems
+          </InternalLink>{" "}
+          and <I>Two Bets, One Institution</I> describe it at still other
+          layers. This piece is not naming a new artifact. It is naming what
+          the seam contract asks of the org chart: multiple honest
+          structural forms can carry it, and none of them work without it.
         </P>
 
         <H2>The agentic era intensifies this</H2>
@@ -5090,21 +5140,38 @@ export const ESSAYS: Essay[] = [
           The agentic era does not change this argument. It intensifies it.
         </P>
         <P>
-          Agents are arriving as new expertise nodes. They join plays. They
-          take handoffs. They have owners, cadences, and decision authorities
-          of their own. An institution that already organizes around the play
-          absorbs them more naturally than an institution that tries to slot
-          them under a function. A function-shaped org chart will spend the
-          next five years arguing about which function owns the agent. A
-          play-shaped organization already knows. The play does, for the
-          duration of the play.
+          Agents can be introduced at every layer where a seam contract
+          exists. The container that absorbs them — flash team, council
+          playbook, standing squad — matters less than the contract they
+          are joining. What matters is that the contract exists at that
+          layer, with its four pieces named: who acts, on what signal, at
+          what cadence, with what authority. Without a contract, an agent
+          at any layer creates the same problem — decisions made without
+          an owner, without a cadence, and without the standing to reverse.
         </P>
         <P>
-          The patches will not hold. The work is horizontal. The org chart is
-          vertical. The mismatch only grows.
+          The consequence of introducing an agent scales with the layer. An
+          agent inside a data pipeline is a technical operation; a failed
+          transform is a rerun. An agent inside a clinical alert, an
+          eligibility flag, or an intervention call is an institutional
+          action; a failed call is a person harmed. Most institutions will
+          introduce agents first at the layer whose failures are
+          reversible, then work upward as the contracts at higher layers
+          mature. That is not a claim about where agents belong. It is a
+          claim about where they safely arrive first.
         </P>
-        <P>The unit of work is the play. The unit of organization should match it.</P>
-        <P>That’s the work.</P>
+        <P>
+          The patches will not hold. The work is horizontal. The org chart
+          is vertical. The mismatch only grows.
+        </P>
+        <P>
+          The unit of work is the play. The mechanism that runs it across
+          the org chart is a seam contract. Some institutions carry that
+          contract in a flash team. Some in a council playbook. Some in a
+          standing squad. All are honest answers. None works without the
+          contract.
+        </P>
+        <P>That&rsquo;s the work.</P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -5125,31 +5192,36 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="the-contracts-between-systems"
             title="The Contracts Between Systems"
-            gloss="What binds a flash team while it is running."
+            gloss="The seam contract at the system-to-system layer."
           />
         </SeeAlso>
 
         <MetaNote>
           Written June 2026 for the Analytic Bytes Library. The flash-team
           construct comes from Melissa Valentine and collaborators at
-          Stanford. The longer arguments referenced here live in companion
-          pieces:{" "}
+          Stanford; the council, squad, and product-team archetypes reflect
+          standard practice across higher education, foundations,
+          healthcare, and tech. The longer arguments referenced here live
+          in companion pieces:{" "}
           <InternalLink slug="plumbing-got-upgraded-water-didnt">
-            Plumbing got upgraded. The water didn’t.
+            Plumbing got upgraded. The water didn&rsquo;t.
           </InternalLink>{" "}
           (why integration stopped being the hard part),{" "}
           <InternalLink slug="blown-assignment">
-            It’s not a communication issue. It’s a blown assignment.
+            It&rsquo;s not a communication issue. It&rsquo;s a blown
+            assignment.
           </InternalLink>{" "}
           (the play as the unit of cross-functional work),{" "}
           <InternalLink slug="where-should-data-sit">
             Where Should Data Sit?
           </InternalLink>{" "}
-          (the seat that authorizes the play to form), and{" "}
+          (the seat that authorizes the play to form),{" "}
           <InternalLink slug="the-contracts-between-systems">
             The Contracts Between Systems
           </InternalLink>{" "}
-          (what a flash team’s contract has to specify).
+          (the seam contract at the system-to-system layer), and{" "}
+          <I>Two Bets, One Institution</I> (seam contracts between
+          institutional domains).
         </MetaNote>
       </>
     ),
