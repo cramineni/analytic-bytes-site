@@ -3762,11 +3762,8 @@ export const ESSAYS: Essay[] = [
           agent from paying to generate versions no one asked for. The
           semantic layer was always a correctness control. Pointed at an
           agent that runs at machine cadence and bills per call, it becomes
-          a consumption control for the definitional-recomputation stream
-          specifically — one of several agent cost streams (reasoning
-          tokens, planning cycles, tool calls all run on their own meters),
-          but the stream that traces directly back to whether the words
-          were settled first.
+          a consumption control too, and the spend, like the disagreement,
+          traces back to whether the words were settled first.
         </P>
 
         <P>
@@ -4598,7 +4595,7 @@ export const ESSAYS: Essay[] = [
           water, cook with it, give it to a child, wash a wound — that
           work isn’t in the pipes. It’s: What’s the source. Is the
           source clean. Did anything get added or removed upstream.
-          What’s the pressure at the faucet — too high and it sprays,
+          What’s the pressure at the faucet: too high and it sprays,
           too low and you can’t fill a pot. Who’s allowed to open which
           tap. What happens when the system fails. Who notices.
         </P>
@@ -4689,26 +4686,26 @@ export const ESSAYS: Essay[] = [
         <H2>The water authority</H2>
         <P>The analogy keeps holding up.</P>
         <P>
-          The water treatment plant — the place that decides what
-          counts as drinkable water and tests every batch — that’s the
+          The water treatment plant, the place that decides what
+          counts as drinkable water and tests every batch, is the
           construct question. Are we measuring what we say we’re
           measuring. Is the thing in the pipe still what it was when we
           sampled it last quarter.
         </P>
         <P>
-          The municipal authority — who decides which neighborhoods get
+          The municipal authority, who decides which neighborhoods get
           pressure, who sets the testing cadence, who’s responsible
-          when the boil-water advisory goes out — that’s the governance
+          when the boil-water advisory goes out, is the governance
           contract. Who reads. Who writes. Cadence. Authority. This is
           the contract at the seam: the point where the architecture
           stops and a person has to act on what comes through. Most
-          institutions have a contract for the pipes — vendor SLAs,
+          institutions have a contract for the pipes: vendor SLAs,
           integration agreements, data-sharing terms. Few have one for
           what happens at the faucet.
         </P>
         <P>
-          The faucet itself — the moment someone turns the handle —
-          that’s the decision. A dosage adjustment, a budget call, an
+          The faucet itself, the moment someone turns the handle,
+          is the decision. A dosage adjustment, a budget call, an
           eligibility flag, a credit limit, a clinical alert. That’s
           where the entire stack either works or doesn’t. And the
           agentic era is already installing faucets that turn themselves
@@ -4732,8 +4729,8 @@ export const ESSAYS: Essay[] = [
         <P><I>On what cadence</I> the signal reaches them.</P>
         <P><I>What kind of decision</I> the system is built to support.</P>
         <P>
-          That last piece — what kind of decision — is the one most
-          institutions skip. They build for monitoring, then ask the
+          That last piece is the one most institutions skip: what kind
+          of decision. They build for monitoring, then ask the
           same plumbing to support intervention, and the seam fails.
           The work is matching the architecture to the decision the
           institution needs to make.
@@ -4748,7 +4745,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           But the truth is, the unglamorous part isn’t the pipes
-          anymore. The unglamorous part is the water: what’s in it,
+          anymore. The unglamorous part is the water — what’s in it,
           who decided what gets in, who’s responsible if it makes
           someone sick. The pipes are fine. The pipes were never the
           problem most institutions thought they were.
@@ -4822,9 +4819,9 @@ export const ESSAYS: Essay[] = [
     title: "It’s not a communication issue. It’s a blown assignment.",
     subtitle: "Cross-functional work is a football play. Three phases, three failure modes, one fix that isn’t another meeting.",
     date: "2026-06-27",
-    readingTime: "4 min read",
+    readingTime: "3 min read",
     summary:
-      "Most cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead — alignment, assignment, execution — and each phase fails differently. A communication-issue diagnosis collapses all three and fixes none.",
+      "Most cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead: alignment, assignment, execution. Each phase fails differently, and a communication-issue diagnosis collapses all three.",
     cover: "/library/covers/blown-assignment.svg",
     arc: "integration-governance",
     body: (
@@ -4909,20 +4906,15 @@ export const ESSAYS: Essay[] = [
         <H2>Why “a communication issue” is the wrong diagnosis</H2>
         <P>
           Most institutions diagnose all three as the same problem.{" "}
-          <I>We have a communication issue.</I> Then they schedule another
-          meeting.
+          <I>We have a communication issue.</I> And schedule another meeting.
         </P>
         <P>
           A communication issue treats all breakdowns as if they were the same
-          flat thing. They aren’t. An alignment failure needs a clearer
-          organizational map. An assignment failure needs a written contract
-          with named owners, defined triggers, and standing — not another SOP
-          on a shared drive. Most institutions already have SOPs and SLAs that
-          nobody reads; the seam contract is what those documents fail to
-          become when they don’t carry authority. An execution failure needs
-          operational redundancy: a backup when the named person is out.
-          Three different fixes. Three different conversations. Three
-          different artifacts.
+          flat thing, but they aren’t. An alignment failure needs a clearer
+          organizational map. An assignment failure needs a written contract.
+          An execution failure needs operational redundancy — a backup when
+          the named person is out. Three different fixes. Three different
+          conversations. Three different artifacts.
         </P>
         <P>The meeting can name the breakdown. It can’t fix any of them.</P>
 
@@ -4948,12 +4940,17 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="plumbing-got-upgraded-water-didnt"
             title="Plumbing got upgraded. The water didn’t."
-            gloss="Why the play isn’t in the box the modern data stack ships."
+            gloss="Why integration isn’t the decision, and what would be."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
             title="The contracts between systems"
-            gloss="What the written-down play actually has to specify."
+            gloss="What lives inside a seam contract."
+          />
+          <SeeAlsoItem
+            slug="functions-dont-run-plays"
+            title="Functions don’t run plays."
+            gloss="The org-structure side of the same mismatch."
           />
           <SeeAlsoItem
             slug="where-should-data-sit"
@@ -4974,8 +4971,9 @@ export const ESSAYS: Essay[] = [
           <InternalLink slug="the-contracts-between-systems">
             The Contracts Between Systems
           </InternalLink>{" "}
-          and <I>Who Writes the Contract</I> (what lives in a seam contract),
-          and{" "}
+          and <I>Who Writes the Contract</I> (what lives in a seam contract),{" "}
+          <I>Two Bets, One Institution</I> (how to decide whether to build
+          the play in-house or partner for it), and{" "}
           <InternalLink slug="what-is-this-system-measuring">
             What Is This System Actually Measuring?
           </InternalLink>{" "}
@@ -4994,11 +4992,11 @@ export const ESSAYS: Essay[] = [
     number: "08",
     title: "Functions don’t run plays.",
     subtitle:
-      "The org chart is vertical. The work is horizontal. Multiple honest structural forms can carry the play — councils, flash teams, standing squads — and none of them works without a seam contract underneath.",
+      "The org chart is vertical. The work is horizontal. Multiple honest structural forms can carry the play (councils, flash teams, standing squads) and none of them works without a seam contract underneath.",
     date: "2026-06-30",
     readingTime: "4 min read",
     summary:
-      "The mismatch between horizontal work and vertical org charts is structural. Multiple honest forms can carry it — councils that deliberate and hand playbooks back to functions, flash teams that merge for the deliverable, standing squads drawn permanently from across functions. All rely on the same seam contract underneath. Without that contract, none of them holds.",
+      "The mismatch between horizontal work and vertical org charts is structural. Multiple honest forms can carry it: councils that deliberate and hand playbooks back to functions, flash teams that merge for the deliverable, standing squads drawn permanently from across functions. All rely on the same seam contract underneath. Without that contract, none of them holds.",
     cover: "/library/covers/functions-dont-run-plays.svg",
     arc: "organizational-design",
     body: (
@@ -5010,7 +5008,7 @@ export const ESSAYS: Essay[] = [
             It does not go away when the people are smart and well-meaning.
           </p>
           <p>
-            More than one honest structural form can carry that mismatch —
+            More than one honest structural form can carry that mismatch:
             councils that deliberate and hand a playbook back to each
             function; flash teams that merge across functions for a
             deliverable and dissolve; standing squads drawn permanently from
@@ -5054,8 +5052,8 @@ export const ESSAYS: Essay[] = [
 
         <H3>Deliberate together, execute locally</H3>
         <P>
-          A cross-functional body — a council, a steering committee, a
-          working group — deliberates and writes a shared playbook. The
+          A cross-functional body (a council, a steering committee, a
+          working group) deliberates and writes a shared playbook. The
           playbook names the definitions, the handoffs, the timing, the
           cadences, and the decisions the cross-functional work depends on.
           Each function then takes the playbook back to its own team and
@@ -5111,8 +5109,8 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>What changes is what runs the play.</P>
         <P>
-          Whichever container carries the work — a merged team, a council
-          with a playbook, a standing squad — it draws expertise from the
+          Whichever container carries the work (a merged team, a council
+          with a playbook, a standing squad) draws expertise from the
           functions for a specific deliverable and carries its own seam
           contract. It is authorized to form across functions by an
           integration seat that has the standing to make the arrangement
@@ -5143,12 +5141,12 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Agents can be introduced at every layer where a seam contract
-          exists. The container that absorbs them — flash team, council
-          playbook, standing squad — matters less than the contract they
+          exists. The container that absorbs them (flash team, council
+          playbook, standing squad) matters less than the contract they
           are joining. What matters is that the contract exists at that
           layer, with its four pieces named: who acts, on what signal, at
           what cadence, with what authority. Without a contract, an agent
-          at any layer creates the same problem — decisions made without
+          at any layer creates the same problem: decisions made without
           an owner, without a cadence, and without the standing to reverse.
         </P>
         <P>
