@@ -4634,11 +4634,10 @@ export const ESSAYS: Essay[] = [
           AI made all three knobs more accessible. The speed knob was
           already turned up; that’s the part most institutions invested
           in. The resolution and context knobs are still mostly at their
-          default positions. That’s the gap — not that we lack speed,
-          but that we haven’t spent the other two.{" "}
+          default positions. That’s the gap. Not that we lack speed. It’s that we haven’t spent the other two.{" "}
           <I>
-            (There is a fourth dimension worth naming separately —
-            whether the construct in the pipe is still the construct
+            (There is a fourth dimension worth naming separately: whether
+            the construct in the pipe is still the construct
             you sampled last quarter. That one gets its own treatment
             in “The construct keeps moving.”)
           </I>
@@ -4667,7 +4666,7 @@ export const ESSAYS: Essay[] = [
         <P>That’s not plumbing. That’s closer to running a water authority.</P>
         <P>
           It’s worth naming the distinction directly. Most institutions
-          have some form of <I>data governance</I> in place — the
+          have some form of <I>data governance</I> in place: the
           policies that decide who can access which table, how a field
           is defined in the catalog, how lineage is tracked. That work
           is real and necessary. But data governance is governance of
@@ -5091,9 +5090,10 @@ export const ESSAYS: Essay[] = [
           different authority patterns, different membership assumptions.
           Which one fits depends on the institution and the work — the
           operating rhythm, the permanence of the effort, the culture that
-          already exists to receive it. What is common to all three is what
-          the football piece called a{" "}
-          <InternalLink slug="blown-assignment">seam contract</InternalLink>:
+          already exists to receive it. What is common to all three is what{" "}
+          <InternalLink slug="blown-assignment">the football piece</InternalLink>{" "}
+          called a{" "}
+          <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>:
           who acts, on what signal, at what cadence, with what authority.{" "}
           <I>
             The container is the institution&rsquo;s choice. The contract is
@@ -5122,9 +5122,11 @@ export const ESSAYS: Essay[] = [
           composes a different container.
         </P>
         <P>
-          The football piece in the library named the artifact underneath
-          all of this: the seam contract. The plumbing piece described the
-          same artifact at a different layer, between architecture and
+          <InternalLink slug="blown-assignment">The football piece</InternalLink>{" "}
+          in the library named the artifact underneath all of this: the{" "}
+          <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>. The{" "}
+          <InternalLink slug="plumbing-got-upgraded-water-didnt">plumbing piece</InternalLink>{" "}
+          described the same artifact at a different layer, between architecture and
           human.{" "}
           <InternalLink slug="the-contracts-between-systems">
             Contracts Between Systems
