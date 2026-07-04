@@ -5252,14 +5252,13 @@ export const ESSAYS: Essay[] = [
             reached, how much money went out, how many sessions were
             delivered. None can tell you, across the whole book, whether it
             worked or where the next rupee or dollar should go. The usual
-            diagnosis is a reporting problem — buy a better dashboard,
-            tighten the template. It isn’t. It’s a category error: you
-            bought a system of record for <I>activity</I> and asked it to
-            behave like a system of record for <I>outcomes</I>. This note
-            is about that difference, and about the missing category —
-            the evidence spine — that is what turns reach into a decision.
-            It is a field note, not a product. Its only real claim is
-            structural.
+            diagnosis is a reporting problem: buy a better dashboard,
+            tighten the template. The real problem is a category error.
+            You bought a system of record for <I>activity</I> and asked it
+            to behave like a system of record for <I>outcomes</I>. This
+            note is about that difference, and about the missing category,
+            the evidence spine, that turns reach into a decision. It is a
+            field note, not a product; its only real claim is structural.
           </p>
         </Brief>
 
@@ -5269,7 +5268,7 @@ export const ESSAYS: Essay[] = [
           Count the people served, the dollars deployed, the workshops
           run, the grants closed. These numbers are not wrong and they are
           not useless — a funder who cannot say how many children a
-          literacy program touched has a real problem. But notice{" "}
+          literacy program touched has a real problem. But ask{" "}
           <I>why</I> they are always the numbers you have. They fall out
           of the system for free. They are byproducts of transactions the
           organization was already logging for other reasons: the grant
@@ -5287,29 +5286,30 @@ export const ESSAYS: Essay[] = [
           reporting when the second never shows up.
         </P>
         <P>
-          None of this claims that measurement people have ignored use.
+          None of this says measurement people have ignored use.
           Utilization-focused evaluation has argued for decades that an
-          evaluation nobody acts on is a failed one; the conviction here
-          is inherited, not invented. What changes is <I>where it lives</I>.
-          Shared-measurement frameworks chase comparability by making
-          every grantee report the same indicators <I>up front</I>, and
-          metric catalogs like IRIS+ by prescribing a common dictionary to
-          pick from — both work when a portfolio shares one goal or one
-          asset class. A grant book rarely does: forty grantees, forty
-          theories of change. So the spine takes the opposite route — let
-          each keep its own language and place it on one scale{" "}
-          <I>afterward</I>. And the results-framework world already ran
-          the other experiment; the OECD’s review of results-based
-          management found the data gets collected but there is “little
-          evidence” it gets used for decisions. That gap is not a
-          discipline problem. It is a structural one — and the second
-          system is the structure.
+          evaluation nobody acts on has failed; the conviction here is
+          inherited, not invented. What changes is where it lives.
+          Shared-measurement frameworks reach comparability by making
+          every grantee report the same indicators up front; metric
+          catalogs like IRIS+ do it by prescribing a common dictionary to
+          pick from. Both work when a portfolio shares one goal or one
+          asset class. A grant book rarely does. Forty grantees carry
+          forty theories of change, so the spine runs the other way: let
+          each keep its own language, then place it on one scale
+          afterward. The results-framework world already tried the
+          alternative, and the OECD’s review of results-based management
+          landed on a familiar pattern: the data gets collected, but it
+          rarely reaches the decision. The obvious read is a culture
+          problem, teams that never build the habit of looking. The deeper
+          one is structural: the data was never shaped to be read as a
+          decision, and the second system is what shapes it.
         </P>
 
         <H2>Why the CRM can’t save you</H2>
         <P>
-          Here is where most teams go looking for the fix, and here is
-          why it fails. The instinct is: we have a CRM, it holds all our
+          This is where most teams go looking for the fix, and where it
+          fails. The instinct is familiar: we have a CRM, it holds all our
           grantee data, surely the answer is a better view on top of it.
           But a CRM is a system of record for <I>relationships and
           transactions</I> — contacts, grants, touchpoints, disbursements,
@@ -5328,7 +5328,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The honest version of the claim is not “CRMs are bad.” You can
           bolt an outcome field onto any CRM. The trouble is that
-          comparability is not a storage feature — it is a governance
+          comparability is not a storage feature; it is a governance
           feature. Add a free-text “impact” field and, across forty
           grantees, you get forty differently-worded fields that do not
           read across. The seam you were trying to close reopens, now
@@ -5376,7 +5376,7 @@ export const ESSAYS: Essay[] = [
           cycle: the outcome tier from the rubric, the leading signal
           you are watching, the confidence you have in the evidence
           behind it. That consistency is not clerical tidiness. The
-          shared columns <I>are</I> the infrastructure. They are what a
+          shared columns <I>are</I> the structure. They are what a
           CRM’s per-grantee custom fields can never be.
         </P>
 
@@ -5404,22 +5404,21 @@ export const ESSAYS: Essay[] = [
           The reason this is worth building once is that the same spine
           serves three different seats without being rebuilt. The
           vocabulary changes; the architecture does not. A{" "}
-          <B>program officer</B> reads a single grantee’s row and asks{" "}
-          <I>is it working</I> — the spine gives them the leading signal
+          <B>program officer</B> reads a single grantee’s row and asks
+          whether it is working. The spine gives them the leading signal
           before the post-mortem, not just the status the CRM already
           showed. A <B>portfolio manager</B> reads down the whole column
-          and asks <I>where next</I> — the spine gives them comparability,
-          so the portfolio view resolves into invest, scale, or stop
-          instead of collapsing to a single green number. A{" "}
-          <B>CSR lead</B> in India reads the same structure board-facing,
-          against Schedule VII and the two-percent mandate, and asks{" "}
-          <I>renew, scale, or exit</I> — the ERP already gives them spend
-          and compliance; the spine gives them the impact half that
-          spend alone can never defend.
+          and asks where the next dollar goes; comparability lets that
+          view resolve into invest, scale, or stop instead of collapsing
+          to a single green number. A <B>CSR lead</B> in India reads the
+          same structure board-facing, against Schedule VII and the
+          two-percent mandate, and asks whether to renew, scale, or exit.
+          Their ERP already gives them spend and compliance. The spine
+          gives them the impact half that spend alone can never defend.
         </P>
         <P>
           Three readers, three questions, one record shape. That is the
-          whole argument for treating the spine as infrastructure rather
+          whole argument for treating the spine as architecture rather
           than a report: you build it once and it pays out at every
           altitude.
         </P>
