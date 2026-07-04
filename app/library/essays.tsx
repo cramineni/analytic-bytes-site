@@ -5237,7 +5237,7 @@ export const ESSAYS: Essay[] = [
     title: "The Reach Trap",
     subtitle:
       "Why your CRM keeps handing you reach — and what a decision system reads instead.",
-    date: "2026-07-04",
+    date: "2026-07-03",
     readingTime: "7 min read",
     summary:
       "A program officer, a portfolio manager, and a CSR lead can all report reach, but none can say whether it worked or where the next dollar should go. The usual diagnosis is a reporting problem. It isn’t. It’s a category error: a system of record for activity asked to behave like a system of record for outcomes.",
@@ -5496,7 +5496,7 @@ export const ESSAYS: Essay[] = [
     title: "Why the rules look weird",
     subtitle:
       "What sports rules teach about preventing predictable failure in any decision system.",
-    date: "2026-07-04",
+    date: "2026-07-06",
     readingTime: "10 min read",
     summary:
       "Most rules in a system describe normal behavior. The handful that look weird — that interrupt, that constrain, that pre-resolve a specific exploit — are the rules doing the structural work. Five sports rules, five structural lessons for institutional design.",
@@ -5603,6 +5603,19 @@ export const ESSAYS: Essay[] = [
           the rule that prevents the rational pursuit of the metric from
           killing what the metric was meant to encourage. Almost no funder
           has that rule written down.
+        </P>
+        <P>
+          Measurement scientists have a name for the pattern the Free Guard
+          Zone was written to prevent: <B>construct-irrelevant strategies</B>{" "}
+          &mdash; responses that hit the score without demonstrating the
+          thing the score was built to measure. Samuel Messick built the
+          modern validity framework around exactly this failure mode. The
+          AI benchmark community has been rediscovering it under other
+          names &mdash; reward hacking, specification gaming, Goodhart
+          taxonomy &mdash; as models learn to score high on evaluations
+          without learning the underlying skill. It is the same problem in
+          a different domain, and it is the reason the weird rule has to be
+          written before the metric is deployed.
         </P>
 
         <H2>Soccer Offside</H2>
@@ -5758,6 +5771,15 @@ export const ESSAYS: Essay[] = [
           working governance looks like up close.
         </P>
         <P>
+          There is a corollary worth naming. G. K. Chesterton put it as a
+          heuristic a century ago: never remove a fence until you know why
+          it was put there. The rule that looks weird is probably
+          load-bearing. If you cannot say what predictable failure it was
+          written to prevent, the safest assumption is that someone before
+          you could — and that removing it will reveal, at cost, the
+          exploit the rule was there to close.
+        </P>
+        <P>
           The most important systems are not designed to optimize
           performance. They are designed to prevent predictable failure.
           The rules that do that work look weird at first reading, and
@@ -5810,7 +5832,7 @@ export const ESSAYS: Essay[] = [
     title: "The Decision System",
     subtitle:
       "The Analytic Bytes framework for turning fragmented data into institutional action.",
-    date: "2026-07-04",
+    date: "2026-07-01",
     readingTime: "13 min read",
     summary:
       "Most “data problems” are decision-system problems. Three things fail at the faucet — meaning, authority, and validity — and detach any one from the other two and the system produces confident nonsense at speed. This is the umbrella framework that unifies the Analytic Bytes library.",
@@ -5877,7 +5899,7 @@ export const ESSAYS: Essay[] = [
         <H2>Pipes and the faucet</H2>
 
         <P>
-          Start with what’s already solved. Moving data, storing it,
+          Let’s start with what’s already solved. Moving data, storing it,
           transforming it at scale (the plumbing) is, for a growing number
           of institutions, increasingly tractable with mature tools.{" "}
           <InternalLink slug="plumbing-got-upgraded-water-didnt">
@@ -5937,8 +5959,10 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The fix is structural, not exhortative. You build a{" "}
-          <B>semantic keystone</B>: a single layer, governed in code,
+          The fix is structural, not a directive. You build a{" "}
+          <B>
+            <ArtifactLink slug="decision-system-reference-architecture">semantic keystone</ArtifactLink>
+          </B>: a single layer, governed in code,
           where every metric is defined once. <I>On-track</I> is computed
           in one place, and every surface (
           <InternalLink slug="three-surfaces-one-keystone">
@@ -5973,9 +5997,9 @@ export const ESSAYS: Essay[] = [
         <P>
           One of the most common failures in any early-warning system is
           not a bad model — it’s a{" "}
-          <InternalLink slug="blown-assignment">
-            <B>blown assignment</B>
-          </InternalLink>
+          <B>
+            <InternalLink slug="blown-assignment">blown assignment</InternalLink>
+          </B>
           . The signal fires and no one is named to receive it. This is a
           seam problem: the failure lives in the handoff between
           specialists, not inside any one of them. The cleanest sprinter
@@ -5985,9 +6009,9 @@ export const ESSAYS: Essay[] = [
 
         <P>
           The instrument that fixes it is a{" "}
-          <ArtifactLink slug="contract-at-the-seam">
-            <B>seam contract</B>
-          </ArtifactLink>
+          <B>
+            <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>
+          </B>
           : an explicit, written understanding (operational, not legal) of{" "}
           <I>
             who acts on a signal, with what authority, on what cadence,
@@ -6010,7 +6034,7 @@ export const ESSAYS: Essay[] = [
           seat that holds legitimate cross-functional authority (often
           the COO, sometimes a Chief Impact Officer or equivalent
           integrator, in a smaller shop the CEO), but never{" "}
-          <InternalLink slug="functions-dont-run-plays">
+          <InternalLink slug="where-should-data-sit">
             inside a single technical or financial function by default
           </InternalLink>
           , which will bend the data toward its own incentives:
@@ -6055,9 +6079,9 @@ export const ESSAYS: Essay[] = [
 
         <P>
           This is the hardest layer, and the one institutions skip.{" "}
-          <InternalLink slug="what-is-this-system-measuring">
-            <B>Construct validity</B>
-          </InternalLink>{" "}
+          <B>
+            <InternalLink slug="what-is-this-system-measuring">Construct validity</InternalLink>
+          </B>{" "}
           asks a question the dashboard can never answer: is the system
           measuring the <I>trait it claims to</I> (academic risk,
           wellbeing, quality), or merely a surface proxy that correlates
@@ -6107,15 +6131,15 @@ export const ESSAYS: Essay[] = [
           it: a falling overall rate that masks a <I>rising</I> rate in
           one subgroup, the average quietly erasing the very contrast
           the decision rests on.{" "}
-          <InternalLink slug="burden-disparity-and-the-next-dollar">
-            <B>Burden and disparity are different signals</B>
-          </InternalLink>
+          <B>
+            <InternalLink slug="burden-disparity-and-the-next-dollar">Burden and disparity are different signals</InternalLink>
+          </B>
           , and only disaggregation makes the resource choice explicit
           and honest: where the next dollar goes. The second discipline
           is asking what the measure is <I>for</I>:{" "}
-          <InternalLink slug="actions-not-answers">
-            <B>decision utility</B>
-          </InternalLink>{" "}
+          <B>
+            <InternalLink slug="actions-not-answers">decision utility</InternalLink>
+          </B>{" "}
           weighs the expected cost and benefit of the specific action,
           not just the statistical accuracy of the score. A validated
           flag that triggers no useful act is a validated waste.
@@ -6162,8 +6186,8 @@ export const ESSAYS: Essay[] = [
           stakes of the decision, not the cleverness of the model); a{" "}
           <B>reversibility envelope</B> (how and when its action can be
           undone, and who is told when a record someone already acted
-          on gets corrected); a named human owner who answers for what
-          it does; and a <B>consumption contract</B>, so metered spend
+          on gets corrected); <B>a named human owner</B> who answers for
+          what it does; and a <B>consumption contract</B>, so metered spend
           lands on the department that generated it. And like every
           other reader, the agent reads through the same semantic
           keystone — because{" "}
@@ -6183,19 +6207,20 @@ export const ESSAYS: Essay[] = [
           architecture fall down.
         </P>
 
-        <H2>Why the rules look weird</H2>
+        <H2>Design the rules for the failure mode</H2>
 
         <P>
           The best institutional rules aren’t written to describe normal
-          play. They’re written to prevent the predictable failure: to
-          close the loophole a rational actor would otherwise exploit.
-          That’s why they look strange: they’re aimed at the failure
-          mode, not the happy path (the oddest rules in any sport are
-          almost always the anti-gaming ones). Goodhart’s law (<I>a
-          measure that becomes a target stops being a good measure</I>)
-          isn’t a slogan for a poster. It’s a design constraint. If a
-          measure will be gamed, the system has to protect the construct
-          before someone hollows it out by chasing the proxy. Write the
+          play; they’re written to prevent predictable failure. Goodhart’s
+          law (<I>a measure that becomes a target stops being a good
+          measure</I>) isn’t a slogan for a poster. It’s a design
+          constraint. If a measure will be gamed, the system has to
+          protect the construct before someone hollows it out by chasing
+          the proxy. That’s a whole essay of its own — see{" "}
+          <InternalLink slug="why-the-rules-look-weird">
+            Why the rules look weird
+          </InternalLink>
+          . For the decision-system, the corollary is simple: write the
           weird rule first.
         </P>
 
@@ -6216,6 +6241,12 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <H2>What the system is for</H2>
+
+        <Figure
+          src="/library/figures/decision-system-flag-vs-system.svg"
+          alt="Left: a grid of red, yellow, and green flag dots on a dashboard — the flag wall — captioned 'Nothing happens. The flag was the easy part.' An arrow labeled SYSTEM crosses to the right, where a triangle of navy circles labeled MEANING, AUTHORITY, VALIDITY sits around a teal DECISION dot at the center. The caption reads 'A decision happens. The system is the work.'"
+          caption="The flag was always the easy part. What turns a wall of red, yellow, and green flags into a decision is the system around it: meaning, authority, and validity holding each other up."
+        />
 
         <P>
           A decision system is meaning, authority, and validity, holding
