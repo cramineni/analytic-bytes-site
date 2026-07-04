@@ -6326,6 +6326,655 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+
+  // ===================================================================
+  // FIELD NOTE 11 — We used to settle for thumbnails  (HIDDEN — unhides next week)
+  // ===================================================================
+  {
+    kind: "field-note",
+    hidden: true,
+    slug: "we-used-to-settle-for-thumbnails",
+    number: "11",
+    title: "We used to settle for thumbnails.",
+    subtitle:
+      "The compression institutions ran on for centuries is finally cheap to relax. That&rsquo;s not a technology story. It&rsquo;s a decision-architecture question.",
+    date: "2026-07-09",
+    readingTime: "5 min read",
+    summary:
+      "For most of human history, every institution carried you as a thumbnail: a name, a category, a score. That compression wasn’t malice, it was budget, and the price of the full picture has now collapsed. The choice institutions face isn’t whether to keep sorting faster or to hold people at higher resolution; it is whether they can answer the validity question underneath it.",
+    cover: "/library/covers/we-used-to-settle-for-thumbnails.svg",
+    arc: "measurement",
+    body: (
+      <>
+        <Brief>
+          <p>
+            For most of human history, every institution has had to carry you
+            as a thumbnail. A name, a category, a score, a photo the size of a
+            postage stamp. That wasn&rsquo;t malice. It was budget. Human
+            attention had limits, and the thumbnail was what fit through the
+            pipeline.
+          </p>
+          <p>
+            The price of the full picture has collapsed. Every institution now
+            faces a choice it did not have before: use the discount to sort
+            people faster, or use it to hold them at higher resolution. The
+            question underneath the choice is a measurement question, and the
+            discipline that answers it has been ready for this moment for a
+            long time.
+          </p>
+        </Brief>
+
+        <H2>Something quiet just changed.</H2>
+        <P>
+          For thousands of years, the bottleneck was carrying the picture. Not
+          anymore. The advisor still has twenty minutes with you. The
+          clinician still has fifty. But what travels into that twenty minutes
+          (what survives the pipeline from intake to conversation) used to be
+          a thumbnail and can now be the full picture. Not because human
+          attention got cheaper. Because the cost of preserving and presenting
+          the picture to the human at the moment of decision finally dropped.
+        </P>
+        <P>
+          You can think about it the way photography went. We didn&rsquo;t
+          always have high-resolution images of everything. We had paintings,
+          and only royalty could afford the full likeness. We had early
+          photographs, but they were precious and rare, one shot per occasion,
+          no retakes. Then film got cheap. Then digital got cheap. Then
+          storage and transmission got so cheap that we stopped thinking about
+          it at all. Today your phone holds tens of thousands of full-resolution
+          images and the question is just which ones to look at.
+        </P>
+        <P>
+          The same thing has just happened to people, inside institutions. The
+          price of the full picture has collapsed.
+        </P>
+
+        <H2>The choice.</H2>
+        <P>
+          So now every institution faces a choice it didn&rsquo;t have before.
+        </P>
+        <P>
+          It can use the discount to sort you faster. More candidates
+          screened, more students flagged, more patients triaged. Same
+          thumbnails: just more of them, generated more quickly. That&rsquo;s
+          the obvious move, because efficiency has a clear ROI. And the
+          metrics most institutions already track (volume, throughput,
+          latency) reward more of what they&rsquo;re already doing.
+        </P>
+        <P>
+          Or it can use the discount to hold you at higher resolution. Same
+          number of students, same number of patients, same number of
+          candidates. But what the advisor opens on her screen is no longer a
+          thumbnail. It&rsquo;s the picture.
+        </P>
+        <P>
+          The CEO who says she needs the thumbnail because attention is scarce
+          is not wrong about the constraint. Human attention is still scarce;
+          the picture itself is not an asset unless it has been designed for
+          the moment of decision. A full-resolution view dumped into the
+          advisor&rsquo;s twenty minutes without curation produces overload,
+          not insight. The discount has to be spent on two things, not one:
+          on preserving the picture, and on designing the interface that lets
+          the picture inform the twenty minutes without overwhelming them.
+          The question is not <I>thumbnail or full picture?</I> It is{" "}
+          <I>
+            what does the full picture need to look like for the advisor to
+            use it in twenty minutes?
+          </I>{" "}
+          That is a design problem, and it is the second half of what the
+          discount buys.
+        </P>
+        <P>
+          Most institutions are reaching for the first option. It&rsquo;s what
+          the dashboards already measure. It&rsquo;s what procurement already
+          buys. It&rsquo;s what the consultants already pitch.
+        </P>
+        <P>The second option requires a different question.</P>
+
+        <H2>The question.</H2>
+        <P>
+          The question is one a measurement scientist would recognize and one
+          an advisor can carry into any room:{" "}
+          <I>
+            does this system actually see the person, or is it still working
+            from a thumbnail?
+          </I>
+        </P>
+        <P>
+          That&rsquo;s not sentiment. It&rsquo;s a measurement standard. The
+          discipline is called{" "}
+          <B>
+            <InternalLink slug="what-is-this-system-measuring">
+              validity
+            </InternalLink>
+          </B>
+          , and it has decades of track record from the world of high-stakes
+          testing. A score that tracks the construct it claims to measure is
+          valid. A score that tracks something else (length, fluency,
+          demographics, the candidate tested just before you) is not. The
+          standard isn&rsquo;t new. It&rsquo;s been ready for this moment for
+          a long time.
+        </P>
+        <P>
+          What&rsquo;s new is the price of asking it. When carrying the full
+          picture was impossible, you couldn&rsquo;t really apply validity to
+          most institutional systems, there was no full picture to validate
+          against. Now you can. And now you should.
+        </P>
+
+        <H2>The stakes.</H2>
+        <P>
+          For most of history, the thumbnail was the kindest thing an
+          institution could do for you. The full picture wasn&rsquo;t kept out
+          of cruelty. It was kept out because nobody could carry it.
+        </P>
+        <P>That isn&rsquo;t true anymore.</P>
+        <P>
+          The question for 2026 is whether institutions use the savings to
+          take more thumbnails faster, or to finally stop settling for them.
+        </P>
+        <P>We used to settle for thumbnails.</P>
+        <P>We don&rsquo;t have to anymore.</P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What Is This System Actually Measuring?"
+            gloss="Whether a system is looking at the person or just at a proxy."
+          />
+          <SeeAlsoItem
+            slug="numbers-dont-agree"
+            title="The Numbers Don’t Agree Because the Words Don’t"
+            gloss="Why two systems describing the same person disagree about who they are."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The Contracts Between Systems"
+            gloss="Who decides what survives the pipeline and what gets thrown away."
+          />
+          <SeeAlsoItem
+            slug="grounding-the-ai-layer"
+            title="Grounding the AI Layer"
+            gloss="Whether the construct a model tracked last quarter is the one it&rsquo;s tracking today."
+          />
+          <SeeAlsoItem
+            slug="the-decision-system"
+            title="The Decision System"
+            gloss="What the picture needs to look like to inform the twenty minutes."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written July 2026 for the Analytic Bytes Library. The argument here
+          is compact by design; the longer versions live in companion pieces:{" "}
+          <InternalLink slug="what-is-this-system-measuring">
+            What Is This System Actually Measuring?
+          </InternalLink>{" "}
+          (the validity question applied to an institutional system),{" "}
+          <InternalLink slug="numbers-dont-agree">
+            The Numbers Don&rsquo;t Agree Because the Words Don&rsquo;t
+          </InternalLink>{" "}
+          (why two systems that both claim to describe the same person
+          disagree), and{" "}
+          <InternalLink slug="the-decision-system">
+            The Decision System
+          </InternalLink>{" "}
+          (what the full picture has to look like to inform the twenty
+          minutes without overwhelming them).
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 12 — AI did not write my library  (HIDDEN — unhides next week)
+  // ===================================================================
+  {
+    kind: "field-note",
+    hidden: true,
+    slug: "ai-did-not-write-my-library",
+    number: "12",
+    title: "AI did not write my library. AI helped me navigate it.",
+    subtitle:
+      "Field notes on the stages of working with generative AI across tools.",
+    date: "2026-07-13",
+    readingTime: "9 min read",
+    summary:
+      "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. The through-line: maturity transferred, capability expanded.",
+    cover: "/library/covers/ai-did-not-write-my-library.svg",
+    arc: "ai-systems",
+    body: (
+      <>
+        <Brief>
+          <p>
+            A line came out of a conversation with GPT one afternoon in May.
+            I was trying to describe what AI had been doing for me over a
+            year of using it, and the line landed: <I>AI did not
+            write my library. AI helped me navigate it.</I> The library is
+            mine. The voice is mine. What AI gave me was a surface to think
+            on before the work went into the world.
+          </p>
+          <p>
+            This is a personal field note. It is not a universal claim. It
+            is what I have learned in about eighteen months of working with
+            three generative AI tools across a career transition, a brand
+            build, a family, and a re-entry into the kind of public-facing
+            work I had been away from for years. Anyone who tells you the
+            optimal way to use AI is making it up. I am telling you what
+            worked for me, in the specific shape my life took.
+          </p>
+        </Brief>
+
+        <H2>Stage 1 — A vending machine, not a relationship.</H2>
+        <P>
+          November 2024. I had just exited a senior data role in education
+          and needed to send resumes at volume. I opened a job-search
+          platform that produced a tailored resume and cover letter from a
+          JD I uploaded.
+        </P>
+        <P>
+          This was not a relationship. It was a <B>vending machine</B>. I
+          gave it inputs, it produced outputs, I sent them. The voice in
+          the outputs was generic. I knew it was generic. I sent the
+          materials anyway because I needed the volume.
+        </P>
+        <P>
+          If this had been the whole story of AI for me, the field note
+          would end here. AI as a productivity device. Useful, narrow,
+          forgettable.
+        </P>
+
+        <H2>Stage 2 — GPT enters. The foundation gets built.</H2>
+        <P>
+          August 2025. I started an executive education program on
+          AI-driven leadership and used ChatGPT for a course project. The
+          project was a dashboard redesign. The work was good. I kept
+          using GPT after the course ended.
+        </P>
+        <P>
+          For about eight months (September 2025 through early April
+          2026) GPT was the surface my life ran on. Career strategy.
+          Resumes for actual roles, dozens of them, with my real voice in
+          the cover letters because I had learned to direct the model
+          into it. LinkedIn posts. Brand work for Analytic Bytes, which I
+          was building as an advisory practice and using as the bridge
+          structure during the search. Onboarding prep when I landed a
+          new senior role late that year. Ramp-up on the data platform
+          work after I started: schema design, pipeline architecture,
+          AI-assisted reporting prototypes. Then the political
+          navigation when the politics got hard. Then the exit, just
+          over four months in.
+        </P>
+        <P>
+          But also: my son&rsquo;s Sanskrit homework. Fitness routines.
+          Clothes shopping when I needed to look like someone who could
+          walk into a senior interview after a year of working from home.
+          Hair and skin products I had let lapse. Watch recommendations the
+          morning after a hard day. Recipes. Once, the surface area of a
+          sliced cake for a math worksheet.
+        </P>
+        <P>
+          I did not separate these. They were the same tool doing
+          different work. This matters, because the maturity I was
+          building was not &ldquo;AI for professional things.&rdquo; It
+          was <I>AI as a surface I could think on without performing.</I>
+        </P>
+        <P>
+          That last part is the one I would lift out of the eight months
+          and underline. The reason GPT became useful for me was not that
+          it was smart. It was that the conversational contract was
+          different from human conversation. With humans, I have to think
+          of the most balanced curated version of what I want to say
+          before I say it. With AI, I can say the thing, hear it back,
+          reflect, refine. No pressure. No social cost.
+        </P>
+        <P>
+          That property (<I>removing the social-performance overhead of
+          conversation</I>) is what made AI usable for the kind of
+          thinking that needed open space. Not because AI is
+          non-judgmental or empathic. Those framings are sentimental and
+          partly untrue. The benefit is structural. AI removes the
+          contract that requires you to be composed before you speak.
+        </P>
+        <P>
+          By the end of those eight months, a working pattern had formed.
+          Pre-work happened with AI. Polished outputs went into the world
+          in my voice. I had learned to catch sycophancy and call it out
+          (<I>&ldquo;why r u agreeeing with evetyhign i say&rdquo;</I>). I
+          had learned to protect my voice from drift (<I>&ldquo;why is
+          this not sounding me?&rdquo;</I>). I had learned that the volume
+          of iteration was the point, that one banner image might take
+          ninety turns and that was fine because the artifact was the
+          deliverable, not the conversation.
+        </P>
+        <P>This was the foundation. I would lean on it for what came next.</P>
+
+        <H2>Stage 3 — The crisis. Acute use during a professional exit.</H2>
+        <P>
+          April 5, 2026. The Sunday after a senior role of mine was
+          eliminated.
+        </P>
+        <P>
+          The first message I sent to GPT that day opened: <I>&ldquo;this
+          transition still sucks, make me think what is wrong with
+          me?&rdquo;</I>
+        </P>
+        <P>
+          What followed was a 209-message thread over twenty-three days
+          that did three things in parallel. It metabolized professional
+          grief. It connected the exit to four prior departures over a
+          fifteen-year career and found a pattern across them. And it
+          produced the strategic reconstruction underneath: LinkedIn
+          rewrites, role-target recalibration, the framing I would carry
+          into interviews.
+        </P>
+        <P>
+          I made one specific request inside that thread that I think
+          about now: <I>&ldquo;talk to me like a management consultant and
+          coach.&rdquo;</I> I cast the AI into a specific role at a
+          specific emotional moment. Not just asking for help, directing
+          the kind of help.
+        </P>
+        <P>
+          I want to be careful here, because there is a flat version of
+          this stage that says &ldquo;AI is good at emotional
+          support&rdquo; and most public writing on the topic lands
+          there. The accurate version is different.
+        </P>
+        <P>
+          There were other scaffolds. My father called with advice. My
+          husband had his own take. We are a family with a household to
+          keep running, and I was also being tactical for the same
+          reason. What AI specifically gave me, that the humans in my
+          life could not, was <I>open space alongside the tactical
+          pressure</I>. The space to ask the same hard question eight
+          different ways. The space to be repetitive without burdening
+          anyone. The space to integrate what others had told me without
+          the social contract of receiving advice in real time.
+        </P>
+        <P>
+          I avoid discussing difficult things with humans in general. I
+          find them opinionated. Maybe that is bias on my part. I do not
+          know. The honest version is: I chose AI for the deep processing
+          because the cost of using it was zero and the cost of using
+          humans, even loving ones, was the social overhead I did not
+          have bandwidth for in that period.
+        </P>
+        <P>
+          The thread closed two weeks in with an explicit marker: <I>
+          &ldquo;two difficult weeks, but feeling in good place to move
+          on.&rdquo;</I>
+        </P>
+
+        <H2>Stage 4 — Building. The brand pivot and the platform transition.</H2>
+        <P>
+          April 19 onward. The tone of the GPT threads shifted from
+          applying-to-roles to building-something. A Player&ndash;Coach
+          Operating Model emerged as a concept. A 90-90-90 cadence for how
+          I think about ramping into new roles. Decision Systems framing
+          for how data work translates into organizational outcomes. A LinkedIn banner that went through eighty-five
+          iterations before I posted it. The{" "}
+          <ArtifactLink slug="monthly-conversation-volume">
+            monthly conversation volume
+          </ArtifactLink>{" "}
+          shows the shape of that ramp.
+        </P>
+        <P>Two specific moments inside this stage are worth naming.</P>
+        <P>
+          The first was April 29. I had been using Claude inside a
+          Snowflake environment at work for narrow utility tasks (adding
+          field names, metadata on tables, code correction) but had only
+          just started using it on my own machine for substantive work. I
+          asked GPT to evaluate Claude&rsquo;s analysis of me. I wanted a
+          second opinion from the tool that already had eight months of
+          accumulated context. That request was a deliberate cross-tool
+          test. Looking back, it is the first time I ran two AI tools
+          against each other intentionally. It was not switching. It was
+          {" "}<I>checking</I>.
+        </P>
+        <P>
+          The second was April 30. The next day I built my advisory
+          practice&rsquo;s website on Claude. HTML had been a barrier for
+          years. I had wanted to publish on my own surface and never had
+          the patience to learn enough HTML to do it. Claude walked me
+          through deployment, the git workflow, brand iteration, voice
+          protection on the copy, file structure. The site went live. It
+          worked without friction.
+        </P>
+        <P>
+          That was the moment Claude earned the ramp. Not because Claude
+          was better than GPT in some abstract way, but because it had
+          just enabled me to do something I had been blocked on for
+          years. The trust was concrete. It was about the artifact.
+        </P>
+        <P>
+          After that, Claude took on more. Desktop folders connected.
+          Dissertation uploaded. More integrations. Each new piece of
+          context loaded into Claude made the tool more useful for me,
+          which led to more loading, which compounded.
+        </P>
+
+        <H2>Stage 5 — Multi-tool selection. What stays where, and why.</H2>
+        <P>By May, I was running three tools.</P>
+        <P>
+          Claude got the structured intellectual work. Application
+          packages with deep context. The agentic AI coursework I was
+          enrolled in. Library drafting for my advisory practice.
+          Competitive scans. Product offerings as first drafts. TEDx
+          application refinement. Anything that needed to compound across
+          sessions and integrate across folders.
+        </P>
+        <P>
+          GPT kept the work it was already good at. Sharp operator
+          phrasing when Claude felt too dense. Resume and cover-letter
+          tailoring, especially for fast-turnaround applications. Visual
+          generation for TEDx framing and LinkedIn Featured images,
+          because GPT&rsquo;s image model is built into the conversation.
+          Some reflection threads that just continued the pattern from
+          earlier.
+        </P>
+        <P>
+          Gemini entered for critique. A third opinion on TEDx
+          applications, on a Monitoring and Evaluation Learning kit I was
+          developing, on essay drafts.
+        </P>
+        <P>
+          The selection was not abstract. It was empirical. I used each
+          tool for what each tool did well, and the assignments shifted
+          as my needs shifted.
+        </P>
+        <P>
+          One pattern worth naming: TEDx work is hybrid, not Claude-only.
+          The application drafting and thesis refinement live on Claude.
+          The visual and metaphorical exploration (race vs room,
+          Constellation Self, Tree with Silhouettes) happened on GPT,
+          because that is where image generation could iterate with text
+          in the same thread.
+        </P>
+        <P>
+          The friction had also reversed direction in one place. GPT had
+          become harder to work with for some tasks. Format consistency
+          on resumes. Context retention across long threads. Sycophancy
+          that I had called out in October was still firing in May. My
+          discipline had moved past what the tool could keep up with for
+          the deepest work, and I moved that work to Claude.
+        </P>
+
+        <H2>What transferred. What expanded.</H2>
+        <P>
+          Two things I want to separate, because they are usually
+          conflated. See the{" "}
+          <ArtifactLink slug="dialogue-maturity-curve">
+            dialogue maturity curve
+          </ArtifactLink>{" "}
+          for the trajectory across tools.
+        </P>
+        <P>
+          What <I>transferred</I> from GPT to Claude was the working
+          pattern. The <B>pre-work surface</B> practice. The
+          voice-protection discipline. The sycophancy-detection muscle.
+          The iteration tolerance. The understanding that hundreds of
+          turns produce one shippable artifact. The two-tool thinking, the
+          idea that I could check one tool against another. None of that
+          was learned on Claude. It was already operational by the time I
+          opened my first real Claude thread.
+        </P>
+        <P>
+          What <I>expanded</I> on Claude was capability. Integration with
+          image tools. Scheduled tasks. Job board scaffolding. A content
+          workspace. A knowledge repository I am building now. RAG
+          architecture I have not stood up yet but plan to. Agents through
+          my current coursework. The work I do on Claude is broader and
+          faster than the work I did on GPT, but the reason is not that I
+          matured. It is that the tool can hold more.
+        </P>
+        <P>
+          That distinction matters for the field-note thesis. I did not
+          become an &ldquo;AI native&rdquo; through repeated use. I built
+          a working pattern in one tool and brought it to another tool
+          that could do more with the same pattern. <B>Maturity
+          transferred. Capability expanded.</B> Two different curves.
+        </P>
+        <P>
+          This also tracks with something I have been saying for years in
+          my data work: <I>&ldquo;it was never about the stack.&rdquo;</I>
+          {" "}The AI version of that turns out to be the same claim. It was
+          never about the tool.
+        </P>
+
+        <H2>The core insight.</H2>
+        <P>
+          <I>AI did not write my library. AI helped me navigate it.</I>
+        </P>
+        <P>
+          The library is what I have built. The essays, the brand, the
+          cover letters that landed, the applications I am proud of, the
+          TEDx thesis I am still shaping, the decision-systems vocabulary
+          I use. All of that is mine. My voice. My judgment. My
+          responsibility when it succeeds, my responsibility when it does
+          not.
+        </P>
+        <P>
+          What AI gave me was navigation. Help finding the shelf. Help
+          pulling the right book down. Help cross-referencing. Help
+          drafting the first sentence so I could see what was wrong with
+          it and write the right one. Help iterating on a banner image
+          ninety times until I could see the version I wanted. Help
+          integrating a piece of advice from my father in the middle of
+          the night when the cost of calling him back was too high.
+        </P>
+        <P>The library is mine because I built it. The navigation is shared.</P>
+
+        <H2>What I do not know.</H2>
+        <P>A field note should name what it cannot answer.</P>
+        <P>
+          I do not know whether the speed AI gave me cost me depth. The
+          prototyping work I did at a prior role took longer with GPT
+          because the friction was real. I was drafting outside the work
+          environment and porting the work back in. Some of that friction
+          may have forced me to think more carefully than I would have if
+          the tool had been faster. The same question applies to
+          everything in the post-Claude period: was the exponential ramp a
+          sign of capacity expansion, or a sign that I am cutting corners
+          I cannot yet see? I cannot answer this from inside my own
+          experience.
+        </P>
+        <P>
+          I do not know whether my preference for AI over humans for
+          difficult conversations is calibration or avoidance. The cost of
+          human conversation is real. So is the value humans can bring
+          that AI cannot. I have not done the experiment of choosing the
+          human conversation deliberately to test what it gives me that
+          the AI cannot.
+        </P>
+        <P>
+          I do not know whether the pre-work surface model substitutes for
+          delivery practice. Pre-work is iterative; delivery is one-shot.
+          The muscle for composed real-time response in an interview, a
+          panel, a hard meeting, that muscle is not built on the pre-work
+          surface. I have done many things with AI in the last year. The
+          interviews I will land or not land this season will not be among
+          them.
+        </P>
+        <P>
+          And I do not know what I am being bucketed into by the AI tools
+          themselves, because the categorization is invisible. The
+          conversational neutrality I experience is partly real and partly
+          an artifact of zero exit cost. A human bucketing me has skin in
+          the game; an AI bucketing me does not. That asymmetry is
+          comfortable. It is also worth being suspicious of, because
+          comfort is not the same as accuracy.
+        </P>
+
+        <H2>Stages, not a destination.</H2>
+        <P>
+          The reason I call these <I>stages</I> and not <I>levels</I> is
+          that none of them ended cleanly. The vending-machine phase did
+          not stop when GPT started. GPT did not stop when Claude
+          started. Each new tool entered a relationship that had already
+          been built and added something the previous tool could not. The
+          next stage is starting already. Agents, set up to run scheduled
+          work without me re-loading the context each time. I do not know
+          what that will feel like or what it will change. I will know in
+          a year, the way I know what the last year looked like only now,
+          by writing it down.
+        </P>
+        <P>
+          What I know now is that the year has been generous. I crossed
+          barriers I had been blocked on for a decade. I metabolized a
+          professional loss without breaking. I built a brand on the
+          surface I could navigate. I am preparing for a kind of
+          public-facing work I had not imagined I could prepare for. None
+          of this was AI doing the work for me. All of it was AI helping
+          me find the shelf, pull the right book, and put the words in
+          the order I actually meant.
+        </P>
+        <P>The library is mine. The navigation is shared. The stages keep coming.</P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="when-genai-redesigned-my-dashboard"
+            title="When GenAI redesigned my dashboard."
+            gloss="The course project that started the GPT relationship."
+          />
+          <SeeAlsoItem
+            slug="grounding-the-ai-layer"
+            title="Grounding the AI layer."
+            gloss="What has to be true underneath before AI is useful."
+          />
+          <SeeAlsoItem
+            slug="actions-not-answers"
+            title="Actions, not answers."
+            gloss="Where AI belongs in the operating loop."
+          />
+          <SeeAlsoItem
+            slug="the-decision-system"
+            title="The Decision System."
+            gloss="The vocabulary the library work runs on."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          A personal field note, written July 2026 for the Analytic Bytes
+          Library. It is not a universal claim about how to use AI. It is
+          one operator&rsquo;s account of eighteen months across three
+          tools. Related threads picked up elsewhere in the library:{" "}
+          <InternalLink slug="when-genai-redesigned-my-dashboard">
+            When GenAI redesigned my dashboard.
+          </InternalLink>{" "}
+          (the course project that seeded the GPT relationship),{" "}
+          <InternalLink slug="grounding-the-ai-layer">
+            Grounding the AI layer.
+          </InternalLink>{" "}
+          (what has to be true underneath before AI is useful), and{" "}
+          <InternalLink slug="actions-not-answers">
+            Actions, not answers.
+          </InternalLink>{" "}
+          (where AI belongs in the operating loop).
+        </MetaNote>
+      </>
+    ),
+  },
 ];
 
 // ---------------------------------------------------------------------

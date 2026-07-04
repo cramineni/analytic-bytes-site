@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Note No. 12: AI did not write my library. AI helped me navigate it.</title>
+<desc>White background. Five vertical navy bars of increasing height represent the five stages of the AI relationship — vending machine, foundation, crisis, building, multi-tool selection. A subtle teal underline runs beneath them, the library shelf being navigated. Title and italic subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 12</text>
+
+<!-- Five stages as ascending bars on a shelf line -->
+<g transform="translate(600, 260)">
+  <!-- Shelf line (teal — the library) -->
+  <line x1="-220" y1="20" x2="220" y2="20" stroke="#0EA5E9" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Stage 1: vending machine — tiny bar -->
+  <rect x="-200" y="0" width="30" height="20" fill="#0F2A4A" opacity="0.35"/>
+
+  <!-- Stage 2: foundation — medium bar -->
+  <rect x="-140" y="-30" width="30" height="50" fill="#0F2A4A" opacity="0.55"/>
+
+  <!-- Stage 3: crisis — taller with slight peak -->
+  <rect x="-80" y="-55" width="30" height="75" fill="#0F2A4A" opacity="0.75"/>
+
+  <!-- Stage 4: building — pivot upward -->
+  <rect x="-20" y="-70" width="30" height="90" fill="#0F2A4A" opacity="0.85"/>
+
+  <!-- Stage 5: multi-tool selection — tallest, split into three thin bars -->
+  <rect x="40" y="-90" width="8" height="110" fill="#0F2A4A"/>
+  <rect x="52" y="-95" width="8" height="115" fill="#0F2A4A"/>
+  <rect x="64" y="-85" width="8" height="105" fill="#0F2A4A"/>
+  <text x="76" y="-100" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#0EA5E9">multi-tool</text>
+
+  <!-- Stage labels below shelf line -->
+  <text x="-185" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">1</text>
+  <text x="-125" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">2</text>
+  <text x="-65" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">3</text>
+  <text x="-5" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">4</text>
+  <text x="56" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">5</text>
+</g>
+
+<text x="600" y="435" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">AI did not write my library.</text>
+<text x="600" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">AI helped me navigate it.</text>
+<text x="600" y="510" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">Field notes on the stages of working with generative AI across tools.</text>
+<line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+</svg>

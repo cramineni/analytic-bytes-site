@@ -1,0 +1,69 @@
+<svg viewBox="0 0 820 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="ttl">The dialogue maturity curve — maturity transferred, capability expanded</title>
+<desc id="desc">Two curves over an 18-month timeline from November 2024 to July 2026. A navy curve tracks dialogue maturity — the working practice of pre-work surface, voice protection, sycophancy detection, iteration tolerance. It rises through a quiet vending-machine phase, climbs steadily during the GPT foundation months, peaks through the April 2026 crisis and brand pivot, and plateaus. A teal curve tracks tool capability — what the surface could hold. It stays flat during the GPT era and jumps upward when Claude enters in late April 2026, then continues to climb. The two curves make the essay's claim visible: maturity carried across tools; capability expanded on the new one.</desc>
+<rect width="820" height="660" fill="#FFFFFF"/>
+
+<text x="48" y="46" font-size="15" letter-spacing="3" fill="#0EA5E9" font-weight="600">THE DIALOGUE MATURITY CURVE</text>
+<text x="48" y="82" font-size="22" fill="#0F2A4A" font-weight="700">Maturity transferred.</text>
+<text x="48" y="110" font-size="22" fill="#0EA5E9" font-weight="700">Capability expanded.</text>
+
+<!-- Plot area -->
+<rect x="120" y="150" width="640" height="330" fill="#F1F5F8"/>
+
+<!-- Axes -->
+<line x1="120" y1="480" x2="760" y2="480" stroke="#0F2A4A" stroke-width="1.8"/>
+<line x1="120" y1="150" x2="120" y2="480" stroke="#0F2A4A" stroke-width="1.8"/>
+
+<!-- Y axis label -->
+<text transform="translate(70,315) rotate(-90)" font-size="14" fill="#0F2A4A" font-weight="600" text-anchor="middle">DIALOGUE MATURITY  ↑</text>
+<text transform="translate(90,315) rotate(-90)" font-size="12" fill="#6B7A8C" text-anchor="middle">pre-work · voice · iteration</text>
+
+<!-- X axis label -->
+<text x="440" y="525" font-size="14" fill="#0F2A4A" font-weight="600" text-anchor="middle">TIME  →</text>
+<text x="440" y="545" font-size="12" fill="#6B7A8C" text-anchor="middle">Nov 2024 → Jul 2026</text>
+
+<!-- X axis ticks -->
+<text x="150" y="500" font-size="11" fill="#6B7A8C" text-anchor="middle">Nov ’24</text>
+<text x="290" y="500" font-size="11" fill="#6B7A8C" text-anchor="middle">Aug ’25</text>
+<text x="480" y="500" font-size="11" fill="#6B7A8C" text-anchor="middle">Apr ’26</text>
+<text x="720" y="500" font-size="11" fill="#6B7A8C" text-anchor="middle">Jul ’26</text>
+
+<!-- Vertical guide at Claude ramp (Apr 30) -->
+<line x1="500" y1="150" x2="500" y2="480" stroke="#6B7A8C" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
+<text x="500" y="145" font-size="11" fill="#6B7A8C" font-weight="600" text-anchor="middle">Claude ramp · Apr 30, 2026</text>
+
+<!-- Maturity curve (navy) — rises through the whole timeline, plateaus at end -->
+<path d="M 150 465 L 200 460 L 250 445 L 290 420 L 340 380 L 400 320 L 450 260 L 500 210 L 560 190 L 620 185 L 720 182"
+      fill="none" stroke="#0F2A4A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Capability curve (teal) — flat during GPT era, jumps at Claude ramp, continues -->
+<path d="M 150 450 L 200 450 L 250 445 L 290 440 L 340 435 L 400 430 L 450 420 L 500 400 L 540 300 L 600 240 L 660 200 L 720 175"
+      fill="none" stroke="#0EA5E9" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Stage markers on the maturity curve -->
+<circle cx="150" cy="465" r="4" fill="#0F2A4A"/>
+<circle cx="290" cy="420" r="4" fill="#0F2A4A"/>
+<circle cx="450" cy="260" r="4" fill="#0F2A4A"/>
+<circle cx="500" cy="210" r="4" fill="#0F2A4A"/>
+<circle cx="620" cy="185" r="4" fill="#0F2A4A"/>
+
+<!-- Stage annotations -->
+<text x="150" y="450" font-size="10" fill="#6B7A8C" text-anchor="middle">1. vending</text>
+<text x="290" y="405" font-size="10" fill="#6B7A8C" text-anchor="middle">2. foundation</text>
+<text x="450" y="245" font-size="10" fill="#6B7A8C" text-anchor="middle">3. crisis</text>
+<text x="500" y="195" font-size="10" fill="#0EA5E9" font-weight="600" text-anchor="middle">4. build</text>
+<text x="620" y="170" font-size="10" fill="#0F2A4A" font-weight="600" text-anchor="middle">5. multi-tool</text>
+
+<!-- Legend -->
+<g transform="translate(140, 175)">
+  <line x1="0" y1="0" x2="22" y2="0" stroke="#0F2A4A" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="30" y="4" font-size="12" fill="#0F2A4A" font-weight="600">Maturity  <tspan fill="#6B7A8C" font-weight="400">— the working practice, carried across tools</tspan></text>
+  <line x1="0" y1="18" x2="22" y2="18" stroke="#0EA5E9" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="30" y="22" font-size="12" fill="#0EA5E9" font-weight="600">Capability  <tspan fill="#6B7A8C" font-weight="400">— what the tool can hold</tspan></text>
+</g>
+
+<text x="48" y="600" font-size="14.5" fill="#0F2A4A" font-weight="600">Two different curves. <tspan fill="#0EA5E9">The maturity was already there; the tool just held more.</tspan></text>
+
+<text x="48" y="640" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="200" y="640" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
+</svg>
