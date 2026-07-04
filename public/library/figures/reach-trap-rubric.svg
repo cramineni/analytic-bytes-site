@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1600 840" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t" font-family="Inter,Helvetica,Arial,sans-serif">
+<title id="t">The rubric: one outcome scale plus a semantic layer</title>
+<rect width="1600" height="840" fill="#FFFFFF"/>
+
+<text x="40" y="60" font-size="30" letter-spacing="5" fill="#0EA5E9" font-weight="700">THE RUBRIC</text>
+<text x="40" y="108" font-size="30" fill="#3A4A5A">One outcome scale — plus a layer that maps each grantee's own words onto it.</text>
+
+<!-- grantee cards -->
+<g>
+<rect x="40"   y="160" width="470" height="150" rx="14" fill="#FFFFFF" stroke="#D7E3EA" stroke-width="2"/>
+<text x="70" y="212" font-size="24" letter-spacing="2" fill="#6B7A8C" font-weight="700">GRANTEE A</text>
+<text x="70" y="262" font-size="30" fill="#0E2A47">&#8220;kids reading at grade level&#8221;</text>
+
+<rect x="565"  y="160" width="470" height="150" rx="14" fill="#FFFFFF" stroke="#D7E3EA" stroke-width="2"/>
+<text x="595" y="212" font-size="24" letter-spacing="2" fill="#6B7A8C" font-weight="700">GRANTEE B</text>
+<text x="595" y="262" font-size="30" fill="#0E2A47">&#8220;literacy gains held 2 years&#8221;</text>
+
+<rect x="1090" y="160" width="470" height="150" rx="14" fill="#FFFFFF" stroke="#D7E3EA" stroke-width="2"/>
+<text x="1120" y="212" font-size="24" letter-spacing="2" fill="#6B7A8C" font-weight="700">GRANTEE C</text>
+<text x="1120" y="262" font-size="30" fill="#0E2A47">&#8220;fewer kids need remediation&#8221;</text>
+</g>
+
+<!-- semantic layer band -->
+<rect x="40" y="360" width="1520" height="56" rx="12" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2"/>
+<text x="800" y="397" font-size="26" letter-spacing="3" fill="#0E2A47" font-weight="700" text-anchor="middle">SEMANTIC LAYER  ·  maps each grantee's language onto the scale</text>
+
+<!-- connectors from cards through layer to scale markers -->
+<g stroke="#0EA5E9" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" fill="none">
+<path d="M275 310 L609 560"/>
+<path d="M800 310 L1374 560"/>
+<path d="M1325 310 L991 560"/>
+</g>
+
+<!-- markers -->
+<g fill="#0E2A47">
+<circle cx="609" cy="560" r="22"/><circle cx="1374" cy="560" r="22"/><circle cx="991" cy="560" r="22"/>
+</g>
+<g fill="#FFFFFF" font-size="24" font-weight="700" text-anchor="middle">
+<text x="609" y="569">A</text><text x="1374" y="569">B</text><text x="991" y="569">C</text>
+</g>
+
+<!-- outcome scale -->
+<rect x="40"     y="600" width="362" height="70" rx="12" fill="#E8F6FD"/>
+<rect x="422.5"  y="600" width="362" height="70" rx="12" fill="#BFE6F9"/>
+<rect x="805"    y="600" width="362" height="70" rx="12" fill="#6FCBF0"/>
+<rect x="1187.5" y="600" width="362" height="70" rx="12" fill="#0EA5E9"/>
+<text x="221"  y="643" font-size="26" letter-spacing="1" fill="#0E2A47" font-weight="700" text-anchor="middle">EMERGING</text>
+<text x="603"  y="643" font-size="26" letter-spacing="1" fill="#0E2A47" font-weight="700" text-anchor="middle">BUILDING</text>
+<text x="986"  y="643" font-size="26" letter-spacing="1" fill="#0E2A47" font-weight="700" text-anchor="middle">ESTABLISHED</text>
+<text x="1368" y="643" font-size="26" letter-spacing="1" fill="#FFFFFF" font-weight="700" text-anchor="middle">SUSTAINED</text>
+
+<text x="40" y="740" font-size="30" fill="#3A4A5A">Different words in. <tspan fill="#0E2A47" font-weight="700">One comparable placement out.</tspan></text>
+<text x="40" y="808" font-size="22" letter-spacing="3" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+</svg>

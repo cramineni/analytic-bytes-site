@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Note No. 09: The Reach Trap.</title>
+<desc>White background. A navy activity table on the left labeled CRM with reach columns collapses at a teal seam; a navy outcome spine on the right labeled SPINE has an ordered outcome column. Two-line title beneath: a lighter gray "The CRM counts reach." above a navy "The Reach Trap." Italic subtitle "Reach is what falls out for free." Analytic Bytes signature at the bottom.</desc>
+
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Eyebrow -->
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 09</text>
+
+<!-- Diagram, centered at (600, 270) -->
+<g transform="translate(600, 270)">
+
+  <!-- Left group: CRM (activity, reach) -->
+  <rect x="-260" y="-56" width="176" height="112" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <text x="-172" y="-32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">CRM · ACTIVITY</text>
+  <!-- Table rows -->
+  <line x1="-260" y1="-10" x2="-84" y2="-10" stroke="#0F2A4A" stroke-width="0.75"/>
+  <line x1="-260" y1="10" x2="-84" y2="10" stroke="#0F2A4A" stroke-width="0.75"/>
+  <line x1="-260" y1="30" x2="-84" y2="30" stroke="#0F2A4A" stroke-width="0.75"/>
+  <!-- Text: reach, dollars, sessions -->
+  <text x="-250" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A">reach</text>
+  <text x="-250" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A">dollars</text>
+  <text x="-250" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A">sessions</text>
+
+  <!-- Teal seam between the two -->
+  <line x1="-70" y1="-70" x2="-70" y2="70" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="-60" y="-80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#0EA5E9" text-anchor="start">THE SEAM</text>
+
+  <!-- Right group: SPINE (outcomes) -->
+  <rect x="-40" y="-56" width="300" height="112" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <text x="110" y="-32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">EVIDENCE SPINE · OUTCOMES</text>
+  <!-- Table rows -->
+  <line x1="-40" y1="-10" x2="260" y2="-10" stroke="#0F2A4A" stroke-width="0.75"/>
+  <line x1="-40" y1="10" x2="260" y2="10" stroke="#0F2A4A" stroke-width="0.75"/>
+  <line x1="-40" y1="30" x2="260" y2="30" stroke="#0F2A4A" stroke-width="0.75"/>
+  <!-- Ordered outcome tiers with teal dots -->
+  <circle cx="-25" cy="0" r="4" fill="#0EA5E9"/>
+  <text x="-15" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A">emerging  ·  building  ·  established  ·  sustained</text>
+  <circle cx="-25" cy="20" r="4" fill="#0EA5E9"/>
+  <text x="-15" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A">leading signal</text>
+  <circle cx="-25" cy="40" r="4" fill="#0EA5E9"/>
+  <text x="-15" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A">confidence</text>
+
+</g>
+
+<!-- Title line 1 -->
+<text x="600" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="400" letter-spacing="-0.3" fill="#64748B" text-anchor="middle">The CRM counts reach.</text>
+
+<!-- Title line 2 -->
+<text x="600" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="600" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">The Reach Trap.</text>
+
+<!-- Subtitle -->
+<text x="600" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">Reach is what falls out for free.</text>
+
+<!-- Bottom divider -->
+<line x1="570" y1="560" x2="630" y2="560" stroke="#94A3B8" stroke-width="1"/>
+
+<!-- AB signature -->
+<text x="600" y="590" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+
+</svg>
