@@ -5487,12 +5487,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 10 — Why the rules look weird
+  // ESSAY 09 — Why the rules look weird (reclassified from FN10, 2026-07-04)
   // ===================================================================
   {
-    kind: "field-note",
+    kind: "essay",
     slug: "why-the-rules-look-weird",
-    number: "10",
+    number: "09",
     title: "Why the rules look weird",
     subtitle:
       "What sports rules teach about preventing predictable failure in any decision system.",
