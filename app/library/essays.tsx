@@ -6712,12 +6712,9 @@ export const ESSAYS: Essay[] = [
           applying-to-roles to building-something. A Player&ndash;Coach
           Operating Model emerged as a concept. A 90-90-90 cadence for how
           I think about ramping into new roles. Decision Systems framing
-          for how data work translates into organizational outcomes. A LinkedIn banner that went through eighty-five
-          iterations before I posted it. The{" "}
-          <ArtifactLink slug="monthly-conversation-volume">
-            monthly conversation volume
-          </ArtifactLink>{" "}
-          shows the shape of that ramp.
+          for how data work translates into organizational outcomes. A
+          LinkedIn banner that went through eighty-five iterations before
+          I posted it.
         </P>
         <P>Two specific moments inside this stage are worth naming.</P>
         <P>
@@ -6803,11 +6800,7 @@ export const ESSAYS: Essay[] = [
         <H2>What transferred. What expanded.</H2>
         <P>
           Two things I want to separate, because they are usually
-          conflated. See the{" "}
-          <ArtifactLink slug="dialogue-maturity-curve">
-            dialogue maturity curve
-          </ArtifactLink>{" "}
-          for the trajectory across tools.
+          conflated.
         </P>
         <P>
           What <I>transferred</I> from GPT to Claude was the working

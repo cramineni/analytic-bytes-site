@@ -153,22 +153,6 @@ const ARTIFACTS: Entry[] = [
     image: "/library/artifacts/commercial-equals-mission.svg",
     slug: "commercial-equals-mission",
   },
-  {
-    type: "artifact",
-    title: "The dialogue maturity curve",
-    summary:
-      "Two curves over an eighteen-month timeline. A navy curve tracks dialogue maturity — the working practice of pre-work surface, voice protection, sycophancy detection, iteration tolerance — carried unchanged across tools. A teal curve tracks tool capability — what the surface could hold — flat during the GPT era and jumping when Claude enters at the end of April 2026. The essay's claim, made visible: maturity transferred; capability expanded.",
-    image: "/library/artifacts/dialogue-maturity-curve.svg",
-    slug: "dialogue-maturity-curve",
-  },
-  {
-    type: "artifact",
-    title: "Monthly conversation volume",
-    summary:
-      "Eighteen months of message volume: a quiet warmup through the vending-machine and early GPT months, a steady climb as the foundation gets built, a pronounced spike at April 2026 marking the twenty-three-day crisis thread of two hundred nine messages, and a sustained plateau across May, June, and July as multi-tool selection stabilizes. The spike is the crisis; the plateau is the practice.",
-    image: "/library/artifacts/monthly-conversation-volume.svg",
-    slug: "monthly-conversation-volume",
-  },
 ];
 
 // Dated feed — published essays and field notes (from the ESSAYS registry),
