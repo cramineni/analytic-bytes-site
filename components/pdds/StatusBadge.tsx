@@ -7,6 +7,10 @@ const CLASS: Record<string, string> = {
   "Moved where deployed": "bg-[#FFF3E0] text-[#7A4F00] border-[#F0D090]",
   "Average moved, gap didn't": "bg-[#FFF3E0] text-[#7A4F00] border-[#F0D090]",
   "The data is the decision": "bg-[#E5F1F9] text-[#0F2A4A] border-[#B8D4E8]",
+  // Slate — the data is decision-grade but access is governance-limited.
+  // A distinct story from moved / didn't-move / data-is-the-decision.
+  "Built to decide, access-limited":
+    "bg-[#EEEEF3] text-[#3D4A66] border-[#CACEDA]",
 };
 
 export default function StatusBadge({ label }: { label: string }) {

@@ -43,6 +43,14 @@ const STYLES: Record<string, PanelStyle> = {
     seriesColors: ["#0F2A4A"],
     highlight: ["National median program"],
   },
+  // Single-period: navy across. Two bars only; the surprise IS the comparison
+  // (associate transfer earnings sitting close to bachelor's), so no highlight.
+  slds: {
+    base: "#0F2A4A",
+    accent: "#0EA5E9",
+    seriesColors: ["#0F2A4A"],
+    highlight: [],
+  },
 };
 
 export function panelStyle(id: string): PanelStyle {
@@ -72,6 +80,11 @@ export const PANEL_META: Record<string, { title: string; subtitle: string }> = {
   scorecard: {
     title: "Computer science median earnings by school",
     subtitle: "College Scorecard field-of-study earnings",
+  },
+  slds: {
+    title: "Post-completion wages by credential",
+    subtitle:
+      "Median wages 5 years after graduation — Virginia Longitudinal Data System, 2024",
   },
 };
 

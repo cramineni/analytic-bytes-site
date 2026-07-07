@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T04:40:10",
+  "generated_at": "2026-07-07T19:31:37",
   "note": "Hand-generated from pinned seeds; dbt export overwrites with identical structure.",
   "headlines": [
     {
@@ -241,6 +241,34 @@
         "movement_note": "Whether it changes behavior is genuinely unsettled \u2014 early research found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
         "source_url": "https://www.nber.org/papers/w21300"
       }
+    },
+    {
+      "panel_id": "slds",
+      "metric": "median_wage_5yr",
+      "unit": "usd",
+      "series": {
+        "2024": [
+          {
+            "group": "Bachelor's degree",
+            "value": 61502.0
+          },
+          {
+            "group": "Associate (transfer)",
+            "value": 46505.0
+          }
+        ]
+      },
+      "gap": {
+        "period": 2024,
+        "absolute_gap": 14997.0,
+        "ratio_high_to_low": 1.32
+      },
+      "lever": {
+        "lever": "Virginia's Longitudinal Data System links records across five state agencies (K-12, higher ed, employment, community colleges, IT) to measure post-completion wages",
+        "status_badge": "Built to decide, access-limited",
+        "movement_note": "The aggregate is decision-grade and public \u2014 it shows some technical associate degrees out-earn liberal-arts bachelor's, upending 'higher credential = higher pay.' But the record-level data that would let families and researchers interrogate it stays governed behind data-sharing agreements. Built to decide; not built to browse.",
+        "source_url": "https://research.schev.edu/info/Reports.Guide-to-the-Post-Completion-Wages-of-Graduates"
+      }
     }
   ],
   "sources": [
@@ -331,6 +359,14 @@
       "url": "https://www.nber.org/papers/w21300",
       "table_ref": "NBER w21300",
       "release_date": "2016-06-01"
+    },
+    {
+      "source_id": "vlds",
+      "title": "Post-Completion Wages of Graduates",
+      "publisher": "Virginia SCHEV / Virginia Longitudinal Data System",
+      "url": "https://research.schev.edu/info/Reports.Guide-to-the-Post-Completion-Wages-of-Graduates",
+      "table_ref": "VLDS post-completion wages (5 yrs after graduation)",
+      "release_date": "2025-01-01"
     }
   ]
 }
