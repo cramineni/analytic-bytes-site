@@ -217,6 +217,18 @@ export default function LibraryPage() {
                 Each piece sits in one of the four; the arc pill on each
                 card names which.
               </p>
+              <p className="text-ink-3 text-[14.5px] sm:text-[15px] max-w-[600px] mt-3 leading-[1.6]">
+                Also live:{" "}
+                <a
+                  href="/library/public-data"
+                  className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+                >
+                  Public data as a decision system
+                </a>{" "}
+                — a working demo of the framework applied to federal
+                releases, with the honest question attached to every panel:
+                did the number actually move?
+              </p>
             </Reveal>
           </div>
         </section>

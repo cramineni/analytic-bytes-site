@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-07-07T04:40:10",
+  "note": "Hand-generated from pinned seeds; dbt export overwrites with identical structure.",
+  "headlines": [
+    {
+      "card_id": "life_expectancy",
+      "label": "U.S. life expectancy at birth",
+      "value": 78.4,
+      "unit": "years",
+      "period": 2023,
+      "source_url": "https://www.cdc.gov/nchs/products/databriefs.htm"
+    },
+    {
+      "card_id": "overdose_deaths",
+      "label": "Drug overdose deaths",
+      "value": 79384.0,
+      "unit": "count",
+      "period": 2024,
+      "source_url": "https://www.cdc.gov/nchs/products/databriefs.htm"
+    },
+    {
+      "card_id": "maternal_mortality",
+      "label": "Maternal mortality rate",
+      "value": 18.6,
+      "unit": "per_100k_births",
+      "period": 2023,
+      "source_url": "https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm"
+    },
+    {
+      "card_id": "naep_math_gap",
+      "label": "NAEP grade 8 math White-Black gap",
+      "value": 32.0,
+      "unit": "scale_points",
+      "period": 2022,
+      "source_url": "https://nces.ed.gov/programs/digest/"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "overdose",
+      "metric": "overdose_death_rate",
+      "unit": "per_100k",
+      "series": {
+        "2023": [
+          {
+            "group": "American Indian/Alaska Native",
+            "value": 65.0
+          },
+          {
+            "group": "Black",
+            "value": 48.9
+          },
+          {
+            "group": "White",
+            "value": 33.1
+          },
+          {
+            "group": "Native Hawaiian/Pacific Islander",
+            "value": 26.2
+          },
+          {
+            "group": "Hispanic",
+            "value": 22.8
+          },
+          {
+            "group": "Asian",
+            "value": 5.1
+          }
+        ],
+        "2024": [
+          {
+            "group": "American Indian/Alaska Native",
+            "value": 51.6
+          },
+          {
+            "group": "Black",
+            "value": 33.8
+          },
+          {
+            "group": "White",
+            "value": 24.7
+          },
+          {
+            "group": "Native Hawaiian/Pacific Islander",
+            "value": 20.5
+          },
+          {
+            "group": "Hispanic",
+            "value": 17.0
+          },
+          {
+            "group": "Asian",
+            "value": 4.4
+          }
+        ]
+      },
+      "gap": {
+        "period": 2024,
+        "absolute_gap": 47.2,
+        "ratio_high_to_low": 11.73
+      },
+      "lever": {
+        "lever": "OTC naloxone (Narcan approved Mar 2023) + pharmacy dispensing scale-up",
+        "status_badge": "Number moved",
+        "movement_note": "Overdose deaths fell 26.2% to 79,384 in 2024 \u2014 the largest one-year drop on record. Caveat: drug-supply shifts contributed too.",
+        "source_url": "https://www.fda.gov/news-events/press-announcements"
+      }
+    },
+    {
+      "panel_id": "naep",
+      "metric": "naep_math_g8_score",
+      "unit": "scale_score",
+      "series": {
+        "2022": [
+          {
+            "group": "Asian",
+            "value": 306.0
+          },
+          {
+            "group": "White",
+            "value": 284.0
+          },
+          {
+            "group": "Two or more races",
+            "value": 275.0
+          },
+          {
+            "group": "Native Hawaiian/Pacific Islander",
+            "value": 262.0
+          },
+          {
+            "group": "Hispanic",
+            "value": 261.0
+          },
+          {
+            "group": "American Indian/Alaska Native",
+            "value": 257.0
+          },
+          {
+            "group": "Black",
+            "value": 252.0
+          }
+        ]
+      },
+      "gap": {
+        "period": 2022,
+        "absolute_gap": 54.0,
+        "ratio_high_to_low": 1.21
+      },
+      "lever": {
+        "lever": "ESSER-funded high-dosage tutoring",
+        "status_badge": "Moved where deployed",
+        "movement_note": "Only a handful of states beat pre-pandemic grade-4 math; Louisiana among them (mandatory in-school tutoring), Alabama posted the largest gain.",
+        "source_url": "https://www.ed.gov/"
+      }
+    },
+    {
+      "panel_id": "maternal",
+      "metric": "maternal_mortality_rate",
+      "unit": "per_100k_births",
+      "series": {
+        "2023": [
+          {
+            "group": "Black",
+            "value": 50.3
+          },
+          {
+            "group": "White",
+            "value": 14.5
+          },
+          {
+            "group": "Hispanic",
+            "value": 12.4
+          },
+          {
+            "group": "Asian",
+            "value": 10.7
+          }
+        ]
+      },
+      "gap": {
+        "period": 2023,
+        "absolute_gap": 39.6,
+        "ratio_high_to_low": 4.7
+      },
+      "lever": {
+        "lever": "12-month postpartum Medicaid extension (46 states + DC by Mar 2024)",
+        "status_badge": "Average moved, gap didn't",
+        "movement_note": "Overall rate 18.6 in 2023 (669 deaths vs 817 in 2022). The Black rate stayed ~3.5x the White rate.",
+        "source_url": "https://www.medicaid.gov/"
+      }
+    },
+    {
+      "panel_id": "scorecard",
+      "metric": "cs_median_earnings",
+      "unit": "usd",
+      "series": {
+        "2026": [
+          {
+            "group": "Harvard University",
+            "value": 256500.0
+          },
+          {
+            "group": "Carnegie Mellon University",
+            "value": 247600.0
+          },
+          {
+            "group": "Brown University",
+            "value": 218500.0
+          },
+          {
+            "group": "Stanford University",
+            "value": 201000.0
+          },
+          {
+            "group": "Massachusetts Institute of Technology",
+            "value": 199800.0
+          },
+          {
+            "group": "National median program",
+            "value": 90200.0
+          },
+          {
+            "group": "CUNY York College",
+            "value": 50700.0
+          },
+          {
+            "group": "Fayetteville State University",
+            "value": 48200.0
+          }
+        ]
+      },
+      "gap": {
+        "period": 2026,
+        "absolute_gap": 208300.0,
+        "ratio_high_to_low": 5.32
+      },
+      "lever": {
+        "lever": "College Scorecard publishes median earnings by specific major at specific school (updated Jun 2026)",
+        "status_badge": "The data is the decision",
+        "movement_note": "Whether it changes behavior is genuinely unsettled \u2014 early research found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
+        "source_url": "https://www.nber.org/papers/w21300"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "cdc_le",
+      "title": "Mortality in the United States, 2023",
+      "publisher": "CDC/NCHS Data Brief",
+      "url": "https://www.cdc.gov/nchs/products/databriefs.htm",
+      "table_ref": "NCHS Data Brief db521",
+      "release_date": "2024-12-01"
+    },
+    {
+      "source_id": "cdc_od",
+      "title": "Drug Overdose Deaths in the United States, 2003-2024",
+      "publisher": "CDC/NCHS Data Brief",
+      "url": "https://www.cdc.gov/nchs/products/databriefs.htm",
+      "table_ref": "NCHS Data Brief db549",
+      "release_date": "2025-01-01"
+    },
+    {
+      "source_id": "cdc_od_socrata",
+      "title": "VSRR Provisional Drug Overdose Death Counts",
+      "publisher": "CDC data.cdc.gov (Socrata)",
+      "url": "https://data.cdc.gov/resource/xkb8-kh2a.json",
+      "table_ref": "dataset xkb8-kh2a",
+      "release_date": "2026-06-01"
+    },
+    {
+      "source_id": "cdc_mat",
+      "title": "Maternal Mortality Rates in the United States, 2023",
+      "publisher": "CDC/NCHS Health E-Stat",
+      "url": "https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm",
+      "table_ref": "NCHS Health E-Stat 2023",
+      "release_date": "2025-05-01"
+    },
+    {
+      "source_id": "nces_naep",
+      "title": "NAEP Mathematics Grade 8 by race/ethnicity",
+      "publisher": "NCES Digest of Education Statistics",
+      "url": "https://nces.ed.gov/programs/digest/",
+      "table_ref": "Digest table 222.70",
+      "release_date": "2023-01-01"
+    },
+    {
+      "source_id": "scorecard_api",
+      "title": "College Scorecard field-of-study earnings",
+      "publisher": "U.S. Dept of Education",
+      "url": "https://collegescorecard.ed.gov/data/",
+      "table_ref": "field-of-study data (CIP 11 bachelor's)",
+      "release_date": "2026-06-01"
+    },
+    {
+      "source_id": "scorecard_ct",
+      "title": "College Scorecard CS earnings analysis",
+      "publisher": "College Transitions (analysis of Scorecard data)",
+      "url": "https://www.collegetransitions.com/",
+      "table_ref": "secondary analysis of Scorecard field-of-study",
+      "release_date": "2026-04-01"
+    },
+    {
+      "source_id": "lever_naloxone",
+      "title": "OTC naloxone approval and pharmacy dispensing",
+      "publisher": "FDA / CDC",
+      "url": "https://www.fda.gov/news-events/press-announcements",
+      "table_ref": "Narcan OTC approval Mar 2023",
+      "release_date": "2023-03-01"
+    },
+    {
+      "source_id": "lever_esser",
+      "title": "ESSER-funded high-dosage tutoring",
+      "publisher": "U.S. Dept of Education",
+      "url": "https://www.ed.gov/",
+      "table_ref": "ESSER III / ARP",
+      "release_date": "2021-03-01"
+    },
+    {
+      "source_id": "lever_medicaid",
+      "title": "12-month postpartum Medicaid extension",
+      "publisher": "CMS / Medicaid.gov",
+      "url": "https://www.medicaid.gov/",
+      "table_ref": "ARPA postpartum extension",
+      "release_date": "2024-03-01"
+    },
+    {
+      "source_id": "study_hurwitz",
+      "title": "Hurwitz & Smith (2016), Student responsiveness to earnings data in the College Scorecard",
+      "publisher": "NBER Working Paper",
+      "url": "https://www.nber.org/papers/w21300",
+      "table_ref": "NBER w21300",
+      "release_date": "2016-06-01"
+    }
+  ]
+}
