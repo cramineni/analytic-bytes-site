@@ -1092,14 +1092,15 @@ export const ESSAYS: Essay[] = [
         <P>
           This is the argument, in three parts. AI compute has a natural
           placement at each layer of the stack, and placement is more
-          consequential than feature selection. The dbt semantic layer is the
-          grounding contract for AI features, the same way it is the grounding
-          contract for BI surfaces; drift between AI features is the same
-          problem as drift between dashboards, only harder to detect, because
-          the symptoms are language, not numbers. And in the client portal where
-          dashboards and reports live, AI shows up as alerts, summaries, and
-          chat. Each earns its place by doing something the deterministic layer
-          cannot, and none of them get to invent metrics.
+          consequential than feature selection. The semantic contract, often
+          implemented through dbt or a metric API, is the grounding contract
+          for AI features, the same way it is the grounding contract for BI
+          surfaces; drift between AI features is the same problem as drift
+          between dashboards, only harder to detect, because the symptoms are
+          language, not numbers. And in the client portal where dashboards and
+          reports live, AI shows up as alerts, summaries, and chat. Each earns
+          its place by doing something the deterministic layer cannot, and
+          none of them get to invent metrics.
         </P>
 
         <H2>AI by layer: placement is the question</H2>
@@ -2652,9 +2653,10 @@ export const ESSAYS: Essay[] = [
         <P>
           When an AI system produces an answer, a decision still has to happen.
           Someone reads the answer, judges it, and acts on it, or doesn’t. That
-          human decision point is not something anyone designed in. It comes
-          free, built into the format. An answer is inert until a person picks
-          it up, and the picking-up is the checkpoint.
+          human decision point is not something anyone designed in. The format
+          holds the seat for a checkpoint, whether or not the person uses it.
+          An answer is inert until a person picks it up, and the picking-up is
+          where the checkpoint can happen — even if the person only skims.
         </P>
         <P>
           When an AI system produces actions, that checkpoint is gone by
@@ -2662,22 +2664,6 @@ export const ESSAYS: Essay[] = [
           money. The decision still gets made; each of those is a decision. But
           now the system makes it, at its own speed, unless a human was
           deliberately designed into the path.
-        </P>
-        <P>
-          None of this is new in principle. Algorithmic trading has taken
-          actions without human checkpoints for decades. Industrial control
-          systems, autopilots, ad-bidding engines, and anti-fraud rule
-          engines all already produce actions, not answers, at speeds no
-          human can review. What is new about agentic AI is breadth and
-          generality. A trading algorithm acts inside a narrow envelope its
-          quants modeled in advance; an LLM agent is being handed envelopes
-          nobody has modeled yet, across decision categories an organization
-          has never had to ask the design question for, with reasoning steps
-          the deploying team usually cannot inspect. The principle that
-          machines act is old. The scope at which the principle is now being
-          applied is new, and that is what makes the design question — who
-          holds which decisions — load-bearing across more of the
-          organization than it ever had to be before.
         </P>
         <P>
           The move underneath is a relocation. Agentic AI does not add a
@@ -2716,7 +2702,8 @@ export const ESSAYS: Essay[] = [
         </Pull>
         <P>
           So the readiness question for agentic AI is not “is the technology
-          good enough.” The technology is mostly good enough. The question is
+          good enough.” The technology is good enough to force the governance
+          question, though not good enough for every action. The question is
           whether the decision system underneath is clear enough to be worth
           speeding up.
         </P>
