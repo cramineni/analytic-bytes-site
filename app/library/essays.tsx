@@ -5258,7 +5258,7 @@ export const ESSAYS: Essay[] = [
             to behave like a system of record for <I>outcomes</I>. This
             note is about that difference, and about the missing category,
             the evidence spine, that turns reach into a decision. It is a
-            field note, not a product; its only real claim is structural.
+            field note. It makes one structural claim.
           </p>
         </Brief>
 
@@ -5284,26 +5284,6 @@ export const ESSAYS: Essay[] = [
           own words. Reach is counted. Evidence is built. The reach trap
           is mistaking the first for the second, and then blaming the
           reporting when the second never shows up.
-        </P>
-        <P>
-          None of this says measurement people have ignored use.
-          Utilization-focused evaluation has argued for decades that an
-          evaluation nobody acts on has failed; the conviction here is
-          inherited, not invented. What changes is where it lives.
-          Shared-measurement frameworks reach comparability by making
-          every grantee report the same indicators up front; metric
-          catalogs like IRIS+ do it by prescribing a common dictionary to
-          pick from. Both work when a portfolio shares one goal or one
-          asset class. A grant book rarely does. Forty grantees carry
-          forty theories of change, so the spine runs the other way: let
-          each keep its own language, then place it on one scale
-          afterward. The results-framework world already tried the
-          alternative, and the OECD’s review of results-based management
-          landed on a familiar pattern: the data gets collected, but it
-          rarely reaches the decision. The obvious read is a culture
-          problem, teams that never build the habit of looking. The deeper
-          one is structural: the data was never shaped to be read as a
-          decision, and the second system is what shapes it.
         </P>
 
         <H2>Why the CRM can’t save you</H2>
@@ -5337,6 +5317,26 @@ export const ESSAYS: Essay[] = [
           Reach falls out of it for free; comparability does not exist
           unless you build the second system deliberately.
         </P>
+        <P>
+          None of this says measurement people have ignored use.
+          Utilization-focused evaluation has argued for decades that an
+          evaluation nobody acts on has failed; the conviction here is
+          inherited, not invented. What changes is where it lives.
+          Shared-measurement frameworks reach comparability by making
+          every grantee report the same indicators up front; metric
+          catalogs like IRIS+ do it by prescribing a common dictionary to
+          pick from. Both work when a portfolio shares one goal or one
+          asset class. A grant book rarely does. Forty grantees carry
+          forty theories of change, so the spine runs the other way: let
+          each keep its own language, then place it on one scale
+          afterward. The results-framework world already tried the
+          alternative, and the OECD’s review of results-based management
+          landed on a familiar pattern: the data gets collected, but it
+          rarely reaches the decision. The obvious read is a culture
+          problem, teams that never build the habit of looking. The deeper
+          one is structural: the data was never shaped to be read as a
+          decision, and the second system is what shapes it.
+        </P>
 
         <H2>What the rubric actually is</H2>
         <P>
@@ -5348,6 +5348,15 @@ export const ESSAYS: Essay[] = [
           established, sustained. That much is intuitive. The part that
           does the real work is the second piece: a semantic layer that
           maps each grantee’s own language onto that scale.
+        </P>
+        <P>
+          The scale is not a universal yardstick for impact. It is
+          decision-specific: for this book, at this decision point, it
+          asks a single question, what stronger evidence of progress
+          looks like, and it is honest only along that axis. Compare
+          grantees doing genuinely different work on a scale built for a
+          different decision and you get false equivalence, not
+          comparability.
         </P>
 
         <Figure
@@ -5367,6 +5376,15 @@ export const ESSAYS: Essay[] = [
           nobody speaks. With it, forty theories of change finally line
           up on a single axis.
         </P>
+        <P>
+          That mapping is the part people imagine is automatic, and it is
+          not. Funder and grantee co-author it: they agree, in advance,
+          what evidence justifies each placement. The layer does not
+          dissolve the judgment about whether “held two years” outranks
+          “reading at grade level.” It forces that judgment to be made
+          once, in the open, and then reused, instead of relitigated
+          grantee by grantee every cycle.
+        </P>
 
         <H2>What the spine actually is</H2>
         <P>
@@ -5377,7 +5395,13 @@ export const ESSAYS: Essay[] = [
           you are watching, the confidence you have in the evidence
           behind it. That consistency is not clerical tidiness. The
           shared columns <I>are</I> the structure. They are what a
-          CRM’s per-grantee custom fields can never be.
+          CRM’s per-grantee custom fields can never be. One of those
+          columns earns a definition the others assume. Confidence is
+          not a mood. It names how much weight the evidence behind a
+          placement can bear: how strong it is, how recent, whether it
+          is comparable to the grantee in the next row. Keep it vague
+          and one officer’s “high” is another’s “medium.” Define it and
+          the column carries actual weight.
         </P>
 
         <Figure
@@ -5441,9 +5465,9 @@ export const ESSAYS: Essay[] = [
         <P>
           <I>
             Reach is a number. The decision is the system you architect
-            around it. Analytic Bytes builds that evidence spine — the
-            rubric, the semantic layer, and the shared record shape — for
-            funders, portfolios, and CSR teams ready to move from
+            around it. Analytic Bytes helps funders, portfolios, and CSR
+            teams build that evidence spine — the rubric, the semantic
+            layer, and the shared record shape — and move from
             fragmented to decision-ready.
           </I>
         </P>
