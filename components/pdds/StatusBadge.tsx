@@ -5,6 +5,9 @@
 const CLASS: Record<string, string> = {
   "Number moved": "bg-[#E8F4E8] text-[#1E5F1E] border-[#B8DAB8]",
   "Moved where deployed": "bg-[#FFF3E0] text-[#7A4F00] border-[#F0D090]",
+  // Both phrasings of the maternal-mortality story map to the same amber —
+  // the pipeline settled on "Average moved, not the gap" 2026-07-09.
+  "Average moved, not the gap": "bg-[#FFF3E0] text-[#7A4F00] border-[#F0D090]",
   "Average moved, gap didn't": "bg-[#FFF3E0] text-[#7A4F00] border-[#F0D090]",
   "The data is the decision": "bg-[#E5F1F9] text-[#0F2A4A] border-[#B8D4E8]",
   // Slate — the data is decision-grade but access is governance-limited.

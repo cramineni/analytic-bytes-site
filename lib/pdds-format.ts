@@ -22,18 +22,21 @@ const STYLES: Record<string, PanelStyle> = {
     seriesColors: ["#B4C0CC", "#0EA5E9"],
     highlight: [],
   },
-  // Single-period: navy across, no highlight.
+  // Multi-period: 2022 pandemic-trough baseline in muted, 2024 in navy.
+  // Deliberately NOT teal — the story is non-recovery at grade 8, not victory.
   naep: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
-    seriesColors: ["#0F2A4A"],
+    seriesColors: ["#B4C0CC", "#0F2A4A"],
     highlight: [],
   },
-  // Single-period: navy across.
+  // Multi-period: 2022 baseline in muted, 2023 in navy.
+  // Not teal — the average moved, but the Black-White gap did not, so the
+  // panel shouldn't read as a win.
   maternal: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
-    seriesColors: ["#0F2A4A"],
+    seriesColors: ["#B4C0CC", "#0F2A4A"],
     highlight: [],
   },
   // Single-period: navy across, teal highlight on the national median.
@@ -71,11 +74,11 @@ export const PANEL_META: Record<string, { title: string; subtitle: string }> = {
   },
   naep: {
     title: "NAEP grade 8 math score by race",
-    subtitle: "Average scale score, 2022 (public school students)",
+    subtitle: "Average scale score, 2022 vs 2024 (public school students)",
   },
   maternal: {
     title: "Maternal mortality rate by race",
-    subtitle: "Deaths per 100,000 live births, 2023",
+    subtitle: "Deaths per 100,000 live births, 2022 vs 2023",
   },
   scorecard: {
     title: "Computer science median earnings by school",

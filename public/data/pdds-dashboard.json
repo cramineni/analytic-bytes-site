@@ -1,6 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:31:37",
-  "note": "Hand-generated from pinned seeds; dbt export overwrites with identical structure.",
+  "generated_at": "2026-07-09T15:16:34",
   "headlines": [
     {
       "card_id": "life_expectancy",
@@ -8,14 +7,6 @@
       "value": 78.4,
       "unit": "years",
       "period": 2023,
-      "source_url": "https://www.cdc.gov/nchs/products/databriefs.htm"
-    },
-    {
-      "card_id": "overdose_deaths",
-      "label": "Drug overdose deaths",
-      "value": 79384.0,
-      "unit": "count",
-      "period": 2024,
       "source_url": "https://www.cdc.gov/nchs/products/databriefs.htm"
     },
     {
@@ -33,9 +24,127 @@
       "unit": "scale_points",
       "period": 2022,
       "source_url": "https://nces.ed.gov/programs/digest/"
+    },
+    {
+      "card_id": "overdose_deaths",
+      "label": "Drug overdose deaths",
+      "value": 79384.0,
+      "unit": "count",
+      "period": 2024,
+      "source_url": "https://www.cdc.gov/nchs/products/databriefs.htm"
     }
   ],
   "panels": [
+    {
+      "panel_id": "maternal",
+      "metric": "maternal_mortality_rate",
+      "unit": "per_100k_births",
+      "series": {
+        "2022": [
+          {
+            "group": "Black",
+            "value": 49.5
+          },
+          {
+            "group": "White",
+            "value": 19.0
+          },
+          {
+            "group": "Hispanic",
+            "value": 16.9
+          },
+          {
+            "group": "Asian",
+            "value": 13.2
+          }
+        ],
+        "2023": [
+          {
+            "group": "Black",
+            "value": 50.3
+          },
+          {
+            "group": "White",
+            "value": 14.5
+          },
+          {
+            "group": "Hispanic",
+            "value": 12.4
+          },
+          {
+            "group": "Asian",
+            "value": 10.7
+          }
+        ]
+      },
+      "lever": {
+        "panel_id": "maternal",
+        "lever": "12-month postpartum Medicaid extension (46 states + DC by Mar 2024)",
+        "status_badge": "Average moved, not the gap",
+        "movement_note": "The bars pair 2022 against 2023. White, Hispanic, and Asian rates all fell, but the Black rate held near 50 per 100k \u2014 roughly 3.5x the White rate \u2014 so the average moved while the gap did not. The overall rate fell to 18.6 in 2023 (669 deaths vs 817 in 2022); that improvement was statistically significant for White and Hispanic women but not for Black women. Note the timing: the 12-month postpartum Medicaid extension mostly postdates this 2023 window, so it's the forward lever aimed at the unmoved gap, not the cause of the average's improvement.",
+        "source_url": "https://www.medicaid.gov/"
+      },
+      "gap": {
+        "period": 2023,
+        "absolute_gap": 39.599999999999994,
+        "ratio_high_to_low": 4.7
+      }
+    },
+    {
+      "panel_id": "naep",
+      "metric": "naep_math_g8_score",
+      "unit": "scale_score",
+      "series": {
+        "2022": [
+          {
+            "group": "Asian/Pacific Islander",
+            "value": 304.0
+          },
+          {
+            "group": "White",
+            "value": 284.0
+          },
+          {
+            "group": "Hispanic",
+            "value": 261.0
+          },
+          {
+            "group": "Black",
+            "value": 252.0
+          }
+        ],
+        "2024": [
+          {
+            "group": "Asian/Pacific Islander",
+            "value": 305.0
+          },
+          {
+            "group": "White",
+            "value": 284.0
+          },
+          {
+            "group": "Hispanic",
+            "value": 257.0
+          },
+          {
+            "group": "Black",
+            "value": 251.0
+          }
+        ]
+      },
+      "lever": {
+        "panel_id": "naep",
+        "lever": "ESSER-funded high-dosage tutoring",
+        "status_badge": "Moved where deployed",
+        "movement_note": "The bars pair 2022 (the pandemic trough that triggered tutoring mandates) against 2024. Nationally, grade-8 math didn't recover: White held flat at 284, Black slipped 252 to 251, and Hispanic fell four points (261 to 257), widening the White-Hispanic gap. Only Asian/Pacific Islander ticked up. Measurable recovery showed up mainly in grade 4 and in states that mandated tutoring \u2014 Louisiana beat its pre-pandemic grade-4 math, Alabama posted the largest gain \u2014 so the lever moved where deployed, but the national grade-8 picture is non-recovery, not proof it worked.",
+        "source_url": "https://www.ed.gov/"
+      },
+      "gap": {
+        "period": 2024,
+        "absolute_gap": 54.0,
+        "ratio_high_to_low": 1.22
+      }
+    },
     {
       "panel_id": "overdose",
       "metric": "overdose_death_rate",
@@ -94,100 +203,17 @@
           }
         ]
       },
+      "lever": {
+        "panel_id": "overdose",
+        "lever": "OTC naloxone (Narcan approved Mar 2023) + pharmacy dispensing scale-up",
+        "status_badge": "Number moved",
+        "movement_note": "Deaths fell 26.2% to 79,384 in 2024 \u2014 the largest one-year drop on record, and every group fell. But naloxone was deployed concurrently with large supply-side shifts (fentanyl saturation, precursor changes) that can dwarf harm-reduction levers in top-line mortality. The data's role here is evaluative \u2014 it detected the shift \u2014 more than it is proof the lever caused it. The American Indian/Alaska Native rate is also likely understated: racial misclassification on death certificates chronically undercounts AI/AN deaths.",
+        "source_url": "https://www.fda.gov/news-events/press-announcements"
+      },
       "gap": {
         "period": 2024,
         "absolute_gap": 47.2,
         "ratio_high_to_low": 11.73
-      },
-      "lever": {
-        "lever": "OTC naloxone (Narcan approved Mar 2023) + pharmacy dispensing scale-up",
-        "status_badge": "Number moved",
-        "movement_note": "Overdose deaths fell 26.2% to 79,384 in 2024 \u2014 the largest one-year drop on record. Caveat: drug-supply shifts contributed too.",
-        "source_url": "https://www.fda.gov/news-events/press-announcements"
-      }
-    },
-    {
-      "panel_id": "naep",
-      "metric": "naep_math_g8_score",
-      "unit": "scale_score",
-      "series": {
-        "2022": [
-          {
-            "group": "Asian",
-            "value": 306.0
-          },
-          {
-            "group": "White",
-            "value": 284.0
-          },
-          {
-            "group": "Two or more races",
-            "value": 275.0
-          },
-          {
-            "group": "Native Hawaiian/Pacific Islander",
-            "value": 262.0
-          },
-          {
-            "group": "Hispanic",
-            "value": 261.0
-          },
-          {
-            "group": "American Indian/Alaska Native",
-            "value": 257.0
-          },
-          {
-            "group": "Black",
-            "value": 252.0
-          }
-        ]
-      },
-      "gap": {
-        "period": 2022,
-        "absolute_gap": 54.0,
-        "ratio_high_to_low": 1.21
-      },
-      "lever": {
-        "lever": "ESSER-funded high-dosage tutoring",
-        "status_badge": "Moved where deployed",
-        "movement_note": "Only a handful of states beat pre-pandemic grade-4 math; Louisiana among them (mandatory in-school tutoring), Alabama posted the largest gain.",
-        "source_url": "https://www.ed.gov/"
-      }
-    },
-    {
-      "panel_id": "maternal",
-      "metric": "maternal_mortality_rate",
-      "unit": "per_100k_births",
-      "series": {
-        "2023": [
-          {
-            "group": "Black",
-            "value": 50.3
-          },
-          {
-            "group": "White",
-            "value": 14.5
-          },
-          {
-            "group": "Hispanic",
-            "value": 12.4
-          },
-          {
-            "group": "Asian",
-            "value": 10.7
-          }
-        ]
-      },
-      "gap": {
-        "period": 2023,
-        "absolute_gap": 39.6,
-        "ratio_high_to_low": 4.7
-      },
-      "lever": {
-        "lever": "12-month postpartum Medicaid extension (46 states + DC by Mar 2024)",
-        "status_badge": "Average moved, gap didn't",
-        "movement_note": "Overall rate 18.6 in 2023 (669 deaths vs 817 in 2022). The Black rate stayed ~3.5x the White rate.",
-        "source_url": "https://www.medicaid.gov/"
       }
     },
     {
@@ -197,49 +223,50 @@
       "series": {
         "2026": [
           {
+            "group": "Stanford University",
+            "value": 199761.0
+          },
+          {
             "group": "Harvard University",
-            "value": 256500.0
+            "value": 158673.0
           },
           {
             "group": "Carnegie Mellon University",
-            "value": 247600.0
+            "value": 138781.0
           },
           {
             "group": "Brown University",
-            "value": 218500.0
-          },
-          {
-            "group": "Stanford University",
-            "value": 201000.0
+            "value": null,
+            "note": "Not reportable \u2014 completer count suppressed for privacy"
           },
           {
             "group": "Massachusetts Institute of Technology",
-            "value": 199800.0
-          },
-          {
-            "group": "National median program",
-            "value": 90200.0
+            "value": null,
+            "note": "Not reportable \u2014 completer count suppressed for privacy"
           },
           {
             "group": "CUNY York College",
-            "value": 50700.0
+            "value": null,
+            "note": "Not reportable \u2014 completer count suppressed for privacy"
           },
           {
             "group": "Fayetteville State University",
-            "value": 48200.0
+            "value": null,
+            "note": "Not reportable \u2014 completer count suppressed for privacy"
           }
         ]
       },
+      "lever": {
+        "panel_id": "scorecard",
+        "lever": "College Scorecard publishes median earnings by specific major at specific school (field-of-study API)",
+        "status_badge": "The data is the decision",
+        "movement_note": "Pulled straight from the College Scorecard field-of-study API \u2014 CS-family bachelor's, median earnings one year after completion. Two things surface the moment you touch the raw data. Coverage: of seven well-known CS schools, only three report a figure at all \u2014 Stanford 199,761, Harvard 158,673, Carnegie Mellon 138,781 \u2014 while Brown, MIT, CUNY York, and Fayetteville State are suppressed because too few completers make the count publishable. A tool built to help families compare programs returns a blank for exactly the regional schools they'd most want to check. Reproducibility: popular 'highest-paid CS' rankings (the ~256k Harvard figure this panel first showed) can't be reproduced from the primary data at all, and even the three reporting schools mix definitions \u2014 Harvard and CMU report under the broad 'Computer and Information Sciences, General', Stanford under 'Computer Science' proper. Whether publishing earnings changes behavior is separately unsettled: early research found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
+        "source_url": "https://papers.ssrn.com/abstract=2768157"
+      },
       "gap": {
         "period": 2026,
-        "absolute_gap": 208300.0,
-        "ratio_high_to_low": 5.32
-      },
-      "lever": {
-        "lever": "College Scorecard publishes median earnings by specific major at specific school (updated Jun 2026)",
-        "status_badge": "The data is the decision",
-        "movement_note": "Whether it changes behavior is genuinely unsettled \u2014 early research found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
-        "source_url": "https://www.nber.org/papers/w21300"
+        "absolute_gap": 60980.0,
+        "ratio_high_to_low": 1.44
       }
     },
     {
@@ -258,16 +285,17 @@
           }
         ]
       },
+      "lever": {
+        "panel_id": "slds",
+        "lever": "Virginia's Longitudinal Data System links records across five state agencies (K-12, higher ed, employment, community colleges, IT) to measure post-completion wages",
+        "status_badge": "Built to decide, access-limited",
+        "movement_note": "The aggregate is decision-grade and public \u2014 it shows some technical associate degrees out-earn liberal-arts bachelor's, upending 'higher credential = higher pay.' But the record-level data that would let families and researchers interrogate it stays governed behind data-sharing agreements. Built to decide; not built to browse.",
+        "source_url": "https://www.schev.edu/about/key-facts-about-higher-education/key-facts-accessible-version"
+      },
       "gap": {
         "period": 2024,
         "absolute_gap": 14997.0,
         "ratio_high_to_low": 1.32
-      },
-      "lever": {
-        "lever": "Virginia's Longitudinal Data System links records across five state agencies (K-12, higher ed, employment, community colleges, IT) to measure post-completion wages",
-        "status_badge": "Built to decide, access-limited",
-        "movement_note": "The aggregate is decision-grade and public \u2014 it shows some technical associate degrees out-earn liberal-arts bachelor's, upending 'higher credential = higher pay.' But the record-level data that would let families and researchers interrogate it stays governed behind data-sharing agreements. Built to decide; not built to browse.",
-        "source_url": "https://research.schev.edu/info/Reports.Guide-to-the-Post-Completion-Wages-of-Graduates"
       }
     }
   ],
@@ -279,6 +307,22 @@
       "url": "https://www.cdc.gov/nchs/products/databriefs.htm",
       "table_ref": "NCHS Data Brief db521",
       "release_date": "2024-12-01"
+    },
+    {
+      "source_id": "cdc_mat",
+      "title": "Maternal Mortality Rates in the United States, 2023",
+      "publisher": "CDC/NCHS Health E-Stat",
+      "url": "https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm",
+      "table_ref": "NCHS Health E-Stat 2023",
+      "release_date": "2025-05-01"
+    },
+    {
+      "source_id": "cdc_mat_2022",
+      "title": "Maternal Mortality Rates in the United States, 2022",
+      "publisher": "CDC/NCHS Health E-Stat",
+      "url": "https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2022/maternal-mortality-rates-2022.htm",
+      "table_ref": "NCHS Health E-Stat 2022 (May 2024)",
+      "release_date": "2024-05-01"
     },
     {
       "source_id": "cdc_od",
@@ -297,46 +341,6 @@
       "release_date": "2026-06-01"
     },
     {
-      "source_id": "cdc_mat",
-      "title": "Maternal Mortality Rates in the United States, 2023",
-      "publisher": "CDC/NCHS Health E-Stat",
-      "url": "https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm",
-      "table_ref": "NCHS Health E-Stat 2023",
-      "release_date": "2025-05-01"
-    },
-    {
-      "source_id": "nces_naep",
-      "title": "NAEP Mathematics Grade 8 by race/ethnicity",
-      "publisher": "NCES Digest of Education Statistics",
-      "url": "https://nces.ed.gov/programs/digest/",
-      "table_ref": "Digest table 222.70",
-      "release_date": "2023-01-01"
-    },
-    {
-      "source_id": "scorecard_api",
-      "title": "College Scorecard field-of-study earnings",
-      "publisher": "U.S. Dept of Education",
-      "url": "https://collegescorecard.ed.gov/data/",
-      "table_ref": "field-of-study data (CIP 11 bachelor's)",
-      "release_date": "2026-06-01"
-    },
-    {
-      "source_id": "scorecard_ct",
-      "title": "College Scorecard CS earnings analysis",
-      "publisher": "College Transitions (analysis of Scorecard data)",
-      "url": "https://www.collegetransitions.com/",
-      "table_ref": "secondary analysis of Scorecard field-of-study",
-      "release_date": "2026-04-01"
-    },
-    {
-      "source_id": "lever_naloxone",
-      "title": "OTC naloxone approval and pharmacy dispensing",
-      "publisher": "FDA / CDC",
-      "url": "https://www.fda.gov/news-events/press-announcements",
-      "table_ref": "Narcan OTC approval Mar 2023",
-      "release_date": "2023-03-01"
-    },
-    {
       "source_id": "lever_esser",
       "title": "ESSER-funded high-dosage tutoring",
       "publisher": "U.S. Dept of Education",
@@ -353,19 +357,43 @@
       "release_date": "2024-03-01"
     },
     {
+      "source_id": "lever_naloxone",
+      "title": "OTC naloxone approval and pharmacy dispensing",
+      "publisher": "FDA / CDC",
+      "url": "https://www.fda.gov/news-events/press-announcements",
+      "table_ref": "Narcan OTC approval Mar 2023",
+      "release_date": "2023-03-01"
+    },
+    {
+      "source_id": "nces_naep",
+      "title": "NAEP Mathematics Grade 8 by race/ethnicity",
+      "publisher": "NCES Digest of Education Statistics",
+      "url": "https://nces.ed.gov/programs/digest/",
+      "table_ref": "Digest table 222.70",
+      "release_date": "2023-01-01"
+    },
+    {
+      "source_id": "scorecard_api",
+      "title": "College Scorecard field-of-study earnings",
+      "publisher": "U.S. Dept of Education",
+      "url": "https://collegescorecard.ed.gov/data/",
+      "table_ref": "field of study, CS-family bachelor's (CIP 11xx, credential level 5), median earnings 1 yr after completion; pulled via api.data.gov",
+      "release_date": "2026-06-01"
+    },
+    {
       "source_id": "study_hurwitz",
-      "title": "Hurwitz & Smith (2016), Student responsiveness to earnings data in the College Scorecard",
-      "publisher": "NBER Working Paper",
-      "url": "https://www.nber.org/papers/w21300",
-      "table_ref": "NBER w21300",
-      "release_date": "2016-06-01"
+      "title": "Hurwitz & Smith (2018), Student Responsiveness to Earnings Data in the College Scorecard",
+      "publisher": "Economic Inquiry 56(2):1220-1243",
+      "url": "https://papers.ssrn.com/abstract=2768157",
+      "table_ref": "Economic Inquiry (SSRN 2768157)",
+      "release_date": "2018-04-01"
     },
     {
       "source_id": "vlds",
-      "title": "Post-Completion Wages of Graduates",
+      "title": "Key Facts About Higher Education \u2014 median wage 5 years after completion",
       "publisher": "Virginia SCHEV / Virginia Longitudinal Data System",
-      "url": "https://research.schev.edu/info/Reports.Guide-to-the-Post-Completion-Wages-of-Graduates",
-      "table_ref": "VLDS post-completion wages (5 yrs after graduation)",
+      "url": "https://www.schev.edu/about/key-facts-about-higher-education/key-facts-accessible-version",
+      "table_ref": "Key Facts: median annual wage 5 yrs after completion (bachelor's $61,502; associate-transfer $46,505)",
       "release_date": "2025-01-01"
     }
   ]
