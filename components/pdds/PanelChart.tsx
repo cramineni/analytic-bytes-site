@@ -26,13 +26,22 @@ export default function PanelChart({ panel }: { panel: Panel }) {
 
   // SVG geometry
   const width = 720;
-  const labelW = 168;
+  // labelW was 168 — too tight for AI/AN, Native Hawaiian/PI, and
+  // Massachusetts Institute of Technology. Widened to 200 and combined
+  // with two-line wrapping (see renderLabel below) to handle 30+ char
+  // groups without truncation.
+  const labelW = 200;
   const rightPad = 56;
   const rowGap = multi ? 14 : 10;
   const barH = multi ? 12 : 22;
   const rowH = multi ? barH * periods.length + 6 + rowGap : barH + rowGap;
   const topPad = 10;
-  const bottomPad = 34;
+  // bottomPad reserves two rows below the axis line:
+  //   - x-axis tick labels (0, 25, 50, ...) at height - bottomPad + 16
+  //   - legend swatches (multi-period only) at height - 14
+  // Previously bottomPad was 34, which put both on the same line and
+  // the year labels stacked directly on top of the tick numbers.
+  const bottomPad = multi ? 56 : 34;
   const height = topPad + rowH * groups.length + bottomPad;
 
   // Compute max across all values for x-axis scale
@@ -79,18 +88,40 @@ export default function PanelChart({ panel }: { panel: Panel }) {
         const label = row.group as string;
         return (
           <g key={label}>
-            {/* Group label */}
-            <text
-              x={labelW - 10}
-              y={rowY + rowH / 2}
-              dominantBaseline="middle"
-              textAnchor="end"
-              fontSize={12.5}
-              fill="#475569"
-              fontFamily="Inter,Helvetica,Arial,sans-serif"
-            >
-              {truncate(label, 22)}
-            </text>
+            {/* Group label — wraps to two lines if it exceeds the
+                single-line budget, split at a natural boundary. */}
+            {(() => {
+              const lines = wrapLabel(label, 26);
+              const cy = rowY + rowH / 2;
+              const x = labelW - 10;
+              const common = {
+                textAnchor: "end" as const,
+                fontSize: 12.5,
+                fill: "#475569",
+                fontFamily: "Inter,Helvetica,Arial,sans-serif",
+              };
+              if (lines.length === 1) {
+                return (
+                  <text x={x} y={cy} dominantBaseline="middle" {...common}>
+                    {lines[0]}
+                  </text>
+                );
+              }
+              // Two lines, centered vertically around cy.
+              // Each line ~12.5px; total two-line block ~28px. Placing
+              // baselines at cy-6 and cy+8 puts the visual midpoint of
+              // the pair right on cy.
+              return (
+                <text {...common}>
+                  <tspan x={x} y={cy - 6}>
+                    {lines[0]}
+                  </tspan>
+                  <tspan x={x} y={cy + 8}>
+                    {lines[1]}
+                  </tspan>
+                </text>
+              );
+            })()}
 
             {/* Bar(s) */}
             {periods.map((p, pi) => {
@@ -196,4 +227,39 @@ function niceCeil(v: number): number {
 
 function truncate(s: string, max: number): string {
   return s.length <= max ? s : s.slice(0, max - 1) + "…";
+}
+
+// Break a long group name into two lines at a natural boundary — space,
+// slash, or hyphen — near the middle of the string. Falls back to a hard
+// character split only if no break candidate exists.
+// Returns a single-element array if the label already fits maxSingleLine.
+function wrapLabel(label: string, maxSingleLine: number): string[] {
+  if (label.length <= maxSingleLine) return [label];
+
+  // Candidates: positions of space, slash, or hyphen. Prefer the one
+  // closest to the string's midpoint so both lines land roughly balanced.
+  const breakChars = new Set([" ", "/", "-"]);
+  const mid = label.length / 2;
+  const candidates: number[] = [];
+  for (let i = 0; i < label.length; i++) {
+    if (breakChars.has(label[i])) candidates.push(i);
+  }
+  if (candidates.length === 0) {
+    // No natural break — hard-split at mid, truncate second half if huge.
+    const cut = Math.ceil(mid);
+    return [label.slice(0, cut), truncate(label.slice(cut), maxSingleLine)];
+  }
+
+  // Pick the break candidate closest to the midpoint.
+  candidates.sort((a, b) => Math.abs(a - mid) - Math.abs(b - mid));
+  const cut = candidates[0];
+  // If break is a space, drop it. Slashes and hyphens stay with line 1.
+  const line1 =
+    label[cut] === " " ? label.slice(0, cut) : label.slice(0, cut + 1);
+  const line2Start = label[cut] === " " ? cut + 1 : cut + 1;
+  const line2 = label.slice(line2Start);
+  return [
+    truncate(line1, maxSingleLine),
+    truncate(line2, maxSingleLine),
+  ];
 }
