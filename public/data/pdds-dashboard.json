@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T17:47:40",
+  "generated_at": "2026-07-10T23:27:03",
   "headlines": [
     {
       "card_id": "life_expectancy",
@@ -31,7 +31,7 @@
       "value": 79384.0,
       "unit": "count",
       "period": 2024,
-      "source_url": "https://www.cdc.gov/nchs/products/databriefs.htm"
+      "source_url": "https://www.cdc.gov/nchs/products/databriefs/db549.htm"
     }
   ],
   "panels": [
@@ -136,7 +136,7 @@
         "panel_id": "naep",
         "lever": "ESSER-funded high-dosage tutoring",
         "status_badge": "Moved where deployed",
-        "movement_note": "The bars pair 2022 (the pandemic trough that triggered tutoring mandates) against 2024. Nationally, grade-8 math did not recover: White held at 284, Black slipped 252 to 251, Hispanic fell 261 to 257 \u2014 widening the White-Hispanic gap \u2014 while Asian/Pacific Islander was essentially flat (304 to 305). NAEP scores carry sampling error, so single-year moves of a point or two are not by themselves statistically meaningful; the reliable signal is the non-recovery at grade 8. Where recovery did show up it was concentrated: grade 4, and states that mandated high-dosage tutoring \u2014 Louisiana beat its pre-pandemic grade-4 math, Alabama posted the largest gain. Decision: the lever works where it is actually deployed at dosage, so the read points funding toward mandated grade-8 tutoring in the states and grades that have not yet scaled it, aimed at the widening Hispanic gap.",
+        "movement_note": "The bars pair 2022 (the pandemic trough that triggered tutoring mandates) against 2024. Nationally, grade-8 math did not recover: White held at 284, Black slipped 252 to 251, Hispanic fell 261 to 257 \u2014 widening the White-Hispanic gap \u2014 while Asian/Pacific Islander was essentially flat (304 to 305). NAEP scores carry sampling error, so single-year moves of a point or two are not by themselves statistically meaningful; the reliable signal is the non-recovery at grade 8. Where recovery did show up it was concentrated: grade 4, and states that mandated high-dosage tutoring \u2014 Louisiana was the only state to top its pre-pandemic grade-4 reading, and Alabama posted the nation's largest grade-4 math gain (230 to 236). (Louisiana's grade-4 math also edged above 2019, but not significantly \u2014 the durable win was reading.) Decision: the lever works where it is actually deployed at dosage, so the read points funding toward mandated grade-8 tutoring in the states and grades that have not yet scaled it, aimed at the widening Hispanic gap.",
         "source_url": "https://www.ed.gov/"
       },
       "gap": {
@@ -245,11 +245,6 @@
           {
             "group": "Fayetteville State University",
             "value": 36164.0
-          },
-          {
-            "group": "Brown University",
-            "value": null,
-            "note": "Not reportable \u2014 CS bachelor's completer count suppressed for privacy at every horizon"
           }
         ]
       },
@@ -257,7 +252,7 @@
         "panel_id": "scorecard",
         "lever": "College Scorecard publishes median earnings by specific major at specific school (field-of-study API)",
         "status_badge": "The data is the decision",
-        "movement_note": "Pulled from the College Scorecard field-of-study API \u2014 Computer Science (CIP 1107) bachelor's, median earnings four years after completion, Title IV federal-aid recipients only. The striking thing is the spread across schools for the same credential in the same field: Carnegie Mellon 268,121, MIT 225,141, Stanford 214,907, Harvard 203,169 \u2014 but CUNY York 73,044 and Fayetteville State 36,164. A CS bachelor's is not one number; where you earn it moves the median five- to sevenfold, and horizon compounds it (Harvard reads 152,251 at one year, 203,169 at four, 219,550 at five). Two honesty flags. Small cells: at the regional schools the Title-IV completer counts are thin enough that horizons run non-monotonic \u2014 Fayetteville reads 50,940 at one year but 36,164 at four \u2014 a sign the medians are noisy, not precise. Suppression: Brown returns no figure at any horizon because its completer count is too small to publish. Decision: the earnings signal is real enough to steer program-level accountability and student guidance \u2014 but only if the grain travels with it, because school x CIP x horizon x aid-subgroup is the unit, and a single headline ('CS pays 250k') strips exactly the frame that makes it true. Whether publishing earnings actually changes behavior is separately unsettled: Hurwitz & Smith found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
+        "movement_note": "Pulled from the College Scorecard field-of-study API \u2014 Computer Science (CIP 1107) bachelor's, median earnings four years after completion, Title IV federal-aid recipients only. The striking thing is the spread across schools for the same credential in the same field: Carnegie Mellon 268,121, MIT 225,141, Stanford 214,907, Harvard 203,169 \u2014 but CUNY York 73,044 and Fayetteville State 36,164. A CS bachelor's is not one number; where you earn it moves the median five- to sevenfold, and horizon compounds it (Harvard reads 152,251 at one year, 203,169 at four). Two honesty flags. Small cells: at the regional schools the Title-IV completer counts are thin enough that horizons run non-monotonic \u2014 Fayetteville reads 50,940 at one year but 36,164 at four \u2014 a sign the medians are noisy, not precise. Surface dependence: the same federal source answers differently depending on which door you use \u2014 the field-of-study API returns no CS bachelor's figure for Brown at any horizon (its single-year Title-IV completer cohort is below the privacy threshold), yet the public Field of Study web tool shows ~214,000 by pooling two award years into one cohort large enough to clear it. Neither number is wrong; the grain of the query decides whether a number exists at all. Decision: the earnings signal is real enough to steer program-level accountability and student guidance \u2014 but only if the grain travels with it, because school x CIP x horizon x aid-subgroup is the unit, and a single headline ('CS pays 250k') strips exactly the frame that makes it true. Whether publishing earnings actually changes behavior is separately unsettled: Hurwitz & Smith found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
         "source_url": "https://papers.ssrn.com/abstract=2768157"
       },
       "gap": {
@@ -290,7 +285,7 @@
         "panel_id": "slds",
         "lever": "Virginia's Longitudinal Data System links records across five state agencies (K-12, higher ed, employment, community colleges, IT) to measure post-completion wages",
         "status_badge": "Built to decide, access-limited",
-        "movement_note": "Virginia's SCHEV report links K-12, higher-ed, and employment records to publish post-completion wages \u2014 median annual wage five years out for 2017-18 graduates, measured on 2023 Unemployment-Insurance records (nominal). At the credential median the premium is smaller than the folk model assumes: a four-year bachelor's runs 65,249, an applied-science (AAS) associate 58,393, and a transfer associate 49,444 \u2014 so 'higher credential = higher pay' holds on average but only barely, and the distributions overlap heavily. That overlap is the real finding: the AAS 75th percentile (79,679) clears the bachelor's median, while several bachelor's fields \u2014 English 48,249, Psychology 47,601, History 48,940 \u2014 land below the AAS median, at roughly half the debt. Two caveats travel with every wage here: it is UI-covered, in-state employment only (out-of-state, federal, military, self-employed, and gig work are invisible), and only about 40% of bachelor's vs 55% of transfer-associate grads even have a reported wage, so the medians describe differently-selected subpopulations. SCHEV itself warns against ranking programs on these wages without adjusting for family wealth, residency, and demographics. Decision: fund and advise by field-and-region outcome, not by credential tier \u2014 and open the record-level data (today locked behind data-sharing agreements) so families and funders can interrogate the aggregate instead of trusting it. Built to decide; not built to browse.",
+        "movement_note": "Virginia's SCHEV report links K-12, higher-ed, and employment records to publish post-completion wages \u2014 median annual wage five years out for 2017-18 graduates, measured on 2023 Unemployment-Insurance records (nominal). At the credential median the premium is smaller than the folk model assumes: a four-year bachelor's runs 65,249, an applied-science (AAS) associate 58,393, and a transfer associate 49,444 \u2014 so 'higher credential = higher pay' holds on average but only barely, and the distributions overlap heavily. That overlap is the real finding: at these medians a strong applied-science associate can out-earn a weaker bachelor's, so credential tier alone is a poor predictor of individual pay. Two caveats travel with every wage here: it is UI-covered, in-state employment only (out-of-state, federal, military, self-employed, and gig work are invisible), and not every graduate has a reported wage \u2014 match rates differ by credential, so the medians describe differently-selected subpopulations. SCHEV itself warns against ranking programs on these wages without adjusting for family wealth, residency, and demographics. Decision: fund and advise by field-and-region outcome, not by credential tier \u2014 and open the record-level data (today locked behind data-sharing agreements) so families and funders can interrogate the aggregate instead of trusting it. Built to decide; not built to browse.",
         "source_url": "https://research.schev.edu"
       },
       "gap": {
@@ -327,11 +322,11 @@
     },
     {
       "source_id": "cdc_od",
-      "title": "Drug Overdose Deaths in the United States, 2003-2024",
+      "title": "Drug Overdose Deaths in the United States, 2023-2024",
       "publisher": "CDC/NCHS Data Brief",
-      "url": "https://www.cdc.gov/nchs/products/databriefs.htm",
+      "url": "https://www.cdc.gov/nchs/products/databriefs/db549.htm",
       "table_ref": "NCHS Data Brief db549",
-      "release_date": "2025-01-01"
+      "release_date": "2026-01-01"
     },
     {
       "source_id": "cdc_od_socrata",

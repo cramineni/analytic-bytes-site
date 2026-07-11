@@ -83,7 +83,7 @@ export const PANEL_META: Record<string, { title: string; subtitle: string }> = {
   scorecard: {
     title: "Computer science median earnings by school",
     subtitle:
-      "CS bachelor’s, median earnings 4 years after completion (Title IV recipients) — College Scorecard field-of-study API",
+      "Median earnings 4 years after completion, Title IV recipients — College Scorecard field-of-study API",
   },
   slds: {
     title: "Post-completion wages by credential",
