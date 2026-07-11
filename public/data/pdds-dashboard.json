@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T15:16:34",
+  "generated_at": "2026-07-10T17:47:40",
   "headlines": [
     {
       "card_id": "life_expectancy",
@@ -81,7 +81,7 @@
         "panel_id": "maternal",
         "lever": "12-month postpartum Medicaid extension (46 states + DC by Mar 2024)",
         "status_badge": "Average moved, not the gap",
-        "movement_note": "The bars pair 2022 against 2023. White, Hispanic, and Asian rates all fell, but the Black rate held near 50 per 100k \u2014 roughly 3.5x the White rate \u2014 so the average moved while the gap did not. The overall rate fell to 18.6 in 2023 (669 deaths vs 817 in 2022); that improvement was statistically significant for White and Hispanic women but not for Black women. Note the timing: the 12-month postpartum Medicaid extension mostly postdates this 2023 window, so it's the forward lever aimed at the unmoved gap, not the cause of the average's improvement.",
+        "movement_note": "The bars pair 2022 against 2023. White, Hispanic, and Asian rates all fell, but the Black rate held near 50 per 100k \u2014 roughly 3.5x the White rate \u2014 and in fact edged up (49.5 to 50.3), so the average moved while the gap did not. The overall rate fell to 18.6 in 2023 (669 deaths vs 817 in 2022); that improvement was statistically significant for White and Hispanic women but not for Black women. These are NCHS counts built on small annual numbers, so single-year moves are noisy \u2014 the durable finding is the persistence of the Black-White gap, not any one year's tick. Timing matters: the 12-month postpartum Medicaid extension mostly postdates this 2023 window, so it is the forward lever aimed at the unmoved gap, not the cause of the average's improvement. Decision: target the Black maternal gap specifically \u2014 the resources follow the gap that did not move, not the average that did.",
         "source_url": "https://www.medicaid.gov/"
       },
       "gap": {
@@ -136,7 +136,7 @@
         "panel_id": "naep",
         "lever": "ESSER-funded high-dosage tutoring",
         "status_badge": "Moved where deployed",
-        "movement_note": "The bars pair 2022 (the pandemic trough that triggered tutoring mandates) against 2024. Nationally, grade-8 math didn't recover: White held flat at 284, Black slipped 252 to 251, and Hispanic fell four points (261 to 257), widening the White-Hispanic gap. Only Asian/Pacific Islander ticked up. Measurable recovery showed up mainly in grade 4 and in states that mandated tutoring \u2014 Louisiana beat its pre-pandemic grade-4 math, Alabama posted the largest gain \u2014 so the lever moved where deployed, but the national grade-8 picture is non-recovery, not proof it worked.",
+        "movement_note": "The bars pair 2022 (the pandemic trough that triggered tutoring mandates) against 2024. Nationally, grade-8 math did not recover: White held at 284, Black slipped 252 to 251, Hispanic fell 261 to 257 \u2014 widening the White-Hispanic gap \u2014 while Asian/Pacific Islander was essentially flat (304 to 305). NAEP scores carry sampling error, so single-year moves of a point or two are not by themselves statistically meaningful; the reliable signal is the non-recovery at grade 8. Where recovery did show up it was concentrated: grade 4, and states that mandated high-dosage tutoring \u2014 Louisiana beat its pre-pandemic grade-4 math, Alabama posted the largest gain. Decision: the lever works where it is actually deployed at dosage, so the read points funding toward mandated grade-8 tutoring in the states and grades that have not yet scaled it, aimed at the widening Hispanic gap.",
         "source_url": "https://www.ed.gov/"
       },
       "gap": {
@@ -207,7 +207,7 @@
         "panel_id": "overdose",
         "lever": "OTC naloxone (Narcan approved Mar 2023) + pharmacy dispensing scale-up",
         "status_badge": "Number moved",
-        "movement_note": "Deaths fell 26.2% to 79,384 in 2024 \u2014 the largest one-year drop on record, and every group fell. But naloxone was deployed concurrently with large supply-side shifts (fentanyl saturation, precursor changes) that can dwarf harm-reduction levers in top-line mortality. The data's role here is evaluative \u2014 it detected the shift \u2014 more than it is proof the lever caused it. The American Indian/Alaska Native rate is also likely understated: racial misclassification on death certificates chronically undercounts AI/AN deaths.",
+        "movement_note": "Age-adjusted overdose death rates fell sharply: total deaths dropped 26.2% to 79,384 in 2024 \u2014 the largest one-year decline on record \u2014 and every racial group fell. But naloxone was deployed alongside large supply-side shifts (fentanyl saturation, precursor changes) that can dwarf harm-reduction levers in top-line mortality, so the data's role here is evaluative \u2014 it detected the turn \u2014 more than proof the lever caused it. Read the disparity, not just the drop: the American Indian/Alaska Native rate stays the highest and is almost certainly understated, because racial misclassification on death certificates chronically undercounts AI/AN deaths (and, to a smaller degree, other non-White deaths). Decision: the group with the worst rate is also the least accurately counted, so naloxone saturation and post-overdose outreach should be targeted to AI/AN communities while the death-certificate race coding that hides the true burden gets fixed.",
         "source_url": "https://www.fda.gov/news-events/press-announcements"
       },
       "gap": {
@@ -223,36 +223,33 @@
       "series": {
         "2026": [
           {
+            "group": "Carnegie Mellon University",
+            "value": 268121.0
+          },
+          {
+            "group": "Massachusetts Institute of Technology",
+            "value": 225141.0
+          },
+          {
             "group": "Stanford University",
-            "value": 199761.0
+            "value": 214907.0
           },
           {
             "group": "Harvard University",
-            "value": 158673.0
+            "value": 203169.0
           },
           {
-            "group": "Carnegie Mellon University",
-            "value": 138781.0
+            "group": "CUNY York College",
+            "value": 73044.0
+          },
+          {
+            "group": "Fayetteville State University",
+            "value": 36164.0
           },
           {
             "group": "Brown University",
             "value": null,
-            "note": "Not reportable \u2014 completer count suppressed for privacy"
-          },
-          {
-            "group": "Massachusetts Institute of Technology",
-            "value": null,
-            "note": "Not reportable \u2014 completer count suppressed for privacy"
-          },
-          {
-            "group": "CUNY York College",
-            "value": null,
-            "note": "Not reportable \u2014 completer count suppressed for privacy"
-          },
-          {
-            "group": "Fayetteville State University",
-            "value": null,
-            "note": "Not reportable \u2014 completer count suppressed for privacy"
+            "note": "Not reportable \u2014 CS bachelor's completer count suppressed for privacy at every horizon"
           }
         ]
       },
@@ -260,13 +257,13 @@
         "panel_id": "scorecard",
         "lever": "College Scorecard publishes median earnings by specific major at specific school (field-of-study API)",
         "status_badge": "The data is the decision",
-        "movement_note": "Pulled straight from the College Scorecard field-of-study API \u2014 CS-family bachelor's, median earnings one year after completion. Two things surface the moment you touch the raw data. Coverage: of seven well-known CS schools, only three report a figure at all \u2014 Stanford 199,761, Harvard 158,673, Carnegie Mellon 138,781 \u2014 while Brown, MIT, CUNY York, and Fayetteville State are suppressed because too few completers make the count publishable. A tool built to help families compare programs returns a blank for exactly the regional schools they'd most want to check. Reproducibility: popular 'highest-paid CS' rankings (the ~256k Harvard figure this panel first showed) can't be reproduced from the primary data at all, and even the three reporting schools mix definitions \u2014 Harvard and CMU report under the broad 'Computer and Information Sciences, General', Stanford under 'Computer Science' proper. Whether publishing earnings changes behavior is separately unsettled: early research found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
+        "movement_note": "Pulled from the College Scorecard field-of-study API \u2014 Computer Science (CIP 1107) bachelor's, median earnings four years after completion, Title IV federal-aid recipients only. The striking thing is the spread across schools for the same credential in the same field: Carnegie Mellon 268,121, MIT 225,141, Stanford 214,907, Harvard 203,169 \u2014 but CUNY York 73,044 and Fayetteville State 36,164. A CS bachelor's is not one number; where you earn it moves the median five- to sevenfold, and horizon compounds it (Harvard reads 152,251 at one year, 203,169 at four, 219,550 at five). Two honesty flags. Small cells: at the regional schools the Title-IV completer counts are thin enough that horizons run non-monotonic \u2014 Fayetteville reads 50,940 at one year but 36,164 at four \u2014 a sign the medians are noisy, not precise. Suppression: Brown returns no figure at any horizon because its completer count is too small to publish. Decision: the earnings signal is real enough to steer program-level accountability and student guidance \u2014 but only if the grain travels with it, because school x CIP x horizon x aid-subgroup is the unit, and a single headline ('CS pays 250k') strips exactly the frame that makes it true. Whether publishing earnings actually changes behavior is separately unsettled: Hurwitz & Smith found a small, advantage-concentrated shift in where students sent scores; later replications found little sorting toward higher-earning schools.",
         "source_url": "https://papers.ssrn.com/abstract=2768157"
       },
       "gap": {
         "period": 2026,
-        "absolute_gap": 60980.0,
-        "ratio_high_to_low": 1.44
+        "absolute_gap": 231957.0,
+        "ratio_high_to_low": 7.41
       }
     },
     {
@@ -277,11 +274,15 @@
         "2024": [
           {
             "group": "Bachelor's degree",
-            "value": 61502.0
+            "value": 65249.0
           },
           {
-            "group": "Associate (transfer)",
-            "value": 46505.0
+            "group": "Applied-science associate",
+            "value": 58393.0
+          },
+          {
+            "group": "Transfer associate",
+            "value": 49444.0
           }
         ]
       },
@@ -289,12 +290,12 @@
         "panel_id": "slds",
         "lever": "Virginia's Longitudinal Data System links records across five state agencies (K-12, higher ed, employment, community colleges, IT) to measure post-completion wages",
         "status_badge": "Built to decide, access-limited",
-        "movement_note": "The aggregate is decision-grade and public \u2014 it shows some technical associate degrees out-earn liberal-arts bachelor's, upending 'higher credential = higher pay.' But the record-level data that would let families and researchers interrogate it stays governed behind data-sharing agreements. Built to decide; not built to browse.",
-        "source_url": "https://www.schev.edu/about/key-facts-about-higher-education/key-facts-accessible-version"
+        "movement_note": "Virginia's SCHEV report links K-12, higher-ed, and employment records to publish post-completion wages \u2014 median annual wage five years out for 2017-18 graduates, measured on 2023 Unemployment-Insurance records (nominal). At the credential median the premium is smaller than the folk model assumes: a four-year bachelor's runs 65,249, an applied-science (AAS) associate 58,393, and a transfer associate 49,444 \u2014 so 'higher credential = higher pay' holds on average but only barely, and the distributions overlap heavily. That overlap is the real finding: the AAS 75th percentile (79,679) clears the bachelor's median, while several bachelor's fields \u2014 English 48,249, Psychology 47,601, History 48,940 \u2014 land below the AAS median, at roughly half the debt. Two caveats travel with every wage here: it is UI-covered, in-state employment only (out-of-state, federal, military, self-employed, and gig work are invisible), and only about 40% of bachelor's vs 55% of transfer-associate grads even have a reported wage, so the medians describe differently-selected subpopulations. SCHEV itself warns against ranking programs on these wages without adjusting for family wealth, residency, and demographics. Decision: fund and advise by field-and-region outcome, not by credential tier \u2014 and open the record-level data (today locked behind data-sharing agreements) so families and funders can interrogate the aggregate instead of trusting it. Built to decide; not built to browse.",
+        "source_url": "https://research.schev.edu"
       },
       "gap": {
         "period": 2024,
-        "absolute_gap": 14997.0,
+        "absolute_gap": 15805.0,
         "ratio_high_to_low": 1.32
       }
     }
@@ -377,8 +378,8 @@
       "title": "College Scorecard field-of-study earnings",
       "publisher": "U.S. Dept of Education",
       "url": "https://collegescorecard.ed.gov/data/",
-      "table_ref": "field of study, CS-family bachelor's (CIP 11xx, credential level 5), median earnings 1 yr after completion; pulled via api.data.gov",
-      "release_date": "2026-06-01"
+      "table_ref": "field of study, Computer Science (CIP 1107), bachelor's (credential level 3), median earnings 4 yrs after completion, Title IV federal-aid recipients only; pulled via api.data.gov",
+      "release_date": "2026-07-10"
     },
     {
       "source_id": "study_hurwitz",
@@ -390,11 +391,11 @@
     },
     {
       "source_id": "vlds",
-      "title": "Key Facts About Higher Education \u2014 median wage 5 years after completion",
+      "title": "SCHEV post-completion wages (Virginia Longitudinal Data System)",
       "publisher": "Virginia SCHEV / Virginia Longitudinal Data System",
-      "url": "https://www.schev.edu/about/key-facts-about-higher-education/key-facts-accessible-version",
-      "table_ref": "Key Facts: median annual wage 5 yrs after completion (bachelor's $61,502; associate-transfer $46,505)",
-      "release_date": "2025-01-01"
+      "url": "https://research.schev.edu",
+      "table_ref": "Median annual wage 5 yrs after completion, 2017-18 graduates, UI-covered in-state employment, CY2023 wages (nominal): bachelor's $65,249; applied-science associate $58,393; transfer associate $49,444. Record-level data access-limited behind data-sharing agreements.",
+      "release_date": "2026-07-10"
     }
   ]
 }
