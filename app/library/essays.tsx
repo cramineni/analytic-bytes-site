@@ -1690,8 +1690,12 @@ export const ESSAYS: Essay[] = [
           every measured learning outcome, and below the national average on 16
           of them. Eighty percent of students at or below basic level in Math;
           94% at or below basic in Science; 86% at or below basic in Social
-          Science. The pattern compounds with grade: at-or-below-basic in Math
-          goes from 63% in Class III to 80% in Class X. The state-private gap
+          Science. Performance is far worse in every upper grade than at
+          Class III: at-or-below-basic in Math sits near 80% from Class V
+          (82%) through Class X (80%), versus 63% in Class III. That is a
+          jump after the foundational grade, not a steady climb. The clean
+          grade-on-grade decline shows up in Science instead: 65% at
+          Class III rising to 94% at Class X. The state-private gap
           is wide — 85% at or below basic in Math at state schools against 73%
           at private, a 12-point spread. AP graded Akanshi-1 overall on PGI 2022–23
           (third-lowest band), and Akanshi-2 on the learning-outcomes domain.
@@ -1886,9 +1890,20 @@ export const ESSAYS: Essay[] = [
 
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. State-level findings
-          reflect NAS 2021 and PGI 2022–23 cycles; subsequent NAS 2024 and PGI
-          releases would refine the picture. The integration-architecture
-          argument is intended to outlast specific cycle data.
+          reflect NAS 2021 and PGI 2022–23 cycles. The Andhra Pradesh Class 10
+          figures cited above trace to the{" "}
+          <a
+            href="https://parakh.ncert.gov.in/dashboard/NAS2021#/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            NCERT PARAKH NAS 2021 dashboard
+          </a>{" "}
+          (Andhra Pradesh &rsaquo; Class 10 &rsaquo; By Range of Performance).
+          Subsequent NAS 2024 and PGI releases would refine the picture. The
+          integration-architecture argument is intended to outlast specific
+          cycle data.
         </MetaNote>
       </>
     ),
