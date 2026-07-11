@@ -7,10 +7,35 @@ import HeadlineCards from "@/components/pdds/HeadlineCards";
 import DecisionPanel from "@/components/pdds/DecisionPanel";
 import SourcesFooter from "@/components/pdds/SourcesFooter";
 
+const PDDS_COVER =
+  "https://analyticbytes.systems/library/covers/public-data-decision-systems.svg";
+const PDDS_TITLE = "Public data as a decision system — Analytic Bytes";
+const PDDS_DESCRIPTION =
+  "Federal public datasets, the policy levers attached to them, and whether the numbers actually moved. A working demo of the Analytic Bytes decision-system framework applied at national scale.";
+
 export const metadata: Metadata = {
-  title: "Public data as a decision system — Analytic Bytes",
-  description:
-    "Federal public datasets, the policy levers attached to them, and whether the numbers actually moved. A working demo of the Analytic Bytes decision-system framework applied at national scale.",
+  title: PDDS_TITLE,
+  description: PDDS_DESCRIPTION,
+  openGraph: {
+    title: PDDS_TITLE,
+    description: PDDS_DESCRIPTION,
+    type: "article",
+    url: "https://analyticbytes.systems/library/public-data",
+    images: [
+      {
+        url: PDDS_COVER,
+        width: 1200,
+        height: 630,
+        alt: "Public data as a decision system — a mosaic of five panels showing overdose, NAEP, maternal, scorecard, and SLDS bar charts",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PDDS_TITLE,
+    description: PDDS_DESCRIPTION,
+    images: [PDDS_COVER],
+  },
 };
 
 // Re-read pdds-dashboard.json at most once an hour; the pipeline rewrites
