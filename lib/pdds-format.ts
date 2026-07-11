@@ -2,10 +2,15 @@
 // titles, colours, and number formats live, so the render layer stays a single
 // source of truth (the data itself comes from pdds-dashboard.json).
 //
-// Colour palette matches the AB visual language:
-//   navy #0F2A4A  · teal #0EA5E9  · muted #6B7A8C
-// Each panel picks one of navy / teal as its primary. The "highlight" accent
-// draws attention to a specific group inside a panel.
+// Colour convention (locked 2026-07-10):
+//   AB visual grammar is navy = structure, teal = signal / accent claim.
+//   In PDDS every bar is a data point of equal weight — the distribution
+//   IS the claim, so no single bar earns teal. All bars render navy
+//   #0F2A4A. Multi-period panels use muted grey #B4C0CC for the baseline
+//   year to separate it from the current year visually. Teal stays for
+//   AB brand surfaces around the panels (nav, /library callout, hover
+//   accents), not inside the bar charts themselves.
+//   Palette: navy #0F2A4A · teal #0EA5E9 · muted grey #B4C0CC
 
 export interface PanelStyle {
   base: string;
@@ -15,39 +20,35 @@ export interface PanelStyle {
 }
 
 const STYLES: Record<string, PanelStyle> = {
-  // Multi-period: 2023 in muted, 2024 in teal (the year the number moved).
+  // Multi-period: muted-grey baseline year + navy current year.
   overdose: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
-    seriesColors: ["#B4C0CC", "#0EA5E9"],
+    seriesColors: ["#B4C0CC", "#0F2A4A"],
     highlight: [],
   },
-  // Multi-period: 2022 pandemic-trough baseline in muted, 2024 in navy.
-  // Deliberately NOT teal — the story is non-recovery at grade 8, not victory.
   naep: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
     seriesColors: ["#B4C0CC", "#0F2A4A"],
     highlight: [],
   },
-  // Multi-period: 2022 baseline in muted, 2023 in navy.
-  // Not teal — the average moved, but the Black-White gap did not, so the
-  // panel shouldn't read as a win.
   maternal: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
     seriesColors: ["#B4C0CC", "#0F2A4A"],
     highlight: [],
   },
-  // Single-period: navy across, teal highlight on the national median.
+  // Single-period: navy across, no highlights.
+  // (The old "National median program" highlight was retired 2026-07-10
+  // — the pipeline no longer returns that group, and the movement_note
+  // carries the reference framing in prose.)
   scorecard: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
     seriesColors: ["#0F2A4A"],
-    highlight: ["National median program"],
+    highlight: [],
   },
-  // Single-period: navy across. Two bars only; the surprise IS the comparison
-  // (associate transfer earnings sitting close to bachelor's), so no highlight.
   slds: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
