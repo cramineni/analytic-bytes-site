@@ -124,6 +124,11 @@ export function formatHeadline(v: number, unit: string): string {
       return v + " pts";
     case "per_100k_births":
       return v.toString();
+    // "ratio" was added 2026-07-12 when the maternal headline was reframed
+    // from aggregate rate to Black-White gap. The × makes it read as a
+    // multiplier rather than a bare scalar.
+    case "ratio":
+      return v.toFixed(1) + "×";
     default:
       return String(v);
   }

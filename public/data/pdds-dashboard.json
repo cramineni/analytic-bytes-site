@@ -1,28 +1,20 @@
 {
-  "generated_at": "2026-07-11T23:29:10",
+  "generated_at": "2026-07-12T00:27:33",
   "headlines": [
     {
-      "card_id": "life_expectancy",
-      "label": "U.S. life expectancy at birth",
-      "value": 78.4,
-      "unit": "years",
-      "period": 2023,
-      "source_url": "https://www.cdc.gov/nchs/products/databriefs.htm"
-    },
-    {
       "card_id": "maternal_mortality",
-      "label": "Maternal mortality rate",
-      "value": 18.6,
-      "unit": "per_100k_births",
+      "label": "Maternal mortality Black-White gap",
+      "value": 3.5,
+      "unit": "ratio",
       "period": 2023,
       "source_url": "https://www.cdc.gov/nchs/data/hestat/maternal-mortality/2023/maternal-mortality-rates-2023.htm"
     },
     {
       "card_id": "naep_math_gap",
       "label": "NAEP grade 8 math White-Black gap",
-      "value": 32.0,
+      "value": 33.0,
       "unit": "scale_points",
-      "period": 2022,
+      "period": 2024,
       "source_url": "https://nces.ed.gov/programs/digest/"
     },
     {

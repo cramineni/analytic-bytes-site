@@ -2,8 +2,17 @@ import type { HeadlineCard } from "@/types/dashboard";
 import { formatHeadline } from "@/lib/pdds-format";
 
 export default function HeadlineCards({ cards }: { cards: HeadlineCard[] }) {
+  // Column count on sm+ matches card count so we don't leave empty slots.
+  // Explicit conditional (rather than a template literal) so Tailwind can
+  // see all class names at build time.
+  const sm =
+    cards.length === 3
+      ? "sm:grid-cols-3"
+      : cards.length === 2
+        ? "sm:grid-cols-2"
+        : "sm:grid-cols-4";
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+    <div className={`grid grid-cols-2 ${sm} gap-3 mb-10`}>
       {cards.map((c) => (
         <a
           key={c.card_id}
