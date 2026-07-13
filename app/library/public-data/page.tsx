@@ -11,7 +11,7 @@ const PDDS_COVER =
   "https://analyticbytes.systems/library/covers/public-data-decision-systems.svg";
 const PDDS_TITLE = "Public data as a decision system — Analytic Bytes";
 const PDDS_DESCRIPTION =
-  "Federal public datasets, the policy levers attached to them, and whether the numbers actually moved. A working demo of the Analytic Bytes decision-system framework applied at national scale.";
+  "Every panel reads an official statistic at the grain it’s reported, attaches a policy lever it bears on, and names the decision that grain can and can’t support. Descriptions used to decide, not models used to predict.";
 
 export const metadata: Metadata = {
   title: PDDS_TITLE,
@@ -63,17 +63,12 @@ export default function PublicDataPage() {
                 <span className="text-accent">decision system.</span>
               </h1>
               <p className="text-ink-2 text-[17px] max-w-[640px] mt-6 leading-[1.55]">
-                Each panel pairs a public dataset with the policy lever attached
-                to it — and asks the honest question: <em>once the data was
-                published, did the number actually move?</em>
+                Every panel reads an official statistic at the grain
+                it&rsquo;s reported, attaches a policy lever it bears on, and
+                names the decision that grain can and can&rsquo;t support.
               </p>
-              <p className="text-ink-3 text-[14.5px] sm:text-[15px] max-w-[640px] mt-4 leading-[1.6]">
-                A working demo of the Analytic Bytes framework applied at
-                national scale. Meaning is defined once per metric inside the
-                pipeline. Authority sits on the lever — a specific policy owner
-                is named for every data point. Validity is enforced by pinned
-                snapshots and dbt tests: if a known-good total moves, the build
-                fails instead of the number quietly reaching this page.
+              <p className="text-ink text-[17px] sm:text-[18px] max-w-[640px] mt-4 leading-[1.5] font-medium italic">
+                Descriptions used to decide, not models used to predict.
               </p>
             </Reveal>
           </div>
