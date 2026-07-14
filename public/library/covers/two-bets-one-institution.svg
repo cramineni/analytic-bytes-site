@@ -17,7 +17,7 @@
   <text x="-150" y="-78" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-style="italic" fill="#0F2A4A" text-anchor="middle">vendor-anchored</text>
   <text x="-150" y="-58" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="2" fill="#94A3B8" text-anchor="middle">ADMINISTRATIVE</text>
   <!-- One node -->
-  <circle cx="-150" cy="10" r="14" fill="#0F2A4A"/>
+  <circle cx="-150" cy="10" r="14" fill="none" stroke="#0F2A4A" stroke-width="2"/>
   <line x1="-150" y1="24" x2="-150" y2="48" stroke="#0F2A4A" stroke-width="1.5"/>
   <text x="-150" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">one model</text>
 
