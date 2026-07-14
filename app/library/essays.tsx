@@ -6362,7 +6362,7 @@ export const ESSAYS: Essay[] = [
     number: "11",
     title: "We used to settle for thumbnails.",
     subtitle:
-      "The compression institutions ran on for centuries is finally cheap to relax. That&rsquo;s not a technology story. It&rsquo;s a decision-architecture question.",
+      "The compression institutions ran on for centuries is finally cheap to relax. That’s not a technology story. It’s a decision-architecture question.",
     date: "2026-07-17",
     readingTime: "5 min read",
     summary:
@@ -7396,6 +7396,12 @@ export const ESSAYS: Essay[] = [
           innovation layer.
         </P>
 
+        <Figure
+          src="/library/figures/two-bets-multi-speed-maturity.svg"
+          alt="Multi-speed maturity inside a single institution: five functions plotted along a five-stage progression (Emerging, Managed, Defined, Governed, Optimized), each at a different stage, with a governance framework overlay bracketing the whole chart from above."
+          caption="Multi-speed maturity — different functions at different stages, one framework across."
+        />
+
         <P>
           Read the four sector cases together and the principle behind
           the calibration becomes clear. The more standardized the use
@@ -7588,20 +7594,24 @@ export const ESSAYS: Essay[] = [
             who can deliver it.
           </p>
           <p>
-            The current Director of Data Platforms posting at most
-            institutions is two roles fused into one job description. The
-            engineering half passes the rubric. The governance half is
-            treated as either implicit or as a soft skill that will fill
-            itself in. This piece names what is being assumed, and what
-            has to change on the job description and on the org chart
-            before the role starts succeeding at the half of its work
-            that matters.
+            The senior data leadership posting at most institutions,
+            whether titled Director of Data Platforms, VP of Analytics,
+            Chief Data Officer, Chief Data and Analytics Officer, or
+            Chief AI Officer, is two roles fused into one job
+            description. The engineering half passes the rubric. The
+            governance half is treated as either implicit or as a soft
+            skill that will fill itself in. This piece names what is
+            being assumed, and what has to change on the job description
+            and on the org chart before the role starts succeeding at
+            the half of its work that matters.
           </p>
         </Brief>
 
         <P>
-          The current Director of Data Platforms posting at most
-          institutions is two roles fused into one job description. One
+          The senior data leadership posting at most institutions,
+          whether titled Director of Data Platforms, VP of Analytics,
+          Chief Data Officer, Chief Data and Analytics Officer, or Chief
+          AI Officer, is two roles fused into one job description. One
           role is engineering: build and operate the warehouse, the ETL,
           the semantic layer, the lineage tooling. Stand up the dbt
           models. Maintain the Snowflake schemas. Configure the Fivetran
@@ -7762,10 +7772,10 @@ export const ESSAYS: Essay[] = [
         <P>
           A growing pattern at large research universities is to fuse
           both halves into a single senior associate-CIO-level role
-          explicitly titled to cover both: an Associate CIO for Data
-          Management, Integration, and Analytics, sometimes paired with
-          a University Data Officer designation, reporting into the CIO
-          with a dotted line to the Provost. The title names both halves:
+          that names both data infrastructure and data governance in
+          its title, sometimes paired with a distinct data-officer
+          designation, and reporting into IT leadership with an
+          academic-side coordination line. The title names both halves:
           enterprise data strategy, governance and policy infrastructure,
           data stewardship culture, and the technological substrate the
           strategy sits on. The dual reporting line signals institutional
@@ -7775,14 +7785,15 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The structural risk that remains is rubric capture. Even with
-          a title that names governance and a dotted line to the
-          Provost, the screen often still gets written from inside the
-          function the role reports into. Reporting line under the CIO
-          means the rubric for evaluating candidates often reverts to
-          engineering depth, regardless of what the title says. The
-          title is a step forward. The screen has to follow it, or the
-          role&rsquo;s posted scope and the role&rsquo;s actual screen drift
-          apart from the day the position is opened.
+          a title that names governance and an academic-side
+          coordination line, the screen often still gets written from
+          inside the function the role reports into. Reporting line
+          under a CIO means the rubric for evaluating candidates often
+          reverts to engineering depth, regardless of what the title
+          says. The title is a step forward. The screen has to follow
+          it, or the role&rsquo;s posted scope and the role&rsquo;s
+          actual screen drift apart from the day the position is
+          opened.
         </P>
         <P>
           Either resolution requires the institution to name what is
