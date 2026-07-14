@@ -6363,7 +6363,7 @@ export const ESSAYS: Essay[] = [
     title: "We used to settle for thumbnails.",
     subtitle:
       "The compression institutions ran on for centuries is finally cheap to relax. That&rsquo;s not a technology story. It&rsquo;s a decision-architecture question.",
-    date: "2026-07-09",
+    date: "2026-07-17",
     readingTime: "5 min read",
     summary:
       "For most of human history, every institution carried you as a thumbnail: a name, a category, a score. That compression wasn’t malice, it was budget, and the price of the full picture has now collapsed. The choice institutions face isn’t whether to keep sorting faster or to hold people at higher resolution; it is whether they can answer the validity question underneath it.",
@@ -7004,7 +7004,7 @@ export const ESSAYS: Essay[] = [
     title: "Two bets, one institution.",
     subtitle:
       "Why the hybrid is the sophisticated answer, and the seam contracts between domains are what make it coherent.",
-    date: "2026-07-14",
+    date: "2026-07-09",
     readingTime: "12 min read",
     summary:
       "Every institution standing up AI in 2026 is making a model-layer bet, vendor-anchored or federated, whether or not it has named it as one. For institutions running both administrative and research-flavored work, the honest answer is a deliberate hybrid calibrated by domain. What makes the hybrid coherent is a third set of contracts nobody writes by default: the seam contracts between the two bets.",
@@ -7568,7 +7568,7 @@ export const ESSAYS: Essay[] = [
     title: "Who writes the contract.",
     subtitle:
       "Why the role the institution needs is the one the hiring rubric can’t see.",
-    date: "2026-07-15",
+    date: "2026-07-13",
     readingTime: "12 min read",
     summary:
       "The contracts that govern integrated data have to be written by someone, named, inside the institution. But the hiring rubric fuses two roles — engineering and governance — into one job description and screens only for the first. The person who can actually do the work almost never scores well on the rubric written to find them.",
