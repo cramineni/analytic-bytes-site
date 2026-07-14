@@ -55,6 +55,13 @@ const STYLES: Record<string, PanelStyle> = {
     seriesColors: ["#0F2A4A"],
     highlight: [],
   },
+  // Multi-period: 2010 pre-HRRP baseline in muted, 2016 post-HRRP in navy.
+  readmissions: {
+    base: "#0F2A4A",
+    accent: "#0EA5E9",
+    seriesColors: ["#B4C0CC", "#0F2A4A"],
+    highlight: [],
+  },
 };
 
 export function panelStyle(id: string): PanelStyle {
@@ -91,6 +98,11 @@ export const PANEL_META: Record<string, { title: string; subtitle: string }> = {
     subtitle:
       "Median wages 5 years after graduation — Virginia Longitudinal Data System, 2024",
   },
+  readmissions: {
+    title: "Medicare 30-day readmission rate",
+    subtitle:
+      "Fee-for-service, all conditions, 2010 (pre-HRRP) vs 2016 (post-HRRP)",
+  },
 };
 
 export function panelMeta(id: string) {
@@ -100,6 +112,7 @@ export function panelMeta(id: string) {
 // Compact axis label.
 export function formatAxis(v: number, unit: string): string {
   if (unit === "usd") return "$" + Math.round(v / 1000) + "k";
+  if (unit === "percent") return v + "%";
   return String(v);
 }
 
@@ -108,6 +121,7 @@ export function formatFull(v: number, unit: string): string {
   if (unit === "usd") return "$" + v.toLocaleString();
   if (unit === "per_100k" || unit === "per_100k_births") return v + " per 100k";
   if (unit === "scale_score") return v + " pts";
+  if (unit === "percent") return v + "%";
   return String(v);
 }
 
@@ -129,6 +143,10 @@ export function formatHeadline(v: number, unit: string): string {
     // multiplier rather than a bare scalar.
     case "ratio":
       return v.toFixed(1) + "×";
+    // "percent" was added 2026-07-14 with the readmissions panel — the
+    // Medicare 30-day readmission rate is expressed as a percentage.
+    case "percent":
+      return v.toFixed(1) + "%";
     default:
       return String(v);
   }

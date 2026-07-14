@@ -1,0 +1,52 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Notes No. 08: Two bets, one institution.</title>
+<desc>White background with a navy line-work mark — a single rounded rectangle representing the institution holds two side-by-side compartments. The left compartment is labeled vendor-anchored with a single navy node inside. The right compartment is labeled federated with three small cyan nodes connected by light lines inside. A dashed vertical seam divides the two compartments with the words contract layer labeled across it. Italic slate subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Top eyebrow -->
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field notes  ·  No. 08</text>
+
+<!-- Institution boundary + two compartments -->
+<g transform="translate(600, 270)">
+  <!-- Outer institution boundary -->
+  <rect x="-280" y="-110" width="560" height="180" rx="6" ry="6" fill="none" stroke="#0F2A4A" stroke-width="1.5"/>
+  <!-- Institution label above the boundary -->
+  <text x="0" y="-128" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="3" fill="#94A3B8" text-anchor="middle">ONE INSTITUTION</text>
+
+  <!-- Left compartment: vendor-anchored -->
+  <text x="-150" y="-78" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-style="italic" fill="#0F2A4A" text-anchor="middle">vendor-anchored</text>
+  <text x="-150" y="-58" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="2" fill="#94A3B8" text-anchor="middle">ADMINISTRATIVE</text>
+  <!-- One node -->
+  <circle cx="-150" cy="10" r="14" fill="#0F2A4A"/>
+  <line x1="-150" y1="24" x2="-150" y2="48" stroke="#0F2A4A" stroke-width="1.5"/>
+  <text x="-150" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">one model</text>
+
+  <!-- Vertical dashed seam in the middle -->
+  <line x1="0" y1="-95" x2="0" y2="55" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <!-- Contract layer label rotated, centered on seam -->
+  <text x="0" y="-22" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.5" fill="#0EA5E9" text-anchor="middle" transform="rotate(-90, 0, -22)">CONTRACT LAYER</text>
+
+  <!-- Right compartment: federated -->
+  <text x="150" y="-78" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-style="italic" fill="#0EA5E9" text-anchor="middle">federated</text>
+  <text x="150" y="-58" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="2" fill="#94A3B8" text-anchor="middle">RESEARCH</text>
+  <!-- Three nodes connected -->
+  <circle cx="105" cy="10" r="8" fill="#0EA5E9"/>
+  <circle cx="150" cy="-6" r="8" fill="#0EA5E9"/>
+  <circle cx="195" cy="10" r="8" fill="#0EA5E9"/>
+  <line x1="105" y1="10" x2="150" y2="-6" stroke="#0EA5E9" stroke-width="1.2"/>
+  <line x1="150" y1="-6" x2="195" y2="10" stroke="#0EA5E9" stroke-width="1.2"/>
+  <line x1="105" y1="10" x2="195" y2="10" stroke="#0EA5E9" stroke-width="1.2"/>
+  <line x1="150" y1="18" x2="150" y2="48" stroke="#0EA5E9" stroke-width="1.5"/>
+  <text x="150" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">multiple models</text>
+</g>
+
+<!-- Title -->
+<text x="600" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Two bets, one institution.</text>
+
+<!-- Subtitle -->
+<text x="600" y="505" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">Why the hybrid is the sophisticated answer, and the contract layer is what makes it coherent.</text>
+
+<!-- Signature -->
+<line x1="570" y1="565" x2="630" y2="565" stroke="#94A3B8" stroke-width="1"/>
+<text x="600" y="595" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+</svg>

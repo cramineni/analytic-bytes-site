@@ -6354,11 +6354,10 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 11 — We used to settle for thumbnails  (HIDDEN — unhides next week)
+  // FIELD NOTE 11 — We used to settle for thumbnails  (unhidden 2026-07-14)
   // ===================================================================
   {
     kind: "field-note",
-    hidden: true,
     slug: "we-used-to-settle-for-thumbnails",
     number: "11",
     title: "We used to settle for thumbnails.",
@@ -6990,6 +6989,1044 @@ export const ESSAYS: Essay[] = [
             Actions, not answers.
           </InternalLink>{" "}
           (where AI belongs in the operating loop).
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 10 — Two bets, one institution
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "two-bets-one-institution",
+    number: "10",
+    title: "Two bets, one institution.",
+    subtitle:
+      "Why the hybrid is the sophisticated answer, and the seam contracts between domains are what make it coherent.",
+    date: "2026-07-14",
+    readingTime: "12 min read",
+    summary:
+      "Every institution standing up AI in 2026 is making a model-layer bet, vendor-anchored or federated, whether or not it has named it as one. For institutions running both administrative and research-flavored work, the honest answer is a deliberate hybrid calibrated by domain. What makes the hybrid coherent is a third set of contracts nobody writes by default: the seam contracts between the two bets.",
+    cover: "/library/covers/two-bets-one-institution.svg",
+    arc: "integration-governance",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Every institution standing up artificial intelligence in 2026 is
+            making a model-layer bet, whether or not it has named it as one.
+            The shorthand the field has settled on (vendor-anchored versus
+            federated) captures the surface of the choice. The deeper
+            question is whether the institution delegates orchestration to
+            a vendor-controlled platform or owns the orchestration layer
+            itself: who decides which model handles which workload, who
+            evaluates whether each model is doing what it claims, who
+            writes the contracts for read, write, cadence, consent, and
+            reversibility, and who is responsible at the seams when the
+            institution inevitably runs both choices in different parts of
+            itself.
+          </p>
+          <p>
+            This essay is about that bet: what each side buys, what it
+            trades, where it shows up one layer down inside the data
+            stack, and why the institutions handling this moment well are
+            not choosing one bet for everything. They are calibrating
+            different bets to different domains. The calibration, when it
+            is done deliberately, is the architecturally honest answer.
+            When it is done by accident, it surfaces later as a specific
+            kind of governance gap: the seam contracts between the
+            vendor-anchored and federated domains, which neither bet
+            alone is responsible for and which nobody writes by default.
+          </p>
+        </Brief>
+
+        <H2>What the vendor-anchored bet buys, and what it trades</H2>
+
+        <P>
+          The vendor-anchored bet is the one institutions reach for under
+          time pressure. Sign a campus-wide enterprise agreement with a
+          credible vendor (Anthropic, OpenAI, increasingly the platform
+          vendors who have folded foundation models into their existing
+          licensing) and the institution gets a great deal of operational
+          scaffolding immediately. Governance is partly outsourced. The
+          vendor&rsquo;s enterprise agreement carries the data-handling
+          commitments. Integration is handled at the platform layer
+          rather than by the institution&rsquo;s engineers. Training, support,
+          and documentation come pre-built. Faculty, staff, and students
+          get a recognizable interface they can use on day one. For an
+          institution under pressure to be visibly responsive to the AI
+          moment, and most institutions are, the vendor-anchored bet
+          looks like an obvious win.
+        </P>
+
+        <P>
+          What the bet trades is harder to see at the moment of signing.
+          Vendor switching costs accumulate quickly once integrations are
+          built against the platform&rsquo;s specific APIs and the
+          institutional workflow has reorganized around the platform&rsquo;s
+          interface. The institution&rsquo;s evaluation discipline tends to
+          atrophy because the responsibility for assessing model quality
+          has been delegated to the vendor; over time, fewer people
+          inside the institution can answer the question of whether the
+          model is doing what it claims. The model layer becomes a single
+          point of architectural dependency, and when the vendor moves a
+          feature behind a higher tier, sunsets a model the institution
+          had standardized on, or shifts pricing, the institution
+          discovers it does not have the option to walk away that it
+          thought it had. Public exemplars of this bet are by now
+          familiar.{" "}
+          <a
+            href="https://news.asu.edu/20240118-university-news-new-collaboration-openai-charts-future-ai-higher-education"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            Arizona State University&rsquo;s partnership with OpenAI
+          </a>
+          , announced in January 2024, was the first institution-level
+          ChatGPT Enterprise rollout in higher education.{" "}
+          <a
+            href="https://home.dartmouth.edu/news/2025/12/dartmouth-announces-ai-partnership-anthropic-and-aws"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            Dartmouth followed in December 2025
+          </a>
+          , the first Ivy League institution to deploy at institutional
+          scale, with Anthropic&rsquo;s Claude for Education delivered
+          alongside AWS.{" "}
+          <a
+            href="https://chicagomaroon.com/52867/news/university-announces-claude-enterprise-access-for-students-faculty-staff/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            The University of Chicago&rsquo;s partnership with Anthropic
+          </a>
+          , announced in mid-2026, gave students, faculty, and staff
+          Claude Enterprise access on the same architectural shape at the
+          model-vendor layer.{" "}
+          <a
+            href="https://edsource.org/2026/cal-state-renews-controversial-system-wide-contract-with-openai/758919"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            Cal State University renewed its system-wide OpenAI deal
+          </a>{" "}
+          in May 2026, at $13 million a year for three years, the
+          largest active higher-ed enterprise agreement OpenAI carries,
+          extending coverage across 470,000 students and 63,000 faculty
+          and staff. These institutions made a defensible call. They
+          also, by making it, accepted the trades.
+        </P>
+
+        <H2>What the federated bet buys, and what it trades</H2>
+
+        <P>
+          The federated bet looks different from the start. Build an
+          internal abstraction layer (a model gateway, an AI router, a
+          middleware tier) that lets the institution call any model
+          behind a stable internal API. Open-source models hosted on the
+          institution&rsquo;s own high-performance compute sit alongside calls
+          to commercial foundation models under business-associate
+          agreements. The user-facing interface is the institution&rsquo;s
+          own; the model behind it can change without changing the
+          interface. What this bet buys is real. Switching costs stay
+          low because the institution is not locked to any single
+          vendor&rsquo;s call interface. Evaluation discipline stays inside
+          the institution because the orchestration layer requires the
+          institution to make active choices about which model handles
+          which workload. The contract layer, covering who reads what
+          data, who writes what record, on what cadence, under what
+          consent, with what reversibility, is owned end to end rather
+          than partly delegated. The institution can route
+          low-complexity queries to inexpensive models and reserve
+          premium frontier models for use cases that justify the cost.
+          None of that is theoretical.{" "}
+          <a
+            href="https://genai.umich.edu/"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            The University of Michigan&rsquo;s U-M GPT
+          </a>{" "}
+          is a real, operating example of owned orchestration at scale — a
+          custom UI tier sitting on top of Azure OpenAI Service and
+          U-M-hosted open-source models, with a three-tier product (U-M
+          GPT for consumption, U-M Maizey for custom-dataset use, U-M
+          GPT Toolkit for full environment control) all governed inside
+          the institutional perimeter. Stanford&rsquo;s Center for Research on
+          Foundation Models runs and evaluates many models explicitly,
+          the clearest public example of an academic institution
+          treating model evaluation as an owned capability rather than a
+          vendor&rsquo;s responsibility.
+        </P>
+
+        <P>
+          What the federated bet trades is also real, and it is the
+          reason institutions without engineering capital should approach
+          it with caution. Orchestration is now an institutional
+          capability the institution has to build and staff. Integration
+          complexity is higher because the institution is wiring the
+          model layer rather than buying the wiring. Governance is
+          harder. The contracts are no less clear in principle, but they
+          are distributed across more components and require active
+          institutional discipline to keep current. The federated bet
+          rewards institutions that have engineering capital and the
+          appetite to build the orchestration. It punishes institutions
+          that try to federate without the capacity to maintain what
+          they have built.
+        </P>
+
+        <H2>The same calibration one layer down</H2>
+
+        <P>
+          The pattern is familiar from an earlier layer of the data
+          stack. At the BI layer, the sophisticated institutions long
+          ago stopped trying to standardize on one tool for every
+          reporting surface: institutional research, executive
+          dashboards, operational reporting, and program-team dashboards
+          have different audiences, different cadences, and different
+          decisions, and they reward different tools. I have argued{" "}
+          <InternalLink slug="where-should-data-sit">
+            elsewhere
+          </InternalLink>{" "}
+          that the BI tool selection is the last decision, not the
+          first, and that the architecture should be set against the
+          surfaces before the tool is chosen. The same calibration logic
+          now extends to the model layer, where the stakes are larger
+          because the contracts between data, model, vendor, and
+          institutional decision are more entangled than the contracts
+          between data, tool, and dashboard ever were.
+        </P>
+
+        <P>
+          The same choice plays out one layer down inside the data and
+          AI stack itself, and the two prominent platforms in 2026 make
+          it visible. Snowflake Cortex delegates orchestration to the
+          platform: the institution gets a managed catalog of foundation
+          models (Anthropic&rsquo;s Claude family, OpenAI&rsquo;s GPT models,
+          Meta&rsquo;s Llama, Mistral, Google&rsquo;s Gemini, Snowflake&rsquo;s own
+          Arctic, and others as the catalog grows) where the call into
+          the model happens inside Snowflake&rsquo;s perimeter and the
+          integration with role-based access, audit logging, and the
+          data governance the institution already has in place is part
+          of what the platform delivers. Multiple models are available;
+          orchestration is the platform&rsquo;s, not the institution&rsquo;s.
+          Databricks Mosaic AI takes the opposite posture. It is a
+          model-agnostic orchestration layer designed to let the
+          institution bring any model, including open-source models
+          running on the institution&rsquo;s own compute, and to own the
+          orchestration through the same lakehouse and MLflow tooling
+          the data team is already using. Multiple models are available
+          there too; orchestration sits with the institution. Both
+          platforms are racing to support the full spectrum. Cortex now
+          lets institutions bring fine-tuned open-source models and
+          execute external API stages in some configurations, and
+          Mosaic now offers turn-key managed foundation-model endpoints
+          that look almost vendor-anchored if an enterprise just wants
+          to flip them on. The architectural defaults still betray the
+          posture, though. Cortex defaults to managing orchestration
+          inside its perimeter; Mosaic defaults to handing the
+          institution the tools to build and own the router itself. Any
+          data executive will recognize the parallel. It is the same
+          architectural choice, expressed one layer beneath the
+          rhetoric, and the institutions choosing between Cortex and
+          Mosaic are making the delegated-versus-owned-orchestration
+          decision whether they articulate it that way or not.
+        </P>
+
+        <P>
+          Whichever way the orchestration decision goes, it commits the
+          institution to a consumption it has to be able to see. A tier
+          is a decision rule, and like any decision rule it is only as
+          good as the institution&rsquo;s ability to check whether it is being
+          followed. Routing low-complexity work to a cheaper model
+          commits the institution to two things it rarely arranges in
+          advance: an estimate, before rollout, of what each class of
+          workload will consume, and a way to attribute that
+          consumption back to the department or center that generated
+          it. Without the estimate, a campus turns the system on and
+          learns the shape of its own demand from the invoice. Without
+          the attribution, no dean or program lead can be asked to own
+          the spend their workflows create, and the routing layer
+          decays as teams drift toward whatever model is easiest to
+          call rather than the one the tier assigned. The architectural
+          choice and the consumption it produces are one governance
+          object, decided at design time and owned at run time.
+        </P>
+
+        <H2>The hybrid is the honest answer</H2>
+
+        <P>
+          The institutions handling this moment well are not treating
+          the bet as a binary choice. They are calibrating different
+          bets to different domains. The same institution runs
+          vendor-anchored for the use cases where standardization,
+          compliance, and lower risk tolerance reward the vendor&rsquo;s
+          pre-built scaffolding, and runs federated for the use cases
+          where research-flavored work, multi-stakeholder collaboration,
+          and innovation velocity reward the institution&rsquo;s own
+          orchestration. The deliberate hybrid is the architecturally
+          honest answer for institutions that have both kinds of work.
+          The accidental hybrid, the one that grew across both domains
+          because no one made an active calibration, doubles the
+          governance surface area without buying safety. An institution
+          without the engineering capital to run a federated bet does
+          not get safer by running a hybrid. It takes on the cost of
+          both domains and the cost of the seam nobody is watching.
+        </P>
+
+        <P>
+          The warning above lands differently for institutions
+          inheriting a hybrid from legacy systems they cannot
+          decommission, most healthcare systems, most public-sector
+          ministries, most universities older than the cloud. For them,
+          the hybrid is not a choice. The governance surface is already
+          paid for, whether anyone intended to take the bet that way or
+          not. What matters, in that situation, is running the
+          inheritance as a deliberate calibration of two domains plus
+          the seam rather than pretending the inheritance is a single
+          coherent system. The institution that recognizes an inherited
+          hybrid as a hybrid, and writes the contracts for both domains
+          plus the seam, pays the cost it was already paying, but pays
+          it knowingly. The institution that pretends the inherited
+          hybrid is one coherent system pays the same cost twice over,
+          and the second payment shows up as the surprise when the seam
+          fails.
+        </P>
+
+        <H2>Four sectors, one pattern</H2>
+
+        <P>
+          The pattern is most visible in healthcare, where it has been
+          running for years. Academic medical centers run
+          vendor-anchored Epic-and-cloud-AI stacks for clinical and
+          administrative work, because the clinical workflow is
+          standardized, the compliance requirements are uniform, the
+          risk tolerance is low, and the governance benefits of having
+          one vendor&rsquo;s contracts cover the clinical surface are real.
+          Inside the same institution, the research arms run
+          multi-vendor, multi-model federated stacks for translational
+          research, population health analytics, and model evaluation
+          work, because the research workflow is unstandardized, the
+          disciplines have different needs, open-source models matter
+          for reproducibility, and innovation velocity matters more
+          than standardization. The contract layer between the two
+          domains (what flows from the clinical record into the
+          research analytics, under what consent envelope, with what
+          de-identification, with what reversibility) is the part of
+          the architecture that has taken the longest to mature, and it
+          decides whether the hybrid is coherent or accidental.
+        </P>
+
+        <P>
+          Behavioral health runs the same pattern at a different scale.
+          In regional behavioral-health agencies running Certified
+          Community Behavioral Health Clinic services, vendor-anchored
+          EHR-native AI typically handles clinical documentation and
+          billing workflows, because those workflows benefit from the
+          EHR vendor&rsquo;s pre-built scaffolding. The same agencies run
+          federated approaches for population health analytics, program
+          evaluation, and partner collaboration, because those
+          workflows require the institution to integrate sources that
+          no single vendor owns. The seam between the two domains is
+          where the operational work lives. The freshness contract
+          (what the population-health view shows the clinician at the
+          moment of the appointment, against what cadence the source
+          systems have updated, with what de-identification rule
+          applies) is the load-bearing piece. Agencies that are running
+          this hybrid well are running it without yet calling it one.
+        </P>
+
+        <P>
+          Foundations and philanthropy are mid-struggle on the same
+          calibration, and many of them do not yet know that this is
+          the bet they are making. Most foundations have concentrated
+          risk into one grants-management vendor (Fluxx, Salesforce
+          Nonprofit Cloud, Foundant, Bonterra) for grants
+          administration and operations, often without realizing how
+          much of the institution&rsquo;s reporting capability has been
+          outsourced to that vendor&rsquo;s roadmap. The same foundations
+          face board pressure to use generative AI for impact
+          reporting, for grant application screening, for due
+          diligence on grantees, and for program-officer drafting
+          workflows, and they have almost zero in-house data
+          engineering capacity to build the orchestration the
+          federated bet requires. The result is a hybrid by drift
+          rather than by design. The grants-management vendor offers
+          AI features that are easy to enable. The research-flavored
+          work (multi-year program evaluation, instrument-version
+          reconciliation across years of survey data, impact synthesis
+          across portfolios) sits in spreadsheets and ad-hoc tools
+          that no orchestration layer reaches. Foundations are roughly
+          where higher education was eighteen months ago on the
+          calibration question: visibly responsive, structurally
+          undecided. The chance to make the calibration deliberate,
+          rather than discovering it after the vendor&rsquo;s contracts and
+          the federated work have grown apart, is real and narrow.
+        </P>
+
+        <P>
+          K-12 networks have been running the hybrid pattern long
+          enough to have generated a precedent the rest of us learned
+          from. The vendor-anchored bet shows up at the
+          student-information-system layer (PowerSchool, Infinite
+          Campus, Skyward), the learning-management-system layer
+          (Canvas, Schoology, Google Classroom), and the
+          assessment-vendor layer. The federated bet shows up in the
+          analytics and student-success work, where networks integrate
+          multiple sources and stand up internal data warehouses to do
+          longitudinal work the vendors will not do for them. The
+          Ed-Fi standard is the federation precedent itself: an open
+          data-interoperability standard that lets districts and
+          states integrate any vendor through a common semantic layer,
+          born to address the integration friction that vendor
+          consolidation at the SIS layer produced. The lesson K-12
+          supplies to every other sector (not as the blueprint for AI
+          seam contracts, but as the historical pattern) is that
+          vendor consolidation always forces a reactive federation
+          layer later, and federation through open standards is what
+          preserves agility when that consolidation looks rational at
+          the operational layer and turns into a trap at the
+          innovation layer.
+        </P>
+
+        <P>
+          Read the four sector cases together and the principle behind
+          the calibration becomes clear. The more standardized the use
+          case and the lower the risk tolerance, the better the
+          vendor-anchored bet performs. The more research-flavored,
+          multi-stakeholder, and innovation-velocity-dependent the
+          work, the better the federated bet performs. The
+          administrative-research split inside an academic medical
+          center, the clinical-population-health split inside a
+          behavioral-health agency, the grants-administration-program-evaluation
+          split inside a foundation, the SIS-analytics split inside a
+          K-12 network: these are not four different patterns. They
+          are the same pattern, calibrated to each sector&rsquo;s
+          vocabulary. Higher education stands to inherit the lesson,
+          not invent it. The administrative side of an R1 university
+          (financial systems, HR, the SIS, advancement, the core
+          enterprise reporting) looks more like the clinical surface
+          of an academic medical center than the research surface.
+          The research side of the same university (the disciplines,
+          the labs, the grants, the research computing) looks more
+          like the research arm of the same medical center than the
+          administrative core. The hybrid is the answer the sector is
+          already trending toward. The question is whether higher
+          education calibrates it deliberately or arrives there by
+          drift.
+        </P>
+
+        <H2>The seam is where the hybrid is earned or paid for</H2>
+
+        <P>
+          Both bets create governance contracts. The vendor-anchored
+          domain inherits the vendor&rsquo;s contracts and supplements them
+          with institutional rules. The federated domain owns its
+          contracts end to end. The hybrid creates two sets of
+          contracts plus a third set the institution most often
+          misses: the seam contracts between the two domains. What
+          data flows from the administrative side into the research
+          side, under what de-identification rule, against what
+          consent envelope. What inference the research side returns
+          into the administrative side, and whether the administrative
+          side is allowed to act on it. What freshness the seam
+          guarantees, how the seam is audited, what happens when a
+          record on one side is corrected after a downstream decision
+          on the other side has already been made. These contracts
+          are not theoretical. They are the failure mode of every
+          hybrid that ran for two years and then surfaced a
+          governance breach nobody owned. The seam is where the
+          institution either earns the hybrid or pays for the
+          accident.
+        </P>
+
+        <P>
+          What does a seam contract look like in operation, before the
+          institution has it written down? Imagine an R1 running a
+          vendor-anchored portal for undergraduate advising drafts
+          alongside a federated internal stack for
+          institutional-research retention forecasting. The seam
+          contract specifies directionality first. The federated
+          retention score can be read by the vendor portal to prompt
+          the advisor in real time. The advisor&rsquo;s response, drafted
+          with vendor-anchored AI assistance, cannot be written back
+          to the core student-information system as a record-of-action
+          without a twenty-four-hour human-in-the-loop reversibility
+          window and an explicit second human review before commit.
+          Retention rules come next: the vendor portal is allowed to
+          retain the prompt, not the underlying retention vector that
+          produced it; the federated stack is allowed to learn from
+          the inference outcome, not the advisor&rsquo;s identity. Cadence
+          sits on top of that: the retention score handed to the
+          portal is refreshed nightly, and any advisor acting on a
+          score older than seventy-two hours is alerted to re-check
+          before continuing. Escalation is the last piece: any
+          disagreement between the vendor-anchored draft and the
+          federated risk signal flags a senior reviewer rather than
+          auto-resolving to either side. Writing this out is not
+          glamorous work. It is what an R1 will wish it had written
+          down in 2028, when the first vendor portal silently commits
+          a recommendation into a student record that no advisor
+          reviewed and no auditor can trace.
+        </P>
+
+        <P>
+          The K-12 sector learned this lesson through Ed-Fi, through
+          the federation that vendor lock-in forced into existence.
+          The healthcare sector learned it through HL7 v2 and FHIR,
+          through the regulation that mandated interoperability after
+          decades of Epic-and-Cerner consolidation. Both sectors
+          learned, at substantial cost, that the contract layer
+          matters more than the technology layer. Higher education
+          and philanthropy have the rare chance to skip a portion of
+          the pain, by recognizing the hybrid as the architecturally
+          honest answer up front and by writing the seam contracts
+          before the architecture has had time to drift.
+        </P>
+
+        <P>
+          Neither bet is right for the whole institution, and framing
+          the choice that way misses what matters. What the
+          institution needs to understand, before committing, is the
+          governance contracts each bet commits it to. Vendor-anchored
+          suits the parts of the institution where standardization
+          and lower risk tolerance reward the pre-built scaffolding.
+          Federated suits the parts where innovation velocity and
+          stakeholder diversity require the institution to own the
+          orchestration. Almost every R1, every academic medical
+          center, every foundation that runs both grants
+          administration and program evaluation, and every
+          multi-school education network is already running some
+          version of the hybrid, whether it has been named that way
+          or not. What makes the hybrid coherent is the discipline
+          measurement-science training and operational governance
+          have argued for in every era: writing the{" "}
+          <InternalLink slug="the-contracts-between-systems">
+            contracts
+          </InternalLink>{" "}
+          down and naming the seams, so the calibration ends up as a
+          deliberate choice rather than an inherited default.
+          Institutions that do that work stop being surprised by
+          their own architecture.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="The governance layer this essay's seam contracts are a specific case of."
+          />
+          <SeeAlsoItem
+            slug="who-writes-the-contract"
+            title="Who writes the contract"
+            gloss="Where the seam-contract author has to sit inside the institution."
+          />
+          <SeeAlsoItem
+            slug="grounding-the-ai-layer"
+            title="Grounding the AI layer"
+            gloss="The data-side discipline the model-layer bet inherits, whichever bet the institution takes."
+          />
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where should data sit?"
+            gloss="The BI-era precedent for calibrating architecture against surfaces before choosing a tool."
+          />
+          <SeeAlsoItem
+            slug="plumbing-got-upgraded-water-didnt"
+            title="Plumbing got upgraded. The water didn’t."
+            gloss="Why industrialized pipes did not close the governance gap the hybrid re-opens at the model layer."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          This essay was written in July 2026 for the Analytic Bytes
+          Library. It draws on the author&rsquo;s practice across higher
+          education, academic medical centers, K-12 networks,
+          behavioral-health agencies, and foundations, and on the
+          public record of higher-ed enterprise AI deployments through
+          mid-2026. The argument is intended to outlast the specific
+          vendors and platforms named.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 11 — Who writes the contract
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "who-writes-the-contract",
+    number: "11",
+    title: "Who writes the contract.",
+    subtitle:
+      "Why the role the institution needs is the one the hiring rubric can’t see.",
+    date: "2026-07-15",
+    readingTime: "12 min read",
+    summary:
+      "The contracts that govern integrated data have to be written by someone, named, inside the institution. But the hiring rubric fuses two roles — engineering and governance — into one job description and screens only for the first. The person who can actually do the work almost never scores well on the rubric written to find them.",
+    cover: "/library/covers/who-writes-the-contract.svg",
+    arc: "organizational-design",
+    body: (
+      <>
+        <Brief>
+          <p>
+            The contracts that govern integrated data, definitional
+            agreement, and decision-readiness have to be written by
+            someone, named, inside the institution. When the institution
+            is ready to hire that someone, the rubric it uses to evaluate
+            candidates almost always selects against the people who can
+            do the work. This is not because the institution is wrong
+            about what it needs. It is because the rubric is wrong about
+            who can deliver it.
+          </p>
+          <p>
+            The current Director of Data Platforms posting at most
+            institutions is two roles fused into one job description. The
+            engineering half passes the rubric. The governance half is
+            treated as either implicit or as a soft skill that will fill
+            itself in. This piece names what is being assumed, and what
+            has to change on the job description and on the org chart
+            before the role starts succeeding at the half of its work
+            that matters.
+          </p>
+        </Brief>
+
+        <P>
+          The current Director of Data Platforms posting at most
+          institutions is two roles fused into one job description. One
+          role is engineering: build and operate the warehouse, the ETL,
+          the semantic layer, the lineage tooling. Stand up the dbt
+          models. Maintain the Snowflake schemas. Configure the Fivetran
+          connectors. Keep the freshness SLAs in line. That is a senior
+          data-engineering role the field knows how to define, screen
+          for, and reward. The screens know what to look for.
+        </P>
+        <P>
+          The other role is governance and subject-matter expertise: own
+          the contracts on top of the warehouse, the decision interface
+          those contracts feed, and the relationships with the
+          stakeholders whose decisions the contracts have to support.
+          Write the explicit, named understanding that turns integrated
+          bytes into something a stakeholder can act on with authority.
+          Know what a principal needs to act on a recruitment funnel.
+          Know what a clinician needs to act on a no-show count. Know
+          what a District Education Officer needs to act on multiple
+          state systems&rsquo; incompatible cycles. Know what a program
+          officer needs to stand behind a quarterly figure when a funder
+          asks. That is a senior governance-and-domain role.
+          Organizations that have it know what it looks like, but the
+          screens for it are underdeveloped and the rubric rarely names
+          it as its own thing.
+        </P>
+        <P>
+          The institutional posting names both roles. The screens assess
+          only the first.
+        </P>
+
+        <H2>Why the rubric misses the half that matters</H2>
+        <P>
+          This is not a critique of the screens. Engineering rubrics
+          know how to assess engineering depth. They have benchmarks.
+          They can ask candidates to walk through past projects, write
+          SQL, defend architectural decisions, debug pipelines.
+          Engineering competence is observable and rateable. The
+          governance-and-SME half is not. There is no equivalent
+          benchmark. No standardized question reveals whether a
+          candidate can sit across the table from a Provost, a CFO, a
+          program officer, or a clinician, hear what they need from the
+          data system, and translate that into a contract the
+          institution will write down and enforce. There are no standard
+          interview questions for <I>&ldquo;can you author the contract
+          that makes a $50M aid scenario reversible at machine cadence
+          when the AI assistant gets the recommendation wrong?&rdquo;</I>{" "}
+          So the screen defaults to what it can measure. The engineering
+          half passes the rubric. The governance half is treated as
+          either implicit or as a soft skill that will fill itself in.
+        </P>
+        <P>
+          The result is predictable. The institution hires a senior data
+          engineer. The engineer builds the integration. The integration
+          runs. The dashboards work. The schemas are tight, the
+          freshness SLAs hold, the lineage tooling reports green. And
+          then the Provost still cannot get a 360 view, the program
+          officer still cannot answer the funder when the number moves,
+          and the clinician still cannot act on the population-health
+          view because nobody has written the contract that says they
+          are allowed to. The engineering succeeded and the decision
+          interface stayed unowned, which means the role failed at the
+          half of its work that mattered.
+        </P>
+        <P>
+          The institution&rsquo;s response to this is, usually, to hire
+          another engineer. Or to commission a governance committee. Or
+          to buy more tooling. None of these address the actual gap,
+          because none of them brings into the institution the person
+          who can write the contract, not because the contract is
+          technical, but because it is operational. The contract
+          specifies who reads, who writes, on what cadence, under what
+          consent, with what reversibility, with what audit trail, with
+          what authority to act. Writing that contract requires knowing
+          what the principal, the clinician, the program officer, the
+          dean need to be able to do. The knowledge lives in domain
+          context, in stakeholder fluency, in the operator&rsquo;s
+          understanding of the decision the contract is meant to
+          support. It does not live in the stack. (For the anatomy of
+          the contract itself, see{" "}
+          <InternalLink slug="the-contracts-between-systems">
+            The contracts between systems
+          </InternalLink>
+          .)
+        </P>
+        <P>
+          A senior engineer who has built three warehouses does not, by
+          default, know any of this. There is no reason they would. The
+          knowledge is not transmitted by warehouse-building. It is
+          transmitted by sitting inside institutions for years and
+          watching what decisions get triggered, what contracts hold,
+          what stakeholders trust. That is not engineering experience.
+          It is subject-matter experience with operational depth, and it
+          is the half of the role that gets assumed in by the rubric.
+        </P>
+
+        <H2>Two architectures, one honest choice</H2>
+        <P>
+          The structural correction is not to replace engineers with
+          subject-matter experts. Engineering depth is necessary. The
+          integration has to be built. The schemas have to be designed.
+          The freshness has to hold. The correction is to specify the
+          role honestly: the Director of Data Platforms or Director of
+          Data Analytics and Engineering or Chief Data Officer at most
+          institutions is two halves of one job, and the screen has to
+          assess both halves. The current screen assesses one and
+          assumes the other. The half it assumes is the half the role
+          fails on when it fails.
+        </P>
+        <P>
+          There are two valid architectural resolutions to this gap, and
+          the institution has to choose between them deliberately rather
+          than drift into one by default.
+        </P>
+        <P>
+          The first is the one this essay has implicitly assumed:
+          structure the role honestly as two halves and screen for both.
+          The candidate brings engineering depth and governance-authoring
+          depth into a single senior position, reports into an
+          independent function, and writes the contracts on top of the
+          integration they also help build. Most foundations, smaller
+          mission-driven organizations, and K-12 networks are best
+          served by this architecture because the volume of governance
+          work does not justify a second senior position.
+        </P>
+        <P>
+          The second architecture is appropriate when the institution is
+          large enough or the contracts complex enough to warrant
+          separate functions: a Director of Data Engineering for the
+          engineering half, and a separate Director of Decision Systems,
+          Chief Data Governance Officer, or equivalent for the
+          governance and SME half. Both roles report into the same
+          independent function. The engineering role builds and operates
+          the substrate. The governance role writes and enforces the
+          contracts on top of it, supports the stakeholders who act on
+          the data, and owns the decision interface. The roles work
+          together, but each has its own rubric and its own authority.
+        </P>
+        <P>
+          Most R1 universities, large foundations, regional healthcare
+          systems, and state-scale public-sector organizations are large
+          enough to need this two-role architecture, and many of them
+          have not yet realized it. The senior data role they keep
+          posting and filling is the engineering role. The governance
+          role is missing from the org chart entirely, so even when the
+          engineering role is filled by a strong engineer, the work that
+          would require a governance authority has no owner.
+        </P>
+        <P>
+          Managed-platform vendor strategy (Snowflake&rsquo;s managed
+          services, Databricks workspace, and equivalents) has also
+          reduced the in-house engineering ceiling a governance-anchored
+          role requires, which makes the second architecture viable at
+          smaller scale than it would have been a decade ago. A senior
+          governance lead can partner with engineering on guardrails and
+          policy while leveraging managed services to move the data
+          function forward, without needing a large in-house engineering
+          team behind the work.
+        </P>
+        <P>
+          A growing pattern at large research universities is to fuse
+          both halves into a single senior associate-CIO-level role
+          explicitly titled to cover both: an Associate CIO for Data
+          Management, Integration, and Analytics, sometimes paired with
+          a University Data Officer designation, reporting into the CIO
+          with a dotted line to the Provost. The title names both halves:
+          enterprise data strategy, governance and policy infrastructure,
+          data stewardship culture, and the technological substrate the
+          strategy sits on. The dual reporting line signals institutional
+          awareness that the role serves both academic strategic
+          decision-making and IT delivery, not only the engineering
+          function.
+        </P>
+        <P>
+          The structural risk that remains is rubric capture. Even with
+          a title that names governance and a dotted line to the
+          Provost, the screen often still gets written from inside the
+          function the role reports into. Reporting line under the CIO
+          means the rubric for evaluating candidates often reverts to
+          engineering depth, regardless of what the title says. The
+          title is a step forward. The screen has to follow it, or the
+          role&rsquo;s posted scope and the role&rsquo;s actual screen drift
+          apart from the day the position is opened.
+        </P>
+        <P>
+          Either resolution requires the institution to name what is
+          currently being assumed. The rubric is hiring for half the
+          role. Whether the fix is a better single role or the addition
+          of a missing second role is an architectural choice. Refusing
+          to make the choice is the failure mode.
+        </P>
+
+        <H2>Where the role sits shapes what the screen sees</H2>
+        <P>
+          The rubric problem has a deeper root in where the role sits.
+          Most institutions place data infrastructure ownership under
+          the CTO or CIO. Once that placement happens, the rubric gets
+          written by an engineering function, the screens filter for
+          engineering depth, and a governance-and-SME-anchored candidate
+          looks &ldquo;non-traditional&rdquo; to a screen calibrated for
+          pipeline depth. The contracts the role writes end up
+          optimizing for the reporting function&rsquo;s incentives rather
+          than the institution&rsquo;s whole-organization decision interface.
+          Even within a misplaced reporting line, though, the rubric
+          could assess for the missing half. It does not. (The upstream
+          argument about the seat itself is{" "}
+          <InternalLink slug="where-should-data-sit">
+            Where should data sit?
+          </InternalLink>
+          )
+        </P>
+        <P>
+          Three patterns make this visible to anyone who has been around
+          senior data hiring at scale.
+        </P>
+
+        <H3>The empirical pattern that JD scans reveal</H3>
+        <P>
+          A focused scan of senior data role postings across sectors
+          makes the rubric problem concrete. The pattern holds across
+          Director of Data Platforms, Director of Data Analytics and
+          Engineering, Director of Data Strategy, VP of Analytics, and
+          Chief Data Officer titles, sampled across six org-core types:
+          technology company, product company, research institution,
+          MEL-anchored foundation or nonprofit, service provider, and
+          traditional enterprise.
+        </P>
+        <P>
+          The reporting line is the first signal the scan reveals. The
+          roles overwhelmingly sit inside engineering functions.
+          Director of Data Platforms postings at universities report
+          into the CIO. Director of Data Analytics and Engineering
+          postings at technology companies report into the CTO or VP of
+          Engineering. VP of Analytics roles at enterprise organizations
+          report into IT or operations. The exception is a small subset
+          of foundations and MEL-anchored organizations, where the role
+          reports into a Chief Impact Officer or SVP for Design and
+          Impact rather than a CIO. In one national mission-driven
+          foundation, for example, the Director-level data-strategy
+          role reports into a senior design-and-impact officer instead
+          of an engineering function. When the role reports into an
+          impact function rather than an engineering function, the
+          rubric reflects that: governance and stakeholder
+          fluency are named explicitly, the skill tier includes program
+          evaluation and mission alignment, and the stated outcomes
+          include funder reporting and partner-facing analytics. When
+          the role reports into engineering, the rubric reverts to
+          engineering depth.
+        </P>
+        <P>
+          The skills tier is the second signal. The engineering tier is
+          named with specificity in every posting: Snowflake or BigQuery
+          or Databricks, dbt, Fivetran or Airflow, Python, SQL, Tableau
+          or Power BI, often a long list of specific tools and platforms
+          a candidate must prove they have used in production. The
+          domain-SME tier and the governance-contract-authoring tier are
+          named more abstractly when named at all: &ldquo;stakeholder
+          management skills,&rdquo; &ldquo;experience in cross-functional
+          collaboration,&rdquo; &ldquo;ability to translate business
+          requirements into technical solutions.&rdquo; These phrasings
+          are not assessable in the way specific tool proficiency is
+          assessable. A candidate without dbt experience cannot fake
+          their way through a technical interview. A candidate without
+          governance-authoring experience can describe stakeholder
+          management plausibly without ever having written a governance
+          contract that actually held in production. The screen catches
+          the engineering gap. It cannot catch the governance gap.
+        </P>
+        <P>
+          The stated outcomes are the third signal. Engineering-anchored
+          postings name engineering KPIs: pipeline uptime, data
+          freshness, schema reliability, lineage coverage, time-to-insight.
+          MEL-anchored postings name decision-quality outcomes: program
+          officer ability to act on the data, funder reporting that
+          lands, partner-facing analytics that drives decisions,
+          evaluation findings that inform program design. The MEL
+          postings are the contrast case the scan reveals most clearly.
+          They show what the rubric looks like when the institution has
+          structured the role around the decision interface rather than
+          around the engineering substrate. They are also the rarest
+          pattern in the corpus.
+        </P>
+        <P>
+          The cross-tabulation that emerges is consistent.
+          Engineering-anchored reporting lines produce
+          engineering-tier-only rubrics. Impact-anchored or
+          program-anchored reporting lines produce rubrics that name
+          both halves of the role. The reporting line is upstream of the
+          rubric. Where the role reports determines what the screen
+          assesses. And in the institutions where the contracts most
+          need to be written (foundations doing impact reporting, K-12
+          networks doing student-success analytics, behavioral-health
+          agencies doing population-health work, public-sector education
+          systems doing state-level integration) the role most often
+          reports into an engineering function whose rubric then misses
+          the half of the role that the institution needs.
+        </P>
+
+        <H3>The visible asymmetry in JD skill-tier language</H3>
+        <P>
+          Across the scan, what postings name and how specifically they
+          name it follows a sharp pattern. The engineering tier is named
+          with specificity. The SME tier is named abstractly. The
+          governance and contract authoring tier is rarely named at all.
+          A candidate reading the rubric is being told, implicitly,
+          which half of the role the institution cares about screening
+          for.
+        </P>
+
+        <H3>The contrast cases visible in the scan</H3>
+        <P>
+          Where the screen did include both halves, the role had been
+          structured to demand both halves from the start, and the
+          rubric followed. A Data Hub leadership role at a national
+          philanthropy-supporting organization screened for full-stack
+          data fluency (engineering, governance, stakeholder management,
+          sector knowledge) as a baseline requirement, and the screen
+          worked because the role had been structured to demand it. A
+          Director of Data Strategy and Impact Analytics at a national
+          youth-mental-health foundation, reporting into a senior
+          design-and-impact officer rather than into an engineering
+          function, named the engineering tier (specific analytics and
+          warehouse tools by name), the SME tier (mission-driven and
+          public-sector context, plus the specific domain the
+          foundation works in), and the governance tier (data
+          governance structures, steward roles, metadata standards,
+          quality control systems, project-management discipline) all
+          with comparable specificity. Both roles are sometimes
+          described in the trade press as &ldquo;unicorn&rdquo; roles
+          because they require capability ranges most candidates do not
+          bring. They are not unicorns. They are what the role needs at
+          most institutions; they are just rare because most
+          institutions have not structured the role to demand both
+          halves and so have not bothered to screen for both.
+        </P>
+
+        <H3>The hiring loop as one data point</H3>
+        <P>
+          The third pattern is my own hiring loop, offered here as one
+          candidate&rsquo;s read. I have applied for Director of Data
+          Platforms, Director of Data Analytics and Engineering, and
+          Director of Data Strategy roles repeatedly across the sectors
+          where I have engagement-level work: K-8 networks,
+          behavioral-health agencies, youth-mental-health foundations,
+          public-sector education. The screens reach for pipeline depth.
+          They treat the governance-and-SME fluency I bring as either
+          implicit or as &ldquo;adjacent&rdquo; rather than as the
+          load-bearing half of the role. That is one candidate&rsquo;s
+          experience, and it is consistent with what every senior
+          candidate I have spoken to has described, and with the
+          patterns visible at the handful of organizations that have
+          structured the role to need both halves and screened for both.
+        </P>
+
+        <H2>The operator’s test that resolves the hiring question</H2>
+        <P>
+          The operator&rsquo;s test that resolves the hiring question is
+          the same operator question the integration-contracts argument
+          used. Asked of the candidate: can the person you are about to
+          hire write the contract that lets a stakeholder act on what
+          comes out the other side of the integration? Not can they
+          build the integration. Can they specify, in writing, who reads
+          what, who writes what, on what cadence, under what consent,
+          with what provenance, with what reversibility, and with what
+          authority for the decision the stakeholder is trying to
+          trigger. If the screen does not assess for that, the screen is
+          hiring half the role.
+        </P>
+        <P>
+          The fix is not heroic. The fix is to add the governance-and-SME
+          half to the rubric explicitly, design the interview to assess
+          for both halves, and structure the role&rsquo;s reporting line so
+          the half the institution most often misses is given the
+          authority to do the work it was hired for. This is editorial
+          work on the job description and structural work on the org
+          chart, not a new hiring philosophy. It does, however, require
+          the institution to admit that the role it is hiring for is not
+          the role it has been screening for.
+        </P>
+        <P>
+          When a leader asks me what they should be doing differently in
+          this hire that their predecessors did not, the answer is not
+          more rigorous engineering screens or better recruiters. It is
+          a rubric that names both halves of the role honestly, an
+          interview process that assesses for both, and a reporting line
+          that lets the governance half hold authority across the
+          institution rather than defer to whichever function it reports
+          into. Without those pieces, the screen keeps hiring engineers
+          to do work half of which is not engineering. (For the paired
+          argument on what the institution is actually betting on when
+          it makes this hire, see{" "}
+          <InternalLink slug="two-bets-one-institution">
+            Two bets, one institution
+          </InternalLink>
+          .)
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems"
+            gloss="The anatomy of the contract the role is being hired to write — who reads, who writes, on what cadence, under what authority."
+          />
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where should data sit?"
+            gloss="Why the reporting line is upstream of the rubric — and what the integration seat has to look like for the governance half to hold."
+          />
+          <SeeAlsoItem
+            slug="two-bets-one-institution"
+            title="Two bets, one institution"
+            gloss="The sibling argument on what the institution is wagering when it fills this seat — and what it is wagering when it does not."
+          />
+          <SeeAlsoItem
+            slug="plumbing-got-upgraded-water-didnt"
+            title="Plumbing got upgraded. The water didn’t."
+            gloss="Why the governance half is now the load-bearing half, and why an engineering-only screen keeps missing it."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written July 2026 for the Analytic Bytes Library. A
+          rubric-and-role piece drawn from a focused scan of senior data
+          postings across six org-core types, contrast cases at two
+          national mission-driven organizations that have structured the
+          role to demand both halves, and one candidate&rsquo;s hiring
+          loop offered as a data point rather than as evidence.
         </MetaNote>
       </>
     ),

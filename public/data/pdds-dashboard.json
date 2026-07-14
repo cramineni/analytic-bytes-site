@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T11:17:05",
+  "generated_at": "2026-07-14T00:50:05",
   "note": "Every panel reads an official statistic at the grain it's reported, attaches a policy lever it bears on, and names the decision that grain can and can't support. Descriptions used to decide, not models used to predict.",
   "headlines": [
     {
@@ -25,6 +25,14 @@
       "unit": "count",
       "period": 2024,
       "source_url": "https://www.cdc.gov/nchs/products/databriefs/db549.htm"
+    },
+    {
+      "card_id": "readmission_rate",
+      "label": "Medicare 30-day readmission rate",
+      "value": 15.6,
+      "unit": "percent",
+      "period": 2016,
+      "source_url": "https://www.medpac.gov/update-medpac-s-evaluation-of-medicare-s-hospital-readmission-reduction-program/"
     }
   ],
   "panels": [
@@ -210,6 +218,37 @@
       }
     },
     {
+      "panel_id": "readmissions",
+      "metric": "readmission_rate_30day",
+      "unit": "percent",
+      "series": {
+        "2010": [
+          {
+            "group": "Medicare fee-for-service (all conditions)",
+            "value": 16.7
+          }
+        ],
+        "2016": [
+          {
+            "group": "Medicare fee-for-service (all conditions)",
+            "value": 15.6
+          }
+        ]
+      },
+      "lever": {
+        "panel_id": "readmissions",
+        "lever": "HRRP penalty on excess 30-day readmissions (ACA section 1886(q); penalties began FY2013, capped at 3% of base DRG payments, 6 conditions)",
+        "status_badge": "Number moved",
+        "movement_note": "The bars pair 2010 - the year the Affordable Care Act created the Hospital Readmissions Reduction Program (HRRP, Social Security Act section 1886(q)) - against 2016. Raw, unadjusted 30-day unplanned readmissions across all Medicare fee-for-service discharges fell from 16.7 percent to 15.6 percent. That top-line number blends the penalized conditions with everything else, so read the concentration, not just the fall: raw readmissions for the conditions the penalty actually targets declined 13.2 percent over this window against 4.5 percent for conditions the program does not cover - a 2.4 percentage-point drop for targeted conditions versus 0.7 for the rest. That gap is the signal the lever, not a background trend, moved the number. MedPAC tested the obvious confound - that hospitals simply shifted patients into observation stays and emergency visits to dodge the count - and found observation and ED growth almost identical for covered and non-covered conditions, so the drop was not mostly relabeling. Two honest limits travel with this. Coding, not only care: on a risk-adjusted basis heart failure readmissions fall further, from 23.9 to 20.5 percent, but part of that steeper decline reflects hospitals recording more diagnoses after the secondary-diagnosis fields expanded from 9 to 24 in 2011 - a number that improves partly because the measure became easier to satisfy is a Goodhart risk, which is why the raw rates are the more conservative read here. And the raw decline stalled after 2014, so most of the movement is early. On mortality, MedPAC found no adverse effect: risk-adjusted mortality declined across every condition studied, rebutting the fear that fewer readmissions came from turning sick patients away. Decision: the penalty demonstrably moved the targeted number, so the resource read is to hold the incentive where it works while shifting oversight toward the coding drift and the post-2014 plateau, and to weigh MedPAC's own recommendation to fold the HRRP into a broader hospital value program rather than reward a single condition-specific count.",
+        "source_url": "https://www.medpac.gov/wp-content/uploads/import_data/scrape_files/docs/default-source/reports/jun18_ch1_medpacreport_appendix_rev_nov2019_sec.pdf"
+      },
+      "gap": {
+        "period": 2016,
+        "absolute_gap": 0.0,
+        "ratio_high_to_low": 1.0
+      }
+    },
+    {
       "panel_id": "scorecard",
       "metric": "cs_median_earnings",
       "unit": "usd",
@@ -338,6 +377,14 @@
       "release_date": "2021-03-01"
     },
     {
+      "source_id": "lever_hrrp",
+      "title": "Hospital Readmissions Reduction Program statute (ACA section 3025 / Social Security Act section 1886(q))",
+      "publisher": "Patient Protection and Affordable Care Act",
+      "url": "https://www.medpac.gov/wp-content/uploads/import_data/scrape_files/docs/default-source/reports/jun18_ch1_medpacreport_appendix_rev_nov2019_sec.pdf",
+      "table_ref": "Online Appendix 1-D reproduces SSA 1886(q); penalties began FY2013, capped at 3% of base operating DRG payments, applied to 6 conditions",
+      "release_date": "2010-03-23"
+    },
+    {
       "source_id": "lever_medicaid",
       "title": "12-month postpartum Medicaid extension",
       "publisher": "CMS / Medicaid.gov",
@@ -352,6 +399,22 @@
       "url": "https://www.fda.gov/news-events/press-announcements",
       "table_ref": "Narcan OTC approval Mar 2023",
       "release_date": "2023-03-01"
+    },
+    {
+      "source_id": "medpac_hrrp_dec2019",
+      "title": "Update: MedPAC's evaluation of Medicare's Hospital Readmission Reduction Program (Dec 2019 correction)",
+      "publisher": "Medicare Payment Advisory Commission (MedPAC)",
+      "url": "https://www.medpac.gov/update-medpac-s-evaluation-of-medicare-s-hospital-readmission-reduction-program/",
+      "table_ref": "Corrected all-condition raw readmission 16.7% (2010) -> 15.6% (2016); HF risk-adjusted 23.9% -> 20.5% (2017); secondary-dx coding fields 9 -> 24 in 2011; raw decline plateaus after 2014; no adverse mortality (risk-adjusted mortality fell across all conditions)",
+      "release_date": "2019-12-02"
+    },
+    {
+      "source_id": "medpac_hrrp_jun2018",
+      "title": "Mandated report: The effects of the Hospital Readmissions Reduction Program (June 2018), Ch.1 + Online Appendix 1-C",
+      "publisher": "Medicare Payment Advisory Commission (MedPAC)",
+      "url": "https://www.medpac.gov/wp-content/uploads/import_data/scrape_files/docs/default-source/reports/jun18_ch1_medpacreport_appendix_rev_nov2019_sec.pdf",
+      "table_ref": "Online Appendix 1-C / Fig 1-C1: raw readmission change 2010-2016, HRRP vs non-HRRP conditions (-2.4pp vs -0.7pp; -13.2% vs -4.5%); observation & ED growth near-identical across both groups",
+      "release_date": "2018-06-15"
     },
     {
       "source_id": "nces_naep",
