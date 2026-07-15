@@ -7595,13 +7595,14 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             The senior data leadership posting at most institutions,
-            whether titled Director of Data Platforms, VP of Analytics,
-            Chief Data Officer, Chief Data and Analytics Officer, or
-            Chief AI Officer, is two roles fused into one job
-            description. The engineering half passes the rubric. The
-            governance half is treated as either implicit or as a soft
-            skill that will fill itself in. This piece names what is
-            being assumed, and what has to change on the job description
+            whether titled Director of Data Platforms, Director of
+            Data Analytics and Engineering, VP of Analytics, Chief
+            Data Officer, Chief Data and Analytics Officer, or Chief
+            AI Officer, is two roles fused into one job description.
+            The engineering half passes the rubric. The governance
+            half is treated as either implicit or as a soft skill
+            that will fill itself in. This piece names what is being
+            assumed, and what has to change on the job description
             and on the org chart before the role starts succeeding at
             the half of its work that matters.
           </p>
@@ -7609,9 +7610,10 @@ export const ESSAYS: Essay[] = [
 
         <P>
           The senior data leadership posting at most institutions,
-          whether titled Director of Data Platforms, VP of Analytics,
-          Chief Data Officer, Chief Data and Analytics Officer, or Chief
-          AI Officer, is two roles fused into one job description. One
+          whether titled Director of Data Platforms, Director of Data
+          Analytics and Engineering, VP of Analytics, Chief Data
+          Officer, Chief Data and Analytics Officer, or Chief AI
+          Officer, is two roles fused into one job description. One
           role is engineering: build and operate the warehouse, the ETL,
           the semantic layer, the lineage tooling. Stand up the dbt
           models. Maintain the Snowflake schemas. Configure the Fivetran
@@ -7765,7 +7767,7 @@ export const ESSAYS: Essay[] = [
           role requires, which makes the second architecture viable at
           smaller scale than it would have been a decade ago. A senior
           governance lead can partner with engineering on guardrails and
-          policy while leveraging managed services to move the data
+          policy while using managed services to move the data
           function forward, without needing a large in-house engineering
           team behind the work.
         </P>
@@ -7832,11 +7834,13 @@ export const ESSAYS: Essay[] = [
           A focused scan of senior data role postings across sectors
           makes the rubric problem concrete. The pattern holds across
           Director of Data Platforms, Director of Data Analytics and
-          Engineering, Director of Data Strategy, VP of Analytics, and
-          Chief Data Officer titles, sampled across six org-core types:
-          technology company, product company, research institution,
-          MEL-anchored foundation or nonprofit, service provider, and
-          traditional enterprise.
+          Engineering, Director of Data Strategy, VP of Analytics,
+          Chief Data Officer, and, increasingly, Director of AI
+          Transformation and Director of AI Center of Excellence
+          titles, sampled across six org-core types: technology
+          company, product company, research institution, MEL-anchored
+          foundation or nonprofit, service provider, and traditional
+          enterprise.
         </P>
         <P>
           The reporting line is the first signal the scan reveals. The
@@ -7845,20 +7849,30 @@ export const ESSAYS: Essay[] = [
           into the CIO. Director of Data Analytics and Engineering
           postings at technology companies report into the CTO or VP of
           Engineering. VP of Analytics roles at enterprise organizations
-          report into IT or operations. The exception is a small subset
-          of foundations and MEL-anchored organizations, where the role
-          reports into a Chief Impact Officer or SVP for Design and
-          Impact rather than a CIO. In one national mission-driven
-          foundation, for example, the Director-level data-strategy
-          role reports into a senior design-and-impact officer instead
-          of an engineering function. When the role reports into an
-          impact function rather than an engineering function, the
-          rubric reflects that: governance and stakeholder
-          fluency are named explicitly, the skill tier includes program
-          evaluation and mission alignment, and the stated outcomes
-          include funder reporting and partner-facing analytics. When
-          the role reports into engineering, the rubric reverts to
-          engineering depth.
+          report into IT or operations. The exception, when it appears,
+          is a small subset of foundations and MEL-anchored
+          organizations where the role has been placed under a Chief
+          Impact Officer or SVP for Design and Impact rather than a
+          CIO. At a national mission-driven foundation, for example, a
+          Director of Data Strategy and Impact Analytics was structured
+          to report into an SVP for design and impact rather than into
+          IT. When the role sits under an impact function, the rubric
+          can reflect both halves: governance and stakeholder fluency
+          are named explicitly, the skill tier includes program
+          evaluation and mission alignment, the stated outcomes include
+          funder reporting and partner-facing analytics. But this
+          placement is champion-dependent. When the chief impact
+          officer who wrote the role leaves, the placement often does
+          not survive. Without sustained investment in the
+          cross-functional collaboration the integrated role required,
+          the organization reverts to its siloed defaults &mdash; data
+          governance and architecture pulled back into a technology or
+          digital-products function, research and evaluation regrouped
+          into its own specialist cluster, delivery work sometimes
+          outsourced to contractors &mdash; and the integrated rubric
+          dissolves into whichever silo&rsquo;s rubric is dominant. The
+          rubric problem was papered over by the champion, not resolved
+          by structure.
         </P>
         <P>
           The skills tier is the second signal. The engineering tier is
@@ -7878,6 +7892,25 @@ export const ESSAYS: Essay[] = [
           management plausibly without ever having written a governance
           contract that actually held in production. The screen catches
           the engineering gap. It cannot catch the governance gap.
+        </P>
+        <P>
+          The emerging AI-native roles show the same pattern in a
+          newer register. Recent postings for Director of AI
+          Transformation or Director of AI Center of Excellence,
+          sometimes reporting into an SVP for Data rather than into a
+          CTO or CAIO, name the engineering tier with production-grade
+          specificity &mdash; model registries, integrations, single
+          sign-on, data-loss prevention, agentic systems,
+          large-language-model tooling &mdash; while the governance
+          and SME tiers are named as traits rather than as
+          capabilities that can be screened: &ldquo;strong governance
+          instincts,&rdquo; &ldquo;proven ability to influence across
+          an organization,&rdquo; &ldquo;ability to make complex
+          technical topics clear to non-technical audiences.&rdquo;
+          The rubric problem is not something the AI-native evolution
+          of the role has resolved. If anything, the engineering-tier
+          specificity has grown while the governance and SME tiers
+          have stayed as trait-language.
         </P>
         <P>
           The stated outcomes are the third signal. Engineering-anchored
@@ -7924,8 +7957,9 @@ export const ESSAYS: Essay[] = [
         <P>
           Where the screen did include both halves, the role had been
           structured to demand both halves from the start, and the
-          rubric followed. A Data Hub leadership role at a national
-          philanthropy-supporting organization screened for full-stack
+          rubric followed. A Data Hub leadership role posted at a
+          national philanthropy-supporting organization screened for
+          full-stack
           data fluency (engineering, governance, stakeholder management,
           sector knowledge) as a baseline requirement, and the screen
           worked because the role had been structured to demand it. A
