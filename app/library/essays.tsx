@@ -4817,7 +4817,7 @@ export const ESSAYS: Essay[] = [
   {
     kind: "field-note",
     slug: "blown-assignment",
-    number: "07",
+    number: "06",
     title: "It’s not a communication issue. It’s a blown assignment.",
     subtitle: "Cross-functional work is a football play. Three phases, three failure modes, one fix that isn’t another meeting.",
     date: "2026-06-27",
@@ -4991,7 +4991,7 @@ export const ESSAYS: Essay[] = [
   {
     kind: "field-note",
     slug: "functions-dont-run-plays",
-    number: "08",
+    number: "07",
     title: "Functions don’t run plays.",
     subtitle:
       "The org chart is vertical. The work is horizontal. Multiple honest structural forms can carry the play (councils, flash teams, standing squads) and none of them works without a seam contract underneath.",
@@ -5235,7 +5235,7 @@ export const ESSAYS: Essay[] = [
   {
     kind: "field-note",
     slug: "the-reach-trap",
-    number: "09",
+    number: "08",
     title: "The Reach Trap",
     subtitle:
       "Why your CRM keeps handing you reach — and what a decision system reads instead.",
@@ -6359,7 +6359,7 @@ export const ESSAYS: Essay[] = [
   {
     kind: "field-note",
     slug: "we-used-to-settle-for-thumbnails",
-    number: "11",
+    number: "09",
     title: "We used to settle for thumbnails.",
     subtitle:
       "The compression institutions ran on for centuries is finally cheap to relax. That’s not a technology story. It’s a decision-architecture question.",
@@ -6558,7 +6558,7 @@ export const ESSAYS: Essay[] = [
     kind: "field-note",
     hidden: true,
     slug: "ai-did-not-write-my-library",
-    number: "12",
+    number: "10",
     title: "AI did not write my library. AI helped me navigate it.",
     subtitle:
       "Field notes on the stages of working with generative AI across tools.",

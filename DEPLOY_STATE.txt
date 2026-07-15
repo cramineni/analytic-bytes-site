@@ -1,0 +1,44 @@
+AB LIBRARY DEPLOY — BUILD STATE
+================================
+
+Built:      2026-07-15 01:19:47 UTC
+Zip file:   ab-library-content-deploy.zip  (should be sibling of this folder)
+
+CROSS-THREAD ORIENTATION
+------------------------
+If you are a new thread picking up this deploy folder for the first time:
+  READ  docs/SYNC.md  FIRST.
+
+METADATA SYNC (canonical MDs ↔ JSX truth):  ✓ AUDITED 2026-07-15 00:35
+FIELD-NOTE NUMBERING:  ✓ CONTIGUOUS 2026-07-15 01:15 (FN01-FN10, no gaps)
+
+REGISTRY
+--------
+Essays and field notes in essays.tsx: 21
+PDDS dashboard generated_at:          2026-07-14T16:36:57
+PDDS headline cards:                  4
+PDDS panels:                          6
+Total files in deploy folder:         98
+
+8 MOST-RECENTLY-MODIFIED FILES
+------------------------------
+  2026-07-15 01:19   public/library/covers/ai-did-not-write-my-library.svg
+  2026-07-15 01:19   public/library/covers/we-used-to-settle-for-thumbnails.svg
+  2026-07-15 01:19   public/library/covers/the-reach-trap.svg
+  2026-07-15 01:19   public/library/covers/functions-dont-run-plays.svg
+  2026-07-15 01:19   public/library/covers/blown-assignment.svg
+  2026-07-15 01:19   app/library/essays.tsx
+  2026-07-15 01:03   docs/SYNC.md
+  2026-07-15 01:02   DEPLOY_STATE.txt
+
+DATES ON THE THREE NEWEST PIECES
+--------------------------------
+  we-used-to-settle-for-thumbnails               2026-07-17
+  two-bets-one-institution                       2026-07-09
+  who-writes-the-contract                        2026-07-13
+
+HOW TO READ THIS FILE
+---------------------
+This file is (re)written on every deploy zip rebuild. If the Built:
+timestamp matches when you expected the last build, the folder AND
+the sibling zip are in sync.

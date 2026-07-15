@@ -1,11 +1,11 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Field Note No. 08: Functions don't run plays.</title>
+<title>Field Note No. 07: Functions don't run plays.</title>
 <desc>White background with a navy line-work diagram. Four vertical stacks of navy-outlined boxes (white interiors) labeled PROGRAMS, DATA, OPS, and FINANCE — the functional org chart. The middle row of each stack is missing; in its place, a horizontal teal band cuts across all four columns. Inside the band, where it intersects each column, a teal-filled circle stands in for the role pulled into the play. The band carries no caption — the visual story stands alone. Two-line title beneath: a lighter gray "The org chart is vertical." above a navy "Functions don't run plays." Italic subtitle "The unit of work is the play." Analytic Bytes signature at the bottom.</desc>
 
 <rect width="1200" height="630" fill="#FFFFFF"/>
 
 <!-- Eyebrow -->
-<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 08</text>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 07</text>
 
 <!-- Diagram, centered at (600, 270) -->
 <g transform="translate(600, 270)">
