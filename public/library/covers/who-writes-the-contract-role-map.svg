@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The data role landscape: senior data-leadership roles distributed across the decision arc</title>
+<desc>A grid where columns represent the five stages of the decision arc — build the system, govern the system, interpret the signal, support the decision, own the decision — and rows are seven senior data-leadership titles. Fill intensity per cell shows how heavily each role loads each arc stage. A teal composite band shows the impossible role many JDs imply, heavy across every arc position.</desc>
+
+<rect width="1200" height="720" fill="#FFFFFF"/>
+
+<!-- Title -->
+<text x="60" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A">The data role landscape</text>
+<text x="60" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-style="italic" fill="#475569">How senior data-leadership roles distribute across the decision arc</text>
+
+<!-- Arc direction labels above column headers -->
+<text x="280" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="start">FAR FROM DECISION</text>
+<text x="1080" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="end">CLOSE TO DECISION</text>
+
+<!-- Arc arrow spanning columns -->
+<line x1="280" y1="112" x2="1075" y2="112" stroke="#94A3B8" stroke-width="1"/>
+<polygon points="1075,108 1082,112 1075,116" fill="#94A3B8"/>
+
+<!-- Column headers (arc stages) -->
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="#0F2A4A" text-anchor="middle">
+  <text x="360" y="135">BUILD</text>
+  <text x="360" y="149" font-size="9" font-weight="500" fill="#475569">the system</text>
+  <text x="520" y="135">GOVERN</text>
+  <text x="520" y="149" font-size="9" font-weight="500" fill="#475569">the system</text>
+  <text x="680" y="135">INTERPRET</text>
+  <text x="680" y="149" font-size="9" font-weight="500" fill="#475569">the signal</text>
+  <text x="840" y="135">SUPPORT</text>
+  <text x="840" y="149" font-size="9" font-weight="500" fill="#475569">the decision</text>
+  <text x="1000" y="135">OWN</text>
+  <text x="1000" y="149" font-size="9" font-weight="500" fill="#475569">the decision</text>
+</g>
+
+<line x1="60" y1="165" x2="1080" y2="165" stroke="#94A3B8" stroke-width="1"/>
+
+<!-- Row 1: Director of Data Systems -->
+<text x="275" y="199" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F2A4A" text-anchor="end">Director of Data Systems</text>
+<rect x="280" y="170" width="160" height="45" fill="#0F2A4A"/>
+<rect x="440" y="170" width="160" height="45" fill="#475569"/>
+<rect x="600" y="170" width="160" height="45" fill="#94A3B8" opacity="0.3"/>
+<rect x="760" y="170" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+<rect x="920" y="170" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+
+<!-- Row 2: Director of Data Platforms -->
+<text x="275" y="253" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F2A4A" text-anchor="end">Director of Data Platforms</text>
+<rect x="280" y="224" width="160" height="45" fill="#0F2A4A"/>
+<rect x="440" y="224" width="160" height="45" fill="#94A3B8" opacity="0.3"/>
+<rect x="600" y="224" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+<rect x="760" y="224" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+<rect x="920" y="224" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+
+<!-- Row 3: Director of Data Analytics + Engineering -->
+<text x="275" y="307" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F2A4A" text-anchor="end">Director of Data Analytics + Engineering</text>
+<rect x="280" y="278" width="160" height="45" fill="#475569"/>
+<rect x="440" y="278" width="160" height="45" fill="#94A3B8" opacity="0.3"/>
+<rect x="600" y="278" width="160" height="45" fill="#0F2A4A"/>
+<rect x="760" y="278" width="160" height="45" fill="#475569"/>
+<rect x="920" y="278" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+
+<!-- Row 4: Director of AI Transformation -->
+<text x="275" y="361" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F2A4A" text-anchor="end">Director of AI Transformation</text>
+<rect x="280" y="332" width="160" height="45" fill="#475569"/>
+<rect x="440" y="332" width="160" height="45" fill="#475569"/>
+<rect x="600" y="332" width="160" height="45" fill="#475569"/>
+<rect x="760" y="332" width="160" height="45" fill="#475569"/>
+<rect x="920" y="332" width="160" height="45" fill="#94A3B8" opacity="0.5"/>
+
+<!-- Row 5: Director of Data Governance -->
+<text x="275" y="415" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F2A4A" text-anchor="end">Director of Data Governance</text>
+<rect x="280" y="386" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+<rect x="440" y="386" width="160" height="45" fill="#0F2A4A"/>
+<rect x="600" y="386" width="160" height="45" fill="#475569"/>
+<rect x="760" y="386" width="160" height="45" fill="#475569"/>
+<rect x="920" y="386" width="160" height="45" fill="#94A3B8" opacity="0.5"/>
+
+<!-- Row 6: Director of MEL / Impact Measurement -->
+<text x="275" y="469" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F2A4A" text-anchor="end">Director of MEL / Impact Measurement</text>
+<rect x="280" y="440" width="160" height="45" fill="#94A3B8" opacity="0.3"/>
+<rect x="440" y="440" width="160" height="45" fill="#475569"/>
+<rect x="600" y="440" width="160" height="45" fill="#0F2A4A"/>
+<rect x="760" y="440" width="160" height="45" fill="#0F2A4A"/>
+<rect x="920" y="440" width="160" height="45" fill="#475569"/>
+
+<!-- Row 7: Enterprise Data & AI Executive -->
+<text x="275" y="518" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="500" fill="#0F2A4A" text-anchor="end">Enterprise Data &amp; AI Executive</text>
+<text x="275" y="532" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-style="italic" fill="#94A3B8" text-anchor="end">CDO · CDAO · VP Data &amp; AI</text>
+<rect x="280" y="494" width="160" height="45" fill="#FFFFFF" stroke="#94A3B8" stroke-width="0.5" stroke-opacity="0.35"/>
+<rect x="440" y="494" width="160" height="45" fill="#475569"/>
+<rect x="600" y="494" width="160" height="45" fill="#94A3B8" opacity="0.3"/>
+<rect x="760" y="494" width="160" height="45" fill="#475569"/>
+<rect x="920" y="494" width="160" height="45" fill="#0F2A4A"/>
+
+<!-- Separator -->
+<line x1="60" y1="559" x2="1080" y2="559" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4 4"/>
+
+<!-- Composite role band -->
+<text x="275" y="593" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" text-anchor="end">The composite role many JDs imply</text>
+<text x="275" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" fill="#475569" text-anchor="end">as if one hire loads every arc position</text>
+<rect x="280" y="566" width="160" height="45" fill="#0EA5E9" opacity="0.8"/>
+<rect x="440" y="566" width="160" height="45" fill="#0EA5E9" opacity="0.8"/>
+<rect x="600" y="566" width="160" height="45" fill="#0EA5E9" opacity="0.8"/>
+<rect x="760" y="566" width="160" height="45" fill="#0EA5E9" opacity="0.8"/>
+<rect x="920" y="566" width="160" height="45" fill="#0EA5E9" opacity="0.8"/>
+
+<!-- Legend -->
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#475569">
+  <text x="60" y="663" font-weight="600" letter-spacing="1.5" fill="#94A3B8">LOAD-BEARING WEIGHT</text>
+  <rect x="60" y="672" width="16" height="10" fill="#0F2A4A"/>
+  <text x="82" y="681">Heavy</text>
+  <rect x="140" y="672" width="16" height="10" fill="#475569"/>
+  <text x="162" y="681">Medium</text>
+  <rect x="230" y="672" width="16" height="10" fill="#94A3B8" opacity="0.5"/>
+  <text x="252" y="681">Light</text>
+  <rect x="300" y="672" width="16" height="10" fill="#FFFFFF" stroke="#94A3B8" stroke-opacity="0.35"/>
+  <text x="322" y="681">Not typically required</text>
+  <rect x="490" y="672" width="16" height="10" fill="#0EA5E9" opacity="0.8"/>
+  <text x="512" y="681">Composite role hidden by the rubric</text>
+</g>
+
+<!-- Signature -->
+<text x="1080" y="681" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1.5" fill="#94A3B8" text-anchor="end">Analytic Bytes · 2026</text>
+
+</svg>

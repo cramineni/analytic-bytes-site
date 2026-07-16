@@ -7596,7 +7596,8 @@ export const ESSAYS: Essay[] = [
           <p>
             The senior data leadership posting at most institutions,
             whether titled Director of Data Platforms, Director of
-            Data Analytics and Engineering, VP of Analytics, Chief
+            Data Analytics and Engineering, Director of Data Systems,
+            VP of Analytics, Head of Data or Head of Analytics, Chief
             Data Officer, Chief Data and Analytics Officer, or Chief
             AI Officer, is two roles fused into one job description.
             The engineering half passes the rubric. The governance
@@ -7611,7 +7612,8 @@ export const ESSAYS: Essay[] = [
         <P>
           The senior data leadership posting at most institutions,
           whether titled Director of Data Platforms, Director of Data
-          Analytics and Engineering, VP of Analytics, Chief Data
+          Analytics and Engineering, Director of Data Systems, VP of
+          Analytics, Head of Data or Head of Analytics, Chief Data
           Officer, Chief Data and Analytics Officer, or Chief AI
           Officer, is two roles fused into one job description. One
           role is engineering: build and operate the warehouse, the ETL,
@@ -7791,7 +7793,7 @@ export const ESSAYS: Essay[] = [
           coordination line, the screen often still gets written from
           inside the function the role reports into. Reporting line
           under a CIO means the rubric for evaluating candidates often
-          reverts to engineering depth, regardless of what the title
+          could revert to engineering depth, regardless of what the title
           says. The title is a step forward. The screen has to follow
           it, or the role&rsquo;s posted scope and the role&rsquo;s
           actual screen drift apart from the day the position is
@@ -7838,9 +7840,9 @@ export const ESSAYS: Essay[] = [
           Chief Data Officer, and, increasingly, Director of AI
           Transformation and Director of AI Center of Excellence
           titles, sampled across six org-core types: technology
-          company, product company, research institution, MEL-anchored
-          foundation or nonprofit, service provider, and traditional
-          enterprise.
+          company, product company, research institution, foundations
+          or nonprofits anchored in monitoring, evaluation, and
+          learning (MEL), service provider, and traditional enterprise.
         </P>
         <P>
           The reporting line is the first signal the scan reveals. The
@@ -7848,15 +7850,20 @@ export const ESSAYS: Essay[] = [
           Director of Data Platforms postings at universities report
           into the CIO. Director of Data Analytics and Engineering
           postings at technology companies report into the CTO or VP of
-          Engineering. VP of Analytics roles at enterprise organizations
-          report into IT or operations. The exception, when it appears,
-          is a small subset of foundations and MEL-anchored
+          Engineering, and at media and ed-tech companies often into a
+          Chief Product Officer or Chief Product and Technology
+          Officer. VP of Analytics roles at enterprise organizations
+          report into IT or operations. Director of Data Analytics
+          roles at K-8 networks and operationally-heavy mission-driven
+          organizations often report into the COO. The exception, when
+          it appears, is a small subset of foundations and MEL-anchored
           organizations where the role has been placed under a Chief
           Impact Officer or SVP for Design and Impact rather than a
           CIO. At a national mission-driven foundation, for example, a
-          Director of Data Strategy and Impact Analytics was structured
-          to report into an SVP for design and impact rather than into
-          IT. When the role sits under an impact function, the rubric
+          Director of Data Strategy and Impact Analytics (a MEL /
+          Impact Measurement role in the map&rsquo;s general vocabulary)
+          was structured to report into an SVP for design and impact
+          rather than into IT. When the role sits under an impact function, the rubric
           can reflect both halves: governance and stakeholder fluency
           are named explicitly, the skill tier includes program
           evaluation and mission alignment, the stated outcomes include
@@ -7908,9 +7915,28 @@ export const ESSAYS: Essay[] = [
           an organization,&rdquo; &ldquo;ability to make complex
           technical topics clear to non-technical audiences.&rdquo;
           The rubric problem is not something the AI-native evolution
-          of the role has resolved. If anything, the engineering-tier
-          specificity has grown while the governance and SME tiers
-          have stayed as trait-language.
+          of the role has resolved. If anything, the governance gap is
+          more consequential here than it was in the pre-AI role:
+          engineering-tier specificity has grown, governance and SME
+          tiers have stayed as trait-language, and the stakes of a
+          governance failure at machine cadence are higher than they
+          were at pipeline cadence. Regulated sectors &mdash; health
+          (HIPAA, HITECH, 42 CFR Part 2), education (FERPA),
+          commercial data platforms (SOC2), financial services (GLBA,
+          PCI) &mdash; are the partial exception, because compliance
+          frameworks force specificity in the compliance tier
+          regardless of reporting line. But compliance specificity is
+          not the same as governance specificity. A JD can name HIPAA
+          or FERPA carefully while leaving &ldquo;strong governance
+          instincts&rdquo; as the only signal for the semantic-and-decision-authoring
+          tier the essay&rsquo;s argument is about. Where the two
+          coincide &mdash; a small number of academic medical center
+          governance postings, or Fortune-scale enterprise CDO roles
+          that name semantic layer, knowledge graphs, and RAG readiness
+          explicitly &mdash; the rubric is meaningfully better. Where
+          compliance is named but the semantic layer stays abstract,
+          the rubric problem is masked by regulatory language, not
+          solved.
         </P>
         <P>
           The stated outcomes are the third signal. Engineering-anchored
@@ -7945,13 +7971,41 @@ export const ESSAYS: Essay[] = [
         <H3>The visible asymmetry in JD skill-tier language</H3>
         <P>
           Across the scan, what postings name and how specifically they
-          name it follows a sharp pattern. The engineering tier is named
-          with specificity. The SME tier is named abstractly. The
-          governance and contract authoring tier is rarely named at all.
-          A candidate reading the rubric is being told, implicitly,
-          which half of the role the institution cares about screening
-          for.
+          name it follows a sharp pattern.
         </P>
+        <Figure
+          src="/library/covers/who-writes-the-contract-chart.svg"
+          alt="JD scan: relative emphasis on three skill tiers across senior data postings"
+          caption="JD scan: relative emphasis on three skill tiers across senior data postings."
+        />
+        <P>
+          The engineering tier is named with specificity. The SME tier
+          is named abstractly. The governance and contract authoring
+          tier is rarely named at all. A candidate reading the rubric
+          is being told, implicitly, which half of the role the
+          institution cares about screening for.
+        </P>
+
+        <H3>The role landscape underneath the rubric</H3>
+        <P>
+          The asymmetry the chart above reveals in JD emphasis has a
+          counterpart in what the roles are actually for. The map below
+          distributes seven senior data-leadership roles across the
+          five stages of the decision arc &mdash; build the system,
+          govern the system, interpret the signal, support the
+          decision, own the decision. Each cell shows how heavily the
+          role loads that arc position. Roles in the scan cluster
+          around one or two arc positions. No single role carries every
+          arc stage to a heavy level. The teal band underneath shows
+          what the composite role many JDs imply would require: heavy
+          load across every arc position, which is the shape that
+          makes it unfillable by one hire.
+        </P>
+        <Figure
+          src="/library/covers/who-writes-the-contract-role-map.svg"
+          alt="The data role landscape: senior data-leadership roles distributed across the decision arc"
+          caption="The data role landscape: seven senior data-leadership roles distributed across the five stages of the decision arc."
+        />
 
         <H3>The contrast cases visible in the scan</H3>
         <P>
@@ -7959,44 +8013,76 @@ export const ESSAYS: Essay[] = [
           structured to demand both halves from the start, and the
           rubric followed. A Data Hub leadership role posted at a
           national philanthropy-supporting organization screened for
-          full-stack
-          data fluency (engineering, governance, stakeholder management,
-          sector knowledge) as a baseline requirement, and the screen
-          worked because the role had been structured to demand it. A
-          Director of Data Strategy and Impact Analytics at a national
-          youth-mental-health foundation, reporting into a senior
-          design-and-impact officer rather than into an engineering
-          function, named the engineering tier (specific analytics and
-          warehouse tools by name), the SME tier (mission-driven and
-          public-sector context, plus the specific domain the
-          foundation works in), and the governance tier (data
-          governance structures, steward roles, metadata standards,
-          quality control systems, project-management discipline) all
-          with comparable specificity. Both roles are sometimes
-          described in the trade press as &ldquo;unicorn&rdquo; roles
-          because they require capability ranges most candidates do not
-          bring. They are not unicorns. They are what the role needs at
-          most institutions; they are just rare because most
-          institutions have not structured the role to demand both
-          halves and so have not bothered to screen for both.
+          full-stack data fluency (engineering, governance, stakeholder
+          management, sector knowledge) as a baseline requirement, and
+          the screen worked because the role had been structured to
+          demand it. A separate Director of Data Strategy and Impact
+          Analytics role at a national mission-driven foundation, which
+          reports into an SVP for design and impact rather than into an
+          engineering function, named the engineering tier (survey
+          platforms, Python, statistical-analysis environments, SQL, BI
+          tooling, cloud warehouse) with comparable specificity to the
+          SME tier (mission-driven and public-sector context, domain
+          knowledge in the foundation&rsquo;s focus area) and the
+          governance tier (data governance structures, steward roles,
+          metadata standards, quality control systems, RASCI project
+          management). Both roles are sometimes described in the trade
+          press as &ldquo;unicorn&rdquo; roles because they require
+          capability ranges most candidates do not bring. They are not
+          unicorns. They are what the role needs at most institutions;
+          they are just rare because most institutions have not
+          structured the role to demand both halves and so have not
+          bothered to screen for both.
         </P>
 
-        <H3>The hiring loop as one data point</H3>
+        <H3>The pattern across postings</H3>
         <P>
-          The third pattern is my own hiring loop, offered here as one
-          candidate&rsquo;s read. I have applied for Director of Data
-          Platforms, Director of Data Analytics and Engineering, and
-          Director of Data Strategy roles repeatedly across the sectors
-          where I have engagement-level work: K-8 networks,
-          behavioral-health agencies, youth-mental-health foundations,
-          public-sector education. The screens reach for pipeline depth.
-          They treat the governance-and-SME fluency I bring as either
-          implicit or as &ldquo;adjacent&rdquo; rather than as the
-          load-bearing half of the role. That is one candidate&rsquo;s
-          experience, and it is consistent with what every senior
-          candidate I have spoken to has described, and with the
-          patterns visible at the handful of organizations that have
-          structured the role to need both halves and screened for both.
+          The third pattern is the sector breadth this essay draws on.
+          Reading Director, Head, VP, and Chief-level data leadership
+          postings across sectors &mdash; K-12 networks and
+          public-sector education, behavioral-health agencies and
+          healthcare-services organizations, MEL-anchored foundations
+          and philanthropy-support intermediaries, ed-tech and
+          educational publishing, health-tech and clinical research
+          organizations, enterprise data leadership at Fortune-scale
+          healthcare payers, financial services (wealth management,
+          community banking, fintech), enterprise SaaS, and
+          legal-services organizations building AI and
+          data-intelligence functions &mdash; is what makes the
+          essay&rsquo;s pattern legible. The same
+          engineering-tier-specific and governance-tier-abstract shape
+          recurs regardless of sector, with the specific exceptions the
+          earlier paragraphs name (regulatory compliance,
+          impact-anchored placement, deliberate two-role architecture).
+          The pattern lives in how the JDs are written. Any specific
+          candidate&rsquo;s screen outcome depends on many things
+          &mdash; resume shape, cultural fit, referral network, current
+          head-count and scope, adjacent-experience gaps against the
+          eventually-hired candidate &mdash; that are not what this
+          essay is diagnosing.
+        </P>
+        <P>
+          A live scan of six recent VP Data and AI postings across
+          sectors &mdash; mission-driven humanitarian services,
+          private-sector mission-driven housing, media, mission-driven
+          federated healthcare, regulated mission-driven service
+          delivery, and enterprise SaaS &mdash; confirms the pattern
+          directionally but adds nuance. Engineering-anchored reporting
+          lines (CTO, CPO) produce engineering-anchored rubrics with
+          governance and SME as trait-language. Impact-anchored
+          reporting lines (Chief Impact Officer, Chief Design and
+          Impact Officer, or an equivalent Measurement / Evaluation /
+          Learning function) produce rubrics that name all three tiers.
+          Two exceptions matter. Regulated compliance environments
+          force governance to be named specifically because HIPAA,
+          FERPA, refugee-services compliance, or equivalent
+          requirements make governance non-optional. And at least one
+          major mission-driven federation has already implemented the
+          two-role architecture the essay argues for &mdash; a VP Data
+          Strategy and Analytics reporting into the COO, partnered with
+          a separate VP Technology Strategy under the CIO &mdash;
+          pointing at what the deliberate structural resolution can
+          look like in practice.
         </P>
 
         <H2>The operator’s test that resolves the hiring question</H2>

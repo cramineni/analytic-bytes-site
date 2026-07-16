@@ -91,6 +91,14 @@ const ARTIFACTS: Entry[] = [
   },
   {
     type: "artifact",
+    title: "The Data Role Landscape",
+    summary:
+      "Seven senior data-leadership roles distributed across the five stages of the decision arc — build the system, govern the system, interpret the signal, support the decision, own the decision. Roles cluster around one or two arc positions; no single role carries every stage. The composite role many JDs imply requires heavy load across every position, which is the shape that makes it unfillable by one hire.",
+    image: "/library/artifacts/who-writes-the-contract-role-map.svg",
+    slug: "who-writes-the-contract-role-map",
+  },
+  {
+    type: "artifact",
     title: "Reliability vs Validity",
     summary:
       "The four-target view of the AI scoring trap: a model can agree with human raters at a high rate (reliable) and still measure the wrong thing (invalid) — a tight cluster, off the bullseye.",

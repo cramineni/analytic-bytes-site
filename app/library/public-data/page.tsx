@@ -112,7 +112,24 @@ export default function PublicDataPage() {
                   re-run, and this page reflects the new numbers on the next
                   deploy. Nothing is hand-typed.
                 </p>
-                <p className="text-ink-3 text-[13.5px] sm:text-[14px] leading-[1.6] max-w-[64ch] mt-3">
+                <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4 mt-8">
+                  How this is built
+                </div>
+                <p className="text-ink-2 text-[14.5px] sm:text-[15px] leading-[1.6] max-w-[64ch]">
+                  On top of that pipeline, the write-up under each panel is
+                  drafted by a language model and then run through automated
+                  checks before it can publish. Two of those checks are
+                  strict: every number in a note must trace back to a bar on
+                  this page, and no note may claim a policy lever caused a
+                  change the data can&rsquo;t support. If either fails, the
+                  build stops. The statistics are computed in code, never by
+                  the model; the model only narrates numbers it&rsquo;s
+                  handed. A final step runs the release loop itself &mdash;
+                  regenerate a note, run the checks, diagnose any failure
+                  &mdash; under a guardrail that lets it fix the wording but
+                  never the tests it has to pass.
+                </p>
+                <p className="text-ink-3 text-[13.5px] sm:text-[14px] leading-[1.6] max-w-[64ch] mt-8">
                   This is early. More sectors, more levers, and better
                   cross-cutting views are on the roadmap. If you want to
                   suggest a dataset or a lever, or if you&rsquo;re building
