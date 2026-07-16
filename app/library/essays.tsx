@@ -7729,8 +7729,8 @@ export const ESSAYS: Essay[] = [
           than drift into one by default.
         </P>
         <P>
-          The first is the one this essay has implicitly assumed:
-          structure the role honestly as two halves and screen for both.
+          The first is a single-role fusion: structure the role as two
+          halves and screen for both.
           The candidate brings engineering depth and governance-authoring
           depth into a single senior position, reports into an
           independent function, and writes the contracts on top of the
@@ -7792,8 +7792,8 @@ export const ESSAYS: Essay[] = [
           a title that names governance and an academic-side
           coordination line, the screen often still gets written from
           inside the function the role reports into. Reporting line
-          under a CIO means the rubric for evaluating candidates often
-          could revert to engineering depth, regardless of what the title
+          under a CIO means the rubric for evaluating candidates could
+          revert to engineering depth, regardless of what the title
           says. The title is a step forward. The screen has to follow
           it, or the role&rsquo;s posted scope and the role&rsquo;s
           actual screen drift apart from the day the position is
@@ -7847,12 +7847,15 @@ export const ESSAYS: Essay[] = [
         <P>
           The reporting line is the first signal the scan reveals. The
           roles overwhelmingly sit inside engineering functions.
-          Director of Data Platforms postings at universities report
-          into the CIO. Director of Data Analytics and Engineering
-          postings at technology companies report into the CTO or VP of
-          Engineering, and at media and ed-tech companies often into a
-          Chief Product Officer or Chief Product and Technology
-          Officer. VP of Analytics roles at enterprise organizations
+          Director of Data Platforms postings at technology and ed-tech
+          companies report into the CTO, VP of Engineering, or Chief
+          Product and Technology Officer. Director of Data Analytics
+          and Engineering postings at technology companies report into
+          the CTO or VP of Engineering, and at media and ed-tech
+          companies often into a Chief Product Officer or Chief Product
+          and Technology Officer. At universities, Chief Data Officer
+          or Associate CIO for Data roles report into the CIO. VP of
+          Analytics roles at enterprise organizations
           report into IT or operations. Director of Data Analytics
           roles at K-8 networks and operationally-heavy mission-driven
           organizations often report into the COO. The exception, when
@@ -7929,7 +7932,7 @@ export const ESSAYS: Essay[] = [
           not the same as governance specificity. A JD can name HIPAA
           or FERPA carefully while leaving &ldquo;strong governance
           instincts&rdquo; as the only signal for the semantic-and-decision-authoring
-          tier the essay&rsquo;s argument is about. Where the two
+          tier that the role actually needs. Where the two
           coincide &mdash; a small number of academic medical center
           governance postings, or Fortune-scale enterprise CDO roles
           that name semantic layer, knowledge graphs, and RAG readiness
@@ -8037,7 +8040,8 @@ export const ESSAYS: Essay[] = [
 
         <H3>The pattern across postings</H3>
         <P>
-          The third pattern is the sector breadth this essay draws on.
+          The third pattern is the sector breadth the observations above
+          draw on.
           Reading Director, Head, VP, and Chief-level data leadership
           postings across sectors &mdash; K-12 networks and
           public-sector education, behavioral-health agencies and
@@ -8049,7 +8053,7 @@ export const ESSAYS: Essay[] = [
           community banking, fintech), enterprise SaaS, and
           legal-services organizations building AI and
           data-intelligence functions &mdash; is what makes the
-          essay&rsquo;s pattern legible. The same
+          pattern legible. The same
           engineering-tier-specific and governance-tier-abstract shape
           recurs regardless of sector, with the specific exceptions the
           earlier paragraphs name (regulatory compliance,
@@ -8058,8 +8062,8 @@ export const ESSAYS: Essay[] = [
           candidate&rsquo;s screen outcome depends on many things
           &mdash; resume shape, cultural fit, referral network, current
           head-count and scope, adjacent-experience gaps against the
-          eventually-hired candidate &mdash; that are not what this
-          essay is diagnosing.
+          eventually-hired candidate &mdash; that are not what is being
+          diagnosed here.
         </P>
         <P>
           A live scan of six recent VP Data and AI postings across
@@ -8078,7 +8082,7 @@ export const ESSAYS: Essay[] = [
           FERPA, refugee-services compliance, or equivalent
           requirements make governance non-optional. And at least one
           major mission-driven federation has already implemented the
-          two-role architecture the essay argues for &mdash; a VP Data
+          two-role architecture named earlier &mdash; a VP Data
           Strategy and Analytics reporting into the COO, partnered with
           a separate VP Technology Strategy under the CIO &mdash;
           pointing at what the deliberate structural resolution can
@@ -8095,8 +8099,8 @@ export const ESSAYS: Essay[] = [
           build the integration. Can they specify, in writing, who reads
           what, who writes what, on what cadence, under what consent,
           with what provenance, with what reversibility, and with what
-          authority for the decision the stakeholder is trying to
-          trigger. If the screen does not assess for that, the screen is
+          authority &mdash; for the decision the stakeholder is trying
+          to trigger. If the screen does not assess for that, the screen is
           hiring half the role.
         </P>
         <P>
