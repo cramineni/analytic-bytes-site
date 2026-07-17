@@ -1,34 +1,37 @@
 <svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>JD scan: relative emphasis on three skill tiers across senior data role postings</title>
-<desc>Three horizontal bars showing relative emphasis on three skill tiers in senior data role postings. Engineering tier bar is full length and labeled "named specifically." SME tier bar is medium length and labeled "named abstractly." Governance and contract authoring tier bar is short and labeled "rarely named at all." Bars are navy with teal accent. Title at top, footer note at bottom.</desc>
+<desc>Three horizontal bars of equal length showing how three skill tiers are named in senior data role postings. Engineering tier is filled solid navy — named specifically. Domain / SME tier is filled slate — named abstractly. Governance and contract authoring tier is filled light slate — usually compliance-framed, thin on semantic and definitional authority. Bar fills mirror the role-map weight scale (Heavy, Medium, Light). Teal marks the governance tier as the narrative focus.</desc>
 <rect width="1200" height="700" fill="#FFFFFF"/>
 
 <text x="600" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">JD SCAN  ·  SENIOR DATA ROLE POSTINGS</text>
 
 <text x="600" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.3" fill="#0F2A4A" text-anchor="middle">What the rubric names, how specifically</text>
 
+<!-- Row 1: ENGINEERING TIER — Heavy fill -->
 <g>
 <text x="200" y="220" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="2" fill="#0F2A4A" text-anchor="start">ENGINEERING TIER</text>
 <text x="200" y="244" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="start">Snowflake, dbt, Fivetran, Python, SQL, Tableau — named tool by tool</text>
-<rect x="200" y="260" width="850" height="36" fill="#0F2A4A"/>
-<text x="1070" y="284" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="1" fill="#0F2A4A" text-anchor="start">SPECIFIC</text>
+<rect x="200" y="260" width="800" height="36" fill="#0F2A4A"/>
+<text x="1020" y="284" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="1" fill="#475569" text-anchor="start">SPECIFIC</text>
 </g>
 
+<!-- Row 2: DOMAIN-SME TIER — Medium fill -->
 <g>
-<text x="200" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="2" fill="#0F2A4A" text-anchor="start">DOMAIN-SME TIER</text>
+<text x="200" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="2" fill="#0F2A4A" text-anchor="start">DOMAIN / SME TIER</text>
 <text x="200" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="start">"Stakeholder management," "cross-functional collaboration" — named abstractly</text>
-<rect x="200" y="400" width="380" height="36" fill="#0F2A4A"/>
-<text x="600" y="424" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="1" fill="#0F2A4A" text-anchor="start">ABSTRACT</text>
+<rect x="200" y="400" width="800" height="36" fill="#475569"/>
+<text x="1020" y="424" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="1" fill="#475569" text-anchor="start">ABSTRACT</text>
 </g>
 
+<!-- Row 3: GOVERNANCE / CONTRACT AUTHORING TIER — Light fill (compliance-framed, thin on semantic depth), teal eyebrow as narrative highlight -->
 <g>
 <text x="200" y="500" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="2" fill="#0EA5E9" text-anchor="start">GOVERNANCE / CONTRACT AUTHORING TIER</text>
-<text x="200" y="524" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="start">Who reads, who writes, on what cadence, with what authority — rarely named at all</text>
-<rect x="200" y="540" width="110" height="36" fill="#0EA5E9"/>
-<text x="330" y="564" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="1" fill="#0EA5E9" text-anchor="start">MISSING</text>
+<text x="200" y="524" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="start">Who reads, who writes, on what cadence, with what authority — usually compliance-framed, thin on semantic and definitional authority</text>
+<rect x="200" y="540" width="800" height="36" fill="#94A3B8" opacity="0.5"/>
+<text x="1020" y="564" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="1" fill="#475569" text-anchor="start">LIGHT</text>
 </g>
 
 <line x1="560" y1="630" x2="640" y2="630" stroke="#94A3B8" stroke-width="1"/>
 <text x="600" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#475569" text-anchor="middle">Pattern observed across senior data role postings, June 2026.</text>
-<text x="600" y="680" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#475569" text-anchor="middle">Illustrative; bar lengths represent relative specificity of named requirements, not headcount.</text>
+<text x="600" y="680" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#475569" text-anchor="middle">Illustrative; bar fill mirrors the role-map weight scale (Heavy · Medium · Light).</text>
 </svg>

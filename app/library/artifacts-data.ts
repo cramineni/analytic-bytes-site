@@ -94,7 +94,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     title: "The Data Role Landscape",
     summary:
-      "Fifteen senior data-leadership roles distributed across the five stages of the decision arc — build the system, govern the system, interpret the signal, support the decision, own the decision. Each role clusters around one or two arc positions; no single role carries every stage. The composite role many JDs imply requires heavy load across every position, which is the shape that makes it unfillable by one hire.",
+      "Data-leadership roles distributed across the five stages of the decision arc — build the system, govern the system, interpret the signal, support the decision, own the decision. Each role clusters around one or two arc positions; no single role carries every stage. The composite role many JDs imply requires heavy load across every position, which is the shape that makes it hard to fill with one hire.",
     image: "/library/artifacts/who-writes-the-contract-role-map.svg",
     slug: "who-writes-the-contract-role-map",
   },
