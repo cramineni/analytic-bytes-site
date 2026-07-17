@@ -1,6 +1,6 @@
 <svg viewBox="0 0 940 1620" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The data role landscape: 15 roles grouped by seven core families, ordered from far to close on the decision arc</title>
-<desc>A portrait grid mapping fifteen data roles against seven skill categories (build, architect, govern, analyze, translate, domain, authority). Rows are grouped into seven core families and ordered top-to-bottom by decision arc position — far from the decision at top, close at bottom. A left-edge indicator marks the arc direction with a caveat about contexts where it may collapse.</desc>
+<desc>A portrait grid mapping fifteen data roles against seven skill categories (build, architect, govern, analyze, translate, domain, authority). Rows are grouped into seven core families and ordered top-to-bottom by decision arc position — far from the decision at top, close at bottom. A right-edge indicator marks the arc direction with a caveat about contexts where it may collapse.</desc>
 
 <rect width="940" height="1620" fill="#FFFFFF"/>
 
@@ -20,15 +20,15 @@
 
 <line x1="65" y1="142" x2="855" y2="142" stroke="#94A3B8" stroke-width="1"/>
 
-<!-- Left-edge arc indicator (spans y=160 to y=1145) -->
-<text x="30" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">FAR</text>
-<text x="30" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">from</text>
-<text x="30" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">decision</text>
-<line x1="30" y1="200" x2="30" y2="1128" stroke="#94A3B8" stroke-width="1"/>
-<polygon points="26,1128 30,1136 34,1128" fill="#94A3B8"/>
-<text x="30" y="1155" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">CLOSE</text>
-<text x="30" y="1167" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">to</text>
-<text x="30" y="1179" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">decision</text>
+<!-- Right-edge arc indicator (spans y=160 to y=1145) -->
+<text x="897" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">FAR</text>
+<text x="897" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">from</text>
+<text x="897" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">decision</text>
+<line x1="897" y1="200" x2="897" y2="1128" stroke="#94A3B8" stroke-width="1"/>
+<polygon points="893,1128 897,1136 901,1128" fill="#94A3B8"/>
+<text x="897" y="1155" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">CLOSE</text>
+<text x="897" y="1167" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">to</text>
+<text x="897" y="1179" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">decision</text>
 
 <!-- Family: ENGINEERING -->
 <text x="65" y="163" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2" fill="#0F2A4A">ENGINEERING</text>

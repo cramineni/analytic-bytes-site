@@ -1,7 +1,7 @@
 AB LIBRARY DEPLOY — BUILD STATE
 ================================
 
-Built:      2026-07-17 04:07:22 UTC
+Built:      2026-07-17 04:31:58 UTC
 Zip file:   ab-library-content-deploy.zip  (should be sibling of this folder)
 
 CROSS-THREAD ORIENTATION
@@ -19,6 +19,7 @@ MD PROSE SYNC (this evening's JSX edits folded back): ✓ 2026-07-15 02:05
   - WWC MD post-editorial fold (11 edits: tech-lead reporting line, university CDO, single-role fusion, dropped "often", depersonalization) 2026-07-16
   - WWC standalone artifact swapped: 7-role compact map replaced with 15-role landscape (data_role_landscape_standalone.svg) 2026-07-16
   - New /library/artifacts route: index + 15 per-artifact pages with download, OG cards, essay cross-links; /library gallery replaced with preview strip 2026-07-16
+  - Data Role Landscape artifact SVG refreshed from source 2026-07-17
 FIELD-NOTE NUMBERING:  ✓ CONTIGUOUS 2026-07-15 01:15 (FN01-FN10, no gaps)
 
 REGISTRY
@@ -31,14 +32,14 @@ Total files in deploy folder:         104
 
 8 MOST-RECENTLY-MODIFIED FILES
 ------------------------------
-  2026-07-17 04:07   DEPLOY_STATE.txt
-  2026-07-17 04:07   docs/SYNC.md
+  2026-07-17 04:31   DEPLOY_STATE.txt
+  2026-07-17 04:31   public/library/artifacts/who-writes-the-contract-role-map.svg
+  2026-07-17 04:08   docs/SYNC.md
   2026-07-17 04:07   app/library/essays.tsx
   2026-07-17 04:06   app/library/page.tsx
   2026-07-17 04:05   app/library/artifacts/[slug]/page.tsx
   2026-07-17 04:04   app/library/artifacts/page.tsx
   2026-07-17 04:04   app/library/artifacts-data.ts
-  2026-07-16 22:12   public/library/artifacts/who-writes-the-contract-role-map.svg
 
 DATES ON THE THREE NEWEST PIECES
 --------------------------------
