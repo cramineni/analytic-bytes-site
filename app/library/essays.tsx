@@ -252,10 +252,11 @@ function InternalLink({
   );
 }
 
-/** Inline link to an artifact in the /library gallery. Use mid-essay only
- * when prose explicitly invokes the diagram or frame the artifact depicts.
- * Anchors directly to the artifact card via id="artifact-{slug}".
- * Exported so other pages (e.g. case-studies) can reuse the styling. */
+/** Inline link to an artifact's dedicated page at /library/artifacts/{slug}.
+ * Use mid-essay only when prose explicitly invokes the diagram or frame the
+ * artifact depicts. Exported so other pages (e.g. case-studies, the /library
+ * hero) can reuse the styling. Previously anchored to /library#artifact-{slug};
+ * retargeted 2026-07-17 when artifacts got their own routes. */
 export function ArtifactLink({
   slug,
   children,
@@ -265,7 +266,7 @@ export function ArtifactLink({
 }) {
   return (
     <a
-      href={`/library#artifact-${slug}`}
+      href={`/library/artifacts/${slug}`}
       className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
     >
       {children}

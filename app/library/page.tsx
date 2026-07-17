@@ -1,8 +1,10 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { ESSAYS, ARC_LABELS, ArtifactLink, type Arc } from "./essays";
+import { ARTIFACTS, type Artifact } from "./artifacts-data";
 
 export const metadata: Metadata = {
   title: "Library — Analytic Bytes",
@@ -36,132 +38,14 @@ type Entry = {
 };
 
 // Artifacts — figures from the analytical work (architecture diagrams,
-// data charts, flowcharts). Dateless on purpose; they render in their own
-// gallery below the dated essays/field-notes feed. SVGs live in
-// /public/library/artifacts/. Essays are NOT listed here — they come from
-// the ESSAYS registry (./essays.tsx).
-const ARTIFACTS: Entry[] = [
-  {
-    type: "artifact",
-    title: "Decision-System Architecture — the four disciplines",
-    summary:
-      "The umbrella frame of the Analytic Bytes Library at a glance. A central node — Decision-System Architecture — surrounded by the four disciplines that compose it: Measurement, Integration governance, AI systems, and Organizational design. Each cluster names three load-bearing concepts inside its discipline. The arc pill on every library card maps to one of these four. For the technical stack the disciplines describe, see the reference architecture below.",
-    image: "/library/artifacts/decision-system-architecture-frame.svg",
-    slug: "decision-system-architecture-frame",
-  },
-  {
-    type: "artifact",
-    title: "The Contract at the Seam",
-    summary:
-      "Integration moves the data. The contract makes the judgment. A tool- and sector-agnostic diagram of what the contract specifies that integration cannot — who owns the action, what data and at what resolution, on what cadence, and what decision the signal should trigger. The seam between delivered data and made decisions.",
-    image: "/library/artifacts/contract-at-the-seam.svg",
-    slug: "contract-at-the-seam",
-  },
-  {
-    type: "artifact",
-    title: "The Decision System — reference architecture",
-    summary:
-      "A tool-agnostic reference architecture: sources through integration, warehouse, and the semantic-layer keystone to AI and the reporting surfaces, with a governance rail across every layer and a learning loop that closes the system. For the editorial frame that organizes the library around this stack, see the four-disciplines view above.",
-    image: "/library/artifacts/decision-system-reference-architecture.svg",
-    slug: "decision-system-reference-architecture",
-  },
-  {
-    type: "artifact",
-    title: "One Architecture, Three Stacks",
-    summary:
-      "The same six-layer architecture instantiated three ways — Microsoft/Fabric, the modern data stack, and lean/open — showing the tools swap while the architecture holds. The semantic layer is the keystone in all three.",
-    image: "/library/artifacts/one-architecture-three-stacks.svg",
-    slug: "one-architecture-three-stacks",
-  },
-  {
-    type: "artifact",
-    title: "The Agent System",
-    summary:
-      "An agentic-AI architecture: five named agents — Data, Analysis, Insight, Execution, Monitoring — operating the Signal–Decision–Action loop, with monitoring closing the loop and a human-in-the-loop rail across every agent. The system around the model, not the model itself, is the architecture.",
-    image: "/library/artifacts/agent-system.svg",
-    slug: "agent-system",
-  },
-  {
-    type: "artifact",
-    title: "Decision Load vs Decision Capacity",
-    summary:
-      "AI raises both an organization's decision load and its decision capacity. Whether the gap closes or opens is a design choice. Deploy without redesign and a leader quietly becomes the buffer the system never built. Design for capacity expansion and the system absorbs what was previously personal.",
-    image: "/library/artifacts/decision-load-vs-capacity.svg",
-    slug: "decision-load-vs-capacity",
-  },
-  {
-    type: "artifact",
-    title: "The Data Role Landscape",
-    summary:
-      "Fifteen senior data-leadership roles distributed across the five stages of the decision arc — build the system, govern the system, interpret the signal, support the decision, own the decision. Each role clusters around one or two arc positions; no single role carries every stage. The composite role many JDs imply requires heavy load across every position, which is the shape that makes it unfillable by one hire.",
-    image: "/library/artifacts/who-writes-the-contract-role-map.svg",
-    slug: "who-writes-the-contract-role-map",
-  },
-  {
-    type: "artifact",
-    title: "Reliability vs Validity",
-    summary:
-      "The four-target view of the AI scoring trap: a model can agree with human raters at a high rate (reliable) and still measure the wrong thing (invalid) — a tight cluster, off the bullseye.",
-    image: "/library/artifacts/reliability-vs-validity.svg",
-    slug: "reliability-vs-validity",
-  },
-  {
-    type: "artifact",
-    title: "The Validity Ladder",
-    summary:
-      "Five rungs of evidence for an AI system. Most AI scoring stops at rung three — agreement with human raters — when the real bar is rung four: does the score predict the outcome it was built to predict?",
-    image: "/library/artifacts/validity-ladder.svg",
-    slug: "validity-ladder",
-  },
-  {
-    type: "artifact",
-    title: "Fair for Whom?",
-    summary:
-      "Fairness reframed as validity asked one subgroup at a time. An aggregate accuracy number can look fine while the model quietly degrades for smaller groups — differential prediction hiding under the average.",
-    image: "/library/artifacts/fair-for-whom.svg",
-    slug: "fair-for-whom",
-  },
-  {
-    type: "artifact",
-    title: "The Evidence Spine",
-    summary:
-      "The measurement-and-evaluation architecture that turns monitoring into learning: a living theory of change as keystone, harmonized assessments, and one semantic layer so every audience sees numbers that agree.",
-    image: "/library/artifacts/evidence-spine.svg",
-    slug: "evidence-spine",
-  },
-  {
-    type: "artifact",
-    title: "Measurement = Diagnostics",
-    summary:
-      "A sixteen-row translation table from educational measurement vocabulary to medical diagnostics — across foundations (validity, reliability), models (IRT and ROC, standard setting and thresholds, equating and calibration), bias and equity, stakes and decisions, standards and integrity, and the inferential closer: validity argument and differential diagnosis. Different instruments; the discipline is the same.",
-    image: "/library/artifacts/measurement-equals-diagnostics.svg",
-    slug: "measurement-equals-diagnostics",
-  },
-  {
-    type: "artifact",
-    title: "Higher Ed = Healthcare",
-    summary:
-      "An eighteen-row translation table mapping higher-education data and analytics vocabulary onto healthcare equivalents — across outcomes, throughput, advising and care navigation, support programs, infrastructure (SIS/EHR, NSC/HIE, 1EdTech/FHIR), regulation, accountability, equity, and integrative philosophy. Different sectors; the discipline is the same.",
-    image: "/library/artifacts/higher-ed-equals-healthcare.svg",
-    slug: "higher-ed-equals-healthcare",
-  },
-  {
-    type: "artifact",
-    title: "K-12 = Healthcare",
-    summary:
-      "An eighteen-row translation table mapping K-12 data and analytics vocabulary onto healthcare equivalents — across outcomes, intervention workflow, infrastructure, regulation, accountability, and integrative philosophy. Different sectors; the discipline is the same.",
-    image: "/library/artifacts/k12-equals-healthcare.svg",
-    slug: "k12-equals-healthcare",
-  },
-  {
-    type: "artifact",
-    title: "Commercial = Mission-Driven",
-    summary:
-      "A fourteen-term translation table from commercial vocabulary — GTM, audience, segmentation, funnel, conversion, KPIs, OKRs, ROI, LTV, runway, churn, A/B testing, MVP, CI/CD — to its mission-driven equivalents. Different bottom line; the discipline is the same.",
-    image: "/library/artifacts/commercial-equals-mission.svg",
-    slug: "commercial-equals-mission",
-  },
-];
+// data charts, flowcharts). The full ARTIFACTS registry lives in
+// ./artifacts-data.ts so it can be shared with /library/artifacts and
+// /library/artifacts/[slug]. This page shows only a preview strip.
+const ARTIFACT_PREVIEW_COUNT = 6;
+const ARTIFACT_PREVIEWS: Artifact[] = ARTIFACTS.slice(
+  0,
+  ARTIFACT_PREVIEW_COUNT
+);
 
 // Dated feed — published essays and field notes (from the ESSAYS registry),
 // newest-first. Artifacts are dateless and render in their own gallery below.
@@ -254,7 +138,8 @@ export default function LibraryPage() {
           </div>
         </section>
 
-        {/* ARTIFACTS — dateless visual gallery */}
+        {/* ARTIFACTS — preview strip (first 6). Full gallery lives at
+            /library/artifacts. Mirrors how PDDS links out from /library. */}
         {ARTIFACTS.length > 0 ? (
           <section className="pb-32">
             <div className="max-w-page mx-auto px-5 sm:px-8">
@@ -264,13 +149,22 @@ export default function LibraryPage() {
                     Artifacts
                   </div>
                   <p className="text-ink-2 text-[15px] max-w-[600px] mb-10 leading-[1.55]">
-                    Diagrams and figures from the work — architecture, measurement,
-                    and decision-system frames.
+                    Diagrams, tables, and frames from the analytical work.
+                    {" "}
+                    {ARTIFACTS.length} and counting.
                   </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
-                    {ARTIFACTS.map((entry, i) => (
-                      <ArtifactCard key={`artifact-${i}`} entry={entry} />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+                    {ARTIFACT_PREVIEWS.map((a) => (
+                      <ArtifactPreviewCard key={a.slug} artifact={a} />
                     ))}
+                  </div>
+                  <div className="mt-8 text-right">
+                    <Link
+                      href="/library/artifacts"
+                      className="font-mono text-[12px] tracking-[0.06em] uppercase text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+                    >
+                      See all {ARTIFACTS.length} artifacts →
+                    </Link>
                   </div>
                 </div>
                 <div className="mt-16 text-ink-3 text-sm">
@@ -298,47 +192,30 @@ function Entry({ entry }: { entry: Entry }) {
   return <TextEntry entry={entry} />;
 }
 
-// Dateless, image-led card for the artifacts gallery.
-function ArtifactCard({ entry }: { entry: Entry }) {
-  const inner = (
-    <>
-      <div className="rounded-md overflow-hidden border border-line bg-bg-alt mb-4">
+// Compact preview card for the /library artifacts strip. Links to the
+// dedicated artifact page. Full gallery lives at /library/artifacts.
+function ArtifactPreviewCard({ artifact }: { artifact: Artifact }) {
+  return (
+    <Link
+      href={`/library/artifacts/${artifact.slug}`}
+      className="group block no-underline"
+    >
+      <div className="rounded-md overflow-hidden border border-line bg-bg-alt mb-3 group-hover:border-line-2 transition-colors">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={entry.image}
-          alt={entry.title}
+          src={artifact.image}
+          alt={artifact.title}
           className="w-full h-auto block"
           loading="lazy"
         />
       </div>
-      <div className="font-mono text-[11px] tracking-[0.18em] uppercase text-accent mb-2">
+      <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-accent mb-1.5">
         Artifact
       </div>
-      <h3 className="text-[18px] sm:text-[20px] font-bold tracking-[-0.015em] text-ink leading-[1.3]">
-        {entry.title}
+      <h3 className="text-[15.5px] sm:text-[16px] font-bold tracking-[-0.015em] text-ink leading-[1.3] group-hover:text-accent transition-colors">
+        {artifact.title}
       </h3>
-      {entry.summary ? (
-        <p className="text-ink-2 text-[14px] sm:text-[15px] leading-[1.55] mt-2 max-w-[60ch]">
-          {entry.summary}
-        </p>
-      ) : null}
-    </>
-  );
-  const anchorId = entry.slug ? `artifact-${entry.slug}` : undefined;
-  return entry.url ? (
-    <a
-      id={anchorId}
-      href={entry.url}
-      target={entry.url.startsWith("http") ? "_blank" : undefined}
-      rel="noopener"
-      className="group block no-underline scroll-mt-24"
-    >
-      {inner}
-    </a>
-  ) : (
-    <div id={anchorId} className="block scroll-mt-24">
-      {inner}
-    </div>
+    </Link>
   );
 }
 
