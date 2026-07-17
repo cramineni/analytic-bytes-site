@@ -8,10 +8,10 @@ import DecisionPanel from "@/components/pdds/DecisionPanel";
 import SourcesFooter from "@/components/pdds/SourcesFooter";
 
 const PDDS_COVER =
-  "https://analyticbytes.systems/library/covers/public-data-decision-systems.svg";
+  "https://analyticbytes.systems/og-pdds.png";
 const PDDS_TITLE = "Public data as a decision system — Analytic Bytes";
 const PDDS_DESCRIPTION =
-  "Every panel reads an official statistic at the grain it’s reported, attaches a policy lever it bears on, and names the decision that grain can and can’t support. Descriptions used to decide, not models used to predict.";
+  "Every panel reads an official statistic at the grain it’s reported. Descriptions used to decide, not models used to predict.";
 
 export const metadata: Metadata = {
   title: PDDS_TITLE,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: PDDS_COVER,
         width: 1200,
         height: 630,
-        alt: "Public data as a decision system — a mosaic of five panels showing overdose, NAEP, maternal, scorecard, and SLDS bar charts",
+        alt: "Public data as a decision system — Analytic Bytes",
       },
     ],
   },
@@ -128,6 +128,27 @@ export default function PublicDataPage() {
                   regenerate a note, run the checks, diagnose any failure
                   &mdash; under a guardrail that lets it fix the wording but
                   never the tests it has to pass.
+                </p>
+                <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4 mt-8">
+                  AI Governance Scorecard
+                </div>
+                <p className="text-ink-2 text-[14.5px] sm:text-[15px] leading-[1.6] max-w-[64ch]">
+                  The pipeline scored against the NIST AI RMF (Govern,
+                  Map, Measure, Manage). 18 controls, each linked to the
+                  file that implements it. Weighted maturity 3.2 / 4.0:
+                  measurement and provenance are the mature layers,
+                  operational enforcement is the honest gap (the gates
+                  detect violations reliably but don&rsquo;t yet block
+                  publication on their own). Stated up front rather than
+                  averaged away.{" "}
+                  <a
+                    href="/pdds/governance-scorecard.html"
+                    target="_blank"
+                    rel="noopener"
+                    className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+                  >
+                    Open the scorecard →
+                  </a>
                 </p>
                 <p className="text-ink-3 text-[13.5px] sm:text-[14px] leading-[1.6] max-w-[64ch] mt-8">
                   This is early. More sectors, more levers, and better

@@ -10,6 +10,21 @@ export const metadata: Metadata = {
   title: "Library — Analytic Bytes",
   description:
     "Essays, artifacts, and field notes on decision systems, measurement, and operating-team data work.",
+  openGraph: {
+    title: "Notes from the decision system — Analytic Bytes Library",
+    description:
+      "Essays, artifacts, and field notes on decision-system architecture, measurement, and the operating teams that ship them.",
+    url: "https://analyticbytes.systems/library",
+    type: "article",
+    images: [{ url: "https://analyticbytes.systems/og-library.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Notes from the decision system — Analytic Bytes Library",
+    description:
+      "Essays, artifacts, and field notes on decision-system architecture.",
+    images: ["https://analyticbytes.systems/og-library.png"],
+  },
 };
 
 // =====================================================================

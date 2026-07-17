@@ -10,26 +10,19 @@ export const metadata: Metadata = {
   description:
     "Diagrams, tables, and frames from the Analytic Bytes library — one dedicated page per artifact, with download and cross-links to the essays that reference them.",
   openGraph: {
-    title: "Artifacts — Analytic Bytes",
+    title: "Artifacts — Analytic Bytes Library",
     description:
-      "Diagrams, tables, and frames from the analytical work.",
-    type: "website",
+      "Diagrams, tables, and frames from the analytical work. One dedicated page per artifact, with download and essay cross-links.",
     url: "https://analyticbytes.systems/library/artifacts",
-    images: [
-      {
-        url: "/library/artifacts/decision-system-architecture-frame.svg",
-        alt: "Decision-System Architecture — the four disciplines",
-      },
-    ],
+    type: "article",
+    images: [{ url: "https://analyticbytes.systems/og-artifacts.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Artifacts — Analytic Bytes",
+    title: "Artifacts — Analytic Bytes Library",
     description:
       "Diagrams, tables, and frames from the analytical work.",
-    images: [
-      "/library/artifacts/decision-system-architecture-frame.svg",
-    ],
+    images: ["https://analyticbytes.systems/og-artifacts.png"],
   },
 };
 

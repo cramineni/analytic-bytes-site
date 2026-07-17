@@ -1,0 +1,10 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <circle cx="80" cy="88" r="4" fill="#0EA5E9"/>
+  <text x="96" y="93" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0F2A4A">ANALYTIC BYTES  ·  LIBRARY</text>
+  <text x="80" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A">Notes from the</text>
+  <text x="80" y="376" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="500" letter-spacing="-0.5" fill="#0EA5E9">decision system.</text>
+  <text x="80" y="445" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#475569">Essays, artifacts, and field notes — 21 pieces and counting.</text>
+  <line x1="80" y1="565" x2="140" y2="565" stroke="#94A3B8" stroke-width="1"/>
+  <text x="80" y="595" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8">ANALYTIC BYTES  ·  analyticbytes.systems</text>
+</svg>
