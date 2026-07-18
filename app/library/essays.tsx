@@ -7841,8 +7841,8 @@ export const ESSAYS: Essay[] = [
           )
         </P>
         <P>
-          Five patterns make this visible to anyone who has been around
-          senior data hiring at scale.
+          The pattern is visible from several angles to anyone who has been
+          around senior data hiring at scale.
         </P>
 
         <H3>The empirical pattern that JD scans reveal</H3>
