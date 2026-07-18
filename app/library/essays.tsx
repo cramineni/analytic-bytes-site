@@ -7071,7 +7071,7 @@ export const ESSAYS: Essay[] = [
           has been delegated to the vendor; over time, fewer people
           inside the institution can answer the question of whether the
           model is doing what it claims. The model layer becomes a single
-          point of architectural dependency, and when the vendor moves a
+          point of architectural dependency &mdash; and when the vendor moves a
           feature behind a higher tier, sunsets a model the institution
           had standardized on, or shifts pricing, the institution
           discovers it does not have the option to walk away that it
@@ -7189,7 +7189,7 @@ export const ESSAYS: Essay[] = [
           The pattern is familiar from an earlier layer of the data
           stack. At the BI layer, the sophisticated institutions long
           ago stopped trying to standardize on one tool for every
-          reporting surface: institutional research, executive
+          reporting surface &mdash; institutional research, executive
           dashboards, operational reporting, and program-team dashboards
           have different audiences, different cadences, and different
           decisions, and they reward different tools. I have argued{" "}
@@ -7442,7 +7442,7 @@ export const ESSAYS: Essay[] = [
           data flows from the administrative side into the research
           side, under what de-identification rule, against what
           consent envelope. What inference the research side returns
-          into the administrative side, and whether the administrative
+          into the administrative side &mdash; and whether the administrative
           side is allowed to act on it. What freshness the seam
           guarantees, how the seam is audited, what happens when a
           record on one side is corrected after a downstream decision
@@ -7479,13 +7479,14 @@ export const ESSAYS: Essay[] = [
           federated risk signal flags a senior reviewer rather than
           auto-resolving to either side. Writing this out is not
           glamorous work. It is what an R1 will wish it had written
-          down in 2028, when the first vendor portal silently commits
+          down before the
+          first vendor portal silently commits
           a recommendation into a student record that no advisor
           reviewed and no auditor can trace.
         </P>
 
         <P>
-          The K-12 sector learned this lesson through Ed-Fi, through
+          The K-12 sector learned this lesson through Ed-Fi &mdash; through
           the federation that vendor lock-in forced into existence.
           The healthcare sector learned it through HL7 v2 and FHIR,
           through the regulation that mandated interoperability after
@@ -7684,7 +7685,7 @@ export const ESSAYS: Essay[] = [
           another engineer. Or to commission a governance committee. Or
           to buy more tooling. None of these address the actual gap,
           because none of them brings into the institution the person
-          who can write the contract, not because the contract is
+          who can write the contract &mdash; not because the contract is
           technical, but because it is operational. The contract
           specifies who reads, who writes, on what cadence, under what
           consent, with what reversibility, with what audit trail, with
@@ -7969,7 +7970,13 @@ export const ESSAYS: Essay[] = [
           agencies doing population-health work, public-sector education
           systems doing state-level integration) the role most often
           reports into an engineering function whose rubric then misses
-          the half of the role that the institution needs.
+          the half of the role that the institution needs. Part of what
+          drives this is stakeholder self-doubt on the program side.
+          Program and mission-side leaders often feel they cannot
+          supervise a data leader effectively, and read tight coupling
+          with an engineering function as the safer, better-managed
+          placement &mdash; even when the role&rsquo;s substantive work
+          sits closer to their side.
         </P>
 
         <H3>The visible asymmetry in JD skill-tier language</H3>
@@ -7993,17 +8000,18 @@ export const ESSAYS: Essay[] = [
         <H3>The role landscape underneath the rubric</H3>
         <P>
           The asymmetry the chart above reveals in JD emphasis has a
-          counterpart in what the roles are actually for. The map below
+          counterpart in what the roles are for. The map below
           distributes seven senior data-leadership roles across the
           five stages of the decision arc &mdash; build the system,
           govern the system, interpret the signal, support the
           decision, own the decision. Each cell shows how heavily the
-          role loads that arc position. Roles in the scan cluster
+          role loads that arc position. The roles in the map cluster
           around one or two arc positions. No single role carries every
-          arc stage to a heavy level. The teal band underneath shows
-          what the composite role many JDs imply would require: heavy
-          load across every arc position, which is the shape that
-          makes it unfillable by one hire.
+          arc stage to a heavy level. The band underneath the map
+          shows what the composite role many JDs imply would require:
+          heavy across every arc position at once &mdash; the shape no
+          real role fits. That is why rubrics written for the composite
+          produce senior-data-leadership searches that stall.
         </P>
         <Figure
           src="/library/covers/who-writes-the-contract-role-map.svg"
@@ -8041,9 +8049,9 @@ export const ESSAYS: Essay[] = [
 
         <H3>The pattern across postings</H3>
         <P>
-          The third pattern is the sector breadth the observations above
-          draw on.
-          Reading Director, Head, VP, and Chief-level data leadership
+          The sector breadth these observations draw on is what makes
+          the pattern legible. Reading Director, Head, VP, and
+          Chief-level data leadership
           postings across sectors &mdash; K-12 networks and
           public-sector education, behavioral-health agencies and
           healthcare-services organizations, MEL-anchored foundations
@@ -8063,7 +8071,7 @@ export const ESSAYS: Essay[] = [
           candidate&rsquo;s screen outcome depends on many things
           &mdash; resume shape, cultural fit, referral network, current
           head-count and scope, adjacent-experience gaps against the
-          eventually-hired candidate &mdash; that are not what is being
+          eventually-hired candidate &mdash; that are not being
           diagnosed here.
         </P>
         <P>
