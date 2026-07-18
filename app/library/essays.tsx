@@ -7612,13 +7612,13 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          The senior data leadership posting at most institutions,
-          whether titled Director of Data Platforms, Director of Data
-          Analytics and Engineering, Director of Data Systems, VP of
-          Analytics, Head of Data or Head of Analytics, Chief Data
-          Officer, Chief Data and Analytics Officer, or Chief AI
-          Officer, is two roles fused into one job description. One
-          role is engineering: build and operate the warehouse, the ETL,
+          The senior data leadership posting at most institutions
+          &mdash; whether titled Director of Data Platforms, Director
+          of Data Analytics and Engineering, Director of Data Systems,
+          VP of Analytics, Head of Data or Head of Analytics, Chief
+          Data Officer, Chief Data and Analytics Officer, or Chief AI
+          Officer &mdash; is two roles fused into one job description.
+          One role is engineering: build and operate the warehouse, the ETL,
           the semantic layer, the lineage tooling. Stand up the dbt
           models. Maintain the Snowflake schemas. Configure the Fivetran
           connectors. Keep the freshness SLAs in line. That is a senior
@@ -7755,6 +7755,18 @@ export const ESSAYS: Essay[] = [
           together, but each has its own rubric and its own authority.
         </P>
         <P>
+          Architect roles sub-divide across these two functions.
+          Substrate-first architects (platform, cloud, data platform)
+          report into the engineering side. Definition-first architects
+          (enterprise, information, semantic, master data management)
+          report into the governance side, because canonical data
+          models, enterprise data dictionaries, and semantic layers are
+          governance work. Data architects and solution architects sit
+          at the seam, typically reporting into engineering but
+          partnering with governance because their designs anticipate
+          the contracts the governance function will author on top.
+        </P>
+        <P>
           Most R1 universities, large foundations, regional healthcare
           systems, and state-scale public-sector organizations are large
           enough to need this two-role architecture, and many of them
@@ -7829,7 +7841,7 @@ export const ESSAYS: Essay[] = [
           )
         </P>
         <P>
-          Three patterns make this visible to anyone who has been around
+          Five patterns make this visible to anyone who has been around
           senior data hiring at scale.
         </P>
 
@@ -7841,7 +7853,7 @@ export const ESSAYS: Essay[] = [
           Engineering, Director of Data Strategy, VP of Analytics,
           Chief Data Officer, and, increasingly, Director of AI
           Transformation and Director of AI Center of Excellence
-          titles, sampled across six org-core types: technology
+          titles, sampled across six org-core types &mdash; technology
           company, product company, research institution, foundations
           or nonprofits anchored in monitoring, evaluation, and
           learning (MEL), service provider, and traditional enterprise.

@@ -1,7 +1,7 @@
 AB LIBRARY DEPLOY — BUILD STATE
 ================================
 
-Built:      2026-07-18 19:16:08 UTC
+Built:      2026-07-18 19:50:00 UTC
 Zip file:   ab-library-content-deploy.zip  (should be sibling of this folder)
 
 CROSS-THREAD ORIENTATION
@@ -26,6 +26,7 @@ MD PROSE SYNC (this evening's JSX edits folded back): ✓ 2026-07-15 02:05
   - 5 purpose-built OG covers (homepage, library, artifacts, PDDS, scorecard) shipped at 1200x630 PNG, meta tags wired across 4 Next pages + scorecard HTML with og:image + twitter:card + apple-touch-icon 2026-07-17
   - 5 OG PNGs re-rendered with cairosvg to fix ImageMagick's inter-word space collapse 2026-07-17
   - WWC + TBOI gather-thread fold: TBOI temporal-frame tighten + 4 em-dash swaps; WWC stakeholder-self-doubt sentence added, role-landscape closing rewrite, pattern-across-postings opener rewrite 2026-07-17
+  - WWC gather-thread fold (TBOI unchanged): 4 edits — opening-title-list em-dashes, "six org-core types" colon→em-dash, "Three patterns"→"Five patterns" (matches 5 H3 sections), new Architect-roles paragraph (Substrate-first vs Definition-first) inserted after 2-role architecture 2026-07-18
 FIELD-NOTE NUMBERING:  ✓ CONTIGUOUS 2026-07-15 01:15 (FN01-FN10, no gaps)
 
 REGISTRY
@@ -38,9 +39,9 @@ Total files in deploy folder:         104
 
 8 MOST-RECENTLY-MODIFIED FILES
 ------------------------------
-  2026-07-18 19:16   DEPLOY_STATE.txt
-  2026-07-18 19:16   docs/SYNC.md
-  2026-07-18 19:15   app/library/essays.tsx
+  2026-07-18 19:50   DEPLOY_STATE.txt
+  2026-07-18 19:50   docs/SYNC.md
+  2026-07-18 19:50   app/library/essays.tsx
   2026-07-17 22:45   public/og-scorecard.png
   2026-07-17 22:45   public/og-pdds.png
   2026-07-17 22:45   public/og-artifacts.png
