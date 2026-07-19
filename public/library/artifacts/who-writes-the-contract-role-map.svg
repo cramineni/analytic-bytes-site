@@ -1,8 +1,8 @@
-<svg viewBox="0 0 940 1620" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 0 940 1660" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The data role landscape: 15 roles grouped by seven core families, ordered from far to close on the decision arc</title>
 <desc>A portrait grid mapping fifteen data roles against seven skill categories (build, architect, govern, analyze, translate, domain, authority). Rows are grouped into seven core families and ordered top-to-bottom by decision arc position — far from the decision at top, close at bottom. A right-edge indicator marks the arc direction with a caveat about contexts where it may collapse.</desc>
 
-<rect width="940" height="1620" fill="#FFFFFF"/>
+<rect width="940" height="1660" fill="#FFFFFF"/>
 
 <text x="65" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="3" fill="#0EA5E9">THE DATA ROLE LANDSCAPE</text>
 <text x="65" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A">The data role landscape</text>
@@ -266,4 +266,6 @@
   <text x="542" y="1599">Not typically required</text>
 </g>
 
+<text x="65" y="1636" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="217" y="1636" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
 </svg>

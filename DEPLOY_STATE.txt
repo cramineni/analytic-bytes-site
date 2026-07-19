@@ -1,7 +1,7 @@
 AB LIBRARY DEPLOY — BUILD STATE
 ================================
 
-Built:      2026-07-19 20:08:46 UTC
+Built:      2026-07-19 21:41:54 UTC
 Zip file:   ab-library-content-deploy.zip  (should be sibling of this folder)
 
 CROSS-THREAD ORIENTATION
@@ -29,6 +29,7 @@ MD PROSE SYNC (this evening's JSX edits folded back): ✓ 2026-07-15 02:05
   - WWC gather-thread fold (TBOI unchanged): 4 edits — opening-title-list em-dashes, "six org-core types" colon→em-dash, "Three patterns"→"Five patterns" (matches 5 H3 sections), new Architect-roles paragraph (Substrate-first vs Definition-first) inserted after 2-role architecture 2026-07-18
   - Zip rebuilt to include deploy-folder JSX updates that lagged behind (WWC opener now "The pattern is visible from several angles"; TBOI multi-speed maturity Figure now shipping) 2026-07-18
   - Data Role Landscape artifact brought into gallery palette conformity: #475569 -> #6B7A8C, teal eyebrow added, in-SVG signature removed 2026-07-18
+  - Artifact conformity: Data Role Landscape footer added (ANALYTIC BYTES / From fragmented to decision-ready), viewBox extended 1620->1660; Validity Ladder left-sidebar arrow shortened + label recentered 2026-07-19
 FIELD-NOTE NUMBERING:  ✓ CONTIGUOUS 2026-07-15 01:15 (FN01-FN10, no gaps)
 
 REGISTRY
@@ -37,18 +38,18 @@ Essays and field notes in essays.tsx: 21
 PDDS dashboard generated_at:          2026-07-15T16:48:56
 PDDS headline cards:                  4
 PDDS panels:                          6
-Total files in deploy folder:         104
+Total files in deploy folder:         115
 
 8 MOST-RECENTLY-MODIFIED FILES
 ------------------------------
-  2026-07-19 20:08   public/library/artifacts/who-writes-the-contract-role-map.svg
-  2026-07-18 22:29   DEPLOY_STATE.txt
+  2026-07-19 21:40   public/library/artifacts/validity-ladder.svg
+  2026-07-19 21:40   public/library/artifacts/who-writes-the-contract-role-map.svg
+  2026-07-19 21:40   DEPLOY_STATE.txt
   2026-07-18 22:06   app/library/essays.tsx
   2026-07-18 19:50   docs/SYNC.md
   2026-07-17 22:45   public/og-scorecard.png
   2026-07-17 22:45   public/og-pdds.png
   2026-07-17 22:45   public/og-library.png
-  2026-07-17 22:45   public/og-image.png
 
 DATES ON THE THREE NEWEST PIECES
 --------------------------------
