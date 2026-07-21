@@ -1,0 +1,30 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The three buckets of data work — and the one that keeps getting absorbed</title>
+<desc>Three horizontal bands stacked vertically. Bucket 1 is data entry, distributed across delivery roles. Bucket 2 is interpretation and action, held by delivery roles who understand the operational context. Bucket 3 is the specialized semantic-layer, integration, quality, and governance work — highlighted in teal because it is the one that most often has no funded home and gets absorbed by whoever is capable. Captions below name the intended owner for each.</desc>
+<rect width="1200" height="600" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">THE THREE BUCKETS</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Two belong with delivery. One belongs with a specialized role that rarely gets funded.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Bucket 3 is the one that keeps getting absorbed by whoever is capable.</text>
+
+<!-- BUCKET 1 -->
+<rect x="180" y="210" width="840" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="200" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="start">BUCKET 1</text>
+<text x="200" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#0F2A4A" text-anchor="start">Data entry</text>
+<text x="1000" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#475569" text-anchor="end">Recording what happened. Owned by delivery roles.</text>
+
+<!-- BUCKET 2 -->
+<rect x="180" y="310" width="840" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="200" y="342" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="start">BUCKET 2</text>
+<text x="200" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#0F2A4A" text-anchor="start">Interpretation and action</text>
+<text x="1000" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#475569" text-anchor="end">Reading a dashboard. Acting on a flag. Owned by delivery.</text>
+
+<!-- BUCKET 3 — teal accent, the misplaced one -->
+<rect x="180" y="410" width="840" height="80" fill="none" stroke="#0EA5E9" stroke-width="2" rx="3"/>
+<text x="200" y="442" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="start">BUCKET 3</text>
+<text x="200" y="468" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#0F2A4A" text-anchor="start">Semantic layer, integration, quality, governance</text>
+<text x="1000" y="468" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0EA5E9" text-anchor="end" font-weight="600">Needs a dedicated role. Usually has none.</text>
+
+<!-- Caption -->
+<text x="600" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Buckets 1 and 2 fit inside delivery roles. Bucket 3 does not, and when no one is hired for it, someone in a delivery role absorbs it.</text>
+</svg>

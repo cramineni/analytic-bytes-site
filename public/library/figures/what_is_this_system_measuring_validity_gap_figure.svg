@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The validity gap — what the system claims to measure vs. what it actually measures</title>
+<desc>Two parallel horizontal arrows. The top arrow, in navy, points from Construct on the left to Decision on the right, labeled what the system CLAIMS to measure. The bottom arrow, in slate, points from Proxy on the left to Decision on the right, labeled what the system ACTUALLY measures. Between the two arrows a teal band marks the validity gap, with a label naming validity as the discipline that closes it.</desc>
+<rect width="1200" height="560" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">THE VALIDITY GAP</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">What the system claims to measure. What it actually measures.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">The gap between the two is validity — the discipline that answers whether the answer is the answer.</text>
+
+<!-- Left column labels -->
+<text x="220" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">CLAIMED</text>
+<text x="220" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">ACTUAL</text>
+
+<!-- Top arrow: Claimed path — navy -->
+<g>
+  <rect x="270" y="220" width="140" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="340" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Construct</text>
+  <text x="340" y="266" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">the target</text>
+
+  <line x1="410" y1="250" x2="820" y2="250" stroke="#0F2A4A" stroke-width="1.5"/>
+  <polygon points="815,244 828,250 815,256" fill="#0F2A4A"/>
+
+  <rect x="830" y="220" width="140" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="900" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Decision</text>
+  <text x="900" y="266" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">the intended use</text>
+</g>
+
+<!-- Middle: the validity gap — teal band -->
+<g>
+  <rect x="410" y="310" width="410" height="30" fill="#0EA5E9" opacity="0.08"/>
+  <text x="615" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">THE VALIDITY GAP</text>
+</g>
+
+<!-- Bottom arrow: Actual path — slate (indicating drift) -->
+<g>
+  <rect x="270" y="360" width="140" height="60" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3" rx="3"/>
+  <text x="340" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Proxy</text>
+  <text x="340" y="406" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">what got measured</text>
+
+  <line x1="410" y1="390" x2="820" y2="390" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="815,384 828,390 815,396" fill="#475569"/>
+
+  <rect x="830" y="360" width="140" height="60" fill="none" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3" rx="3"/>
+  <text x="900" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Decision</text>
+  <text x="900" y="406" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">the actual use</text>
+</g>
+
+<!-- Caption -->
+<text x="600" y="490" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">A system can perform beautifully against the proxy and still be wrong for the decision it was deployed to inform.</text>
+<text x="600" y="510" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Validity is what tells you when the two have drifted apart.</text>
+</svg>

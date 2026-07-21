@@ -71,7 +71,7 @@ const CASE_STUDIES: CaseStudy[] = [
         "AI-assisted impact reporting tied to the theory-of-change, drafted from data instead of authored separately.",
     },
     alreadyThere:
-      "A Snowflake warehouse stood up by a vendor but stalled. Dev/staging/prod schemas built but not in active use, Fivetran connections defined but not turned on. Multi-year survey data spanning four to six successive instrument versions sitting in Qualtrics. Salesforce capturing partnership phases, consultant caseloads, and assessment-cycle scheduling. Legacy operational data in Azure. A theory-of-change framework leadership already used to talk about impact.",
+      "A Snowflake warehouse stood up by a vendor but stalled. Dev/staging/prod schemas built but not in active use, Fivetran connections defined but not turned on. Multi-year survey data spanning four to six successive instrument versions sitting in a survey platform. Salesforce capturing partnership phases, consultant caseloads, and assessment-cycle scheduling. Legacy operational data in a separate cloud tenant. A theory-of-change framework leadership already used to talk about impact.",
     missing:
       "A semantic dataset across multi-year surveys. An executive analytics surface for program operations. An impact-reporting workflow that mapped data back to the theory-of-change, instead of being authored alongside it. A targeted-funding view surfacing where burden and disparity diverge across states, sized against public-health datasets.",
     weBuilt:
@@ -79,7 +79,7 @@ const CASE_STUDIES: CaseStudy[] = [
     stack:
       "Fivetran + Snowflake + Snowflake Cortex + Streamlit + Gemini + Python + ThoughtSpot + PowerBI + Looker + Google Sheets + CDC Wonder.",
     stackFlow: {
-      sources: ["Qualtrics", "Salesforce", "Azure", "CDC Wonder"],
+      sources: ["Survey platform", "Salesforce", "Cloud tenant", "CDC Wonder"],
       integration: ["Fivetran"],
       storage: ["Snowflake"],
       analytics: ["Snowflake Cortex", "Streamlit", "Gemini", "Python"],

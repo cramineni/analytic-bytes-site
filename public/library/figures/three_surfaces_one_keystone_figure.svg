@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1200 550" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Three surfaces, one keystone: three reporting products sitting on one canonical semantic layer</title>
+<desc>Three navy-bordered surface boxes across the top labeled Executive, Operations, Analytical, each with a short essence line. All three connect by downward converging lines to a wider teal keystone at the bottom labeled Semantic layer, one canonical computation per concept. The visual encodes the essay's thesis that three different products can share one governed definition.</desc>
+<rect width="1200" height="550" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">THREE SURFACES, ONE KEYSTONE</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Three products. One canonical computation.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Serve each surface deliberately; keep the definition beneath them all.</text>
+
+<!-- Three surface boxes across the top -->
+<g>
+  <!-- Executive -->
+  <rect x="200" y="215" width="220" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="310" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">Executive surface</text>
+  <text x="310" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Board / Chief. Cycle cadence.</text>
+  <text x="310" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Publication-grade output.</text>
+
+  <!-- Operations -->
+  <rect x="490" y="215" width="220" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="600" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">Operations surface</text>
+  <text x="600" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Program / delivery. Weekly.</text>
+  <text x="600" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Action-oriented console.</text>
+
+  <!-- Analytical -->
+  <rect x="780" y="215" width="220" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="890" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">Analytical surface</text>
+  <text x="890" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Analyst / researcher. Ad hoc.</text>
+  <text x="890" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Deep exploration + BI.</text>
+</g>
+
+<!-- Converging lines to keystone -->
+<line x1="310" y1="295" x2="600" y2="370" stroke="#94A3B8" stroke-width="1.2"/>
+<line x1="600" y1="295" x2="600" y2="370" stroke="#94A3B8" stroke-width="1.2"/>
+<line x1="890" y1="295" x2="600" y2="370" stroke="#94A3B8" stroke-width="1.2"/>
+
+<!-- Keystone -->
+<rect x="360" y="370" width="480" height="80" fill="none" stroke="#0EA5E9" stroke-width="2" rx="3"/>
+<text x="600" y="405" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="600" fill="#0F2A4A" text-anchor="middle">The keystone — semantic layer</text>
+<text x="600" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">One canonical computation per concept, beneath all three surfaces.</text>
+
+<!-- Small teal accent under keystone -->
+<text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2.5" fill="#0EA5E9" text-anchor="middle">SAME NUMBER · EVERY SURFACE</text>
+</svg>

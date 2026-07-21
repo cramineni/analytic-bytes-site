@@ -27,7 +27,7 @@
 <rect x="40" y="442" width="1086" height="70" fill="#FFFFFF"/>
 <text x="60" y="487" fill="#0E2A47" font-weight="700">Grantee 4</text><text x="282" y="487">Established</text><text x="584" y="487">unit cost falling</text><text x="926" y="487">High</text>
 <rect x="40" y="512" width="1086" height="70" fill="#F4F8FB"/>
-<text x="60" y="557" fill="#0E2A47" font-weight="700">Grantee 5</text><text x="282" y="557">Emerging</text><text x="584" y="557">early signal, thin data</text><text x="926" y="557">Low</text>
+<text x="60" y="557" fill="#0E2A47" font-weight="700">Grantee 5</text><text x="282" y="557">Emerging</text><text x="584" y="557">enrollment climbing</text><text x="926" y="557">Low</text>
 </g>
 <rect x="40" y="160" width="1086" height="422" fill="none" stroke="#D7E3EA" stroke-width="2"/>
 
@@ -43,5 +43,4 @@
 
 <text x="40" y="700" font-size="30" fill="#3A4A5A">The shared columns <tspan fill="#0E2A47" font-weight="700">are</tspan> the spine.</text>
 <text x="40" y="744" font-size="30" fill="#3A4A5A">Drop them and you're back to forty custom fields that don't line up.</text>
-<text x="40" y="812" font-size="22" letter-spacing="3" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
 </svg>

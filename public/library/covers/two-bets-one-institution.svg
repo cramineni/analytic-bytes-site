@@ -1,10 +1,10 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Essay No. 10: Two bets, one institution.</title>
+<title>Field Notes No. 08: Two bets, one institution.</title>
 <desc>White background with a navy line-work mark — a single rounded rectangle representing the institution holds two side-by-side compartments. The left compartment is labeled vendor-anchored with a single navy node inside. The right compartment is labeled federated with three small cyan nodes connected by light lines inside. A dashed vertical seam divides the two compartments with the words contract layer labeled across it. Italic slate subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
 
 <!-- Top eyebrow -->
-<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 10</text>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field notes  ·  No. 08</text>
 
 <!-- Institution boundary + two compartments -->
 <g transform="translate(600, 270)">

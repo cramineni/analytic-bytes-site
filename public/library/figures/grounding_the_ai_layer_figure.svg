@@ -1,0 +1,66 @@
+<svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Grounding the AI layer: where AI reaches and what it reaches through</title>
+<desc>Two side-by-side vertical stack diagrams. Left stack shows AI reaching directly into raw warehouse tables through an ungoverned SQL path — labeled "ungrounded" with a teal warning marker. Right stack shows AI reaching through the semantic layer, calling governed metrics by name — labeled "grounded" with the semantic layer highlighted in teal. Below, a one-line caption names the difference.</desc>
+<rect width="1200" height="620" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">GROUNDING THE AI LAYER</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">The semantic layer is the AI's contract with the warehouse.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">AI reads governed metrics by name. It does not write raw SQL against the tables.</text>
+
+<!-- LEFT STACK — UNGROUNDED -->
+<g>
+  <text x="300" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">UNGROUNDED — AI WRITES RAW SQL</text>
+  <!-- AI surface -->
+  <rect x="180" y="220" width="240" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="300" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">AI surface</text>
+  <text x="300" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">agent / assistant / chat</text>
+
+  <!-- Uncontrolled arrow (dashed, slate, chaotic) straight to warehouse -->
+  <line x1="300" y1="275" x2="300" y2="435" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <polygon points="296,435 300,443 304,435" fill="#94A3B8"/>
+
+  <!-- Warning marker -->
+  <circle cx="300" cy="355" r="10" fill="#0EA5E9"/>
+  <text x="300" y="359" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">!</text>
+  <text x="360" y="359" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="start">ungoverned path</text>
+
+  <!-- Warehouse -->
+  <rect x="180" y="450" width="240" height="65" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="300" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Raw warehouse</text>
+  <text x="300" y="497" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">tables · schemas · rows</text>
+</g>
+
+<!-- Divider between stacks -->
+<line x1="600" y1="200" x2="600" y2="520" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5"/>
+
+<!-- RIGHT STACK — GROUNDED -->
+<g>
+  <text x="900" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">GROUNDED — AI CALLS METRICS BY NAME</text>
+  <!-- AI surface -->
+  <rect x="780" y="220" width="240" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="900" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">AI surface</text>
+  <text x="900" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">agent / assistant / chat</text>
+
+  <!-- Controlled arrow (solid navy) -->
+  <line x1="900" y1="275" x2="900" y2="315" stroke="#0F2A4A" stroke-width="1.5"/>
+  <polygon points="896,315 900,323 904,315" fill="#0F2A4A"/>
+
+  <!-- Semantic layer (grounded, teal accent) -->
+  <rect x="780" y="325" width="240" height="70" fill="none" stroke="#0EA5E9" stroke-width="2" rx="3"/>
+  <text x="900" y="352" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Semantic layer</text>
+  <text x="900" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">governed metrics · canonical</text>
+  <text x="900" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">definitions · access rules</text>
+
+  <!-- Arrow down -->
+  <line x1="900" y1="395" x2="900" y2="440" stroke="#0F2A4A" stroke-width="1.5"/>
+  <polygon points="896,440 900,448 904,440" fill="#0F2A4A"/>
+
+  <!-- Warehouse -->
+  <rect x="780" y="450" width="240" height="65" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="900" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Warehouse</text>
+  <text x="900" y="497" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">tables · schemas · rows</text>
+</g>
+
+<!-- Caption below -->
+<text x="600" y="580" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Ungrounded, the AI invents definitions. Grounded, the semantic layer is the contract the AI has to go through.</text>
+</svg>

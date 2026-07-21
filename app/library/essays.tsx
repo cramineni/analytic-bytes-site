@@ -435,6 +435,12 @@ export const ESSAYS: Essay[] = [
           comes last. Once the rest is done, it barely matters.
         </P>
 
+        <Figure
+          src="/library/figures/three_surfaces_one_keystone_figure.svg"
+          alt="Three surfaces, one keystone: three reporting products sitting on one canonical semantic layer"
+          caption="Three surfaces above. One canonical computation beneath. The keystone is what keeps the same number in every one of them."
+        />
+
         <H2>The three surfaces</H2>
         <P>
           <B>Surface A is the program report.</B> A school report, a quarterly
@@ -1195,6 +1201,13 @@ export const ESSAYS: Essay[] = [
           must read from a single dbt-defined semantic layer or they drift,
           and drift is the failure mode that kills trust.
         </P>
+
+        <Figure
+          src="/library/figures/grounding_the_ai_layer_figure.svg"
+          alt="Grounding the AI layer: where AI reaches and what it reaches through"
+          caption="Ungrounded, the AI invents definitions. Grounded, the semantic layer is the contract the AI has to go through."
+        />
+
         <P>
           The same argument applies, more strongly, to AI features. Three
           reasons.
@@ -1599,6 +1612,13 @@ export const ESSAYS: Essay[] = [
           coherent decision support for teachers, headmasters, district
           officers, ministries, and policy designers.
         </P>
+
+        <Figure
+          src="/library/figures/lo_2_0_stitched_layers_figure.svg"
+          alt="LO 2.0 — the layers exist, the stitching does not"
+          caption="The layers exist. The stitching contracts between them are what LO 2.0 proposes and what most systems have not yet built."
+        />
+
         <P>
           This is the analytical landscape, the state-level evidence that
           integration matters, and the framework for building it.
@@ -2483,6 +2503,13 @@ export const ESSAYS: Essay[] = [
           question with a <I>naming</I> answer, and it never works, because the
           answer was never a name.
         </P>
+
+        <Figure
+          src="/library/figures/where_should_data_sit_placement_options_figure.svg"
+          alt="Where data can sit — five common placements, one AB-argued position"
+          caption="Four of the five placements bend the function toward one seat&rsquo;s incentives. The fifth &mdash; the integration seat &mdash; is where data infrastructure earns its independence."
+        />
+
         <P>
           The principle is not anti-CTO. The CTO owns the pipes: the engineering
           of the platform, the security, the uptime, and owns them well. Data
@@ -3092,6 +3119,12 @@ export const ESSAYS: Essay[] = [
           </ArtifactLink>
           .
         </P>
+
+        <Figure
+          src="/library/figures/what_is_this_system_measuring_validity_gap_figure.svg"
+          alt="The validity gap — what the system claims to measure vs. what it actually measures"
+          caption="A system can perform beautifully against the proxy and still be wrong for the decision it was deployed to inform. Validity is what tells you when the two have drifted apart."
+        />
 
         <H2>The harder question</H2>
         <P>
@@ -3757,6 +3790,12 @@ export const ESSAYS: Essay[] = [
           every time it came up.
         </P>
 
+        <Figure
+          src="/library/figures/numbers_dont_agree_one_metric_eight_uses_figure.svg"
+          alt="One metric, eight recalculations: how a single word fragments across obligations"
+          caption="One word. Eight obligations. Eight numbers &mdash; each correct under its own definition, none of them agreeing."
+        />
+
         <P>
           The same gap now carries a second cost, and it arrives as
           consumption rather than confusion. When an analyst recalculated
@@ -4071,6 +4110,12 @@ export const ESSAYS: Essay[] = [
           </p>
         </Brief>
 
+        <Figure
+          src="/library/figures/contracts_between_systems_three_eras_figure.svg"
+          alt="Contracts between systems: the gap between bytes-move and can-act across three eras"
+          caption="The bytes move in every era. The question of whether anyone can act on them is what the contract answers &mdash; and the agentic era is what makes writing it non-optional."
+        />
+
         <H2>Legacy era: contracts in someone’s head</H2>
 
         <P>
@@ -4202,20 +4247,21 @@ export const ESSAYS: Essay[] = [
         <P>
           What changes less than institutions hope is the governance layer
           on top of the artifact. A youth-mental-health foundation, working
-          with a Snowflake warehouse a prior contractor had stood up at the
+          with a cloud data warehouse a prior contractor had stood up at the
           dev/prod schema layer but never finished integrating data into,
-          had Azure and Qualtrics running as two
+          had a data warehouse and a survey platform running as two
           parallel data-collection platforms, with survey data accumulating
           across four to six instrument versions of the same construct over
           multiple years and external standardized survey instruments and
           public datasets pulled in for context. The activation work was
-          technical — Fivetran connectors, DevOps cleanup, and Snowflake
-          schema design that reconciled the two collection platforms and
-          the instrument versions into a unified semantic layer, with named
-          definitions for what “engaged participant” meant in the canonical
-          schema and how each instrument version mapped into it. At the end
-          of that work, the artifact existed and the integration ran on a
-          defensible cadence. That is the engineering layer.
+          technical &mdash; managed-ETL connectors, DevOps cleanup, and
+          warehouse schema design that reconciled the two collection
+          platforms and the instrument versions into a unified semantic
+          layer, with named definitions for what &ldquo;engaged
+          participant&rdquo; meant in the canonical schema and how each
+          instrument version mapped into it. At the end of that work, the
+          artifact existed and the integration ran on a defensible cadence.
+          That is the engineering layer.
         </P>
 
         <P>
@@ -5991,6 +6037,12 @@ export const ESSAYS: Essay[] = [
           Get all three right and the flag becomes a decision. Miss any
           one and you have a very expensive way of producing a red dot.
         </P>
+
+        <Figure
+          src="/library/figures/decision_system_three_anchors_figure.svg"
+          alt="The Decision System: three anchors — meaning, authority, validity — that must all hold together"
+          caption="The three anchors form the triangle of the decision system. Every AB Library piece sits on one of its three edges."
+        />
 
         <H2>Meaning: define it once</H2>
 
@@ -8408,6 +8460,13 @@ export const ESSAYS: Essay[] = [
           watched succeed and fail across four sectors, is five
           things.
         </P>
+
+        <Figure
+          src="/library/figures/when_the_stakes_essential_minimum.svg"
+          alt="The essential minimum: five components of mission-driven AI evaluation"
+          caption="Five components of one discipline &mdash; none requiring enterprise-scale infrastructure."
+        />
+
         <P>
           <I>Task decomposition.</I> Before the deployment ships, name
           what the AI is doing under the hood. Not what the vendor
@@ -8726,6 +8785,13 @@ export const ESSAYS: Essay[] = [
           work, and the failure mode is trying to collapse them into
           one role.
         </P>
+
+        <Figure
+          src="/library/figures/absorbed_data_role_three_buckets_figure.svg"
+          alt="The three buckets of data work — and the one that keeps getting absorbed"
+          caption="Buckets 1 and 2 fit inside delivery roles. Bucket 3 does not, and when no one is hired for it, someone in a delivery role absorbs it."
+        />
+
         <P>
           <B>Bucket 1 &mdash; data entry.</B> Recording what happened.
           Documenting a session. Logging attendance. Reporting a

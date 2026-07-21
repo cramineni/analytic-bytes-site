@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The Decision System: three anchors — meaning, authority, validity — that must all hold together</title>
+<desc>Triangular arrangement of three navy-bordered anchor nodes labeled MEANING, AUTHORITY, and VALIDITY, connected pairwise by navy lines to form a triangle. Inside the triangle a teal label reads DECISION-READY. Below, a small caveat notes that detaching any one anchor produces confident nonsense at speed.</desc>
+<rect width="1200" height="600" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">THE DECISION SYSTEM</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Three anchors. All three, or the system produces confident nonsense.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Detach any one from the other two and the output looks right and is wrong.</text>
+
+<!-- Triangle geometry: 3 anchor circles positioned at triangle corners -->
+<!-- Top: Meaning at (600, 240) -->
+<!-- Bottom-left: Authority at (380, 460) -->
+<!-- Bottom-right: Validity at (820, 460) -->
+
+<!-- Connecting lines (drawn first so nodes overlay) -->
+<line x1="600" y1="270" x2="405" y2="435" stroke="#0F2A4A" stroke-width="1.5"/>
+<line x1="600" y1="270" x2="795" y2="435" stroke="#0F2A4A" stroke-width="1.5"/>
+<line x1="425" y1="460" x2="775" y2="460" stroke="#0F2A4A" stroke-width="1.5"/>
+
+<!-- Center label -->
+<text x="600" y="405" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2.5" fill="#0EA5E9" text-anchor="middle">DECISION-READY</text>
+
+<!-- MEANING node -->
+<circle cx="600" cy="240" r="55" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="2"/>
+<text x="600" y="235" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">MEANING</text>
+<text x="600" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">the definition</text>
+<text x="600" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">holds</text>
+
+<!-- AUTHORITY node -->
+<circle cx="380" cy="460" r="55" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="2"/>
+<text x="380" y="455" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">AUTHORITY</text>
+<text x="380" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">an owner acts</text>
+<text x="380" y="490" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">on cadence</text>
+
+<!-- VALIDITY node -->
+<circle cx="820" cy="460" r="55" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="2"/>
+<text x="820" y="455" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">VALIDITY</text>
+<text x="820" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">the measure</text>
+<text x="820" y="490" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">still measures</text>
+
+<!-- Caption -->
+<text x="600" y="555" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Every AB Library piece sits on one of these three edges. The framework is the whole triangle.</text>
+</svg>

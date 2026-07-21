@@ -1,7 +1,7 @@
 AB LIBRARY DEPLOY — BUILD STATE
 ================================
 
-Built:      2026-07-21 05:34:54 UTC
+Built:      2026-07-21 18:25:17 UTC
 Zip file:   ab-library-content-deploy.zip  (should be sibling of this folder)
 
 CROSS-THREAD ORIENTATION
@@ -36,6 +36,7 @@ MD PROSE SYNC (this evening's JSX edits folded back): ✓ 2026-07-15 02:05
   - Enhanced editorial-standard fold across 6 essays: actions-not-answers, functions-dont-run-plays, stakes-are-the-mission, absorbed-data-role, lo-2-0, numbers-dont-agree. Anonymization regression in absorbed-data-role MD fixed back to "national mission-driven foundation". Functions-dont-run-plays trimmed per MD (-4 words in JSX; only "That's the work." coda cut, other candidate deletions preserved as safer-keep). 2026-07-20
   - Case-studies + About editorial pass: case-studies em-dash sweep (59 -> 31) across alreadyThere/missing/weBuilt blocks; duplicate mic-drop "From fragmented to decision-ready." cut; closing "The stack changed. The discipline didn't." cut (hero present-tense variant retained); video caption date "June 2026" -> "2026"; intro rule-of-four trimmed to two examples; seam-contract term thinned 8 -> 3 (code comments + eyebrow label retained, caption bodies + aria recast to "next-layer" / "what comes after the seam" / "handoff"). About: bio paragraph 2 split (68-word run broken into two sentences), duplicate "Stack-light, context-rich, built to be handed off" line removed so case-studies owns the closer. 2026-07-21
   - Homepage operating-arc editorial pass (app/page.tsx, lines 20-259): numeric ranges DAYS 0-90/90-180/180-270 em-dash -> en-dash; "Stack-light, context-rich, built to be handed off" tagline dropped from arc intro (case-studies owns the closer), tail sentence recast to "Measurement and AI bring rigor and speed at every step"; Phase 03 rebalanced 4 -> 3 bullets by merging "Align with product, ops & strategy" into "Define the next horizon, then hand off" (also kills the trailing em-dash beat); Phase 01 bullet "Ship decision-ready outputs - not dashboards" reworded to positive "Ship decision-ready outputs that leadership can act on"; italic closer "Build operating teams, not dependencies" recast to "Build teams that own the work after handoff" (softens aphoristic mic-drop); "the data spine" -> "the integration layer" in Phase 02 (spine noun retained in OFFERS[2] "Build the spine" title, out of arc-section scope). Arc-section em-dash count 14 -> 9. 2026-07-21
+  - MD PROSE SYNC (this push): 15 canonical MDs verified against JSX (three-surfaces, take-home-test, why-the-rules, plumbing, when-genai, stakes-mission, decision-system-v2, grounding-ai, contracts-between-systems, absorbed-data-role, lo-2-0, numbers-dont-agree, where-should-data-sit, what-is-this-system-measuring, who-writes-the-contract; validity-layer PARKED per scope). Prior enhanced-editorial fold on 2026-07-21 02:26 UTC had already resynced most prose deltas; this push handles the mechanical adds: (a) 10 new inline Figure blocks — three_surfaces / grounding-ai / decision-system-three-anchors / contracts-three-eras / lo-2-0-stitched / absorbed-buckets / numbers-eight-uses / witsam-validity-gap / wsds-placement-options / stakes-essential-minimum — SVGs copied to /public/library/figures/ and <Figure> blocks inserted at MD-image-ref position; (b) 8 cover/figure refreshes md5-verified (7 covers + reach-trap-spine figure); (c) Qualtrics anonymization: CBS MD+JSX "Azure and Qualtrics running as two parallel data-collection platforms" -> "a data warehouse and a survey platform running as two parallel data-collection platforms"; same-paragraph vendor sweep in CBS (Snowflake warehouse -> cloud data warehouse; Fivetran connectors -> managed-ETL connectors; Snowflake schema design -> warehouse schema design) since client narrative got genericized end-to-end. Case-studies page.tsx also anonymized (Qualtrics -> survey platform; Azure -> cloud tenant). KEPT: CBS modern-era "Snowflake or Databricks / Fivetran or Airbyte / dbt" list (category shorthand doing argument work); CBS agentic prototype "Snowflake Cortex reads from governed Snowflake schemas" (product-specific claim IS the argument); CBS legacy client stack sprawl (BigQuery/HubSpot/SchoolMint/PowerSchool/MailChimp/Tableau Cloud/Google Sheets — concrete narrative anchors); E01 BI vendor matrix (Tableau/Power BI/Looker/Sisense/ThoughtSpot — argument is about the matrix genre). Qualtrics grep in app/ + components/ + public/ = 0 hits. LANDSCAPE NOT updated — this push adds inline figures to existing pieces; no NEW essays, no hides, no renames, no renumbers; per standing rule landscape only fires on those events. 2026-07-21
 FIELD-NOTE NUMBERING:  ✓ CONTIGUOUS 2026-07-20 17:04 (FN01-FN11 published, FN10 AI-library hidden; no dups, no gaps)
 
 REGISTRY
@@ -44,17 +45,17 @@ Essays and field notes in essays.tsx: 22
 PDDS dashboard generated_at:          2026-07-15T16:48:56
 PDDS headline cards:                  4
 PDDS panels:                          6
-Total files in deploy folder:         117
+Total files in deploy folder:         127
 
 8 MOST-RECENTLY-MODIFIED FILES
 ------------------------------
-  2026-07-21 02:26   DEPLOY_STATE.txt
-  2026-07-21 02:25   app/library/essays.tsx
-  2026-07-20 20:55   docs/SYNC.md
-  2026-07-20 17:07   public/library/covers/the-absorbed-data-role.svg
-  2026-07-20 17:07   public/library/covers/when-the-stakes-are-the-mission.svg
-  2026-07-19 21:41   public/library/artifacts/who-writes-the-contract-role-map.svg
-  2026-07-19 21:40   public/library/artifacts/validity-ladder.svg
+  2026-07-21 18:26   DEPLOY_STATE.txt
+  2026-07-21 18:25   docs/SYNC.md
+  2026-07-21 18:24   app/library/essays.tsx
+  2026-07-21 18:20   app/case-studies/page.tsx
+  2026-07-21 18:17   public/library/figures/*  (10 new figures)
+  2026-07-21 17:26   public/library/covers/*   (7 refreshed covers)
+  2026-07-21 17:26   public/library/figures/reach-trap-spine.svg
   2026-07-17 22:45   public/og-scorecard.png
 
 DATES ON THE THREE NEWEST PIECES

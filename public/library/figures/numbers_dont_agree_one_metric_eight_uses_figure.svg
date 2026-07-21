@@ -1,0 +1,52 @@
+<svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>One metric, eight recalculations: how a single word fragments across obligations</title>
+<desc>Central navy circle labeled Student persistence with eight lines fanning outward to eight small endpoint nodes, each labeled by an obligation that required its own recalculation. Endpoint labels include program completion, state accountability, early-year persistence, S&P bond rating, principal incentive, enrollment forecasting, federal accountability, and internal instructional cadence. A teal caption below names the pattern.</desc>
+<rect width="1200" height="620" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">ONE METRIC, EIGHT RECALCULATIONS</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Student persistence. Eight obligations. Eight numbers.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">The word is one. The calculation is eight. Each correct under its own definition. None agrees with the others.</text>
+
+<!-- Central node at (600, 380) -->
+<g>
+  <!-- 8 fan-out lines to endpoints around a circle of radius ~200 -->
+  <!-- Angles: -90, -45, 0, 45, 90, 135, 180, 225 (radians equiv) -->
+  <!-- Endpoints computed to sit at radius 210 -->
+  <line x1="600" y1="380" x2="600" y2="200" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="600" y1="380" x2="748" y2="222" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="600" y1="380" x2="810" y2="380" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="600" y1="380" x2="748" y2="538" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="600" y1="380" x2="600" y2="560" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="600" y1="380" x2="452" y2="538" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="600" y1="380" x2="390" y2="380" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="600" y1="380" x2="452" y2="222" stroke="#94A3B8" stroke-width="1"/>
+
+  <!-- Endpoint dots -->
+  <circle cx="600" cy="200" r="6" fill="#475569"/>
+  <circle cx="748" cy="222" r="6" fill="#475569"/>
+  <circle cx="810" cy="380" r="6" fill="#475569"/>
+  <circle cx="748" cy="538" r="6" fill="#475569"/>
+  <circle cx="600" cy="560" r="6" fill="#475569"/>
+  <circle cx="452" cy="538" r="6" fill="#475569"/>
+  <circle cx="390" cy="380" r="6" fill="#475569"/>
+  <circle cx="452" cy="222" r="6" fill="#475569"/>
+
+  <!-- Endpoint labels -->
+  <text x="600" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="middle">Program completion</text>
+  <text x="760" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="start">State accountability</text>
+  <text x="820" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="start">S&amp;P bond rating</text>
+  <text x="760" y="548" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="start">Enrollment forecasting</text>
+  <text x="600" y="580" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="middle">Federal accountability</text>
+  <text x="440" y="548" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="end">Principal incentive</text>
+  <text x="380" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="end">Instructional cadence</text>
+  <text x="440" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" text-anchor="end">Early-year persistence</text>
+
+  <!-- Central navy circle — the shared word -->
+  <circle cx="600" cy="380" r="65" fill="#0F2A4A"/>
+  <text x="600" y="376" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Student</text>
+  <text x="600" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">persistence</text>
+
+  <!-- Teal accent ring around center — signals the shared word -->
+  <circle cx="600" cy="380" r="72" fill="none" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="3 3"/>
+</g>
+</svg>

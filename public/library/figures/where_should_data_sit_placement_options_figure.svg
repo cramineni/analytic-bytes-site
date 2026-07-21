@@ -1,0 +1,40 @@
+<svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Where data can sit — five common placements, one AB-argued position</title>
+<desc>Five horizontal placement bands, each labeled with a common reporting line and its typical framing. From top to bottom: under the CTO (technical infrastructure), under the CFO (governed asset), under the CDO or CDAO (standalone strategic asset), under the CPO (product-serving), and the AB-argued placement — an independent function positioned closest to the COO. The COO-adjacent placement is highlighted in teal as the essay's argument, with a small annotation.</desc>
+<rect width="1200" height="620" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">WHERE SHOULD DATA SIT</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Five common placements. One structurally correct one.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Where the role reports determines what the rubric assesses and what the function serves.</text>
+
+<!-- Placement 1: CTO -->
+<rect x="180" y="200" width="840" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="200" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="start">Under the CTO</text>
+<text x="1000" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="end">data as technical infrastructure</text>
+<text x="200" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="start">Serves engineering. Rubric emphasizes pipelines and platform depth.</text>
+
+<!-- Placement 2: CFO -->
+<rect x="180" y="270" width="840" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="200" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="start">Under the CFO</text>
+<text x="1000" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="end">data as governed, risk-bearing asset</text>
+<text x="200" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="start">Serves finance and compliance. Rubric emphasizes controls and audit.</text>
+
+<!-- Placement 3: CDO / CDAO — standalone -->
+<rect x="180" y="340" width="840" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="200" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="start">Standalone CDO / CDAO</text>
+<text x="1000" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="end">data as its own strategic seat</text>
+<text x="200" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="start">Serves the enterprise but often ends up abstracted from operational decisions.</text>
+
+<!-- Placement 4: CPO — product-serving -->
+<rect x="180" y="410" width="840" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="200" y="438" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="start">Under the CPO</text>
+<text x="1000" y="438" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="end">data in service of the product</text>
+<text x="200" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="start">Serves product priorities. Enterprise-decision reach is limited.</text>
+
+<!-- Placement 5: AB-argued — independent, COO-adjacent — teal highlight -->
+<rect x="180" y="480" width="840" height="80" fill="none" stroke="#0EA5E9" stroke-width="2" rx="3"/>
+<text x="200" y="508" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="start">Independent function, closest to the COO</text>
+<text x="1000" y="508" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#0EA5E9" text-anchor="end">the AB-argued placement</text>
+<text x="200" y="528" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start">Serves the whole-organization decision interface. Collaborates closely with the CTO on substrate.</text>
+<text x="200" y="548" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start">Independent from any single function's incentives.</text>
+</svg>

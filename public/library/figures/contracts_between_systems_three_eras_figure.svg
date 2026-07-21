@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Contracts between systems: the gap between bytes-move and can-act across three eras</title>
+<desc>Three era columns — Legacy, Modern, Agentic — each showing a top row (bytes move) and a bottom row (someone can act) with a visible gap between them. In Legacy the gap is narrow. In Modern the gap widens. In Agentic the gap is highlighted in teal as consequential. Below, a one-line caption names the arc.</desc>
+<rect width="1200" height="600" fill="#FFFFFF"/>
+
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">CONTRACTS BETWEEN SYSTEMS</text>
+<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">The bytes move. The question is whether anyone can act on them.</text>
+<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Three eras. Each answered "do the bytes move." Each skipped "can anyone act."</text>
+
+<!-- Three era columns -->
+<!-- Era labels at top -->
+<text x="250" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">LEGACY</text>
+<text x="600" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">MODERN</text>
+<text x="950" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">AGENTIC</text>
+
+<!-- LEGACY era -->
+<g>
+  <!-- Bytes-move box -->
+  <rect x="150" y="245" width="200" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="250" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A" text-anchor="middle">The bytes move</text>
+  <text x="250" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">batch ETL · nightly · report-out</text>
+  <!-- Small gap (30px) -->
+  <text x="250" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle" font-style="italic">the gap</text>
+  <!-- Can-act box -->
+  <rect x="150" y="345" width="200" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" stroke-dasharray="4 3" rx="3"/>
+  <text x="250" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A" text-anchor="middle">Someone can act</text>
+  <text x="250" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">humans read reports</text>
+  <text x="250" y="435" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle" font-style="italic">gap is narrow —</text>
+  <text x="250" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle" font-style="italic">humans absorb it</text>
+</g>
+
+<!-- MODERN era -->
+<g>
+  <!-- Bytes-move box -->
+  <rect x="500" y="245" width="200" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="600" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A" text-anchor="middle">The bytes move</text>
+  <text x="600" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">real-time · streaming · APIs</text>
+  <!-- Medium gap (60px) -->
+  <text x="600" y="345" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle" font-style="italic">the gap widens</text>
+  <!-- Can-act box -->
+  <rect x="500" y="360" width="200" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" stroke-dasharray="4 3" rx="3"/>
+  <text x="600" y="385" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A" text-anchor="middle">Someone can act</text>
+  <text x="600" y="403" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">definitions drift silently</text>
+  <text x="600" y="445" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle" font-style="italic">gap widens —</text>
+  <text x="600" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle" font-style="italic">stewardship strained</text>
+</g>
+
+<!-- AGENTIC era — teal highlight because the gap becomes consequential -->
+<g>
+  <!-- Bytes-move box -->
+  <rect x="850" y="245" width="200" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="950" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A" text-anchor="middle">The bytes move</text>
+  <text x="950" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">agents act at machine cadence</text>
+  <!-- Widest gap (80px) with teal highlight -->
+  <text x="950" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0EA5E9" text-anchor="middle" font-weight="600">the gap becomes consequential</text>
+  <!-- Can-act box — teal border -->
+  <rect x="850" y="380" width="200" height="55" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="4 3" rx="3"/>
+  <text x="950" y="405" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A" text-anchor="middle">Someone can act</text>
+  <text x="950" y="423" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">agents act without review</text>
+  <text x="950" y="465" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0EA5E9" text-anchor="middle" font-style="italic" font-weight="600">the contract layer</text>
+  <text x="950" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0EA5E9" text-anchor="middle" font-style="italic" font-weight="600">has to be written</text>
+</g>
+
+<!-- Arrow spanning eras at the bottom -->
+<line x1="150" y1="530" x2="1035" y2="530" stroke="#94A3B8" stroke-width="1"/>
+<polygon points="1035,526 1045,530 1035,534" fill="#94A3B8"/>
+<text x="600" y="558" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">The gap has always been there. The agentic era is what makes writing the contract non-optional.</text>
+</svg>
