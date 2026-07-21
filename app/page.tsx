@@ -21,32 +21,31 @@ const ARC_PHASES = [
   {
     tag: "→ 01",
     title: "Deliver signal",
-    range: "PHASE_01 · DAYS 0—90",
+    range: "PHASE_01 · DAYS 0–90",
     bullets: [
       "Find the bottleneck that actually moves the number.",
-      "Ship decision-ready outputs — not dashboards.",
+      "Ship decision-ready outputs that leadership can act on.",
       "Build trust quickly with the operating team.",
     ],
   },
   {
     tag: "→ 02",
     title: "Build the system",
-    range: "PHASE_02 · DAYS 90—180",
+    range: "PHASE_02 · DAYS 90–180",
     bullets: [
       "Define metrics, owners, and the cadence around them.",
-      "Establish reporting flows and the data spine.",
+      "Establish reporting flows and the integration layer.",
       "Create the operating rhythms decisions live inside.",
     ],
   },
   {
     tag: "→ 03",
     title: "Scale & extend",
-    range: "PHASE_03 · DAYS 180—270",
+    range: "PHASE_03 · DAYS 180–270",
     bullets: [
       "Turn early wins into repeatable playbooks.",
       "Develop the talent that will own it — frontline through leadership.",
-      "Align with product, ops & strategy.",
-      "Define the next horizon — and hand off.",
+      "Define the next horizon, then hand off.",
     ],
   },
 ];
@@ -211,7 +210,7 @@ export default function Home() {
               <p className="text-ink-2 text-[18px] max-w-[680px] leading-[1.55] mb-14">
                 How a decision-system intervention takes shape over 270 days —{" "}
                 <span className="text-ink font-medium">boardroom to frontline</span>.{" "}
-                Stack-light, context-rich, built to be handed off. Measurement and AI for rigor and speed at every step.
+                Measurement and AI bring rigor and speed at every step.
               </p>
             </Reveal>
 
@@ -248,8 +247,8 @@ export default function Home() {
             <Reveal>
               <div className="mt-12 pt-8 border-t border-line">
                 <p className="text-[16px] sm:text-[18px] text-ink-2 italic max-w-[44ch] leading-[1.5]">
-                  Build operating teams,{" "}
-                  <span className="text-ink font-medium not-italic">not dependencies.</span>
+                  Build teams that{" "}
+                  <span className="text-ink font-medium not-italic">own the work after handoff.</span>
                 </p>
               </div>
             </Reveal>

@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 
 const BIO_PARAGRAPHS: string[] = [
   "I build decision systems that change the way organizations operate.",
-  "My work runs through education, mental health and behavioral programs, and grant-funded mission-driven organizations — across modern data platforms, measurement, analytics, AI, and the operating rhythms that turn signal into action. I step into complex environments, deliver early value, and build toward scalable systems with stronger decision discipline — from data foundations to the narratives executives and frontline operators can act on.",
-  "I lead with a player-coach mindset and a bias toward turning priorities into progress. Every engagement strengthens the in-house team — not its dependency on me. Stack-light, context-rich, built to be handed off.",
+  "My work runs through education, mental health and behavioral programs, and grant-funded mission-driven organizations. It spans modern data platforms, measurement, analytics, AI, and the operating rhythms that turn signal into action. I step into complex environments, deliver early value, and build toward scalable systems with stronger decision discipline — from data foundations to the narratives executives and frontline operators can act on.",
+  "I lead with a player-coach mindset and a bias toward turning priorities into progress. Every engagement strengthens the in-house team — not its dependency on me.",
   "I've built much of this work inside mission-driven organizations. Analytic Bytes exists to bring that same rigor — and the operating teams that own it — to organizations where better decisions translate directly into impact.",
 ];
 
