@@ -511,16 +511,10 @@ export const ESSAYS: Essay[] = [
           a screen rendered live against a data source. The publication problem
           needs the inverse: a templated document with branded typography,
           headers, footers, footnotes, and language that comms or design owns
-          separately from the analyst. PDF export from the dashboarding mode of
-          most BI tools produces a screenshot, not a structured document.
-          Paginated-reporting features (SSRS-style modules inside Power BI and
-          their equivalents elsewhere) are the real exception, designed for
-          exactly this use, and a publication-grade option when an institution
-          already has the skillset; they are a different toolset than the
-          dashboarding mode that dominates BI demos. The artifact a board
-          member emails to a colleague is a Word file, or a PDF that looks
-          like one. Nobody forwards a dashboard URL with a login prompt behind
-          it.
+          separately from the analyst. PDF export from a BI tool produces a
+          screenshot, not a structured document. The artifact a board member
+          emails to a colleague is a Word file, or a PDF that looks like one.
+          Nobody forwards a dashboard URL with a login prompt behind it.
         </P>
         <P>
           There is also a layout-ownership problem. In a BI tool, the analyst
@@ -2317,9 +2311,9 @@ export const ESSAYS: Essay[] = [
         <P>
           So set the title question aside. It is the wrong question, and
           answering it first is how organizations end up improvising. Ask the
-          prior one. What does data infrastructure need from its place
-          on the org chart? Answer that, and the seat stops being a matter of
-          taste.
+          prior one. What does data infrastructure actually need from its
+          place on the org chart? Answer that, and the seat stops being a
+          matter of taste.
         </P>
         <P>
           I first met this argument in a narrower form, in a single
@@ -2352,15 +2346,15 @@ export const ESSAYS: Essay[] = [
           them.
         </P>
         <P>
-          <B>The CFO or CFAO option.</B> Also a real case. Data is a governed,
+          <B>Under the CFO or CFAO.</B> Also a real case. Data is a governed,
           risk-bearing asset, and finance already runs enterprise reporting, has
-          audit discipline, and treats numbers as things that must reconcile and
+          audit discipline, treats numbers as things that must reconcile and
           withstand scrutiny. Few functions are better at custody. The cost is
           orientation. Finance looks backward by instinct, and it looks at
-          compliance: the close, the audit, the filing. Under finance, the data
-          function optimizes for the report being correct rather than the
-          decision being better, and forward-looking operational work is always
-          the thing finance will get to later.
+          compliance &mdash; the close, the audit, the filing. Under finance,
+          the data function optimizes for the report being correct rather than
+          the decision being better, and forward-looking operational work is
+          always the thing finance will get to later.
         </P>
         <P>
           <B>Its own seat, a CDO or CDAO.</B> This is the strongest alternative,
@@ -2432,10 +2426,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>The seat that is left</H2>
         <P>
-          The seat that’s left, once the four embedded options are set aside,
-          is the one already accountable for how the whole organization runs
-          together. Call it the integration seat. In most organizations, it is
-          the Chief Operating Officer.
+          Strip away the four embedded options and one seat is left: the one
+          already accountable for how the whole organization runs together.
+          Call it the integration seat. In most organizations, it is the Chief
+          Operating Officer.
         </P>
         <P>
           The COO is not a single function. The COO is the place the functions
@@ -3064,7 +3058,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The question that gets skipped</H2>
         <P>
-          There is a gap I keep noticing. Universities have become literate in
+          There is a gap I keep noticing. Universities have become fluent in
           two questions about AI: should we use it, and what are the rules for
           using it. Those are the questions a policy answers and a committee
           debates, and they are necessary. But they are not the question that
@@ -3077,9 +3071,10 @@ export const ESSAYS: Essay[] = [
           It is an easy question to skip. A tool gets adopted because it is
           plausible, because a vendor demonstrated it well, because a respected
           peer institution uses it, because a pilot felt successful. None of
-          those is evidence that the system measures or predicts what it claims
-          to. Adoption and policy have outrun evaluation. We have built the
-          scaffolding for governing AI and left out a load-bearing pillar.
+          those is evidence that the system measures or predicts what it
+          purports to. Adoption and policy have outrun evaluation. We have
+          built the scaffolding for governing AI and left out a load-bearing
+          beam.
         </P>
 
         <H2>What seven years of scoring engines taught me</H2>
@@ -3095,13 +3090,12 @@ export const ESSAYS: Essay[] = [
           is agreement: how often does the machine’s score match a trained human
           rater’s score? It is a clean number, and it is reassuring. It is also
           not sufficient. A model can agree with human raters at a high rate and
-          still be measuring only part of what it claims to measure. It can
-          learn that longer essays tend to score higher, and quietly come to
-          lean on length. It can rest on vocabulary, sentence count, surface
-          fluency: features that correlate with writing quality without
-          constituting it. The scores look right. The agreement statistics look
-          right. And underneath, the system is measuring something narrower than
-          its label suggests.
+          still be measuring the wrong thing. It can learn that longer essays
+          tend to score higher, and quietly reward length. It can lean on
+          vocabulary, sentence count, surface fluency: features that correlate
+          with quality without being quality. The scores look right. The
+          agreement statistics look right. And underneath, the system is
+          measuring something other than what its label claims.
         </P>
         <P>
           The discipline of measurement science exists, in large part, to catch
@@ -3110,10 +3104,9 @@ export const ESSAYS: Essay[] = [
           actually measuring, and does that match what we say it measures? Not
           whether the output looks plausible, but whether the thing being
           measured is the thing we intended. An automated scoring engine that
-          earns its agreement primarily through length is not measuring writing
-          quality directly. It is measuring a feature that correlates with
-          writing quality. The difference looks small in aggregate. It is
-          decisive for{" "}
+          earns its agreement by rewarding length is not a writing-quality
+          measure. It is a length measure with a writing-quality label. The
+          difference looks small in aggregate. It is decisive for{" "}
           <ArtifactLink slug="fair-for-whom">
             the writers the correlation doesn’t hold for
           </ArtifactLink>
@@ -3199,9 +3192,8 @@ export const ESSAYS: Essay[] = [
 
         <H2>Every system makes a claim</H2>
         <P>
-          Every AI system a university adopts carries a label of its own, a
-          claim about what it measures, and most of those claims are never
-          written down. An early-alert model claims to identify students at
+          Every AI system a university adopts makes a claim like that label,
+          and most of the claims are never written down. An early-alert model claims to identify students at
           academic risk. An advising assistant claims to surface the guidance a
           student needs. An admissions-support tool claims to predict yield, or
           fit, or success. A staff-facing assistant claims to produce work
@@ -3274,18 +3266,18 @@ export const ESSAYS: Essay[] = [
           people it touches, or does its accuracy concentrate where the
           training data was richest? What human decision is the system meant to
           support, and does its output improve that decision? None of these
-          questions is esoteric. They are the ordinary questions of
+          questions is exotic. They are the ordinary questions of
           measurement. A university that has an institutional research office
           and an assessment culture already employs people who know how to ask
-          them. Those people have not yet been pointed at the AI systems
-          moving into administrative use.
+          them. Those people have simply not yet been pointed at the AI
+          systems moving into administrative use.
         </P>
 
         <H2>Seeing the student whole</H2>
         <P>
           There is a deeper version of the intended-outcome question, and in a
           university it is the one that matters most. When we ask what a
-          system is actually measuring, we are often asking whether it
+          system is actually measuring, we are often really asking whether it
           sees a person whole. An early-alert model that optimizes a retention
           number is not the same as one that helps an institution understand
           and support a student. The first reduces the student to the outcome
@@ -4540,7 +4532,7 @@ export const ESSAYS: Essay[] = [
           institution. Where in the institution that role should sit is a
           question worth its own treatment, and one I have taken up
           directly elsewhere. In every era these contracts were already
-          needed. In the next one they will be load-bearing.
+          needed. In the next one they will hold the weight.
         </P>
 
         <SeeAlso>
@@ -6312,8 +6304,8 @@ export const ESSAYS: Essay[] = [
           The stress test is the proof. AI doesn’t introduce new
           requirements so much as it removes the slack that let
           institutions get away with skipping the old ones. Meaning,
-          authority, and validity were always load-bearing. Agentic
-          systems are the first thing heavy enough to make a hollow
+          authority, and validity were always central. Agentic systems
+          are the first thing heavy enough to make a hollow
           architecture fall down.
         </P>
 
@@ -8312,17 +8304,17 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          Every senior data role I have taken in the mission-driven
-          sector after leaving the enterprise measurement world has
-          ended the same way: strong proof of concept, incomplete
-          infrastructure, no runway to production. The idea worked.
-          The dashboard ran. The scale was validated. And then the
-          acquisition happened, or the budget was cut, or the champion
-          left, or the parent company decided the BI costs did not
-          pencil, or the collaborative that was building the shared
-          measurement infrastructure moved at the pace its
-          participating organizations could sustain, which was slower
-          than any single adopting institution could wait.
+          The mission-driven sector produces a recurring pattern I
+          have watched from inside multiple senior data roles: strong
+          proof of concept, incomplete infrastructure, no runway to
+          production. The idea worked. The dashboard ran. The scale
+          was validated. And then the acquisition happened, or the
+          budget was cut, or the champion left, or the parent company
+          decided the BI costs did not pencil, or the collaborative
+          that was building the shared measurement infrastructure
+          moved at the pace its participating organizations could
+          sustain, which was slower than any single adopting
+          institution could wait.
         </P>
         <P>
           This is not a story about individual failure. It is a story
@@ -8338,9 +8330,13 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           When an enterprise deployment produces a wrong signal,
-          someone loses money. When a mission-driven deployment
-          produces a wrong signal, someone loses the intervention that
-          was supposed to reach them. A behavioral-health chatbot that
+          someone loses money, and the enterprise typically has room
+          for a redo &mdash; retrain, re-run the pilot, adjust the
+          model. When a mission-driven deployment produces a wrong
+          signal, someone loses the intervention that was supposed to
+          reach them, and the redo is often not available &mdash; the
+          funder moves on, the beneficiary window closes, the trust
+          breaks. A behavioral-health chatbot that
           recommends the wrong framing to an at-risk beneficiary is
           not a P&amp;L problem. A grant-intelligence tool that
           suggests reallocation based on drifted metric definitions is
@@ -8360,18 +8356,22 @@ export const ESSAYS: Essay[] = [
           layer up: mistaking model output for validated signal
           produces mission misallocation at machine cadence. The
           stakes are different from enterprise stakes, and the
-          responsible-AI frameworks currently being adopted do not
-          know that yet.
+          responsible-AI frameworks currently being adopted have not
+          yet been tuned to what mission-driven deployments actually
+          risk.
         </P>
 
         <H2>The constraint</H2>
         <P>
           Enterprise adopters have built evaluation infrastructure to
-          catch this failure mode. Dedicated evaluation teams.
-          Red-teaming budgets. MLE labs. Safety review boards.
-          Model-quality dashboards. This work is not cheap and it is
-          not fast, but it is investable because the P&amp;L cost of
-          getting it wrong is legible.
+          catch this failure mode: dedicated evaluation teams,
+          red-teaming budgets (paid adversarial testers whose job is
+          to break the model before deployment),
+          machine-learning-engineering (MLE) labs focused on eval
+          infrastructure, safety review boards, and model-quality
+          dashboards. This work is not cheap and it is not fast, but
+          it is investable because the P&amp;L cost of getting it
+          wrong is legible.
         </P>
         <P>
           Mission-driven organizations cannot replicate this
@@ -8382,14 +8382,14 @@ export const ESSAYS: Essay[] = [
           engineers. Larger networks stretch to a senior director for
           academic reporting or program evaluation, but that role gets
           consumed by accountability reporting and rarely reaches the
-          measurement-science depth an AI deployment requires.
-          Validating that a scale still measures the construct it
-          claims to. Running PCA or IRT checks on instruments as the
-          theory of change shifts. Monitoring drift between the
+          measurement-science depth an AI deployment requires:
+          validating that a scale still measures the construct it
+          claims to; running PCA or IRT checks on instruments as the
+          theory of change shifts; monitoring drift between the
           model&rsquo;s output and the outcome the model was supposed
-          to predict. Watching for when a survey the field has been
+          to predict; watching for when a survey the field has been
           using for a decade needs to be re-anchored because the
-          population has changed underneath it. Watching for when the
+          population has changed underneath it; watching for when the
           enrollment model that worked for the last five years no
           longer predicts because demographic shifts have moved what
           enrollment looks like in K-12 or higher education
@@ -8438,16 +8438,18 @@ export const ESSAYS: Essay[] = [
           doesn&rsquo;t, both the delivery and the data break.
         </P>
         <P>
-          WITSAM, the earlier piece in this library, named the
-          discipline: measurement validity is what the field has been
-          doing for a hundred years and what AI evaluation is a new
-          application of. WITSAM assumed the reader had institutional
-          research capacity or its equivalent. This piece names what
-          happens when they don&rsquo;t. The discipline does not go
-          away when the infrastructure to run it is absent. The
-          failure mode does not go away either. It just becomes
-          invisible until the mission drift accumulates and something
-          breaks.
+          <InternalLink slug="what-is-this-system-measuring">
+            What Is This System Actually Measuring
+          </InternalLink>
+          , the earlier piece in this library, named the discipline:
+          measurement validity is what the field has been doing for a
+          hundred years and what AI evaluation is a new application
+          of. WITSAM assumed the reader had institutional research
+          capacity or its equivalent. This piece names what happens
+          when they don&rsquo;t. The discipline does not go away when
+          the infrastructure to run it is absent. The failure mode
+          does not go away either. It just becomes invisible until
+          the mission drift accumulates and something breaks.
         </P>
 
         <H2>The essential minimum</H2>
@@ -8540,15 +8542,20 @@ export const ESSAYS: Essay[] = [
           quantitative with the qualitative). Internal-only metrics
           can drift with the deployment; external anchors catch drift
           that internal instruments cannot. If neither shifts, the
-          deployment is running without earning its keep, no matter
-          what the model-quality dashboard shows.
+          deployment is running without earning its keep &mdash; even
+          if the model-quality dashboard shows the model is performing
+          well.
         </P>
         <P>
           <I>Escalation and human-in-the-loop discipline.</I> Where
           does the AI hand off to a human, and how is that handoff
-          calibrated? <I>Actions, Not Answers</I> argued that agentic
-          AI removes the free human checkpoint and requires
-          organizations to design the checkpoint back in. That
+          calibrated?{" "}
+          <InternalLink slug="actions-not-answers">
+            Actions, Not Answers
+          </InternalLink>{" "}
+          argued that agentic AI removes the free human checkpoint
+          and requires organizations to design the checkpoint back
+          in. That
           argument applies with more force in mission-driven contexts,
           because the cost of a bad automated action is a person, not
           a dollar. The threshold map (where may the AI act alone,
@@ -8628,7 +8635,12 @@ export const ESSAYS: Essay[] = [
           organization, a third-party facilitator, an embedded
           eval-methodology lead from the frontier lab&rsquo;s side) is
           essential infrastructure. Naming it as overhead is how the
-          whole model collapses.
+          whole model collapses &mdash; the coordination cost gets
+          absorbed by operational leaders, the same pattern{" "}
+          <InternalLink slug="the-absorbed-data-role">
+            The absorbed data role
+          </InternalLink>{" "}
+          names one layer down.
         </P>
 
         <H2>Close</H2>
@@ -8856,9 +8868,9 @@ export const ESSAYS: Essay[] = [
           In 2023 I stepped into a K-8 charter network. Before the
           data role existed, the reporting was being done by a math
           teacher who built the professional-development slides. Fifty
-          Google Sheets carried the semantic layer over a legacy
-          substrate that had never been consolidated. The core
-          measure, student persistence, was independently recalculated
+          Google Sheets carried the semantic layer over an
+          unconsolidated legacy stack. The core measure, student
+          persistence, was independently recalculated
           eight or more times across sheets. Each version was correct
           under its own definition. None of them agreed with the
           others. A Director of Instructional Technology managed the
@@ -8954,8 +8966,11 @@ export const ESSAYS: Essay[] = [
           <I>Decentralize bucket 2.</I> Interpretation and action stay
           with delivery roles who understand the operational context.
           A central data function cannot decide what an at-risk flag
-          means for a specific student in a specific school. That is
-          contextual judgment, and it belongs to the delivery role.
+          means for a specific student in a specific school &mdash;
+          whether it warrants calling the family, escalating to the
+          counselor, adjusting the intervention plan, or watching
+          closely for another two weeks. That is contextual judgment,
+          and it belongs to the delivery role.
         </P>
         <P>
           <I>Distribute bucket 1.</I> Entry stays where it has always
@@ -9003,10 +9018,10 @@ export const ESSAYS: Essay[] = [
           hold shared definitions and shared infrastructure (Ed-Fi in
           K&ndash;12, CCBHC collaboratives in behavioral health, state
           longitudinal data systems, Candid in philanthropy) are the
-          most established. Fractional bucket-3 advisory arrangements,
-          where a specialized data architect works across several
-          mission-driven organizations at a portion of an FTE each,
-          are the emerging operating model. Foundation-funded direct
+          most established. The emerging operating model is a
+          fractional bucket-3 advisory arrangement, where a specialized
+          data architect works across several mission-driven
+          organizations at a portion of an FTE each. Foundation-funded direct
           capacity grants have a mixed track record but have not been
           retired. Frontier-lab shared-infrastructure partnerships of
           the kind Anthropic and others are building are the newest
@@ -9070,7 +9085,10 @@ export const ESSAYS: Essay[] = [
           program coordinator will keep absorbing the work in the
           meantime.
         </P>
-        <P>That was 2005 in a small town. It is still 2026 in most places.</P>
+        <P>
+          That was 2005 in a small town. Twenty-one years later, in
+          most places, the pattern still holds.
+        </P>
 
         <SeeAlso>
           <SeeAlsoItem
