@@ -1,7 +1,7 @@
 AB LIBRARY DEPLOY — BUILD STATE
 ================================
 
-Built:      2026-07-19 21:41:54 UTC
+Built:      2026-07-21 02:26:23 UTC
 Zip file:   ab-library-content-deploy.zip  (should be sibling of this folder)
 
 CROSS-THREAD ORIENTATION
@@ -30,32 +30,36 @@ MD PROSE SYNC (this evening's JSX edits folded back): ✓ 2026-07-15 02:05
   - Zip rebuilt to include deploy-folder JSX updates that lagged behind (WWC opener now "The pattern is visible from several angles"; TBOI multi-speed maturity Figure now shipping) 2026-07-18
   - Data Role Landscape artifact brought into gallery palette conformity: #475569 -> #6B7A8C, teal eyebrow added, in-SVG signature removed 2026-07-18
   - Artifact conformity: Data Role Landscape footer added (ANALYTIC BYTES / From fragmented to decision-ready), viewBox extended 1620->1660; Validity Ladder left-sidebar arrow shortened + label recentered 2026-07-19
-FIELD-NOTE NUMBERING:  ✓ CONTIGUOUS 2026-07-15 01:15 (FN01-FN10, no gaps)
+  - New field notes shipped: FN11 "When the stakes are the mission." (2026-07-21, measurement) + FN12 "The absorbed data role." (2026-07-24, organizational-design) with cover SVGs + JSX entries + MD frontmatter + reciprocal SeeAlso cross-links 2026-07-20
+  - Hid FN10 "AI did not write my library" pending fresh data + metrics rerun; renumbered new field notes: Stakes 11→10, Absorbed 12→11 (published sequence FN01-FN11 contiguous, FN10 AI-library hidden reserved for later) 2026-07-20
+  - FN10 (Stakes) + FN11 (Absorbed data role) cover SVGs: eyebrow updated from bare "Field note" to "Field note  ·  No. 10" / "No. 11" to match convention across other covers; applied to deploy covers + canonical source SVGs 2026-07-20
+  - Enhanced editorial-standard fold across 6 essays: actions-not-answers, functions-dont-run-plays, stakes-are-the-mission, absorbed-data-role, lo-2-0, numbers-dont-agree. Anonymization regression in absorbed-data-role MD fixed back to "national mission-driven foundation". Functions-dont-run-plays trimmed per MD (-4 words in JSX; only "That's the work." coda cut, other candidate deletions preserved as safer-keep). 2026-07-20
+FIELD-NOTE NUMBERING:  ✓ CONTIGUOUS 2026-07-20 17:04 (FN01-FN11 published, FN10 AI-library hidden; no dups, no gaps)
 
 REGISTRY
 --------
-Essays and field notes in essays.tsx: 21
+Essays and field notes in essays.tsx: 22
 PDDS dashboard generated_at:          2026-07-15T16:48:56
 PDDS headline cards:                  4
 PDDS panels:                          6
-Total files in deploy folder:         115
+Total files in deploy folder:         117
 
 8 MOST-RECENTLY-MODIFIED FILES
 ------------------------------
+  2026-07-21 02:26   DEPLOY_STATE.txt
+  2026-07-21 02:25   app/library/essays.tsx
+  2026-07-20 20:55   docs/SYNC.md
+  2026-07-20 17:07   public/library/covers/the-absorbed-data-role.svg
+  2026-07-20 17:07   public/library/covers/when-the-stakes-are-the-mission.svg
+  2026-07-19 21:41   public/library/artifacts/who-writes-the-contract-role-map.svg
   2026-07-19 21:40   public/library/artifacts/validity-ladder.svg
-  2026-07-19 21:40   public/library/artifacts/who-writes-the-contract-role-map.svg
-  2026-07-19 21:40   DEPLOY_STATE.txt
-  2026-07-18 22:06   app/library/essays.tsx
-  2026-07-18 19:50   docs/SYNC.md
   2026-07-17 22:45   public/og-scorecard.png
-  2026-07-17 22:45   public/og-pdds.png
-  2026-07-17 22:45   public/og-library.png
 
 DATES ON THE THREE NEWEST PIECES
 --------------------------------
+  the-absorbed-data-role                         2026-07-24
+  when-the-stakes-are-the-mission                2026-07-21
   we-used-to-settle-for-thumbnails               2026-07-17
-  two-bets-one-institution                       2026-07-09
-  who-writes-the-contract                        2026-07-13
 
 HOW TO READ THIS FILE
 ---------------------

@@ -1583,6 +1583,17 @@ export const ESSAYS: Essay[] = [
           built.
         </P>
         <P>
+          The pattern is familiar from US K-12 too. A district runs its SIS
+          for attendance and enrollment, NWEA MAP for growth on standardized
+          assessment, an internal mastery tracker on Illuminate or a
+          classroom-embedded platform, disciplinary data on Kickboard, and a
+          state accountability assessment once a year. Each layer measures
+          something different, on its own cadence, purchased with its own
+          budget line. The question they were all meant to help answer
+          &mdash; which classrooms need which support this term &mdash; is
+          the one the layers rarely compose into on their own.
+        </P>
+        <P>
           That integration architecture is what LO 2.0 proposes: the thing that
           stitches national, district, school, and classroom layers into
           coherent decision support for teachers, headmasters, district
@@ -2629,8 +2640,7 @@ export const ESSAYS: Essay[] = [
 
         <P>
           Let’s start with what an “agent” is, because the demo obscures it.
-          An agent is not a new kind of model. It is the same kind of model
-          with two
+          An agent is the same kind of model as any other, with two
           things added: tools it can call, and a change in how its output is
           read. The same text a chatbot would hand back as a reply, an agent
           treats as a program — an instruction to go do something. Read as a
@@ -2850,9 +2860,9 @@ export const ESSAYS: Essay[] = [
           Evaluation does not end at launch. Because the model drifts, an
           agent has to be watched continuously: its override rate, its
           disagreement signals, its slow slide as the ground shifts. The
-          monitoring surface is not a quarterly report. It is a conversation
-          you are now having with a system still out there making decisions
-          in your name.
+          monitoring surface is no longer a quarterly report but a
+          conversation you are now having with a system still out there
+          making decisions in your name.
         </P>
 
         <H2>The job becomes management, not use</H2>
@@ -2864,9 +2874,8 @@ export const ESSAYS: Essay[] = [
           named owner: a specific person accountable for what it does.
         </P>
         <P>
-          Managing an agent is not a lighter version of using a tool. It is a
-          new job, with responsibilities no prior role quite contained. The
-          owner calibrates the thresholds as the agent’s behavior drifts, and
+          Managing an agent is a new job, with new responsibilities that no
+          prior role quite contained. The owner calibrates the thresholds as the agent’s behavior drifts, and
           it will drift, because the model underneath gets upgraded by a
           vendor on a schedule nobody consulted you about. The owner decides
           which patterns the agent carries forward and which it lets go. And
@@ -3828,6 +3837,28 @@ export const ESSAYS: Essay[] = [
           honest as the underlying questions keep evolving.
         </P>
 
+        <H2>The same problem across systems: rostering</H2>
+
+        <P>
+          Different systems hold overlapping versions of the same field,
+          and the drift compounds under load. In one K-8 network,
+          enrollment moved through four holders between June and August:
+          the SIS held one version of who was enrolled, the
+          applicant-tracking system held another (still processing
+          applications that had been accepted but not yet rolled forward),
+          the operations office kept a spreadsheet the ops team used for
+          building assignments and family communications, and the
+          enrollment team kept its own spreadsheet, the one they used to
+          track summer targets and plan late-summer marketing efforts.
+          All four were correct against their own local definition of
+          &ldquo;enrolled.&rdquo; None of the four agreed on the first
+          day of school. The reconciliation ran through August and rarely
+          caught up before students walked in. The definitional gap was
+          not that anyone was wrong; &ldquo;enrolled&rdquo; was doing
+          four different jobs across four systems, and no one had written
+          the mapping down.
+        </P>
+
         <H2>Granularity is its own governance problem</H2>
 
         <P>
@@ -3874,8 +3905,8 @@ export const ESSAYS: Essay[] = [
         <H2>Stewardship is what makes it stick</H2>
 
         <P>
-          Quality is not a one-time achievement. It is a continuous
-          practice owned by the people closest to the data. The principal
+          Quality is a continuous practice owned by the people closest
+          to the data. The principal
           dashboard adoption rate of 70 percent at the K–8 network was not
           just a usage statistic. It was evidence of distributed
           stewardship. The principals were not merely consumers of their
@@ -5089,9 +5120,10 @@ export const ESSAYS: Essay[] = [
         <P>
           These are structurally different. They carry different rhythms,
           different authority patterns, different membership assumptions.
-          Which one fits depends on the institution and the work — the
-          operating rhythm, the permanence of the effort, the culture that
-          already exists to receive it. What is common to all three is what{" "}
+          Which one fits depends on the institution and the work &mdash; the
+          operating rhythm, the permanence of the effort, the authority
+          pattern already in place, the culture that has to receive it. What
+          is common to all three is what{" "}
           <InternalLink slug="blown-assignment">the football piece</InternalLink>{" "}
           called a{" "}
           <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>:
@@ -5133,9 +5165,9 @@ export const ESSAYS: Essay[] = [
             Contracts Between Systems
           </InternalLink>{" "}
           and <I>Two Bets, One Institution</I> describe it at still other
-          layers. This piece is not naming a new artifact. It is naming what
-          the seam contract asks of the org chart: multiple honest
-          structural forms can carry it, and none of them work without it.
+          layers. Seams all the way down, each with its own contract. This
+          piece is about the one that runs across the org chart when people,
+          not systems, are the ones handing off.
         </P>
 
         <H2>The agentic era intensifies this</H2>
@@ -5160,8 +5192,8 @@ export const ESSAYS: Essay[] = [
           action; a failed call is a person harmed. Most institutions will
           introduce agents first at the layer whose failures are
           reversible, then work upward as the contracts at higher layers
-          mature. That is not a claim about where agents belong. It is a
-          claim about where they safely arrive first.
+          mature. That is not a claim about where agents belong but rather
+          where they safely arrive first.
         </P>
         <P>
           The patches will not hold. The work is horizontal. The org chart
@@ -5174,7 +5206,6 @@ export const ESSAYS: Essay[] = [
           standing squad. All are honest answers. None works without the
           contract.
         </P>
-        <P>That&rsquo;s the work.</P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -8183,6 +8214,833 @@ export const ESSAYS: Essay[] = [
           national mission-driven organizations that have structured the
           role to demand both halves, and one candidate&rsquo;s hiring
           loop offered as a data point rather than as evidence.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 10 — When the stakes are the mission
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "when-the-stakes-are-the-mission",
+    number: "10",
+    title: "When the stakes are the mission.",
+    subtitle:
+      "The evaluation gap in mission-driven AI adoption.",
+    date: "2026-07-21",
+    readingTime: "10 min read",
+    summary:
+      "When enterprise AI gets a signal wrong, someone loses money; when mission-driven AI gets it wrong, someone loses the intervention meant to reach them. This piece names the evaluation gap opening as mission-driven organizations adopt frontier AI, proposes a five-part essential minimum, and points toward shared infrastructure that could make it sustainable at sector scale.",
+    cover: "/library/covers/when-the-stakes-are-the-mission.svg",
+    arc: "measurement",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Enterprise AI adopters and mission-driven AI adopters are
+            fielding the same models. What differs is what happens when
+            a model gets it wrong. When enterprise AI produces a bad
+            signal, someone loses money. When mission-driven AI
+            produces a bad signal, someone loses the intervention that
+            was supposed to reach them. The responsible-AI frameworks
+            being adopted across the sector do not yet know that
+            difference matters.
+          </p>
+          <p>
+            Enterprise adopters have built evaluation infrastructure to
+            catch the failure mode. Mission-driven organizations cannot
+            replicate that infrastructure at scale, and the sector
+            keeps skipping the essential minimum that would make
+            adoption earn its keep. This piece names the five-part
+            minimum and points at the shared-infrastructure path that
+            could make it sustainable at sector scale.
+          </p>
+        </Brief>
+
+        <P>
+          Every senior data role I have taken in the mission-driven
+          sector after leaving the enterprise measurement world has
+          ended the same way: strong proof of concept, incomplete
+          infrastructure, no runway to production. The idea worked.
+          The dashboard ran. The scale was validated. And then the
+          acquisition happened, or the budget was cut, or the champion
+          left, or the parent company decided the BI costs did not
+          pencil, or the collaborative that was building the shared
+          measurement infrastructure moved at the pace its
+          participating organizations could sustain, which was slower
+          than any single adopting institution could wait.
+        </P>
+        <P>
+          This is not a story about individual failure. It is a story
+          about a pattern the mission-driven sector runs on. And it is
+          the pattern that AI adoption is now walking into.
+        </P>
+
+        <H2>The stakes</H2>
+        <P>
+          Enterprise AI adopters and mission-driven AI adopters are
+          fielding the same models. What differs is what happens when
+          a model gets it wrong.
+        </P>
+        <P>
+          When an enterprise deployment produces a wrong signal,
+          someone loses money. When a mission-driven deployment
+          produces a wrong signal, someone loses the intervention that
+          was supposed to reach them. A behavioral-health chatbot that
+          recommends the wrong framing to an at-risk beneficiary is
+          not a P&amp;L problem. A grant-intelligence tool that
+          suggests reallocation based on drifted metric definitions is
+          not a P&amp;L problem. A program-evaluation AI that
+          generates impact narratives reinforcing sponsor preferences
+          rather than program reality is not a P&amp;L problem. An
+          educational AI tutor adapting to student behavior in ways
+          that reinforce inequitable expectations is not a P&amp;L
+          problem. Each of those is a mission problem, and the
+          distinction between the two matters more than the sector has
+          yet named.
+        </P>
+        <P>
+          The Reach Trap piece in this library argued that mistaking
+          activity data for outcome data produces misallocation at
+          scale. In AI deployments, the same failure mode shows up one
+          layer up: mistaking model output for validated signal
+          produces mission misallocation at machine cadence. The
+          stakes are different from enterprise stakes, and the
+          responsible-AI frameworks currently being adopted do not
+          know that yet.
+        </P>
+
+        <H2>The constraint</H2>
+        <P>
+          Enterprise adopters have built evaluation infrastructure to
+          catch this failure mode. Dedicated evaluation teams.
+          Red-teaming budgets. MLE labs. Safety review boards.
+          Model-quality dashboards. This work is not cheap and it is
+          not fast, but it is investable because the P&amp;L cost of
+          getting it wrong is legible.
+        </P>
+        <P>
+          Mission-driven organizations cannot replicate this
+          infrastructure at scale. The budgets do not support it. The
+          talent market does not favor them. The staffing pattern I
+          have watched across four institutions is the same one:
+          mission-driven orgs hire data analysts, not evaluation
+          engineers. Larger networks stretch to a senior director for
+          academic reporting or program evaluation, but that role gets
+          consumed by accountability reporting and rarely reaches the
+          measurement-science depth an AI deployment requires.
+          Validating that a scale still measures the construct it
+          claims to. Running PCA or IRT checks on instruments as the
+          theory of change shifts. Monitoring drift between the
+          model&rsquo;s output and the outcome the model was supposed
+          to predict. Watching for when a survey the field has been
+          using for a decade needs to be re-anchored because the
+          population has changed underneath it. Watching for when the
+          enrollment model that worked for the last five years no
+          longer predicts because demographic shifts have moved what
+          enrollment looks like in K-12 or higher education
+          post-pandemic. None of that is entry-level work, and none of
+          it is what the sector is hiring for.
+        </P>
+        <P>
+          There is a layer beneath even this. Before AI can be
+          evaluated, the data it reads has to be governed. Most
+          mission-driven organizations have data. Student information
+          systems, electronic health records, program-management
+          platforms &mdash; the operational systems are running and
+          producing records daily. What is often missing is the
+          infrastructure that turns those records into a validated
+          foundation an AI system can read from. The SIS is underused.
+          The EHR is underused. The workflow that would reconcile them
+          into decision-ready data is unfunded. MEL leadership often
+          reads this as &ldquo;we need to invest in a CRM,&rdquo; when
+          the actual work is one layer down: the operational systems
+          already carry the signal, but the semantic layer and
+          governance that would make the signal usable never got
+          built. When an AI vendor arrives with a deployment offer,
+          the deployment lands on a data foundation that has never
+          been validated. Every AI evaluation discipline below assumes
+          that foundation is in place. In most mission-driven
+          contexts, it is not.
+        </P>
+        <P>
+          When there is no funded data infrastructure role, the work
+          gets absorbed by whoever in the organization is capable with
+          numbers or interested in them. A math teacher building
+          professional-development slides. A writing faculty member
+          logging automated-scoring results. A clinician maintaining a
+          caseload tracker. A program coordinator running the grantee
+          spreadsheet. What emerges is an absorption pattern. The
+          primary job (teaching, delivering care, running operations)
+          competes with the absorbed data work, and both suffer. It
+          also produces the spreadsheet sprawl every mission-driven
+          organization has: multiple versions of the same data,
+          maintained by different people, none of it reconcilable at
+          the org level. The distinction between data entry (part of
+          every delivery role) and data curation, integration, and
+          quality assurance (specialized capacity requiring dedicated
+          funding) is where mission-driven org design keeps failing.
+          The absorbed model works until it doesn&rsquo;t, and when it
+          doesn&rsquo;t, both the delivery and the data break.
+        </P>
+        <P>
+          WITSAM, the earlier piece in this library, named the
+          discipline: measurement validity is what the field has been
+          doing for a hundred years and what AI evaluation is a new
+          application of. WITSAM assumed the reader had institutional
+          research capacity or its equivalent. This piece names what
+          happens when they don&rsquo;t. The discipline does not go
+          away when the infrastructure to run it is absent. The
+          failure mode does not go away either. It just becomes
+          invisible until the mission drift accumulates and something
+          breaks.
+        </P>
+
+        <H2>The essential minimum</H2>
+        <P>
+          Given the constraint, the question is not how to build
+          enterprise-grade evaluation inside a mission-driven
+          organization. It is what the minimum discipline looks like
+          when the infrastructure to run enterprise-grade evaluation
+          does not exist. The answer, drawn from the work I have
+          watched succeed and fail across four sectors, is five
+          things.
+        </P>
+        <P>
+          <I>Task decomposition.</I> Before the deployment ships, name
+          what the AI is doing under the hood. Not what the vendor
+          pitch says it does. What the workflow is asking it to do
+          specifically, at what step, with what inputs, and against
+          what standard. This is the WITSAM discipline restated: what
+          is this system measuring, and does that match what we say it
+          measures? Most mission-driven adopters skip this step
+          because the vendor pitch is comfortable and the deployment
+          pressure is real. The cost of skipping it is that no one
+          inside the organization can say what the AI is being
+          evaluated against.
+        </P>
+        <P>
+          <I>Ground-truth benchmarking with constrained data.</I>{" "}
+          Enterprise adopters run large held-out evaluation sets on
+          standardized data they own end to end. Mission-driven
+          adopters usually have neither. Their deployment populations
+          are small &mdash; a K-8 network of four hundred students, a
+          CCBHC caseload in the hundreds, a foundation portfolio of
+          forty grantees. Their operational data is messy in ways
+          enterprise benchmarks are engineered against. I saw a
+          version of this at ETS: the measurement framework that
+          worked for GRE and TOEFL at scale did not transfer intact to
+          just-in-time remediation contexts or to writing-validity
+          studies with smaller populations. Even with clean data,
+          moving a validated framework to a new use case required
+          rebuilding parts of it. In mission-driven contexts, the data
+          is neither clean nor standardized, and the framework has to
+          be rebuilt from the smaller sample up. What organizations
+          can do is build the smallest defensible benchmark: twenty to
+          fifty cases from their actual deployment context,
+          hand-labeled by a domain expert, held back from any AI
+          training or fine-tuning. The benchmark carries diagnostic
+          weight at small n. When the model changes and the benchmark
+          score moves, someone should notice. Refreshing it at every
+          model update is not a special AI cadence. It is the same
+          operational rhythm the organization already runs for
+          accountability reporting or quarterly dashboard refreshes,
+          applied to a new kind of asset. The talent question is not
+          &ldquo;who will build the evaluation.&rdquo; It is &ldquo;who
+          has the data literacy and coaching capacity to keep the
+          rhythm running after the deployment ships.&rdquo; Without
+          that rhythm, the deployment decays. The frontline absorbs
+          the decay. That is the burnout mechanism mission-driven
+          sectors already know too well.
+        </P>
+        <P>
+          <I>Deployment-context evaluation.</I> Generic model
+          benchmarks measure generic model behavior. Mission-driven
+          deployments run in contexts generic benchmarks do not
+          represent. A behavioral-health screening chatbot deployed in
+          a rural CCBHC serves a population no public leaderboard
+          reflects. A student-facing tutor deployed in a K-8 charter
+          network serves a population academic AI benchmarks were not
+          built for. Evaluate in context, not in a proxy environment.
+          This is where the small benchmark from the previous step
+          becomes the deployment&rsquo;s own reference set, not the
+          vendor&rsquo;s.
+        </P>
+        <P>
+          <I>Downstream impact evaluation.</I> Are the actions taken
+          based on the AI output producing the intended impact, or
+          drifting from it? This is the Reach Trap discipline applied
+          to AI. Activity metrics (queries answered, sessions run,
+          students triaged) are not outcome metrics. Track what shifts
+          in the mission the deployment was supposed to advance.
+          Anchor that tracking both internally (the
+          organization&rsquo;s own outcome measures) and externally
+          (public data treated as decision systems, triangulating the
+          quantitative with the qualitative). Internal-only metrics
+          can drift with the deployment; external anchors catch drift
+          that internal instruments cannot. If neither shifts, the
+          deployment is running without earning its keep, no matter
+          what the model-quality dashboard shows.
+        </P>
+        <P>
+          <I>Escalation and human-in-the-loop discipline.</I> Where
+          does the AI hand off to a human, and how is that handoff
+          calibrated? <I>Actions, Not Answers</I> argued that agentic
+          AI removes the free human checkpoint and requires
+          organizations to design the checkpoint back in. That
+          argument applies with more force in mission-driven contexts,
+          because the cost of a bad automated action is a person, not
+          a dollar. The threshold map (where may the AI act alone,
+          where must it stop and pass up to a human, where must the
+          human originate the decision) is required for
+          mission-driven deployments. Without it, the deployment
+          becomes the failure mode the sector was already at risk of.
+        </P>
+        <P>
+          Five items. None of them requires enterprise-scale
+          evaluation infrastructure. All of them require the
+          discipline to name what is being evaluated, evaluate it in
+          the deployment context, and design the human checkpoint back
+          in. This is the essential minimum. It is what the sector
+          has to have.
+        </P>
+
+        <H2>The shared-infrastructure path</H2>
+        <P>
+          Even the essential minimum is more than most
+          mission-driven organizations can build alone.
+        </P>
+        <P>
+          The behavioral-health sector has been trying a version of
+          this pattern for years. In the Certified Community
+          Behavioral Health Clinic model, participating organizations
+          join collaboratives that establish shared measurement
+          definitions, shared reporting infrastructure, and shared
+          quality benchmarks. The work is painfully slow. The
+          collaboratives meet monthly because every participating
+          organization is running operational work between meetings.
+          Some organizations advance ahead of the collaborative;
+          others lag behind waiting for shared definitions to land;
+          the collective progress moves at the cadence of the slowest
+          participants. But it works. Infrastructure exists at
+          industry scale that no single participating organization
+          could have built.
+        </P>
+        <P>
+          The pattern generalizes, and the mission-driven AI moment
+          needs it to. If frontier AI adoption in mission-driven
+          contexts is going to happen without producing mission drift,
+          the evaluation infrastructure required to catch drift has to
+          be built as a shared good, jointly by frontier AI providers
+          who benefit from responsible deployment of their models and
+          by philanthropic infrastructure that treats evaluation
+          methodology as sector plumbing rather than proprietary
+          advantage. This is the coordination problem the sector
+          faces, and it is not solvable org by org.
+        </P>
+        <P>
+          Two flags before this argument lands as easy. Shared
+          infrastructure is champion-dependent, and champions leave.
+          Mission-driven collaboratives have collapsed before, when
+          the chief impact officer or program officer who was carrying
+          the coordination work moved to another role. The durability
+          question, who owns the shared infrastructure after the
+          founder leaves, is the hardest part of the model and the
+          sector has not solved it. And the collaborative model runs
+          at the pace its slowest participants can sustain, which is
+          slower than the model release cadence. That gap is going to
+          widen before it narrows.
+        </P>
+        <P>
+          One more thing worth naming, because the Center for
+          Effective Philanthropy has just written about it publicly:
+          the facilitation and coordination work that keeps a
+          shared-infrastructure model alive is itself unfunded labor,
+          and its cost is usually absorbed by the same operational
+          leaders already running the mission. When that cost stays
+          invisible, small organizations get excluded from the
+          collaborative because they cannot afford to participate;
+          larger organizations dominate the shared infrastructure, and
+          the eval discipline the model was supposed to build ends up
+          shaped by the contexts of the biggest participants. The
+          intermediary that holds the coordination work (a backbone
+          organization, a third-party facilitator, an embedded
+          eval-methodology lead from the frontier lab&rsquo;s side) is
+          essential infrastructure. Naming it as overhead is how the
+          whole model collapses.
+        </P>
+
+        <H2>Close</H2>
+        <P>
+          Mission-driven organizations are adopting frontier AI
+          whether the evaluation infrastructure keeps pace or not.
+          Adoption is happening. The question is whether it produces
+          mission acceleration or mission drift. The essential
+          minimum names what has to be true for adoption to earn its
+          keep. The shared-infrastructure path names how the minimum
+          becomes sustainable at sector scale.
+        </P>
+        <P>
+          Evaluation is what turns a deployed AI into a decision the
+          mission can stand behind. It is the difference between
+          mission acceleration and mission drift.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The measurement-validity discipline this piece extends into constrained mission-driven contexts."
+          />
+          <SeeAlsoItem
+            slug="the-reach-trap"
+            title="The Reach Trap"
+            gloss="The same failure mode one layer down: mistaking activity data for outcome data, applied here to AI output versus validated signal."
+          />
+          <SeeAlsoItem
+            slug="two-bets-one-institution"
+            title="Two bets, one institution"
+            gloss="The institutional wager underneath the AI adoption decision, and what evaluation has to hold up when the wager is made."
+          />
+          <SeeAlsoItem
+            slug="the-absorbed-data-role"
+            title="The absorbed data role"
+            gloss="The org-design version of the same infrastructure gap: what happens when the specialized role AI evaluation depends on has no funded home."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written July 2026 for the Analytic Bytes Library. A
+          field-note argument drawn from senior data roles across four
+          mission-driven sectors (K-12 charter networks,
+          behavioral-health CCBHCs, national youth mental-health
+          philanthropy, and educational measurement), and from
+          watching the same evaluation-infrastructure gap surface in
+          each. The five-part load-bearing minimum is what the
+          organizations that have kept AI deployments honest actually
+          run; the shared-infrastructure path is what the sector will
+          need if the essential minimum is going to be sustainable at
+          scale.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 11 — The absorbed data role
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "the-absorbed-data-role",
+    number: "11",
+    title: "The absorbed data role.",
+    subtitle:
+      "Where data work goes when no role owns it.",
+    date: "2026-07-24",
+    readingTime: "11 min read",
+    summary:
+      "Data work in mission-driven organizations decomposes into three buckets — entry, interpretation, and curation/governance — and the third one, the specialized semantic-layer role, almost never has a funded home. It gets absorbed by whoever is capable with numbers: a math teacher, a clinician, a director of instructional technology. This piece names the absorption pattern across four sectors and argues for the three-layer architecture that would replace it.",
+    cover: "/library/covers/the-absorbed-data-role.svg",
+    arc: "organizational-design",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Data infrastructure work in mission-driven organizations
+            gets absorbed by whoever is capable with numbers or
+            interested in them. A math teacher. A writing faculty
+            member. A clinician. A Director of Instructional
+            Technology. This is not a role decision. It is an
+            absorption pattern that emerges when the specialized data
+            role has no funded home, and it keeps the infrastructure
+            informal, unowned, and one departure away from collapse.
+          </p>
+          <p>
+            The fix is not one more data-literacy program. It is a
+            three-layer architecture that respects what each kind of
+            data work actually requires: entry stays distributed
+            across delivery, interpretation stays decentralized with
+            delivery roles who know context, and curation, integration,
+            and governance get centralized in a specialized function
+            with a funded seat and named authority.
+          </p>
+        </Brief>
+
+        <P>
+          In 2005 I was a doctoral student on a field team visiting
+          small teacher-education programs across the country to help
+          them make the case for accreditation. My job was data
+          auditor. The team would visit a program in a small town, one
+          at a time, and the observations and interviews took
+          precedence; those built the case. The data was the audit
+          layer underneath. I would sit in a back room with my small
+          laptop, paper, pencil, and calculator, and I would meet the
+          faculty member who had collected or logged the
+          program&rsquo;s evaluation data.
+        </P>
+        <P>
+          The data was incomplete. Rows missing. Codes inconsistent.
+          Not because the faculty member was inattentive. Because
+          holding the data was on top of the day job. The person in
+          front of me was a teacher-educator who had absorbed the
+          responsibility for the program&rsquo;s data because someone
+          had to, and they were the one who was capable with numbers
+          or interested in them or both.
+        </P>
+        <P>
+          That was 2005. I would spend the next twenty years watching
+          the same shape take different forms in different sectors,
+          and I would only recently name what I was actually watching.
+        </P>
+
+        <H2>The pattern</H2>
+        <P>
+          Data infrastructure work in mission-driven organizations
+          gets absorbed by whoever in the organization is capable with
+          numbers or interested in them. A math teacher building
+          professional-development slides. A writing faculty member
+          logging automated-scoring results. A clinician maintaining a
+          caseload tracker. A program coordinator running the grantee
+          spreadsheet. A Director of Instructional Technology fielding
+          data requests because they have system access.
+        </P>
+        <P>
+          The result is an absorption pattern. When there is no
+          funded infrastructure role, the work goes to whoever can
+          carry it, and it stays there. Never specialized. Never
+          advocated for. Never scaled. Until the person carrying it
+          leaves, and the informal knowledge walks out with them.
+        </P>
+        <P>
+          The visible symptom is spreadsheet sprawl. The invisible
+          cost is that the work never gets to specialization. And the
+          person carrying it spends their delivery time on something
+          that was supposed to be someone else&rsquo;s job.
+        </P>
+
+        <H2>Three buckets</H2>
+        <P>
+          Data work in any organization decomposes into three kinds of
+          work, and the failure mode is trying to collapse them into
+          one role.
+        </P>
+        <P>
+          <B>Bucket 1 &mdash; data entry.</B> Recording what happened.
+          Documenting a session. Logging attendance. Reporting a
+          grantee touchpoint. This is legitimately part of every
+          delivery role and has always been. Clinicians do it.
+          Teachers do it. Program officers do it. This bucket stays
+          distributed across delivery.
+        </P>
+        <P>
+          <B>Bucket 2 &mdash; interpretation and action.</B> Reading a
+          dashboard. Acting on a flag. Adjusting practice based on a
+          signal. Also part of every delivery role, but this bucket
+          requires two things the delivery role often does not have:{" "}
+          <I>data literacy</I> to interpret the signal correctly, and{" "}
+          <I>decision-ready data</I> to act on. When the delivery role
+          is asked to interpret an ambiguous or unreconciled signal,
+          they either default to their own read (drift) or hoard their
+          own local data snapshot (sprawl).
+        </P>
+        <P>
+          <B>
+            Bucket 3 &mdash; curation, integration, semantic
+            definition, quality assurance, governance.
+          </B>{" "}
+          Maintaining the definitions. Reconciling how
+          &ldquo;attendance&rdquo; or &ldquo;session&rdquo; or
+          &ldquo;enrolled&rdquo; or &ldquo;at-risk&rdquo; is defined
+          across systems. Building the pipeline. Catching data quality
+          issues. Owning the semantic layer. This bucket is
+          specialized capacity. It is not part of delivery. It
+          requires a dedicated, funded role.
+        </P>
+        <P>
+          The three buckets exist in every organization. The question
+          is where each lives and how each is funded.
+        </P>
+
+        <H2>The arc</H2>
+        <P>
+          The failure mode is when bucket 3 has no funded home and
+          gets absorbed by bucket 1 or 2. I watched this take
+          different shapes across four sectors.
+        </P>
+        <P>
+          In the 2005 accreditation work, bucket 3 was absorbed by
+          teacher-education faculty. Their day job was preparing
+          teachers. Their absorbed job was holding the evaluation
+          data. The data was incomplete because there was no one whose
+          primary responsibility was making it complete.
+        </P>
+        <P>
+          In 2014 I worked with a public university writing program on
+          automated scoring for student writing samples and remedial
+          placement. The data was being collected, logged, tracked,
+          and analyzed by two writing-program faculty who had reached
+          for the technology because they wanted to see if it could
+          serve their classroom. The scoring worked. The
+          infrastructure to sustain it stayed with the two faculty who
+          had built it, on top of teaching.
+        </P>
+        <P>
+          In 2023 I stepped into a K-8 charter network. Before the
+          data role existed, the reporting was being done by a math
+          teacher who built the professional-development slides. Fifty
+          Google Sheets carried the semantic layer over a legacy
+          substrate that had never been consolidated. The core
+          measure, student persistence, was independently recalculated
+          eight or more times across sheets. Each version was correct
+          under its own definition. None of them agreed with the
+          others. A Director of Instructional Technology managed the
+          operational systems (student information system, learning
+          management, assessment platform) and had become the de facto
+          data provider because he had access. The role played both
+          ways: users routed around the org chart to reach the person
+          with system access; the person with system access held that
+          access as leverage. Half-configured systems. Under-utilized
+          fields. Users hoarding needed snapshots in their own local
+          sheets. Before long, everyone was arguing about the single
+          source of truth.
+        </P>
+        <P>
+          At a behavioral-health agency running Certified Community
+          Behavioral Health Clinic services, a
+          measurement-based-care pilot ran across two waves with
+          thirty or more patients, producing a forty percent lift in
+          engagement after reminder automation was added. The
+          clinicians who participated were the ones who had elected
+          in; they believed measurement-based care could make a
+          difference. They had to be provided time by administration
+          to attend pilot meetings, learn dashboard access, and
+          provide feedback. Even the officially provided time came out
+          of billing hours. In the long run, the discipline could have
+          recouped that time through more efficient visits and better
+          outcomes evidence. In the short run, the delivery role
+          absorbed the bucket-2 capacity-building on top of caseload.
+        </P>
+        <P>
+          At a national mission-driven foundation, the
+          infrastructure was funded. Fivetran ingestion. Snowflake
+          warehouse. A dbt-modeled semantic layer over four to six
+          instrument versions of the same construct across years of
+          survey data. Digital products managed the client-facing
+          surfaces. DevOps managed the pipeline. A
+          research-data-steward managed instrument documentation. Each
+          role solved a different problem. None of them had the
+          mandate or the disciplinary depth to design the semantic
+          layer, the reconciliation of what &ldquo;engaged
+          participant&rdquo; meant across instrument versions, the
+          crosswalks between survey generations, the decisions about
+          what could and could not be compared across years of program
+          data. The infrastructure existed. The semantic layer stayed
+          unowned. Bucket 3 was distributed across three roles, none
+          of whom was the semantic-layer architect the work required.
+        </P>
+
+        <H2>Data literacy versus decision-ready data</H2>
+        <P>
+          These are not substitutes. They serve different buckets, and
+          mission-driven organizations regularly try to use one to
+          compensate for the absence of the other.
+        </P>
+        <P>
+          <I>Data literacy</I> is what the delivery role (bucket 2)
+          needs to interpret and act. It is coaching. Professional
+          development. Sense-making capacity. A clinician who
+          understands what a no-show pattern means, in context. A
+          teacher who understands what an assessment score does and
+          does not tell them. This is training and reinforcement work,
+          and it never stops.
+        </P>
+        <P>
+          <I>Decision-ready data</I> is what the central function
+          (bucket 3) delivers. The semantic layer, the reconciled
+          records, the dashboard curated for a specific recurring
+          call. Without this, the delivery role&rsquo;s data literacy
+          does not help. They are interpreting bad signal well.
+        </P>
+        <P>
+          You need both. They come from different capacities. The
+          mission-driven failure is training clinicians and teachers
+          to be data literate as if that would substitute for the
+          semantic-layer role that was never funded. It does not. Data
+          literacy layered on unreconciled data produces confident
+          wrong interpretation, which is worse than no interpretation.
+        </P>
+
+        <H2>The architecture</H2>
+        <P>
+          Centralization and decentralization are not opposing poles
+          that need to be balanced. They are properties of specific
+          buckets.
+        </P>
+        <P>
+          <I>Centralize bucket 3.</I> Semantic definitions,
+          integration, quality assurance, governance. Owned by a
+          specialized function that does not do delivery. Its output
+          is decision-ready data.
+        </P>
+        <P>
+          <I>Decentralize bucket 2.</I> Interpretation and action stay
+          with delivery roles who understand the operational context.
+          A central data function cannot decide what an at-risk flag
+          means for a specific student in a specific school. That is
+          contextual judgment, and it belongs to the delivery role.
+        </P>
+        <P>
+          <I>Distribute bucket 1.</I> Entry stays where it has always
+          been, part of every delivery role.
+        </P>
+        <P>
+          This architecture is a three-layer design that respects
+          what each bucket requires and what each role can carry.
+        </P>
+        <P>
+          The mission-driven failure is trying to run all three
+          buckets out of one role, the math teacher or the writing
+          faculty member or the Director of Instructional Technology
+          or the research data steward, because the specialized bucket
+          3 role has no funded home. It works until it doesn&rsquo;t.
+          When it doesn&rsquo;t, the delivery role&rsquo;s day job
+          suffers, the data quality erodes, and users start hoarding
+          their own snapshots because they no longer trust the central
+          number.
+        </P>
+
+        <H2>What could work</H2>
+        <P>
+          The enterprise sector has been working on a version of this
+          problem for a decade and has produced partial answers.
+          Federated data governance and data mesh architectures locate
+          a central function that owns the platform, the standards,
+          and the semantic layer, while domain teams own the data
+          products in their operational area. Data contracts formalize
+          the interface between the two. A Chief Data Officer or Chief
+          Data and Analytics Officer holds the accountability. What
+          transfers to mission-driven contexts is the three-bucket
+          separation, the data-contracts vocabulary, and the case for
+          a specialized semantic-layer role. What does not transfer is
+          the staffing scale. Most mission-driven organizations cannot
+          fund a CDO with a team underneath, cannot afford the tooling
+          that data mesh implementations run on, and do not have
+          domain teams large enough to own the products the enterprise
+          model assumes.
+        </P>
+        <P>
+          If the enterprise pattern does not port over intact, the
+          mission-driven sector has been working on models that fit
+          its constraints. Sector-level backbone organizations that
+          hold shared definitions and shared infrastructure (Ed-Fi in
+          K&ndash;12, CCBHC collaboratives in behavioral health, state
+          longitudinal data systems, Candid in philanthropy) are the
+          most established. Fractional bucket-3 advisory arrangements,
+          where a specialized data architect works across several
+          mission-driven organizations at a portion of an FTE each,
+          are the emerging operating model. Foundation-funded direct
+          capacity grants have a mixed track record but have not been
+          retired. Frontier-lab shared-infrastructure partnerships of
+          the kind Anthropic and others are building are the newest
+          and potentially the most durable, if they survive champion
+          turnover. Coalition-owned semantic layers, held jointly by a
+          group of peer organizations, are under-tried and worth
+          trying.
+        </P>
+        <P>
+          The discipline that connects these models is customer and
+          supplier. Tom Redman and Angela Saitta have argued in the
+          CDO Magazine version of this that every delivery role in the
+          organization is both a customer of upstream data and a
+          supplier of downstream data, and that the specialized data
+          function&rsquo;s job is to architect the interfaces between
+          them. That framing is what a bucket-3 role does in practice.
+          Without it, data literacy programs end up teaching abstract
+          concepts instead of the specific customer-supplier
+          discipline the delivery role&rsquo;s workflow requires. With
+          it, data literacy has something concrete to attach to.
+        </P>
+        <P>
+          One last thing worth saying. Mission-driven work does not
+          have to be back-breaking, low-pay, over-work. The
+          absorbed-data-role pattern is one specific mechanism of the
+          broader burnout the sector already knows it has. When the
+          specialized bucket-3 role is unfunded, the delivery capacity
+          pays the cost, and the person who absorbed the work pays it
+          with their time and their day-job attention. The path
+          forward is funding the specialized role at whichever level
+          the sector can sustain: shared, fractional,
+          foundation-supported, or lab-partnered. All of those are
+          better than the absorption model that has been running by
+          default.
+        </P>
+
+        <H2>Close</H2>
+        <P>
+          The boundary the sector needs to draw is between data entry,
+          data interpretation, and data infrastructure. All three are
+          real work. All three need funded capacity. Only two of them
+          belong in delivery roles.
+        </P>
+        <P>
+          Every mission-driven organization I have worked with has
+          held all three in the same person, because that person was
+          capable and there was no one else. That model is the
+          informal structure keeping mission-driven data operations
+          running. It is also the reason the infrastructure never gets
+          built. When the person absorbing the work leaves, or burns
+          out, or gets pulled onto something else, the informal
+          structure collapses. There is nothing underneath.
+        </P>
+        <P>
+          The specialized bucket 3 role is the one that does not exist
+          in most mission-driven org charts. It is also the one the
+          sector cannot function without. Naming it, funding it, and
+          hiring for it is the piece of decision-systems architecture
+          that mission-driven organizations keep skipping. The math
+          teacher, the writing faculty member, the clinician, the
+          program coordinator will keep absorbing the work in the
+          meantime.
+        </P>
+        <P>That was 2005 in a small town. It is still 2026 in most places.</P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where should data sit?"
+            gloss="The placement argument this piece extends into the operational layer: not a reporting-line question, a decision-architecture one."
+          />
+          <SeeAlsoItem
+            slug="who-writes-the-contract"
+            title="Who writes the contract."
+            gloss="The JD-side symptom of the absorption pattern named here — why the rubric keeps screening for engineering and missing the governance role."
+          />
+          <SeeAlsoItem
+            slug="numbers-dont-agree"
+            title="The numbers don’t agree because the words don’t."
+            gloss="What happens when bucket 3 stays unowned across systems: incompatible definitions calcified into incompatible numbers."
+          />
+          <SeeAlsoItem
+            slug="when-the-stakes-are-the-mission"
+            title="When the stakes are the mission."
+            gloss="The AI-eval-specific version of the same infrastructure gap, and the load-bearing minimum that has to run on top of the role this piece argues for."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written July 2026 for the Analytic Bytes Library. A
+          field-note argument drawn from twenty years of watching the
+          same absorption pattern take different forms across four
+          sectors: teacher-education accreditation, a public
+          university writing program, a K-8 charter network, and a
+          behavioral-health CCBHC, plus a national mission-driven
+          foundation where the infrastructure was funded and the
+          semantic-layer role still stayed unowned. The
+          three-bucket separation and the customer-supplier framing
+          borrow from Tom Redman and Angela Saitta&rsquo;s CDO
+          Magazine writing on the specialized data function.
         </MetaNote>
       </>
     ),
