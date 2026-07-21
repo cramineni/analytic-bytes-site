@@ -41,6 +41,6 @@
 <text x="1270" y="345" font-size="28" fill="#0E2A47" font-weight="700">reads across</text>
 <text x="1270" y="392" font-size="28" fill="#0EA5E9" font-weight="700">invest · scale · stop</text>
 
-<text x="40" y="700" font-size="30" fill="#3A4A5A">The shared columns <tspan fill="#0E2A47" font-weight="700">are</tspan> the spine.</text>
+<text x="40" y="700" font-size="30" fill="#3A4A5A">The shared columns <tspan fill="#0EA5E9" font-weight="700">are</tspan> the spine.</text>
 <text x="40" y="744" font-size="30" fill="#3A4A5A">Drop them and you're back to forty custom fields that don't line up.</text>
 </svg>

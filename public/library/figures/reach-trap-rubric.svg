@@ -22,7 +22,7 @@
 
 <!-- semantic layer band -->
 <rect x="40" y="360" width="1520" height="56" rx="12" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2"/>
-<text x="800" y="397" font-size="26" letter-spacing="3" fill="#0E2A47" font-weight="700" text-anchor="middle">SEMANTIC LAYER  ·  maps each grantee's language onto the scale</text>
+<text x="800" y="397" font-size="26" letter-spacing="3" fill="#0EA5E9" font-weight="700" text-anchor="middle">SEMANTIC LAYER  ·  maps each grantee's language onto the scale</text>
 
 <!-- connectors from cards through layer to scale markers -->
 <g stroke="#0EA5E9" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" fill="none">
@@ -49,5 +49,5 @@
 <text x="986"  y="643" font-size="26" letter-spacing="1" fill="#0E2A47" font-weight="700" text-anchor="middle">ESTABLISHED</text>
 <text x="1368" y="643" font-size="26" letter-spacing="1" fill="#FFFFFF" font-weight="700" text-anchor="middle">SUSTAINED</text>
 
-<text x="40" y="740" font-size="30" fill="#3A4A5A">Different words in. <tspan fill="#0E2A47" font-weight="700">One comparable placement out.</tspan></text>
+<text x="40" y="740" font-size="30" fill="#3A4A5A">Different words in. <tspan fill="#0EA5E9" font-weight="700">One comparable placement out.</tspan></text>
 </svg>

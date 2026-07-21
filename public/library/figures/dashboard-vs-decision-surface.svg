@@ -72,7 +72,7 @@
 
   <!-- Bottom label -->
   <line x1="22" y1="600" x2="658" y2="600" stroke="#CBD5E1" stroke-width="1"/>
-  <text x="22" y="640" font-family="Impact, 'Helvetica Neue', 'Arial Black', sans-serif" font-size="36" font-weight="900" letter-spacing="-1" fill="#0F2A4A">A display.</text>
+  <text x="22" y="640" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.5" fill="#0F2A4A">A display.</text>
   <text x="22" y="664" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#64748B">Built for the audience. No call attached.</text>
 </g>
 
@@ -161,7 +161,7 @@
 
   <!-- Bottom label -->
   <line x1="22" y1="600" x2="658" y2="600" stroke="#0EA5E9" stroke-width="1"/>
-  <text x="22" y="640" font-family="Impact, 'Helvetica Neue', 'Arial Black', sans-serif" font-size="36" font-weight="900" letter-spacing="-1" fill="#0EA5E9">A decision surface.</text>
+  <text x="22" y="640" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.5" fill="#0EA5E9">A decision surface.</text>
   <text x="22" y="664" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#64748B">Built backward from a decision, an owner, and a cadence.</text>
 </g>
 </svg>

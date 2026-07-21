@@ -43,10 +43,10 @@
 <text x="880" y="524">Semantic layer (grantee &#8594; scale)</text>
 </g>
 <line x1="880" y1="566" x2="1520" y2="566" stroke="#D7E3EA" stroke-width="2"/>
-<text x="880" y="620" font-size="26" fill="#6B7A8C">Answers: <tspan fill="#0E2A47" font-weight="700">did it work · where next</tspan></text>
+<text x="880" y="620" font-size="26" fill="#6B7A8C">Answers: <tspan fill="#0EA5E9" font-weight="700">did it work · where next</tspan></text>
 <text x="880" y="676" font-size="26" fill="#6B7A8C">Yields:</text>
 <rect x="1000" y="648" width="320" height="44" rx="22" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2"/>
-<text x="1160" y="678" font-size="26" fill="#0E2A47" font-weight="700" text-anchor="middle">invest · scale · stop</text>
+<text x="1160" y="678" font-size="26" fill="#0EA5E9" font-weight="700" text-anchor="middle">invest · scale · stop</text>
 
-<text x="40" y="828" font-size="30" fill="#3A4A5A">Reach falls out of the left for free. <tspan fill="#0E2A47" font-weight="700">Comparability only exists if you build the right.</tspan></text>
+<text x="40" y="828" font-size="30" fill="#3A4A5A">Reach falls out of the left for free. <tspan fill="#0EA5E9" font-weight="700">Comparability only exists if you build the right.</tspan></text>
 </svg>
