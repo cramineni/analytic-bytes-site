@@ -6,7 +6,7 @@
 <rect width="1600" height="900" fill="#FFFFFF"/>
 
 <!-- Header block -->
-<text x="80" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="3" fill="#94A3B8">MISSION-DRIVEN AI EVALUATION</text>
+<text x="80" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="3" fill="#0EA5E9">MISSION-DRIVEN AI EVALUATION</text>
 <text x="80" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#0F2A4A">The essential minimum</text>
 <text x="80" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569">Five components of one discipline — none requiring enterprise-scale infrastructure.</text>
 
@@ -134,11 +134,8 @@
 <line x1="80" y1="720" x2="1520" y2="720" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
 <text x="800" y="760" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">Name what is being evaluated. Evaluate it in the deployment context. Design the human checkpoint back in.</text>
 
-<!-- Footer / AB signature -->
-<line x1="80" y1="820" x2="1520" y2="820" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.3"/>
-<text x="80" y="855" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#0F2A4A">ANALYTIC BYTES</text>
-<text x="80" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#94A3B8">Library artifact · When the Stakes are the Mission</text>
-<text x="1520" y="855" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#94A3B8" text-anchor="end">Chaitanya Ramineni · 2026</text>
-<text x="1520" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#94A3B8" text-anchor="end">analyticbytes.com/library</text>
+<!-- Footer (AB standard: single-row, no divider, no personal signature) -->
+<text x="80" y="870" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>
+<text x="232" y="870" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#0EA5E9">From fragmented to decision-ready.</text>
 
 </svg>
