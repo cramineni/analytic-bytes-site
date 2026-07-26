@@ -1,0 +1,144 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The essential minimum — five components of mission-driven AI evaluation</title>
+<desc>A landscape artifact showing five components of AI evaluation for mission-driven contexts: task decomposition, ground-truth benchmarking, deployment-context evaluation, downstream impact evaluation, and escalation with human-in-the-loop discipline. Each column names the principle and a concrete example.</desc>
+
+<!-- Background -->
+<rect width="1600" height="900" fill="#FFFFFF"/>
+
+<!-- Header block -->
+<text x="80" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="3" fill="#94A3B8">MISSION-DRIVEN AI EVALUATION</text>
+<text x="80" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="700" fill="#0F2A4A">The essential minimum</text>
+<text x="80" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569">Five components of one discipline — none requiring enterprise-scale infrastructure.</text>
+
+<!-- Divider -->
+<line x1="80" y1="200" x2="1520" y2="200" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+
+<!-- Column 1: Task decomposition -->
+<!-- Column bounds: x=80 to x=360, width 280 -->
+<text x="80" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#0EA5E9">1</text>
+<text x="80" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A">Task decomposition</text>
+<line x1="80" y1="298" x2="120" y2="298" stroke="#0EA5E9" stroke-width="2"/>
+
+<text x="80" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#475569">
+  <tspan x="80" dy="0">Before deployment ships, name</tspan>
+  <tspan x="80" dy="18">what the AI is doing under the</tspan>
+  <tspan x="80" dy="18">hood — at what step, with what</tspan>
+  <tspan x="80" dy="18">inputs, against what standard.</tspan>
+</text>
+
+<!-- Example box -->
+<rect x="80" y="430" width="280" height="230" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+<text x="95" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0EA5E9">EXAMPLE</text>
+<text x="95" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#0F2A4A">
+  <tspan x="95" dy="0">A behavioral-health screening</tspan>
+  <tspan x="95" dy="17">chatbot may do three things at</tspan>
+  <tspan x="95" dy="17">once: intake triage, symptom</tspan>
+  <tspan x="95" dy="17">classification, and referral</tspan>
+  <tspan x="95" dy="17">recommendation. Each has a</tspan>
+  <tspan x="95" dy="17">different evaluation standard.</tspan>
+</text>
+
+<!-- Column 2: Ground-truth benchmarking -->
+<!-- Column bounds: x=380 to x=660 -->
+<text x="380" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#0EA5E9">2</text>
+<text x="380" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A">Ground-truth benchmarking</text>
+<line x1="380" y1="298" x2="420" y2="298" stroke="#0EA5E9" stroke-width="2"/>
+
+<text x="380" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#475569">
+  <tspan x="380" dy="0">The smallest defensible</tspan>
+  <tspan x="380" dy="18">benchmark: 20–50 cases from</tspan>
+  <tspan x="380" dy="18">your deployment context, hand-</tspan>
+  <tspan x="380" dy="18">labeled, held back from training.</tspan>
+</text>
+
+<rect x="380" y="430" width="280" height="230" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+<text x="395" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0EA5E9">EXAMPLE</text>
+<text x="395" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#0F2A4A">
+  <tspan x="395" dy="0">For a K-8 tutor: 30 real student</tspan>
+  <tspan x="395" dy="17">writing samples the tutor was</tspan>
+  <tspan x="395" dy="17">asked to help with, hand-scored</tspan>
+  <tspan x="395" dy="17">by a teacher against the</tspan>
+  <tspan x="395" dy="17">network's own writing rubric.</tspan>
+</text>
+
+<!-- Column 3: Deployment-context evaluation -->
+<!-- Column bounds: x=680 to x=960 -->
+<text x="680" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#0EA5E9">3</text>
+<text x="680" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A">Deployment-context evaluation</text>
+<line x1="680" y1="298" x2="720" y2="298" stroke="#0EA5E9" stroke-width="2"/>
+
+<text x="680" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#475569">
+  <tspan x="680" dy="0">Evaluate in the deployment</tspan>
+  <tspan x="680" dy="18">context, not a proxy environment.</tspan>
+  <tspan x="680" dy="18">Generic benchmarks measure</tspan>
+  <tspan x="680" dy="18">generic behavior.</tspan>
+</text>
+
+<rect x="680" y="430" width="280" height="230" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+<text x="695" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0EA5E9">EXAMPLE</text>
+<text x="695" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#0F2A4A">
+  <tspan x="695" dy="0">A behavioral-health chatbot in a</tspan>
+  <tspan x="695" dy="17">rural CCBHC serves a population</tspan>
+  <tspan x="695" dy="17">no public leaderboard reflects.</tspan>
+  <tspan x="695" dy="17">Evaluate against the</tspan>
+  <tspan x="695" dy="17">deployment's own reference set.</tspan>
+</text>
+
+<!-- Column 4: Downstream impact evaluation -->
+<!-- Column bounds: x=980 to x=1260 -->
+<text x="980" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#0EA5E9">4</text>
+<text x="980" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A">Downstream impact</text>
+<line x1="980" y1="298" x2="1020" y2="298" stroke="#0EA5E9" stroke-width="2"/>
+
+<text x="980" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#475569">
+  <tspan x="980" dy="0">Activity metrics are not outcome</tspan>
+  <tspan x="980" dy="18">metrics. Track what shifts in the</tspan>
+  <tspan x="980" dy="18">mission the deployment was</tspan>
+  <tspan x="980" dy="18">meant to advance.</tspan>
+</text>
+
+<rect x="980" y="430" width="280" height="230" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+<text x="995" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0EA5E9">EXAMPLE</text>
+<text x="995" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#0F2A4A">
+  <tspan x="995" dy="0">Screening chatbot: activity =</tspan>
+  <tspan x="995" dy="17">screenings run. Outcome =</tspan>
+  <tspan x="995" dy="17">whether flagged users actually</tspan>
+  <tspan x="995" dy="17">connected with a clinician and</tspan>
+  <tspan x="995" dy="17">stayed engaged three months later.</tspan>
+</text>
+
+<!-- Column 5: Escalation and human-in-the-loop -->
+<!-- Column bounds: x=1280 to x=1560 -->
+<text x="1280" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#0EA5E9">5</text>
+<text x="1280" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A">Escalation &amp; human-in-loop</text>
+<line x1="1280" y1="298" x2="1320" y2="298" stroke="#0EA5E9" stroke-width="2"/>
+
+<text x="1280" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#475569">
+  <tspan x="1280" dy="0">A threshold map: where AI may act</tspan>
+  <tspan x="1280" dy="18">alone, where it must stop and</tspan>
+  <tspan x="1280" dy="18">pass up, where a human must</tspan>
+  <tspan x="1280" dy="18">originate the decision.</tspan>
+</text>
+
+<rect x="1280" y="430" width="280" height="230" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+<text x="1295" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0EA5E9">EXAMPLE</text>
+<text x="1295" y="485" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#0F2A4A">
+  <tspan x="1295" dy="0">Advising chatbot: AI answers</tspan>
+  <tspan x="1295" dy="17">"when are drop-add dates."</tspan>
+  <tspan x="1295" dy="17">AI passes up "am I on track to</tspan>
+  <tspan x="1295" dy="17">graduate." A human originates</tspan>
+  <tspan x="1295" dy="17">"should I change majors."</tspan>
+</text>
+
+<!-- Bottom framing statement -->
+<line x1="80" y1="720" x2="1520" y2="720" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+<text x="800" y="760" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">Name what is being evaluated. Evaluate it in the deployment context. Design the human checkpoint back in.</text>
+
+<!-- Footer / AB signature -->
+<line x1="80" y1="820" x2="1520" y2="820" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.3"/>
+<text x="80" y="855" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#0F2A4A">ANALYTIC BYTES</text>
+<text x="80" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#94A3B8">Library artifact · When the Stakes are the Mission</text>
+<text x="1520" y="855" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#94A3B8" text-anchor="end">Chaitanya Ramineni · 2026</text>
+<text x="1520" y="875" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#94A3B8" text-anchor="end">analyticbytes.com/library</text>
+
+</svg>

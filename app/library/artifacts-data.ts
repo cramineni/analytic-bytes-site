@@ -172,4 +172,17 @@ export const ARTIFACTS: Artifact[] = [
     image: "/library/artifacts/commercial-equals-mission.svg",
     slug: "commercial-equals-mission",
   },
+  {
+    title: "The essential minimum — mission-driven AI evaluation",
+    summary:
+      "Five components of one discipline: task decomposition, ground-truth benchmarking with constrained data, deployment-context evaluation, downstream impact evaluation, and escalation with human-in-the-loop discipline. Each column names the principle and a concrete example. None of the five requires enterprise-scale infrastructure. All of them require naming what is being evaluated, evaluating it in the deployment context, and designing the human checkpoint back in.",
+    image: "/library/artifacts/when-the-stakes-essential-minimum.svg",
+    slug: "when-the-stakes-essential-minimum",
+    referencedIn: [
+      {
+        slug: "when-the-stakes-are-the-mission",
+        title: "When the stakes are the mission.",
+      },
+    ],
+  },
 ];

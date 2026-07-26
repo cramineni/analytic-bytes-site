@@ -8476,11 +8476,16 @@ export const ESSAYS: Essay[] = [
           specifically, at what step, with what inputs, and against
           what standard. This is the WITSAM discipline restated: what
           is this system measuring, and does that match what we say it
-          measures? Most mission-driven adopters skip this step
-          because the vendor pitch is comfortable and the deployment
-          pressure is real. The cost of skipping it is that no one
-          inside the organization can say what the AI is being
-          evaluated against.
+          measures? A behavioral-health screening chatbot is often
+          doing three things at once: intake triage, symptom
+          classification, and referral recommendation. Each has a
+          different evaluation standard. Naming them separately lets
+          you evaluate each; leaving them fused as &ldquo;the
+          chatbot&rdquo; means you evaluate none. Most mission-driven
+          adopters skip this step because the vendor pitch is
+          comfortable and the deployment pressure is real. The cost
+          of skipping it is that no one inside the organization can
+          say what the AI is being evaluated against.
         </P>
         <P>
           <I>Ground-truth benchmarking with constrained data.</I>{" "}
@@ -8502,7 +8507,14 @@ export const ESSAYS: Essay[] = [
           can do is build the smallest defensible benchmark: twenty to
           fifty cases from their actual deployment context,
           hand-labeled by a domain expert, held back from any AI
-          training or fine-tuning. The benchmark carries diagnostic
+          training or fine-tuning. For a K-8 tutor deployment, that
+          benchmark might be thirty real student writing samples the
+          tutor was asked to help with, hand-scored by a teacher
+          against a rubric the network already uses for its own
+          writing curriculum &mdash; not synthetic prompts, not
+          vendor-provided examples, but actual samples from the
+          deployment context, labeled by the person whose judgment
+          the AI is meant to support. The benchmark carries diagnostic
           weight at small n. When the model changes and the benchmark
           score moves, someone should notice. Refreshing it at every
           model update is not a special AI cadence. It is the same
@@ -8561,16 +8573,24 @@ export const ESSAYS: Essay[] = [
           a dollar. The threshold map (where may the AI act alone,
           where must it stop and pass up to a human, where must the
           human originate the decision) is required for
-          mission-driven deployments. Without it, the deployment
-          becomes the failure mode the sector was already at risk of.
+          mission-driven deployments. For an advising chatbot: AI may
+          answer &ldquo;when are drop-add dates.&rdquo; AI must stop
+          and pass up for &ldquo;am I on track to graduate.&rdquo; A
+          human must originate &ldquo;should I change majors.&rdquo;
+          Three tiers, published, calibrated by the advising team.
+          Without it, the deployment becomes the failure mode the
+          sector was already at risk of.
         </P>
         <P>
           Five items. None of them requires enterprise-scale
           evaluation infrastructure. All of them require the
           discipline to name what is being evaluated, evaluate it in
           the deployment context, and design the human checkpoint back
-          in. This is the essential minimum. It is what the sector
-          has to have.
+          in. This is{" "}
+          <ArtifactLink slug="when-the-stakes-essential-minimum">
+            the essential minimum
+          </ArtifactLink>
+          . It is what the sector has to have.
         </P>
 
         <H2>The shared-infrastructure path</H2>
