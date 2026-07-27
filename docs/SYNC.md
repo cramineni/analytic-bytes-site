@@ -43,6 +43,33 @@ Script for the check lives in-conversation; canonical version can be extracted t
 
 ---
 
+## Piece numbering — pre-assignment audit + no-shadow-reservation policy (added 2026-07-26)
+
+**Rule**: before assigning a number to any new/renumbered essay or field note, run:
+
+```
+python3 scripts/audit-library-numbering.py
+```
+
+The script prints every essay + field note with number and hidden flag, computes next-available per kind, and flags collisions. Assign the number reported by "Next essay" or "Next field note" — never guess from memory.
+
+**Classification checkpoint (also done here, before assigning number):**
+
+- **Essay** = load-bearing new frame, 8+ min read, introduces a named framework the library will reference. Cover eyebrow reads `Essay  ·  No. NN`.
+- **Field note** = observational stance, 5-10 min, tight scope, no new named framework. Cover eyebrow reads `Field note  ·  No. NN`.
+
+The two decisions (kind, number) must be made together, before the cover SVG is finalized, so the eyebrow lands correct on first pass and no cover surgery is needed after fold.
+
+**No-shadow-reservation policy (Option B, chosen 2026-07-26):**
+
+Hidden pieces do NOT reserve their number for a future unhide. When a piece is hidden, the slot it occupied is released; the next published field note may take it. If the hidden piece later unhides, it gets whatever number is next-available at that time (its old number is not held).
+
+*Rationale*: shadow reservations (two pieces at the same FN#, one hidden) create fragile renumbering cascades on unhide. Field-note gaps are already precedented in the sequence (see reclassification notes below). Cleaner to accept gaps than to carry hidden shadows.
+
+*Standing collision to resolve on next unhide*: FN10 currently has `ai-did-not-write-my-library` [HIDDEN] + `the-absorbed-data-role` [published]. When ai-did-not-write unhides, it gets the next-available FN number at that moment (not FN10). The-absorbed-data-role keeps FN10 permanently.
+
+---
+
 ## Landscape sync — standing post-deploy step (added 2026-07-20)
 
 **Rule**: after ANY publishing action — new essay / new field note / new artifact / hide / unhide / rename / renumber — update the pinned `ab-library-landscape` artifact so its map matches the current published state.
