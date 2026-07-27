@@ -8267,9 +8267,9 @@ export const ESSAYS: Essay[] = [
   // FIELD NOTE 10 — When the stakes are the mission
   // ===================================================================
   {
-    kind: "field-note",
+    kind: "essay",
     slug: "when-the-stakes-are-the-mission",
-    number: "10",
+    number: "12",
     title: "When the stakes are the mission.",
     subtitle:
       "The evaluation gap in mission-driven AI adoption.",
@@ -8725,7 +8725,7 @@ export const ESSAYS: Essay[] = [
   {
     kind: "field-note",
     slug: "the-absorbed-data-role",
-    number: "11",
+    number: "10",
     title: "The absorbed data role.",
     subtitle:
       "Where data work goes when no role owns it.",
