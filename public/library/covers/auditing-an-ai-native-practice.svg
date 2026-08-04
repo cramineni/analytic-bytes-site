@@ -1,0 +1,47 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Note No. 12: Auditing an AI-native practice.</title>
+<desc>White background with four governance slices shown as small rectangles across the middle: Data Governance and Enterprise AI Governance in slate as established, Practitioner AI Governance highlighted in teal as this piece's claim, and Agent AI Governance in a dashed slate outline as emerging. A small teal arrow between the third and fourth slice names the instruments transfer. Title and italic subtitle in sans-serif beneath. Analytic Bytes signature at the bottom.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 12</text>
+
+<!-- Central visual: 4 governance slices, third highlighted, arrow to fourth -->
+<g>
+  <!-- Slice 1: Data Governance (established, slate) -->
+  <rect x="200" y="220" width="180" height="110" fill="#94A3B8" fill-opacity="0.12" stroke="#94A3B8" stroke-width="1"/>
+  <text x="290" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">ESTABLISHED</text>
+  <text x="290" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Data</text>
+  <text x="290" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Governance</text>
+
+  <!-- Slice 2: Enterprise AI Governance (established, slate) -->
+  <rect x="400" y="220" width="180" height="110" fill="#94A3B8" fill-opacity="0.12" stroke="#94A3B8" stroke-width="1"/>
+  <text x="490" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">ESTABLISHED</text>
+  <text x="490" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Enterprise AI</text>
+  <text x="490" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Governance</text>
+
+  <!-- Slice 3: Practitioner AI Governance (HIGHLIGHTED, teal) -->
+  <rect x="600" y="205" width="200" height="140" fill="#0EA5E9" fill-opacity="0.10" stroke="#0EA5E9" stroke-width="2"/>
+  <text x="700" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">THIS PIECE</text>
+  <text x="700" y="267" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">Practitioner AI</text>
+  <text x="700" y="287" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="middle">Governance</text>
+  <text x="700" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-style="italic" fill="#475569" text-anchor="middle">how one operator governs</text>
+  <text x="700" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-style="italic" fill="#475569" text-anchor="middle">their AI-native practice</text>
+
+  <!-- Slice 4: Agent AI Governance (emerging, dashed slate) -->
+  <rect x="820" y="220" width="180" height="110" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="910" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">EMERGING</text>
+  <text x="910" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Agent AI</text>
+  <text x="910" y="296" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">Governance</text>
+
+  <!-- Instruments transfer arrow: Practitioner (3) → Agent (4) -->
+  <path d="M 803 372 Q 812 385, 820 372" stroke="#0EA5E9" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <polygon points="820,372 813,368 815,375" fill="#0EA5E9"/>
+  <text x="812" y="396" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-style="italic" font-weight="500" fill="#0EA5E9" text-anchor="middle">instruments transfer</text>
+</g>
+
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Auditing an AI-native practice.</text>
+<text x="600" y="493" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">Ninety days, one operator, and what measurement-validity</text>
+<text x="600" y="516" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">discipline looks like at practitioner scale.</text>
+<line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+</svg>

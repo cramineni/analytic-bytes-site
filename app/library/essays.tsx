@@ -6628,20 +6628,19 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 12 — AI did not write my library  (HIDDEN — unhides next week)
+  // FIELD NOTE 11 — AI did not write my library
   // ===================================================================
   {
     kind: "field-note",
-    hidden: true,
     slug: "ai-did-not-write-my-library",
-    number: "10",
+    number: "11",
     title: "AI did not write my library. AI helped me navigate it.",
     subtitle:
       "Field notes on the stages of working with generative AI across tools.",
     date: "2026-07-13",
     readingTime: "9 min read",
     summary:
-      "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. The through-line: maturity transferred, capability expanded.",
+      "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. The pattern: maturity transferred, capability expanded.",
     cover: "/library/covers/ai-did-not-write-my-library.svg",
     arc: "ai-systems",
     body: (
@@ -6722,9 +6721,8 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           That last part is the one I would lift out of the eight months
-          and underline. The reason GPT became useful for me was not that
-          it was smart. It was that the conversational contract was
-          different from human conversation. With humans, I have to think
+          and underline. GPT became useful because the conversational
+          contract was different from human conversation. With humans, I have to think
           of the most balanced curated version of what I want to say
           before I say it. With AI, I can say the thing, hear it back,
           reflect, refine. No pressure. No social cost.
@@ -6840,10 +6838,9 @@ export const ESSAYS: Essay[] = [
           worked without friction.
         </P>
         <P>
-          That was the moment Claude earned the ramp. Not because Claude
-          was better than GPT in some abstract way, but because it had
-          just enabled me to do something I had been blocked on for
-          years. The trust was concrete. It was about the artifact.
+          That was the moment Claude earned the ramp. Claude had just
+          enabled me to do something I had been blocked on for years.
+          The trust was concrete. It was about the artifact.
         </P>
         <P>
           After that, Claude took on more. Desktop folders connected.
@@ -6919,15 +6916,15 @@ export const ESSAYS: Essay[] = [
           workspace. A knowledge repository I am building now. RAG
           architecture I have not stood up yet but plan to. Agents through
           my current coursework. The work I do on Claude is broader and
-          faster than the work I did on GPT, but the reason is not that I
-          matured. It is that the tool can hold more.
+          faster than the work I did on GPT, because the tool can hold
+          more, not because I matured.
         </P>
         <P>
           That distinction matters for the field-note thesis. I did not
           become an &ldquo;AI native&rdquo; through repeated use. I built
           a working pattern in one tool and brought it to another tool
           that could do more with the same pattern. <B>Maturity
-          transferred. Capability expanded.</B> Two different curves.
+          transferred. Capability expanded.</B>
         </P>
         <P>
           This also tracks with something I have been saying for years in
@@ -7021,9 +7018,8 @@ export const ESSAYS: Essay[] = [
           public-facing work I had not imagined I could prepare for. None
           of this was AI doing the work for me. All of it was AI helping
           me find the shelf, pull the right book, and put the words in
-          the order I actually meant.
+          the order I meant.
         </P>
-        <P>The library is mine. The navigation is shared. The stages keep coming.</P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -9145,6 +9141,432 @@ export const ESSAYS: Essay[] = [
           three-bucket separation and the customer-supplier framing
           borrow from Tom Redman and Angela Saitta&rsquo;s CDO
           Magazine writing on the specialized data function.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 12 — Auditing an AI-native practice
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "auditing-an-ai-native-practice",
+    number: "12",
+    title: "Auditing an AI-native practice.",
+    subtitle:
+      "Ninety days, one operator, and what measurement-validity discipline looks like at practitioner scale.",
+    date: "2026-08-02",
+    readingTime: "10 min read",
+    summary:
+      "AB spent ninety days operating as an AI-native practice. This is the public report from the audit that followed, and the case for practitioner AI governance as a discipline the field has not yet named clearly. Introduces HITL/AITL as a measurable proxy for the load-carrier axis, and demonstrates governance-of-governance done inline.",
+    cover: "/library/covers/auditing-an-ai-native-practice.svg",
+    arc: "measurement",
+    body: (
+      <>
+        <Brief>
+          <p>
+            AB spent ninety days operating as an AI-native practice, with
+            Claude in the loop for planning, drafting, research, code,
+            and reflection. The question afterward was whether that
+            operating model actually did what an AI-native practice is
+            supposed to do. Feeling productive is not the same as
+            measured productivity.
+          </p>
+          <p>
+            This field note is the public report from AB&rsquo;s own
+            90-day audit &mdash; a single practice applying
+            measurement-validity discipline to its own use of AI, using
+            instruments it built. The findings matter, and this piece
+            names them. What matters more is the discipline the field
+            has not yet named clearly: measurement-validity discipline
+            for AI governance, at the practitioner scale.
+          </p>
+        </Brief>
+
+        <H2>How AI-work is typically measured, and what this audit does differently</H2>
+        <P>
+          Most reporting on AI use at the practitioner level is
+          testimonial. &ldquo;It saved me hours.&rdquo; &ldquo;It writes
+          my drafts.&rdquo; The claims are common, but the evidence base
+          is usually one anecdote.
+        </P>
+        <P>
+          Where the reporting gets quantitative, it typically stops at
+          usage counts: sessions, prompts, tokens, screen-time. Usage is
+          easy to measure. It is also a weak claim. High usage tells you
+          the practice ran. It does not tell you whether the practice
+          measured what it claimed to measure. It also does not tell you
+          whether AI carries the load or only assists it.
+        </P>
+        <P>
+          This audit is different in three ways. It defines the atomic
+          unit of analysis (one session = one named conversation, one
+          category per session) before counting anything. It measures
+          the same work through three lenses that answer different
+          questions. And it applies validity discipline (Kane&rsquo;s
+          four-inference stack, construct-definition rigor,
+          scorer-operator alignment) to its own findings before
+          publishing them.
+        </P>
+
+        <H2>Method: three lenses and the HITL/AITL split</H2>
+        <P>
+          The audit runs on three measurement lenses over the same
+          90-day corpus (n &asymp; 83 sessions across ten task
+          categories).
+        </P>
+        <P>
+          <B>Session count.</B> How often AI is engaged, per category.
+          The cheapest measure, and the most misleading if used alone.
+        </P>
+        <P>
+          <B>Message volume.</B> How much conversation happens inside
+          those sessions. A closer proxy for cognitive load.
+        </P>
+        <P>
+          <B>Token usage.</B> What the model computed. The real
+          system-cost signal, measurable from API records.
+        </P>
+        <P>
+          The three lenses tell three different stories about the same
+          practice, and the divergences carry the diagnostic weight.
+          Recurring automation is fifty-five percent of sessions and
+          fifty-seven percent of tokens after the Jul 31 v2 extract
+          correction. That is a rare category where session count and
+          cost move together. Website and technical development is a
+          small share of sessions but a large share of per-session token
+          weight. Strategic and meta-reflection has the fewest sessions
+          and the highest cognitive load per session. Session count is a
+          bad proxy for time, and token usage is a bad proxy for
+          engagement frequency. Both are needed.
+        </P>
+        <P>
+          Cutting across the three lenses is a fourth distinction the
+          audit uses to describe the shape of AI engagement per
+          category. This is the naming contribution:{" "}
+          <B>HITL / AITL</B> used as a paired framework.
+        </P>
+        <P>
+          <B>HITL (Human-in-the-Loop).</B> AI drives; the human
+          oversees. Recurring automation fits here &mdash; the AI
+          carries almost the full workflow, and the human sets it up,
+          monitors, and corrects when it drifts.
+        </P>
+        <P>
+          <B>AITL (AI-in-the-Loop).</B> The operator drives; AI assists.
+          Strategic thinking, product/framework work, and long-form
+          writing sit here. The operator carries the work; AI is a
+          thinking partner, drafts scaffolding, or synthesizes.
+        </P>
+        <P>
+          The two frames are standard AI-ops vocabulary. The move that
+          matters here is using them as a <I>measurable</I> proxy for
+          the load-carrier axis. HITL and AITL name who or what carries
+          the primary work. That axis was previously described in prose
+          (AI leads versus AI assists) without an operational way to
+          test the claim. Mapping each task category to HITL, AITL, or
+          shared makes the load-carrier claim testable per session.
+        </P>
+
+        <Figure
+          src="/library/figures/hitl_aitl_mapping_figure.svg"
+          alt="HITL / AITL mapping across ten task categories in the AB practice"
+          caption="Ten task categories mapped to HITL (AI drives), Shared, or AITL (operator drives). Where the load actually sits."
+        />
+
+        <H2>Findings: what ninety days showed</H2>
+        <P>
+          Six things surfaced across the audit that a testimonial would
+          have missed.
+        </P>
+        <P>
+          <B>1. The working pattern is dialogic, not delegative.</B> The
+          dialogue-maturity curve spans roughly one hundred scored
+          sessions across eighteen months, with about thirty sessions
+          inside the 90-day window. The mean per-session pattern is
+          iterative back-and-forth. Session shape shifted upward on the
+          maturity scorecard between the GPT-era portion (early sessions
+          scored 5&ndash;6 on the 6-metric scale) and the Claude-era
+          portion (recent sessions score 8&ndash;9). The gain
+          concentrates in three metrics: question density, revision
+          cycles, and explicit rubric use.
+        </P>
+        <P>
+          <B>2. The distribution of the practice&rsquo;s attention has three visible modes.</B>{" "}
+          Instrumenting the practice (automation, meta-work, research)
+          took roughly forty-five percent of estimated message volume.
+          Positioning the practice (job search, market-identity work)
+          took another fifteen percent. Producing the practice&rsquo;s
+          actual output (product, library, brand, TEDx, website) took
+          about thirty-eight percent. That mix reads as a
+          practice-in-formation. Naming which stage you are in is the
+          discipline.
+        </P>
+        <P>
+          <B>3. Session count and token usage disagree about where work happens, and both are right.</B>{" "}
+          The dumbbell view on the same ten categories shows recurring
+          automation aligned across the two lenses after the v2 extract
+          correction. Website and technical dev over-indexes on tokens
+          (small session count, heavy per-session weight). Research, job
+          applications, and product under-index (many short sessions,
+          low token weight per session). Dispatch decisions (hire
+          priorities, cost management) should default to the token lens
+          when cost matters and the session lens when frequency matters.
+          Aggregating them into a single &ldquo;how much AI&rdquo;
+          number destroys the signal.
+        </P>
+        <P>
+          <B>4. Dispatch discipline exists at three nested levels, and it is currently prescriptive rather than measured.</B>{" "}
+          Cross-tool dispatch (Claude vs GPT vs Gemini). Within-tool
+          model dispatch (Haiku vs Sonnet vs Opus). Within-model effort
+          dial (low vs medium vs high vs max). The rulebook says what
+          should happen at each level. The audit has no per-session
+          record of what happened. Closing the
+          prescription-to-measurement gap is the highest-leverage single
+          change for the next audit window.
+        </P>
+        <P>
+          <B>5. The infrastructure has five active layers.</B> Data,
+          tooling, workflows, artifacts, and governance, each with
+          named components, connected by five workflow loops. Two
+          components are honestly dormant (Card Maker, Content HQ).
+          PDDS is the production proof-point: measurement-validity
+          discipline running in code, backed by policy. It is a live
+          LLM-as-judge system with a published validation methodology
+          shaped by Michael Kane&rsquo;s four-inference validity framework
+          (&kappa; = 1.00 handling judge&ndash;operator circularity,
+          anti-Goodhart guardrails, public dashboard).
+        </P>
+        <P>
+          <B>6. The governance dimension is at a moderate baseline, with the two USP anchors scoring HIGH.</B>{" "}
+          Validity spine (Kane four-inference framework, NIST AI RMF
+          alignment, reliability + construct-validity discipline) scores
+          HIGH. Construct-definition rigor (session unit, category
+          rulebook, hub taxonomy, weights table, dispatch guidance)
+          scores HIGH. Reflection cadence and instrumentation depth
+          score LOW-to-MODERATE. These are the dimensions the audit
+          itself just formalized. Descriptive-vs-prescriptive (rulebook
+          exists, per-session measurement doesn&rsquo;t) scores LOW.
+          This is the expected baseline of a practice that just finished
+          its first ninety days.
+        </P>
+
+        <H2>Handling the N=1</H2>
+        <P>
+          A field note built on one practice invites the obvious
+          objection: N=1 is not generalizable. That objection is correct
+          and worth naming up front. Two responses.
+        </P>
+        <P>
+          The value here is not &ldquo;here is what all AI-native
+          practices look like.&rdquo; The value is &ldquo;here is an
+          instrument other practices can apply to their own
+          operations.&rdquo; Session-unit definition, three-lens
+          measurement, HITL/AITL mapping, dispatch levels, Kane-shaped
+          validity discipline &mdash; these travel. The findings
+          themselves do not generalize. N=1 is a limitation on findings
+          and a reasonable starting point for building instruments.
+          Ethnographic tradition, single-subject research designs, and
+          autoethnography in the social sciences all operate under the
+          same trade.
+        </P>
+        <P>
+          The audit&rsquo;s own USP is measurement-validity discipline.
+          Publishing an unaudited claim about that discipline would be
+          self-refuting. The audit audited itself before it audited AB
+          &mdash; twenty-three catalogued discipline moves and seven
+          emergent methodology principles applied during the Jul
+          30&ndash;31 close (Section 9 of the internal document). That
+          work is governance-of-governance, done inline, dated, and
+          available for peer review. Replication is the invitation this
+          piece extends.
+        </P>
+
+        <H2>The contribution: practitioner AI governance as a distinct discipline</H2>
+        <P>
+          Two conversations about AI governance dominate the current
+          discourse. Data governance addresses asset stewardship: who
+          owns, curates, and secures the data AI runs on. Enterprise AI
+          governance addresses policy and organization: how a company
+          writes its AI-use policy, sets up its review committee, and
+          audits its vendor models.
+        </P>
+        <P>
+          Practitioner AI governance is a third slice, and it is
+          under-built as a discipline. It addresses how one operator
+          governs their own AI-native practice: the session-unit
+          definitions, the model-and-effort dispatch, the load-carrier
+          calibration, the validity discipline applied to the
+          operator&rsquo;s own outputs. It runs whether or not an
+          organization has written a policy or stood up a data
+          governance team. Every operator working with AI is already
+          doing practitioner AI governance, badly or well. Almost none
+          are doing it with measurement discipline attached.
+        </P>
+        <P>
+          The claim this audit stands on is that measurement-validity
+          discipline for AI governance, at practitioner scale, is a
+          distinct discipline worth naming. It is a third slice
+          alongside data governance and enterprise AI governance, with
+          its own scope and instruments. The discipline has its own
+          instruments: session classification, three-lens measurement,
+          HITL/AITL mapping, dispatch guidance. It runs on its own
+          validity spine: Kane-shaped inference, construct-definition
+          rigor, scorer-operator alignment. It produces its own
+          artifacts, including the Governance Craft Log, the Executive
+          Card, and scorecards.
+        </P>
+        <P>
+          AI-Native PracticeOps is the Foundation Layer term the audit
+          surfaced during its own execution. It parallels DevOps in
+          software engineering: an operating discipline the other task
+          categories depend on, rather than a category of work alongside
+          them. AB Library work will continue to build in this space.
+        </P>
+
+        <H2>From operator governance to agent governance</H2>
+        <P>
+          Practitioner AI governance and agent AI governance are
+          complementary layers, not competing frames. Both are early in
+          their formation. Both need measurement-validity discipline for
+          the claims each makes to hold up.
+        </P>
+        <P>
+          The frameworks introduced here transfer directly to the agent
+          context, with implementation adjustments.
+        </P>
+        <P>
+          <B>HITL/AITL as the load-carrier axis.</B> Agents are the HITL
+          case, by definition: the AI drives the workflow, and the
+          human oversees. The measurable question at the agent level is
+          where within an agent&rsquo;s execution path human oversight
+          actually engages, and how the boundary is calibrated.
+        </P>
+        <P>
+          <B>Kane&rsquo;s four-inference validity discipline.</B> The
+          four inferences are scoring, generalization, extrapolation,
+          and implication. The stack applies unchanged to agent
+          evaluation. Scoring: did the agent&rsquo;s action correspond
+          to the intended output? Generalization: does the action hold
+          across the agent&rsquo;s task family? Extrapolation: does it
+          hold in production contexts the eval did not reach?
+          Implication: does the decision the agent supports actually
+          produce the intended outcome?
+        </P>
+        <P>
+          <B>Gate discipline.</B> The checkpoints where a human review
+          is required in the practitioner setting become the escalation
+          and human-in-loop boundaries in agent systems. The taxonomy is
+          the same, though the stakes are higher. This is the argument{" "}
+          <InternalLink slug="actions-not-answers">
+            Actions, Not Answers
+          </InternalLink>{" "}
+          made for agentic deployments: the free human checkpoint has to
+          be designed back in.
+        </P>
+        <P>
+          <B>Task and session classification.</B> The unit-of-analysis
+          discipline (what counts as a session, what counts as a
+          category, how boundary calls get resolved) is directly
+          transferable to agent-run task decomposition.
+        </P>
+        <P>
+          Two pieces do not transfer cleanly. Voice-map compliance works
+          for an operator; agent output does not have a voice to comply
+          with in the same sense. Scale changes: procedural governance
+          at the operator level has to become programmatic governance at
+          the agent level, and the failure modes shift accordingly.
+        </P>
+        <P>
+          The reason practitioner-level discipline matters for agent
+          governance is architectural. Operator-level and agent-level
+          practice share the same instruments; the operator level is
+          where those instruments are calibrated first.
+          Practitioner-level discipline is where instruments get built
+          and tested before they run inside systems without a human at
+          the keyboard.
+        </P>
+
+        <H2>Links out</H2>
+        <P>
+          The audit produces artifacts, not just findings. The public
+          ones are here for direct inspection and replication.
+        </P>
+        <P>
+          <B>Governance Craft Log.</B> The 23 discipline moves catalogued
+          during the audit&rsquo;s own execution, phase by phase.
+        </P>
+        <P>
+          <B>Executive Card:</B> a one-page synthesis of the audit and its
+          methodology anchors.
+        </P>
+        <P>
+          <B>AB Governance Maturity Scorecard</B> &mdash; the seven
+          dimensions with current baseline and next-90 targets.
+        </P>
+        <P>
+          <B>PDDS Governance Scorecard.</B> The production proof-point,
+          NIST AI RMF-aligned, publicly available.
+        </P>
+        <P>
+          <B>Task Allocation View (three layers):</B> session count,
+          message volume, token usage, and the combined dumbbell.
+        </P>
+        <P>
+          <B>Dialogue Maturity Curve dashboard</B> &mdash; ~100 sessions
+          scored on the six-metric rubric, spanning 18 months.
+        </P>
+
+        <H2>What&rsquo;s next</H2>
+        <P>
+          Two immediate follow-ups. A governance scorecard post that
+          surfaces the seven-dimension baseline in one page, for
+          operators who want to score their own practices against it.
+          And a Q4 audit refresh that closes the biggest instrumentation
+          gap: the descriptive-to-measured shift for per-session
+          dispatch (which model, which effort, actually used, per
+          session).
+        </P>
+        <P>
+          The instrument this piece describes is v1. Later versions of
+          the instrument will improve as other operators run it against
+          their own practices and report what breaks. Send what you
+          find.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The measurement-validity discipline this audit applies to its own operating model."
+          />
+          <SeeAlsoItem
+            slug="when-the-stakes-are-the-mission"
+            title="When the stakes are the mission."
+            gloss="The same evaluation discipline pointed outward at mission-driven AI deployment, where the essential minimum has to hold under constraint."
+          />
+          <SeeAlsoItem
+            slug="actions-not-answers"
+            title="Actions, not answers."
+            gloss="The agentic-HITL argument this piece extends from operator practice into agent systems."
+          />
+          <SeeAlsoItem
+            slug="ai-did-not-write-my-library"
+            title="AI did not write my library."
+            gloss="The companion piece on how AI actually shows up in the AB working practice, read alongside this audit&rsquo;s findings."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written August 2026 for the Analytic Bytes Library. The public
+          report from AB&rsquo;s own 90-day audit &mdash; three
+          measurement lenses (session count, message volume, token
+          usage) applied to n &asymp; 83 sessions across ten task
+          categories, mapped against the HITL/AITL load-carrier axis and
+          Kane-shaped validity discipline. Draws on the Governance Craft
+          Log, Executive Card, and Maturity Scorecard produced during
+          the audit.
         </MetaNote>
       </>
     ),

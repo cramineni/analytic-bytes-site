@@ -1,43 +1,52 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Field Note No. 10: AI did not write my library. AI helped me navigate it.</title>
-<desc>White background. Five vertical navy bars of increasing height represent the five stages of the AI relationship — vending machine, foundation, crisis, building, multi-tool selection. A subtle teal underline runs beneath them, the library shelf being navigated. Title and italic subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
+<title>Field Note No. 11: AI did not write my library. AI helped me navigate it.</title>
+<desc>White background with two curves plotted across five stage markers. A navy line labeled Maturity climbs steadily across all five stages. A teal line labeled Capability stays flat across the first three stages, then steps up sharply at stage four when a new tool enters. The visual names the through-line: maturity transferred, capability expanded. Title and italic subtitle in sans-serif beneath. Analytic Bytes signature at the bottom.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
-<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 10</text>
 
-<!-- Five stages as ascending bars on a shelf line -->
-<g transform="translate(600, 260)">
-  <!-- Shelf line (teal — the library) -->
-  <line x1="-220" y1="20" x2="220" y2="20" stroke="#0EA5E9" stroke-width="1.5" stroke-linecap="round"/>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field note  ·  No. 11</text>
 
-  <!-- Stage 1: vending machine — tiny bar -->
-  <rect x="-200" y="0" width="30" height="20" fill="#0F2A4A" opacity="0.35"/>
+<!-- Central visual: 5-stage two-curve chart -->
+<g>
+  <!-- Baseline -->
+  <line x1="200" y1="340" x2="1000" y2="340" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
 
-  <!-- Stage 2: foundation — medium bar -->
-  <rect x="-140" y="-30" width="30" height="50" fill="#0F2A4A" opacity="0.55"/>
+  <!-- Stage markers -->
+  <line x1="240" y1="335" x2="240" y2="345" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="400" y1="335" x2="400" y2="345" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="560" y1="335" x2="560" y2="345" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="720" y1="335" x2="720" y2="345" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="880" y1="335" x2="880" y2="345" stroke="#94A3B8" stroke-width="1"/>
 
-  <!-- Stage 3: crisis — taller with slight peak -->
-  <rect x="-80" y="-55" width="30" height="75" fill="#0F2A4A" opacity="0.75"/>
+  <text x="240" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">STAGE 1</text>
+  <text x="400" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">STAGE 2</text>
+  <text x="560" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">STAGE 3</text>
+  <text x="720" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">STAGE 4</text>
+  <text x="880" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">STAGE 5</text>
 
-  <!-- Stage 4: building — pivot upward -->
-  <rect x="-20" y="-70" width="30" height="90" fill="#0F2A4A" opacity="0.85"/>
+  <!-- Maturity line: steady climb, navy -->
+  <path d="M 240 320 Q 320 300, 400 275 T 560 235 T 720 210 T 880 200" stroke="#0F2A4A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="240" cy="320" r="4" fill="#0F2A4A"/>
+  <circle cx="400" cy="275" r="4" fill="#0F2A4A"/>
+  <circle cx="560" cy="235" r="4" fill="#0F2A4A"/>
+  <circle cx="720" cy="210" r="4" fill="#0F2A4A"/>
+  <circle cx="880" cy="200" r="4" fill="#0F2A4A"/>
 
-  <!-- Stage 5: multi-tool selection — tallest, split into three thin bars -->
-  <rect x="40" y="-90" width="8" height="110" fill="#0F2A4A"/>
-  <rect x="52" y="-95" width="8" height="115" fill="#0F2A4A"/>
-  <rect x="64" y="-85" width="8" height="105" fill="#0F2A4A"/>
-  <text x="76" y="-100" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1.5" fill="#0EA5E9">multi-tool</text>
+  <!-- Capability line: flat, step-jump at stage 4, teal -->
+  <path d="M 240 330 L 400 328 L 560 325 L 720 245 L 880 230" stroke="#0EA5E9" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="240" cy="330" r="4" fill="#0EA5E9"/>
+  <circle cx="400" cy="328" r="4" fill="#0EA5E9"/>
+  <circle cx="560" cy="325" r="4" fill="#0EA5E9"/>
+  <circle cx="720" cy="245" r="4" fill="#0EA5E9"/>
+  <circle cx="880" cy="230" r="4" fill="#0EA5E9"/>
 
-  <!-- Stage labels below shelf line -->
-  <text x="-185" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">1</text>
-  <text x="-125" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">2</text>
-  <text x="-65" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">3</text>
-  <text x="-5" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">4</text>
-  <text x="56" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">5</text>
+  <!-- Curve labels at right end -->
+  <text x="895" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#0F2A4A" text-anchor="start">Maturity</text>
+  <text x="895" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" fill="#0EA5E9" text-anchor="start">Capability</text>
 </g>
 
-<text x="600" y="435" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">AI did not write my library.</text>
-<text x="600" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">AI helped me navigate it.</text>
-<text x="600" y="510" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">Field notes on the stages of working with generative AI across tools.</text>
+<text x="600" y="445" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">AI did not write my library.</text>
+<text x="600" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">AI helped me navigate it.</text>
+<text x="600" y="518" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">Field notes on the stages of working with generative AI across tools.</text>
 <line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
 <text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
 </svg>
