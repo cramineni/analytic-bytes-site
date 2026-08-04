@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import type { Metadata } from "next";
-import { getPddsDashboard } from "@/lib/pdds-dashboard";
+import { getPddsDashboard, getPddsDashboardExt } from "@/lib/pdds-dashboard";
 import HeadlineCards from "@/components/pdds/HeadlineCards";
 import DecisionPanel from "@/components/pdds/DecisionPanel";
 import SourcesFooter from "@/components/pdds/SourcesFooter";
@@ -44,6 +44,7 @@ export const revalidate = 3600;
 
 export default function PublicDataPage() {
   const data = getPddsDashboard();
+  const ext = getPddsDashboardExt();
 
   return (
     <>
@@ -89,6 +90,35 @@ export default function PublicDataPage() {
                   sources={data.sources}
                   generatedAt={data.generated_at}
                 />
+
+                {ext && ext.panels.length > 0 && (
+                  <div className="mt-24 pt-12 border-t-2 border-accent">
+                    <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-3">
+                      Extension track
+                    </div>
+                    <h2 className="text-[24px] sm:text-[28px] font-extrabold tracking-[-0.02em] text-ink m-0">
+                      Messier data, same discipline.
+                    </h2>
+                    <p className="text-ink-2 text-[15px] sm:text-[16px] leading-[1.55] mt-3 max-w-[60ch]">
+                      Administrative and survey panels admitted through
+                      revised governance gates. Each panel declares its
+                      data class and lever type up front; where a
+                      cross-unit comparison would blend definitions rather
+                      than reveal them, the comparison is <em>held off the
+                      axis</em> and named explicitly instead of smuggled
+                      into a chart.
+                    </p>
+
+                    {ext.panels.map((p) => (
+                      <DecisionPanel key={p.panel_id} panel={p} />
+                    ))}
+
+                    <SourcesFooter
+                      sources={ext.sources}
+                      generatedAt={ext.generated_at}
+                    />
+                  </div>
+                )}
               </div>
             </Reveal>
           </div>

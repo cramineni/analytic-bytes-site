@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-08-03T12:57:52",
+  "track": "extension",
+  "round": "anchor-only",
+  "note": "Extension track: messy survey and heterogeneous administrative panels. FIELD_NOTE_gates_for_messy_data.md documents how the governance gates were revised to admit these panels without weakening what the gates require. Every panel declares a data_class (survey | administrative) and a lever_type (point | continuous), which together decide which gates apply to it.",
+  "panels": [
+    {
+      "panel_id": "absenteeism",
+      "metric": "chronic_absenteeism_rate",
+      "unit": "percent",
+      "series": {
+        "2019": [
+          {
+            "group": "New Jersey",
+            "value": 10.6,
+            "provenance": "record-derived"
+          }
+        ],
+        "2022": [
+          {
+            "group": "New Jersey",
+            "value": 18.1,
+            "provenance": "record-derived"
+          }
+        ],
+        "2023": [
+          {
+            "group": "New Jersey",
+            "value": 16.6,
+            "provenance": "record-derived"
+          }
+        ],
+        "2024": [
+          {
+            "group": "New Jersey",
+            "value": 14.9,
+            "provenance": "record-derived"
+          }
+        ],
+        "2020": [
+          {
+            "group": "New Jersey",
+            "value": null,
+            "cell_state": "missing",
+            "note": "2019-20 statewide rate not reported by NJDOE (spring-2020 school closures). Held blank as a series break rather than interpolated across."
+          }
+        ],
+        "2021": [
+          {
+            "group": "New Jersey",
+            "value": null,
+            "cell_state": "missing",
+            "note": "2020-21 statewide rate omitted from the NJDOE trend (remote/hybrid instruction makes it non-comparable)."
+          }
+        ]
+      },
+      "lever": {
+        "panel_id": "absenteeism",
+        "lever": "ESSA School Quality accountability + NJDOE statewide attendance guidance and corrective-action requirement",
+        "status_badge": "ongoing",
+        "movement_note": "Chronic absenteeism in New Jersey moved from 10.6 percent in 2019 to 18.1 percent in 2022, then eased to 16.6 percent in 2023 and 14.9 percent in 2024. This is a continuous, administrative lever: ESSA accountability funding has attached for years with no single enactment date, so the series should be read as an ongoing trend rather than a before/after snapshot. Remember that chronic absenteeism is a measure, not a direct observation of behavior \u2014 its rate can shift through changes in definition, coding practice, or enrollment counts, independent of whether students are actually attending more or less. The 2024 figure sits well above the 10 percent corrective-action trigger set by N.J.S.A. 18A:38-25.1, meaning a wide share of districts remain in scope for state-mandated plans even as the rate cools from its 2022 peak. The decline from 18.1 to 14.9 percent is consistent with easing conditions, but the data cannot say what portion reflects actual attendance change versus reporting adjustment, and no causal claim about any specific program is supported here. Track the four-year run rather than any single year, and confirm whether local definitional or coding shifts moved with the statewide trend before drawing conclusions about magnitude. Decision: the state chronic-absenteeism review board should keep New Jersey districts above the 10 percent trigger under active corrective-action monitoring and request a definition/coding audit alongside the 2025 data pull.",
+        "source_url": "https://www.nj.gov/education/safety/sandp/attendance/docs/ReportingStudentAttendanceandDeterminingChronicAbsenteeismRates.pdf",
+        "data_class": "administrative",
+        "lever_type": "continuous"
+      },
+      "data_class": "administrative",
+      "lever_type": "continuous",
+      "comparison_withheld": {
+        "anchor": "New Jersey",
+        "anchor_excused_treatment": "state-excused (7 statutory reasons) excluded; local-excused and out-of-school suspensions count as absent",
+        "units": [
+          {
+            "group": "New York",
+            "periods": [
+              2019,
+              2022
+            ],
+            "denominator_rule": ">=10% of instructional days enrolled to attend",
+            "excused_treatment": "suspensions and extended medical absences excluded from the calculation"
+          }
+        ],
+        "note": "Neighboring units are held off this shared axis until each one's denominator-reconciliation table is shown with it. The metric name is the same; the denominators are not. New Jersey: state-excused (7 statutory reasons) excluded; local-excused and out-of-school suspensions count as absent. New York: suspensions and extended medical absences excluded from the calculation."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "njdoe_attendance_guidance_2025",
+      "title": "Reporting Student Attendance and Determining Chronic Absenteeism Rates",
+      "publisher": "New Jersey Department of Education",
+      "url": "https://www.nj.gov/education/safety/sandp/attendance/docs/ReportingStudentAttendanceandDeterminingChronicAbsenteeismRates.pdf",
+      "table_ref": "How is Chronic Absenteeism Measured in New Jersey",
+      "release_date": "2025-04-01"
+    },
+    {
+      "source_id": "njdoe_spr_2024",
+      "title": "2023-2024 School Performance Reports and Graduation Data (State Board presentation)",
+      "publisher": "New Jersey Department of Education, Office of Performance Management",
+      "url": "https://www.nj.gov/education/sboe/meetings/agenda/2025/April/public/4_2023-2024_School_Performance_Reports_and_Graduation_Data.pdf",
+      "table_ref": "Chronic Absenteeism Rates (statewide trend chart)",
+      "release_date": "2025-04-02"
+    },
+    {
+      "source_id": "nys_comptroller_2024",
+      "title": "Missing School: New York's Stubbornly High Rates of Chronic Absenteeism",
+      "publisher": "Office of the New York State Comptroller",
+      "url": "https://www.osc.ny.gov/press/releases/2024/10/dinapoli-nearly-1-3-students-were-chronically-absent-school",
+      "table_ref": "Pandemic's Impact (statewide rates by school year)",
+      "release_date": "2024-10-04"
+    }
+  ]
+}

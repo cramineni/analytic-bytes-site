@@ -44,11 +44,12 @@ export default function PanelChart({ panel }: { panel: Panel }) {
   const bottomPad = multi ? 56 : 34;
   const height = topPad + rowH * groups.length + bottomPad;
 
-  // Compute max across all values for x-axis scale
-  const allVals = Object.values(panel.series).flatMap((s) =>
-    s.map((b) => b.value)
-  );
-  const maxV = Math.max(...allVals);
+  // Compute max across all values for x-axis scale. Filter out null cells
+  // (extension-track "missing" bars) so they don't confuse the domain.
+  const allVals = Object.values(panel.series)
+    .flatMap((s) => s.map((b) => b.value))
+    .filter((v): v is number => typeof v === "number");
+  const maxV = allVals.length > 0 ? Math.max(...allVals) : 1;
   // Round up to a nice number for the axis
   const niceMax = niceCeil(maxV);
   const xStart = labelW;

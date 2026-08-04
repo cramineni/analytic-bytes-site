@@ -62,6 +62,16 @@ const STYLES: Record<string, PanelStyle> = {
     seriesColors: ["#B4C0CC", "#0F2A4A"],
     highlight: [],
   },
+  // Extension track — NJ chronic absenteeism. Six periods (2019–2024) with
+  // two missing (2020, 2021 held blank as series break, not interpolated).
+  // Muted grey for pre-pandemic + missing-cell periods, navy for the
+  // 2022–2024 in-scope years the corrective-action trigger reads against.
+  absenteeism: {
+    base: "#0F2A4A",
+    accent: "#0EA5E9",
+    seriesColors: ["#B4C0CC", "#B4C0CC", "#B4C0CC", "#0F2A4A", "#0F2A4A", "#0F2A4A"],
+    highlight: [],
+  },
 };
 
 export function panelStyle(id: string): PanelStyle {
@@ -102,6 +112,11 @@ export const PANEL_META: Record<string, { title: string; subtitle: string }> = {
     title: "Medicare 30-day readmission rate",
     subtitle:
       "Fee-for-service, all conditions, 2010 (pre-HRRP) vs 2016 (post-HRRP)",
+  },
+  absenteeism: {
+    title: "New Jersey chronic absenteeism rate",
+    subtitle:
+      "Share of students absent 10%+ of enrolled days, 2019–2024 (NJDOE state statistic; 2020–2021 held blank as series break)",
   },
 };
 
