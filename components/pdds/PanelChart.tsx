@@ -6,11 +6,22 @@ import { formatAxis, formatFull, panelStyle } from "@/lib/pdds-format";
 // highlighted groups); multi-period panels (e.g. overdose 2023 vs 2024) draw
 // one bar per period per group. Sits inside the surrounding <section>; sizes
 // itself to fit whatever the container gives it.
+//
+// Layout guard (added 2026-08-04 with Panel 08 absenteeism): a "single-unit
+// multi-year" panel — exactly one group, three or more periods — flips to
+// year-on-Y layout (one bar per year). Missing cells render as an italic
+// "Not reported" row rather than a gap. The guard is geometry-based so no
+// frozen panel can accidentally trigger it; only extension-track panels
+// with the SUMY shape use this branch. Readmissions (2 periods) stays.
 export default function PanelChart({ panel }: { panel: Panel }) {
   const periods = Object.keys(panel.series).sort();
   const style = panelStyle(panel.panel_id);
   const latest = periods[periods.length - 1];
   const groups = panel.series[latest].map((b) => b.group);
+
+  // SUMY layout: one group, 3+ periods → year-on-Y single-column bars.
+  const isSUMY = groups.length === 1 && periods.length >= 3;
+  if (isSUMY) return <SUMYChart panel={panel} periods={periods} style={style} />;
 
   // Build rows: [{ group, "2023": v, "2024": v }]
   const rows = groups.map((g) => {
@@ -207,6 +218,156 @@ export default function PanelChart({ panel }: { panel: Panel }) {
           ))}
         </g>
       )}
+    </svg>
+  );
+}
+
+// SUMY (single-unit multi-year) layout: years down the Y-axis, one bar per
+// year, one column of the group's value. Missing cells render an italic
+// "Not reported — pandemic series break" line instead of a bar. No legend
+// (each row is a year — color would be redundant).
+function SUMYChart({
+  panel,
+  periods,
+  style,
+}: {
+  panel: Panel;
+  periods: string[];
+  style: ReturnType<typeof panelStyle>;
+}) {
+  const group = panel.series[periods[periods.length - 1]][0].group;
+
+  // For each period, look up the value and any missing-cell note.
+  const rows = periods.map((p) => {
+    const bar = panel.series[p].find((b) => b.group === group);
+    return {
+      period: p,
+      value: bar?.value ?? null,
+      missing: bar?.cell_state === "missing",
+      note: bar?.note ?? null,
+    };
+  });
+
+  // Geometry — narrower label column since Y is just 4-digit years.
+  const width = 720;
+  const labelW = 80;
+  const rightPad = 56;
+  const rowGap = 12;
+  const barH = 20;
+  const rowH = barH + rowGap;
+  const topPad = 10;
+  const bottomPad = 34; // room for x-axis ticks; no legend
+  const height = topPad + rowH * rows.length + bottomPad;
+
+  // X domain: nice-ceil over present values only.
+  const presentVals = rows
+    .map((r) => r.value)
+    .filter((v): v is number => typeof v === "number");
+  const maxV = presentVals.length > 0 ? Math.max(...presentVals) : 1;
+  const niceMax = niceCeil(maxV);
+  const xStart = labelW;
+  const xEnd = width - rightPad;
+  const scale = (v: number) => xStart + (v / niceMax) * (xEnd - xStart);
+
+  const tickCount = 4;
+  const ticks = Array.from({ length: tickCount + 1 }, (_, i) =>
+    Math.round((niceMax * i) / tickCount)
+  );
+
+  return (
+    <svg
+      viewBox={`0 0 ${width} ${height}`}
+      className="w-full h-auto"
+      role="img"
+      aria-label={`${panel.metric} for ${group} by year`}
+    >
+      {/* Gridlines */}
+      {ticks.map((t) => (
+        <line
+          key={`grid-${t}`}
+          x1={scale(t)}
+          x2={scale(t)}
+          y1={topPad}
+          y2={height - bottomPad}
+          stroke="#E2E8F0"
+          strokeWidth={1}
+          strokeDasharray={t === 0 ? "" : "2 3"}
+        />
+      ))}
+
+      {rows.map((r, i) => {
+        const rowY = topPad + i * rowH;
+        const cy = rowY + rowH / 2;
+        // Series color per period if provided, else base.
+        const fill = style.seriesColors[i] ?? style.base;
+        return (
+          <g key={r.period}>
+            <text
+              x={labelW - 10}
+              y={cy}
+              dominantBaseline="middle"
+              textAnchor="end"
+              fontSize={12.5}
+              fill="#475569"
+              fontFamily="Inter,Helvetica,Arial,sans-serif"
+            >
+              {r.period}
+            </text>
+            {typeof r.value === "number" ? (
+              <>
+                <rect
+                  x={xStart}
+                  y={rowY + (rowH - rowGap - barH) / 2}
+                  width={scale(r.value) - xStart}
+                  height={barH}
+                  fill={fill}
+                  rx={2}
+                />
+                <text
+                  x={scale(r.value) + 6}
+                  y={cy}
+                  dominantBaseline="middle"
+                  textAnchor="start"
+                  fontSize={11}
+                  fill="#0F2A4A"
+                  fontFamily="Inter,Helvetica,Arial,sans-serif"
+                  fontWeight={500}
+                >
+                  {formatFull(r.value, panel.unit)}
+                </text>
+              </>
+            ) : (
+              <text
+                x={xStart}
+                y={cy}
+                dominantBaseline="middle"
+                textAnchor="start"
+                fontSize={11.5}
+                fontStyle="italic"
+                fill="#94A3B8"
+                fontFamily="Inter,Helvetica,Arial,sans-serif"
+              >
+                Not reported &mdash; pandemic series break
+              </text>
+            )}
+          </g>
+        );
+      })}
+
+      {/* X-axis ticks */}
+      {ticks.map((t) => (
+        <text
+          key={`tick-${t}`}
+          x={scale(t)}
+          y={height - bottomPad + 16}
+          textAnchor="middle"
+          fontSize={11}
+          fill="#94A3B8"
+          fontFamily="Inter,Helvetica,Arial,sans-serif"
+        >
+          {formatAxis(t, panel.unit)}
+        </text>
+      ))}
     </svg>
   );
 }

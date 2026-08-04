@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T12:57:52",
+  "generated_at": "2026-08-04T11:00:38",
   "track": "extension",
   "round": "anchor-only",
   "note": "Extension track: messy survey and heterogeneous administrative panels. FIELD_NOTE_gates_for_messy_data.md documents how the governance gates were revised to admit these panels without weakening what the gates require. Every panel declares a data_class (survey | administrative) and a lever_type (point | continuous), which together decide which gates apply to it.",

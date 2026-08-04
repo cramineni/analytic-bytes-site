@@ -22,17 +22,32 @@ export default function DecisionPanel({ panel }: { panel: Panel }) {
           </p>
         )}
         {(panel.data_class || panel.lever_type) && (
-          <div className="mt-2 flex flex-wrap gap-2 font-mono text-[10.5px] tracking-[0.14em] uppercase">
-            {panel.data_class && (
-              <span className="text-ink-3 border border-line rounded px-1.5 py-0.5">
-                {panel.data_class}
-              </span>
-            )}
-            {panel.lever_type && (
-              <span className="text-ink-3 border border-line rounded px-1.5 py-0.5">
-                {panel.lever_type} lever
-              </span>
-            )}
+          <div className="mt-2">
+            <div className="flex flex-wrap gap-2 font-mono text-[10.5px] tracking-[0.14em] uppercase">
+              {panel.data_class && (
+                <span className="text-ink-3 border border-line rounded px-1.5 py-0.5">
+                  {panel.data_class}
+                </span>
+              )}
+              {panel.lever_type && (
+                <span className="text-ink-3 border border-line rounded px-1.5 py-0.5">
+                  {panel.lever_type} lever
+                </span>
+              )}
+            </div>
+            <p className="text-[12px] text-ink-3 mt-1.5 leading-[1.5] m-0">
+              {panel.data_class === "administrative"
+                ? "administrative = record-based, not survey"
+                : panel.data_class === "survey"
+                  ? "survey = self-reported response, not a record"
+                  : null}
+              {panel.data_class && panel.lever_type ? " · " : null}
+              {panel.lever_type === "continuous"
+                ? "continuous = standing policy, no single enactment date — read as trend"
+                : panel.lever_type === "point"
+                  ? "point = single enactment date — read as before/after"
+                  : null}
+            </p>
           </div>
         )}
       </header>
