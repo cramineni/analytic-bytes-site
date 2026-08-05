@@ -73,13 +73,16 @@ const STYLES: Record<string, PanelStyle> = {
     highlight: [],
   },
   // Extension track — NSCH flourishing (Panel 07). Single-period, survey data
-  // across five states + national. Navy across, no highlights (distribution is
-  // the claim, and the extension-track callouts carry the caveats).
+  // across five states + national. Mirrors the PDDS pipeline's own web/lib
+  // styling: Nationwide reads as the accent anchor, states muted in slate.
+  // Reader's eye lands on the national reference first, then scans states
+  // against it with a visual sense of "not distinguishable from" — which is
+  // exactly the CI overlap story the movement_note tells.
   nsch: {
-    base: "#0F2A4A",
+    base: "#B4C0CC",
     accent: "#0EA5E9",
-    seriesColors: ["#0F2A4A"],
-    highlight: [],
+    seriesColors: ["#B4C0CC"],
+    highlight: ["Nationwide"],
   },
   // Extension track — YRBSS mental-health indicators (Panel 09). Single-period,
   // survey data across four adolescent mental-health items. Same navy palette;
