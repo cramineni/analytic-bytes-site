@@ -1,0 +1,552 @@
+<!doctype html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "[GOV] Governance Craft Log",
+  "schemaVersion": 1,
+  "description": "The methodology narrative of the AB 90-day audit's own execution — 23 discipline moves + 7 emergent principles across 5 phases (Definitional · Corpus/Instrumentation · Data Refresh · Quality Standard · Dissemination). Executive-scannable at top, deep-drill move cards below. Anchor artifact of the AB Governance Craft Kit — makes AI-native governance work observable in a way it wasn't before. Foundation for the near-term governance portfolio (Aug) and Q4 audit kit productization."
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AB Governance Craft Log — Jul 30-31, 2026 close</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #ffffff; color: #1a1a1a; line-height: 1.55; font-size: 14px;
+}
+.wrap { max-width: 900px; margin: 0 auto; padding: 32px 24px 60px; }
+
+/* HEADER */
+header.top { padding-bottom: 20px; border-bottom: 1px solid #d8dde3; margin-bottom: 24px; }
+header.top h1 { font-size: 24px; font-weight: 600; margin: 0 0 4px; color: #1a1a1a; letter-spacing: -0.005em; }
+header.top .sub { font-size: 14px; color: #5b6b7a; margin: 0 0 6px; font-style: italic; }
+header.top .stamp { font-size: 11.5px; color: #999; font-family: -apple-system, monospace; }
+
+/* HERO CALLOUT */
+.hero {
+  background: linear-gradient(90deg, #F5F1FA 0%, #EFEAF7 100%);
+  border-left: 4px solid #7A5FA0;
+  padding: 18px 22px; margin: 22px 0 24px; border-radius: 0 8px 8px 0;
+}
+.hero .lbl { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #7A5FA0; font-weight: 700; margin-bottom: 8px; }
+.hero .headline { font-size: 17px; font-weight: 600; color: #2A1745; line-height: 1.4; }
+.hero .headline .em { color: #7A5FA0; }
+.hero .sub { font-size: 13px; color: #4a3560; margin-top: 8px; line-height: 1.5; }
+
+/* EXEC SUMMARY */
+section.exec { background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px; padding: 18px 22px; margin-bottom: 28px; }
+section.exec h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7a; font-weight: 700; margin: 0 0 12px; }
+section.exec p { font-size: 13.5px; margin: 0 0 10px; color: #2a2f36; line-height: 1.6; }
+section.exec p:last-child { margin-bottom: 0; }
+section.exec strong { color: #1a1a1a; font-weight: 600; }
+section.exec .anchor { color: #7A5FA0; font-weight: 600; }
+
+/* PHASES AT A GLANCE */
+h2.section { font-size: 18px; font-weight: 600; margin: 30px 0 8px; color: #1e3a5f; }
+p.sectionsub { font-size: 13px; color: #5b6b7a; margin: 0 0 16px; font-style: italic; }
+
+.phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 22px; }
+@media (max-width: 720px) { .phases { grid-template-columns: repeat(2, 1fr); } }
+.phase-chip {
+  padding: 12px 12px 14px; border-radius: 8px; border: 1px solid #e5e5e5;
+  cursor: pointer; text-decoration: none; color: inherit; display: block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.phase-chip:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.phase-chip .pl { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px; }
+.phase-chip .pn { font-size: 13.5px; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; line-height: 1.3; }
+.phase-chip .pf { font-size: 11px; color: #5b6b7a; line-height: 1.4; margin-bottom: 8px; }
+.phase-chip .pc { font-size: 11px; color: #333; font-weight: 600; }
+.phase-A { background: #F5F1FA; border-color: #C5B4D9; } .phase-A .pl { color: #7A5FA0; }
+.phase-B { background: #E8F0F5; border-color: #A8C6D6; } .phase-B .pl { color: #3f8aa5; }
+.phase-C { background: #F2F8EA; border-color: #B7D9A5; } .phase-C .pl { color: #6b8e23; }
+.phase-D { background: #FEF4E6; border-color: #E8C88A; } .phase-D .pl { color: #c97a4b; }
+.phase-E { background: #FDECEC; border-color: #E8B0B0; } .phase-E .pl { color: #b94a48; }
+
+/* PHASE SECTIONS */
+.phase-block { margin: 34px 0 8px; padding-top: 6px; }
+.phase-block h3 { font-size: 17px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.005em; }
+.phase-block .desc { font-size: 12.5px; color: #5b6b7a; margin: 0 0 14px; line-height: 1.55; font-style: italic; }
+.phase-block.A h3 { color: #7A5FA0; }
+.phase-block.B h3 { color: #3f8aa5; }
+.phase-block.C h3 { color: #6b8e23; }
+.phase-block.D h3 { color: #c97a4b; }
+.phase-block.E h3 { color: #b94a48; }
+
+/* MOVE CARD */
+details.move {
+  background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px;
+  padding: 0; margin-bottom: 6px; overflow: hidden;
+  transition: box-shadow 0.15s ease;
+}
+details.move[open] { box-shadow: 0 2px 8px rgba(0,0,0,0.04); background: #fff; }
+details.move summary {
+  cursor: pointer; list-style: none;
+  padding: 10px 14px 10px 12px;
+  display: grid; grid-template-columns: 50px 1fr auto; gap: 10px; align-items: center;
+  font-size: 13px;
+}
+details.move summary::-webkit-details-marker { display: none; }
+details.move summary .num { font-size: 11px; font-weight: 700; padding: 3px 7px; border-radius: 12px; text-align: center; }
+details.move summary .ttl { font-weight: 500; color: #1a1a1a; line-height: 1.35; }
+details.move summary .caret { font-size: 11px; color: #999; }
+details.move[open] summary .caret { transform: rotate(90deg); }
+details.move .body { padding: 8px 14px 14px 74px; }
+details.move .body dl { margin: 0; }
+details.move .body dt { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: #666; margin-top: 8px; margin-bottom: 3px; }
+details.move .body dt:first-child { margin-top: 0; }
+details.move .body dd { margin: 0 0 6px; font-size: 12.5px; color: #2a2f36; line-height: 1.55; }
+
+.move.A summary .num { background: #F5F1FA; color: #7A5FA0; border: 1px solid #C5B4D9; }
+.move.B summary .num { background: #E8F0F5; color: #3f8aa5; border: 1px solid #A8C6D6; }
+.move.C summary .num { background: #F2F8EA; color: #6b8e23; border: 1px solid #B7D9A5; }
+.move.D summary .num { background: #FEF4E6; color: #c97a4b; border: 1px solid #E8C88A; }
+.move.E summary .num { background: #FDECEC; color: #b94a48; border: 1px solid #E8B0B0; }
+.move.A[open] { border-left: 3px solid #7A5FA0; }
+.move.B[open] { border-left: 3px solid #3f8aa5; }
+.move.C[open] { border-left: 3px solid #6b8e23; }
+.move.D[open] { border-left: 3px solid #c97a4b; }
+.move.E[open] { border-left: 3px solid #b94a48; }
+
+/* PRINCIPLES GRID */
+.principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 16px; }
+@media (max-width: 720px) { .principles { grid-template-columns: 1fr; } }
+.principle {
+  background: #F5F1FA; border: 1px solid #C5B4D9; border-left: 3px solid #7A5FA0;
+  border-radius: 6px; padding: 12px 14px;
+}
+.principle .n { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #7A5FA0; margin-bottom: 4px; }
+.principle .t { font-size: 13.5px; font-weight: 600; color: #2A1745; margin-bottom: 6px; line-height: 1.3; }
+.principle .b { font-size: 12px; color: #3a2540; line-height: 1.5; }
+
+/* CLOSING */
+.pullquote {
+  background: #FEF9EE; border-top: 2px solid #D4A04A; border-bottom: 2px solid #D4A04A;
+  padding: 18px 24px; margin: 28px 0 22px; text-align: center;
+  font-style: italic; font-size: 17px; font-weight: 500; color: #4A3814; line-height: 1.5;
+}
+.kane {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 20px 0;
+}
+@media (max-width: 720px) { .kane { grid-template-columns: 1fr 1fr; } }
+.kane-box {
+  background: #fff; border: 1px solid #d8dde3; border-radius: 6px; padding: 12px 14px;
+}
+.kane-box .kl { font-size: 10.5px; font-weight: 700; color: #3f8aa5; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; font-family: -apple-system, monospace; }
+.kane-box .kt { font-size: 13.5px; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; line-height: 1.3; }
+.kane-box .kb { font-size: 11.5px; color: #5b6b7a; line-height: 1.5; }
+.kane-box .km { font-size: 10.5px; color: #7A5FA0; font-weight: 600; margin-top: 6px; font-family: -apple-system, monospace; }
+
+/* FOOTER */
+footer.foot {
+  margin-top: 34px; padding-top: 18px; border-top: 1px solid #d8dde3;
+  font-size: 12px; color: #666; line-height: 1.6;
+}
+footer.foot strong { color: #333; font-weight: 500; }
+footer.foot code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; font-size: 11px; color: #444; }
+footer.foot .row { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 10px; }
+footer.foot .row > div { flex: 1; min-width: 240px; }
+
+p.intro { font-size: 13px; color: #333; margin: 0 0 14px; line-height: 1.6; }
+p.intro strong { color: #1a1a1a; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="cowork-header-bar" style="height:6px;background:#1e40af;width:100%;"></div>
+<div class="wrap">
+
+<header class="top">
+  <h1>AB Governance Craft Log</h1>
+  <p class="sub">How the AB 90-day audit audited itself in real-time.</p>
+  <p class="stamp">v1.0 · Jul 30-31, 2026 close · sourced from <code style="font-size:11px;background:#f4f4f4;padding:1px 5px;border-radius:3px;">ab_90_day_audit_apr_jul_2026.docx</code> §9 · refreshed each 90-day audit cycle</p>
+</header>
+
+<!-- MEASUREMENT-VALIDITY POSITIONING (added) -->
+<div style="background:#fff; border:1px solid #C5B4D9; border-left:4px solid #7A5FA0; padding:16px 20px; margin:0 0 22px; border-radius:0 8px 8px 0;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#7A5FA0;font-weight:700;margin-bottom:8px;">&#9654; THE POSITIONING</div>
+  <p style="font-size:13.5px;margin:0 0 8px;color:#2a1745;line-height:1.6;"><strong>Measurement-validity discipline for AI governance &mdash; the missing discipline in responsible AI discourse.</strong></p>
+  <p style="font-size:12.5px;margin:0;color:#4a3560;line-height:1.6;">The AI governance conversation focuses on principles (fairness, transparency, accountability), controls (documentation, oversight, human-in-the-loop / AI-in-the-loop (HITL/AITL &mdash; see AB audit for the measurable-proxy formulation of the load-carrier axis)), and risk categories. What's largely missing: the measurement-validity discipline that asks whether the controls measure what they claim to. Kane's 4-inference framework &mdash; mature in educational / psychological testing since the 1990s &mdash; is basically absent from responsible AI frameworks (NIST AI RMF, EU AI Act, ISO/IEC 42001). This log brings that tradition to AI-native operations at a scope existing frameworks don't traditionally address: solo-practitioner and boutique consulting scale.</p>
+</div>
+
+<!-- HERO CALLOUT -->
+<div class="hero">
+  <div class="lbl">▶ TOP-LINE FINDING</div>
+  <div class="headline"><span class="em">23 discipline moves</span> + <span class="em">7 emergent principles</span> across <span class="em">5 phases</span>. Governance-of-governance done inline, not deferred to future work.</div>
+  <div class="sub">The audit's own USP is measurement/governance discipline. This log is how that discipline held under stress during the audit's own execution — visible, dated, available for peer review. Section 7's honesty note said audit-of-audit was Phase 3+ future work; this log revises that. Done, not aspirational.</div>
+</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<section class="exec">
+  <h2>Executive summary</h2>
+  <p><strong>What this is.</strong> The methodology narrative of the AB 90-day audit's own execution — not the findings the audit produced, but the discipline moves the audit applied to ITSELF during the Jul 30-31 close. Verification, definition-sharpening, instrument-questioning, scorer-correction. 23 moves catalogued, 7 emergent principles named.</p>
+  <p><strong>The Kane 4-inference frame applied to the audit itself.</strong> Kane's validity framework (Scoring → Generalization → Extrapolation → Implication) is what AB claims to bring to client work. This log shows the same discipline running on the audit's own execution. Each of the 5 phases maps to one inference layer — with the audit's mid-flight corrections as the empirical evidence.</p>
+  <p><strong>Why it matters.</strong> Traditional governance craft lived in the practitioner's head; only the finished memo surfaced. AI-collaborative work captures the scaffolding by default — transcripts, corrections logs, mid-flight amendments. This log makes that scaffolding <span class="anchor">observable</span>: the demonstration of governance-of-governance capability, not the aspiration.</p>
+  <p><strong>Who this is for.</strong> Executive evaluators (hiring committees for governance/CDO roles, BD partners assessing engagement fit): scan the top of this log for the story shape. Deep peer reviewers (methodology practitioners, audit specialists): expand the move cards below to interrogate specific discipline choices.</p>
+</section>
+
+<!-- 5 PHASES AT A GLANCE -->
+<h2 class="section">The 5 phases at a glance</h2>
+<p class="sectionsub">Each phase corresponds to one aspect of methodological discipline. Click a chip to jump to that phase.</p>
+
+<div class="phases">
+  <a href="#phase-A" class="phase-chip phase-A">
+    <div class="pl">Phase A</div>
+    <div class="pn">Definitional discipline</div>
+    <div class="pf">Definitions, categories, boundary calls, weights — the vocabulary the audit runs on</div>
+    <div class="pc">9 moves</div>
+  </a>
+  <a href="#phase-B" class="phase-chip phase-B">
+    <div class="pl">Phase B</div>
+    <div class="pn">Corpus &amp; instrumentation</div>
+    <div class="pf">Data provenance, tooling verification, operator-scorer alignment — the ground the audit measures from</div>
+    <div class="pc">5 moves</div>
+  </a>
+  <a href="#phase-C" class="phase-chip phase-C">
+    <div class="pl">Phase C</div>
+    <div class="pn">Data refresh</div>
+    <div class="pf">Currency discipline, freshness cycles, and findings that emerged from the refresh itself</div>
+    <div class="pc">3 moves</div>
+  </a>
+  <a href="#phase-D" class="phase-chip phase-D">
+    <div class="pl">Phase D</div>
+    <div class="pn">Quality standard</div>
+    <div class="pf">Visual scanability, rigor bar, defensibility — the presentation-and-craft discipline</div>
+    <div class="pc">3 moves</div>
+  </a>
+  <a href="#phase-E" class="phase-chip phase-E">
+    <div class="pl">Phase E</div>
+    <div class="pn">Dissemination</div>
+    <div class="pf">Public safety, narrative correction, library-compatibility — the discipline of shipping honestly</div>
+    <div class="pc">3 moves</div>
+  </a>
+</div>
+
+<!-- PHASE A -->
+<div class="phase-block A" id="phase-A">
+  <h3>Phase A · Definitional discipline (9 moves)</h3>
+  <p class="desc">The vocabulary the audit runs on. Every quantitative claim depends on prior definitional choices — what counts as a session, a category, a hub, a weight. When definitions are loose, downstream findings are un-defensible.</p>
+
+  <details class="move A"><summary><span class="num">A-1</span><span class="ttl">"What IS a session?" formalized</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator challenge to loose usage of "session" in early conversation.</dd>
+    <dt>Discipline surfaced</dt><dd>Definitional precision at the unit-of-analysis layer. If the atomic unit isn't defined, no downstream counts are meaningful.</dd>
+    <dt>Resolution</dt><dd>Formalized: "One Claude session = one row. A session is a named conversation, whether spawned manually, by scheduled task, or by sub-agent. Each session gets exactly one category — no session is split."</dd>
+    <dt>Teaching</dt><dd>Definitions of atomic units must be codified BEFORE quantitative work. Retrofit is possible but expensive.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-2</span><span class="ttl">Session ≈ work-package heuristic with hub exceptions</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator pushback on whether one session always equals one work package.</dd>
+    <dt>Discipline surfaced</dt><dd>Recognition that a heuristic isn't universal law. Formalizing the exception makes the heuristic defensible.</dd>
+    <dt>Resolution</dt><dd>Formalized: "Most sessions follow one new session per new research question / idea / exploration. Session count ≈ work-package count under that principle. Hub sessions violate this principle."</dd>
+    <dt>Teaching</dt><dd>Every heuristic needs its exception class named. "Usually true" without "except when" is un-auditable.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-3</span><span class="ttl">Hub session taxonomy (single-category vs cross-category)</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator surfaced that some sessions host many work packages (Job Apps hub, TEDx hub, Gather publications).</dd>
+    <dt>Discipline surfaced</dt><dd>Taxonomic specificity. Not all hubs are the same shape; different exception patterns have different downstream implications.</dd>
+    <dt>Resolution</dt><dd>Formalized: single-category hubs (many packages, all one category — under-count work volume but don't distort categorical distribution) vs cross-category hubs (many packages across categories — distort BOTH count and distribution). Gather flagged as the only current cross-category hub.</dd>
+    <dt>Teaching</dt><dd>Exception patterns often have sub-taxonomies. Name them explicitly or the taxonomy leaks.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-4</span><span class="ttl">Cross-category hub attribution convention</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Rulebook needed a rule for how to assign a hub session's category when the hub crosses multiple categories.</dd>
+    <dt>Discipline surfaced</dt><dd>Convention-setting discipline. When natural attribution is ambiguous, define the convention and disclose it.</dd>
+    <dt>Resolution</dt><dd>Formalized: "Assign to the dominant intent category as of formation rather than re-classifying continuously. Note the hub role explicitly so readers can mentally re-weight adjacent categories upward." Also: "Library and Brand are structurally under-counted because much of that work lives inside the Gather cross-category hub."</dd>
+    <dt>Teaching</dt><dd>When attribution is judgment, name the judgment and its cost. The cost becomes a caveat, not a hidden distortion.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-5</span><span class="ttl">PDDS thread confirmation</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Scorer uncertainty about which session was the PDDS thread. Operator confirmed: "Public data charts examples" IS the PDDS thread.</dd>
+    <dt>Discipline surfaced</dt><dd>Scorer-operator alignment on referential specifics. Don't assume; confirm.</dd>
+    <dt>Resolution</dt><dd>Confirmed and locked. Related later correction: Philip Steigman panel design work moved to the PDDS thread — the two threads are related but distinct.</dd>
+    <dt>Teaching</dt><dd>Scorer working from labels alone will misidentify referents. Operator confirmation on referential specifics is a one-time cheap discipline.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-6</span><span class="ttl">Session-by-session classification pass with operator-reviewed boundary-call resolution</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator asked for transparent classification of all 92 sessions before quantitative analysis proceeded.</dd>
+    <dt>Discipline surfaced</dt><dd>Show-your-work per unit of analysis. Making the session→category mapping public and challengeable BEFORE aggregation.</dd>
+    <dt>Resolution</dt><dd>Produced session_classification_check.md (draft with ⚠ boundary calls flagged: 7 ambiguous sessions) → operator adjudication → session_classification_v2_resolved.docx (all 92 mapped, all boundary calls resolved).</dd>
+    <dt>Teaching</dt><dd>Quantitative analysis loses credibility if the underlying classification is opaque. Always publish the mapping. Cost is small; credibility payoff is large.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-7</span><span class="ttl">Category 11 (Client Engagement) added mid-audit</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Two sessions (Graham Windham one-pager, Philip Steigman) didn't fit existing 10 categories cleanly.</dd>
+    <dt>Discipline surfaced</dt><dd>Rulebook extension discipline. New categories added when the existing taxonomy fails to accommodate real data — with clear distinction from adjacent categories.</dd>
+    <dt>Resolution</dt><dd>Category 11 added: "Client Engagement — soft-prospect / advisory work for a specific client / partner org. Distinct from Job Apps (which targets a role for you inside an org): Client Engagement targets a contract / engagement / advisory relationship between AB and an org."</dd>
+    <dt>Teaching</dt><dd>Taxonomy fixes should preserve boundary discipline, not blur it. When adding, be explicit about what makes the new category distinct from adjacent ones.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-8</span><span class="ttl">Foundation Layer / Category 12 (AI-Native PracticeOps) as a foundation layer, not a surface category</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Editorial standards, voice specs, context onboarding kept surfacing as "invisible work" the taxonomy didn't capture.</dd>
+    <dt>Discipline surfaced</dt><dd>Foundation-vs-category distinction. Not everything the audit measures belongs on the same taxonomic layer. Some things are foundation layers, not surface entries.</dd>
+    <dt>Resolution</dt><dd>Coined AI-Native PracticeOps as a Foundation Layer / Category 12. Not a flat category alongside the 11 surface categories — the the underlying layer. Parallel to DevOps in software engineering.</dd>
+    <dt>Teaching</dt><dd>New concepts sometimes need new taxonomic layers, not new same-layer entries. Force-fitting to existing structure hides the point.</dd>
+  </dl></div></details>
+
+  <details class="move A"><summary><span class="num">A-9</span><span class="ttl">Weights table definition + provenance disclosure gap</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Audit's task allocation view used weighted-proxy volume shares. Weights were mechanical (per-category × session count). Operator asked what the weights actually were.</dd>
+    <dt>Discipline surfaced</dt><dd>Provenance discipline for underlying parameters. Weighted methods need weight origins disclosed — literature, SME panel, or empirical calibration.</dd>
+    <dt>Resolution</dt><dd>Weights table printed (Strategic 5.0, Automation 0.36, Web/Tech 2.67, etc.). Provenance surfaced honestly: weights are practitioner judgment, NOT literature, NOT SME panel, NOT empirical calibration. Defensible for self-audit; NOT defensible for external audit kit product as-is.</dd>
+    <dt>Teaching</dt><dd>When method parameters are judgment-based, that has to be disclosed at the moment the method is used. Undisclosed judgment inside quantitative methods is the most defensible-looking form of hidden bias.</dd>
+  </dl></div></details>
+</div>
+
+<!-- PHASE B -->
+<div class="phase-block B" id="phase-B">
+  <h3>Phase B · Corpus &amp; instrumentation discipline (5 moves)</h3>
+  <p class="desc">The ground the audit measures from. Corpus scope, tooling verification, scorer-operator alignment — what makes the audit's evidence base defensible before any interpretation happens.</p>
+
+  <details class="move B"><summary><span class="num">B-1</span><span class="ttl">Corpus scope verification via Corpus Sources table</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator challenge: "Are we still updating the corpus and rerunning all the data analysis for the artifacts to match the window of May 1 → July 31?"</dd>
+    <dt>Discipline surfaced</dt><dd>Provenance discipline at the corpus level. Every artifact must map to a specific source + date window, disclosed transparently.</dd>
+    <dt>Resolution</dt><dd>Corpus Sources table added to Method section: 6 rows, one per artifact, each with corpus + source + date window + notes/gaps. Made corpus-artifact ambiguity impossible to hide.</dd>
+    <dt>Teaching</dt><dd>"Which data underlies which artifact?" should be answerable by pointing at one table. If it takes prose to explain, the audit is opaque.</dd>
+  </dl></div></details>
+
+  <details class="move B"><summary><span class="num">B-2</span><span class="ttl">Time-window discipline — operating window vs audit-run day</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator caught the conflation of operating window (May 1 → Jul 31) with audit-run day.</dd>
+    <dt>Discipline surfaced</dt><dd>Temporal specificity. Different types of analysis have different appropriate closing dates. Confusing them creates false precision.</dd>
+    <dt>Resolution</dt><dd>Formalized: operating window = May 1 → Jul 30, 2026. Audit-run day = Jul 30-31. Time-series artifacts share operating-window closing date. Snapshot artifacts carry their own stamps.</dd>
+    <dt>Teaching</dt><dd>Time semantics matter. "When does the window close" and "when is the audit run" are distinct questions and should be answered distinctly.</dd>
+  </dl></div></details>
+
+  <details class="move B"><summary><span class="num">B-3</span><span class="ttl">Instrument tooling verification — the extract-path detective sweep</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator challenge: "Are you sure you looked in Documents/Claude for transcripts? Are the transcripts really purged?"</dd>
+    <dt>Discipline surfaced</dt><dd>Verify-the-instrument discipline. Before accepting a data pipeline's output, verify the pipeline is pointing at the right source.</dd>
+    <dt>Resolution</dt><dd>Detective sweep via read_transcript MCP disproved the "macOS purged transcripts" story. Root cause: extract_token_usage.py globbed only /var/folders/*/T/claude-hostloop-plugins/, missing the persistent ~/Library/Application Support/Claude/local-agent-mode-sessions/ location. v2 script fix landed same day, re-extract recovered 30 sessions / 23.23B tokens (was 23 / 9.37B).</dd>
+    <dt>Teaching</dt><dd>"The instrument said X" is not the same as "X is true." Verify the instrument before defending its output. The audit almost shipped a wrong finding because I trusted the pipeline's silence.</dd>
+  </dl></div></details>
+
+  <details class="move B"><summary><span class="num">B-4</span><span class="ttl">Scorer boundary corrections (Princeton, Philip Steigman) → Rule 1</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Two operator corrections mid-close: Princeton mis-labeled as Client Engagement (was Job Apps); Philip Steigman mis-labeled as Website &amp; Tech (was Client Engagement).</dd>
+    <dt>Discipline surfaced</dt><dd>Pattern-detection across scorer errors. Two errors in 24 hours surfaced a common failure mode: scorer inferring category from visible last-turn output rather than originating intent.</dd>
+    <dt>Resolution</dt><dd>Rule 1 added to classification rulebook: "Outputs migrate; intent doesn't. Categorize the originating session by its originating intent, not by its residual output. Practical test: ask 'what was this session started to do?' before 'what does its last turn contain?'"</dd>
+    <dt>Teaching</dt><dd>Scorer errors often have common root causes. When operator catches two of the same pattern, it's a rulebook update, not two isolated fixes.</dd>
+  </dl></div></details>
+
+  <details class="move B"><summary><span class="num">B-5</span><span class="ttl">Definitional discipline as operator-scorer alignment discipline</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator observation surfaced during weights conversation: "definitional discipline is becoming key for you and me to align."</dd>
+    <dt>Discipline surfaced</dt><dd>Meta-level naming of a discipline the audit had been practicing implicitly. Ambiguity in definitions drives most scorer errors — requires operator-scorer co-definition BEFORE analysis, then mutual accountability when either drifts.</dd>
+    <dt>Resolution</dt><dd>Recognized as a methodology principle in its own right, not a side-effect. Named as a Phase B move because it's about the underlying vocabulary the audit runs on.</dd>
+    <dt>Teaching</dt><dd>The most defensible-looking quantitative work depends on operator-scorer alignment about what the quantities MEAN. Skip this step and the numbers are technically-correct but strategically-empty.</dd>
+  </dl></div></details>
+</div>
+
+<!-- PHASE C -->
+<div class="phase-block C" id="phase-C">
+  <h3>Phase C · Data refresh + analysis-derived findings (3 moves)</h3>
+  <p class="desc">Currency discipline (making sure data matches the window claim) and the discipline of naming findings that emerge from the refresh itself.</p>
+
+  <details class="move C"><summary><span class="num">C-1</span><span class="ttl">Data freshness — DM curve rescore</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator observation: "any over-time analysis should close at the same date. The DM curve stops scoring Claude threads at May 14 but the audit window closes Jul 30."</dd>
+    <dt>Discipline surfaced</dt><dd>Freshness discipline. If the window is Jul 30, the data supporting time-series claims must extend to Jul 30. Freshness gaps must be either closed or explicitly disclosed.</dd>
+    <dt>Resolution</dt><dd>14 Claude threads from May 15 → Jul 30 scored on 6-dim rubric. DM corpus: 102 → 116 threads. Curve extends to Jul 30. Pattern held.</dd>
+    <dt>Teaching</dt><dd>Freshness gaps are the most under-discussed audit risk. "We just haven't updated it" isn't a defense — it's the finding.</dd>
+  </dl></div></details>
+
+  <details class="move C"><summary><span class="num">C-2</span><span class="ttl">Metadata-only vs full data refresh discipline</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Scorer initially did a metadata-only pass on task-allocation-view (updated stats + framing, kept old chart data). Operator pushed back: "full data currency required."</dd>
+    <dt>Discipline surfaced</dt><dd>Refresh depth discipline. "Refreshed" can mean many things. Partial refresh creates the illusion of currency without the substance.</dd>
+    <dt>Resolution</dt><dd>Task-allocation-view fully rebuilt: session-count shares recomputed across 93 sessions, token shares recomputed across 30 measured / 23.23B tokens, chart axes rescaled.</dd>
+    <dt>Teaching</dt><dd>Partial refresh is worse than no refresh — it creates false currency. When time is tight, either fully refresh or explicitly stamp "partial refresh, X pending."</dd>
+  </dl></div></details>
+
+  <details class="move C"><summary><span class="num">C-3</span><span class="ttl">Analysis-derived finding surfaced during correction (Finding 4.6 · Automation optimization)</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>During Section 4 correction (Automation flipped from 1.4% to 57.4% of tokens), operator surfaced: "one implication of this audit is how to bring down token usage for recurring automation."</dd>
+    <dt>Discipline surfaced</dt><dd>Discipline of naming findings that emerge from the refresh. When corrected data changes the story, interrogate whether new findings surface.</dd>
+    <dt>Resolution</dt><dd>Finding 4.6 added: "Automation is 57% of measured tokens — a win AND a Phase 2 cost-optimization opportunity." Six concrete optimization levers named.</dd>
+    <dt>Teaching</dt><dd>Findings can emerge from methodology corrections, not just from initial analysis. The audit's own correction cycle is a source of new evidence.</dd>
+  </dl></div></details>
+</div>
+
+<!-- PHASE D -->
+<div class="phase-block D" id="phase-D">
+  <h3>Phase D · Quality standard discipline (3 moves)</h3>
+  <p class="desc">Visual scanability, rigor bar, defensibility. Presentation-and-craft discipline that determines whether the audit's findings are legible to peer review at all.</p>
+
+  <details class="move D"><summary><span class="num">D-1</span><span class="ttl">Scorecard density critique + reframe: defensibility ≠ visual density</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator critique: "the AB Governance Maturity Scorecard, PDDS Governance Scorecard, and AB Decision Scorecards are dense and boring, except the TEDx Opportunity Scorecard which is engaging."</dd>
+    <dt>Discipline surfaced</dt><dd>Reframe discipline. When a quality standard is criticized, ask whether the underlying assumption is wrong before defending the artifact.</dd>
+    <dt>Resolution</dt><dd>Reframe adopted: DEFENSIBILITY ≠ VISUAL DENSITY. Kane-honest content can live inside engaging design. TEDx-style visual grammar can carry the same construct discipline as dense grey tables.</dd>
+    <dt>Teaching</dt><dd>The quality bar for measurement artifacts is TWO dimensions (defensibility + scanability), not one. Optimizing only for defensibility produces artifacts nobody wants to read.</dd>
+  </dl></div></details>
+
+  <details class="move D"><summary><span class="num">D-2</span><span class="ttl">Governance + Decision scorecards redesigned in TEDx visual style</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Direct consequence of D-1 — the reframe demanded execution.</dd>
+    <dt>Discipline surfaced</dt><dd>Execute-the-reframe discipline. Naming a quality bar shift without acting on it is aspirational, not real.</dd>
+    <dt>Resolution</dt><dd>AB Governance Maturity Scorecard fully rebuilt in TEDx style. AB Decision Scorecards got a top "at-a-glance" summary strip. PDDS Governance Scorecard redesign deferred to a dedicated pass (external, higher stakes).</dd>
+    <dt>Teaching</dt><dd>Reframe + immediate execution is what makes a methodology shift real. Deferred execution reverts to the old standard by default.</dd>
+  </dl></div></details>
+
+  <details class="move D"><summary><span class="num">D-3</span><span class="ttl">Quality bar revision in Critical 5 (TEDx visual + PDDS construct discipline)</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Critical 5 item #4 originally said "match PDDS Governance Scorecard as the quality bar." But PDDS itself was flagged as dense.</dd>
+    <dt>Discipline surfaced</dt><dd>Recursive quality-bar discipline. When the benchmark shares the flaw the standard is trying to fix, the benchmark is wrong.</dd>
+    <dt>Resolution</dt><dd>Critical 5 item #4 revised: quality bar is now "TEDx-scorecard visual style + PDDS-level construct discipline."</dd>
+    <dt>Teaching</dt><dd>Benchmarks must be audited too. "Match X" is only a good instruction if X itself represents best practice on all the dimensions that matter.</dd>
+  </dl></div></details>
+</div>
+
+<!-- PHASE E -->
+<div class="phase-block E" id="phase-E">
+  <h3>Phase E · Dissemination discipline (3 moves)</h3>
+  <p class="desc">Public safety, narrative correction, library-compatibility. Discipline of shipping honestly — including how the audit's own outputs reach the world.</p>
+
+  <details class="move E"><summary><span class="num">E-1</span><span class="ttl">Instrument re-registration for public use (DM curve pinned via Cowork-approved libraries only)</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>DM curve HTML used external CDN scripts not on Cowork's approved list. Pinning required rewriting to comply.</dd>
+    <dt>Discipline surfaced</dt><dd>Platform-compatibility discipline. When moving an artifact from private to public/pinned surface, verify it survives the new platform's constraints.</dd>
+    <dt>Resolution</dt><dd>Rewrote JS: Chart.js bumped to 4.5.0, dropped annotation plugin + date-fns adapter, converted x-axis to linear with epoch ms + custom tick formatter. All 116 threads preserved. Registered as pinned artifact.</dd>
+    <dt>Teaching</dt><dd>Public-facing surfaces have their own constraints. Retrofitting a private artifact for public use is often more work than expected. Design for the public target from the start where feasible.</dd>
+  </dl></div></details>
+
+  <details class="move E"><summary><span class="num">E-2</span><span class="ttl">Public labeling review — "Job Apps &amp; Prep" → "Opportunity Evaluation" for public chart</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator caught: "I don't want to put job search &amp; prep in public space chart" when reviewing the correction chart draft for LinkedIn.</dd>
+    <dt>Discipline surfaced</dt><dd>Public-safety discipline. Internal classification labels may broadcast unwanted signals when exposed publicly.</dd>
+    <dt>Resolution</dt><dd>Neutral public label adopted: "Opportunity Evaluation." Preserves truth without labeling any as job search. Internal classification rulebook still uses "Job Applications &amp; Prep."</dd>
+    <dt>Teaching</dt><dd>Public / internal labeling should be decoupled. Internal labels optimize for scorer precision; public labels optimize for reader appropriateness.</dd>
+  </dl></div></details>
+
+  <details class="move E"><summary><span class="num">E-3</span><span class="ttl">Corrected-narrative chart built before public dissemination</span><span class="caret">▶</span></summary><div class="body"><dl>
+    <dt>Triggered by</dt><dd>Operator flagged an earlier LinkedIn post used pre-refresh estimated data.</dd>
+    <dt>Discipline surfaced</dt><dd>Correction-as-content discipline. When public artifacts need correction, one option is silent redaction; a stronger option is making the correction visible as part of the practice's own methodology story.</dd>
+    <dt>Resolution</dt><dd>Built two chart iterations: (1) before/after Jul 31 correction, then (2) three-metrics view (raw count + weighted proxy + real tokens) which surfaced the operator's insight that the ratio between weighted-volume and token-share IS the human-effort / LLM-effort split — an emergent methodology finding.</dd>
+    <dt>Teaching</dt><dd>Making corrections visible as methodology-in-action is stronger than silent correction. It turns a stumble into a demonstration.</dd>
+  </dl></div></details>
+</div>
+
+<!-- 7 META-PRINCIPLES -->
+<h2 class="section">The 7 emergent meta-principles</h2>
+<p class="sectionsub">Heuristics that surfaced during the Jul 30-31 close. Not preset — emerged from the discipline moves themselves. Each now belongs in the practice's rulebook going forward.</p>
+
+<div class="principles">
+  <div class="principle">
+    <div class="n">Principle 1</div>
+    <div class="t">Rule 1 — Outputs migrate; intent doesn't.</div>
+    <div class="b">When a session's output has been moved to a hub or follow-on session, categorize by originating intent, not residual output. Practical test: "what was this session started to do?" before "what does its last turn contain?"</div>
+  </div>
+  <div class="principle">
+    <div class="n">Principle 2</div>
+    <div class="t">Defensibility ≠ visual density.</div>
+    <div class="b">Kane-honest content can live inside engaging design. Measurement discipline as a USP is not license for dense measurement-y presentation. Quality bar is TWO dimensions (defensibility + scanability), not one.</div>
+  </div>
+  <div class="principle">
+    <div class="n">Principle 3</div>
+    <div class="t">Two-window discipline.</div>
+    <div class="b">Operating window (when the work happens) and audit-run day (when the audit is written) are distinct temporal semantics. Time-series artifacts share operating-window closing date; snapshot artifacts carry their own stamps.</div>
+  </div>
+  <div class="principle">
+    <div class="n">Principle 4</div>
+    <div class="t">Hub-session taxonomy.</div>
+    <div class="b">Not all sessions are atomic work packages. Single-category hubs and cross-category hubs each have distinct downstream effects. Naming the exception classes preserves the heuristic; leaving them un-named breaks it.</div>
+  </div>
+  <div class="principle">
+    <div class="n">Principle 5</div>
+    <div class="t">Governance-of-governance can be done inline.</div>
+    <div class="b">The audit-of-audits doesn't have to be a future Phase 3+ item. When the audit's own execution is observable, the meta-methodology can be captured in real-time — turning "future work" into "already demonstrated."</div>
+  </div>
+  <div class="principle">
+    <div class="n">Principle 6</div>
+    <div class="t">Definitional discipline is operator-scorer alignment.</div>
+    <div class="b">Ambiguity in definitions drives most scorer errors. Requires operator + scorer to co-define terms before analysis, then hold each other accountable. Skip this and quantitative work is technically-correct but strategically-empty.</div>
+  </div>
+  <div class="principle" style="grid-column: 1 / -1;">
+    <div class="n">Principle 7</div>
+    <div class="t">Three-lens principle for practice measurement.</div>
+    <div class="b">Raw session count (throughput) · weighted volume (attention estimate) · real tokens (cost measurement) — each answers a different question. Where they align, the story holds. Where they diverge, one method needs review. Ratio between weighted-volume and token-share operationalizes the human-effort / LLM-effort split (load-carrier axis, previously judgment-only).</div>
+  </div>
+</div>
+
+<!-- CLOSING -->
+<!-- PRIOR ART & ANCHOR FRAMEWORKS (added) -->
+<h2 class="section">Prior art and anchor frameworks</h2>
+<p class="sectionsub">What this log adopts, what it stays adjacent to, and what it deliberately doesn't compete with &mdash; because the scope isn't the same.</p>
+
+<div style="background:#fafafa; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#0E5F2E;font-weight:700;margin-bottom:8px;">&#10003; ADOPTED &middot; CITED THROUGHOUT</div>
+  <p style="font-size:12.5px;margin:0 0 6px;line-height:1.55;"><strong>Kane's 4-inference validity framework</strong> &mdash; the audit's spine. Applied to the audit's own execution (see Kane mapping below): Scoring &rarr; Generalization &rarr; Extrapolation &rarr; Implication. Peer-reviewed since the 1990s.</p>
+  <p style="font-size:12.5px;margin:0;line-height:1.55;"><strong>NIST AI RMF</strong> &mdash; anchor for the PDDS Governance Scorecard (the audit's external-facing product, which IS at org / product scale where NIST applies).</p>
+</div>
+
+<div style="background:#fafafa; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#5b6b7a;font-weight:700;margin-bottom:8px;">~ ADJACENT TRADITIONS</div>
+  <p style="font-size:12.5px;margin:0;line-height:1.55;"><strong>Messick construct validity</strong> &middot; <strong>AERA/APA/NCME Standards for Educational and Psychological Testing</strong> &middot; broader measurement-science tradition that informs the practitioner's disciplinary background but isn't formally cited in the audit itself.</p>
+</div>
+
+<div style="background:#fafafa; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#c97a4b;font-weight:700;margin-bottom:8px;">&times; DELIBERATELY NOT ADOPTED (WITH REASON)</div>
+  <dl style="margin:0;font-size:12.5px;line-height:1.55;">
+    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">NIST AI RMF at the practice level</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Scope mismatch. NIST targets organizations deploying AI to serve customers. This audit is a solo practitioner's own operating practice. NIST is cited where scope fits (PDDS); not force-fit where it doesn't.</dd>
+    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">COBIT / COSO / SOC 2</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Wrong domain. COBIT is IT governance; COSO is financial internal controls; SOC 2 is security / availability audit. None target AI-collaborative practice methodology.</dd>
+    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">Balanced Scorecard / OKRs / CMMI</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Different object of measurement. These measure business performance or software-org process maturity. This audit measures governance maturity of the practice itself &mdash; a distinct object.</dd>
+    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">Model Cards (Mitchell et al.) / Datasheets for Datasets (Gebru et al.)</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Different object. Model Cards are for MODELS; Datasheets are for DATASETS. Adjacent methodology tradition (transparency-oriented reporting) but not applicable to practitioner-scale governance.</dd>
+    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">Huawei AI-Native Enterprise / PwC AI-Native Enterprise / SAFe AI-Native</dt><dd style="margin:2px 0;color:#5b6b7a;">All target ENTERPRISE scale. The AI-Native family emerging in 2026 doesn't address practice-level scope (solo / boutique / fractional). AB's Foundation Layer / PracticeOps naming explicitly claims that unaddressed scope.</dd>
+  </dl>
+</div>
+
+<div style="background:#F5F1FA; border:1px solid #C5B4D9; border-left:4px solid #7A5FA0; border-radius:0 8px 8px 0; padding:18px 22px; margin-bottom:22px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#7A5FA0;font-weight:700;margin-bottom:8px;">&#9654; WHAT THIS AUDIT CONTRIBUTES</div>
+  <p style="font-size:12.5px;margin:0 0 8px;color:#2a1745;line-height:1.6;"><strong>Foundation Layer / AI-Native PracticeOps</strong> as a foundational concept at practice-operating scale (parallel to DevOps for software engineering &mdash; but at a scope existing AI-Native frameworks don't cover).</p>
+  <p style="font-size:12.5px;margin:0 0 8px;color:#2a1745;line-height:1.6;"><strong>Measurement-validity discipline applied inline</strong>, with the audit's own execution as the empirical demonstration (this log). Not a new framework &mdash; an application of established validity theory to a new object at a new scale.</p>
+  <p style="font-size:12.5px;margin:0;color:#2a1745;line-height:1.6;"><strong>Governance-of-governance done inline</strong>, not deferred as Phase 3+ future work &mdash; and evidenced with 23 mid-flight discipline moves + 7 emergent principles catalogued above.</p>
+</div>
+
+<h2 class="section">What this log proves</h2>
+
+<div class="pullquote">"The audit did to itself what it audits others for. That IS the demonstration."</div>
+
+<p class="intro"><strong>The Kane 4-inference framework applied to the audit itself.</strong> Kane's validity framework was cited throughout the audit as the discipline AB claims to bring to client work. Each phase of this log maps to one Kane inference layer:</p>
+
+<div class="kane">
+  <div class="kane-box">
+    <div class="kl">Link 1 · SCORING</div>
+    <div class="kt">Did we measure it right?</div>
+    <div class="kb">Verifying atomic units, categories, weights — the vocabulary the audit runs on.</div>
+    <div class="km">→ Phase A · 9 moves</div>
+  </div>
+  <div class="kane-box">
+    <div class="kl">Link 2 · GENERALIZATION</div>
+    <div class="kt">Real, or just noise?</div>
+    <div class="kb">Verifying data pipeline, catching extract-path error, establishing Rule 1 for scorer boundary corrections.</div>
+    <div class="km">→ Phase B · 5 moves</div>
+  </div>
+  <div class="kane-box">
+    <div class="kl">Link 3 · EXTRAPOLATION</div>
+    <div class="kt">Reflects what matters?</div>
+    <div class="kb">Closing freshness gaps, surfacing new findings that emerged from the correction cycle itself.</div>
+    <div class="km">→ Phase C · 3 moves</div>
+  </div>
+  <div class="kane-box">
+    <div class="kl">Link 4 · IMPLICATION</div>
+    <div class="kt">Worth acting on, for whom?</div>
+    <div class="kb">Making outputs legible for peer review + public dissemination — the audit's findings actually reach their audiences.</div>
+    <div class="km">→ Phases D + E · 6 moves</div>
+  </div>
+</div>
+
+<p class="intro"><strong>This is what makes AI-native governance work observable.</strong> Traditional governance craft lived in the practitioner's head; only the finished memo surfaced. The scaffolding was invisible. In AI-collaborative work, that scaffolding is captured by default: transcripts, corrections logs, mid-flight amendments. This log surfaces what already exists. Not new evidence manufactured for external audience — the practice's audit trail as demonstration of the practice's discipline.</p>
+
+<p class="intro"><strong>Downstream:</strong> this log is the foundation for the <em>AB Governance Portfolio</em> (near-term, Aug: public-facing packaging positioning AB's governance craft as evidence for hiring evaluators and BD partners) and the <em>AI-Native Practice Audit Kit</em> (Q4 productization: the transferable methodology other practices can adopt). Both use this log as their reference case.</p>
+
+<footer class="foot">
+  <div>
+    <strong>Source of record:</strong> <code>ab_90_day_audit_apr_jul_2026.docx</code> §9. The audit doc is the canonical narrative + evidence record. This log is the live scannable surface.
+  </div>
+  <div class="row">
+    <div>
+      <strong>Refresh cadence:</strong> Each 90-day audit cycle. Next update: Nov 1, 2026 (Phase 2 close audit). Section 9 in the audit will refresh first; this log rolls up from there.
+    </div>
+    <div>
+      <strong>Related pinned artifacts (evidence):</strong> <code>ab-governance-maturity-scorecard</code> · <code>ab-decision-scorecards</code> · <code>task-allocation-view</code> · <code>dialogue-maturity-curve</code> · <code>dialogue-maturity-dashboard</code> · <code>ab-infrastructure-architecture</code>.
+    </div>
+  </div>
+  <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eaeaea; font-size: 11px; color: #999;">
+    v1.0 · scored Jul 31, 2026 · AB Governance Craft Kit anchor artifact · methodology narrative for the AB 90-day audit's own execution
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

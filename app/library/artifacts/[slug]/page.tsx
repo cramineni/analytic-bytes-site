@@ -114,37 +114,62 @@ export default async function ArtifactPage({
           </div>
         </section>
 
-        {/* SVG — full-bleed inside a comfortable max-width container */}
+        {/* Asset — SVG rendered as image; HTML rendered as iframe */}
         <section className="pb-10">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="max-w-[900px] mx-auto">
-                <figure className="rounded-md overflow-hidden border border-line bg-white">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={artifact.image}
-                    alt={artifact.title}
-                    className="w-full h-auto block"
-                  />
-                </figure>
+                {artifact.format === "html" ? (
+                  <figure className="rounded-md overflow-hidden border border-line bg-white">
+                    <iframe
+                      src={artifact.image}
+                      title={artifact.title}
+                      className="w-full block"
+                      style={{ height: "min(90vh, 900px)", border: 0 }}
+                    />
+                  </figure>
+                ) : (
+                  <figure className="rounded-md overflow-hidden border border-line bg-white">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={artifact.image}
+                      alt={artifact.title}
+                      className="w-full h-auto block"
+                    />
+                  </figure>
+                )}
                 {/* Action row */}
                 <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3">
-                  <a
-                    href={artifact.image}
-                    download
-                    className="inline-flex items-center gap-2 font-mono text-[12px] tracking-[0.06em] uppercase text-ink border border-line-2 hover:border-accent hover:text-accent rounded-sm px-3 py-2 no-underline transition-colors"
-                  >
-                    <span aria-hidden>↓</span>
-                    Download SVG
-                  </a>
-                  <a
-                    href={artifact.image}
-                    target="_blank"
-                    rel="noopener"
-                    className="font-mono text-[12px] tracking-[0.06em] uppercase text-ink-3 hover:text-accent no-underline border-b border-line-2 hover:border-accent pb-px"
-                  >
-                    View full-size ↗
-                  </a>
+                  {artifact.format === "html" ? (
+                    <a
+                      href={artifact.image}
+                      target="_blank"
+                      rel="noopener"
+                      className="inline-flex items-center gap-2 font-mono text-[12px] tracking-[0.06em] uppercase text-ink border border-line-2 hover:border-accent hover:text-accent rounded-sm px-3 py-2 no-underline transition-colors"
+                    >
+                      <span aria-hidden>↗</span>
+                      Open in new tab
+                    </a>
+                  ) : (
+                    <>
+                      <a
+                        href={artifact.image}
+                        download
+                        className="inline-flex items-center gap-2 font-mono text-[12px] tracking-[0.06em] uppercase text-ink border border-line-2 hover:border-accent hover:text-accent rounded-sm px-3 py-2 no-underline transition-colors"
+                      >
+                        <span aria-hidden>↓</span>
+                        Download SVG
+                      </a>
+                      <a
+                        href={artifact.image}
+                        target="_blank"
+                        rel="noopener"
+                        className="font-mono text-[12px] tracking-[0.06em] uppercase text-ink-3 hover:text-accent no-underline border-b border-line-2 hover:border-accent pb-px"
+                      >
+                        View full-size ↗
+                      </a>
+                    </>
+                  )}
                 </div>
               </div>
             </Reveal>

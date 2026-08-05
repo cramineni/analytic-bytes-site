@@ -20,6 +20,13 @@ export type Artifact = {
   image: string;
   slug: string;
   referencedIn?: ArtifactReference[];
+  // Format of the artifact asset. Defaults to "svg" if omitted (all
+  // existing artifacts). "html" artifacts are self-contained pages
+  // rendered in an iframe on the artifact detail page and served
+  // directly at /library/artifacts/<slug>.html — no OG-preview image
+  // is auto-generated; supply `previewImage` if you have one.
+  format?: "svg" | "html";
+  previewImage?: string;
 };
 
 export const ARTIFACTS: Artifact[] = [
@@ -182,6 +189,92 @@ export const ARTIFACTS: Artifact[] = [
       {
         slug: "when-the-stakes-are-the-mission",
         title: "When the stakes are the mission.",
+      },
+    ],
+  },
+  {
+    title: "Where a founder's time actually goes — task allocation",
+    summary:
+      "Bar chart across ten task categories from AB's 90-day audit, ranked by share of message volume. Recurring automation dominates by session count but not by volume; strategic thinking dominates by volume but not by session count. The distribution that a testimonial would have missed.",
+    image: "/library/artifacts/founder-time-allocation.svg",
+    slug: "founder-time-allocation",
+    referencedIn: [
+      {
+        slug: "auditing-an-ai-native-practice",
+        title: "Auditing an AI-native practice.",
+      },
+    ],
+  },
+  {
+    title: "Volume vs. tokens — where AI cost actually lands",
+    summary:
+      "Dumbbell chart comparing message-volume share to token-usage share per task category. Website & Technical Dev consumes 44 percent of tokens on 8 percent of volume; Recurring Automation consumes 1 percent of tokens on 15 percent of volume. Aggregating them into a single 'how much AI' number destroys the signal.",
+    image: "/library/artifacts/founder-tokens-vs-volume.svg",
+    slug: "founder-tokens-vs-volume",
+    referencedIn: [
+      {
+        slug: "auditing-an-ai-native-practice",
+        title: "Auditing an AI-native practice.",
+      },
+    ],
+  },
+  {
+    title: "Governance Craft Card",
+    summary:
+      "One-page synthesis of AB's 90-day audit and its methodology anchors — the Executive Card. Names the validity spine (Kane's four inferences), the load-carrier axis (HITL / AITL), and the seven governance dimensions the practice scored itself against. The one-glance version of what the audit produced.",
+    image: "/library/artifacts/governance-craft-card.html",
+    slug: "governance-craft-card",
+    format: "html",
+    referencedIn: [
+      {
+        slug: "auditing-an-ai-native-practice",
+        title: "Auditing an AI-native practice.",
+      },
+    ],
+  },
+  {
+    title: "Governance Craft Log",
+    summary:
+      "The 23 discipline moves catalogued during the audit's own execution, phase by phase, plus 7 emergent methodology principles the close surfaced. Governance-of-governance done inline, dated, and available for peer review — the audit audited itself before it audited AB.",
+    image: "/library/artifacts/governance-craft-log.html",
+    slug: "governance-craft-log",
+    format: "html",
+    referencedIn: [
+      {
+        slug: "auditing-an-ai-native-practice",
+        title: "Auditing an AI-native practice.",
+      },
+    ],
+  },
+  {
+    title: "Dialogue Maturity Curve",
+    summary:
+      "Roughly 100 sessions scored on a six-metric rubric across 18 months. Session shape shifted from GPT-era 5&ndash;6 scores to Claude-era 8&ndash;9, with the gain concentrated in question density, revision cycles, and explicit rubric use. The maturity curve underneath the working-with-AI story.",
+    image: "/library/artifacts/dialogue-maturity-curve.html",
+    slug: "dialogue-maturity-curve",
+    format: "html",
+    referencedIn: [
+      {
+        slug: "my-relationship-with-ai",
+        title: "My relationship with AI.",
+      },
+      {
+        slug: "auditing-an-ai-native-practice",
+        title: "Auditing an AI-native practice.",
+      },
+    ],
+  },
+  {
+    title: "AB Governance Maturity Scorecard",
+    summary:
+      "Seven governance dimensions scored against current baseline and next-90 targets. The validity spine and construct-definition rigor score HIGH; reflection cadence and instrumentation depth score LOW-to-MODERATE; descriptive-to-prescriptive dispatch measurement scores LOW. Named as baseline for a practice at ninety days.",
+    image: "/library/artifacts/ab-governance-maturity-scorecard.html",
+    slug: "ab-governance-maturity-scorecard",
+    format: "html",
+    referencedIn: [
+      {
+        slug: "auditing-an-ai-native-practice",
+        title: "Auditing an AI-native practice.",
       },
     ],
   },

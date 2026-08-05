@@ -1,0 +1,265 @@
+<!doctype html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "[GOV] AB Governance Maturity Scorecard",
+  "schemaVersion": 1,
+  "description": "The AB practice's own governance maturity scorecard — 6 dimensions of self-observation discipline, scored against Phase 1 baseline (May 1 → Jul 30, 2026) with explicit Phase 2 (Q4 '26) and Phase 3 (Q1 '27) targets. Testable claim, updated each 90-day audit cycle. Substrate for the AI-Native Practice Audit Kit."
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AB Governance Maturity Scorecard</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  margin: 0; padding: 24px 20px;
+  background: #ffffff; color: #1a1a1a; line-height: 1.5; font-size: 14px;
+}
+.wrapper { max-width: 820px; margin: 0 auto; }
+h1 { font-size: 20px; font-weight: 500; margin: 0 0 4px; color: #1a1a1a; }
+.subtitle { font-size: 13px; color: #6b6b6b; margin: 0 0 6px; }
+.stamp { font-size: 11px; color: #999; margin: 0 0 20px; font-family: -apple-system, monospace; }
+
+.hypothesis {
+  background: #F5F1FA; border-left: 3px solid #7A5FA0;
+  padding: 12px 14px; margin: 0 0 20px; border-radius: 0 6px 6px 0;
+  font-size: 12.5px; color: #3D2A5C; line-height: 1.55;
+}
+.hypothesis .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #7A5FA0; font-weight: 600; margin-bottom: 4px; }
+.hypothesis strong { color: #2A1745; font-weight: 600; }
+
+.overall {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 22px;
+}
+.overall .pill {
+  padding: 12px 14px; border-radius: 8px; text-align: center;
+  border: 1px solid #eaeaea;
+}
+.overall .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: #6b6b6b; font-weight: 500; margin-bottom: 6px; }
+.overall .val { font-size: 15px; font-weight: 600; color: #1a1a1a; }
+.overall .sub { font-size: 11px; color: #888; margin-top: 3px; font-style: italic; }
+.overall .now { background: #FEF3E9; border-color: #F5CFA6; }
+.overall .p2  { background: #FDF6E8; border-color: #F0DEB4; }
+.overall .p3  { background: #E9F5EC; border-color: #B7D9C0; }
+
+.legend {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+  font-size: 11px; color: #6b6b6b; flex-wrap: wrap;
+}
+.legend .lbl { font-weight: 500; color: #444; }
+.legend .item { display: inline-flex; align-items: center; gap: 5px; }
+
+.chip {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 26px; border-radius: 4px;
+  font-weight: 600; font-size: 11px; letter-spacing: 0.02em;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.chip.h  { background: #5DCAA5; color: #04342C; }
+.chip.mh { background: #9FE1CB; color: #085041; }
+.chip.m  { background: #E1F5EE; color: #085041; }
+.chip.lm { background: #FAC775; color: #633806; }
+.chip.l  { background: #F0997B; color: #4A1B0C; }
+
+.header, .row {
+  display: grid;
+  grid-template-columns: minmax(0, 2.4fr) 44px 14px 44px 14px 44px minmax(0, 1.1fr);
+  gap: 6px; align-items: center;
+}
+.header {
+  padding: 10px 6px; border-bottom: 1px solid #d0d0d0;
+  font-size: 10.5px; font-weight: 500; color: #6b6b6b;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.header > div { text-align: center; }
+.header > div:first-child { text-align: left; }
+.header > div:last-child { text-align: left; }
+
+.row {
+  padding: 14px 6px; border-bottom: 1px solid #e8e8e8;
+  font-size: 13px;
+}
+.row:last-of-type { border-bottom: none; }
+.dim-name { font-weight: 500; color: #1a1a1a; line-height: 1.35; }
+.dim-anchor { font-size: 11px; color: #6b6b6b; margin-top: 3px; line-height: 1.4; }
+.arrow { text-align: center; color: #bbb; font-size: 12px; }
+.chip-cell { text-align: center; display: flex; justify-content: center; }
+
+.status {
+  font-size: 11px; padding: 3px 10px; border-radius: 12px; font-weight: 500;
+  display: inline-block; white-space: nowrap;
+}
+.s-usp     { background: #E9F5EC; color: #0E5F2E; }  /* USP anchor - green */
+.s-formed  { background: #FEF3E9; color: #7A4A18; }  /* Just formed - warm */
+.s-build   { background: #FDECEC; color: #7A1E1A; }  /* Priority build - coral */
+.s-track   { background: #E6F1FB; color: #0C447C; }  /* On track - blue */
+.s-hold    { background: #F1EFE8; color: #444441; }  /* Hold - grey */
+
+.evidence {
+  grid-column: 1 / -1;
+  margin: 6px 0 0 0;
+  padding: 8px 12px;
+  background: #fafafa; border-left: 2px solid #e0e0e0;
+  border-radius: 0 4px 4px 0;
+  font-size: 11.5px; color: #555; line-height: 1.55;
+}
+.evidence b { color: #333; font-weight: 500; }
+.evidence .now-tag { color: #7A4A18; font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; }
+.evidence .p2-tag  { color: #7A4A18; font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; }
+.evidence .p3-tag  { color: #0E5F2E; font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; }
+
+.footer {
+  margin-top: 24px; padding-top: 14px; border-top: 1px solid #e8e8e8;
+  font-size: 11.5px; color: #666; line-height: 1.6;
+}
+.footer strong { color: #333; font-weight: 500; }
+.footer code {
+  background: #f4f4f4; padding: 1px 5px; border-radius: 3px;
+  font-size: 10.5px; color: #444;
+}
+.footer .row2 { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+.footer .row2 > div { flex: 1; min-width: 220px; }
+
+.methnote {
+  margin-top: 14px; padding: 10px 12px;
+  background: #FEF9EE; border-left: 2px solid #E8C88A;
+  border-radius: 0 4px 4px 0;
+  font-size: 11px; color: #6b5224; line-height: 1.5;
+}
+.methnote strong { color: #4a3814; font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="cowork-header-bar" style="height:6px;background:#1e40af;width:100%;"></div>
+<div class="wrapper">
+
+<h1>AB Governance Maturity Scorecard</h1>
+<p class="subtitle">Six dimensions of self-observation discipline. Today → Phase 2 (Q4 '26) → Phase 3 (Q1 '27). Testable, updated each 90-day audit.</p>
+<p class="stamp">v1.1 · Phase 1 baseline · scored Jul 31, 2026 · next refresh Nov 1, 2026 · source: <code>ab_90_day_audit_apr_jul_2026.docx</code> §7</p>
+
+<div class="hypothesis">
+  <div class="lbl">▶ Operator hypothesis</div>
+  This audit is expected to score <strong>weakest on governance right now</strong>. Governance/measurement discipline is the USP, but descriptive instrumentation is thin. Reflection cadence just formalized. Dispatch prescriptive-not-descriptive. Scorecards are recent. Phase 2 is designed to move the scores. Failure to mature is data.
+</div>
+
+<div class="overall">
+  <div class="pill now">
+    <div class="lbl">Today · Phase 1</div>
+    <div class="val">MODERATE</div>
+    <div class="sub">USP anchors H · instrumentation LM</div>
+  </div>
+  <div class="pill p2">
+    <div class="lbl">Phase 2 target · Q4 '26</div>
+    <div class="val">MOD–HIGH</div>
+    <div class="sub">Tests whether cadence held</div>
+  </div>
+  <div class="pill p3">
+    <div class="lbl">Phase 3 target · Q1 '27</div>
+    <div class="val">HIGH</div>
+    <div class="sub">Client-transferable</div>
+  </div>
+</div>
+
+<div class="legend">
+  <span class="lbl">Score:</span>
+  <span class="item"><span class="chip h">H</span>HIGH</span>
+  <span class="item"><span class="chip mh">MH</span>MOD-HIGH</span>
+  <span class="item"><span class="chip m">M</span>MODERATE</span>
+  <span class="item"><span class="chip lm">LM</span>LOW-MOD</span>
+  <span class="item"><span class="chip l">L</span>LOW</span>
+</div>
+
+<div class="header">
+  <div>Dimension</div>
+  <div>Today</div>
+  <div></div>
+  <div>Phase 2</div>
+  <div></div>
+  <div>Phase 3</div>
+  <div>Status</div>
+</div>
+
+<div class="row">
+  <div><div class="dim-name">Reflection cadence discipline</div><div class="dim-anchor">Do monthly + quarterly cycles actually hold?</div></div>
+  <div class="chip-cell"><span class="chip lm">LM</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip mh">MH</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div><span class="status s-formed">Just formed</span></div>
+  <div class="evidence"><span class="now-tag">Now</span> Just formalized Jul 2026. Machinery exists (scheduled tasks); no full quarterly cycle held yet. <span class="p2-tag">P2</span> 3 monthly + 1 quarterly cycle held Aug–Oct. <span class="p3-tag">P3</span> 2 quarterly + 4+ monthly cycles complete.</div>
+</div>
+
+<div class="row">
+  <div><div class="dim-name">Scorecard maturity</div><div class="dim-anchor">PDDS + Decision + DM scorecards at published quality</div></div>
+  <div class="chip-cell"><span class="chip m">M</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip mh">MH</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div><span class="status s-build">Priority build</span></div>
+  <div class="evidence"><span class="now-tag">Now</span> PDDS Governance Scorecard published (external, NIST-aligned). AB Decision Scorecards + DM Dashboard exist but not yet at published quality. <span class="p2-tag">P2</span> All 3 at TEDx-scorecard visual style + PDDS-level construct discipline. <span class="p3-tag">P3</span> Client-transferable, deployable in engagements.</div>
+</div>
+
+<div class="row">
+  <div><div class="dim-name">Validity spine</div><div class="dim-anchor">Kane 4-inference framework · NIST AI RMF · reliability + construct discipline</div></div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div><span class="status s-usp">USP anchor</span></div>
+  <div class="evidence"><span class="now-tag">Now</span> Demonstrated in PDDS eval/VALIDATION.md · Decision Validity essay · classification rulebook. Not aspirational. <span class="p2-tag">P2 &amp; P3</span> Held.</div>
+</div>
+
+<div class="row">
+  <div><div class="dim-name">Instrumentation depth</div><div class="dim-anchor">Transcript persistence · dispatch logging · token measurement</div></div>
+  <div class="chip-cell"><span class="chip lm">LM</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip mh">MH</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div><span class="status s-track">On track</span></div>
+  <div class="evidence"><span class="now-tag">Now</span> Corrected Jul 31: extract v2 now 30/93 sessions (was 23). Session-start dispatch logging not yet in place. <span class="p2-tag">P2</span> Transcript path verified durable · dispatch log accruing · monthly re-extract cadence held. <span class="p3-tag">P3</span> All measurable dimensions have descriptive data.</div>
+</div>
+
+<div class="row">
+  <div><div class="dim-name">Descriptive vs prescriptive</div><div class="dim-anchor">Do we report what actually happened, or only what we recommend should happen?</div></div>
+  <div class="chip-cell"><span class="chip l">L</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip m">M</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div><span class="status s-build">Priority build</span></div>
+  <div class="evidence"><span class="now-tag">Now</span> Dispatch rulebook says what SHOULD happen; audit doesn't yet report what DID. Same for reflection cadence. <span class="p2-tag">P2</span> At least one dimension where actual (measured) is reported alongside prescribed. Dispatch is the first candidate. <span class="p3-tag">P3</span> Every prescriptive claim has a descriptive counterpart.</div>
+</div>
+
+<div class="row">
+  <div><div class="dim-name">Semantic modeling</div><div class="dim-anchor">Categories, load-carrier axis, delegatable %, dispatch guidance — defensible definitions</div></div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div class="arrow">→</div>
+  <div class="chip-cell"><span class="chip h">H</span></div>
+  <div><span class="status s-usp">USP anchor</span></div>
+  <div class="evidence"><span class="now-tag">Now</span> Classification rulebook v2 (11 categories + Foundation Layer), reflex-tested boundary calls. Not vibes. <span class="p2-tag">P2</span> Held; boundary calls re-audited quarterly. <span class="p3-tag">P3</span> Kit-ready — rulebook transferable to client audits.</div>
+</div>
+
+<div class="footer">
+  <strong>What moved this scorecard IS:</strong> the audit's testable claim. If Phase 2 build items ship per the Consolidated Q4 Action Plan, these scores should move. If they don't move, that's real data about what actually holds when the audit isn't happening.
+  <div class="row2">
+    <div><strong>Source of record:</strong> <code>~/Desktop/Claude/Library/ab_90_day_audit_apr_jul_2026.docx</code> §7. The audit is the versioned narrative behind these scores; this artifact is the live surface for tracking movement.</div>
+    <div><strong>Related:</strong> <code>pdds-governance-scorecard</code> (external, NIST-aligned, PDDS-specific) · <code>dialogue-maturity-dashboard</code> (monthly reflection surface) · <code>task-allocation-view</code> (session + token allocation).</div>
+  </div>
+  <div class="methnote">
+    <strong>Methodology honesty:</strong> Self-assessed by the operator. External peer review would strengthen credibility (plausible Phase 3+ item). The audit itself is not yet governance-of-governance — a future audit-of-audits would evaluate whether this scorecard's methodology is defensible.
+  </div>
+</div>
+
+</div>
+</body>
+</html>

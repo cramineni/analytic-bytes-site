@@ -1,0 +1,113 @@
+<svg viewBox="0 0 1080 1000" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Where a founder's time actually goes — task allocation across 83 sessions</title>
+<desc>A bar chart showing ten task categories with percentage of message volume, revealing that recurring automation dominates by session count but not by volume, while strategic thinking dominates by volume but not by session count.</desc>
+
+<!-- Background -->
+<rect width="1080" height="1000" fill="#FFFFFF"/>
+
+<!-- Header block -->
+<text x="80" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#0F2A4A">Where a founder's time actually goes</text>
+<text x="80" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569">83 sessions this quarter, 10 task categories — the shape surprised me.</text>
+
+<!-- Divider -->
+<line x1="80" y1="160" x2="1000" y2="160" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.4"/>
+
+<!-- Chart section -->
+<text x="80" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="1.2" fill="#94A3B8">SHARE OF MESSAGE VOLUME</text>
+
+<!-- Y-axis: 0-25% -->
+<!-- Chart area: x=80 to x=1000 (width 920), y=240 to y=720 (height 480) -->
+<!-- 25% = 480px tall bar area -->
+
+<!-- Grid lines -->
+<g stroke="#E2E8F0" stroke-width="1">
+  <line x1="220" y1="240" x2="1000" y2="240"/>
+  <line x1="220" y1="336" x2="1000" y2="336"/>
+  <line x1="220" y1="432" x2="1000" y2="432"/>
+  <line x1="220" y1="528" x2="1000" y2="528"/>
+  <line x1="220" y1="624" x2="1000" y2="624"/>
+  <line x1="220" y1="720" x2="1000" y2="720"/>
+</g>
+
+<!-- Y-axis labels -->
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="end">
+  <text x="210" y="245">25%</text>
+  <text x="210" y="341">20%</text>
+  <text x="210" y="437">15%</text>
+  <text x="210" y="533">10%</text>
+  <text x="210" y="629">5%</text>
+  <text x="210" y="725">0%</text>
+</g>
+
+<!-- Bars: 10 categories, bar width 60, gap 16 -->
+<!-- Data: [20, 15, 15, 12, 8, 8, 7, 7, 4, 2] -->
+<!-- Bar heights: pct * 19.2 -->
+
+<!-- Bar 1: Strategic — 20% — HIGHLIGHTED navy -->
+<rect x="240" y="336" width="60" height="384" fill="#0F2A4A"/>
+<text x="270" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">20%</text>
+
+<!-- Bar 2: Recurring Automation — 15% -->
+<rect x="316" y="432" width="60" height="288" fill="#475569"/>
+<text x="346" y="422" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">15%</text>
+
+<!-- Bar 3: Job Search — 15% -->
+<rect x="392" y="432" width="60" height="288" fill="#475569"/>
+<text x="422" y="422" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">15%</text>
+
+<!-- Bar 4: Product & Framework — 12% -->
+<rect x="468" y="490" width="60" height="230" fill="#475569"/>
+<text x="498" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">12%</text>
+
+<!-- Bar 5: Research & Review — 8% -->
+<rect x="544" y="566" width="60" height="154" fill="#475569"/>
+<text x="574" y="556" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">8%</text>
+
+<!-- Bar 6: Technical Dev — 8% -->
+<rect x="620" y="566" width="60" height="154" fill="#475569"/>
+<text x="650" y="556" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">8%</text>
+
+<!-- Bar 7: Long-Form Writing — 7% -->
+<rect x="696" y="586" width="60" height="134" fill="#475569"/>
+<text x="726" y="576" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">7%</text>
+
+<!-- Bar 8: Talk Prep — 7% -->
+<rect x="772" y="586" width="60" height="134" fill="#475569"/>
+<text x="802" y="576" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#475569" text-anchor="middle">7%</text>
+
+<!-- Bar 9: Content & Distribution — 4% -->
+<rect x="848" y="643" width="60" height="77" fill="#94A3B8"/>
+<text x="878" y="633" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#94A3B8" text-anchor="middle">4%</text>
+
+<!-- Bar 10: Learning & Reading — 2% -->
+<rect x="924" y="681" width="60" height="39" fill="#94A3B8"/>
+<text x="954" y="671" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#94A3B8" text-anchor="middle">2%</text>
+
+<!-- X-axis labels (rotated) -->
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#475569">
+  <text transform="translate(270 740) rotate(35)" text-anchor="start" font-weight="700" fill="#0F2A4A">Strategic thinking</text>
+  <text transform="translate(346 740) rotate(35)" text-anchor="start">Recurring automation</text>
+  <text transform="translate(422 740) rotate(35)" text-anchor="start">Project proposals &amp; evaluations</text>
+  <text transform="translate(498 740) rotate(35)" text-anchor="start">Product &amp; framework</text>
+  <text transform="translate(574 740) rotate(35)" text-anchor="start">Research &amp; review</text>
+  <text transform="translate(650 740) rotate(35)" text-anchor="start">Technical dev</text>
+  <text transform="translate(726 740) rotate(35)" text-anchor="start">Long-form writing</text>
+  <text transform="translate(802 740) rotate(35)" text-anchor="start">Talk prep</text>
+  <text transform="translate(878 740) rotate(35)" text-anchor="start">Content &amp; distribution</text>
+  <text transform="translate(954 740) rotate(35)" text-anchor="start">Learning &amp; reading</text>
+</g>
+
+<!-- Callout to Strategic bar — centered on bar, positioned above the 20% label -->
+<line x1="270" y1="318" x2="270" y2="290" stroke="#0F2A4A" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="270" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0F2A4A" text-anchor="middle">4 sessions</text>
+
+<!-- Callout to Recurring Automation bar — centered on bar, positioned above the 15% label -->
+<line x1="346" y1="414" x2="346" y2="382" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="346" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0EA5E9" text-anchor="middle">42 sessions</text>
+
+<!-- Insight panel removed — content lives in the LinkedIn post text -->
+
+<!-- Small analytic caveat (no branding) -->
+<text x="540" y="960" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#94A3B8" text-anchor="middle">Message volume as proxy for time. Read the shape, not absolute percentages.</text>
+
+</svg>
