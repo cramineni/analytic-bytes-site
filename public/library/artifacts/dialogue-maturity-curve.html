@@ -13,8 +13,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
 <style>
   :root { color-scheme: light;
-    --ink:#1f2933; --muted:#5a6772; --line:#d8dde3; --bg:#fafafa;
-    --card:#ffffff; --navy:#1e3a5f; --teal:#3f8aa5; --amber:#c97a4b;
+    --ink:#0F2A4A; --muted:#475569; --line:#E2E8F0; --bg:#F8FAFC;
+    --card:#ffffff; --navy:#0F2A4A; --teal:#0EA5E9; --amber:#94A3B8;
   }
   * { box-sizing: border-box; }
   body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; }
@@ -26,7 +26,7 @@
   .card .desc { color: var(--muted); font-size: 13.5px; margin-bottom: 14px; }
   .chart-box { position: relative; height: 460px; }
   .chart-box.tall { height: 520px; }
-  .takeaway { background: #eef4f8; border: 1px solid #c8dae5; border-radius: 8px; padding: 18px 22px; margin-top: 20px; }
+  .takeaway { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 18px 22px; margin-top: 20px; }
   .takeaway h2 { margin-top: 0; font-size: 16px; }
   .takeaway p { font-size: 14px; margin: 8px 0; }
   .note { background: #fff7e8; border-left: 3px solid #d4a04a; padding: 10px 14px; font-size: 13px; color: #6b5224; margin: 14px 0 0; border-radius: 0 4px 4px 0; }
@@ -47,10 +47,10 @@
 <div class="card">
   <h2>The curve: all scored threads, GPT and Claude</h2>
   <div class="desc">
-    <span class="legend-pill"><span class="dot" style="background:#3f8aa5"></span>GPT thread (88)</span>
-    <span class="legend-pill"><span class="dot" style="background:#1e3a5f"></span>Claude session (28)</span>
-    <span class="legend-pill"><span class="dot" style="background:#c97a4b;border-radius:0;height:2px;width:18px"></span>30-day rolling mean</span>
-    <span class="legend-pill"><span class="dot" style="background:#b94a48;border-radius:0;height:2px;width:18px"></span>Rolling max (best-of-window)</span>
+    <span class="legend-pill"><span class="dot" style="background:#0EA5E9"></span>GPT thread (88)</span>
+    <span class="legend-pill"><span class="dot" style="background:#0F2A4A"></span>Claude session (28)</span>
+    <span class="legend-pill"><span class="dot" style="background:#94A3B8;border-radius:0;height:2px;width:18px"></span>30-day rolling mean</span>
+    <span class="legend-pill"><span class="dot" style="background:#475569;border-radius:0;height:2px;width:18px"></span>Rolling max (best-of-window)</span>
   </div>
   <div class="chart-box tall"><canvas id="combined"></canvas></div>
   <div class="note"><strong>How to read this.</strong> The <em>mean</em> line is dragged down in April–May by the high volume of tactical resume/cover-letter threads (each scoring low individually). The <em>max</em> line tells the more accurate maturity story — what was the highest-altitude work happening in each window. The max line shows the working pattern was already high by late 2025 and stayed high throughout, with the brand-pivot weeks and the Claude period sitting at the top of the corpus.</div>
@@ -112,10 +112,10 @@ const monthTicks = { callback: function(v){ const d=new Date(v); const m=['Jan',
 new Chart(document.getElementById('combined'), {
   type: 'scatter',
   data: { datasets: [
-    { label: 'GPT thread', data: gptPts, backgroundColor: 'rgba(63,138,165,0.55)', borderColor: '#3f8aa5', pointRadius: 4, pointHoverRadius: 7 },
-    { label: 'Claude session', data: cldPts, backgroundColor: 'rgba(30,58,95,0.85)', borderColor: '#1e3a5f', pointRadius: 5, pointHoverRadius: 8 },
-    { label: '30-day rolling mean', data: stats.mean, type: 'line', borderColor: '#c97a4b', borderWidth: 2.5, pointRadius: 0, tension: 0.35, fill: false },
-    { label: 'Rolling max (best-of-window)', data: stats.max, type: 'line', borderColor: '#b94a48', borderWidth: 2, pointRadius: 0, tension: 0.35, fill: false, borderDash: [5, 4] }
+    { label: 'GPT thread', data: gptPts, backgroundColor: 'rgba(63,138,165,0.55)', borderColor: '#0EA5E9', pointRadius: 4, pointHoverRadius: 7 },
+    { label: 'Claude session', data: cldPts, backgroundColor: 'rgba(30,58,95,0.85)', borderColor: '#0F2A4A', pointRadius: 5, pointHoverRadius: 8 },
+    { label: '30-day rolling mean', data: stats.mean, type: 'line', borderColor: '#94A3B8', borderWidth: 2.5, pointRadius: 0, tension: 0.35, fill: false },
+    { label: 'Rolling max (best-of-window)', data: stats.max, type: 'line', borderColor: '#475569', borderWidth: 2, pointRadius: 0, tension: 0.35, fill: false, borderDash: [5, 4] }
   ]},
   options: {
     responsive: true, maintainAspectRatio: false,
@@ -144,13 +144,13 @@ new Chart(document.getElementById('monthly'), {
   type: 'bar',
   data: { labels: months, datasets: [
     { label: 'Mean composite', data: monthlyMean, backgroundColor: 'rgba(63,138,165,0.65)' },
-    { label: 'Max composite', data: monthlyMax, type: 'line', borderColor: '#b94a48', backgroundColor: '#b94a48', tension: 0.3, pointRadius: 4 }
+    { label: 'Max composite', data: monthlyMax, type: 'line', borderColor: '#475569', backgroundColor: '#475569', tension: 0.3, pointRadius: 4 }
   ]},
   options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } }, tooltip: { callbacks: { afterLabel: (ctx) => `n=${monthlyN[ctx.dataIndex]}` } } }, scales: { y: { min: 0, max: 10, title: { display: true, text: 'Composite' } } } }
 });
 const metricNames = ['altitude','pushback','voice','meta','cross','reframe'];
 const metricLabels = ['Strategic altitude','Critical engagement','Voice ownership','Meta-awareness','Cross-thread integration','Generative reframing'];
-const metricColors = ['#1e4d6b','#3f8aa5','#c97a4b','#8a9a5b','#6b4e8a','#b94a48'];
+const metricColors = ['#0F2A4A','#0EA5E9','#94A3B8','#8a9a5b','#6b4e8a','#475569'];
 function rollingMetric(metric) { const pts = data.map(d => ({ x: new Date(d.date).getTime(), y: d[metric] })).sort((a, b) => a.x - b.x); return rollingStats(pts, 21).mean; }
 new Chart(document.getElementById('metrics'), {
   type: 'line',

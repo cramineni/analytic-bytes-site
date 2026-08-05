@@ -39,6 +39,21 @@ From `AB_Editorial_Standard.md`, Gate 10 asks: does the piece contain at least o
 
 ---
 
+### HTML artifacts palette — 2nd-pass polish (2026-08-05)
+
+**Issue:** The 4 HTML artifacts (`governance-craft-card`, `governance-craft-log`, `dialogue-maturity-curve`, `ab-governance-maturity-scorecard`) had a bulk color-token swap to AB primary palette (navy, teal, slate). Chrome now conforms. 6-28 off-palette hexes remain per file, mostly pastel status badges and chart series-encoding (phase pips, dimension colors).
+
+**Status:** primary AB alignment shipped. Second-pass polish deferred.
+
+**Suggested moves:**
+- Semantic status pills — remap to shades of `#0EA5E9` (teal), `#94A3B8` (slate), `#6B7A8C` (mid-slate) with opacity/tint variations for weight, rather than pastel red/yellow/green/lavender.
+- Chart series-encoding — use `#0F2A4A` (navy), `#0EA5E9` (teal), `#94A3B8` (slate), `#B4C0CC` (muted grey) as the 4-color rotation. Beyond 4 series, add opacity variants.
+- One stray `#2a1745` lowercase in governance-craft-log — case-sensitivity edge case my sweep missed; quick manual cleanup.
+
+**Priority:** low. Artifacts render cleanly inside AB iframe; the internal encoding colors read as "inside data visualization" rather than clashing with brand chrome.
+
+---
+
 ### E13 — Before it was called AI evaluation (2026-08-05)
 
 **Issue:** Em-dash count 23 in body (ceiling ~15-18 for a 14-min piece). Extraction from a substantial 3527-word MD carried more em-dashes than the editorial ceiling. The piece publishes with them; a follow-up sweep should cut 5-8, especially bracket-pair patterns like "X — Y —" inside sentences.

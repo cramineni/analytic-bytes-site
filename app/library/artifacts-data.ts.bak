@@ -196,7 +196,7 @@ export const ARTIFACTS: Artifact[] = [
     title: "Three lenses on the same 90 days",
     summary:
       "The same ten task categories from AB's 90-day audit, read through three measurement lenses: session count (how often), message volume (how much conversation), and token usage (what the model actually computed). The three lenses tell three different stories about the same practice — and the divergences carry the diagnostic weight. Aggregating them into a single 'how much AI' number destroys the signal.",
-    image: "/library/artifacts/ab-three-lenses.svg",
+    image: "/library/artifacts/ab-three-lenses.png",
     slug: "ab-three-lenses",
     referencedIn: [
       {

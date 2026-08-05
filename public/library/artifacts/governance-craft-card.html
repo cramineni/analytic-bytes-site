@@ -14,63 +14,63 @@
 <style>
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
-body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #ffffff; color: #1a1a1a; line-height: 1.55; font-size: 14px; }
+body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #ffffff; color: #0F2A4A; line-height: 1.55; font-size: 14px; }
 .wrap { max-width: 780px; margin: 0 auto; padding: 36px 24px 48px; }
 
-header.top { padding-bottom: 20px; border-bottom: 1px solid #d8dde3; margin-bottom: 24px; }
-header.top .kit-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #7A5FA0; font-weight: 700; margin-bottom: 6px; }
-header.top h1 { font-size: 28px; font-weight: 600; margin: 0 0 6px; color: #1a1a1a; letter-spacing: -0.01em; line-height: 1.2; }
-header.top .tagline { font-size: 15px; color: #4a3560; margin: 0; font-style: italic; line-height: 1.5; }
+header.top { padding-bottom: 20px; border-bottom: 1px solid #E2E8F0; margin-bottom: 24px; }
+header.top .kit-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #0EA5E9; font-weight: 700; margin-bottom: 6px; }
+header.top h1 { font-size: 28px; font-weight: 600; margin: 0 0 6px; color: #0F2A4A; letter-spacing: -0.01em; line-height: 1.2; }
+header.top .tagline { font-size: 15px; color: #475569; margin: 0; font-style: italic; line-height: 1.5; }
 
-.claim { background: linear-gradient(135deg, #F5F1FA 0%, #F0EBF7 100%); border-left: 4px solid #7A5FA0; padding: 20px 24px; margin: 22px 0 26px; border-radius: 0 8px 8px 0; }
-.claim h2 { font-size: 15px; margin: 0 0 12px; color: #2A1745; font-weight: 600; letter-spacing: -0.005em; }
-.claim p { font-size: 13.5px; margin: 0 0 10px; color: #3a2540; line-height: 1.6; }
+.claim { background: linear-gradient(135deg, #F0F9FE 0%, #F0F9FE 100%); border-left: 4px solid #0EA5E9; padding: 20px 24px; margin: 22px 0 26px; border-radius: 0 8px 8px 0; }
+.claim h2 { font-size: 15px; margin: 0 0 12px; color: #0F2A4A; font-weight: 600; letter-spacing: -0.005em; }
+.claim p { font-size: 13.5px; margin: 0 0 10px; color: #475569; line-height: 1.6; }
 .claim p:last-child { margin-bottom: 0; }
-.claim strong { color: #2A1745; font-weight: 600; }
-.claim .missing { color: #b94a48; font-weight: 600; }
+.claim strong { color: #0F2A4A; font-weight: 600; }
+.claim .missing { color: #475569; font-weight: 600; }
 
 /* PHASE STRIP */
-.phase-header { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7a; font-weight: 700; margin: 26px 0 10px; }
+.phase-header { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #475569; font-weight: 700; margin: 26px 0 10px; }
 .phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 8px; }
 @media (max-width: 640px) { .phases { grid-template-columns: repeat(2, 1fr); } }
 .phase-chip { padding: 12px 12px 14px; border-radius: 8px; border: 1px solid #e5e5e5; }
 .phase-chip .pl { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 5px; }
-.phase-chip .pn { font-size: 12.5px; font-weight: 600; color: #1a1a1a; margin-bottom: 5px; line-height: 1.25; }
+.phase-chip .pn { font-size: 12.5px; font-weight: 600; color: #0F2A4A; margin-bottom: 5px; line-height: 1.25; }
 .phase-chip .pc { font-size: 11px; color: #333; font-weight: 600; }
-.phase-A { background: #F5F1FA; border-color: #C5B4D9; } .phase-A .pl { color: #7A5FA0; }
-.phase-B { background: #E8F0F5; border-color: #A8C6D6; } .phase-B .pl { color: #3f8aa5; }
+.phase-A { background: #F0F9FE; border-color: #C5B4D9; } .phase-A .pl { color: #0EA5E9; }
+.phase-B { background: #E8F0F5; border-color: #A8C6D6; } .phase-B .pl { color: #0EA5E9; }
 .phase-C { background: #F2F8EA; border-color: #B7D9A5; } .phase-C .pl { color: #6b8e23; }
-.phase-D { background: #FEF4E6; border-color: #E8C88A; } .phase-D .pl { color: #c97a4b; }
-.phase-E { background: #FDECEC; border-color: #E8B0B0; } .phase-E .pl { color: #b94a48; }
+.phase-D { background: #FEF4E6; border-color: #E8C88A; } .phase-D .pl { color: #94A3B8; }
+.phase-E { background: #FDECEC; border-color: #E8B0B0; } .phase-E .pl { color: #475569; }
 .phase-caption { font-size: 11.5px; color: #666; font-style: italic; margin: 0 0 22px; text-align: center; }
 
 /* KANE MINI STRIP */
-.kane-header { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7a; font-weight: 700; margin: 22px 0 10px; }
+.kane-header { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #475569; font-weight: 700; margin: 22px 0 10px; }
 .kane { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 8px; }
 @media (max-width: 640px) { .kane { grid-template-columns: 1fr 1fr; } }
-.kane-box { background: #fafafa; border: 1px solid #d8dde3; border-radius: 6px; padding: 10px 12px; }
-.kane-box .kl { font-size: 10px; font-weight: 700; color: #3f8aa5; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; font-family: -apple-system, monospace; }
-.kane-box .kt { font-size: 12.5px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; line-height: 1.25; }
+.kane-box { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 10px 12px; }
+.kane-box .kl { font-size: 10px; font-weight: 700; color: #0EA5E9; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; font-family: -apple-system, monospace; }
+.kane-box .kt { font-size: 12.5px; font-weight: 600; color: #0F2A4A; margin-bottom: 4px; line-height: 1.25; }
 .kane-box .kb { font-size: 10.5px; color: #666; line-height: 1.45; }
 .kane-caption { font-size: 11.5px; color: #666; font-style: italic; margin: 0 0 26px; text-align: center; }
 
 /* CTA */
-.cta-header { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7a; font-weight: 700; margin: 26px 0 10px; }
+.cta-header { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #475569; font-weight: 700; margin: 26px 0 10px; }
 .cta-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 @media (max-width: 640px) { .cta-row { grid-template-columns: 1fr; } }
-.cta { background: #fff; border: 1px solid #d8dde3; border-radius: 8px; padding: 14px 16px; text-decoration: none; color: inherit; display: block; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
-.cta:hover { border-color: #7A5FA0; box-shadow: 0 2px 8px rgba(122,95,160,0.15); }
-.cta .cl { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #7A5FA0; margin-bottom: 4px; }
-.cta .ct { font-size: 13px; font-weight: 600; color: #1a1a1a; line-height: 1.3; margin-bottom: 4px; }
+.cta { background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 14px 16px; text-decoration: none; color: inherit; display: block; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.cta:hover { border-color: #0EA5E9; box-shadow: 0 2px 8px rgba(122,95,160,0.15); }
+.cta .cl { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0EA5E9; margin-bottom: 4px; }
+.cta .ct { font-size: 13px; font-weight: 600; color: #0F2A4A; line-height: 1.3; margin-bottom: 4px; }
 .cta .cd { font-size: 11px; color: #666; line-height: 1.4; }
 
 /* FOOTER */
-footer.foot { margin-top: 32px; padding-top: 16px; border-top: 1px solid #d8dde3; font-size: 11.5px; color: #888; line-height: 1.55; text-align: center; }
+footer.foot { margin-top: 32px; padding-top: 16px; border-top: 1px solid #E2E8F0; font-size: 11.5px; color: #888; line-height: 1.55; text-align: center; }
 footer.foot code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; font-size: 10.5px; color: #666; }
 </style>
 </head>
 <body>
-<div class="cowork-header-bar" style="height:6px;background:#1e40af;width:100%;"></div>
+<div class="cowork-header-bar" style="height:6px;background:#0EA5E9;width:100%;"></div>
 <div class="wrap">
 
 <header class="top">

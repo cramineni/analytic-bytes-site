@@ -17,38 +17,38 @@
 body {
   margin: 0; padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  background: #ffffff; color: #1a1a1a; line-height: 1.55; font-size: 14px;
+  background: #ffffff; color: #0F2A4A; line-height: 1.55; font-size: 14px;
 }
 .wrap { max-width: 900px; margin: 0 auto; padding: 32px 24px 60px; }
 
 /* HEADER */
-header.top { padding-bottom: 20px; border-bottom: 1px solid #d8dde3; margin-bottom: 24px; }
-header.top h1 { font-size: 24px; font-weight: 600; margin: 0 0 4px; color: #1a1a1a; letter-spacing: -0.005em; }
-header.top .sub { font-size: 14px; color: #5b6b7a; margin: 0 0 6px; font-style: italic; }
+header.top { padding-bottom: 20px; border-bottom: 1px solid #E2E8F0; margin-bottom: 24px; }
+header.top h1 { font-size: 24px; font-weight: 600; margin: 0 0 4px; color: #0F2A4A; letter-spacing: -0.005em; }
+header.top .sub { font-size: 14px; color: #475569; margin: 0 0 6px; font-style: italic; }
 header.top .stamp { font-size: 11.5px; color: #999; font-family: -apple-system, monospace; }
 
 /* HERO CALLOUT */
 .hero {
-  background: linear-gradient(90deg, #F5F1FA 0%, #EFEAF7 100%);
-  border-left: 4px solid #7A5FA0;
+  background: linear-gradient(90deg, #F0F9FE 0%, #EFEAF7 100%);
+  border-left: 4px solid #0EA5E9;
   padding: 18px 22px; margin: 22px 0 24px; border-radius: 0 8px 8px 0;
 }
-.hero .lbl { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #7A5FA0; font-weight: 700; margin-bottom: 8px; }
-.hero .headline { font-size: 17px; font-weight: 600; color: #2A1745; line-height: 1.4; }
-.hero .headline .em { color: #7A5FA0; }
-.hero .sub { font-size: 13px; color: #4a3560; margin-top: 8px; line-height: 1.5; }
+.hero .lbl { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #0EA5E9; font-weight: 700; margin-bottom: 8px; }
+.hero .headline { font-size: 17px; font-weight: 600; color: #0F2A4A; line-height: 1.4; }
+.hero .headline .em { color: #0EA5E9; }
+.hero .sub { font-size: 13px; color: #475569; margin-top: 8px; line-height: 1.5; }
 
 /* EXEC SUMMARY */
-section.exec { background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px; padding: 18px 22px; margin-bottom: 28px; }
-section.exec h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7a; font-weight: 700; margin: 0 0 12px; }
+section.exec { background: #F8FAFC; border: 1px solid #eaeaea; border-radius: 8px; padding: 18px 22px; margin-bottom: 28px; }
+section.exec h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: #475569; font-weight: 700; margin: 0 0 12px; }
 section.exec p { font-size: 13.5px; margin: 0 0 10px; color: #2a2f36; line-height: 1.6; }
 section.exec p:last-child { margin-bottom: 0; }
-section.exec strong { color: #1a1a1a; font-weight: 600; }
-section.exec .anchor { color: #7A5FA0; font-weight: 600; }
+section.exec strong { color: #0F2A4A; font-weight: 600; }
+section.exec .anchor { color: #0EA5E9; font-weight: 600; }
 
 /* PHASES AT A GLANCE */
-h2.section { font-size: 18px; font-weight: 600; margin: 30px 0 8px; color: #1e3a5f; }
-p.sectionsub { font-size: 13px; color: #5b6b7a; margin: 0 0 16px; font-style: italic; }
+h2.section { font-size: 18px; font-weight: 600; margin: 30px 0 8px; color: #0F2A4A; }
+p.sectionsub { font-size: 13px; color: #475569; margin: 0 0 16px; font-style: italic; }
 
 .phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 22px; }
 @media (max-width: 720px) { .phases { grid-template-columns: repeat(2, 1fr); } }
@@ -59,28 +59,28 @@ p.sectionsub { font-size: 13px; color: #5b6b7a; margin: 0 0 16px; font-style: it
 }
 .phase-chip:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 .phase-chip .pl { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px; }
-.phase-chip .pn { font-size: 13.5px; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; line-height: 1.3; }
-.phase-chip .pf { font-size: 11px; color: #5b6b7a; line-height: 1.4; margin-bottom: 8px; }
+.phase-chip .pn { font-size: 13.5px; font-weight: 600; color: #0F2A4A; margin-bottom: 6px; line-height: 1.3; }
+.phase-chip .pf { font-size: 11px; color: #475569; line-height: 1.4; margin-bottom: 8px; }
 .phase-chip .pc { font-size: 11px; color: #333; font-weight: 600; }
-.phase-A { background: #F5F1FA; border-color: #C5B4D9; } .phase-A .pl { color: #7A5FA0; }
-.phase-B { background: #E8F0F5; border-color: #A8C6D6; } .phase-B .pl { color: #3f8aa5; }
+.phase-A { background: #F0F9FE; border-color: #C5B4D9; } .phase-A .pl { color: #0EA5E9; }
+.phase-B { background: #E8F0F5; border-color: #A8C6D6; } .phase-B .pl { color: #0EA5E9; }
 .phase-C { background: #F2F8EA; border-color: #B7D9A5; } .phase-C .pl { color: #6b8e23; }
-.phase-D { background: #FEF4E6; border-color: #E8C88A; } .phase-D .pl { color: #c97a4b; }
-.phase-E { background: #FDECEC; border-color: #E8B0B0; } .phase-E .pl { color: #b94a48; }
+.phase-D { background: #FEF4E6; border-color: #E8C88A; } .phase-D .pl { color: #94A3B8; }
+.phase-E { background: #FDECEC; border-color: #E8B0B0; } .phase-E .pl { color: #475569; }
 
 /* PHASE SECTIONS */
 .phase-block { margin: 34px 0 8px; padding-top: 6px; }
 .phase-block h3 { font-size: 17px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.005em; }
-.phase-block .desc { font-size: 12.5px; color: #5b6b7a; margin: 0 0 14px; line-height: 1.55; font-style: italic; }
-.phase-block.A h3 { color: #7A5FA0; }
-.phase-block.B h3 { color: #3f8aa5; }
+.phase-block .desc { font-size: 12.5px; color: #475569; margin: 0 0 14px; line-height: 1.55; font-style: italic; }
+.phase-block.A h3 { color: #0EA5E9; }
+.phase-block.B h3 { color: #0EA5E9; }
 .phase-block.C h3 { color: #6b8e23; }
-.phase-block.D h3 { color: #c97a4b; }
-.phase-block.E h3 { color: #b94a48; }
+.phase-block.D h3 { color: #94A3B8; }
+.phase-block.E h3 { color: #475569; }
 
 /* MOVE CARD */
 details.move {
-  background: #fafafa; border: 1px solid #e5e5e5; border-radius: 6px;
+  background: #F8FAFC; border: 1px solid #e5e5e5; border-radius: 6px;
   padding: 0; margin-bottom: 6px; overflow: hidden;
   transition: box-shadow 0.15s ease;
 }
@@ -93,7 +93,7 @@ details.move summary {
 }
 details.move summary::-webkit-details-marker { display: none; }
 details.move summary .num { font-size: 11px; font-weight: 700; padding: 3px 7px; border-radius: 12px; text-align: center; }
-details.move summary .ttl { font-weight: 500; color: #1a1a1a; line-height: 1.35; }
+details.move summary .ttl { font-weight: 500; color: #0F2A4A; line-height: 1.35; }
 details.move summary .caret { font-size: 11px; color: #999; }
 details.move[open] summary .caret { transform: rotate(90deg); }
 details.move .body { padding: 8px 14px 14px 74px; }
@@ -102,27 +102,27 @@ details.move .body dt { font-size: 10.5px; text-transform: uppercase; letter-spa
 details.move .body dt:first-child { margin-top: 0; }
 details.move .body dd { margin: 0 0 6px; font-size: 12.5px; color: #2a2f36; line-height: 1.55; }
 
-.move.A summary .num { background: #F5F1FA; color: #7A5FA0; border: 1px solid #C5B4D9; }
-.move.B summary .num { background: #E8F0F5; color: #3f8aa5; border: 1px solid #A8C6D6; }
+.move.A summary .num { background: #F0F9FE; color: #0EA5E9; border: 1px solid #C5B4D9; }
+.move.B summary .num { background: #E8F0F5; color: #0EA5E9; border: 1px solid #A8C6D6; }
 .move.C summary .num { background: #F2F8EA; color: #6b8e23; border: 1px solid #B7D9A5; }
-.move.D summary .num { background: #FEF4E6; color: #c97a4b; border: 1px solid #E8C88A; }
-.move.E summary .num { background: #FDECEC; color: #b94a48; border: 1px solid #E8B0B0; }
-.move.A[open] { border-left: 3px solid #7A5FA0; }
-.move.B[open] { border-left: 3px solid #3f8aa5; }
+.move.D summary .num { background: #FEF4E6; color: #94A3B8; border: 1px solid #E8C88A; }
+.move.E summary .num { background: #FDECEC; color: #475569; border: 1px solid #E8B0B0; }
+.move.A[open] { border-left: 3px solid #0EA5E9; }
+.move.B[open] { border-left: 3px solid #0EA5E9; }
 .move.C[open] { border-left: 3px solid #6b8e23; }
-.move.D[open] { border-left: 3px solid #c97a4b; }
-.move.E[open] { border-left: 3px solid #b94a48; }
+.move.D[open] { border-left: 3px solid #94A3B8; }
+.move.E[open] { border-left: 3px solid #475569; }
 
 /* PRINCIPLES GRID */
 .principles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 16px; }
 @media (max-width: 720px) { .principles { grid-template-columns: 1fr; } }
 .principle {
-  background: #F5F1FA; border: 1px solid #C5B4D9; border-left: 3px solid #7A5FA0;
+  background: #F0F9FE; border: 1px solid #C5B4D9; border-left: 3px solid #0EA5E9;
   border-radius: 6px; padding: 12px 14px;
 }
-.principle .n { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #7A5FA0; margin-bottom: 4px; }
-.principle .t { font-size: 13.5px; font-weight: 600; color: #2A1745; margin-bottom: 6px; line-height: 1.3; }
-.principle .b { font-size: 12px; color: #3a2540; line-height: 1.5; }
+.principle .n { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #0EA5E9; margin-bottom: 4px; }
+.principle .t { font-size: 13.5px; font-weight: 600; color: #0F2A4A; margin-bottom: 6px; line-height: 1.3; }
+.principle .b { font-size: 12px; color: #475569; line-height: 1.5; }
 
 /* CLOSING */
 .pullquote {
@@ -135,16 +135,16 @@ details.move .body dd { margin: 0 0 6px; font-size: 12.5px; color: #2a2f36; line
 }
 @media (max-width: 720px) { .kane { grid-template-columns: 1fr 1fr; } }
 .kane-box {
-  background: #fff; border: 1px solid #d8dde3; border-radius: 6px; padding: 12px 14px;
+  background: #fff; border: 1px solid #E2E8F0; border-radius: 6px; padding: 12px 14px;
 }
-.kane-box .kl { font-size: 10.5px; font-weight: 700; color: #3f8aa5; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; font-family: -apple-system, monospace; }
-.kane-box .kt { font-size: 13.5px; font-weight: 600; color: #1a1a1a; margin-bottom: 6px; line-height: 1.3; }
-.kane-box .kb { font-size: 11.5px; color: #5b6b7a; line-height: 1.5; }
-.kane-box .km { font-size: 10.5px; color: #7A5FA0; font-weight: 600; margin-top: 6px; font-family: -apple-system, monospace; }
+.kane-box .kl { font-size: 10.5px; font-weight: 700; color: #0EA5E9; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; font-family: -apple-system, monospace; }
+.kane-box .kt { font-size: 13.5px; font-weight: 600; color: #0F2A4A; margin-bottom: 6px; line-height: 1.3; }
+.kane-box .kb { font-size: 11.5px; color: #475569; line-height: 1.5; }
+.kane-box .km { font-size: 10.5px; color: #0EA5E9; font-weight: 600; margin-top: 6px; font-family: -apple-system, monospace; }
 
 /* FOOTER */
 footer.foot {
-  margin-top: 34px; padding-top: 18px; border-top: 1px solid #d8dde3;
+  margin-top: 34px; padding-top: 18px; border-top: 1px solid #E2E8F0;
   font-size: 12px; color: #666; line-height: 1.6;
 }
 footer.foot strong { color: #333; font-weight: 500; }
@@ -153,11 +153,11 @@ footer.foot .row { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 10px; 
 footer.foot .row > div { flex: 1; min-width: 240px; }
 
 p.intro { font-size: 13px; color: #333; margin: 0 0 14px; line-height: 1.6; }
-p.intro strong { color: #1a1a1a; font-weight: 600; }
+p.intro strong { color: #0F2A4A; font-weight: 600; }
 </style>
 </head>
 <body>
-<div class="cowork-header-bar" style="height:6px;background:#1e40af;width:100%;"></div>
+<div class="cowork-header-bar" style="height:6px;background:#0EA5E9;width:100%;"></div>
 <div class="wrap">
 
 <header class="top">
@@ -167,10 +167,10 @@ p.intro strong { color: #1a1a1a; font-weight: 600; }
 </header>
 
 <!-- MEASUREMENT-VALIDITY POSITIONING (added) -->
-<div style="background:#fff; border:1px solid #C5B4D9; border-left:4px solid #7A5FA0; padding:16px 20px; margin:0 0 22px; border-radius:0 8px 8px 0;">
-  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#7A5FA0;font-weight:700;margin-bottom:8px;">&#9654; THE POSITIONING</div>
+<div style="background:#fff; border:1px solid #C5B4D9; border-left:4px solid #0EA5E9; padding:16px 20px; margin:0 0 22px; border-radius:0 8px 8px 0;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#0EA5E9;font-weight:700;margin-bottom:8px;">&#9654; THE POSITIONING</div>
   <p style="font-size:13.5px;margin:0 0 8px;color:#2a1745;line-height:1.6;"><strong>Measurement-validity discipline for AI governance &mdash; the missing discipline in responsible AI discourse.</strong></p>
-  <p style="font-size:12.5px;margin:0;color:#4a3560;line-height:1.6;">The AI governance conversation focuses on principles (fairness, transparency, accountability), controls (documentation, oversight, human-in-the-loop / AI-in-the-loop (HITL/AITL &mdash; see AB audit for the measurable-proxy formulation of the load-carrier axis)), and risk categories. What's largely missing: the measurement-validity discipline that asks whether the controls measure what they claim to. Kane's 4-inference framework &mdash; mature in educational / psychological testing since the 1990s &mdash; is basically absent from responsible AI frameworks (NIST AI RMF, EU AI Act, ISO/IEC 42001). This log brings that tradition to AI-native operations at a scope existing frameworks don't traditionally address: solo-practitioner and boutique consulting scale.</p>
+  <p style="font-size:12.5px;margin:0;color:#475569;line-height:1.6;">The AI governance conversation focuses on principles (fairness, transparency, accountability), controls (documentation, oversight, human-in-the-loop / AI-in-the-loop (HITL/AITL &mdash; see AB audit for the measurable-proxy formulation of the load-carrier axis)), and risk categories. What's largely missing: the measurement-validity discipline that asks whether the controls measure what they claim to. Kane's 4-inference framework &mdash; mature in educational / psychological testing since the 1990s &mdash; is basically absent from responsible AI frameworks (NIST AI RMF, EU AI Act, ISO/IEC 42001). This log brings that tradition to AI-native operations at a scope existing frameworks don't traditionally address: solo-practitioner and boutique consulting scale.</p>
 </div>
 
 <!-- HERO CALLOUT -->
@@ -464,30 +464,30 @@ p.intro strong { color: #1a1a1a; font-weight: 600; }
 <h2 class="section">Prior art and anchor frameworks</h2>
 <p class="sectionsub">What this log adopts, what it stays adjacent to, and what it deliberately doesn't compete with &mdash; because the scope isn't the same.</p>
 
-<div style="background:#fafafa; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
-  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#0E5F2E;font-weight:700;margin-bottom:8px;">&#10003; ADOPTED &middot; CITED THROUGHOUT</div>
+<div style="background:#F8FAFC; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#0F2A4A;font-weight:700;margin-bottom:8px;">&#10003; ADOPTED &middot; CITED THROUGHOUT</div>
   <p style="font-size:12.5px;margin:0 0 6px;line-height:1.55;"><strong>Kane's 4-inference validity framework</strong> &mdash; the audit's spine. Applied to the audit's own execution (see Kane mapping below): Scoring &rarr; Generalization &rarr; Extrapolation &rarr; Implication. Peer-reviewed since the 1990s.</p>
   <p style="font-size:12.5px;margin:0;line-height:1.55;"><strong>NIST AI RMF</strong> &mdash; anchor for the PDDS Governance Scorecard (the audit's external-facing product, which IS at org / product scale where NIST applies).</p>
 </div>
 
-<div style="background:#fafafa; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
-  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#5b6b7a;font-weight:700;margin-bottom:8px;">~ ADJACENT TRADITIONS</div>
+<div style="background:#F8FAFC; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#475569;font-weight:700;margin-bottom:8px;">~ ADJACENT TRADITIONS</div>
   <p style="font-size:12.5px;margin:0;line-height:1.55;"><strong>Messick construct validity</strong> &middot; <strong>AERA/APA/NCME Standards for Educational and Psychological Testing</strong> &middot; broader measurement-science tradition that informs the practitioner's disciplinary background but isn't formally cited in the audit itself.</p>
 </div>
 
-<div style="background:#fafafa; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
-  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#c97a4b;font-weight:700;margin-bottom:8px;">&times; DELIBERATELY NOT ADOPTED (WITH REASON)</div>
+<div style="background:#F8FAFC; border:1px solid #eaeaea; border-radius:8px; padding:18px 22px; margin-bottom:14px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#94A3B8;font-weight:700;margin-bottom:8px;">&times; DELIBERATELY NOT ADOPTED (WITH REASON)</div>
   <dl style="margin:0;font-size:12.5px;line-height:1.55;">
-    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">NIST AI RMF at the practice level</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Scope mismatch. NIST targets organizations deploying AI to serve customers. This audit is a solo practitioner's own operating practice. NIST is cited where scope fits (PDDS); not force-fit where it doesn't.</dd>
-    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">COBIT / COSO / SOC 2</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Wrong domain. COBIT is IT governance; COSO is financial internal controls; SOC 2 is security / availability audit. None target AI-collaborative practice methodology.</dd>
-    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">Balanced Scorecard / OKRs / CMMI</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Different object of measurement. These measure business performance or software-org process maturity. This audit measures governance maturity of the practice itself &mdash; a distinct object.</dd>
-    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">Model Cards (Mitchell et al.) / Datasheets for Datasets (Gebru et al.)</dt><dd style="margin:2px 0 4px 0;color:#5b6b7a;">Different object. Model Cards are for MODELS; Datasheets are for DATASETS. Adjacent methodology tradition (transparency-oriented reporting) but not applicable to practitioner-scale governance.</dd>
-    <dt style="font-weight:600;color:#1a1a1a;margin-top:6px;">Huawei AI-Native Enterprise / PwC AI-Native Enterprise / SAFe AI-Native</dt><dd style="margin:2px 0;color:#5b6b7a;">All target ENTERPRISE scale. The AI-Native family emerging in 2026 doesn't address practice-level scope (solo / boutique / fractional). AB's Foundation Layer / PracticeOps naming explicitly claims that unaddressed scope.</dd>
+    <dt style="font-weight:600;color:#0F2A4A;margin-top:6px;">NIST AI RMF at the practice level</dt><dd style="margin:2px 0 4px 0;color:#475569;">Scope mismatch. NIST targets organizations deploying AI to serve customers. This audit is a solo practitioner's own operating practice. NIST is cited where scope fits (PDDS); not force-fit where it doesn't.</dd>
+    <dt style="font-weight:600;color:#0F2A4A;margin-top:6px;">COBIT / COSO / SOC 2</dt><dd style="margin:2px 0 4px 0;color:#475569;">Wrong domain. COBIT is IT governance; COSO is financial internal controls; SOC 2 is security / availability audit. None target AI-collaborative practice methodology.</dd>
+    <dt style="font-weight:600;color:#0F2A4A;margin-top:6px;">Balanced Scorecard / OKRs / CMMI</dt><dd style="margin:2px 0 4px 0;color:#475569;">Different object of measurement. These measure business performance or software-org process maturity. This audit measures governance maturity of the practice itself &mdash; a distinct object.</dd>
+    <dt style="font-weight:600;color:#0F2A4A;margin-top:6px;">Model Cards (Mitchell et al.) / Datasheets for Datasets (Gebru et al.)</dt><dd style="margin:2px 0 4px 0;color:#475569;">Different object. Model Cards are for MODELS; Datasheets are for DATASETS. Adjacent methodology tradition (transparency-oriented reporting) but not applicable to practitioner-scale governance.</dd>
+    <dt style="font-weight:600;color:#0F2A4A;margin-top:6px;">Huawei AI-Native Enterprise / PwC AI-Native Enterprise / SAFe AI-Native</dt><dd style="margin:2px 0;color:#475569;">All target ENTERPRISE scale. The AI-Native family emerging in 2026 doesn't address practice-level scope (solo / boutique / fractional). AB's Foundation Layer / PracticeOps naming explicitly claims that unaddressed scope.</dd>
   </dl>
 </div>
 
-<div style="background:#F5F1FA; border:1px solid #C5B4D9; border-left:4px solid #7A5FA0; border-radius:0 8px 8px 0; padding:18px 22px; margin-bottom:22px;">
-  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#7A5FA0;font-weight:700;margin-bottom:8px;">&#9654; WHAT THIS AUDIT CONTRIBUTES</div>
+<div style="background:#F0F9FE; border:1px solid #C5B4D9; border-left:4px solid #0EA5E9; border-radius:0 8px 8px 0; padding:18px 22px; margin-bottom:22px;">
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#0EA5E9;font-weight:700;margin-bottom:8px;">&#9654; WHAT THIS AUDIT CONTRIBUTES</div>
   <p style="font-size:12.5px;margin:0 0 8px;color:#2a1745;line-height:1.6;"><strong>Foundation Layer / AI-Native PracticeOps</strong> as a foundational concept at practice-operating scale (parallel to DevOps for software engineering &mdash; but at a scope existing AI-Native frameworks don't cover).</p>
   <p style="font-size:12.5px;margin:0 0 8px;color:#2a1745;line-height:1.6;"><strong>Measurement-validity discipline applied inline</strong>, with the audit's own execution as the empirical demonstration (this log). Not a new framework &mdash; an application of established validity theory to a new object at a new scale.</p>
   <p style="font-size:12.5px;margin:0;color:#2a1745;line-height:1.6;"><strong>Governance-of-governance done inline</strong>, not deferred as Phase 3+ future work &mdash; and evidenced with 23 mid-flight discipline moves + 7 emergent principles catalogued above.</p>
