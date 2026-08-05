@@ -216,13 +216,29 @@ function ArtifactPreviewCard({ artifact }: { artifact: Artifact }) {
       className="group block no-underline"
     >
       <div className="rounded-md overflow-hidden border border-line bg-bg-alt mb-3 group-hover:border-line-2 transition-colors">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={artifact.image}
-          alt={artifact.title}
-          className="w-full h-auto block"
-          loading="lazy"
-        />
+        {artifact.format === "html" ? (
+          <div className="aspect-[3/2] flex items-center justify-center px-5 text-center bg-white">
+            <div>
+              <div className="font-mono text-[9.5px] tracking-[0.22em] uppercase text-accent mb-1.5">
+                Interactive artifact
+              </div>
+              <div className="text-[13.5px] font-bold text-ink leading-[1.3] tracking-[-0.01em]">
+                {artifact.title}
+              </div>
+              <div className="mt-2 font-mono text-[10px] tracking-[0.06em] text-ink-3">
+                Open &rarr;
+              </div>
+            </div>
+          </div>
+        ) : (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={artifact.image}
+            alt={artifact.title}
+            className="w-full h-auto block"
+            loading="lazy"
+          />
+        )}
       </div>
       <div className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-accent mb-1.5">
         Artifact
