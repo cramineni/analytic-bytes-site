@@ -34,6 +34,10 @@ export default function PanelChart({ panel }: { panel: Panel }) {
   });
 
   const multi = periods.length > 1;
+  // Does any bar in the latest period carry a CI tuple? If so we render
+  // whiskers on the bars and drop a small legend row at the bottom.
+  const hasCI =
+    !multi && panel.series[latest].some((b) => Array.isArray(b.ci));
 
   // SVG geometry
   const width = 720;
@@ -49,10 +53,11 @@ export default function PanelChart({ panel }: { panel: Panel }) {
   const topPad = 10;
   // bottomPad reserves two rows below the axis line:
   //   - x-axis tick labels (0, 25, 50, ...) at height - bottomPad + 16
-  //   - legend swatches (multi-period only) at height - 14
+  //   - legend swatches (multi-period only, or CI legend for survey
+  //     panels) at height - 14
   // Previously bottomPad was 34, which put both on the same line and
   // the year labels stacked directly on top of the tick numbers.
-  const bottomPad = multi ? 56 : 34;
+  const bottomPad = multi ? 56 : hasCI ? 52 : 34;
   const height = topPad + rowH * groups.length + bottomPad;
 
   // Compute max across all values for x-axis scale. Filter out null cells
@@ -98,6 +103,13 @@ export default function PanelChart({ panel }: { panel: Panel }) {
       {rows.map((row, i) => {
         const rowY = topPad + i * rowH;
         const label = row.group as string;
+        // Look up the raw bar for this row+latest-period so we can pull
+        // survey-track fields the pivoted rows[] shape drops (ci, note).
+        // Only used for the single-period layout below; multi-period
+        // panels don't carry ci in current data.
+        const latestBar = !multi
+          ? panel.series[latest].find((b) => b.group === label)
+          : undefined;
         return (
           <g key={label}>
             {/* Group label — wraps to two lines if it exceeds the
@@ -147,6 +159,16 @@ export default function PanelChart({ panel }: { panel: Panel }) {
                 : style.highlight.includes(label)
                   ? style.accent
                   : style.base;
+              // CI whisker: only survey bars carry a ci tuple, only
+              // present it on the single-period layout (multi-period
+              // data in this codebase doesn't have CIs yet). Whisker
+              // sits centered on the bar, using accent teal so it reads
+              // against both a navy bar and the white background it
+              // extends onto past the bar tip.
+              const ci = !multi ? latestBar?.ci : undefined;
+              const showCI = !multi && Array.isArray(ci);
+              const ciCenterY = barY + barH / 2;
+              const capH = 8;
               return (
                 <g key={`${label}-${p}`}>
                   <rect
@@ -157,9 +179,42 @@ export default function PanelChart({ panel }: { panel: Panel }) {
                     fill={fill}
                     rx={2}
                   />
-                  {/* Value label at end of bar */}
+                  {showCI && (
+                    <g>
+                      {/* Horizontal whisker line */}
+                      <line
+                        x1={scale(ci![0])}
+                        x2={scale(ci![1])}
+                        y1={ciCenterY}
+                        y2={ciCenterY}
+                        stroke="#0EA5E9"
+                        strokeWidth={1.5}
+                      />
+                      {/* Left cap (low) */}
+                      <line
+                        x1={scale(ci![0])}
+                        x2={scale(ci![0])}
+                        y1={ciCenterY - capH / 2}
+                        y2={ciCenterY + capH / 2}
+                        stroke="#0EA5E9"
+                        strokeWidth={1.5}
+                      />
+                      {/* Right cap (high) */}
+                      <line
+                        x1={scale(ci![1])}
+                        x2={scale(ci![1])}
+                        y1={ciCenterY - capH / 2}
+                        y2={ciCenterY + capH / 2}
+                        stroke="#0EA5E9"
+                        strokeWidth={1.5}
+                      />
+                    </g>
+                  )}
+                  {/* Value label at end of bar (or past CI-high, whichever
+                      is further right, so labels don't sit inside the
+                      whisker). */}
                   <text
-                    x={scale(v) + 6}
+                    x={(showCI ? scale(Math.max(v, ci![1])) : scale(v)) + 6}
                     y={barY + barH / 2}
                     dominantBaseline="middle"
                     textAnchor="start"
@@ -216,6 +271,25 @@ export default function PanelChart({ panel }: { panel: Panel }) {
               </text>
             </g>
           ))}
+        </g>
+      )}
+      {/* Legend for CI whiskers (survey panels only) */}
+      {hasCI && (
+        <g transform={`translate(${labelW}, ${height - 12})`}>
+          {/* Mini whisker glyph */}
+          <line x1={0} x2={0} y1={-4} y2={4} stroke="#0EA5E9" strokeWidth={1.5} />
+          <line x1={0} x2={22} y1={0} y2={0} stroke="#0EA5E9" strokeWidth={1.5} />
+          <line x1={22} x2={22} y1={-4} y2={4} stroke="#0EA5E9" strokeWidth={1.5} />
+          <text
+            x={30}
+            y={0}
+            dominantBaseline="middle"
+            fontSize={11}
+            fill="#475569"
+            fontFamily="Inter,Helvetica,Arial,sans-serif"
+          >
+            95% confidence interval
+          </text>
         </g>
       )}
     </svg>

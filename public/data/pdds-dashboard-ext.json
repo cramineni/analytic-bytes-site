@@ -149,7 +149,7 @@
         "lever": "Title V Maternal and Child Health Services Block Grant (state child-health plans)",
         "status_badge": "ongoing",
         "movement_note": "Across the 2022-2023 National Survey of Children's Health, the share of children ages 6 to 17 who meet all three flourishing items nationally is 60.4 percent (confidence interval 59.6 to 61.1). This is a caregiver-reported survey estimate: a parent or guardian answers on the child's behalf, so the number reflects how caregivers read and report these items, not a direct observation of the child. The states shown here are a disclosed illustration, not a leaderboard: they show how to read a caregiver-reported estimate against its confidence interval, not who flourishes most. Illinois at 66.4 percent (62.9 to 69.7) sits clear of the national figure and Montana at 53.9 percent (49.6 to 58.1) sits below it, while New Jersey at 64.5 percent, Texas at 61.9 percent, and Michigan at 58.1 percent all carry confidence intervals that overlap the national interval. As a statistical matter those three are not distinguishable from the nation, which is why the intervals are shown rather than the bare percentages, and no state here should be read as ranked against another. Two comparability cautions bound any trend reading: the NSCH was redesigned in 2016, so estimates are not comparable to earlier survey years, and item wording and administration have drifted enough since then that any across-year comparison needs a documented crosswalk rather than a straight subtraction. Coverage is also partial: household response rates run near 39.1 percent and 35.8 percent in recent waves, so nonresponse, not only sampling, shapes who is represented. On the lever: flourishing is measured by the NSCH but is not itself a Title V National Performance Measure, so the Title V Block Grant is the adjacent standing program, not a control set to it; it is a continuous lever with no enactment date, and movement should read as a trend, not a before/after snapshot. Decision: present the national estimate alongside a disclosed illustrative set of states, always show the confidence intervals, describe overlapping states as not distinguishable, and make no ranking or program-attribution claim. A community dashboard for thriving cannot be built from the best national flourishing instrument in the country, because that instrument reports at state grain and communities decide at sub-county grain.",
-        "source_url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-services-block-grant-program",
+        "source_url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-mch-services-block-grant",
         "data_class": "survey",
         "lever_type": "continuous"
       },
@@ -242,7 +242,7 @@
       "source_id": "titlev_mchb_block_grant",
       "title": "Title V Maternal and Child Health Services Block Grant Program",
       "publisher": "Health Resources & Services Administration, Maternal & Child Health Bureau",
-      "url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-services-block-grant-program",
+      "url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-mch-services-block-grant",
       "table_ref": "National Performance Measures (NPM) framework and state Title V plans",
       "release_date": "2025-01-01"
     },
