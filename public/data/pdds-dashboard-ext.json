@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T11:00:38",
+  "generated_at": "2026-08-04T20:36:36",
   "track": "extension",
   "round": "anchor-only",
   "note": "Extension track: messy survey and heterogeneous administrative panels. FIELD_NOTE_gates_for_messy_data.md documents how the governance gates were revised to admit these panels without weakening what the gates require. Every panel declares a data_class (survey | administrative) and a lever_type (point | continuous), which together decide which gates apply to it.",
@@ -58,7 +58,7 @@
         "panel_id": "absenteeism",
         "lever": "ESSA School Quality accountability + NJDOE statewide attendance guidance and corrective-action requirement",
         "status_badge": "ongoing",
-        "movement_note": "Chronic absenteeism in New Jersey moved from 10.6 percent in 2019 to 18.1 percent in 2022, then eased to 16.6 percent in 2023 and 14.9 percent in 2024. This is a continuous, administrative lever: ESSA accountability funding has attached for years with no single enactment date, so the series should be read as an ongoing trend rather than a before/after snapshot. Remember that chronic absenteeism is a measure, not a direct observation of behavior \u2014 its rate can shift through changes in definition, coding practice, or enrollment counts, independent of whether students are actually attending more or less. The 2024 figure sits well above the 10 percent corrective-action trigger set by N.J.S.A. 18A:38-25.1, meaning a wide share of districts remain in scope for state-mandated plans even as the rate cools from its 2022 peak. The decline from 18.1 to 14.9 percent is consistent with easing conditions, but the data cannot say what portion reflects actual attendance change versus reporting adjustment, and no causal claim about any specific program is supported here. Track the four-year run rather than any single year, and confirm whether local definitional or coding shifts moved with the statewide trend before drawing conclusions about magnitude. Decision: the state chronic-absenteeism review board should keep New Jersey districts above the 10 percent trigger under active corrective-action monitoring and request a definition/coding audit alongside the 2025 data pull.",
+        "movement_note": "Chronic absenteeism in New Jersey moved from 10.6 percent in 2019 to 18.1 percent in 2022, then fell to 16.6 percent in 2023 and 14.9 percent in 2024. This is a continuous, administrative lever: ESSA accountability funding has attached for years with no single enactment date, so the series should be read as an ongoing trend rather than a before/after snapshot. Remember that chronic absenteeism is a measure, not a direct observation of behavior \u2014 its rate can shift through changes in definition, coding practice, or enrollment counts, independent of whether students are actually attending more or less. The 2024 figure sits well above the 10 percent corrective-action trigger set by N.J.S.A. 18A:38-25.1, meaning a wide share of districts remain in scope for state-mandated plans even as the rate has fallen from its 2022 peak. The decline from 18.1 to 14.9 percent could reflect fewer absences, definitional or coding changes, or both; the data cannot say which, and no causal claim about any specific program is supported here. Track the four-year run rather than any single year, and confirm whether local definitional or coding shifts moved with the statewide trend before drawing conclusions about magnitude. Decision: the state chronic-absenteeism review board should keep New Jersey districts above the 10 percent trigger under active corrective-action monitoring and request a definition/coding audit alongside the 2025 data pull.",
         "source_url": "https://www.nj.gov/education/safety/sandp/attendance/docs/ReportingStudentAttendanceandDeterminingChronicAbsenteeismRates.pdf",
         "data_class": "administrative",
         "lever_type": "continuous"
@@ -81,9 +81,131 @@
         ],
         "note": "Neighboring units are held off this shared axis until each one's denominator-reconciliation table is shown with it. The metric name is the same; the denominators are not. New Jersey: state-excused (7 statutory reasons) excluded; local-excused and out-of-school suspensions count as absent. New York: suspensions and extended medical absences excluded from the calculation."
       }
+    },
+    {
+      "panel_id": "nsch",
+      "metric": "flourishing_meets_all_3",
+      "unit": "percent",
+      "series": {
+        "2023": [
+          {
+            "group": "Illinois",
+            "value": 66.4,
+            "ci": [
+              62.9,
+              69.7
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "New Jersey",
+            "value": 64.5,
+            "ci": [
+              60.1,
+              68.6
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Texas",
+            "value": 61.9,
+            "ci": [
+              57.6,
+              66.0
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Nationwide",
+            "value": 60.4,
+            "ci": [
+              59.6,
+              61.1
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Michigan",
+            "value": 58.1,
+            "ci": [
+              54.0,
+              62.0
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Montana",
+            "value": 53.9,
+            "ci": [
+              49.6,
+              58.1
+            ],
+            "provenance": "published-estimate"
+          }
+        ]
+      },
+      "lever": {
+        "panel_id": "nsch",
+        "lever": "Title V Maternal and Child Health Services Block Grant (state child-health plans)",
+        "status_badge": "ongoing",
+        "movement_note": "Across the 2022-2023 National Survey of Children's Health, the share of children ages 6 to 17 who meet all three flourishing items nationally is 60.4 percent (confidence interval 59.6 to 61.1). This is a caregiver-reported survey estimate: a parent or guardian answers on the child's behalf, so the number reflects how caregivers read and report these items, not a direct observation of the child. The states shown here are a disclosed illustration, not a leaderboard: they show how to read a caregiver-reported estimate against its confidence interval, not who flourishes most. Illinois at 66.4 percent (62.9 to 69.7) sits clear of the national figure and Montana at 53.9 percent (49.6 to 58.1) sits below it, while New Jersey at 64.5 percent, Texas at 61.9 percent, and Michigan at 58.1 percent all carry confidence intervals that overlap the national interval. As a statistical matter those three are not distinguishable from the nation, which is why the intervals are shown rather than the bare percentages, and no state here should be read as ranked against another. Two comparability cautions bound any trend reading: the NSCH was redesigned in 2016, so estimates are not comparable to earlier survey years, and item wording and administration have drifted enough since then that any across-year comparison needs a documented crosswalk rather than a straight subtraction. Coverage is also partial: household response rates run near 39.1 percent and 35.8 percent in recent waves, so nonresponse, not only sampling, shapes who is represented. On the lever: flourishing is measured by the NSCH but is not itself a Title V National Performance Measure, so the Title V Block Grant is the adjacent standing program, not a control set to it; it is a continuous lever with no enactment date, and movement should read as a trend, not a before/after snapshot. Decision: present the national estimate alongside a disclosed illustrative set of states, always show the confidence intervals, describe overlapping states as not distinguishable, and make no ranking or program-attribution claim. A community dashboard for thriving cannot be built from the best national flourishing instrument in the country, because that instrument reports at state grain and communities decide at sub-county grain.",
+        "source_url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-services-block-grant-program",
+        "data_class": "survey",
+        "lever_type": "continuous"
+      },
+      "data_class": "survey",
+      "lever_type": "continuous"
+    },
+    {
+      "panel_id": "yrbss",
+      "metric": "mental_health_suicide_risk",
+      "unit": "percent",
+      "series": {
+        "2023": [
+          {
+            "group": "Persistent sadness or hopelessness",
+            "value": 39.7,
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Poor mental health",
+            "value": 28.5,
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Seriously considered suicide",
+            "value": 20.4,
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Attempted suicide",
+            "value": 9.5,
+            "provenance": "published-estimate"
+          }
+        ]
+      },
+      "lever": {
+        "panel_id": "yrbss",
+        "lever": "CDC Division of Adolescent and School Health (DASH) What Works in Schools program",
+        "status_badge": "ongoing",
+        "movement_note": "Among U.S. high school students in 2023, 39.7 percent reported persistent feelings of sadness or hopelessness, 28.5 percent reported poor mental health, 20.4 percent had seriously considered attempting suicide, and 9.5 percent had attempted suicide. These are self-report figures from the Youth Risk Behavior Survey: students answer for themselves, so each number reflects what students report, not observed behavior. The same survey also fields protective factors, first added in 2021, among them school connectedness and parental monitoring. Within 2023, students who reported high school connectedness had markedly lower prevalence of every mental health and suicide-risk indicator, and students who reported high parental monitoring had lower prevalence of all of them except poor mental health. That is a cross-sectional association within a single year, not evidence that either factor causes the other. On direction over time, the harm indicator did ease slightly: persistent sadness or hopelessness moved from 42.3 percent in 2021 to 39.7 percent in 2023, a two-cycle comparison CDC itself publishes. The protective side cannot be read the same way. School connectedness was 61.5 percent in its first cycle in 2021, but CDC does not publish a 2021-to-2023 national trend for it, and the 2023 survey changed administration mode from paper to tablet, so a connectedness before-and-after would be a comparison the source declines to make. Coverage is thin as well: the 2023 national survey rests on 20,103 usable questionnaires at an overall response rate of 35.4 percent, the lowest in the survey's history, and the sampling frame is enrolled high-school students, so youth who have disconnected from school sit structurally outside it. The standing federal lever adjacent to these indicators, CDC's What Works in Schools program, is a continuous one with no single enactment date, so any movement reads as a trend across cycles, not a before-and-after. Decision: a school mental-health program needs to know whether protection is rising or falling, and this instrument cannot answer that at the national grain across the mode change; present the 2023 harm cross-section and the within-year protective association, name the enrolled-student frame and the response-rate floor, and make no protective-trend or causal claim. The number that would tell a district whether its own students are becoming more connected is exactly the number this national survey, across a mode break it will not trend, cannot give.",
+        "source_url": "https://www.cdc.gov/healthy-youth/what-works-in-schools/program-impact.html",
+        "data_class": "survey",
+        "lever_type": "continuous"
+      },
+      "data_class": "survey",
+      "lever_type": "continuous"
     }
   ],
   "sources": [
+    {
+      "source_id": "cdc_dash_wwis",
+      "title": "What Works in Schools - CDC Division of Adolescent and School Health (DASH)",
+      "publisher": "Centers for Disease Control and Prevention, Division of Adolescent and School Health",
+      "url": "https://www.cdc.gov/healthy-youth/what-works-in-schools/program-impact.html",
+      "table_ref": "Program strategies (quality health education, health services, safe and supportive environments); YRBS as outcome-tracking instrument",
+      "release_date": "2024-10-08"
+    },
     {
       "source_id": "njdoe_attendance_guidance_2025",
       "title": "Reporting Student Attendance and Determining Chronic Absenteeism Rates",
@@ -101,12 +223,52 @@
       "release_date": "2025-04-02"
     },
     {
+      "source_id": "nsch_drc_flourishing_2022_2023",
+      "title": "National Survey of Children's Health, 2022-2023 (Flourishing items, ages 6-17)",
+      "publisher": "Data Resource Center for Child & Adolescent Health (CAHMI) / HRSA MCHB",
+      "url": "https://www.childhealthdata.org/browse/survey/results?q=11070&r=1",
+      "table_ref": "Indicator 6.13 \u2014 flourishing, child meets all 3 flourishing items (curious about learning, stays calm, finishes tasks); state and national estimates with 95% C.I. and sample sizes",
+      "release_date": "2024-10-01"
+    },
+    {
       "source_id": "nys_comptroller_2024",
       "title": "Missing School: New York's Stubbornly High Rates of Chronic Absenteeism",
       "publisher": "Office of the New York State Comptroller",
       "url": "https://www.osc.ny.gov/press/releases/2024/10/dinapoli-nearly-1-3-students-were-chronically-absent-school",
       "table_ref": "Pandemic's Impact (statewide rates by school year)",
       "release_date": "2024-10-04"
+    },
+    {
+      "source_id": "titlev_mchb_block_grant",
+      "title": "Title V Maternal and Child Health Services Block Grant Program",
+      "publisher": "Health Resources & Services Administration, Maternal & Child Health Bureau",
+      "url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-services-block-grant-program",
+      "table_ref": "National Performance Measures (NPM) framework and state Title V plans",
+      "release_date": "2025-01-01"
+    },
+    {
+      "source_id": "yrbs_2021_su7201a2",
+      "title": "School Connectedness and Risk Behaviors and Experiences Among High School Students - Youth Risk Behavior Survey, United States, 2021",
+      "publisher": "Centers for Disease Control and Prevention (MMWR Supplement 72(1))",
+      "url": "https://www.cdc.gov/mmwr/volumes/72/su/su7201a2.htm",
+      "table_ref": "National school connectedness prevalence 2021 (61.5% felt close to people at school)",
+      "release_date": "2023-04-28"
+    },
+    {
+      "source_id": "yrbs_2023_su7304a1",
+      "title": "Overview and Methods for the Youth Risk Behavior Surveillance System - United States, 2023",
+      "publisher": "Centers for Disease Control and Prevention (MMWR Supplement 73(4))",
+      "url": "https://www.cdc.gov/mmwr/volumes/73/su/su7304a1.htm",
+      "table_ref": "Response Rates and Nonresponse Bias Analyses: overall 35.4%, school 49.8%, student 71.0%, N=20,103 usable questionnaires; paper-to-tablet mode change",
+      "release_date": "2024-10-10"
+    },
+    {
+      "source_id": "yrbs_2023_su7304a9",
+      "title": "Mental Health and Suicide Risk Among High School Students and Protective Factors - Youth Risk Behavior Survey, United States, 2023",
+      "publisher": "Centers for Disease Control and Prevention (MMWR Supplement 73(4))",
+      "url": "https://www.cdc.gov/mmwr/volumes/73/su/su7304a9.htm",
+      "table_ref": "National prevalences (abstract); Table 1 item definitions; Figure adjusted prevalence ratios for protective factors",
+      "release_date": "2024-10-10"
     }
   ]
 }

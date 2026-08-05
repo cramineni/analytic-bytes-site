@@ -6628,20 +6628,20 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 11 — AI did not write my library
+  // FIELD NOTE 11 — My relationship with AI (formerly: AI did not write my library)
   // ===================================================================
   {
     kind: "field-note",
-    slug: "ai-did-not-write-my-library",
+    slug: "my-relationship-with-ai",
     number: "11",
-    title: "AI did not write my library. AI helped me navigate it.",
+    title: "My relationship with AI.",
     subtitle:
       "Field notes on the stages of working with generative AI across tools.",
-    date: "2026-07-13",
+    date: "2026-07-30",
     readingTime: "9 min read",
     summary:
       "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. The pattern: maturity transferred, capability expanded.",
-    cover: "/library/covers/ai-did-not-write-my-library.svg",
+    cover: "/library/covers/my-relationship-with-ai.svg",
     arc: "ai-systems",
     body: (
       <>
@@ -9155,7 +9155,7 @@ export const ESSAYS: Essay[] = [
     number: "12",
     title: "Auditing an AI-native practice.",
     subtitle:
-      "Ninety days, one operator, and what measurement-validity discipline looks like at practitioner scale.",
+      "Ninety days, one operator, and measurement-validity discipline.",
     date: "2026-08-02",
     readingTime: "10 min read",
     summary:
@@ -9552,8 +9552,8 @@ export const ESSAYS: Essay[] = [
             gloss="The agentic-HITL argument this piece extends from operator practice into agent systems."
           />
           <SeeAlsoItem
-            slug="ai-did-not-write-my-library"
-            title="AI did not write my library."
+            slug="my-relationship-with-ai"
+            title="My relationship with AI."
             gloss="The companion piece on how AI actually shows up in the AB working practice, read alongside this audit&rsquo;s findings."
           />
         </SeeAlso>
@@ -9567,6 +9567,332 @@ export const ESSAYS: Essay[] = [
           Kane-shaped validity discipline. Draws on the Governance Craft
           Log, Executive Card, and Maturity Scorecard produced during
           the audit.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 13 — Extending the gates (PDDS method note)
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "extending-the-gates",
+    number: "13",
+    title: "Extending the gates.",
+    subtitle:
+      "How PDDS revised its measurement discipline to handle survey data and continuous levers.",
+    date: "2026-08-05",
+    readingTime: "8 min read",
+    summary:
+      "A method note from the PDDS project. The first six panels used clean administrative counts and point-in-time policy levers. Extending into survey data (weighted estimates, confidence intervals, suppression) and continuous levers (Title V, ESSA) forced a revision of the gates. This note documents what changed, and why the revisions tightened rather than loosened the discipline.",
+    cover: "/library/covers/extending-the-gates.svg",
+    arc: "measurement",
+    body: (
+      <>
+        <Brief>
+          <p>
+            Analytic Bytes builds most-stringent-first. The first six PDDS panels were the clean case on purpose: administrative counts published at their reported grain, each attached to a policy lever with a clean before-and-after. Overdose deaths, NAEP scores, maternal mortality, Medicare readmissions, two earnings panels &mdash; clean numbers, clean levers.
+          </p>
+          <p>
+            This note records the first deliberate step off that easy ground and exactly how the gates were revised to survive it. The honest interest is not a seventh panel; it is the framework growing a new capability in the open, with the revisions named rather than smuggled in.
+          </p>
+        </Brief>
+
+        <H2>Why this note exists</H2>
+        <P>
+          The point of starting stringent was to prove the gates hold where the data is easy before asking them to hold where it isn&rsquo;t. Two things about the new cases break the assumptions the original gates were built on.
+        </P>
+        <P>
+          <B>The numbers stop being counts.</B> The National Survey of Children&rsquo;s Health and the Youth Risk Behavior Surveillance System are complex-sample surveys. Their published values are <I>weighted estimates with confidence intervals</I>, suppressed below cell-size thresholds, and occasionally reset by an instrument redesign. A survey estimate is not a count you can re-tally from records; it carries uncertainty and provenance that a count does not.
+        </P>
+        <P>
+          <B>The levers stop having a date.</B> Title V and ESSA accountability are <I>continuous</I>. The money has attached for years. There is no 2012-penalty moment to measure a number against, the way HRRP gave us one. The pipeline&rsquo;s &ldquo;did the number move after the lever?&rdquo; engine assumes a point in time, and these levers don&rsquo;t have one.
+        </P>
+
+        <H2>The clarifying principle, stated first</H2>
+        <P>
+          The house rule has always been &ldquo;do statistics in code, not in the model.&rdquo; That rule permits deterministic code to compute statistics all day; what is forbidden is the <I>model</I> doing arithmetic. The model only narrates numbers it was handed.
+        </P>
+        <P>
+          Bringing in survey data adds a second honest way a number can reach the page, and it is worth being precise that this is a <B>tightening, not a loosening</B>. <B>Record-derived</B> values are computed deterministically in the warehouse from raw records; these are the original six panels. <B>Published-estimate</B> values are ingested verbatim from the agency&rsquo;s own published table, confidence interval and all, and never recomputed.
+        </P>
+        <P>
+          Both are honest, and neither is the model doing math. For a weighted survey estimate the second is the more conservative choice: rather than re-implement replicate-weight variance in DuckDB and ask the reader to trust our arithmetic, we stand strictly downstream of the official statistic. The grounding gate &mdash; which today whitelists a number only if it traces to a bar or a registered figure &mdash; is extended to accept an official published estimate as a first-class value, tagged with its provenance class. Nothing about the model&rsquo;s leash changes.
+        </P>
+
+        <H2>Survey-data mode: three gate revisions</H2>
+        <P>
+          <B>1. Ingest-not-compute provenance tier.</B> Every value now carries a provenance class, record-derived or published-estimate. The grounding gate accepts both; the export records which. A published estimate arrives with its confidence interval, and the interval is a first-class value the note may cite. This is the primitive that makes NSCH and YRBSS panels possible without writing survey-variance code we&rsquo;d then have to defend.
+        </P>
+        <P>
+          <B>2. Suppression as a cell state.</B> A survey cell is one of three things: present, suppressed (below the disclosure threshold), or missing (the state didn&rsquo;t field it). It is never zero, and zero is never allowed to stand in for either of the other two. A new gate fails the build if a suppressed or missing cell renders as a number or as a bar of height zero. Small cells at state by race by poverty-band are the rule rather than the exception, so this gate earns its keep immediately.
+        </P>
+        <P>
+          <B>3. Version crosswalk.</B> When an instrument is redesigned, series that cross the redesign are not comparable. NSCH&rsquo;s 2016 redesign is the worked example: any flourishing chart that spans 2016 is simply wrong. A new gate blocks any series that crosses an instrument boundary unless a documented crosswalk is registered for that boundary. Same discipline applies within-series for item drift: if an item&rsquo;s wording or response options changed between releases, pooling across the change is blocked until the change is disclosed. The crosswalk is the semantic layer that keeps two differently-worded instruments from being silently averaged into one trend.
+        </P>
+
+        <H2>Comparison honesty: three more gate revisions</H2>
+        <P>
+          <B>4. Definitional-variance layer.</B> A cross-unit comparison is blocked unless a reconciliation table travels with it. This is the primitive the chronic-absenteeism case exists to demonstrate: two states&rsquo; rates may not sit on the same axis until a table underneath the chart shows how each state defines the denominator. Where the definitions differ and aren&rsquo;t reconciled, the comparison is refused. The reconciliation table is not a footnote under the chart &mdash; it <I>is</I> the chart.
+        </P>
+        <P>
+          <B>5. Lever typing.</B> A lever is now typed as point-in-time or continuous. The timing gate &mdash; the one that checks a number moved <I>after</I> its lever, not before &mdash; runs only on point-in-time levers and is marked explicitly not-applicable on continuous ones. This replaces the quiet dishonesty of inventing a pre/post for Title V just because the gate wanted a date. Naming the lever type is itself a finding the page should state.
+        </P>
+        <P>
+          <B>6. Uncertainty-aware &ldquo;did it move?&rdquo;</B> The NAEP panel already forces the note to say that a one- or two-point move isn&rsquo;t statistically distinguishable from noise. That logic generalizes: when a value carries a confidence interval, a change whose intervals overlap is reported as &ldquo;not distinguishable,&rdquo; full stop. The significance check stops being a NAEP special case and becomes a general CI-overlap gate every survey panel inherits.
+        </P>
+
+        <H2>The worked case: chronic absenteeism, New Jersey first</H2>
+        <P>
+          Chronic absenteeism is the strongest construct to carry these revisions, for the same reason HRRP is the strongest panel already on the page: it is a Goodhart case with money and consequences attached, and it is reported at school and district grain, which is finally the grain communities actually decide at. The share of students absent 10 percent or more of enrolled days sits inside most states&rsquo; ESSA accountability systems as a School Quality / Student Success indicator. Once an indicator sits in an accountability system, its reported value can move through definition, coding, or enrollment practice rather than through student behavior. That is the whole exhibit.
+        </P>
+        <P>
+          <B>Within New Jersey is the anchor.</B> A within-NJ trend, over years where NJ&rsquo;s own definition held constant, is the primary chart. This is the one comparison that needs no reconciliation layer, because the denominator is the same on both ends. Where NJ changed its own definition mid-series, the break is shown rather than smoothed.
+        </P>
+        <P>
+          <B>Neighbors come second, and only gated.</B> New York, Pennsylvania, Delaware &mdash; a comparison to neighboring states is allowed <I>only</I> with the definitional-variance layer (gate 4) attached, because the federal reporting itself calls these definitions inconsistent across states. Each state&rsquo;s denominator rule (enrolled days versus membership days, the minimum-enrollment cutoff before a student counts, treatment of mid-year transfers, excused versus unexcused) is shown beside its number. If we can&rsquo;t assemble the neighbors&rsquo; definitions from published state documentation, the neighbor comparison ships narrower or not at all; the within-NJ panel stands alone regardless.
+        </P>
+        <P>
+          <B>Private schools are outside the frame &mdash; say so.</B> EDFacts and state report-card collections cover public schools; private schools don&rsquo;t report into these accountability systems, so they are structurally absent from the data. That&rsquo;s a stated exclusion rather than a silent drop.
+        </P>
+        <P>
+          <B>Charter versus traditional-district is available but confounded.</B> New Jersey reports charter schools, so the breakout exists and cell sizes usually permit it. Charters and district schools serve different populations, so a raw charter-vs-district gap is a composition difference at least as much as an attendance difference. The two are shown adjacent with that selection caveat stated plainly; we never compute or headline a &ldquo;charters do better/worse&rdquo; claim from it. Same discipline as gate 6: show them side by side, don&rsquo;t subtract what isn&rsquo;t defensibly subtractable.
+        </P>
+        <P>
+          <B>The pandemic years break the series.</B> 2020&ndash;21 and 2021&ndash;22 attendance-taking under remote and hybrid instruction is non-comparable to either side. The break is shown; it is never interpolated across.
+        </P>
+
+        <H2>What this panel set must still refuse to claim</H2>
+        <P>
+          A falling chronic-absenteeism rate does not mean students are attending more, absent evidence that the definition and coding practice held constant. A cross-state difference reflects how each state defines the number at least as much as it reflects policy quality. A charter-vs-district gap reflects who enrolls where before it reflects any school effect. And none of this pushes down to community grain: the best national flourishing instrument publishes at state grain, and the only child indicator that reaches school grain is the one with accountability money attached and no stable cross-state definition. That gap is the argument.
+        </P>
+
+        <H2>Status and provenance</H2>
+        <P>
+          This note documents <I>how the gates were revised</I>, not any finding about New Jersey or any survey. The construct definitions, the specific state absenteeism rules, the NSCH item wording and pooling guidance, and the current YRBSS item inventory are all verify-flagged and belong to the build thread. Nothing here should be read as an established fact about a data source.
+        </P>
+        <P>
+          The operating ethos it records is deliberate: stringent cases first, then slightly messier ones, with every gate revision named in public rather than quietly relaxed. The point of PDDS was never that the data is clean. It is that when the data gets dirty, the wall gets documented rather than lowered.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="auditing-an-ai-native-practice"
+            title="Auditing an AI-native practice."
+            gloss="The audit that applied the same Kane-shaped validity discipline to AB&rsquo;s own operating model."
+          />
+          <SeeAlsoItem
+            slug="when-the-stakes-are-the-mission"
+            title="When the stakes are the mission."
+            gloss="The essential-minimum evaluation discipline this piece extends into messier data terrain."
+          />
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The measurement-validity foundation the gates sit on."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written July 2026 as a method note from the PDDS project, documenting the first deliberate move from clean administrative counts and point-in-time levers into survey data and continuous-lever cases. The revisions are named in public so the discipline stays inspectable as the framework grows.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 13 — Before it was called AI evaluation
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "before-it-was-called-ai-evaluation",
+    number: "13",
+    title: "Before it was called AI evaluation.",
+    subtitle:
+      "Human-machine agreement is a reliability indicator, not a validity strategy.",
+    date: "2026-07-27",
+    readingTime: "14 min read",
+    summary:
+      "The classical automated-scoring literature already worked through most of what modern AI evaluation is now rebuilding — fairness across subgroups, adversarial testing, a priori thresholds, risk-tiered deployment, population-matched corpora, prompt curation, cross-domain generalization, and responsible framing. Eight bridges, with the receipts.",
+    cover: "/library/covers/before-it-was-called-ai-evaluation.svg",
+    arc: "measurement",
+    body: (
+      <>
+        <Brief>
+          <p>
+            In 2017, a manuscript submitted to <I>Natural Language Engineering</I> opened with a claim that has stayed with me since: agreement with human scores on the same essays is a reliability indicator, not a proper validation strategy. The reference was Bennett &amp; Bejar (1997), and the argument was already twenty years old when we wrote it. Two more decades have passed. The modern AI evaluation discussion is now rebuilding that same argument in a different vocabulary, mostly without the source lineage that produced it the first time.
+          </p>
+          <p>
+            LLM-as-judge validation studies, disparate-performance benchmarks, red-teaming methodologies, benchmark contamination detection &mdash; the current wave of AI eval is rediscovering the discipline of measurement science with the frame that this is a new field. Seven years at Educational Testing Service evaluating AI-driven scoring for essays and speech on the GRE, TOEFL, and Praxis forced me to notice something the modern framing tends to obscure: the discipline for evaluating whether AI systems measure what they claim already existed, inside psychometrics, developed against automated scoring engines a decade or two before &ldquo;AI eval&rdquo; was a term.
+          </p>
+          <p>
+            This essay maps eight of those disciplines to their modern AI-evaluation equivalents. Each carries a citation from my published record as the receipt. The claim is not that I did all of the work modern AI evaluation needs. It is that the work modern AI evaluation is doing has a longer history than most current framings acknowledge, and it is worth reading before it is reinvented.
+          </p>
+        </Brief>
+
+        <H2>1. Fairness across subgroups &mdash; two tests, not one.</H2>
+        <P>
+          The modern version: HELM slices its benchmarks by demographic subgroup, BBQ measures accuracy gaps across identity axes, and enterprise LLM audits routinely check whether a model&rsquo;s error rate differs materially for one population versus another. The methodological punch is that a single aggregate metric &mdash; accuracy, F1, human-rater agreement &mdash; can hide a substantial subgroup gap. Only per-group evaluation surfaces it.
+        </P>
+        <P>
+          The classical version, in automated essay scoring, was doing this two ways at once. The first test was the surface fairness check: standardized mean score differences between the machine and human raters, computed per subgroup, with an ETS-published flagging threshold of 0.10 for any subgroup of concern, deliberately more stringent than the 0.15 flagging threshold for the overall gap (Ramineni &amp; Williamson, 2012). The second test was a validity-of-the-scoring-claim check: differential predictive validity. Compare the correlation between the human score and an external criterion, within a subgroup, against the correlation between the machine score and the same external criterion, within the same subgroup. If those two correlations diverge, the human and the machine are not measuring the same thing for that population, even if their aggregate scores agree. Modern AI eval has begun folding the equivalent into &ldquo;fairness under distribution shift&rdquo; &mdash; measuring downstream-task performance per demographic slice, not just benchmark performance.
+        </P>
+        <P>
+          The receipt for the mechanistic version of this discipline is the 2018 ETS Research Report on demographic subgroup differences in GRE Analytical Writing (Ramineni &amp; Williamson, 2018). N=215,000 operational responses across 215 prompts. Three subgroups flagged on the Argument task: standardized mean e-rater&ndash;human differences of +0.56 for examinees from China, &minus;0.19 for Taiwan, and &minus;0.11 for African American test-takers. Four alternative regression architectures compared head-to-head. Expert re-scoring of the maximally discrepant essays. Two independent mechanistic hypotheses tested with dedicated tooling. What that paper showed is that the discrepancies were architectural in origin rather than a form of adversarial bias. Human raters were using conditional, rule-based logic &mdash; gating on language control errors before assigning organization scores. E-rater was using linear weighting of all features, which allowed strong organization scores (correlated with essay length) to offset weak language control. The subgroups where the two scoring architectures diverged the most were the subgroups whose writing patterns triggered that offset the hardest. Modern AI eval calls this rationale-alignment failure. The discipline for finding it is not new.
+        </P>
+
+        <H2>2. Adversarial evaluation &mdash; CIRS before GCG.</H2>
+        <P>
+          Modern AI eval has developed a class of methods for testing whether an LLM&rsquo;s outputs can be manipulated by adversarial inputs. Gradient-based attacks like GCG produce prompt suffixes that jailbreak alignment. PAIR uses one LLM to attack another. AutoDAN generates readable adversarial prompts. The unifying diagnostic method is three steps: posit a strategy that gains reward without gaining ground on the target construct, implement it programmatically, measure the reward delta on real inputs.
+        </P>
+        <P>
+          That method was named and operationalized in the automated-scoring literature in 2014 as Construct-Irrelevant Response Strategies, or CIRS (Bejar, Flor, Futagi, &amp; Ramineni, 2014). The paper built a lemma-indexed synonym-substitution algorithm that swapped a portion of words in real GRE essays for longer, less-frequent synonyms. Ten to thirty-five substitutions per essay. Then it rescored the manipulated essays with e-rater and measured what happened. What happened was that the vulnerability was real, and asymmetric: substituting five percent of words with longer, rarer synonyms produced meaningful score gains for lower-scoring essays but had negligible or opposite effect on high-scoring essays. The exploit was strongest where the stakes for the examinee were highest.
+        </P>
+        <P>
+          The CIRS paper was explicit that the vulnerability followed directly from e-rater&rsquo;s inclusion of word-frequency and average-word-length features. Any AES system that weighted lexical sophistication was exposed to the same class of attack. And CIRS was proposed as a general evaluation category, not a one-off finding. The synonym-substitution was an illustration of a broader method: simulate a plausible strategy against real responses, then measure the score delta. That is the diagnostic template modern LLM red-teaming inherits.
+        </P>
+
+        <H2>3. A priori published thresholds &mdash; and guardrails on top of learned models.</H2>
+        <P>
+          Modern AI evaluation is still consolidating its methodology for what &ldquo;an eval passes&rdquo; means. NIST&rsquo;s AI Risk Management Framework proposes categories. HELM publishes multi-metric scenarios with per-scenario acceptance criteria. The Language Model Evaluation Harness standardizes scoring conventions. What these have in common is the discipline of publishing performance thresholds a priori, before deployment, with named justifications, so that adoption is not judged post-hoc against whatever number came out.
+        </P>
+        <P>
+          That discipline was formalized for automated essay scoring in Ramineni &amp; Williamson (2012). The paper&rsquo;s Table 1 gives the quantitative gates directly: quadratic weighted kappa of at least 0.70 between machine and human, Pearson r of at least 0.70, degradation from human-human to human-machine of no more than 0.10, standardized mean score difference of no more than 0.15 overall and no more than 0.10 per subgroup of concern. The subgroup threshold is 33 percent tighter than the aggregate threshold on purpose. The 0.70 threshold is not arbitrary; the paper names its justification as &ldquo;the tipping point at which signal outweighs noise in the prediction and so at least half the variance is accounted for.&rdquo;
+        </P>
+        <P>
+          The 2012 NCME paper that used Classification and Regression Trees to trace the mechanistic gap between human and machine raters (Ramineni, Li, &amp; Breyer, 2012) added a discipline that modern AI eval is beginning to develop under a different name. CART showed that humans conditioned on language control as the first splitting variable; e-rater weighted organization and development as the most important feature. The proposed remedy was to add a rule on top of the model rather than retrain it, &ldquo;implementing a cap on the organization and development scores for responses that fail to meet a certain threshold for content scores,&rdquo; so that essay length could not offset weak content. That is a guardrail-rule stacked on a learned model. It is the same architectural pattern Constitutional AI classifiers and output-filtering safety layers use on top of LLMs today.
+        </P>
+
+        <H2>4. Risk-tiered deployment &mdash; check score vs. contributory.</H2>
+        <P>
+          Modern AI evaluation increasingly frames deployment as a tiered decision. A model can be evaluated as capable enough for a chat assistant but not for autonomous agentic tool use. A safety eval that clears one deployment mode does not clear another. The framework distinguishes human-in-the-loop, human-on-the-loop, and autonomous operation, and calibrates its acceptance criteria to the mode.
+        </P>
+        <P>
+          That distinction has been operational in automated essay scoring since the 2012 GRE and TOEFL evaluation reports (Ramineni, Trapani, Williamson, Davey, &amp; Bridgeman, 2012a and 2012b). The two papers evaluated the same scoring engine, e-rater, against two different implementation modes. The GRE program adopted what the papers named &ldquo;check score&rdquo; or &ldquo;confirmatory&rdquo; mode: the e-rater score is used only to check or confirm the human rating, and when within the allowable discrepancy threshold, the human rating constitutes the final score. E-rater does not contribute directly to the reported score. The operational impact of that posture was substantial: 41 percent of Issue responses and 47 percent of Argument responses triggered a second human rating. The TOEFL program adopted &ldquo;contributory&rdquo; mode: the mean of the e-rater score and the human rating yields the final score. That posture triggered a second human on 3 percent of independent responses and 33 percent of integrated responses.
+        </P>
+        <P>
+          The 2012 guidelines paper (Ramineni &amp; Williamson, 2012) is explicit about why the modes differ: &ldquo;For implementation of AES in contexts that are less consequential, such as practice tests and other settings, the criteria may be relaxed somewhat. By contrast, use of AES as the sole score, with no human counterpart, for consequential assessment, the criteria may need to become more rigorous.&rdquo; The GRE paper is more specific about the risk logic: &ldquo;As a more conservative approach, check score or a confirmatory score model was identified as a potential alternative implementation of automated scoring.&rdquo; That is deployment mode chosen as a safety response to observed subgroup discrepancies, not as cost optimization. Modern AI eval is arriving at the same principle by a different route.
+        </P>
+
+        <H2>5. Population-matched training and evaluation corpora.</H2>
+        <P>
+          The modern AI eval discussion of training data has, in the last few years, converged on a set of concerns: preference-training datasets should reflect the target population, red-team corpora should include real distribution attackers, and benchmark corpora should not be contaminated with pre-training data. Shared datasets are recognized as an open problem. Chatbot Arena, HumanEval, HELM scenarios, and MMLU each carry their own limitations, and the field is publicly navigating the shared-eval scarcity.
+        </P>
+        <P>
+          That discipline is not new to automated scoring. The Cambridge Handbook of Learner Corpus Research chapter on automated scoring (Higgins, Ramineni, &amp; Zechner, 2015) laid it out explicitly across writing and speech scoring. Calibration corpora ranged from 400 to 1,200 responses per prompt, with a train/validation split, evaluated using quadratic weighted kappa, Pearson correlations, and standardized mean score differences. Population-matched training was non-negotiable: &ldquo;Trying to apply scoring models from GRE to TOEFL and vice versa can be problematic because of the differences in the population for the two tests.&rdquo; That is the classical statement of the distribution-shift constraint. Speech-scoring corpora carried an additional problem the chapter named directly: word error rates on non-native speech reached about 50 percent versus 13 to 17 percent for broadcast news, so the training corpora required manual transcription and were often locked inside the commercial organizations that produced them. &ldquo;The use of learner corpora in this field is currently rather fragmented, with the result that findings are difficult to compare and generalize.&rdquo;
+        </P>
+        <P>
+          Modern AI eval is having exactly this conversation about shared datasets, benchmark contamination, and closed evaluation regimes at commercial labs. The chapter&rsquo;s insistence on population-matched training, held-out validation, construct-appropriate feature design, and shared datasets for cross-lab comparison is a point-for-point ancestor of that discussion.
+        </P>
+
+        <H2>6. Prompt and eval-item curation &mdash; screening what you evaluate.</H2>
+        <P>
+          The modern eval field has begun to notice that a benchmark is only as informative as the prompts inside it. Benchmark contamination, prompt saturation, and out-of-distribution prompts are all recognized failure modes. Canary items are used to detect training-data leakage. Prompt engineering has become a discipline of its own. Some evaluation frameworks now include prompt curation as a first-class step.
+        </P>
+        <P>
+          Two NCME 2015 conference papers formalized a version of this discipline for automated scoring. The first (Williams &amp; Ramineni, 2015) developed an aberrant-prompt detection method: compute feature-distribution confidence intervals across the existing prompt pool, then count feature violations on new prompts to flag those whose response distributions fall outside acceptable ranges. That is out-of-distribution detection for eval items, before the term existed in the LLM context. The second (Ramineni, Mattar, Tessema, Li, &amp; Schultz, 2015) worked on deviant prompts: generic scoring models could pass at aggregate but fail on individual prompts, and those failures were then routed to content experts to inform future prompt authoring. That is eval-driven benchmark curation as a feedback loop. Both papers were framed as replacements for expensive item tryouts &mdash; automated screening as an operational efficiency, not only a research method.
+        </P>
+        <P>
+          These are conference-paper receipts, less formal than the journal work, but they name a discipline modern AI eval is now building without the prior vocabulary. The screening question &mdash; is this prompt one your scoring system can be trusted to score &mdash; is the same in both worlds. The tools differ. The problem does not.
+        </P>
+
+        <H2>7. Cross-domain generalization &mdash; validity in naturalistic settings.</H2>
+        <P>
+          The sharpest current question in AI evaluation is whether a model&rsquo;s benchmark performance carries over to real-world use. LLM leaderboards do not resolve this. A model that tops HELM can fail on a domain-specific customer workflow. Generalization from curated benchmarks to naturalistic user data is where deployed AI systems live or die, and modern eval methodology is still developing the tools for measuring it.
+        </P>
+        <P>
+          The classical automated-scoring literature confronted the same problem directly, and the receipts for that work sit in two manuscripts that were submitted for publication in 2017 and 2018 as I was leaving ETS. The first, submitted to <I>Natural Language Engineering</I> (Ramineni, Elliot, and colleagues, 2017), is the paper that carries the essay&rsquo;s opening thesis. Its central move is to argue that agreement with human scores on the same essays is a reliability indicator rather than a validity strategy, and to propose naturalistic writing samples (writing produced under real conditions, not standardized-test conditions) as a stronger validity criterion. The second, an unpublished manuscript with Brent Bridgeman on the coursework study, executes the method: train new automated scoring models on first-year graduate coursework writing samples across disciplines, evaluated with a holistic rubric by trained human raters, and see whether features from an existing timed-essay scoring engine transfer. The result was informative in both directions. The features applied. Their weights in the coursework model diverged substantially from their weights in the timed-essay model.
+        </P>
+        <P>
+          That divergence is the classical version of the modern generalization question. A scoring model trained on one construct-representation (timed impromptu writing) does not automatically hold on another (untimed authentic coursework), even when the underlying construct (writing quality) is nominally the same. The features carry across; the weightings do not. Modern AI eval is discovering the same pattern with LLM benchmark-to-production drift. The evidence for it in the automated-scoring literature has been sitting in unpublished manuscripts for eight years.
+        </P>
+
+        <H2>8. Responsible-AI framing at the point of deployment.</H2>
+        <P>
+          The modern responsible-AI discussion has developed a set of framing conventions: model cards, system cards, responsible scaling policies, IRB-equivalent review processes, ethical guidelines for training-data provenance, and a growing distinction between observed-correlation claims and causal-impact claims in reporting on AI systems. NIST&rsquo;s AI Risk Management Framework organizes many of these. Anthropic&rsquo;s Responsible Scaling Policy, OpenAI&rsquo;s system cards, and comparable industry frameworks operationalize them.
+        </P>
+        <P>
+          In March of 2015, I gave a talk at the Conference on College Composition and Communication in Tampa titled &ldquo;Risks and Rewards of Digital Data: Case of Automated Writing Evaluation&rdquo; (Ramineni, 2015). The talk split its analysis into two categories that map directly onto the modern responsible-AI vocabulary. Statistical concerns: selection bias, unbalanced design, nested structure, missing collateral information or control groups, and the seductive but unlicensed move from observed trends to causal inferences. Ethical concerns, citing CCCC&rsquo;s own research guidelines on the use of online and digital media: &ldquo;Who owns the data? Who has access? How to access? How to use? (Identification information, IRB approvals). Consequences? Dissemination?&rdquo; The illustration data was observational &mdash; 132 schools, 9,340 students, 213 tasks &mdash; and the point was to show that observed trends across the corpus (score gains across attempts, ELL versus non-ELL differences) can be seductive but do not license causal inferences.
+        </P>
+        <P>
+          That was a decade before the mainstream responsible-AI conversation reached these framings for LLM systems. The AWE community was small; the audience for that talk was smaller; the discussion did not scale into the field the way the modern responsible-AI conversation has. But the framework existed, and the receipt is in the record.
+        </P>
+
+        <H2>Close</H2>
+        <P>
+          The eight bridges above are not a complete map. They are the ones I have receipts for. Modern AI evaluation is a broader project than automated essay scoring ever was, and much of what it is developing is new to the field: the alignment problems of frontier models, the specific failure modes of agentic systems, the scale at which modern evaluation has to run. What is not new is the discipline for asking whether an AI system measures what its label claims. That discipline was built in measurement science, refined against automated scoring engines, and published in journals and conference proceedings while the current AI eval field was still forming.
+        </P>
+        <P>
+          I did not write this to claim credit for what modern AI eval is doing. I wrote it because the recognition kept surfacing across the AB Library work of the last few months &mdash; that the arguments I keep making about validity, evaluation, and construct integrity are arguments I made in print more than a decade ago, under different vocabulary, and that the field currently doing this work does not always know the earlier literature exists. The pieces closest to this argument in the library are <InternalLink slug="what-is-this-system-measuring">What is this system actually measuring?</InternalLink> and <InternalLink slug="when-the-stakes-are-the-mission">When the stakes are the mission</InternalLink>, and both draw on the same source lineage cited above.
+        </P>
+        <P>
+          Human-machine agreement is a reliability indicator, not a validity strategy. That claim was in a 2017 manuscript. The infrastructure for what a validity strategy actually looks like &mdash; for AI systems, for automated scoring, for any measurement system that stands in for human judgment &mdash; was built alongside it. The AI eval field does not need to invent that infrastructure. It needs to find it and turn it toward the systems being built now.
+        </P>
+
+        <H2>References</H2>
+        <P>
+          Bejar, I. I., Flor, M., Futagi, Y., &amp; Ramineni, C. (2014). On the vulnerability of automated scoring to construct-irrelevant response strategies (CIRS): An illustration. <I>Assessing Writing, 22</I>, 48&ndash;59.
+        </P>
+        <P>
+          Higgins, D., Ramineni, C., &amp; Zechner, K. (2015). The use of learner corpora to support automated scoring of test responses. In S. Granger, G. Gilquin, &amp; F. Meunier (Eds.), <I>The Cambridge Handbook of Learner Corpus Research</I> (pp. 587&ndash;604). Cambridge University Press.
+        </P>
+        <P>
+          Ramineni, C. (2015, March). <I>Risks and Rewards of Digital Data: Case of Automated Writing Evaluation.</I> Presentation at the annual Conference on College Composition and Communication, Tampa, FL.
+        </P>
+        <P>
+          Ramineni, C., &amp; Bridgeman, B. <I>Automated Evaluation of Coursework Writing Samples.</I> Unpublished manuscript.
+        </P>
+        <P>
+          Ramineni, C., Elliot, N., et al. (2017, September). <I>Design and Evaluation of Automated Writing Evaluation Models: Relationships with Writing in Naturalistic Settings.</I> Manuscript submitted to <I>Natural Language Engineering.</I>
+        </P>
+        <P>
+          Ramineni, C., Li, C., &amp; Breyer, F. J. (2012, April). <I>Understanding mean score differences between automated and human scores using Classification and Regression Trees.</I> Paper presented at the annual meeting of NCME, Vancouver.
+        </P>
+        <P>
+          Ramineni, C., Mattar, J., Tessema, A., Li, C., &amp; Schultz, M. (2015, April). <I>Using automated generic scoring models to identify deviant prompts.</I> Paper presented at the annual meeting of NCME, Chicago.
+        </P>
+        <P>
+          Ramineni, C., Trapani, C., Williamson, D. M., Davey, T., &amp; Bridgeman, B. (2012a). <I>Evaluation of the e-rater scoring engine for the GRE Issue and Argument prompts</I> (ETS RR-12-02). Princeton, NJ: Educational Testing Service.
+        </P>
+        <P>
+          Ramineni, C., Trapani, C., Williamson, D. M., Davey, T., &amp; Bridgeman, B. (2012b). <I>Evaluation of the e-rater scoring engine for the TOEFL Independent and Integrated prompts</I> (ETS RR-12-06). Princeton, NJ: Educational Testing Service.
+        </P>
+        <P>
+          Ramineni, C., &amp; Williamson, D. M. (2012). Automated essay scoring: Psychometric guidelines and practices. <I>Assessing Writing, 18</I>(1), 25&ndash;39.
+        </P>
+        <P>
+          Ramineni, C., &amp; Williamson, D. (2018). <I>Understanding mean score differences between the e-rater automated scoring engine and humans for demographically based groups in the GRE General Test</I> (ETS RR-18-12 / GRE Board Research Report 18-01). Princeton, NJ: Educational Testing Service.
+        </P>
+        <P>
+          Williams, D. R., &amp; Ramineni, C. (2015, April). <I>Using automated features to identify aberrant prompts.</I> Paper presented at the annual meeting of NCME, Chicago.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The measurement-validity discipline this essay's evidence base draws on, in its earlier statement for university AI adoption."
+          />
+          <SeeAlsoItem
+            slug="when-the-stakes-are-the-mission"
+            title="When the stakes are the mission."
+            gloss="The mission-driven-AI-evaluation companion &mdash; the same discipline applied where the cost of a wrong signal is the intervention meant to reach someone."
+          />
+          <SeeAlsoItem
+            slug="auditing-an-ai-native-practice"
+            title="Auditing an AI-native practice."
+            gloss="The practitioner-scale application of the same validity discipline, run against my own AI-assisted workflow."
+          />
+          <SeeAlsoItem
+            slug="actions-not-answers"
+            title="Actions, not answers."
+            gloss="The agentic-checkpoint companion &mdash; where the human evaluator sits when the AI has moved from answering to acting."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written August 2026 for the Analytic Bytes Library. The piece draws on twelve years of published and unpublished automated-scoring research produced at Educational Testing Service between 2012 and 2018, and on the recognition &mdash; surfacing repeatedly across the library work of the last few months &mdash; that the modern AI evaluation field is rebuilding a discipline the automated-scoring literature already carried. The eight bridges are the ones with citations in my own record; a fuller map of the classical measurement-science literature on this question would run longer.
         </MetaNote>
       </>
     ),

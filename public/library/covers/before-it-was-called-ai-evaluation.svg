@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Essay No. 13: Before it was called AI evaluation</title>
+<desc>White background with a small navy line diagram. One continuous horizontal line runs from left to right — the discipline itself, unbroken. Above the line, two vocabulary tags float at different positions along its length: "Automated scoring · AWE" over the earlier, wider span (slate, muted), and "AI evaluation" over the later, narrower span (teal, this piece's move). Small tick marks drop from each tag to the line, and small dots mark the endpoints. The shape delivers: same line, two names. Title and italic subtitle in sans-serif beneath.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Eyebrow -->
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 13</text>
+
+<!-- Motif: one continuous line, two vocabulary tags floating above -->
+<g transform="translate(600, 240)">
+
+<!-- The line — one discipline, unbroken -->
+<line x1="-300" y1="0" x2="300" y2="0" stroke="#0F2A4A" stroke-width="1.6" stroke-linecap="round"/>
+
+<!-- Endpoints -->
+<circle cx="-300" cy="0" r="5" fill="#0F2A4A"/>
+<circle cx="300" cy="0" r="5" fill="#0F2A4A"/>
+
+<!-- Classical vocabulary tag (slate, muted) — centered over the wider left portion -->
+<line x1="-140" y1="-16" x2="-140" y2="-2" stroke="#94A3B8" stroke-width="1"/>
+<text x="-140" y="-24" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1" fill="#475569" text-anchor="middle">Automated scoring  ·  AWE</text>
+
+<!-- Modern vocabulary tag (teal, the piece's move) — over the narrower right portion -->
+<line x1="220" y1="-16" x2="220" y2="-2" stroke="#0EA5E9" stroke-width="1.2"/>
+<text x="220" y="-24" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1" font-weight="600" fill="#0EA5E9" text-anchor="middle">AI evaluation</text>
+
+<!-- Tiny year markers at endpoints -->
+<text x="-300" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">1997</text>
+<text x="300" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" letter-spacing="1" fill="#94A3B8" text-anchor="middle">2026</text>
+
+<!-- Small italic tag under the line, centered -->
+<text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" letter-spacing="1" fill="#475569" text-anchor="middle">one discipline</text>
+
+</g>
+
+<!-- Title -->
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Before it was called AI evaluation.</text>
+
+<!-- Subtitle -->
+<text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">A reliability indicator is not a validity strategy.</text>
+
+<!-- Short divider -->
+<line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+
+<!-- Footer -->
+<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+
+</svg>

@@ -72,6 +72,24 @@ const STYLES: Record<string, PanelStyle> = {
     seriesColors: ["#B4C0CC", "#B4C0CC", "#B4C0CC", "#0F2A4A", "#0F2A4A", "#0F2A4A"],
     highlight: [],
   },
+  // Extension track — NSCH flourishing (Panel 07). Single-period, survey data
+  // across five states + national. Navy across, no highlights (distribution is
+  // the claim, and the extension-track callouts carry the caveats).
+  nsch: {
+    base: "#0F2A4A",
+    accent: "#0EA5E9",
+    seriesColors: ["#0F2A4A"],
+    highlight: [],
+  },
+  // Extension track — YRBSS mental-health indicators (Panel 09). Single-period,
+  // survey data across four adolescent mental-health items. Same navy palette;
+  // the extension-track panel handles data-class + comparison-withheld framing.
+  yrbss: {
+    base: "#0F2A4A",
+    accent: "#0EA5E9",
+    seriesColors: ["#0F2A4A"],
+    highlight: [],
+  },
 };
 
 export function panelStyle(id: string): PanelStyle {
@@ -117,6 +135,16 @@ export const PANEL_META: Record<string, { title: string; subtitle: string }> = {
     title: "New Jersey chronic absenteeism rate",
     subtitle:
       "Share of students absent 10%+ of enrolled days, 2019–2024 (NJDOE state statistic; 2020–2021 held blank as series break)",
+  },
+  nsch: {
+    title: "Child flourishing by state",
+    subtitle:
+      "Share of children ages 6–17 meeting all three flourishing items, 2023 (National Survey of Children's Health, HRSA MCHB)",
+  },
+  yrbss: {
+    title: "Adolescent mental-health indicators",
+    subtitle:
+      "Share of U.S. high-school students reporting each condition, 2023 (Youth Risk Behavior Surveillance System, CDC)",
   },
 };
 

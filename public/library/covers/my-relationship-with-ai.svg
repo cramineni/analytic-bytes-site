@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Note No. 11: My relationship with AI</title>
+<desc>White background with a small navy line diagram. Two lines start from a common origin on the left. The upper line (navy) climbs smoothly and steadily rightward — maturity accumulating across five stages. The lower line (slate) stays flat, then steps up sharply at the right — capability jumping when Claude entered. A teal dot marks the moment of the step. Small labels "maturity" and "capability" tag the two lines. Title and italic subtitle in sans-serif beneath.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Eyebrow -->
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field Note  ·  No. 11</text>
+
+<!-- Motif: two curves — maturity climbs, capability jumps -->
+<g transform="translate(600, 240)">
+
+<!-- Origin point -->
+<circle cx="-280" cy="30" r="5" fill="#0F2A4A"/>
+
+<!-- Maturity line — navy, smooth climb from lower-left to upper-right -->
+<path d="M -280 30 Q -120 -10, 40 -40 T 280 -60" stroke="#0F2A4A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+<circle cx="280" cy="-60" r="5" fill="#0F2A4A"/>
+
+<!-- Capability line — slate, flat then step-jump at Claude -->
+<path d="M -280 30 L 80 30 L 140 -20 L 280 -30" stroke="#94A3B8" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Teal dot marking the step — the Claude moment -->
+<circle cx="110" cy="5" r="9" fill="#0EA5E9"/>
+<circle cx="280" cy="-30" r="5" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+
+<!-- Small labels at right endpoints -->
+<text x="290" y="-64" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1" fill="#475569" text-anchor="start">maturity</text>
+<text x="290" y="-26" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-style="italic" letter-spacing="1" fill="#94A3B8" text-anchor="start">capability</text>
+
+</g>
+
+<!-- Title -->
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">My relationship with AI.</text>
+
+<!-- Subtitle -->
+<text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">Field notes on the stages of working with generative AI across tools.</text>
+
+<!-- Short divider -->
+<line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+
+<!-- Footer -->
+<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+
+</svg>
