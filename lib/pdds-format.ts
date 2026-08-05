@@ -78,9 +78,14 @@ const STYLES: Record<string, PanelStyle> = {
   // Reader's eye lands on the national reference first, then scans states
   // against it with a visual sense of "not distinguishable from" — which is
   // exactly the CI overlap story the movement_note tells.
+  //
+  // accent is a shade darker than the site-wide accent so the anchor bar
+  // has enough value-contrast against the (light) accent-teal CI whiskers
+  // that overlay it. Whiskers stay bright accent (uncertainty = feature);
+  // anchor bar is heavier accent (authority). Same hue family, two weights.
   nsch: {
     base: "#B4C0CC",
-    accent: "#0EA5E9",
+    accent: "#0369A1",
     seriesColors: ["#B4C0CC"],
     highlight: ["Nationwide"],
   },
