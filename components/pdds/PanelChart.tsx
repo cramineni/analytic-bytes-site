@@ -163,12 +163,16 @@ export default function PanelChart({ panel }: { panel: Panel }) {
               // present it on the single-period layout (multi-period
               // data in this codebase doesn't have CIs yet). Whisker
               // sits centered on the bar, using accent teal so it reads
-              // against both a navy bar and the white background it
-              // extends onto past the bar tip.
+              // against both muted bars and the white background it
+              // extends onto past the bar tip. When the bar itself is
+              // drawn in accent (highlighted anchor), the whisker would
+              // go teal-on-teal — darken it a couple stops in-family so
+              // it still reads without leaving the accent palette.
               const ci = !multi ? latestBar?.ci : undefined;
               const showCI = !multi && Array.isArray(ci);
               const ciCenterY = barY + barH / 2;
               const capH = 8;
+              const whiskerStroke = fill === style.accent ? "#0369A1" : style.accent;
               return (
                 <g key={`${label}-${p}`}>
                   <rect
@@ -187,7 +191,7 @@ export default function PanelChart({ panel }: { panel: Panel }) {
                         x2={scale(ci![1])}
                         y1={ciCenterY}
                         y2={ciCenterY}
-                        stroke="#0EA5E9"
+                        stroke={whiskerStroke}
                         strokeWidth={1.5}
                       />
                       {/* Left cap (low) */}
@@ -196,7 +200,7 @@ export default function PanelChart({ panel }: { panel: Panel }) {
                         x2={scale(ci![0])}
                         y1={ciCenterY - capH / 2}
                         y2={ciCenterY + capH / 2}
-                        stroke="#0EA5E9"
+                        stroke={whiskerStroke}
                         strokeWidth={1.5}
                       />
                       {/* Right cap (high) */}
@@ -205,7 +209,7 @@ export default function PanelChart({ panel }: { panel: Panel }) {
                         x2={scale(ci![1])}
                         y1={ciCenterY - capH / 2}
                         y2={ciCenterY + capH / 2}
-                        stroke="#0EA5E9"
+                        stroke={whiskerStroke}
                         strokeWidth={1.5}
                       />
                     </g>
