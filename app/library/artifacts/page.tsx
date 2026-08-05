@@ -93,13 +93,31 @@ function ArtifactCard({ artifact }: { artifact: Artifact }) {
       className="group block no-underline"
     >
       <div className="rounded-md overflow-hidden border border-line bg-bg-alt mb-4 group-hover:border-line-2 transition-colors">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={artifact.image}
-          alt={artifact.title}
-          className="w-full h-auto block"
-          loading="lazy"
-        />
+        {artifact.format === "html" ? (
+          // HTML artifacts have no natural thumbnail image. Render an
+          // AB-styled placeholder card instead of a broken <img>.
+          <div className="aspect-[3/2] flex items-center justify-center px-6 text-center bg-white">
+            <div>
+              <div className="font-mono text-[10px] tracking-[0.22em] uppercase text-accent mb-2">
+                Interactive artifact
+              </div>
+              <div className="text-[15px] font-bold text-ink leading-[1.35] tracking-[-0.01em]">
+                {artifact.title}
+              </div>
+              <div className="mt-3 font-mono text-[10.5px] tracking-[0.06em] text-ink-3">
+                Open &rarr;
+              </div>
+            </div>
+          </div>
+        ) : (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={artifact.image}
+            alt={artifact.title}
+            className="w-full h-auto block"
+            loading="lazy"
+          />
+        )}
       </div>
       <div className="font-mono text-[11px] tracking-[0.18em] uppercase text-accent mb-2">
         Artifact

@@ -24,10 +24,13 @@ export interface Bar {
   // Extension-track additions (2026-08-03): per-cell provenance stamp and
   // explicit missing-cell handling. Missing cells carry `cell_state:
   // "missing"` and a `note` explaining why the series has a break rather
-  // than an interpolation. Main-track panels leave these unset.
+  // than an interpolation. Survey panels also carry `ci` (confidence
+  // interval, tuple [low, high]) as a first-class value. Main-track
+  // panels leave all these unset.
   provenance?: string;
   cell_state?: "missing" | "present";
   note?: string;
+  ci?: [number, number];
 }
 
 export interface Gap {
