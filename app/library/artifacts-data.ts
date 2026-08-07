@@ -193,9 +193,9 @@ export const ARTIFACTS: Artifact[] = [
     ],
   },
   {
-    title: "Three lenses on the same 90 days",
+    title: "Three lenses on the same practice",
     summary:
-      "The same ten task categories from AB's 90-day audit, read through three measurement lenses: session count (how often), message volume (how much conversation), and token usage (what the model actually computed). The three lenses tell three different stories about the same practice — and the divergences carry the diagnostic weight. Aggregating them into a single 'how much AI' number destroys the signal.",
+      "Six task categories from AB's 90-day audit, read through three measurement lenses: raw session count (throughput), weighted-proxy volume (attention estimate), and real token share (cost measurement). The top two categories sit in an HITL band where AI drives and human oversees; the bottom four sit in an AITL band where human drives and AI assists. Where two lenses align the story holds; where they diverge, one method needs review. Aggregating them into a single 'how much AI' number destroys that signal. Caveat: tokens measured for 30 of 93 sessions.",
     image: "/library/artifacts/ab-three-lenses.svg",
     slug: "ab-three-lenses",
     referencedIn: [

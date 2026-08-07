@@ -377,7 +377,7 @@ export const ESSAYS: Essay[] = [
             the bottom. Approve it, and on paper reporting is handled.
           </p>
           <p>
-            It isn’t, and the reason is worth a leader’s attention before the
+            It isn’t. The reason deserves a leader’s attention before the
             signature goes on. The tool is the last decision in the sequence,
             not the first. The decisions that determine whether your reporting
             changes how the organization acts come earlier, and they are not
@@ -411,27 +411,27 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           In most product organizations I’ve watched, skipping that step
-          produces something recognizable: sprawl. Multiple tool licenses, no
-          cohesion across reports and dashboards, users still running
-          workarounds because no single tool quite fit the job it was handed.
-          AI features amplify it. More vendors offer more in-tool AI, there is
-          more incentive to bolt features in across the stack, and more risk of
-          overpaying for AI without knowing where each capability belongs.
+          produces sprawl. Multiple tool licenses, no cohesion across reports
+          and dashboards, users still running workarounds because no single
+          tool quite fit the job it was handed. AI features amplify it. More
+          vendors offer more in-tool AI, there is more incentive to bolt
+          features in across the stack, and more risk of overpaying for AI
+          without knowing where each capability belongs.
         </P>
         <P>
           An analytics product that serves more than one audience, and that is
-          most of them, is serving three reporting surfaces at once.
-          They differ on five dimensions: audience, cadence, governance,
-          permission model, output format. None of the five compromises
-          gracefully. Force a single tool to span all three surfaces and the
-          result is mediocre on every axis — the kind of failure that never
-          trips an alarm. It just produces a system nobody relies on.
+          most of them, is serving three reporting surfaces at once. They differ
+          on five dimensions: audience, cadence, governance, permission model,
+          output format. None of the five compromises gracefully. Force a
+          single tool to span all three surfaces and the result is mediocre on
+          every axis. The failure never trips an alarm. It just produces a
+          system nobody relies on.
         </P>
         <P>
           The first decision is not which BI tool. It is recognizing that the
           surfaces are different products, and giving each the architecture it
-          deserves. The second decision is what sits underneath all three, and
-          it matters more than any of the surface choices. Vendor selection
+          deserves. The second decision is the semantic layer feeding all
+          three, and it matters more than any surface choice. Vendor selection
           comes last. Once the rest is done, it barely matters.
         </P>
 
@@ -451,16 +451,15 @@ export const ESSAYS: Essay[] = [
           published. The artifact persists. Three years from now someone will
           pull the Spring 2024 version and expect it to render identically.
           Sentence-level language matters here, because the readers are
-          non-technical and personally invested in what the data says about
-          them.
+          non-technical and the data is about them.
         </P>
         <P>
           <B>Surface B is the operator console.</B> Internal staff, opened
           whenever they open it, governance essentially nil because nothing gets
           published from it. The user wants “what’s mine, what’s overdue, what
           changed since last week.” The output is the workflow itself. The user
-          does work in the surface; they don’t read it and walk away. Its
-          failure mode is being a day out of date.
+          does work in the surface; they don’t read and leave. Its failure
+          mode is being a day out of date.
         </P>
         <P>
           <B>Surface C is the executive view.</B> Leadership and board,
@@ -472,7 +471,7 @@ export const ESSAYS: Essay[] = [
         <P>
           These are three different products. Who reads them, how often, under
           what review, with what access, how long the output must last — they
-          differ on every one of those, and not one of them bends gracefully.
+          differ on every dimension, and none of them bend gracefully.
         </P>
 
         <EssayTable
@@ -502,9 +501,9 @@ export const ESSAYS: Essay[] = [
 
         <H2>Why no BI vendor solves the publication problem</H2>
         <P>
-          The interesting case is Surface A, because that is where the BI vendor
-          pitch breaks down hardest and where most organizations underweight the
-          gap.
+          Surface A is the interesting case, because that is where the BI
+          vendor pitch fails worst and where most organizations underestimate
+          the gap.
         </P>
         <P>
           Most BI tools on a typical evaluation matrix assume the deliverable is
@@ -522,7 +521,7 @@ export const ESSAYS: Essay[] = [
           publication system, comms or design owns the template and the analyst
           owns the data. Those should be different people with different review
           authority and different release cadences. BI vendors don’t have a
-          credible answer for that split, and most don’t try.
+          credible answer for that split, and most don’t attempt one.
         </P>
         <P>
           The right architecture for Surface A is the one formal-publication
@@ -549,15 +548,14 @@ export const ESSAYS: Essay[] = [
         <P>
           The mistake organizations make is being talked into replacing this
           path with “embed a Tableau dashboard in a PDF” because it sounds like
-          one less system. The system that goes missing is the one that was
-          shaped for the job.
+          one less system. The system that goes missing is the one built for
+          the job.
         </P>
 
         <H2>The keystone: one canonical computation per concept</H2>
         <P>
-          The keystone argument is the one most worth holding firm on. It is the
-          difference between a system that scales and a system that erodes
-          trust over time.
+          The keystone argument is non-negotiable. It is the difference between
+          a system that scales and a system that loses credibility over time.
         </P>
         <P>
           Whatever combination of surfaces gets built, all of them should read
@@ -597,8 +595,8 @@ export const ESSAYS: Essay[] = [
 
         <H2>The drift war story</H2>
         <P>
-          This matters, and “do the keystone first” is non-negotiable, because
-          of the failure mode it prevents.
+          “Do the keystone first” is non-negotiable because of the failure mode
+          it prevents.
         </P>
         <P>
           Without a single semantic layer, this is what happens. The publication
@@ -619,18 +617,18 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           This is one of the most common failure modes in analytics products.
-          It’s slow. It rarely triggers a single alarm. It just gradually
-          corrodes the credibility of every artifact the team produces, until
-          people stop quoting numbers in meetings and start saying “I’d want to
-          verify that.” Once that phrase shows up, the product is functionally
-          dead even if it’s still being maintained.
+          It’s slow. It rarely triggers a single alarm. It degrades the
+          credibility of every artifact the team produces, until people stop
+          quoting numbers in meetings and start saying “I’d want to verify
+          that.” Once that phrase shows up, the product has failed even if
+          it’s still being maintained.
         </P>
         <P>
-          This is what a decision-system problem looks like traced to its root:
-          not a missing dashboard, but a missing source of truth, taxing every
-          decision downstream with the cost of re-verification. Every number now
-          arrives with a question attached, and that question is load the
-          decision-maker carries before they can act.
+          This is what a decision-system problem looks like at the root: not a
+          missing dashboard, but a missing source of truth that adds
+          re-verification cost to every downstream decision. Every number
+          arrives with a question attached, and the decision-maker has to
+          resolve it before they can act.
         </P>
         <P>
           The semantic layer prevents drift by removing the alternative. If the
@@ -643,12 +641,11 @@ export const ESSAYS: Essay[] = [
 
         <H2>Sequencing</H2>
         <P>
-          This is where most teams get it wrong, including teams that nominally
-          agree with everything above. The instinct is to start with the
-          visible surface: pick a BI tool, build a dashboard, show leadership
-          progress. The result is a polished surface over an ungrounded data
-          layer, which is worse than the prototype it replaced, because now it
-          looks credible.
+          This is where most teams get it wrong, including teams that agree
+          with everything above. The instinct is to start with the visible
+          surface: pick a BI tool, build a dashboard, show leadership progress.
+          The result is a polished surface over an unmodeled data layer,
+          worse than the prototype it replaced because now it looks credible.
         </P>
         <P>The right sequence is:</P>
         <NumList>
@@ -700,12 +697,12 @@ export const ESSAYS: Essay[] = [
           in yet.
         </P>
         <P>
-          Underneath all of it is one discipline: a reporting system is only as
-          good as the decision it was built to serve. Most reporting gets built
-          backward, from the tool the organization happened to buy, instead of
-          forward from the decision someone has to make. Name the decisions.
-          Give each its own surface. Put one canonical computation beneath them
-          all. The vendor is the last and smallest choice. <I>From fragmented to
+          One discipline runs through all of this: a reporting system is only
+          as good as the decision it was built to serve. Most reporting gets
+          built backward — from the tool the organization bought, not from the
+          decision someone has to make. Name the decisions. Give each its own
+          surface. Put one canonical computation beneath them all. The vendor
+          is the last and smallest choice. <I>From fragmented to
           decision-ready</I> is the distance that sequence closes.
         </P>
 
@@ -760,24 +757,24 @@ export const ESSAYS: Essay[] = [
             leadership point may as well go first: the dashboards a data team is
             proud of and the dashboards a busy decision-maker uses are
             frequently not the same dashboard. The gap between them is quiet. It
-            rarely shows up in a status update. And it is where a lot of
-            analytics work stops earning its keep.
+            rarely shows up in a status update. A lot of analytics work stops
+            earning its keep in that gap.
           </p>
           <p>
             What follows is written for the people building dashboards, but the
             method is small enough for a leader to hold a team to: let an AI
             tool propose what the audience needs to see before the team’s craft
-            instincts lock in, then curate from there. The claim is not
-            that AI designs better. It is that AI doesn’t yet carry your team’s
-            aesthetic habits, which makes it a useful mirror for a bias every
-            data team has and few can see in themselves.
+            instincts lock in, then curate from there. The claim is not that AI
+            designs better. AI doesn’t yet share your team’s aesthetic habits,
+            which makes it a useful mirror for a bias every data team has and
+            few can see in themselves.
           </p>
         </Brief>
 
         <P>
           A few years ago I built a school-performance dashboard in Looker for a
           charter network. It was sophisticated. Meter charts for percentile
-          readings. Multi-layered filters. Polished visual treatment that took
+          readings, multi-layered filters, polished visual treatment that took
           weeks to get right. I was proud of it.
         </P>
         <P>
@@ -807,14 +804,14 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          That gap is the one that matters in mission-driven analytics: the gap
-          between the dashboards data teams build because they are satisfying to
-          make and the dashboards decision-makers use to decide. And GenAI
-          tools, used the right way, are surprisingly good at exposing it.
+          That gap matters in mission-driven analytics: the dashboards data
+          teams build because they are satisfying to make versus the dashboards
+          decision-makers use to decide. And GenAI tools, used the right way,
+          are surprisingly good at exposing it.
         </P>
         <P>
-          This is what came out of the four-phase capstone. The discipline of
-          letting AI propose first changed the work.
+          This is what came out of the four-phase capstone: letting AI propose
+          first changed the work.
         </P>
 
         <H2>The discipline: AI proposes, human curates</H2>
@@ -855,26 +852,9 @@ export const ESSAYS: Essay[] = [
         </NumList>
         <P>
           This is closer to user-research methodology than to traditional BI
-          design. The AI is acting as a fast proxy for the stakeholder’s
-          cognitive needs — or more precisely, as a regression toward the
-          average of the human design corpus it was trained on. It hasn’t
-          spent five years in your design reviews; what makes it useful at
-          this step is that it hasn’t yet adopted the local in-group
-          aesthetics that pull dashboards away from clarity. The AI’s
-          neutrality is averaged-design neutrality, not stakeholder
-          neutrality. Useful for the first cut. Not a substitute for a
-          real reading of who is going to look at this and why.
-        </P>
-        <P>
-          One caveat the AI’s clarity-first instinct won’t supply on its
-          own: regulated contexts often require what looks like uglier
-          design for compliance reasons. FERPA cell-suppression for small-N
-          subgroups, HIPAA minimum-necessary framing, mandatory disclaimer
-          footers, IRB-style consent language — none of these make a
-          dashboard cleaner, and none can be cut for design simplicity. An
-          AI redesign that simplifies past those constraints isn’t cleaner;
-          it’s noncompliant in a way that looks like clarity. The curation
-          step has to put those constraints back in.
+          design. The AI acts as a fast proxy for the stakeholder’s cognitive
+          needs. Because it hasn’t spent five years in your design reviews, it
+          is useful at this step.
         </P>
 
         <H2>Where each tool fits in the discipline</H2>
@@ -902,9 +882,9 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           These specific advantages will shift as capabilities converge; that is
-          already happening. The discipline doesn’t shift. The discipline is:
-          let AI propose what the stakeholder needs to see before the data
-          team’s preferences lock in. Curate from there.
+          already happening. The discipline does not: let AI propose what the
+          stakeholder needs to see before the data team’s preferences lock in,
+          then curate from there.
         </P>
 
         <H2>What this changes about data-team workflow</H2>
@@ -924,15 +904,14 @@ export const ESSAYS: Essay[] = [
           proposes the simplest viable chart and the data team wants to add a
           more sophisticated one, the conversation is now explicit. Is the
           sophistication serving the decision, or serving the team’s desire to
-          build something interesting? That is a productive conversation to have
-          early instead of after the dashboard ships.
+          build something interesting? Better to have that conversation early
+          than after the dashboard ships.
         </P>
         <P>
           <B>Stakeholder interpretation becomes part of the design process.</B>{" "}
           AI proposals are easy to test against actual users. Does a school
-          principal read this faster than the original? That is a question you
-          can answer with five principals and a week, which is most of the
-          point.
+          principal read this faster than the original? You can answer that
+          with five principals and a week, which is most of the point.
         </P>
 
         <H2>What the discipline cannot replace</H2>
@@ -954,9 +933,8 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>The question itself.</B> The AI is great at proposing how to
           display an answer once it has the question. It is worse at deciding
-          which question matters most. The analyst keeps that call; it’s
-          the part of the workflow that hasn’t softened under any tool I’ve
-          tried.
+          which question matters most. The analyst keeps that call; no tool
+          I’ve tried has made it easier.
         </P>
 
         <H2>The reframe</H2>
@@ -975,8 +953,8 @@ export const ESSAYS: Essay[] = [
           and most data teams default to the wrong side of that gap.
         </P>
         <Pull>
-          Beautiful dashboards aren’t the same as decision-driving ones. AI
-          tools are a discipline against our own biases. Use them that way.
+          Beautiful dashboards are not the same as decision-driving ones. Used
+          well, AI tools are a discipline against our own biases.
         </Pull>
         <P>
           And the discipline generalizes well past dashboards. Design every
@@ -985,7 +963,7 @@ export const ESSAYS: Essay[] = [
           model’s output: what decision does this serve, and does it measurably
           move it? The fifteen-second dashboard a principal can act on is just
           one surface answering that question honestly. <I>From fragmented to
-          decision-ready</I> is the distance a data team closes when it stops
+          decision-ready</I> names what changes when a data team stops
           designing for itself and starts designing for the decision.
         </P>
 
@@ -1038,8 +1016,8 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            A leader rarely sees AI architecture as architecture. It arrives as
-            a series of small, reasonable approvals: an AI-assisted connector
+            A leader rarely sees AI architecture as architecture. It shows up
+            as a series of small, reasonable approvals: an AI-assisted connector
             here, a copilot there, a natural-language layer on the BI tool, a
             chatbot for the client portal. Each has a working demo and a
             plausible champion. Say yes to each on its own merits, and the
@@ -1082,8 +1060,8 @@ export const ESSAYS: Essay[] = [
         <P>
           “What AI features should we adopt” is a vendor question. The
           architectural question is where each kind of AI compute belongs and
-          what grounds it, and it is the one that decides whether your AI
-          investments compound or corrupt the data product. Place AI in the wrong
+          what grounds it, and it decides whether your AI investments compound
+          or corrupt the data product. Place AI in the wrong
           layer and it gets expensive, slow, and untrustworthy. Place it in the
           right layer with no grounding contract and it makes things up. Place it
           correctly, ground it against the same canonical metric definitions as
@@ -1115,9 +1093,9 @@ export const ESSAYS: Essay[] = [
           is suspicious, this batch should be excluded from reports, this null
           means absent rather than unknown) belongs in dbt, where it is
           testable, version-controlled, and auditable. A vendor’s black-box
-          quality model that drops rows for reasons you cannot reproduce is the
-          kind of dependency that breaks during a stakeholder review and leaves
-          you unable to explain why.
+          quality model that drops rows for reasons you cannot reproduce will
+          break during a stakeholder review and leave you unable to explain
+          why.
         </P>
         <P>
           <B>Snowflake, or whatever your warehouse is.</B> This is where most of
@@ -1165,10 +1143,10 @@ export const ESSAYS: Essay[] = [
           description, every domain a typed entity, every test a guardrail. The
           MCP server pattern, or whatever your equivalent is, lets a chatbot
           call <C>get_domain_score(school_id, domain_id, wave_id)</C> instead of
-          writing SQL. That single move eliminates most of the hallucination
-          risk in a portal chatbot, and the setup work is mostly already done.
-          You just have to decide that the dbt semantic layer is the canonical
-          contract every AI feature reads through.
+          writing SQL. That move eliminates most of the hallucination risk in
+          a portal chatbot, and much of the setup work is already done. The
+          remaining decision is that the dbt semantic layer serves as the
+          canonical contract every AI feature reads through.
         </P>
         <P>
           <B>BI tools.</B> Tableau Pulse, Power BI Copilot, ThoughtSpot Spotter,
@@ -1184,7 +1162,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           That is the placement story, one paragraph per layer. Grounding,
-          which is the next part, is where most stacks come apart.
+          addressed next, is where most stacks fail.
         </P>
 
         <H2>The semantic layer is also the AI contract</H2>
@@ -1193,7 +1171,7 @@ export const ESSAYS: Essay[] = [
           Keystone</I>, extends one step. There, the claim was that all three
           reporting surfaces (program report, operator console, executive view)
           must read from a single dbt-defined semantic layer or they drift,
-          and drift is the failure mode that kills trust.
+          and drift is the failure mode that erodes trust.
         </P>
 
         <Figure
@@ -1211,8 +1189,8 @@ export const ESSAYS: Essay[] = [
           number of dashboards, each owned by an analyst who can be talked to.
           With AI features you have potentially every alert, every summary,
           every chatbot answer, every auto-generated email, each of which can
-          independently drift from the canonical metric. There is no single
-          owner to call.
+          independently drift from the canonical metric. No single owner
+          exists to consult.
         </P>
         <P>
           <B>The drift symptom is language, not numbers.</B> When two dashboards
@@ -1342,8 +1320,8 @@ export const ESSAYS: Essay[] = [
         <P>
           Every chatbot answer that includes a number must show the source row
           it pulled from, with a “view underlying data” link. A school
-          superintendent who can’t see where the number came from won’t use it
-          twice.
+          superintendent who cannot see the number’s source is unlikely to use
+          it again.
         </P>
 
         <H2>The architecture in one paragraph</H2>
@@ -1554,16 +1532,16 @@ export const ESSAYS: Essay[] = [
             sector should recognize the shape of the problem inside the first
             thirty seconds. An organization has spent years collecting data.
             Multiple systems, real coverage, genuine cost. And still nobody can
-            answer the question the data was supposed to answer: here, <I>which
+            answer the question the data was supposed to answer: <I>which
             classrooms need which support this term.</I>
           </p>
           <p>
             That is not a data-collection problem. It is an integration
             problem: the layers exist and don’t talk to each other, so no
             decision-maker sees the whole picture at the granularity their own
-            decision requires. The fix is not another portal. It is an
-            architecture that stitches the layers you already have into decision
-            surfaces for the people who have to act. Different surface, same
+            decision requires. The fix is an architecture that stitches the
+            layers you already have into decision surfaces for the people who
+            have to act — not another portal. Different surface, same
             discipline — the one that applies as readily to a behavioral-health
             nonprofit or a charter network as to a state education ministry.
           </p>
@@ -1574,7 +1552,7 @@ export const ESSAYS: Essay[] = [
           everything. You stitch CDC mortality data with NSDUH prevalence,
           claims data with electronic health records, patient-reported outcomes
           with hospital encounter feeds. Each layer measures something
-          different. Each runs at a different cadence. Each serves a different
+          different, runs at a different cadence, and serves a different
           decision. The work is in the integration: what kind of question goes
           to which layer, and how the layers compose into a coherent picture of
           a population, a patient, a program.
@@ -1586,8 +1564,8 @@ export const ESSAYS: Essay[] = [
           for composite ranking, SEQI for composite quality. Below that, schools
           have classroom assessments, board exam results, NCERT-aligned learning
           materials, and increasingly digital assessment platforms in some
-          districts. The layers exist. The integration architecture isn’t yet
-          built.
+          districts. The layers exist, but the integration architecture isn’t
+          yet built.
         </P>
         <P>
           The pattern is familiar from US K-12 too. A district runs its SIS
@@ -1596,9 +1574,9 @@ export const ESSAYS: Essay[] = [
           classroom-embedded platform, disciplinary data on Kickboard, and a
           state accountability assessment once a year. Each layer measures
           something different, on its own cadence, purchased with its own
-          budget line. The question they were all meant to help answer
+          budget line. The question they were all meant to answer
           &mdash; which classrooms need which support this term &mdash; is
-          the one the layers rarely compose into on their own.
+          one none of the layers composes into on its own.
         </P>
         <P>
           That integration architecture is what LO 2.0 proposes: the thing that
@@ -1614,7 +1592,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          This is the analytical landscape, the state-level evidence that
+          This is the analytical picture, the state-level evidence that
           integration matters, and the framework for building it.
         </P>
 
@@ -1671,9 +1649,9 @@ export const ESSAYS: Essay[] = [
           (Performance Grading Index). Built for state-level
           comparison, federal incentive frameworks, and publicly visible
           accountability. A composite index that combines UDISE+ and NAS into
-          ranking grades across 73 indicators on a 1,000-point scale. Don’t
-          reach for it when the question is operational or improvement-shaped;
-          it won’t carry the weight.
+          ranking grades across 73 indicators on a 1,000-point scale. It is not
+          the right tool when the question is operational or
+          improvement-shaped.
         </P>
         <P>
           <B>
@@ -1703,11 +1681,11 @@ export const ESSAYS: Essay[] = [
           for formative use during the year.
         </P>
         <P>
-          The pattern is recognizable: each layer does something well, and each
-          layer has a clear failure mode. None alone is sufficient. Stitched
-          through an integration architecture, they can serve a teacher, a
-          headmaster, a district officer, and a policy designer reading the same
-          assets at different cadences.
+          The pattern is recognizable: each layer does something well and has
+          a clear failure mode, and none alone is sufficient. Stitched through
+          an integration architecture, they can serve a teacher, a headmaster,
+          a district officer, and a policy designer reading the same assets at
+          different cadences.
         </P>
 
         <H2>The picture for one state</H2>
@@ -1717,7 +1695,7 @@ export const ESSAYS: Essay[] = [
           of them. Eighty percent of students at or below basic level in Math;
           94% at or below basic in Science; 86% at or below basic in Social
           Science. Performance is far worse in every upper grade than at
-          Class III: at-or-below-basic in Math sits near 80% from Class V
+          Class III: at-or-below-basic in Math stays near 80% from Class V
           (82%) through Class X (80%), versus 63% in Class III. That is a
           jump after the foundational grade, not a steady climb. The clean
           grade-on-grade decline shows up in Science instead: 65% at
@@ -1739,7 +1717,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          These signals come from national data. They’re real. They’re useful
+          These signals come from national data. They are real and useful —
           for federal allocation, for state-level priority-setting, for policy
           design.
         </P>
@@ -1759,7 +1737,7 @@ export const ESSAYS: Essay[] = [
           enabled.
         </P>
         <Pull>
-          This is what stitching makes possible. None of the layers alone
+          This is what stitching makes possible; none of the layers alone
           enables it.
         </Pull>
 
@@ -1799,13 +1777,12 @@ export const ESSAYS: Essay[] = [
           reading aggregated district patterns for policy and funding. Federal
           designers reading the same data for allocation and policy. Each
           decision-maker reads what they need at the appropriate granularity.
-          The semantic layer underneath is shared.
+          The underlying semantic layer is shared.
         </P>
 
         <H2>The decisions stitching enables</H2>
         <P>
-          The integration is not abstract. With the layers stitched, specific
-          decisions get sharper.
+          With the layers stitched, specific decisions get sharper.
         </P>
         <P>
           <B>Teacher actions at the classroom level.</B> Which students need
@@ -1864,18 +1841,18 @@ export const ESSAYS: Essay[] = [
         <H2>Closing note</H2>
         <P>
           Education-policy debates often frame “national data systems vs.
-          classroom assessments” as a binary. They aren’t. Each layer does
-          something the other can’t. The question isn’t which to invest in; it’s
-          what integration architecture lets them serve different
-          decision-makers running different decisions at different cadences.
+          classroom assessments” as a binary, but each layer does something
+          the other can’t. The real question is what integration architecture
+          lets them serve different decision-makers running different decisions
+          at different cadences.
         </P>
         <P>
           Healthcare has spent decades building toward this, integrating CDC +
           NSDUH + claims + EHR + patient-reported outcomes through
           population-health platforms and clinical decision-support systems,
-          though it is far from finished even there. Education hasn’t yet built
-          the equivalent. LO 2.0 is one shape that integration architecture
-          could take.
+          and it is still not finished. Education hasn’t yet built the
+          equivalent. LO 2.0 is one shape that integration architecture could
+          take.
         </P>
         <P>
           The integration argument is illustrative. State-level findings reflect
@@ -1886,9 +1863,8 @@ export const ESSAYS: Essay[] = [
           academic calendar.
         </P>
         <P>
-          The opportunity is sitting in the layers already collected. The work
-          is to stitch them into decision surfaces for the people who have to
-          act.
+          The opportunity is in the layers already collected. The work is to
+          stitch them into decision surfaces for the people who have to act.
         </P>
         <P>
           That is decision-systems architecture at state-government scale: start
@@ -1955,12 +1931,8 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            A funder with a fixed prevention budget, or a state health officer
-            with one, faces the same question every cycle: where does the next
-            dollar go? The instinct is to follow the headline and fund the
-            states with the highest suicide rate. That instinct isn’t wrong. It
-            is just one signal, and on its own it sends money to the wrong map.
-          </p>
+          A funder with a fixed prevention budget, or a state health officer with one, faces the same question every cycle: where does the next dollar go? The instinct is to follow the headline and fund the states with the highest suicide rate. That instinct isn&rsquo;t wrong, but on its own it sends money to the wrong map. This is a field note, not a study. It is an exploratory, reliability-filtered read of seven years of CDC WONDER mortality data, and its only real claim is structural: burden and disparity are two different signals, the priority list you build from one is not the list you build from the other, and a framework showing both — while staying honest about what it can&rsquo;t see — changes the allocation decision. Written for the person who has to defend that decision after it&rsquo;s made.
+        </p>
           <p>
             This is a field note, not a study. It is an exploratory,
             reliability-filtered read of{" "}
@@ -1991,11 +1963,7 @@ export const ESSAYS: Essay[] = [
           one of them moving the right direction.
         </P>
         <P>
-          Now split the same dataset differently. The mid-life bands moved the
-          other way over the same three years: ages 35–44 up roughly 3 percent,
-          and 45–54 up about 3.5 percent. The decline among the young and the
-          rise after 35 are happening at the same time, in the same country, in
-          the same data.
+          Now split the same dataset differently. The mid-life bands moved the other way over the same three years: ages 35--44 up roughly 3 percent, and 45--54 up about 3.5 percent. The decline among the young and the rise after 35 are happening at the same time, in the same country, in the same data.
         </P>
 
         <Figure
@@ -2005,16 +1973,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          A single national rate blends those opposite movements into one
-          number, and because the youngest bands are falling fast, that number
-          still reads as progress. The blend hides the reversal underneath it:
-          for every age band past 35, the trend has already turned. An average
-          cannot tell a funder that, and a funder who reads only the average
-          will not know to look. The lesson isn’t really about age. It is that
-          any rolled-up number is a decision hazard. It blends signals moving in
-          opposite directions, and the blend erases the contrast a resource
-          decision depends on. You have to disaggregate before you can allocate.
-          Age is one cut; the cut this note is about is harder.
+          A single national rate blends those opposite movements into one number, and because the youngest bands are falling fast, that number still reads as progress. The blend hides the reversal inside it: for every age band past 35, the trend has already turned. An average cannot tell a funder that, and a funder who reads only the average will not know to look. The lesson isn&rsquo;t really about age — it is that any rolled-up number is a decision hazard. It blends signals moving in opposite directions, and the blend erases the contrast a resource decision depends on. You have to disaggregate before you can allocate. Age is one cut. The one this note is about is harder.
         </P>
 
         <H2>Two signals, not one</H2>
@@ -2043,11 +2002,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The map burden draws, and the map disparity draws</H2>
         <P>
-          Rank states by burden for 2024, ages 10–54, and the top of the list is
-          Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4),
-          New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado,
-          Oklahoma, Maine, Arkansas, Idaho. It is, broadly, a Mountain-West and
-          rural map.
+          Rank states by burden for 2024, ages 10--54, and the top of the list is Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4), New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado, Oklahoma, Maine, Arkansas, Idaho. It is, broadly, a Mountain-West and rural map.
         </P>
 
         <Figure
@@ -2120,55 +2075,26 @@ export const ESSAYS: Essay[] = [
           limited budget first.
         </P>
         <P>
-          One pattern runs through nearly every disparity signal on the map. In
-          six of the seven states with a reliable signal, the most-affected
-          group is American Indian and Alaska Native communities; in Hawaii, it
-          is residents of more than one race. That is the clearest pattern in
-          the disparity signals. It should shape not only where the dollar goes
-          but who helps design what it funds; a prevention dollar designed for
-          a community without their participation tends to underperform a
-          dollar designed in partnership with them.
+          One pattern runs through nearly every disparity signal on the map. In six of the seven states with a reliable signal, the most-affected group is American Indian and Alaska Native communities; in Hawaii, it is residents of more than one race. That is the clearest pattern the disparity signals show. It should shape not only where the dollar goes, but who helps design what it funds; a prevention dollar spent <I>on</I> a community tends to underperform a dollar spent <I>with</I> one.
         </P>
 
         <H2>Where the next dollar goes</H2>
         <P>
-          The framework doesn’t hand a funder an answer. It does something more
-          useful. It makes the question explicit. A dollar can be spent to
-          prevent the most deaths or to close the widest gap, and those are
-          different ethical commitments that lead to different states. A serious
-          allocation decision says which one it is optimizing, or splits the
-          budget across both on purpose, instead of letting the choice get made
-          implicitly by whichever number happened to be on the slide.
+          The framework doesn&rsquo;t hand a funder an answer; it makes the question explicit. A dollar can be spent to prevent the most deaths or to close the widest gap, and those are different ethical commitments that lead to different states. A serious allocation decision says which one it is optimizing, or splits the budget across both on purpose, instead of letting the choice get made implicitly by whichever number was on the slide.
         </P>
         <P>
-          The overlap group is where the argument is easiest. Alaska, South
-          Dakota, Montana, Arizona, and Hawaii satisfy both commitments
-          simultaneously, and for most funders that is where a first tranche
-          belongs. The harder and more revealing conversations are the
-          off-diagonal ones. Is a Minnesota (an unremarkable statewide rate
-          hiding a more-than-threefold disparity) a priority for your mission? A
-          burden ranking already answered “no” on your behalf, silently, before
-          anyone in the room got to weigh in. The quadrant’s value is that it
-          puts the state back on the table and forces the answer to be given on
-          purpose.
+          The overlap group is where the argument is easiest. Alaska, South Dakota, Montana, Arizona, and Hawaii satisfy both commitments simultaneously, and for most funders that is where a first tranche belongs. The harder and more revealing conversations are the off-diagonal ones. Is a Minnesota — an unremarkable statewide rate hiding a more-than-threefold disparity — a priority for your mission? A burden ranking already answered “no” on your behalf before anyone in the room weighed in. The quadrant&rsquo;s value is that it puts the state back on the table and forces the answer to be given on purpose.
         </P>
 
         <H2>The honest version</H2>
         <P>
-          This is a field note, and being precise about what the data cannot do
-          is part of the method, not a disclaimer bolted to the end.
+          This is a field note, and being precise about what the data cannot do is part of the method — not a disclaimer bolted to the end.
         </P>
         <P>
-          The figures are <I>provisional</I>. CDC WONDER mortality counts for
-          2021–2024 are revised over time; the picture will shift.
+          The figures are <I>provisional.</I> CDC WONDER mortality counts for 2018--2024 are revised over time; the picture will shift.
         </P>
         <P>
-          The disparity signals are <I>reliability-filtered</I>. A signal was
-          counted here only if there were at least 20 deaths in both the
-          comparison group and the White comparison group, a relative risk of at
-          least 1.25, and a positive absolute rate difference. Below those
-          thresholds, small counts produce rates that swing wildly from year to
-          year, and an unfiltered ranking would look precise without being it.
+          The disparity signals are <I>reliability-filtered.</I> A signal counted here only if there were at least 20 deaths in both the comparison group and the White comparison group, a relative risk of at least 1.25, and a positive absolute rate difference. Below those thresholds, small counts produce rates that swing wildly from year to year, and an unfiltered ranking would look precise without being so.
         </P>
         <P>
           <I>Absence of a signal is not evidence of equity.</I> Several states,
@@ -2207,11 +2133,7 @@ export const ESSAYS: Essay[] = [
           for all of them.
         </P>
         <P>
-          The next dollar gets spent either way. A framework like this one
-          doesn’t spend it for you, and it shouldn’t. What it does is make sure
-          that when you spend it, you were looking at the whole map: both
-          signals, and the honest edges of what the data can and cannot say.{" "}
-          <I>From fragmented to decision-ready.</I>
+          The next dollar gets spent either way. A framework like this one doesn&rsquo;t spend it for you, and it shouldn&rsquo;t. It makes sure that when you spend it, you were looking at the whole map: both signals, and the honest edges of what the data can and cannot say. <I>From fragmented to decision-ready.</I>
         </P>
 
         <Note>
@@ -2264,7 +2186,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In most organizations, one line on the org chart was never
+            In most organizations, one line on the org chart was never really
             decided. It was inherited. Who owns data infrastructure? The
             function ended up reporting wherever the first analyst was hired, or
             under IT because data felt technical, or under finance because data
@@ -2273,17 +2195,17 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             That accident has consequences. Where data infrastructure reports
-            decides what the function is allowed to become, and it drives a
-            hiring problem that looks unrelated. This piece argues there is a
+            decides what the function is allowed to become, and it also drives
+            a hiring problem that looks unrelated. This piece argues there is a
             right answer. Not a right title; a right principle. It is written
             for anyone drawing, or redrawing, an org chart with a data function
-            on it, and it is an argued position: I will make the honest case for
-            each alternative before I make mine.
+            on it, and it is an argued position: I will make the case for each
+            alternative before I make mine.
           </p>
         </Brief>
 
         <P>
-          Let’s start with the confusion. It is real, and it is a clue. Ask ten
+          Start with the confusion. It is real, and it is a clue. Ask ten
           organizations who owns data infrastructure and you get a tour of the
           alphabet: the CIO, the CTO, the CFO, the COO, the CPO, a CDO, a CDAO,
           a Chief Innovation Officer, sometimes a Chief Impact Officer, a CAIDO. Several of those titles mean
@@ -2309,11 +2231,10 @@ export const ESSAYS: Essay[] = [
           seat is working.
         </P>
         <P>
-          So set the title question aside. It is the wrong question, and
-          answering it first is how organizations end up improvising. Ask the
-          prior one. What does data infrastructure actually need from its
-          place on the org chart? Answer that, and the seat stops being a
-          matter of taste.
+          So set the title question aside. Answering it first is how
+          organizations end up improvising. Ask the prior one. What does data
+          infrastructure actually need from its place on the org chart? Answer
+          that, and the seat stops being a matter of taste.
         </P>
         <P>
           I first met this argument in a narrower form, in a single
@@ -2329,18 +2250,18 @@ export const ESSAYS: Essay[] = [
         <H2>The four reasonable answers</H2>
         <P>
           There are four defensible places to put data infrastructure. Each
-          deserves its honest case before I argue against it.
+          deserves a fair case before I argue against it.
         </P>
         <P>
           <B>Under the CTO or CIO.</B> The case is strong. Data runs on
           technical infrastructure: pipelines, warehouses, access controls,
           uptime. That is engineering, and engineering muscle lives under the
           CTO. Put data where the people who can build and run the plumbing
-          already sit. The cost shows up later. Under the CTO, data gets read as
-          a system to keep running, and what gets resourced is what the CTO is
-          measured on: reliability, security, uptime, incident response. The semantic layer, the
-          part that makes data <I>mean</I> something to a program lead or a
-          board, becomes nobody’s priority. The function slowly turns into a
+          already sit. The cost shows up later. Under the CTO, data is treated
+          as a system to keep running, and what gets resourced is what the CTO
+          is measured on — reliability, security, uptime. The semantic layer —
+          what makes data <I>mean</I> something to a program lead or a board —
+          becomes nobody’s priority. The function slowly turns into a
           service desk — requests arrive through a ticketing queue, analysts
           close them quickly, and the decision happens somewhere else without
           them.
@@ -2350,7 +2271,7 @@ export const ESSAYS: Essay[] = [
           risk-bearing asset, and finance already runs enterprise reporting, has
           audit discipline, treats numbers as things that must reconcile and
           withstand scrutiny. Few functions are better at custody. The cost is
-          orientation. Finance looks backward by instinct, and it looks at
+          one of orientation. Finance looks backward by habit, and it looks at
           compliance &mdash; the close, the audit, the filing. Under finance,
           the data function optimizes for the report being correct rather than
           the decision being better, and forward-looking operational work is
@@ -2359,11 +2280,11 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Its own seat, a CDO or CDAO.</B> This is the strongest alternative,
           and it should be conceded as one. Data is strategic enough to warrant
-          a peer-level seat: uncaptured, visible, carrying a standing none of the
+          a peer-level seat: uncaptured, visible, with a standing none of the
           embedded options confer. The role exists to solve the placement
           problem. The cost is the gap between a seat and traction. A CDO with a
-          title but no integration mandate produces strategy (frameworks,
-          roadmaps, decks) and not adopted systems, because nothing structurally
+          title but no integration mandate produces strategy &mdash; frameworks,
+          roadmaps, decks &mdash; and not adopted systems, because nothing structurally
           obliges the other functions to change how they work. The seat becomes
           an island. And for most mid-size and mission-driven organizations the
           seat is unaffordable; prescribing it prescribes nothing they can act
@@ -2382,9 +2303,9 @@ export const ESSAYS: Essay[] = [
         <P>
           All four placements share one flaw. Each puts data infrastructure
           inside a single function, and a single function bends data toward its
-          own incentive. The executives aren’t at fault; it is what reporting
-          lines do. A cross-functional capability owned by one function gets
-          narrowed by it.
+          own incentive. The executives aren’t at fault; this is how reporting
+          lines work. A cross-functional capability owned by one function gets
+          narrowed to it.
         </P>
 
         <H2>What the function actually needs</H2>
@@ -2404,9 +2325,10 @@ export const ESSAYS: Essay[] = [
             theirs.
           </NumItem>
           <NumItem n={3}>
-            It needs <B>traction</B>. Sight is not enough; it needs the standing
-            to make functions adopt shared definitions and use what it produces.
-            Sight without traction is a research office nobody acts on.
+            It needs <B>traction</B>. Sight is not enough &mdash; it needs the
+            standing to make functions adopt shared definitions and use what it
+            produces. Sight without traction is a research office nobody acts
+            on.
           </NumItem>
           <NumItem n={4}>
             It needs to report at the{" "}
@@ -2438,10 +2360,9 @@ export const ESSAYS: Essay[] = [
           one a standalone CDO cannot pass: the COO has the standing to make a
           shared definition stick. When the COO says every team will use one
           definition of an active client, teams use it. When a peer says it,
-          they negotiate. Traction is a property of the seat, not the person.
-          And the altitude matches: the COO’s job is how the organization
-          operates day to day, which is where data infrastructure’s decisions
-          live.
+          they negotiate. That is a property of the seat. And the altitude
+          matches: the COO’s job is how the organization operates day to day,
+          which is where data infrastructure’s decisions live.
         </P>
         <P>
           Why not put data under the CEO, then? More authority still. The answer
@@ -2456,10 +2377,10 @@ export const ESSAYS: Essay[] = [
           There is one real exception, and it matters, because it describes most
           of the organizations I work with. Many organizations have no COO. In
           smaller and mission-driven organizations, the executive director or
-          CEO <I>is</I> the operating integrator. There is no second seat.
-          There, data infrastructure should sit with the CEO or ED, not because
-          that office is senior enough, but because in that organization it is
-          the integration seat. As the organization grows and adds a COO,
+          CEO <I>is</I> the operating integrator. There is no second seat to
+          move it to. There, data infrastructure should sit with the CEO or ED
+          &mdash; not because that office is senior enough, but because in that
+          organization it is the integration seat. As the organization grows and adds a COO,
           ownership should migrate to it.
         </P>
         <P>
@@ -2521,7 +2442,7 @@ export const ESSAYS: Essay[] = [
           executive to another and renamed on the way. At another, the role was
           dissolved and quietly rehired by a different function a year later,
           which is the placement principle running its own correction in slow
-          motion. The capability did not change across those moves. Its reach
+          motion. The capability did not change across those moves; its reach
           did. Under the integrator it served the whole organization. Everywhere
           else it served whoever it reported to, and the rest of the organization
           learned to route around it.
@@ -2580,18 +2501,19 @@ export const ESSAYS: Essay[] = [
           every agent needs a manager and an owner. An organization that never
           decided where its <I>data</I> infrastructure sits is now going to be
           asked where its <I>agents</I> sit, and who is accountable when one
-          acts. The placement question does not get easier. It gets unavoidable.
+          acts. The placement question does not get easier &mdash; it gets
+          unavoidable.
         </P>
         <P>
           The answer, when an organization finally faces it, will not be a
           title. It will be a decision about what the function is <I>for</I>:
           serving decisions across the whole organization. Once that is named,
-          the seat is named with it — the one place already accountable for the
-          whole organization running together. Put data there and it stops being
-          a service desk, a compliance engine, or an island. It becomes the
-          thing it was always meant to be. <I>From fragmented to
-          decision-ready</I>, and that begins, before a single dashboard is
-          built, with where the function sits.
+          the seat is named with it &mdash; the one place already accountable
+          for the whole organization running together. Put data there and it
+          stops being a service desk, a compliance engine, or an island. It
+          becomes what it was designed to be. <I>From fragmented to
+          decision-ready</I> &mdash; and that begins, before a single dashboard
+          is built, with where the function sits.
         </P>
 
                 <SeeAlso>
@@ -2648,15 +2570,8 @@ export const ESSAYS: Essay[] = [
             changed.
           </p>
           <p>
-            What changed is not the model. It is the unit of work. AI used to
-            produce answers, and an answer has a human reading it before
-            anything happens. Agentic AI produces actions, and an action does
-            not wait to be read. The human checkpoint that came free with every
-            answer is gone, unless you design it back in. That makes agentic
-            adoption a decision-system question, not a technology one. What
-            follows is written for the leader who has to decide, concretely,
-            what their organization will let an agent do.
-          </p>
+          What changed is not the model. It is the unit of work. AI used to produce answers. An answer has a human reading it before anything happens. Agentic AI produces actions, and an action does not wait to be read. The human checkpoint that came free with every answer is gone, unless you design it back in. That makes agentic adoption a decision-system question, not a technology one. What follows is written for the leader who has to decide, concretely, what their organization will let an agent do.
+        </p>
         </Brief>
 
         <P>
@@ -2674,36 +2589,16 @@ export const ESSAYS: Essay[] = [
           follows from that one line.
         </P>
         <P>
-          A working definition, the kind you would say at the start of a
-          meeting (I drafted this for my MIT capstone playbook and use it now
-          in client conversations): agentic AI is a software system that takes
-          a goal, plans its own next moves across your tools and data, and
-          produces actions rather than answers. Hold onto “actions rather than
-          answers.” Everything else is downstream of it.
+          A working definition, the kind you would say at the start of a meeting (I drafted this for my MIT capstone playbook and use it now in client conversations): agentic AI is a software system that takes a goal, plans its own next moves across your tools and data, and produces actions rather than answers. Hold onto “actions rather than answers.” Everything else follows from it.
         </P>
 
         <P>
-          Throughout the rest of this piece, I’ll keep coming back to one
-          workflow as the worked example: AB’s “Deliver Signal,” the first
-          ninety days of how I take a mission-driven client from fragmented
-          sources to one decision-ready surface an executive and a frontline
-          operator can both act on. It is the candidate workflow I worked
-          through in detail for my MIT capstone, and it is also the work I am
-          doing, currently end-to-end myself, with AI augmentation in code,
-          prose, and analysis. It surfaces every decision this essay
-          will walk through: where the human checkpoint sits, where the
-          agent’s autonomy ends, what safeguards have to hold, and who owns
-          the result.
+          Throughout the rest of this piece, I&rsquo;ll keep coming back to one workflow as the worked example: AB&rsquo;s “Deliver Signal,” the first ninety days of how I take a mission-driven client from fragmented sources to one decision-ready surface an executive and a frontline operator can both act on. It is the candidate workflow I worked through in detail for my MIT capstone, and it is also the work I am doing, currently end-to-end myself, with AI augmentation in code, prose, and analysis. It surfaces every decision this essay will walk through: where the human checkpoint is, where the agent&rsquo;s autonomy ends, what safeguards are required, and who owns the result.
         </P>
 
         <H2>The checkpoint that used to be free</H2>
         <P>
-          When an AI system produces an answer, a decision still has to happen.
-          Someone reads the answer, judges it, and acts on it, or doesn’t. That
-          human decision point is not something anyone designed in. The format
-          holds the seat for a checkpoint, whether or not the person uses it.
-          An answer is inert until a person picks it up, and the picking-up is
-          where the checkpoint can happen — even if the person only skims.
+          When an AI system produces an answer, a decision still has to happen. Someone reads the answer, judges it, and acts on it, or doesn&rsquo;t. That human decision point is not something anyone designed in. The format leaves room for a checkpoint, whether or not the person uses it. An answer is inert until a person reads it, and that reading is where the checkpoint can happen — even if the person only skims.
         </P>
         <P>
           When an AI system produces actions, that checkpoint is gone by
@@ -2713,7 +2608,7 @@ export const ESSAYS: Essay[] = [
           deliberately designed into the path.
         </P>
         <P>
-          The move underneath is a relocation. Agentic AI does not add a
+          The real shift is a relocation. Agentic AI does not add a
           decision to your organization; it relocates one. It takes a decision
           that used to belong, by default, to a human who got it for free, and
           hands it, by default, to a model. Every “let the agent handle that” is
@@ -2721,9 +2616,7 @@ export const ESSAYS: Essay[] = [
           anyone in the room noticed they were making it.
         </P>
         <P>
-          That is why this is a decision-system redesign and not a tooling
-          upgrade. A tooling upgrade changes how a step gets performed. This
-          changes who performs the deciding.
+          That is why this is a decision-system redesign and not a tooling upgrade. A tooling upgrade changes how a step is performed; this changes who decides.
         </P>
 
         <H2>Most data problems are still decision problems</H2>
@@ -2734,25 +2627,13 @@ export const ESSAYS: Essay[] = [
           unowned, made by default, or resting on signals nobody checks.
         </P>
         <P>
-          Agentic AI does not change that claim. It sharpens it to a point. An
-          organization that never named which decisions its workflows make, who
-          carries them, and what evidence they stand on has a decision-system
-          problem whether or not AI is anywhere near it. Hand that organization
-          a set of agents and it does not get those questions answered. It gets
-          them executed: unanswered, at machine speed, by a system that will not
-          pause to ask. The confusion was survivable when a human sat in every
-          loop, slow enough to catch it. Take the human out of the loop and the
-          confusion is what runs.
+          Agentic AI does not change that claim. It sharpens it. An organization that never named which decisions its workflows make, who carries them, and what evidence they stand on has a decision-system problem whether or not AI is anywhere near it. Hand that organization a set of agents and it does not get those questions answered. It gets them executed: unanswered, at machine speed, by a system that will not pause to ask. The confusion was survivable when a human sat in every loop, slow enough to catch it. Take the human out and the confusion itself runs the workflow.
         </P>
         <Pull>
           The unexamined decision system does not get fixed. It gets automated.
         </Pull>
         <P>
-          So the readiness question for agentic AI is not “is the technology
-          good enough.” The technology is good enough to force the governance
-          question, though not good enough for every action. The question is
-          whether the decision system underneath is clear enough to be worth
-          speeding up.
+          So the readiness question for agentic AI is not “is the technology good enough.” The technology is good enough to force the governance question, though not good enough for every action. The question is whether the underlying decision system is clear enough to be worth speeding up.
         </P>
 
         <H2>Putting the checkpoint back, on purpose</H2>
@@ -2784,25 +2665,15 @@ export const ESSAYS: Essay[] = [
           decision is.
         </P>
         <P>
-          The second move is recognizing that autonomy isn’t a binary setting.
-          An agent isn’t “autonomous” or “not.” For each task, in each
-          context, it sits somewhere on a range: from only returning
-          pre-verified responses, to acting within tight rules, to acting with
-          every consequential move reviewed first, to acting freely and
-          checked only by exception. The discipline is to calibrate that
-          range per decision, by stakes, not once and globally by habit. A
-          low-stakes, highly repeatable decision can sit well along the
-          range. A decision that is rare, hard to reverse, or lands on a
-          vulnerable person should not, however capable the model looks in a
-          demo.
+          The second move is recognizing that autonomy isn&rsquo;t a binary setting. An agent isn&rsquo;t “autonomous” or “not.” For each task, in each context, it sits somewhere on a range: from only returning pre-verified responses, to acting within tight rules, to acting with every consequential move reviewed first, to acting freely and checked only by exception. The discipline is to calibrate that range per decision, by stakes, not once and globally by habit. A low-stakes, highly repeatable decision can be placed well along the range. A decision that is rare, hard to reverse, or lands on a vulnerable person should not, however capable the model looks in a demo.
         </P>
         <P>
           In AB’s case, that calibration looks different across the same
-          engagement. Source-inventory tagging sits well along the range,
+          engagement. Source-inventory tagging belongs well along the range,
           because the criteria are pattern-matchable and the cost of an
           individual wrong tag is low and recoverable. Diagnostic
           prioritization, choosing which of the client’s many problems is the
-          highest-leverage gap to close first, sits much closer to the
+          highest-leverage gap to close first, belongs much closer to the
           human-only end. The criteria there (political readiness, sponsor
           energy, data quality, frontline pain) trade off against each other
           in ways the agent can’t yet weigh, and the cost of getting it wrong
@@ -2811,15 +2682,12 @@ export const ESSAYS: Essay[] = [
 
         <Figure
           src="/library/figures/ab-autonomy-range.svg"
-          alt="A horizontal autonomy spectrum with four decisions from AB's Deliver Signal workflow plotted at different points. Diagnostic prioritization and Frontline-versus-boardroom framing sit near the human-only end. Gap ranking is mid-spectrum, escalation-heavy. Source-inventory tagging sits well along the spectrum toward agent autonomy."
+          alt="A horizontal autonomy spectrum with four decisions from AB's Deliver Signal workflow plotted at different points. Diagnostic prioritization and Frontline-versus-boardroom framing sit near the human-only end. Gap ranking is mid-spectrum, escalation-heavy. Source-inventory tagging belongs well along the spectrum toward agent autonomy."
           caption="Autonomy range for AB's Deliver Signal workflow: same engagement, four decisions, each with its own calibration. Stakes set the position, not capability."
         />
 
         <P>
-          Readers of earlier pieces will recognize the shape: it is the same
-          risk-and-repeatability logic that decides where AI authority sits in
-          any deployment. Agentic AI does not introduce that question. It raises
-          the stakes on getting the answer written down.
+          Readers of earlier pieces will recognize the pattern: it is the same risk-and-repeatability logic that decides where AI authority sits in any deployment. Agentic AI does not introduce that question. It raises the stakes on getting the answer written down.
         </P>
 
         <H2>You cannot bolt safety onto the model</H2>
@@ -2827,26 +2695,14 @@ export const ESSAYS: Essay[] = [
           Two design truths close the loop, and both cut against instinct.
         </P>
         <P>
-          The first: do not rely on the model to keep itself safe. The
-          temptation is to make the model careful, with better instructions
-          and sterner prompts. But a system whose safety depends on the model
-          choosing well, every single time, has no safety at all. Safety has
-          to be built into the{" "}
-          <ArtifactLink slug="agent-system">structure around the model</ArtifactLink>
-          . Start with reversibility: an action designed to be undone has
-          margin for the other layers to fail. Then hard limits the agent cannot cross
-          because they are enforced in code, not requested in a prompt. Then
-          an independent second check that does not share the first model’s
-          blind spots. Then a human escalation path more than one person
-          deep. Layered defense, because any single layer will eventually
-          fail, and the design has to assume it.
+          The first: do not rely on the model to keep itself safe. The temptation is to make the model careful, with better instructions and sterner prompts. But a system whose safety depends on the model choosing well, every single time, has no safety at all. Safety has to be built into the <a href="/library#artifact-agent-system" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><ArtifactLink slug="agent-system">structure around the model</ArtifactLink></a> . Start with reversibility: an action designed to be undone has margin for the other layers to fail. Then hard limits the agent cannot cross because they are coded in, not requested in a prompt. Then an independent second check that does not share the first model&rsquo;s blind spots. Then a human escalation path more than one person deep. Layered defense, because any single layer will eventually fail, and the design has to assume it.
         </P>
         <P>
           For AB’s Deliver Signal workflow, that stack looks specific. The
           agent’s outputs (source tags, gap rankings, draft dashboards) are
           all reversible because the artifact lives in AB’s working
           environment, not in client production systems, until I sign off.
-          The hard limits live in code: the agent cannot touch regulated-data
+          The hard limits are coded in: the agent cannot touch regulated-data
           systems without my explicit pre-approval, and it cannot ship a
           deliverable to a client. The independent check is a separate model
           reviewing the synthesizer’s gap rankings before they make it into a
@@ -2855,15 +2711,7 @@ export const ESSAYS: Essay[] = [
           answer.
         </P>
         <P>
-          The second design truth is the comparison the conversation most
-          often gets wrong. The question to ask of an agent is not “does it
-          make mistakes?” Of course it does. So does the human process it
-          would replace. The honest question is whether this agent, with its
-          safeguards, produces better decisions than the process it replaces,
-          on the dimensions that matter. That reframe keeps the conversation
-          off a fantasy (agent versus perfection) and on the real choice: the
-          agent and its safeguards together, weighed against a status quo
-          that had its own error rate all along, usually unmeasured.
+          The second design truth is the comparison the conversation most often gets wrong. The question to ask of an agent is not “does it make mistakes?” Of course it does. So does the human process it would replace. The real question is whether this agent, with its safeguards, produces better decisions than the process it replaces, on the dimensions that matter. That reframe keeps the conversation off a fantasy (agent versus perfection) and on the real choice: the agent and its safeguards together, weighed against a status quo that had its own error rate all along, usually unmeasured.
         </P>
         <P>
           This is also where AB’s ed-tech and behavioral-health client
@@ -2878,12 +2726,7 @@ export const ESSAYS: Essay[] = [
           Officer or whoever holds the regulated-data accountability.
         </P>
         <P>
-          Evaluation does not end at launch. Because the model drifts, an
-          agent has to be watched continuously: its override rate, its
-          disagreement signals, its slow slide as the ground shifts. The
-          monitoring surface is no longer a quarterly report but a
-          conversation you are now having with a system still out there
-          making decisions in your name.
+          Evaluation does not end at launch. Because the model drifts, an agent has to be watched continuously: its override rate, its disagreement signals, its slow drift as conditions change. Monitoring is no longer a quarterly report; it is an ongoing conversation with a system that continues to make decisions in your name.
         </P>
 
         <H2>The job becomes management, not use</H2>
@@ -2895,14 +2738,7 @@ export const ESSAYS: Essay[] = [
           named owner: a specific person accountable for what it does.
         </P>
         <P>
-          Managing an agent is a new job, with new responsibilities that no
-          prior role quite contained. The owner calibrates the thresholds as the agent’s behavior drifts, and
-          it will drift, because the model underneath gets upgraded by a
-          vendor on a schedule nobody consulted you about. The owner decides
-          which patterns the agent carries forward and which it lets go. And
-          the owner does the hardest thing of all: refusal. Deciding, in real
-          time, that a particular case is one the agent should not touch, and
-          being able to defend that call.
+          Managing an agent is a new job, with new responsibilities that no prior role quite contained. The owner calibrates the thresholds as the agent&rsquo;s behavior drifts, and it will drift, because the model underneath gets upgraded by a vendor on a schedule nobody consulted you about. The owner decides which patterns the agent should retain and which it should drop. And the owner does the hardest thing of all: refuses to let the agent act. Deciding, in real time, that a particular case is one the agent should not touch, and being able to defend that call.
         </P>
         <P>
           For AB’s first agentic workflow, I’m the day-to-day owner. That’s
@@ -2916,11 +2752,7 @@ export const ESSAYS: Essay[] = [
           generic engineer.
         </P>
         <P>
-          An organization that deploys agents without naming who owns each
-          one has installed a decision-maker without an accountable seat.
-          When the agent makes a bad call, the question of who carries it has
-          no answer prepared, and the cycle that follows tends to be slower
-          than the call that caused it.
+          An organization that deploys agents without naming who owns each one has installed a decision-maker with no one accountable for it. When the agent makes a bad call, the question of who carries it has no answer prepared, and the response tends to be slower than the original bad call.
         </P>
 
         <H2>What this asks of a leader</H2>
@@ -2934,20 +2766,10 @@ export const ESSAYS: Essay[] = [
           effect is that it removed the option of leaving them unasked.
         </P>
         <P>
-          For AB, working through that list is the work, not a preliminary to
-          the work. The Deliver Signal workflow gets handed to an agent only
-          after the decisions inside it have been named, the owners assigned,
-          the thresholds drawn, the safeguards built. An organization that
-          does this first can gain real speed without losing the thread. An
-          organization that hands an agent its confusion gets the confusion
-          back faster, with no human in the loop slow enough to notice.
+          For AB, working through that list is the work, not a preliminary to the work. The Deliver Signal workflow gets handed to an agent only after the decisions inside it have been named, the owners assigned, the thresholds drawn, the safeguards built. An organization that does this first can gain real speed without losing coherence. An organization that hands an agent its confusion gets the confusion back faster, with no human in the loop slow enough to notice.
         </P>
         <P>
-          The discipline is not in any single safeguard. It is in the
-          architecture, the cadence, and the refusal to relax the bound at the
-          moment relaxing it would be convenient. <I>From fragmented to
-          decision-ready</I> was always the work. Agentic AI did not change
-          that. It only raised the price of skipping it.
+          The discipline is not in any single safeguard. It is in the architecture, the cadence, and the refusal to loosen the constraint at the moment loosening it would be convenient. <I>From fragmented to decision-ready</I> was always the work. Agentic AI did not change that. It only raised the price of skipping it.
         </P>
 
                 <SeeAlso>
@@ -3004,68 +2826,23 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            By the start of 2026, most universities had done the visible work of
-            putting AI on the institutional agenda. They had written policies on
-            student and faculty use, stood up AI committees and working groups,
-            and run pilots — assistants for student services, drafting tools for
-            administrative staff, models that flag students who might be
-            slipping. The scaffolding went up quickly, and under genuine
-            pressure: a contracting enrollment as the{" "}
-            <a
+          By the start of 2026, most universities had done the visible work of responding to artificial intelligence. They had written policies on student and faculty use. They had stood up AI committees and working groups. They had run pilots: assistants for student services, drafting tools for administrative staff, models that flag students who might be slipping. The scaffolding went up quickly, under real pressure. Enrollment is contracting as the <a
               href="https://www.press.jhu.edu/books/title/11859/demographics-and-demand-higher-education"
               target="_blank"
               rel="noopener"
               className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
             >
               demographic cliff
-            </a>{" "}
-            arrives, public skepticism about the return on a degree, tightened
-            federal funding and tax conditions, and a sector that{" "}
-            <a
-              href="https://www.deloitte.com/us/en/insights/industry/articles-on-higher-education/2026-higher-education-trends.html"
-              target="_blank"
-              rel="noopener"
-              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-            >
-              Deloitte’s 2026 higher education outlook
-            </a>{" "}
-            describes as moving from a long period of growth into one of
-            disciplined focus, with the business model under scrutiny and risk
-            management demanding tighter coordination across offices that once
-            operated siloed. AI arrived in the middle of all
-            of it, as both another pressure and a promised relief.
-          </p>
+            </a> arrives. The public is questioning the return on a degree. Federal funding and tax conditions have tightened. Deloitte&rsquo;s 2026 higher education outlook describes a sector moving from a long period of growth into one of disciplined focus on core priorities, with the business model itself under scrutiny and risk management demanding tighter coordination across offices that once operated apart. AI arrived in the middle of all of it, as both another pressure and a promised relief.
+        </p>
           <p>
-            The role of the technology executive has shifted with it. In{" "}
-            <a
-              href="https://www.deloitte.com/us/en/programs/chief-information-officer/articles/global-technology-leadership-study.html"
-              target="_blank"
-              rel="noopener"
-              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-            >
-              Deloitte’s 2026 Global Technology Leadership Study
-            </a>
-            , based on responses from more than 660 tech leaders, the large
-            majority of CIOs described their primary job as implementing AI or
-            evangelizing for it across the institution, a shift the report
-            frames as moving from keeping the lights on to lighting the way
-            forward. That shift
-            is real and, on balance, healthy. But it carries a quiet cost: when
-            the mandate becomes adoption, evaluation tends to be assumed rather
-            than performed.
-          </p>
+          The role of the technology executive has shifted with it. In Deloitte&rsquo;s 2026 study of technology leaders, the large majority of CIOs described their primary job as implementing AI across the institution or serving as evangelists for it, moving, in the report&rsquo;s phrase, from keeping the lights on to lighting the way forward. That shift is real and, on balance, healthy. But there is a cost. When the mandate becomes adoption, we assume evaluation instead of performing it.
+        </p>
         </Brief>
 
         <H2>The question that gets skipped</H2>
         <P>
-          There is a gap I keep noticing. Universities have become fluent in
-          two questions about AI: should we use it, and what are the rules for
-          using it. Those are the questions a policy answers and a committee
-          debates, and they are necessary. But they are not the question that
-          determines whether a given AI system (the deployed model plus the
-          workflow it is sitting inside) is doing its job. That question is
-          narrower and harder: does this specific system do what we claim it
-          does?
+          There is a gap I keep noticing. Universities have become fluent in two questions about AI: should we use it, and what are the rules for using it. Those are the questions a policy answers and a committee debates, and they are necessary. But they are not the question that determines whether a given AI system is doing its job. That question is narrower and harder: does this specific system do what we claim it does?
         </P>
         <P>
           It is an easy question to skip. A tool gets adopted because it is
@@ -3079,38 +2856,13 @@ export const ESSAYS: Essay[] = [
 
         <H2>What seven years of scoring engines taught me</H2>
         <P>
-          I spent seven years at the Educational Testing Service evaluating
-          AI-driven scoring systems — the engines that score essays and spoken
-          responses on large-scale assessments. That work taught me something I
-          have never been able to un-see, and it is the reason this gap worries
-          me.
+          I spent seven years at the Educational Testing Service evaluating AI-driven scoring systems — the engines that score essays and spoken responses on large-scale assessments. That work is where I first noticed this pattern.
         </P>
         <P>
-          When you build an automated scoring model, the obvious way to judge it
-          is agreement: how often does the machine’s score match a trained human
-          rater’s score? It is a clean number, and it is reassuring. It is also
-          not sufficient. A model can agree with human raters at a high rate and
-          still be measuring the wrong thing. It can learn that longer essays
-          tend to score higher, and quietly reward length. It can lean on
-          vocabulary, sentence count, surface fluency: features that correlate
-          with quality without being quality. The scores look right. The
-          agreement statistics look right. And underneath, the system is
-          measuring something other than what its label claims.
+          When you build an automated scoring model, the obvious way to judge it is agreement: how often does the machine&rsquo;s score match a trained human rater&rsquo;s score? It is a clean number, and it is reassuring. It is also not sufficient. A model can agree with human raters at a high rate and still be measuring the wrong thing. It can learn that longer essays tend to score higher, and quietly reward length. It can lean on vocabulary, sentence count, surface fluency: features that correlate with quality without being quality. The scores look right. The agreement statistics look right. And the system is measuring something other than what its label claims.
         </P>
         <P>
-          The discipline of measurement science exists, in large part, to catch
-          exactly that. The question it trains you to ask is the one I have
-          carried into every kind of data work since: what is this system
-          actually measuring, and does that match what we say it measures? Not
-          whether the output looks plausible, but whether the thing being
-          measured is the thing we intended. An automated scoring engine that
-          earns its agreement by rewarding length is not a writing-quality
-          measure. It is a length measure with a writing-quality label. The
-          difference looks small in aggregate. It is decisive for{" "}
-          <ArtifactLink slug="fair-for-whom">
-            the writers the correlation doesn’t hold for
-          </ArtifactLink>
-          .
+          The discipline of measurement science exists, in large part, to catch exactly that. The question it trains you to ask is the one I have used in every kind of data work since: what is this system actually measuring, and does that match what we say it measures? Not whether the output looks plausible, but whether the thing being measured is the thing we intended. An automated scoring engine that earns its agreement by rewarding length is not a writing-quality measure. It is a length measure with a writing-quality label.
         </P>
 
         <Figure
@@ -3192,28 +2944,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>Every system makes a claim</H2>
         <P>
-          Every AI system a university adopts makes a claim like that label,
-          and most of the claims are never written down. An early-alert model claims to identify students at
-          academic risk. An advising assistant claims to surface the guidance a
-          student needs. An admissions-support tool claims to predict yield, or
-          fit, or success. A staff-facing assistant claims to produce work
-          accurate enough to act on. Each is a statement about an intended
-          outcome. And each can be wrong in the specific, quiet way an
-          automated scoring engine can be wrong, tracking a surface signal
-          while missing the substance, because the claim was implicit and no
-          one was assigned to check it.
+          Every AI system a university adopts makes a claim like that label, and most of the claims are never written down. An early-alert model claims to identify students at academic risk. An advising assistant claims to surface the guidance a student needs. An admissions-support tool claims to predict yield, or fit, or success. A staff-facing assistant claims to produce work accurate enough to act on. Each is a statement about an intended outcome. And each can be wrong the way an automated scoring engine can be wrong — tracking a surface signal, missing the substance, because the claim was implicit and no one was assigned to check it.
         </P>
         <P>
-          The early-alert model is the cleanest example. Built without care, it
-          can learn that the strongest predictor of risk in the historical
-          record is a demographic pattern, or a single missed assignment, or
-          enrollment in one difficult course. It will flag students, and the
-          flags will even be partly accurate. But a model that flags students
-          by proxy is not measuring academic risk; it is measuring the proxy,
-          and routing the institution’s attention and resources accordingly.
-          No one set out to build that system. It is what results when a tool
-          is adopted on plausibility and never asked the intended-outcome
-          question.
+          The early-alert model is the cleanest example. Built without care, it can learn that the strongest predictor of risk in the historical record is a demographic pattern, or a single missed assignment, or enrollment in one difficult course. It will flag students, and the flags will even be partly accurate. But a model that flags students by proxy measures the proxy, not the risk — and sends the institution&rsquo;s attention and resources there instead. No one set out to build that system. It is what results when a tool is adopted on plausibility and never asked the intended-outcome question.
         </P>
         <P>
           Generative and agentic tools make the problem harder, not easier. A
@@ -3238,57 +2972,15 @@ export const ESSAYS: Essay[] = [
 
         <H2>The discipline already exists</H2>
         <P>
-          This is the missing discipline inside AI governance.{" "}
-          <a
-            href="https://www.educause.edu/research-and-publications/research/top-10-it-issues-technologies-and-trends/2026"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            EDUCAUSE’s 2026 Top 10 IT Issues
-          </a>{" "}
-          name the human edge of AI, and data analytics for institutional
-          decision-making, among the issues that matter most.
-          University technology leaders have been clear that the next phase of
-          AI work is operational, moving from written policy to running
-          practice. Evaluation is the part of that practice most easily
-          skipped, because it is invisible when it is working and expensive to
-          do well. It is also the part that decides whether everything else is
-          real.
+          This is the missing discipline inside AI governance. EDUCAUSE&rsquo;s 2026 priorities name the human edge of AI, and data analytics for institutional decision-making, among the issues that matter most. University technology leaders have been clear that the next phase of AI work is operational, moving from written policy to running practice. Evaluation is the easiest part of that practice to skip, because it is invisible when it is working and expensive to do well. It also decides whether everything else is real.
         </P>
         <P>
-          Applying the discipline does not mean slowing adoption, and it does
-          not mean another layer of bureaucracy. It means a small set of hard
-          questions, asked consistently: before a system is trusted, and
-          periodically after. Is the system measuring the intended construct,
-          or a proxy for it? When it is wrong, what happens downstream, and to
-          whom? Does it perform consistently across the different groups of
-          people it touches, or does its accuracy concentrate where the
-          training data was richest? What human decision is the system meant to
-          support, and does its output improve that decision? None of these
-          questions is exotic. They are the ordinary questions of
-          measurement. A university that has an institutional research office
-          and an assessment culture already employs people who know how to ask
-          them. Those people have simply not yet been pointed at the AI
-          systems moving into administrative use.
+          Applying the discipline does not mean slowing adoption, and it does not mean another layer of bureaucracy. It means a small set of hard questions, asked consistently: before a system is trusted, and periodically after. Is the system measuring the intended construct, or a proxy for it? When it is wrong, what happens downstream, and to whom? Does it perform consistently across the different groups of people it touches, or does its accuracy concentrate where the training data was richest? What human decision is the system meant to support, and does its output improve that decision? None of these questions is exotic. They are the ordinary questions of measurement. A university that has an institutional research office and an assessment culture already employs people who know how to ask them. No one has pointed them at the AI systems moving into administrative use yet.
         </P>
 
         <H2>Seeing the student whole</H2>
         <P>
-          There is a deeper version of the intended-outcome question, and in a
-          university it is the one that matters most. When we ask what a
-          system is actually measuring, we are often really asking whether it
-          sees a person whole. An early-alert model that optimizes a retention
-          number is not the same as one that helps an institution understand
-          and support a student. The first reduces the student to the outcome
-          the institution wants to protect. The second treats the number as a
-          signal that points back toward a person, one with a context, a
-          trajectory, and reasons. Asked seriously, the intended-outcome
-          question is a check against the quiet drift toward measuring students
-          as proxies for the metrics we happen to collect. A university, of
-          all institutions, should want its systems to see students whole.
-          That is not a sentiment. It is an evaluation standard, it is
-          answerable, and it is the standard worth holding AI to.
+          There is a deeper version of the intended-outcome question, and in a university it is the one that matters most. When we ask what a system is actually measuring, we are often really asking whether it sees a person whole. An early-alert model that optimizes a retention number reduces the student to the outcome the institution wants to protect. A model built to help the institution understand and support a student treats the number as a signal that points back toward a person, one with a context, a trajectory, and reasons. Asked seriously, the intended-outcome question is a check against measuring students as proxies for the metrics we happen to collect. A university, of all institutions, should want its systems to see students whole. That is an evaluation standard, not a sentiment — it is answerable, and it is the standard worth holding AI to.
         </P>
         <P>
           One clarification, because the easiest misread of this argument is
@@ -3312,16 +3004,7 @@ export const ESSAYS: Essay[] = [
           been shaping decisions, unnoticed, for two years.
         </P>
         <P>
-          That discipline does not need to be invented. Higher education has
-          spent decades building the science of measuring hard things well and
-          holding the measurements accountable to what they claim. The same
-          rigor that asks whether an essay score reflects writing or length can
-          ask whether an early-alert flag reflects risk or a proxy for it. The
-          question travels intact; it is the same question. Higher education’s
-          AI moment does not need a new framework so much as it needs to turn
-          an old and well-tested one toward a new set of systems, and to ask,
-          of every system it adopts, the plain and demanding question: what is
-          this actually measuring, and is that what we meant?
+          That discipline does not need to be invented. Higher education has spent decades building the science of measuring hard things well and holding the measurements accountable to what they claim. The same rigor that asks whether an essay score reflects writing or length can ask whether an early-alert flag reflects risk or a proxy for it. It is the same question. Higher education&rsquo;s AI moment does not need a new framework so much as it needs to turn an old and well-tested one toward a new set of systems, and to ask, of every system it adopts, the plain and demanding question: what is this actually measuring, and is that what we meant?
         </P>
 
         {/* DOWNLOAD BUNDLE — three operating documents that turn this essay's
@@ -3443,13 +3126,8 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            The interview take-home is a strange little genre. A stranger hands
-            you their messiest data situation, gives you somewhere between two
-            hours and five days, and asks you to diagnose it and design
-            something. Cold — no colleagues, no institutional memory, a clock
-            running. Most people do one or two over a career and never think
-            about them again.
-          </p>
+          The interview take-home is a strange little genre. A stranger hands you their messiest data situation, gives you somewhere between two hours and five days, and asks you to diagnose it and design something. Cold — no colleagues, no institutional memory, a clock running. Most people do one or two over a career and never think about them again. Over the past decade I did more than a dozen, for organizations across K-12 charter networks, national education nonprofits, youth mental health, and assessment. Read one at a time, they were job interviews. Read as a set, they are something more useful: the same diagnostic, run on a dozen organizations, by the same person, under the same constraints. A natural experiment, and it has a result. A small number of failures showed up in almost every one. This piece is what the set revealed. It is written for any leader who has opened a data role, approved a dashboard, and wondered why the decisions never got sharper.
+        </p>
           <p>
             Over the past decade I did more than a dozen, for organizations
             across K-12 charter networks, national education nonprofits, youth
@@ -3465,19 +3143,20 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          A take-home is a compressed, unusually honest instrument. The clock is
-          short, so the organization cannot dress the problem up. It has to hand
-          you the thing it wants help with. And what an organization reaches for
-          when it wants help tells you, with some precision, how it understands
-          its own data. Do enough of them and the individual scenarios blur, but
-          the shape underneath stops being noise. The same handful of things are
-          wrong, and wrong in the same order.
+          A take-home is short, and the pressure keeps the organization
+          honest. The clock is short, so the organization cannot dress
+          the problem up. It hands you the thing it wants help with.
+          And what an organization reaches for when it wants help tells
+          you, with some precision, how it understands its own data.
+          Do enough of them and the individual scenarios blur, but the
+          shape underneath stops being noise. The same handful of
+          things are wrong, and wrong in the same order.
         </P>
         <P>
-          Say this plainly first: none of these organizations was bad at data.
-          That is the part worth sitting with. Most had real systems, real
-          analysts, real dashboards. They were good at data and still stuck.
-          That is the whole point, and the rest of this piece is why.
+          First, plainly: none of these organizations was bad at data.
+          Sit with that for a moment. Most had real systems, real
+          analysts, real dashboards. They were good at data and still
+          stuck. That is the point, and the rest of this piece is why.
         </P>
 
         <H2>The brief that names everything but the decision</H2>
@@ -3491,25 +3170,10 @@ export const ESSAYS: Essay[] = [
           the last line: anything else you find interesting.
         </P>
         <P>
-          It is a completely reasonable request. Read closely, it is also a
-          request for outputs, not a decision. Six questions, a slide deck, an
-          hour, and nothing about what gets <I>done</I> differently once the
-          slides go up. “Anything else you find interesting” is the tell. If a
-          decision were driving the request, “interesting” would already be
-          defined — interesting <I>toward what</I>. Its absence means the
-          analysis has become the destination.
+          It is a completely reasonable request. Read closely, it is also a request for outputs, not a decision. Six questions, a slide deck, an hour, and nothing about what gets <I>done</I> differently once the slides go up. “Anything else you find interesting” gives it away. If a decision were driving the request, “interesting” would already be defined — interesting <I>toward what.</I> Its absence means the analysis is the point, not a decision it feeds.
         </P>
         <P>
-          Nearly every take-home had this shape. Build the dashboard. Write the
-          trends report. Produce the plan. A surprising share did not ask for
-          analysis-toward-a-decision at all. They asked for <I>compliance</I>:
-          get the new state attendance codes computing correctly, get the
-          course-collection feed accurate and auditable. That is necessary work.
-          But compliance is the purest form of the pattern, an output the
-          organization must produce with no decision attached to it at all. When
-          most of what a data function is handed is outputs and filings, it
-          becomes a service desk. And a service desk, however fast, however
-          good, never gets to the decision.
+          Nearly every take-home had this shape. Build the dashboard, write the trends report, produce the plan. A surprising share did not ask for analysis-toward-a-decision at all. They asked for <I>compliance:</I> get the new state attendance codes computing correctly, get the course-collection feed accurate and auditable — necessary work, but compliance is the purest form of the pattern, an output the organization must produce with no decision attached to it at all. When most of what a data function is handed is outputs and filings, it becomes a service desk — and a service desk never gets to the decision, however fast it moves.
         </P>
 
         <H2>The two-line change that touches seven systems</H2>
@@ -3526,15 +3190,7 @@ export const ESSAYS: Essay[] = [
           file. Two codes. Seven systems.
         </P>
         <P>
-          That task is not hard because attendance is conceptually difficult. It
-          is hard because the concept “attendance” is defined in seven places,
-          with no single place to change it. This is the fault line under half
-          the take-homes: the organization has no canonical definition of its
-          own core measures, so every measure exists in several slightly
-          different versions, and any change, or any disagreement about a
-          number, becomes an archaeology project. An organization in that state
-          is not one tool away from fixed. It is one decision away — the
-          decision that each measure means one thing, computed in one place.
+          That task is not hard because attendance is conceptually difficult. It is hard because the concept “attendance” is <I>defined in seven places,</I> with no single place to change it. This is the common problem across half the take-homes: the organization has no canonical definition of its own core measures, so every measure exists in several slightly different versions, and any change, or any disagreement about a number, takes weeks to trace. An organization in that state is one decision away from fixed, not one tool — the decision that each measure means one thing, computed in one place.
         </P>
 
         <H2>A dashboard is not a decision surface</H2>
@@ -3553,13 +3209,7 @@ export const ESSAYS: Essay[] = [
           board-reporting object.
         </P>
         <P>
-          The difference is not cosmetic. An organization that asks for “a
-          dashboard” and an organization that asks for “the Monday-morning
-          surface the enrollment lead decides from” will get two different
-          objects. The first is a display. The second is a decision surface,
-          built backward from a decision, an owner, and a cadence. Both have
-          charts on them. Only the second changes what happens on Monday. Most
-          briefs ask for the first and hope for the second.
+          The difference is not cosmetic. An organization that asks for “a dashboard” and an organization that asks for “the Monday-morning surface the enrollment lead decides from” will get two different objects. The first is a display. The second is a decision surface, built backward from a decision, an owner, and a cadence. Only the second changes what happens on Monday. Most briefs ask for the first and hope for the second.
         </P>
 
         <Figure
@@ -3570,11 +3220,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The organization hires a person to be the system it never built</H2>
         <P>
-          Several take-homes asked for leadership-grade systems thinking: a
-          first-ninety-days plan, a risk-and-change-management plan for
-          replacing core systems across several regions at once, a strategy for
-          collecting and safeguarding sensitive personal data. Anticipate
-          resistance. Build buy-in. See around corners.
+          Several take-homes asked for leadership-grade systems thinking: a first-ninety-days plan, a risk-and-change-management plan for replacing core systems across several regions at once, a strategy for collecting and safeguarding sensitive personal data. Anticipate resistance, build buy-in.
         </P>
         <P>
           These are the right things to ask of a senior hire. But the
@@ -3585,9 +3231,9 @@ export const ESSAYS: Essay[] = [
           corners.
         </P>
         <P>
-          A person is not a system. A person takes vacation, gets pulled into a
+          A person takes vacation, gets pulled into a
           crisis, and eventually leaves. When they go, the systems thinking
-          walks out with them. The take-home that asks for a brilliant
+          goes with them. The take-home that asks for a brilliant
           ninety-day plan is, underneath, an organization hoping a hire will
           substitute for an architecture. The best version of that hire spends
           the ninety days building the architecture instead, so the organization
@@ -3614,42 +3260,18 @@ export const ESSAYS: Essay[] = [
 
         <H2>What the set adds up to</H2>
         <P>
-          Read together, more than a dozen take-homes point at one thing, and it
-          is not a skills gap. These organizations had analysts, tools, and
-          dashboards. What they did not have was the layer between the analysis
-          and the decision: a canonical definition of each measure, a surface
-          built backward from a specific recurring call, a distribution system
-          that speaks to every audience without redoing the work, and an
-          architecture that outlives the person who built it.
+          Read together, more than a dozen take-homes point at one thing, and it is not a skills gap. These organizations had analysts, tools, and dashboards. They did not have the connective tissue between analysis and decision: a canonical definition of each measure, a surface built backward from a specific recurring call, a distribution system that speaks to every audience without redoing the work, and an architecture that keeps working after the person who built it leaves.
         </P>
         <P>
-          That layer has a name. It is the decision system. And the take-home is
-          an honest instrument because it catches an organization in the act of
-          reaching for more analysis, under real pressure and in good faith,
-          when the thing missing is the system that connects analysis to a
-          decision.
+          That layer has a name. It is the decision system. And the take-home is an honest instrument because it catches an organization reaching for more analysis, under real pressure and in good faith, when the thing missing is the system that connects analysis to a decision.
         </P>
 
         <H2>The reframe</H2>
         <P>
-          A decade of take-homes taught me one habit, and it is the one I would
-          hand to anyone who commissions this kind of work. When an organization
-          gives you a data problem, the first job is not to answer it. It is to
-          find the decision underneath, the one the brief did not name, and
-          answer <I>that</I>. The slides the principal asked for take an hour.
-          The question of which students get which support this term, who owns
-          that call, and from what surface they make it — that is the work, and
-          the brief never mentioned it.
+          A decade of take-homes taught me one habit, and it is the one I would hand to anyone who commissions this kind of work. When an organization gives you a data problem, the first job is not to answer it. It is to find the decision the brief did not name, and answer <I>that.</I> The slides the principal asked for take an hour. The question of which students get which support this term, who owns that call, and from what surface they make it — that is the work, and the brief never mentioned it.
         </P>
         <P>
-          Do that a dozen times and something shifts in how you see. You stop
-          seeing data problems. You start seeing decision systems with one part
-          missing, and often you can name the missing part inside the first
-          honest conversation. That is the whole of it. Most organizations do not have a data
-          problem. They have a decision-system problem, and a take-home is a
-          short, honest way to surface one. <I>From fragmented to
-          decision-ready</I> is the distance between the brief they wrote and the
-          brief they meant.
+          Do that a dozen times and your eye changes. You stop seeing data problems. You start seeing decision systems with one part missing, and more often than not you can name the missing part before lunch. Most organizations do not have a data problem. They have a decision-system problem, and a take-home is a short, honest way to surface one. <I>From fragmented to decision-ready</I> is the distance between the brief they wrote and the brief they meant.
         </P>
 
         <SeeAlso>
@@ -3725,61 +3347,13 @@ export const ESSAYS: Essay[] = [
         <H2>The framework is necessary but insufficient</H2>
 
         <P>
-          Governance councils default to architecture, and they have
-          well-developed frames to draw on.{" "}
-          <a
-            href="https://dama.org/learning-resources/dama-data-management-body-of-knowledge-dmbok/"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            DAMA’s Data Management Body of Knowledge
-          </a>{" "}
-          organizes the field into eleven knowledge areas with governance at
-          the center: architecture, modeling, integration, quality, metadata,
-          master and reference data, and the rest.{" "}
-          <a
-            href="https://www.educause.edu/showcase-series/2025/the-data-empowered-institution"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            EDUCAUSE’s data-empowered-institution model
-          </a>{" "}
-          distills the higher-education version to five components — data
-          quality, integration, governance, management, and literacy. Both frames
-          are correct about what to build. Both are necessary. Both are
-          also insufficient. The actual operational work that makes
-          governance hold (getting the registrar, financial aid,
-          institutional research, and the deans into the same room to
-          decide which version of “persistence” gets used where, and why
-          each version exists) is slow, unglamorous, and often unwritten.
-          Most councils never do it. The framework looks complete. The
-          numbers still do not agree.
+          Governance councils default to architecture, and they have well-developed frames to draw on. DAMA&rsquo;s Data Management Body of Knowledge organizes the field into eleven knowledge areas with governance at the center: architecture, modeling, integration, quality, metadata, master and reference data, and the rest. EDUCAUSE&rsquo;s data-empowered-institution model distills the higher-education version to five components — data quality, integration, governance, management, and literacy. Both frames are correct about what to build. Both are necessary. Both are also insufficient. The operational work that makes governance stick — getting the registrar, financial aid, institutional research, and the deans into the same room to decide which version of “persistence” gets used where, and why each version exists — is slow, unglamorous, and often unwritten. Most councils never do it. The framework looks complete. The numbers still do not agree.
         </P>
 
         <H2>Three definitions, one number, eight recalculations</H2>
 
         <P>
-          At a K–8 charter network operating across multiple campuses,
-          student persistence was formally defined at least three different
-          ways at the same time. From day one of the school year to the
-          last day, for program-completion reporting. From one annual state
-          census day to the next year’s census day, for state
-          accountability. From the first day of school to that same year’s
-          census date, for early-year persistence reporting. Those
-          translations fed into still more obligations (S&amp;P bond-rating
-          reporting, principal incentive calculations, enrollment
-          forecasting, federal accountability), each of which required a
-          particular version. None of the definitions could be discarded;
-          each existed because a real obligation required exactly that
-          version. In one year alone, the same persistence number was
-          independently recalculated eight or more times across the
-          network’s reports: every recalculation correct under its own
-          definition, none of them agreeing with the others. And yet the
-          institution still had to be able to talk about persistence
-          without the conversation fragmenting into a definitional argument
-          every time it came up.
+          At a K–8 charter network operating across multiple campuses, student persistence was formally defined at least three different ways at the same time. From day one of the school year to the last day, for program-completion reporting. From one annual state census day to the next year&rsquo;s census day, for state accountability. From the first day of school to that same year&rsquo;s census date, for early-year persistence reporting. Those translations fed into still more obligations (S&P bond-rating reporting, principal incentive calculations, enrollment forecasting, federal accountability), each of which required a particular version. You cannot discard any of them; each one exists because a real obligation requires exactly that version. In one year alone, the same persistence number was independently recalculated eight or more times across the network&rsquo;s reports: every recalculation correct under its own definition, none of them agreeing with the others. And yet the institution still had to be able to talk about persistence without the conversation fragmenting into a definitional argument every time it came up.
         </P>
 
         <Figure
@@ -3789,45 +3363,11 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          The same gap now carries a second cost, and it arrives as
-          consumption rather than confusion. When an analyst recalculated
-          persistence eight ways, the institution was spending labor it had
-          already paid for in salary. When an agent does that work, each
-          version it computes is a metered call against a model. Ask an agent
-          for the persistence rate against ungoverned definitions and it has
-          no basis to pick one; it can compute every plausible version, or
-          recompute the same one on every request, because nothing in the
-          data told it which definition the question meant. The stuck meeting
-          was the human-scale symptom of missing definitional reconciliation.
-          Metered recomputation is the machine-scale symptom of the same
-          missing thing. A governed number that names which definition feeds
-          which obligation does not just end the disagreement; it keeps the
-          agent from paying to generate versions no one asked for. The
-          semantic layer was always a correctness control. Pointed at an
-          agent that runs at machine cadence and bills per call, it becomes
-          a consumption control too, and the spend, like the disagreement,
-          traces back to whether the words were settled first.
+          The same gap now has a second cost, and it shows up as consumption rather than confusion. When an analyst recalculated persistence eight ways, the institution was spending labor it had already paid for in salary. When an agent does that work, each version it computes is a metered call against a model. Ask an agent for the persistence rate against ungoverned definitions and it has no basis to pick one; it can compute every plausible version, or recompute the same one on every request, because nothing in the data told it which definition the question meant. The stuck meeting was the human-scale symptom of missing definitional reconciliation. Metered recomputation is the machine-scale symptom of the same missing thing. A governed number that names which definition feeds which obligation ends the disagreement. It also keeps the agent from paying to generate versions no one asked for. The semantic layer was always a correctness control. Pointed at an agent that runs at machine cadence and bills per call, it becomes a consumption control too, and the spend, like the disagreement, comes back to whether the words were settled first.
         </P>
 
         <P>
-          The work that closed the gap was not a framework. It was
-          definitional reconciliation. The team mapped every reporting
-          obligation to its required definition. Each definition was named
-          explicitly. The relationships among them were established: how
-          one translated to another, which report drew which number from
-          where, what shared baseline assumptions sat underneath. Then a
-          small set of trusted, governed numbers fed every obligation with
-          the correct version, so that one set of dashboards could serve
-          all of them without any of them being wrong. With that
-          definitional reconciliation as the foundation, data completeness
-          rose from 60 percent to 90 percent, principal dashboard adoption
-          reached 70 percent, and reporting lag dropped by 40 percent. The
-          framework looked the same after that work as it had before. The
-          numbers themselves did not become identical; the framework still
-          required several different ones, for several different
-          obligations. What changed was that the words underneath each one
-          started meaning the same thing in the same place, and the
-          disagreements stopped.
+          The work that closed the gap was not a framework. It was definitional reconciliation. The team mapped every reporting obligation to its required definition. Each definition was named explicitly. The relationships among them were established: how one translated to another, which report drew which number from where, what shared baseline assumptions each one relied on. Then a small set of trusted, governed numbers fed every obligation with the correct version, so that one set of dashboards could serve all of them without any of them being wrong. With that definitional reconciliation as the foundation, data completeness rose from 60 percent to 90 percent, principal dashboard adoption reached 70 percent, and reporting lag dropped by 40 percent. The framework looked the same after that work as it had before. The numbers themselves did not become identical; the framework still required several different ones, for several different obligations. What changed was that the words behind each number started meaning the same thing across the institution, and the disagreements stopped.
         </P>
 
         <H2>The same problem across time: crosswalks</H2>
@@ -3848,7 +3388,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          What holds that work together, in modern data-stack terms, is a
+          What keeps that work coherent, in modern data-stack terms, is a
           semantic layer above the raw data tables: explicit canonical
           definitions for each construct, maintained as the underlying
           instruments evolve, with the discipline of crosswalks. The
@@ -3856,12 +3396,12 @@ export const ESSAYS: Essay[] = [
           maps to the same construct asked slightly differently in the
           next, with documented limits of comparability and documented gaps
           where comparison is not warranted. In practice the semantic
-          layer might live as a separate analytics schema sitting above raw
+          layer might be a separate analytics schema above raw
           tables, reachable from dashboards through whatever read interface
-          fits the stack (PySpark or otherwise), and the field-mapping
-          work of bringing parallel collection platforms together (for
-          example two separate survey-collection environments feeding the
-          same warehouse) is itself a definitional discipline before it is
+          fits the stack (PySpark or otherwise). The field-mapping
+          work of bringing parallel collection platforms together — for
+          example two survey-collection environments feeding the
+          same warehouse — is itself a definitional discipline before it is
           an engineering one. The framework is not the answer. The
           semantic layer, the crosswalks, and the discipline of owning
           every definitional change are what hold the reporting foundation
@@ -3871,122 +3411,35 @@ export const ESSAYS: Essay[] = [
         <H2>The same problem across systems: rostering</H2>
 
         <P>
-          Different systems hold overlapping versions of the same field,
-          and the drift compounds under load. In one K-8 network,
-          enrollment moved through four holders between June and August:
-          the SIS held one version of who was enrolled, the
-          applicant-tracking system held another (still processing
-          applications that had been accepted but not yet rolled forward),
-          the operations office kept a spreadsheet the ops team used for
-          building assignments and family communications, and the
-          enrollment team kept its own spreadsheet, the one they used to
-          track summer targets and plan late-summer marketing efforts.
-          All four were correct against their own local definition of
-          &ldquo;enrolled.&rdquo; None of the four agreed on the first
-          day of school. The reconciliation ran through August and rarely
-          caught up before students walked in. The definitional gap was
-          not that anyone was wrong; &ldquo;enrolled&rdquo; was doing
-          four different jobs across four systems, and no one had written
-          the mapping down.
+          Different systems hold overlapping versions of the same field, and the drift compounds under load. In one K-8 network, enrollment moved through four holders between June and August: the SIS held one version of who was enrolled, the applicant-tracking system held another (still processing applications that had been accepted but not yet rolled forward), the operations office kept a spreadsheet the ops team used for building assignments and family communications, and the enrollment team kept its own spreadsheet, the one they used to track summer targets and plan late-summer marketing efforts. All four were correct against their own local definition of “enrolled.” None of the four agreed on the first day of school. The reconciliation ran through August and rarely caught up before the first day of school. The definitional gap was not that anyone was wrong; “enrolled” was doing four different jobs across four systems, and no one had written the mapping down.
         </P>
 
         <H2>Granularity is its own governance problem</H2>
 
         <P>
-          Granularity is its own governance problem, and aggregation is
-          where many institutions quietly compromise it. At the same K–8
-          network, daily attendance was a single data stream with at least
-          three different operational lives. A single absence on a given
-          day triggered an immediate workflow (outreach, follow-up,
-          resolution), owned by an operations coordinator. Three
-          consecutive days of absence triggered a different workflow,
-          owned by a teacher or student-support counselor. Chronic
-          absenteeism (eighteen or more days in a year, or more than ten
-          percent of school days as a running rate) triggered a third
-          workflow, owned by the principal. The same data, three
-          aggregations, three views, three sets of decision rights, three
-          stakeholders. Governance at the granularity layer was not
-          deciding whether to compute these numbers. It was deciding which
-          view triggered which workflow, who owned each decision, and what
-          the legitimate translation among them was, knowing that a daily
-          count cannot be disaggregated from a chronic-absenteeism rate
-          without losing what it measured.
+          Granularity is its own governance problem, and aggregation is where many institutions quietly compromise it. At the same K–8 network, daily attendance was a single data stream with at least three different operational lives. A single absence on a given day triggered an immediate workflow (outreach, follow-up, resolution), owned by an operations coordinator. Three consecutive days of absence triggered a different workflow, owned by a teacher or student-support counselor. Chronic absenteeism (eighteen or more days in a year, or more than ten percent of school days as a running rate) triggered a third workflow, owned by the principal. The same data, three aggregations, three views, three sets of decision rights, three stakeholders. Governance at the granularity layer was not deciding whether to compute these numbers. It was deciding which view triggered which workflow, who owned each decision, and what the legitimate translation among them was, knowing that you cannot break a chronic-absenteeism rate back into daily counts without losing what it measured.
         </P>
 
         <H2>Architecture is governance</H2>
 
         <P>
-          Architecture is governance too. When a student-information
-          system is replaced, or a behavioral-health electronic record is
-          migrated to a new platform, the definitional question is not the
-          migration. It is whether what the new system records is the same
-          thing the old one recorded. Field mappings have to be made
-          explicit; new fields added where the schema changed; legacy
-          fields retired only after every use case is accounted for;
-          data-entry personnel trained on the new system’s expectations
-          for completeness, accuracy, and timeliness. None of that is
-          technical work. It is definitional work conducted at the
-          architectural layer — the layer{" "}
-          <InternalLink slug="the-contracts-between-systems">
-            the contract between systems
-          </InternalLink>{" "}
-          has to govern.
+          Architecture is governance too. When a student-information system is replaced, or a behavioral-health electronic record is migrated to a new platform, the definitional question is not the migration. It is whether what the new system records is the same thing the old one recorded. You have to make field mappings explicit, add new fields where the schema changed, retire legacy fields only after every use case is covered, and train data-entry personnel on the new system&rsquo;s expectations for completeness, accuracy, and timeliness. None of that is technical work — it is definitional work at the architectural layer.
         </P>
 
         <H2>Stewardship is what makes it stick</H2>
 
         <P>
-          Quality is a continuous practice owned by the people closest
-          to the data. The principal
-          dashboard adoption rate of 70 percent at the K–8 network was not
-          just a usage statistic. It was evidence of distributed
-          stewardship. The principals were not merely consumers of their
-          numbers; they were the ones who noticed anomalies, raised
-          corrections, pushed back on definitions that did not serve their
-          schools, and held the institution accountable to its own
-          standards. A central data office that owns quality alone is
-          fragile. A network of stewards who own their own data, with
-          shared definitions they help refresh, is durable. This is the
-          model that survives leadership turnover, budget cycles, and
-          reorganization.
+          Quality is a continuous practice owned by the people closest to the data. The principal dashboard adoption rate of 70 percent at the K–8 network was not just a usage statistic. It was evidence of distributed stewardship. The principals did more than consume their numbers. They noticed anomalies, raised corrections, pushed back on definitions that did not serve their schools, and held the institution to its own standards. A central data office that owns quality alone is fragile. A network of stewards who own their own data, with shared definitions they help refresh, is durable. This is the model that survives leadership turnover, budget cycles, and reorganization.
         </P>
 
         <P>
-          Stewardship of that kind requires operational discipline at the
-          configuration and training layer, because the biggest risk in
-          any compliance or reporting process is rarely one dramatic
-          mistake. It is drift. If a gradebook is configured one way at
-          one school and a different way at another, GPA calculations
-          diverge before any dashboard sees them. The same instance has to
-          be replicated across sites (same scales, same formulae, same
-          business rules) with a checking cadence and alerts in place to
-          catch unintended drift or misconfiguration before errors
-          propagate. Definitional work also has to reach the personnel who
-          actually enter the data. Whether an in-house suspension is coded
-          as “present” or “absent” in the student-information system is a
-          definitional decision data-entry personnel make every day. If
-          they have not been trained on which version the institution is
-          using, no framework above them can compensate. Quality is held
-          together one configuration, one alert, and one training
-          conversation at a time.
+          Stewardship of that kind requires operational discipline at the configuration and training layer, because the biggest risk in any compliance or reporting process is rarely one dramatic mistake. Most of the time it is drift. If a gradebook is configured one way at one school and a different way at another, GPA calculations diverge before any dashboard sees them. The same instance has to be replicated across sites (same scales, same formulae, same business rules) with a checking cadence and alerts in place to catch unintended drift or misconfiguration before errors propagate. Definitional work also has to reach the personnel who actually enter the data. Whether an in-house suspension is coded as “present” or “absent” in the student-information system is a definitional decision data-entry personnel make every day. If they have not been trained on which version the institution is using, no framework above them can compensate. Quality is held together one configuration, one alert, and one training conversation at a time.
         </P>
 
         <H2>Why universities need this most</H2>
 
         <P>
-          Universities are structurally decentralized in ways most
-          organizations are not. School autonomy, faculty governance, and
-          distributed authority by design are how the institution is
-          meant to work. Governance imposed from the center has a poor track record in
-          higher education because the autonomy is rightly defended.
-          Governance embedded through definitions has a much better one. A
-          definition agreed across the registrar, financial aid,
-          institutional research, and the relevant deans is much harder to
-          walk back, because each domain steward owns it. A policy written
-          by the governance council, however thorough, can be politely
-          ignored by a department running its own numbers. The framework’s
-          real authority is not the document. It is the working set of
-          shared definitions that domain leaders maintain together.
+          Universities are structurally decentralized in ways most organizations are not. School autonomy, faculty governance, and distributed authority are how the institution is designed to work. Governance imposed from the center has a poor track record in higher education because the autonomy is rightly defended. Governance embedded through definitions has a much better one. A definition agreed across the registrar, financial aid, institutional research, and the relevant deans is much harder to walk back, because each domain steward owns it. A policy written by the governance council, however thorough, can be politely ignored by a department running its own numbers. The framework&rsquo;s real authority is the working set of shared definitions that domain leaders maintain together — not the document itself.
         </P>
 
         <H2>What working governance actually looks like</H2>
@@ -4059,47 +3512,14 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Universities, school networks, foundations, and
-            behavioral-health agencies have been buying integration for a
-            long time. Warehouses get built. Pipes get plumbed. Connectors
-            land. The bytes move from the system that wrote them to the
-            system that reads them. And then, very often, the leader
-            looking for institutional intelligence (a 360 view for the
-            CEO, role-specific intelligence for a program officer or a
-            principal or a clinician or a dean, a number a District
-            Education Officer can act on this week) discovers that the
-            integration ran and the institution still cannot decide.
-          </p>
+          Universities, school networks, foundations, and behavioral-health agencies have been buying integration for a long time. Warehouses get built. Pipes get connected. Connectors ship. The bytes move from the system that wrote them to the system that reads them. And then, very often, the leader looking for institutional intelligence — a 360 view for the CEO, role-specific intelligence for a program officer or a principal or a clinician or a dean, a number a District Education Officer can act on this week — discovers that the integration ran and the institution still cannot make the decision.
+        </p>
           <p>
-            That is the gap I want to name. Integration is two questions
-            stacked on top of each other, and institutions have been
-            treating them as one. The first is engineering: do the bytes
-            move from where they were written to where they will be read,
-            in the right shape, on a defensible cadence, without breaking?
-            The second is governance: when the bytes arrive, can anyone act
-            on them? Who is allowed to read them, who is allowed to write
-            them, on what cadence, under what consent envelope, with what
-            authority, with what reversibility, with what audit trail if
-            they are wrong? The first question has good answers in every
-            era’s stack. The second has answered itself in almost no
-            institution I have worked inside, in any era.
-          </p>
+          That is the gap I want to focus on. Integration is two questions stacked on top of each other, and institutions have been treating them as one. The first is engineering: do the bytes move from where they were written to where they will be read, in the right shape, on a defensible cadence, without breaking? The second is governance: when the bytes arrive, can anyone act on them? Who is allowed to read them, who is allowed to write them, on what cadence, under what consent envelope, with what authority, with what reversibility, with what audit trail if they are wrong? The first question has good answers in every era&rsquo;s stack. The second has not been answered in almost any institution I have worked with, in any era.
+        </p>
           <p>
-            Those second-question elements together are what I will call
-            the governance contract: the explicit, named understanding
-            that turns integrated bytes into something a stakeholder can
-            act on with authority — an operational agreement the
-            institution writes for itself and can enforce internally, not
-            a legal document. This essay is about that contract, and
-            about what it has looked like across three eras of
-            integration: legacy, modern, and the agentic era now
-            arriving. The engineering changes. The contract has to change
-            with it. The governance gap, in most institutions, does not.
-            I have named this same gap, in a field note, a{" "}
-            <InternalLink slug="blown-assignment">blown assignment</InternalLink>
-            : the dashboard runs and nobody wrote the contract that says
-            who acts on the number, with what authority, on what cadence.
-          </p>
+          Those second-question elements together are what I will call the governance contract: the explicit, named understanding that turns integrated bytes into something a stakeholder can act on with authority — an operational agreement the institution writes for itself and enforces internally, not a legal document. This essay is about that contract, and about what it has looked like across three eras of integration: legacy, modern, and the agentic era now arriving. The engineering changes. The contract has to change with it. The governance gap, in most institutions, does not. I have named this same gap, in a field note, a <a href="/library/blown-assignment" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="blown-assignment">blown assignment</InternalLink></a>: the dashboard runs and nobody wrote the contract that says who acts on the number, with what authority, on what cadence.
+        </p>
         </Brief>
 
         <Figure
@@ -4130,30 +3550,11 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The harder question is who can vouch for the number when the
-          principal calls and asks why their applicant count moved by twelve
-          in a week. Someone has to know which of the source systems was
-          reconciled when, which sheet version held the most recent
-          definition of “applicant” versus “enrolled,” which call-center
-          status code rolled up to which funnel stage, and what changed in
-          the overnight refresh. In the legacy era that someone is a
-          steward. The contracts were not absent: they were everywhere, in
-          vendor documentation, in file format conventions, in batch
-          cadences, in the append-versus-delete semantics buried in
-          scheduled jobs, in the implicit understanding that “an applicant
-          is who SchoolMint says they are unless HubSpot has them flagged
-          for follow-up.” They simply lived in tacit institutional
-          knowledge, held in the head of the steward who could vouch for a
-          number when a stakeholder was about to act on it. That is not a
-          failure of engineering. It is what legacy-era integration
-          governance was. When the steward left, the integration still ran
-          and the number stopped being actionable, because the contract that
-          connected the integration to the decision had walked out the door.
+          The harder question is who can vouch for the number when the principal calls and asks why their applicant count moved by twelve in a week. Someone has to know which of the source systems was reconciled when, which sheet version held the most recent definition of “applicant” versus “enrolled,” which call-center status code rolled up to which funnel stage, and what changed in the overnight refresh. In the legacy era that someone is a steward. The contracts were not absent — they were everywhere, in vendor documentation, in file format conventions, in batch cadences, in the append-versus-delete semantics buried in scheduled jobs, in the implicit understanding that “an applicant is who SchoolMint says they are unless HubSpot has them flagged for follow-up.” They were tacit institutional knowledge, held in the head of the steward who could vouch for a number when a stakeholder was about to act on it. That is not a failure of engineering. It is what legacy-era integration governance was. When the steward left, the integration still ran. The number stopped being actionable, because the contract that connected the integration to the decision left with the steward.
         </P>
 
         <P>
-          Move the same problem into a public-sector frame and the fragility
-          shows differently. An Indian state runs four parallel state
+          The same problem looks different in a public-sector frame. An Indian state runs four parallel state
           systems —{" "}
           <a
             href="https://udiseplus.gov.in/"
@@ -4196,31 +3597,14 @@ export const ESSAYS: Essay[] = [
           four integrate: states submit, the central agencies consolidate,
           the dashboards land. What can a District Education Officer or a
           Mandal Education Officer act on, this month, in their block? Each
-          system tells them something different in a different language
-          about overlapping populations on incompatible cycles. The
+          system reports something different about overlapping populations on incompatible cycles. The
           contracts between these four state systems were never written.
           There is no single steward who holds them. The integration runs.
           The decision interface does not exist.
         </P>
 
         <P>
-          The legacy-era test was the steward’s test: can the steward vouch
-          for the number a stakeholder is about to act on, because the
-          implicit contracts held? In K–8 networks the answer was sometimes
-          yes, when one institutional research lead or data manager held the
-          full picture. In multi-ministry state systems the answer was
-          rarely yes, because no single steward held the contracts across
-          four systems owned by four different bodies. Higher education’s
-          legacy era looked more like the school-network case at much larger
-          scale: Banner sitting on top of a legacy database, PeopleSoft
-          Campus Solutions feeding several downstream warehouses, multiple
-          legacy financial systems feeding the budget office on separate
-          cycles. The contracts were implicit, lived in the institutional
-          research team, and were held in the head of a senior IR analyst
-          whose vouching let the Provost and the CFO act on a number. The
-          decision interface was a person. That worked, in the institutions
-          where it worked, only as long as the person stayed and the
-          questions stayed within their working memory.
+          The legacy-era test was the steward&rsquo;s test: can the steward vouch for the number a stakeholder is about to act on, because the implicit contracts held? In K–8 networks the answer was sometimes yes, when one institutional research lead or data manager held the full picture. In multi-ministry state systems the answer was rarely yes, because no single steward held the contracts across four systems owned by four different bodies. Higher education&rsquo;s legacy era looked more like the school-network case at much larger scale: Banner sitting on top of a legacy database, PeopleSoft Campus Solutions feeding several downstream warehouses, multiple legacy financial systems feeding the budget office on separate cycles. The contracts were implicit, lived in the institutional research team, and were held in the head of a senior IR analyst whose vouching let the Provost and the CFO act on a number. The decision interface was a person — the senior IR analyst. That worked, in the institutions where it worked, only as long as the person stayed and the questions stayed within their working memory.
         </P>
 
         <H2>Modern era: the artifact exists, the council doesn’t</H2>
@@ -4237,29 +3621,13 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          What changes less than institutions hope is the governance layer
-          on top of the artifact. A youth-mental-health foundation, working
-          with a cloud data warehouse a prior contractor had stood up at the
-          dev/prod schema layer but never finished integrating data into,
-          had a data warehouse and a survey platform running as two
-          parallel data-collection platforms, with survey data accumulating
-          across four to six instrument versions of the same construct over
-          multiple years and external standardized survey instruments and
-          public datasets pulled in for context. The activation work was
-          technical &mdash; managed-ETL connectors, DevOps cleanup, and
-          warehouse schema design that reconciled the two collection
-          platforms and the instrument versions into a unified semantic
-          layer, with named definitions for what &ldquo;engaged
-          participant&rdquo; meant in the canonical schema and how each
-          instrument version mapped into it. At the end of that work, the
-          artifact existed and the integration ran on a defensible cadence.
-          That is the engineering layer.
+          What changes less than institutions hope is the governance layer on top of the artifact. A youth-mental-health foundation, working with a cloud data warehouse a prior contractor had stood up at the dev/prod schema layer but never finished integrating data into, had a data warehouse and a survey platform running as two parallel data-collection platforms, with survey data accumulating across four to six instrument versions of the same construct over multiple years and external standardized survey instruments and public datasets pulled in for context. The activation work was technical — managed-ETL connectors, DevOps cleanup, and warehouse schema design that reconciled the two collection platforms and the instrument versions into a unified semantic layer, with named definitions for what “engaged participant” meant in the canonical schema and how each instrument version mapped into it. At the end of that work, the artifact existed and the integration ran on a defensible cadence — the engineering layer.
         </P>
 
         <P>
-          What turned that work into institutional intelligence was not the
-          schema design. It was the council, however lightweight, that sat
-          on top of it. Who is allowed to ship a change to the “engaged
+          It wasn&rsquo;t the schema design that turned that work into
+          institutional intelligence. It was the council, however
+          lightweight, that owned it. Who is allowed to ship a change to the “engaged
           participant” definition? Who has to be told before the change
           ships? How long does it take for the quarterly report a program
           officer is about to act on to reflect the change? Is the prior
@@ -4298,46 +3666,11 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The architecture work made the governance question visible in a
-          way the engineering work could not answer. When a clinician at a
-          partner clinic opens the chart and the integrated
-          population-health view shows the patient has had three no-shows
-          in sixty days, what is the contract that says the clinician is
-          allowed to act on that number? At what cadence does the no-show
-          count have to be fresh enough to support an outreach call without
-          first re-checking the source system? When the patient’s status
-          updates at the partner clinic, how long until the central view
-          reflects it, and what action is the clinician expected to take
-          in the lag window? HL7 carries the message. The schema defines
-          the fields. The governance contract (written, agreed, enforced
-          across the partner clinics and the central agency) is what
-          tells the clinician whether the number on their screen is a
-          decision interface or only a description.
+          The architecture work made the governance question visible in a way the engineering work could not answer. When a clinician at a partner clinic opens the chart and the integrated population-health view shows the patient has had three no-shows in sixty days, what is the contract that says the clinician is allowed to act on that number? At what cadence does the no-show count have to be fresh enough to support an outreach call without first re-checking the source system? When the patient&rsquo;s status updates at the partner clinic, how long until the central view reflects it, and what action is the clinician expected to take in the lag window? HL7 carries the message. The schema defines the fields. The governance contract — written, agreed, enforced across the partner clinics and the central agency — is what tells the clinician whether the number on their screen is a decision interface or only a description.
         </P>
 
         <P>
-          A measurement-based-care pilot run through a patient-facing
-          smartphone app, built into the same behavioral-health setting,
-          made the freshness-contract question concrete at clinical
-          cadence. A patient opens the app and completes a brief symptom
-          inventory in the morning; the result lands on the clinician’s
-          dashboard before the day’s appointments, and the clinician
-          adjusts treatment planning based on the symptom trajectory. The
-          dashboard feeds the warehouse, which in turn feeds adherence and
-          engagement analytics. The pilot ran with thirty-plus patients
-          across two waves, produced a forty percent engagement lift after
-          reminder automation, surfaced earlier clinician response, and
-          began to show predictive patterns in adherence and symptom
-          improvement. There is a human clinician acting on integrated
-          data at a faster cadence than weekly review can sustain, and the
-          freshness contract is already what holds that loop together,
-          even with no agent in the cycle. If the morning symptom score
-          reaches the clinician three days late, the treatment planning at
-          the noon appointment is being done on a stale number. The
-          contract that has to be specified is not “the data is
-          integrated.” It is “the cadence at which the patient’s status
-          stays fresh enough for the clinician to adjust treatment
-          planning, and what happens when it slips below that threshold.”
+          A measurement-based-care pilot run through a patient-facing smartphone app, built into the same behavioral-health setting, made the freshness-contract question concrete at clinical cadence. A patient opens the app and completes a brief symptom inventory in the morning; the result lands on the clinician&rsquo;s dashboard before the day&rsquo;s appointments, and the clinician adjusts treatment planning based on the symptom trajectory. The dashboard feeds the warehouse, which in turn feeds adherence and engagement analytics. The pilot ran with thirty-plus patients across two waves, produced a forty percent engagement lift after reminder automation, surfaced earlier clinician response, and began to show predictive patterns in adherence and symptom improvement. There is a human clinician acting on integrated data at a faster cadence than weekly review can sustain — and the freshness contract is already what makes that loop work, even with no agent in the cycle. If the morning symptom score reaches the clinician three days late, the treatment planning at the noon appointment is being done on a stale number. The contract that has to be specified is not “the data is integrated.” It is “the cadence at which the patient&rsquo;s status stays fresh enough for the clinician to adjust treatment planning, and what happens when it slips below that threshold.”
         </P>
 
         <P>
@@ -4363,49 +3696,13 @@ export const ESSAYS: Essay[] = [
         <H2>Higher ed’s modern era</H2>
 
         <P>
-          Higher education is standing in this same gap at scale right
-          now. Most institutions are standing up (or have stood up) a
-          warehouse, a semantic layer, some dbt, and some lineage, and the
-          integration engineering is largely being done. What is missing
-          is the council that owns the decision interface on top of the
-          artifact, and so the Provost still cannot get a 360 view even
-          after the CIO has built the warehouse. The data governance
-          committee, where one exists, often meets quarterly to debate
-          naming conventions. The decision interface is unowned.
+          Higher education is standing in this same gap at scale right now. Most institutions are standing up — or have stood up — a warehouse, a semantic layer, some dbt, and some lineage, and the integration engineering is largely being done. The missing piece is the council that owns the decision interface on top of the artifact, and so the Provost still cannot get a 360 view even after the CIO has built the warehouse. The data governance committee, where one exists, often meets quarterly to debate naming conventions. The decision interface is unowned.
         </P>
 
         <H2>The agentic era: provenance, consent, reversibility</H2>
 
         <P>
-          The agentic era changes what the contract has to specify and
-          raises what the stakes are when it does not exist. The
-          freshness-contract pattern that was already central to
-          modern-era clinical loops becomes more demanding when an agent
-          enters the cycle, because the agent acts at machine cadence and
-          the human stakeholder still has to stand behind the action. The
-          earliest agentic example I have worked on is a reporting
-          prototype where Snowflake Cortex reads
-          from governed Snowflake schemas, Streamlit fronts a Python
-          pattern that reads against the warehouse, and Gemini is used at
-          a bounded scope to verify significance-test results and the
-          interpretation of those tests before a human program officer
-          acts on them. Even at that bounded scope (LLM-inferred
-          verification of a statistical claim a human is about to act on)
-          the provenance question already arrives. Was this
-          confidence-interval check produced by a human, by a
-          deterministic test, or by an LLM that may have hallucinated it?
-          Once agentic deployments scale beyond verification into drafting
-          and writing, which is the direction reporting pipelines are
-          heading, the contract has to extend to provenance categories the
-          data-integration era did not have to name. Was this paragraph
-          human-authored, deterministic-pipeline-generated, or
-          LLM-inferred? On the warehouse side, was this record written by
-          a human program officer, by the nightly ingestion job, or by the
-          agent acting on the program officer’s behalf? Provenance is now
-          part of the data, not metadata about it. A program officer
-          reading the impact report has to know which sentences were
-          synthesized and which were sourced, because the question “can I
-          stand behind this when a funder asks” depends on the answer.
+          The agentic era changes what the contract has to specify and raises what the stakes are when it does not exist. The freshness-contract pattern that was already central to modern-era clinical loops becomes more demanding when an agent enters the cycle, because the agent acts at machine cadence and the human stakeholder still has to stand behind the action. The earliest agentic example I have worked on is a reporting prototype where Snowflake Cortex reads from governed Snowflake schemas, Streamlit fronts a Python pattern that reads against the warehouse, and Gemini is used at a bounded scope to verify significance-test results and the interpretation of those tests before a human program officer acts on them. Even at that bounded scope — LLM-inferred verification of a statistical claim a human is about to act on — the provenance question already arrives. Was this confidence-interval check produced by a human, by a deterministic test, or by an LLM that may have hallucinated it? Once agentic deployments scale beyond verification into drafting and writing (which is the direction reporting pipelines are heading), the contract has to extend to provenance categories the data-integration era did not have to name. Was this paragraph human-authored, deterministic-pipeline-generated, or LLM-inferred? On the warehouse side, was this record written by a human program officer, by the nightly ingestion job, or by the agent acting on the program officer&rsquo;s behalf? Provenance now has to sit inside the data, not alongside it as metadata. A program officer reading the impact report has to know which sentences were synthesized and which were sourced, because the question “can I stand behind this when a funder asks” depends on the answer.
         </P>
 
         <P>
@@ -4425,55 +3722,17 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          Reversibility envelopes are the third extension. When a human
-          writes a wrong number to a record, the institution can undo it
-          through a defined process and a known reviewer. When an LLM
-          writes a wrong number at machine cadence, the institution may
-          have minutes, not days, before downstream stakeholders are
-          already acting on the changed record. The reversibility contract
-          has to specify the window within which a roll-back is possible,
-          the conditions under which it is automatic versus reviewed, and
-          the downstream stakeholders who have to be notified that the
-          records they were acting on may have just moved. The contract is
-          no longer “did the upstream system honor the schema it
-          promised.” It is “if the machine writes something wrong, can the
-          institution take it back before a decision has been triggered on
-          it.”
+          Reversibility envelopes are the third extension. When a human writes a wrong number to a record, the institution can undo it through a defined process and a known reviewer. When an LLM writes a wrong number at machine cadence, the institution may have minutes, not days, before downstream stakeholders are already acting on the changed record. The reversibility contract has to specify the window within which a roll-back is possible, the conditions under which it is automatic versus reviewed, and the downstream stakeholders who have to be notified that the records they were acting on may have just moved. The contract now has to say whether, if the machine writes something wrong, the institution can take it back before a decision has been triggered on it.
         </P>
 
         <P>
-          Consumption is the fourth extension, and the one institutions
-          notice last because it arrives as an invoice rather than an
-          incident. When a human runs a query, the cost is a salary the
-          institution has already paid. When an agent runs a query, the
-          institution pays per call, and an agent that reads across six
-          systems to answer one question can run that question hundreds of
-          times a day without anyone having decided it should. The contract
-          that governed who is allowed to write a record now has to govern
-          what an agent is allowed to spend to produce one: which workloads
-          may call a premium model and which are routed to a cheaper one,
-          and how the consumption is attributed back to the program or
-          department whose workflow generated it, so the spend has an owner
-          who can be asked about it. An institution that writes the read,
-          write, consent, provenance, and reversibility contracts and skips
-          the consumption contract discovers the gap the way it discovers
-          every other ungoverned seam: after the fact, when the bill
-          arrives and no one can say which workflow produced it or whether
-          it was worth producing.
+          Consumption is the fourth extension, and the one institutions notice last because it arrives as an invoice rather than an incident. When a human runs a query, the cost is a salary the institution has already paid. When an agent runs a query, the institution pays per call, and an agent that reads across six systems to answer one question can run that question hundreds of times a day without anyone having decided it should. The contract that governed who is allowed to write a record now has to govern what an agent is allowed to spend to produce one: which workloads may call a premium model and which are routed to a cheaper one, and how the consumption is attributed back to the program or department whose workflow generated it, so the spend has an owner who can be asked about it. An institution that writes the read, write, consent, provenance, and reversibility contracts and skips the consumption contract finds the gap the same way it finds every other ungoverned seam: after the fact, when the bill arrives and no one can say which workflow produced it or whether it was worth producing.
         </P>
 
         <H2>Higher ed and the agentic era</H2>
 
         <P>
-          Higher education is not far from this. Banner-to-Workday-Student
-          transitions are landing. Financial-aid agents reading across
-          multiple systems are landing. Advising assistants writing to
-          advising notes are landing. AI tutors writing to gradebooks are
-          landing. The institution will have the integration. It will
-          have, mostly, the engineering. What it will not have, in most
-          cases, is the contract layer. That gap is not unique to higher
-          education: in a{" "}
-          <a
+          Higher education is not far from this. Banner-to-Workday-Student transitions are landing. Financial-aid agents reading across multiple systems are landing. Advising assistants writing to advising notes are landing. AI tutors writing to gradebooks are landing. The institution will have the integration. It will have, mostly, the engineering. What it will not have, in most cases, is the contract layer. That gap is not unique to higher education: in a <a href="https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><a
             href="https://www.deloitte.com/us/en/insights/topics/emerging-technologies/ai-agents-scaling-faster.html"
             target="_blank"
             rel="noopener"
@@ -4481,17 +3740,7 @@ export const ESSAYS: Essay[] = [
           >
             2026 Deloitte survey of more than three thousand technology and
             business leaders
-          </a>
-          , only about one in five reported a mature governance model for
-          agentic AI, while adoption ran well ahead of it. Who is allowed
-          to write a gradebook entry on behalf of an AI tutor? What is the consent
-          envelope under which a financial-aid agent moves a student
-          between aid scenarios? When the advising assistant writes a
-          recommendation into a student’s record that the advisor never
-          reviewed, what is the reversibility window, and who tells the
-          advisor? The architectural question is the same one the
-          behavioral-health case faces. The systems differ. The contract
-          questions are identical.
+          </a></a>, only about one in five reported a mature governance model for agentic AI, while adoption ran well ahead of it. Who is allowed to write a gradebook entry on behalf of an AI tutor? What is the consent envelope under which a financial-aid agent moves a student between aid scenarios? When the advising assistant writes a recommendation into a student&rsquo;s record that the advisor never reviewed, what is the reversibility window, and who tells the advisor? The architectural question is the same one the behavioral-health case faces. The systems differ. The contract questions are identical.
         </P>
 
         <H2>The freshness contract becomes load-bearing</H2>
@@ -4511,28 +3760,11 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          That is what makes integration governance a layer the
-          institution cannot leave to engineering or architecture in any
-          era. Engineering moves the bytes. Architecture stages them.
-          Governance contracts (who reads, who writes, on what cadence,
-          with what consent, with what provenance, with what reversibility,
-          with what consumption, with what authority to act) turn
-          fragmented bytes into decision-ready institutional intelligence
-          stakeholders can stand behind. Without those contracts, the integration runs and the
-          data on the other side stays fragmented to anyone trying to act
-          on it. With those contracts, fragmented bytes become
-          decision-ready intelligence: a 360 view for the CEO,
-          role-specific intelligence for program officers and principals
-          and clinicians and deans and District Education Officers, and a
-          decision interface that triggers action.
+          That is what makes integration governance a layer the institution cannot leave to engineering or architecture in any era. Engineering moves the bytes. Architecture stages them. Governance contracts — who reads, who writes, on what cadence, with what consent, with what provenance, with what reversibility, with what consumption, with what authority to act — turn fragmented bytes into decision-ready institutional intelligence stakeholders can stand behind. Without those contracts, the integration runs and the data on the other side stays fragmented to anyone trying to act on it. With those contracts, fragmented bytes become decision-ready intelligence: a 360 view for the CEO, role-specific intelligence for program officers and principals and clinicians and deans and District Education Officers, and a decision interface that triggers action.
         </P>
 
         <P>
-          The contracts have to be written. By someone, named, inside the
-          institution. Where in the institution that role should sit is a
-          question worth its own treatment, and one I have taken up
-          directly elsewhere. In every era these contracts were already
-          needed. In the next one they will hold the weight.
+          The contracts have to be written. By someone, named, inside the institution. Where in the institution that role should sit is something I have taken up elsewhere. In every era these contracts were already needed. In the next era they will hold the weight.
         </P>
 
         <SeeAlso>
@@ -4625,12 +3857,7 @@ export const ESSAYS: Essay[] = [
         </div>
 
         <P>
-          For most of my career, when people asked what I do, I’d say
-          <I> data plumbing</I>. It was a useful shorthand. Everyone got
-          it. The pipes, the joints, the connections between systems,
-          the unglamorous infrastructure that makes everything else
-          possible. Plumbers don’t get a lot of credit. But the building
-          doesn’t work without them.
+          For most of my career, when people asked what I do, I&rsquo;d say <I>data plumbing</I>. It was a useful shorthand. Everyone got it. The pipes, the joints, the connections between systems — the unglamorous infrastructure that makes everything else possible. Plumbers don&rsquo;t get a lot of credit. But the building doesn&rsquo;t work without them.
         </P>
         <P>Lately I’ve stopped using the word.</P>
         <P>
@@ -4638,14 +3865,7 @@ export const ESSAYS: Essay[] = [
           what it used to mean.
         </P>
         <P>
-          When I started in this work, <I>plumbing</I> was where the
-          difficulty lived. Moving data between two enterprise systems
-          took months. Integration was a strategic asset. Today the
-          pipes have been industrialized: Fivetran, dbt, Snowflake, the
-          cloud data platforms. The difficulty is no longer engineering
-          the pipe; it’s mostly paying the subscription and managing
-          the configuration. The plumbing got upgraded. It’s a solved
-          problem class, even if individual lines still get clogged.
+          When I started in this work, <I>plumbing</I> was the hard part. Moving data between two enterprise systems took months. Integration was a strategic asset. Today the pipes have been industrialized — Fivetran, dbt, Snowflake, the cloud data platforms. The difficulty is no longer engineering the pipe; it&rsquo;s mostly paying the subscription and managing the configuration. The plumbing got upgraded. It&rsquo;s a solved problem class, even if individual lines still get clogged.
         </P>
         <P>
           So if “plumbing” was what I called the hard part of the work,
@@ -4654,26 +3874,20 @@ export const ESSAYS: Essay[] = [
 
         <H2>The faucet, not the pipes</H2>
         <P>
-          Imagine your house has plumbing. Pipes run through the walls.
-          Water comes from a treatment plant somewhere. It reaches a
-          faucet. You turn the handle. Something comes out.
+          Here’s the shift I keep coming back to.
+        </P>
+        <P>
+          Imagine your house has plumbing. Pipes run through the walls. Water comes from a treatment plant somewhere. It comes out of a faucet. You turn the handle. Something comes out.
         </P>
         <P>
           The work of getting pipes into the walls — that’s plumbing in
           the old sense. Most modern houses have it. It’s table stakes.
         </P>
         <P>
-          The work that determines whether you can drink the
-          water, cook with it, give it to a child, wash a wound — that
-          work isn’t in the pipes. It’s: What’s the source. Is the
-          source clean. Did anything get added or removed upstream.
-          What’s the pressure at the faucet: too high and it sprays,
-          too low and you can’t fill a pot. Who’s allowed to open which
-          tap. What happens when the system fails. Who notices.
+          The work that determines whether you can drink the water, cook with it, give it to a child, wash a wound — that work isn&rsquo;t in the pipes. It&rsquo;s: What&rsquo;s the source. Is the source clean. Did anything get added or removed upstream. What&rsquo;s the pressure at the faucet: too high and it sprays, too low and you can&rsquo;t fill a pot. Who&rsquo;s allowed to open which tap, what happens when the system fails, who notices.
         </P>
         <P>
-          None of that is plumbing. All of it is the actual experience
-          of having water.
+          None of that is plumbing. All of it is what having water actually feels like.
         </P>
 
         <H2>Speed was the only knob we turned</H2>
@@ -4682,17 +3896,11 @@ export const ESSAYS: Essay[] = [
           in all this.
         </P>
         <P>
-          For a long time, the only knob most data systems could really
-          turn was speed. Faster pipes. More frequent refreshes.
-          Real-time dashboards. Speed got cheap — that’s most of what
-          the modern stack delivered.
+          For a long time, the only knob most data systems could really turn was speed. Faster pipes, more frequent refreshes, real-time dashboards. Speed got cheap — that&rsquo;s most of what the modern stack delivered.
         </P>
         <P>But speed isn’t the only knob. Two others have been sitting there the whole time.</P>
         <P>
-          <I>Resolution</I> — how granular a picture you can carry
-          through the pipe. Whether the thing arriving at the
-          decision-maker is the full pattern, or a flattened score that
-          stands in for it.
+          <I>Resolution</I> — how granular a picture makes it through the pipe. Whether the decision-maker gets the full pattern, or a flattened score that stands in for it.
         </P>
         <P>
           <I>Context</I> — what surrounds the data point. The
@@ -4700,46 +3908,24 @@ export const ESSAYS: Essay[] = [
           number actually means.
         </P>
         <P>
-          AI made all three knobs more accessible. The speed knob was
-          already turned up; that’s the part most institutions invested
-          in. The resolution and context knobs are still mostly at their
-          default positions. That’s the gap. Not that we lack speed. It’s that we haven’t spent the other two.{" "}
-          <I>
-            (There is a fourth dimension worth naming separately: whether
-            the construct in the pipe is still the construct
-            you sampled last quarter. That one gets its own treatment
-            in “The construct keeps moving.”)
-          </I>
+          AI made all three knobs more accessible. The speed knob was already turned up; that&rsquo;s the part most institutions invested in. The resolution and context knobs are still mostly at their default positions. The gap is not speed. It is the other two we have not spent. <I>(A fourth dimension deserves its own piece: whether the construct in the pipe is still the construct you sampled last quarter. That one gets its own treatment in “The construct keeps moving.”)</I>
         </P>
 
         <H2>The Thursday afternoon</H2>
         <P>
-          Consider a Thursday afternoon in a college advisor’s office. A
-          junior student-athlete has skipped three classes and tripped
-          the LMS risk flag. The bursar’s stack shows their aid
-          disbursement is on hold for a missing verification document.
-          The campus dining system hasn’t seen a swipe in forty-eight
-          hours. All three systems know something. None of them are
-          talking to the advisor across the desk. The plumbing ran
-          perfectly. The student still slipped through the seam.
+          Consider a Thursday afternoon in a college advisor&rsquo;s office. A junior student-athlete has skipped three classes and tripped the LMS risk flag. The bursar&rsquo;s stack shows their aid disbursement is on hold for a missing verification document. The campus dining system hasn&rsquo;t seen a swipe in forty-eight hours. All three systems know something. None of them are talking to the advisor across the desk. The plumbing ran perfectly. The student still fell through.
         </P>
         <P>
-          When I look at what I spend my time on now, it’s almost
-          entirely those kinds of moments, applied to data. Not <I>can
-          we connect these two systems</I> — yes, almost always, fine.
-          The questions that stay hard are: what does the field actually
-          measure, whose number wins when two systems disagree, who’s
-          allowed to read what, who’s allowed to change it, on what
-          cadence, and when it goes wrong, who notices.
+          When I look at what I spend my time on now, it&rsquo;s almost entirely those kinds of moments, applied to data. The easy question is <I>can we connect these two systems</I> — yes, almost always. The questions that stay hard are: what does the field actually measure, whose number wins when two systems disagree, who&rsquo;s allowed to read what, who&rsquo;s allowed to change it, on what cadence, and when it goes wrong, who notices.
         </P>
         <P>That’s not plumbing. That’s closer to running a water authority.</P>
         <P>
-          It’s worth naming the distinction directly. Most institutions
-          have some form of <I>data governance</I> in place: the
-          policies that decide who can access which table, how a field
-          is defined in the catalog, how lineage is tracked. That work
-          is real and necessary. But data governance is governance of
-          the pipe. <I>Decision governance</I> is governance of the
+          The distinction matters, so name it directly: Most
+          institutions have invested heavily in <I>data governance</I>:
+          the policies that decide who can access which table, how a
+          field is defined in the catalog, how lineage is tracked. That
+          work is real and necessary. But data governance is governance
+          of the pipe. <I>Decision governance</I> is governance of the
           faucet — who’s allowed to act on what comes out, at what
           resolution, on what cadence, and what kind of decision the
           architecture is built to support. An institution can have
@@ -4758,37 +3944,34 @@ export const ESSAYS: Essay[] = [
         <H2>The water authority</H2>
         <P>The analogy keeps holding up.</P>
         <P>
-          The water treatment plant, the place that decides what
-          counts as drinkable water and tests every batch, is the
+          The water treatment plant is the place that decides what
+          counts as drinkable water and tests every batch. That’s the
           construct question. Are we measuring what we say we’re
           measuring. Is the thing in the pipe still what it was when we
           sampled it last quarter.
         </P>
         <P>
-          The municipal authority, who decides which neighborhoods get
-          pressure, who sets the testing cadence, who’s responsible
-          when the boil-water advisory goes out, is the governance
-          contract. Who reads. Who writes. Cadence. Authority. This is
-          the contract at the seam: the point where the architecture
-          stops and a person has to act on what comes through. Most
-          institutions have a contract for the pipes: vendor SLAs,
-          integration agreements, data-sharing terms. Few have one for
-          what happens at the faucet.
+          The municipal authority decides which neighborhoods get
+          pressure, sets the testing cadence, and is responsible when
+          the boil-water advisory goes out. That’s the governance
+          contract: who reads, who writes, on what cadence, with what
+          authority. This is the contract at the seam: the point where
+          the architecture stops and a person has to act on what comes
+          through. Most institutions have a contract for the pipes:
+          vendor SLAs, integration agreements, data-sharing terms. Few
+          have one for what happens at the faucet.
         </P>
         <P>
-          The faucet itself, the moment someone turns the handle,
-          is the decision. A dosage adjustment, a budget call, an
+          The faucet itself is the moment someone turns the handle.
+          That’s the decision. A dosage adjustment, a budget call, an
           eligibility flag, a credit limit, a clinical alert. That’s
           where the entire stack either works or doesn’t. And the
           agentic era is already installing faucets that turn themselves
-          on, mix their own temperature, and pour before a human can
-          taste what’s coming out of the tap.
+          on, mix their own temperature, and pour before anyone can
+          taste what’s coming out.
         </P>
         <P>
-          The engineers who used to be your bottleneck, the integration
-          specialists — they’re more like the contractors who installed
-          the pipes in the first place. Important, but not who you call
-          when the water tastes wrong.
+          The engineers who used to be your bottleneck, the integration specialists — they&rsquo;re more like the contractors who installed the pipes in the first place. Important. But you don&rsquo;t call them when the water tastes wrong.
         </P>
 
         <H2>The contract at the seam</H2>
@@ -4801,11 +3984,11 @@ export const ESSAYS: Essay[] = [
         <P><I>On what cadence</I> the signal reaches them.</P>
         <P><I>What kind of decision</I> the system is built to support.</P>
         <P>
-          That last piece is the one most institutions skip: what kind
-          of decision. They build for monitoring, then ask the
-          same plumbing to support intervention, and the seam fails.
-          The work is matching the architecture to the decision the
-          institution needs to make.
+          Most institutions skip the last piece: what kind of decision.
+          They build for monitoring, then ask the same plumbing to
+          support intervention, and the seam fails. The work is
+          matching the architecture to the decision the institution
+          needs to make.
         </P>
 
         <H2>The water is the work</H2>
@@ -4823,15 +4006,7 @@ export const ESSAYS: Essay[] = [
           problem most institutions thought they were.
         </P>
         <P>
-          If I had to describe what I do now without picking a clever
-          new name for it, I’d just say it’s water authority work.
-          Sourcing. Testing. Pressure. Authority. Who’s allowed to
-          drink. The integration layer is solved enough to not need
-          most senior people’s time. The layer that determines whether
-          what comes out of the faucet is fit for purpose — that layer
-          is barely staffed at most institutions, barely contracted
-          for, barely measured. It’s the gap between <I>we have a data
-          warehouse</I> and <I>we can make a decision.</I>
+          If I had to describe what I do now without picking a clever new name for it, I&rsquo;d just say it&rsquo;s water authority work. Sourcing. Testing. Pressure. Authority. Who&rsquo;s allowed to drink. The integration layer is solved enough to not need most senior people&rsquo;s time. The layer that decides whether what comes out of the faucet is fit for purpose is barely staffed at most institutions, barely contracted for, barely measured. It&rsquo;s the gap between “we have a data warehouse” and “we can make a decision.”
         </P>
         <P>Plumbing got upgraded. The water didn’t.</P>
         <P>That’s the work.</P>
@@ -4920,8 +4095,7 @@ export const ESSAYS: Essay[] = [
           single coordinated burst against a defense built to break it.
         </P>
         <P>
-          Football coaches drill the same three-word mantra every year:{" "}
-          <B>Alignment. Assignment. Execute.</B>
+          Football coaches drill the same three-word mantra every year.
         </P>
         <P>Know where you stand. Know what you do. Run the play.</P>
         <P>
@@ -4931,18 +4105,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>Three phases, three failure modes</H2>
         <P>
-          <B>Alignment</B> is where you fit relative to everyone else. In
-          football, it’s where you stand on the field. In cross-functional
-          work, it’s where your function sits relative to the others. Who you
-          partner with upstream. Who you hand off to downstream. Whose problem
-          becomes your problem when something doesn’t move.
+          <B>Alignment</B> is where you fit relative to everyone else. In football, it&rsquo;s where you stand on the field. In cross-functional work, it&rsquo;s where your function stands relative to the others. Who you partner with upstream. Who you hand off to downstream. Whose problem becomes your problem when something doesn&rsquo;t move.
         </P>
         <P>
-          Alignment failures look like this. The school counselor, the
-          behavioral health clinic, and the family are all aware of the same
-          student. None of them know who is supposed to be carrying the
-          picture. The student is not missed because no one cared. They are
-          missed because everyone thought they were on someone else’s coverage.
+          Alignment failures look like this. The school counselor, the behavioral health clinic, and the family are all aware of the same student. None of them know who owns the case. The student is not missed because no one cared. They are missed because everyone thought they were on someone else&rsquo;s coverage.
         </P>
         <P>
           <B>Assignment</B> is what you do on this specific play. In football,
@@ -4951,15 +4117,7 @@ export const ESSAYS: Essay[] = [
           on the call.
         </P>
         <P>
-          Assignment failures look like this. The data architecture is fine.
-          Three systems flow into a dashboard. The advisor sees the dashboard.
-          Then nothing happens, because nobody wrote what should happen. There
-          is no contract that says{" "}
-          <I>
-            if the score crosses this line, who acts, with what authority, on
-            what cadence.
-          </I>{" "}
-          The dashboard isn’t the problem. The missing assignment is.
+          Assignment failures look like this. The data architecture is fine. Three systems flow into a dashboard. The advisor sees the dashboard. Then nothing happens, because nobody wrote what should happen. No contract says <I>if the score crosses this line, who acts, with what authority, on what cadence.</I> The dashboard isn&rsquo;t the problem. The missing assignment is.
         </P>
         <P>
           <B>Execution</B> is the actual play running. The line moves on the
@@ -4992,18 +4150,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>Where the AB lane sits</H2>
         <P>
-          Most of the work we get pulled into looks like a data problem on the
-          surface. A dashboard nobody uses. A handoff that doesn’t stick. A
-          metric that lives in someone’s email instead of moving into a
-          workflow. None of those are data problems. They are alignment
-          problems, assignment problems, or execution problems misread as data
-          problems.
+          Most of the work we get pulled into looks like a data problem on the surface. A dashboard nobody uses. A handoff that doesn&rsquo;t stick. A metric stuck in someone&rsquo;s email instead of a workflow. None of those are data problems. They are alignment problems, assignment problems, or execution problems misread as data problems.
         </P>
         <P>
-          The fix is the play. Written down. Owned by named roles. With the
-          contingencies designed in. That’s the{" "}
-          <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>
-          . That’s the artifact the modern data stack does not ship in the box.
+          The fix is the play. Written down. Owned by named roles. With the contingencies designed in. That&rsquo;s the <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>. That&rsquo;s the artifact the modern data stack does not ship in the box.
         </P>
         <P>The plumbing got upgraded. The play didn’t.</P>
         <P>That’s the work.</P>
@@ -5075,10 +4225,8 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Most modern work is cross-functional and time-bound. Most org
-            charts are functional and indefinite. The mismatch is structural.
-            It does not go away when the people are smart and well-meaning.
-          </p>
+          Most modern work is cross-functional and time-bound. Most org charts are functional and indefinite. I keep coming back to that mismatch.
+        </p>
           <p>
             More than one honest structural form can carry that mismatch:
             councils that deliberate and hand a playbook back to each
@@ -5093,119 +4241,66 @@ export const ESSAYS: Essay[] = [
 
         <H2>The mismatch</H2>
         <P>
-          The work is horizontal: a specific deliverable, a specific clock,
-          expertise drawn from several functions. The org chart is vertical:
-          each function reporting up to its own executive, evaluated against
-          its own scorecard, accountable to its own incentives. The mismatch
-          is structural. It does not go away when the people are smart and
-          well-meaning. It is the structure.
+          The work is horizontal: a specific deliverable, a specific clock, expertise drawn from several functions. The org chart is vertical: each function reporting up to its own executive, evaluated against its own scorecard, accountable to its own incentives. The mismatch is structural. Smart, well-meaning people do not make it go away. The structure does.
         </P>
         <P>
-          So institutions patch it. The patches are familiar. A standing
-          cross-functional meeting names the breakdown without fixing it. A
-          matrix reporting line multiplies the bosses without changing the
-          unit of work. A <I>communication issue</I> diagnosis schedules
-          another meeting. The heroic senior hire is expected to span every
-          layer the org chart failed to connect, then gets sighed about as a
-          unicorn when one person cannot.
+          So institutions patch it. The patches are familiar. A standing cross-functional meeting names the breakdown without fixing it. A matrix reporting line multiplies the bosses without changing the unit of work. A “communication issue” diagnosis schedules another meeting. The heroic senior hire is expected to span every layer the org chart failed to connect, then gets sighed about as a unicorn when one person cannot.
         </P>
 
         <H2>More than one honest answer</H2>
         <P>
-          There is more than one honest structural answer to the mismatch,
-          and the field of practice is diverse. Councils. Steering
-          committees. Advisory boards. Working groups. Task forces. Tiger
-          teams. Flash teams. Agile squads. Product teams. Centers of
-          excellence. Each carries a different profile on permanence,
-          authority, composition, and purpose. Each has a legitimate role in
-          the institutional toolkit.
+          There is more than one honest structural answer to the mismatch, and the field of practice is diverse. Councils. Steering committees. Advisory boards. Working groups. Task forces. Tiger teams. Flash teams. Agile squads. Product teams. Centers of excellence. Each one differs on permanence, authority, composition, and purpose. Each has a legitimate place.
         </P>
         <P>Three archetypes cover most of the actual practice.</P>
 
-        <H3>Deliberate together, execute locally</H3>
         <P>
-          A cross-functional body (a council, a steering committee, a
-          working group) deliberates and writes a shared playbook. The
-          playbook names the definitions, the handoffs, the timing, the
-          cadences, and the decisions the cross-functional work depends on.
-          Each function then takes the playbook back to its own team and
-          runs its portion inside its existing operating context.
-          Advancement, facilities, research management, and academic affairs
-          contribute to the same playbook in council, then execute their
-          piece each in their own house. Widespread in universities,
-          foundations, and mission-driven organizations. Can run for
-          decades.
+          <I>Deliberate together, execute locally.</I> A cross-functional
+          body (a council, a steering committee, a working group)
+          deliberates and writes a shared playbook. The playbook names the
+          definitions, handoffs, timing, cadences, and the decisions the
+          work depends on. Each function then takes the playbook back to
+          its own team and runs its portion inside its existing operating
+          context. Advancement, facilities, research management, and
+          academic affairs contribute to the same playbook in council,
+          then execute their piece each in their own house. Widespread in
+          universities, foundations, and mission-driven organizations. Can
+          run for decades.
         </P>
 
-        <H3>Merge for the deliverable</H3>
         <P>
-          Flash teams (Melissa Valentine and her collaborators at Stanford
-          named this pattern), tiger teams, project teams, task forces.
-          Expertise is drawn from across functions and merged into a single
-          team for the duration of the work. When the work is done, the
-          team dissolves. Expertise returns to the function. More common in
-          tech, product, and consulting.
+          <I>Merge for the deliverable.</I> Flash teams (Melissa Valentine
+          and her collaborators at Stanford named this pattern), tiger
+          teams, project teams, task forces. Expertise is drawn from
+          across functions and merged into a single team for the duration
+          of the work. When the work is done, the team dissolves and
+          people go back to their functions. More common in tech, product,
+          and consulting.
         </P>
 
-        <H3>Standing cross-functional composition</H3>
         <P>
-          Agile squads, product teams, centers of excellence, matrix teams.
-          Ongoing teams drawn permanently or semi-permanently from across
+          <I>Standing cross-functional composition.</I> Agile squads,
+          product teams, centers of excellence, matrix teams. Ongoing
+          teams drawn permanently or semi-permanently from across
           functions. Common in software organizations and in mature
           product-led institutions.
         </P>
 
         <P>
-          These are structurally different. They carry different rhythms,
-          different authority patterns, different membership assumptions.
-          Which one fits depends on the institution and the work &mdash; the
-          operating rhythm, the permanence of the effort, the authority
-          pattern already in place, the culture that has to receive it. What
-          is common to all three is what{" "}
-          <InternalLink slug="blown-assignment">the football piece</InternalLink>{" "}
-          called a{" "}
-          <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>:
-          who acts, on what signal, at what cadence, with what authority.{" "}
-          <I>
-            The container is the institution&rsquo;s choice. The contract is
-            not optional.
-          </I>
+          These are structurally different. They carry different rhythms, different authority patterns, different membership assumptions. Which one fits depends on the institution and the work: the operating rhythm, the permanence of the effort, the authority pattern already in place, the culture that has to receive it. All three share what <InternalLink slug="blown-assignment">the football piece</InternalLink> called a <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>: who acts, on what signal, at what cadence, with what authority. The institution chooses the container. The contract is not optional.
         </P>
 
         <H2>Not anti-function</H2>
         <P>
-          None of this is anti-function. Functions are where deep expertise
-          lives and grows. An evaluator reports into research and
-          evaluation. An advisor reports into student success. A clinician
-          reports into clinical operations. The function is the home of the
-          role, and that does not change.
+          None of this is anti-function. Functions are where deep expertise develops. An evaluator reports into research and evaluation. An advisor reports into student success. A clinician reports into clinical operations. The function is the home of the role, and that does not change.
         </P>
         <P>What changes is what runs the play.</P>
         <P>
-          Whichever container carries the work (a merged team, a council
-          with a playbook, a standing squad) draws expertise from the
-          functions for a specific deliverable and carries its own seam
-          contract. It is authorized to form across functions by an
-          integration seat that has the standing to make the arrangement
-          stick. When the work lands, the container&rsquo;s rhythm adjusts.
-          A flash team dissolves. A council closes a chapter. A squad rolls
-          onto its next mission. The expertise stays home. The next play
-          composes a different container.
+          Whichever container carries the work (a merged team, a council with a playbook, a standing squad) draws expertise from the functions for a specific deliverable and carries its own seam contract. It is authorized to form across functions by an integration seat that has the standing to make the arrangement stick. When the work lands, the container changes shape. A flash team dissolves. A council closes out. A squad moves to its next mission. People go back to their functions. The next play forms a different container.
         </P>
         <P>
-          <InternalLink slug="blown-assignment">The football piece</InternalLink>{" "}
-          in the library named the artifact underneath all of this: the{" "}
-          <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>. The{" "}
-          <InternalLink slug="plumbing-got-upgraded-water-didnt">plumbing piece</InternalLink>{" "}
-          described the same artifact at a different layer, between architecture and
-          human.{" "}
-          <InternalLink slug="the-contracts-between-systems">
+          <InternalLink slug="blown-assignment">The football piece</InternalLink> in the library named the artifact underneath all of this: the <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>. The <InternalLink slug="plumbing-got-upgraded-water-didnt">plumbing piece</InternalLink> described the same artifact at a different layer, between architecture and human. <I><InternalLink slug="the-contracts-between-systems">
             Contracts Between Systems
-          </InternalLink>{" "}
-          and <I>Two Bets, One Institution</I> describe it at still other
-          layers. Seams all the way down, each with its own contract. This
-          piece is about the one that runs across the org chart when people,
-          not systems, are the ones handing off.
+          </InternalLink></I> and <I>Two Bets, One Institution</I> describe it at still other layers. Seams all the way down, each with its own contract. This piece is about the one that runs across the org chart when people, not systems, do the handoffs.
         </P>
 
         <H2>The agentic era intensifies this</H2>
@@ -5213,36 +4308,17 @@ export const ESSAYS: Essay[] = [
           The agentic era does not change this argument. It intensifies it.
         </P>
         <P>
-          Agents can be introduced at every layer where a seam contract
-          exists. The container that absorbs them (flash team, council
-          playbook, standing squad) matters less than the contract they
-          are joining. What matters is that the contract exists at that
-          layer, with its four pieces named: who acts, on what signal, at
-          what cadence, with what authority. Without a contract, an agent
-          at any layer creates the same problem: decisions made without
-          an owner, without a cadence, and without the standing to reverse.
+          Agents can be introduced at every layer where a seam contract exists. The container that absorbs them (flash team, council playbook, standing squad) matters less than the contract they are joining. What matters is that the contract exists at that layer, with its four pieces named: who acts, on what signal, at what cadence, with what authority. Without a contract, an agent at any layer creates the same problem: decisions with no owner, no cadence, and no authority to reverse them.
         </P>
         <P>
-          The consequence of introducing an agent scales with the layer. An
-          agent inside a data pipeline is a technical operation; a failed
-          transform is a rerun. An agent inside a clinical alert, an
-          eligibility flag, or an intervention call is an institutional
-          action; a failed call is a person harmed. Most institutions will
-          introduce agents first at the layer whose failures are
-          reversible, then work upward as the contracts at higher layers
-          mature. That is not a claim about where agents belong but rather
-          where they safely arrive first.
+          The consequence of introducing an agent scales with the layer. An agent inside a data pipeline is a technical operation. A failed transform is a rerun. An agent inside a clinical alert, an eligibility flag, or an intervention call is an institutional action. A failed call is a person harmed. Most institutions will introduce agents first at the layer whose failures are reversible, then work upward as the contracts at higher layers mature. That is not a claim about where agents belong. It is a claim about where they can safely start.
         </P>
         <P>
           The patches will not hold. The work is horizontal. The org chart
           is vertical. The mismatch only grows.
         </P>
         <P>
-          The unit of work is the play. The mechanism that runs it across
-          the org chart is a seam contract. Some institutions carry that
-          contract in a flash team. Some in a council playbook. Some in a
-          standing squad. All are honest answers. None works without the
-          contract.
+          The unit of work is the play. The mechanism that runs it across the org chart is a seam contract. Some institutions carry that contract in a flash team, some in a council playbook, some in a standing squad. All are honest answers. None works without the contract.
         </P>
 
         <SeeAlso>
@@ -5319,24 +4395,13 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            A program officer, a portfolio manager, and a CSR lead are
-            staring at the same wall. Each can tell you how many people were
-            reached, how much money went out, how many sessions were
-            delivered. None can tell you, across the whole book, whether it
-            worked or where the next rupee or dollar should go. The usual
-            diagnosis is a reporting problem: buy a better dashboard,
-            tighten the template. The real problem is a category error.
-            You bought a system of record for <I>activity</I> and asked it
-            to behave like a system of record for <I>outcomes</I>. This
-            note is about that difference, and about the missing category,
-            the evidence spine, that turns reach into a decision. It is a
-            field note. It makes one structural claim.
-          </p>
+          A program officer, a portfolio manager, and a CSR lead all hit the same problem. Each can tell you how many people were reached, how much money went out, how many sessions were delivered. None can tell you, across the whole book, whether it worked or where the next rupee or dollar should go. The usual diagnosis is a reporting problem: buy a better dashboard, tighten the template. The real problem is a category error. You bought a system of record for <I>activity</I> and asked it to behave like a system of record for <I>outcomes</I>. This note is about that difference. It&rsquo;s also about the missing category — the evidence spine — that turns reach into a decision. It&rsquo;s a field note. It makes one structural claim.
+        </p>
         </Brief>
 
         <H2>Reach is what falls out for free</H2>
         <P>
-          Every measurement stack has a gravity, and its gravity is reach.
+          Every measurement stack pulls toward reach.
           Count the people served, the dollars deployed, the workshops
           run, the grants closed. These numbers are not wrong and they are
           not useless — a funder who cannot say how many children a
@@ -5348,27 +4413,12 @@ export const ESSAYS: Essay[] = [
           so attendance is counted. Reach is the exhaust of operations.
         </P>
         <P>
-          Outcomes are not exhaust. Nobody’s operational system logs “and
-          it worked” as a side effect of cutting a check. Whether a
-          program moved the thing it exists to move has to be{" "}
-          <I>constructed</I> — the outcome defined, placed on a scale, and
-          made comparable to the next program that defines success in its
-          own words. Reach is counted. Evidence is built. The reach trap
-          is mistaking the first for the second, and then blaming the
-          reporting when the second never shows up.
+          Outcomes are not exhaust. Nobody&rsquo;s operational system logs “and it worked” as a side effect of cutting a check. Whether a program actually moved its outcome has to be <I>constructed</I> — the outcome defined, placed on a scale, and made comparable to the next program that defines success in its own words. Reach is counted. Evidence is built. The reach trap is mistaking the first for the second, and then blaming the reporting when the second never shows up.
         </P>
 
         <H2>Why the CRM can’t save you</H2>
         <P>
-          This is where most teams go looking for the fix, and where it
-          fails. The instinct is familiar: we have a CRM, it holds all our
-          grantee data, surely the answer is a better view on top of it.
-          But a CRM is a system of record for <I>relationships and
-          transactions</I> — contacts, grants, touchpoints, disbursements,
-          pipeline stage. It is engineered, correctly, to answer{" "}
-          <I>who did we fund, what did we do, what is the status.</I>{" "}
-          That is a real and necessary job. It is just not the job of
-          telling you whether any of it worked.
+          This is where most teams go looking for the fix. It fails here. The instinct is familiar: we have a CRM, it holds all our grantee data, surely the answer is a better view on top of it. But a CRM is a system of record for <I>relationships and transactions</I> — contacts, grants, touchpoints, disbursements, pipeline stage. It is engineered, correctly, to answer <I>who did we fund, what did we do, what is the status.</I> That is a real and necessary job. It is just not the job of telling you whether any of it worked.
         </P>
 
         <Figure
@@ -5378,7 +4428,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          The honest version of the claim is not “CRMs are bad.” You can
+          The claim isn&rsquo;t “CRMs are bad.” You can
           bolt an outcome field onto any CRM. The trouble is that
           comparability is not a storage feature; it is a governance
           feature. Add a free-text “impact” field and, across forty
@@ -5390,36 +4440,12 @@ export const ESSAYS: Essay[] = [
           unless you build the second system deliberately.
         </P>
         <P>
-          None of this says measurement people have ignored use.
-          Utilization-focused evaluation has argued for decades that an
-          evaluation nobody acts on has failed; the conviction here is
-          inherited, not invented. What changes is where it lives.
-          Shared-measurement frameworks reach comparability by making
-          every grantee report the same indicators up front; metric
-          catalogs like IRIS+ do it by prescribing a common dictionary to
-          pick from. Both work when a portfolio shares one goal or one
-          asset class. A grant book rarely does. Forty grantees carry
-          forty theories of change, so the spine runs the other way: let
-          each keep its own language, then place it on one scale
-          afterward. The results-framework world already tried the
-          alternative, and the OECD’s review of results-based management
-          landed on a familiar pattern: the data gets collected, but it
-          rarely reaches the decision. The obvious read is a culture
-          problem, teams that never build the habit of looking. The deeper
-          one is structural: the data was never shaped to be read as a
-          decision, and the second system is what shapes it.
+          None of this says measurement people have ignored use. Utilization-focused evaluation has argued for decades that an evaluation nobody acts on has failed; the conviction here is inherited, not invented. What changes is where you put it. Shared-measurement frameworks reach comparability by making every grantee report the same indicators up front; metric catalogs like IRIS+ do it by prescribing a common dictionary to pick from. Both work when a portfolio shares one goal or one asset class. A grant book rarely does. Forty grantees carry forty theories of change, so the spine runs the other way: let each keep its own language, then place it on one scale afterward. The results-framework world already tried the alternative. The OECD&rsquo;s review of results-based management found a familiar pattern: data gets collected, but rarely reaches the decision. The easy read is a culture problem — teams never build the habit of looking. The real read is structural: the data was never shaped to be read as a decision. The second system is what shapes it.
         </P>
 
         <H2>What the rubric actually is</H2>
         <P>
-          The second system has two moving parts, and the first is the
-          one people skip. A rubric is not a survey and it is not a KPI
-          list. It is a <I>shared outcome scale</I> — an explicit, small,
-          ordered set of what “good” looks like, the same scale for every
-          grantee in the book. Four points, say: emerging, building,
-          established, sustained. That much is intuitive. The part that
-          does the real work is the second piece: a semantic layer that
-          maps each grantee’s own language onto that scale.
+          The second system has two moving parts, and the first is the one people skip. A rubric isn&rsquo;t a survey or a KPI list. It&rsquo;s a <I>shared outcome scale</I> — an explicit, small, ordered set of what “good” looks like, the same scale for every grantee in the book. Four points, say: emerging, building, established, sustained. That much is intuitive. The second piece does the real work: a semantic layer that maps each grantee&rsquo;s own language onto that scale.
         </P>
         <P>
           The scale is not a universal yardstick for impact. It is
@@ -5438,21 +4464,13 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          Grantee A says “kids reading at grade level.” Grantee B says
-          “literacy gains held two years.” Grantee C says “fewer kids
-          need remediation.” Left alone, those are three incomparable
-          sentences. Run them through the semantic layer and they become
-          placements on one scale — B at sustained, C at established, A
-          at building. Different words in; one comparable placement out.
-          Without the semantic layer, a rubric is just a fourth dialect
-          nobody speaks. With it, forty theories of change finally line
-          up on a single axis.
+          Grantee A says “kids reading at grade level.” Grantee B says “literacy gains held two years.” Grantee C says “fewer kids need remediation.” On their own, those are three incomparable sentences. Run them through the semantic layer and they become placements on one scale — B at sustained, C at established, A at building. Different words in; one comparable placement out. Without the semantic layer, a rubric is just a fourth dialect nobody speaks. With it, forty theories of change finally line up on a single axis.
         </P>
         <P>
-          That mapping is the part people imagine is automatic, and it is
-          not. Funder and grantee co-author it: they agree, in advance,
-          what evidence justifies each placement. The layer does not
-          dissolve the judgment about whether “held two years” outranks
+          People imagine that mapping is automatic. It isn&rsquo;t.
+          Funder and grantee co-author it: they agree, in advance,
+          what evidence justifies each placement. The layer doesn&rsquo;t
+          remove the judgment about whether “held two years” outranks
           “reading at grade level.” It forces that judgment to be made
           once, in the open, and then reused, instead of relitigated
           grantee by grantee every cycle.
@@ -5460,20 +4478,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>What the spine actually is</H2>
         <P>
-          The rubric tells you where one grantee lands. The spine is
-          what makes the whole book a book. It is the shared record
-          shape — the same handful of columns for every grantee, every
-          cycle: the outcome tier from the rubric, the leading signal
-          you are watching, the confidence you have in the evidence
-          behind it. That consistency is not clerical tidiness. The
-          shared columns <I>are</I> the structure. They are what a
-          CRM’s per-grantee custom fields can never be. One of those
-          columns earns a definition the others assume. Confidence is
-          not a mood. It names how much weight the evidence behind a
-          placement can bear: how strong it is, how recent, whether it
-          is comparable to the grantee in the next row. Keep it vague
-          and one officer’s “high” is another’s “medium.” Define it and
-          the column carries actual weight.
+          The rubric tells you where one grantee lands. The spine is what makes the whole book a book. It is the shared record shape — the same handful of columns for every grantee, every cycle: the outcome tier from the rubric, the leading signal you are watching, the confidence you have in the evidence behind it. That consistency isn&rsquo;t clerical tidiness — the shared columns <I>are</I> the structure. They are what a CRM&rsquo;s per-grantee custom fields can never be. One of those columns earns a definition the others assume. Confidence isn&rsquo;t a mood. It&rsquo;s how much weight the evidence behind a placement can bear: how strong it is, how recent, whether it is comparable to the grantee in the next row. Keep it vague and one officer&rsquo;s “high” is another&rsquo;s “medium.” Define it and the column carries actual weight.
         </P>
 
         <Figure
@@ -5483,16 +4488,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          Keep the columns identical and the book reads across in one
-          glance: same columns, one axis, comparability. You can sort,
-          compare, and rank forty grantees on the same terms, and the
-          portfolio question — where does the next dollar go — becomes
-          answerable instead of rhetorical. Fragmented in, decision-ready
-          out. Drop the columns, let each grantee report in its own
-          shape, and you are back to forty PDFs that agree on nothing.
-          The spine is unglamorous by design. It is a schema, not a
-          dashboard. But it is the actual decision architecture for MEL,
-          and it is the thing the reach trap leaves out.
+          Keep the columns identical and the whole book reads across at a glance — same columns, one axis, comparability. You can sort, compare, and rank forty grantees on the same terms, and the portfolio question — where does the next dollar go — becomes answerable instead of rhetorical. Fragmented in, decision-ready out. Drop the columns, let each grantee report in its own shape, and you are back to forty PDFs that agree on nothing. The spine is unglamorous by design — a schema, not a dashboard. But it&rsquo;s the actual decision architecture for MEL. It&rsquo;s what the reach trap leaves out.
         </P>
 
         <H2>One spine, three decisions</H2>
@@ -5521,18 +4517,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Where to start</H2>
         <P>
-          You do not start by ripping out the CRM. You start by
-          admitting it is a system of record for activity and will never
-          be more than that, and then you build the small second system
-          beside it. Name the four-point scale before you argue about
-          metrics. Write down the semantic layer — the mapping from each
-          grantee’s language to the scale — because that is the part
-          everyone wants to skip and the part that makes the rest work.
-          Fix the three or four columns that will be identical for every
-          grantee, forever. That is a spine. It is less software than
-          people fear and more discipline than they hope. But it is the
-          difference between a stack that hands you reach and a decision
-          system that hands you decisions.
+          You do not start by ripping out the CRM. You start by admitting it&rsquo;s a system of record for activity and will never be more. Then you build the small second system beside it. Name the four-point scale before you argue about metrics. Write down the semantic layer — the mapping from each grantee&rsquo;s language to the scale — because that is the part everyone wants to skip and the part that makes the rest work. Fix the three or four columns that will be identical for every grantee, forever. That is a spine. It is less software than people fear and more discipline than they hope. But it&rsquo;s the difference between a stack that hands you reach and a system that hands you decisions.
         </P>
         <P>
           <I>
@@ -5602,34 +4587,15 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Most rule books in any organization read like a description of
-            normal behavior. Show up on time. Document the decision. Get the
-            approval. Follow the policy. They are the rules that explain how
-            to do the thing. They are necessary. They are also not the rules
-            that decide whether the institution holds together when the
-            pressure rises.
-          </p>
+          Most rule books in any organization read like a description of normal behavior. Show up on time, document the decision, get the approval, follow the policy. They are the rules that explain how to do the thing. They are necessary. They are not the rules that decide whether the institution holds together under pressure.
+        </p>
           <p>
-            The interesting rules are the others. The ones that look weird
-            at first reading. The ones a new player has to have explained
-            twice. The ones that seem to interrupt the flow of the game
-            rather than describe it. Those are the rules doing the
-            structural work, and once you start noticing them, you cannot
-            stop noticing the parallel problem inside every institution.
-          </p>
+          The interesting rules are the others. The ones that look weird at first reading. The ones a new player has to have explained twice. The ones that seem to interrupt the flow of the game rather than describe it. Those are the rules doing the structural work. Once you start noticing them, you see the same problem inside every institution.
+        </p>
         </Brief>
 
         <P>
-          The most important systems are not designed to optimize
-          performance. They are designed to prevent predictable failure.
-          Most rules in those systems describe the normal case. The handful
-          that do not (that interrupt, that constrain, that pre-resolve a
-          specific exploit before it can happen) are the rules carrying the
-          system&rsquo;s actual integrity. Sports rules are the cleanest
-          place to see this discipline because the system is visible, the
-          failure modes have been observed at scale, and the rule book has
-          had decades of pressure-testing under the most adversarial
-          conditions any rule book ever faces.
+          The most important systems are not designed to optimize performance. They are designed to prevent predictable failure. Most rules in those systems describe the normal case. The handful that do not — that interrupt, constrain, or pre-resolve a specific exploit — are the rules doing the real integrity work. Sports rules are the cleanest place to see this discipline. The system is visible, the failure modes have been observed at scale, and the rule book has been pressure-tested for decades under conditions as adversarial as any rule book faces.
         </P>
         <P>Five rules. Five structural lessons.</P>
 
@@ -5648,15 +4614,7 @@ export const ESSAYS: Essay[] = [
           intentional drop.
         </P>
         <P>
-          That move (pre-resolving an exploit before it can be exploited)
-          is the most underused discipline in institutional design. Every
-          governance document I have read at scale describes what people
-          should do. Almost none of them name the specific exploits the
-          structure would otherwise reward, and pre-resolve them. The
-          Infield Fly Rule is what a rule book looks like when someone has
-          actually thought about what the rules are for: not to describe
-          the obvious, but to close the loopholes the obvious would
-          otherwise create.
+          That move (pre-resolving an exploit before it can be exploited) is the most underused discipline in institutional design. Every governance document I have read at scale describes what people should do. Almost none of them name the specific exploits the structure would otherwise reward, and pre-resolve them. The Infield Fly Rule is what a rule book looks like when someone actually asked what the rules are for — closing the loopholes the obvious would otherwise create.
         </P>
 
         <H2>The Free Guard Zone</H2>
@@ -5666,52 +4624,23 @@ export const ESSAYS: Essay[] = [
           outside the rings) can be removed from play. The rule was added
           in the 1990s after every team converged on the same strategy:
           take out, take out, take out. The dominant strategy worked. It
-          also collapsed the game into low-scoring sterility. The rule was
-          added not to tell players what to do, but to prevent rational
-          optimization from destroying the thing the game was built to be.
+          also collapsed the game &mdash; low scores, sterile play. The
+          rule was added not to tell players what to do, but to prevent
+          rational optimization from destroying the thing the game was
+          built to be.
         </P>
         <P>
-          This is{" "}
-          <a
+          This is <a
             href="https://en.wikipedia.org/wiki/Goodhart%27s_law"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             Goodhart&rsquo;s Law
-          </a>{" "}
-          as architecture rather than warning. (Originally Charles
-          Goodhart&rsquo;s 1975 observation that statistical regularities
-          collapse once they are targeted for policy, popularly
-          reformulated by Marilyn Strathern in 1997 as{" "}
-          <I>
-            &ldquo;when a measure becomes a target, it ceases to be a good
-            measure.&rdquo;
-          </I>
-          ) Every metric eventually gets gamed. Every KPI eventually
-          rewards the behavior that hits the number rather than the
-          behavior the number was meant to encourage. Every
-          growth-at-all-costs strategy eventually hollows the product. The
-          institutional discipline is not to ask whether the metric will be
-          gamed; it will. The discipline is to write the rule that prevents
-          the gaming from destroying the thing the metric was meant to
-          measure. A funder whose impact metric inadvertently rewards
-          risk-averse program design needs the Free Guard Zone equivalent:
-          the rule that prevents the rational pursuit of the metric from
-          killing what the metric was meant to encourage. Almost no funder
-          has that rule written down.
+          </a> built into the rules, not just cited as a warning. (Originally Charles Goodhart&rsquo;s 1975 observation that statistical regularities collapse once they are targeted for policy, popularly reformulated by Marilyn Strathern in 1997 as <I>“when a measure becomes a target, it ceases to be a good measure.”</I>) Every metric eventually gets gamed. Every KPI eventually rewards the behavior that hits the number rather than the behavior the number was meant to encourage. Every growth-at-all-costs strategy eventually hollows the product. The discipline isn&rsquo;t asking whether the metric will get gamed — it will. The discipline is writing the rule that stops the gaming from destroying what the metric was meant to measure. A funder whose impact metric inadvertently rewards risk-averse program design needs the Free Guard Zone equivalent: the rule that prevents the rational pursuit of the metric from killing what the metric was meant to encourage. Almost no funder has that rule written down.
         </P>
         <P>
-          Measurement scientists have a name for the pattern the Free Guard
-          Zone was written to prevent: <B>construct-irrelevant strategies</B>{" "}
-          &mdash; responses that hit the score without demonstrating the
-          thing the score was built to measure. Samuel Messick built the
-          modern validity framework around exactly this failure mode. The
-          AI benchmark community has been rediscovering it under other
-          names &mdash; reward hacking, specification gaming, Goodhart
-          taxonomy &mdash; as models learn to score high on evaluations
-          without learning the underlying skill. It is the same problem in
-          a different domain, and it is the reason the weird rule has to be
-          written before the metric is deployed.
+          Measurement scientists have a name for the pattern the Free Guard Zone was written to prevent: <B>construct-irrelevant strategies</B> — responses that hit the score without demonstrating the thing the score was built to measure. Samuel Messick built the modern validity framework around exactly this failure mode. The AI benchmark community has been rediscovering it under other names — reward hacking, specification gaming, Goodhart taxonomy — as models learn to score high on evaluations without learning the underlying skill. Same problem, different domain. That&rsquo;s why the weird rule has to be written before the metric ships.
         </P>
 
         <H2>Soccer Offside</H2>
@@ -5722,8 +4651,8 @@ export const ESSAYS: Essay[] = [
           Generations of new fans have asked: why is this a rule? The
           answer is that without it, the optimal strategy is to camp a
           fast striker near the opposing goal and play long balls over the
-          top. The midfield empties. The game dissolves into two penalty
-          boxes and a void in between. The structure of the game
+          top. The midfield empties. The game shrinks to two penalty
+          boxes with a void between them. The structure of the game
           disappears in pursuit of the most efficient way to score.
         </P>
         <P>
@@ -5753,8 +4682,9 @@ export const ESSAYS: Essay[] = [
           them. The referee has the authority to say: not now.
         </P>
         <P>
-          This is the rule the AB audience lives. Foundations enforce
-          reporting requirements that consume the program officer&rsquo;s
+          The AB audience runs into this rule constantly. Foundations
+          enforce reporting requirements that consume the program
+          officer&rsquo;s
           week and prevent the program officer from doing the work the
           reporting was meant to evidence. Healthcare networks enforce
           documentation rituals that pull clinicians away from the
@@ -5772,10 +4702,10 @@ export const ESSAYS: Essay[] = [
           skips a step that would derail a grantee, the dean who lets a
           faculty member miss a deadline that would damage the research),
           and the system depends on their discretion to function. The rule
-          that names that discretion explicitly, and gives the operator
-          the formal authority to exercise it without breaking the rules,
-          is one of the most useful rules an institution can have, and
-          almost no institution has it.
+          that names that discretion, and gives the operator formal
+          authority to use it without breaking the rules, is one of the
+          most useful rules an institution can have. Almost no
+          institution has it.
         </P>
 
         <H2>The Baton Exchange Zone</H2>
@@ -5791,19 +4721,7 @@ export const ESSAYS: Essay[] = [
           accountability.
         </P>
         <P>
-          Every organizational failure I have watched up close has
-          happened at an interface. The handoff between admissions and
-          financial aid. The handoff between the clinician and the
-          population-health analyst. The handoff between the program team
-          and the impact-reporting team. The handoff between the data
-          engineer and the governance committee. The work inside each
-          function is rarely the problem. The handoff between them almost
-          always is. The Baton Exchange Zone is the rule that says: name
-          the interface, structure the interface, make the interface
-          itself the place where accountability lives. Most institutional
-          process maps show the boxes. They do not show the handoffs. The
-          rule book that shows the handoffs (and gives the handoff its own
-          structured zone with its own rules) is the one that wins races.
+          Every organizational failure I have watched up close has happened at an interface. The handoff between admissions and financial aid. The handoff between the clinician and the population-health analyst. The handoff between the program team and the impact-reporting team. The handoff between the data engineer and the governance committee. The work inside each function is rarely the problem. The handoff between them almost always is. The Baton Exchange Zone says: name the interface, structure it, and put accountability there. Most institutional process maps show the boxes. They do not show the handoffs. The rule book that shows the handoffs, and gives each one its own zone and its own rules, is the one that wins races.
         </P>
 
         <H2>Five structural lessons</H2>
@@ -5822,22 +4740,22 @@ export const ESSAYS: Essay[] = [
           interface.
         </P>
 
-        <H2>Behavioral rules — the clarification</H2>
+        <H2>Behavioral rules &mdash; the clarification</H2>
         <P>
-          A clarification before that lands as the wrong claim. Behavioral
+          One clarification, so this doesn&rsquo;t land wrong. Behavioral
           rules (the ones that tell people what to do inside their
           function) are not optional. A relay team that cannot run does
           not win because the handoff was clean. A funder whose program
           officers cannot write coherent goals does not get rescued by a
           Free Guard Zone equivalent. Behavioral rules are the baseline;
           they have to be in place and executed for the structural rules
-          to matter at all. What this essay names is the layer above that
-          baseline: the rules that govern what happens between functions,
-          the rules that pre-resolve the exploits behavioral compliance
-          alone cannot prevent. Most institutions have the behavioral
-          layer; what they typically lack is the structural layer. The
-          argument is for both, with attention to the half that is usually
-          missing.
+          to matter at all. This essay is about the layer above that
+          baseline &mdash; the rules that govern what happens between
+          functions, and that pre-resolve the exploits behavioral
+          compliance alone cannot prevent. Most institutions have the
+          behavioral layer; what they typically lack is the structural
+          layer. The argument is for both, with attention to the half
+          that is usually missing.
         </P>
 
         <H2>The rule book that works</H2>
@@ -5855,25 +4773,16 @@ export const ESSAYS: Essay[] = [
           defeat their own purpose.
         </P>
         <P>
-          When a leader asks me what they should be writing down that
-          their predecessors did not, this is the answer. Not more
-          policies describing the normal case. The handful of
-          weird-looking rules that pre-resolve the exploits, prevent the
-          optimization collapse, preserve the distributed structure,
-          protect the mission from the process, and make the interfaces
-          themselves accountable. Those rules will not look like a
-          strategy document. They will look like a baseball umpire calling
-          a batter out for a ball that was never caught. That is what
-          working governance looks like up close.
+          When a leader asks me what they should be writing down that their predecessors did not, this is the answer. Not more policies for the normal case. The weird-looking rules — the ones that pre-resolve exploits, prevent optimization collapse, preserve distributed structure, protect the mission from process, and make interfaces themselves accountable. Those rules will not look like a strategy document. They will look like a baseball umpire calling a batter out for a ball that was never caught. That is what working governance looks like up close.
         </P>
         <P>
-          There is a corollary worth naming. G. K. Chesterton put it as a
-          heuristic a century ago: never remove a fence until you know why
-          it was put there. The rule that looks weird is probably
-          load-bearing. If you cannot say what predictable failure it was
-          written to prevent, the safest assumption is that someone before
-          you could — and that removing it will reveal, at cost, the
-          exploit the rule was there to close.
+          One corollary. G. K. Chesterton put it as a heuristic a century
+          ago: never remove a fence until you know why it was put there.
+          The rule that looks weird is probably the one holding the game
+          together. If you cannot say what predictable failure it was
+          written to prevent, the safest assumption is that someone
+          before you could &mdash; and that removing it will reveal, at
+          cost, the exploit the rule was there to close.
         </P>
         <P>
           The most important systems are not designed to optimize
@@ -5939,12 +4848,8 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Somewhere right now, a flag is firing. A ninth grader has crossed
-            a threshold and the system has labeled her <I>at risk</I> — off
-            track for graduation, the early-warning indicator lit red on a
-            screen. The data is clean enough. The model looks accurate. The
-            dashboard is beautiful.
-          </p>
+          Somewhere right now, a flag is firing. A ninth grader has crossed a threshold. The system has labeled her <I>at risk</I>: off track for graduation, the early-warning indicator lit red on a screen. The data is clean enough. The model looks accurate. The dashboard is beautiful.
+        </p>
           <p>
             And nothing happens.
           </p>
@@ -5971,25 +4876,11 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          A dashboard is an artifact. A decision system is that artifact in
-          motion — a canonical definition for every measure, surfaces built
-          backward from the specific recurring calls people make, and a
-          distribution that outlives the individuals who built it. The flag
-          is not the system. The system is everything that has to be true
-          for the flag to reach someone authorized to act on it, measuring
-          something real, in time to matter.
+          A dashboard is an artifact. A decision system is what makes that artifact useful: a canonical definition for every measure, surfaces built backward from the recurring calls people actually make, and a distribution that keeps working after the people who built it leave. The flag is not the system. The system is everything that has to be true for the flag to reach someone authorized to act on it, measuring something real, in time to matter.
         </P>
 
         <P>
-          We’ll follow that flag (the at-risk / early-warning indicator)
-          through the whole framework. It’s worth noticing early that the{" "}
-          <I>pattern</I> travels. The same decision-system shape shows up
-          as a behavioral-health team’s relapse-risk score, a hospital’s
-          deterioration alert, a funder’s off-track grantee. These aren’t
-          structurally identical. The stakes, the data behind them, the
-          right to intervene, and the cost of being wrong all differ. But
-          the shape recurs, and that recurrence is what makes a single
-          framework worth writing.
+          We&rsquo;ll follow that flag (the at-risk / early-warning indicator) through the whole framework. Notice early that the pattern travels. The same decision-system shape shows up as a behavioral-health team&rsquo;s relapse-risk score, a hospital&rsquo;s deterioration alert, a funder&rsquo;s off-track grantee. These aren&rsquo;t structurally identical. The stakes, the data behind them, the right to intervene, and the cost of being wrong all differ. But the shape keeps showing up, and that&rsquo;s why one framework is worth writing.
         </P>
 
         <H2>Pipes and the faucet</H2>
@@ -6061,39 +4952,17 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The fix is structural, not a directive. You build a{" "}
-          <B>
-            <ArtifactLink slug="decision-system-reference-architecture">semantic keystone</ArtifactLink>
-          </B>: a single layer, governed in code,
-          where every metric is defined once. <I>On-track</I> is computed
-          in one place, and every surface (
-          <InternalLink slug="three-surfaces-one-keystone">
-            the teacher’s console, the school’s program report, the
-            district’s executive view
-          </InternalLink>
-          , and every AI feature downstream) reads from that one
-          computation. There’s no <I>sanctioned</I> second definition for
-          the number to drift toward. The slow, unglamorous work that
-          makes this real is <B>definitional reconciliation</B>: getting
-          the registrar and the dean, or the program officer and the
-          grantee, to commit to the same canonical meaning before anyone
-          builds a chart on top of it. It’s tedious. It’s also the
-          foundation.
+          The fix is structural, not a directive. You build a <B><ArtifactLink slug="decision-system-reference-architecture">semantic keystone</ArtifactLink></B>: a single layer, governed in code, where every metric is defined once. <I>On-track</I> is computed in one place, and every surface (the teacher&rsquo;s console, the school&rsquo;s program report, the district&rsquo;s executive view, and every AI feature downstream) reads from that one computation. There&rsquo;s no <I>sanctioned</I> second definition for the number to drift toward. The slow, unglamorous work that makes this real is <B>definitional reconciliation</B>: getting the registrar and the dean, or the program officer and the grantee, to commit to the same canonical meaning before anyone builds a chart on top of it. It&rsquo;s tedious. It&rsquo;s also the foundation.
         </P>
 
         <P>
-          For our ninth grader, this is the difference between <I>at
-          risk</I> meaning the same thing in her building as in the one
-          across town. But notice the limit of what reconciliation buys
-          you: it makes the number <I>consistent</I>, not <I>correct</I>.
-          A definition everyone agrees on can still point at the wrong
-          thing. Hold that thought — it’s the third layer.
+          For our ninth grader, this is the difference between <I>at risk</I> meaning the same thing in her building as in the one across town. But notice the limit of what reconciliation buys you: it makes the number consistent. Consistent isn&rsquo;t the same as correct. A definition everyone agrees on can still point at the wrong thing. Hold that thought — it&rsquo;s the third layer.
         </P>
 
         <H2>Authority: who acts, and when</H2>
 
         <P>
-          Now the flag means one thing. Who moves?
+          Now the flag means one thing. So who acts on it?
         </P>
 
         <P>
@@ -6110,41 +4979,15 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The instrument that fixes it is a{" "}
-          <B>
-            <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>
-          </B>
-          : an explicit, written understanding (operational, not legal) of{" "}
-          <I>
-            who acts on a signal, with what authority, on what cadence,
-            and at what resolution.
-          </I>{" "}
-          It turns integrated bytes into decision-ready intelligence by
-          naming an owner for the recurring call. And because the call is
-          recurring, the surfaces serve it directly: the teacher gets a
-          progress-monitoring console tuned to <I>this week’s</I> action,
-          the principal gets a program report, the superintendent gets the
-          portfolio view.{" "}
-          <InternalLink slug="three-surfaces-one-keystone">
+          The instrument that fixes it is a <B><ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink></B>: an explicit, written understanding (operational, not legal) of <I>who acts on a signal, with what authority, on what cadence, and at what resolution.</I> It turns integrated bytes into decision-ready intelligence by naming an owner for the recurring call. And because the call is recurring, the surfaces serve it directly: the teacher gets a progress-monitoring console tuned to <I>this week&rsquo;s</I> action, the principal gets a program report, the superintendent gets the portfolio view. <InternalLink slug="three-surfaces-one-keystone">
             Three surfaces, one keystone underneath.
           </InternalLink>
         </P>
 
         <P>
-          For any of this to stick, the function needs traction, and
-          traction is a property of the <I>seat</I>. It belongs with the
-          seat that holds legitimate cross-functional authority (often
-          the COO, sometimes a Chief Impact Officer or equivalent
-          integrator, in a smaller shop the CEO), but never{" "}
-          <InternalLink slug="where-should-data-sit">
+          For any of this to stick, the function needs traction, and traction is a property of the <I>seat</I>. It belongs with the seat that holds legitimate cross-functional authority (often the COO, sometimes a Chief Impact Officer or equivalent integrator, in a smaller shop the CEO). But not <InternalLink slug="where-should-data-sit">
             inside a single technical or financial function by default
-          </InternalLink>
-          , which will bend the data toward its own incentives:
-          optimized for uptime, or for cost, but not for the
-          cross-functional meaning a dean or a clinical director needs.
-          For our ninth grader, the seam contract is the difference
-          between a flag that lands on a named counselor by Tuesday and a
-          flag that everyone could see and no one owned.
+          </InternalLink>. Those functions bend the data toward their own incentives — uptime, or cost — not the cross-functional meaning a dean or clinical director needs. For our ninth grader, the seam contract is the difference between a flag that lands on a named counselor by Tuesday and a flag that everyone could see and no one owned.
         </P>
 
         <P>
@@ -6194,13 +5037,13 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The cost isn’t only that this is unfair, though it is. It’s
-          that the institution now misallocates at scale: pouring
-          intervention dollars at a proxy while the actual construct goes
-          unseen: the student who is slipping but doesn’t match the
-          historical pattern. You can defund a program that works and
-          miss a cohort that needs you, both at once, with a perfectly
-          accurate model.
+          The unfairness is real, but it isn&rsquo;t the biggest cost.
+          The bigger cost is that the institution now misallocates at
+          scale — pouring intervention dollars at a proxy while the
+          actual construct goes unseen: the student who is slipping
+          but doesn&rsquo;t match the historical pattern. You can
+          defund a program that works and miss a cohort that needs
+          you, both at once, with a perfectly accurate model.
         </P>
 
         <P>
@@ -6215,36 +5058,11 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The failure has a shape, and the shape travels. A
-          behavioral-health risk model trained on prior service
-          utilization doesn’t predict who is <I>at risk</I>; it predicts{" "}
-          <I>who the system has already served</I>. Different sector,
-          identical mistake — accuracy against a proxy, mistaken for
-          measurement of the construct. When the same error shows up in a
-          school and a clinic, you’re not looking at a domain quirk.
-          You’re looking at a recurring failure mode, and the framework
-          is what lets you name it before it ships.
+          The failure has a shape, and the shape travels. A behavioral-health risk model trained on prior service utilization doesn&rsquo;t predict who is <I>at risk</I>; it predicts <I>who the system has already served</I>. Different sector, same mistake: accuracy against a proxy, mistaken for measurement of the construct. When the same error shows up in a school and a clinic, it isn&rsquo;t a domain quirk. It&rsquo;s a recurring failure mode, and the framework is what lets you name it before it ships.
         </P>
 
         <P>
-          Two disciplines guard this layer. The first is refusing the
-          rolled-up average. A single number (the graduation rate, the
-          program’s headline outcome) can hide opposing trends underneath
-          it: a falling overall rate that masks a <I>rising</I> rate in
-          one subgroup, the average quietly erasing the very contrast
-          the decision rests on.{" "}
-          <B>
-            <InternalLink slug="burden-disparity-and-the-next-dollar">Burden and disparity are different signals</InternalLink>
-          </B>
-          , and only disaggregation makes the resource choice explicit
-          and honest: where the next dollar goes. The second discipline
-          is asking what the measure is <I>for</I>:{" "}
-          <B>
-            <InternalLink slug="actions-not-answers">decision utility</InternalLink>
-          </B>{" "}
-          weighs the expected cost and benefit of the specific action,
-          not just the statistical accuracy of the score. A validated
-          flag that triggers no useful act is a validated waste.
+          Two disciplines guard this layer. The first is refusing the rolled-up average. A single number (the graduation rate, the program&rsquo;s headline outcome) can hide opposing trends underneath it: a falling overall rate that masks a <I>rising</I> rate in one subgroup, the average quietly erasing the very contrast the decision rests on. <B><InternalLink slug="burden-disparity-and-the-next-dollar">Burden and disparity are different signals</InternalLink></B>, and only disaggregation makes the resource choice explicit and honest: where the next dollar goes. The second discipline is asking what the measure is <I>for</I>: <B><InternalLink slug="actions-not-answers">decision utility</InternalLink></B> weighs the expected cost and benefit of the specific action, not just the statistical accuracy of the score. A validated flag that triggers no useful act is a validated waste.
         </P>
 
         <P>
@@ -6256,11 +5074,7 @@ export const ESSAYS: Essay[] = [
         <H2>The stress test: agentic AI</H2>
 
         <P>
-          Until recently, most decision systems still kept a human pause
-          somewhere in the chain — someone read the report, interpreted
-          the flag, judged it before anything happened. That pause was
-          rarely designed. It was just there, a free safeguard no one
-          had to budget for.
+          Until recently, most decision systems still kept a human pause somewhere in the chain — someone read the report, interpreted the flag, judged it before anything happened. That pause was rarely designed on purpose. It was just there — a safeguard the institution never had to pay for.
         </P>
 
         <P>
@@ -6275,29 +5089,12 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The fix isn’t a new procurement rubric. An autonomous agent is
-          a specialist that moves faster than you can read, and a
-          specialist needs a{" "}
-          <InternalLink slug="the-contracts-between-systems">
+          The fix isn&rsquo;t a new procurement rubric. An autonomous agent is a specialist that moves faster than you can read. Specialists need <InternalLink slug="the-contracts-between-systems">
             seam contract
-          </InternalLink>
-          . The agent’s contract just has to make explicit what a
-          human’s could leave implicit: an <B>autonomy range</B> (how
-          much it may do unsupervised, from <I>return only verified
-          responses</I> to <I>act review-by-exception</I>, set by the
-          stakes of the decision, not the cleverness of the model); a{" "}
-          <B>reversibility envelope</B> (how and when its action can be
-          undone, and who is told when a record someone already acted
-          on gets corrected); <B>a named human owner</B> who answers for
-          what it does; and a <B>consumption contract</B>, so metered spend
-          lands on the department that generated it. And like every
-          other reader, the agent reads through the same semantic
-          keystone — because{" "}
-          <InternalLink slug="grounding-the-ai-layer">
+          </InternalLink>s. The agent&rsquo;s contract has to make four things explicit that a human&rsquo;s could leave implicit. An <B>autonomy range</B> — how much it may do unsupervised, from <I>return only verified responses</I> to <I>act review-by-exception</I>, set by the stakes of the decision, not the cleverness of the model. A <B>reversibility envelope</B> — how and when its action can be undone, and who is told when a record someone already acted on gets corrected. <B>A named human owner</B> who answers for what it does. And a <B>consumption contract</B>, so metered spend lands on the department that generated it. And like every other reader, the agent reads through the same semantic keystone — because <InternalLink slug="grounding-the-ai-layer">
             an AI ungrounded in canonical definitions will cheerfully
             invent metric names and answer questions no one can reconcile
-          </InternalLink>
-          .
+          </InternalLink>.
         </P>
 
         <P>
@@ -6312,34 +5109,13 @@ export const ESSAYS: Essay[] = [
         <H2>Design the rules for the failure mode</H2>
 
         <P>
-          The best institutional rules aren’t written to describe normal
-          play; they’re written to prevent predictable failure. Goodhart’s
-          law (<I>a measure that becomes a target stops being a good
-          measure</I>) isn’t a slogan for a poster. It’s a design
-          constraint. If a measure will be gamed, the system has to
-          protect the construct before someone hollows it out by chasing
-          the proxy. That’s a whole essay of its own — see{" "}
-          <InternalLink slug="why-the-rules-look-weird">
+          The best institutional rules aren&rsquo;t written to describe normal play; they&rsquo;re written to prevent predictable failure. Goodhart&rsquo;s law (<I>a measure that becomes a target stops being a good measure</I>) isn&rsquo;t a slogan for a poster. It&rsquo;s a design constraint. If a measure will be gamed, the system has to protect the construct before someone hollows it out by chasing the proxy. That&rsquo;s a whole essay of its own — see <a href="/library/why-the-rules-look-weird" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="why-the-rules-look-weird">
             Why the rules look weird
-          </InternalLink>
-          . For the decision-system, the corollary is simple: write the
-          weird rule first.
+          </InternalLink></a>. For the decision-system, the corollary is simple: write the weird rule first.
         </P>
 
         <P>
-          There’s a payoff worth naming, and a temptation worth
-          refusing. The marginal cost of storing and processing data
-          has collapsed; the cost of making it <I>mean</I> something has
-          not. That collapse tempts institutions toward a fantasy of
-          total visibility: seeing each person <I>whole</I>. They can’t,
-          and shouldn’t pretend to. The honest version is smaller and
-          harder: stop mistaking the fragment you measure for the person
-          in front of you. For years a student arrived in our systems as
-          a postage stamp: a score, a category, a proxy for an enrollment
-          number. The aim of the architecture isn’t to swap that
-          thumbnail for a perfect portrait. It’s to keep the institution
-          honest about how little of her it sees, and to make that
-          partial view legible to a decision instead of merely stored.
+          There&rsquo;s a payoff worth naming, and a temptation worth refusing. The marginal cost of storing and processing data has collapsed; the cost of making it <I>mean</I> something has not. That collapse tempts institutions toward a fantasy of total visibility: seeing each person <I>whole</I>. They can&rsquo;t, and shouldn&rsquo;t pretend to. The real move is smaller and harder: stop mistaking the fragment you measure for the person in front of you. For years a student showed up in our systems as a postage stamp: a score, a category, an enrollment number. The point of the architecture isn&rsquo;t to replace that thumbnail with a full portrait. It&rsquo;s to keep the institution honest about how little of her it sees, and to make that partial view legible to a decision instead of merely stored.
         </P>
 
         <H2>What the system is for</H2>
@@ -6449,12 +5225,8 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            For most of human history, every institution has had to carry you
-            as a thumbnail. A name, a category, a score, a photo the size of a
-            postage stamp. That wasn&rsquo;t malice. It was budget. Human
-            attention had limits, and the thumbnail was what fit through the
-            pipeline.
-          </p>
+          For most of human history, every institution has had to carry you as a thumbnail.
+        </p>
           <p>
             The price of the full picture has collapsed. Every institution now
             faces a choice it did not have before: use the discount to sort
@@ -6467,26 +5239,13 @@ export const ESSAYS: Essay[] = [
 
         <H2>Something quiet just changed.</H2>
         <P>
-          For thousands of years, the bottleneck was carrying the picture. Not
-          anymore. The advisor still has twenty minutes with you. The
-          clinician still has fifty. But what travels into that twenty minutes
-          (what survives the pipeline from intake to conversation) used to be
-          a thumbnail and can now be the full picture. Not because human
-          attention got cheaper. Because the cost of preserving and presenting
-          the picture to the human at the moment of decision finally dropped.
+          For thousands of years, institutions ran on human attention, and human attention has limits. A teacher with thirty students. A doctor with forty patients a week. A college advisor with three hundred names on her caseload. To hold each of those people at full resolution would have taken billions of hours. So every institution that served you compressed you into a thumbnail. Then it learned to act from the thumbnail.
         </P>
         <P>
-          You can think about it the way photography went. We didn&rsquo;t
-          always have high-resolution images of everything. We had paintings,
-          and only royalty could afford the full likeness. We had early
-          photographs, but they were precious and rare, one shot per occasion,
-          no retakes. Then film got cheap. Then digital got cheap. Then
-          storage and transmission got so cheap that we stopped thinking about
-          it at all. Today your phone holds tens of thousands of full-resolution
-          images and the question is just which ones to look at.
+          You can think about it the way photography went. We didn&rsquo;t always have high-resolution images of everything. We had paintings, and only royalty could afford the full likeness. We had early photographs, but they were precious and rare — one shot per occasion, no retakes. Then film got cheap. Then digital got cheap. Then storage and transmission got so cheap that we stopped thinking about it at all. Today your phone holds tens of thousands of full-resolution images and the question is just which ones to look at.
         </P>
         <P>
-          The same thing has just happened to people, inside institutions. The
+          The same thing just happened to people inside institutions. The
           price of the full picture has collapsed.
         </P>
 
@@ -6495,12 +5254,7 @@ export const ESSAYS: Essay[] = [
           So now every institution faces a choice it didn&rsquo;t have before.
         </P>
         <P>
-          It can use the discount to sort you faster. More candidates
-          screened, more students flagged, more patients triaged. Same
-          thumbnails: just more of them, generated more quickly. That&rsquo;s
-          the obvious move, because efficiency has a clear ROI. And the
-          metrics most institutions already track (volume, throughput,
-          latency) reward more of what they&rsquo;re already doing.
+          It can use the discount to sort you faster. More candidates screened, more students flagged, more patients triaged. Same thumbnails: just more of them, generated more quickly. That&rsquo;s the obvious move. Efficiency has a clear ROI. And the metrics most institutions already track (volume, throughput, latency) reward more of what they&rsquo;re already doing.
         </P>
         <P>
           Or it can use the discount to hold you at higher resolution. Same
@@ -6509,21 +5263,7 @@ export const ESSAYS: Essay[] = [
           thumbnail. It&rsquo;s the picture.
         </P>
         <P>
-          The CEO who says she needs the thumbnail because attention is scarce
-          is not wrong about the constraint. Human attention is still scarce;
-          the picture itself is not an asset unless it has been designed for
-          the moment of decision. A full-resolution view dumped into the
-          advisor&rsquo;s twenty minutes without curation produces overload,
-          not insight. The discount has to be spent on two things, not one:
-          on preserving the picture, and on designing the interface that lets
-          the picture inform the twenty minutes without overwhelming them.
-          The question is not <I>thumbnail or full picture?</I> It is{" "}
-          <I>
-            what does the full picture need to look like for the advisor to
-            use it in twenty minutes?
-          </I>{" "}
-          That is a design problem, and it is the second half of what the
-          discount buys.
+          The CEO who says she needs the thumbnail because attention is scarce isn&rsquo;t wrong about the constraint. Human attention is still scarce. The picture itself isn&rsquo;t an asset unless someone designed it for the moment of decision. A full-resolution view dumped into twenty minutes without curation is overload, not insight. The discount has to buy two things: the picture, and an interface that lets the advisor use it in twenty minutes without drowning. The question is not <I>thumbnail or full picture?</I> It is <I>what does the full picture need to look like for the advisor to use it in twenty minutes?</I> That&rsquo;s a design problem. It&rsquo;s the second half of what the discount buys.
         </P>
         <P>
           Most institutions are reaching for the first option. It&rsquo;s what
@@ -6542,37 +5282,21 @@ export const ESSAYS: Essay[] = [
           </I>
         </P>
         <P>
-          That&rsquo;s not sentiment. It&rsquo;s a measurement standard. The
-          discipline is called{" "}
-          <B>
-            <InternalLink slug="what-is-this-system-measuring">
+          That&rsquo;s not sentiment. It&rsquo;s a measurement standard. The discipline is called <InternalLink slug="what-is-this-system-measuring">
               validity
-            </InternalLink>
-          </B>
-          , and it has decades of track record from the world of high-stakes
-          testing. A score that tracks the construct it claims to measure is
-          valid. A score that tracks something else (length, fluency,
-          demographics, the candidate tested just before you) is not. The
-          standard isn&rsquo;t new. It&rsquo;s been ready for this moment for
-          a long time.
+            </InternalLink>, and it has decades of track record from the world of high-stakes testing. A score that tracks the construct it claims to measure is valid. A score that tracks length, fluency, demographics, or the candidate tested just before you isn&rsquo;t measuring what it says it is. The standard isn&rsquo;t new. It&rsquo;s been ready for a while.
         </P>
         <P>
-          What&rsquo;s new is the price of asking it. When carrying the full
-          picture was impossible, you couldn&rsquo;t really apply validity to
-          most institutional systems, there was no full picture to validate
-          against. Now you can. And now you should.
+          What&rsquo;s new is the price of asking it. When carrying the full picture was impossible, you couldn&rsquo;t apply validity to most institutional systems. There was nothing to validate against. Now you can. And now you should.
         </P>
 
         <H2>The stakes.</H2>
         <P>
-          For most of history, the thumbnail was the kindest thing an
-          institution could do for you. The full picture wasn&rsquo;t kept out
-          of cruelty. It was kept out because nobody could carry it.
+          For most of history, the thumbnail was the kindest thing an institution could do for you. Institutions did not withhold the full picture out of ill will. They withheld it because carrying it was impossible.
         </P>
-        <P>That isn&rsquo;t true anymore.</P>
+        <P>We don&rsquo;t have to anymore.</P>
         <P>
-          The question for 2026 is whether institutions use the savings to
-          take more thumbnails faster, or to finally stop settling for them.
+          The question for 2026 is whether institutions use the savings to generate more thumbnails faster, or to finally stop settling for them.
         </P>
         <P>We used to settle for thumbnails.</P>
         <P>We don&rsquo;t have to anymore.</P>
@@ -7086,31 +5810,11 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Every institution standing up artificial intelligence in 2026 is
-            making a model-layer bet, whether or not it has named it as one.
-            The shorthand the field has settled on (vendor-anchored versus
-            federated) captures the surface of the choice. The deeper
-            question is whether the institution delegates orchestration to
-            a vendor-controlled platform or owns the orchestration layer
-            itself: who decides which model handles which workload, who
-            evaluates whether each model is doing what it claims, who
-            writes the contracts for read, write, cadence, consent, and
-            reversibility, and who is responsible at the seams when the
-            institution inevitably runs both choices in different parts of
-            itself.
-          </p>
+          Every institution standing up artificial intelligence in 2026 is making a model-layer bet, whether or not it has named it as one. The shorthand the field has settled on (vendor-anchored versus federated) captures the surface of the choice. The deeper question is whether the institution delegates orchestration to a vendor-controlled platform or owns the orchestration layer itself: who decides which model handles which workload, who evaluates whether each model is doing what it claims, who writes the contracts for read, write, cadence, consent, and reversibility, and who is responsible at the seams when the institution inevitably runs both choices in different parts of itself. The consequences of this choice are different from the same choice for tools, and most institutions have not yet articulated what they are choosing. They choose anyway. The bet is inside every AI procurement, every pilot, every campus rollout, every internal portal. It decides more than any single tool choice does — it shapes what the institution&rsquo;s AI posture will look like in three years.
+        </p>
           <p>
-            This essay is about that bet: what each side buys, what it
-            trades, where it shows up one layer down inside the data
-            stack, and why the institutions handling this moment well are
-            not choosing one bet for everything. They are calibrating
-            different bets to different domains. The calibration, when it
-            is done deliberately, is the architecturally honest answer.
-            When it is done by accident, it surfaces later as a specific
-            kind of governance gap: the seam contracts between the
-            vendor-anchored and federated domains, which neither bet
-            alone is responsible for and which nobody writes by default.
-          </p>
+          This essay is about that bet: what each side buys, what it trades, where it shows up one layer down inside the data stack, and why the institutions handling this moment well are not choosing one bet for everything. They are calibrating different bets to different domains. The calibration, when it is done deliberately, is the architecturally honest answer. When it happens by accident, it shows up later as a governance gap: the seam contracts between the vendor-anchored and federated domains. Neither bet owns them. Nobody writes them by default.
+        </p>
         </Brief>
 
         <H2>What the vendor-anchored bet buys, and what it trades</H2>
@@ -7133,203 +5837,68 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          What the bet trades is harder to see at the moment of signing.
-          Vendor switching costs accumulate quickly once integrations are
-          built against the platform&rsquo;s specific APIs and the
-          institutional workflow has reorganized around the platform&rsquo;s
-          interface. The institution&rsquo;s evaluation discipline tends to
-          atrophy because the responsibility for assessing model quality
-          has been delegated to the vendor; over time, fewer people
-          inside the institution can answer the question of whether the
-          model is doing what it claims. The model layer becomes a single
-          point of architectural dependency &mdash; and when the vendor moves a
-          feature behind a higher tier, sunsets a model the institution
-          had standardized on, or shifts pricing, the institution
-          discovers it does not have the option to walk away that it
-          thought it had. Public exemplars of this bet are by now
-          familiar.{" "}
-          <a
+          What the bet trades is harder to see at the moment of signing. Vendor switching costs accumulate quickly once integrations are built against the platform&rsquo;s specific APIs and the institutional workflow has reorganized around the platform&rsquo;s interface. The institution&rsquo;s evaluation discipline tends to atrophy because the responsibility for assessing model quality has been delegated to the vendor; over time, fewer people inside the institution can answer the question of whether the model is doing what it claims. The model layer becomes a single point of architectural dependency. When the vendor moves a feature to a higher tier, sunsets a model the institution standardized on, or shifts pricing, the institution finds it does not have the walk-away option it thought it had. Public exemplars of this bet are by now familiar. <a href="https://news.asu.edu/20240118-university-news-new-collaboration-openai-charts-future-ai-higher-education" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><a
             href="https://news.asu.edu/20240118-university-news-new-collaboration-openai-charts-future-ai-higher-education"
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             Arizona State University&rsquo;s partnership with OpenAI
-          </a>
-          , announced in January 2024, was the first institution-level
-          ChatGPT Enterprise rollout in higher education.{" "}
-          <a
+          </a></a>, announced in January 2024, was the first institution-level ChatGPT Enterprise rollout in higher education. <a href="https://home.dartmouth.edu/news/2025/12/dartmouth-announces-ai-partnership-anthropic-and-aws" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><a
             href="https://home.dartmouth.edu/news/2025/12/dartmouth-announces-ai-partnership-anthropic-and-aws"
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             Dartmouth followed in December 2025
-          </a>
-          , the first Ivy League institution to deploy at institutional
-          scale, with Anthropic&rsquo;s Claude for Education delivered
-          alongside AWS.{" "}
-          <a
+          </a></a>, the first Ivy League institution to deploy at institutional scale, with Anthropic&rsquo;s Claude for Education delivered alongside AWS. <a href="https://chicagomaroon.com/52867/news/university-announces-claude-enterprise-access-for-students-faculty-staff/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><a
             href="https://chicagomaroon.com/52867/news/university-announces-claude-enterprise-access-for-students-faculty-staff/"
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             The University of Chicago&rsquo;s partnership with Anthropic
-          </a>
-          , announced in mid-2026, gave students, faculty, and staff
-          Claude Enterprise access on the same architectural shape at the
-          model-vendor layer.{" "}
-          <a
+          </a></a>, announced in mid-2026, gave students, faculty, and staff Claude Enterprise access on the same architectural shape at the model-vendor layer. <a href="https://edsource.org/2026/cal-state-renews-controversial-system-wide-contract-with-openai/758919" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><a
             href="https://edsource.org/2026/cal-state-renews-controversial-system-wide-contract-with-openai/758919"
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             Cal State University renewed its system-wide OpenAI deal
-          </a>{" "}
-          in May 2026, at $13 million a year for three years, the
-          largest active higher-ed enterprise agreement OpenAI carries,
-          extending coverage across 470,000 students and 63,000 faculty
-          and staff. These institutions made a defensible call. They
-          also, by making it, accepted the trades.
+          </a></a> in May 2026, at $13 million a year for three years, the largest active higher-ed enterprise agreement OpenAI carries, extending coverage across 470,000 students and 63,000 faculty and staff. These institutions made a defensible call. They also, by making it, accepted the trades.
         </P>
 
         <H2>What the federated bet buys, and what it trades</H2>
 
         <P>
-          The federated bet looks different from the start. Build an
-          internal abstraction layer (a model gateway, an AI router, a
-          middleware tier) that lets the institution call any model
-          behind a stable internal API. Open-source models hosted on the
-          institution&rsquo;s own high-performance compute sit alongside calls
-          to commercial foundation models under business-associate
-          agreements. The user-facing interface is the institution&rsquo;s
-          own; the model behind it can change without changing the
-          interface. What this bet buys is real. Switching costs stay
-          low because the institution is not locked to any single
-          vendor&rsquo;s call interface. Evaluation discipline stays inside
-          the institution because the orchestration layer requires the
-          institution to make active choices about which model handles
-          which workload. The contract layer, covering who reads what
-          data, who writes what record, on what cadence, under what
-          consent, with what reversibility, is owned end to end rather
-          than partly delegated. The institution can route
-          low-complexity queries to inexpensive models and reserve
-          premium frontier models for use cases that justify the cost.
-          None of that is theoretical.{" "}
-          <a
+          The federated bet looks different from the start. Build an internal abstraction layer (a model gateway, an AI router, a middleware tier) that lets the institution call any model behind a stable internal API. Open-source models hosted on the institution&rsquo;s own high-performance compute sit alongside calls to commercial foundation models under business-associate agreements. The user-facing interface is the institution&rsquo;s own; the model behind it can change without changing the interface. What this bet buys is real. Switching costs stay low because the institution is not locked to any single vendor&rsquo;s call interface. Evaluation discipline stays inside the institution because the orchestration layer requires the institution to make active choices about which model handles which workload. The contract layer, covering who reads what data, who writes what record, on what cadence, under what consent, with what reversibility, is owned end to end rather than partly delegated. The institution can route low-complexity queries to inexpensive models and reserve premium frontier models for use cases that justify the cost. None of that is theoretical. <a href="https://genai.umich.edu/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><a
             href="https://genai.umich.edu/"
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             The University of Michigan&rsquo;s U-M GPT
-          </a>{" "}
-          is a real, operating example of owned orchestration at scale — a
-          custom UI tier sitting on top of Azure OpenAI Service and
-          U-M-hosted open-source models, with a three-tier product (U-M
-          GPT for consumption, U-M Maizey for custom-dataset use, U-M
-          GPT Toolkit for full environment control) all governed inside
-          the institutional perimeter. Stanford&rsquo;s Center for Research on
-          Foundation Models runs and evaluates many models explicitly,
-          the clearest public example of an academic institution
-          treating model evaluation as an owned capability rather than a
-          vendor&rsquo;s responsibility.
+          </a></a> is a real, operating example of owned orchestration at scale — a custom UI tier running on top of Azure OpenAI Service and U-M-hosted open-source models, with a three-tier product (U-M GPT for consumption, U-M Maizey for custom-dataset use, U-M GPT Toolkit for full environment control) all governed inside the institutional perimeter. Stanford&rsquo;s Center for Research on Foundation Models runs and evaluates many models explicitly, the clearest public example of an academic institution treating model evaluation as an owned capability rather than a vendor&rsquo;s responsibility.
         </P>
 
         <P>
-          What the federated bet trades is also real, and it is the
-          reason institutions without engineering capital should approach
-          it with caution. Orchestration is now an institutional
-          capability the institution has to build and staff. Integration
-          complexity is higher because the institution is wiring the
-          model layer rather than buying the wiring. Governance is
-          harder. The contracts are no less clear in principle, but they
-          are distributed across more components and require active
-          institutional discipline to keep current. The federated bet
-          rewards institutions that have engineering capital and the
-          appetite to build the orchestration. It punishes institutions
-          that try to federate without the capacity to maintain what
-          they have built.
+          What the federated bet trades is also real. That is why institutions without engineering capital should approach it with caution. Orchestration is now an institutional capability the institution has to build and staff. Integration complexity is higher because the institution is wiring the model layer rather than buying the wiring. Governance is harder. The contracts are no less clear in principle, but they are distributed across more components and require active institutional discipline to keep current. The federated bet rewards institutions that have engineering capital and the appetite to build the orchestration. It punishes institutions that try to federate without the capacity to maintain what they have built.
         </P>
 
         <H2>The same calibration one layer down</H2>
 
         <P>
-          The pattern is familiar from an earlier layer of the data
-          stack. At the BI layer, the sophisticated institutions long
-          ago stopped trying to standardize on one tool for every
-          reporting surface &mdash; institutional research, executive
-          dashboards, operational reporting, and program-team dashboards
-          have different audiences, different cadences, and different
-          decisions, and they reward different tools. I have argued{" "}
-          <InternalLink slug="where-should-data-sit">
+          The pattern is familiar from an earlier layer of the data stack. At the BI layer, the sophisticated institutions long ago stopped trying to standardize on one tool for every reporting surface — institutional research, executive dashboards, operational reporting, and program-team dashboards have different audiences, different cadences, and different decisions, and they reward different tools. I have argued <InternalLink slug="where-should-data-sit">
             elsewhere
-          </InternalLink>{" "}
-          that the BI tool selection is the last decision, not the
-          first, and that the architecture should be set against the
-          surfaces before the tool is chosen. The same calibration logic
-          now extends to the model layer, where the stakes are larger
-          because the contracts between data, model, vendor, and
-          institutional decision are more entangled than the contracts
-          between data, tool, and dashboard ever were.
+          </InternalLink> that the BI tool selection is the last decision, not the first, and that the architecture should be set against the surfaces before the tool is chosen. The same calibration logic now extends to the model layer. The stakes are larger. The contracts between data, model, vendor, and institutional decision are more entangled than the contracts between data, tool, and dashboard ever were.
         </P>
 
         <P>
-          The same choice plays out one layer down inside the data and
-          AI stack itself, and the two prominent platforms in 2026 make
-          it visible. Snowflake Cortex delegates orchestration to the
-          platform: the institution gets a managed catalog of foundation
-          models (Anthropic&rsquo;s Claude family, OpenAI&rsquo;s GPT models,
-          Meta&rsquo;s Llama, Mistral, Google&rsquo;s Gemini, Snowflake&rsquo;s own
-          Arctic, and others as the catalog grows) where the call into
-          the model happens inside Snowflake&rsquo;s perimeter and the
-          integration with role-based access, audit logging, and the
-          data governance the institution already has in place is part
-          of what the platform delivers. Multiple models are available;
-          orchestration is the platform&rsquo;s, not the institution&rsquo;s.
-          Databricks Mosaic AI takes the opposite posture. It is a
-          model-agnostic orchestration layer designed to let the
-          institution bring any model, including open-source models
-          running on the institution&rsquo;s own compute, and to own the
-          orchestration through the same lakehouse and MLflow tooling
-          the data team is already using. Multiple models are available
-          there too; orchestration sits with the institution. Both
-          platforms are racing to support the full spectrum. Cortex now
-          lets institutions bring fine-tuned open-source models and
-          execute external API stages in some configurations, and
-          Mosaic now offers turn-key managed foundation-model endpoints
-          that look almost vendor-anchored if an enterprise just wants
-          to flip them on. The architectural defaults still betray the
-          posture, though. Cortex defaults to managing orchestration
-          inside its perimeter; Mosaic defaults to handing the
-          institution the tools to build and own the router itself. Any
-          data executive will recognize the parallel. It is the same
-          architectural choice, expressed one layer beneath the
-          rhetoric, and the institutions choosing between Cortex and
-          Mosaic are making the delegated-versus-owned-orchestration
-          decision whether they articulate it that way or not.
+          The same choice plays out one layer down inside the data and AI stack itself, and the two prominent platforms in 2026 make it visible. Snowflake Cortex delegates orchestration to the platform: the institution gets a managed catalog of foundation models (Anthropic&rsquo;s Claude family, OpenAI&rsquo;s GPT models, Meta&rsquo;s Llama, Mistral, Google&rsquo;s Gemini, Snowflake&rsquo;s own Arctic, and others as the catalog grows) where the call into the model happens inside Snowflake&rsquo;s perimeter and the integration with role-based access, audit logging, and the data governance the institution already has in place is part of what the platform delivers. Multiple models are available; orchestration is the platform&rsquo;s, not the institution&rsquo;s. Databricks Mosaic AI takes the opposite posture. It is a model-agnostic orchestration layer designed to let the institution bring any model, including open-source models running on the institution&rsquo;s own compute, and to own the orchestration through the same lakehouse and MLflow tooling the data team is already using. Multiple models are available there too; orchestration sits with the institution. Both platforms are racing to support the full spectrum. Cortex now lets institutions bring fine-tuned open-source models and execute external API stages in some configurations, and Mosaic now offers turn-key managed foundation-model endpoints that look almost vendor-anchored if an enterprise just wants to flip them on. The architectural defaults still betray the posture, though. Cortex defaults to managing orchestration inside its perimeter; Mosaic defaults to handing the institution the tools to build and own the router itself. Any data executive will recognize the parallel. It is the same architectural choice, one layer down. The institutions choosing between Cortex and Mosaic are making the delegated-versus-owned-orchestration decision whether they call it that or not.
         </P>
 
         <P>
-          Whichever way the orchestration decision goes, it commits the
-          institution to a consumption it has to be able to see. A tier
-          is a decision rule, and like any decision rule it is only as
-          good as the institution&rsquo;s ability to check whether it is being
-          followed. Routing low-complexity work to a cheaper model
-          commits the institution to two things it rarely arranges in
-          advance: an estimate, before rollout, of what each class of
-          workload will consume, and a way to attribute that
-          consumption back to the department or center that generated
-          it. Without the estimate, a campus turns the system on and
-          learns the shape of its own demand from the invoice. Without
-          the attribution, no dean or program lead can be asked to own
-          the spend their workflows create, and the routing layer
-          decays as teams drift toward whatever model is easiest to
-          call rather than the one the tier assigned. The architectural
-          choice and the consumption it produces are one governance
-          object, decided at design time and owned at run time.
+          Whichever way the orchestration decision goes, it commits the institution to a consumption it has to be able to see. A tier is a decision rule, and like any decision rule it is only as good as the institution&rsquo;s ability to check whether it is being followed. Routing low-complexity work to a cheaper model commits the institution to two things it rarely arranges in advance: an estimate, before rollout, of what each class of workload will consume, and a way to attribute that consumption back to the department or center that generated it. Without the estimate, a campus turns the system on and learns its own demand from the invoice. Without the attribution, no dean or program lead can be asked to own the spend their workflows create, and the routing layer decays as teams drift toward whatever model is easiest to call rather than the one the tier assigned. The architectural choice and the consumption it produces are one governance object. You decide it at design time and own it at run time.
         </P>
 
         <H2>The hybrid is the honest answer</H2>
@@ -7354,118 +5923,25 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The warning above lands differently for institutions
-          inheriting a hybrid from legacy systems they cannot
-          decommission, most healthcare systems, most public-sector
-          ministries, most universities older than the cloud. For them,
-          the hybrid is not a choice. The governance surface is already
-          paid for, whether anyone intended to take the bet that way or
-          not. What matters, in that situation, is running the
-          inheritance as a deliberate calibration of two domains plus
-          the seam rather than pretending the inheritance is a single
-          coherent system. The institution that recognizes an inherited
-          hybrid as a hybrid, and writes the contracts for both domains
-          plus the seam, pays the cost it was already paying, but pays
-          it knowingly. The institution that pretends the inherited
-          hybrid is one coherent system pays the same cost twice over,
-          and the second payment shows up as the surprise when the seam
-          fails.
+          The warning above lands differently for institutions inheriting a hybrid from legacy systems they cannot decommission, most healthcare systems, most public-sector ministries, most universities older than the cloud. For them, the hybrid is not a choice. The governance surface is already paid for, whether anyone intended to take the bet that way or not. What matters, in that situation, is running the inheritance as a deliberate calibration of two domains plus the seam rather than pretending the inheritance is a single coherent system. The institution that recognizes an inherited hybrid as a hybrid, and writes the contracts for both domains plus the seam, pays the cost it was already paying, but pays it knowingly. The institution that pretends the inherited hybrid is one coherent system pays the cost twice. The second payment arrives as a surprise, when the seam fails.
         </P>
 
         <H2>Four sectors, one pattern</H2>
 
         <P>
-          The pattern is most visible in healthcare, where it has been
-          running for years. Academic medical centers run
-          vendor-anchored Epic-and-cloud-AI stacks for clinical and
-          administrative work, because the clinical workflow is
-          standardized, the compliance requirements are uniform, the
-          risk tolerance is low, and the governance benefits of having
-          one vendor&rsquo;s contracts cover the clinical surface are real.
-          Inside the same institution, the research arms run
-          multi-vendor, multi-model federated stacks for translational
-          research, population health analytics, and model evaluation
-          work, because the research workflow is unstandardized, the
-          disciplines have different needs, open-source models matter
-          for reproducibility, and innovation velocity matters more
-          than standardization. The contract layer between the two
-          domains (what flows from the clinical record into the
-          research analytics, under what consent envelope, with what
-          de-identification, with what reversibility) is the part of
-          the architecture that has taken the longest to mature, and it
-          decides whether the hybrid is coherent or accidental.
+          The pattern is most visible in healthcare, where it has been running for years. Academic medical centers run vendor-anchored Epic-and-cloud-AI stacks for clinical and administrative work, because the clinical workflow is standardized, the compliance requirements are uniform, the risk tolerance is low, and the governance benefits of having one vendor&rsquo;s contracts cover the clinical surface are real. Inside the same institution, the research arms run multi-vendor, multi-model federated stacks for translational research, population health analytics, and model evaluation work, because the research workflow is unstandardized, the disciplines have different needs, open-source models matter for reproducibility, and innovation velocity matters more than standardization. The contract layer between the two domains — what flows from the clinical record into the research analytics, under what consent envelope, with what de-identification, with what reversibility — has taken the longest to mature. It decides whether the hybrid is coherent or accidental.
         </P>
 
         <P>
-          Behavioral health runs the same pattern at a different scale.
-          In regional behavioral-health agencies running Certified
-          Community Behavioral Health Clinic services, vendor-anchored
-          EHR-native AI typically handles clinical documentation and
-          billing workflows, because those workflows benefit from the
-          EHR vendor&rsquo;s pre-built scaffolding. The same agencies run
-          federated approaches for population health analytics, program
-          evaluation, and partner collaboration, because those
-          workflows require the institution to integrate sources that
-          no single vendor owns. The seam between the two domains is
-          where the operational work lives. The freshness contract
-          (what the population-health view shows the clinician at the
-          moment of the appointment, against what cadence the source
-          systems have updated, with what de-identification rule
-          applies) is the load-bearing piece. Agencies that are running
-          this hybrid well are running it without yet calling it one.
+          Behavioral health runs the same pattern at a different scale. In regional behavioral-health agencies running Certified Community Behavioral Health Clinic services, vendor-anchored EHR-native AI typically handles clinical documentation and billing workflows, because those workflows benefit from the EHR vendor&rsquo;s pre-built scaffolding. The same agencies run federated approaches for population health analytics, program evaluation, and partner collaboration, because those workflows require the institution to integrate sources that no single vendor owns. The seam between the two domains is where the operational work happens. The freshness contract — what the population-health view shows the clinician at the appointment, on what cadence the source systems update, under what de-identification rule — is what the hybrid rests on. The agencies running this hybrid well are running it without calling it one.
         </P>
 
         <P>
-          Foundations and philanthropy are mid-struggle on the same
-          calibration, and many of them do not yet know that this is
-          the bet they are making. Most foundations have concentrated
-          risk into one grants-management vendor (Fluxx, Salesforce
-          Nonprofit Cloud, Foundant, Bonterra) for grants
-          administration and operations, often without realizing how
-          much of the institution&rsquo;s reporting capability has been
-          outsourced to that vendor&rsquo;s roadmap. The same foundations
-          face board pressure to use generative AI for impact
-          reporting, for grant application screening, for due
-          diligence on grantees, and for program-officer drafting
-          workflows, and they have almost zero in-house data
-          engineering capacity to build the orchestration the
-          federated bet requires. The result is a hybrid by drift
-          rather than by design. The grants-management vendor offers
-          AI features that are easy to enable. The research-flavored
-          work (multi-year program evaluation, instrument-version
-          reconciliation across years of survey data, impact synthesis
-          across portfolios) sits in spreadsheets and ad-hoc tools
-          that no orchestration layer reaches. Foundations are roughly
-          where higher education was eighteen months ago on the
-          calibration question: visibly responsive, structurally
-          undecided. The chance to make the calibration deliberate,
-          rather than discovering it after the vendor&rsquo;s contracts and
-          the federated work have grown apart, is real and narrow.
+          Foundations and philanthropy are mid-struggle on the same calibration, and many of them do not yet know that this is the bet they are making. Most foundations have concentrated risk into one grants-management vendor (Fluxx, Salesforce Nonprofit Cloud, Foundant, Bonterra) for grants administration and operations, often without realizing how much of the institution&rsquo;s reporting capability has been outsourced to that vendor&rsquo;s roadmap. The same foundations face board pressure to use generative AI for impact reporting, for grant application screening, for due diligence on grantees, and for program-officer drafting workflows, and they have almost zero in-house data engineering capacity to build the orchestration the federated bet requires. The result is a hybrid by drift rather than by design. The grants-management vendor offers AI features that are easy to enable. The research-flavored work (multi-year program evaluation, instrument-version reconciliation across years of survey data, impact synthesis across portfolios) sits in spreadsheets and ad-hoc tools that no orchestration layer reaches. Foundations are roughly where higher education was eighteen months ago on the calibration question: visibly responsive, structurally undecided. Foundations still have a chance to make the calibration deliberate, before the vendor&rsquo;s contracts and the federated work grow apart. That chance is real and narrow.
         </P>
 
         <P>
-          K-12 networks have been running the hybrid pattern long
-          enough to have generated a precedent the rest of us learned
-          from. The vendor-anchored bet shows up at the
-          student-information-system layer (PowerSchool, Infinite
-          Campus, Skyward), the learning-management-system layer
-          (Canvas, Schoology, Google Classroom), and the
-          assessment-vendor layer. The federated bet shows up in the
-          analytics and student-success work, where networks integrate
-          multiple sources and stand up internal data warehouses to do
-          longitudinal work the vendors will not do for them. The
-          Ed-Fi standard is the federation precedent itself: an open
-          data-interoperability standard that lets districts and
-          states integrate any vendor through a common semantic layer,
-          born to address the integration friction that vendor
-          consolidation at the SIS layer produced. The lesson K-12
-          supplies to every other sector (not as the blueprint for AI
-          seam contracts, but as the historical pattern) is that
-          vendor consolidation always forces a reactive federation
-          layer later, and federation through open standards is what
-          preserves agility when that consolidation looks rational at
-          the operational layer and turns into a trap at the
-          innovation layer.
+          K-12 networks have been running the hybrid pattern long enough to have generated a precedent the rest of us learned from. The vendor-anchored bet shows up at the student-information-system layer (PowerSchool, Infinite Campus, Skyward), the learning-management-system layer (Canvas, Schoology, Google Classroom), and the assessment-vendor layer. The federated bet shows up in the analytics and student-success work, where networks integrate multiple sources and stand up internal data warehouses to do longitudinal work the vendors will not do for them. The Ed-Fi standard is the federation precedent. It is an open data-interoperability standard that lets districts and states integrate any vendor through a common semantic layer. It was built to address the integration friction vendor consolidation at the SIS layer created. The lesson K-12 supplies to every other sector is a historical pattern, not a blueprint for AI seam contracts. Vendor consolidation always forces a reactive federation layer later. Federation through open standards is what preserves agility when consolidation looks rational operationally and turns into a trap at the innovation layer.
         </P>
 
         <Figure
@@ -7475,125 +5951,36 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          Read the four sector cases together and the principle behind
-          the calibration becomes clear. The more standardized the use
-          case and the lower the risk tolerance, the better the
-          vendor-anchored bet performs. The more research-flavored,
-          multi-stakeholder, and innovation-velocity-dependent the
-          work, the better the federated bet performs. The
-          administrative-research split inside an academic medical
-          center, the clinical-population-health split inside a
-          behavioral-health agency, the grants-administration-program-evaluation
-          split inside a foundation, the SIS-analytics split inside a
-          K-12 network: these are not four different patterns. They
-          are the same pattern, calibrated to each sector&rsquo;s
-          vocabulary. Higher education stands to inherit the lesson,
-          not invent it. The administrative side of an R1 university
-          (financial systems, HR, the SIS, advancement, the core
-          enterprise reporting) looks more like the clinical surface
-          of an academic medical center than the research surface.
-          The research side of the same university (the disciplines,
-          the labs, the grants, the research computing) looks more
-          like the research arm of the same medical center than the
-          administrative core. The hybrid is the answer the sector is
-          already trending toward. The question is whether higher
-          education calibrates it deliberately or arrives there by
-          drift.
+          Read the four sector cases together and the principle behind the calibration becomes clear. The more standardized the use case and the lower the risk tolerance, the better the vendor-anchored bet performs. The more research-flavored, multi-stakeholder, and innovation-velocity-dependent the work, the better the federated bet performs. The administrative-research split inside an academic medical center, the clinical-population-health split inside a behavioral-health agency, the grants-administration-program-evaluation split inside a foundation, the SIS-analytics split inside a K-12 network: these are not four different patterns. They are the same pattern, calibrated to each sector&rsquo;s vocabulary. Higher education can inherit the lesson instead of reinventing it. The administrative side of an R1 university (financial systems, HR, the SIS, advancement, the core enterprise reporting) looks more like the clinical surface of an academic medical center than the research surface. The research side of the same university (the disciplines, the labs, the grants, the research computing) looks more like the research arm of the same medical center than the administrative core. The hybrid is the answer the sector is already trending toward. The open question is whether higher education calibrates deliberately or drifts into it.
         </P>
 
         <H2>The seam is where the hybrid is earned or paid for</H2>
 
         <P>
-          Both bets create governance contracts. The vendor-anchored
-          domain inherits the vendor&rsquo;s contracts and supplements them
-          with institutional rules. The federated domain owns its
-          contracts end to end. The hybrid creates two sets of
-          contracts plus a third set the institution most often
-          misses: the seam contracts between the two domains. What
-          data flows from the administrative side into the research
-          side, under what de-identification rule, against what
-          consent envelope. What inference the research side returns
-          into the administrative side &mdash; and whether the administrative
-          side is allowed to act on it. What freshness the seam
-          guarantees, how the seam is audited, what happens when a
-          record on one side is corrected after a downstream decision
-          on the other side has already been made. These contracts
-          are not theoretical. They are the failure mode of every
-          hybrid that ran for two years and then surfaced a
-          governance breach nobody owned. The seam is where the
-          institution either earns the hybrid or pays for the
-          accident.
+          Both bets create governance contracts. The vendor-anchored domain inherits the vendor&rsquo;s contracts and supplements them with institutional rules. The federated domain owns its contracts end to end. The hybrid creates two sets of contracts plus a third set the institution most often misses: the seam contracts between the two domains. What data flows from the administrative side into the research side, under what de-identification rule, against what consent envelope. What inference the research side returns into the administrative side — and whether the administrative side is allowed to act on it. What freshness the seam guarantees, how the seam is audited, what happens when a record on one side is corrected after a downstream decision on the other side has already been made. These contracts are not theoretical. They are the failure mode of every hybrid that ran for two years before surfacing a governance breach nobody owned. The seam is where the institution either earns the hybrid or pays for the accident.
         </P>
 
         <P>
-          What does a seam contract look like in operation, before the
-          institution has it written down? Imagine an R1 running a
-          vendor-anchored portal for undergraduate advising drafts
-          alongside a federated internal stack for
-          institutional-research retention forecasting. The seam
-          contract specifies directionality first. The federated
-          retention score can be read by the vendor portal to prompt
-          the advisor in real time. The advisor&rsquo;s response, drafted
-          with vendor-anchored AI assistance, cannot be written back
-          to the core student-information system as a record-of-action
-          without a twenty-four-hour human-in-the-loop reversibility
-          window and an explicit second human review before commit.
-          Retention rules come next: the vendor portal is allowed to
-          retain the prompt, not the underlying retention vector that
-          produced it; the federated stack is allowed to learn from
-          the inference outcome, not the advisor&rsquo;s identity. Cadence
-          sits on top of that: the retention score handed to the
-          portal is refreshed nightly, and any advisor acting on a
-          score older than seventy-two hours is alerted to re-check
-          before continuing. Escalation is the last piece: any
-          disagreement between the vendor-anchored draft and the
-          federated risk signal flags a senior reviewer rather than
-          auto-resolving to either side. Writing this out is not
-          glamorous work. It is what an R1 will wish it had written
-          down before the
-          first vendor portal silently commits
-          a recommendation into a student record that no advisor
-          reviewed and no auditor can trace.
+          What does a seam contract look like in operation, before the institution has it written down? Imagine an R1 running a vendor-anchored portal for undergraduate advising drafts alongside a federated internal stack for institutional-research retention forecasting. The seam contract specifies directionality first. The federated retention score can be read by the vendor portal to prompt the advisor in real time. The advisor&rsquo;s response, drafted with vendor-anchored AI assistance, cannot be written back to the core student-information system as a record-of-action without a twenty-four-hour human-in-the-loop reversibility window and an explicit second human review before commit. Retention rules come next: the vendor portal is allowed to retain the prompt, not the underlying retention vector that produced it; the federated stack is allowed to learn from the inference outcome, not the advisor&rsquo;s identity. Cadence sits on top of that: the retention score handed to the portal is refreshed nightly, and any advisor acting on a score older than seventy-two hours is alerted to re-check before continuing. Escalation is the last piece: any disagreement between the vendor-anchored draft and the federated risk signal flags a senior reviewer rather than auto-resolving to either side. Writing this out is not glamorous. It is what an R1 will wish it had done, before the first vendor portal silently commits a recommendation into a student record no advisor reviewed and no auditor can trace.
         </P>
 
         <P>
-          The K-12 sector learned this lesson through Ed-Fi &mdash; through
-          the federation that vendor lock-in forced into existence.
-          The healthcare sector learned it through HL7 v2 and FHIR,
-          through the regulation that mandated interoperability after
-          decades of Epic-and-Cerner consolidation. Both sectors
-          learned, at substantial cost, that the contract layer
-          matters more than the technology layer. Higher education
-          and philanthropy have the rare chance to skip a portion of
-          the pain, by recognizing the hybrid as the architecturally
-          honest answer up front and by writing the seam contracts
-          before the architecture has had time to drift.
+          K-12 learned this through Ed-Fi &mdash; the federation
+          vendor lock-in forced into existence. The healthcare sector
+          learned it through HL7 v2 and FHIR, through the regulation
+          that mandated interoperability after decades of
+          Epic-and-Cerner consolidation. Both sectors learned, at
+          substantial cost, that the contract layer matters more than
+          the technology layer. Higher education and philanthropy can
+          skip part of the pain. Recognize the hybrid as the honest
+          answer up front. Write the seam contracts before the
+          architecture drifts.
         </P>
 
         <P>
-          Neither bet is right for the whole institution, and framing
-          the choice that way misses what matters. What the
-          institution needs to understand, before committing, is the
-          governance contracts each bet commits it to. Vendor-anchored
-          suits the parts of the institution where standardization
-          and lower risk tolerance reward the pre-built scaffolding.
-          Federated suits the parts where innovation velocity and
-          stakeholder diversity require the institution to own the
-          orchestration. Almost every R1, every academic medical
-          center, every foundation that runs both grants
-          administration and program evaluation, and every
-          multi-school education network is already running some
-          version of the hybrid, whether it has been named that way
-          or not. What makes the hybrid coherent is the discipline
-          measurement-science training and operational governance
-          have argued for in every era: writing the{" "}
-          <InternalLink slug="the-contracts-between-systems">
+          Neither bet is right for the whole institution. Framing the choice that way misses the point. What the institution needs to understand, before committing, is the governance <InternalLink slug="the-contracts-between-systems">
             contracts
-          </InternalLink>{" "}
-          down and naming the seams, so the calibration ends up as a
-          deliberate choice rather than an inherited default.
-          Institutions that do that work stop being surprised by
-          their own architecture.
+          </InternalLink> each bet commits it to. Vendor-anchored suits the parts of the institution where standardization and lower risk tolerance reward the pre-built scaffolding. Federated suits the parts where innovation velocity and stakeholder diversity require the institution to own the orchestration. Almost every R1, every academic medical center, every foundation that runs both grants administration and program evaluation, and every multi-school education network is already running some version of the hybrid, whether it has been named that way or not. What makes the hybrid coherent is the discipline measurement-science training and operational governance have always argued for: write the contracts down and name the seams. Do that and the calibration becomes a deliberate choice, not an inherited default. Institutions that do that work stop being surprised by their own architecture.
         </P>
 
         <SeeAlso>
@@ -7683,35 +6070,10 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          The senior data leadership posting at most institutions
-          &mdash; whether titled Director of Data Platforms, Director
-          of Data Analytics and Engineering, Director of Data Systems,
-          VP of Analytics, Head of Data or Head of Analytics, Chief
-          Data Officer, Chief Data and Analytics Officer, or Chief AI
-          Officer &mdash; is two roles fused into one job description.
-          One role is engineering: build and operate the warehouse, the ETL,
-          the semantic layer, the lineage tooling. Stand up the dbt
-          models. Maintain the Snowflake schemas. Configure the Fivetran
-          connectors. Keep the freshness SLAs in line. That is a senior
-          data-engineering role the field knows how to define, screen
-          for, and reward. The screens know what to look for.
+          The senior data leadership posting at most institutions — whether titled Director of Data Platforms, Director of Data Analytics and Engineering, Director of Data Systems, VP of Analytics, Head of Data or Head of Analytics, Chief Data Officer, Chief Data and Analytics Officer, or Chief AI Officer — is two roles fused into one job description. One role is engineering: build and operate the warehouse, the ETL, the semantic layer, the lineage tooling. Stand up the dbt models, maintain the Snowflake schemas, configure the Fivetran connectors, keep the freshness SLAs in line. That is a senior data-engineering role the field knows how to define, screen for, and reward. The screens know what to look for.
         </P>
         <P>
-          The other role is governance and subject-matter expertise: own
-          the contracts on top of the warehouse, the decision interface
-          those contracts feed, and the relationships with the
-          stakeholders whose decisions the contracts have to support.
-          Write the explicit, named understanding that turns integrated
-          bytes into something a stakeholder can act on with authority.
-          Know what a principal needs to act on a recruitment funnel.
-          Know what a clinician needs to act on a no-show count. Know
-          what a District Education Officer needs to act on multiple
-          state systems&rsquo; incompatible cycles. Know what a program
-          officer needs to stand behind a quarterly figure when a funder
-          asks. That is a senior governance-and-domain role.
-          Organizations that have it know what it looks like, but the
-          screens for it are underdeveloped and the rubric rarely names
-          it as its own thing.
+          The other role is governance and subject-matter expertise: own the contracts on top of the warehouse, the decision interface those contracts feed, and the relationships with the stakeholders whose decisions the contracts have to support. Write the explicit, named understanding that turns integrated bytes into something a stakeholder can actually act on. Know what a principal needs to act on a recruitment funnel. Know what a clinician needs to act on a no-show count. Know what a District Education Officer needs to act on multiple state systems&rsquo; incompatible cycles. Know what a program officer needs to stand behind a quarterly figure when a funder asks. That is a senior governance-and-domain role. Organizations that have it know what it looks like, but the screens for it are underdeveloped and the rubric rarely names it as its own thing.
         </P>
         <P>
           The institutional posting names both roles. The screens assess
@@ -7739,53 +6101,18 @@ export const ESSAYS: Essay[] = [
           either implicit or as a soft skill that will fill itself in.
         </P>
         <P>
-          The result is predictable. The institution hires a senior data
-          engineer. The engineer builds the integration. The integration
-          runs. The dashboards work. The schemas are tight, the
-          freshness SLAs hold, the lineage tooling reports green. And
-          then the Provost still cannot get a 360 view, the program
-          officer still cannot answer the funder when the number moves,
-          and the clinician still cannot act on the population-health
-          view because nobody has written the contract that says they
-          are allowed to. The engineering succeeded and the decision
-          interface stayed unowned, which means the role failed at the
-          half of its work that mattered.
+          The result is predictable. The institution hires a senior data engineer. The engineer builds the integration. The integration runs. The dashboards work. The schemas are tight, the freshness SLAs hold, the lineage tooling reports green. And then the Provost still cannot get a 360 view, the program officer still cannot answer the funder when the number moves, and the clinician still cannot act on the population-health view because nobody has written the contract that says they are allowed to. The engineering succeeded. The decision interface stayed unowned. The role failed at the half of its work that mattered.
         </P>
         <P>
-          The institution&rsquo;s response to this is, usually, to hire
-          another engineer. Or to commission a governance committee. Or
-          to buy more tooling. None of these address the actual gap,
-          because none of them brings into the institution the person
-          who can write the contract &mdash; not because the contract is
-          technical, but because it is operational. The contract
-          specifies who reads, who writes, on what cadence, under what
-          consent, with what reversibility, with what audit trail, with
-          what authority to act. Writing that contract requires knowing
-          what the principal, the clinician, the program officer, the
-          dean need to be able to do. The knowledge lives in domain
-          context, in stakeholder fluency, in the operator&rsquo;s
-          understanding of the decision the contract is meant to
-          support. It does not live in the stack. (For the anatomy of
-          the contract itself, see{" "}
-          <InternalLink slug="the-contracts-between-systems">
-            The contracts between systems
-          </InternalLink>
-          .)
+          The institution&rsquo;s response to this is, usually, to hire another engineer. Or to commission a governance committee. Or to buy more tooling. None of these address the actual gap. None of them brings in the person who can write the contract, and the contract is operational, not technical. The contract specifies who reads, who writes, on what cadence, under what consent, with what reversibility, with what audit trail, with what authority to act. Writing that contract requires knowing what the principal, the clinician, the program officer, the dean need to be able to do. That knowledge comes from domain context, stakeholder fluency, and the operator&rsquo;s read on the decision the contract has to support. It doesn&rsquo;t come from the stack.
         </P>
         <P>
-          A senior engineer who has built three warehouses does not, by
-          default, know any of this. There is no reason they would. The
-          knowledge is not transmitted by warehouse-building. It is
-          transmitted by sitting inside institutions for years and
-          watching what decisions get triggered, what contracts hold,
-          what stakeholders trust. That is not engineering experience.
-          It is subject-matter experience with operational depth, and it
-          is the half of the role that gets assumed in by the rubric.
+          A senior engineer who has built three warehouses does not, by default, know any of this. There is no reason they would. That knowledge doesn&rsquo;t come from warehouse-building. You pick it up by sitting inside institutions for years, watching what decisions get made, what contracts hold, who stakeholders trust. That isn&rsquo;t engineering experience. It&rsquo;s subject-matter experience with operational depth — the half the rubric assumes without checking.
         </P>
 
         <H2>Two architectures, one honest choice</H2>
         <P>
-          The structural correction is not to replace engineers with
+          The correction isn&rsquo;t to swap engineers for
           subject-matter experts. Engineering depth is necessary. The
           integration has to be built. The schemas have to be designed.
           The freshness has to hold. The correction is to specify the
@@ -7794,12 +6121,11 @@ export const ESSAYS: Essay[] = [
           institutions is two halves of one job, and the screen has to
           assess both halves. The current screen assesses one and
           assumes the other. The half it assumes is the half the role
-          fails on when it fails.
+          usually fails on.
         </P>
         <P>
-          There are two valid architectural resolutions to this gap, and
-          the institution has to choose between them deliberately rather
-          than drift into one by default.
+          There are two valid resolutions to this gap. The institution
+          has to pick one deliberately, not drift into one by default.
         </P>
         <P>
           The first is a single-role fusion: structure the role as two
@@ -7819,10 +6145,10 @@ export const ESSAYS: Essay[] = [
           engineering half, and a separate Director of Decision Systems,
           Chief Data Governance Officer, or equivalent for the
           governance and SME half. Both roles report into the same
-          independent function. The engineering role builds and operates
+          independent function. The engineering role builds and runs
           the substrate. The governance role writes and enforces the
-          contracts on top of it, supports the stakeholders who act on
-          the data, and owns the decision interface. The roles work
+          contracts on top, supports the stakeholders acting on the
+          data, and owns the decision interface. The roles work
           together, but each has its own rubric and its own authority.
         </P>
         <P>
@@ -7885,89 +6211,33 @@ export const ESSAYS: Essay[] = [
           opened.
         </P>
         <P>
-          Either resolution requires the institution to name what is
-          currently being assumed. The rubric is hiring for half the
-          role. Whether the fix is a better single role or the addition
-          of a missing second role is an architectural choice. Refusing
-          to make the choice is the failure mode.
+          Either resolution requires the institution to name what it is currently assuming. The rubric is hiring for half the role. Whether the fix is a better single role or a missing second role is an architectural choice — and refusing to choose is the failure mode itself.
         </P>
 
         <H2>Where the role sits shapes what the screen sees</H2>
         <P>
-          The rubric problem has a deeper root in where the role sits.
-          Most institutions place data infrastructure ownership under
-          the CTO or CIO. Once that placement happens, the rubric gets
-          written by an engineering function, the screens filter for
-          engineering depth, and a governance-and-SME-anchored candidate
-          looks &ldquo;non-traditional&rdquo; to a screen calibrated for
-          pipeline depth. The contracts the role writes end up
-          optimizing for the reporting function&rsquo;s incentives rather
-          than the institution&rsquo;s whole-organization decision interface.
-          Even within a misplaced reporting line, though, the rubric
-          could assess for the missing half. It does not. (The upstream
-          argument about the seat itself is{" "}
-          <InternalLink slug="where-should-data-sit">
-            Where should data sit?
-          </InternalLink>
-          )
+          The rubric problem has a deeper root in where the role sits. Most institutions place data infrastructure ownership under the CTO or CIO. Once that placement happens, the rubric gets written by an engineering function, the screens filter for engineering depth, and a governance-and-SME-anchored candidate looks “non-traditional” to a screen calibrated for pipeline depth. The contracts the role writes end up optimizing for the reporting function&rsquo;s incentives rather than the institution&rsquo;s whole-organization decision interface. Even within a misplaced reporting line, though, the rubric could assess for the missing half. It does not.
         </P>
         <P>
           The pattern is visible from several angles to anyone who has been
           around senior data hiring at scale.
         </P>
 
-        <H3>The empirical pattern that JD scans reveal</H3>
         <P>
-          A focused scan of senior data role postings across sectors
-          makes the rubric problem concrete. The pattern holds across
-          Director of Data Platforms, Director of Data Analytics and
-          Engineering, Director of Data Strategy, VP of Analytics,
-          Chief Data Officer, and, increasingly, Director of AI
-          Transformation and Director of AI Center of Excellence
-          titles, sampled across six org-core types &mdash; technology
-          company, product company, research institution, foundations
-          or nonprofits anchored in monitoring, evaluation, and
-          learning (MEL), service provider, and traditional enterprise.
+          <I>The empirical pattern that JD scans reveal.</I> A focused
+          scan of senior data role postings across sectors makes the
+          rubric problem concrete. The pattern holds across Director of
+          Data Platforms, Director of Data Analytics and Engineering,
+          Director of Data Strategy, VP of Analytics, Chief Data
+          Officer, and, increasingly, Director of AI Transformation and
+          Director of AI Center of Excellence titles, sampled across
+          six org-core types &mdash; technology company, product
+          company, research institution, foundations or nonprofits
+          anchored in monitoring, evaluation, and learning (MEL),
+          service provider, and traditional enterprise.
         </P>
         <P>
-          The reporting line is the first signal the scan reveals. The
-          roles overwhelmingly sit inside engineering functions.
-          Director of Data Platforms postings at technology and ed-tech
-          companies report into the CTO, VP of Engineering, or Chief
-          Product and Technology Officer. Director of Data Analytics
-          and Engineering postings at technology companies report into
-          the CTO or VP of Engineering, and at media and ed-tech
-          companies often into a Chief Product Officer or Chief Product
-          and Technology Officer. At universities, Chief Data Officer
-          or Associate CIO for Data roles report into the CIO. VP of
-          Analytics roles at enterprise organizations
-          report into IT or operations. Director of Data Analytics
-          roles at K-8 networks and operationally-heavy mission-driven
-          organizations often report into the COO. The exception, when
-          it appears, is a small subset of foundations and MEL-anchored
-          organizations where the role has been placed under a Chief
-          Impact Officer or SVP for Design and Impact rather than a
-          CIO. At a national mission-driven foundation, for example, a
-          Director of Data Strategy and Impact Analytics (a MEL /
-          Impact Measurement role in the map&rsquo;s general vocabulary)
-          was structured to report into an SVP for design and impact
-          rather than into IT. When the role sits under an impact function, the rubric
-          can reflect both halves: governance and stakeholder fluency
-          are named explicitly, the skill tier includes program
-          evaluation and mission alignment, the stated outcomes include
-          funder reporting and partner-facing analytics. But this
-          placement is champion-dependent. When the chief impact
-          officer who wrote the role leaves, the placement often does
-          not survive. Without sustained investment in the
-          cross-functional collaboration the integrated role required,
-          the organization reverts to its siloed defaults &mdash; data
-          governance and architecture pulled back into a technology or
-          digital-products function, research and evaluation regrouped
-          into its own specialist cluster, delivery work sometimes
-          outsourced to contractors &mdash; and the integrated rubric
-          dissolves into whichever silo&rsquo;s rubric is dominant. The
-          rubric problem was papered over by the champion, not resolved
-          by structure.
+          The reporting line is the first signal the scan reveals. The roles overwhelmingly sit inside engineering functions. Director of Data Platforms postings at technology and ed-tech companies report into the CTO, VP of Engineering, or Chief Product and Technology Officer. Director of Data Analytics and Engineering postings at technology companies report into the CTO or VP of Engineering, and at media and ed-tech companies often into a Chief Product Officer or Chief Product and Technology Officer. At universities, Chief Data Officer or Associate CIO for Data roles report into the CIO. VP of Analytics roles at enterprise organizations report into IT or operations. Director of Data Analytics roles at K-8 networks and operationally-heavy mission-driven organizations often report into the COO. The exception, when it appears, is a small subset of foundations and MEL-anchored organizations where the role has been placed under a Chief Impact Officer or SVP for Design and Impact rather than a CIO. At a national mission-driven foundation, for example, a Director of Data Strategy and Impact Analytics (a MEL / Impact Measurement role in the map&rsquo;s general vocabulary) was structured to report into an SVP for design and impact rather than into IT. When the role sits under an impact function, the rubric can reflect both halves: governance and stakeholder fluency are named explicitly, the skill tier includes program evaluation and mission alignment, the stated outcomes include funder reporting and partner-facing analytics. But this placement is champion-dependent. When the chief impact officer who wrote the role leaves, the placement often does not survive. Without sustained investment in the cross-functional work the integrated role required, the organization reverts to its silos. Data governance and architecture get pulled back into technology or digital-products. Research and evaluation regroups into its own specialist cluster. Delivery work is sometimes outsourced to contractors. The integrated rubric dissolves into whichever silo&rsquo;s rubric is dominant. The champion papered over the rubric problem. Structure never resolved it.
         </P>
         <P>
           The skills tier is the second signal. The engineering tier is
@@ -7989,56 +6259,10 @@ export const ESSAYS: Essay[] = [
           the engineering gap. It cannot catch the governance gap.
         </P>
         <P>
-          The emerging AI-native roles show the same pattern in a
-          newer register. Recent postings for Director of AI
-          Transformation or Director of AI Center of Excellence,
-          sometimes reporting into an SVP for Data rather than into a
-          CTO or CAIO, name the engineering tier with production-grade
-          specificity &mdash; model registries, integrations, single
-          sign-on, data-loss prevention, agentic systems,
-          large-language-model tooling &mdash; while the governance
-          and SME tiers are named as traits rather than as
-          capabilities that can be screened: &ldquo;strong governance
-          instincts,&rdquo; &ldquo;proven ability to influence across
-          an organization,&rdquo; &ldquo;ability to make complex
-          technical topics clear to non-technical audiences.&rdquo;
-          The rubric problem is not something the AI-native evolution
-          of the role has resolved. If anything, the governance gap is
-          more consequential here than it was in the pre-AI role:
-          engineering-tier specificity has grown, governance and SME
-          tiers have stayed as trait-language, and the stakes of a
-          governance failure at machine cadence are higher than they
-          were at pipeline cadence. Regulated sectors &mdash; health
-          (HIPAA, HITECH, 42 CFR Part 2), education (FERPA),
-          commercial data platforms (SOC2), financial services (GLBA,
-          PCI) &mdash; are the partial exception, because compliance
-          frameworks force specificity in the compliance tier
-          regardless of reporting line. But compliance specificity is
-          not the same as governance specificity. A JD can name HIPAA
-          or FERPA carefully while leaving &ldquo;strong governance
-          instincts&rdquo; as the only signal for the semantic-and-decision-authoring
-          tier that the role actually needs. Where the two
-          coincide &mdash; a small number of academic medical center
-          governance postings, or Fortune-scale enterprise CDO roles
-          that name semantic layer, knowledge graphs, and RAG readiness
-          explicitly &mdash; the rubric is meaningfully better. Where
-          compliance is named but the semantic layer stays abstract,
-          the rubric problem is masked by regulatory language, not
-          solved.
+          The emerging AI-native roles show the same pattern in a newer register. Recent postings for Director of AI Transformation or Director of AI Center of Excellence, sometimes reporting into an SVP for Data rather than into a CTO or CAIO, name the engineering tier with production-grade specificity — model registries, integrations, single sign-on, data-loss prevention, agentic systems, large-language-model tooling — while the governance and SME tiers are named as traits rather than as capabilities that can be screened: “strong governance instincts,” “proven ability to influence across an organization,” “ability to make complex technical topics clear to non-technical audiences.” The AI-native version of the role has not resolved the rubric problem. If anything, the governance gap is more consequential here than it was in the pre-AI role: engineering-tier specificity has grown, governance and SME tiers have stayed as trait-language, and the stakes of a governance failure at machine cadence are higher than they were at pipeline cadence. Regulated sectors — health (HIPAA, HITECH, 42 CFR Part 2), education (FERPA), commercial data platforms (SOC2), financial services (GLBA, PCI) — are the partial exception, because compliance frameworks force specificity in the compliance tier regardless of reporting line. But compliance specificity is not the same as governance specificity. A JD can name HIPAA or FERPA carefully while leaving “strong governance instincts” as the only signal for the semantic-and-decision-authoring tier that the role actually needs. Where the two coincide — a small number of academic medical center governance postings, or Fortune-scale enterprise CDO roles that name semantic layer, knowledge graphs, and RAG readiness explicitly — the rubric is meaningfully better. When compliance is named but the semantic layer stays abstract, regulatory language masks the rubric problem without solving it.
         </P>
         <P>
-          The stated outcomes are the third signal. Engineering-anchored
-          postings name engineering KPIs: pipeline uptime, data
-          freshness, schema reliability, lineage coverage, time-to-insight.
-          MEL-anchored postings name decision-quality outcomes: program
-          officer ability to act on the data, funder reporting that
-          lands, partner-facing analytics that drives decisions,
-          evaluation findings that inform program design. The MEL
-          postings are the contrast case the scan reveals most clearly.
-          They show what the rubric looks like when the institution has
-          structured the role around the decision interface rather than
-          around the engineering substrate. They are also the rarest
-          pattern in the corpus.
+          The stated outcomes are the third signal. Engineering-anchored postings name engineering KPIs: pipeline uptime, data freshness, schema reliability, lineage coverage, time-to-insight. MEL-anchored postings name decision-quality outcomes: program officer ability to act on the data, funder reporting that lands, partner-facing analytics that drives decisions, evaluation findings that inform program design. The MEL postings are the contrast case the scan reveals most clearly. They show what the rubric looks like when the institution has structured the role around the decision interface rather than around the engineering stack. They are also the rarest pattern in the corpus.
         </P>
         <P>
           The cross-tabulation that emerges is consistent.
@@ -8062,8 +6286,8 @@ export const ESSAYS: Essay[] = [
           sits closer to their side.
         </P>
 
-        <H3>The visible asymmetry in JD skill-tier language</H3>
         <P>
+          <I>The visible asymmetry in JD skill-tier language.</I>{" "}
           Across the scan, what postings name and how specifically they
           name it follows a sharp pattern.
         </P>
@@ -8080,21 +6304,27 @@ export const ESSAYS: Essay[] = [
           institution cares about screening for.
         </P>
 
-        <H3>The role landscape underneath the rubric</H3>
         <P>
-          The asymmetry the chart above reveals in JD emphasis has a
-          counterpart in what the roles are for. The map below
-          distributes seven senior data-leadership roles across the
-          five stages of the decision arc &mdash; build the system,
-          govern the system, interpret the signal, support the
-          decision, own the decision. Each cell shows how heavily the
-          role loads that arc position. The roles in the map cluster
-          around one or two arc positions. No single role carries every
-          arc stage to a heavy level. The band underneath the map
-          shows what the composite role many JDs imply would require:
-          heavy across every arc position at once &mdash; the shape no
-          real role fits. That is why rubrics written for the composite
-          produce senior-data-leadership searches that stall.
+          <I>The role landscape behind the rubric.</I> The asymmetry
+          the chart above reveals in JD emphasis has a counterpart in
+          what the roles are for. The map below distributes seven
+          senior data-leadership roles across the five stages of the
+          decision arc: build the system, govern the system, interpret
+          the signal, support the decision, own the decision. Each
+          cell shows how heavily the role loads that arc position.
+          Loading here describes where the role&rsquo;s authority sits
+          in the decision-system architecture, not what the individual
+          leader personally performs &mdash; a role loads on
+          &ldquo;interpret the signal&rdquo; when it owns the layer
+          (semantic definitions, crosswalks, reconciliation) that
+          makes interpretation defensible, even where business users
+          do the reading. The roles in the map cluster around one or
+          two arc positions. No single role carries every arc stage to
+          a heavy level. The band below the map shows what the
+          composite role many JDs imply would require: heavy across
+          every arc position at once &mdash; the shape no real role
+          fits. That is why rubrics written for the composite role
+          produce searches that stall.
         </P>
         <Figure
           src="/library/covers/who-writes-the-contract-role-map.svg"
@@ -8102,38 +6332,38 @@ export const ESSAYS: Essay[] = [
           caption="The data role landscape: seven senior data-leadership roles distributed across the five stages of the decision arc."
         />
 
-        <H3>The contrast cases visible in the scan</H3>
         <P>
-          Where the screen did include both halves, the role had been
-          structured to demand both halves from the start, and the
-          rubric followed. A Data Hub leadership role posted at a
-          national philanthropy-supporting organization screened for
-          full-stack data fluency (engineering, governance, stakeholder
+          <I>The contrast cases visible in the scan.</I> Where the
+          screen did include both halves, the role had been structured
+          to demand both halves from the start, and the rubric
+          followed. A Data Hub leadership role posted at a national
+          philanthropy-supporting organization screened for full-stack
+          data fluency (engineering, governance, stakeholder
           management, sector knowledge) as a baseline requirement, and
           the screen worked because the role had been structured to
           demand it. A separate Director of Data Strategy and Impact
-          Analytics role at a national mission-driven foundation, which
-          reports into an SVP for design and impact rather than into an
-          engineering function, named the engineering tier (survey
-          platforms, Python, statistical-analysis environments, SQL, BI
-          tooling, cloud warehouse) with comparable specificity to the
-          SME tier (mission-driven and public-sector context, domain
-          knowledge in the foundation&rsquo;s focus area) and the
-          governance tier (data governance structures, steward roles,
-          metadata standards, quality control systems, RASCI project
-          management). Both roles are sometimes described in the trade
-          press as &ldquo;unicorn&rdquo; roles because they require
-          capability ranges most candidates do not bring. They are not
-          unicorns. They are what the role needs at most institutions;
-          they are just rare because most institutions have not
-          structured the role to demand both halves and so have not
-          bothered to screen for both.
+          Analytics role at a national mission-driven foundation,
+          which reports into an SVP for design and impact rather than
+          into an engineering function, named the engineering tier
+          (survey platforms, Python, statistical-analysis environments,
+          SQL, BI tooling, cloud warehouse) with comparable specificity
+          to the SME tier (mission-driven and public-sector context,
+          domain knowledge in the foundation&rsquo;s focus area) and
+          the governance tier (data governance structures, steward
+          roles, metadata standards, quality control systems, RASCI
+          project management). Both roles are sometimes described in
+          the trade press as &ldquo;unicorn&rdquo; roles because they
+          require capability ranges most candidates do not bring. They
+          aren&rsquo;t unicorns. They&rsquo;re what the role actually
+          needs at most institutions. They&rsquo;re rare because most
+          institutions haven&rsquo;t structured the role to demand both
+          halves, so they&rsquo;ve never screened for both.
         </P>
 
-        <H3>The pattern across postings</H3>
         <P>
-          The sector breadth these observations draw on is what makes
-          the pattern legible. Reading Director, Head, VP, and
+          <I>The pattern across postings.</I> The sector breadth these
+          observations draw on is what makes the pattern legible.
+          Reading Director, Head, VP, and
           Chief-level data leadership
           postings across sectors &mdash; K-12 networks and
           public-sector education, behavioral-health agencies and
@@ -8196,32 +6426,16 @@ export const ESSAYS: Essay[] = [
           hiring half the role.
         </P>
         <P>
-          The fix is not heroic. The fix is to add the governance-and-SME
+          The fix isn&rsquo;t heroic &mdash; add the governance-and-SME
           half to the rubric explicitly, design the interview to assess
-          for both halves, and structure the role&rsquo;s reporting line so
-          the half the institution most often misses is given the
-          authority to do the work it was hired for. This is editorial
-          work on the job description and structural work on the org
-          chart, not a new hiring philosophy. It does, however, require
-          the institution to admit that the role it is hiring for is not
-          the role it has been screening for.
+          both halves, and structure the reporting line so the
+          governance half has authority. This is editorial work on the
+          JD and structural work on the org chart. It does, however,
+          require the institution to admit that the role it is hiring
+          for is not the role it has been screening for.
         </P>
         <P>
-          When a leader asks me what they should be doing differently in
-          this hire that their predecessors did not, the answer is not
-          more rigorous engineering screens or better recruiters. It is
-          a rubric that names both halves of the role honestly, an
-          interview process that assesses for both, and a reporting line
-          that lets the governance half hold authority across the
-          institution rather than defer to whichever function it reports
-          into. Without those pieces, the screen keeps hiring engineers
-          to do work half of which is not engineering. (For the paired
-          argument on what the institution is actually betting on when
-          it makes this hire, see{" "}
-          <InternalLink slug="two-bets-one-institution">
-            Two bets, one institution
-          </InternalLink>
-          .)
+          When a leader asks what they should do differently this time, the answer isn&rsquo;t tougher engineering screens or better recruiters. It&rsquo;s a rubric that names both halves of the role honestly, an interview process that assesses for both, and a reporting line that lets the governance half hold authority across the institution rather than defer to whichever function it reports into. Without those pieces, the screen keeps hiring engineers to do work half of which is not engineering.
         </P>
 
         <SeeAlso>
@@ -8300,17 +6514,7 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          The mission-driven sector produces a recurring pattern I
-          have watched from inside multiple senior data roles: strong
-          proof of concept, incomplete infrastructure, no runway to
-          production. The idea worked. The dashboard ran. The scale
-          was validated. And then the acquisition happened, or the
-          budget was cut, or the champion left, or the parent company
-          decided the BI costs did not pencil, or the collaborative
-          that was building the shared measurement infrastructure
-          moved at the pace its participating organizations could
-          sustain, which was slower than any single adopting
-          institution could wait.
+          The mission-driven sector produces a recurring pattern I have watched from inside multiple senior data roles: strong proof of concept, incomplete infrastructure, no runway to production. The idea worked. The dashboard ran. The scale was validated. Then the acquisition happened, or the budget was cut, or the champion left. Or the parent company decided the BI costs did not pencil. Or the collaborative building the shared measurement infrastructure moved at the pace its participating organizations could sustain, which was slower than any single adopting institution could wait.
         </P>
         <P>
           This is not a story about individual failure. It is a story
@@ -8325,36 +6529,10 @@ export const ESSAYS: Essay[] = [
           a model gets it wrong.
         </P>
         <P>
-          When an enterprise deployment produces a wrong signal,
-          someone loses money, and the enterprise typically has room
-          for a redo &mdash; retrain, re-run the pilot, adjust the
-          model. When a mission-driven deployment produces a wrong
-          signal, someone loses the intervention that was supposed to
-          reach them, and the redo is often not available &mdash; the
-          funder moves on, the beneficiary window closes, the trust
-          breaks. A behavioral-health chatbot that
-          recommends the wrong framing to an at-risk beneficiary is
-          not a P&amp;L problem. A grant-intelligence tool that
-          suggests reallocation based on drifted metric definitions is
-          not a P&amp;L problem. A program-evaluation AI that
-          generates impact narratives reinforcing sponsor preferences
-          rather than program reality is not a P&amp;L problem. An
-          educational AI tutor adapting to student behavior in ways
-          that reinforce inequitable expectations is not a P&amp;L
-          problem. Each of those is a mission problem, and the
-          distinction between the two matters more than the sector has
-          yet named.
+          When an enterprise deployment produces a wrong signal, someone loses money, and the enterprise typically has room for a redo — retrain, re-run the pilot, adjust the model. When a mission-driven deployment produces a wrong signal, someone loses the intervention that was supposed to reach them, and the redo is often not available — the funder moves on, the beneficiary window closes, the trust breaks. A behavioral-health chatbot that recommends the wrong framing to an at-risk beneficiary is a mission problem, not a P&L one. So is a grant-intelligence tool that suggests reallocation based on drifted metric definitions, a program-evaluation AI that generates impact narratives reinforcing sponsor preferences over program reality, and an educational AI tutor adapting to student behavior in ways that reinforce inequitable expectations. The sector has not yet named how much that distinction matters.
         </P>
         <P>
-          The Reach Trap piece in this library argued that mistaking
-          activity data for outcome data produces misallocation at
-          scale. In AI deployments, the same failure mode shows up one
-          layer up: mistaking model output for validated signal
-          produces mission misallocation at machine cadence. The
-          stakes are different from enterprise stakes, and the
-          responsible-AI frameworks currently being adopted have not
-          yet been tuned to what mission-driven deployments actually
-          risk.
+          The Reach Trap piece in this library argued that mistaking activity data for outcome data produces misallocation at scale. In AI deployments, the same failure mode shows up one layer up: mistaking model output for validated signal produces mission misallocation at machine cadence. The stakes are different from enterprise stakes. Responsible-AI frameworks have not been tuned to what mission-driven deployments actually risk.
         </P>
 
         <H2>The constraint</H2>
@@ -8370,30 +6548,10 @@ export const ESSAYS: Essay[] = [
           wrong is legible.
         </P>
         <P>
-          Mission-driven organizations cannot replicate this
-          infrastructure at scale. The budgets do not support it. The
-          talent market does not favor them. The staffing pattern I
-          have watched across four institutions is the same one:
-          mission-driven orgs hire data analysts, not evaluation
-          engineers. Larger networks stretch to a senior director for
-          academic reporting or program evaluation, but that role gets
-          consumed by accountability reporting and rarely reaches the
-          measurement-science depth an AI deployment requires:
-          validating that a scale still measures the construct it
-          claims to; running PCA or IRT checks on instruments as the
-          theory of change shifts; monitoring drift between the
-          model&rsquo;s output and the outcome the model was supposed
-          to predict; watching for when a survey the field has been
-          using for a decade needs to be re-anchored because the
-          population has changed underneath it; watching for when the
-          enrollment model that worked for the last five years no
-          longer predicts because demographic shifts have moved what
-          enrollment looks like in K-12 or higher education
-          post-pandemic. None of that is entry-level work, and none of
-          it is what the sector is hiring for.
+          Mission-driven organizations cannot replicate this infrastructure at scale. The budgets do not support it. The talent market does not favor them. The staffing pattern I have watched across four institutions is the same one: mission-driven orgs hire data analysts, not evaluation engineers. Larger networks stretch to a senior director for academic reporting or program evaluation. That role gets consumed by accountability reporting. It rarely reaches the measurement-science depth an AI deployment requires: validating that a scale still measures the construct it claims to, running PCA or IRT checks as the theory of change shifts, monitoring drift between model output and predicted outcome, recognizing when a decade-old survey needs to be re-anchored because the population has shifted, catching when the enrollment model that worked for five years no longer predicts because K-12 and higher-ed demographics moved post-pandemic. None of that is entry-level work, and none of it is what the sector is hiring for.
         </P>
         <P>
-          There is a layer beneath even this. Before AI can be
+          There is another layer below this. Before AI can be
           evaluated, the data it reads has to be governed. Most
           mission-driven organizations have data. Student information
           systems, electronic health records, program-management
@@ -8414,49 +6572,17 @@ export const ESSAYS: Essay[] = [
           contexts, it is not.
         </P>
         <P>
-          When there is no funded data infrastructure role, the work
-          gets absorbed by whoever in the organization is capable with
-          numbers or interested in them. A math teacher building
-          professional-development slides. A writing faculty member
-          logging automated-scoring results. A clinician maintaining a
-          caseload tracker. A program coordinator running the grantee
-          spreadsheet. What emerges is an absorption pattern. The
-          primary job (teaching, delivering care, running operations)
-          competes with the absorbed data work, and both suffer. It
-          also produces the spreadsheet sprawl every mission-driven
-          organization has: multiple versions of the same data,
-          maintained by different people, none of it reconcilable at
-          the org level. The distinction between data entry (part of
-          every delivery role) and data curation, integration, and
-          quality assurance (specialized capacity requiring dedicated
-          funding) is where mission-driven org design keeps failing.
-          The absorbed model works until it doesn&rsquo;t, and when it
-          doesn&rsquo;t, both the delivery and the data break.
+          When there is no funded data infrastructure role, the work gets absorbed by whoever in the organization is capable with numbers or interested in them. A math teacher building professional-development slides. A writing faculty member logging automated-scoring results. A clinician maintaining a caseload tracker. A program coordinator running the grantee spreadsheet. What emerges is an absorption pattern. The primary job (teaching, delivering care, running operations) competes with the absorbed data work, and both suffer. It also produces the spreadsheet sprawl every mission-driven organization has: multiple versions of the same data, maintained by different people, none of it reconcilable at the org level. The distinction between data entry (part of every delivery role) and data curation, integration, and quality assurance (specialized capacity requiring dedicated funding) is where mission-driven org design keeps failing. The absorbed model works until it breaks. When it breaks, both the delivery and the data go with it.
         </P>
         <P>
-          <InternalLink slug="what-is-this-system-measuring">
+          <a href="/library/what-is-this-system-measuring" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="what-is-this-system-measuring">
             What Is This System Actually Measuring
-          </InternalLink>
-          , the earlier piece in this library, named the discipline:
-          measurement validity is what the field has been doing for a
-          hundred years and what AI evaluation is a new application
-          of. WITSAM assumed the reader had institutional research
-          capacity or its equivalent. This piece names what happens
-          when they don&rsquo;t. The discipline does not go away when
-          the infrastructure to run it is absent. The failure mode
-          does not go away either. It just becomes invisible until
-          the mission drift accumulates and something breaks.
+          </InternalLink></a>, the earlier piece in this library, named the discipline: measurement validity is what the field has been doing for a hundred years and what AI evaluation is a new application of. WITSAM assumed the reader had institutional research capacity or its equivalent. This piece names what happens when they don&rsquo;t. The discipline does not go away when the infrastructure to run it is absent. The failure mode does not go away either. It just becomes invisible until the mission drift accumulates and something breaks.
         </P>
 
         <H2>The essential minimum</H2>
         <P>
-          Given the constraint, the question is not how to build
-          enterprise-grade evaluation inside a mission-driven
-          organization. It is what the minimum discipline looks like
-          when the infrastructure to run enterprise-grade evaluation
-          does not exist. The answer, drawn from the work I have
-          watched succeed and fail across four sectors, is five
-          things.
+          Given the constraint, the question is not how to build enterprise-grade evaluation inside a mission-driven organization. The question is what the minimum discipline looks like when that infrastructure does not exist. The answer, drawn from the work I have watched succeed and fail across four sectors, is five things.
         </P>
 
         <Figure
@@ -8466,63 +6592,10 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          <I>Task decomposition.</I> Before the deployment ships, name
-          what the AI is doing under the hood. Not what the vendor
-          pitch says it does. What the workflow is asking it to do
-          specifically, at what step, with what inputs, and against
-          what standard. This is the WITSAM discipline restated: what
-          is this system measuring, and does that match what we say it
-          measures? A behavioral-health screening chatbot is often
-          doing three things at once: intake triage, symptom
-          classification, and referral recommendation. Each has a
-          different evaluation standard. Naming them separately lets
-          you evaluate each; leaving them fused as &ldquo;the
-          chatbot&rdquo; means you evaluate none. Most mission-driven
-          adopters skip this step because the vendor pitch is
-          comfortable and the deployment pressure is real. The cost
-          of skipping it is that no one inside the organization can
-          say what the AI is being evaluated against.
+          <I>Task decomposition.</I> Before the deployment ships, name what the AI is doing under the hood. Not what the vendor pitch says. What the workflow is actually asking it to do — at what step, with what inputs, against what standard. This is the WITSAM discipline restated: what is this system measuring, and does that match what we say it measures? A behavioral-health screening chatbot is often doing three things at once: intake triage, symptom classification, and referral recommendation. Each has a different evaluation standard. Naming them separately lets you evaluate each; leaving them fused as “the chatbot” means you evaluate none. Most mission-driven adopters skip this step because the vendor pitch is comfortable and the deployment pressure is real. The cost of skipping it is that no one inside the organization can say what the AI is being evaluated against.
         </P>
         <P>
-          <I>Ground-truth benchmarking with constrained data.</I>{" "}
-          Enterprise adopters run large held-out evaluation sets on
-          standardized data they own end to end. Mission-driven
-          adopters usually have neither. Their deployment populations
-          are small &mdash; a K-8 network of four hundred students, a
-          CCBHC caseload in the hundreds, a foundation portfolio of
-          forty grantees. Their operational data is messy in ways
-          enterprise benchmarks are engineered against. I saw a
-          version of this at ETS: the measurement framework that
-          worked for GRE and TOEFL at scale did not transfer intact to
-          just-in-time remediation contexts or to writing-validity
-          studies with smaller populations. Even with clean data,
-          moving a validated framework to a new use case required
-          rebuilding parts of it. In mission-driven contexts, the data
-          is neither clean nor standardized, and the framework has to
-          be rebuilt from the smaller sample up. What organizations
-          can do is build the smallest defensible benchmark: twenty to
-          fifty cases from their actual deployment context,
-          hand-labeled by a domain expert, held back from any AI
-          training or fine-tuning. For a K-8 tutor deployment, that
-          benchmark might be thirty real student writing samples the
-          tutor was asked to help with, hand-scored by a teacher
-          against a rubric the network already uses for its own
-          writing curriculum &mdash; not synthetic prompts, not
-          vendor-provided examples, but actual samples from the
-          deployment context, labeled by the person whose judgment
-          the AI is meant to support. The benchmark carries diagnostic
-          weight at small n. When the model changes and the benchmark
-          score moves, someone should notice. Refreshing it at every
-          model update is not a special AI cadence. It is the same
-          operational rhythm the organization already runs for
-          accountability reporting or quarterly dashboard refreshes,
-          applied to a new kind of asset. The talent question is not
-          &ldquo;who will build the evaluation.&rdquo; It is &ldquo;who
-          has the data literacy and coaching capacity to keep the
-          rhythm running after the deployment ships.&rdquo; Without
-          that rhythm, the deployment decays. The frontline absorbs
-          the decay. That is the burnout mechanism mission-driven
-          sectors already know too well.
+          <I>Ground-truth benchmarking with constrained data.</I> Enterprise adopters run large held-out evaluation sets on standardized data they own end to end. Mission-driven adopters usually have neither. Their deployment populations are small — a K-8 network of four hundred students, a CCBHC caseload in the hundreds, a foundation portfolio of forty grantees. Their operational data is messy in ways enterprise benchmarks are engineered against. I saw a version of this at ETS: the measurement framework that worked for GRE and TOEFL at scale did not transfer intact to just-in-time remediation contexts or to writing-validity studies with smaller populations. Even with clean data, moving a validated framework to a new use case required rebuilding parts of it. In mission-driven contexts, the data is neither clean nor standardized, and the framework has to be rebuilt from the smaller sample up. What organizations can do is build the smallest defensible benchmark: twenty to fifty cases from their actual deployment context, hand-labeled by a domain expert, held back from any AI training or fine-tuning. For a K-8 tutor deployment, that benchmark might be thirty real student writing samples the tutor was asked to help with, hand-scored by a teacher against a rubric the network already uses for its own writing curriculum — not synthetic prompts, not vendor-provided examples, but actual samples from the deployment context, labeled by the person whose judgment the AI is meant to support. The benchmark carries diagnostic weight at small n. When the model changes and the benchmark score moves, someone should notice. Refreshing it at every model update is not a special AI cadence. It is the same operational rhythm the organization already runs for accountability reporting or quarterly dashboard refreshes, applied to a new kind of asset. The talent question is not “who will build the evaluation.” It is “who has the data literacy and coaching capacity to keep the rhythm running after the deployment ships.” Without that rhythm, the deployment decays. The frontline absorbs the decay. That is the burnout pattern the sector already knows.
         </P>
         <P>
           <I>Deployment-context evaluation.</I> Generic model
@@ -8578,15 +6651,9 @@ export const ESSAYS: Essay[] = [
           sector was already at risk of.
         </P>
         <P>
-          Five items. None of them requires enterprise-scale
-          evaluation infrastructure. All of them require the
-          discipline to name what is being evaluated, evaluate it in
-          the deployment context, and design the human checkpoint back
-          in. This is{" "}
-          <ArtifactLink slug="when-the-stakes-essential-minimum">
+          Five items. None of them requires enterprise-scale evaluation infrastructure. All of them require the discipline to name what is being evaluated, evaluate it in the deployment context, and design the human checkpoint back in. This is <ArtifactLink slug="when-the-stakes-essential-minimum">
             the essential minimum
-          </ArtifactLink>
-          . It is what the sector has to have.
+          </ArtifactLink>. It is what the sector has to have.
         </P>
 
         <H2>The shared-infrastructure path</H2>
@@ -8595,32 +6662,10 @@ export const ESSAYS: Essay[] = [
           mission-driven organizations can build alone.
         </P>
         <P>
-          The behavioral-health sector has been trying a version of
-          this pattern for years. In the Certified Community
-          Behavioral Health Clinic model, participating organizations
-          join collaboratives that establish shared measurement
-          definitions, shared reporting infrastructure, and shared
-          quality benchmarks. The work is painfully slow. The
-          collaboratives meet monthly because every participating
-          organization is running operational work between meetings.
-          Some organizations advance ahead of the collaborative;
-          others lag behind waiting for shared definitions to land;
-          the collective progress moves at the cadence of the slowest
-          participants. But it works. Infrastructure exists at
-          industry scale that no single participating organization
-          could have built.
+          The behavioral-health sector has been trying a version of this pattern for years. In the Certified Community Behavioral Health Clinic model, participating organizations join collaboratives that establish shared measurement definitions, shared reporting infrastructure, and shared quality benchmarks. The work is painfully slow. The collaboratives meet monthly because every participating organization is running operational work between meetings. Some organizations advance ahead of the collaborative. Others lag, waiting for shared definitions to land. The collective moves at the pace of the slowest participants. But it works. Infrastructure exists at industry scale that no single participating organization could have built.
         </P>
         <P>
-          The pattern generalizes, and the mission-driven AI moment
-          needs it to. If frontier AI adoption in mission-driven
-          contexts is going to happen without producing mission drift,
-          the evaluation infrastructure required to catch drift has to
-          be built as a shared good, jointly by frontier AI providers
-          who benefit from responsible deployment of their models and
-          by philanthropic infrastructure that treats evaluation
-          methodology as sector plumbing rather than proprietary
-          advantage. This is the coordination problem the sector
-          faces, and it is not solvable org by org.
+          The pattern generalizes, and the mission-driven AI moment needs it to. If frontier AI adoption in mission-driven contexts is going to happen without producing mission drift, the evaluation infrastructure required to catch drift has to be built as a shared good, jointly by frontier AI providers who benefit from responsible deployment of their models and by philanthropic infrastructure that treats evaluation methodology as sector plumbing, not proprietary advantage. This is the coordination problem the sector faces, and it is not solvable org by org.
         </P>
         <P>
           Two flags before this argument lands as easy. Shared
@@ -8636,27 +6681,9 @@ export const ESSAYS: Essay[] = [
           widen before it narrows.
         </P>
         <P>
-          One more thing worth naming, because the Center for
-          Effective Philanthropy has just written about it publicly:
-          the facilitation and coordination work that keeps a
-          shared-infrastructure model alive is itself unfunded labor,
-          and its cost is usually absorbed by the same operational
-          leaders already running the mission. When that cost stays
-          invisible, small organizations get excluded from the
-          collaborative because they cannot afford to participate;
-          larger organizations dominate the shared infrastructure, and
-          the eval discipline the model was supposed to build ends up
-          shaped by the contexts of the biggest participants. The
-          intermediary that holds the coordination work (a backbone
-          organization, a third-party facilitator, an embedded
-          eval-methodology lead from the frontier lab&rsquo;s side) is
-          essential infrastructure. Naming it as overhead is how the
-          whole model collapses &mdash; the coordination cost gets
-          absorbed by operational leaders, the same pattern{" "}
-          <InternalLink slug="the-absorbed-data-role">
+          One more thing worth naming, because the Center for Effective Philanthropy has just written about it publicly: the facilitation and coordination work that keeps a shared-infrastructure model alive is itself unfunded labor, and its cost is usually absorbed by the same operational leaders already running the mission. When that cost stays invisible, small organizations get excluded from the collaborative because they cannot afford to participate; larger organizations dominate the shared infrastructure, and the eval discipline the model was supposed to build ends up shaped by the contexts of the biggest participants. The intermediary that holds the coordination work (a backbone organization, a third-party facilitator, an embedded eval-methodology lead from the frontier lab&rsquo;s side) is essential infrastructure. Call it overhead and the whole model collapses. The coordination cost gets absorbed by operational leaders — the same pattern <a href="/library/the-absorbed-data-role" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="the-absorbed-data-role">
             The absorbed data role
-          </InternalLink>{" "}
-          names one layer down.
+          </InternalLink></a> names one layer down.
         </P>
 
         <H2>Close</H2>
@@ -8756,30 +6783,19 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          In 2005 I was a doctoral student on a field team visiting
-          small teacher-education programs across the country to help
-          them make the case for accreditation. My job was data
-          auditor. The team would visit a program in a small town, one
-          at a time, and the observations and interviews took
-          precedence; those built the case. The data was the audit
-          layer underneath. I would sit in a back room with my small
-          laptop, paper, pencil, and calculator, and I would meet the
-          faculty member who had collected or logged the
-          program&rsquo;s evaluation data.
+          In 2005 I was a doctoral student on a field team visiting small teacher-education programs across the country to help them make the case for accreditation. My job was data auditor. The team would visit a program in a small town, one at a time, and the observations and interviews took precedence; those built the case. The data was the audit layer that backed it up. I would sit in a back room with my small laptop, paper, pencil, and calculator, and I would meet the faculty member who had collected or logged the program&rsquo;s evaluation data.
         </P>
         <P>
-          The data was incomplete. Rows missing. Codes inconsistent.
-          Not because the faculty member was inattentive. Because
-          holding the data was on top of the day job. The person in
-          front of me was a teacher-educator who had absorbed the
-          responsibility for the program&rsquo;s data because someone
-          had to, and they were the one who was capable with numbers
-          or interested in them or both.
+          The data was incomplete &mdash; rows missing, codes
+          inconsistent. Not because the faculty member was inattentive,
+          but because holding the data sat on top of the day job. The
+          person in front of me was a teacher-educator who had absorbed
+          the responsibility for the program&rsquo;s data because
+          someone had to, and they were the one who was capable with
+          numbers or interested in them or both.
         </P>
         <P>
-          That was 2005. I would spend the next twenty years watching
-          the same shape take different forms in different sectors,
-          and I would only recently name what I was actually watching.
+          That was 2005. I spent the next twenty years watching the same shape show up in different sectors. Only recently did I name what I had been observing.
         </P>
 
         <H2>The pattern</H2>
@@ -8794,17 +6810,17 @@ export const ESSAYS: Essay[] = [
           data requests because they have system access.
         </P>
         <P>
-          The result is an absorption pattern. When there is no
-          funded infrastructure role, the work goes to whoever can
-          carry it, and it stays there. Never specialized. Never
-          advocated for. Never scaled. Until the person carrying it
-          leaves, and the informal knowledge walks out with them.
+          Call it the absorption pattern. When there is no funded
+          infrastructure role, the work goes to whoever can carry it,
+          and it stays there. Never specialized, never advocated for,
+          never scaled. Until the person carrying it leaves, and the
+          informal knowledge leaves with them.
         </P>
         <P>
-          The visible symptom is spreadsheet sprawl. The invisible
-          cost is that the work never gets to specialization. And the
-          person carrying it spends their delivery time on something
-          that was supposed to be someone else&rsquo;s job.
+          Spreadsheet sprawl is the visible symptom. The real cost is
+          that the work never gets to specialization. And the person
+          carrying it spends their delivery time on something that was
+          supposed to be someone else&rsquo;s job.
         </P>
 
         <H2>Three buckets</H2>
@@ -8840,17 +6856,7 @@ export const ESSAYS: Essay[] = [
           own local data snapshot (sprawl).
         </P>
         <P>
-          <B>
-            Bucket 3 &mdash; curation, integration, semantic
-            definition, quality assurance, governance.
-          </B>{" "}
-          Maintaining the definitions. Reconciling how
-          &ldquo;attendance&rdquo; or &ldquo;session&rdquo; or
-          &ldquo;enrolled&rdquo; or &ldquo;at-risk&rdquo; is defined
-          across systems. Building the pipeline. Catching data quality
-          issues. Owning the semantic layer. This bucket is
-          specialized capacity. It is not part of delivery. It
-          requires a dedicated, funded role.
+          <B>Bucket 3 — curation, integration, semantic definition, quality assurance, governance.</B> Maintaining the definitions. Reconciling how “attendance” or “session” or “enrolled” or “at-risk” is defined across systems. Building the pipeline. Catching data quality issues. Owning the semantic layer. This bucket is specialized capacity. It needs a dedicated, funded role, separate from delivery.
         </P>
         <P>
           The three buckets exist in every organization. The question
@@ -8881,24 +6887,7 @@ export const ESSAYS: Essay[] = [
           had built it, on top of teaching.
         </P>
         <P>
-          In 2023 I stepped into a K-8 charter network. Before the
-          data role existed, the reporting was being done by a math
-          teacher who built the professional-development slides. Fifty
-          Google Sheets carried the semantic layer over an
-          unconsolidated legacy stack. The core measure, student
-          persistence, was independently recalculated
-          eight or more times across sheets. Each version was correct
-          under its own definition. None of them agreed with the
-          others. A Director of Instructional Technology managed the
-          operational systems (student information system, learning
-          management, assessment platform) and had become the de facto
-          data provider because he had access. The role played both
-          ways: users routed around the org chart to reach the person
-          with system access; the person with system access held that
-          access as leverage. Half-configured systems. Under-utilized
-          fields. Users hoarding needed snapshots in their own local
-          sheets. Before long, everyone was arguing about the single
-          source of truth.
+          In 2023 I stepped into a K-8 charter network. Before the data role existed, the reporting was being done by a math teacher who built the professional-development slides. Fifty Google Sheets carried the semantic layer over an unconsolidated legacy stack. The core measure, student persistence, was independently recalculated eight or more times across sheets. Each version was correct under its own definition. None of them agreed with the others. A Director of Instructional Technology managed the operational systems (student information system, learning management, assessment platform) and had become the de facto data provider because they had access. The role played both ways. Users routed around the org chart to reach the person with system access, and that person held the access as leverage. Systems ran half-configured. Fields sat under-utilized. Users hoarded snapshots in their own sheets. Before long, everyone was arguing about the single source of truth.
         </P>
         <P>
           At a behavioral-health agency running Certified Community
@@ -8997,58 +6986,19 @@ export const ESSAYS: Essay[] = [
           what each bucket requires and what each role can carry.
         </P>
         <P>
-          The mission-driven failure is trying to run all three
-          buckets out of one role, the math teacher or the writing
-          faculty member or the Director of Instructional Technology
-          or the research data steward, because the specialized bucket
-          3 role has no funded home. It works until it doesn&rsquo;t.
-          When it doesn&rsquo;t, the delivery role&rsquo;s day job
-          suffers, the data quality erodes, and users start hoarding
-          their own snapshots because they no longer trust the central
-          number.
+          The mission-driven failure is trying to run all three buckets out of one role, the math teacher or the writing faculty member or the Director of Instructional Technology or the research data steward, because the specialized bucket 3 role has no funded home. It works until it doesn&rsquo;t. Then the delivery role&rsquo;s day job suffers, data quality erodes, and users start hoarding snapshots because they no longer trust the central number.
         </P>
 
         <H2>What could work</H2>
         <P>
-          The enterprise sector has been working on a version of this
-          problem for a decade and has produced partial answers.
-          Federated data governance and data mesh architectures locate
-          a central function that owns the platform, the standards,
-          and the semantic layer, while domain teams own the data
-          products in their operational area. Data contracts formalize
-          the interface between the two. A Chief Data Officer or Chief
-          Data and Analytics Officer holds the accountability. What
-          transfers to mission-driven contexts is the three-bucket
-          separation, the data-contracts vocabulary, and the case for
-          a specialized semantic-layer role. What does not transfer is
-          the staffing scale. Most mission-driven organizations cannot
-          fund a CDO with a team underneath, cannot afford the tooling
-          that data mesh implementations run on, and do not have
-          domain teams large enough to own the products the enterprise
-          model assumes.
+          The enterprise sector has been working on a version of this problem for a decade and has produced partial answers. Federated data governance and data mesh architectures locate a central function that owns the platform, the standards, and the semantic layer, while domain teams own the data products in their operational area. Data contracts formalize the interface between the two. A Chief Data Officer or Chief Data and Analytics Officer holds the accountability. What transfers to mission-driven contexts is the three-bucket separation, the data-contracts vocabulary, and the case for a specialized semantic-layer role. What does not transfer is the staffing scale. Most mission-driven organizations cannot fund a CDO with a team under them, cannot afford the tooling that data mesh implementations run on, and do not have domain teams large enough to own the products the enterprise model assumes.
         </P>
         <P>
-          If the enterprise pattern does not port over intact, the
-          mission-driven sector has been working on models that fit
-          its constraints. Sector-level backbone organizations that
-          hold shared definitions and shared infrastructure (Ed-Fi in
-          K&ndash;12, CCBHC collaboratives in behavioral health, state
-          longitudinal data systems, Candid in philanthropy) are the
-          most established. The emerging operating model is a
-          fractional bucket-3 advisory arrangement, where a specialized
-          data architect works across several mission-driven
-          organizations at a portion of an FTE each. Foundation-funded direct
-          capacity grants have a mixed track record but have not been
-          retired. Frontier-lab shared-infrastructure partnerships of
-          the kind Anthropic and others are building are the newest
-          and potentially the most durable, if they survive champion
-          turnover. Coalition-owned semantic layers, held jointly by a
-          group of peer organizations, are under-tried and worth
-          trying.
+          If the enterprise pattern does not port over intact, the mission-driven sector has been working on models that fit its constraints. Sector-level backbone organizations that hold shared definitions and shared infrastructure (Ed-Fi in K–12, CCBHC collaboratives in behavioral health, state longitudinal data systems, Candid in philanthropy) are the most established. The emerging operating model is a fractional bucket-3 advisory arrangement, where a specialized data architect works across several mission-driven organizations at a portion of an FTE each. Foundation-funded direct capacity grants have a mixed track record but have not been retired. Frontier-lab shared-infrastructure partnerships of the kind Anthropic and others are building are the newest and potentially the most durable, if they survive champion turnover. Coalition-owned semantic layers, held jointly by a group of peer organizations, are under-tried and worth trying.
         </P>
         <P>
-          The discipline that connects these models is customer and
-          supplier. Tom Redman and Angela Saitta have argued in the
+          What connects these models is a customer-and-supplier
+          discipline. Tom Redman and Angela Saitta have argued in the
           CDO Magazine version of this that every delivery role in the
           organization is both a customer of upstream data and a
           supplier of downstream data, and that the specialized data
@@ -9060,8 +7010,8 @@ export const ESSAYS: Essay[] = [
           it, data literacy has something concrete to attach to.
         </P>
         <P>
-          One last thing worth saying. Mission-driven work does not
-          have to be back-breaking, low-pay, over-work. The
+          One more thing. Mission-driven work does not have to be
+          back-breaking, underpaid, or overworked. The
           absorbed-data-role pattern is one specific mechanism of the
           broader burnout the sector already knows it has. When the
           specialized bucket-3 role is unfunded, the delivery capacity
@@ -9076,30 +7026,19 @@ export const ESSAYS: Essay[] = [
 
         <H2>Close</H2>
         <P>
-          The boundary the sector needs to draw is between data entry,
-          data interpretation, and data infrastructure. All three are
-          real work. All three need funded capacity. Only two of them
-          belong in delivery roles.
+          The boundary the sector needs to draw is between data entry, data interpretation, and data infrastructure. All three are real work and need funded capacity. Only two of them belong in delivery roles.
         </P>
         <P>
-          Every mission-driven organization I have worked with has
-          held all three in the same person, because that person was
-          capable and there was no one else. That model is the
-          informal structure keeping mission-driven data operations
-          running. It is also the reason the infrastructure never gets
-          built. When the person absorbing the work leaves, or burns
-          out, or gets pulled onto something else, the informal
-          structure collapses. There is nothing underneath.
+          Every mission-driven organization I have worked with has held all three in the same person, because that person was capable and there was no one else. That model is the informal structure keeping mission-driven data operations running. It is also why the infrastructure never gets built. When the person absorbing the work leaves, or burns out, or gets pulled onto something else, the informal structure collapses. There is nothing holding it up.
         </P>
         <P>
-          The specialized bucket 3 role is the one that does not exist
-          in most mission-driven org charts. It is also the one the
-          sector cannot function without. Naming it, funding it, and
-          hiring for it is the piece of decision-systems architecture
-          that mission-driven organizations keep skipping. The math
-          teacher, the writing faculty member, the clinician, the
-          program coordinator will keep absorbing the work in the
-          meantime.
+          Bucket 3 is the role missing from most mission-driven org
+          charts, and the sector cannot function without it. Naming
+          it, funding it, and hiring for it is the piece of
+          decision-systems architecture that mission-driven
+          organizations keep skipping. The math teacher, the writing
+          faculty member, the clinician, the program coordinator will
+          keep absorbing the work in the meantime.
         </P>
         <P>
           That was 2005 in a small town. Twenty-one years later, in

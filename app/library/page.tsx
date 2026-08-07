@@ -3,8 +3,9 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ESSAYS, ARC_LABELS, ArtifactLink, type Arc } from "./essays";
+import { ESSAYS, ArtifactLink } from "./essays";
 import { ARTIFACTS, type Artifact } from "./artifacts-data";
+import WritingsList, { type WritingEntry } from "./WritingsList";
 
 export const metadata: Metadata = {
   title: "Library — Analytic Bytes",
@@ -41,17 +42,6 @@ export const metadata: Metadata = {
 //           Recommended: 1200x900 or similar, optimized for web
 // =====================================================================
 
-type Entry = {
-  type: "essay" | "artifact" | "field-note";
-  title: string;
-  date?: string; // essays/field-notes are dated; artifacts are not
-  summary: string;
-  url?: string;
-  image?: string;
-  arc?: Arc; // only set on essays/field-notes; artifacts are arc-less
-  slug?: string; // only set on artifacts; used to render anchor id for cross-links
-};
-
 // Artifacts — figures from the analytical work (architecture diagrams,
 // data charts, flowcharts). The full ARTIFACTS registry lives in
 // ./artifacts-data.ts so it can be shared with /library/artifacts and
@@ -64,32 +54,20 @@ const ARTIFACT_PREVIEWS: Artifact[] = ARTIFACTS.slice(
 
 // Dated feed — published essays and field notes (from the ESSAYS registry),
 // newest-first. Artifacts are dateless and render in their own gallery below.
-const ENTRIES: Entry[] = ESSAYS.filter((e) => !e.hidden).map(
-  (e): Entry => ({
-    type: e.kind,
-    title: e.title,
-    date: e.date,
-    summary: e.summary,
-    url: `/library/${e.slug}`,
-    arc: e.arc,
-  })
-).sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
-
-const TYPE_LABELS: Record<Entry["type"], string> = {
-  essay: "Essay",
-  artifact: "Artifact",
-  "field-note": "Field Note",
-};
-
-function formatDate(iso?: string) {
-  if (!iso) return "";
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
-}
+// The list itself is rendered by <WritingsList /> (client-side, so it can
+// hold the discipline filter state).
+const ENTRIES: WritingEntry[] = ESSAYS.filter((e) => !e.hidden)
+  .map(
+    (e): WritingEntry => ({
+      type: e.kind,
+      title: e.title,
+      date: e.date,
+      summary: e.summary,
+      url: `/library/${e.slug}`,
+      arc: e.arc,
+    })
+  )
+  .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
 export default function LibraryPage() {
   return (
@@ -140,14 +118,14 @@ export default function LibraryPage() {
           </div>
         </section>
 
-        {/* WRITINGS — essays & field notes, dated feed */}
+        {/* WRITINGS — essays & field notes, dated feed with a discipline
+            filter row at the top. Filter state lives in <WritingsList />
+            (client component) so page.tsx can stay a Server Component. */}
         <section className="pb-16">
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
-              <div className="border-t border-line">
-                {ENTRIES.map((entry, i) => (
-                  <Entry key={`${entry.date}-${i}`} entry={entry} />
-                ))}
+              <div className="pt-2">
+                <WritingsList entries={ENTRIES} />
               </div>
             </Reveal>
           </div>
@@ -203,10 +181,6 @@ export default function LibraryPage() {
   );
 }
 
-function Entry({ entry }: { entry: Entry }) {
-  return <TextEntry entry={entry} />;
-}
-
 // Compact preview card for the /library artifacts strip. Links to the
 // dedicated artifact page. Full gallery lives at /library/artifacts.
 function ArtifactPreviewCard({ artifact }: { artifact: Artifact }) {
@@ -250,80 +224,5 @@ function ArtifactPreviewCard({ artifact }: { artifact: Artifact }) {
   );
 }
 
-function TextEntry({ entry }: { entry: Entry }) {
-  const isLink = entry.url && entry.url.length > 0;
-  const Wrap = isLink
-    ? ({ children }: { children: React.ReactNode }) => (
-        <a
-          href={entry.url}
-          target={entry.url?.startsWith("http") ? "_blank" : undefined}
-          rel="noopener"
-          className="block group hover:bg-bg-alt transition-colors no-underline"
-        >
-          {children}
-        </a>
-      )
-    : ({ children }: { children: React.ReactNode }) => (
-        <div className="block opacity-70">{children}</div>
-      );
-
-  return (
-    <Wrap>
-      <article className="grid grid-cols-1 sm:grid-cols-[120px_120px_1fr_auto] gap-2 sm:gap-8 py-8 border-b border-line">
-        <time className="font-mono text-[12px] text-ink-3 tracking-[0.04em] uppercase pt-1.5">
-          {formatDate(entry.date)}
-        </time>
-        <div className="font-mono text-[11px] tracking-[0.18em] uppercase pt-2 text-accent">
-          {TYPE_LABELS[entry.type]}
-        </div>
-        <div className="min-w-0">
-          <h3 className="text-[18px] sm:text-[22px] lg:text-[24px] font-bold tracking-[-0.015em] text-ink leading-[1.25]">
-            {entry.title}
-          </h3>
-          {entry.summary ? (
-            <p className="text-ink-2 text-[14px] sm:text-[15px] mt-2 leading-[1.5] max-w-[64ch]">
-              {entry.summary}
-            </p>
-          ) : null}
-          {entry.arc ? (
-            <div className="mt-3">
-              <ArcPill arc={entry.arc} />
-            </div>
-          ) : null}
-          {!isLink ? (
-            <p className="text-ink-3 text-[11px] mt-2 font-mono tracking-[0.04em] uppercase">
-              Coming soon
-            </p>
-          ) : null}
-        </div>
-        <div className="text-ink-3 text-2xl group-hover:text-accent group-hover:translate-x-1.5 transition-all hidden sm:block self-center">
-          {isLink ? "↗" : ""}
-        </div>
-      </article>
-    </Wrap>
-  );
-}
-
-// Arc pill — small mono-uppercase label with a leading marker that varies
-// per arc. Marker uses AB's existing palette only (teal + navy). Three
-// circles plus one diamond keep the visual distinction clean at 6px.
-// Measurement: solid teal dot. Integration governance: solid navy dot.
-// AI systems: hollow teal ring (signals an emerging discipline). Org
-// design: navy diamond (signals structural / architectural work).
-function ArcPill({ arc }: { arc: Arc }) {
-  const markerClass: Record<Arc, string> = {
-    measurement: "bg-accent rounded-full",
-    "integration-governance": "bg-ink rounded-full",
-    "ai-systems": "bg-bg border border-accent rounded-full",
-    "organizational-design": "bg-ink rotate-45",
-  };
-  return (
-    <span className="inline-flex items-center gap-1.5 font-mono text-[10.5px] tracking-[0.12em] uppercase text-ink-2 border border-line-2 rounded-sm pl-1.5 pr-2 py-0.5">
-      <span
-        aria-hidden
-        className={`inline-block w-1.5 h-1.5 shrink-0 ${markerClass[arc]}`}
-      />
-      {ARC_LABELS[arc]}
-    </span>
-  );
-}
+// TextEntry + ArcPill moved to ./WritingsList.tsx so the client-side
+// discipline filter and the per-entry display live in one unit.
