@@ -2819,7 +2819,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-05-31",
     readingTime: "8 min read",
     summary:
-      "Universities have built the scaffolding to govern AI and left out a load-bearing pillar: evaluation. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
+      "Universities have built the scaffolding to govern AI and skipped the evaluation layer. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
     cover: "/library/covers/what-is-this-system-measuring.svg",
     arc: "measurement",
     body: (
@@ -2868,8 +2868,8 @@ export const ESSAYS: Essay[] = [
           peer institution uses it, because a pilot felt successful. None of
           those is evidence that the system measures or predicts what it
           purports to. Adoption and policy have outrun evaluation. We have
-          built the scaffolding for governing AI and left out a load-bearing
-          beam.
+          built the scaffolding for governing AI and left out the evaluation
+          layer.
         </P>
 
         <H2>What seven years of scoring engines taught me</H2>
@@ -5414,10 +5414,10 @@ export const ESSAYS: Essay[] = [
     title: "My relationship with AI.",
     subtitle:
       "Field notes on the stages of working with generative AI across tools.",
-    date: "2026-07-30",
+    date: "2026-07-29",
     readingTime: "9 min read",
     summary:
-      "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. The pattern: maturity transferred, capability expanded.",
+      "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. Maturity transferred across tools; capability expanded with the tool that could hold more.",
     cover: "/library/covers/my-relationship-with-ai.svg",
     arc: "ai-systems",
     body: (
@@ -5439,6 +5439,10 @@ export const ESSAYS: Essay[] = [
             work I had been away from for years. Anyone who tells you the
             optimal way to use AI is making it up. I am telling you what
             worked for me, in the specific shape my life took.
+          </p>
+          <p>
+            The relationship had stages. Naming them is what the rest of
+            this is for.
           </p>
         </Brief>
 
@@ -5492,25 +5496,25 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           I did not separate these. They were the same tool doing
-          different work. This matters, because the maturity I was
-          building was not &ldquo;AI for professional things.&rdquo; It
-          was <I>AI as a surface I could think on without performing.</I>
+          different work. This matters. The maturity I was building
+          was <I>AI as a surface I could think on without performing</I>
+          &mdash; not AI for professional things.
         </P>
         <P>
-          That last part is the one I would lift out of the eight months
-          and underline. GPT became useful because the conversational
-          contract was different from human conversation. With humans, I have to think
-          of the most balanced curated version of what I want to say
-          before I say it. With AI, I can say the thing, hear it back,
-          reflect, refine. No pressure. No social cost.
+          The reason GPT became useful was structural, not intellectual.
+          The conversational contract was different from human
+          conversation. With humans, I have to think of the most balanced
+          curated version of what I want to say before I say it. With AI,
+          I can say the thing, hear it back, reflect, refine. No pressure.
+          No social cost.
         </P>
         <P>
-          That property (<I>removing the social-performance overhead of
-          conversation</I>) is what made AI usable for the kind of
-          thinking that needed open space. Not because AI is
-          non-judgmental or empathic. Those framings are sentimental and
-          partly untrue. The benefit is structural. AI removes the
-          contract that requires you to be composed before you speak.
+          Removing the social-performance overhead of conversation is
+          what made AI usable for the kind of thinking that needed open
+          space. Not because AI is non-judgmental or empathic. Those
+          framings are sentimental and partly untrue. The benefit is
+          structural. AI removes the contract that requires you to be
+          composed before you speak.
         </P>
         <P>
           By the end of those eight months, a working pattern had formed.
@@ -5519,8 +5523,8 @@ export const ESSAYS: Essay[] = [
           (<I>&ldquo;why r u agreeeing with evetyhign i say&rdquo;</I>). I
           had learned to protect my voice from drift (<I>&ldquo;why is
           this not sounding me?&rdquo;</I>). I had learned that the volume
-          of iteration was the point, that one banner image might take
-          ninety turns and that was fine because the artifact was the
+          of iteration was the point &mdash; that one banner image might
+          take ninety turns and that was fine because the artifact was the
           deliverable, not the conversation.
         </P>
         <P>This was the foundation. I would lean on it for what came next.</P>
@@ -5548,14 +5552,13 @@ export const ESSAYS: Essay[] = [
           I made one specific request inside that thread that I think
           about now: <I>&ldquo;talk to me like a management consultant and
           coach.&rdquo;</I> I cast the AI into a specific role at a
-          specific emotional moment. Not just asking for help, directing
-          the kind of help.
+          specific emotional moment. Not just asking for help &mdash;
+          directing the kind of help.
         </P>
         <P>
-          I want to be careful here, because there is a flat version of
-          this stage that says &ldquo;AI is good at emotional
-          support&rdquo; and most public writing on the topic lands
-          there. The accurate version is different.
+          There is a flat version of this stage that says &ldquo;AI is
+          good at emotional support,&rdquo; and most public writing on
+          the topic lands there. The accurate version is different.
         </P>
         <P>
           There were other scaffolds. My father called with advice. My
@@ -5571,7 +5574,7 @@ export const ESSAYS: Essay[] = [
         <P>
           I avoid discussing difficult things with humans in general. I
           find them opinionated. Maybe that is bias on my part. I do not
-          know. The honest version is: I chose AI for the deep processing
+          know. The truth is: I chose AI for the deep processing
           because the cost of using it was zero and the cost of using
           humans, even loving ones, was the social overhead I did not
           have bandwidth for in that period.
@@ -5615,9 +5618,9 @@ export const ESSAYS: Essay[] = [
           worked without friction.
         </P>
         <P>
-          That was the moment Claude earned the ramp. Claude had just
-          enabled me to do something I had been blocked on for years.
-          The trust was concrete. It was about the artifact.
+          That was the moment Claude earned the ramp. The reason was
+          concrete: Claude had just enabled me to do something I had been
+          blocked on for years. The trust was about the artifact.
         </P>
         <P>
           After that, Claude took on more. Desktop folders connected.
@@ -5632,7 +5635,7 @@ export const ESSAYS: Essay[] = [
           Claude got the structured intellectual work. Application
           packages with deep context. The agentic AI coursework I was
           enrolled in. Library drafting for my advisory practice.
-          Competitive scans. Product offerings as first drafts. TEDx
+          Competitive scans. Product offerings as first drafts. Speaking
           application refinement. Anything that needed to compound across
           sessions and integrate across folders.
         </P>
@@ -5640,13 +5643,13 @@ export const ESSAYS: Essay[] = [
           GPT kept the work it was already good at. Sharp operator
           phrasing when Claude felt too dense. Resume and cover-letter
           tailoring, especially for fast-turnaround applications. Visual
-          generation for TEDx framing and LinkedIn Featured images,
+          generation for talk framing and LinkedIn Featured images,
           because GPT&rsquo;s image model is built into the conversation.
           Some reflection threads that just continued the pattern from
           earlier.
         </P>
         <P>
-          Gemini entered for critique. A third opinion on TEDx
+          Gemini entered for critique. A third opinion on speaking
           applications, on a Monitoring and Evaluation Learning kit I was
           developing, on essay drafts.
         </P>
@@ -5656,12 +5659,12 @@ export const ESSAYS: Essay[] = [
           as my needs shifted.
         </P>
         <P>
-          One pattern worth naming: TEDx work is hybrid, not Claude-only.
-          The application drafting and thesis refinement live on Claude.
-          The visual and metaphorical exploration (race vs room,
-          Constellation Self, Tree with Silhouettes) happened on GPT,
-          because that is where image generation could iterate with text
-          in the same thread.
+          One pattern worth naming: speaking work is hybrid, not
+          Claude-only. The application drafting and thesis refinement
+          live on Claude. The visual and metaphorical exploration (race
+          vs room, Constellation Self, Tree with Silhouettes) happened on
+          GPT, because that is where image generation could iterate with
+          text in the same thread.
         </P>
         <P>
           The friction had also reversed direction in one place. GPT had
@@ -5682,10 +5685,10 @@ export const ESSAYS: Essay[] = [
           pattern. The <B>pre-work surface</B> practice. The
           voice-protection discipline. The sycophancy-detection muscle.
           The iteration tolerance. The understanding that hundreds of
-          turns produce one shippable artifact. The two-tool thinking, the
-          idea that I could check one tool against another. None of that
-          was learned on Claude. It was already operational by the time I
-          opened my first real Claude thread.
+          turns produce one shippable artifact. The two-tool thinking
+          &mdash; the idea that I could check one tool against another.
+          None of that was learned on Claude. It was already operational
+          by the time I opened my first real Claude thread.
         </P>
         <P>
           What <I>expanded</I> on Claude was capability. Integration with
@@ -5693,21 +5696,36 @@ export const ESSAYS: Essay[] = [
           workspace. A knowledge repository I am building now. RAG
           architecture I have not stood up yet but plan to. Agents through
           my current coursework. The work I do on Claude is broader and
-          faster than the work I did on GPT, because the tool can hold
-          more, not because I matured.
+          faster than the work I did on GPT, but the reason is not that I
+          matured. It is that the tool can hold more.
         </P>
         <P>
           That distinction matters for the field-note thesis. I did not
           become an &ldquo;AI native&rdquo; through repeated use. I built
           a working pattern in one tool and brought it to another tool
-          that could do more with the same pattern. <B>Maturity
-          transferred. Capability expanded.</B>
+          that could do more with the same pattern. Maturity transferred.
+          Capability expanded. Two different curves.
+        </P>
+        <P>
+          The audit I ran on the first ninety days of the AB practice put
+          numbers on that transfer. Across{" "}
+          <ArtifactLink slug="dialogue-maturity-curve">
+            roughly one hundred sessions scored over eighteen months
+          </ArtifactLink>
+          , the maturity gains concentrated in
+          three places: cross-thread integration, generative reframing,
+          and meta-awareness &mdash; noticing when the model is
+          sycophantic or missing something. The{" "}
+          <InternalLink slug="auditing-an-ai-native-practice">
+            companion field note
+          </InternalLink>{" "}
+          walks through the instrument.
         </P>
         <P>
           This also tracks with something I have been saying for years in
-          my data work: <I>&ldquo;it was never about the stack.&rdquo;</I>
-          {" "}The AI version of that turns out to be the same claim. It was
-          never about the tool.
+          my data work: <I>it was never about the stack.</I> The AI
+          version of that turns out to be the same claim. It was never
+          about the tool.
         </P>
 
         <H2>The core insight.</H2>
@@ -5717,7 +5735,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The library is what I have built. The essays, the brand, the
           cover letters that landed, the applications I am proud of, the
-          TEDx thesis I am still shaping, the decision-systems vocabulary
+          talk thesis I am still shaping, the decision-systems vocabulary
           I use. All of that is mine. My voice. My judgment. My
           responsibility when it succeeds, my responsibility when it does
           not.
@@ -5727,7 +5745,7 @@ export const ESSAYS: Essay[] = [
           pulling the right book down. Help cross-referencing. Help
           drafting the first sentence so I could see what was wrong with
           it and write the right one. Help iterating on a banner image
-          ninety times until I could see the version I wanted. Help
+          eighty-five times until I could see the version I wanted. Help
           integrating a piece of advice from my father in the middle of
           the night when the cost of calling him back was too high.
         </P>
@@ -5738,8 +5756,8 @@ export const ESSAYS: Essay[] = [
         <P>
           I do not know whether the speed AI gave me cost me depth. The
           prototyping work I did at a prior role took longer with GPT
-          because the friction was real. I was drafting outside the work
-          environment and porting the work back in. Some of that friction
+          because the friction was real &mdash; I was drafting outside
+          the work environment and porting the work back in. Some of that friction
           may have forced me to think more carefully than I would have if
           the tool had been faster. The same question applies to
           everything in the post-Claude period: was the exponential ramp a
@@ -5759,8 +5777,8 @@ export const ESSAYS: Essay[] = [
           I do not know whether the pre-work surface model substitutes for
           delivery practice. Pre-work is iterative; delivery is one-shot.
           The muscle for composed real-time response in an interview, a
-          panel, a hard meeting, that muscle is not built on the pre-work
-          surface. I have done many things with AI in the last year. The
+          panel, a hard meeting &mdash; that muscle is not built on the
+          pre-work surface. I have done many things with AI in the last year. The
           interviews I will land or not land this season will not be among
           them.
         </P>
@@ -5795,8 +5813,9 @@ export const ESSAYS: Essay[] = [
           public-facing work I had not imagined I could prepare for. None
           of this was AI doing the work for me. All of it was AI helping
           me find the shelf, pull the right book, and put the words in
-          the order I meant.
+          the order I actually meant.
         </P>
+        <P>The library is mine. The navigation is shared. The stages keep coming.</P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -7161,7 +7180,7 @@ export const ESSAYS: Essay[] = [
     number: "12",
     title: "Auditing an AI-native practice.",
     subtitle:
-      "Ninety days, one operator, and measurement-validity discipline.",
+      "Ninety days, one operator, and what measurement-validity discipline looks like at practitioner scale.",
     date: "2026-08-02",
     readingTime: "10 min read",
     summary:
@@ -7176,17 +7195,18 @@ export const ESSAYS: Essay[] = [
             Claude in the loop for planning, drafting, research, code,
             and reflection. The question afterward was whether that
             operating model actually did what an AI-native practice is
-            supposed to do. Feeling productive is not the same as
-            measured productivity.
+            supposed to do. Feeling productive is not evidence. Holding
+            up under measurement is.
           </p>
           <p>
             This field note is the public report from AB&rsquo;s own
-            90-day audit &mdash; a single practice applying
-            measurement-validity discipline to its own use of AI, using
-            instruments it built. The findings matter, and this piece
-            names them. What matters more is the discipline the field
-            has not yet named clearly: measurement-validity discipline
-            for AI governance, at the practitioner scale.
+            90-day audit. It documents what a single practice looks like
+            when it applies measurement-validity discipline to its own
+            use of AI: an audit AB ran on itself, using instruments it
+            built. The findings matter, and this piece will name them.
+            What matters more is the discipline the field has not yet
+            named clearly &mdash; measurement-validity discipline for AI
+            governance, at the practitioner scale.
           </p>
         </Brief>
 
@@ -7219,7 +7239,7 @@ export const ESSAYS: Essay[] = [
         <H2>Method: three lenses and the HITL/AITL split</H2>
         <P>
           The audit runs on three measurement lenses over the same
-          90-day corpus (n &asymp; 83 sessions across ten task
+          90-day corpus (n &asymp; 93 sessions across ten task
           categories).
         </P>
         <P>
@@ -7231,7 +7251,7 @@ export const ESSAYS: Essay[] = [
           those sessions. A closer proxy for cognitive load.
         </P>
         <P>
-          <B>Token usage.</B> What the model computed. The real
+          <B>Token usage.</B> What the model actually computed. The real
           system-cost signal, measurable from API records.
         </P>
         <P>
@@ -7271,14 +7291,17 @@ export const ESSAYS: Essay[] = [
           the load-carrier axis. HITL and AITL name who or what carries
           the primary work. That axis was previously described in prose
           (AI leads versus AI assists) without an operational way to
-          test the claim. Mapping each task category to HITL, AITL, or
-          shared makes the load-carrier claim testable per session.
+          test the claim. Mapping each task category to one of the two
+          frames makes the load-carrier claim testable per session
+          &mdash; no shared-middle option, because a category that reads
+          shared on the surface typically has one side actually carrying
+          the decision when you look closely.
         </P>
 
         <Figure
           src="/library/figures/hitl_aitl_mapping_figure.svg"
-          alt="HITL / AITL mapping across ten task categories in the AB practice"
-          caption="Ten task categories mapped to HITL (AI drives), Shared, or AITL (operator drives). Where the load actually sits."
+          alt="HITL / AITL mapping across the AB practice's task categories"
+          caption="Categories mapped to the load-carrier axis as a two-band framework. Recurring automation and technical dev sit in the HITL band — AI carries the execution scaffold, the operator sets direction and reviews. The remaining eight categories (strategic thinking, project proposals and evaluations, product and framework, research and review, long-form writing, talk prep, content and distribution, learning and reading) sit in the AITL band — the operator carries the load, AI assists. The two-band read is the operational choice: shared-middle labels obscure who actually carries the decision, so categories are placed on the side whose lean is stronger in practice."
         />
 
         <H2>Findings: what ninety days showed</H2>
@@ -7300,12 +7323,13 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           <B>2. The distribution of the practice&rsquo;s attention has three visible modes.</B>{" "}
-          Instrumenting the practice (automation, meta-work, research)
-          took roughly forty-five percent of estimated message volume.
-          Positioning the practice (job search, market-identity work)
-          took another fifteen percent. Producing the practice&rsquo;s
-          actual output (product, library, brand, TEDx, website) took
-          about thirty-eight percent. That mix reads as a
+          Instrumenting the practice &mdash; automation, meta-work,
+          research &mdash; took roughly forty-five percent of estimated
+          message volume. Positioning the practice &mdash; job search,
+          market-identity work &mdash; took another fifteen percent.
+          Producing the practice&rsquo;s actual output &mdash; product,
+          library, brand, talks, website &mdash; took about
+          thirty-eight percent. That mix reads as a
           practice-in-formation. Naming which stage you are in is the
           discipline.
         </P>
@@ -7328,7 +7352,7 @@ export const ESSAYS: Essay[] = [
           model dispatch (Haiku vs Sonnet vs Opus). Within-model effort
           dial (low vs medium vs high vs max). The rulebook says what
           should happen at each level. The audit has no per-session
-          record of what happened. Closing the
+          record of what actually happened. Closing the
           prescription-to-measurement gap is the highest-leverage single
           change for the next audit window.
         </P>
@@ -7339,10 +7363,9 @@ export const ESSAYS: Essay[] = [
           components are honestly dormant (Card Maker, Content HQ).
           <a href="/library/public-data" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> is the production proof-point: measurement-validity
           discipline running in code, backed by policy. It is a live
-          LLM-as-judge system with a published validation methodology
-          shaped by Michael Kane&rsquo;s four-inference validity framework
-          (&kappa; = 1.00 handling judge&ndash;operator circularity,
-          anti-Goodhart guardrails, public dashboard).
+          LLM-as-judge system with a published Kane-shaped validation
+          methodology (&kappa; = 1.00 handling judge&ndash;operator
+          circularity, anti-Goodhart guardrails, public dashboard).
         </P>
         <P>
           <B>6. The governance dimension is at a moderate baseline, with the two USP anchors scoring HIGH.</B>{" "}
@@ -7362,8 +7385,9 @@ export const ESSAYS: Essay[] = [
         <P>
           A field note built on one practice invites the obvious
           objection: N=1 is not generalizable. That objection is correct
-          and worth naming up front. Two responses.
+          and worth naming up front.
         </P>
+        <P>Two responses.</P>
         <P>
           The value here is not &ldquo;here is what all AI-native
           practices look like.&rdquo; The value is &ldquo;here is an
@@ -7496,32 +7520,35 @@ export const ESSAYS: Essay[] = [
 
         <H2>Links out</H2>
         <P>
-          The audit produces artifacts, not just findings. The public
-          ones are here for direct inspection and replication.
+          The audit produces artifacts, not just findings. Four came out
+          of the audit itself:
         </P>
         <P>
-          <B>Governance Craft Log.</B> The 23 discipline moves catalogued
-          during the audit&rsquo;s own execution, phase by phase.
+          <ArtifactLink slug="governance-craft-log">
+            Governance Craft Log
+          </ArtifactLink>{" "}
+          &mdash; the 23 discipline moves catalogued during the
+          audit&rsquo;s own execution, phase by phase.
         </P>
         <P>
-          <B>Executive Card:</B> a one-page synthesis of the audit and its
-          methodology anchors.
+          <ArtifactLink slug="governance-craft-card">
+            Executive Card
+          </ArtifactLink>{" "}
+          &mdash; the one-page synthesis of the audit and its methodology
+          anchors.
         </P>
         <P>
-          <B>AB Governance Maturity Scorecard</B> &mdash; the seven
-          dimensions with current baseline and next-90 targets.
+          <ArtifactLink slug="ab-governance-maturity-scorecard">
+            AB Governance Maturity Scorecard
+          </ArtifactLink>{" "}
+          &mdash; the seven dimensions with current baseline and next-90
+          targets.
         </P>
         <P>
-          <B>PDDS Governance Scorecard.</B> The production proof-point,
-          NIST AI RMF-aligned, publicly available.
-        </P>
-        <P>
-          <B>Task Allocation View (three layers):</B> session count,
-          message volume, token usage, and the combined dumbbell.
-        </P>
-        <P>
-          <B>Dialogue Maturity Curve dashboard</B> &mdash; ~100 sessions
-          scored on the six-metric rubric, spanning 18 months.
+          <ArtifactLink slug="ab-three-lenses">Three Lenses</ArtifactLink>{" "}
+          &mdash; six task categories read through session count,
+          weighted-proxy volume, and token share, mapped to HITL and AITL
+          bands.
         </P>
 
         <H2>What&rsquo;s next</H2>
@@ -7568,7 +7595,7 @@ export const ESSAYS: Essay[] = [
           Written August 2026 for the Analytic Bytes Library. The public
           report from AB&rsquo;s own 90-day audit &mdash; three
           measurement lenses (session count, message volume, token
-          usage) applied to n &asymp; 83 sessions across ten task
+          usage) applied to n &asymp; 93 sessions across ten task
           categories, mapped against the HITL/AITL load-carrier axis and
           Kane-shaped validity discipline. Draws on the Governance Craft
           Log, Executive Card, and Maturity Scorecard produced during
@@ -7588,7 +7615,7 @@ export const ESSAYS: Essay[] = [
     title: "Extending the gates.",
     subtitle:
       "How PDDS revised its measurement discipline to handle survey data and continuous levers.",
-    date: "2026-08-05",
+    date: "2026-07-31",
     readingTime: "8 min read",
     summary:
       "A method note from the PDDS project. The first six panels used clean administrative counts and point-in-time policy levers. Extending into survey data (weighted estimates, confidence intervals, suppression) and continuous levers (Title V, ESSA) forced a revision of the gates. This note documents what changed, and why the revisions tightened rather than loosened the discipline.",
@@ -7598,7 +7625,14 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Analytic Bytes builds most-stringent-first. The first six PDDS panels were the clean case on purpose: administrative counts published at their reported grain, each attached to a policy lever with a clean before-and-after. Overdose deaths, NAEP scores, maternal mortality, Medicare readmissions, two earnings panels &mdash; clean numbers, clean levers.
+            Analytic Bytes builds most-stringent-first. The first six{" "}
+            <a
+              href="/pdds/governance-scorecard.html"
+              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+            >
+              PDDS
+            </a>{" "}
+            panels were the clean case on purpose: administrative counts published at their reported grain, each attached to a policy lever with a clean before-and-after. Overdose deaths, NAEP scores, maternal mortality, Medicare readmissions, two earnings panels &mdash; clean numbers, clean levers.
           </p>
           <p>
             This note records the first deliberate step off that easy ground and exactly how the gates were revised to survive it. The honest interest is not a seventh panel; it is the framework growing a new capability in the open, with the revisions named rather than smuggled in.
@@ -7727,7 +7761,7 @@ export const ESSAYS: Essay[] = [
     title: "Before it was called AI evaluation.",
     subtitle:
       "Human-machine agreement is a reliability indicator, not a validity strategy.",
-    date: "2026-07-27",
+    date: "2026-08-01",
     readingTime: "14 min read",
     summary:
       "The classical automated-scoring literature already worked through most of what modern AI evaluation is now rebuilding — fairness across subgroups, adversarial testing, a priori thresholds, risk-tiered deployment, population-matched corpora, prompt curation, cross-domain generalization, and responsible framing. Eight bridges, with the receipts.",
@@ -7737,13 +7771,16 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In 2017, a manuscript submitted to <I>Natural Language Engineering</I> opened with a claim that has stayed with me since: agreement with human scores on the same essays is a reliability indicator, not a proper validation strategy. The reference was Bennett &amp; Bejar (1997), and the argument was already twenty years old when we wrote it. Two more decades have passed. The modern AI evaluation discussion is now rebuilding that same argument in a different vocabulary, mostly without the source lineage that produced it the first time.
+            In 2017, I co-authored a manuscript submitted to <I>Natural Language Engineering</I> that opened with a claim I have not been able to un-see since. The claim was small, technical, and &mdash; for the automated-writing-evaluation field it was written into &mdash; unfashionable. It read: &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo;
           </p>
           <p>
-            LLM-as-judge validation studies, disparate-performance benchmarks, red-teaming methodologies, benchmark contamination detection &mdash; the current wave of AI eval is rediscovering the discipline of measurement science with the frame that this is a new field. Seven years at Educational Testing Service evaluating AI-driven scoring for essays and speech on the GRE, TOEFL, and Praxis forced me to notice something the modern framing tends to obscure: the discipline for evaluating whether AI systems measure what they claim already existed, inside psychometrics, developed against automated scoring engines a decade or two before &ldquo;AI eval&rdquo; was a term.
+            The reference was Bennett &amp; Bejar (1997), and the argument was already twenty years old when we wrote it. Two more decades have passed. The modern AI evaluation discussion is now rebuilding that same argument in a different vocabulary, mostly without the source lineage that produced it the first time. Large-language-model-as-judge (LLM-as-judge) validation studies, disparate-performance benchmarks, red-teaming methodologies, benchmark contamination detection &mdash; the current wave of AI eval is rediscovering the discipline of measurement science with the frame that this is a new field.
           </p>
           <p>
-            This essay maps eight of those disciplines to their modern AI-evaluation equivalents. Each carries a citation from my published record as the receipt. The claim is not that I did all of the work modern AI evaluation needs. It is that the work modern AI evaluation is doing has a longer history than most current framings acknowledge, and it is worth reading before it is reinvented.
+            I spent seven years at Educational Testing Service (ETS) evaluating AI-driven scoring systems for essays and speech, on assessments like the GRE (Graduate Record Examinations), TOEFL (Test of English as a Foreign Language), and Praxis (educator licensure tests). That work forced me to notice something the modern framing tends to obscure. The discipline for evaluating whether AI systems measure what they claim already existed &mdash; inside measurement science and psychometrics, developed against automated scoring engines a decade or two before &ldquo;AI eval&rdquo; was a term. The vocabulary was different. The problems were the same.
+          </p>
+          <p>
+            This essay maps eight of those disciplines to their modern AI-evaluation equivalents. Each carries a citation from my published record as the receipt. The claim I am making is not that I did all of the work modern AI evaluation needs. It is that the work modern AI evaluation is doing has a longer history than most current framings acknowledge, and it is worth reading before it is reinvented.
           </p>
         </Brief>
 
@@ -7818,7 +7855,7 @@ export const ESSAYS: Essay[] = [
           The sharpest current question in AI evaluation is whether a model&rsquo;s benchmark performance carries over to real-world use. LLM leaderboards do not resolve this. A model that tops HELM can fail on a domain-specific customer workflow. Generalization from curated benchmarks to naturalistic user data is where deployed AI systems live or die, and modern eval methodology is still developing the tools for measuring it.
         </P>
         <P>
-          The classical automated-scoring literature confronted the same problem directly, and the receipts for that work sit in two manuscripts that were submitted for publication in 2017 and 2018 as I was leaving ETS. The first, submitted to <I>Natural Language Engineering</I> (Ramineni, Elliot, and colleagues, 2017), is the paper that carries the essay&rsquo;s opening thesis. Its central move is to argue that agreement with human scores on the same essays is a reliability indicator rather than a validity strategy, and to propose naturalistic writing samples (writing produced under real conditions, not standardized-test conditions) as a stronger validity criterion. The second, an unpublished manuscript with Brent Bridgeman on the coursework study, executes the method: train new automated scoring models on first-year graduate coursework writing samples across disciplines, evaluated with a holistic rubric by trained human raters, and see whether features from an existing timed-essay scoring engine transfer. The result was informative in both directions. The features applied. Their weights in the coursework model diverged substantially from their weights in the timed-essay model.
+          The classical automated-scoring literature confronted the same problem directly, and the receipts for that work sit in two manuscripts that were submitted for publication in 2017 and 2018 as I was leaving ETS. The first, submitted to <I>Natural Language Engineering</I> (Ramineni, Elliot, and colleagues, 2017), is the paper that carries the essay&rsquo;s opening thesis. Its central move is to argue that agreement with human scores on the same essays is a reliability indicator, not a validity strategy, and to propose naturalistic writing samples &mdash; writing produced under real conditions, not standardized-test conditions &mdash; as a stronger validity criterion. The second, an unpublished manuscript with Brent Bridgeman on the coursework study, executes the method: train new automated scoring models on first-year graduate coursework writing samples across disciplines, evaluated with a holistic rubric by trained human raters, and see whether features from an existing timed-essay scoring engine transfer. The result was informative in both directions. The features applied. But their weights in the coursework model diverged substantially from their weights in the timed-essay model.
         </P>
         <P>
           That divergence is the classical version of the modern generalization question. A scoring model trained on one construct-representation (timed impromptu writing) does not automatically hold on another (untimed authentic coursework), even when the underlying construct (writing quality) is nominally the same. The features carry across; the weightings do not. Modern AI eval is discovering the same pattern with LLM benchmark-to-production drift. The evidence for it in the automated-scoring literature has been sitting in unpublished manuscripts for eight years.
@@ -7837,7 +7874,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Close</H2>
         <P>
-          The eight bridges above are not a complete map. They are the ones I have receipts for. Modern AI evaluation is a broader project than automated essay scoring ever was, and much of what it is developing is new to the field: the alignment problems of frontier models, the specific failure modes of agentic systems, the scale at which modern evaluation has to run. What is not new is the discipline for asking whether an AI system measures what its label claims. That discipline was built in measurement science, refined against automated scoring engines, and published in journals and conference proceedings while the current AI eval field was still forming.
+          The eight bridges above are not a complete map. They are the ones I have receipts for. Modern AI evaluation is a broader project than automated essay scoring ever was, and much of what it is developing is genuinely new &mdash; the alignment problems of frontier models, the specific failure modes of agentic systems, the scale at which modern evaluation has to run. What is not new is the discipline for asking whether an AI system measures what its label claims. That discipline was built in measurement science, refined against automated scoring engines, and published in journals and conference proceedings while the current AI eval field was still forming.
         </P>
         <P>
           I did not write this to claim credit for what modern AI eval is doing. I wrote it because the recognition kept surfacing across the AB Library work of the last few months &mdash; that the arguments I keep making about validity, evaluation, and construct integrity are arguments I made in print more than a decade ago, under different vocabulary, and that the field currently doing this work does not always know the earlier literature exists. The pieces closest to this argument in the library are <InternalLink slug="what-is-this-system-measuring">What is this system actually measuring?</InternalLink> and <InternalLink slug="when-the-stakes-are-the-mission">When the stakes are the mission</InternalLink>, and both draw on the same source lineage cited above.
