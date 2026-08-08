@@ -206,6 +206,20 @@ export const ARTIFACTS: Artifact[] = [
     ],
   },
   {
+    title: "Multi-tool selection map",
+    summary:
+      "Where the work lives now — a snapshot of current-state multi-tool selection across Claude, GPT, and Gemini. Each tool is matched to its actual strength, observed over time. Claude for structured intellectual work, GPT for voice and visuals, Gemini for critique. The working pattern (pre-work practice, voice protection, sycophancy detection, iteration tolerance) is the same across all three — the discipline lives in the practitioner, not in the tool.",
+    image: "/library/artifacts/multi-tool-selection-map.html",
+    slug: "multi-tool-selection-map",
+    format: "html",
+    referencedIn: [
+      {
+        slug: "my-relationship-with-ai",
+        title: "My relationship with AI.",
+      },
+    ],
+  },
+  {
     title: "Governance Craft Card",
     summary:
       "One-page synthesis of AB's 90-day audit and its methodology anchors — the Executive Card. Names the validity spine (Kane's four inferences), the load-carrier axis (HITL / AITL), and the seven governance dimensions the practice scored itself against. The one-glance version of what the audit produced.",

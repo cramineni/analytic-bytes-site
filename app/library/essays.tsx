@@ -2720,7 +2720,7 @@ export const ESSAYS: Essay[] = [
           a teacher draft a lesson, and the comparison is straightforward,
           against the lesson the teacher would have written. In
           behavioral-health, “agent” gets confused with regulated staff roles
-          (intake agent, case management agent) or with RPA bots already
+          (intake agent, case management agent) or with RPA (robotic process automation) bots already
           approved under HIPAA review. The comparison cannot be made until
           that definitional confusion is cleared with the Chief Clinical
           Officer or whoever holds the regulated-data accountability.
@@ -4448,7 +4448,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          A program officer, a portfolio manager, and a CSR lead all hit the same problem. Each can tell you how many people were reached, how much money went out, how many sessions were delivered. None can tell you, across the whole book, whether it worked or where the next rupee or dollar should go. The usual diagnosis is a reporting problem: buy a better dashboard, tighten the template. The real problem is a category error. You bought a system of record for <I>activity</I> and asked it to behave like a system of record for <I>outcomes</I>. This note is about that difference. It&rsquo;s also about the missing category — the evidence spine — that turns reach into a decision. It&rsquo;s a field note. It makes one structural claim.
+          A program officer, a portfolio manager, and a CSR (corporate social responsibility) lead all hit the same problem. Each can tell you how many people were reached, how much money went out, how many sessions were delivered. None can tell you, across the whole book, whether it worked or where the next rupee or dollar should go. The usual diagnosis is a reporting problem: buy a better dashboard, tighten the template. The real problem is a category error. You bought a system of record for <I>activity</I> and asked it to behave like a system of record for <I>outcomes</I>. This note is about that difference. It&rsquo;s also about the missing category — the evidence spine — that turns reach into a decision. It&rsquo;s a field note. It makes one structural claim.
         </p>
         </Brief>
 
@@ -4493,7 +4493,7 @@ export const ESSAYS: Essay[] = [
           unless you build the second system deliberately.
         </P>
         <P>
-          None of this says measurement people have ignored use. Utilization-focused evaluation has argued for decades that an evaluation nobody acts on has failed; the conviction here is inherited, not invented. What changes is where you put it. Shared-measurement frameworks reach comparability by making every grantee report the same indicators up front; metric catalogs like IRIS+ do it by prescribing a common dictionary to pick from. Both work when a portfolio shares one goal or one asset class. A grant book rarely does. Forty grantees carry forty theories of change, so the spine runs the other way: let each keep its own language, then place it on one scale afterward. The results-framework world already tried the alternative. The OECD&rsquo;s review of results-based management found a familiar pattern: data gets collected, but rarely reaches the decision. The easy read is a culture problem — teams never build the habit of looking. The real read is structural: the data was never shaped to be read as a decision. The second system is what shapes it.
+          None of this says measurement people have ignored use. Utilization-focused evaluation has argued for decades that an evaluation nobody acts on has failed; the conviction here is inherited, not invented. What changes is where you put it. Shared-measurement frameworks reach comparability by making every grantee report the same indicators up front; metric catalogs like IRIS+ do it by prescribing a common dictionary to pick from. Both work when a portfolio shares one goal or one asset class. A grant book rarely does. Forty grantees carry forty theories of change, so the spine runs the other way: let each keep its own language, then place it on one scale afterward. The results-framework world already tried the alternative. The <a href="https://www.oecd.org/en/topics/results-based-management.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">OECD</a>&rsquo;s review of results-based management found a familiar pattern: data gets collected, but rarely reaches the decision. The easy read is a culture problem — teams never build the habit of looking. The real read is structural: the data was never shaped to be read as a decision. The second system is what shapes it.
         </P>
 
         <H2>What the rubric actually is</H2>
@@ -4541,7 +4541,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          Keep the columns identical and the whole book reads across at a glance — same columns, one axis, comparability. You can sort, compare, and rank forty grantees on the same terms, and the portfolio question — where does the next dollar go — becomes answerable instead of rhetorical. Fragmented in, decision-ready out. Drop the columns, let each grantee report in its own shape, and you are back to forty PDFs that agree on nothing. The spine is unglamorous by design — a schema, not a dashboard. But it&rsquo;s the actual decision architecture for MEL. It&rsquo;s what the reach trap leaves out.
+          Keep the columns identical and the whole book reads across at a glance — same columns, one axis, comparability. You can sort, compare, and rank forty grantees on the same terms, and the portfolio question — where does the next dollar go — becomes answerable instead of rhetorical. Fragmented in, decision-ready out. Drop the columns, let each grantee report in its own shape, and you are back to forty PDFs that agree on nothing. The spine is unglamorous by design — a schema, not a dashboard. But it&rsquo;s the actual decision architecture for MEL (monitoring, evaluation, and learning). It&rsquo;s what the reach trap leaves out.
         </P>
 
         <H2>One spine, three decisions</H2>
@@ -4693,7 +4693,7 @@ export const ESSAYS: Essay[] = [
           </a> built into the rules, not just cited as a warning. (Originally Charles Goodhart&rsquo;s 1975 observation that statistical regularities collapse once they are targeted for policy, popularly reformulated by Marilyn Strathern in 1997 as <I>“when a measure becomes a target, it ceases to be a good measure.”</I>) Every metric eventually gets gamed. Every KPI eventually rewards the behavior that hits the number rather than the behavior the number was meant to encourage. Every growth-at-all-costs strategy eventually hollows the product. The discipline isn&rsquo;t asking whether the metric will get gamed — it will. The discipline is writing the rule that stops the gaming from destroying what the metric was meant to measure. A funder whose impact metric inadvertently rewards risk-averse program design needs the Free Guard Zone equivalent: the rule that prevents the rational pursuit of the metric from killing what the metric was meant to encourage. Almost no funder has that rule written down.
         </P>
         <P>
-          Measurement scientists have a name for the pattern the Free Guard Zone was written to prevent: <B>construct-irrelevant strategies</B> — responses that hit the score without demonstrating the thing the score was built to measure. <InternalLink slug="what-is-this-system-measuring">Samuel Messick built the modern validity framework</InternalLink> around exactly this failure mode. The AI benchmark community has been rediscovering it under other names — reward hacking, specification gaming, Goodhart taxonomy — as models learn to score high on evaluations without learning the underlying skill. Same problem, different domain. That&rsquo;s why the weird rule has to be written before the metric ships.
+          Measurement scientists have a name for the pattern the Free Guard Zone was written to prevent: <B>construct-irrelevant strategies</B> — responses that hit the score without demonstrating the thing the score was built to measure. <a href="https://en.wikipedia.org/wiki/Samuel_Messick" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Samuel Messick</a> built the modern validity framework around exactly this failure mode. <InternalLink slug="what-is-this-system-measuring">What is this system actually measuring?</InternalLink> is where I apply that framework to AI systems. The AI benchmark community has been rediscovering it under other names — reward hacking, specification gaming, Goodhart taxonomy — as models learn to score high on evaluations without learning the underlying skill. Same problem, different domain. That&rsquo;s why the weird rule has to be written before the metric ships.
         </P>
 
         <H2>Soccer Offside</H2>
@@ -4829,8 +4829,16 @@ export const ESSAYS: Essay[] = [
           When a leader asks me what they should be writing down that their predecessors did not, this is the answer. Not more policies for the normal case. The weird-looking rules — the ones that pre-resolve exploits, prevent optimization collapse, preserve distributed structure, protect the mission from process, and make interfaces themselves accountable. Those rules will not look like a strategy document. They will look like a baseball umpire calling a batter out for a ball that was never caught. That is what working governance looks like up close.
         </P>
         <P>
-          One corollary. G. K. Chesterton put it as a heuristic a century
-          ago: never remove a fence until you know why it was put there.
+          One corollary.{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Chesterton%27s_fence"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            G. K. Chesterton
+          </a>{" "}
+          put it as a heuristic a century ago: never remove a fence until you know why it was put there.
           The rule that looks weird is probably the one holding the game
           together. If you cannot say what predictable failure it was
           written to prevent, the safest assumption is that someone
@@ -5005,7 +5013,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The fix is structural, not a directive. You build a <B><ArtifactLink slug="decision-system-reference-architecture">semantic keystone</ArtifactLink></B>: a single layer, governed in code, where every metric is defined once. <I>On-track</I> is computed in one place, and every surface (<InternalLink slug="three-surfaces-one-keystone">the teacher&rsquo;s console, the school&rsquo;s program report, the district&rsquo;s executive view</InternalLink>, and every AI feature downstream) reads from that one computation. There&rsquo;s no <I>sanctioned</I> second definition for the number to drift toward. The slow, unglamorous work that makes this real is <B>definitional reconciliation</B>: getting the registrar and the dean, or the program officer and the grantee, to commit to the same canonical meaning before anyone builds a chart on top of it. It&rsquo;s tedious. It&rsquo;s also the foundation.
+          The fix is structural, not a directive. You build a <B><ArtifactLink slug="decision-system-reference-architecture">semantic keystone</ArtifactLink></B>: a single layer, governed in code, where every metric is defined once. <I>On-track</I> is computed in one place, and every surface (the teacher&rsquo;s console, the school&rsquo;s program report, the district&rsquo;s executive view, and every AI feature downstream) reads from that one computation. There&rsquo;s no <I>sanctioned</I> second definition for the number to drift toward. The slow, unglamorous work that makes this real is <B><InternalLink slug="numbers-dont-agree">definitional reconciliation</InternalLink></B>: getting the registrar and the dean, or the program officer and the grantee, to commit to the same canonical meaning before anyone builds a chart on top of it. It&rsquo;s tedious. It&rsquo;s also the foundation.
         </P>
 
         <P>
@@ -5143,8 +5151,8 @@ export const ESSAYS: Essay[] = [
 
         <P>
           The fix isn&rsquo;t a new procurement rubric. An autonomous agent is a specialist that moves faster than you can read. Specialists need <InternalLink slug="the-contracts-between-systems">
-            seam contract
-          </InternalLink>s. The agent&rsquo;s contract has to make four things explicit that a human&rsquo;s could leave implicit. An <B>autonomy range</B> — how much it may do unsupervised, from <I>return only verified responses</I> to <I>act review-by-exception</I>, set by the stakes of the decision, not the cleverness of the model. A <B>reversibility envelope</B> — how and when its action can be undone, and who is told when a record someone already acted on gets corrected. <B>A named human owner</B> who answers for what it does. And a <B>consumption contract</B>, so metered spend lands on the department that generated it. And like every other reader, the agent reads through the same semantic keystone — because <InternalLink slug="grounding-the-ai-layer">
+            seam contracts
+          </InternalLink>. The agent&rsquo;s contract has to make four things explicit that a human&rsquo;s could leave implicit. An <B>autonomy range</B> — how much it may do unsupervised, from <I>return only verified responses</I> to <I>act review-by-exception</I>, set by the stakes of the decision, not the cleverness of the model. A <B>reversibility envelope</B> — how and when its action can be undone, and who is told when a record someone already acted on gets corrected. <B>A named human owner</B> who answers for what it does. And a <B>consumption contract</B>, so metered spend lands on the department that generated it. And like every other reader, the agent reads through the same semantic keystone — because <InternalLink slug="grounding-the-ai-layer">
             an AI ungrounded in canonical definitions will cheerfully
             invent metric names and answer questions no one can reconcile
           </InternalLink>.
@@ -5414,7 +5422,7 @@ export const ESSAYS: Essay[] = [
     title: "My relationship with AI.",
     subtitle:
       "Field notes on the stages of working with generative AI across tools.",
-    date: "2026-07-29",
+    date: "2026-07-30",
     readingTime: "9 min read",
     summary:
       "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. Maturity transferred across tools; capability expanded with the tool that could hold more.",
@@ -5487,12 +5495,10 @@ export const ESSAYS: Essay[] = [
           over four months in.
         </P>
         <P>
-          But also: my son&rsquo;s Sanskrit homework. Fitness routines.
-          Clothes shopping when I needed to look like someone who could
-          walk into a senior interview after a year of working from home.
-          Hair and skin products I had let lapse. Watch recommendations the
-          morning after a hard day. Recipes. Once, the surface area of a
-          sliced cake for a math worksheet.
+          But also: family logistics, homework support, wardrobe planning
+          around a return to in-person interviews, and the daily flow of
+          small household and personal questions that would previously
+          have taken a spare hour each to work through alone.
         </P>
         <P>
           I did not separate these. They were the same tool doing
@@ -5535,9 +5541,9 @@ export const ESSAYS: Essay[] = [
           eliminated.
         </P>
         <P>
-          The first message I sent to GPT that day opened: <I>&ldquo;this
-          transition still sucks, make me think what is wrong with
-          me?&rdquo;</I>
+          The first message I sent to GPT that day was a plain request
+          for hard self-diagnosis: what had happened, what I was missing,
+          where I was accountable.
         </P>
         <P>
           What followed was a 209-message thread over twenty-three days
@@ -5561,10 +5567,9 @@ export const ESSAYS: Essay[] = [
           the topic lands there. The accurate version is different.
         </P>
         <P>
-          There were other scaffolds. My father called with advice. My
-          husband had his own take. We are a family with a household to
-          keep running, and I was also being tactical for the same
-          reason. What AI specifically gave me, that the humans in my
+          There were other scaffolds. Family. Trusted advisors. A
+          household that had to keep running, which kept the tactical
+          pressure real. What AI specifically gave me, that the humans in my
           life could not, was <I>open space alongside the tactical
           pressure</I>. The space to ask the same hard question eight
           different ways. The space to be repetitive without burdening
@@ -5590,7 +5595,7 @@ export const ESSAYS: Essay[] = [
           April 19 onward. The tone of the GPT threads shifted from
           applying-to-roles to building-something. A Player&ndash;Coach
           Operating Model emerged as a concept. A 90-90-90 cadence for how
-          I think about ramping into new roles. <InternalLink slug="the-decision-system">Decision Systems framing</InternalLink>
+          I think about ramping into new roles. <InternalLink slug="the-decision-system">Decision Systems framing</InternalLink>{" "}
           for how data work translates into organizational outcomes. A
           LinkedIn banner that went through eighty-five iterations before
           I posted it.
@@ -5656,7 +5661,10 @@ export const ESSAYS: Essay[] = [
         <P>
           The selection was not abstract. It was empirical. I used each
           tool for what each tool did well, and the assignments shifted
-          as my needs shifted.
+          as my needs shifted. The snapshot lives in the{" "}
+          <ArtifactLink slug="multi-tool-selection-map">
+            multi-tool selection map
+          </ArtifactLink>.
         </P>
         <P>
           One pattern worth naming: speaking work is hybrid, not
@@ -5746,8 +5754,9 @@ export const ESSAYS: Essay[] = [
           drafting the first sentence so I could see what was wrong with
           it and write the right one. Help iterating on a banner image
           eighty-five times until I could see the version I wanted. Help
-          integrating a piece of advice from my father in the middle of
-          the night when the cost of calling him back was too high.
+          integrating advice I had already received &mdash; turning
+          notes from calls and conversations into an actionable next
+          step at hours when it was too late to loop back to the source.
         </P>
         <P>The library is mine because I built it. The navigation is shared.</P>
 
@@ -6634,7 +6643,7 @@ export const ESSAYS: Essay[] = [
           wrong is legible.
         </P>
         <P>
-          Mission-driven organizations cannot replicate this infrastructure at scale. The budgets do not support it. The talent market does not favor them. The staffing pattern I have watched across four institutions is the same one: mission-driven orgs hire data analysts, not evaluation engineers. Larger networks stretch to a senior director for academic reporting or program evaluation. That role gets consumed by accountability reporting. It rarely reaches the measurement-science depth an AI deployment requires: validating that a scale still measures the construct it claims to, running PCA or IRT checks as the theory of change shifts, monitoring drift between model output and predicted outcome, recognizing when a decade-old survey needs to be re-anchored because the population has shifted, catching when the enrollment model that worked for five years no longer predicts because K-12 and higher-ed demographics moved post-pandemic. None of that is entry-level work, and none of it is what the sector is hiring for.
+          Mission-driven organizations cannot replicate this infrastructure at scale. The budgets do not support it. The talent market does not favor them. The staffing pattern I have watched across four institutions is the same one: mission-driven orgs hire data analysts, not evaluation engineers. Larger networks stretch to a senior director for academic reporting or program evaluation. That role gets consumed by accountability reporting. It rarely reaches the measurement-science depth an AI deployment requires: validating that a scale still measures the construct it claims to, running PCA (principal component analysis) or IRT (item response theory) checks as the theory of change shifts, monitoring drift between model output and predicted outcome, recognizing when a decade-old survey needs to be re-anchored because the population has shifted, catching when the enrollment model that worked for five years no longer predicts because K-12 and higher-ed demographics moved post-pandemic. None of that is entry-level work, and none of it is what the sector is hiring for.
         </P>
         <P>
           There is another layer below this. Before AI can be
@@ -6646,11 +6655,12 @@ export const ESSAYS: Essay[] = [
           infrastructure that turns those records into a validated
           foundation an AI system can read from. The SIS is underused.
           The EHR is underused. The workflow that would reconcile them
-          into decision-ready data is unfunded. MEL leadership often
+          into decision-ready data is unfunded. MEL (monitoring, evaluation, and learning) leadership often
           reads this as &ldquo;we need to invest in a CRM,&rdquo; when
           the actual work is one layer down: the operational systems
-          already carry the signal, but the semantic layer and
-          governance that would make the signal usable never got
+          already carry the signal, but the{" "}
+          <InternalLink slug="numbers-dont-agree">semantic layer</InternalLink>{" "}
+          and governance that would make the signal usable never got
           built. When an AI vendor arrives with a deployment offer,
           the deployment lands on a data foundation that has never
           been validated. Every AI evaluation discipline below assumes
@@ -6661,9 +6671,9 @@ export const ESSAYS: Essay[] = [
           When there is no funded data infrastructure role, the work gets absorbed by whoever in the organization is capable with numbers or interested in them. A math teacher building professional-development slides. A writing faculty member logging automated-scoring results. A clinician maintaining a caseload tracker. A program coordinator running the grantee spreadsheet. What emerges is an absorption pattern. The primary job (teaching, delivering care, running operations) competes with the absorbed data work, and both suffer. It also produces the spreadsheet sprawl every mission-driven organization has: multiple versions of the same data, maintained by different people, none of it reconcilable at the org level. The distinction between data entry (part of every delivery role) and data curation, integration, and quality assurance (specialized capacity requiring dedicated funding) is where mission-driven org design keeps failing. The absorbed model works until it breaks. When it breaks, both the delivery and the data go with it.
         </P>
         <P>
-          <a href="/library/what-is-this-system-measuring" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="what-is-this-system-measuring">
+          <InternalLink slug="what-is-this-system-measuring">
             What Is This System Actually Measuring
-          </InternalLink></a>, the earlier piece in this library, named the discipline: measurement validity is what the field has been doing for a hundred years and what AI evaluation is a new application of. WITSAM assumed the reader had institutional research capacity or its equivalent. This piece names what happens when they don&rsquo;t. The discipline does not go away when the infrastructure to run it is absent. The failure mode does not go away either. It just becomes invisible until the mission drift accumulates and something breaks.
+          </InternalLink>, the earlier piece in this library, named the discipline: measurement validity is what the field has been doing for a hundred years and what AI evaluation is a new application of. WITSAM assumed the reader had institutional research capacity or its equivalent. This piece names what happens when they don&rsquo;t. The discipline does not go away when the infrastructure to run it is absent. The failure mode does not go away either. It just becomes invisible until the mission drift accumulates and something breaks.
         </P>
 
         <H2>The essential minimum</H2>
@@ -6681,7 +6691,7 @@ export const ESSAYS: Essay[] = [
           <I>Task decomposition.</I> Before the deployment ships, name what the AI is doing under the hood. Not what the vendor pitch says. What the workflow is actually asking it to do — at what step, with what inputs, against what standard. This is the WITSAM discipline restated: what is this system measuring, and does that match what we say it measures? A behavioral-health screening chatbot is often doing three things at once: intake triage, symptom classification, and referral recommendation. Each has a different evaluation standard. Naming them separately lets you evaluate each; leaving them fused as “the chatbot” means you evaluate none. Most mission-driven adopters skip this step because the vendor pitch is comfortable and the deployment pressure is real. The cost of skipping it is that no one inside the organization can say what the AI is being evaluated against.
         </P>
         <P>
-          <I>Ground-truth benchmarking with constrained data.</I> Enterprise adopters run large held-out evaluation sets on standardized data they own end to end. Mission-driven adopters usually have neither. Their deployment populations are small — a K-8 network of four hundred students, a CCBHC caseload in the hundreds, a foundation portfolio of forty grantees. Their operational data is messy in ways enterprise benchmarks are engineered against. I saw a version of this at ETS: the measurement framework that worked for GRE and TOEFL at scale did not transfer intact to just-in-time remediation contexts or to writing-validity studies with smaller populations. Even with clean data, moving a validated framework to a new use case required rebuilding parts of it. In mission-driven contexts, the data is neither clean nor standardized, and the framework has to be rebuilt from the smaller sample up. What organizations can do is build the smallest defensible benchmark: twenty to fifty cases from their actual deployment context, hand-labeled by a domain expert, held back from any AI training or fine-tuning. For a K-8 tutor deployment, that benchmark might be thirty real student writing samples the tutor was asked to help with, hand-scored by a teacher against a rubric the network already uses for its own writing curriculum — not synthetic prompts, not vendor-provided examples, but actual samples from the deployment context, labeled by the person whose judgment the AI is meant to support. The benchmark carries diagnostic weight at small n. When the model changes and the benchmark score moves, someone should notice. Refreshing it at every model update is not a special AI cadence. It is the same operational rhythm the organization already runs for accountability reporting or quarterly dashboard refreshes, applied to a new kind of asset. The talent question is not “who will build the evaluation.” It is “who has the data literacy and coaching capacity to keep the rhythm running after the deployment ships.” Without that rhythm, the deployment decays. The frontline absorbs the decay. That is the burnout pattern the sector already knows.
+          <I>Ground-truth benchmarking with constrained data.</I> Enterprise adopters run large held-out evaluation sets on standardized data they own end to end. Mission-driven adopters usually have neither. Their deployment populations are small — a K-8 network of four hundred students, a CCBHC (Certified Community Behavioral Health Clinic) caseload in the hundreds, a foundation portfolio of forty grantees. Their operational data is messy in ways enterprise benchmarks are engineered against. I saw a version of this at ETS: the measurement framework that worked for GRE and TOEFL at scale did not transfer intact to just-in-time remediation contexts or to writing-validity studies with smaller populations. Even with clean data, moving a validated framework to a new use case required rebuilding parts of it. In mission-driven contexts, the data is neither clean nor standardized, and the framework has to be rebuilt from the smaller sample up. What organizations can do is build the smallest defensible benchmark: twenty to fifty cases from their actual deployment context, hand-labeled by a domain expert, held back from any AI training or fine-tuning. For a K-8 tutor deployment, that benchmark might be thirty real student writing samples the tutor was asked to help with, hand-scored by a teacher against a rubric the network already uses for its own writing curriculum — not synthetic prompts, not vendor-provided examples, but actual samples from the deployment context, labeled by the person whose judgment the AI is meant to support. The benchmark carries diagnostic weight at small n. When the model changes and the benchmark score moves, someone should notice. Refreshing it at every model update is not a special AI cadence. It is the same operational rhythm the organization already runs for accountability reporting or quarterly dashboard refreshes, applied to a new kind of asset. The talent question is not “who will build the evaluation.” It is “who has the data literacy and coaching capacity to keep the rhythm running after the deployment ships.” Without that rhythm, the deployment decays. The frontline absorbs the decay. That is the burnout pattern the sector already knows.
         </P>
         <P>
           <I>Deployment-context evaluation.</I> Generic model
@@ -6767,9 +6777,11 @@ export const ESSAYS: Essay[] = [
           widen before it narrows.
         </P>
         <P>
-          One more thing worth naming, because the Center for Effective Philanthropy has just written about it publicly: the facilitation and coordination work that keeps a shared-infrastructure model alive is itself unfunded labor, and its cost is usually absorbed by the same operational leaders already running the mission. When that cost stays invisible, small organizations get excluded from the collaborative because they cannot afford to participate; larger organizations dominate the shared infrastructure, and the eval discipline the model was supposed to build ends up shaped by the contexts of the biggest participants. The intermediary that holds the coordination work (a backbone organization, a third-party facilitator, an embedded eval-methodology lead from the frontier lab&rsquo;s side) is essential infrastructure. Call it overhead and the whole model collapses. The coordination cost gets absorbed by operational leaders — the same pattern <a href="/library/the-absorbed-data-role" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="the-absorbed-data-role">
+          One more thing worth naming, because the Center for Effective Philanthropy has just written about it publicly: the facilitation and coordination work that keeps a shared-infrastructure model alive is itself unfunded labor, and its cost is usually absorbed by the same operational leaders already running the mission. When that cost stays invisible, small organizations get excluded from the collaborative because they cannot afford to participate; larger organizations dominate the shared infrastructure, and the eval discipline the model was supposed to build ends up shaped by the contexts of the biggest participants. The intermediary that holds the coordination work (a backbone organization, a third-party facilitator, an embedded eval-methodology lead from the frontier lab&rsquo;s side) is essential infrastructure. Call it overhead and the whole model collapses. The coordination cost gets absorbed by operational leaders &mdash; the same pattern{" "}
+          <InternalLink slug="the-absorbed-data-role">
             The absorbed data role
-          </InternalLink></a> names one layer down.
+          </InternalLink>{" "}
+          names one layer down.
         </P>
 
         <H2>Close</H2>
@@ -6942,7 +6954,7 @@ export const ESSAYS: Essay[] = [
           own local data snapshot (sprawl).
         </P>
         <P>
-          <B>Bucket 3 — curation, integration, semantic definition, quality assurance, governance.</B> Maintaining the definitions. Reconciling how “attendance” or “session” or “enrolled” or “at-risk” is defined across systems. Building the pipeline. Catching data quality issues. Owning the <InternalLink slug="the-decision-system">semantic layer</InternalLink>. This bucket is specialized capacity. It needs a dedicated, funded role, separate from delivery.
+          <B>Bucket 3 — curation, integration, semantic definition, quality assurance, governance.</B> Maintaining the definitions. Reconciling how “attendance” or “session” or “enrolled” or “at-risk” is defined across systems. Building the pipeline. Catching data quality issues. Owning the <InternalLink slug="numbers-dont-agree">semantic layer</InternalLink>. This bucket is specialized capacity. It needs a dedicated, funded role, separate from delivery.
         </P>
         <P>
           The three buckets exist in every organization. The question
@@ -6963,7 +6975,7 @@ export const ESSAYS: Essay[] = [
           primary responsibility was making it complete.
         </P>
         <P>
-          In 2014 I worked with a public university writing program on
+          In 2014, I worked with a public university writing program on
           automated scoring for student writing samples and remedial
           placement. The data was being collected, logged, tracked,
           and analyzed by two writing-program faculty who had reached
@@ -6973,7 +6985,7 @@ export const ESSAYS: Essay[] = [
           had built it, on top of teaching.
         </P>
         <P>
-          In 2023 I stepped into a K-8 charter network. Before the data role existed, the reporting was being done by a math teacher who built the professional-development slides. Fifty Google Sheets carried the semantic layer over an unconsolidated legacy stack. The core measure, student persistence, was independently recalculated eight or more times across sheets. Each version was correct under its own definition. None of them agreed with the others. A Director of Instructional Technology managed the operational systems (student information system, learning management, assessment platform) and had become the de facto data provider because they had access. The role played both ways. Users routed around the org chart to reach the person with system access, and that person held the access as leverage. Systems ran half-configured. Fields sat under-utilized. Users hoarded snapshots in their own sheets. Before long, everyone was arguing about the <InternalLink slug="numbers-dont-agree">single source of truth</InternalLink>.
+          In 2023, I stepped into a K-8 charter network. Before the data role existed, the reporting was being done by a math teacher who built the professional-development slides. Fifty Google Sheets carried the semantic layer over an unconsolidated legacy stack. The core measure, student persistence, was independently recalculated eight or more times across sheets. Each version was correct under its own definition. None of them agreed with the others. A Director of Instructional Technology managed the operational systems (student information system, learning management, assessment platform) and had become the de facto data provider because they had access. The role played both ways. Users routed around the org chart to reach the person with system access, and that person held the access as leverage. Systems ran half-configured. Fields sat under-utilized. Users hoarded snapshots in their own sheets. Before long, everyone was arguing about the <InternalLink slug="numbers-dont-agree">single source of truth</InternalLink>.
         </P>
         <P>
           At a behavioral-health agency running Certified Community
@@ -7056,7 +7068,8 @@ export const ESSAYS: Essay[] = [
         <P>
           <I>Decentralize bucket 2.</I> Interpretation and action stay
           with delivery roles who understand the operational context.
-          A central data function cannot decide what an <InternalLink slug="the-decision-system">at-risk flag</InternalLink>
+          A central data function cannot decide what an{" "}
+          <InternalLink slug="the-decision-system">at-risk flag</InternalLink>{" "}
           means for a specific student in a specific school &mdash;
           whether it warrants calling the family, escalating to the
           counselor, adjusting the intervention plan, or watching
@@ -7230,8 +7243,8 @@ export const ESSAYS: Essay[] = [
           unit of analysis (one session = one named conversation, one
           category per session) before counting anything. It measures
           the same work through three lenses that answer different
-          questions. And it applies validity discipline (<InternalLink slug="what-is-this-system-measuring">Kane&rsquo;s
-          four-inference stack</InternalLink>, construct-definition rigor,
+          questions. And it applies{" "}
+          <InternalLink slug="what-is-this-system-measuring">measurement-validity discipline</InternalLink> (<a href="https://www.ets.org/research/policy_research_reports/publications/article/2013/jrpe.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane&rsquo;s four-inference stack</a>, construct-definition rigor,
           scorer-operator alignment) to its own findings before
           publishing them.
         </P>
@@ -7299,7 +7312,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <Figure
-          src="/library/figures/hitl_aitl_mapping_figure.svg"
+          src="/library/figures/hitl-aitl-mapping-figure.svg"
           alt="HITL / AITL mapping across the AB practice's task categories"
           caption="Categories mapped to the load-carrier axis as a two-band framework. Recurring automation and technical dev sit in the HITL band — AI carries the execution scaffold, the operator sets direction and reviews. The remaining eight categories (strategic thinking, project proposals and evaluations, product and framework, research and review, long-form writing, talk prep, content and distribution, learning and reading) sit in the AITL band — the operator carries the load, AI assists. The two-band read is the operational choice: shared-middle labels obscure who actually carries the decision, so categories are placed on the side whose lean is stronger in practice."
         />
@@ -7310,9 +7323,11 @@ export const ESSAYS: Essay[] = [
           have missed.
         </P>
         <P>
-          <B>1. The working pattern is dialogic, not delegative.</B> The
-          dialogue-maturity curve spans roughly one hundred scored
-          sessions across eighteen months, with about thirty sessions
+          <B>1. The working pattern is dialogic, not delegative.</B> The{" "}
+          <ArtifactLink slug="dialogue-maturity-curve">
+            dialogue-maturity curve
+          </ArtifactLink>{" "}
+          spans roughly one hundred scored sessions across eighteen months, with about thirty sessions
           inside the 90-day window. The mean per-session pattern is
           iterative back-and-forth. Session shape shifted upward on the
           maturity scorecard between the GPT-era portion (early sessions
@@ -7365,11 +7380,22 @@ export const ESSAYS: Essay[] = [
           discipline running in code, backed by policy. It is a live
           LLM-as-judge system with a published Kane-shaped validation
           methodology (&kappa; = 1.00 handling judge&ndash;operator
-          circularity, anti-Goodhart guardrails, public dashboard).
+          circularity,{" "}
+          <InternalLink slug="why-the-rules-look-weird">
+            anti-Goodhart guardrails
+          </InternalLink>, public dashboard).
         </P>
         <P>
-          <B>6. The governance dimension is at a moderate baseline, with the two USP anchors scoring HIGH.</B>{" "}
-          Validity spine (Kane four-inference framework, NIST AI RMF
+          <B>6. The governance dimension is at a moderate baseline, with the two distinctive-discipline anchors scoring HIGH.</B>{" "}
+          Validity spine (Kane four-inference framework,{" "}
+          <a
+            href="https://www.nist.gov/itl/ai-risk-management-framework"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            NIST AI RMF
+          </a>{" "}
           alignment, reliability + construct-validity discipline) scores
           HIGH. Construct-definition rigor (session unit, category
           rulebook, hub taxonomy, weights table, dispatch guidance)
@@ -7402,7 +7428,7 @@ export const ESSAYS: Essay[] = [
           same trade.
         </P>
         <P>
-          The audit&rsquo;s own USP is measurement-validity discipline.
+          The audit&rsquo;s distinctive discipline is measurement validity.
           Publishing an unaudited claim about that discipline would be
           self-refuting. The audit audited itself before it audited AB
           &mdash; twenty-three catalogued discipline moves and seven
@@ -7444,8 +7470,13 @@ export const ESSAYS: Essay[] = [
           HITL/AITL mapping, dispatch guidance. It runs on its own
           validity spine: Kane-shaped inference, construct-definition
           rigor, scorer-operator alignment. It produces its own
-          artifacts, including the Governance Craft Log, the Executive
-          Card, and scorecards.
+          artifacts, including the{" "}
+          <ArtifactLink slug="governance-craft-log">
+            Governance Craft Log
+          </ArtifactLink>, the{" "}
+          <ArtifactLink slug="governance-craft-card">
+            Executive Card
+          </ArtifactLink>, and scorecards.
         </P>
         <P>
           AI-Native PracticeOps is the Foundation Layer term the audit
@@ -7615,7 +7646,7 @@ export const ESSAYS: Essay[] = [
     title: "Extending the gates.",
     subtitle:
       "How PDDS revised its measurement discipline to handle survey data and continuous levers.",
-    date: "2026-07-31",
+    date: "2026-08-05",
     readingTime: "8 min read",
     summary:
       "A method note from the PDDS project. The first six panels used clean administrative counts and point-in-time policy levers. Extending into survey data (weighted estimates, confidence intervals, suppression) and continuous levers (Title V, ESSA) forced a revision of the gates. This note documents what changed, and why the revisions tightened rather than loosened the discipline.",
@@ -7627,7 +7658,7 @@ export const ESSAYS: Essay[] = [
           <p>
             Analytic Bytes builds most-stringent-first. The first six{" "}
             <a
-              href="/pdds/governance-scorecard.html"
+              href="/library/public-data"
               className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
             >
               PDDS
@@ -7644,7 +7675,25 @@ export const ESSAYS: Essay[] = [
           The point of starting stringent was to prove the gates hold where the data is easy before asking them to hold where it isn&rsquo;t. Two things about the new cases break the assumptions the original gates were built on.
         </P>
         <P>
-          <B>The numbers stop being counts.</B> The National Survey of Children&rsquo;s Health and the Youth Risk Behavior Surveillance System are complex-sample surveys. Their published values are <I>weighted estimates with confidence intervals</I>, suppressed below cell-size thresholds, and occasionally reset by an instrument redesign. A survey estimate is not a count you can re-tally from records; it carries uncertainty and provenance that a count does not.
+          <B>The numbers stop being counts.</B> The{" "}
+          <a
+            href="https://mchb.hrsa.gov/programs-impact/national-survey-childrens-health-nsch"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            National Survey of Children&rsquo;s Health
+          </a>{" "}
+          and the{" "}
+          <a
+            href="https://www.cdc.gov/yrbs/index.html"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            Youth Risk Behavior Surveillance System
+          </a>{" "}
+          are complex-sample surveys. Their published values are <I>weighted estimates with confidence intervals</I>, suppressed below cell-size thresholds, and occasionally reset by an instrument redesign. A survey estimate is not a count you can re-tally from records; it carries uncertainty and provenance that a count does not.
         </P>
         <P>
           <B>The levers stop having a date.</B> Title V and ESSA accountability are <I>continuous</I>. The money has attached for years. There is no 2012-penalty moment to measure a number against, the way HRRP gave us one. The pipeline&rsquo;s &ldquo;did the number move after the lever?&rdquo; engine assumes a point in time, and these levers don&rsquo;t have one.
@@ -7761,7 +7810,7 @@ export const ESSAYS: Essay[] = [
     title: "Before it was called AI evaluation.",
     subtitle:
       "Human-machine agreement is a reliability indicator, not a validity strategy.",
-    date: "2026-08-01",
+    date: "2026-07-27",
     readingTime: "14 min read",
     summary:
       "The classical automated-scoring literature already worked through most of what modern AI evaluation is now rebuilding — fairness across subgroups, adversarial testing, a priori thresholds, risk-tiered deployment, population-matched corpora, prompt curation, cross-domain generalization, and responsible framing. Eight bridges, with the receipts.",
@@ -7771,7 +7820,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In 2017, I co-authored a manuscript submitted to <I>Natural Language Engineering</I> that opened with a claim I have not been able to un-see since. The claim was small, technical, and &mdash; for the automated-writing-evaluation field it was written into &mdash; unfashionable. It read: &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo;
+            In 2017, I co-authored a manuscript submitted to <I>Natural Language Engineering</I> that opened with a claim I have not been able to un-see since. The claim was small, technical, and &mdash; for the automated-writing-evaluation field it was written into (automated writing evaluation, or AWE) &mdash; unfashionable. It read: &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo;
           </p>
           <p>
             The reference was Bennett &amp; Bejar (1997), and the argument was already twenty years old when we wrote it. Two more decades have passed. The modern AI evaluation discussion is now rebuilding that same argument in a different vocabulary, mostly without the source lineage that produced it the first time. Large-language-model-as-judge (LLM-as-judge) validation studies, disparate-performance benchmarks, red-teaming methodologies, benchmark contamination detection &mdash; the current wave of AI eval is rediscovering the discipline of measurement science with the frame that this is a new field.
@@ -7786,35 +7835,44 @@ export const ESSAYS: Essay[] = [
 
         <H2>1. Fairness across subgroups &mdash; two tests, not one.</H2>
         <P>
-          The modern version: HELM slices its benchmarks by demographic subgroup, BBQ measures accuracy gaps across identity axes, and enterprise LLM audits routinely check whether a model&rsquo;s error rate differs materially for one population versus another. The methodological punch is that a single aggregate metric &mdash; accuracy, F1, human-rater agreement &mdash; can hide a substantial subgroup gap. Only per-group evaluation surfaces it.
+          The modern version: HELM (Holistic Evaluation of Language Models) slices its benchmarks by demographic subgroup, BBQ (Bias Benchmark for QA) measures accuracy gaps across identity axes, and enterprise LLM audits routinely check whether a model&rsquo;s error rate differs materially for one population versus another. The methodological punch is that a single aggregate metric &mdash; accuracy, F1, human-rater agreement &mdash; can hide a substantial subgroup gap. Only per-group evaluation surfaces it.
         </P>
         <P>
           The classical version, in automated essay scoring, was doing this two ways at once. The first test was the surface fairness check: standardized mean score differences between the machine and human raters, computed per subgroup, with an ETS-published flagging threshold of 0.10 for any subgroup of concern, deliberately more stringent than the 0.15 flagging threshold for the overall gap (Ramineni &amp; Williamson, 2012). The second test was a validity-of-the-scoring-claim check: differential predictive validity. Compare the correlation between the human score and an external criterion, within a subgroup, against the correlation between the machine score and the same external criterion, within the same subgroup. If those two correlations diverge, the human and the machine are not measuring the same thing for that population, even if their aggregate scores agree. Modern AI eval has begun folding the equivalent into &ldquo;fairness under distribution shift&rdquo; &mdash; measuring downstream-task performance per demographic slice, not just benchmark performance.
         </P>
         <P>
-          The receipt for the mechanistic version of this discipline is the 2018 ETS Research Report on demographic subgroup differences in GRE Analytical Writing (Ramineni &amp; Williamson, 2018). N=215,000 operational responses across 215 prompts. Three subgroups flagged on the Argument task: standardized mean e-rater&ndash;human differences of +0.56 for examinees from China, &minus;0.19 for Taiwan, and &minus;0.11 for African American test-takers. Four alternative regression architectures compared head-to-head. Expert re-scoring of the maximally discrepant essays. Two independent mechanistic hypotheses tested with dedicated tooling. What that paper showed is that the discrepancies were architectural in origin rather than a form of adversarial bias. Human raters were using conditional, rule-based logic &mdash; gating on language control errors before assigning organization scores. E-rater was using linear weighting of all features, which allowed strong organization scores (correlated with essay length) to offset weak language control. The subgroups where the two scoring architectures diverged the most were the subgroups whose writing patterns triggered that offset the hardest. Modern AI eval calls this rationale-alignment failure. The discipline for finding it is not new.
+          The receipt for the mechanistic version of this discipline is the 2018 ETS Research Report on demographic subgroup differences in GRE Analytical Writing (Ramineni &amp; Williamson, 2018). N=215,000 operational responses across 215 prompts. Three subgroups flagged on the Argument task: standardized mean <I>e-rater</I>&ndash;human differences of +0.56 for examinees from China, &minus;0.19 for Taiwan, and &minus;0.11 for African American test-takers. Four alternative regression architectures compared head-to-head. Expert re-scoring of the maximally discrepant essays. Two independent mechanistic hypotheses tested with dedicated tooling. What that paper showed is that the discrepancies were architectural in origin rather than a form of adversarial bias. Human raters were using conditional, rule-based logic &mdash; gating on language control errors before assigning organization scores. <I>e-rater</I> was using linear weighting of all features, which allowed strong organization scores (correlated with essay length) to offset weak language control. The subgroups where the two scoring architectures diverged the most were the subgroups whose writing patterns triggered that offset the hardest. Modern AI eval calls this rationale-alignment failure. The discipline for finding it is not new.
         </P>
 
         <H2>2. Adversarial evaluation &mdash; CIRS before GCG.</H2>
         <P>
-          Modern AI eval has developed a class of methods for testing whether an LLM&rsquo;s outputs can be manipulated by adversarial inputs. Gradient-based attacks like GCG produce prompt suffixes that jailbreak alignment. PAIR uses one LLM to attack another. AutoDAN generates readable adversarial prompts. The unifying diagnostic method is three steps: posit a strategy that gains reward without gaining ground on the target construct, implement it programmatically, measure the reward delta on real inputs.
+          Modern AI eval has developed a class of methods for testing whether an LLM&rsquo;s outputs can be manipulated by adversarial inputs. Gradient-based attacks like GCG (Greedy Coordinate Gradient) produce prompt suffixes that jailbreak alignment. PAIR (Prompt Automatic Iterative Refinement) uses one LLM to attack another. AutoDAN generates readable adversarial prompts. The unifying diagnostic method is three steps: posit a strategy that gains reward without gaining ground on the target construct, implement it programmatically, measure the reward delta on real inputs.
         </P>
         <P>
-          That method was named and operationalized in the automated-scoring literature in 2014 as Construct-Irrelevant Response Strategies, or CIRS (Bejar, Flor, Futagi, &amp; Ramineni, 2014). The paper built a lemma-indexed synonym-substitution algorithm that swapped a portion of words in real GRE essays for longer, less-frequent synonyms. Ten to thirty-five substitutions per essay. Then it rescored the manipulated essays with e-rater and measured what happened. What happened was that the vulnerability was real, and asymmetric: substituting five percent of words with longer, rarer synonyms produced meaningful score gains for lower-scoring essays but had negligible or opposite effect on high-scoring essays. The exploit was strongest where the stakes for the examinee were highest.
+          That method was named and operationalized in the automated-scoring literature in 2014 as Construct-Irrelevant Response Strategies, or CIRS (Bejar, Flor, Futagi, &amp; Ramineni, 2014). The paper built a lemma-indexed synonym-substitution algorithm that swapped a portion of words in real GRE essays for longer, less-frequent synonyms. Ten to thirty-five substitutions per essay. Then it rescored the manipulated essays with <I>e-rater</I> and measured what happened. What happened was that the vulnerability was real, and asymmetric: substituting five percent of words with longer, rarer synonyms produced meaningful score gains for lower-scoring essays but had negligible or opposite effect on high-scoring essays. The exploit was strongest where the stakes for the examinee were highest.
         </P>
         <P>
-          The CIRS paper was explicit that the vulnerability followed directly from e-rater&rsquo;s inclusion of word-frequency and average-word-length features. Any AES system that weighted lexical sophistication was exposed to the same class of attack. And CIRS was proposed as a general evaluation category, not a one-off finding. The synonym-substitution was an illustration of a broader method: simulate a plausible strategy against real responses, then measure the score delta. That is the diagnostic template modern LLM red-teaming inherits.
+          The CIRS paper was explicit that the vulnerability followed directly from <I>e-rater</I>&rsquo;s inclusion of word-frequency and average-word-length features. Any AES (automated essay scoring) system that weighted lexical sophistication was exposed to the same class of attack. And CIRS was proposed as a general evaluation category, not a one-off finding. The synonym-substitution was an illustration of a broader method: simulate a plausible strategy against real responses, then measure the score delta. That is the diagnostic template modern LLM red-teaming inherits.
         </P>
 
         <H2>3. A priori published thresholds &mdash; and guardrails on top of learned models.</H2>
         <P>
-          Modern AI evaluation is still consolidating its methodology for what &ldquo;an eval passes&rdquo; means. NIST&rsquo;s AI Risk Management Framework proposes categories. HELM publishes multi-metric scenarios with per-scenario acceptance criteria. The Language Model Evaluation Harness standardizes scoring conventions. What these have in common is the discipline of publishing performance thresholds a priori, before deployment, with named justifications, so that adoption is not judged post-hoc against whatever number came out.
+          Modern AI evaluation is still consolidating its methodology for what &ldquo;an eval passes&rdquo; means.{" "}
+          <a
+            href="https://www.nist.gov/itl/ai-risk-management-framework"
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
+          >
+            NIST&rsquo;s AI Risk Management Framework
+          </a>{" "}
+          proposes categories. HELM publishes multi-metric scenarios with per-scenario acceptance criteria. The Language Model Evaluation Harness standardizes scoring conventions. What these have in common is the discipline of publishing performance thresholds a priori, before deployment, with named justifications, so that adoption is not judged post-hoc against whatever number came out.
         </P>
         <P>
           That discipline was formalized for automated essay scoring in Ramineni &amp; Williamson (2012). The paper&rsquo;s Table 1 gives the quantitative gates directly: quadratic weighted kappa of at least 0.70 between machine and human, Pearson r of at least 0.70, degradation from human-human to human-machine of no more than 0.10, standardized mean score difference of no more than 0.15 overall and no more than 0.10 per subgroup of concern. The subgroup threshold is 33 percent tighter than the aggregate threshold on purpose. The 0.70 threshold is not arbitrary; the paper names its justification as &ldquo;the tipping point at which signal outweighs noise in the prediction and so at least half the variance is accounted for.&rdquo;
         </P>
         <P>
-          The 2012 NCME paper that used Classification and Regression Trees to trace the mechanistic gap between human and machine raters (Ramineni, Li, &amp; Breyer, 2012) added a discipline that modern AI eval is beginning to develop under a different name. CART showed that humans conditioned on language control as the first splitting variable; e-rater weighted organization and development as the most important feature. The proposed remedy was to add a rule on top of the model rather than retrain it, &ldquo;implementing a cap on the organization and development scores for responses that fail to meet a certain threshold for content scores,&rdquo; so that essay length could not offset weak content. That is a guardrail-rule stacked on a learned model. It is the same architectural pattern Constitutional AI classifiers and output-filtering safety layers use on top of LLMs today.
+          The 2012 NCME (National Council on Measurement in Education) paper that used Classification and Regression Trees to trace the mechanistic gap between human and machine raters (Ramineni, Li, &amp; Breyer, 2012) added a discipline that modern AI eval is beginning to develop under a different name. CART showed that humans conditioned on language control as the first splitting variable; <I>e-rater</I> weighted organization and development as the most important feature. The proposed remedy was to add a rule on top of the model rather than retrain it, &ldquo;implementing a cap on the organization and development scores for responses that fail to meet a certain threshold for content scores,&rdquo; so that essay length could not offset weak content. That is a guardrail-rule stacked on a learned model. It is the same architectural pattern Constitutional AI classifiers and output-filtering safety layers use on top of LLMs today.
         </P>
 
         <H2>4. Risk-tiered deployment &mdash; check score vs. contributory.</H2>
@@ -7822,7 +7880,7 @@ export const ESSAYS: Essay[] = [
           Modern AI evaluation increasingly frames deployment as a tiered decision. A model can be evaluated as capable enough for a chat assistant but not for autonomous agentic tool use. A safety eval that clears one deployment mode does not clear another. The framework distinguishes human-in-the-loop, human-on-the-loop, and autonomous operation, and calibrates its acceptance criteria to the mode.
         </P>
         <P>
-          That distinction has been operational in automated essay scoring since the 2012 GRE and TOEFL evaluation reports (Ramineni, Trapani, Williamson, Davey, &amp; Bridgeman, 2012a and 2012b). The two papers evaluated the same scoring engine, e-rater, against two different implementation modes. The GRE program adopted what the papers named &ldquo;check score&rdquo; or &ldquo;confirmatory&rdquo; mode: the e-rater score is used only to check or confirm the human rating, and when within the allowable discrepancy threshold, the human rating constitutes the final score. E-rater does not contribute directly to the reported score. The operational impact of that posture was substantial: 41 percent of Issue responses and 47 percent of Argument responses triggered a second human rating. The TOEFL program adopted &ldquo;contributory&rdquo; mode: the mean of the e-rater score and the human rating yields the final score. That posture triggered a second human on 3 percent of independent responses and 33 percent of integrated responses.
+          That distinction has been operational in automated essay scoring since the 2012 GRE and TOEFL evaluation reports (Ramineni, Trapani, Williamson, Davey, &amp; Bridgeman, 2012a and 2012b). The two papers evaluated the same scoring engine, <I>e-rater</I>, against two different implementation modes. The GRE program adopted what the papers named &ldquo;check score&rdquo; or &ldquo;confirmatory&rdquo; mode: the <I>e-rater</I> score is used only to check or confirm the human rating, and when within the allowable discrepancy threshold, the human rating constitutes the final score. <I>e-rater</I> does not contribute directly to the reported score. The operational impact of that posture was substantial: 41 percent of Issue responses and 47 percent of Argument responses triggered a second human rating. The TOEFL program adopted &ldquo;contributory&rdquo; mode: the mean of the <I>e-rater</I> score and the human rating yields the final score. That posture triggered a second human on 3 percent of independent responses and 33 percent of integrated responses.
         </P>
         <P>
           The 2012 guidelines paper (Ramineni &amp; Williamson, 2012) is explicit about why the modes differ: &ldquo;For implementation of AES in contexts that are less consequential, such as practice tests and other settings, the criteria may be relaxed somewhat. By contrast, use of AES as the sole score, with no human counterpart, for consequential assessment, the criteria may need to become more rigorous.&rdquo; The GRE paper is more specific about the risk logic: &ldquo;As a more conservative approach, check score or a confirmatory score model was identified as a potential alternative implementation of automated scoring.&rdquo; That is deployment mode chosen as a safety response to observed subgroup discrepancies, not as cost optimization. Modern AI eval is arriving at the same principle by a different route.
@@ -7830,7 +7888,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>5. Population-matched training and evaluation corpora.</H2>
         <P>
-          The modern AI eval discussion of training data has, in the last few years, converged on a set of concerns: preference-training datasets should reflect the target population, red-team corpora should include real distribution attackers, and benchmark corpora should not be contaminated with pre-training data. Shared datasets are recognized as an open problem. Chatbot Arena, HumanEval, HELM scenarios, and MMLU each carry their own limitations, and the field is publicly navigating the shared-eval scarcity.
+          The modern AI eval discussion of training data has, in the last few years, converged on a set of concerns: preference-training datasets should reflect the target population, red-team corpora should include real distribution attackers, and benchmark corpora should not be contaminated with pre-training data. Shared datasets are recognized as an open problem. Chatbot Arena, HumanEval, HELM scenarios, and MMLU (Massive Multitask Language Understanding) each carry their own limitations, and the field is publicly navigating the shared-eval scarcity.
         </P>
         <P>
           That discipline is not new to automated scoring. The Cambridge Handbook of Learner Corpus Research chapter on automated scoring (Higgins, Ramineni, &amp; Zechner, 2015) laid it out explicitly across writing and speech scoring. Calibration corpora ranged from 400 to 1,200 responses per prompt, with a train/validation split, evaluated using quadratic weighted kappa, Pearson correlations, and standardized mean score differences. Population-matched training was non-negotiable: &ldquo;Trying to apply scoring models from GRE to TOEFL and vice versa can be problematic because of the differences in the population for the two tests.&rdquo; That is the classical statement of the distribution-shift constraint. Speech-scoring corpora carried an additional problem the chapter named directly: word error rates on non-native speech reached about 50 percent versus 13 to 17 percent for broadcast news, so the training corpora required manual transcription and were often locked inside the commercial organizations that produced them. &ldquo;The use of learner corpora in this field is currently rather fragmented, with the result that findings are difficult to compare and generalize.&rdquo;
@@ -7863,10 +7921,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>8. Responsible-AI framing at the point of deployment.</H2>
         <P>
-          The modern responsible-AI discussion has developed a set of framing conventions: model cards, system cards, responsible scaling policies, IRB-equivalent review processes, ethical guidelines for training-data provenance, and a growing distinction between observed-correlation claims and causal-impact claims in reporting on AI systems. NIST&rsquo;s AI Risk Management Framework organizes many of these. Anthropic&rsquo;s Responsible Scaling Policy, OpenAI&rsquo;s system cards, and comparable industry frameworks operationalize them.
+          The modern responsible-AI discussion has developed a set of framing conventions: model cards, system cards, responsible scaling policies, IRB (Institutional Review Board)&ndash;equivalent review processes, ethical guidelines for training-data provenance, and a growing distinction between observed-correlation claims and causal-impact claims in reporting on AI systems. NIST&rsquo;s AI Risk Management Framework organizes many of these. Anthropic&rsquo;s Responsible Scaling Policy, OpenAI&rsquo;s system cards, and comparable industry frameworks operationalize them.
         </P>
         <P>
-          In March of 2015, I gave a talk at the Conference on College Composition and Communication in Tampa titled &ldquo;Risks and Rewards of Digital Data: Case of Automated Writing Evaluation&rdquo; (Ramineni, 2015). The talk split its analysis into two categories that map directly onto the modern responsible-AI vocabulary. Statistical concerns: selection bias, unbalanced design, nested structure, missing collateral information or control groups, and the seductive but unlicensed move from observed trends to causal inferences. Ethical concerns, citing CCCC&rsquo;s own research guidelines on the use of online and digital media: &ldquo;Who owns the data? Who has access? How to access? How to use? (Identification information, IRB approvals). Consequences? Dissemination?&rdquo; The illustration data was observational &mdash; 132 schools, 9,340 students, 213 tasks &mdash; and the point was to show that observed trends across the corpus (score gains across attempts, ELL versus non-ELL differences) can be seductive but do not license causal inferences.
+          In March of 2015, I gave a talk at the Conference on College Composition and Communication in Tampa titled &ldquo;Risks and Rewards of Digital Data: Case of Automated Writing Evaluation&rdquo; (Ramineni, 2015). The talk split its analysis into two categories that map directly onto the modern responsible-AI vocabulary. Statistical concerns: selection bias, unbalanced design, nested structure, missing collateral information or control groups, and the seductive but unlicensed move from observed trends to causal inferences. Ethical concerns, citing CCCC&rsquo;s own research guidelines on the use of online and digital media: &ldquo;Who owns the data? Who has access? How to access? How to use? (Identification information, IRB approvals). Consequences? Dissemination?&rdquo; The illustration data was observational &mdash; 132 schools, 9,340 students, 213 tasks &mdash; and the point was to show that observed trends across the corpus (score gains across attempts, ELL (English Language Learners) versus non-ELL differences) can be seductive but do not license causal inferences.
         </P>
         <P>
           That was a decade before the mainstream responsible-AI conversation reached these framings for LLM systems. The AWE community was small; the audience for that talk was smaller; the discussion did not scale into the field the way the modern responsible-AI conversation has. But the framework existed, and the receipt is in the record.
