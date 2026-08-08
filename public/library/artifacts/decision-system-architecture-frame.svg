@@ -1,6 +1,6 @@
 <svg viewBox="0 0 820 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
 <title id="ttl">Decision-System Architecture — the four disciplines</title>
-<desc id="desc">A radial diagram of Analytic Bytes' framework. A central node labeled Decision-System Architecture is surrounded by four cluster boxes — Measurement, Integration governance, AI systems, and Organizational design. Each cluster box names three load-bearing concepts inside the discipline. Short connector lines from the central node toward each cluster suggest composition without crossing through any text.</desc>
+<desc id="desc">A radial diagram of Analytic Bytes' framework. A central node labeled Decision-System Architecture is surrounded by four cluster boxes — Measurement, Integration governance, AI systems, and Data foundations. Each cluster box names three load-bearing concepts inside the discipline. Short connector lines from the central node toward each cluster suggest composition without crossing through any text.</desc>
 
 <rect width="820" height="820" fill="#FFFFFF"/>
 
@@ -53,14 +53,14 @@
 <text x="58" y="676" font-size="11.5" fill="#6B7A8C">·  Actions, not answers</text>
 <text x="58" y="696" font-size="11.5" fill="#6B7A8C">·  Autonomy range</text>
 
-<!-- CLUSTER 4 — ORGANIZATIONAL DESIGN (bottom-right) -->
+<!-- CLUSTER 4 — DATA FOUNDATIONS (bottom-right) -->
 <rect x="490" y="560" width="290" height="160" fill="none" stroke="#CBD6E0" stroke-width="1"/>
 <g transform="translate(510, 586)">
   <rect x="-4.5" y="-4.5" width="9" height="9" transform="rotate(45)" fill="#0F2A4A"/>
 </g>
-<text x="526" y="590" font-size="11.5" letter-spacing="1.1" fill="#0F2A4A" font-weight="700">ORGANIZATIONAL DESIGN</text>
+<text x="526" y="590" font-size="11.5" letter-spacing="1.1" fill="#0F2A4A" font-weight="700">DATA FOUNDATIONS</text>
 <line x1="505" y1="606" x2="765" y2="606" stroke="#E8F6FD" stroke-width="1"/>
-<text x="508" y="630" font-size="12.5" fill="#0F2A4A" font-weight="600">Where does the work sit, and who owns it?</text>
+<text x="508" y="630" font-size="12.5" fill="#0F2A4A" font-weight="600">Where does data sit, and who owns it?</text>
 <text x="508" y="656" font-size="11.5" fill="#6B7A8C">·  Where data sits</text>
 <text x="508" y="676" font-size="11.5" fill="#6B7A8C">·  Alignment &amp; assignments</text>
 <text x="508" y="696" font-size="11.5" fill="#6B7A8C">·  Three decision surfaces</text>

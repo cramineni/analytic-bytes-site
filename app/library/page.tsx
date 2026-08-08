@@ -98,9 +98,9 @@ export default function LibraryPage() {
                 <span className="text-ink-2">Measurement</span>,{" "}
                 <span className="text-ink-2">Integration governance</span>,{" "}
                 <span className="text-ink-2">AI systems</span>, and{" "}
-                <span className="text-ink-2">Organizational design</span>.
-                Each piece sits in one of the four; the arc pill on each
-                card names which.
+                <span className="text-ink-2">Data foundations</span>. Each
+                piece sits in one of the four; the arc pill on each card
+                names which.
               </p>
               <p className="text-ink-3 text-[14.5px] sm:text-[15px] max-w-[600px] mt-3 leading-[1.6]">
                 Also live:{" "}

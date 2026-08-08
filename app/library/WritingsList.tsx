@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ARC_LABELS, type Arc } from "./essays";
+import { ARC_LABELS, DISCIPLINE_ARCS, type Arc } from "./essays";
 
 // Filterable writings list for /library.
 //
@@ -38,13 +38,6 @@ function formatDate(iso?: string) {
   });
 }
 
-const ARC_ORDER: Arc[] = [
-  "measurement",
-  "integration-governance",
-  "ai-systems",
-  "organizational-design",
-];
-
 export default function WritingsList({ entries }: { entries: WritingEntry[] }) {
   const [selected, setSelected] = useState<Arc | null>(null);
 
@@ -57,7 +50,7 @@ export default function WritingsList({ entries }: { entries: WritingEntry[] }) {
       measurement: 0,
       "integration-governance": 0,
       "ai-systems": 0,
-      "organizational-design": 0,
+      "data-foundations": 0,
     };
     for (const e of entries) {
       if (e.arc) c[e.arc] += 1;
@@ -79,7 +72,7 @@ export default function WritingsList({ entries }: { entries: WritingEntry[] }) {
           active={selected === null}
           onClick={() => setSelected(null)}
         />
-        {ARC_ORDER.map((arc) => (
+        {DISCIPLINE_ARCS.map((arc) => (
           <FilterChip
             key={arc}
             label={ARC_LABELS[arc]}
@@ -164,7 +157,7 @@ function arcMarkerClass(arc: Arc): string {
     measurement: "bg-accent rounded-full",
     "integration-governance": "bg-ink rounded-full",
     "ai-systems": "bg-bg border border-accent rounded-full",
-    "organizational-design": "bg-ink rotate-45",
+    "data-foundations": "bg-ink rotate-45",
   };
   return markers[arc];
 }

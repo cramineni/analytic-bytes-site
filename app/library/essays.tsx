@@ -327,14 +327,27 @@ export type Arc =
   | "measurement"
   | "integration-governance"
   | "ai-systems"
-  | "organizational-design";
+  | "data-foundations";
 
 export const ARC_LABELS: Record<Arc, string> = {
   measurement: "Measurement",
   "integration-governance": "Integration governance",
   "ai-systems": "AI systems",
-  "organizational-design": "Organizational design",
+  "data-foundations": "Data foundations",
 };
+
+// Four canonical disciplines of AB's Decision-System Architecture frame.
+// Renamed 2026-08-08: "Organizational design" → "Data foundations". The
+// seven pieces under this arc are about the data function's position,
+// authority, ownership, and coordination — where data sits and who owns
+// data work. Framework may evolve later to add pills or elevate Data
+// Foundations to something else; for now, four disciplines, one frame.
+export const DISCIPLINE_ARCS: readonly Arc[] = [
+  "measurement",
+  "integration-governance",
+  "ai-systems",
+  "data-foundations",
+];
 
 export type Essay = {
   kind: "essay" | "field-note";
@@ -366,7 +379,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why BI tool selection is the last decision, not the first — and the three reporting surfaces most analytics products owe their audiences.",
     cover: "/library/covers/three-surfaces-one-keystone.svg",
-    arc: "organizational-design",
+    arc: "data-foundations",
     body: (
       <>
         <Brief>
@@ -2181,7 +2194,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Who owns data infrastructure is one of the org chart’s most muddled questions. The fix is not a better title; it is a principle — report to the integration seat, never to a single function.",
     cover: "/library/covers/where-should-data-sit.svg",
-    arc: "organizational-design",
+    arc: "data-foundations",
     body: (
       <>
         <Brief>
@@ -3151,7 +3164,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
     cover: "/library/covers/the-take-home-test.svg",
-    arc: "organizational-design",
+    arc: "data-foundations",
     hidden: false,
     body: (
       <>
@@ -4273,7 +4286,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "The mismatch between horizontal work and vertical org charts is structural. Multiple honest forms can carry it: councils that deliberate and hand playbooks back to functions, flash teams that merge for the deliverable, standing squads drawn permanently from across functions. All rely on the same seam contract underneath. Without that contract, none of them holds.",
     cover: "/library/covers/functions-dont-run-plays.svg",
-    arc: "organizational-design",
+    arc: "data-foundations",
     body: (
       <>
         <Brief>
@@ -4635,7 +4648,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Most rules in a system describe normal behavior. The handful that look weird — that interrupt, that constrain, that pre-resolve a specific exploit — are the rules doing the structural work. Five sports rules, five structural lessons for institutional design.",
     cover: "/library/covers/why-the-rules-look-weird.svg",
-    arc: "organizational-design",
+    arc: "data-foundations",
     body: (
       <>
         <Brief>
@@ -4915,18 +4928,17 @@ export const ESSAYS: Essay[] = [
             And nothing happens.
           </p>
           <p>
-            Not because anyone is negligent. Because the flag was the easy
-            part. The flag traveled all the way from a student information
-            system to a screen, and then it died there, in the gap between{" "}
-            <I>knowing</I> and <I>acting</I> — the gap no one was assigned
-            to close. The counselor assumed the teacher saw it. The teacher
-            assumed the intervention team owned it. The intervention team
-            never received it at a resolution they could act on. The signal
-            was real. The system around it was missing.
+            It isn&rsquo;t because anyone is negligent. It&rsquo;s because
+            the flag is the easy part. The flag traveled from a student
+            information system to a screen. Then it stopped. Nobody was
+            assigned to close the gap between <I>knowing</I> and{" "}
+            <I>acting</I>. The counselor assumed the teacher saw it. The
+            teacher assumed the intervention team owned it. The intervention
+            team never received it at a resolution they could act on. The
+            signal was real. The system around it was missing.
           </p>
           <p>
-            This is the central claim of the Analytic Bytes library, and it
-            is worth stating plainly:{" "}
+            The Analytic Bytes library has one central claim:{" "}
             <B>most “data problems” are decision-system problems.</B> When
             numbers disagree, when insights don’t change anything, when a
             new dashboard lands and the meeting runs the same way it did
@@ -4985,7 +4997,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/decision_system_three_anchors_figure.svg"
           alt="The Decision System: three anchors — meaning, authority, validity — that must all hold together"
-          caption="The three anchors form the triangle of the decision system. Every AB Library piece sits on one of its three edges."
+          caption="The three anchors form the triangle of a decision system — meaning, authority, and validity have to hold together whether the system is human, shared human-AI, or fully AI-driven."
         />
 
         <H2>Meaning: define it once</H2>
@@ -5027,16 +5039,15 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          One of the most common failures in any early-warning system is
-          not a bad model — it’s a{" "}
+          The most common failure in an early-warning system isn&rsquo;t a
+          bad model. It&rsquo;s a{" "}
           <B>
             <InternalLink slug="blown-assignment">blown assignment</InternalLink>
-          </B>
-          . The signal fires and no one is named to receive it. This is a
-          seam problem: the failure lives in the handoff between
-          specialists, not inside any one of them. The cleanest sprinter
-          on the team loses the race if the baton hits the ground in the
-          exchange zone.
+          </B>{" "}
+          — nobody named to receive the signal. This is a seam problem: the
+          failure lives in the handoff between specialists, not inside any
+          one of them. The cleanest sprinter on the team loses the race if
+          the baton hits the ground.
         </P>
 
         <P>
@@ -5065,13 +5076,12 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          That recursion isn’t a footnote; it’s the reason the three
-          layers can’t be run independently. A decision system isn’t a
-          pipeline that ends at an action. The action becomes part of the
-          data that trains the next signal. Which means a definition that
-          drifts in the meaning layer doesn’t just produce one bad
-          number — it teaches the next model to be wrong on purpose,
-          indefinitely. What that does to validity is the next section.
+          The recursion is the reason the three layers can&rsquo;t run
+          independently. A decision system isn&rsquo;t a pipeline that ends
+          at an action. The action becomes part of the data that trains the
+          next signal. A drifting definition doesn&rsquo;t just produce one
+          bad number. It trains the next model on that drift, and the error
+          compounds. What that does to validity is the next section.
         </P>
 
         <H2>Validity: canonical is not the same as true</H2>
@@ -5159,12 +5169,10 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The stress test is the proof. AI doesn’t introduce new
-          requirements so much as it removes the slack that let
-          institutions get away with skipping the old ones. Meaning,
-          authority, and validity were always central. Agentic systems
-          are the first thing heavy enough to make a hollow
-          architecture fall down.
+          AI doesn&rsquo;t add new requirements. It removes the slack that
+          let institutions skip the old ones. Meaning, authority, and
+          validity were always central. Agentic systems are the first thing
+          heavy enough to make a hollow architecture fall down.
         </P>
 
         <H2>Design the rules for the failure mode</H2>
@@ -6122,7 +6130,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "The contracts that govern integrated data have to be written by someone, named, inside the institution. But the hiring rubric fuses two roles — engineering and governance — into one job description and screens only for the first. The person who can actually do the work almost never scores well on the rubric written to find them.",
     cover: "/library/covers/who-writes-the-contract.svg",
-    arc: "organizational-design",
+    arc: "data-foundations",
     body: (
       <>
         <Brief>
@@ -6855,7 +6863,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Data work in mission-driven organizations decomposes into three buckets — entry, interpretation, and curation/governance — and the third one, the specialized semantic-layer role, almost never has a funded home. It gets absorbed by whoever is capable with numbers: a math teacher, a clinician, a director of instructional technology. This piece names the absorption pattern across four sectors and argues for the three-layer architecture that would replace it.",
     cover: "/library/covers/the-absorbed-data-role.svg",
-    arc: "organizational-design",
+    arc: "data-foundations",
     body: (
       <>
         <Brief>
