@@ -1,6 +1,6 @@
 <svg viewBox="0 0 820 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
 <title id="ttl">Decision-System Architecture — the four disciplines</title>
-<desc id="desc">A radial diagram of Analytic Bytes' framework. A central node labeled Decision-System Architecture is surrounded by four cluster boxes — Measurement, Integration governance, AI systems, and Data foundations. Each cluster box names three load-bearing concepts inside the discipline. Short connector lines from the central node toward each cluster suggest composition without crossing through any text.</desc>
+<desc id="desc">A radial diagram of Analytic Bytes' framework. A central node labeled Decision-System Architecture is surrounded by four cluster boxes — Measurement, Integration governance, Data foundations, and AI systems. Each cluster box names three load-bearing concepts inside the discipline. Short connector lines from the central node toward each cluster suggest composition without crossing through any text.</desc>
 
 <rect width="820" height="820" fill="#FFFFFF"/>
 
@@ -43,27 +43,27 @@
 <text x="508" y="336" font-size="11.5" fill="#6B7A8C">·  Semantic keystone</text>
 <text x="508" y="356" font-size="11.5" fill="#6B7A8C">·  Definitional reconciliation</text>
 
-<!-- CLUSTER 3 — AI SYSTEMS (bottom-left) -->
+<!-- CLUSTER 3 — DATA FOUNDATIONS (bottom-left) -->
 <rect x="40" y="560" width="290" height="160" fill="none" stroke="#CBD6E0" stroke-width="1"/>
-<circle cx="60" cy="586" r="4.5" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.75"/>
-<text x="76" y="590" font-size="11.5" letter-spacing="1.1" fill="#0EA5E9" font-weight="700">AI SYSTEMS</text>
-<line x1="55" y1="606" x2="315" y2="606" stroke="#E8F6FD" stroke-width="1"/>
-<text x="58" y="630" font-size="12.5" fill="#0F2A4A" font-weight="600">Where does AI sit, and who stands behind it?</text>
-<text x="58" y="656" font-size="11.5" fill="#6B7A8C">·  Grounding the AI layer</text>
-<text x="58" y="676" font-size="11.5" fill="#6B7A8C">·  Actions, not answers</text>
-<text x="58" y="696" font-size="11.5" fill="#6B7A8C">·  Autonomy range</text>
-
-<!-- CLUSTER 4 — DATA FOUNDATIONS (bottom-right) -->
-<rect x="490" y="560" width="290" height="160" fill="none" stroke="#CBD6E0" stroke-width="1"/>
-<g transform="translate(510, 586)">
+<g transform="translate(60, 586)">
   <rect x="-4.5" y="-4.5" width="9" height="9" transform="rotate(45)" fill="#0F2A4A"/>
 </g>
-<text x="526" y="590" font-size="11.5" letter-spacing="1.1" fill="#0F2A4A" font-weight="700">DATA FOUNDATIONS</text>
+<text x="76" y="590" font-size="11.5" letter-spacing="1.1" fill="#0F2A4A" font-weight="700">DATA FOUNDATIONS</text>
+<line x1="55" y1="606" x2="315" y2="606" stroke="#E8F6FD" stroke-width="1"/>
+<text x="58" y="630" font-size="12.5" fill="#0F2A4A" font-weight="600">Where does data sit, and who owns it?</text>
+<text x="58" y="656" font-size="11.5" fill="#6B7A8C">·  Where data sits</text>
+<text x="58" y="676" font-size="11.5" fill="#6B7A8C">·  Alignment &amp; assignments</text>
+<text x="58" y="696" font-size="11.5" fill="#6B7A8C">·  Three decision surfaces</text>
+
+<!-- CLUSTER 4 — AI SYSTEMS (bottom-right) -->
+<rect x="490" y="560" width="290" height="160" fill="none" stroke="#CBD6E0" stroke-width="1"/>
+<circle cx="510" cy="586" r="4.5" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.75"/>
+<text x="526" y="590" font-size="11.5" letter-spacing="1.1" fill="#0EA5E9" font-weight="700">AI SYSTEMS</text>
 <line x1="505" y1="606" x2="765" y2="606" stroke="#E8F6FD" stroke-width="1"/>
-<text x="508" y="630" font-size="12.5" fill="#0F2A4A" font-weight="600">Where does data sit, and who owns it?</text>
-<text x="508" y="656" font-size="11.5" fill="#6B7A8C">·  Where data sits</text>
-<text x="508" y="676" font-size="11.5" fill="#6B7A8C">·  Alignment &amp; assignments</text>
-<text x="508" y="696" font-size="11.5" fill="#6B7A8C">·  Three decision surfaces</text>
+<text x="508" y="630" font-size="12.5" fill="#0F2A4A" font-weight="600">How does AI ground, and where does it act?</text>
+<text x="508" y="656" font-size="11.5" fill="#6B7A8C">·  Grounding the AI layer</text>
+<text x="508" y="676" font-size="11.5" fill="#6B7A8C">·  Actions, not answers</text>
+<text x="508" y="696" font-size="11.5" fill="#6B7A8C">·  Autonomy range</text>
 
 <!-- FOOTER -->
 <text x="48" y="784" font-size="13" letter-spacing="2" fill="#6B7A8C" font-weight="600">ANALYTIC BYTES</text>

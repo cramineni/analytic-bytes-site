@@ -33,7 +33,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     title: "Decision-System Architecture — the four disciplines",
     summary:
-      "The umbrella frame of the Analytic Bytes Library at a glance. A central node — Decision-System Architecture — surrounded by the four disciplines that compose it: Measurement, Integration governance, AI systems, and Organizational design. Each cluster names three load-bearing concepts inside its discipline. The arc pill on every library card maps to one of these four. For the technical stack the disciplines describe, see the reference architecture below.",
+      "The umbrella frame of the Analytic Bytes Library at a glance. A central node — Decision-System Architecture — surrounded by the four disciplines that compose it: Measurement, Integration governance, Data foundations, and AI systems. Each cluster names three load-bearing concepts inside its discipline. The arc pill on every library card maps to one of these four. For the technical stack the disciplines describe, see the reference architecture below.",
     image: "/library/artifacts/decision-system-architecture-frame.svg",
     slug: "decision-system-architecture-frame",
   },
