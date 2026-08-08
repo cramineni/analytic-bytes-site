@@ -17,8 +17,8 @@
   <text x="700" y="92" text-anchor="middle" font-size="15" font-style="italic" class="ink-2">Classical automated-scoring disciplines and their modern AI-evaluation equivalents</text>
 
   <!-- Column headers -->
-  <text x="330" y="150" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#0F2A4A">CLASSICAL &nbsp;&nbsp;·&nbsp;&nbsp; 1990s&ndash;2010s</text>
-  <text x="1070" y="150" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#0EA5E9">MODERN AI EVALUATION &nbsp;&nbsp;·&nbsp;&nbsp; 2020s</text>
+  <text x="330" y="150" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#0F2A4A">CLASSICAL &#160;&#160;·&#160;&#160; 1990s&#8211;2010s</text>
+  <text x="1070" y="150" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#0EA5E9">MODERN AI EVALUATION &#160;&#160;·&#160;&#160; 2020s</text>
 
   <!-- Divider hairlines under headers -->
   <line x1="130" y1="162" x2="530" y2="162" stroke="#0F2A4A" stroke-width="1" opacity="0.35"/>
@@ -41,7 +41,7 @@
   <!-- Row 2: Adversarial evaluation -->
   <text x="60" y="290" font-size="11" font-weight="600" letter-spacing="1.5" class="ink-3">2</text>
   <rect x="130" y="270" width="400" height="46" rx="4" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.2"/>
-  <text x="150" y="290" font-size="13" font-weight="600" class="ink">CIRS &mdash; construct-irrelevant response strategies</text>
+  <text x="150" y="290" font-size="13" font-weight="600" class="ink">CIRS &#8212; construct-irrelevant response strategies</text>
   <text x="150" y="307" font-size="11.5" class="ink-2">Synonym substitution vs. real GRE essays (2014)</text>
   <line x1="530" y1="293" x2="870" y2="293" stroke="#0EA5E9" stroke-width="0.8" opacity="0.5"/>
   <circle cx="530" cy="293" r="3" fill="#0F2A4A"/>
@@ -53,7 +53,7 @@
   <!-- Row 3: A priori thresholds + guardrails -->
   <text x="60" y="365" font-size="11" font-weight="600" letter-spacing="1.5" class="ink-3">3</text>
   <rect x="130" y="345" width="400" height="46" rx="4" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.2"/>
-  <text x="150" y="365" font-size="13" font-weight="600" class="ink">Published kappa / r &ge; 0.70 thresholds + CART caps</text>
+  <text x="150" y="365" font-size="13" font-weight="600" class="ink">Published kappa / r &#8805; 0.70 thresholds + CART caps</text>
   <text x="150" y="382" font-size="11.5" class="ink-2">Rule-on-top-of-model guardrails (2012)</text>
   <line x1="530" y1="368" x2="870" y2="368" stroke="#0EA5E9" stroke-width="0.8" opacity="0.5"/>
   <circle cx="530" cy="368" r="3" fill="#0F2A4A"/>
@@ -102,7 +102,7 @@
   <text x="60" y="665" font-size="11" font-weight="600" letter-spacing="1.5" class="ink-3">7</text>
   <rect x="130" y="645" width="400" height="46" rx="4" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.2"/>
   <text x="150" y="665" font-size="13" font-weight="600" class="ink">Timed-essay to naturalistic-writing transfer</text>
-  <text x="150" y="682" font-size="11.5" class="ink-2">Coursework validity study (2017&ndash;18)</text>
+  <text x="150" y="682" font-size="11.5" class="ink-2">Coursework validity study (2017&#8211;18)</text>
   <line x1="530" y1="668" x2="870" y2="668" stroke="#0EA5E9" stroke-width="0.8" opacity="0.5"/>
   <circle cx="530" cy="668" r="3" fill="#0F2A4A"/>
   <circle cx="870" cy="668" r="3" fill="#0EA5E9"/>
@@ -114,7 +114,7 @@
   <text x="60" y="740" font-size="11" font-weight="600" letter-spacing="1.5" class="ink-3">8</text>
   <rect x="130" y="720" width="400" height="46" rx="4" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.2"/>
   <text x="150" y="740" font-size="13" font-weight="600" class="ink">Statistical + ethical framing at deployment</text>
-  <text x="150" y="757" font-size="11.5" class="ink-2">CCCC 2015: observed &ne; causal; IRB frame</text>
+  <text x="150" y="757" font-size="11.5" class="ink-2">CCCC 2015: observed &#8800; causal; IRB frame</text>
   <line x1="530" y1="743" x2="870" y2="743" stroke="#0EA5E9" stroke-width="0.8" opacity="0.5"/>
   <circle cx="530" cy="743" r="3" fill="#0F2A4A"/>
   <circle cx="870" cy="743" r="3" fill="#0EA5E9"/>
@@ -123,7 +123,7 @@
   <text x="890" y="757" font-size="11.5" class="ink-2">Observed-correlation vs. causal-impact framing</text>
 
   <!-- Footer note -->
-  <text x="700" y="825" text-anchor="middle" font-size="12" font-style="italic" class="ink-3">Same problems. Different vocabulary. The discipline for asking whether an AI system measures what its label claims was built in measurement science, decades before &ldquo;AI eval&rdquo; was a term.</text>
+  <text x="700" y="825" text-anchor="middle" font-size="12" font-style="italic" class="ink-3">Same problems. Different vocabulary. The discipline for asking whether an AI system measures what its label claims was built in measurement science, decades before &#8220;AI eval&#8221; was a term.</text>
 
   <!-- Signature -->
   <line x1="620" y1="860" x2="780" y2="860" stroke="#94A3B8" stroke-width="1"/>
