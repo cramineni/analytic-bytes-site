@@ -7833,6 +7833,12 @@ export const ESSAYS: Essay[] = [
           </p>
         </Brief>
 
+        <Figure
+          src="/library/figures/eight-bridges-classical-to-modern.svg"
+          alt="Eight bridges — two-column map pairing classical automated-scoring disciplines (left, navy) with their modern AI-evaluation equivalents (right, teal)."
+          caption="The eight bridges at a glance. Classical automated-scoring disciplines on the left, their modern AI-evaluation equivalents on the right. The sections below walk each row."
+        />
+
         <H2>1. Fairness across subgroups &mdash; two tests, not one.</H2>
         <P>
           The modern version: HELM (Holistic Evaluation of Language Models) slices its benchmarks by demographic subgroup, BBQ (Bias Benchmark for QA) measures accuracy gaps across identity axes, and enterprise LLM audits routinely check whether a model&rsquo;s error rate differs materially for one population versus another. The methodological punch is that a single aggregate metric &mdash; accuracy, F1, human-rater agreement &mdash; can hide a substantial subgroup gap. Only per-group evaluation surfaces it.
