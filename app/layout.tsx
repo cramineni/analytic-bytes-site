@@ -18,12 +18,12 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Analytic Bytes — Decision systems architecture, built fast.",
+  title: "Analytic Bytes — Decision systems architecture, built for action.",
   description:
     "Decision systems architecture with measurement-science depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
   metadataBase: new URL("https://analyticbytes.systems"),
   openGraph: {
-    title: "Analytic Bytes — Decision systems architecture, built fast.",
+    title: "Analytic Bytes — Decision systems architecture, built for action.",
     description:
       "Decision systems architecture with measurement-science depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Analytic Bytes — Decision systems architecture, built fast.",
+    title: "Analytic Bytes — Decision systems architecture, built for action.",
     description:
       "Decision systems architecture with measurement-science depth for teams that need data to move execution, align ownership, and build repeatable operating rhythms.",
     images: ["/og-image.png"],

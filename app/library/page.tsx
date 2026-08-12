@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ESSAYS, ArtifactLink } from "./essays";
+import { ESSAYS, ArtifactLink, isEssayVisible } from "./essays";
 import { ARTIFACTS, type Artifact } from "./artifacts-data";
 import WritingsList, { type WritingEntry } from "./WritingsList";
 
@@ -56,7 +56,7 @@ const ARTIFACT_PREVIEWS: Artifact[] = ARTIFACTS.slice(
 // newest-first. Artifacts are dateless and render in their own gallery below.
 // The list itself is rendered by <WritingsList /> (client-side, so it can
 // hold the discipline filter state).
-const ENTRIES: WritingEntry[] = ESSAYS.filter((e) => !e.hidden)
+const ENTRIES: WritingEntry[] = ESSAYS.filter(isEssayVisible)
   .map(
     (e): WritingEntry => ({
       type: e.kind,

@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import Architecture from "@/components/Architecture";
-import { ESSAYS } from "./library/essays";
+import { ESSAYS, isEssayVisible } from "./library/essays";
 
 // =====================================================================
 // CONTENT — edit copy here. Each constant maps to one section.
@@ -77,7 +77,7 @@ const SHOW_WORK = false;
 // Recent Library entries surfaced on the homepage in section 02. Auto-pulled
 // from the ESSAYS registry, sorted newest-first, top 4.
 const RECENT_LIBRARY = [...ESSAYS]
-  .filter((e) => !e.hidden)
+  .filter(isEssayVisible)
   .sort((a, b) => b.date.localeCompare(a.date))
   .slice(0, 4);
 

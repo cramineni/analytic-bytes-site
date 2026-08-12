@@ -360,7 +360,8 @@ export type Essay = {
   summary: string; // 1–2 lines, for the /library index
   cover: string; // /library/covers/[file].svg
   arc: Arc; // primary arc for navigation + future filtering
-  hidden?: boolean; // if true, hidden from /library feed, homepage Library section, and route generation
+  hidden?: boolean; // if true, hidden everywhere (dev + prod). Use for retired or archived pieces.
+  draft?: boolean; // if true, hidden in production but visible in local dev (npm run dev). Use for pieces you're still reading/iterating on before publishing.
   body: ReactNode;
 };
 
@@ -5290,7 +5291,7 @@ export const ESSAYS: Essay[] = [
       "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. The essay argues that a big impact number is not yet a valid number — the argument from the number to the claim it makes needs its own gate. Applies Kane and Messick's validity discipline to score composite ROI figures on the weakest inference link (never the average), and separates the verbs a number earns (supports vs. produced) by the strength of the counterfactual behind it. Written in the same spirit as the Dollars in Pockets authors' own invitation to apply the measure to the field's work.",
     cover: "/library/covers/the-valid-dollar.svg",
     arc: "measurement",
-    hidden: true,
+    draft: true,
     body: (
       <>
         <P>
@@ -5441,7 +5442,7 @@ export const ESSAYS: Essay[] = [
       "Why responsible-AI rubrics in mental health are necessary, and what they need underneath.",
     cover: "/library/covers/validity-layer-beneath-responsible-ai.svg",
     arc: "measurement",
-    hidden: true,
+    draft: true,
     body: (
       <>
         <P>
@@ -8304,6 +8305,19 @@ export const ESSAYS: Essay[] = [
 
 export const ESSAY_SLUGS = ESSAYS.map((e) => e.slug);
 
+// Visibility helper. Drafts show in local dev so they can be read on
+// localhost before publishing; they disappear from production. Hidden
+// pieces (retired/archived) are invisible everywhere.
+//
+// Use this everywhere we filter the ESSAYS list. Do NOT filter by
+// `!e.hidden` directly — it will leak drafts to production.
+const IS_DEV = process.env.NODE_ENV === "development";
+export function isEssayVisible(e: Essay): boolean {
+  if (e.hidden) return false;
+  if (e.draft && !IS_DEV) return false;
+  return true;
+}
+
 export function getEssay(slug: string): Essay | undefined {
-  return ESSAYS.find((e) => e.slug === slug && !e.hidden);
+  return ESSAYS.find((e) => e.slug === slug && isEssayVisible(e));
 }

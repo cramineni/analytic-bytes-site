@@ -4,12 +4,12 @@ import Reveal from "@/components/Reveal";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ESSAYS, getEssay } from "../essays";
+import { ESSAYS, getEssay, isEssayVisible } from "../essays";
 
 // Pre-render every essay route at build time. Hidden essays are skipped —
 // they 404 in production until their `hidden` flag is removed.
 export function generateStaticParams() {
-  return ESSAYS.filter((e) => !e.hidden).map((e) => ({ slug: e.slug }));
+  return ESSAYS.filter(isEssayVisible).map((e) => ({ slug: e.slug }));
 }
 
 // Per-slug OG image overrides. LinkedIn (and some other social crawlers)
@@ -81,7 +81,7 @@ export default function EssayPage({
   // library's actual publication sequence regardless of source organization.
   // Hidden pieces are excluded — they shouldn't surface in keep-reading nav.
   const visible = ESSAYS
-    .filter((e) => !e.hidden)
+    .filter(isEssayVisible)
     .slice()
     .sort((a, b) => a.date.localeCompare(b.date));
   const idx = visible.findIndex((e) => e.slug === essay.slug);
