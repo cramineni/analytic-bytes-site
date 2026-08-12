@@ -18,7 +18,7 @@ export function generateStaticParams() {
 // the SVG (essay.cover) — this only affects social-share metadata.
 // Grow this map as we bake PNGs for the rest of the library.
 const OG_IMAGE_OVERRIDES: Record<string, string> = {
-  "where-should-data-sit": "/library/covers/where-should-data-sit-og.png",
+  "where-should-data-sit": "/library/covers/where-should-data-sit-og.png?v=2",
 };
 
 export function generateMetadata({

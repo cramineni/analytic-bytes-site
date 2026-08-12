@@ -5290,7 +5290,7 @@ export const ESSAYS: Essay[] = [
       "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. The essay argues that a big impact number is not yet a valid number — the argument from the number to the claim it makes needs its own gate. Applies Kane and Messick's validity discipline to score composite ROI figures on the weakest inference link (never the average), and separates the verbs a number earns (supports vs. produced) by the strength of the counterfactual behind it. Written in the same spirit as the Dollars in Pockets authors' own invitation to apply the measure to the field's work.",
     cover: "/library/covers/the-valid-dollar.svg",
     arc: "measurement",
-    hidden: true,
+    hidden: false,
     body: (
       <>
         <P>
@@ -5441,7 +5441,7 @@ export const ESSAYS: Essay[] = [
       "Why responsible-AI rubrics in mental health are necessary, and what they need underneath.",
     cover: "/library/covers/validity-layer-beneath-responsible-ai.svg",
     arc: "measurement",
-    hidden: true,
+    hidden: false,
     body: (
       <>
         <P>
