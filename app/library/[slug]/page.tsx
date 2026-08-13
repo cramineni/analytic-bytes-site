@@ -12,14 +12,14 @@ export function generateStaticParams() {
   return ESSAYS.filter(isEssayVisible).map((e) => ({ slug: e.slug }));
 }
 
-// Per-slug OG image overrides. LinkedIn (and some other social crawlers)
-// don't render SVG previews, so slugs listed here point og:image at a PNG
-// variant baked out from the SVG cover. On-page cover render still uses
-// the SVG (essay.cover) — this only affects social-share metadata.
-// Grow this map as we bake PNGs for the rest of the library.
-const OG_IMAGE_OVERRIDES: Record<string, string> = {
-  "where-should-data-sit": "/library/covers/where-should-data-sit-og.png?v=2",
-};
+// LinkedIn (and several other social crawlers) don't render SVG previews.
+// Every cover SVG has a baked PNG sibling at the same path with `-og.png`
+// suffix (generated from the SVG source with the same visual content).
+// On-page cover render still uses the SVG (essay.cover); only social-
+// share metadata (og:image, twitter:images) uses the PNG variant.
+function ogImageFor(coverSvgPath: string): string {
+  return coverSvgPath.replace(/\.svg$/, "-og.png");
+}
 
 export function generateMetadata({
   params,
@@ -30,8 +30,7 @@ export function generateMetadata({
   if (!essay) {
     return { title: "Essay not found — Analytic Bytes" };
   }
-  const ogPath = OG_IMAGE_OVERRIDES[essay.slug] ?? essay.cover;
-  const coverUrl = `https://analyticbytes.systems${ogPath}`;
+  const coverUrl = `https://analyticbytes.systems${ogImageFor(essay.cover)}`;
   return {
     title: `${essay.title} — Analytic Bytes`,
     description: essay.subtitle,

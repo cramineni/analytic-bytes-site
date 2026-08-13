@@ -19,6 +19,18 @@ function truncate(s: string, n: number): string {
   return s.slice(0, n - 1).trimEnd() + "…";
 }
 
+// LinkedIn (and several other social crawlers) don't render SVG previews.
+// Every SVG artifact has a baked PNG sibling at the same path with `-og.png`
+// suffix. On-page render still uses the SVG (artifact.image); only social-
+// share metadata uses the PNG variant. HTML artifacts are left untouched.
+function ogImageFor(
+  artifactImage: string,
+  format: "svg" | "html" | undefined
+): string {
+  if (format === "html") return artifactImage;
+  return artifactImage.replace(/\.svg$/, "-og.png");
+}
+
 function findArtifact(slug: string): {
   artifact: Artifact;
   index: number;
@@ -44,7 +56,7 @@ export async function generateMetadata({
   const title = `${artifact.title} — Analytic Bytes`;
   const description = truncate(firstSentence(artifact.summary), 155);
   const url = `${SITE}/library/artifacts/${artifact.slug}`;
-  const image = artifact.image;
+  const image = ogImageFor(artifact.image, artifact.format);
   return {
     title,
     description,
