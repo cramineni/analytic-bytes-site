@@ -236,7 +236,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     title: "Governance Craft Log",
     summary:
-      "The 23 discipline moves catalogued during the audit's own execution, phase by phase, plus 7 emergent methodology principles the close surfaced. Governance-of-governance done inline, dated, and available for peer review — the audit audited itself before it audited AB.",
+      "The 23 discipline moves catalogued during the audit's own execution, phase by phase, plus 7 emergent methodology principles the close surfaced. Methodology documentation done inline, dated, and available for peer review — the audit documented its own methodology before publishing its findings on AB.",
     image: "/library/artifacts/governance-craft-log.html",
     slug: "governance-craft-log",
     format: "html",
@@ -250,7 +250,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     title: "Dialogue Maturity Curve",
     summary:
-      "Roughly 100 sessions scored on a six-metric rubric across 18 months. Session shape shifted from GPT-era 5&ndash;6 scores to Claude-era 8&ndash;9, with the gain concentrated in question density, revision cycles, and explicit rubric use. The maturity curve underneath the working-with-AI story.",
+      "116 threads scored on a six-metric rubric across the twelve-month arc (88 GPT + 28 Claude). Session shape shifted from GPT-era substantive threads (clustering 5&ndash;7 composite; tactical volume pulling the aggregate lower) to the Claude-era portion (mean 7.06, most clustering 7.0&ndash;8.5). The gain concentrated in three of the six rubric dimensions: voice ownership, meta-awareness, and generative reframing. The maturity curve underneath the working-with-AI story.",
     image: "/library/artifacts/dialogue-maturity-curve.html",
     slug: "dialogue-maturity-curve",
     format: "html",

@@ -7988,7 +7988,7 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>The numbers stop being counts.</B> The{" "}
           <a
-            href="https://mchb.hrsa.gov/programs-impact/national-survey-childrens-health-nsch"
+            href="https://mchb.hrsa.gov/data-research/national-survey-childrens-health"
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
