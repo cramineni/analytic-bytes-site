@@ -5276,12 +5276,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 11 — The valid dollar
+  // ESSAY 14 — The valid dollar
   // ===================================================================
   {
     kind: "essay",
     slug: "the-valid-dollar",
-    number: "11",
+    number: "14",
     title: "The valid dollar",
     subtitle:
       "A validity gate for Dollars in Pockets and the impact numbers that follow.",
@@ -5433,12 +5433,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 12 — Validity is the layer beneath responsible AI
+  // ESSAY 15 — Validity is the layer beneath responsible AI
   // ===================================================================
   {
     kind: "essay",
     slug: "validity-layer-beneath-responsible-ai",
-    number: "12",
+    number: "15",
     title: "Validity is the layer beneath responsible AI",
     subtitle:
       "Why responsible-AI rubrics in mental health are necessary, and what they need underneath.",

@@ -1,10 +1,10 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Essay No. 11: The valid dollar</title>
+<title>Essay No. 14: The valid dollar</title>
 <desc>White background with a small navy line diagram. Four vertical bars stand in a row on a shared baseline. Three are tall navy bars — strong inferences. One is a short teal bar — the weakest inference. A dashed horizontal line runs across the diagram at the height of the shortest bar, showing where the verdict caps: the score is the minimum of the four, never the average. Title and italic subtitle in sans-serif beneath.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
 
 <!-- Eyebrow -->
-<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 11</text>
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 14</text>
 
 <!-- Motif: min-bar chart — 4 bars, one short (weakest), horizontal verdict line at short-bar height -->
 <g transform="translate(600, 275)">
