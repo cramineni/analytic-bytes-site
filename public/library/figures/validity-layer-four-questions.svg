@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
 
   <!-- eyebrow -->
-  <text x="72" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3">FIGURE &middot; VALIDITY LAYER</text>
+  <text x="72" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3">FIGURE &#183; VALIDITY LAYER</text>
 
   <!-- title -->
   <text x="72" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#0F2A4A" letter-spacing="-0.5">The four validity questions</text>
@@ -18,7 +18,7 @@
     <rect x="72" y="188" width="6" height="88" fill="#0EA5E9"/>
     <text x="104" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0EA5E9" letter-spacing="2">Q1</text>
     <text x="104" y="248" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">What is the construct?</text>
-    <text x="104" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">The thing the model claims to detect &mdash; named in one sentence, before anything else can be evaluated.</text>
+    <text x="104" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">The thing the model claims to detect &#8212; named in one sentence, before anything else can be evaluated.</text>
   </g>
 
   <!-- Q2 -->
@@ -27,7 +27,7 @@
     <rect x="72" y="292" width="6" height="88" fill="#0EA5E9"/>
     <text x="104" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0EA5E9" letter-spacing="2">Q2</text>
     <text x="104" y="352" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">What validation evidence?</text>
-    <text x="104" y="374" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">How the field established that construct is measurable &mdash; samples, populations, comparators, independence.</text>
+    <text x="104" y="374" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">How the field established that construct is measurable &#8212; samples, populations, comparators, independence.</text>
   </g>
 
   <!-- Q3 -->
@@ -36,7 +36,7 @@
     <rect x="72" y="396" width="6" height="88" fill="#0EA5E9"/>
     <text x="104" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0EA5E9" letter-spacing="2">Q3</text>
     <text x="104" y="456" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Where is the case thinnest?</text>
-    <text x="104" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Populations, languages, severity, use cases where the validation case is weakest &mdash; named before deployment.</text>
+    <text x="104" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Populations, languages, severity, use cases where the validation case is weakest &#8212; named before deployment.</text>
   </g>
 
   <!-- Q4 -->
@@ -45,9 +45,9 @@
     <rect x="72" y="500" width="6" height="88" fill="#0EA5E9"/>
     <text x="104" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#0EA5E9" letter-spacing="2">Q4</text>
     <text x="104" y="560" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">What drift monitoring?</text>
-    <text x="104" y="582" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Cadence for construct, population, and user-effect drift after deployment &mdash; and what happens when they surface.</text>
+    <text x="104" y="582" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Cadence for construct, population, and user-effect drift after deployment &#8212; and what happens when they surface.</text>
   </g>
 
   <!-- sign-off -->
-  <text x="1128" y="612" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8" letter-spacing="1">Analytic Bytes &middot; 2026</text>
+  <text x="1128" y="612" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8" letter-spacing="1">Analytic Bytes &#183; 2026</text>
 </svg>
