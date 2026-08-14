@@ -1,35 +1,17 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Essay No. 12: Validity is the layer beneath responsible AI</title>
-<desc>White background. A two-layer stack diagram: an upper navy rectangle labeled RESPONSIBLE-AI RUBRIC sits atop a lower teal rectangle labeled VALIDITY LAYER, with a thin dashed line marking the seam. Title and subtitle in sans-serif beneath.</desc>
+<desc>White background with a navy line-work two-layer architecture — a top band outlined in navy labeled Responsible AI resting on a lower teal-filled band labeled Validity, indicating that the responsible-AI rubric depends on a prior validity layer. Title and italic subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
-
-<!-- Eyebrow -->
-<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  &#183;  No. 12</text>
-
-<!-- Diagram — two stacked layers -->
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 12</text>
 <g transform="translate(600, 235)">
-  <!-- Upper layer: responsible-AI rubric -->
-  <rect x="-220" y="-70" width="440" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
-  <text x="0" y="-32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="2.5" fill="#0F2A4A" text-anchor="middle" font-weight="600">RESPONSIBLE-AI RUBRIC</text>
-  <text x="0" y="-16" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">privacy &#183; accountability &#183; fairness &#183; monitoring</text>
-
-  <!-- Seam: thin dashed teal line -->
-  <line x1="-220" y1="0" x2="220" y2="0" stroke="#0EA5E9" stroke-width="1.4" stroke-dasharray="4 4"/>
-
-  <!-- Lower layer: validity (solid teal for consistent render across engines) -->
-  <rect x="-220" y="10" width="440" height="60" fill="#0EA5E9"/>
-  <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="2.5" fill="#FFFFFF" text-anchor="middle" font-weight="600">VALIDITY LAYER</text>
-  <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" font-style="italic">does the model measure the construct it claims to?</text>
+<rect x="-110" y="-70" width="220" height="52" fill="none" stroke="#0F2A4A" stroke-width="1.5"/>
+<text x="0" y="-40" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1.8" fill="#475569" text-anchor="middle">RESPONSIBLE AI</text>
+<line x1="-110" y1="-8" x2="110" y2="-8" stroke="#94A3B8" stroke-width="1" stroke-dasharray="3,3"/>
+<rect x="-110" y="2" width="220" height="52" fill="#0EA5E9" fill-opacity="0.12" stroke="#0EA5E9" stroke-width="1.5"/>
+<text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1.8" fill="#475569" text-anchor="middle">VALIDITY</text>
 </g>
-
-<!-- Title -->
-<text x="600" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="500" fill="#0F2A4A" text-anchor="middle">Validity is the layer beneath</text>
-<text x="600" y="482" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="500" fill="#0F2A4A" text-anchor="middle">responsible AI.</text>
-
-<!-- Subtitle -->
-<text x="600" y="520" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-style="italic" fill="#475569" text-anchor="middle">What the rubrics need underneath.</text>
-
-<!-- Divider + footer -->
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Validity is the layer beneath responsible AI</text>
+<text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">Why responsible-AI rubrics in mental health are necessary, and what they need underneath.</text>
 <line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
-<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  &#183;  2026</text>
+<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
 </svg>
