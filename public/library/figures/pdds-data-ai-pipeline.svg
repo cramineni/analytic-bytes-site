@@ -1,0 +1,119 @@
+<svg viewBox="0 0 960 1010" xmlns="http://www.w3.org/2000/svg" role="img" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+  <title>PDDS data and AI pipeline</title>
+  <desc>Public data flows from sources through ingestion, verified seeds, and a dbt-duckdb warehouse. An LLM narration layer drafts and reviews the panel note, deterministic dbt governance gates verify it, then export writes the frozen-six and extension dashboards to a Next.js renderer.</desc>
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#97A3B2"/>
+    </marker>
+    <style>
+      .band{fill:#7E8A99;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+      .nt{fill:#1E293B;font-size:14px;font-weight:700}
+      .sub{fill:#55637A;font-size:11px}
+      .chip{fill:#EFF2F6;stroke:#C6CFD9;stroke-width:1}
+      .chipt{fill:#28323F;font-size:12.5px;font-weight:600}
+      .node{fill:#EFF2F6;stroke:#C6CFD9;stroke-width:1.2}
+      .ai{fill:#ECE6F3;stroke:#7B6CA8;stroke-width:1.4}
+      .ait{fill:#43356B;font-size:13.5px;font-weight:700}
+      .gate{fill:#F6EDD7;stroke:#BA7517;stroke-width:1.2}
+      .gatet{fill:#6E4A0E;font-size:12.5px;font-weight:600}
+      .cap{fill:#6E7686;font-size:11px;font-style:italic}
+      .flow{stroke:#97A3B2;stroke-width:1.6;fill:none}
+    </style>
+  </defs>
+
+  <text x="30" y="34" font-size="18" font-weight="800" fill="#111827">PDDS — data &amp; AI pipeline</text>
+  <text x="30" y="54" class="sub">Public Data as a Decision System · from public sources to a governed decision surface</text>
+
+  <!-- SOURCES -->
+  <text x="30" y="86" class="band">1 · Public sources</text>
+  <g>
+    <rect class="chip" x="20" y="96" width="142" height="42" rx="7"/><text class="chipt" x="91" y="122" text-anchor="middle">CDC Socrata</text>
+    <rect class="chip" x="172" y="96" width="142" height="42" rx="7"/><text class="chipt" x="243" y="122" text-anchor="middle">NCES NAEP</text>
+    <rect class="chip" x="324" y="96" width="142" height="42" rx="7"/><text class="chipt" x="395" y="122" text-anchor="middle">College Scorecard</text>
+    <rect class="chip" x="476" y="96" width="142" height="42" rx="7"/><text class="chipt" x="547" y="122" text-anchor="middle">NSCH</text>
+    <rect class="chip" x="628" y="96" width="142" height="42" rx="7"/><text class="chipt" x="699" y="122" text-anchor="middle">YRBS</text>
+    <rect class="chip" x="780" y="96" width="160" height="42" rx="7"/><text class="chipt" x="860" y="122" text-anchor="middle">SCHEV / VLDS</text>
+  </g>
+  <path class="flow" d="M480,138 L480,166" marker-end="url(#ar)"/>
+
+  <!-- INGEST -->
+  <text x="30" y="164" class="band">2 · Ingest</text>
+  <rect class="node" x="230" y="170" width="500" height="52" rx="9"/>
+  <text class="nt" x="480" y="192" text-anchor="middle">Ingest — API pulls</text>
+  <text class="sub" x="480" y="210" text-anchor="middle">ingest/ scripts → data/raw</text>
+  <path class="flow" d="M480,222 L480,250" marker-end="url(#ar)"/>
+
+  <!-- SEEDS -->
+  <text x="30" y="248" class="band">3 · Verified seeds</text>
+  <rect class="node" x="230" y="254" width="500" height="56" rx="9"/>
+  <text class="nt" x="480" y="277" text-anchor="middle">Verified seed CSVs</text>
+  <text class="sub" x="480" y="295" text-anchor="middle">source-cited, human-checked · seeds/</text>
+  <path class="flow" d="M480,310 L480,338" marker-end="url(#ar)"/>
+
+  <!-- WAREHOUSE -->
+  <text x="30" y="336" class="band">4 · Warehouse</text>
+  <rect x="228" y="342" width="504" height="86" rx="10" fill="#F7F9FB" stroke="#C6CFD9" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text class="sub" x="248" y="362" font-weight="700" fill="#3B4757">dbt-duckdb warehouse</text>
+  <rect class="node" x="252" y="372" width="212" height="44" rx="8"/>
+  <text class="chipt" x="358" y="399" text-anchor="middle">Staging — stg_*</text>
+  <rect class="node" x="496" y="372" width="212" height="44" rx="8"/>
+  <text class="chipt" x="602" y="399" text-anchor="middle">Marts — dim_* · fct_*</text>
+  <path class="flow" d="M480,428 L480,458" marker-end="url(#ar)"/>
+
+  <!-- AI LAYER -->
+  <text x="30" y="456" class="band" fill="#7B6CA8">5 · AI narration &amp; review layer (LLM)</text>
+  <rect class="ai" x="45" y="464" width="270" height="64" rx="10"/>
+  <text class="ait" x="180" y="491" text-anchor="middle">Author · narrate_panel</text>
+  <text class="sub" x="180" y="510" text-anchor="middle">LLM drafts the movement note</text>
+  <rect class="ai" x="345" y="464" width="270" height="64" rx="10"/>
+  <text class="ait" x="480" y="491" text-anchor="middle">Judge · judge_panel</text>
+  <text class="sub" x="480" y="510" text-anchor="middle">LLM-as-judge scores the note</text>
+  <rect class="ai" x="645" y="464" width="270" height="64" rx="10"/>
+  <text class="ait" x="780" y="491" text-anchor="middle">Agent · operate_panel</text>
+  <text class="sub" x="780" y="510" text-anchor="middle">diagnose &amp; propose fixes</text>
+  <text class="cap" x="480" y="548" text-anchor="middle">Writes prose only. The AI layer can never edit the governance gates.</text>
+  <path class="flow" d="M480,554 L480,582" marker-end="url(#ar)"/>
+
+  <!-- GATES -->
+  <text x="30" y="580" class="band" fill="#BA7517">6 · Governance gates — dbt tests</text>
+  <g>
+    <!-- Row 1: base gates (fire on both frozen-six and extension tracks) -->
+    <rect class="gate" x="90" y="590" width="180" height="38" rx="7"/><text class="gatet" x="180" y="614" text-anchor="middle">Figure grounding</text>
+    <rect class="gate" x="288" y="590" width="180" height="38" rx="7"/><text class="gatet" x="378" y="614" text-anchor="middle">Required caveats</text>
+    <rect class="gate" x="486" y="590" width="180" height="38" rx="7"/><text class="gatet" x="576" y="614" text-anchor="middle">Voice clean</text>
+    <rect class="gate" x="684" y="590" width="186" height="38" rx="7"/><text class="gatet" x="777" y="614" text-anchor="middle">Grain match</text>
+    <!-- Row 2: Freshness (both tracks) + extension-only gates (dashed border) -->
+    <rect class="gate" x="90" y="636" width="180" height="38" rx="7"/><text class="gatet" x="180" y="660" text-anchor="middle">Freshness</text>
+    <rect class="gate" x="288" y="636" width="180" height="38" rx="7" stroke-dasharray="4 3"/><text class="gatet" x="378" y="660" text-anchor="middle">Suppression</text>
+    <rect class="gate" x="486" y="636" width="180" height="38" rx="7" stroke-dasharray="4 3"/><text class="gatet" x="576" y="660" text-anchor="middle">Reconciliation</text>
+    <rect class="gate" x="684" y="636" width="186" height="38" rx="7" stroke-dasharray="4 3"/><text class="gatet" x="777" y="660" text-anchor="middle">Lever typing</text>
+  </g>
+  <text class="cap" x="480" y="694" text-anchor="middle">Deterministic. Any failing gate stops the build. Dashed border = extension-track only (fires on Extension 07–09 panels).</text>
+  <path class="flow" d="M480,700 L480,726" marker-end="url(#ar)"/>
+
+  <!-- EXPORT -->
+  <text x="30" y="724" class="band">7 · Export</text>
+  <rect class="node" x="120" y="732" width="320" height="60" rx="9"/>
+  <text class="nt" x="280" y="756" text-anchor="middle">Frozen six · golden-locked</text>
+  <text class="sub" x="280" y="775" text-anchor="middle">build_dashboard_json + golden_lock</text>
+  <rect class="node" x="520" y="732" width="320" height="60" rx="9"/>
+  <text class="nt" x="680" y="756" text-anchor="middle">Extension 07–09</text>
+  <text class="sub" x="680" y="775" text-anchor="middle">build_dashboard_ext_json</text>
+  <path class="flow" d="M280,792 L280,812 L480,812" marker-end="url(#ar)"/>
+  <path class="flow" d="M680,792 L680,812 L482,812"/>
+  <path class="flow" d="M480,812 L480,834" marker-end="url(#ar)"/>
+
+  <!-- WEB -->
+  <text x="30" y="832" class="band">8 · Decision surface</text>
+  <rect class="node" x="260" y="840" width="440" height="56" rx="9"/>
+  <text class="nt" x="480" y="863" text-anchor="middle">Next.js renderer</text>
+  <text class="sub" x="480" y="881" text-anchor="middle">PanelChart · HeadlineCards · LeverBox · SourcesFooter</text>
+
+  <!-- LEGEND -->
+  <rect x="30" y="930" width="900" height="52" rx="8" fill="#F7F9FB" stroke="#E2E7EC"/>
+  <rect x="46" y="948" width="16" height="16" rx="3" class="ai"/>
+  <text class="sub" x="70" y="961">AI narration layer (generates)</text>
+  <rect x="270" y="948" width="16" height="16" rx="3" class="gate"/>
+  <text class="sub" x="294" y="961">Governance gates (verify)</text>
+  <text class="sub" x="500" y="961">Two tracks run in parallel: six frozen panels (golden-locked) + the extension panels.</text>
+</svg>

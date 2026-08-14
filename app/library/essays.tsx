@@ -5446,7 +5446,7 @@ export const ESSAYS: Essay[] = [
     body: (
       <>
         <P>
-          A round of frameworks for governing AI in mental health has appeared in the last eighteen months. Lyra Health&rsquo;s Polaris Principles articulated the industry-side posture. The National Academy of Medicine published its AI Code of Conduct for Health and Medicine in May 2025 with six commitments including monitoring performance. The American Psychological Association released ethical guidance for AI in health service psychology in 2025 and followed with a 2026 health advisory whose plain-language judgment about consumer AI in mental health was unusually direct: the chatbots and wellness apps lack the testing and safety measures needed for quality mental health support. VERA-MH appeared as an open-source AI safety evaluation built around conversation simulation and clinician judging. ASL-MH proposed AI safety levels for mental health applications. The WHO convened an expert workshop on responsible AI for mental health in January 2026 with explicit recommendations about embedding mental health into AI impact assessments. Lumara published a five-question rubric for evaluating any AI mental-health tool before deployment &mdash; clear, operator-grade, structured so a clinical lead or a foundation program officer can use it in a procurement conversation. The rubrics are necessary. This essay credits the work being done and names the layer the rubrics do not yet include.
+          A round of frameworks for governing AI in mental health has appeared in the last twenty months. Lyra Health&rsquo;s Polaris Principles articulated the industry-side posture. The National Academy of Medicine published its AI Code of Conduct for Health and Medicine in May 2025 with six commitments including monitoring performance. The American Psychological Association released ethical guidance for AI in health service psychology in 2025 and followed with a 2026 health advisory whose plain-language judgment about consumer AI in mental health was unusually direct: the chatbots and wellness apps lack the testing and safety measures needed for quality mental health support. VERA-MH appeared as an open-source AI safety evaluation built around conversation simulation and clinician judging. ASL-MH proposed AI safety levels for mental health applications. The WHO convened an expert workshop on responsible AI for mental health in January 2026 with explicit recommendations about embedding mental health into AI impact assessments. Lumara published a five-question rubric for evaluating any AI mental-health tool before deployment &mdash; clear, operator-grade, structured so a clinical lead or a foundation program officer can use it in a procurement conversation. The rubrics are necessary. This essay credits the work being done and names the layer the rubrics do not yet include.
         </P>
         <P>
           Lumara&rsquo;s rubric is the cleanest current example of what good looks like at the responsible-AI floor, so it is worth walking through. Five questions, each one a real governance question a careful institution should ask before adopting any AI tool that interacts with people in distress. Where does AI inference happen &mdash; what is the data-residency and privacy architecture, and what flows where. Who is the named clinician accountable for crisis detection, and what does accountability actually mean. How does crisis detection perform across demographic groups. What happens after deployment: monitoring, drift, the post-launch discipline that distinguishes a deployment from a launch. Can we speak with the clinical lead directly. These five questions map almost exactly to the responsible-AI cluster appearing across NIST AI RMF, the EU AI Act risk tiers, the NAM Code of Conduct, APA&rsquo;s ethical guidance, the WHO workshop outputs, and the industry frameworks circulating alongside them. They are the right floor for responsible AI in mental health. The institution that can answer them is operating at a much higher standard than the institution that has not asked them at all.
@@ -5708,7 +5708,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-07-30",
     readingTime: "9 min read",
     summary:
-      "A personal field note on eighteen months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. Maturity transferred across tools; capability expanded with the tool that could hold more.",
+      "A personal field note on twenty months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. Maturity transferred across tools; capability expanded with the tool that could hold more.",
     cover: "/library/covers/my-relationship-with-ai.svg",
     arc: "ai-systems",
     body: (
@@ -5724,7 +5724,7 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             This is a personal field note. It is not a universal claim. It
-            is what I have learned in about eighteen months of working with
+            is what I have learned in about twenty months of working with
             three generative AI tools across a career transition, a brand
             build, a family, and a re-entry into the kind of public-facing
             work I had been away from for years. Anyone who tells you the
@@ -5999,14 +5999,14 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The audit I ran on the first ninety days of the AB practice put
-          numbers on that transfer. Across{" "}
+          numbers on that transfer. Across the{" "}
           <ArtifactLink slug="dialogue-maturity-curve">
-            roughly one hundred sessions scored over eighteen months
-          </ArtifactLink>
-          , the maturity gains concentrated in
-          three places: cross-thread integration, generative reframing,
-          and meta-awareness &mdash; noticing when the model is
-          sycophantic or missing something. The{" "}
+            116 threads scored on the dialogue-maturity curve
+          </ArtifactLink>{" "}
+          &mdash; a twelve-month scoring window inside the longer
+          relationship &mdash; the gains concentrated in three of the
+          six rubric dimensions: voice ownership, meta-awareness, and
+          generative reframing. The{" "}
           <InternalLink slug="auditing-an-ai-native-practice">
             companion field note
           </InternalLink>{" "}
@@ -6135,7 +6135,7 @@ export const ESSAYS: Essay[] = [
         <MetaNote>
           A personal field note, written July 2026 for the Analytic Bytes
           Library. It is not a universal claim about how to use AI. It is
-          one operator&rsquo;s account of eighteen months across three
+          one operator&rsquo;s account of twenty months across three
           tools. Related threads picked up elsewhere in the library:{" "}
           <InternalLink slug="when-genai-redesigned-my-dashboard">
             When GenAI redesigned my dashboard.
@@ -6303,7 +6303,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          Foundations and philanthropy are mid-struggle on the same calibration, and many of them do not yet know that this is the bet they are making. Most foundations have concentrated risk into one grants-management vendor (Fluxx, Salesforce Nonprofit Cloud, Foundant, Bonterra) for grants administration and operations, often without realizing how much of the institution&rsquo;s reporting capability has been outsourced to that vendor&rsquo;s roadmap. The same foundations face board pressure to use generative AI for impact reporting, for grant application screening, for due diligence on grantees, and for program-officer drafting workflows, and they have almost zero in-house data engineering capacity to build the orchestration the federated bet requires. The result is a hybrid by drift rather than by design. The grants-management vendor offers AI features that are easy to enable. The research-flavored work (multi-year program evaluation, instrument-version reconciliation across years of survey data, impact synthesis across portfolios) sits in spreadsheets and ad-hoc tools that no orchestration layer reaches. Foundations are roughly where higher education was eighteen months ago on the calibration question: visibly responsive, structurally undecided. Foundations still have a chance to make the calibration deliberate, before the vendor&rsquo;s contracts and the federated work grow apart. That chance is real and narrow.
+          Foundations and philanthropy are mid-struggle on the same calibration, and many of them do not yet know that this is the bet they are making. Most foundations have concentrated risk into one grants-management vendor (Fluxx, Salesforce Nonprofit Cloud, Foundant, Bonterra) for grants administration and operations, often without realizing how much of the institution&rsquo;s reporting capability has been outsourced to that vendor&rsquo;s roadmap. The same foundations face board pressure to use generative AI for impact reporting, for grant application screening, for due diligence on grantees, and for program-officer drafting workflows, and they have almost zero in-house data engineering capacity to build the orchestration the federated bet requires. The result is a hybrid by drift rather than by design. The grants-management vendor offers AI features that are easy to enable. The research-flavored work (multi-year program evaluation, instrument-version reconciliation across years of survey data, impact synthesis across portfolios) sits in spreadsheets and ad-hoc tools that no orchestration layer reaches. Foundations are roughly where higher education was twenty months ago on the calibration question: visibly responsive, structurally undecided. Foundations still have a chance to make the calibration deliberate, before the vendor&rsquo;s contracts and the federated work grow apart. That chance is real and narrow.
         </P>
 
         <P>
@@ -7480,7 +7480,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-02",
     readingTime: "10 min read",
     summary:
-      "AB spent ninety days operating as an AI-native practice. This is the public report from the audit that followed, and the case for practitioner AI governance as a discipline the field has not yet named clearly. Introduces HITL/AITL as a measurable proxy for the load-carrier axis, and demonstrates governance-of-governance done inline.",
+      "AB spent ninety days operating as an AI-native practice. This is the public report from the audit that followed, and the case for practitioner AI governance as a discipline the field has not yet named clearly. Introduces HITL/AITL as a signal-informed proxy for the load-carrier axis, and demonstrates methodology documentation done inline.",
     cover: "/library/covers/auditing-an-ai-native-practice.svg",
     arc: "measurement",
     body: (
@@ -7527,7 +7527,7 @@ export const ESSAYS: Essay[] = [
           category per session) before counting anything. It measures
           the same work through three lenses that answer different
           questions. And it applies{" "}
-          <InternalLink slug="what-is-this-system-measuring">measurement-validity discipline</InternalLink> (<a href="https://www.ets.org/research/policy_research_reports/publications/article/2013/jrpe.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane&rsquo;s four-inference stack</a>, construct-definition rigor,
+          <InternalLink slug="what-is-this-system-measuring">measurement-validity discipline</InternalLink> (<a href="https://www.ets.org/research/policy_research_reports/publications/article/2013/jrpe.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane-framed inference</a>, construct-definition rigor,
           scorer-operator alignment) to its own findings before
           publishing them.
         </P>
@@ -7583,15 +7583,21 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The two frames are standard AI-ops vocabulary. The move that
-          matters here is using them as a <I>measurable</I> proxy for
-          the load-carrier axis. HITL and AITL name who or what carries
-          the primary work. That axis was previously described in prose
-          (AI leads versus AI assists) without an operational way to
-          test the claim. Mapping each task category to one of the two
-          frames makes the load-carrier claim testable per session
-          &mdash; no shared-middle option, because a category that reads
-          shared on the surface typically has one side actually carrying
-          the decision when you look closely.
+          matters here is using them as a <I>signal-informed</I> proxy
+          for the load-carrier axis. HITL and AITL name who or what
+          carries the primary work. That axis was previously described
+          in prose (AI leads versus AI assists) without an operational
+          way to name it per category. Placement per category was
+          informed by token distribution, message volume, and
+          user-turn patterns per session &mdash; categories where AI
+          carried the output with few user turns landed HITL;
+          categories carried by high-turn operator iteration landed
+          AITL. No shared-middle option, because a category that reads
+          shared on the surface typically has one side actually
+          carrying the decision when you look closely. (The signals
+          informed operator judgment on band placement; formalizing
+          them into a per-session assignment rule with reliability
+          data is a next-cycle instrument.)
         </P>
 
         <Figure
@@ -7610,14 +7616,17 @@ export const ESSAYS: Essay[] = [
           <ArtifactLink slug="dialogue-maturity-curve">
             dialogue-maturity curve
           </ArtifactLink>{" "}
-          spans roughly one hundred scored sessions across eighteen months, with about thirty sessions
-          inside the 90-day window. The mean per-session pattern is
-          iterative back-and-forth. Session shape shifted upward on the
-          maturity scorecard between the GPT-era portion (early sessions
-          scored 5&ndash;6 on the 6-metric scale) and the Claude-era
-          portion (recent sessions score 8&ndash;9). The gain
-          concentrates in three metrics: question density, revision
-          cycles, and explicit rubric use.
+          spans 116 scored threads across the twelve-month arc &mdash; 88
+          GPT and 28 Claude &mdash; with all 28 Claude sessions inside
+          the 90-day window. The mean per-session pattern is iterative
+          back-and-forth. Session shape shifted upward on the 6-metric
+          scorecard between the GPT-era portion (substantive threads
+          cluster 5&ndash;7 composite; the tactical resume and job-app
+          volume pulls the aggregate lower) and the Claude-era portion
+          (mean composite 7.06, most sessions clustering 7.0&ndash;8.5,
+          top of the corpus at 8.83). The gain concentrates in three of
+          the six rubric dimensions: voice ownership, meta-awareness,
+          and generative reframing.
         </P>
         <P>
           <B>2. The distribution of the practice&rsquo;s attention has three visible modes.</B>{" "}
@@ -7659,17 +7668,25 @@ export const ESSAYS: Essay[] = [
           tooling, workflows, artifacts, and governance, each with
           named components, connected by five workflow loops. Two
           components are honestly dormant (Card Maker, Content HQ).
-          <a href="/library/public-data" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> is the production proof-point: measurement-validity
-          discipline running in code, backed by policy. It is a live
-          LLM-as-judge system with a published Kane-shaped validation
-          methodology (&kappa; = 1.00 handling judge&ndash;operator
-          circularity,{" "}
+          <a href="/library/public-data" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> is a working, public example of measurement-validity
+          discipline expressed in code and policy. It runs a
+          two-component LLM-as-judge setup (narrator and judge
+          separated, deterministic code-veto on grounding claims,
+          advisory-only judge scoring, with{" "}
           <InternalLink slug="why-the-rules-look-weird">
             anti-Goodhart guardrails
-          </InternalLink>, public dashboard).
+          </InternalLink>{" "}
+          on both sides) and a Kane-framed validation approach; the
+          current agreement number (Cohen&rsquo;s &kappa; = 1.00 on a
+          small co-evolved 12-item gold set) is suggestive not proof,
+          and the eval spec names the residual limits (single model,
+          no held-out set, no variance runs, correlated LLM training
+          bases).
         </P>
         <P>
           <B>6. The governance dimension is at a moderate baseline, with the two distinctive-discipline anchors scoring HIGH.</B>{" "}
+          Self-scored on the seven-dimension governance scorecard
+          (self-assessment, not third-party audit).{" "}
           Validity spine (Kane four-inference framework,{" "}
           <a
             href="https://www.nist.gov/itl/ai-risk-management-framework"
@@ -7702,7 +7719,7 @@ export const ESSAYS: Essay[] = [
           practices look like.&rdquo; The value is &ldquo;here is an
           instrument other practices can apply to their own
           operations.&rdquo; Session-unit definition, three-lens
-          measurement, HITL/AITL mapping, dispatch levels, Kane-shaped
+          measurement, HITL/AITL mapping, dispatch levels, Kane-framed
           validity discipline &mdash; these travel. The findings
           themselves do not generalize. N=1 is a limitation on findings
           and a reasonable starting point for building instruments.
@@ -7713,13 +7730,14 @@ export const ESSAYS: Essay[] = [
         <P>
           The audit&rsquo;s distinctive discipline is measurement validity.
           Publishing an unaudited claim about that discipline would be
-          self-refuting. The audit audited itself before it audited AB
-          &mdash; twenty-three catalogued discipline moves and seven
-          emergent methodology principles applied during the Jul
-          30&ndash;31 close (Section 9 of the internal document). That
-          work is governance-of-governance, done inline, dated, and
-          available for peer review. Replication is the invitation this
-          piece extends.
+          self-refuting. The audit documented its own methodology
+          before publishing its findings on AB &mdash; twenty-three
+          discipline moves and seven emergent principles logged as
+          they happened during the Jul 30&ndash;31 close (self-selected
+          and self-catalogued; Section 9 of the internal document).
+          That work is methodology documentation, done inline, dated,
+          and available for peer review. Replication is the invitation
+          this piece extends.
         </P>
 
         <H2>The contribution: practitioner AI governance as a distinct discipline</H2>
@@ -7746,12 +7764,12 @@ export const ESSAYS: Essay[] = [
         <P>
           The claim this audit stands on is that measurement-validity
           discipline for AI governance, at practitioner scale, is a
-          distinct discipline worth naming. It is a third slice
-          alongside data governance and enterprise AI governance, with
-          its own scope and instruments. The discipline has its own
+          distinct discipline worth naming. This audit argues it sits
+          as a third slice alongside data governance and enterprise
+          AI governance, with its own scope and instruments. The discipline has its own
           instruments: session classification, three-lens measurement,
           HITL/AITL mapping, dispatch guidance. It runs on its own
-          validity spine: Kane-shaped inference, construct-definition
+          validity spine: Kane-framed inference, construct-definition
           rigor, scorer-operator alignment. It produces its own
           artifacts, including the{" "}
           <ArtifactLink slug="governance-craft-log">
@@ -7762,11 +7780,14 @@ export const ESSAYS: Essay[] = [
           </ArtifactLink>, and scorecards.
         </P>
         <P>
-          AI-Native PracticeOps is the Foundation Layer term the audit
-          surfaced during its own execution. It parallels DevOps in
-          software engineering: an operating discipline the other task
-          categories depend on, rather than a category of work alongside
-          them. AB Library work will continue to build in this space.
+          Practitioner AI governance behaves like DevOps in software
+          engineering: an operating discipline that the other task
+          categories depend on, rather than a category of work
+          alongside them. The instruments a practitioner uses to run
+          this discipline &mdash; session classification, three-lens
+          measurement, HITL/AITL mapping, dispatch guidance &mdash;
+          apply across whatever categories the practice happens to
+          work in.
         </P>
 
         <H2>From operator governance to agent governance</H2>
@@ -7777,8 +7798,9 @@ export const ESSAYS: Essay[] = [
           the claims each makes to hold up.
         </P>
         <P>
-          The frameworks introduced here transfer directly to the agent
-          context, with implementation adjustments.
+          The frameworks introduced here should transfer to the agent
+          context with implementation adjustments (the transfer is
+          proposed here, not tested).
         </P>
         <P>
           <B>HITL/AITL as the load-carrier axis.</B> Agents are the HITL
@@ -7911,7 +7933,7 @@ export const ESSAYS: Essay[] = [
           measurement lenses (session count, message volume, token
           usage) applied to n &asymp; 93 sessions across ten task
           categories, mapped against the HITL/AITL load-carrier axis and
-          Kane-shaped validity discipline. Draws on the Governance Craft
+          Kane-framed validity discipline. Draws on the Governance Craft
           Log, Executive Card, and Maturity Scorecard produced during
           the audit.
         </MetaNote>
@@ -7953,9 +7975,15 @@ export const ESSAYS: Essay[] = [
           </p>
         </Brief>
 
+        <Figure
+          src="/library/figures/pdds-data-ai-pipeline.svg"
+          alt="PDDS data and AI pipeline — sources through governance gates to decision surface"
+          caption="The full PDDS pipeline. Public sources feed ingest and verified seeds, the dbt-duckdb warehouse stages and models the data, an LLM narration layer drafts and reviews the panel note, deterministic dbt governance gates verify it, and the export writes the frozen-six and extension dashboards to the Next.js renderer. The gates are where this note lives — dashed-border gates fire on the extension track only."
+        />
+
         <H2>Why this note exists</H2>
         <P>
-          The point of starting stringent was to prove the gates hold where the data is easy before asking them to hold where it isn&rsquo;t. Two things about the new cases break the assumptions the original gates were built on.
+          The point of starting stringent was to show the gates operate cleanly where the data is easy before asking them to hold where it isn&rsquo;t. Two things about the new cases break the assumptions the original gates were built on.
         </P>
         <P>
           <B>The numbers stop being counts.</B> The{" "}
@@ -8001,7 +8029,7 @@ export const ESSAYS: Essay[] = [
           <B>2. Suppression as a cell state.</B> A survey cell is one of three things: present, suppressed (below the disclosure threshold), or missing (the state didn&rsquo;t field it). It is never zero, and zero is never allowed to stand in for either of the other two. A new gate fails the build if a suppressed or missing cell renders as a number or as a bar of height zero. Small cells at state by race by poverty-band are the rule rather than the exception, so this gate earns its keep immediately.
         </P>
         <P>
-          <B>3. Version crosswalk.</B> When an instrument is redesigned, series that cross the redesign are not comparable. NSCH&rsquo;s 2016 redesign is the worked example: any flourishing chart that spans 2016 is simply wrong. A new gate blocks any series that crosses an instrument boundary unless a documented crosswalk is registered for that boundary. Same discipline applies within-series for item drift: if an item&rsquo;s wording or response options changed between releases, pooling across the change is blocked until the change is disclosed. The crosswalk is the semantic layer that keeps two differently-worded instruments from being silently averaged into one trend.
+          <B>3. Version crosswalk.</B> When an instrument is redesigned, series that cross the redesign are not comparable. NSCH&rsquo;s 2016 redesign is the worked example: any flourishing chart that spans 2016 is simply wrong. The extension track enforces this structurally: the warehouse ingests only from the current instrument version onward (raw_flourishing_ext starts at 2016), so a series cannot cross an instrument boundary because the pre-boundary data is not present. Registering a documented crosswalk before extending the warehouse back across a boundary is the discipline; promoting the check to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. Same discipline applies within-series for item drift: if an item&rsquo;s wording or response options changed between releases, pooling across the change is disallowed until the change is disclosed. The crosswalk is the semantic layer that keeps two differently-worded instruments from being silently averaged into one trend.
         </P>
 
         <H2>Comparison honesty: three more gate revisions</H2>
@@ -8012,8 +8040,19 @@ export const ESSAYS: Essay[] = [
           <B>5. Lever typing.</B> A lever is now typed as point-in-time or continuous. The timing gate &mdash; the one that checks a number moved <I>after</I> its lever, not before &mdash; runs only on point-in-time levers and is marked explicitly not-applicable on continuous ones. This replaces the quiet dishonesty of inventing a pre/post for Title V just because the gate wanted a date. Naming the lever type is itself a finding the page should state.
         </P>
         <P>
-          <B>6. Uncertainty-aware &ldquo;did it move?&rdquo;</B> The NAEP panel already forces the note to say that a one- or two-point move isn&rsquo;t statistically distinguishable from noise. That logic generalizes: when a value carries a confidence interval, a change whose intervals overlap is reported as &ldquo;not distinguishable,&rdquo; full stop. The significance check stops being a NAEP special case and becomes a general CI-overlap gate every survey panel inherits.
+          <B>6. Uncertainty-aware &ldquo;did it move?&rdquo;</B> The NAEP panel already forces the note to say that a one- or two-point move isn&rsquo;t statistically distinguishable from noise. That logic generalizes: when a value carries a confidence interval, a change whose intervals overlap is reported as &ldquo;not distinguishable,&rdquo; full stop. The significance check stops being a NAEP special case and becomes a general CI-overlap caveat every survey panel must disclose &mdash; enforced by the required-caveats gate, which fails the build if the mandated significance phrase is missing from the panel&rsquo;s movement note.
         </P>
+
+        <H2>Implementation note: shapes of enforcement</H2>
+        <P>
+          These revisions differ in shape, and the difference is worth naming. Three ship as new discrete gates on the extension track (<code>assert_suppressed_never_zero_ext</code>, <code>assert_cross_unit_reconciled_ext</code>, <code>assert_lever_typing_ext</code>) &mdash; any failure stops the build. The CI-overlap check (gate 6) is enforced inside the required-caveats gate as a mandated disclosure: the panel&rsquo;s movement note must carry the significance caveat, or the build fails. It is a <I>disclosure gate</I>, not a numeric-comparison gate &mdash; and for a public dashboard, the disclosure is the point. The provenance-class distinction (gate 1) is a data-structure primitive underneath the extension track (raw_*_ext vs raw_*). Version crosswalk (gate 3) is enforced structurally: the extension warehouse only ingests from the current instrument version onward, so a chart cannot cross a boundary because the pre-boundary data is not present. Promoting the crosswalk to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. All six are inspectable in the repo; the shapes differ on purpose.
+        </P>
+
+        <Figure
+          src="/library/figures/pdds-two-tracks-one-engine.svg"
+          alt="PDDS two-track architecture — frozen six panels and extension panels sharing one engine"
+          caption="The two tracks in one view. The frozen six (maternal, naep, overdose, readmissions, scorecard, slds) are golden-locked — any drift stops the build. The extension track (NSCH, absenteeism, YRBS) is live and stays open so new panels can evolve before they earn a lock. Both tracks share ingest, the dbt-duckdb warehouse, and the AI narration layer; each has its own seeds, gates, and export. The extension track's gate set adds three extension-only asserts to the three base gates. The worked case that follows lives on the extension track."
+        />
 
         <H2>The worked case: chronic absenteeism, New Jersey first</H2>
         <P>
@@ -8052,7 +8091,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="auditing-an-ai-native-practice"
             title="Auditing an AI-native practice."
-            gloss="The audit that applied the same Kane-shaped validity discipline to AB&rsquo;s own operating model."
+            gloss="The audit that applied the same Kane-framed validity discipline to AB&rsquo;s own operating model."
           />
           <SeeAlsoItem
             slug="when-the-stakes-are-the-mission"
@@ -8103,7 +8142,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In 2017, I co-authored a manuscript submitted to <I>Natural Language Engineering</I> that opened with a claim I have not been able to un-see since. The claim was small, technical, and &mdash; for the automated-writing-evaluation field it was written into (automated writing evaluation, or AWE) &mdash; unfashionable. It read: &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo;
+            In 2017, I co-authored a paper published in <I>Assessing Writing</I> that opened with a claim I have not been able to un-see since. The claim was small, technical, and &mdash; for the automated-writing-evaluation field it was written into (automated writing evaluation, or AWE) &mdash; unfashionable. It read: &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo;
           </p>
           <p>
             The reference was Bennett &amp; Bejar (1997), and the argument was already twenty years old when we wrote it. Two more decades have passed. The modern AI evaluation discussion is now rebuilding that same argument in a different vocabulary, mostly without the source lineage that produced it the first time. Large-language-model-as-judge (LLM-as-judge) validation studies, disparate-performance benchmarks, red-teaming methodologies, benchmark contamination detection &mdash; the current wave of AI eval is rediscovering the discipline of measurement science with the frame that this is a new field.
@@ -8202,10 +8241,10 @@ export const ESSAYS: Essay[] = [
           The sharpest current question in AI evaluation is whether a model&rsquo;s benchmark performance carries over to real-world use. LLM leaderboards do not resolve this. A model that tops HELM can fail on a domain-specific customer workflow. Generalization from curated benchmarks to naturalistic user data is where deployed AI systems live or die, and modern eval methodology is still developing the tools for measuring it.
         </P>
         <P>
-          The classical automated-scoring literature confronted the same problem directly, and the receipts for that work sit in two manuscripts that were submitted for publication in 2017 and 2018 as I was leaving ETS. The first, submitted to <I>Natural Language Engineering</I> (Ramineni, Elliot, and colleagues, 2017), is the paper that carries the essay&rsquo;s opening thesis. Its central move is to argue that agreement with human scores on the same essays is a reliability indicator, not a validity strategy, and to propose naturalistic writing samples &mdash; writing produced under real conditions, not standardized-test conditions &mdash; as a stronger validity criterion. The second, an unpublished manuscript with Brent Bridgeman on the coursework study, executes the method: train new automated scoring models on first-year graduate coursework writing samples across disciplines, evaluated with a holistic rubric by trained human raters, and see whether features from an existing timed-essay scoring engine transfer. The result was informative in both directions. The features applied. But their weights in the coursework model diverged substantially from their weights in the timed-essay model.
+          The classical automated-scoring literature confronted the same problem directly, and the receipt for that work sits in the 2017 paper I co-authored with Brent Bridgeman, published in <I>Assessing Writing</I> (Bridgeman &amp; Ramineni, 2017). The paper carries the essay&rsquo;s opening thesis &mdash; that agreement with human scores on the same essays is a reliability indicator, not a validity strategy &mdash; and proposes naturalistic writing samples (writing produced under real conditions, not standardized-test conditions) as a stronger validity criterion. It executes the method by training new automated scoring models on first-year graduate coursework writing samples across disciplines, evaluated with a holistic rubric by trained human raters, and testing whether features from an existing timed-essay scoring engine transfer. The result was informative in both directions. The features applied. But their weights in the coursework model diverged substantially from their weights in the timed-essay model.
         </P>
         <P>
-          That divergence is the classical version of the modern generalization question. A scoring model trained on one construct-representation (timed impromptu writing) does not automatically hold on another (untimed authentic coursework), even when the underlying construct (writing quality) is nominally the same. The features carry across; the weightings do not. Modern AI eval is discovering the same pattern with LLM benchmark-to-production drift. The evidence for it in the automated-scoring literature has been sitting in unpublished manuscripts for eight years.
+          That divergence is the classical version of the modern generalization question. A scoring model trained on one construct-representation (timed impromptu writing) does not automatically hold on another (untimed authentic coursework), even when the underlying construct (writing quality) is nominally the same. The features carry across; the weightings do not. Modern AI eval is discovering the same pattern with LLM benchmark-to-production drift. The evidence for it in the automated-scoring literature has been on the record for eight years.
         </P>
 
         <H2>8. Responsible-AI framing at the point of deployment.</H2>
@@ -8235,16 +8274,16 @@ export const ESSAYS: Essay[] = [
           Bejar, I. I., Flor, M., Futagi, Y., &amp; Ramineni, C. (2014). On the vulnerability of automated scoring to construct-irrelevant response strategies (CIRS): An illustration. <I>Assessing Writing, 22</I>, 48&ndash;59.
         </P>
         <P>
+          Bennett, R. E., &amp; Bejar, I. I. (1997). <I>Validity and automated scoring: It&rsquo;s not only the scoring.</I> ETS Research Report Series, RR-97-19. (Also published in <I>Educational Measurement: Issues and Practice, 17</I>(4), 9&ndash;17, 1998.)
+        </P>
+        <P>
+          Bridgeman, B., &amp; Ramineni, C. (2017). Design and evaluation of automated writing evaluation models: Relationships with writing in naturalistic settings. <I>Assessing Writing, 34</I>, 62&ndash;71.
+        </P>
+        <P>
           Higgins, D., Ramineni, C., &amp; Zechner, K. (2015). The use of learner corpora to support automated scoring of test responses. In S. Granger, G. Gilquin, &amp; F. Meunier (Eds.), <I>The Cambridge Handbook of Learner Corpus Research</I> (pp. 587&ndash;604). Cambridge University Press.
         </P>
         <P>
           Ramineni, C. (2015, March). <I>Risks and Rewards of Digital Data: Case of Automated Writing Evaluation.</I> Presentation at the annual Conference on College Composition and Communication, Tampa, FL.
-        </P>
-        <P>
-          Ramineni, C., &amp; Bridgeman, B. <I>Automated Evaluation of Coursework Writing Samples.</I> Unpublished manuscript.
-        </P>
-        <P>
-          Ramineni, C., Elliot, N., et al. (2017, September). <I>Design and Evaluation of Automated Writing Evaluation Models: Relationships with Writing in Naturalistic Settings.</I> Manuscript submitted to <I>Natural Language Engineering.</I>
         </P>
         <P>
           Ramineni, C., Li, C., &amp; Breyer, F. J. (2012, April). <I>Understanding mean score differences between automated and human scores using Classification and Regression Trees.</I> Paper presented at the annual meeting of NCME, Vancouver.
@@ -8292,7 +8331,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written August 2026 for the Analytic Bytes Library. The piece draws on twelve years of published and unpublished automated-scoring research produced at Educational Testing Service between 2012 and 2018, and on the recognition &mdash; surfacing repeatedly across the library work of the last few months &mdash; that the modern AI evaluation field is rebuilding a discipline the automated-scoring literature already carried. The eight bridges are the ones with citations in my own record; a fuller map of the classical measurement-science literature on this question would run longer.
+          Written August 2026 for the Analytic Bytes Library. The piece draws on seven years of automated-scoring research produced during my time at Educational Testing Service (2009&ndash;2016), with publications appearing between 2012 and 2018, and on the recognition &mdash; surfacing repeatedly across the library work of the last few months &mdash; that the modern AI evaluation field is rebuilding a discipline the automated-scoring literature already carried. The eight bridges are the ones with citations in my own record; a fuller map of the classical measurement-science literature on this question would run longer.
         </MetaNote>
       </>
     ),
