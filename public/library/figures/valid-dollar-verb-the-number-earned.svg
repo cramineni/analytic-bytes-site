@@ -49,7 +49,4 @@
     <text x="750" y="540" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500" font-style="italic" fill="#94A3B8">the verb that survives</text>
     <text x="750" y="562" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">whatever the rivals leave standing</text>
   </g>
-
-  <!-- sign-off -->
-  <text x="1128" y="612" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#94A3B8" letter-spacing="1">Analytic Bytes &#183; 2026</text>
 </svg>

@@ -125,7 +125,4 @@
   <!-- Footer note -->
   <text x="700" y="825" text-anchor="middle" font-size="12" font-style="italic" class="ink-3">Same problems. Different vocabulary. The discipline for asking whether an AI system measures what its label claims was built in measurement science, decades before &#8220;AI eval&#8221; was a term.</text>
 
-  <!-- Signature -->
-  <line x1="620" y1="860" x2="780" y2="860" stroke="#94A3B8" stroke-width="1"/>
-  <text x="700" y="882" text-anchor="middle" font-size="10.5" letter-spacing="2.5" class="ink-3">ANALYTIC BYTES  ·  2026</text>
 </svg>
