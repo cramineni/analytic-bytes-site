@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Two ledgers for the same search</title>
+<desc>Two columns side by side describing a single hiring search. The left column, the employer’s ledger, lists seven quantities that are measured, dashboarded and reviewed: time-to-fill, cost-per-hire, quality-of-hire, source-of-hire, offer-acceptance rate, applicants per opening, and funnel conversion by stage. Each is drawn as a solid navy row. The right column is the candidate’s side and is split in two. The upper half, drawn in dashed grey, lists five quantities counted by nobody: hours spent on an application, unpaid performance tasks completed, interviews prepared for and never discussed, reschedules and silences absorbed, and the cost of the waiting. The lower half, drawn in teal, lists five quantities a candidate can count because the employer sets them: rounds required, performance tasks assigned, elapsed days to a decision, people met, and requirements added after the measurement. The figure notes that only the teal group is identifiable, because it does not move when the candidate’s own effort or production cost moves.</desc>
+<rect width="1200" height="700" fill="#FFFFFF"/>
+<path d="M60,52 L60,42 L530,42" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+<path d="M620,42 L1140,42 L1140,52" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+<text x="600.0" y="47.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#94A3B8" font-style="italic" text-anchor="middle">one search</text>
+<text x="60.0" y="88.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" font-weight="600" letter-spacing="2.2">THE EMPLOYER’S LEDGER</text>
+<text x="60.0" y="109.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#475569" font-style="italic">Measured, dashboarded, and reviewed</text>
+<text x="620.0" y="88.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0F2A4A" font-weight="600" letter-spacing="2.2">THE CANDIDATE’S LEDGER</text>
+<text x="620.0" y="109.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#475569" font-style="italic">No standard instrument exists</text>
+<line x1="60" y1="124" x2="530" y2="124" stroke="#0F2A4A" stroke-width="1.4"/>
+<line x1="620" y1="124" x2="1140" y2="124" stroke="#0F2A4A" stroke-width="1.4"/>
+<rect x="60" y="150" width="470" height="32" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="74" y="162" width="9" height="9" fill="#0F2A4A"/>
+<text x="96.0" y="171.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Time-to-fill</text>
+<rect x="60" y="192" width="470" height="32" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="74" y="204" width="9" height="9" fill="#0F2A4A"/>
+<text x="96.0" y="213.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Cost-per-hire</text>
+<rect x="60" y="234" width="470" height="32" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="74" y="246" width="9" height="9" fill="#0F2A4A"/>
+<text x="96.0" y="255.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Quality-of-hire</text>
+<rect x="60" y="276" width="470" height="32" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="74" y="288" width="9" height="9" fill="#0F2A4A"/>
+<text x="96.0" y="297.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Source-of-hire</text>
+<rect x="60" y="318" width="470" height="32" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="74" y="330" width="9" height="9" fill="#0F2A4A"/>
+<text x="96.0" y="339.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Offer-acceptance rate</text>
+<rect x="60" y="360" width="470" height="32" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="74" y="372" width="9" height="9" fill="#0F2A4A"/>
+<text x="96.0" y="381.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Applicants per opening</text>
+<rect x="60" y="402" width="470" height="32" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="74" y="414" width="9" height="9" fill="#0F2A4A"/>
+<text x="96.0" y="423.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Funnel conversion by stage</text>
+<text x="620.0" y="138.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#94A3B8" font-weight="600" letter-spacing="1.2">Borne by the candidate — counted by nobody</text>
+<rect x="620" y="158" width="520" height="32" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="634" y="170" width="9" height="9" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="2 2"/>
+<text x="656.0" y="179.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#475569">Hours spent on a single application</text>
+<rect x="620" y="200" width="520" height="32" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="634" y="212" width="9" height="9" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="2 2"/>
+<text x="656.0" y="221.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#475569">Unpaid performance tasks completed</text>
+<rect x="620" y="242" width="520" height="32" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="634" y="254" width="9" height="9" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="2 2"/>
+<text x="656.0" y="263.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#475569">Interviews prepared for, then never discussed</text>
+<rect x="620" y="284" width="520" height="32" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="634" y="296" width="9" height="9" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="2 2"/>
+<text x="656.0" y="305.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#475569">Reschedules and silences absorbed</text>
+<rect x="620" y="326" width="520" height="32" rx="3" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 3"/>
+<rect x="634" y="338" width="9" height="9" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="2 2"/>
+<text x="656.0" y="347.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#475569">The cost of the waiting itself</text>
+<line x1="620" y1="398" x2="1140" y2="398" stroke="#E2E8F0" stroke-width="1"/>
+<text x="620.0" y="422.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" fill="#0EA5E9" font-weight="600" letter-spacing="1.2">Set by the employer — so a candidate can count them</text>
+<rect x="620" y="438" width="520" height="32" rx="3" fill="none" stroke="#0EA5E9" stroke-width="1.2"/>
+<rect x="634" y="450" width="9" height="9" fill="none" stroke="#0EA5E9" stroke-width="1.6"/>
+<text x="656.0" y="459.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Rounds required</text>
+<rect x="620" y="480" width="520" height="32" rx="3" fill="none" stroke="#0EA5E9" stroke-width="1.2"/>
+<rect x="634" y="492" width="9" height="9" fill="none" stroke="#0EA5E9" stroke-width="1.6"/>
+<text x="656.0" y="501.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Performance tasks assigned</text>
+<rect x="620" y="522" width="520" height="32" rx="3" fill="none" stroke="#0EA5E9" stroke-width="1.2"/>
+<rect x="634" y="534" width="9" height="9" fill="none" stroke="#0EA5E9" stroke-width="1.6"/>
+<text x="656.0" y="543.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Elapsed days from first contact to decision</text>
+<rect x="620" y="564" width="520" height="32" rx="3" fill="none" stroke="#0EA5E9" stroke-width="1.2"/>
+<rect x="634" y="576" width="9" height="9" fill="none" stroke="#0EA5E9" stroke-width="1.6"/>
+<text x="656.0" y="585.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">People met</text>
+<rect x="620" y="606" width="520" height="32" rx="3" fill="none" stroke="#0EA5E9" stroke-width="1.2"/>
+<rect x="634" y="618" width="9" height="9" fill="none" stroke="#0EA5E9" stroke-width="1.6"/>
+<text x="656.0" y="627.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Requirements added after the measurement</text>
+<text x="60.0" y="486.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#475569">The left column is standard practice. Nothing on the right</text>
+<text x="60.0" y="506.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#475569">is collected by anyone, by either party, anywhere.</text>
+<text x="60.0" y="540.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Only the teal group is identifiable. Those quantities do not</text>
+<text x="60.0" y="560.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">move when the candidate’s effort or production cost moves,</text>
+<text x="60.0" y="580.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">which is what makes them countable at all.</text>
+</svg>
