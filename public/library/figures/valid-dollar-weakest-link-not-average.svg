@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">The score is the weakest link, not the average</title>
+  <desc id="desc">Four inference links behind an impact number shown as bars. Three are strong; the fourth, contribution, is weak. An averaged verdict sits high and reads healthy. The minimum verdict sits at the weak link. The band between the two is what a composite figure conceals.</desc>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
+
+  <!-- eyebrow -->
+  <text x="72" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3">FIGURE &#183; THE VALID DOLLAR</text>
+
+  <!-- title -->
+  <text x="72" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#0F2A4A">The score is the weakest link, not the average</text>
+  <text x="72" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">One broken inference caps the claim, however strong the other three.</text>
+
+  <!-- divider -->
+  <line x1="72" y1="182" x2="1128" y2="182" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- column headers -->
+  <text x="120" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">THE FOUR INFERENCES BEHIND AN IMPACT NUMBER</text>
+  <text x="820" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">VERDICT</text>
+
+  <!-- bars: three strong, one weak -->
+  <rect x="140" y="296" width="120" height="204" fill="#0EA5E9"/>
+  <rect x="300" y="308" width="120" height="192" fill="#0EA5E9"/>
+  <rect x="460" y="296" width="120" height="204" fill="#0EA5E9"/>
+  <rect x="620" y="428" width="120" height="72" fill="#F59E0B"/>
+
+  <!-- link numbers, each above its own bar -->
+  <text x="200" y="284" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#94A3B8">1</text>
+  <text x="360" y="296" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#94A3B8">2</text>
+  <text x="520" y="284" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#94A3B8">3</text>
+  <text x="680" y="416" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" fill="#B45309">4</text>
+
+  <!-- average line (what a composite reports) -->
+  <line x1="120" y1="332" x2="800" y2="332" stroke="#64748B" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- minimum line (what validity reports) -->
+  <line x1="120" y1="428" x2="800" y2="428" stroke="#0F2A4A" stroke-width="3"/>
+
+  <!-- baseline -->
+  <line x1="120" y1="500" x2="800" y2="500" stroke="#CBD5E1" stroke-width="1"/>
+
+  <!-- bracket measuring the distance the composite hides -->
+  <line x1="778" y1="332" x2="778" y2="428" stroke="#B45309" stroke-width="1.5"/>
+  <line x1="770" y1="332" x2="786" y2="332" stroke="#B45309" stroke-width="1.5"/>
+  <line x1="770" y1="428" x2="786" y2="428" stroke="#B45309" stroke-width="1.5"/>
+
+  <!-- verdict labels -->
+  <text x="820" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="600" fill="#94A3B8">AVERAGE</text>
+  <text x="820" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">the composite reads healthy</text>
+
+  <text x="820" y="422" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="700" fill="#0EA5E9">MINIMUM</text>
+  <text x="820" y="446" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">what the claim can actually carry</text>
+
+  <!-- bar labels -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" text-anchor="middle">
+    <text x="200" y="526" font-weight="600" fill="#0F2A4A">Measure</text>
+    <text x="200" y="544" font-weight="400" fill="#475569">it right</text>
+
+    <text x="360" y="526" font-weight="600" fill="#0F2A4A">Real,</text>
+    <text x="360" y="544" font-weight="400" fill="#475569">not noise</text>
+
+    <text x="520" y="526" font-weight="600" fill="#0F2A4A">Reflects</text>
+    <text x="520" y="544" font-weight="400" fill="#475569">what matters</text>
+
+    <text x="680" y="526" font-weight="700" fill="#B45309">Worth acting on,</text>
+    <text x="680" y="544" font-weight="600" fill="#B45309">and ours</text>
+  </g>
+
+  <!-- footer note -->
+  <text x="72" y="596" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">The verdict is the minimum of the four, never the average. The distance between the two lines is what a composite figure hides.</text>
+</svg>

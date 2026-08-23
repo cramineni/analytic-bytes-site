@@ -4686,15 +4686,17 @@ export const ESSAYS: Essay[] = [
 
         <H2>The Free Guard Zone</H2>
         <P>
-          Curling. For the first four rocks of every end, no stone in the
-          free guard zone (the area between the hog line and the house,
-          outside the rings) can be removed from play. The rule was added
+          Curling. For the first five rocks of every end, no stone in the
+          free guard zone (the area between the hog line and the tee line,
+          excluding the house) can be removed from play. The rule arrived
           in the 1990s after every team converged on the same strategy:
-          take out, take out, take out. The dominant strategy worked. It
-          also collapsed the game &mdash; low scores, sterile play. The
-          rule was added not to tell players what to do, but to prevent
-          rational optimization from destroying the thing the game was
-          built to be.
+          take out, take out, take out. It has been widened since &mdash;
+          the current five-rock version has been in force in international
+          play since the 2018&ndash;19 season. The dominant strategy
+          worked. It also collapsed the game &mdash; low scores, sterile
+          play. The rule was added not to tell players what to do, but to
+          prevent rational optimization from destroying the thing the game
+          was built to be.
         </P>
         <P>
           This is <a
@@ -4707,7 +4709,7 @@ export const ESSAYS: Essay[] = [
           </a> built into the rules, not just cited as a warning. (Originally Charles Goodhart&rsquo;s 1975 observation that statistical regularities collapse once they are targeted for policy, popularly reformulated by Marilyn Strathern in 1997 as <I>“when a measure becomes a target, it ceases to be a good measure.”</I>) Every metric eventually gets gamed. Every KPI eventually rewards the behavior that hits the number rather than the behavior the number was meant to encourage. Every growth-at-all-costs strategy eventually hollows the product. The discipline isn&rsquo;t asking whether the metric will get gamed — it will. The discipline is writing the rule that stops the gaming from destroying what the metric was meant to measure. A funder whose impact metric inadvertently rewards risk-averse program design needs the Free Guard Zone equivalent: the rule that prevents the rational pursuit of the metric from killing what the metric was meant to encourage. Almost no funder has that rule written down.
         </P>
         <P>
-          Measurement scientists have a name for the pattern the Free Guard Zone was written to prevent: <B>construct-irrelevant strategies</B> — responses that hit the score without demonstrating the thing the score was built to measure. <a href="https://en.wikipedia.org/wiki/Samuel_Messick" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Samuel Messick</a> built the modern validity framework around exactly this failure mode. <InternalLink slug="what-is-this-system-measuring">What is this system actually measuring?</InternalLink> is where I apply that framework to AI systems. The AI benchmark community has been rediscovering it under other names — reward hacking, specification gaming, Goodhart taxonomy — as models learn to score high on evaluations without learning the underlying skill. Same problem, different domain. That&rsquo;s why the weird rule has to be written before the metric ships.
+          Measurement scientists have a name for the pattern the Free Guard Zone was written to prevent: <B>construct-irrelevant strategies</B> — responses that hit the score without demonstrating the thing the score was built to measure. <a href="https://en.wikipedia.org/wiki/Samuel_Messick" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Samuel Messick</a> built the modern validity framework around exactly this failure mode. The AI benchmark community has been rediscovering it under other names — reward hacking, specification gaming, Goodhart taxonomy — as models learn to score high on evaluations without learning the underlying skill. Same problem, different domain. That&rsquo;s why the weird rule has to be written before the metric ships.
         </P>
 
         <H2>Soccer Offside</H2>
@@ -4778,7 +4780,7 @@ export const ESSAYS: Essay[] = [
         <H2>The Baton Exchange Zone</H2>
         <P>
           Track and field, the 4&times;100 relay. Runners must complete the
-          baton handoff within a 20-meter exchange zone. The fastest team
+          baton handoff within a 30-meter exchange zone. The fastest team
           does not win. The team with the cleanest handoffs wins. The
           interface (the place where one runner meets the next) is where
           the race is decided. A team with four world-record-holding
@@ -4793,8 +4795,8 @@ export const ESSAYS: Essay[] = [
 
         <H2>Five structural lessons</H2>
         <P>
-          Five rules. Five structural lessons. None of them describes
-          normal play.
+          Those are the five rules, and none of them describes normal
+          play.
         </P>
         <P>
           The rules that matter most in any <InternalLink slug="the-decision-system">decision system</InternalLink> are not the
@@ -5299,19 +5301,19 @@ export const ESSAYS: Essay[] = [
 
         <Brief>
           <p>
-            NextLadder Ventures and GitLab Foundation just handed the economic-mobility field something it genuinely lacked: a common unit. Dollars in Pockets converts wages earned, fees avoided, benefits accessed, and time saved into one comparable figure &mdash; the way global health built the DALY to compare a vaccine against a surgery. That is real progress and it earns its place. It also surfaces a sharper question, the one that arrives the moment the number is on the table: does the argument from that number to <I>&ldquo;our capital produced this&rdquo;</I> actually hold? A magnitude tells you how big a claim is. It does not tell you whether the claim is sound. This note is about that difference, and about the small discipline that closes it.
+            NextLadder Ventures and GitLab Foundation just handed the economic-mobility field something it genuinely lacked: a common unit. Dollars in Pockets converts wages gained, fees avoided, time saved, benefits accessed, and savings built into one comparable figure &mdash; the way global health built the DALY to compare a vaccine against a surgery. That is real progress and it earns its place. It also surfaces a sharper question, the one that arrives the moment the number is on the table: does the argument from that number to <I>&ldquo;our capital produced this&rdquo;</I> actually hold? A magnitude tells you how big a claim is. It does not tell you whether the claim is sound. This note is about that difference, and about the small discipline that closes it.
           </p>
         </Brief>
 
         <H2>Getting to a common unit was the hard part</H2>
         <P>
-          For years the economic-mobility field measured in units that don&rsquo;t convert. Venture returns count what the investor gets back. Philanthropic reporting counts how many people were reached. Neither tells you whether one intervention did more good per dollar than another, and neither lets you weigh a legal-aid tool against a benefits app against a jobs platform. The evidence was rich and stubbornly incomparable.
+          For years the economic-mobility field measured in units that don&rsquo;t convert. The authors&rsquo; own diagnosis is the right one: a venture return describes what comes back to the investor, and a philanthropic report describes how many people an intervention touched. Neither answers the question a funder is actually holding &mdash; did this do more good per dollar than the alternative? &mdash; and neither lets you weigh a legal-aid tool against a benefits app against a jobs platform. The evidence was rich and stubbornly incomparable.
         </P>
         <P>
-          It was not for lack of trying. The field already had shared vocabularies &mdash; the Global Impact Investing Network (GIIN)&rsquo;s <a href="https://iris.thegiin.org/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IRIS+ catalog</a> of standardized impact metrics, and Social Return on Investment (SROI)&rsquo;s older tradition of monetizing outcomes into a return ratio. But IRIS+ is a menu of indicators, not a single convertible number, and SROI produced a ratio without ever settling what the ratio was denominated in. Both got close to comparability and stopped just short of a common unit. That last step is the one Dollars in Pockets actually takes.
+          It was not for lack of trying, and the authors are careful to say so: they credit a lineage that includes the Robin Hood Foundation, Bridgespan, and TPG&rsquo;s Y Analytics. Alongside that work the field also carried shared vocabularies &mdash; the Global Impact Investing Network (GIIN)&rsquo;s <a href="https://iris.thegiin.org/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IRIS+ catalog</a> of standardized impact metrics, and Social Return on Investment (SROI)&rsquo;s older tradition of monetizing outcomes into a return ratio. But IRIS+ is a menu of indicators, not a single convertible number. And SROI, which does denominate its ratio in currency, leaves the valuation proxies behind that currency to be selected study by study &mdash; so one organization&rsquo;s ratio is rarely comparable to another&rsquo;s. Both got close to comparability and stopped just short of a common unit. That last step is the one Dollars in Pockets actually takes.
         </P>
         <P>
-          Dollars in Pockets closes that gap the way health systems closed theirs. Faced with funding vaccines, surgeries, and mental-health care out of one budget, health built the disability-adjusted life year &mdash; a single unit for how much healthy life a dollar buys. Dollars in Pockets does the same trick for money: a dollar of legal fees avoided, a dollar of wages earned, and a dollar of benefits accessed are different financial events, but converted into one comprehensive unit (a real dollar in someone&rsquo;s pocket), they become comparable, and so do the technologies that produce them. That is the move the field needed. It is not a small thing to have made.
+          The authors draw the analogy themselves, and it is the right analogy. Global health once faced the same problem: vaccines, surgeries, and mental-health care all funded from one budget, with no way to rank them against each other. It answered by building the disability-adjusted life year &mdash; a single unit expressing what a dollar buys in healthy life. Their claim is that money admits the same treatment. Fees avoided, wages earned, and benefits accessed are financially distinct events; denominate them in one unit and they become comparable, and the interventions producing them become comparable with them. That is the move the field needed. It is not a small thing to have made.
         </P>
 
         <H2>A magnitude is not a validity</H2>
@@ -5319,32 +5321,44 @@ export const ESSAYS: Essay[] = [
           Here is the question a common unit raises but does not answer. Dollars in Pockets tells you <I>how much</I>. It does not tell you <I>how much of it you can stand behind.</I> Those are two different questions, and only the first one usually gets graded.
         </P>
         <P>
-          Good arithmetic can sit on a weak inference. A $10-to-$1 return built by summing three pathways is only as sound as its softest pathway &mdash; and summing is precisely the operation that lets a strong pathway carry a weak one across the finish line. The total reads healthy while one of its parts is doing work the evidence can&rsquo;t support. The number isn&rsquo;t wrong. It&rsquo;s un-audited in the one place that decides whether it&rsquo;s real.
+          Good arithmetic can sit on a weak inference. Any return built by summing pathways is only as sound as its softest pathway &mdash; and summing is precisely the operation that lets a strong pathway carry a weak one across the finish line. The total reads healthy while one of its parts is doing work the evidence can&rsquo;t support. The number isn&rsquo;t wrong. It&rsquo;s un-audited in the one place that decides whether it&rsquo;s real.
         </P>
         <P>
           And un-audited is a worse place to be the moment the number becomes a target. Goodhart&rsquo;s law is the standing warning: once a fund optimizes toward its Dollars in Pockets ratio, the cheapest way to move it is to lean harder on the softest pathway &mdash; the very link the composite already hides. A metric that can&rsquo;t show its weakest inference quietly rewards inflating it.
         </P>
         <P>
-          Take the piece&rsquo;s own worked example, <a href="https://rasa.legal/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Rasa Legal</a>, whose tool helps people clear eligible criminal records. Its Dollars in Pockets figure sums three pathways: legal fees avoided, wage gains that follow a cleared record, and savings from reduced housing instability. Look at the three side by side and they are not equally certain. Fees avoided is close to immediate and direct &mdash; the record is cleared, the fee is not paid. But &ldquo;wage gains that follow a cleared record&rdquo; and &ldquo;savings from more stable housing&rdquo; each depend on a chain of contribution holding: that the clearance causes the job, that the job causes the housing, and that none of it would have happened anyway. Those are the softer links. Sum the three into one figure and the near-certainty of pathway one quietly underwrites the causal reach of pathways two and three. The composite can&rsquo;t tell you which pathway carries the weakest inference. That isn&rsquo;t a flaw in Rasa Legal; it&rsquo;s a property of adding.
+          The authors have an answer to this, and it is a fair one. They say the ratio is one input among several, weighed alongside team strength, strategic alignment, organizational effectiveness, execution and evidence risk, and expert judgment. I take them at their word. The difficulty is that this is a governance commitment held by the people who built the measure, not a property of the measure itself. Commitments of that kind travel less well than numbers do. Dollars in Pockets is designed to spread &mdash; that is the whole point of a common unit &mdash; and the funders who adopt it later will inherit the ratio without inheriting the restraint that currently surrounds it. A gate built into the number survives the journey. A norm standing next to the number may not.
         </P>
         <P>
-          One caveat. The three-pathway structure above is inferred from the published article, not read off Dollars in Pockets&rsquo; full methodology. If that methodology already reports per-pathway confidence &mdash; grading fees-avoided, wage-gain, and housing-stability separately rather than only in the blend &mdash; then the point here narrows: not &ldquo;the composite hides the weak link&rdquo; but &ldquo;surface that per-pathway confidence next to the headline number, where a reader can see it.&rdquo; Either way the discipline is the same. The only question is whether it&rsquo;s already being done and simply not shown.
+          Take the piece&rsquo;s own worked example, <a href="https://rasa-legal.com/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Rasa Legal</a>, whose tool helps people clear eligible criminal records. The authors assess it across three named pathways: legal fees avoided, wage gains that follow a cleared record, and savings from reduced housing instability. They draw on Rasa&rsquo;s own data and outside research to estimate how often each benefit actually occurs, compare each against a researched counterfactual, then sum the three and divide by the investment required. No Rasa-specific ratio is published; what is published is the structure. The structure is enough to make the point.
+        </P>
+        <P>
+          Look at the three pathways side by side and they are not equally certain. Fees avoided is close to immediate and direct &mdash; the record is cleared, the fee is not paid. But &ldquo;wage gains that follow a cleared record&rdquo; and &ldquo;savings from more stable housing&rdquo; each depend on a chain of contribution holding: that the clearance causes the job, that the job causes the housing, and that none of it would have happened anyway. Those are the softer links. Sum the three into one figure and the near-certainty of pathway one quietly underwrites the causal reach of pathways two and three. The composite can&rsquo;t tell you which pathway carries the weakest inference. That isn&rsquo;t a flaw in Rasa Legal; it&rsquo;s a property of adding.
+        </P>
+        <P>
+          One caveat, and it matters. The three pathways above are named in the published article, but the complete methodology behind them is not yet public &mdash; the authors say they intend to publish it. So the question this essay raises cannot be settled from outside. Does that methodology already report per-pathway confidence, grading fees-avoided, wage-gain, and housing-stability separately rather than only in the blend? If it does, the point here narrows: not &ldquo;the composite hides the weak link&rdquo; but &ldquo;surface that per-pathway confidence next to the headline number, where a reader can see it.&rdquo; Either way the discipline is the same. The open question is only whether it is already being done and simply not shown.
         </P>
 
         <H2>What Dollars in Pockets already gets right &mdash; and where the gap actually is</H2>
         <P>
-          It would be easy, and wrong, to say the field just needs more rigor. Dollars in Pockets already does the things a naive critic would demand. It models returns against researched counterfactual scenarios and counts only the difference. It discounts for uncertainty and the time value of money and marks down optimistic projections. It weights every assumption by the strength of the evidence behind it. It validates after the fact through independent methods &mdash; Opportunity Insights on the venture side, grantee-run evaluation on the foundation side. That is most of a validity argument, already in motion, and it is more discipline than most of the field brings.
+          It would be easy, and wrong, to say the field just needs more rigor. Dollars in Pockets already does most of what a naive critic would demand, and the authors describe the practice in their own words: they &ldquo;mark down optimistic projections, and weight every assumption by the strength of the evidence behind it.&rdquo; Each modelled return is set against a researched counterfactual, and only the difference is counted. After the money moves, the estimate is tested independently &mdash; Opportunity Insights on the venture side, grantee-run measurement and evaluation on the foundation side.
         </P>
         <P>
-          The gap sits elsewhere. All of that rigor still resolves into a single reported magnitude, and the place these claims actually break (contribution, additionality, the &ldquo;would this have happened anyway&rdquo;) is the one link a blended ratio is built to hide. The rigor went in. The composite let it back out.
+          Two further choices deserve more credit than a critic would naturally give them. The first is the benchmark. NextLadder sets its ten-to-one target against direct cash transfers, on the reasoning that a dollar handed to someone is a dollar received, and that any more complicated intervention should have to clear that floor. Anchoring to the least flattering comparison available is the most disciplined single decision in the framework, and it is the opposite of the behavior a skeptic arrives expecting. The second is volume. GitLab Foundation reports having applied the underlying ROI method across more than three hundred pre-investment impact models, and across two hundred grants, with sixty-five early grantees reporting results and two-thirds of those meeting internal return targets. That is an empirical base, not an assertion.
         </P>
         <P>
-          This is not a hypothetical failure mode. Analytic Bytes recently coded a decade of published youth-mental-health impact reports (ten organizations with traceable trajectories) against exactly this kind of inference chain. Rigor was the weakest link and the least likely to move: only two of the ten reached even modest gains in claim strength across ten years, and none reached the point where a causal claim is earned. The contribution link is not where these numbers happen to be thin. It is where the field is thin, systematically, and a blended magnitude is the instrument least likely to reveal it.
+          The authors also name a limit of their own. Under the heading of what they still cannot measure, they say Dollars in Pockets addresses economic success but not empowerment or dignity, and that they are still building yardsticks for those. That is an honest admission, and it is a different admission from the one this essay is pressing. Theirs is a limit of <B>scope</B> &mdash; which parts of a life the unit covers. Mine is a limit of <B>inference</B> &mdash; whether the number, inside the scope it already covers, supports the claim being made on it. A measure can have perfect scope and still fail the second test. Widening the unit to include dignity would not close the gap named here; it would give the same inference problem more surface area.
+        </P>
+        <P>
+          So the gap sits elsewhere. All of that rigor still resolves into a single reported magnitude, and the place these claims actually break (contribution, additionality, the &ldquo;would this have happened anyway&rdquo;) is the one link a blended ratio is built to hide. The rigor went in. The composite let it back out.
+        </P>
+        <P>
+          This is not a hypothetical failure mode. Analytic Bytes has been coding a decade of published youth-mental-health impact reporting against exactly this kind of inference chain &mdash; organizations read at both ends of the decade, against criteria locked before the longitudinal pass. Of the variables coded, only one moved much: the constructs organizations chose to measure. Rigor was not among them. The strength of claim the evidence could carry stayed roughly where it started. That work will be published in full separately; what matters here is its direction. The contribution link is not where these numbers happen to be thin. It is where the field is thin, and a blended magnitude is the instrument least likely to reveal it.
         </P>
 
         <H2>The gate: the weakest link, not the average</H2>
         <P>
-          There is a mature field that already solved a version of this &mdash; in testing. For fifty years, high-stakes assessment has treated a decision as a chain of inferences to be examined link by link (Kane), and has insisted that validity is a property of the <I>use</I> of a number, consequences included, not the number itself (Messick). Point that machinery at an impact figure and you get a small, hard discipline. Four questions, in operator language:
+          There is a mature field that already solved a version of this &mdash; in testing. For more than thirty years, high-stakes assessment has treated a decision as a chain of inferences to be examined link by link (Kane, 1992 &mdash; validation as an argument, with evidence aimed at the weakest assumption), and has insisted that validity is a property of the <I>use</I> of a number, consequences included, not of the number itself (Messick, 1989 &mdash; unified construct validity). Point that machinery at an impact figure and you get a small, hard discipline. Four questions, in operator language:
         </P>
         <NumList>
           <NumItem n={1}>
@@ -5363,8 +5377,18 @@ export const ESSAYS: Essay[] = [
         <P>
           The move that separates this from a maturity score is the scoring rule: the verdict is the <B>minimum</B> of the four, never the average. One red link caps the number no matter how strong the other three, because in an argument a single broken inference breaks the conclusion. Applied to a Dollars in Pockets figure, the score you report is not the ROI &mdash; it&rsquo;s the weakest link behind the ROI. And <I>where</I> it caps tells you exactly where the next evaluation dollar should go.
         </P>
+
+        <Figure
+          src="/library/figures/valid-dollar-weakest-link-not-average.svg"
+          alt="Four inference links behind an impact number shown as bars. Three are strong; the fourth — did our capital contribute — is weak. An averaged verdict sits high and reads healthy. The minimum verdict sits down at the weak link. The distance between the two is what a composite figure conceals."
+          caption="The score is the weakest link, not the average."
+        />
+
         <P>
-          It is worth naming what this is not. The responsible-AI frameworks a fund is likeliest to reach for &mdash; the National Institute of Standards and Technology (NIST)&rsquo;s <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">AI Risk Management Framework</a>, the EU AI Act&rsquo;s risk tiers &mdash; govern, map, measure, and manage, but none of them contains a validity inference: a test of whether the number actually supports the claim being made on it. That absence is not unique to impact capital. It is the same missing link, surfacing wherever a number is asked to justify a decision &mdash; the higher-education version of <InternalLink slug="what-is-this-system-measuring">the validity gate</InternalLink> is exactly this. The gate here is one instance of a discipline the whole responsible-measurement conversation is still missing.
+          Read the four as a chain rather than a scorecard and the asymmetry becomes obvious. Measurement, reliability, and construct relevance are the links a well-resourced fund is most likely to have handled. Contribution is the one it is least likely to have settled, and it is also the one carrying the whole weight of the word <I>produced</I>. Averaging lets the first three pay for the fourth. Taking the minimum refuses that trade.
+        </P>
+        <P>
+          It is worth naming what this is not. The responsible-AI frameworks a fund is likeliest to reach for do not close this gap either. The National Institute of Standards and Technology (NIST)&rsquo;s <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">AI Risk Management Framework</a> (2023) organizes its work into four functions &mdash; govern, map, measure, and manage. The EU AI Act (2024) sorts systems into risk tiers and attaches obligations to each tier. Neither contains a validity inference: a test of whether the number actually supports the claim being made on it. That absence is not unique to impact capital. It is the same missing link, surfacing wherever a number is asked to justify a decision &mdash; the higher-education version of <InternalLink slug="what-is-this-system-measuring">the validity gate</InternalLink> is exactly this. The gate here is one instance of a discipline the whole responsible-measurement conversation is still missing.
         </P>
 
         <H2>Validity tells you which verb the number earned</H2>
@@ -5388,7 +5412,7 @@ export const ESSAYS: Essay[] = [
           Where a controlled counterfactual isn&rsquo;t available, this is not a dead end &mdash; it&rsquo;s exactly the situation contribution analysis (Mayne) was built for: assemble the contribution story, then test it against the rival explanations that would make the outcome happen without you. The verb you earn is the verb that survives that test.
         </P>
         <P>
-          That is not a hedge. &ldquo;Here is our return, and here is exactly how much of it we can stand behind, and where it&rsquo;s thin&rdquo; is a stronger thing to say to a skeptical limited partner (LP) than a bigger number with no gate under it. Validity is what holds up when someone leans on it.
+          That is not a hedge. &ldquo;Here is our return, and here is exactly how much of it we can stand behind, and where it&rsquo;s thin&rdquo; is a stronger thing to say to a skeptical funder or board than a bigger number with no gate under it. Validity is what holds up when someone leans on it.
         </P>
 
         <H2>An invitation, taken up</H2>
@@ -5396,7 +5420,10 @@ export const ESSAYS: Essay[] = [
           The Dollars in Pockets authors asked the field to apply the measure to its own work and tell them where it breaks. This is that, offered in the same spirit and with real admiration for the thing they built. The point isn&rsquo;t a better metric; the metric is good. The reflex is what&rsquo;s missing: a fund asking <I>&ldquo;is that a valid dollar?&rdquo;</I> as automatically as it now asks <I>&ldquo;what&rsquo;s the ROI?&rdquo;</I>
         </P>
         <P>
-          There is a reason to build the reflex now, while Dollars in Pockets is still a voluntary standard. Mandating a measure does not make it valid. India&rsquo;s regulated regime already runs the experiment: <a href="https://www.mca.gov.in/Ministry/pdf/CompaniesAct2013.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Section 135 of the Companies Act</a> requires third-party corporate social responsibility (CSR) impact assessment, and the <a href="https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&type=SSE" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Securities and Exchange Board of India (SEBI) Social Stock Exchange</a> requires audited annual impact reports on a logic-model frame &mdash; and the pattern I&rsquo;ve watched play out is that regulation forces the <I>production</I> of impact numbers without forcing the <I>quality</I> of the inference behind them. A common unit will spread faster than the discipline to audit it. The gate is cheapest to install before the number is everywhere.
+          There is a reason to build the reflex now, while Dollars in Pockets is still a voluntary standard. The authors are already building for spread: they say they are developing AI-native tooling, in partnership with Anthropic, to make the measure easy to adopt. Tooling is how a measure becomes infrastructure, and infrastructure is expensive to add a gate to afterward.
+        </P>
+        <P>
+          Mandating a measure does not make it valid. India&rsquo;s regulated regime already runs the experiment. Rule 8(3) of the Companies (Corporate Social Responsibility Policy) Rules, as amended in 2021, requires large corporate spenders to commission independent impact assessment of their larger completed projects. India&rsquo;s Social Stock Exchange, regulated by the Securities and Exchange Board of India (SEBI), requires listed social enterprises to file annual impact reports assessed by a registered Social Impact Assessor, on a logic-model frame. Both are real obligations with real cost attached. And the pattern I&rsquo;ve watched play out is that regulation forces the <I>production</I> of impact numbers without forcing the <I>quality</I> of the inference behind them. A common unit will spread faster than the discipline to audit it. The gate is cheapest to install before the number is everywhere.
         </P>
         <P>
           This continues a line already drawn &mdash; that <InternalLink slug="the-reach-trap">reach is not outcome</InternalLink>, that <InternalLink slug="numbers-dont-agree">numbers which don&rsquo;t reconcile can&rsquo;t all be true</InternalLink>. A magnitude, however rigorously built, is not yet a validity. The impact field needs a sounder path from the number to the claim, with the weak link surfaced early, while it&rsquo;s still cheap to fix.
@@ -5426,7 +5453,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026). The critique is offered in the spirit of the authors&rsquo; own invitation to apply the measure to the field&rsquo;s work. The three-pathway structure attributed to Rasa Legal is inferred from the published article rather than read off the full Dollars in Pockets methodology; the caveat is preserved in the body.
+          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026; contributing authors Kyle Nelson, Tamsin Chen, Rhett Dornbach-Bender, and Ellie Bertani). The critique is offered in the spirit of the authors&rsquo; own invitation to apply the measure to the field&rsquo;s work and report where it breaks. Every description of Dollars in Pockets here is drawn from that published announcement. The complete methodology &mdash; the formulas, the discounting, the validation design &mdash; had not been published at the time of writing; the authors state their intention to publish it. Where this essay&rsquo;s argument depends on what that methodology does or does not report, the dependency is named in the body rather than assumed away. Revised 23 August 2026 to tighten attribution, separate NextLadder&rsquo;s fund-level ten-to-one target from the Rasa Legal worked example, and engage the authors&rsquo; stated position that ROI is one input among several. The same pass corrected the characterization of SROI, re-cited the Indian CSR impact-assessment requirement to Rule 8(3) of the CSR Policy Rules rather than to Section 135 of the Companies Act, separated the NIST AI RMF functions from the EU AI Act&rsquo;s risk tiers, and dated the Kane and Messick lineage. The youth-mental-health corpus finding is stated qualitatively here; the underlying longitudinal coding is not yet published, and the figures will be restored with a cross-reference when it is.
         </MetaNote>
       </>
     ),
