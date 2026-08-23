@@ -5356,7 +5356,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The gate: the weakest link, not the average</H2>
         <P>
-          There is a mature field that already solved a version of this &mdash; in testing. For more than thirty years, high-stakes assessment has treated a decision as a chain of inferences to be examined link by link (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 1992</a>: validation as an argument, with evidence aimed at the weakest assumption), and has insisted that validity is a property of the <I>use</I> of a number, consequences included, not of the number itself (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1989</a>: unified construct validity). Point that machinery at an impact figure and you get a small, hard discipline. Four questions, in operator language:
+          There is a mature field that already solved a version of this &mdash; in testing. For more than thirty years, high-stakes assessment has treated a decision as a chain of inferences to be examined link by link (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 1992</a>: validation as an argument, with evidence aimed at the weakest assumption), and has insisted that validity is a property of the <I>use</I> of a number, consequences included, not of the number itself (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1989</a>: unified construct validity). Point that machinery at an impact figure and you get a small, hard discipline. Four questions, in operator language &mdash; a translation of the argument-based approach for impact capital, not Kane&rsquo;s own four inferences restated:
         </P>
         <NumList>
           <NumItem n={1}>
@@ -5369,9 +5369,12 @@ export const ESSAYS: Essay[] = [
             <B>Reflects what matters</B> &mdash; does the thing measured stand in for the outcome we care about?
           </NumItem>
           <NumItem n={4}>
-            <B>Worth acting on, and ours</B> &mdash; is the effect big enough to move on, and did our capital contribute to it rather than ride alongside it?
+            <B>Ours, not adjacent</B> &mdash; did our capital contribute to the effect, or did it ride alongside something that would have happened anyway?
           </NumItem>
         </NumList>
+        <P>
+          Magnitude &mdash; <I>is the effect big enough to act on</I> &mdash; is deliberately not one of the four. It is a policy threshold, set by a fund&rsquo;s own bar for what counts as worth doing. The four ask whether the number means what it says. How large a meaningful number has to be before it justifies capital is a separate decision, and mixing the two lets a fund answer the easy question in place of the hard one.
+        </P>
         <P>
           The move that separates this from a maturity score is the scoring rule: the verdict is the <B>minimum</B> of the four, never the average. One red link caps the number no matter how strong the other three, because in an argument a single broken inference breaks the conclusion. Applied to a Dollars in Pockets figure, the score you report is not the ROI &mdash; it&rsquo;s the weakest link behind the ROI. And <I>where</I> it caps tells you exactly where the next evaluation dollar should go.
         </P>
@@ -5398,7 +5401,13 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          This is where a validity lens stops being a brake and starts being useful. Additionality is the whole game &mdash; and the impact field already knows it: the <a href="https://impactfrontiers.org/norms/five-dimensions-of-impact/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Impact Management Project&rsquo;s five dimensions</a> name <I>contribution</I> as a dimension in its own right, the one that asks whether the change would have happened anyway. Dollars in Pockets&rsquo; own counterfactual work is precisely what pays that dimension off and earns the strong verb. So the discipline isn&rsquo;t there to slow the claim down; it&rsquo;s there to tell a fund, honestly, how much weight a given number can carry:
+          This is where a validity lens stops being a brake and starts being useful. Additionality is the whole game &mdash; and the impact field already knows it: the <a href="https://impactfrontiers.org/norms/five-dimensions-of-impact/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Impact Management Project&rsquo;s five dimensions</a> &mdash; what, who, how much, contribution, risk &mdash; name <I>contribution</I> as a dimension in its own right, the one that asks whether the change would have happened anyway.
+        </P>
+        <P>
+          Three counts are now in play, and they sit on different axes. The <B>five</B> dimensions describe <I>what a claim is about</I>: they are the fields a complete impact statement has to fill in. The <B>four</B> links test <I>whether the argument holds</I>: they are inferences, and they are scored, not described. The <B>three</B> rows below grade <I>one link</I> &mdash; contribution &mdash; by the strength of counterfactual standing behind it. Contribution is the pivot where all three meet: fourth of the five dimensions, fourth link in the chain, and the thing the three rows grade. Everything hard about an impact number converges on that one place.
+        </P>
+        <P>
+          Dollars in Pockets&rsquo; own counterfactual work is precisely what pays that dimension off and earns the strong verb. So the discipline isn&rsquo;t there to slow the claim down; it&rsquo;s there to tell a fund, honestly, how much weight a given number can carry:
         </P>
         <P>
           &mdash; No counterfactual behind the contribution link &rarr; the number <I>supports</I>, is consistent with, the outcome.
