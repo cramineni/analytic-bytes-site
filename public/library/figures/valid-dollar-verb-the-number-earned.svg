@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
   <title id="title">Validity tells you which verb the number earned</title>
-  <desc id="desc">A three-row correspondence between the strength of counterfactual and the verb an impact number is entitled to.</desc>
+  <desc id="desc">A three-row correspondence between the strength of counterfactual and the verb an impact number is entitled to. No counterfactual earns supports. A researched counterfactual earns produced. Contribution analysis, emphasized as the load-bearing row because it is where most funders actually sit, earns contributed to: the strongest verb no surviving rival explanation can defeat.</desc>
 
   <!-- background -->
   <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
@@ -21,7 +21,7 @@
 
   <!-- Row 1 -->
   <g>
-    <rect x="72" y="248" width="6" height="80" fill="#0EA5E9"/>
+    <rect x="72" y="248" width="6" height="80" fill="#CBD5E1"/>
     <text x="104" y="286" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">No counterfactual</text>
     <text x="104" y="310" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">The outcome happened. Contribution is unexamined.</text>
     <text x="750" y="292" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" font-style="italic" fill="#0F2A4A">supports</text>
@@ -30,23 +30,24 @@
 
   <line x1="72" y1="352" x2="1128" y2="352" stroke="#F1F5F9" stroke-width="1"/>
 
-  <!-- Row 2 (emphasized) -->
+  <!-- Row 2 -->
   <g>
-    <rect x="72" y="372" width="6" height="80" fill="#0EA5E9"/>
+    <rect x="72" y="372" width="6" height="80" fill="#CBD5E1"/>
     <text x="104" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Researched counterfactual</text>
     <text x="104" y="434" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Quasi-experimental spine behind the contribution link.</text>
-    <text x="750" y="416" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" font-style="italic" fill="#0EA5E9">produced</text>
-    <text x="750" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">the strong verb is earned</text>
+    <text x="750" y="416" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" font-style="italic" fill="#0F2A4A">produced</text>
+    <text x="750" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">the strong verb is earned</text>
   </g>
 
   <line x1="72" y1="476" x2="1128" y2="476" stroke="#F1F5F9" stroke-width="1"/>
 
-  <!-- Row 3 -->
+  <!-- Row 3 — the load-bearing case -->
+  <rect x="72" y="488" width="1056" height="102" fill="#F0F9FF"/>
   <g>
     <rect x="72" y="496" width="6" height="80" fill="#0EA5E9"/>
-    <text x="104" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Contribution analysis</text>
+    <text x="104" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#0F2A4A">Contribution analysis</text>
     <text x="104" y="558" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Story assembled; rival explanations tested (Mayne).</text>
-    <text x="750" y="540" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500" font-style="italic" fill="#94A3B8">the verb that survives</text>
-    <text x="750" y="562" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">whatever the rivals leave standing</text>
+    <text x="750" y="540" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" font-style="italic" fill="#0EA5E9">contributed to</text>
+    <text x="750" y="564" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">the strongest verb no surviving rival can defeat</text>
   </g>
 </svg>

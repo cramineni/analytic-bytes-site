@@ -5396,7 +5396,7 @@ export const ESSAYS: Essay[] = [
 
         <Figure
           src="/library/figures/valid-dollar-verb-the-number-earned.svg"
-          alt="Three-row correspondence between the counterfactual behind an impact number and the verb it earns: supports, produced, or the verb that survives contribution analysis."
+          alt="Three-row correspondence between the counterfactual behind an impact number and the verb it earns. No counterfactual earns supports. A researched counterfactual earns produced. Contribution analysis — the load-bearing row, because it is where most funders actually sit — earns contributed to: the strongest verb no surviving rival explanation can defeat."
           caption="Validity tells you which verb the number earned."
         />
 
@@ -5416,7 +5416,13 @@ export const ESSAYS: Essay[] = [
           &mdash; A researched counterfactual or quasi-experimental spine behind it &rarr; <I>produced</I> is earned.
         </P>
         <P>
-          Where a controlled counterfactual isn&rsquo;t available, this is not a dead end &mdash; it&rsquo;s exactly the situation contribution analysis (Mayne) was built for: assemble the contribution story, then test it against the rival explanations that would make the outcome happen without you. The verb you earn is the verb that survives that test.
+          &mdash; Neither of those available, but rival explanations tested and defeated &rarr; <I>contributed to</I> is earned.
+        </P>
+        <P>
+          That third row is where most funders actually sit, and it deserves more than a footnote. A controlled counterfactual is expensive and often infeasible; most impact claims will be settled there or not settled at all. It is not a dead end. It is exactly the situation <a href="https://doi.org/10.1177/1356389012451663" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">contribution analysis (Mayne, 2012)</a> was built for: assemble the contribution story, then test it against the rival explanations that would make the outcome happen without you.
+        </P>
+        <P>
+          The logic is elimination, not argument. You do not reason your way up to a verb; you start with the strongest one you would like to claim and let the rivals knock it down. Say the claim is that a record-clearing tool produced a wage gain. The rivals: the local labor market tightened that year, the person would have found a free legal-aid clinic within a few months anyway, the employers who hired them never ran a record check. Each rival you cannot defeat kills a stronger verb. <I>Contributed to</I> is what stands when you run out of rivals &mdash; the strongest verb none of them could defeat, which is a different thing from the strongest verb you can defend in a meeting.
         </P>
         <P>
           That is not a hedge. &ldquo;Here is our return, and here is exactly how much of it we can stand behind, and where it&rsquo;s thin&rdquo; is a stronger thing to say to a skeptical funder or board than a bigger number with no gate under it. Validity is what holds up when someone leans on it.
