@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
   <title id="title">Validity tells you which verb the number earned</title>
-  <desc id="desc">A three-row correspondence between the strength of counterfactual and the verb an impact number is entitled to. No counterfactual earns supports. A researched counterfactual earns produced. Contribution analysis, emphasized as the load-bearing row because it is where most funders actually sit, earns contributed to: the strongest verb no surviving rival explanation can defeat.</desc>
+  <desc id="desc">Three rows ordered by the strength of the verb an impact number earns. No counterfactual earns supports. Contribution analysis, where rival explanations are tested and defeated, earns contributed to; this row is emphasized because it is where most funders actually sit. A controlled comparison earns produced, with how far produced reaches depending on whether the design was matched, quasi-experimental, or randomized.</desc>
 
   <!-- background -->
   <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
@@ -13,7 +13,7 @@
   <text x="72" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Validity tells you how much weight the number can carry.</text>
 
   <!-- column headers -->
-  <text x="104" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">EVIDENCE BEHIND THE NUMBER</text>
+  <text x="104" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">EVIDENCE BEHIND THE CONTRIBUTION LINK</text>
   <text x="750" y="212" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">VERB IT EARNS</text>
 
   <!-- divider -->
@@ -30,24 +30,24 @@
 
   <line x1="72" y1="352" x2="1128" y2="352" stroke="#F1F5F9" stroke-width="1"/>
 
-  <!-- Row 2 -->
+  <!-- Row 2 — the load-bearing case, where most funders actually sit -->
+  <rect x="72" y="364" width="1056" height="102" fill="#F0F9FF"/>
   <g>
-    <rect x="72" y="372" width="6" height="80" fill="#CBD5E1"/>
-    <text x="104" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Researched counterfactual</text>
-    <text x="104" y="434" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Quasi-experimental spine behind the contribution link.</text>
-    <text x="750" y="416" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" font-style="italic" fill="#0F2A4A">produced</text>
-    <text x="750" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">the strong verb is earned</text>
+    <rect x="72" y="372" width="6" height="80" fill="#0EA5E9"/>
+    <text x="104" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#0F2A4A">Contribution analysis</text>
+    <text x="104" y="434" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Story assembled; rival explanations tested and defeated (Mayne).</text>
+    <text x="750" y="416" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" font-style="italic" fill="#0EA5E9">contributed to</text>
+    <text x="750" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">the strongest verb no surviving rival can defeat</text>
   </g>
 
-  <line x1="72" y1="476" x2="1128" y2="476" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="72" y1="488" x2="1128" y2="488" stroke="#F1F5F9" stroke-width="1"/>
 
-  <!-- Row 3 — the load-bearing case -->
-  <rect x="72" y="488" width="1056" height="102" fill="#F0F9FF"/>
+  <!-- Row 3 -->
   <g>
-    <rect x="72" y="496" width="6" height="80" fill="#0EA5E9"/>
-    <text x="104" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#0F2A4A">Contribution analysis</text>
-    <text x="104" y="558" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Story assembled; rival explanations tested (Mayne).</text>
-    <text x="750" y="540" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" font-style="italic" fill="#0EA5E9">contributed to</text>
-    <text x="750" y="564" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">the strongest verb no surviving rival can defeat</text>
+    <rect x="72" y="506" width="6" height="80" fill="#CBD5E1"/>
+    <text x="104" y="544" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Controlled comparison</text>
+    <text x="104" y="568" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Matched, quasi-experimental, or randomized.</text>
+    <text x="750" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" font-style="italic" fill="#0F2A4A">produced</text>
+    <text x="750" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">how far it reaches depends on which design</text>
   </g>
 </svg>

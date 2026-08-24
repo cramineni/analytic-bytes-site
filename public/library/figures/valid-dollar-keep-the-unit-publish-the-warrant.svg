@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Keep the unit. Publish the warrant beside it.</title>
+  <desc id="desc">An impact figure broken into three pathways, each carrying its own dollar amount, its own weakest inference link, and the verb that evidence earns. Legal fees avoided earns produced. Wage gain earns contributed to. Housing stability earns only supports. The blended total is shown last: the dollars add, but the composite claim is capped at the weakest verb among the pathways, which is supports. Amounts are illustrative.</desc>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
+
+  <!-- eyebrow -->
+  <text x="72" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3">FIGURE &#183; THE VALID DOLLAR</text>
+
+  <!-- title -->
+  <text x="72" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#0F2A4A" letter-spacing="-0.5">Keep the unit. Publish the warrant beside it.</text>
+  <text x="72" y="144" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">The dollars add. The warrant does not.</text>
+
+  <!-- column headers -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">
+    <text x="104" y="196">PATHWAY</text>
+    <text x="500" y="196">DOLLARS</text>
+    <text x="650" y="196">WEAKEST LINK</text>
+    <text x="930" y="196">CLAIM EARNED</text>
+  </g>
+  <line x1="72" y1="212" x2="1128" y2="212" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <rect x="72" y="238" width="6" height="30" fill="#0EA5E9"/>
+    <text x="104" y="262" font-size="18" font-weight="600" fill="#0F2A4A">Legal fees avoided</text>
+    <text x="500" y="262" font-size="18" font-weight="600" fill="#0F2A4A">$4.8M</text>
+    <text x="650" y="262" font-size="15" font-weight="400" fill="#475569">Measure it right</text>
+    <text x="930" y="262" font-size="22" font-weight="600" font-style="italic" fill="#0F2A4A">produced</text>
+  </g>
+  <line x1="72" y1="288" x2="1128" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Row 2 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <rect x="72" y="314" width="6" height="30" fill="#7DD3FC"/>
+    <text x="104" y="338" font-size="18" font-weight="600" fill="#0F2A4A">Wage gain after clearance</text>
+    <text x="500" y="338" font-size="18" font-weight="600" fill="#0F2A4A">$3.6M</text>
+    <text x="650" y="338" font-size="15" font-weight="400" fill="#475569">Ours, not adjacent</text>
+    <text x="930" y="338" font-size="22" font-weight="600" font-style="italic" fill="#0F2A4A">contributed to</text>
+  </g>
+  <line x1="72" y1="364" x2="1128" y2="364" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <rect x="72" y="390" width="6" height="30" fill="#F59E0B"/>
+    <text x="104" y="414" font-size="18" font-weight="600" fill="#0F2A4A">Housing stability</text>
+    <text x="500" y="414" font-size="18" font-weight="600" fill="#0F2A4A">$1.8M</text>
+    <text x="650" y="414" font-size="15" font-weight="400" fill="#B45309">Ours, not adjacent</text>
+    <text x="930" y="414" font-size="22" font-weight="700" font-style="italic" fill="#B45309">supports</text>
+  </g>
+
+  <!-- rule above the total -->
+  <line x1="72" y1="446" x2="1128" y2="446" stroke="#CBD5E1" stroke-width="2"/>
+
+  <!-- Total row — the blended claim -->
+  <rect x="72" y="462" width="1056" height="86" fill="#FFFBEB"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <rect x="72" y="470" width="6" height="70" fill="#B45309"/>
+    <text x="104" y="504" font-size="19" font-weight="700" fill="#0F2A4A">Blended: Dollars in Pockets</text>
+    <text x="104" y="530" font-size="14" font-weight="400" fill="#B45309">one number, one sentence said out loud about all of it</text>
+    <text x="500" y="504" font-size="22" font-weight="700" fill="#0F2A4A">$10.2M</text>
+    <text x="650" y="504" font-size="15" font-weight="400" fill="#B45309">capped by the softest</text>
+    <text x="930" y="508" font-size="26" font-weight="700" font-style="italic" fill="#B45309">supports</text>
+  </g>
+
+  <!-- footer note -->
+  <text x="72" y="588" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Blending costs the strong pathway its verb: $4.8M that earned <tspan font-style="italic">produced</tspan> is reported inside a total that can only claim <tspan font-style="italic">supports</tspan>.</text>
+  <text x="72" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">Pathways as named in the published Rasa Legal example. Amounts are illustrative; no per-pathway figures have been published.</text>
+</svg>
