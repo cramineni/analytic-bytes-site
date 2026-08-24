@@ -5458,7 +5458,13 @@ export const ESSAYS: Essay[] = [
           Three of those four columns are things a fund already has. The dollars come from the model it ran. The weakest link comes from the four questions. The verb comes from the counterfactual behind the contribution link. Nothing here asks for new measurement. It asks a fund to show grading it already did.
         </P>
         <P>
-          What that buys is specific. A reader can see that most of the figure rests on a claim the fund can defend and a smaller share rests on a claim it cannot yet, which is a different and more useful fact than one blended number under one blended verdict. It tells the fund where the next evaluation dollar goes: to the pathway carrying the most dollars at the weakest warrant. And it changes what Goodhart&rsquo;s law can do here. Once per-pathway warrant is visible, growing the total by leaning on the softest pathway shows up in the table as a larger number sitting at a weaker verb. The move stops being free.
+          What that buys is specific. A reader can see that most of the figure rests on a claim the fund can defend and a smaller share rests on a claim it cannot yet, which is a different and more useful fact than one blended number under one blended verdict.
+        </P>
+        <P>
+          It also tells a fund where the next evaluation dollar goes, though not by pointing at the weakest row. A soft warrant on a small number may not be worth buying down. What matters is how many dollars sit at how soft a warrant, and that is a reading of two columns together. In the table above, the housing row has the weakest verb and the smallest stake, while the wage row carries twice the dollars one notch up. The table does not settle which to fund next, but it puts the tradeoff somewhere a board can argue about.
+        </P>
+        <P>
+          It also changes what Goodhart&rsquo;s law can do here. Once per-pathway warrant is visible, growing the total by leaning on the softest pathway shows up in the table as a larger number sitting at a weaker verb. The move stops being free.
         </P>
         <P>
           The last row is the one that costs something. The dollars add cleanly. The claim does not, because a single sentence about the whole figure asserts all of it, and a fund that says <I>produced</I> about a total containing an unexamined pathway has said more than its evidence allows. None of which argues for reporting less. Report the total and the three rows above it together, and the strong pathway keeps the verb it earned instead of surrendering it to the blend.
