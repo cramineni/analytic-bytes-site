@@ -5331,7 +5331,7 @@ export const ESSAYS: Essay[] = [
           It matters exactly what the weak part damages. A soft housing-stability estimate does not make a hard fees-avoided estimate any softer, and each pathway keeps whatever standing its own evidence gives it. What the weak part damages is the composite claim &mdash; the sentence a fund says out loud about the whole figure. That sentence asserts every dollar in the total, so it carries only as much weight as the weakest dollar in it. Blending preserves the arithmetic and loses the warrant.
         </P>
         <P>
-          And un-audited is a worse place to be the moment the number becomes a target. Goodhart&rsquo;s law is the standing warning: once a fund optimizes toward its Dollars in Pockets ratio, optimization pressure will eventually find the softest pathway &mdash; the very link the composite already hides. A metric that can&rsquo;t show its weakest inference quietly rewards inflating it.
+          And un-audited is a worse place to be the moment the number becomes a target. Goodhart&rsquo;s law is the standing warning: once a fund optimizes toward its Dollars in Pockets ratio, optimization pressure will eventually find the softest pathway &mdash; the very link the composite already hides. A metric that can&rsquo;t show its weakest inference rewards inflating it.
         </P>
         <P>
           The authors have an answer to this, and it is a fair one. They say the ratio is one input among several, weighed alongside team strength, strategic alignment, organizational effectiveness, execution and evidence risk, and expert judgment. I take them at their word. The difficulty is that this is a governance commitment held by the people who built the measure, not a property of the measure itself. Commitments of that kind travel less well than numbers do. Dollars in Pockets is designed to spread (that is the whole point of a common unit), and the funders who adopt it later will inherit the ratio without inheriting the restraint that currently surrounds it. A gate built into the number survives the journey. A norm standing next to the number may not.
@@ -5419,7 +5419,7 @@ export const ESSAYS: Essay[] = [
           Three counts are now in play, and they sit on different axes. The <B>five</B> dimensions describe <I>what a claim is about</I>: they are the fields a complete impact statement has to fill in. The <B>four</B> links test <I>whether the argument holds</I>: they are inferences, and they are scored, not described. The <B>three</B> rows below grade <I>one link</I> (contribution) by the strength of counterfactual standing behind it. Contribution is the pivot where all three meet: fourth of the five dimensions, fourth link in the chain, and the thing the three rows grade. Much of what is hardest about an impact number converges on that one place.
         </P>
         <P>
-          Dollars in Pockets&rsquo; own counterfactual work is precisely what pays that dimension off and earns the strong verb. So the discipline isn&rsquo;t there to slow the claim down; it&rsquo;s there to tell a fund, honestly, how much weight a given number can carry:
+          Dollars in Pockets&rsquo; own counterfactual work is what pays that dimension off and earns the strong verb. So the discipline isn&rsquo;t there to slow the claim down; it&rsquo;s there to tell a fund how much weight a given number can carry:
         </P>
         <P>
           &mdash; No counterfactual behind the contribution link &rarr; the number <I>supports</I>, is consistent with, the outcome.
@@ -5450,12 +5450,12 @@ export const ESSAYS: Essay[] = [
 
         <Figure
           src="/library/figures/valid-dollar-keep-the-unit-publish-the-warrant.svg"
-          alt="An impact figure broken into three pathways, each carrying its own dollar amount, its own weakest inference link, and the verb that evidence earns. Legal fees avoided earns produced. Wage gain earns contributed to. Housing stability earns only supports. The blended total is shown last: the dollars add, but the composite claim is capped at the weakest verb among the pathways. Amounts are illustrative."
+          alt="An impact figure broken into three pathways, each carrying its own dollar amount. All three cap at the same inference link, the fourth one. What differs is the evidence each has at that link, and so the verb each earns. Legal fees avoided has a controlled comparison and earns produced. Wage gain has rival explanations tested and defeated and earns contributed to. Housing stability has no counterfactual and earns only supports. The blended total is shown last: the dollars add, but the composite claim is capped at the weakest verb among the pathways, so the total row wears the grade of the pathway that capped it. Amounts are illustrative."
           caption="Keep the unit. Publish the warrant beside it."
         />
 
         <P>
-          Three of those four columns are things a fund already has. The dollars come from the model it ran. The weakest link comes from the four questions. The verb comes from the counterfactual behind the contribution link. Nothing here asks for new measurement. It asks a fund to show grading it already did.
+          Three of those four columns are things a fund already has. The dollars come from the model it ran. Where the pathway caps comes from the four questions. The verb comes from the evidence sitting at that link. Nothing here asks for new measurement. It asks a fund to show grading it already did.
         </P>
         <P>
           What that buys is specific. A reader can see that most of the figure rests on a claim the fund can defend and a smaller share rests on a claim it cannot yet, which is a different and more useful fact than one blended number under one blended verdict.

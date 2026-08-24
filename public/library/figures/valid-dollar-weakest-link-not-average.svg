@@ -12,31 +12,31 @@
   <!-- divider -->
   <line x1="72" y1="128" x2="1128" y2="128" stroke="#E2E8F0" stroke-width="1"/>
 
-  <!-- bars: three strong (teal), one weak (navy) -->
-  <rect x="140" y="200" width="120" height="240" fill="#0EA5E9"/>
-  <rect x="300" y="212" width="120" height="228" fill="#0EA5E9"/>
-  <rect x="460" y="200" width="120" height="240" fill="#0EA5E9"/>
-  <rect x="620" y="356" width="120" height="84" fill="#0F2A4A"/>
+  <!-- bars: three strong (navy), one weak (grey). Darkness carries strength, as in the other two figures. -->
+  <rect x="140" y="200" width="120" height="240" fill="#0F2A4A"/>
+  <rect x="300" y="212" width="120" height="228" fill="#0F2A4A"/>
+  <rect x="460" y="200" width="120" height="240" fill="#0F2A4A"/>
+  <rect x="620" y="356" width="120" height="84" fill="#94A3B8"/>
 
   <!-- link numbers, each above its own bar -->
   <text x="200" y="188" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">1</text>
   <text x="360" y="200" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">2</text>
   <text x="520" y="188" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#94A3B8">3</text>
-  <text x="680" y="344" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A">4</text>
+  <text x="680" y="344" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9">4</text>
 
   <!-- average line (what a composite reports) -->
   <line x1="120" y1="242" x2="800" y2="242" stroke="#94A3B8" stroke-width="2" stroke-dasharray="6 5"/>
 
-  <!-- minimum line (what validity reports) -->
-  <line x1="120" y1="356" x2="800" y2="356" stroke="#0F2A4A" stroke-width="3"/>
+  <!-- minimum line (what validity reports). Teal is the AB rule line, not a strength value. -->
+  <line x1="120" y1="356" x2="800" y2="356" stroke="#0EA5E9" stroke-width="3"/>
 
   <!-- baseline -->
   <line x1="120" y1="440" x2="800" y2="440" stroke="#CBD5E1" stroke-width="1"/>
 
   <!-- bracket measuring the distance the composite hides -->
-  <line x1="778" y1="242" x2="778" y2="356" stroke="#0F2A4A" stroke-width="1.5"/>
-  <line x1="770" y1="242" x2="786" y2="242" stroke="#0F2A4A" stroke-width="1.5"/>
-  <line x1="770" y1="356" x2="786" y2="356" stroke="#0F2A4A" stroke-width="1.5"/>
+  <line x1="778" y1="242" x2="778" y2="356" stroke="#0EA5E9" stroke-width="1.5"/>
+  <line x1="770" y1="242" x2="786" y2="242" stroke="#0EA5E9" stroke-width="1.5"/>
+  <line x1="770" y1="356" x2="786" y2="356" stroke="#0EA5E9" stroke-width="1.5"/>
 
   <!-- verdict labels -->
   <text x="820" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="600" fill="#94A3B8">AVERAGE</text>
