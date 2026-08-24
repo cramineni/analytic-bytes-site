@@ -1,52 +1,53 @@
-<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t" font-family="Inter,Helvetica,Arial,sans-serif">
+<svg viewBox="0 0 1600 860" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Two systems of record: CRM versus the evidence spine</title>
-<rect width="1600" height="900" fill="#FFFFFF"/>
+<desc>Side-by-side comparison of two systems of record. A CRM holds activity — contacts, touchpoints, disbursements, pipeline stage — and answers who, what, and status, yielding reach metrics. An evidence spine holds outcomes — tier, leading signals, confidence, semantic mapping — and answers whether it worked and where next, yielding invest, scale, stop.</desc>
+<rect width="1600" height="860" fill="#FFFFFF"/>
 
-<text x="40" y="60" font-size="30" letter-spacing="5" fill="#0EA5E9" font-weight="700">TWO SYSTEMS OF RECORD</text>
-<text x="40" y="108" font-size="30" fill="#3A4A5A">Same organization. Different jobs. One you already own; one you have to build.</text>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 
 <!-- LEFT: CRM -->
-<rect x="40" y="160" width="720" height="600" rx="18" fill="#FFFFFF" stroke="#D7E3EA" stroke-width="2"/>
-<rect x="40" y="160" width="720" height="96" rx="18" fill="#F4F8FB"/>
-<rect x="40" y="238" width="720" height="18" fill="#F4F8FB"/>
-<text x="80" y="212" font-size="34" fill="#0E2A47" font-weight="700">CRM</text>
-<text x="80" y="246" font-size="26" fill="#6B7A8C">system of record for activity</text>
+<rect x="40" y="120" width="720" height="600" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="40" y="120" width="720" height="96" rx="6" fill="#F8FAFC"/>
+<rect x="40" y="198" width="720" height="18" fill="#F8FAFC"/>
+<text x="80" y="172" font-size="28" fill="#0F2A4A" font-weight="600">CRM</text>
+<text x="80" y="206" font-size="20" fill="#94A3B8">system of record for activity</text>
 
-<text x="80" y="330" font-size="26" letter-spacing="2" fill="#6B7A8C" font-weight="700">HOLDS</text>
-<g font-size="28" fill="#3A4A5A">
-<text x="80" y="380">Contacts &amp; grants</text>
-<text x="80" y="428">Touchpoints &amp; activities</text>
-<text x="80" y="476">Disbursements</text>
-<text x="80" y="524">Pipeline stage</text>
+<text x="80" y="290" font-size="20" letter-spacing="2" fill="#94A3B8" font-weight="600">HOLDS</text>
+<g font-size="22" fill="#475569">
+<text x="80" y="340">Contacts &amp; grants</text>
+<text x="80" y="388">Touchpoints &amp; activities</text>
+<text x="80" y="436">Disbursements</text>
+<text x="80" y="484">Pipeline stage</text>
 </g>
-<line x1="80" y1="566" x2="720" y2="566" stroke="#D7E3EA" stroke-width="2"/>
-<text x="80" y="620" font-size="26" fill="#6B7A8C">Answers: <tspan fill="#0E2A47" font-weight="700">who · what · status</tspan></text>
-<text x="80" y="676" font-size="26" fill="#6B7A8C">Yields:</text>
-<rect x="200" y="648" width="220" height="44" rx="22" fill="#F4F8FB" stroke="#D7E3EA" stroke-width="2"/>
-<text x="310" y="678" font-size="26" fill="#3A4A5A" font-weight="700" text-anchor="middle">reach metrics</text>
+<line x1="80" y1="526" x2="720" y2="526" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="80" y="580" font-size="20" fill="#94A3B8">Answers: <tspan fill="#0F2A4A" font-weight="600">who &#183; what &#183; status</tspan></text>
+<text x="80" y="636" font-size="20" fill="#94A3B8">Yields:</text>
+<rect x="200" y="608" width="220" height="44" rx="22" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="310" y="638" font-size="20" fill="#475569" font-weight="600" text-anchor="middle">reach metrics</text>
 
 <!-- divider -->
-<text x="800" y="470" font-size="60" fill="#6B7A8C" font-weight="700" text-anchor="middle">&#8800;</text>
+<text x="800" y="430" font-size="50" fill="#94A3B8" font-weight="500" text-anchor="middle">&#8800;</text>
 
 <!-- RIGHT: EVIDENCE SPINE -->
-<rect x="840" y="160" width="720" height="600" rx="18" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="3"/>
-<rect x="840" y="160" width="720" height="96" rx="18" fill="#E8F6FD"/>
-<rect x="840" y="238" width="720" height="18" fill="#E8F6FD"/>
-<text x="880" y="212" font-size="34" fill="#0E2A47" font-weight="700">EVIDENCE SPINE</text>
-<text x="880" y="246" font-size="26" fill="#0EA5E9">system of record for outcomes</text>
+<rect x="840" y="120" width="720" height="600" rx="6" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2"/>
+<rect x="840" y="120" width="720" height="96" rx="6" fill="#F8FAFC"/>
+<rect x="840" y="198" width="720" height="18" fill="#F8FAFC"/>
+<text x="880" y="172" font-size="28" fill="#0F2A4A" font-weight="600">EVIDENCE SPINE</text>
+<text x="880" y="206" font-size="20" fill="#0EA5E9">system of record for outcomes</text>
 
-<text x="880" y="330" font-size="26" letter-spacing="2" fill="#0EA5E9" font-weight="700">HOLDS</text>
-<g font-size="28" fill="#3A4A5A">
-<text x="880" y="380">Outcome tier (the rubric)</text>
-<text x="880" y="428">Leading signals</text>
-<text x="880" y="476">Confidence &amp; evidence quality</text>
-<text x="880" y="524">Semantic layer (grantee &#8594; scale)</text>
+<text x="880" y="290" font-size="20" letter-spacing="2" fill="#0EA5E9" font-weight="600">HOLDS</text>
+<g font-size="22" fill="#475569">
+<text x="880" y="340">Outcome tier (the rubric)</text>
+<text x="880" y="388">Leading signals</text>
+<text x="880" y="436">Confidence &amp; evidence quality</text>
+<text x="880" y="484">Semantic layer (grantee &#8594; scale)</text>
 </g>
-<line x1="880" y1="566" x2="1520" y2="566" stroke="#D7E3EA" stroke-width="2"/>
-<text x="880" y="620" font-size="26" fill="#6B7A8C">Answers: <tspan fill="#0EA5E9" font-weight="700">did it work · where next</tspan></text>
-<text x="880" y="676" font-size="26" fill="#6B7A8C">Yields:</text>
-<rect x="1000" y="648" width="320" height="44" rx="22" fill="#E8F6FD" stroke="#0EA5E9" stroke-width="2"/>
-<text x="1160" y="678" font-size="26" fill="#0EA5E9" font-weight="700" text-anchor="middle">invest · scale · stop</text>
+<line x1="880" y1="526" x2="1520" y2="526" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="880" y="580" font-size="20" fill="#94A3B8">Answers: <tspan fill="#0EA5E9" font-weight="600">did it work &#183; where next</tspan></text>
+<text x="880" y="636" font-size="20" fill="#94A3B8">Yields:</text>
+<rect x="1000" y="608" width="320" height="44" rx="22" fill="#F8FAFC" stroke="#0EA5E9" stroke-width="1.5"/>
+<text x="1160" y="638" font-size="20" fill="#0EA5E9" font-weight="600" text-anchor="middle">invest &#183; scale &#183; stop</text>
 
-<text x="40" y="828" font-size="30" fill="#3A4A5A">Reach falls out of the left for free. <tspan fill="#0EA5E9" font-weight="700">Comparability only exists if you build the right.</tspan></text>
+<text x="40" y="790" font-size="22" fill="#475569">Reach falls out of the left for free. <tspan fill="#0EA5E9" font-weight="600">Comparability only exists if you build the right.</tspan></text>
+</g>
 </svg>

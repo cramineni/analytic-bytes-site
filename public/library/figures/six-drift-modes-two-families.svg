@@ -1,14 +1,14 @@
 <svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Six drift modes in two families</title>
-<desc>Two side-by-side families of drift. The left family, labeled Instrument and behaviour, holds model drift, conversational drift, and detection-accuracy regression, and is marked as already covered by responsible-AI monitoring. The right family, labeled Measurement target and drawn in teal, holds construct drift, population drift, and user-effect drift, and is marked as the layer the validity discipline adds. A caption names the argument.</desc>
+<desc>Two side-by-side families of drift. The left family, labeled Instrument, holds model drift, conversational drift, and detection-accuracy regression, and is marked as already covered by responsible-AI monitoring. The right family, labeled Claim and drawn in teal, holds construct drift, population drift, and user-effect drift, and is marked as the layer the validity discipline adds. A caption names the argument.</desc>
 <rect width="1200" height="620" fill="#FFFFFF"/>
 
 <text x="600" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">SIX MODES, TWO FAMILIES</text>
 <text x="600" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Drift monitoring covers one family and not the other.</text>
 
-<!-- LEFT FAMILY: instrument and behaviour -->
+<!-- LEFT FAMILY: instrument -->
 <rect x="70" y="145" width="500" height="360" fill="none" stroke="#CBD5E1" stroke-width="1" rx="4"/>
-<text x="320" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">FAMILY ONE — THE INSTRUMENT AND ITS BEHAVIOUR</text>
+<text x="320" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">FAMILY ONE — THE INSTRUMENT</text>
 <text x="320" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">What responsible-AI monitoring already names</text>
 
 <rect x="100" y="226" width="440" height="76" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
@@ -26,9 +26,9 @@
 <text x="122" y="459" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569">Performance degrades for one group while the</text>
 <text x="122" y="474" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569">aggregate numbers still look fine.</text>
 
-<!-- RIGHT FAMILY: measurement target -->
+<!-- RIGHT FAMILY: claim -->
 <rect x="630" y="145" width="500" height="360" fill="none" stroke="#0EA5E9" stroke-width="2" rx="4"/>
-<text x="880" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">FAMILY TWO — THE MEASUREMENT TARGET</text>
+<text x="880" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">FAMILY TWO — THE CLAIM</text>
 <text x="880" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">What the validity layer adds</text>
 
 <rect x="660" y="226" width="440" height="76" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
