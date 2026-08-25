@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1200 740" width="1200" height="630" role="img" aria-labelledby="title desc">
 <!-- HEADER -->
-<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">The score is the weakest link, not the average</text>
-<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">Four inference links behind an impact number — an averaged verdict conceals the weak one.</text>
   <title id="title">The score is the weakest link, not the average</title>
   <desc id="desc">Four inference links behind an impact number shown as bars. Three are strong; the fourth, contribution, is weak. An averaged verdict sits high and reads healthy. The minimum verdict sits at the weak link. The band between the two is what a composite figure conceals.</desc>
 

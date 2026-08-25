@@ -3,8 +3,6 @@
 <desc>Side-by-side comparison of two systems of record. A CRM holds activity — contacts, touchpoints, disbursements, pipeline stage — and answers who, what, and status, yielding reach metrics. An evidence spine holds outcomes — tier, leading signals, confidence, semantic mapping — and answers whether it worked and where next, yielding invest, scale, stop.</desc>
 <rect x="0" y="-110" width="1600" height="970" fill="#FFFFFF"/>
 <!-- HEADER -->
-<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">CRM versus the evidence spine</text>
-<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">Two systems of record — activity on the left, outcomes on the right.</text>
 
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 

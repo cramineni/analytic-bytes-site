@@ -8740,7 +8740,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/the-floor-is-the-frontier-two-loops.svg"
           alt="Two tracks running over the same elapsed time. The capability loop on top — build, ship, measure the model, improve — is drawn as eight blocks that narrow left to right, because each turn shortens the next. The evaluation loop below is a single turn split into four wide segments: define the construct, reach the right people, observe the outcome, establish the warrant. A dashed line marks where that first evaluation turn closes. Six capability turns ship inside its span. The cadence is illustrative; no cycle times are claimed."
-          caption=""
+          caption="Two loops running at different cadences. The capability loop moves. The evaluation loop has to keep up."
         />
 
         <P>

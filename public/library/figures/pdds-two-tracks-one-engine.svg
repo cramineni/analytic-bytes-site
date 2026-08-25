@@ -20,9 +20,6 @@
     </style>
   </defs>
 
-  <text x="72" y="46" font-size="24" font-weight="700" fill="#0F2A4A">PDDS — two tracks, one engine</text>
-  <text x="72" y="72" font-size="15" font-weight="400" fill="#475569">The six frozen panels and the extension panels run the same pipeline on separate data and artifacts.</text>
-
   <!-- SHARED FOUNDATION -->
   <rect class="neu" x="60" y="72" width="840" height="66" rx="10"/>
   <text class="nt" x="480" y="98" text-anchor="middle">Shared foundation — one engine, two tracks</text>

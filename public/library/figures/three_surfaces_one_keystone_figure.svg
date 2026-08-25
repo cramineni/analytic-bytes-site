@@ -3,8 +3,6 @@
 <desc>Three navy-bordered surface boxes across the top labeled Executive, Operations, Analytical, each with a short essence line. All three connect by downward converging lines to a wider teal keystone at the bottom labeled Semantic layer, one canonical computation per concept. The visual encodes the essay's thesis that three different products can share one governed definition.</desc>
 <rect x="0" y="-110" width="1200" height="660" fill="#FFFFFF"/>
 <!-- HEADER -->
-<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">Three surfaces, one keystone</text>
-<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">Three reporting products, one canonical computation beneath.</text>
 
 <!-- Three surface boxes across the top -->
 <g>

@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1200 810" width="1200" height="700" role="img" aria-labelledby="title desc">
 <!-- HEADER -->
-<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">The four validity questions</text>
-<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">What the responsible-AI floor rests on — the questions that have to hold for a claim to earn a decision.</text>
   <title id="title">The four validity questions</title>
   <desc id="desc">A vertical stack of four cards enumerating the validity questions the responsible-AI floor depends on. The first names the construct. The second asks what validation evidence exists and what use it was built for. The third asks where the case is thinnest and what policy applies there, including a named decision owner and the date the gap opened. The fourth asks what drift monitoring runs and what it triggers. A footer notes that the last three are questions about use rather than about the instrument, and attributes the position to Kane 1992 and Messick 1995.</desc>
 

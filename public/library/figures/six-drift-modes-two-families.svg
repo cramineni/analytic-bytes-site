@@ -4,8 +4,6 @@
 <rect width="1200" height="540" fill="#FFFFFF"/>
 
 <!-- HEADER -->
-<text x="72" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">Six drift modes, two families</text>
-<text x="72" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">What responsible-AI monitoring already covers, and what the validity layer adds.</text>
 
 <!-- LEFT FAMILY: instrument -->
 <rect x="70" y="130" width="500" height="360" fill="none" stroke="#CBD5E1" stroke-width="1" rx="4"/>

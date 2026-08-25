@@ -3,8 +3,6 @@
 <desc>A three-stage diagram. On the left, two stacked boxes: the claimed path starts from Construct, what the system says it measures; the actual path starts from Proxy, what it learned to track instead. Both feed into a single shared middle box holding the score and the decision it triggers, marked identical on both paths, and noting that agreement, accuracy and fairness checks all run there and cannot see the split. On the right the paths separate again into two consequence boxes, the intended outcome and a different actual outcome that concentrates on the people the proxy tracks worst. A teal band between the two right-hand boxes is labelled the validity gap. The caption states that the divergence is invisible at the score and shows up only at the two ends.</desc>
 <rect x="0" y="-110" width="1200" height="730" fill="#FFFFFF"/>
 <!-- HEADER -->
-<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">What is this system actually measuring?</text>
-<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">Two paths, one score — and the validity gap the middle can't see.</text>
 
 <!-- LEFT: two starting points -->
 <text x="185" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">CLAIMED PATH</text>

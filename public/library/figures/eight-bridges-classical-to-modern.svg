@@ -12,8 +12,6 @@
   <!-- White background -->
   <rect x="0" y="-110" width="1400" height="1010" fill="#FFFFFF"/>
 <!-- HEADER -->
-<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">Eight bridges from classical evaluation to modern AI evaluation</text>
-<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">The vocabulary the field already had, mapped to the questions modern AI evaluation is asking now.</text>
 
   <!-- Header -->
 

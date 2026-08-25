@@ -6,8 +6,6 @@
   <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
 
   <!-- title -->
-  <text x="72" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#0F2A4A" letter-spacing="-0.5">Keep the unit. Publish the warrant beside it.</text>
-  <text x="72" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">The dollars add. The warrant does not.</text>
 
   <!-- column headers -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">

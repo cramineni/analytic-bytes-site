@@ -4,8 +4,6 @@
 
 <rect x="0" y="-110" width="1200" height="710" fill="#FFFFFF"/>
 <!-- HEADER -->
-<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">AITL and HITL, mapped across the workflow</text>
-<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">Where the operator drives and where the AI drives, decision by decision.</text>
 
 <!-- Two column headers -->
 <!-- Column 1: HITL (AI drives) -->
