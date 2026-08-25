@@ -1,5 +1,5 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Field Note No. 08: The Reach Trap.</title>
+<title>Field Note No. 08: The reach trap.</title>
 <desc>White background. A navy activity table on the left labeled CRM with reach columns sits across a teal dashed seam from a navy outcome spine on the right labeled EVIDENCE SPINE with ordered outcome tiers. Title beneath: "The Reach Trap." Italic subtitle "The CRM counts reach." Analytic Bytes signature at the bottom.</desc>
 
 <rect width="1200" height="630" fill="#FFFFFF"/>
@@ -44,7 +44,7 @@
 </g>
 
 <!-- Title -->
-<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">The Reach Trap.</text>
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">The reach trap.</text>
 
 <!-- Subtitle -->
 <text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">The CRM counts reach.</text>

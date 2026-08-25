@@ -373,7 +373,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "three-surfaces-one-keystone",
     number: "01",
-    title: "Three Surfaces, One Keystone",
+    title: "Three surfaces, one keystone.",
     subtitle: "Why BI tool selection is the last decision, not the first.",
     date: "2026-05-08",
     readingTime: "11 min read",
@@ -754,7 +754,7 @@ export const ESSAYS: Essay[] = [
     kind: "field-note",
     slug: "when-genai-redesigned-my-dashboard",
     number: "01",
-    title: "When GenAI Redesigned My Dashboard",
+    title: "When GenAI redesigned my dashboard.",
     subtitle:
       "The redesign was uglier and clearer. What that taught me about data teams and AI tools.",
     date: "2026-05-11",
@@ -1017,7 +1017,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "grounding-the-ai-layer",
     number: "02",
-    title: "Grounding the AI Layer",
+    title: "Grounding the AI layer.",
     subtitle:
       "Where AI belongs in the modern data stack, and what keeps it honest.",
     date: "2026-05-15",
@@ -1932,7 +1932,7 @@ export const ESSAYS: Essay[] = [
     kind: "field-note",
     slug: "burden-disparity-and-the-next-dollar",
     number: "03",
-    title: "Burden, Disparity, and the Next Dollar",
+    title: "Burden, disparity, and the next dollar.",
     subtitle:
       "A reliability-filtered read of CDC suicide-mortality data — and why the single headline rate sends prevention money to the wrong map.",
     date: "2026-05-25",
@@ -2187,7 +2187,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "where-should-data-sit",
     number: "03",
-    title: "Where Should Data Sit?",
+    title: "Where should data sit?",
     subtitle:
       "Who owns data infrastructure — and the principle that should settle it.",
     date: "2026-05-22",
@@ -2436,7 +2436,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/where_should_data_sit_placement_options_figure.svg"
           alt="Where data can sit — five common placements, one AB-argued position"
-          caption="Four of the five placements bend the function toward one seat&rsquo;s incentives. The fifth &mdash; the integration seat &mdash; is where data infrastructure earns its independence."
+          caption="Four of the five placements bend the function toward one seat’s incentives. The fifth — the integration seat — is where data infrastructure earns its independence."
         />
 
         <P>
@@ -2564,7 +2564,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "actions-not-answers",
     number: "04",
-    title: "Actions, Not Answers",
+    title: "Actions, not answers.",
     subtitle:
       "Agentic AI is not a smarter tool — it is a decision-system redesign, and the checkpoint that used to come free now has to be built.",
     date: "2026-05-29",
@@ -3157,7 +3157,7 @@ export const ESSAYS: Essay[] = [
     kind: "field-note",
     slug: "the-take-home-test",
     number: "04",
-    title: "The Take-Home Test",
+    title: "The take-home test.",
     subtitle:
       "More than a dozen interview take-home tasks, done cold for a dozen organizations, read as one long experiment in how teams relate to their own decisions.",
     date: "2026-06-03",
@@ -3422,7 +3422,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/numbers_dont_agree_one_metric_eight_uses_figure.svg"
           alt="One metric, eight recalculations: how a single word fragments across obligations"
-          caption="One word. Eight obligations. Eight numbers &mdash; each correct under its own definition, none of them agreeing."
+          caption="One word. Eight obligations. Eight numbers — each correct under its own definition, none of them agreeing."
         />
 
         <P>
@@ -3565,7 +3565,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "the-contracts-between-systems",
     number: "07",
-    title: "The contracts between systems",
+    title: "The contracts between systems.",
     subtitle:
       "Why integration governance, not engineering, decides whether anyone can act on what the institution knows.",
     date: "2026-06-16",
@@ -3592,7 +3592,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/contracts_between_systems_three_eras_figure.svg"
           alt="Contracts between systems: the gap between bytes-move and can-act across three eras"
-          caption="The bytes move in every era. The question of whether anyone can act on them is what the contract answers &mdash; and the agentic era is what makes writing it non-optional."
+          caption="The bytes move in every era. The question of whether anyone can act on them is what the contract answers — and the agentic era is what makes writing it non-optional."
         />
 
         <H2>Legacy era: contracts in someone’s head</H2>
@@ -4449,7 +4449,7 @@ export const ESSAYS: Essay[] = [
     kind: "field-note",
     slug: "the-reach-trap",
     number: "08",
-    title: "The Reach Trap",
+    title: "The reach trap.",
     subtitle:
       "Why your CRM keeps handing you reach — and what a decision system reads instead.",
     date: "2026-07-03",
@@ -4641,7 +4641,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "why-the-rules-look-weird",
     number: "09",
-    title: "Why the rules look weird",
+    title: "Why the rules look weird.",
     subtitle:
       "What sports rules teach about preventing predictable failure in any decision system.",
     date: "2026-07-06",
@@ -5282,7 +5282,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "the-valid-dollar",
     number: "14",
-    title: "The valid dollar",
+    title: "The valid dollar.",
     subtitle:
       "A validity gate for Dollars in Pockets and the impact numbers that follow.",
     date: "2026-08-10",
@@ -5488,17 +5488,17 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="what-is-this-system-measuring"
             title="What is this system actually measuring?"
-            gloss="The higher-education version of the same discipline &mdash; what a governance framework skips when it treats measurement as already settled."
+            gloss="The higher-education version of the same discipline — what a governance framework skips when it treats measurement as already settled."
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
             title="When the numbers don't agree."
-            gloss="The reconciliation companion &mdash; why numbers that don't converge can't all carry the claim."
+            gloss="The reconciliation companion — why numbers that don't converge can't all carry the claim."
           />
           <SeeAlsoItem
             slug="the-reach-trap"
             title="The reach trap."
-            gloss="Reach is not outcome &mdash; the prior essay this one continues on the line between counting and claiming."
+            gloss="Reach is not outcome — the prior essay this one continues on the line between counting and claiming."
           />
           <SeeAlsoItem
             slug="before-it-was-called-ai-evaluation"
@@ -5508,7 +5508,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="the-floor-is-the-frontier"
             title="The floor is the frontier."
-            gloss="Additionality applied to a frontier-AI forecast &mdash; what &ldquo;the floor rose&rdquo; would have to earn before it counts as a result."
+            gloss="Additionality applied to a frontier-AI forecast — what “the floor rose” would have to earn before it counts as a result."
           />
         </SeeAlso>
 
@@ -5526,7 +5526,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "validity-layer-beneath-responsible-ai",
     number: "15",
-    title: "Validity is the layer beneath responsible AI",
+    title: "Validity is the layer beneath responsible AI.",
     subtitle:
       "Why responsible-AI rubrics in mental health are necessary, and what they need underneath.",
     date: "2026-08-14",
@@ -5705,12 +5705,12 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="what-is-this-system-measuring"
             title="What is this system actually measuring?"
-            gloss="The higher-education version of the same discipline &mdash; what a governance framework skips when it treats measurement as already settled."
+            gloss="The higher-education version of the same discipline — what a governance framework skips when it treats measurement as already settled."
           />
           <SeeAlsoItem
             slug="the-valid-dollar"
             title="The valid dollar."
-            gloss="The impact-investing version &mdash; what a single convertible unit has to earn before it can carry a decision."
+            gloss="The impact-investing version — what a single convertible unit has to earn before it can carry a decision."
           />
           <SeeAlsoItem
             slug="before-it-was-called-ai-evaluation"
@@ -5720,7 +5720,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="when-the-stakes-are-the-mission"
             title="When the stakes are the mission."
-            gloss="The mission-driven-AI-evaluation companion &mdash; the same discipline applied where the cost of a wrong signal is the intervention meant to reach someone."
+            gloss="The mission-driven-AI-evaluation companion — the same discipline applied where the cost of a wrong signal is the intervention meant to reach someone."
           />
           <SeeAlsoItem
             slug="the-floor-is-the-frontier"
@@ -5854,7 +5854,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="grounding-the-ai-layer"
             title="Grounding the AI Layer"
-            gloss="Whether the construct a model tracked last quarter is the one it&rsquo;s tracking today."
+            gloss="Whether the construct a model tracked last quarter is the one it’s tracking today."
           />
           <SeeAlsoItem
             slug="the-decision-system"
@@ -7157,7 +7157,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/when_the_stakes_essential_minimum.svg"
           alt="The essential minimum: five components of mission-driven AI evaluation"
-          caption="Five components of one discipline &mdash; none requiring enterprise-scale infrastructure."
+          caption="Five components of one discipline — none requiring enterprise-scale infrastructure."
         />
 
         <P>
@@ -8113,7 +8113,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="my-relationship-with-ai"
             title="My relationship with AI."
-            gloss="The companion piece on how AI actually shows up in the AB working practice, read alongside this audit&rsquo;s findings."
+            gloss="The companion piece on how AI actually shows up in the AB working practice, read alongside this audit’s findings."
           />
         </SeeAlso>
 
@@ -8281,7 +8281,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="auditing-an-ai-native-practice"
             title="Auditing an AI-native practice."
-            gloss="The audit that applied the same Kane-framed validity discipline to AB&rsquo;s own operating model."
+            gloss="The audit that applied the same Kane-framed validity discipline to AB’s own operating model."
           />
           <SeeAlsoItem
             slug="when-the-stakes-are-the-mission"
@@ -8295,7 +8295,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
-            title="The numbers don&rsquo;t agree because the words don&rsquo;t."
+            title="The numbers don’t agree because the words don’t."
             gloss="The definitional-variance discipline the reconciliation gate operationalizes."
           />
           <SeeAlsoItem
@@ -8323,9 +8323,9 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Hiring is a high-stakes assessment that carries no consequential validity argument, and the only people who can count what it costs are the ones it sorts out.",
     date: "2026-08-17",
-    readingTime: "11 min read",
+    readingTime: "13 min read",
     summary:
-      "Educational measurement requires an instrument to argue for itself before it is used to decide something about a person, including what that use does to the people it sorts out. Employment screening makes the decision and argues none of it. The rejected population is unobservable to employers by construction, so the evidence can only come from the rejected side. This note concedes the strongest objection to consequential validity, shows the gap survives the concession, and reports a candidate-side ledger: 143 applications, 59 rejections, 63 that never returned a response of any kind.",
+      "Educational measurement requires an instrument to argue for itself before it is used to decide something about a person, including what that use does to the people it sorts out. Employment screening makes the decision and argues none of it. The rejected population is unobservable to employers by construction, so the evidence can only come from the rejected side. This note concedes the strongest objection to consequential validity, shows the gap survives the concession, and reports a candidate-side ledger: 143 applications, 59 rejections, 63 that never returned a response of any kind. Sixty rejections were coded for content. None named a single attribute of the candidate. Four applications of 143 reached a human being, which means the obvious candidate-side instrument would also have missed most of the cost.",
     cover: "/library/covers/what-the-search-cost.svg",
     arc: "measurement",
     draft: true,
@@ -8438,11 +8438,32 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/what-the-search-cost-two-ledgers.svg"
           alt="Two ledgers for the same search. The employer's side lists seven quantities that are measured, dashboarded and reviewed. The candidate's side lists five that nobody counts, and five that a candidate can count because the employer sets them: rounds required, performance tasks assigned, elapsed days to a decision, people met, and requirements added after the measurement."
-          caption="Two ledgers for the same search. The employer&rsquo;s side lists seven quantities that are measured, dashboarded and reviewed. The candidate&rsquo;s side lists five that nobody counts, and five that a candidate can count because the employer sets them: rounds required, performance tasks assigned, elapsed days to a decision, people met, and requirements added after the measurement."
+          caption="Two ledgers for the same search. The employer's side lists seven quantities that are measured, dashboarded and reviewed. The candidate's side lists five that nobody counts, and five that a candidate can count because the employer sets them: rounds required, performance tasks assigned, elapsed days to a decision, people met, and requirements added after the measurement."
         />
 
         <P>
-          <B>3.1 The performance task as unpaid discovery.</B>
+          <B>3.1 The ledger came back nearly empty.</B>
+        </P>
+        <P>
+          Five quantities on the candidate&rsquo;s side are countable, because the employer sets them: rounds required, whether a performance task was assigned, elapsed days from first contact to a decision, people met, and requirements introduced after the first measurement. I kept all five for the current cycle. Four came back close to zero.
+        </P>
+        <P>
+          Across 143 applications, four processes reached a human being. Khan Academy ran a recruiter screen and a hiring-manager conversation, then stopped. Project Evident ran a recruiter screen and never reached the hiring manager. A state education agency assigned a two-hour timed leadership exercise. One charter organization went through to a final on-site, which I withdrew from over geography. Everything else ended before anyone spoke.
+        </P>
+        <P>
+          Rounds required is zero for 139 of the 143. Performance tasks assigned is one. People met is a number I can hold in my head without writing it down.
+        </P>
+        <P>
+          So the ledger this section proposed measures a process that ninety-seven percent of applications never enter.
+        </P>
+        <P>
+          That is a finding about the instrument rather than a defect in the data, and it is the more useful half of this note. Those five quantities are countable because the employer sets them, and an employer sets them only after deciding to engage. Before that point the employer sets nothing and records nothing. The cost accumulates there anyway. Reading the posting, judging it worth the hours, rewriting the document against it, submitting, waiting, and eventually reading the silence &mdash; all of it happens on the candidate&rsquo;s side of a door that does not open.
+        </P>
+        <P>
+          Any ledger assembled from employer-set quantities will be thin, because it can only count searches that started. Most of the cost is in the ones that did not.
+        </P>
+        <P>
+          <B>3.2 The performance task as unpaid discovery.</B>
         </P>
         <P>
           Two claims live here and only one of them is publishable.
@@ -8463,10 +8484,16 @@ export const ESSAYS: Essay[] = [
           A note on how not to measure this, since the obvious instrument is the wrong one. The tempting candidate-side measure is the volume of preparation a search generated &mdash; documents written, artifacts produced, visible output. It does not identify anything. Generative tools dropped the cost of producing a preparation document to near zero partway through this corpus, so the searches that came after look heavier than the ones that came before while the preparation behind them did not change. A file count measures the price of a page.
         </P>
         <P>
-          What the employer sets does not move when my production cost moves: rounds required, whether a performance task was assigned, elapsed days from first contact to decision, people met, and requirements introduced after the first measurement. Those are the entries that can go in a ledger. The effort I spent in response is real and is the actual cost, and it is precisely the quantity neither side has ever instrumented.
+          What the employer sets does not move when my production cost moves. That is why the five entries in &sect;3.1 are the ones that can go in a ledger at all. The effort I spent in response is real and is the actual cost, and it is precisely the quantity neither side has ever instrumented.
         </P>
         <P>
-          <B>3.2 Capability as a fixed attribute.</B>
+          One limit on this section, placed here rather than buried in a closing note. My own count barely reaches it. Seven searches across twenty-one months assigned unpaid work, two of them in the current cycle. All seven were education organizations: charter networks, education nonprofits, a state education agency. Seven cases in one sector cannot describe a market.
+        </P>
+        <P>
+          So the argument above rests on what organizations say publicly about their own searches. The count adds one observation, and it is a narrower one. Where unpaid discovery showed up in this corpus, it showed up in the sector that talks the most about mission.
+        </P>
+        <P>
+          <B>3.3 Capability as a fixed attribute.</B>
         </P>
         <P>
           An unstated assumption sits underneath every screen: that capability is a property of the person, present or absent at the moment of measurement, waiting to be detected.
@@ -8507,9 +8534,36 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/what-the-search-cost-one-bit.svg"
           alt="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal, a real capability gap, is the one most people pick."
-          caption="Seven causes of a rejection converge on a single box reading NO &mdash; one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal, a real capability gap, is the one most people pick."
+          caption="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal, a real capability gap, is the one most people pick."
         />
 
+        <P>
+          <B>4.1 What sixty rejections said.</B>
+        </P>
+        <P>
+          That was the argument. Here is the count behind it.
+        </P>
+        <P>
+          I coded every rejection received in the current cycle: sixty of them, from fifty-nine employers, between April 4 and August 25, 2026. One employer rejected me twice for two different roles.
+        </P>
+        <P>
+          The tracker in &sect;5 records fifty-nine rejections against 143 applications, counted through August 16. The email sweep runs nine days further, to August 25, and returns sixty. I have not resolved the extra one and I am reporting both figures rather than picking the tidier. A one-message gap between a hand-kept tracker and a mailbox is the smallest version of the denominator problem described in &sect;5, and the direction of the error is the usual one: the mailbox holds more than the tracker does.
+        </P>
+        <P>
+          Twenty-six were boilerplate with no cause stated at all. Twenty-five said a version of &ldquo;other candidates more closely matched our needs,&rdquo; which names no attribute and identifies nothing a person could act on. Nine said the role itself had changed &mdash; filled, cancelled, paused, closed, or given to an internal candidate.
+        </P>
+        <P>
+          None named anything about the candidate. Not a missing skill, not a domain, not a seniority level, not location, not compensation, not a year count. Zero of sixty.
+        </P>
+        <P>
+          The nine matter more than the fifty-one. In roughly one rejection in seven, the person could know the outcome had nothing to do with them, and could know it only because someone chose to write the sentence. The other fifty-one had the same range of causes sitting behind them and no way to tell which one applied.
+        </P>
+        <P>
+          The one-bit claim is not a figure of speech in this corpus. Across sixty consecutive rejections the signal carried nothing about the person in any of them.
+        </P>
+        <P>
+          The channel fails in the other direction too. One application produced an automated reply within minutes saying the submission stood out and inviting a next step. No person had read anything. A system that cannot transmit a reason also cannot transmit encouragement, and the recipient has no way to distinguish the two cases from the message itself.
+        </P>
         <P>
           What the literature supports, and where it stops:
         </P>
@@ -8561,7 +8615,40 @@ export const ESSAYS: Essay[] = [
           Forty-four percent produced no response at all. Not a rejection. Nothing.
         </P>
         <P>
-          [EXTRACT &mdash; needed before publication: median days from application to any response; median days to rejection; share of rejections containing any stated reason; share of postings still live at 30/60/90 days after application; share reposted, re-titled, or materially rewritten after application; rounds required per process; performance tasks assigned; elapsed days from first contact to decision. Not preparation volume &mdash; see &sect;3.1.]
+          <B>What the ledger reports.</B>
+        </P>
+        <P>
+          Median days from application to a rejection: nine. The range runs from same-day to fifty-five. Ten of the twenty-two datable rejections arrived inside a week, and two arrived the next day. Twenty-two is the number of rejections carrying both an application date and a decision date; the rest are dated on one side only.
+        </P>
+        <P>
+          Median days to any response: the same nine, because for almost every application the first response was the rejection. Nothing preceded it.
+        </P>
+        <P>
+          Rejections stating a reason about the candidate: none, of sixty. See &sect;4.1.
+        </P>
+        <P>
+          Rounds required: zero for 139 of 143.
+        </P>
+        <P>
+          Performance tasks assigned: one.
+        </P>
+        <P>
+          Days from first contact to a decision: not reportable. Four cases do not have a median.
+        </P>
+        <P>
+          <B>What the ledger cannot report.</B>
+        </P>
+        <P>
+          Two entries were planned and cut.
+        </P>
+        <P>
+          Whether a posting stayed live at thirty, sixty and ninety days after I applied. Not recorded.
+        </P>
+        <P>
+          Whether a posting was reposted, re-titled or materially rewritten after I applied. Not recorded. I noticed a handful by accident, on roles I later reconsidered. Noticing is not measuring.
+        </P>
+        <P>
+          Both cut entries are about what the employer did after the application went in. I did not think to record either one, across twenty-one months of deliberate tracking. That belongs in the note rather than in a methods appendix, because it is the same blindness the note is about, appearing inside the instrument built to describe it. A candidate keeping a ledger on purpose still built it around her own side of the transaction.
         </P>
         <P>
           <B>The estimate I got wrong, which is a result.</B>
@@ -8662,10 +8749,16 @@ export const ESSAYS: Essay[] = [
           This is not a freeze. Requisitions should change; organizations that cannot reshape roles die of it. It is a version stamp. This is what we are measuring against as of today, and if it changes, the people measured against the previous version were measured against the previous version. Software teams do not argue that specifications should never change. They argue that changes should be recorded. Nobody calls that bureaucratic.
         </P>
         <P>
-          Enforcement is publication. Report what each search cost the people who did not get the job. Hours. Rounds. Take-homes. Days to a decision. Revisions made mid-process.
+          Enforcement is publication, and the ledger above changes what is worth publishing. Rounds, take-homes and days to a decision describe only the small population an employer chose to engage. Reporting them would make most searches look inexpensive, because most applicants never generate a single entry.
         </P>
         <P>
-          The first organization to publish that number will look worse than its competitors for exactly one cycle, and will be the only one that knows what its hiring actually costs.
+          Three numbers per search, then. Applications received. Decisions issued with no stated cause. Applications that received no response of any kind.
+        </P>
+        <P>
+          None of the three requires new instrumentation. Every applicant tracking system already holds all three. They are not reported because nobody has ever been asked for them.
+        </P>
+        <P>
+          The first organization to publish those three will look worse than its competitors for exactly one cycle, and will be the only one that knows what its hiring actually costs.
         </P>
 
         <MetaNote>
@@ -8682,34 +8775,34 @@ export const ESSAYS: Essay[] = [
     kind: "field-note",
     slug: "the-floor-is-the-frontier",
     number: "15",
-    title: "The Floor Is the Frontier",
+    title: "The floor is the frontier.",
     subtitle:
-      "A measurement read of Machines of Loving Grace. If AI raises the floor at all, development isn’t where the science lands, it’s the point, and “beneficial” is a claim someone has to keep proving.",
+      "If powerful AI raises the floor at all, that's not a side effect. It's the whole point.",
     date: "2026-08-21",
     readingTime: "6 min read",
     summary:
-      "Dario’s five areas mostly raise the ceiling; economic development is the one that raises the floor, and it belongs in the causal model from the start. But “the floor rose” is a claim, not a result. Beneficial is a claim about an outcome — defined before the build, and re-measured as the loop accelerates.",
+      "Amodei's five areas mostly raise the ceiling; economic development is the one that raises the floor, and it belongs in the causal model from the start. But 'the floor rose' is a claim, not a result. Beneficial is a claim about an outcome — defined before the build, and re-measured as the loop accelerates.",
     cover: "/library/covers/the-floor-is-the-frontier.svg",
     arc: "measurement",
     body: (
       <>
         <P>
-          I read <a href="https://www.darioamodei.com/essay/machines-of-loving-grace" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Machines of Loving Grace</a> the way I read most things, from the measurement seat. What could happen is half the question. How we would know it did is the half I get paid for. Dario lays out five areas where powerful AI could change a human life: biology and health, neuroscience and mind, economic development and poverty, peace and governance, and work and meaning. The one that stayed with me was economic development, and it is also the one where I would push back the hardest.
+          I read <a href="https://www.darioamodei.com/essay/machines-of-loving-grace" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Machines of Loving Grace</a> the way I read most things, from the measurement seat. What could happen is half the question. How we would know it did is the half I get paid for. Dario Amodei lays out five areas where powerful AI could change a human life: biology and health, neuroscience and mind, economic development and poverty, peace and governance, and work and meaning. The one that stayed with me was economic development, and it is also the one where I would push back the hardest.
         </P>
         <P>
           Most of the essay raises the ceiling. Biology and neuroscience are frontier moves: take the most advanced thing we can do and accelerate it. Remarkable work, and the people it reaches first are the people already closest to the frontier. That is the distinction I care about, and it runs on distribution. Any domain can produce a ceiling move. What makes it one is who it reaches first. Development is the inverse. Its whole promise is lifting the baseline capability of the many. That is the version of powerful AI I have spent a career trying to build, in education and in health, and it is the version the essay treats as an afterthought.
         </P>
         <P>
-          So my first disagreement is the ordering. Dario leads frontier-first and treats development as where the science eventually lands, a downstream beneficiary of breakthroughs made elsewhere. There is a real case for that sequence. Breakthroughs are lumpy and hard to schedule, so you fund the frontier because you cannot route to the floor what does not yet exist, and distribution looks like the easier problem to solve second.
+          So my first disagreement is the ordering. Amodei leads frontier-first and treats development as where the science eventually lands, a downstream beneficiary of breakthroughs made elsewhere. There is a real case for that sequence. Breakthroughs are lumpy and hard to schedule, so you fund the frontier because you cannot route to the floor what does not yet exist, and distribution looks like the easier problem to solve second.
         </P>
         <P>
           I would still invert it. Treating distribution as a later stage puts it outside the design, and a thing outside the design does not get specified, budgeted, or measured. If AI raises the floor at all, global development belongs in the causal model from the start (a design claim, not a moral one). It is what floor-raising means. The floor is not the leftover. The floor is the frontier.
         </P>
         <P>
-          I would also expect the two areas Dario is least sure of, governance and meaning, to get easier once baseline capacity rises. I would expect it; I cannot show it, and the essay does not show it either. Someone would have to say what a better-governed society looks like in observable terms, and how they would measure it, before either of us could put weight on the claim.
+          I would also expect the two areas Amodei is least sure of, governance and meaning, to get easier once baseline capacity rises. I would expect it; I cannot show it, and the essay does not show it either. Someone would have to say what a better-governed society looks like in observable terms, and how they would measure it, before either of us could put weight on the claim.
         </P>
         <P>
-          Education is nearly absent, and the absence is the tell. The development section runs on the distribution of health interventions, economic growth, food security, mitigating climate change, inequality within countries, and what he calls the opt-out problem. Education is not one of the six. The word appears once in the essay, in the section on peace and governance, where Dario expects improvements in mental health, well-being, and education to increase democracy, since all three are negatively correlated with support for authoritarian leaders. Education enters as a correlate of a political outcome. I would have given it the other seat, as the instrument itself: education is how a gain in capability reaches a person who did not already have access to it. Leave education out and the capability still arrives, but it arrives at institutions before it arrives at people. That matters, because of how institutions carry people.
+          Education is nearly absent, and the absence is the tell. The development section runs on the distribution of health interventions, economic growth, food security, mitigating climate change, inequality within countries, and what he calls the opt-out problem. Education is not one of the six. The word appears once in the essay, in the section on peace and governance, where Amodei expects improvements in mental health, well-being, and education to increase democracy, since all three are negatively correlated with support for authoritarian leaders. Education enters as a correlate of a political outcome. I would have given it the other seat, as the instrument itself: education is how a gain in capability reaches a person who did not already have access to it. Leave education out and the capability still arrives, but it arrives at institutions before it arrives at people. That matters, because of how institutions carry people.
         </P>
         <P>
           Our institutions have always <InternalLink slug="we-used-to-settle-for-thumbnails">carried people as thumbnails</InternalLink>: a name, a score, a category standing in for a whole person. We compressed because carrying the full picture was expensive. That cost has now collapsed. So we face a choice the essay does not quite name: run the old compression faster, or rebuild our systems to carry more of the person forward to the human who has to act. Powerful AI makes both cheaper. Only one of them raises the floor.
@@ -8733,7 +8826,7 @@ export const ESSAYS: Essay[] = [
           What a model can do now that I could not do then is real. The most expensive thing I did on that engagement was copy years of NYSED district demographic data by hand. One table at a time, to see how the population around us had changed. A model does that in an afternoon. It can also reconcile the same child across systems that spell her name differently, and pull the attributes out of the spreadsheets where they were living. What it cannot do is tell me which of those eight persistence numbers my question needed. Each was correct under its own definition, and each definition existed because a different obligation required it. Choosing among them is a judgment about what persistence should mean for this question, this network, this year, after the population shifted underneath it. Nobody had done that <InternalLink slug="numbers-dont-agree">definitional reconciliation</InternalLink> yet, and no model does it for you. That work did not get faster, and it is the work the claim depends on.
         </P>
         <P>
-          There is a loop hiding in the essay. Powerful AI accelerates its own improvement: measure, evaluate, learn, repeat, faster each turn. The same loop is available for the outcomes we actually care about, whether the floor is rising and for whom. But the two loops do not run at the same speed. Capability compounds quickly. The evaluation that tells us whether the capability was beneficial compounds slowly, because building a valid measure of a real-world outcome is patient work (you cannot observe a two-year outcome in six months), and it does not accelerate just because the model did. That gap is the risk. The faster the capability loop turns, the more load it puts on an evaluation layer that was already the harder half. If the eval cannot keep pace, we are scaling something we can no longer see.
+          There is a loop hiding in the essay. Powerful AI accelerates its own improvement: measure, evaluate, learn, repeat, faster each turn. The same loop is available for the outcomes we actually care about, whether the floor is rising and for whom. But the two loops do not run at the same speed. Capability compounds quickly. The evaluation that tells us whether the capability was beneficial compounds slowly, because building a valid measure of a real-world outcome is patient work. The fair objection is that AI speeds up evaluation as well. It does, in parts. Drafting an instrument, cleaning a sample, running the analysis: all of that gets faster. The waiting does not. You cannot observe a two-year outcome in six months, and the part that stays slow is the part the warrant depends on. The faster the capability loop turns, the more load it puts on an evaluation layer that was already the harder half. If the eval cannot keep pace, we are scaling something we can no longer see.
         </P>
 
         <Figure
@@ -8743,13 +8836,13 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          So the measurement seat reads this essay as a specification with the acceptance criteria left out. Beneficial is where the acceptance criteria go &mdash; a set of conditions somebody writes down before the build, checks after, and checks again as the system that produced the outcome shifts beneath them.
+          So I read this essay as a specification with the acceptance criteria left out. Beneficial is where the acceptance criteria go &mdash; a set of conditions somebody writes down before the build, checks after, and checks again as the system that produced the outcome shifts beneath them.
         </P>
         <P>
           That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. Pointing AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and letting it do good is the easy reading. The harder one instruments the benefit: defined before the build, measured against the people it was meant to reach, held honest as the loop accelerates. &ldquo;The floor rose&rdquo; is where the work starts. Somebody has to stay in the room after the capability ships and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
         </P>
         <P>
-          That somebody is the job I have been doing for a decade. This essay does not name that job, but it needs it.
+          That somebody is the job I have been doing for a decade. Amodei never names it, and I do not think the work gets done by accident.
         </P>
 
         <SeeAlso>
@@ -8977,7 +9070,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="when-the-stakes-are-the-mission"
             title="When the stakes are the mission."
-            gloss="The mission-driven-AI-evaluation companion &mdash; the same discipline applied where the cost of a wrong signal is the intervention meant to reach someone."
+            gloss="The mission-driven-AI-evaluation companion — the same discipline applied where the cost of a wrong signal is the intervention meant to reach someone."
           />
           <SeeAlsoItem
             slug="auditing-an-ai-native-practice"
@@ -8987,7 +9080,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="actions-not-answers"
             title="Actions, not answers."
-            gloss="The agentic-checkpoint companion &mdash; where the human evaluator sits when the AI has moved from answering to acting."
+            gloss="The agentic-checkpoint companion — where the human evaluator sits when the AI has moved from answering to acting."
           />
         </SeeAlso>
 

@@ -1,5 +1,5 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>Essay No. 07: The contracts between systems</title>
+<title>Essay No. 07: The contracts between systems.</title>
 <desc>White background with a navy line diagram. Two narrow navy rectangles, each labeled System, sit on the left and right. A horizontal navy line connects them. At the midpoint of the line a teal disc is labeled Contract. The line continues past the right-hand System to a small teal dot labeled Decision. Title and italic subtitle in sans-serif beneath. Analytic Bytes signature at the bottom.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
 <text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 07</text>
@@ -16,7 +16,7 @@
 <circle cx="470" cy="0" r="8" fill="#0EA5E9"/>
 <text x="470" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1.8" fill="#475569" text-anchor="middle">Decision</text>
 </g>
-<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">The contracts between systems</text>
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">The contracts between systems.</text>
 <text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">Why integration governance decides whether anyone can act.</text>
 <line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
 <text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
