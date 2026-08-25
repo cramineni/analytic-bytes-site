@@ -11,7 +11,7 @@
 
   <!-- White background -->
   <rect x="0" y="-110" width="1400" height="804" fill="#FFFFFF"/>
-<text x="700" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Eight bridges, classical to modern</text>
+<text x="700" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="19" font-weight="700" fill="#0F2A4A" text-anchor="middle">Eight bridges, classical to modern</text>
 <g transform="translate(0, -152)">
 <!-- HEADER -->
 
