@@ -5670,7 +5670,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/six-drift-modes-two-families.svg"
           alt="Six drift modes in two families. The instrument family — model drift, conversational drift, detection-accuracy regression — is what responsible-AI monitoring already covers. The claim family — construct drift, population drift, user-effect drift — is what the validity layer adds."
-          caption="Six drift modes, two families. Responsible-AI monitoring covers the first family. The second is what the validity layer adds."
+          caption="A monitoring regime that runs the left family and none of the right will catch a model update and miss the argument the field is still having about what the model was built to detect."
         />
 
         <P>

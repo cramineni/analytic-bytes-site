@@ -1,7 +1,10 @@
-<svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 730" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>One metric, eight recalculations: how a single word fragments across obligations</title>
 <desc>Central navy circle labeled Student persistence with eight lines fanning outward to eight small endpoint nodes, each labeled by an obligation that required its own recalculation. Endpoint labels include program completion, state accountability, early-year persistence, S&amp;P bond rating, principal incentive, enrollment forecasting, federal accountability, and internal instructional cadence. A teal caption below names the pattern.</desc>
-<rect width="1200" height="620" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="730" fill="#FFFFFF"/>
+<!-- HEADER -->
+<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">One metric, eight uses</text>
+<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">How a single word splinters across obligations.</text>
 
 <!-- Central node at (600, 380) -->
 <g>

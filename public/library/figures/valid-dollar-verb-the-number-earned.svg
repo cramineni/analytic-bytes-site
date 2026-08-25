@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
 
   <!-- title -->
-  <text x="72" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#0F2A4A" letter-spacing="-0.5">The verb the number earned</text>
+  <text x="72" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#0F2A4A" letter-spacing="-0.5">The verb the number earned</text>
   <text x="72" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Everything below sits at link 4. Validity tells you how much weight the number can carry.</text>
 
   <!-- column headers -->

@@ -1,7 +1,10 @@
-<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 710" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The three buckets of data work — and the one that keeps getting absorbed</title>
 <desc>Three horizontal bands stacked vertically. Bucket 1 is data entry, distributed across delivery roles. Bucket 2 is interpretation and action, held by delivery roles who understand the operational context. Bucket 3 is the specialized semantic-layer, integration, quality, and governance work — highlighted in teal because it is the one that most often has no funded home and gets absorbed by whoever is capable. Captions below name the intended owner for each.</desc>
-<rect width="1200" height="600" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="710" fill="#FFFFFF"/>
+<!-- HEADER -->
+<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">The absorbed data role, in three buckets</text>
+<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">Two buckets belong to delivery roles. The third has no default owner.</text>
 
 <!-- BUCKET 1 -->
 <rect x="180" y="210" width="840" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>

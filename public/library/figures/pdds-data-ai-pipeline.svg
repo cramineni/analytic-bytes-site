@@ -21,8 +21,8 @@
     </style>
   </defs>
 
-  <text x="30" y="34" font-size="18" font-weight="800" fill="#111827">PDDS — data &amp; AI pipeline</text>
-  <text x="30" y="54" class="sub">Public Data as a Decision System · from public sources to a governed decision surface</text>
+  <text x="72" y="46" font-size="24" font-weight="700" fill="#0F2A4A">PDDS — data &amp; AI pipeline</text>
+  <text x="72" y="72" font-size="15" font-weight="400" fill="#475569">Public Data as a Decision System · from public sources to a governed decision surface</text>
 
   <!-- SOURCES -->
   <text x="30" y="86" class="band">1 · Public sources</text>

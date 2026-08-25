@@ -1,8 +1,11 @@
-<svg viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg" role="img" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+<svg viewBox="0 -110 900 450" xmlns="http://www.w3.org/2000/svg" role="img" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 <title>The flag is the easy part. The system is the work.</title>
 <desc>Left panel shows a dashboard-style grid of colored flag dots (red, yellow, green) representing early-warning flags firing on a screen — but nothing happens. An arrow crosses to the right panel, which shows a triangle of three navy-outlined circles labeled MEANING, AUTHORITY, VALIDITY with a teal decision dot at the center — the decision system that turns flags into action.</desc>
 
-<rect width="900" height="340" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="900" height="450" fill="#FFFFFF"/>
+<!-- HEADER -->
+<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">The flag was the easy part</text>
+<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">A flag wall on its own; the system that turns flags into decisions.</text>
 
 <!-- LEFT PANEL: The flag wall (dashboard-style) -->
 <g transform="translate(60, 30)">

@@ -1,7 +1,10 @@
-<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 610" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Validity is the layer beneath the responsible-AI frameworks</title>
 <desc>Two-layer stack. Top layer shows three responsible-AI frameworks side by side — RSPs, NIST AI RMF, EU AI Act — as navy-bordered boxes. Bottom layer, drawn wider and in teal, is labeled Measurement validity. A vertical relation shows that the frameworks rest on the validity layer beneath.</desc>
-<rect width="1200" height="500" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="610" fill="#FFFFFF"/>
+<!-- HEADER -->
+<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">Validity is the layer beneath responsible-AI frameworks</text>
+<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">The frameworks assume what validity is meant to check.</text>
 
 <!-- TOP LAYER: three RA frameworks -->
 <text x="600" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">RESPONSIBLE-AI FRAMEWORKS</text>
@@ -33,6 +36,6 @@
 <text x="600" y="316" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Does the claim this deployment is making hold, for this use and for these people?</text>
 
 <!-- Note -->
-<text x="600" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">The frameworks are necessary. They assume &#8212; but do not check &#8212; the discipline beneath.</text>
-<text x="600" y="420" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Validity is the discipline that answers what the frameworks assume answered.</text>
+
+
 </svg>

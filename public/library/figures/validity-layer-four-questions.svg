@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1200 810" width="1200" height="700" role="img" aria-labelledby="title desc">
+<!-- HEADER -->
+<text x="72" y="-60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="start">The four validity questions</text>
+<text x="72" y="-34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">What the responsible-AI floor rests on — the questions that have to hold for a claim to earn a decision.</text>
   <title id="title">The four validity questions</title>
   <desc id="desc">A vertical stack of four cards enumerating the validity questions the responsible-AI floor depends on. The first names the construct. The second asks what validation evidence exists and what use it was built for. The third asks where the case is thinnest and what policy applies there, including a named decision owner and the date the gap opened. The fourth asks what drift monitoring runs and what it triggers. A footer notes that the last three are questions about use rather than about the instrument, and attributes the position to Kane 1992 and Messick 1995.</desc>
 
@@ -46,6 +49,6 @@
 
   <!-- Footer: the frame the four questions sit inside -->
   <line x1="72" y1="636" x2="1128" y2="636" stroke="#E2E8F0" stroke-width="1"/>
-  <text x="600" y="662" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Three of the four are questions about use, not about the instrument. Validity belongs to the interpretation</text>
-  <text x="600" y="682" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">and use of a score, not to the score itself (Kane, 1992; Messick, 1995).</text>
+  
+  
 </svg>
