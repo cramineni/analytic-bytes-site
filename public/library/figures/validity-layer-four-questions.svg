@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1200 704" width="1200" height="700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1200 760" width="1200" height="700" role="img" aria-labelledby="title desc">
 <!-- HEADER -->
   <title id="title">The four validity questions</title>
   <desc id="desc">A vertical stack of four cards enumerating the validity questions the responsible-AI floor depends on. The first names the construct. The second asks what validation evidence exists and what use it was built for. The third asks where the case is thinnest and what policy applies there, including a named decision owner and the date the gap opened. The fourth asks what drift monitoring runs and what it triggers. A footer notes that the last three are questions about use rather than about the instrument, and attributes the position to Kane 1992 and Messick 1995.</desc>
 
   <rect x="0" y="0" width="1200" height="700" fill="#FFFFFF"/>
 <text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Four validity questions</text>
-<g transform="translate(0, -106)">
+<g transform="translate(0, -66)">
 
   <!-- Q1 -->
   <g>

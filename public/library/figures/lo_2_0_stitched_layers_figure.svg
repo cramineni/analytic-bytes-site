@@ -1,9 +1,9 @@
-<svg viewBox="0 -110 1200 498" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 518" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>LO 2.0 — the layers exist, the stitching does not</title>
 <desc>Four vertically stacked layer boxes labeled National, District, School, Classroom, each with a short essence line and cadence. Between each pair of layers is a teal stitching contract labeled with what has to move between them. On the right, a vertical bracket labeled Integration architecture — the thing LO 2.0 proposes — encloses the four layers and their contracts.</desc>
-<rect x="0" y="-110" width="1200" height="498" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="518" fill="#FFFFFF"/>
 <text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The stitched layers</text>
-<g transform="translate(0, -232)">
+<g transform="translate(0, -192)">
 <!-- HEADER -->
 
 <!-- NATIONAL layer -->

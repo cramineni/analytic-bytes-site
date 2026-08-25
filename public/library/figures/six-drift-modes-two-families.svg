@@ -1,9 +1,9 @@
-<svg viewBox="0 0 1200 478" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 0 1200 548" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Six drift modes in two families</title>
 <desc>Two side-by-side families of drift. The left family, labeled Instrument, holds model drift, conversational drift, and detection-accuracy regression, and is marked as already covered by responsible-AI monitoring. The right family, labeled Claim and drawn in teal, holds construct drift, population drift, and user-effect drift, and is marked as the layer the validity discipline adds.</desc>
 <rect width="1200" height="540" fill="#FFFFFF"/>
 <text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Six drift modes, two families</text>
-<g transform="translate(0, -62)">
+<g transform="translate(0, -22)">
 
 <!-- HEADER -->
 

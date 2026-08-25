@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1200 686" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 0 1200 775" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The data role landscape: senior data-leadership roles distributed across the decision arc</title>
 <desc>A grid where columns represent the five stages of the decision arc — build the system, govern the system, interpret the signal, support the decision, own the decision — and rows are seven senior data-leadership titles. Fill intensity per cell shows how heavily each role loads each arc stage. A teal composite band shows the impossible role many JDs imply, heavy across every arc position.</desc>
 
@@ -6,7 +6,7 @@
 
 <!-- Title -->
 <text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The data role landscape</text>
-<g transform="translate(0, -34)">
+<g transform="translate(0, 6)">
 
 <!-- Arc direction labels above column headers -->
 <text x="280" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="start">FAR FROM DECISION</text>

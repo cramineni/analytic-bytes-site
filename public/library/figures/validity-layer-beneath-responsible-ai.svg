@@ -1,9 +1,9 @@
-<svg viewBox="0 -110 1200 488" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 438" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Validity is the layer beneath the responsible-AI frameworks</title>
 <desc>Two-layer stack. Top layer shows three responsible-AI frameworks side by side — RSPs, NIST AI RMF, EU AI Act — as navy-bordered boxes. Bottom layer, drawn wider and in teal, is labeled Measurement validity. A vertical relation shows that the frameworks rest on the validity layer beneath.</desc>
-<rect x="0" y="-110" width="1200" height="488" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="438" fill="#FFFFFF"/>
 <text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The layer underneath</text>
-<g transform="translate(0, -122)">
+<g transform="translate(0, -82)">
 <!-- HEADER -->
 
 <!-- TOP LAYER: three RA frameworks -->

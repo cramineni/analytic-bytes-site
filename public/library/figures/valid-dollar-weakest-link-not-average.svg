@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1200 586" width="1200" height="630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1200 560" width="1200" height="630" role="img" aria-labelledby="title desc">
 <!-- HEADER -->
   <title id="title">The score is the weakest link, not the average</title>
   <desc id="desc">Four inference links behind an impact number shown as bars. Three are strong; the fourth, contribution, is weak. An averaged verdict sits high and reads healthy. The minimum verdict sits at the weak link. The band between the two is what a composite figure conceals.</desc>
@@ -6,7 +6,7 @@
   <!-- background -->
   <rect x="0" y="0" width="1200" height="630" fill="#FFFFFF"/>
 <text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The weakest link, not the average</text>
-<g transform="translate(0, -154)">
+<g transform="translate(0, -114)">
 
   <!-- column headers -->
   <text x="120" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" letter-spacing="2">THE FOUR INFERENCES BEHIND AN IMPACT NUMBER</text>
