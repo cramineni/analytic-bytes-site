@@ -2,6 +2,7 @@
 <title>The Decision System: three anchors — meaning, authority, validity — that must all hold together</title>
 <desc>Triangular arrangement of three navy-bordered anchor nodes labeled MEANING, AUTHORITY, and VALIDITY, connected pairwise by navy lines to form a triangle. Each node carries a two-line gloss: the definition holds, an owner acts on cadence, and the claim holds for this use. Inside the triangle a teal label reads DECISION-READY. Below, a small caveat notes that detaching any one anchor produces confident nonsense at speed.</desc>
 <rect x="0" y="-110" width="1200" height="710" fill="#FFFFFF"/>
+<text x="600" y="-65" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">THE THREE ANCHORS</text>
 <!-- HEADER -->
 
 <!-- Triangle geometry: 3 anchor circles positioned at triangle corners -->

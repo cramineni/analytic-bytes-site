@@ -3,6 +3,7 @@
 <desc>A two-column figure showing how ten task categories map to HITL (AI drives) or AITL (operator drives). HITL: Recurring automation, Technical dev. AITL: Strategic thinking, Project proposals and evaluations, Product and framework, Research and review, Long-form writing, Talk prep, Content and distribution, Learning and reading.</desc>
 
 <rect x="0" y="-110" width="1200" height="710" fill="#FFFFFF"/>
+<text x="600" y="-65" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">HITL / AITL · MAPPED ACROSS THE WORKFLOW</text>
 <!-- HEADER -->
 
 <!-- Two column headers -->

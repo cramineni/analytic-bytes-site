@@ -20,6 +20,8 @@
     </style>
   </defs>
 
+  <text x="480" y="45" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">PDDS · TWO TRACKS, ONE ENGINE</text>
+
   <!-- SHARED FOUNDATION -->
   <rect class="neu" x="60" y="72" width="840" height="66" rx="10"/>
   <text class="nt" x="480" y="98" text-anchor="middle">Shared foundation — one engine, two tracks</text>

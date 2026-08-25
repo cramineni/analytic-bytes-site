@@ -2,6 +2,7 @@
 <title>Where data can sit — five common placements, one AB-argued position</title>
 <desc>Five horizontal placement bands, each labeled with a common reporting line and its typical framing. From top to bottom: under the CTO (technical infrastructure), under the CFO (governed asset), under the CDO or CDAO (standalone strategic asset), under the CPO (product-serving), and the AB-argued placement — an independent function positioned closest to the COO. The COO-adjacent placement is highlighted in teal as the essay's argument, with a small annotation.</desc>
 <rect x="0" y="-110" width="1200" height="730" fill="#FFFFFF"/>
+<text x="600" y="-65" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">PLACEMENT OPTIONS</text>
 <!-- HEADER -->
 
 <!-- Placement 1: CTO -->

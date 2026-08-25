@@ -2,6 +2,7 @@
 <title>Grounding the AI layer: where AI reaches and what it reaches through</title>
 <desc>Two side-by-side vertical stack diagrams. Left stack shows AI reaching directly into raw warehouse tables through an ungoverned SQL path — labeled "ungrounded" with a teal warning marker. Right stack shows AI reaching through the semantic layer, calling governed metrics by name — labeled "grounded" with the semantic layer highlighted in teal. Below, a one-line caption names the difference.</desc>
 <rect x="0" y="-110" width="1200" height="730" fill="#FFFFFF"/>
+<text x="600" y="-65" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">GROUNDING THE AI LAYER</text>
 <!-- HEADER -->
 
 <!-- LEFT STACK — UNGROUNDED -->

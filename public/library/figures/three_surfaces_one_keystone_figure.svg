@@ -2,6 +2,7 @@
 <title>Three surfaces, one keystone: three reporting products sitting on one canonical semantic layer</title>
 <desc>Three navy-bordered surface boxes across the top labeled Executive, Operations, Analytical, each with a short essence line. All three connect by downward converging lines to a wider teal keystone at the bottom labeled Semantic layer, one canonical computation per concept. The visual encodes the essay's thesis that three different products can share one governed definition.</desc>
 <rect x="0" y="-110" width="1200" height="660" fill="#FFFFFF"/>
+<text x="600" y="-65" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">THREE SURFACES · ONE KEYSTONE</text>
 <!-- HEADER -->
 
 <!-- Three surface boxes across the top -->

@@ -2,6 +2,7 @@
 <title>Six drift modes in two families</title>
 <desc>Two side-by-side families of drift. The left family, labeled Instrument, holds model drift, conversational drift, and detection-accuracy regression, and is marked as already covered by responsible-AI monitoring. The right family, labeled Claim and drawn in teal, holds construct drift, population drift, and user-effect drift, and is marked as the layer the validity discipline adds.</desc>
 <rect width="1200" height="540" fill="#FFFFFF"/>
+<text x="600" y="45" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">SIX DRIFT MODES · TWO FAMILIES</text>
 
 <!-- HEADER -->
 

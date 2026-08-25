@@ -2,6 +2,7 @@
 <title id="ttl">Same engagement, different calibrations</title>
 <desc id="desc">A horizontal autonomy spectrum with four decisions from AB's Deliver Signal workflow plotted at different points. Diagnostic prioritization sits at the human-only end. Frontline-versus-boardroom framing is left of center, slightly higher autonomy. Gap ranking is mid-spectrum, escalation-heavy. Source-inventory tagging is well along the spectrum toward agent autonomy.</desc>
 <rect width="820" height="500" fill="#FFFFFF"/>
+<text x="410" y="45" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">AUTONOMY RANGE</text>
 
 <!-- HEADER -->
 
