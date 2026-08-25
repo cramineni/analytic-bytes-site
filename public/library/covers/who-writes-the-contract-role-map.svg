@@ -5,8 +5,7 @@
 <rect width="1200" height="720" fill="#FFFFFF"/>
 
 <!-- Title -->
-<text x="60" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A">The data role landscape</text>
-<text x="60" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-style="italic" fill="#475569">How senior data-leadership roles distribute across the decision arc</text>
+<text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The data role landscape</text>
 
 <!-- Arc direction labels above column headers -->
 <text x="280" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="start">FAR FROM DECISION</text>

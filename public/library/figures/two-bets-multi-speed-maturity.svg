@@ -2,7 +2,7 @@
 <title>Multi-speed maturity: Different maturity, one framework.</title>
 <desc>Visual showing five functions inside a single organization at different maturity levels along a five-stage progression (Emerging, Managed, Defined, Governed, Optimized), with a cyan governance framework overlay bracketing the whole chart from above. Advancement is at Optimized; Finance at Governed; Human Resources at Defined; Research Administration at Managed; Facilities at Emerging. The visual reinforces the argument that governance runs across the multi-speed reality rather than imposing uniform readiness.</desc>
 <rect x="0" y="-110" width="1200" height="860" fill="#FFFFFF"/>
-<text x="600" y="-65" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">MULTI-SPEED MATURITY</text>
+<text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Multi-speed maturity</text>
 <!-- HEADER -->
 
 <!-- Top eyebrow -->

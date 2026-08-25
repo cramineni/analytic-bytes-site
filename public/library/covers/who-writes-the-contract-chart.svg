@@ -3,9 +3,7 @@
 <desc>Three horizontal bars of equal length showing how three skill tiers are named in senior data role postings. Engineering tier is filled solid navy — named specifically. Domain / SME tier is filled slate — named abstractly. Governance and contract authoring tier is filled light slate — usually compliance-framed, thin on semantic and definitional authority. Bar fills mirror the role-map weight scale (Heavy, Medium, Light). Teal marks the governance tier as the narrative focus.</desc>
 <rect width="1200" height="700" fill="#FFFFFF"/>
 
-<text x="600" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">JD SCAN  ·  SENIOR DATA ROLE POSTINGS</text>
-
-<text x="600" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.3" fill="#0F2A4A" text-anchor="middle">What the rubric names, how specifically</text>
+<text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">What the rubric names, how specifically</text>
 
 <!-- Row 1: ENGINEERING TIER — Heavy fill -->
 <g>

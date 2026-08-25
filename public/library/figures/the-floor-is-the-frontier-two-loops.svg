@@ -3,7 +3,7 @@
 <desc>A cadence diagram comparing two loops running over the same elapsed time. The upper track is the capability loop — build, ship, measure the model, improve. It is drawn as eight blocks that get progressively narrower from left to right, because each turn shortens the next. The lower track is the evaluation loop — did the floor rise, and for whom. It is drawn as a single turn split into four wide segments: define the construct, meaning what "the floor rose" means and for whom; reach the people it was meant to reach rather than the ones easiest to survey; observe the outcome, which takes as long as the outcome takes; and establish the warrant, ruling out what would have happened anyway. A dashed vertical line marks the point where the first evaluation turn closes. By that point the capability loop has completed seven turns, six of them entirely inside the span of that single evaluation turn. A footer states that the cadence is illustrative and no cycle times are claimed.</desc>
 
 <rect x="0" y="-110" width="1200" height="630" fill="#FFFFFF"/>
-<text x="600" y="-65" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="3" text-anchor="middle">TWO LOOPS · DIFFERENT CADENCES</text>
+<text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Two loops, different cadences</text>
 <!-- HEADER -->
 
 <!-- marker: first evaluation turn closes -->
