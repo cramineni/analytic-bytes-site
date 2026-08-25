@@ -3,10 +3,6 @@
 <desc>Four vertically stacked layer boxes labeled National, District, School, Classroom, each with a short essence line and cadence. Between each pair of layers is a teal stitching contract labeled with what has to move between them. On the right, a vertical bracket labeled Integration architecture — the thing LO 2.0 proposes — encloses the four layers and their contracts.</desc>
 <rect width="1200" height="620" fill="#FFFFFF"/>
 
-<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">LO 2.0 — STITCHING THE LAYERS</text>
-<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Four layers of education data. The stitching is what LO 2.0 proposes.</text>
-<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Each layer measures something different, on its own cadence. The integration architecture is the seam.</text>
-
 <!-- NATIONAL layer -->
 <rect x="240" y="190" width="600" height="60" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
 <text x="260" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#0F2A4A" text-anchor="start">National</text>
@@ -53,5 +49,5 @@
 </g>
 
 <!-- Caption -->
-<text x="600" y="580" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">The layers exist. The stitching contracts between them are what LO 2.0 proposes and what most systems have not yet built.</text>
+
 </svg>

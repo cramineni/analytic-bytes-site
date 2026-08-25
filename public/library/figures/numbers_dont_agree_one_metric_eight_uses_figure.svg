@@ -3,10 +3,6 @@
 <desc>Central navy circle labeled Student persistence with eight lines fanning outward to eight small endpoint nodes, each labeled by an obligation that required its own recalculation. Endpoint labels include program completion, state accountability, early-year persistence, S&amp;P bond rating, principal incentive, enrollment forecasting, federal accountability, and internal instructional cadence. A teal caption below names the pattern.</desc>
 <rect width="1200" height="620" fill="#FFFFFF"/>
 
-<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">ONE METRIC, EIGHT RECALCULATIONS</text>
-<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">Student persistence. Eight obligations. Eight numbers.</text>
-<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">The word is one. The calculation is eight. Each correct under its own definition. None agrees with the others.</text>
-
 <!-- Central node at (600, 380) -->
 <g>
   <!-- 8 fan-out lines to endpoints around a circle of radius ~200 -->

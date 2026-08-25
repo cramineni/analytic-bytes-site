@@ -3,10 +3,6 @@
 <desc>A three-stage diagram. On the left, two stacked boxes: the claimed path starts from Construct, what the system says it measures; the actual path starts from Proxy, what it learned to track instead. Both feed into a single shared middle box holding the score and the decision it triggers, marked identical on both paths, and noting that agreement, accuracy and fairness checks all run there and cannot see the split. On the right the paths separate again into two consequence boxes, the intended outcome and a different actual outcome that concentrates on the people the proxy tracks worst. A teal band between the two right-hand boxes is labelled the validity gap. The caption states that the divergence is invisible at the score and shows up only at the two ends.</desc>
 <rect width="1200" height="620" fill="#FFFFFF"/>
 
-<text x="600" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">THE VALIDITY GAP</text>
-<text x="600" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">The same score. A different thing measured. A different person affected.</text>
-<text x="600" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Validity is not a property of the score. It belongs to the reading given to the score and the use made of it.</text>
-
 <!-- LEFT: two starting points -->
 <text x="185" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">CLAIMED PATH</text>
 <rect x="60" y="210" width="250" height="90" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
@@ -57,6 +53,6 @@
 
 <!-- Caption -->
 <text x="600" y="530" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">A system can perform beautifully against the proxy and still be wrong for the decision it was deployed to inform.</text>
-<text x="600" y="552" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">The divergence is invisible in the middle. It shows up only at the two ends: what is being measured,</text>
-<text x="600" y="574" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">and who absorbs the difference.</text>
+
+
 </svg>

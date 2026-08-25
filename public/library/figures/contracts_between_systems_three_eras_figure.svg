@@ -3,10 +3,6 @@
 <desc>Three era columns — Legacy, Modern, Agentic — each showing a top row (bytes move) and a bottom row (someone can act) with a visible gap between them. In Legacy the gap is narrow. In Modern the gap widens. In Agentic the gap is highlighted in teal as consequential. Below, a one-line caption names the arc.</desc>
 <rect width="1200" height="600" fill="#FFFFFF"/>
 
-<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">CONTRACTS BETWEEN SYSTEMS</text>
-<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">The bytes move. The question is whether anyone can act on them.</text>
-<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Three eras. Each answered "do the bytes move." Each skipped "can anyone act."</text>
-
 <!-- Three era columns -->
 <!-- Era labels at top -->
 <text x="250" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">LEGACY</text>
@@ -57,12 +53,12 @@
   <rect x="850" y="380" width="200" height="55" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="4 3" rx="3"/>
   <text x="950" y="405" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0F2A4A" text-anchor="middle">Someone can act</text>
   <text x="950" y="423" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">agents act without review</text>
-  <text x="950" y="465" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0EA5E9" text-anchor="middle" font-style="italic" font-weight="600">the contract layer</text>
-  <text x="950" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0EA5E9" text-anchor="middle" font-style="italic" font-weight="600">has to be written</text>
+  
+  
 </g>
 
 <!-- Arrow spanning eras at the bottom -->
 <line x1="150" y1="530" x2="1035" y2="530" stroke="#94A3B8" stroke-width="1"/>
 <polygon points="1035,526 1045,530 1035,534" fill="#94A3B8"/>
-<text x="600" y="558" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">The gap has always been there. The agentic era is what makes writing the contract non-optional.</text>
+
 </svg>

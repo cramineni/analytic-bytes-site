@@ -3,10 +3,6 @@
 <desc>Two side-by-side vertical stack diagrams. Left stack shows AI reaching directly into raw warehouse tables through an ungoverned SQL path — labeled "ungrounded" with a teal warning marker. Right stack shows AI reaching through the semantic layer, calling governed metrics by name — labeled "grounded" with the semantic layer highlighted in teal. Below, a one-line caption names the difference.</desc>
 <rect width="1200" height="620" fill="#FFFFFF"/>
 
-<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">GROUNDING THE AI LAYER</text>
-<text x="600" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4" fill="#0F2A4A" text-anchor="middle">The semantic layer is the AI's contract with the warehouse.</text>
-<text x="600" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">AI reads governed metrics by name. It does not write raw SQL against the tables.</text>
-
 <!-- LEFT STACK — UNGROUNDED -->
 <g>
   <text x="300" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">UNGROUNDED — AI WRITES RAW SQL</text>
@@ -62,5 +58,5 @@
 </g>
 
 <!-- Caption below -->
-<text x="600" y="580" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">Ungrounded, the AI invents definitions. Grounded, the semantic layer is the contract the AI has to go through.</text>
+
 </svg>

@@ -13,8 +13,6 @@
   <rect width="1400" height="900" fill="#FFFFFF"/>
 
   <!-- Header -->
-  <text x="700" y="60" text-anchor="middle" font-size="26" font-weight="500" letter-spacing="-0.3" class="ink">Eight bridges</text>
-  <text x="700" y="92" text-anchor="middle" font-size="15" font-style="italic" class="ink-2">Classical automated-scoring disciplines and their modern AI-evaluation equivalents</text>
 
   <!-- Column headers -->
   <text x="330" y="150" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#0F2A4A">CLASSICAL &#160;&#160;·&#160;&#160; 1990s&#8211;2010s</text>
@@ -123,6 +121,6 @@
   <text x="890" y="757" font-size="11.5" class="ink-2">Observed-correlation vs. causal-impact framing</text>
 
   <!-- Footer note -->
-  <text x="700" y="825" text-anchor="middle" font-size="12" font-style="italic" class="ink-3">Same problems. Different vocabulary. The discipline for asking whether an AI system measures what its label claims was built in measurement science, decades before &#8220;AI eval&#8221; was a term.</text>
+  
 
 </svg>

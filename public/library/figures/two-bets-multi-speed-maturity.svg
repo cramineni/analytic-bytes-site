@@ -4,13 +4,13 @@
 <rect width="1200" height="750" fill="#FFFFFF"/>
 
 <!-- Top eyebrow -->
-<text x="600" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">MULTI-SPEED MATURITY</text>
+
 
 <!-- Title -->
-<text x="600" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Different maturity, one framework.</text>
+
 
 <!-- Subtitle -->
-<text x="600" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">The governance overlay coordinates the multi-speed reality inside a single institution.</text>
+
 
 <!-- Governance framework overlay: cyan bracket -->
 <g>
@@ -100,6 +100,6 @@
 
 <!-- Caption -->
 <text x="600" y="640" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">Each function is on its own trajectory. The framework operates at the current cross-section, calibrated</text>
-<text x="600" y="663" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-style="italic" fill="#475569" text-anchor="middle">to functions at different maturity states — coordinating, not imposing uniform readiness.</text>
+
 
 </svg>
