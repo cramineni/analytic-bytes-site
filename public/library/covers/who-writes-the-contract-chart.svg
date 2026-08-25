@@ -1,9 +1,10 @@
-<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 0 1200 548" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>JD scan: relative emphasis on three skill tiers across senior data role postings</title>
 <desc>Three horizontal bars of equal length showing how three skill tiers are named in senior data role postings. Engineering tier is filled solid navy — named specifically. Domain / SME tier is filled slate — named abstractly. Governance and contract authoring tier is filled light slate — usually compliance-framed, thin on semantic and definitional authority. Bar fills mirror the role-map weight scale (Heavy, Medium, Light). Teal marks the governance tier as the narrative focus.</desc>
 <rect width="1200" height="700" fill="#FFFFFF"/>
 
 <text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">What the rubric names, how specifically</text>
+<g transform="translate(0, -152)">
 
 <!-- Row 1: ENGINEERING TIER — Heavy fill -->
 <g>
@@ -32,4 +33,5 @@
 <line x1="560" y1="630" x2="640" y2="630" stroke="#94A3B8" stroke-width="1"/>
 <text x="600" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#475569" text-anchor="middle">Pattern observed across senior data role postings, June 2026.</text>
 <text x="600" y="680" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-style="italic" fill="#475569" text-anchor="middle">Illustrative; bar fill mirrors the role-map weight scale (Heavy · Medium · Light).</text>
+</g>
 </svg>

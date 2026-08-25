@@ -1,8 +1,9 @@
-<svg viewBox="0 -110 1600 910" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg viewBox="0 -110 1600 788" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">The rubric: one outcome scale plus a semantic layer</title>
 <desc>Three grantee cards describe success in different words. A semantic layer maps each grantee's language onto a shared four-point outcome scale — emerging, building, established, sustained — so different words in become one comparable placement out.</desc>
-<rect x="0" y="-110" width="1600" height="910" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1600" height="788" fill="#FFFFFF"/>
 <text x="800" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The rubric</text>
+<g transform="translate(0, -122)">
 <!-- HEADER -->
 
 <!-- grantee cards -->
@@ -52,4 +53,5 @@
 </g>
 
 <text x="40" y="700" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">Different words in. <tspan fill="#0EA5E9" font-weight="600">One comparable placement out.</tspan></text>
+</g>
 </svg>

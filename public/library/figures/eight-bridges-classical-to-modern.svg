@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1400 1010" role="img" font-family="Inter, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -110 1400 818" role="img" font-family="Inter, Helvetica, Arial, sans-serif">
   <title>Eight bridges — classical automated scoring to modern AI evaluation</title>
   <desc>Two-column correspondence map. Left column (navy) lists eight classical automated-scoring disciplines developed in measurement science and psychometrics between the 1990s and 2010s. Right column (teal) lists their modern AI evaluation equivalents. Each row pairs one classical discipline with its modern counterpart, connected by a thin teal line, showing that the current wave of AI eval is rebuilding what already existed under different vocabulary.</desc>
   <defs>
@@ -10,8 +10,9 @@
   </defs>
 
   <!-- White background -->
-  <rect x="0" y="-110" width="1400" height="1010" fill="#FFFFFF"/>
+  <rect x="0" y="-110" width="1400" height="818" fill="#FFFFFF"/>
 <text x="700" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Eight bridges, classical to modern</text>
+<g transform="translate(0, -192)">
 <!-- HEADER -->
 
   <!-- Header -->
@@ -123,6 +124,5 @@
   <text x="890" y="757" font-size="11.5" class="ink-2">Observed-correlation vs. causal-impact framing</text>
 
   <!-- Footer note -->
-  
-
+</g>
 </svg>

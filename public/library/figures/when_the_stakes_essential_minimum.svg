@@ -1,8 +1,9 @@
-<svg viewBox="0 -110 1200 710" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 428" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The essential minimum: five components of mission-driven AI evaluation</title>
 <desc>Horizontal 5-part visual showing the essential-minimum evaluation discipline for mission-driven AI. Five numbered items across the width: task decomposition, ground-truth benchmarking, deployment-context evaluation, downstream impact evaluation, escalation and handoff. Each item has a navy numbered circle, a two-line label, and a one-line essence. A teal connecting line underneath binds them as one discipline. Signature at bottom.</desc>
-<rect x="0" y="-110" width="1200" height="710" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="428" fill="#FFFFFF"/>
 <text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The essential minimum</text>
+<g transform="translate(0, -282)">
 <!-- HEADER -->
 
 <!-- Top eyebrow -->
@@ -71,5 +72,5 @@
   <line x1="1032" y1="450" x2="1032" y2="465" stroke="#0EA5E9" stroke-width="1.5"/>
   
 </g>
-
+</g>
 </svg>

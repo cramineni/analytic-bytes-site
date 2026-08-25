@@ -1,8 +1,9 @@
-<svg viewBox="0 -110 1200 810" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 726" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Two ledgers for the same search</title>
 <desc>Two columns side by side describing a single hiring search. The left column, the employer’s ledger, lists seven quantities that are measured, dashboarded and reviewed: time-to-fill, cost-per-hire, quality-of-hire, source-of-hire, offer-acceptance rate, applicants per opening, and funnel conversion by stage. Each is drawn as a solid navy row. The right column is the candidate’s side and is split in two. The upper half, drawn in dashed grey, lists five quantities counted by nobody: hours spent on an application, unpaid performance tasks completed, interviews prepared for and never discussed, reschedules and silences absorbed, and the cost of the waiting. The lower half, drawn in teal, lists five quantities a candidate can count because the employer sets them: rounds required, performance tasks assigned, elapsed days to a decision, people met, and requirements added after the measurement. The figure notes that only the teal group is identifiable, because it does not move when the candidate’s own effort or production cost moves.</desc>
-<rect x="0" y="-110" width="1200" height="810" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="726" fill="#FFFFFF"/>
 <text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Two ledgers, one search</text>
+<g transform="translate(0, -84)">
 <!-- HEADER -->
 <path d="M60,52 L60,42 L530,42" fill="none" stroke="#E2E8F0" stroke-width="1"/>
 <path d="M620,42 L1140,42 L1140,52" fill="none" stroke="#E2E8F0" stroke-width="1"/>
@@ -72,4 +73,5 @@
 <text x="60.0" y="540.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">Only the teal group is identifiable. Those quantities do not</text>
 <text x="60.0" y="560.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">move when the candidate’s effort or production cost moves,</text>
 <text x="60.0" y="580.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.5" fill="#0F2A4A">which is what makes them countable at all.</text>
+</g>
 </svg>

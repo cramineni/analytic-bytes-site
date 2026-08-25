@@ -1,8 +1,9 @@
-<svg viewBox="0 0 820 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
+<svg viewBox="0 0 820 423" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc" font-family="Inter,Helvetica,Arial,sans-serif">
 <title id="ttl">Same engagement, different calibrations</title>
 <desc id="desc">A horizontal autonomy spectrum with four decisions from AB's Deliver Signal workflow plotted at different points. Diagnostic prioritization sits at the human-only end. Frontline-versus-boardroom framing is left of center, slightly higher autonomy. Gap ranking is mid-spectrum, escalation-heavy. Source-inventory tagging is well along the spectrum toward agent autonomy.</desc>
 <rect width="820" height="500" fill="#FFFFFF"/>
 <text x="410" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Autonomy range</text>
+<g transform="translate(0, -77)">
 
 <!-- HEADER -->
 
@@ -47,5 +48,5 @@
 <text x="621" y="262" font-size="14" fill="#0F2A4A" font-weight="600" text-anchor="middle">tagging</text>
 <text x="621" y="284" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">pattern-matchable,</text>
 <text x="621" y="298" font-size="11" fill="#6B7A8C" text-anchor="middle" font-style="italic">recoverable cost</text>
-
+</g>
 </svg>

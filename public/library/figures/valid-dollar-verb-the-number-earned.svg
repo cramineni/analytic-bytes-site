@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 506" width="1200" height="630" role="img" aria-labelledby="title desc">
   <title id="title">Validity tells you which verb the number earned</title>
   <desc id="desc">Three rows ordered by the strength of the verb an impact number earns at the fourth inference link. No counterfactual earns supports. Contribution analysis, where rival explanations are tested and defeated, earns contributed to; this row is tinted because it is where most funders actually sit. A controlled comparison earns produced, with how far produced reaches depending on whether the design was matched, quasi-experimental, or randomized. Verb strength is encoded twice: colour darkens as the claim strengthens, and a three-step indicator shows one filled step, two, or three.</desc>
 
   <!-- background -->
-  <rect x="0" y="0" width="1200" height="630" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="506" fill="#ffffff"/>
 <text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The verb the number earned</text>
+<g transform="translate(0, -124)">
 
   <!-- title -->
 
@@ -56,4 +57,5 @@
     <rect x="1089" y="546" width="9" height="9" rx="2" fill="#0F2A4A"/>
     <rect x="1103" y="546" width="9" height="9" rx="2" fill="#0F2A4A"/>
   </g>
+</g>
 </svg>
