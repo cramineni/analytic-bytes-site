@@ -8842,7 +8842,7 @@ export const ESSAYS: Essay[] = [
           That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. Pointing AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and letting it do good is the easy reading. The harder one instruments the benefit: defined before the build, measured against the people it was meant to reach, held honest as the loop accelerates. &ldquo;The floor rose&rdquo; is where the work starts. Somebody has to stay in the room after the capability ships and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
         </P>
         <P>
-          That somebody is the job I have been doing for a decade. Amodei never names it, and I do not think the work gets done by accident.
+          That somebody is the job I have been doing for a decade. The essay makes the case for what powerful AI could do. The job I am describing is how anyone would know it did.
         </P>
 
         <SeeAlso>
