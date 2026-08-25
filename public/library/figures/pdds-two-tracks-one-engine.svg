@@ -20,7 +20,7 @@
     </style>
   </defs>
 
-  <text x="480" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">PDDS, two tracks, one engine</text>
+  <text x="480" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F2A4A" text-anchor="middle">PDDS, two tracks, one engine</text>
 
   <!-- SHARED FOUNDATION -->
   <rect class="neu" x="60" y="72" width="840" height="66" rx="10"/>

@@ -35,7 +35,7 @@
 
 <!-- spine bracket highlighting shared columns -->
 <rect x="262" y="110" width="864" height="430" rx="4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="4 6"/>
-<text x="694" y="100" font-size="16" letter-spacing="2" fill="#0EA5E9" font-weight="600" text-anchor="middle">THE SPINE  &#183;  one schema, every grantee</text>
+<text x="694" y="100" font-size="12" fill="#0EA5E9" font-weight="600" text-anchor="middle">THE SPINE  &#183;  one schema, every grantee</text>
 
 <!-- reads across arrow -->
 <path d="M1150 335 L1250 335" stroke="#0F2A4A" stroke-width="2" fill="none" marker-end="url(#a)"/>

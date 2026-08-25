@@ -3,7 +3,7 @@
 <desc>Left panel shows a dashboard-style grid of colored flag dots (red, yellow, green) representing early-warning flags firing on a screen — but nothing happens. An arrow crosses to the right panel, which shows a triangle of three navy-outlined circles labeled MEANING, AUTHORITY, VALIDITY with a teal decision dot at the center — the decision system that turns flags into action.</desc>
 
 <rect x="0" y="-110" width="900" height="450" fill="#FFFFFF"/>
-<text x="450" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The flag vs. the decision system</text>
+<text x="450" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F2A4A" text-anchor="middle">The flag vs. the decision system</text>
 <!-- HEADER -->
 
 <!-- LEFT PANEL: The flag wall (dashboard-style) -->

@@ -21,7 +21,7 @@
     </style>
   </defs>
 
-  <text x="480" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">PDDS, data and AI pipeline</text>
+  <text x="480" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F2A4A" text-anchor="middle">PDDS, data and AI pipeline</text>
 
   <!-- SOURCES -->
   <text x="30" y="86" class="band">1 · Public sources</text>
