@@ -23,7 +23,7 @@
 
 <!-- semantic layer band -->
 <rect x="40" y="300" width="1520" height="56" rx="4" fill="#F8FAFC" stroke="#0EA5E9" stroke-width="1.5"/>
-<text x="800" y="337" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#0EA5E9" font-weight="600" text-anchor="middle">SEMANTIC LAYER  &#183;  maps each grantee's language onto the scale</text>
+<text x="800" y="337" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#0EA5E9" font-weight="600" letter-spacing="2" text-anchor="middle">SEMANTIC LAYER  &#183;  maps each grantee's language onto the scale</text>
 
 <!-- connectors from cards through layer to scale markers -->
 <g stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="3 6" stroke-linecap="round" fill="none">
