@@ -8684,11 +8684,11 @@ export const ESSAYS: Essay[] = [
     number: "15",
     title: "The Floor Is the Frontier",
     subtitle:
-      "A measurement read of Machines of Loving Grace. If AI raises the floor at all, development isn&rsquo;t where the science lands, it&rsquo;s the point, and &ldquo;beneficial&rdquo; is a claim someone has to keep proving.",
+      "A measurement read of Machines of Loving Grace. If AI raises the floor at all, development isn’t where the science lands, it’s the point, and “beneficial” is a claim someone has to keep proving.",
     date: "2026-08-21",
     readingTime: "6 min read",
     summary:
-      "Dario&rsquo;s five areas mostly raise the ceiling; economic development is the one that raises the floor, and it belongs in the causal model from the start. But &ldquo;the floor rose&rdquo; is a claim, not a result. Beneficial is a claim about an outcome &mdash; defined before the build, and re-measured as the loop accelerates.",
+      "Dario’s five areas mostly raise the ceiling; economic development is the one that raises the floor, and it belongs in the causal model from the start. But “the floor rose” is a claim, not a result. Beneficial is a claim about an outcome — defined before the build, and re-measured as the loop accelerates.",
     cover: "/library/covers/the-floor-is-the-frontier.svg",
     arc: "measurement",
     body: (
