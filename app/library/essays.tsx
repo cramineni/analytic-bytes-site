@@ -5479,7 +5479,7 @@ export const ESSAYS: Essay[] = [
           The gain is specific. A reader can see that most of the figure comes from a claim the fund can defend, and that a smaller share comes from a claim it cannot defend yet. That is more useful than a single number with a single verdict attached.
         </P>
         <P>
-          It also tells a fund where the next evaluation dollar goes, though not by pointing at the weakest row. A soft warrant on a small number may not be worth buying down. What matters is both at once: how large the number is, and how weak its warrant. That is the dollars column read against the claim column. In the table above, housing has the weakest verb and the smallest amount. Wage gain carries twice the dollars at a verb one step stronger. The table does not settle which to fund next, but it puts the tradeoff somewhere a board can argue about.
+          It also tells a fund where the next evaluation dollar goes, though not by pointing at the weakest row. A soft warrant on a small number may not be worth buying down. What matters is both at once: how large the number is, and how weak its warrant. That is the dollars column read against the claim column. In the table above, housing has the weakest verb and the smallest amount. Wage gain carries twice the dollars at a verb one step stronger. The table does not settle which to fund next, but it puts the tradeoff somewhere a board can argue about. One direction matters here. The fund publishes this about its own claim, not about its grantees. A gate a funder turns downward, asking applicants to arrive with counterfactual evidence, would sort organizations by evaluation budget rather than by what they do.
         </P>
         <P>
           Goodhart&rsquo;s law has less room to work here. Suppose a fund publishes warrant per pathway. If it then grows its total by leaning on the softest one, the table shows a bigger number at a weaker verb. Anyone reading the table can see the trade.
@@ -5538,7 +5538,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026), offered in the spirit of the authors&rsquo; own invitation to apply the measure and report where it breaks. Every description of Dollars in Pockets is drawn from that published announcement; the complete methodology had not been published at the time of writing. The Indian regulation text was read in a secondary brief quoting it verbatim, as SEBI&rsquo;s attached PDF could not be opened directly.
+          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026; contributing authors Kyle Nelson, Tamsin Chen, Rhett Dornbach-Bender, and Ellie Bertani), offered in the spirit of the authors&rsquo; own invitation to apply the measure and report where it breaks. Every description of Dollars in Pockets is drawn from that published announcement; the complete methodology had not been published at the time of writing. The Indian regulation text was read in a secondary brief quoting it verbatim, as SEBI&rsquo;s attached PDF could not be opened directly.
         </MetaNote>
       </>
     ),
