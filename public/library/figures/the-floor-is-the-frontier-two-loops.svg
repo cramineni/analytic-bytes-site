@@ -1,6 +1,6 @@
 <svg viewBox="0 0 1200 529" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Two loops, one clock: the capability loop compounds and the evaluation loop does not</title>
-<desc>A cadence diagram comparing two loops running over the same elapsed time. The upper track is the capability loop — build, ship, measure the model, improve. It is drawn as eight blocks that get progressively narrower from left to right, because each turn shortens the next. The lower track is the evaluation loop — did the floor rise, and for whom. It is drawn as a single turn split into four wide segments: define the construct, meaning what "the floor rose" means and for whom; reach the people it was meant to reach rather than the ones easiest to survey; observe the outcome, which takes as long as the outcome takes; and establish the warrant, ruling out what would have happened anyway. A dashed vertical line marks the point where the first evaluation turn closes. By that point the capability loop has completed seven turns, six of them entirely inside the span of that single evaluation turn. A footer states that the cadence is illustrative and no cycle times are claimed.</desc>
+<desc>A cadence diagram comparing two loops running over the same elapsed time. The upper track is the capability loop — build, release, measure the model, improve. It is drawn as eight blocks that get progressively narrower from left to right, because each turn shortens the next. The lower track is the evaluation loop — did the floor rise, and for whom. It is drawn as a single turn split into four wide segments: define the construct, meaning what "the floor rose" means and for whom; reach the people it was meant to reach rather than the ones easiest to survey; observe the outcome, which takes as long as the outcome takes; and establish the warrant, ruling out what would have happened anyway. A dashed vertical line marks the point where the first evaluation turn closes. By that point the capability loop has completed seven turns, six of them entirely inside the span of that single evaluation turn. A footer states that the cadence is illustrative and no cycle times are claimed.</desc>
 
 <rect x="0" y="0" width="1200" height="529" fill="#FFFFFF"/>
 <text x="600" y="48" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Two loops, different cadences</text>
@@ -10,7 +10,7 @@
 <line x1="1038" y1="138" x2="1038" y2="356" stroke="#0F2A4A" stroke-width="1" stroke-dasharray="4 4"/>
 
 <!-- ============ CAPABILITY TRACK ============ -->
-<text x="90" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="2" fill="#0EA5E9">THE CAPABILITY LOOP  ·  BUILD, SHIP, MEASURE THE MODEL, IMPROVE</text>
+<text x="90" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="2" fill="#0EA5E9">THE CAPABILITY LOOP  ·  BUILD, RELEASE, MEASURE THE MODEL, IMPROVE</text>
 
 <g fill="#E0F2FE" stroke="#0EA5E9" stroke-width="1">
 <rect x="90" y="162" width="206" height="34" rx="3"/>
@@ -23,7 +23,7 @@
 <rect x="1041" y="162" width="69" height="34" rx="3"/>
 </g>
 
-<text x="193" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A" text-anchor="middle">one turn: build, ship, improve</text>
+<text x="193" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A" text-anchor="middle">one turn: build, release, improve</text>
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#0F2A4A" text-anchor="middle">
 <text x="383" y="184">two</text>
 <text x="539" y="184">three</text>
@@ -36,7 +36,7 @@
 
 <!-- bracket under capability turns 2 through 7 -->
 <path d="M 304 206 L 304 214 L 1033 214 L 1033 206" fill="none" stroke="#94A3B8" stroke-width="1"/>
-<text x="668" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Six capability turns ship inside the span of a single evaluation turn.</text>
+<text x="668" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Six capability turns close inside the span of a single evaluation turn.</text>
 
 <!-- ============ EVALUATION TRACK ============ -->
 <text x="90" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="2" fill="#0F2A4A">THE EVALUATION LOOP  ·  DID THE FLOOR RISE, AND FOR WHOM</text>

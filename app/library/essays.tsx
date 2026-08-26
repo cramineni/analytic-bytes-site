@@ -8862,7 +8862,7 @@ export const ESSAYS: Essay[] = [
 
         <Figure
           src="/library/figures/the-floor-is-the-frontier-two-loops.svg"
-          alt="Two tracks running over the same elapsed time. The capability loop on top — build, ship, measure the model, improve — is drawn as eight blocks that narrow left to right, because each turn shortens the next. The evaluation loop below is a single turn split into four wide segments: define the construct, reach the right people, observe the outcome, establish the warrant. A dashed line marks where that first evaluation turn closes. Six capability turns ship inside its span. The cadence is illustrative; no cycle times are claimed."
+          alt="Two tracks running over the same elapsed time. The capability loop on top — build, release, measure the model, improve — is drawn as eight blocks that narrow left to right, because each turn shortens the next. The evaluation loop below is a single turn split into four wide segments: define the construct, reach the right people, observe the outcome, establish the warrant. A dashed line marks where that first evaluation turn closes. Six capability turns close inside its span. The cadence is illustrative; no cycle times are claimed."
           caption="The capability loop moves. The evaluation loop has to keep up."
         />
 
@@ -8870,7 +8870,7 @@ export const ESSAYS: Essay[] = [
           So I read this essay as a specification with the acceptance criteria left out. Beneficial is where the acceptance criteria go &mdash; a set of conditions somebody writes down before the build, checks after, and checks again as the system that produced the outcome shifts beneath them.
         </P>
         <P>
-          That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. Pointing AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and letting it do good is the easy reading. The harder one instruments the benefit: defined before the build, measured against the people it was meant to reach, held honest as the loop accelerates. &ldquo;The floor rose&rdquo; is where the work starts. Somebody has to stay in the room after the capability ships and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
+          That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. Pointing AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and letting it do good is the easy reading. The harder one instruments the benefit: defined before the build, measured against the people it was meant to reach, held honest as the loop accelerates. &ldquo;The floor rose&rdquo; is where the work starts. Somebody has to stay in the room after the capability is deployed and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
         </P>
         <P>
           That somebody is the job I have been doing for a decade. The essay makes the case for what powerful AI could do. The job I am describing is how anyone would know it did.
