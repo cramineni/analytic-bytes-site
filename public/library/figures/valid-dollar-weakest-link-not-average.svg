@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 612" width="1200" height="630" role="img" aria-labelledby="title desc">
   <title id="title">The score is the weakest link, not the average</title>
   <desc id="desc">Four inference links behind an impact number shown as bars. Three are strong; the fourth, contribution, is weak. An averaged verdict sits high and reads healthy. The minimum verdict sits at the weak link. The band between the two is what a composite figure conceals.</desc>
 
   <!-- background -->
-  <rect x="0" y="0" width="1200" height="560" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1200" height="612" fill="#FFFFFF"/>
 
   <!-- chart title -->
-  <text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The weakest link, not the average</text>
+  <text x="600" y="48" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A" text-anchor="middle">The weakest link, not the average</text>
 
+  <g transform="translate(0, 52)">
   <!-- column headers -->
   <text x="120" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" letter-spacing="2">THE FOUR INFERENCES BEHIND AN IMPACT NUMBER</text>
   <text x="820" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#94A3B8" letter-spacing="2">VERDICT</text>
@@ -61,5 +62,6 @@
 
     <text x="680" y="462" font-weight="600" fill="#0F2A4A">Ours,</text>
     <text x="680" y="480" font-weight="600" fill="#0F2A4A">not adjacent</text>
+  </g>
   </g>
 </svg>

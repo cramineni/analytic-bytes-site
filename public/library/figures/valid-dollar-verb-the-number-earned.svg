@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 596" width="1200" height="630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 648" width="1200" height="630" role="img" aria-labelledby="title desc">
   <title id="title">Validity tells you which verb the number earned</title>
   <desc id="desc">Three rows ordered by the strength of the verb an impact number earns at the fourth inference link. No counterfactual earns supports. Contribution analysis, where rival explanations are tested and defeated, earns contributed to; this row is tinted because the cost of a controlled comparison, the years its effects take to compound, and the methodological expertise it requires put most claims here. A controlled comparison earns produced, with how far produced reaches depending on whether the design was matched, quasi-experimental, or randomized. Verb strength is encoded twice: colour darkens as the claim strengthens, and a three-step indicator shows one filled step, two, or three.</desc>
 
   <!-- background -->
-  <rect x="0" y="0" width="1200" height="596" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="648" fill="#ffffff"/>
 
   <!-- chart title -->
-  <text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The verb the number earned</text>
+  <text x="600" y="48" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A" text-anchor="middle">The verb the number earned</text>
 
+  <g transform="translate(0, 52)">
   <!-- column headers -->
   <text x="104" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">EVIDENCE AT LINK 4 &#183; OURS, NOT ADJACENT</text>
   <text x="750" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">VERB IT EARNS</text>
@@ -55,5 +56,6 @@
     <rect x="1075" y="462" width="9" height="9" rx="2" fill="#0F2A4A"/>
     <rect x="1089" y="462" width="9" height="9" rx="2" fill="#0F2A4A"/>
     <rect x="1103" y="462" width="9" height="9" rx="2" fill="#0F2A4A"/>
+  </g>
   </g>
 </svg>

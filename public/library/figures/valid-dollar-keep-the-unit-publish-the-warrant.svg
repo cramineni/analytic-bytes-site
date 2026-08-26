@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 606" width="1200" height="630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 658" width="1200" height="630" role="img" aria-labelledby="title desc">
   <title id="title">Keep the unit. Publish the warrant beside it.</title>
   <desc id="desc">An impact figure broken into three pathways. All three cap at the same inference link, the fourth one, ours not adjacent. What differs is the evidence each pathway has at that link, and so the verb each one earns. Legal fees avoided has a controlled comparison and earns produced. Wage gain has rival explanations tested and defeated and earns contributed to. Housing stability has no counterfactual and earns only supports. Verb strength is encoded twice: by colour, which darkens as the claim strengthens, and by a three-step indicator showing three filled steps, two, or one. The blended total is shown last. The dollars add, but the composite claim is capped at the weakest verb among the pathways, so the total row carries the same grey and the same one-of-three indicator as the pathway that capped it. Amounts are illustrative.</desc>
 
   <!-- background -->
-  <rect x="0" y="0" width="1200" height="606" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="658" fill="#ffffff"/>
 
   <!-- chart title -->
-  <text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Keep the unit, publish the warrant</text>
+  <text x="600" y="48" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A" text-anchor="middle">Keep the unit, publish the warrant</text>
 
+  <g transform="translate(0, 52)">
   <!-- column headers -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">
     <text x="104" y="108">PATHWAY</text>
@@ -79,4 +80,5 @@
   <!-- footer note -->
   <text x="72" y="504" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">Blending costs the strong pathway its verb: $4.8M that earned <tspan font-style="italic">produced</tspan> is reported inside a total that can only claim <tspan font-style="italic">supports</tspan>.</text>
   <text x="72" y="526" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="400" fill="#94A3B8">Pathways as named in the published Rasa Legal example. Amounts are illustrative; no per-pathway figures have been published.</text>
+  </g>
 </svg>
