@@ -8812,7 +8812,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-21",
     readingTime: "6 min read",
     summary:
-      "Amodei's five areas mostly raise the ceiling; economic development is the one that raises the floor, and it belongs in the causal model from the start. But 'the floor rose' is a claim, not a result. Beneficial is a claim about an outcome — defined before the build, and re-measured as the loop accelerates.",
+      "Amodei's five areas mostly raise the ceiling; economic development is the one that raises the floor, and it belongs in the causal model from the start. But the floor rose is a claim, not a result. Beneficial is a claim about an outcome — defined before the build, and re-measured as the loop accelerates.",
     cover: "/library/covers/the-floor-is-the-frontier.svg",
     arc: "measurement",
     body: (
@@ -8821,34 +8821,34 @@ export const ESSAYS: Essay[] = [
           I read <a href="https://www.darioamodei.com/essay/machines-of-loving-grace" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Machines of Loving Grace</a> the way I read most things, from the measurement seat. What could happen is half the question. How we would know it did is the half I get paid for. Dario Amodei lays out five areas where powerful AI could change a human life: biology and health, neuroscience and mind, economic development and poverty, peace and governance, and work and meaning. The one that stayed with me was economic development, and it is also the one where I would push back the hardest.
         </P>
         <P>
-          Most of the essay raises the ceiling. Biology and neuroscience are frontier moves: take the most advanced thing we can do and accelerate it. Remarkable work, and the people it reaches first are the people already closest to the frontier. That is the distinction I care about, and it runs on distribution. Any domain can produce a ceiling move. What makes it one is who it reaches first. Development is the inverse. Its whole promise is lifting the baseline capability of the many. That is the version of powerful AI I have spent a career trying to build, in education and in health, and it is the version the essay treats as an afterthought.
+          Most of the essay raises the ceiling. Biology and neuroscience are frontier moves: take the most advanced thing we can do and accelerate it. Remarkable work, and the people it reaches first are the people already best served. Development is the inverse. Its whole promise is lifting the baseline capability of the underserved many. That is the version of powerful AI I have spent a career trying to build, in education and in health, and it is the version the essay treats as an afterthought.
         </P>
         <P>
-          So my first disagreement is the ordering. Amodei leads frontier-first and treats development as where the science eventually lands, a downstream beneficiary of breakthroughs made elsewhere. There is a real case for that sequence. Breakthroughs are lumpy and hard to schedule, so you fund the frontier because you cannot route to the floor what does not yet exist, and distribution looks like the easier problem to solve second.
+          So my first disagreement is the ordering. Amodei leads frontier-first and treats development as where the science eventually lands, a downstream beneficiary of breakthroughs made elsewhere. There is a real case for that sequence. You cannot schedule a breakthrough, and you cannot deliver something that does not exist yet. So you fund the frontier, and distribution looks like the easier problem to take second.
         </P>
         <P>
-          I would still invert it. Treating distribution as a later stage puts it outside the design, and a thing outside the design does not get specified, budgeted, or measured. If AI raises the floor at all, global development belongs in the causal model from the start (a design claim, not a moral one). It is what floor-raising means. The floor is not the leftover. The floor is the frontier.
+          I would still invert it. Treating distribution as a later stage puts it outside the design, and a thing outside the design does not get specified, budgeted, or measured. If AI raises the floor at all, global development belongs in the causal model from the start (a design claim, not a moral one). It is what floor-raising means. The floor is the frontier.
         </P>
         <P>
           I would also expect the two areas Amodei is least sure of, governance and meaning, to get easier once baseline capacity rises. I would expect it; I cannot show it, and the essay does not show it either. Someone would have to say what a better-governed society looks like in observable terms, and how they would measure it, before either of us could put weight on the claim.
         </P>
         <P>
-          Education is nearly absent, and the absence is the tell. The development section runs on the distribution of health interventions, economic growth, food security, mitigating climate change, inequality within countries, and what he calls the opt-out problem. Education is not one of the six. The word appears once in the essay, in the section on peace and governance, where Amodei expects improvements in mental health, well-being, and education to increase democracy, since all three are negatively correlated with support for authoritarian leaders. Education enters as a correlate of a political outcome. I would have given it the other seat, as the instrument itself: education is how a gain in capability reaches a person who did not already have access to it. Leave education out and the capability still arrives, but it arrives at institutions before it arrives at people. That matters, because of how institutions carry people.
+          Education is nearly absent, and the absence is the tell. The development section runs on the distribution of health interventions, economic growth, food security, mitigating climate change, inequality within countries, and what he calls the opt-out problem. Education is not one of the six. The word appears once in the essay, in the section on peace and governance, where Amodei expects improvements in mental health, well-being, and education to increase democracy, since all three are negatively correlated with support for authoritarian leaders. Education enters as a correlate of a political outcome. I would have given it the other seat. A capability does not reach a person just by existing. Somebody has to learn to use it, and education is that step. Leave education out and the capability still arrives, but it arrives at institutions before it arrives at people. That matters, because of how institutions carry people.
         </P>
         <P>
           Our institutions have always <InternalLink slug="we-used-to-settle-for-thumbnails">carried people as thumbnails</InternalLink>: a name, a score, a category standing in for a whole person. We compressed because carrying the full picture was expensive. That cost has now collapsed. So we face a choice the essay does not quite name: run the old compression faster, or rebuild our systems to carry more of the person forward to the human who has to act. Powerful AI makes both cheaper. Only one of them raises the floor.
         </P>
         <P>
-          And that is the part the essay leaves for someone else to do. &ldquo;The floor rose&rdquo; is a claim, not a result. Rose for whom? By how much? And did the capability cause it, or merely coincide with a change already underway? Two questions are doing the work there, and they fail in different ways.
+          And that is the part the essay leaves for someone else to do. <I>The floor rose</I> is a claim, not a result. Rose for whom? By how much? And did the capability cause it, or merely coincide with a change already underway?
         </P>
         <P>
-          The first is attribution. <InternalLink slug="the-valid-dollar">Additionality</InternalLink>, the contribution dimension that separates what an intervention produced from what it only supported, is what stands between a number that is big and a number that holds. A program can run alongside a rising trend for years and report the whole rise.
+          Attribution is the first problem. <InternalLink slug="the-valid-dollar">Additionality</InternalLink> is the contribution dimension that separates what an intervention produced from what it only supported. Without it, a number can be large and still be wrong. A program can run alongside a rising trend for years and report the whole rise.
         </P>
         <P>
-          The second is validity. A model can apply a measure with superhuman consistency and still be <InternalLink slug="what-is-this-system-measuring">scoring the wrong thing</InternalLink>, because <InternalLink slug="validity-layer-beneath-responsible-ai">consistency is not validity</InternalLink>. The faster and more reliably the system reports, the more a proxy starts to feel like rigor; a stable number begins to pass for a true one. Beneficial does not arrive free with capability. It is a claim about an outcome, and the claim is harder to establish than the capability that was supposed to deliver it.
+          Validity is the second. A model can apply a measure with superhuman consistency and still be <InternalLink slug="what-is-this-system-measuring">scoring the wrong thing</InternalLink>, because <InternalLink slug="validity-layer-beneath-responsible-ai">consistency is not validity</InternalLink>. The faster and more reliably the system reports, the more easily a stable number passes for a true one. Beneficial is a claim about an outcome, and it is harder to establish than the capability that was supposed to deliver it.
         </P>
         <P>
-          I have hit that wall from the inside. I ran data for a K-8 charter network in the Bronx, five schools, about 1,800 children. The work was to connect what we knew about behavior, academics, and student experience into one picture, and then use it. Who is leaving, who is persisting, who is at risk, what is moving achievement.
+          I have hit this from the inside. I ran data for a K-8 charter network in the Bronx, five schools, about 1,800 children. The work was to connect what we knew about behavior, academics, and student experience into one picture, and then use it. Who is leaving, who is persisting, who is at risk, what is moving achievement.
         </P>
         <P>
           I could not get there. Elementary grades lived in one system and middle-school grades in another, and nobody could say which source was primary for a given field. Persistence, a single named construct, had been recalculated eight or more times since the start of that school year, off roughly fifty files. My notes from the period say plainly that the data were not available to make any comparison across time. So the question underneath all of it stayed open: were we serving the children in this district who needed us? Two of the districts we had moved into were sixteen to seventeen percent English learners. We were serving five percent.
@@ -8862,7 +8862,7 @@ export const ESSAYS: Essay[] = [
 
         <Figure
           src="/library/figures/the-floor-is-the-frontier-two-loops.svg"
-          alt="Two tracks running over the same elapsed time. The capability loop on top — build, release, measure the model, improve — is drawn as eight blocks that narrow left to right, because each turn shortens the next. The evaluation loop below is a single turn split into four wide segments: define the construct, reach the right people, observe the outcome, establish the warrant. A dashed line marks where that first evaluation turn closes. Six capability turns close inside its span. The cadence is illustrative; no cycle times are claimed."
+          alt="Two tracks running over the same elapsed time. The capability loop on top — build, release, measure the model, improve — is drawn as eight blocks that narrow left to right, because each turn shortens the next. The evaluation loop below is a single turn split into four wide segments: define the construct, reach the right people, observe the outcome, establish the warrant. A dashed line marks where that first evaluation turn closes. Seven capability turns close inside its span. The cadence is illustrative; no cycle times are claimed."
           caption="The capability loop moves. The evaluation loop has to keep up."
         />
 
@@ -8870,10 +8870,7 @@ export const ESSAYS: Essay[] = [
           So I read this essay as a specification with the acceptance criteria left out. Beneficial is where the acceptance criteria go &mdash; a set of conditions somebody writes down before the build, checks after, and checks again as the system that produced the outcome shifts beneath them.
         </P>
         <P>
-          That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. Pointing AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and letting it do good is the easy reading. The harder one instruments the benefit: defined before the build, measured against the people it was meant to reach, held honest as the loop accelerates. &ldquo;The floor rose&rdquo; is where the work starts. Somebody has to stay in the room after the capability is deployed and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
-        </P>
-        <P>
-          That somebody is the job I have been doing for a decade. The essay makes the case for what powerful AI could do. The job I am describing is how anyone would know it did.
+          That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. Pointing AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and letting it do good is the easy reading. The harder reading instruments the benefit, and measures it against the people it was meant to reach. <I>The floor rose</I> is where the work starts. Somebody has to stay in the room after the capability is deployed and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
         </P>
 
         <SeeAlso>
