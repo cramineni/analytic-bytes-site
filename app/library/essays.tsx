@@ -5476,10 +5476,22 @@ export const ESSAYS: Essay[] = [
           Three of those four columns are things a fund already has. The dollars come from the model it ran. Where the pathway caps comes from the four questions. The verb comes from the evidence behind that link. This adds almost no new measurement. It asks a fund to show grading it already did.
         </P>
         <P>
+          There is a failure condition here, and it bounds the claim just made. Rashi Trivedi has spent a decade building monitoring and evaluation systems for governments, multilaterals and corporate foundations, and calls the advisory and assurance ecosystem around them <a href="https://www.linkedin.com/pulse/impact-industrial-complex-rashi-trivedi-gqbpf/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">the Framework Economy</a>. She put the test this way: the table has to answer <I>&ldquo;What evidence allows you to call this produced, rather than supported?&rdquo;</I> If that takes minimal extra machinery, it is useful disclosure. If validating the warrant needs its own methodology, the table has become the next layer of that economy.
+        </P>
+        <P>
+          The check itself is not avoidable. Someone has to be able to test the verb, or the column is decoration. What the table can do is make the check cheap. The third column states where the pathway caps and on what evidence, so a reader who disagrees has something specific to argue with. That is reading, not auditing.
+        </P>
+        <P>
+          The table fails her test the day a fund needs a certified assessor to sign the warrant column. India&rsquo;s regime shows how that happens. It regulates who assesses and stops short of what would make the inference sound. Empanelment for the warrant would be the same move, one layer up.
+        </P>
+        <P>
           The gain is specific. A reader can see that most of the figure comes from a claim the fund can defend, and that a smaller share comes from a claim it cannot defend yet. That is more useful than a single number with a single verdict attached.
         </P>
         <P>
           It also tells a fund where the next evaluation dollar goes, though not by pointing at the weakest row. A soft warrant on a small number may not be worth buying down. What matters is both at once: how large the number is, and how weak its warrant. That is the dollars column read against the claim column. In the table above, housing has the weakest verb and the smallest amount. Wage gain carries twice the dollars at a verb one step stronger. The table does not settle which to fund next, but it puts the tradeoff somewhere a board can argue about. One direction matters here. The fund publishes this about its own claim, not about its grantees. A gate a funder turns downward, asking applicants to arrive with counterfactual evidence, would sort organizations by evaluation budget rather than by what they do.
+        </P>
+        <P>
+          The table also shows where evaluation spending went nowhere. Under the minimum rule, only evidence at the link that caps a pathway can move the verb. Take a pathway capped at link four, contribution, because there is no counterfactual behind it. The fund then buys a better instrument, one that measures the outcome more precisely. That is link one, and link one was already strong. The cap is still link four, so the verb stays at <I>supports</I>. The fund paid to improve a link that was not holding the claim back. A dashboard of indicators does not show that. A table stating what each pathway&rsquo;s claim rests on does.
         </P>
         <P>
           Goodhart&rsquo;s law has less room to work here. Suppose a fund publishes warrant per pathway. If it then grows its total by leaning on the softest one, the table shows a bigger number at a weaker verb. Anyone reading the table can see the trade.
@@ -5538,7 +5550,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026; contributing authors Kyle Nelson, Tamsin Chen, Rhett Dornbach-Bender, and Ellie Bertani), offered in the spirit of the authors&rsquo; own invitation to apply the measure and report where it breaks. Every description of Dollars in Pockets is drawn from that published announcement; the complete methodology had not been published at the time of writing. The Indian regulation text was read in a secondary brief quoting it verbatim, as SEBI&rsquo;s attached PDF could not be opened directly.
+          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026; contributing authors Kyle Nelson, Tamsin Chen, Rhett Dornbach-Bender, and Ellie Bertani), offered in the spirit of the authors&rsquo; own invitation to apply the measure and report where it breaks. Every description of Dollars in Pockets is drawn from that published announcement; the complete methodology had not been published at the time of writing. The Indian regulation text was read in a secondary brief quoting it verbatim, as SEBI&rsquo;s attached PDF could not be opened directly. The failure condition in the warrant section was named by Rashi Trivedi in correspondence after publication and is used with her permission.
         </MetaNote>
       </>
     ),
@@ -8344,456 +8356,279 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 14 — What the search cost
+  // ESSAY 16 — Seven causes, one bit
   // ===================================================================
   {
-    kind: "field-note",
-    slug: "what-the-search-cost",
-    number: "14",
-    title: "What the search cost.",
+    kind: "essay",
+    slug: "seven-causes-one-bit",
+    number: "16",
+    title: "Seven causes, one bit.",
     subtitle:
-      "Hiring is a high-stakes assessment that carries no consequential validity argument, and the only people who can count what it costs are the ones it sorts out.",
-    date: "2026-08-17",
-    readingTime: "13 min read",
+      "A hiring screen decides something about a person and returns a single bit. At least seven states produce that same bit, only one of them supports the conclusion she will draw, and nothing requires anyone to say which applied.",
+    date: "2026-08-27",
+    readingTime: "14 min read",
     summary:
-      "Educational measurement requires an instrument to argue for itself before it is used to decide something about a person, including what that use does to the people it sorts out. Employment screening makes the decision and argues none of it. The rejected population is unobservable to employers by construction, so the evidence can only come from the rejected side. This note concedes the strongest objection to consequential validity, shows the gap survives the concession, and reports a candidate-side ledger: 143 applications, 59 rejections, 63 that never returned a response of any kind. Sixty rejections were coded for content. None named a single attribute of the candidate. Four applications of 143 reached a human being, which means the obvious candidate-side instrument would also have missed most of the cost.",
-    cover: "/library/covers/what-the-search-cost.svg",
+      "Educational measurement requires an instrument to argue for itself before it decides something about a person. A résumé screen is an assessment under that definition and carries no such argument. This note finds three failures at three locations: the construct is never specified, the outcome does not identify its own cause, and the error the screen makes cannot be observed by the party who made it. It ends with three remedies, one for each failure, and three numbers any applicant tracking system already holds.",
+    cover: "/library/covers/seven-causes-one-bit.svg",
     arc: "measurement",
     draft: true,
     body: (
       <>
         <Brief>
           <p>
-            Educational testing carries a requirement to evaluate what a test does to the people it sorts. Employment screening carries no such requirement. The consequences land on a population that the people who built the screen cannot observe. Nobody has counted what a search costs the people it rejects.
+            A hiring screen decides something about a person. What comes back is a single bit.
           </p>
           <p>
-            I kept the count on myself. This is that ledger, and its limits.
+            At least seven different states produce that same bit. Nothing in the channel says which one applied, because the information was never in it.
+          </p>
+          <p>
+            This note works that as a measurement problem. There are three failures and they sit in three different places. Before the screen runs, the construct it is measuring is never specified. At the moment it reports, the outcome does not identify its own cause. After it runs, the error it made cannot be observed by the party who made it.
+          </p>
+          <p>
+            Those are three separate failures. None of them proves the other two. The note ends with three remedies, one for each failure, and three numbers an employer already holds.
           </p>
         </Brief>
 
-        <H2>A disclosure, before anything else</H2>
+        <div className="my-10">
+          <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+            The 60-second version
+          </div>
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+          <video
+            src="/videos/AB_PlumbingFallacy_v6_6_HIRE.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_6_HIRE_poster.jpg"
+            autoPlay
+            muted
+            playsInline
+            preload="metadata"
+            controls
+            className="w-full h-auto rounded-lg border border-line"
+            aria-label="The plumbing fallacy in hiring — a 60-second visual primer for this essay."
+          />
+        </div>
+
+        <H2>The screen is an assessment</H2>
         <P>
-          I am not a neutral observer. I have been looking for work for most of the past two years. I have an interest in the conclusion of this piece and it would be dishonest to bury that in a closing note.
+          I spent my early career in educational measurement. In that field, before an instrument is used to decide something about a person, you are required to argue for it.
         </P>
         <P>
-          It is also why the data exists. The rejected population is unobservable to employers by construction. Only the rejected can collect it. Almost none of them are trained to.
+          Messick wrote the consequences of use into the definition rather than appending them to it. Validity, in his words, is &ldquo;an integrated evaluative judgment of the degree to which empirical evidence and theoretical rationales support the adequacy and appropriateness of inferences and actions based on test scores or other modes of assessment&rdquo; (Messick, <I>Educational Measurement</I>, 3rd ed., 1989, p. 13).
+        </P>
+        <P>
+          Two phrases carry the weight here. <B>Actions</B>, which puts what a score is used to do inside the definition. And <B>other modes of assessment</B>, which is Messick declining to restrict any of this to instruments that happen to be called tests.
+        </P>
+        <P>
+          A r&eacute;sum&eacute; screen sits inside that definition. It produces information about a person, and that information supports a decision. Whether the information is a number, a rank, a knockout rule or a recruiter&rsquo;s read does not change the position it occupies.
+        </P>
+        <P>
+          Two of his threat categories transfer without modification.
+        </P>
+        <P>
+          <B>Construct underrepresentation.</B> A prior question has to be asked first. What is the screen measuring? Present capability. Evidence of specific prior experience. Probability of performing the role well. Or whether the person is worth assessing further. Those are four different constructs and a requisition rarely says which one is meant &mdash; the question <InternalLink slug="what-is-this-system-measuring">this library keeps asking of every system that scores something</InternalLink>.
+        </P>
+        <P>
+          Whichever one is meant, the screen samples keyword presence, title adjacency, and continuity of employment, inside one document written in a specific genre. That is a narrow sample of any of the four.
+        </P>
+        <P>
+          <B>Construct-irrelevant variance.</B> R&eacute;sum&eacute;-writing skill. Formatting compatibility. Prestige of prior employers. Name effects. All of these vary across candidates. None of them is the construct, and none of them is detected.
+        </P>
+        <P>
+          Kane supplies the apparatus. He reframed validation as an argument you write down: state how the score will be interpreted and used, then evaluate each inference in the chain. Apply that to a screen and four inferences need backing, which is <InternalLink slug="the-valid-dollar">the same chain I ran against a spending decision</InternalLink>, pointed at a person.
+        </P>
+        <P>
+          The document becomes a match score. The score stands in for the candidate&rsquo;s typical work. The score predicts performance on the job. The score justifies the decision.
+        </P>
+        <P>
+          There is a large literature showing that r&eacute;sum&eacute;-derived variables correlate with later outcomes. That literature does not finish this argument, and pointing at it is the usual way of avoiding the question. Kane&rsquo;s question is narrower. Does this screen, applied to this requisition, support each of those four steps, for this population, at this threshold, for this decision. A general result about predictors is not a validity argument for a particular instrument in a particular use.
+        </P>
+        <P>
+          That particular argument is what is rarely written down anywhere a reader can see it.
         </P>
 
-        <H2>Hiring is an assessment, and it carries no validity argument</H2>
+        <H2>The requirement has no time index</H2>
         <P>
-          I spent my early career in educational measurement. In that field, before an instrument is used to make a decision about a person, you are required to argue for it.
+          A requisition says what a role requires. It does not say when.
         </P>
         <P>
-          Messick unified how that argument works. Validity is not a property a test has. It is, in his words, an integrated evaluative judgment of the degree to which evidence and theory support the adequacy and appropriateness of inferences <B>and actions</B> based on test scores. Actions. Not only inferences. Consequences enter through the definition itself, and they are not an appendix to it.
+          There is nothing wrong with requiring one capability on the first day and expecting another to develop over the first year. Organizations do this deliberately and they are right to. Some things have to be there on arrival because the work will not wait. Some things are built by the work itself.
         </P>
         <P>
-          Two of his threat categories transfer to hiring without modification.
+          Almost no requisition marks the difference. The list arrives undifferentiated, and a screen reads all of it as conditions to be met at the moment of measurement.
         </P>
         <P>
-          <B>Construct underrepresentation.</B> The construct is something close to &ldquo;can do this work.&rdquo; The screen samples keyword presence, title adjacency, and tenure continuity, in a single document written in a specific genre.
+          The clearest evidence that the list is not a day-one list is that it routinely holds things no outside candidate could have on day one. Familiarity with the internal data model. Experience with the student information system this particular organization runs. Everyone involved knows those get learned after hire. They sit in the same undifferentiated list as the requirements that genuinely cannot wait.
         </P>
         <P>
-          <B>Construct-irrelevant variance.</B> R&eacute;sum&eacute;-writing skill. Formatting compatibility. Prestige of prior employers. Employment continuity. Name effects. All of these vary across candidates. None of them is the construct. None of them is detected.
+          So the screen is not failing at something it set out to do. It measures current capability across every listed item, which is exactly what it claims to measure. The difficulty is that current capability across every listed item is not the quantity the decision needs. The decision needs a judgment about performance over the life of the role, and part of that performance rests on capabilities the organization intends to build after hire. The screen is a sound measure of the wrong quantity.
         </P>
         <P>
-          Kyle Brink made a version of this argument in <I>MIT Sloan Management Review</I>{" "}
-          <a
-            href="https://sloanreview.mit.edu/article/the-elusiveness-of-merit-based-hiring/"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            two weeks ago
-          </a>
-          , from the management side rather than the measurement side. His subject is the recent turn toward merit-based hiring, and his objection is that the organizations declaring their processes meritocratic have mostly never validated the instruments they use to measure merit. Pedigree, tenure, an interview impression: proxies that were never tested against the construct they are asked to carry. He is arguing toward a conclusion I am not making here, that validated assessment advances merit and diversity at once, since a wider pool plus a valid predictor is a better sample and a better measurement at the same time. The overlap is the diagnosis, and it arrives from inside the organization rather than from the queue outside it.
+          The missing time index also breaks the third step in Kane&rsquo;s chain. That step claims the score predicts performance on the job. Without a time index nobody has said which job &mdash; the one on the first day, or the one twelve months later. Those are different targets and the screen is scored against neither of them in particular.
         </P>
         <P>
-          Messick has been contested for thirty years, and the strongest objection is worth stating in full rather than dismissed.
-        </P>
-        <P>
-          Popham argued that consequences matter enormously and must be evaluated, but that calling them validity dissolves a term that should remain about the accuracy of score-based inference. Cizek sharpened it: validating a score interpretation and justifying a test use are two separate enterprises, and fusing them failed for twenty-five years. Shepard and Linn largely sided with Messick. The dispute is live.
-        </P>
-        <P>
-          <B>Concede Popham completely. The gap survives.</B>
-        </P>
-        <P>
-          The objection presupposes that something else takes custody of consequences &mdash; that they belong to policy rather than psychometrics, and that policy will handle them. In educational testing that custodian exists. The <I>Standards</I>. State accountability regimes. Audit requirements. Litigation. In employment screening no custodian exists. The validity community does not claim the rejected population, and no policy body claims it either. Adverse-impact law covers protected classes and instruments formally classified as tests. Most screening today is neither.
-        </P>
-        <P>
-          So the argument does not require winning a thirty-year methodological dispute. It requires noticing that both sides agree someone must evaluate consequences, and that in this domain nobody has.
-        </P>
-        <P>
-          Kane supplies the apparatus. He reframed validation as argument: state the interpretation and use argument explicitly, then evaluate its warrants. The 2014 <I>Standards</I> adopt this framing &mdash; validity is the degree to which evidence and theory support interpretations of scores for proposed uses.
-        </P>
-        <P>
-          Apply that to a r&eacute;sum&eacute; screen and four inferences each need backing.
-        </P>
-        <P>
-          <B>Scoring.</B> The document becomes a match score. No published warrant.
-        </P>
-        <P>
-          <B>Generalization.</B> The score stands in for the candidate&rsquo;s typical work. No warrant; a r&eacute;sum&eacute; samples a writing genre.
-        </P>
-        <P>
-          <B>Extrapolation.</B> The score predicts job performance. Warrants exist only from hired samples, which are range-restricted by construction.
-        </P>
-        <P>
-          <B>Implication.</B> The score justifies the hire or no-hire decision. No warrant.
-        </P>
-        <P>
-          Four links. No published backing for any of them. The argument has never been written down, which is a different problem from having written it down badly.
+          It is the same document I have taken apart <InternalLink slug="who-writes-the-contract">from the employer&rsquo;s side</InternalLink>, where two roles get fused into one posting and the rubric ends up screening for the wrong one.
         </P>
 
-        <H2>Why the consequence cannot be seen from inside</H2>
+        <H2>What comes back is one bit</H2>
+        <P>
+          A rejection is a binary outcome produced by a system with many causes. At least seven distinct states sit behind it. The role was cancelled. An internal candidate existed. The budget froze. The requirements changed. The screen misread the document. A stronger candidate applied. The person could not do the work.
+        </P>
+        <P>
+          The mapping from those states to the outcome is many-to-one. The inverse problem is therefore underdetermined. That is the property that matters, and it holds whatever notation is used to describe it.
+        </P>
+        <P>
+          The information-theoretic version is the short way to say the same thing. A binary outcome carries at most one bit. Seven states cannot be recovered from one bit, because seven states need close to three. And one bit is a generous ceiling here rather than a tight figure. A signal carries less information the more expected it is, and rejection is what almost every application returns, so the real quantity is smaller than the ceiling.
+        </P>
+        <P>
+          The recipient is left to supply the cause herself. Of the seven, only one supports the conclusion a rejection most readily invites: I could not do the work.
+        </P>
+        <P>
+          The claim is narrower than saying the other six have nothing to do with her. Some of them partly do. It is about what the signal licenses. Nothing in the outcome warrants an inference about her capability, and that inference is the one the outcome invites.
+        </P>
+        <P>
+          Repeat that across a job search and a second consequence appears. She cannot learn. A near miss and a mismatch produce the same outcome, so there is nothing to correct against. The rational response to an uninformative signal is to send more applications rather than better ones. That raises the volume employers cite when they explain why screening had to be automated in the first place.
+        </P>
+        <P>
+          Whether that loop runs at scale is an empirical question and I am not asserting it here. The point is narrower. Messick put the consequences of use inside the definition of validity rather than beside it. These are consequences of use. They fall on the person being assessed, and no part of the hiring apparatus is chartered to measure them.
+        </P>
+
+        <Figure
+          src="/library/figures/seven-causes-one-bit.svg"
+          alt="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal is the state the recipient is most likely to assume, and the only one the signal cannot distinguish from the other six."
+          caption="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal is the state the recipient is most likely to assume, and the only one the signal cannot distinguish from the other six."
+        />
+
+        <H2>A reason travels when there is a score behind it</H2>
+        <P>
+          The channel is not always this thin, and the exception is worth reading closely.
+        </P>
+        <P>
+          An instructional designer wrote publicly in August 2026 about a rejection she received after an AI-conducted interview. The email offered her the option of detailed feedback and she took it. It gave specific examples of what she had said against what the employer was looking for, and it included positive points about her responses. Her own summary was that she had never received that much feedback from any interview she had done. She drew the comparison herself. What she was measuring it against was the canned line that begins &ldquo;after carefully reviewing your resume.&rdquo;
+        </P>
+        <P>
+          So a reason can travel. Look at what made that possible. She had been scored. An interview produces a record of responses with dimensions attached to it, so something exists to send back.
+        </P>
+        <P>
+          A r&eacute;sum&eacute; screen may well hold plenty behind its decision. Knockout results, ranking scores, extracted fields, recruiter notes, disposition codes. The difference is narrower than it first looks. Both systems hold a record. Only one holds a record built to be interpreted, and so only one holds a record that converts into a reason.
+        </P>
+        <P>
+          One post is an observation and not a rate, and I am treating it as one. It also cuts against reading this note as an argument about automation. Here the automated step is the one that explained itself.
+        </P>
+
+        <H2>The error nobody inside can see</H2>
         <P>
           Criterion validation runs on people who were hired.
         </P>
         <P>
-          That sample is restricted by construction. A false negative has no row in any dataset the employer holds. The person who was wrongly screened out generates no performance record, no tenure data, no manager rating. There is nothing for the model to learn from and nothing for an audit to find.
+          That sample is restricted by construction. A person screened out generates no performance record, no tenure data, and no manager rating. Whether that person would have done the work well is recorded nowhere, and it is recorded nowhere because the screen decided she would not be given the chance.
         </P>
         <P>
-          So the harm is invisible to the party positioned to correct it, and the party who experiences it has no standing to report it. That is not a gap in the data. It is a property of the design.
-        </P>
-
-        <H2>Only one side is instrumented</H2>
-        <P>
-          Employers measure their own side of a search carefully. Time-to-fill. Cost-per-hire. Quality-of-hire. Source-of-hire. Offer-acceptance rate. These are standard, they are dashboarded, and people are evaluated against them.
-        </P>
-        <P>
-          The other side has no ledger at all. Nothing counts candidate hours. Nothing counts unpaid take-homes, rounds completed, reschedules, days to decision, mid-process description revisions, finalists measured against requirements added after they were measured, or searches closed with no hire.
-        </P>
-        <P>
-          When one party is instrumented, only that party&rsquo;s costs are real. The one-sidedness of employer accounts of their own searches is not malice. It is what an unmeasured cost looks like from the side that does not bear it.
+          Note what that rules out. The employer cannot label its own rejections as errors, because labelling them would require the observation the screen prevented. A bad hire eventually becomes observable. A rejected candidate who would have succeeded does not. One of the two errors can be managed and the other cannot be seen.
         </P>
 
         <Figure
-          src="/library/figures/what-the-search-cost-two-ledgers.svg"
-          alt="Two ledgers for the same search. The employer's side lists seven quantities that are measured, dashboarded and reviewed. The candidate's side lists five that nobody counts, and five that a candidate can count because the employer sets them: rounds required, performance tasks assigned, elapsed days to a decision, people met, and requirements added after the measurement."
-          caption="Two ledgers for the same search. The employer's side lists seven quantities that are measured, dashboarded and reviewed. The candidate's side lists five that nobody counts, and five that a candidate can count because the employer sets them: rounds required, performance tasks assigned, elapsed days to a decision, people met, and requirements added after the measurement."
+          src="/library/figures/seven-causes-restricted-range.svg"
+          alt="Two scatter panels. The left panel plots every applicant against job performance and marks in teal the people who fell below the screening threshold but would have out-performed the median hire. The right panel plots the sample the coefficient is actually computed on. The truncation is not visible from inside that panel — the cloud fills the frame and the software returns a number."
+          caption="Two scatter panels. The left panel plots every applicant against job performance and marks in teal the people who fell below the screening threshold but would have out-performed the median hire. The right panel plots the sample the coefficient is actually computed on. The truncation is not visible from inside that panel — the cloud fills the frame and the software returns a number."
         />
 
         <P>
-          <B>3.1 The ledger came back nearly empty.</B>
+          So the harm is invisible to the party positioned to fix it. Ordinary post-hire performance data cannot reveal it, because the screen decides who enters that data.
         </P>
         <P>
-          Five quantities on the candidate&rsquo;s side are countable, because the employer sets them: rounds required, whether a performance task was assigned, elapsed days from first contact to a decision, people met, and requirements introduced after the first measurement. I kept all five for the current cycle. Four came back close to zero.
-        </P>
-        <P>
-          Across 143 applications, four processes reached a human being. Khan Academy ran a recruiter screen and a hiring-manager conversation, then stopped. Project Evident ran a recruiter screen and never reached the hiring manager. A state education agency assigned a two-hour timed leadership exercise. One charter organization went through to a final on-site, which I withdrew from over geography. Everything else ended before anyone spoke.
-        </P>
-        <P>
-          Rounds required is zero for 139 of the 143. Performance tasks assigned is one. People met is a number I can hold in my head without writing it down.
-        </P>
-        <P>
-          So the ledger this section proposed measures a process that ninety-seven percent of applications never enter.
-        </P>
-        <P>
-          That is a finding about the instrument rather than a defect in the data, and it is the more useful half of this note. Those five quantities are countable because the employer sets them, and an employer sets them only after deciding to engage. Before that point the employer sets nothing and records nothing. The cost accumulates there anyway. Reading the posting, judging it worth the hours, rewriting the document against it, submitting, waiting, and eventually reading the silence &mdash; all of it happens on the candidate&rsquo;s side of a door that does not open.
-        </P>
-        <P>
-          Any ledger assembled from employer-set quantities will be thin, because it can only count searches that started. Most of the cost is in the ones that did not.
-        </P>
-        <P>
-          <B>3.2 The performance task as unpaid discovery.</B>
-        </P>
-        <P>
-          Two claims live here and only one of them is publishable.
-        </P>
-        <P>
-          The first is appropriation: that a submitted deliverable gets used as work product. This happens. It is unobservable from the candidate&rsquo;s position and unprovable in any individual case. I am not going to allege it.
-        </P>
-        <P>
-          The second requires no allegation, because organizations state it themselves. After meeting the finalists, we understood what the role actually required. That sentence, or a version of it, appears in public hiring updates regularly.
-        </P>
-        <P>
-          Read the sequence plainly. The organization outsources its construct definition to the applicant pool. It takes the output. It pays nothing. It then rejects the people who produced the definition for not matching the definition they produced.
-        </P>
-        <P>
-          Assume complete good faith at every step and the structure is unchanged. Value moves from candidate to organization, uncompensated and unrecorded. Good faith does not repair it. Any argument that depends on establishing intent is an argument that can be deflected, and this one does not need to be.
-        </P>
-        <P>
-          A note on how not to measure this, since the obvious instrument is the wrong one. The tempting candidate-side measure is the volume of preparation a search generated &mdash; documents written, artifacts produced, visible output. It does not identify anything. Generative tools dropped the cost of producing a preparation document to near zero partway through this corpus, so the searches that came after look heavier than the ones that came before while the preparation behind them did not change. A file count measures the price of a page.
-        </P>
-        <P>
-          What the employer sets does not move when my production cost moves. That is why the five entries in &sect;3.1 are the ones that can go in a ledger at all. The effort I spent in response is real and is the actual cost, and it is precisely the quantity neither side has ever instrumented.
-        </P>
-        <P>
-          One limit on this section, placed here rather than buried in a closing note. My own count barely reaches it. Seven searches across twenty-one months assigned unpaid work, two of them in the current cycle. All seven were education organizations: charter networks, education nonprofits, a state education agency. Seven cases in one sector cannot describe a market.
-        </P>
-        <P>
-          So the argument above rests on what organizations say publicly about their own searches. The count adds one observation, and it is a narrower one. Where unpaid discovery showed up in this corpus, it showed up in the sector that talks the most about mission.
-        </P>
-        <P>
-          <B>3.3 Capability as a fixed attribute.</B>
-        </P>
-        <P>
-          An unstated assumption sits underneath every screen: that capability is a property of the person, present or absent at the moment of measurement, waiting to be detected.
-        </P>
-        <P>
-          Every organization also claims that development happens on the job. Both cannot be fully true. If people are built by the work, then &ldquo;lacking a requirement&rdquo; is a statement about a date. The screen reads it as a statement about a person.
-        </P>
-        <P>
-          Employers say the first half of that out loud when someone asks them directly. Strada&rsquo;s May 2026 employer survey on{" "}
-          <a
-            href="https://www.strada.org/news-insights/entry-level-hiring-in-the-ai-era-what-employers-are-thinking-and-doing"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            entry-level hiring in the AI era
-          </a>{" "}
-          found entry-level work moving from routine tasks toward analytical and judgment responsibilities, employers ranking critical thinking and communication well above AI literacy, and real work experience valued over GPA. That is employers describing a role that builds the person who holds it. It is the same organization whose screen reads the document for what the person already had before they arrived.
-        </P>
-        <P>
-          In Kane&rsquo;s terms this is the extrapolation inference doing work it cannot support. It extrapolates from a snapshot to typical future performance in a role that is designed to change whoever holds it.
-        </P>
-        <P>
-          This connects the candidate outside the building to the staff already inside it. The same assumption that rejects an applicant for a gap on a given Tuesday is what leaves existing junior staff undeveloped. Both follow from treating capability as found rather than built. In the nonprofit sector, where development budgets are the first line cut, the effect compounds.
-        </P>
-
-        <H2>What actually lands on the person</H2>
-        <P>
-          A rejection carries approximately one bit.
-        </P>
-        <P>
-          Seven distinct causes compress into that one bit: the role was cancelled, an internal candidate existed, the budget froze, the requirements changed, the screen misread the document, a stronger candidate applied, or the person genuinely could not do the work. Inverting one bit has no unique solution. People resolve the ambiguity by choosing the explanation about themselves.
-        </P>
-        <P>
-          Stated precisely: a measurement failure is reliably converted into a self-assessment of capability.
-        </P>
-
-        <Figure
-          src="/library/figures/what-the-search-cost-one-bit.svg"
-          alt="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal, a real capability gap, is the one most people pick."
-          caption="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal, a real capability gap, is the one most people pick."
-        />
-
-        <P>
-          <B>4.1 What sixty rejections said.</B>
-        </P>
-        <P>
-          That was the argument. Here is the count behind it.
-        </P>
-        <P>
-          I coded every rejection received in the current cycle: sixty of them, from fifty-nine employers, between April 4 and August 25, 2026. One employer rejected me twice for two different roles.
-        </P>
-        <P>
-          The tracker in &sect;5 records fifty-nine rejections against 143 applications, counted through August 16. The email sweep runs nine days further, to August 25, and returns sixty. I have not resolved the extra one and I am reporting both figures rather than picking the tidier. A one-message gap between a hand-kept tracker and a mailbox is the smallest version of the denominator problem described in &sect;5, and the direction of the error is the usual one: the mailbox holds more than the tracker does.
-        </P>
-        <P>
-          Twenty-six were boilerplate with no cause stated at all. Twenty-five said a version of &ldquo;other candidates more closely matched our needs,&rdquo; which names no attribute and identifies nothing a person could act on. Nine said the role itself had changed &mdash; filled, cancelled, paused, closed, or given to an internal candidate.
-        </P>
-        <P>
-          None named anything about the candidate. Not a missing skill, not a domain, not a seniority level, not location, not compensation, not a year count. Zero of sixty.
-        </P>
-        <P>
-          The nine matter more than the fifty-one. In roughly one rejection in seven, the person could know the outcome had nothing to do with them, and could know it only because someone chose to write the sentence. The other fifty-one had the same range of causes sitting behind them and no way to tell which one applied.
-        </P>
-        <P>
-          The one-bit claim is not a figure of speech in this corpus. Across sixty consecutive rejections the signal carried nothing about the person in any of them.
-        </P>
-        <P>
-          The channel fails in the other direction too. One application produced an automated reply within minutes saying the submission stood out and inviting a next step. No person had read anything. A system that cannot transmit a reason also cannot transmit encouragement, and the recipient has no way to distinguish the two cases from the message itself.
-        </P>
-        <P>
-          What the literature supports, and where it stops:
-        </P>
-        <P>
-          Jahoda&rsquo;s latent deprivation model holds that employment supplies time structure, social contact, status, collective purpose, and activity, not only income. Losing it removes all five.
-        </P>
-        <P>
-          The association between unemployment and mental health is well established longitudinally, including recovery on re-employment.
-        </P>
-        <P>
-          Cohort exposure is uneven. People aged eighteen to twenty-four out of school run more than double national unemployment even in strong economies. The Stanford Digital Economy Lab&rsquo;s 2026 finding &mdash; entry-level employment for twenty-two to twenty-five year olds in AI-exposed occupations running roughly nineteen percent below trend &mdash; sits on top of that baseline rather than replacing it.
-        </P>
-        <P>
-          Mattering is a defined construct with its own measurement literature. Repeated unattributed rejection is an anti-mattering exposure delivered at scale.
-        </P>
-        <P>
-          <B>Now the limit, plainly.</B> Unemployment leading to distress is established. Rejection as an exposure distinct from unemployment has not been studied. This section names a research gap. It does not report a finding. That is the honest claim and it is the more useful one, because it is the claim that tells someone what to go measure.
-        </P>
-
-        <H2>The ledger</H2>
-        <P>
-          <B>The corpus, and why it is not two cycles.</B>
-        </P>
-        <P>
-          I have been searching, with one interruption, since November 2024.
-        </P>
-        <P>
-          November 2024 to November 2025: twelve months of continuous search.
-        </P>
-        <P>
-          December 2025 to April 2026: employed. Five months. The role was eliminated.
-        </P>
-        <P>
-          April 4, 2026 to the present: searching again.
-        </P>
-        <P>
-          So the object here is roughly twenty-one months of active search inside a twenty-two month span, interrupted once by a seat that did not survive. Treating it as two discrete cycles would be tidier and would misdescribe it.
-        </P>
-        <P>
-          <B>What the current cycle shows.</B>
-        </P>
-        <P>
-          As of August 16, 2026, tracked and reconciled against email:
-        </P>
-        <P>
-          <B>143 applications. 59 rejections. 63 that never returned a response of any kind. 21 still open.</B>
-        </P>
-        <P>
-          Forty-four percent produced no response at all. Not a rejection. Nothing.
-        </P>
-        <P>
-          <B>What the ledger reports.</B>
-        </P>
-        <P>
-          Median days from application to a rejection: nine. The range runs from same-day to fifty-five. Ten of the twenty-two datable rejections arrived inside a week, and two arrived the next day. Twenty-two is the number of rejections carrying both an application date and a decision date; the rest are dated on one side only.
-        </P>
-        <P>
-          Median days to any response: the same nine, because for almost every application the first response was the rejection. Nothing preceded it.
-        </P>
-        <P>
-          Rejections stating a reason about the candidate: none, of sixty. See &sect;4.1.
-        </P>
-        <P>
-          Rounds required: zero for 139 of 143.
-        </P>
-        <P>
-          Performance tasks assigned: one.
-        </P>
-        <P>
-          Days from first contact to a decision: not reportable. Four cases do not have a median.
-        </P>
-        <P>
-          <B>What the ledger cannot report.</B>
-        </P>
-        <P>
-          Two entries were planned and cut.
-        </P>
-        <P>
-          Whether a posting stayed live at thirty, sixty and ninety days after I applied. Not recorded.
-        </P>
-        <P>
-          Whether a posting was reposted, re-titled or materially rewritten after I applied. Not recorded. I noticed a handful by accident, on roles I later reconsidered. Noticing is not measuring.
-        </P>
-        <P>
-          Both cut entries are about what the employer did after the application went in. I did not think to record either one, across twenty-one months of deliberate tracking. That belongs in the note rather than in a methods appendix, because it is the same blindness the note is about, appearing inside the instrument built to describe it. A candidate keeping a ledger on purpose still built it around her own side of the transaction.
-        </P>
-        <P>
-          <B>The estimate I got wrong, which is a result.</B>
-        </P>
-        <P>
-          Asked from inside the search how many applications I had sent, I said five hundred. Pressed, I revised to two hundred and fifty. The instrumented figure for the current cycle is 143.
-        </P>
-        <P>
-          I am not reporting that as an error to be embarrassed about. The five hundred is accurate to the lived denominator &mdash; twenty-one months &mdash; while the 143 covers four. And the gap between felt volume and counted volume is itself the thing this piece is about, running in the other direction. The subjective cost of a search outruns the countable one. Neither side has ever measured either.
-        </P>
-        <P>
-          A candidate-side ledger that reports its own subject&rsquo;s misestimate is more credible than one that does not.
-        </P>
-        <P>
-          <B>Two confounds, named before the comparison rather than after.</B>
-        </P>
-        <P>
-          <B>Denominator leakage is not random.</B> Applications that generate no confirmation email are invisible to any email-based reconciliation, and they are disproportionately the lowest-friction, highest-volume channels &mdash; which are also the lowest-response channels. The applications I cannot see are systematically the ones least likely to have received a reply. Undercounting them biases the observed response rate upward. Every number above is a ceiling on response and a floor on silence.
-        </P>
-        <P>
-          <B>The subject changed between periods.</B> Four simultaneous moves in the current cycle: sector, technology, function, and level. Any comparison across periods cannot separate market change from candidate change and should not pretend to.
-        </P>
-        <P>
-          <B>The r&eacute;sum&eacute; series.</B>
-        </P>
-        <P>
-          A second corpus, and the one with no legal exposure. It names no organization&rsquo;s conduct. It is my own document, versioned.
-        </P>
-        <P>
-          Twenty-nine base documents survive between January 2013 and July 2026, counting only the ones addressed to nobody. Documents written for a named employer are excluded, because those measure the employer. So are format-only duplicates: where the same document exists as both a Word file and a PDF, or as two saves with no substantive difference between them, it counts once. A file is not a version.
-        </P>
-        <P>
-          The count is not the finding and cannot be. A version was expensive to produce for most of that span and nearly free to produce after April 2026, so the number of documents in a given year measures the cost of making one at least as much as it measures the pressure to make one. What survives that confound is whose words open the document.
-        </P>
-        <P>
-          Most of the openings are not mine. The earliest, January 2013, opens <I>Curriculum Vitae of Chaitanya Ramineni</I> and then education &mdash; the discipline&rsquo;s format, carrying no self-description at all. By December 2015 there is one, and it is <I>research scientist</I>, still the discipline&rsquo;s word. From 2018 the vocabulary changes hands: core strengths, results-driven professional, achievement-driven professional, twelve plus years, fifteen plus years. Those are not terms I would use about myself. They are the terms that were being used that year.
-        </P>
-        <P>
-          In November 2024 and January 2025 the words are not even the market&rsquo;s in the abstract. They are a vendor&rsquo;s. A r&eacute;sum&eacute; service wrote two of these documents, opened one with <I>dynamic data strategist</I>, and moved my tenure to sixteen years without consulting me about what the count should include. That is the seam at its plainest: the construct definition of a person, drafted by a third party who has met neither side.
-        </P>
-        <P>
-          Two documents break the pattern and they are the reason &ldquo;each one required by the market&rdquo; is the wrong sentence. In December 2016 a CV opens with <I>Interests and Expertise &mdash; bridging research and practice, conceptualizing new applications of technology</I>. Nobody asked for that phrasing. In January 2020 two documents are saved the same day, a r&eacute;sum&eacute; and a CV, identical in content and opposite in order: the executive certificate above the doctorate on one, the doctorate first on the other. That is not vocabulary. That is a decision about which credential to lead with, made twice, for two audiences, by me.
-        </P>
-        <P>
-          So the accurate claim is narrower and more useful. Most re-authorings were market-required. A few were not, and the ones that were not did not hold. The December 2016 opening appears once and does not recur for nine years.
-        </P>
-        <P>
-          There is a second thing the series shows, and it is a measurement finding rather than a biographical one. Sort each document&rsquo;s sections into three kinds &mdash; credentials and scholarship, experience, and claims about myself &mdash; and the proportions invert. The 2013 vita is ninety-five percent credentials and scholarship. The mid-decade CVs are eighty-six to eighty-nine percent. From April 2023 onward the same band is usually around ten percent, while experience runs to seventy-five or eighty. The page did not get shorter. The room went somewhere else.
-        </P>
-        <P>
-          The obvious reading of that inversion is wrong, and it is worth naming because it is the same error the whole note is about. It looks like scholarship stopped. It did not. What changed is the artifact. In the research years the output of the work was a paper, a conference presentation, a technical report &mdash; objects with a name, a date, a venue, and a r&eacute;sum&eacute; section built to hold them. In the operator years the output of the same analytic work is a strategy deck presented to a C-suite or a board, a measurement framework a program adopted, a decision a leadership team made differently. That work is not smaller and it is not less rigorous. It is simply an artifact the instrument has no slot for.
-        </P>
-        <P>
-          So the credentials band does not fall because the scholarship fell. It falls because the document has a section called Publications and no section called <I>decisions this changed</I>. The evidence migrates into the experience band as a bullet, where it is indistinguishable in form from any other bullet, and its provenance &mdash; who saw it, what it moved &mdash; is not recoverable from the page. A shape series looks like a story about a career. It is at least as much a story about what the form can record.
-        </P>
-        <P>
-          The most recent document, July 2026, leads with a title line I wrote, twenty-plus years, an independent practice at the top of the experience section, and a published body of work entering as a credential. The tenure figure changed because I recounted it, not because it drifted: the assessment work I did during graduate school, at NBME and TEAC, had never been on the document. Deciding that those years count is the same act as writing the title line. Both are choices about what a career is made of, and both had been left to whoever was reading.
-        </P>
-        <P>
-          An employer writes one construct definition per requisition and is paid to do it. A candidate writes one per cycle and pays for it in hours nobody counts. That is a ledger entry.
-        </P>
-        <P>
-          There is a mechanism worth stating as a hypothesis rather than a finding. The roles a wide profile can actually reach are disproportionately the roles an organization has not finished defining, because a wide requisition is what matches a wide candidate. Undefined roles are unstable roles. A profile that clears an ambiguous requisition is therefore selected into the population of roles most likely to be restructured or eliminated. One case cannot establish that. It can specify it well enough to test.
-        </P>
-        <P>
-          <B>What I am not claiming.</B>
-        </P>
-        <P>
-          That I should have been hired anywhere.
-        </P>
-        <P>
-          Anything about a population. This is one subject.
-        </P>
-        <P>
-          The cause of any individual rejection.
-        </P>
-        <P>
-          Any causal path from rejection to distress.
-        </P>
-        <P>
-          <B>The contribution is not the argument.</B> The argument is that hiring is an assessment without a validity argument, and that is not new. The contribution is a candidate-side ledger that someone actually kept and published &mdash; a demonstration of the missing instrument rather than a description of it.
+          There are ways around this. Audit sampling. Following rejected candidates who were hired elsewhere. Quasi-experimental designs that admit a few people below the threshold. Each of them works. None of them is ordinary practice, and none of them is what a validity coefficient computed on hires is doing.
         </P>
 
         <H2>The seam</H2>
         <P>
-          Every organization runs on contracts between systems. Most of them are written down. Data contracts between teams. Service agreements with vendors. Reporting definitions between functions. When those contracts are missing, the systems drift apart and someone eventually pays to reconcile them.
+          Every organization runs on <InternalLink slug="the-contracts-between-systems">contracts between systems</InternalLink>. Most of them are written down. Data contracts between teams. Service agreements with vendors. Reporting definitions between functions. When those contracts are missing, the systems drift apart, and someone eventually pays to reconcile them.
         </P>
         <P>
-          The seam between an organization and the labor market is the one where the contract was never written, and the only one where the counterparty never sees the terms.
+          The seam between an organization and the labor market is one where the contract was never written, and where the counterparty does not see the terms. It is not alone in that. Credit scoring, insurance underwriting and admissions all have the same shape. What makes this seam worth pulling on is that every organization has one, and almost none of them treats it as a contract at all.
         </P>
         <P>
-          An unwritten contract does not stay empty. A market grows in the gap and sells the candidate a guess at the terms, and the guess arrives as a finished document with her name at the top and a tenure figure she did not choose. Two of mine were written that way. Nobody in that transaction &mdash; not the vendor, not the candidate, not the employer reading the result &mdash; has seen the definition being matched against.
+          An unwritten contract does not stay empty. A market grows in the gap and sells the candidate a guess at the terms. It used to arrive as a document someone else wrote for her. Now it arrives as a tool that rewrites her own document against the job description. A job description is a guess at the criteria. Nobody in that transaction has seen the definition being matched against &mdash; not the vendor, not the candidate, not the employer reading the result. A model writes the r&eacute;sum&eacute; and a model reads it, and neither one has been told what the job requires.
         </P>
         <P>
-          A signed construct definition is what a written contract looks like on that seam. No requisition opens without one. What decision does this role make that is not being made today. What we would expect to observe in twelve months if it worked. Which requirements are central and which are decorative. What structure the role assumes, and what happens if that structure changes. Hiring manager and HR both sign before anything goes live.
+          Three things would help here. This note has named three failures in three places, and each one needs its own repair. A single remedy for all three would be a remedy for none of them.
         </P>
         <P>
-          This is not a freeze. Requisitions should change; organizations that cannot reshape roles die of it. It is a version stamp. This is what we are measuring against as of today, and if it changes, the people measured against the previous version were measured against the previous version. Software teams do not argue that specifications should never change. They argue that changes should be recorded. Nobody calls that bureaucratic.
+          <B>Instrument the construct.</B> A signed construct definition is what a written contract looks like on that seam. Every requirement carries three attributes. What capability. What would count as evidence of it. When it has to be true, on the first day or built inside the first year. One statement sits above the list: what we would expect to observe in twelve months if this role worked.
         </P>
         <P>
-          Enforcement is publication, and the ledger above changes what is worth publishing. Rounds, take-homes and days to a decision describe only the small population an employer chose to engage. Reporting them would make most searches look inexpensive, because most applicants never generate a single entry.
+          Hiring manager and HR both sign it. Not as ceremony. A contract with no signatory is a note to self, and a note to self is what a requisition already is.
         </P>
         <P>
-          Three numbers per search, then. Applications received. Decisions issued with no stated cause. Applications that received no response of any kind.
+          This is a version stamp rather than a freeze. Requisitions should change, and organizations that cannot reshape roles die of it. The stamp says what we are measuring against as of today, and it records that people measured against the previous version were measured against the previous version. Software teams do not argue that specifications should never change. They argue that changes should be recorded. Nobody calls that bureaucratic.
         </P>
         <P>
-          None of the three requires new instrumentation. Every applicant tracking system already holds all three. They are not reported because nobody has ever been asked for them.
+          Versioning fixes <InternalLink slug="validity-layer-beneath-responsible-ai">construct drift</InternalLink>. It does nothing about the one bit.
         </P>
         <P>
-          The first organization to publish those three will look worse than its competitors for exactly one cycle, and will be the only one that knows what its hiring actually costs.
+          <B>Return the reason.</B> An AI screen generates a great deal of information about why one application ranked below another. That is what it is built to do. Match scores against stated requirements. Position in the pool. Which criteria were met and which were not.
+        </P>
+        <P>
+          The historical defence of the one-line rejection was cost. At two thousand applications, writing individual feedback was not possible, and nobody pretended otherwise. That defence has expired. The assessment work is already done and the text is close to free to produce. What is missing is any obligation to send it.
+        </P>
+        <P>
+          So the ask is small. If you are going to screen with a model, return what the model produced. Not the sentence about moving forward with other candidates. The thing behind it.
+        </P>
+        <P>
+          Two conditions on that, and they are not decoration.
+        </P>
+        <P>
+          The return has to be structured. Free text needs review on every candidate, which is the cost that was there before. A structured return is reviewed once, at the template. Three fields carry most of it. Which stated requirement was not met. Which stage the application reached. Where it sat against the criteria the requisition named.
+        </P>
+        <P>
+          And the return has to come second. Feedback trains behaviour. If the screen is reading r&eacute;sum&eacute;-writing skill and title adjacency, then telling candidates what it read teaches them to optimise those, and every future application converges on whatever the instrument rewards. The signal degrades. A reason is worth returning only when the instrument is measuring something worth optimising toward. Version the construct first. Returning a reason drawn from an unspecified construct broadcasts noise with the employer&rsquo;s authority behind it.
+        </P>
+        <P>
+          There is one serious objection and it is not the cost one. Counsel advises against stated reasons because a stated reason is evidence. That advice assumes withholding reduces exposure. Withholding does not remove the record. The screen&rsquo;s output already sits in the applicant tracking system, already discoverable, and already unreadable by the only person it describes. Withholding moves the asymmetry rather than closing it. I am not a lawyer, and this objection deserves a better answer than the one I can give it.
+        </P>
+        <P>
+          <B>Publish the numbers.</B> Enforcement is publication. Three numbers per search. Applications received. Decisions issued with no stated cause. Applications that received no response of any kind.
+        </P>
+        <P>
+          Stated cause needs defining, or the second number is trivial to game. A message saying we have decided to move forward with other candidates states no cause. It restates the outcome. A stated cause names something about the application: a requirement not met, a stage not reached, a comparison lost. Anything that names none of those counts toward the second number, including every well-written template.
+        </P>
+        <P>
+          Be clear about what these three do not do. They say nothing about whether the screen is valid. An employer could publish two thousand applications, nineteen hundred and forty causeless rejections and no silences at all, and still be running an instrument that measures nothing.
+        </P>
+        <P>
+          These numbers are not the third remedy. They are the audit that tells you whether the first two happened. The first asks what the instrument was meant to measure. The second asks what the person was told. The numbers ask whether either was done.
+        </P>
+        <P>
+          The third number carries the most weight, because it is the one that separates two situations a candidate cannot tell apart. Silence is what happens when a requisition receives two thousand applications, and it is also what happens when nobody bothers. Those are different, and the difference is only legible if the denominator is published beside the silence count. As things stand nobody can check it. Not the candidate, not a regulator, and on the evidence of what organizations measure about their own searches, not the employer either.
+        </P>
+        <P>
+          None of the three requires new instrumentation. Any applicant tracking system worth the license fee already holds all three, and the third is derivable from a timestamp. They go unreported because nothing obliges anyone to report them, and no candidate is in a position to ask.
+        </P>
+        <P>
+          The first organization to publish them will look worse than every organization that publishes nothing, because a number always looks worse than an absence. That is the whole reason nobody goes first.
+        </P>
+        <P>
+          Until those numbers are visible, silence stays uninterpretable. Until the construct is versioned, the employer cannot say what the screen was meant to measure. Neither side can answer a question about the same decision, and the decision gets made anyway.
         </P>
 
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="who-writes-the-contract"
+            title="Who writes the contract."
+            gloss="The same requisition document, read from the employer's side of the door. That piece asks who owns the role definition. This one asks what the person on the other side is told when the definition is applied to her."
+          />
+          <SeeAlsoItem
+            slug="the-valid-dollar"
+            title="The valid dollar."
+            gloss="Where the four-inference chain got built, pointed at a spending decision."
+          />
+          <SeeAlsoItem
+            slug="validity-layer-beneath-responsible-ai"
+            title="Validity is the layer beneath responsible AI."
+            gloss="The drift modes named there are what versioning the construct is designed to catch."
+          />
+        </SeeAlso>
+
         <MetaNote>
-          Standing practice: no organization is named in this piece. Patterns are drawn across many.
+          Written August 2026 for the Analytic Bytes Library. Standing practice: no employer, client or vendor is named in this piece.
         </MetaNote>
       </>
     ),
