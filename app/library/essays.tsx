@@ -5494,7 +5494,7 @@ export const ESSAYS: Essay[] = [
           The table also shows where evaluation spending went nowhere. Under the minimum rule, only evidence at the link that caps a pathway can move the verb. Take a pathway capped at link four, contribution, because there is no counterfactual behind it. The fund then buys a better instrument, one that measures the outcome more precisely. That is link one, and link one was already strong. The cap is still link four, so the verb stays at <I>supports</I>. The fund paid to improve a link that was not holding the claim back. <InternalLink slug="the-decision-system">A dashboard of indicators does not show that</InternalLink>. A table stating what each pathway&rsquo;s claim rests on does.
         </P>
         <P>
-          Goodhart&rsquo;s law has less room to work here. Suppose a fund publishes warrant per pathway. If it then grows its total by leaning on the softest one, the table shows a bigger number at a weaker verb. Anyone reading the table can see the trade.
+          Goodhart&rsquo;s law has less room to work here. Suppose a fund publishes <ArtifactLink slug="validity-grid">warrant per pathway</ArtifactLink>. If it then grows its total by leaning on the softest one, the table shows a bigger number at a weaker verb. Anyone reading the table can see the trade.
         </P>
         <P>
           GRADE has one more move worth borrowing, and it comes before the arithmetic. Not every outcome enters its summary rating. Only the outcomes a panel has judged critical to the decision are counted toward overall certainty; the rest are reported and set aside.
@@ -8775,7 +8775,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          Whether the resulting number then earns a strong claim &mdash; <I>supported</I>, <I>contributed to</I>, <I>produced</I> &mdash; is a separate question, and it has its own answer in <InternalLink slug="the-valid-dollar">The Valid Dollar</InternalLink>. The join makes the division same-scope. The warrant makes it honest about causation. They are two different gates, and a number needs both.
+          Whether the resulting number then earns a strong claim &mdash; <I>supported</I>, <I>contributed to</I>, <I>produced</I> &mdash; is a separate question, and it has its own answer in <InternalLink slug="the-valid-dollar">The Valid Dollar</InternalLink>. The join makes the division same-scope. The warrant makes it honest about causation. They are <ArtifactLink slug="validity-grid">two different gates</ArtifactLink>, and a number needs both.
         </P>
 
         <Figure

@@ -285,6 +285,10 @@ export const ARTIFACTS: Artifact[] = [
       "A validity quadrant for any cost-per-outcome claim. Reach is the gate onto the grid at the origin — until the outcome is measured at all, you are not on the grid. Pass it and you land at the bottom-left, then climb right along same-scope (the Spend Trap: do spend and outcomes carry the same keys) and up along warrant (the Valid Dollar: does the evidence earn a causal verb). Four cells: noise, an honest correlation, a warranted-but-mis-costed claim, and a defensible impact-per-dollar.",
     image: "/library/artifacts/validity-grid.svg",
     slug: "validity-grid",
+    referencedIn: [
+      { slug: "the-valid-dollar", title: "The valid dollar." },
+      { slug: "the-spend-trap", title: "The spend trap." },
+    ],
   },
   {
     title: "Decision Rights at the Door",
