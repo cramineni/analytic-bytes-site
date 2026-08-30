@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1000 764" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">The validity quadrant: Reach is the gate onto the grid at the origin, same-scope is the x-axis, warrant is the y-axis</title>
+<desc>A validity quadrant for any cost-per-outcome claim. Reach is the gate onto the grid at the origin — until the outcome is measured at all, you are not on the grid. Pass it and you land at the bottom-left origin, then climb right along same-scope (the Spend Trap: do spend and outcomes carry the same keys) and up along warrant (The Valid Dollar: does the evidence earn a causal verb). Four cells. Bottom-left, mismatched division and no evidence: noise. Bottom-right, same keys but correlation only: an honest ratio, cost per outcome with no cause claimed. Top-left, warranted but mismatched cost: proven but mis-costed. Top-right, same keys and warranted: a defensible impact per dollar.</desc>
+<rect width="1000" height="764" fill="#FFFFFF"/>
+
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#94A3B8"/>
+</marker>
+<marker id="arrow-navy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#0F2A4A"/>
+</marker>
+</defs>
+
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+
+<text x="500" y="48" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The validity quadrant</text>
+
+<!-- cells (contiguous 2x2) -->
+<rect x="280" y="120" width="340" height="210" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="620" y="120" width="340" height="210" rx="8" fill="#0F2A4A"/>
+<rect x="280" y="330" width="340" height="210" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="620" y="330" width="340" height="210" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+
+<!-- crosshair: faint warrant threshold (horizontal), teal same-scope threshold (vertical) -->
+<line x1="280" y1="330" x2="960" y2="330" stroke="#E2E8F0" stroke-width="1.5"/>
+<line x1="620" y1="120" x2="620" y2="540" stroke="#0EA5E9" stroke-width="3"/>
+
+<!-- TL: different keys, warranted -->
+<text x="450" y="188" font-size="19" font-weight="700" fill="#475569" text-anchor="middle">Proven, mis-costed</text>
+<text x="450" y="214" font-size="13.5" fill="#94A3B8" text-anchor="middle">it works — but the $/outcome is a guess</text>
+<line x1="350" y1="238" x2="550" y2="238" stroke="#E2E8F0" stroke-width="1.2"/>
+<text x="450" y="266" font-size="11.5" font-style="italic" fill="#94A3B8" text-anchor="middle">e.g. an evaluation proves it works,</text>
+<text x="450" y="284" font-size="11.5" font-style="italic" fill="#94A3B8" text-anchor="middle">but cost is one site ÷ all sites</text>
+
+<!-- TR: same keys, warranted (destination) -->
+<text x="790" y="180" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">Defensible</text>
+<text x="790" y="205" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">impact per dollar</text>
+<text x="790" y="232" font-size="13.5" fill="#CBD5E1" text-anchor="middle">same scope, and it earns the verb</text>
+<line x1="690" y1="254" x2="890" y2="254" stroke="#334E6B" stroke-width="1.2"/>
+<text x="790" y="282" font-size="11.5" font-style="italic" fill="#94A3B8" text-anchor="middle">e.g. Program · Fall '25 ÷ Program · Fall '25,</text>
+<text x="790" y="300" font-size="11.5" font-style="italic" fill="#94A3B8" text-anchor="middle">and causal evidence backs it</text>
+
+<!-- BL: different keys, correlation (the origin) -->
+<text x="450" y="398" font-size="19" font-weight="700" fill="#475569" text-anchor="middle">Noise</text>
+<text x="450" y="424" font-size="13.5" fill="#94A3B8" text-anchor="middle">a guess with a decimal point</text>
+<line x1="350" y1="448" x2="550" y2="448" stroke="#E2E8F0" stroke-width="1.2"/>
+<text x="450" y="476" font-size="11.5" font-style="italic" fill="#94A3B8" text-anchor="middle">e.g. this year's cost ÷ last year's</text>
+<text x="450" y="494" font-size="11.5" font-style="italic" fill="#94A3B8" text-anchor="middle">outcomes, and no evidence</text>
+
+<!-- BR: same keys, correlation -->
+<text x="790" y="398" font-size="19" font-weight="700" fill="#0F2A4A" text-anchor="middle">Honest ratio</text>
+<text x="790" y="424" font-size="13.5" fill="#475569" text-anchor="middle">cost per outcome — no cause claimed</text>
+<line x1="690" y1="448" x2="890" y2="448" stroke="#E2E8F0" stroke-width="1.2"/>
+<text x="790" y="476" font-size="11.5" font-style="italic" fill="#475569" text-anchor="middle">e.g. Program · Fall '25 ÷ Program · Fall '25,</text>
+<text x="790" y="494" font-size="11.5" font-style="italic" fill="#475569" text-anchor="middle">but cause still unproven</text>
+
+<!-- Y axis -->
+<line x1="262" y1="542" x2="262" y2="114" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="72" y="330" font-size="13" font-weight="700" letter-spacing="1" fill="#475569" text-anchor="middle" transform="rotate(-90 72 330)">WARRANTED?</text>
+<text x="248" y="140" font-size="12" fill="#475569" text-anchor="end">earns the verb</text>
+<text x="248" y="516" font-size="12" fill="#94A3B8" text-anchor="end">correlation only</text>
+<text x="248" y="536" font-size="10.5" font-weight="700" letter-spacing="0.8" fill="#475569" text-anchor="end">THE CAUSATION TRAP</text>
+<text x="248" y="551" font-size="10" font-style="italic" fill="#94A3B8" text-anchor="end">read: The Valid Dollar</text>
+
+<!-- X axis -->
+<line x1="278" y1="560" x2="962" y2="560" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="450" y="552" font-size="12" fill="#94A3B8" text-anchor="middle">different keys</text>
+<text x="790" y="552" font-size="12" fill="#0EA5E9" text-anchor="middle">same keys</text>
+<text x="360" y="586" font-size="10.5" font-weight="700" letter-spacing="0.8" fill="#475569" text-anchor="middle">THE SPEND TRAP</text>
+<text x="620" y="586" font-size="13" font-weight="700" letter-spacing="1" fill="#475569" text-anchor="middle">SAME-SCOPE?</text>
+
+<!-- Reach = the gate onto the grid, under the bottom-left origin -->
+<text x="300" y="654" font-size="12.5" font-weight="700" letter-spacing="0.8" fill="#0F2A4A" text-anchor="middle">THE REACH TRAP · THE GATE ONTO THE GRID</text>
+<rect x="230" y="672" width="9" height="44" fill="#0F2A4A"/>
+<rect x="361" y="672" width="9" height="44" fill="#0F2A4A"/>
+<rect x="230" y="668" width="140" height="7" fill="#0F2A4A"/>
+<line x1="300" y1="722" x2="300" y2="682" stroke="#0F2A4A" stroke-width="2.4" marker-end="url(#arrow-navy)"/>
+<text x="300" y="742" font-size="11" font-style="italic" fill="#94A3B8" text-anchor="middle">measured at all? pass it to land at the origin — then climb</text>
+
+</g>
+</svg>

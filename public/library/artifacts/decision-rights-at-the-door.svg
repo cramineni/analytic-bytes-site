@@ -1,0 +1,227 @@
+<svg viewBox="0 0 1400 640" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+<title>Decision rights at the door</title>
+<desc>Three panels, each showing the same sixty-six job postings as a grid of sixty-six small squares. In the first panel, headed a decision the hire may make, twenty-three squares are filled navy and the panel is framed in a solid navy line. In the second panel, what an AI system may decide, two squares are filled. In the third, whether the hire may halt or gate a model, one square is filled and it is marked hedged. The second and third panels are framed in teal dashed lines to mark what is missing.</desc>
+<rect width="1400" height="640" fill="#FFFFFF"/>
+<text x="700.0" y="68" font-size="26" font-weight="700" fill="#0F2A4A" text-anchor="middle">The same document answers one question and not the other two.</text>
+<text x="239" y="136" font-size="30" font-weight="600" fill="#0F2A4A" text-anchor="middle">23 of 66</text>
+<text x="239" y="162" font-size="13.5" fill="#475569" text-anchor="middle">a decision the hire</text>
+<text x="239" y="180" font-size="13.5" fill="#475569" text-anchor="middle">may make, unaided</text>
+<rect x="60.0" y="196" width="358" height="244" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.6"/>
+<rect x="88" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="116" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="144" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="172" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="200" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="228" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="256" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="284" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="312" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="340" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="368" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="88" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="116" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="144" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="172" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="200" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="228" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="256" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="284" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="312" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="340" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="368" y="254" width="22" height="22" fill="#0F2A4A"/>
+<rect x="88" y="282" width="22" height="22" fill="#0F2A4A"/>
+<rect x="116" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="144" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="172" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="200" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="228" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="256" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="284" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="312" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="340" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="368" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="88" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="116" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="144" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="172" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="200" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="228" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="256" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="284" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="312" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="340" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="368" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="88" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="116" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="144" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="172" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="200" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="228" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="256" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="284" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="312" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="340" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="368" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="88" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="116" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="144" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="172" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="200" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="228" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="256" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="284" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="312" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="340" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="368" y="366" width="22" height="22" fill="#E2E8F0"/>
+<text x="239" y="414" font-size="13" fill="#94A3B8" text-anchor="middle">35% of the corpus</text>
+<text x="700" y="136" font-size="30" font-weight="600" fill="#0F2A4A" text-anchor="middle">2 of 66</text>
+<text x="700" y="162" font-size="13.5" fill="#475569" text-anchor="middle">what an AI system</text>
+<text x="700" y="180" font-size="13.5" fill="#475569" text-anchor="middle">may decide alone</text>
+<rect x="521.0" y="196" width="358" height="244" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.8" stroke-dasharray="6 5"/>
+<rect x="549" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="577" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="605" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="633" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="661" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="689" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="717" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="745" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="773" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="801" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="829" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="549" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="577" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="605" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="633" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="661" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="689" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="717" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="745" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="773" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="801" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="829" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="549" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="577" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="605" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="633" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="661" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="689" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="717" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="745" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="773" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="801" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="829" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="549" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="577" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="605" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="633" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="661" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="689" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="717" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="745" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="773" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="801" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="829" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="549" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="577" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="605" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="633" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="661" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="689" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="717" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="745" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="773" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="801" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="829" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="549" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="577" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="605" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="633" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="661" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="689" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="717" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="745" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="773" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="801" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="829" y="366" width="22" height="22" fill="#E2E8F0"/>
+<text x="700" y="414" font-size="13" fill="#94A3B8" text-anchor="middle">2 postings in sixty-six</text>
+<text x="1161" y="136" font-size="30" font-weight="600" fill="#0F2A4A" text-anchor="middle">1 of 66</text>
+<text x="1161" y="162" font-size="13.5" fill="#475569" text-anchor="middle">the hire may halt,</text>
+<text x="1161" y="180" font-size="13.5" fill="#475569" text-anchor="middle">override or gate a model</text>
+<rect x="982.0" y="196" width="358" height="244" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.8" stroke-dasharray="6 5"/>
+<rect x="1010" y="226" width="22" height="22" fill="#0F2A4A"/>
+<rect x="1038" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1066" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1094" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1122" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1150" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1178" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1206" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1234" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1262" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1290" y="226" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1010" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1038" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1066" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1094" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1122" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1150" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1178" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1206" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1234" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1262" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1290" y="254" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1010" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1038" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1066" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1094" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1122" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1150" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1178" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1206" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1234" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1262" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1290" y="282" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1010" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1038" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1066" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1094" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1122" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1150" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1178" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1206" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1234" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1262" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1290" y="310" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1010" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1038" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1066" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1094" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1122" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1150" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1178" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1206" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1234" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1262" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1290" y="338" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1010" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1038" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1066" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1094" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1122" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1150" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1178" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1206" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1234" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1262" y="366" width="22" height="22" fill="#E2E8F0"/>
+<rect x="1290" y="366" width="22" height="22" fill="#E2E8F0"/>
+<text x="1161" y="414" font-size="13" fill="#94A3B8" text-anchor="middle">1 posting in sixty-six</text>
+<text x="1161" y="464" font-size="12.5" font-style="italic" fill="#475569" text-anchor="middle">the one is hedged</text>
+<line x1="60" y1="500" x2="1340" y2="500" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="60" y="523" width="16" height="16" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.8" stroke-dasharray="4 3"/>
+<text x="90" y="536" font-size="13" fill="#475569">The dashed frames mark the two questions these documents almost never answer. The first panel is the control: a third of the same employers do write authority</text>
+<text x="90" y="555" font-size="13" fill="#475569">down, in the same block, about the same role. The gap is inside the document, not between one set of employers and a better set.</text>
+<rect x="63" y="584" width="7" height="7" fill="#0F2A4A"/>
+<text x="90" y="592" font-size="13" fill="#475569">Sixty-six senior data, analytics and AI leadership postings, director level and above, collected June to August 2026. Coded twice by two coders working blind from a</text>
+<text x="90" y="611" font-size="13" fill="#475569">rule written down before any posting was opened; twelve disagreements adjudicated on stated lines and recorded. Square position carries no meaning.</text>
+</svg>
