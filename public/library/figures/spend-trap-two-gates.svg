@@ -1,0 +1,46 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<title id="t">Two gates, not one: a cost-per-outcome number has to pass both same-scope and warrant</title>
+<desc>A raw cost-over-outcomes ratio has to pass two separate gates to become a defensible claim. Gate 1, same-scope, is this note's move: both numbers carry the same program, cohort, site, and period; without it the division compares mismatched slices. Gate 2, warrant, belongs to The Valid Dollar: the evidence has to earn the verb — supported, contributed to, produced; without it a correlation is dressed as a cause. A number needs both.</desc>
+<rect width="1200" height="300" fill="#FFFFFF"/>
+
+<text x="600" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Two gates, not one</text>
+
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+
+<!-- input node -->
+<rect x="50" y="123" width="150" height="84" rx="8" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.6"/>
+<text x="125" y="112" font-size="10" letter-spacing="2" fill="#94A3B8" text-anchor="middle">THE NUMBER</text>
+<text x="125" y="171" font-size="15" fill="#0F2A4A" text-anchor="middle">cost ÷ outcomes</text>
+
+<text x="222" y="173" font-size="22" fill="#0F2A4A" text-anchor="middle">→</text>
+
+<!-- gate 1: same-scope (this note, teal) -->
+<rect x="245" y="90" width="280" height="150" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="245" y="90" width="6" height="150" fill="#0EA5E9"/>
+<text x="269" y="121" font-size="13" font-weight="700" letter-spacing="0.5" fill="#0EA5E9">GATE 1 · SAME-SCOPE</text>
+<text x="269" y="150" font-size="14" fill="#475569">both numbers carry the same</text>
+<text x="269" y="171" font-size="14" fill="#475569">program · cohort · site · period</text>
+<line x1="269" y1="188" x2="501" y2="188" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="269" y="214" font-size="12.5" font-style="italic" fill="#94A3B8">without it: mismatched slices</text>
+<text x="385" y="266" font-size="12" fill="#0EA5E9" text-anchor="middle">this note</text>
+
+<text x="545" y="173" font-size="22" fill="#0F2A4A" text-anchor="middle">→</text>
+
+<!-- gate 2: warrant (companion, navy) -->
+<rect x="565" y="90" width="280" height="150" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="565" y="90" width="6" height="150" fill="#0F2A4A"/>
+<text x="589" y="121" font-size="13" font-weight="700" letter-spacing="0.5" fill="#0F2A4A">GATE 2 · WARRANT</text>
+<text x="589" y="150" font-size="14" fill="#475569">the evidence earns the verb —</text>
+<text x="589" y="171" font-size="14" fill="#475569">supported · contributed · produced</text>
+<line x1="589" y1="188" x2="821" y2="188" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="589" y="214" font-size="12.5" font-style="italic" fill="#94A3B8">without it: correlation as cause</text>
+<text x="705" y="266" font-size="12" font-style="italic" fill="#475569" text-anchor="middle">The Valid Dollar</text>
+
+<text x="865" y="173" font-size="22" fill="#0F2A4A" text-anchor="middle">→</text>
+
+<!-- output node -->
+<rect x="885" y="123" width="250" height="84" rx="8" fill="#0F2A4A"/>
+<text x="1010" y="159" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">defensible</text>
+<text x="1010" y="182" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">cost per outcome</text>
+</g>
+</svg>

@@ -1,0 +1,55 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- Eyebrow -->
+  <text x="600" y="90" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9">Field Note  ·  No. 16</text>
+
+  <!-- Motif: cost per outcome is a division that only holds when both numbers carry the same governed keys -->
+  <g transform="translate(460, 235)"
+     font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+
+    <!-- numerator: spend -->
+    <rect x="-120" y="-70" width="240" height="48" rx="6" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
+    <text x="0" y="-40" text-anchor="middle" font-size="15" letter-spacing="1.5" fill="#475569">spend</text>
+
+    <!-- fraction bar -->
+    <line x1="-140" y1="0" x2="140" y2="0" stroke="#0F2A4A" stroke-width="1.6"/>
+
+    <!-- denominator: outcomes -->
+    <rect x="-120" y="22" width="240" height="48" rx="6" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
+    <text x="0" y="52" text-anchor="middle" font-size="15" letter-spacing="1.5" fill="#475569">outcomes</text>
+
+    <!-- the teal move: one governed key threading both numbers -->
+    <line x1="-120" y1="-46" x2="-120" y2="46" stroke="#0EA5E9" stroke-width="1.6" stroke-dasharray="3 4"/>
+    <circle cx="-120" cy="-46" r="5" fill="#0EA5E9"/>
+    <circle cx="-120" cy="46" r="5" fill="#0EA5E9"/>
+    <text x="0" y="100" text-anchor="middle" font-size="11" letter-spacing="2" fill="#0EA5E9">SAME KEYS</text>
+
+    <!-- equals -->
+    <text x="200" y="8" text-anchor="middle" font-size="30" fill="#0F2A4A">=</text>
+
+    <!-- result -->
+    <rect x="250" y="-24" width="176" height="48" rx="8" fill="#0F2A4A"/>
+    <text x="338" y="5" text-anchor="middle" font-size="15" font-weight="600" fill="#FFFFFF">cost per outcome</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="450" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A">The spend trap.</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="495" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="18" font-style="italic" fill="#475569">Two clean systems, and still no cost per outcome — until both share keys.</text>
+
+  <!-- Short divider -->
+  <line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+
+  <!-- Footer -->
+  <text x="600" y="585" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        font-size="13" letter-spacing="3" fill="#94A3B8">Analytic Bytes  ·  2026</text>
+</svg>

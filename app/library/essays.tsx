@@ -8389,24 +8389,6 @@ export const ESSAYS: Essay[] = [
           </p>
         </Brief>
 
-        <div className="my-10">
-          <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
-            The 60-second version
-          </div>
-          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-          <video
-            src="/videos/AB_PlumbingFallacy_v6_6_HIRE.mp4"
-            poster="/videos/AB_PlumbingFallacy_v6_6_HIRE_poster.jpg"
-            autoPlay
-            muted
-            playsInline
-            preload="metadata"
-            controls
-            className="w-full h-auto rounded-lg border border-line"
-            aria-label="The plumbing fallacy in hiring — a 60-second visual primer for this essay."
-          />
-        </div>
-
         <H2>The screen is an assessment</H2>
         <P>
           I spent my early career in educational measurement. In that field, before an instrument is used to decide something about a person, you are required to argue for it.
@@ -8727,6 +8709,106 @@ export const ESSAYS: Essay[] = [
 
         <MetaNote>
           Written August 2026 for the Analytic Bytes Library. This is a measurement read of a published essay, not a forecast. Claims about what Machines of Loving Grace does and does not argue were checked against the essay itself; claims about evaluation practice come from the AB measurement arc linked above.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // FIELD NOTE 16 — The spend trap
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "the-spend-trap",
+    number: "16",
+    title: "The spend trap.",
+    subtitle:
+      "Why a clean ledger and a real outcomes system still can't tell you cost per outcome — until both resolve to the same governed keys.",
+    date: "2026-08-29",
+    readingTime: "6 min read",
+    summary:
+      "A CFO can have a clean chart of accounts and a program team can have a real evidence spine, and neither one, alone or together, produces a defensible cost per outcome. The missing piece is not a better report or a better metric. It is the shared, governed keys that let spend and outcomes divide same-scope. This is the finance-side companion to The Reach Trap and The Valid Dollar: the reach trap says build the second system, the valid dollar says score the number it makes, and this note is about the wire between them.",
+    cover: "/library/covers/the-spend-trap.svg",
+    arc: "measurement",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            Picture a finance leader who has done everything right. The chart of accounts is clean. Every transaction is tagged to a program. And the program team, separately, has done everything right too: a real outcome measure, defined and durable, not a reach count. Two good systems, both working. Now the board asks what a result costs, and the answer is still a shrug. Not because either system is weak, but because nothing connects them. Cost per outcome is two numbers divided, and the division is only honest if both numbers describe the same slice &mdash; the same program, cohort, site, and period. That shared, governed identity is the whole subject of this note. The reach trap said build the outcome system. The valid dollar said score the number it produces. This is about the wire between them.
+          </p>
+        </Brief>
+
+        <H2>Spend is what falls out for free</H2>
+        <P>
+          Every finance stack pulls toward spend. Salaries paid, stipends cut, rent allocated, grants closed. These numbers are not wrong, and a nonprofit that cannot say what a program cost has a real problem. But ask <I>why</I> they are always the numbers you have. They are byproducts of transactions the organization was already recording for other reasons. The check cleared, so the cost is booked. The invoice posted, so the line exists.
+        </P>
+        <P>
+          Effectiveness is not a byproduct. No accounting system logs &ldquo;and it worked&rdquo; as a side effect of paying an invoice. Whether a program moved its outcome has to be built &mdash; the outcome defined, placed on a scale, counted the same way next year. Spend is recorded. Evidence is constructed. The first step out of the trap is to stop expecting the finance system to hand you the second thing for free.
+        </P>
+
+        <H2>Why the finance system can't save you</H2>
+        <P>
+          This is where most teams go looking, and it fails here. The instinct is reasonable: we just migrated to a real platform, it tags every transaction to a program, surely cost per outcome is one report away. A modern finance system is genuinely good at the numerator. Tag a transaction to a program dimension and you can isolate what that program spent, cleanly, across direct and allocated cost. That is a real and necessary job.
+        </P>
+        <P>
+          You can even bolt a statistical account onto the ledger and store an outcome count next to the dollars. Some teams do, and that can solve storage. It does not solve definition, comparability, or ownership &mdash; the work of saying what a placement is, keeping it comparable across programs that each describe success in their own words, and naming who governs the value. That work lives in the evidence spine, not the ledger. Location does not confer governance. Putting the outcome model where the dollars live is a storage decision dressed up as a measurement one.
+        </P>
+
+        <H2>The overhead ratio is the shortcut everyone takes</H2>
+        <P>
+          Because spend is the number that falls out for free, spend-only ratios get promoted to stand in for effectiveness. The program-expense ratio &mdash; the share of the budget that reaches &ldquo;programs&rdquo; rather than &ldquo;overhead&rdquo; &mdash; is the clearest case. Easy to compute, feels like accountability, says nothing about whether a program worked. Two workforce programs can post the same low ratio while one places people in lasting jobs and the other places no one. The ratio never looked at the outcome; it only looked at the shape of the spend. The sector said this out loud years ago. In 2013 the three leading charity-information services (GuideStar, Charity Navigator, and the BBB Wise Giving Alliance) signed an open letter to the donors of America calling overhead &ldquo;a poor measure of a charity&rsquo;s performance&rdquo; (<a href="https://nonprofitquarterly.org/the-overhead-myth/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">The Overhead Myth, Nonprofit Quarterly, 2013</a>). The argument is right and the reflex persists, for one reason: the ratio is free. The join is not.
+        </P>
+
+        <H2>What the join actually is</H2>
+        <P>
+          Cost per outcome is a division. A program-cost numerator over an outcome denominator. The arithmetic is trivial, and it is not the point. The point is that the two numbers have to describe the <I>same slice of the world</I> &mdash; the same program, the same cohort, the same site, the same period. That is a governance property, not a storage one. It comes from both systems agreeing, in advance, on one governed set of keys and writing every record against them.
+        </P>
+        <P>
+          Miss that and you get a division that looks fine and means nothing: this year&rsquo;s spend over last year&rsquo;s placements, one site&rsquo;s cost over the whole program&rsquo;s outcomes, twelve months of cost over outcomes for participants who only received six months of service. Nobody set out to compare mismatched things. The keys just were not there to stop it. The registry &mdash; the small, shared set of keys that both spend and outcomes are written against &mdash; is the thing you build once and reuse at every altitude. Most of that build is agreement, not software.
+        </P>
+
+        <Figure
+          src="/library/figures/spend-trap-same-scope-or-guess.svg"
+          alt="Four rows comparing a cost divided by outcomes. The top row divides GW · Fall '25 cost by GW · Fall '25 outcomes — same slice, a defensible number. The three rows below divide mismatched slices: FY26 cost over FY25 placements, one site's cost over all sites' outcomes, and twelve months of cost over a six-month cohort."
+          caption="A division of cost by outcomes is only honest when both numbers carry the same keys. The top row divides same-slice and is defensible. The three below divide mismatched slices — each is trivial arithmetic and means nothing."
+        />
+
+        <P>
+          Whether the resulting number then earns a strong claim &mdash; <I>supported</I>, <I>contributed to</I>, <I>produced</I> &mdash; is a separate question, and it has its own answer in <InternalLink slug="the-valid-dollar">The Valid Dollar</InternalLink>. The join makes the division same-scope. The warrant makes it honest about causation. They are two different gates, and a number needs both.
+        </P>
+
+        <Figure
+          src="/library/figures/spend-trap-two-gates.svg"
+          alt="A raw cost-over-outcomes ratio passes through two gates before it becomes a defensible cost per outcome. Gate 1, same-scope, is this note's move: both numbers carry the same program, cohort, site, and period. Gate 2, warrant, belongs to The Valid Dollar: the evidence earns the verb — supported, contributed to, produced."
+          caption="Two gates, not one. Same-scope makes the division honest about what is being compared. Warrant makes it honest about causation. A defensible cost per outcome has to pass both."
+        />
+
+        <H2>One join, three seats</H2>
+        <P>
+          Build the wire once and it pays out at every altitude. A <B>program director</B> reads one cohort and asks whether it is working; the join returns cost per outcome as outcomes mature, rather than at an annual post-mortem. A <B>CFO</B> reads across programs and asks where the next dollar goes; same-scope cost and outcome evidence gives that question a denominator instead of leaving it anchored to spend alone. The join does not make the allocation decision &mdash; capacity, population difficulty, and strategy still sit on top of it. It makes the allocation question answerable. A <B>board chair</B> reads the same structure and can finally put a number to the donor&rsquo;s question &mdash; what does a result cost here &mdash; that holds up, rather than an overhead ratio that does not. Three readers, three questions, one governed join.
+        </P>
+
+        <H2>Where to start</H2>
+        <P>
+          You do not rip out the finance system, and you do not wait for a perfect outcomes model. You decide one thing before anyone runs a report: every dollar and every outcome you intend to compare must be written against the same governed program, cohort, site, and period. Name those dimensions. Give the value lists an owner. Then hold one standing rule: a spend-only ratio never stands in as an effectiveness claim. That is the whole discipline, and it is cheapest to install at a migration, when the structure is still soft. It is the difference between two clean systems that cannot talk and one join that lets you reason about the next dollar instead of guess at it.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-reach-trap"
+            title="The reach trap."
+            gloss="Why the outcome system has to exist in the first place — the argument for building the second axis this note joins to spend."
+          />
+          <SeeAlsoItem
+            slug="the-valid-dollar"
+            title="The valid dollar."
+            gloss="What warrants a strong claim about a number once the division is same-scope: the second gate every cost-per-outcome number has to pass."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written August 2026 for the Analytic Bytes Library. Standing practice: no client, employer or vendor is named in this piece. Companion to The Valid Dollar and The Reach Trap; the finance-side wire between them.
         </MetaNote>
       </>
     ),
