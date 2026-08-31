@@ -1,50 +1,50 @@
-<svg viewBox="0 -110 1600 874" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg viewBox="0 -140 1600 1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">The evidence spine: one shared record shape for every grantee</title>
 <desc>A table with a shared schema across five grantees — outcome tier, leading signal, and confidence — bracketed as the spine. A shared record shape lets the whole book read on one axis and yields invest, scale, or stop decisions.</desc>
-<rect x="0" y="-110" width="1600" height="874" fill="#FFFFFF"/>
-<text x="800" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="21" font-weight="700" fill="#0F2A4A" text-anchor="middle">The evidence spine</text>
-<g transform="translate(0, -130)">
+<rect x="0" y="-140" width="1600" height="1080" fill="#FFFFFF"/>
+<text x="800" y="-90" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="44" font-weight="700" fill="#0F2A4A" text-anchor="middle">The evidence spine</text>
+<g transform="translate(0, -30)">
 <!-- HEADER -->
 
 <!-- table -->
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 <!-- header -->
-<rect x="40"   y="120" width="220" height="60" fill="#0F2A4A"/>
-<rect x="262"  y="120" width="300" height="60" fill="#0F2A4A"/>
-<rect x="564"  y="120" width="340" height="60" fill="#0F2A4A"/>
-<rect x="906"  y="120" width="220" height="60" fill="#0F2A4A"/>
-<text x="60"  y="158" font-size="18" fill="#FFFFFF" font-weight="600">Grantee</text>
-<text x="282" y="158" font-size="18" fill="#FFFFFF" font-weight="600">Outcome tier</text>
-<text x="584" y="158" font-size="18" fill="#FFFFFF" font-weight="600">Leading signal</text>
-<text x="926" y="158" font-size="18" fill="#FFFFFF" font-weight="600">Confidence</text>
+<rect x="40"   y="120" width="220" height="80" fill="#0F2A4A"/>
+<rect x="262"  y="120" width="240" height="80" fill="#0F2A4A"/>
+<rect x="504"  y="120" width="380" height="80" fill="#0F2A4A"/>
+<rect x="886"  y="120" width="180" height="80" fill="#0F2A4A"/>
+<text x="60"  y="172" font-size="28" fill="#FFFFFF" font-weight="600">Grantee</text>
+<text x="282" y="172" font-size="28" fill="#FFFFFF" font-weight="600">Tier</text>
+<text x="524" y="172" font-size="28" fill="#FFFFFF" font-weight="600">Leading signal</text>
+<text x="906" y="172" font-size="28" fill="#FFFFFF" font-weight="600">Confidence</text>
 
 <!-- rows -->
-<g font-size="20" fill="#475569">
-<rect x="40" y="180" width="1086" height="70" fill="#F8FAFC"/>
-<text x="60" y="223" fill="#0F2A4A" font-weight="600">Grantee 1</text><text x="282" y="223">Sustained</text><text x="584" y="223">retention up 3 terms</text><text x="926" y="223">High</text>
-<rect x="40" y="250" width="1086" height="70" fill="#FFFFFF"/>
-<text x="60" y="293" fill="#0F2A4A" font-weight="600">Grantee 2</text><text x="282" y="293">Established</text><text x="584" y="293">gains up, reach flat</text><text x="926" y="293">Med</text>
-<rect x="40" y="320" width="1086" height="70" fill="#F8FAFC"/>
-<text x="60" y="363" fill="#0F2A4A" font-weight="600">Grantee 3</text><text x="282" y="363">Building</text><text x="584" y="363">attendance slipping</text><text x="926" y="363">Med</text>
-<rect x="40" y="390" width="1086" height="70" fill="#FFFFFF"/>
-<text x="60" y="433" fill="#0F2A4A" font-weight="600">Grantee 4</text><text x="282" y="433">Established</text><text x="584" y="433">unit cost falling</text><text x="926" y="433">High</text>
-<rect x="40" y="460" width="1086" height="70" fill="#F8FAFC"/>
-<text x="60" y="503" fill="#0F2A4A" font-weight="600">Grantee 5</text><text x="282" y="503">Emerging</text><text x="584" y="503">enrollment climbing</text><text x="926" y="503">Low</text>
+<g font-size="28" fill="#475569">
+<rect x="40" y="200" width="1026" height="80" fill="#F8FAFC"/>
+<text x="60" y="252" fill="#0F2A4A" font-weight="600">Grantee 1</text><text x="282" y="252">Sustained</text><text x="524" y="252">retention up 3 terms</text><text x="906" y="252">High</text>
+<rect x="40" y="280" width="1026" height="80" fill="#FFFFFF"/>
+<text x="60" y="332" fill="#0F2A4A" font-weight="600">Grantee 2</text><text x="282" y="332">Established</text><text x="524" y="332">gains up, reach flat</text><text x="906" y="332">Med</text>
+<rect x="40" y="360" width="1026" height="80" fill="#F8FAFC"/>
+<text x="60" y="412" fill="#0F2A4A" font-weight="600">Grantee 3</text><text x="282" y="412">Building</text><text x="524" y="412">attendance slipping</text><text x="906" y="412">Med</text>
+<rect x="40" y="440" width="1026" height="80" fill="#FFFFFF"/>
+<text x="60" y="492" fill="#0F2A4A" font-weight="600">Grantee 4</text><text x="282" y="492">Established</text><text x="524" y="492">unit cost falling</text><text x="906" y="492">High</text>
+<rect x="40" y="520" width="1026" height="80" fill="#F8FAFC"/>
+<text x="60" y="572" fill="#0F2A4A" font-weight="600">Grantee 5</text><text x="282" y="572">Emerging</text><text x="524" y="572">enrollment climbing</text><text x="906" y="572">Low</text>
 </g>
-<rect x="40" y="120" width="1086" height="410" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
+<rect x="40" y="120" width="1026" height="480" fill="none" stroke="#E2E8F0" stroke-width="1.5"/>
 
 <!-- spine bracket highlighting shared columns -->
-<rect x="262" y="110" width="864" height="430" rx="4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="4 6"/>
-<text x="694" y="100" font-size="16" fill="#0EA5E9" font-weight="600" letter-spacing="2" text-anchor="middle">THE SPINE  &#183;  one schema, every grantee</text>
+<rect x="262" y="108" width="804" height="500" rx="4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="664" y="92" font-size="26" fill="#0EA5E9" font-weight="600" letter-spacing="2" text-anchor="middle">THE SPINE  &#183;  one schema, every grantee</text>
 
 <!-- reads across arrow -->
-<path d="M1150 335 L1250 335" stroke="#0F2A4A" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M1090 385 L1180 385" stroke="#0F2A4A" stroke-width="2" fill="none" marker-end="url(#a)"/>
 <defs><marker id="a" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0F2A4A"/></marker></defs>
-<text x="1270" y="315" font-size="22" fill="#0F2A4A" font-weight="600">reads across</text>
-<text x="1270" y="358" font-size="22" fill="#0EA5E9" font-weight="600">invest &#183; scale &#183; stop</text>
+<text x="1200" y="358" font-size="28" fill="#0F2A4A" font-weight="600">reads across</text>
+<text x="1200" y="410" font-size="28" fill="#0EA5E9" font-weight="600">invest &#183; scale &#183; stop</text>
 
-<text x="40" y="650" font-size="22" fill="#475569">The shared columns <tspan fill="#0EA5E9" font-weight="600">are</tspan> the spine.</text>
-<text x="40" y="686" font-size="22" fill="#475569">Drop them and you're back to forty custom fields that don't line up.</text>
+<text x="40" y="740" font-size="28" fill="#475569">The shared columns <tspan fill="#0EA5E9" font-weight="600">are</tspan> the spine.</text>
+<text x="40" y="784" font-size="28" fill="#475569">Drop them and you're back to forty custom fields that don't line up.</text>
 </g>
 </g>
 </svg>

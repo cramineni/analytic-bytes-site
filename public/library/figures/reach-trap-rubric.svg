@@ -1,57 +1,60 @@
-<svg viewBox="0 -110 1600 808" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
+<svg viewBox="0 -140 1600 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">The rubric: one outcome scale plus a semantic layer</title>
 <desc>Three grantee cards describe success in different words. A semantic layer maps each grantee's language onto a shared four-point outcome scale — emerging, building, established, sustained — so different words in become one comparable placement out.</desc>
-<rect x="0" y="-110" width="1600" height="808" fill="#FFFFFF"/>
-<text x="800" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="21" font-weight="700" fill="#0F2A4A" text-anchor="middle">The rubric</text>
-<g transform="translate(0, -82)">
+<rect x="0" y="-140" width="1600" height="1000" fill="#FFFFFF"/>
+<text x="800" y="-90" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="44" font-weight="700" fill="#0F2A4A" text-anchor="middle">The rubric</text>
+<g transform="translate(0, -30)">
 <!-- HEADER -->
 
 <!-- grantee cards -->
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-<rect x="40"   y="80" width="470" height="150" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
-<text x="70" y="132" font-size="18" letter-spacing="2" fill="#94A3B8" font-weight="600">GRANTEE A</text>
-<text x="70" y="184" font-size="26" fill="#0F2A4A">&#8220;kids reading at grade level&#8221;</text>
+<rect x="40"   y="80" width="470" height="200" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="70" y="140" font-size="28" letter-spacing="2" fill="#94A3B8" font-weight="600">GRANTEE A</text>
+<text x="70" y="210" font-size="28" fill="#0F2A4A">&#8220;kids reading at</text>
+<text x="70" y="248" font-size="28" fill="#0F2A4A">grade level&#8221;</text>
 
-<rect x="565"  y="80" width="470" height="150" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
-<text x="595" y="132" font-size="18" letter-spacing="2" fill="#94A3B8" font-weight="600">GRANTEE B</text>
-<text x="595" y="184" font-size="26" fill="#0F2A4A">&#8220;literacy gains held 2 years&#8221;</text>
+<rect x="565"  y="80" width="470" height="200" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="595" y="140" font-size="28" letter-spacing="2" fill="#94A3B8" font-weight="600">GRANTEE B</text>
+<text x="595" y="210" font-size="28" fill="#0F2A4A">&#8220;literacy gains held</text>
+<text x="595" y="248" font-size="28" fill="#0F2A4A">2 years&#8221;</text>
 
-<rect x="1090" y="80" width="470" height="150" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
-<text x="1120" y="132" font-size="18" letter-spacing="2" fill="#94A3B8" font-weight="600">GRANTEE C</text>
-<text x="1120" y="184" font-size="26" fill="#0F2A4A">&#8220;fewer kids need remediation&#8221;</text>
+<rect x="1090" y="80" width="470" height="200" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="1120" y="140" font-size="28" letter-spacing="2" fill="#94A3B8" font-weight="600">GRANTEE C</text>
+<text x="1120" y="210" font-size="28" fill="#0F2A4A">&#8220;fewer kids need</text>
+<text x="1120" y="248" font-size="28" fill="#0F2A4A">remediation&#8221;</text>
 </g>
 
 <!-- semantic layer band -->
-<rect x="40" y="300" width="1520" height="56" rx="4" fill="#F8FAFC" stroke="#0EA5E9" stroke-width="1.5"/>
-<text x="800" y="337" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#0EA5E9" font-weight="600" letter-spacing="2" text-anchor="middle">SEMANTIC LAYER  &#183;  maps each grantee's language onto the scale</text>
+<rect x="40" y="360" width="1520" height="80" rx="4" fill="#F8FAFC" stroke="#0EA5E9" stroke-width="1.5"/>
+<text x="800" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#0EA5E9" font-weight="600" letter-spacing="2" text-anchor="middle">SEMANTIC LAYER  &#183;  maps each grantee's language onto the scale</text>
 
 <!-- connectors from cards through layer to scale markers -->
 <g stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="3 6" stroke-linecap="round" fill="none">
-<path d="M275 230 L609 500"/>
-<path d="M800 230 L1374 500"/>
-<path d="M1325 230 L991 500"/>
+<path d="M275 280 L609 600"/>
+<path d="M800 280 L1374 600"/>
+<path d="M1325 280 L991 600"/>
 </g>
 
 <!-- markers -->
 <g fill="#0F2A4A">
-<circle cx="609" cy="500" r="20"/><circle cx="1374" cy="500" r="20"/><circle cx="991" cy="500" r="20"/>
+<circle cx="609" cy="600" r="24"/><circle cx="1374" cy="600" r="24"/><circle cx="991" cy="600" r="24"/>
 </g>
-<g fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle">
-<text x="609" y="508">A</text><text x="1374" y="508">B</text><text x="991" y="508">C</text>
+<g fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle">
+<text x="609" y="610">A</text><text x="1374" y="610">B</text><text x="991" y="610">C</text>
 </g>
 
 <!-- outcome scale — canonical navy/teal, no rainbow -->
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-<rect x="40"     y="540" width="362" height="70" rx="4" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
-<rect x="422.5"  y="540" width="362" height="70" rx="4" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
-<rect x="805"    y="540" width="362" height="70" rx="4" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
-<rect x="1187.5" y="540" width="362" height="70" rx="4" fill="#0EA5E9"/>
-<text x="221"  y="583" font-size="22" letter-spacing="1" fill="#475569" font-weight="600" text-anchor="middle">EMERGING</text>
-<text x="603"  y="583" font-size="22" letter-spacing="1" fill="#475569" font-weight="600" text-anchor="middle">BUILDING</text>
-<text x="986"  y="583" font-size="22" letter-spacing="1" fill="#475569" font-weight="600" text-anchor="middle">ESTABLISHED</text>
-<text x="1368" y="583" font-size="22" letter-spacing="1" fill="#FFFFFF" font-weight="600" text-anchor="middle">SUSTAINED</text>
+<rect x="40"     y="650" width="362" height="90" rx="4" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="422.5"  y="650" width="362" height="90" rx="4" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="805"    y="650" width="362" height="90" rx="4" fill="none" stroke="#0F2A4A" stroke-width="1.2"/>
+<rect x="1187.5" y="650" width="362" height="90" rx="4" fill="#0EA5E9"/>
+<text x="221"  y="705" font-size="28" letter-spacing="1" fill="#475569" font-weight="600" text-anchor="middle">EMERGING</text>
+<text x="603"  y="705" font-size="28" letter-spacing="1" fill="#475569" font-weight="600" text-anchor="middle">BUILDING</text>
+<text x="986"  y="705" font-size="28" letter-spacing="1" fill="#475569" font-weight="600" text-anchor="middle">ESTABLISHED</text>
+<text x="1368" y="705" font-size="28" letter-spacing="1" fill="#FFFFFF" font-weight="600" text-anchor="middle">SUSTAINED</text>
 </g>
 
-<text x="40" y="700" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">Different words in. <tspan fill="#0EA5E9" font-weight="600">One comparable placement out.</tspan></text>
+<text x="40" y="830" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#475569">Different words in. <tspan fill="#0EA5E9" font-weight="600">One comparable placement out.</tspan></text>
 </g>
 </svg>
