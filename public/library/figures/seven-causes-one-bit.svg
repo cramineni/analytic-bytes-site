@@ -1,4 +1,4 @@
-<svg viewBox="0 -56 1200 556" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+<svg viewBox="0 -66 1200 640" xmlns="http://www.w3.org/2000/svg" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 <title>What a rejection transmits</title>
 <desc>Seven causes of a rejection are listed on the left in navy: the role was cancelled, an internal candidate existed, the budget froze, the requirements changed, the screen misread the document, a stronger candidate applied, and they could not do the work. Lines from all seven converge on a single small box in the centre reading NO, labelled one bit, no reason attached. Dashed arrows fan back out from that box to the same seven causes on the right, in the same order, now drawn in grey to show they are all still live for the candidate. The last of them, they could not do the work, is outlined in teal and annotated as the one they will assume. Notes beneath read: seven causes into one bit, lossy by design; and one bit back into seven, no unique solution.</desc>
 <defs>
@@ -6,84 +6,84 @@
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#94A3B8"/>
     </marker>
   </defs>
-<rect x="0" y="-56" width="1200" height="556" fill="#FFFFFF"/>
-<text x="600" y="-28" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Seven causes, one bit</text>
+<rect x="0" y="-66" width="1200" height="640" fill="#FFFFFF"/>
+<text x="600" y="-32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">Seven causes, one bit</text>
 <!-- Column headers -->
-  <text x="50" y="40" font-size="14" font-weight="600" fill="#64748B" letter-spacing="2">WHY A "NO" HAPPENS</text>
-  <text x="570" y="40" font-size="14" font-weight="600" fill="#64748B" letter-spacing="2" text-anchor="middle">SENT</text>
-  <text x="760" y="40" font-size="14" font-weight="600" fill="#64748B" letter-spacing="2">WHAT THE CANDIDATE MUST INFER</text>
+  <text x="50" y="40" font-size="20" font-weight="600" fill="#64748B" letter-spacing="2">WHY A "NO" HAPPENS</text>
+  <text x="570" y="40" font-size="20" font-weight="600" fill="#64748B" letter-spacing="2" text-anchor="middle">SENT</text>
+  <text x="760" y="40" font-size="20" font-weight="600" fill="#64748B" letter-spacing="2">WHAT THE CANDIDATE MUST INFER</text>
 
   <!-- Converging lines -->
   <g stroke="#CBD5E1" stroke-width="1" fill="none">
-    <path d="M340,72 L515,237"/>
-    <path d="M340,127 L515,237"/>
-    <path d="M340,182 L515,237"/>
-    <path d="M340,237 L515,237"/>
-    <path d="M340,292 L515,237"/>
-    <path d="M340,347 L515,237"/>
-    <path d="M340,402 L515,237"/>
+    <path d="M340,77 L515,272"/>
+    <path d="M340,142 L515,272"/>
+    <path d="M340,207 L515,272"/>
+    <path d="M340,272 L515,272"/>
+    <path d="M340,337 L515,272"/>
+    <path d="M340,402 L515,272"/>
+    <path d="M340,467 L515,272"/>
   </g>
 
   <!-- Diverging lines -->
   <g stroke="#CBD5E1" stroke-width="1" fill="none" stroke-dasharray="4 4" marker-end="url(#ah)">
-    <path d="M625,237 L752,72"/>
-    <path d="M625,237 L752,127"/>
-    <path d="M625,237 L752,182"/>
-    <path d="M625,237 L752,237"/>
-    <path d="M625,237 L752,292"/>
-    <path d="M625,237 L752,347"/>
-    <path d="M625,237 L752,402"/>
+    <path d="M625,272 L752,77"/>
+    <path d="M625,272 L752,142"/>
+    <path d="M625,272 L752,207"/>
+    <path d="M625,272 L752,272"/>
+    <path d="M625,272 L752,337"/>
+    <path d="M625,272 L752,402"/>
+    <path d="M625,272 L752,467"/>
   </g>
 
   <!-- LEFT: causes, known to the employer -->
   <g fill="none" stroke="#0F2A4A" stroke-width="1.2">
-    <rect x="50" y="54" width="290" height="36" rx="3"/>
-    <rect x="50" y="109" width="290" height="36" rx="3"/>
-    <rect x="50" y="164" width="290" height="36" rx="3"/>
-    <rect x="50" y="219" width="290" height="36" rx="3"/>
-    <rect x="50" y="274" width="290" height="36" rx="3"/>
-    <rect x="50" y="329" width="290" height="36" rx="3"/>
-    <rect x="50" y="384" width="290" height="36" rx="3"/>
+    <rect x="50" y="54" width="290" height="46" rx="3"/>
+    <rect x="50" y="119" width="290" height="46" rx="3"/>
+    <rect x="50" y="184" width="290" height="46" rx="3"/>
+    <rect x="50" y="249" width="290" height="46" rx="3"/>
+    <rect x="50" y="314" width="290" height="46" rx="3"/>
+    <rect x="50" y="379" width="290" height="46" rx="3"/>
+    <rect x="50" y="444" width="290" height="46" rx="3"/>
   </g>
-  <g font-size="17" fill="#0F2A4A">
-    <text x="66" y="77">The role was cancelled</text>
-    <text x="66" y="132">An internal candidate existed</text>
-    <text x="66" y="187">The budget froze</text>
-    <text x="66" y="242">The requirements changed</text>
-    <text x="66" y="297">The screen misread the document</text>
-    <text x="66" y="352">A stronger candidate applied</text>
-    <text x="66" y="407">They could not do the work</text>
+  <g font-size="22" fill="#0F2A4A">
+    <text x="66" y="83">The role was cancelled</text>
+    <text x="66" y="148">An internal candidate existed</text>
+    <text x="66" y="213">The budget froze</text>
+    <text x="66" y="278">The requirements changed</text>
+    <text x="66" y="343">The screen misread the document</text>
+    <text x="66" y="408">A stronger candidate applied</text>
+    <text x="66" y="473">They could not do the work</text>
   </g>
 
   <!-- MIDDLE: the one bit -->
-  <rect x="515" y="205" width="110" height="64" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
-  <text x="570" y="246" font-size="32" font-weight="700" fill="#0F2A4A" text-anchor="middle" letter-spacing="1">NO</text>
-  <text x="570" y="294" font-size="15" fill="#64748B" text-anchor="middle" letter-spacing="1.5">1 BIT</text>
-  <text x="570" y="314" font-size="15" fill="#94A3B8" text-anchor="middle" font-style="italic">no reason attached</text>
+  <rect x="515" y="232" width="110" height="80" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
+  <text x="570" y="280" font-size="42" font-weight="700" fill="#0F2A4A" text-anchor="middle" letter-spacing="1">NO</text>
+  <text x="570" y="340" font-size="20" fill="#64748B" text-anchor="middle" letter-spacing="1.5">1 BIT</text>
+  <text x="570" y="364" font-size="20" fill="#94A3B8" text-anchor="middle" font-style="italic">no reason attached</text>
 
   <!-- RIGHT: reconstruction, all still live -->
   <g fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="3 3">
-    <rect x="760" y="54" width="390" height="36" rx="3"/>
-    <rect x="760" y="109" width="390" height="36" rx="3"/>
-    <rect x="760" y="164" width="390" height="36" rx="3"/>
-    <rect x="760" y="219" width="390" height="36" rx="3"/>
-    <rect x="760" y="274" width="390" height="36" rx="3"/>
-    <rect x="760" y="329" width="390" height="36" rx="3"/>
+    <rect x="760" y="54" width="390" height="46" rx="3"/>
+    <rect x="760" y="119" width="390" height="46" rx="3"/>
+    <rect x="760" y="184" width="390" height="46" rx="3"/>
+    <rect x="760" y="249" width="390" height="46" rx="3"/>
+    <rect x="760" y="314" width="390" height="46" rx="3"/>
+    <rect x="760" y="379" width="390" height="46" rx="3"/>
   </g>
-  <rect x="760" y="384" width="390" height="36" rx="3" fill="none" stroke="#0EA5E9" stroke-width="1.8"/>
+  <rect x="760" y="444" width="390" height="46" rx="3" fill="none" stroke="#0EA5E9" stroke-width="1.8"/>
 
-  <g font-size="17" fill="#475569">
-    <text x="776" y="77">The role was cancelled</text>
-    <text x="776" y="132">An internal candidate existed</text>
-    <text x="776" y="187">The budget froze</text>
-    <text x="776" y="242">The requirements changed</text>
-    <text x="776" y="297">The screen misread the document</text>
-    <text x="776" y="352">A stronger candidate applied</text>
+  <g font-size="22" fill="#475569">
+    <text x="776" y="83">The role was cancelled</text>
+    <text x="776" y="148">An internal candidate existed</text>
+    <text x="776" y="213">The budget froze</text>
+    <text x="776" y="278">The requirements changed</text>
+    <text x="776" y="343">The screen misread the document</text>
+    <text x="776" y="408">A stronger candidate applied</text>
   </g>
-  <text x="776" y="407" font-size="17" font-weight="600" fill="#0F2A4A">They could not do the work</text>
-  <text x="1134" y="407" font-size="14" fill="#0EA5E9" text-anchor="end" font-style="italic">the one they will assume</text>
+  <text x="776" y="473" font-size="22" font-weight="600" fill="#0F2A4A">They could not do the work</text>
+  <text x="955" y="515" font-size="18" fill="#0EA5E9" text-anchor="middle" font-style="italic">the one they will assume</text>
 
   <!-- Process annotations -->
-  <text x="430" y="474" font-size="16" fill="#64748B" text-anchor="middle" font-style="italic">seven causes into one bit. lossy by design.</text>
-  <text x="900" y="474" font-size="16" fill="#64748B" text-anchor="middle" font-style="italic">one bit, seven still live. no way to tell which.</text>
+  <text x="195" y="545" font-size="22" fill="#64748B" text-anchor="middle" font-style="italic">seven causes into one bit. lossy by design.</text>
+  <text x="955" y="545" font-size="22" fill="#64748B" text-anchor="middle" font-style="italic">one bit, seven still live. no way to tell which.</text>
 </svg>

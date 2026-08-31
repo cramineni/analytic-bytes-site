@@ -2,17 +2,17 @@
 <title>Range restriction in a hiring screen</title>
 <desc>Two scatter panels. Panel A shows all applicants against job performance, with a vertical screening threshold; the region left of the threshold and above the median hire performance is highlighted as candidates who were screened out but would have performed. Panel B shows only the hired sample, with the x-axis rescaled, and the fitted line visibly flatter than the true relationship. The observed correlation is much lower than the true correlation.</desc>
 <rect width="1560" height="716" fill="#FFFFFF"/>
-<text x="780" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#0F2A4A" text-anchor="middle">Range restriction in a hiring screen</text>
-<text x="130" y="100" font-size="14" fill="#0F2A4A" text-anchor="start" font-weight="600" letter-spacing="1.6">A · THE RELATIONSHIP YOU WOULD NEED TO SEE</text>
-<text x="130" y="124" font-size="16" fill="#94A3B8" text-anchor="start" font-weight="500">every applicant — simulated, because this data cannot be collected</text>
-<text x="690" y="104" font-size="22" fill="#475569" text-anchor="end" font-weight="600">r = 0.50</text>
+<text x="780" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="700" fill="#0F2A4A" text-anchor="middle">Range restriction in a hiring screen</text>
+<text x="130" y="100" font-size="20" fill="#0F2A4A" text-anchor="start" font-weight="600" letter-spacing="1.6">A · THE RELATIONSHIP YOU WOULD NEED TO SEE</text>
+<text x="130" y="124" font-size="22" fill="#94A3B8" text-anchor="start" font-weight="500">every applicant — simulated, because this data cannot be collected</text>
+<text x="690" y="104" font-size="30" fill="#475569" text-anchor="end" font-weight="600">r = 0.50</text>
 <rect x="130" y="150.0" width="308.4" height="159.4" fill="#F0F9FF"/>
 <rect x="130" y="150.0" width="308.4" height="159.4" fill="none" stroke="#0EA5E9" stroke-width="1.6" stroke-dasharray="6 5"/>
 <rect x="130" y="150" width="560" height="374" fill="none" stroke="#E2E8F0" stroke-width="1.4"/>
-<text x="132" y="546" font-size="14" fill="#94A3B8" text-anchor="start" font-weight="500" letter-spacing="1">low</text>
-<text x="688" y="546" font-size="14" fill="#94A3B8" text-anchor="end" font-weight="500" letter-spacing="1">high</text>
-<text x="410.0" y="572" font-size="15" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2">SCREEN SCORE</text>
-<text x="100" y="337.0" font-size="15" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2" transform="rotate(-90 100 337.0)">JOB PERFORMANCE</text>
+<text x="132" y="546" font-size="20" fill="#94A3B8" text-anchor="start" font-weight="500" letter-spacing="1">low</text>
+<text x="688" y="546" font-size="20" fill="#94A3B8" text-anchor="end" font-weight="500" letter-spacing="1">high</text>
+<text x="410.0" y="572" font-size="22" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2">SCREEN SCORE</text>
+<text x="100" y="337.0" font-size="22" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2" transform="rotate(-90 100 337.0)">JOB PERFORMANCE</text>
 <circle cx="307.2" cy="353.0" r="3.0" fill="none" stroke="#94A3B8" stroke-width="1" opacity="0.75"/>
 <circle cx="298.4" cy="377.5" r="3.0" fill="none" stroke="#94A3B8" stroke-width="1" opacity="0.75"/>
 <circle cx="307.9" cy="433.9" r="3.0" fill="none" stroke="#94A3B8" stroke-width="1" opacity="0.75"/>
@@ -435,18 +435,18 @@
 <circle cx="497.1" cy="231.2" r="3.2" fill="#0F2A4A" opacity="0.72"/>
 <line x1="158.0" y1="427.4" x2="662.0" y2="250.4" stroke="#475569" stroke-width="2.2" stroke-dasharray="7 5"/>
 <line x1="438.4" y1="150" x2="438.4" y2="532" stroke="#0F2A4A" stroke-width="2"/>
-<text x="446.35628241522954" y="546" font-size="14" fill="#0F2A4A" text-anchor="start" font-weight="600">screening threshold</text>
+<text x="446.35628241522954" y="546" font-size="20" fill="#0F2A4A" text-anchor="start" font-weight="600">screening threshold</text>
 <rect x="130" y="592" width="15" height="15" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.6" stroke-dasharray="4 3"/>
-<text x="157" y="604" font-size="15" fill="#0EA5E9" text-anchor="start" font-weight="600">60 of the 260 rejected sit in the teal region — below the threshold,</text>
-<text x="157" y="624" font-size="15" fill="#0EA5E9" text-anchor="start" font-weight="600">above the performance of the median person who was hired.</text>
-<text x="870" y="100" font-size="14" fill="#0F2A4A" text-anchor="start" font-weight="600" letter-spacing="1.6">B · THE SAMPLE THE COEFFICIENT IS COMPUTED ON</text>
-<text x="870" y="124" font-size="15" fill="#94A3B8" text-anchor="start" font-weight="500">hires only — x-axis rescaled to the selected range</text>
-<text x="1430" y="104" font-size="22" fill="#0F2A4A" text-anchor="end" font-weight="600">r = 0.30</text>
+<text x="157" y="604" font-size="20" fill="#0EA5E9" text-anchor="start" font-weight="600">60 of the 260 rejected sit in the teal region — below the threshold,</text>
+<text x="157" y="624" font-size="20" fill="#0EA5E9" text-anchor="start" font-weight="600">above the performance of the median person who was hired.</text>
+<text x="870" y="100" font-size="20" fill="#0F2A4A" text-anchor="start" font-weight="600" letter-spacing="1.6">B · THE SAMPLE THE COEFFICIENT IS COMPUTED ON</text>
+<text x="870" y="124" font-size="22" fill="#94A3B8" text-anchor="start" font-weight="500">hires only — x-axis rescaled to the selected range</text>
+<text x="1430" y="104" font-size="30" fill="#0F2A4A" text-anchor="end" font-weight="600">r = 0.30</text>
 <rect x="870" y="150" width="560" height="374" fill="none" stroke="#E2E8F0" stroke-width="1.4"/>
-<text x="872" y="546" font-size="14" fill="#94A3B8" text-anchor="start" font-weight="500" letter-spacing="1">threshold</text>
-<text x="1428" y="546" font-size="14" fill="#94A3B8" text-anchor="end" font-weight="500" letter-spacing="1">high</text>
-<text x="1150.0" y="572" font-size="15" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2">SCREEN SCORE</text>
-<text x="840" y="337.0" font-size="15" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2" transform="rotate(-90 840 337.0)">JOB PERFORMANCE</text>
+<text x="872" y="546" font-size="20" fill="#94A3B8" text-anchor="start" font-weight="500" letter-spacing="1">threshold</text>
+<text x="1428" y="546" font-size="20" fill="#94A3B8" text-anchor="end" font-weight="500" letter-spacing="1">high</text>
+<text x="1150.0" y="572" font-size="22" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2">SCREEN SCORE</text>
+<text x="840" y="337.0" font-size="22" fill="#475569" text-anchor="middle" font-weight="600" letter-spacing="2" transform="rotate(-90 840 337.0)">JOB PERFORMANCE</text>
 <circle cx="992.9" cy="334.0" r="3.2" fill="#0F2A4A" opacity="0.72"/>
 <circle cx="896.3" cy="270.2" r="3.2" fill="#0F2A4A" opacity="0.72"/>
 <circle cx="938.9" cy="294.2" r="3.2" fill="#0F2A4A" opacity="0.72"/>
@@ -609,17 +609,17 @@
 <circle cx="1000.7" cy="231.2" r="3.2" fill="#0F2A4A" opacity="0.72"/>
 <line x1="870.0" y1="328.9" x2="1392.6" y2="246.4" stroke="#475569" stroke-width="2.2" stroke-dasharray="7 5" opacity="0.55"/>
 <line x1="870.0" y1="327.2" x2="1392.6" y2="255.9" stroke="#0F2A4A" stroke-width="2.6"/>
-<text x="1422" y="281.87247933741367" font-size="14" fill="#0F2A4A" text-anchor="end" font-weight="600">computed</text>
-<text x="1422" y="232.41627161247862" font-size="14" fill="#475569" text-anchor="end" font-weight="600">true</text>
-<text x="897" y="604" font-size="15" fill="#94A3B8" text-anchor="start" font-weight="400">The truncation is not visible from inside this panel. The cloud fills the frame</text>
-<text x="897" y="624" font-size="15" fill="#94A3B8" text-anchor="start" font-weight="400">and the software returns a number.</text>
-<text x="780.0" y="311.0" font-size="14" fill="#94A3B8" text-anchor="middle" font-weight="400">same</text>
-<text x="780.0" y="329.0" font-size="14" fill="#94A3B8" text-anchor="middle" font-weight="400">instrument</text>
-<text x="780.0" y="359.0" font-size="19" fill="#475569" text-anchor="middle" font-weight="600">0.50</text>
+<text x="1422" y="281.87247933741367" font-size="20" fill="#0F2A4A" text-anchor="end" font-weight="600">computed</text>
+<text x="1422" y="232.41627161247862" font-size="20" fill="#475569" text-anchor="end" font-weight="600">true</text>
+<text x="897" y="604" font-size="20" fill="#94A3B8" text-anchor="start" font-weight="400">The truncation is not visible from inside this panel. The cloud fills the frame</text>
+<text x="897" y="624" font-size="20" fill="#94A3B8" text-anchor="start" font-weight="400">and the software returns a number.</text>
+<text x="780.0" y="311.0" font-size="20" fill="#94A3B8" text-anchor="middle" font-weight="400">same</text>
+<text x="780.0" y="329.0" font-size="20" fill="#94A3B8" text-anchor="middle" font-weight="400">instrument</text>
+<text x="780.0" y="359.0" font-size="28" fill="#475569" text-anchor="middle" font-weight="600">0.50</text>
 <path d="M773.0,375.0 L780.0,387.0 L787.0,375.0" fill="none" stroke="#0F2A4A" stroke-width="1.8"/>
-<text x="780.0" y="413.0" font-size="19" fill="#0F2A4A" text-anchor="middle" font-weight="600">0.30</text>
-<text x="780.0" y="437.0" font-size="14" fill="#94A3B8" text-anchor="middle" font-weight="400">40% of the</text>
-<text x="780.0" y="455.0" font-size="14" fill="#94A3B8" text-anchor="middle" font-weight="400">correlation,</text>
-<text x="780.0" y="473.0" font-size="14" fill="#94A3B8" text-anchor="middle" font-weight="400">gone</text>
-<text x="130" y="682" font-size="14" fill="#94A3B8" text-anchor="start" font-weight="400">Simulated. Selection is set at 38% and the true correlation at 0.50, which is generous. Real funnels are tighter and most screens claim less, so the attenuation shown is a conservative version of the effect.</text>
+<text x="780.0" y="413.0" font-size="28" fill="#0F2A4A" text-anchor="middle" font-weight="600">0.30</text>
+<text x="780.0" y="437.0" font-size="20" fill="#94A3B8" text-anchor="middle" font-weight="400">40% of the</text>
+<text x="780.0" y="455.0" font-size="20" fill="#94A3B8" text-anchor="middle" font-weight="400">correlation,</text>
+<text x="780.0" y="473.0" font-size="20" fill="#94A3B8" text-anchor="middle" font-weight="400">gone</text>
+<text x="130" y="682" font-size="17" fill="#94A3B8" text-anchor="start" font-weight="400">Simulated. Selection is set at 38% and the true correlation at 0.50, which is generous. Real funnels are tighter and most screens claim less, so the attenuation shown is a conservative version of the effect.</text>
 </svg>

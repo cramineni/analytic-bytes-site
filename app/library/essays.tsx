@@ -8391,7 +8391,7 @@ export const ESSAYS: Essay[] = [
           I spent my early career in educational measurement. In that field, before an instrument is used to decide something about a person, you are required to argue for it.
         </P>
         <P>
-          Messick wrote the consequences of use into the definition rather than appending them to it. Validity, in his words, is &ldquo;an integrated evaluative judgment of the degree to which empirical evidence and theoretical rationales support the adequacy and appropriateness of inferences and actions based on test scores or other modes of assessment&rdquo; (Messick, <I>Educational Measurement</I>, 3rd ed., 1989, p. 13).
+          Messick wrote the consequences of use into the definition rather than appending them to it. Validity, in his words, is &ldquo;an integrated evaluative judgment of the degree to which empirical evidence and theoretical rationales support the adequacy and appropriateness of inferences and actions based on test scores or other modes of assessment&rdquo; (<a href="https://onlinelibrary.wiley.com/doi/10.1002/j.2333-8504.1988.tb00306.x" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick</a>, <I>Educational Measurement</I>, 3rd ed., 1989, p. 13).
         </P>
         <P>
           Two phrases carry the weight here. <B>Actions</B>, which puts what a score is used to do inside the definition. And <B>other modes of assessment</B>, which is Messick extending validity to means beyond tests.
@@ -8412,16 +8412,16 @@ export const ESSAYS: Essay[] = [
           <B>Construct-irrelevant variance.</B> R&eacute;sum&eacute;-writing skill. Formatting compatibility. Prestige of prior employers and institutions. Name effects. All of these vary across candidates. None of them is the construct, and none of them is detected.
         </P>
         <P>
-          Kane supplies the apparatus. He reframed validation as an argument you write down: state how the score will be interpreted and used, then evaluate each inference in the chain (Kane, &ldquo;Validating the interpretations and uses of test scores,&rdquo; <I>Journal of Educational Measurement</I>, 50(1), 2013). Apply that to a screen and four inferences need backing, which is <InternalLink slug="the-valid-dollar">the same chain I ran against a spending decision</InternalLink>, pointed at a person.
+          Kane supplies the apparatus. He reframed validation as an argument you write down: state how the score will be interpreted and used, then evaluate each inference in the chain (<a href="https://onlinelibrary.wiley.com/doi/10.1111/jedm.12000" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane</a>, &ldquo;Validating the interpretations and uses of test scores,&rdquo; <I>Journal of Educational Measurement</I>, 50(1), 2013). Apply that to a screen and four inferences need backing, which is <InternalLink slug="the-valid-dollar">the same chain I ran against a spending decision</InternalLink>, pointed at a person.
         </P>
         <P>
           The document becomes a match score. The score stands in for the candidate&rsquo;s typical work. The score predicts performance on the job. The score justifies the decision.
         </P>
         <P>
-          There is a large literature showing that r&eacute;sum&eacute;-derived variables correlate with later outcomes (Schmidt &amp; Hunter, &ldquo;The validity and utility of selection methods in personnel psychology: Practical and theoretical implications of 85 years of research findings,&rdquo; <I>Psychological Bulletin</I>, 124(2), 1998). That literature does not finish this argument, and pointing at it is the usual way of avoiding the question. Kane&rsquo;s question is narrower. Does this screen, applied to this requisition, support each of those four steps, for this population, at this threshold, for this decision. A general result about predictors is not a validity argument for a particular instrument in a particular use.
+          There is a large literature showing that r&eacute;sum&eacute;-derived variables correlate with later outcomes (<a href="https://psycnet.apa.org/doi/10.1037/0033-2909.124.2.262" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Schmidt &amp; Hunter</a>, &ldquo;The validity and utility of selection methods in personnel psychology: Practical and theoretical implications of 85 years of research findings,&rdquo; <I>Psychological Bulletin</I>, 124(2), 1998). That literature does not finish this argument, and pointing at it is the usual way of avoiding the question. Kane&rsquo;s question is narrower. Does this screen, applied to this requisition, support each of those four steps, for this population, at this threshold, for this decision. A general result about predictors is not a validity argument for a particular instrument in a particular use.
         </P>
         <P>
-          That particular argument is what is rarely written down anywhere a reader can see it &mdash; including at the standard the field itself names (Society for Industrial and Organizational Psychology, <I>Principles for the Validation and Use of Personnel Selection Procedures</I>, 5th ed., 2018).
+          That particular argument is what is rarely written down anywhere a reader can see it &mdash; including at the standard the field itself names (<a href="https://www.apa.org/ed/accreditation/about/policies/personnel-selection-procedures.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Society for Industrial and Organizational Psychology</a>, <I>Principles for the Validation and Use of Personnel Selection Procedures</I>, 5th ed., 2018).
         </P>
 
         <H2>The requirement has no time index</H2>
@@ -8520,7 +8520,7 @@ export const ESSAYS: Essay[] = [
           So the harm is invisible to the party positioned to fix it. Ordinary post-hire performance data cannot reveal it, because the screen decides who enters that data.
         </P>
         <P>
-          Range restriction is a known problem, not a novel one (Sackett &amp; Yang, &ldquo;Correction for range restriction: An expanded typology,&rdquo; <I>Journal of Applied Psychology</I>, 85(1), 2000). Corrections exist. They require observing performance on rejected candidates, which is exactly the observation the screen prevents.
+          Range restriction is a known problem, not a novel one (<a href="https://psycnet.apa.org/doi/10.1037/0021-9010.85.1.112" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Sackett &amp; Yang</a>, &ldquo;Correction for range restriction: An expanded typology,&rdquo; <I>Journal of Applied Psychology</I>, 85(1), 2000). Corrections exist. They require observing performance on rejected candidates, which is exactly the observation the screen prevents.
         </P>
         <P>
           There are ways around this. Audit sampling. Following rejected candidates who were hired elsewhere. Quasi-experimental designs that admit a few people below the threshold. Each of them works. None of them is ordinary practice, and none of them is what a validity coefficient computed on hires is doing.
