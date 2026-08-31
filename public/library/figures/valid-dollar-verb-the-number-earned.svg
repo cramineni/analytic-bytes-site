@@ -1,61 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 648" width="1200" height="630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" role="img" aria-labelledby="title desc">
   <title id="title">Validity tells you which verb the number earned</title>
   <desc id="desc">Three rows ordered by the strength of the verb an impact number earns at the fourth inference link. No counterfactual earns supports. Contribution analysis, where rival explanations are tested and defeated, earns contributed to; this row is tinted because the cost of a controlled comparison, the years its effects take to compound, and the methodological expertise it requires put most claims here. A controlled comparison earns produced, with how far produced reaches depending on whether the design was matched, quasi-experimental, or randomized. Verb strength is encoded twice: colour darkens as the claim strengthens, and a three-step indicator shows one filled step, two, or three.</desc>
 
   <!-- background -->
-  <rect x="0" y="0" width="1200" height="648" fill="#ffffff"/>
+  <rect x="0" y="0" width="1400" height="900" fill="#ffffff"/>
 
   <!-- chart title -->
-  <text x="600" y="48" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="18" font-weight="700" fill="#0F2A4A" text-anchor="middle">The verb the number earned</text>
+  <text x="700" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">The verb the number earned</text>
 
-  <g transform="translate(0, 52)">
+  <g transform="translate(0, 70)">
   <!-- column headers -->
-  <text x="104" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">EVIDENCE AT LINK 4 &#183; OURS, NOT ADJACENT</text>
-  <text x="750" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="2">VERB IT EARNS</text>
+  <text x="90" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#94A3B8" letter-spacing="2">EVIDENCE AT LINK 4 &#183; OURS, NOT ADJACENT</text>
+  <text x="860" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#94A3B8" letter-spacing="2">VERB IT EARNS</text>
 
   <!-- divider -->
-  <line x1="72" y1="124" x2="1128" y2="124" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="72" y1="152" x2="1328" y2="152" stroke="#E2E8F0" stroke-width="1"/>
 
   <!-- Row 1 — weakest: grey, one of three -->
   <g>
-    <rect x="72" y="146" width="6" height="80" fill="#94A3B8"/>
-    <text x="104" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">No counterfactual</text>
-    <text x="104" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">The outcome happened. Contribution is unexamined.</text>
-    <text x="750" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" font-style="italic" fill="#64748B">supports</text>
-    <text x="750" y="214" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">the number is consistent with the outcome</text>
-    <rect x="1075" y="172" width="9" height="9" rx="2" fill="#94A3B8"/>
-    <rect x="1089" y="172" width="9" height="9" rx="2" fill="#E2E8F0"/>
-    <rect x="1103" y="172" width="9" height="9" rx="2" fill="#E2E8F0"/>
+    <rect x="72" y="180" width="6" height="120" fill="#94A3B8"/>
+    <text x="100" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">No counterfactual</text>
+    <text x="100" y="256" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#475569">The outcome happened. Contribution is unexamined.</text>
+    <text x="860" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" font-style="italic" fill="#64748B">supports</text>
+    <text x="860" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#94A3B8">the number is consistent with the outcome</text>
+    <rect x="1250" y="210" width="12" height="12" rx="2" fill="#94A3B8"/>
+    <rect x="1268" y="210" width="12" height="12" rx="2" fill="#E2E8F0"/>
+    <rect x="1286" y="210" width="12" height="12" rx="2" fill="#E2E8F0"/>
   </g>
 
-  <line x1="72" y1="250" x2="1128" y2="250" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="72" y1="330" x2="1328" y2="330" stroke="#F1F5F9" stroke-width="1"/>
 
   <!-- Row 2 — middle: teal, two of three. Tinted because this is where most funders sit. -->
-  <rect x="72" y="264" width="1056" height="128" fill="#F0F9FF"/>
+  <rect x="72" y="350" width="1256" height="180" fill="#F0F9FF"/>
   <g>
-    <rect x="72" y="276" width="6" height="80" fill="#0EA5E9"/>
-    <text x="104" y="314" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="700" fill="#0F2A4A">Contribution analysis</text>
-    <text x="104" y="338" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Story assembled; rival explanations tested and defeated (Mayne).</text>
-    <text x="750" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" font-style="italic" fill="#0EA5E9">contributed to</text>
-    <text x="750" y="344" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#475569">the strongest verb no surviving rival can defeat</text>
-    <rect x="1075" y="302" width="9" height="9" rx="2" fill="#0EA5E9"/>
-    <rect x="1089" y="302" width="9" height="9" rx="2" fill="#0EA5E9"/>
-    <rect x="1103" y="302" width="9" height="9" rx="2" fill="#E2E8F0"/>
-    <text x="104" y="374" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" fill="#0EA5E9" letter-spacing="1.5">WHERE COST PUTS MOST CLAIMS</text>
+    <rect x="72" y="366" width="6" height="120" fill="#0EA5E9"/>
+    <text x="100" y="408" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#0F2A4A">Contribution analysis</text>
+    <text x="100" y="442" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#475569">Story assembled; rival explanations tested and defeated (Mayne).</text>
+    <text x="100" y="500" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0EA5E9" letter-spacing="1.5">WHERE COST PUTS MOST CLAIMS</text>
+    <text x="860" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" font-style="italic" fill="#0EA5E9">contributed to</text>
+    <text x="860" y="448" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#475569">the strongest verb no surviving rival can defeat</text>
+    <rect x="1250" y="396" width="12" height="12" rx="2" fill="#0EA5E9"/>
+    <rect x="1268" y="396" width="12" height="12" rx="2" fill="#0EA5E9"/>
+    <rect x="1286" y="396" width="12" height="12" rx="2" fill="#E2E8F0"/>
   </g>
 
-  <line x1="72" y1="416" x2="1128" y2="416" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="72" y1="560" x2="1328" y2="560" stroke="#F1F5F9" stroke-width="1"/>
 
   <!-- Row 3 — strongest: navy, three of three -->
   <g>
-    <rect x="72" y="436" width="6" height="80" fill="#0F2A4A"/>
-    <text x="104" y="474" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="600" fill="#0F2A4A">Controlled comparison</text>
-    <text x="104" y="498" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Matched, quasi-experimental, or randomized.</text>
-    <text x="750" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" font-style="italic" fill="#0F2A4A">produced</text>
-    <text x="750" y="504" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8">how far it reaches depends on which design</text>
-    <rect x="1075" y="462" width="9" height="9" rx="2" fill="#0F2A4A"/>
-    <rect x="1089" y="462" width="9" height="9" rx="2" fill="#0F2A4A"/>
-    <rect x="1103" y="462" width="9" height="9" rx="2" fill="#0F2A4A"/>
+    <rect x="72" y="588" width="6" height="120" fill="#0F2A4A"/>
+    <text x="100" y="630" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">Controlled comparison</text>
+    <text x="100" y="664" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#475569">Matched, quasi-experimental, or randomized.</text>
+    <text x="860" y="636" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" font-style="italic" fill="#0F2A4A">produced</text>
+    <text x="860" y="670" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#94A3B8">how far it reaches depends on which design</text>
+    <rect x="1250" y="618" width="12" height="12" rx="2" fill="#0F2A4A"/>
+    <rect x="1268" y="618" width="12" height="12" rx="2" fill="#0F2A4A"/>
+    <rect x="1286" y="618" width="12" height="12" rx="2" fill="#0F2A4A"/>
   </g>
   </g>
 </svg>
