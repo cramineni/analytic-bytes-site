@@ -296,5 +296,8 @@ export const ARTIFACTS: Artifact[] = [
       "Three panels of the same sixty-six job postings, each answering a different question about decision rights: what decisions the hire may make unaided, what an AI system may decide, and whether the hire may halt or gate a model. In an audit of the postings, twenty-three answered the first, two the second, and one the third — and that one was hedged. The same document that names the role rarely names the rights.",
     image: "/library/artifacts/decision-rights-at-the-door.svg",
     slug: "decision-rights-at-the-door",
+    referencedIn: [
+      { slug: "actions-not-answers", title: "Actions, not answers." },
+    ],
   },
 ];

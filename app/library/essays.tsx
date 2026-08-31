@@ -2657,7 +2657,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The first is a threshold map. For any workflow you are considering
-          handing to an agent, draw the line three ways. Where may the agent
+          handing to an agent, <ArtifactLink slug="decision-rights-at-the-door">draw the line three ways</ArtifactLink>. Where may the agent
           act entirely on its own? Where must it stop and pass the decision up
           to a human? And where must the human start the decision in the first
           place, with the agent not acting at all, only assisting? Most teams
