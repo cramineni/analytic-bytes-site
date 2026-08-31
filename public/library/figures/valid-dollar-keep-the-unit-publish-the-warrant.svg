@@ -1,85 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" width="1600" height="1100" role="img" aria-labelledby="title desc">
   <title id="title">Keep the unit. Publish the warrant beside it.</title>
   <desc id="desc">An impact figure broken into three pathways. All three cap at the same inference link, the fourth one, ours not adjacent. What differs is the evidence each pathway has at that link, and so the verb each one earns. Legal fees avoided has a controlled comparison and earns produced. Wage gain has rival explanations tested and defeated and earns contributed to. Housing stability has no counterfactual and earns only supports. Verb strength is encoded twice: by colour, which darkens as the claim strengthens, and by a three-step indicator showing three filled steps, two, or one. The blended total is shown last. The dollars add, but the composite claim is capped at the weakest verb among the pathways, so the total row carries the same grey and the same one-of-three indicator as the pathway that capped it. Amounts are illustrative.</desc>
 
   <!-- background -->
-  <rect x="0" y="0" width="1600" height="1000" fill="#ffffff"/>
+  <rect x="0" y="0" width="1600" height="1100" fill="#ffffff"/>
 
   <!-- chart title -->
-  <text x="800" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">Keep the unit, publish the warrant</text>
+  <text x="800" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#0F2A4A" text-anchor="middle">Keep the unit, publish the warrant</text>
 
-  <g transform="translate(0, 80)">
+  <g transform="translate(0, 90)">
   <!-- column headers -->
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#94A3B8" letter-spacing="2">
-    <text x="100" y="130">PATHWAY</text>
-    <text x="530" y="130">DOLLARS</text>
-    <text x="720" y="130">WHERE IT CAPS, AND ON WHAT EVIDENCE</text>
-    <text x="1260" y="130">CLAIM EARNED</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" fill="#94A3B8" letter-spacing="2">
+    <text x="100" y="140">PATHWAY</text>
+    <text x="530" y="140">DOLLARS</text>
+    <text x="720" y="140">WHERE IT CAPS &#183; EVIDENCE</text>
+    <text x="1260" y="140">CLAIM EARNED</text>
   </g>
-  <line x1="72" y1="152" x2="1528" y2="152" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="72" y1="165" x2="1528" y2="165" stroke="#E2E8F0" stroke-width="1"/>
 
   <!-- Row 1 — strongest: navy, three of three -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-    <rect x="72" y="180" width="6" height="90" fill="#0F2A4A"/>
-    <text x="100" y="222" font-size="24" font-weight="600" fill="#0F2A4A">Legal fees avoided</text>
-    <text x="530" y="222" font-size="24" font-weight="600" fill="#0F2A4A">$4.8M</text>
-    <text x="720" y="218" font-size="22" font-weight="400" fill="#475569">Link 4 &#183; Ours, not adjacent</text>
-    <text x="720" y="248" font-size="22" font-weight="400" fill="#94A3B8">controlled comparison behind it</text>
-    <text x="1260" y="226" font-size="28" font-weight="700" font-style="italic" fill="#0F2A4A">produced</text>
-    <rect x="1470" y="210" width="12" height="12" rx="2" fill="#0F2A4A"/>
-    <rect x="1488" y="210" width="12" height="12" rx="2" fill="#0F2A4A"/>
-    <rect x="1506" y="210" width="12" height="12" rx="2" fill="#0F2A4A"/>
+    <rect x="72" y="195" width="6" height="110" fill="#0F2A4A"/>
+    <text x="100" y="240" font-size="30" font-weight="600" fill="#0F2A4A">Legal fees avoided</text>
+    <text x="530" y="240" font-size="30" font-weight="600" fill="#0F2A4A">$4.8M</text>
+    <text x="720" y="234" font-size="28" font-weight="400" fill="#475569">Link 4 &#183; Ours, not adjacent</text>
+    <text x="720" y="270" font-size="28" font-weight="400" fill="#94A3B8">controlled comparison behind it</text>
+    <text x="1260" y="244" font-size="34" font-weight="700" font-style="italic" fill="#0F2A4A">produced</text>
+    <rect x="1470" y="220" width="14" height="14" rx="2" fill="#0F2A4A"/>
+    <rect x="1490" y="220" width="14" height="14" rx="2" fill="#0F2A4A"/>
+    <rect x="1510" y="220" width="14" height="14" rx="2" fill="#0F2A4A"/>
   </g>
-  <line x1="72" y1="290" x2="1528" y2="290" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="72" y1="325" x2="1528" y2="325" stroke="#F1F5F9" stroke-width="1"/>
 
   <!-- Row 2 — middle: teal, two of three -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-    <rect x="72" y="308" width="6" height="90" fill="#0EA5E9"/>
-    <text x="100" y="350" font-size="24" font-weight="600" fill="#0F2A4A">Wage gain after clearance</text>
-    <text x="530" y="350" font-size="24" font-weight="600" fill="#0F2A4A">$3.6M</text>
-    <text x="720" y="346" font-size="22" font-weight="400" fill="#475569">Link 4 &#183; Ours, not adjacent</text>
-    <text x="720" y="376" font-size="22" font-weight="400" fill="#94A3B8">rivals tested and defeated</text>
-    <text x="1260" y="354" font-size="28" font-weight="700" font-style="italic" fill="#0EA5E9">contributed to</text>
-    <rect x="1470" y="338" width="12" height="12" rx="2" fill="#0EA5E9"/>
-    <rect x="1488" y="338" width="12" height="12" rx="2" fill="#0EA5E9"/>
-    <rect x="1506" y="338" width="12" height="12" rx="2" fill="#E2E8F0"/>
+    <rect x="72" y="345" width="6" height="110" fill="#0EA5E9"/>
+    <text x="100" y="390" font-size="30" font-weight="600" fill="#0F2A4A">Wage gain after clearance</text>
+    <text x="530" y="390" font-size="30" font-weight="600" fill="#0F2A4A">$3.6M</text>
+    <text x="720" y="384" font-size="28" font-weight="400" fill="#475569">Link 4 &#183; Ours, not adjacent</text>
+    <text x="720" y="420" font-size="28" font-weight="400" fill="#94A3B8">rivals tested and defeated</text>
+    <text x="1260" y="394" font-size="34" font-weight="700" font-style="italic" fill="#0EA5E9">contributed to</text>
+    <rect x="1470" y="370" width="14" height="14" rx="2" fill="#0EA5E9"/>
+    <rect x="1490" y="370" width="14" height="14" rx="2" fill="#0EA5E9"/>
+    <rect x="1510" y="370" width="14" height="14" rx="2" fill="#E2E8F0"/>
   </g>
-  <line x1="72" y1="418" x2="1528" y2="418" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="72" y1="475" x2="1528" y2="475" stroke="#F1F5F9" stroke-width="1"/>
 
   <!-- Row 3 — weakest: grey, one of three. This row caps the total. -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-    <rect x="72" y="436" width="6" height="90" fill="#94A3B8"/>
-    <text x="100" y="478" font-size="24" font-weight="600" fill="#0F2A4A">Housing stability</text>
-    <text x="530" y="478" font-size="24" font-weight="600" fill="#0F2A4A">$1.8M</text>
-    <text x="720" y="474" font-size="22" font-weight="400" fill="#475569">Link 4 &#183; Ours, not adjacent</text>
-    <text x="720" y="504" font-size="22" font-weight="400" fill="#94A3B8">no counterfactual</text>
-    <text x="1260" y="482" font-size="28" font-weight="700" font-style="italic" fill="#64748B">supports</text>
-    <rect x="1470" y="466" width="12" height="12" rx="2" fill="#94A3B8"/>
-    <rect x="1488" y="466" width="12" height="12" rx="2" fill="#E2E8F0"/>
-    <rect x="1506" y="466" width="12" height="12" rx="2" fill="#E2E8F0"/>
+    <rect x="72" y="495" width="6" height="110" fill="#94A3B8"/>
+    <text x="100" y="540" font-size="30" font-weight="600" fill="#0F2A4A">Housing stability</text>
+    <text x="530" y="540" font-size="30" font-weight="600" fill="#0F2A4A">$1.8M</text>
+    <text x="720" y="534" font-size="28" font-weight="400" fill="#475569">Link 4 &#183; Ours, not adjacent</text>
+    <text x="720" y="570" font-size="28" font-weight="400" fill="#94A3B8">no counterfactual</text>
+    <text x="1260" y="544" font-size="34" font-weight="700" font-style="italic" fill="#64748B">supports</text>
+    <rect x="1470" y="520" width="14" height="14" rx="2" fill="#94A3B8"/>
+    <rect x="1490" y="520" width="14" height="14" rx="2" fill="#E2E8F0"/>
+    <rect x="1510" y="520" width="14" height="14" rx="2" fill="#E2E8F0"/>
   </g>
 
   <!-- rule above the total -->
-  <line x1="72" y1="558" x2="1528" y2="558" stroke="#CBD5E1" stroke-width="2"/>
+  <line x1="72" y1="630" x2="1528" y2="630" stroke="#CBD5E1" stroke-width="2"/>
 
   <!-- Total row — wears the grade of the row that capped it -->
-  <rect x="72" y="580" width="1456" height="140" fill="#F8FAFC"/>
+  <rect x="72" y="655" width="1456" height="160" fill="#F8FAFC"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-    <rect x="72" y="592" width="6" height="116" fill="#94A3B8"/>
-    <text x="100" y="632" font-size="24" font-weight="700" fill="#0F2A4A">Blended: Dollars in Pockets</text>
-    <text x="100" y="666" font-size="22" font-weight="400" fill="#64748B">one number, one sentence said out loud about all of it</text>
-    <text x="530" y="632" font-size="28" font-weight="700" fill="#0F2A4A">$10.2M</text>
-    <text x="720" y="628" font-size="22" font-weight="400" fill="#475569">Capped by the softest row above</text>
-    <text x="720" y="658" font-size="22" font-weight="400" fill="#94A3B8">the total inherits housing's grade</text>
-    <text x="1260" y="636" font-size="30" font-weight="700" font-style="italic" fill="#64748B">supports</text>
-    <rect x="1470" y="620" width="12" height="12" rx="2" fill="#94A3B8"/>
-    <rect x="1488" y="620" width="12" height="12" rx="2" fill="#E2E8F0"/>
-    <rect x="1506" y="620" width="12" height="12" rx="2" fill="#E2E8F0"/>
+    <rect x="72" y="670" width="6" height="130" fill="#94A3B8"/>
+    <text x="100" y="712" font-size="30" font-weight="700" fill="#0F2A4A">Blended: Dollars in Pockets</text>
+    <text x="100" y="748" font-size="28" font-weight="400" fill="#64748B">one number, one sentence out loud</text>
+    <text x="530" y="712" font-size="36" font-weight="700" fill="#0F2A4A">$10.2M</text>
+    <text x="720" y="706" font-size="28" font-weight="400" fill="#475569">Capped by the softest row above</text>
+    <text x="720" y="742" font-size="28" font-weight="400" fill="#94A3B8">the total inherits housing's grade</text>
+    <text x="1260" y="716" font-size="38" font-weight="700" font-style="italic" fill="#64748B">supports</text>
+    <rect x="1470" y="690" width="14" height="14" rx="2" fill="#94A3B8"/>
+    <rect x="1490" y="690" width="14" height="14" rx="2" fill="#E2E8F0"/>
+    <rect x="1510" y="690" width="14" height="14" rx="2" fill="#E2E8F0"/>
   </g>
 
   <!-- footer note -->
-  <text x="72" y="770" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#475569">Blending costs the strong pathway its verb: $4.8M that earned <tspan font-style="italic">produced</tspan> is reported inside a total that</text>
-  <text x="72" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#475569">can only claim <tspan font-style="italic">supports</tspan>.</text>
-  <text x="72" y="840" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" fill="#94A3B8">Pathways as named in the published Rasa Legal example. Amounts are illustrative; no per-pathway figures have been published.</text>
+  <text x="72" y="870" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="#475569">Blending costs the strong pathway its verb: $4.8M that earned <tspan font-style="italic">produced</tspan> is reported inside a total</text>
+  <text x="72" y="906" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="#475569">that can only claim <tspan font-style="italic">supports</tspan>.</text>
+  <text x="72" y="960" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="#94A3B8">Pathways as named in the published Rasa Legal example.</text>
+  <text x="72" y="996" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="#94A3B8">Amounts are illustrative; no per-pathway figures have been published.</text>
   </g>
 </svg>

@@ -2,45 +2,45 @@
 <title>Six drift modes in two families</title>
 <desc>Two side-by-side families of drift. The left family, labeled Instrument, holds model drift, conversational drift, and detection-accuracy regression, and is marked as already covered by responsible-AI monitoring. The right family, labeled Claim and drawn in teal, holds construct drift, population drift, and user-effect drift, and is marked as the layer the validity discipline adds.</desc>
 <rect width="1400" height="640" fill="#FFFFFF"/>
-<text x="700" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">Six drift modes, two families</text>
+<text x="700" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="39" font-weight="700" fill="#0F2A4A" text-anchor="middle">Six drift modes, two families</text>
 
 <!-- LEFT FAMILY: instrument -->
-<rect x="40" y="100" width="640" height="510" fill="none" stroke="#CBD5E1" stroke-width="1" rx="4"/>
-<text x="360" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3" fill="#94A3B8" text-anchor="middle">FAMILY ONE — THE INSTRUMENT</text>
-<text x="360" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#475569" text-anchor="middle">What responsible-AI monitoring already names</text>
+<rect x="20" y="100" width="670" height="510" fill="none" stroke="#CBD5E1" stroke-width="1" rx="4"/>
+<text x="355" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="600" letter-spacing="3" fill="#94A3B8" text-anchor="middle">FAMILY ONE — THE INSTRUMENT</text>
+<text x="355" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-style="italic" fill="#475569" text-anchor="middle">What responsible-AI monitoring already names</text>
 
-<rect x="70" y="204" width="580" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-<text x="92" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">Model drift</text>
-<text x="92" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">The underlying model is updated and responses</text>
-<text x="92" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">shift, including how distress is handled.</text>
+<rect x="45" y="204" width="620" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="67" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#0F2A4A">Model drift</text>
+<text x="67" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">The underlying model is updated and responses</text>
+<text x="67" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">shift, including how distress is handled.</text>
 
-<rect x="70" y="344" width="580" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-<text x="92" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">Conversational drift</text>
-<text x="92" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">Prompt and content changes accumulate until</text>
-<text x="92" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">tone and scope no longer match clinical design.</text>
+<rect x="45" y="344" width="620" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="67" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#0F2A4A">Conversational drift</text>
+<text x="67" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">Prompt and content changes accumulate until</text>
+<text x="67" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">tone and scope no longer match clinical design.</text>
 
-<rect x="70" y="484" width="580" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-<text x="92" y="520" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">Detection-accuracy regression</text>
-<text x="92" y="554" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">Performance degrades for one group while the</text>
-<text x="92" y="584" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">aggregate numbers still look fine.</text>
+<rect x="45" y="484" width="620" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="67" y="520" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#0F2A4A">Detection-accuracy regression</text>
+<text x="67" y="554" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">Performance degrades for one group while the</text>
+<text x="67" y="584" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">aggregate numbers still look fine.</text>
 
 <!-- RIGHT FAMILY: claim -->
-<rect x="720" y="100" width="640" height="510" fill="none" stroke="#0EA5E9" stroke-width="2" rx="4"/>
-<text x="1040" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3" fill="#0EA5E9" text-anchor="middle">FAMILY TWO — THE CLAIM</text>
-<text x="1040" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#475569" text-anchor="middle">What the validity layer adds</text>
+<rect x="710" y="100" width="670" height="510" fill="none" stroke="#0EA5E9" stroke-width="2" rx="4"/>
+<text x="1045" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="600" letter-spacing="3" fill="#0EA5E9" text-anchor="middle">FAMILY TWO — THE CLAIM</text>
+<text x="1045" y="176" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-style="italic" fill="#475569" text-anchor="middle">What the validity layer adds</text>
 
-<rect x="750" y="204" width="580" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-<text x="772" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">Construct drift</text>
-<text x="772" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">What the field means by depression, wellbeing</text>
-<text x="772" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">or engagement shifts against the validated proxy.</text>
+<rect x="735" y="204" width="620" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="757" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#0F2A4A">Construct drift</text>
+<text x="757" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">What the field means by depression, wellbeing</text>
+<text x="757" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">or engagement shifts against the validated proxy.</text>
 
-<rect x="750" y="344" width="580" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-<text x="772" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">Population drift</text>
-<text x="772" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">The people using the system change in</text>
-<text x="772" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">composition, so the original validation stops applying.</text>
+<rect x="735" y="344" width="620" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="757" y="380" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#0F2A4A">Population drift</text>
+<text x="757" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">The people using the system change in</text>
+<text x="757" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">composition, so the original validation stops applying.</text>
 
-<rect x="750" y="484" width="580" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-<text x="772" y="520" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#0F2A4A">User-effect drift</text>
-<text x="772" y="554" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">The system's effect on users over months of</text>
-<text x="772" y="584" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569">repeated use, which point-in-time evals cannot see.</text>
+<rect x="735" y="484" width="620" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+<text x="757" y="520" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#0F2A4A">User-effect drift</text>
+<text x="757" y="554" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">The system's effect on users over months of</text>
+<text x="757" y="584" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="25" fill="#475569">repeated use, which point-in-time evals cannot see.</text>
 </svg>
