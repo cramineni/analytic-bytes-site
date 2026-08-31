@@ -1,76 +1,72 @@
-<svg viewBox="0 -110 1200 413" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 620" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The essential minimum: five components of mission-driven AI evaluation</title>
 <desc>Horizontal 5-part visual showing the essential-minimum evaluation discipline for mission-driven AI. Five numbered items across the width: task decomposition, ground-truth benchmarking, deployment-context evaluation, downstream impact evaluation, escalation and handoff. Each item has a navy numbered circle, a two-line label, and a one-line essence. A teal connecting line underneath binds them as one discipline. Signature at bottom.</desc>
-<rect x="0" y="-110" width="1200" height="413" fill="#FFFFFF"/>
-<text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">The essential minimum</text>
-<g transform="translate(0, -242)">
+<rect x="0" y="-110" width="1200" height="620" fill="#FFFFFF"/>
+<text x="600" y="-70" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">The essential minimum</text>
+<g transform="translate(0, -212)">
 <!-- HEADER -->
-
-<!-- Top eyebrow -->
-
-
-<!-- Title -->
-
-
-<!-- Subtitle -->
-
 
 <!-- ITEM 1 — Task decomposition -->
 <g transform="translate(168, 0)">
   <circle cx="0" cy="240" r="30" fill="#0F2A4A"/>
   <text x="0" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">1</text>
-  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">Task</text>
-  <text x="0" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">decomposition</text>
-  <text x="0" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Name what the AI actually does —</text>
-  <text x="0" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">not the vendor pitch.</text>
+  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Task</text>
+  <text x="0" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">decomposition</text>
+  <text x="0" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">Name what the AI</text>
+  <text x="0" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">actually does — not</text>
+  <text x="0" y="456" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">the vendor pitch.</text>
 </g>
 
 <!-- ITEM 2 — Ground-truth benchmarking -->
 <g transform="translate(384, 0)">
   <circle cx="0" cy="240" r="30" fill="#0F2A4A"/>
   <text x="0" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">2</text>
-  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">Ground-truth</text>
-  <text x="0" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">benchmarking</text>
-  <text x="0" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">20–50 hand-labeled cases from</text>
-  <text x="0" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">your deployment context.</text>
+  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Ground-truth</text>
+  <text x="0" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">benchmarking</text>
+  <text x="0" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">20–50 hand-labeled</text>
+  <text x="0" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">cases from your</text>
+  <text x="0" y="456" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">deployment context.</text>
 </g>
 
 <!-- ITEM 3 — Deployment-context evaluation -->
 <g transform="translate(600, 0)">
   <circle cx="0" cy="240" r="30" fill="#0F2A4A"/>
   <text x="0" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">3</text>
-  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">Deployment-context</text>
-  <text x="0" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">evaluation</text>
-  <text x="0" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Evaluate in context,</text>
-  <text x="0" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">not a proxy environment.</text>
+  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Deployment-</text>
+  <text x="0" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">context evaluation</text>
+  <text x="0" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">Evaluate in context,</text>
+  <text x="0" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">not a proxy</text>
+  <text x="0" y="456" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">environment.</text>
 </g>
 
 <!-- ITEM 4 — Downstream impact evaluation -->
 <g transform="translate(816, 0)">
   <circle cx="0" cy="240" r="30" fill="#0F2A4A"/>
   <text x="0" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">4</text>
-  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">Downstream</text>
-  <text x="0" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">impact</text>
-  <text x="0" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Track outcome shifts, not activity.</text>
-  <text x="0" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Anchor internally and externally.</text>
+  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Downstream</text>
+  <text x="0" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">impact</text>
+  <text x="0" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">Track outcome shifts,</text>
+  <text x="0" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">not activity. Anchor</text>
+  <text x="0" y="456" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">inside and out.</text>
 </g>
 
 <!-- ITEM 5 — Escalation and handoff -->
 <g transform="translate(1032, 0)">
   <circle cx="0" cy="240" r="30" fill="#0F2A4A"/>
   <text x="0" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">5</text>
-  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">Escalation</text>
-  <text x="0" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#0F2A4A" text-anchor="middle">and handoff</text>
-  <text x="0" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">Threshold map: alone, handoff,</text>
-  <text x="0" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle">or human-originated.</text>
+  <text x="0" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Escalation</text>
+  <text x="0" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">and handoff</text>
+  <text x="0" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">Threshold map:</text>
+  <text x="0" y="428" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">alone, handoff, or</text>
+  <text x="0" y="456" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">human-originated.</text>
 </g>
 
 <!-- Connecting line binding the five as one discipline -->
 <g>
-  <line x1="168" y1="450" x2="1032" y2="450" stroke="#0EA5E9" stroke-width="1.5"/>
-  <line x1="168" y1="450" x2="168" y2="465" stroke="#0EA5E9" stroke-width="1.5"/>
-  <line x1="1032" y1="450" x2="1032" y2="465" stroke="#0EA5E9" stroke-width="1.5"/>
-  
+  <line x1="168" y1="500" x2="1032" y2="500" stroke="#0EA5E9" stroke-width="1.5"/>
+  <line x1="168" y1="500" x2="168" y2="515" stroke="#0EA5E9" stroke-width="1.5"/>
+  <line x1="1032" y1="500" x2="1032" y2="515" stroke="#0EA5E9" stroke-width="1.5"/>
+
 </g>
 </g>
 </svg>
