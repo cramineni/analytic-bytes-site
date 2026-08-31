@@ -84,6 +84,6 @@
   <text x="955" y="515" font-size="18" fill="#0EA5E9" text-anchor="middle" font-style="italic">the one they will assume</text>
 
   <!-- Process annotations -->
-  <text x="195" y="545" font-size="22" fill="#64748B" text-anchor="middle" font-style="italic">seven causes into one bit. lossy by design.</text>
-  <text x="955" y="545" font-size="22" fill="#64748B" text-anchor="middle" font-style="italic">one bit, seven still live. no way to tell which.</text>
+  <text x="50" y="545" font-size="20" fill="#64748B" font-style="italic">seven causes into one bit. lossy by design.</text>
+  <text x="1150" y="545" font-size="20" fill="#64748B" text-anchor="end" font-style="italic">one bit, seven still live. no way to tell which.</text>
 </svg>
