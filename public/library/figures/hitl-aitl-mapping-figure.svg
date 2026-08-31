@@ -1,63 +1,63 @@
-<svg viewBox="0 -110 1200 664" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -140 1200 1080" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>HITL / AITL two-band mapping across ten task categories</title>
 <desc>A two-column figure showing how ten task categories map to HITL (AI drives) or AITL (operator drives). HITL: Recurring automation, Technical dev. AITL: Strategic thinking, Project proposals and evaluations, Product and framework, Research and review, Long-form writing, Talk prep, Content and distribution, Learning and reading.</desc>
 
-<rect x="0" y="-110" width="1200" height="664" fill="#FFFFFF"/>
-<text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">HITL / AITL, mapped across the workflow</text>
-<g transform="translate(0, -82)">
+<rect x="0" y="-140" width="1200" height="1080" fill="#FFFFFF"/>
+<text x="600" y="-90" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">HITL / AITL, mapped across the workflow</text>
+<g transform="translate(0, -40)">
 <!-- HEADER -->
 
 <!-- Two column headers -->
 <!-- Column 1: HITL (AI drives) -->
-<rect x="80" y="80" width="500" height="46" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-<text x="330" y="103" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">HITL &#8212; AI DRIVES</text>
-<text x="330" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Human oversees, sets direction, corrects when it drifts</text>
+<rect x="80" y="60" width="500" height="86" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<text x="330" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">HITL &#8212; AI DRIVES</text>
+<text x="330" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">Human oversees, corrects drift</text>
 
 <!-- Column 2: AITL (Operator drives) -->
-<rect x="620" y="80" width="500" height="46" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-<text x="870" y="103" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">AITL &#8212; OPERATOR DRIVES</text>
-<text x="870" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">AI assists &#8212; drafts, synthesizes, scaffolds</text>
+<rect x="620" y="60" width="500" height="86" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<text x="870" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="2" fill="#0F2A4A" text-anchor="middle">AITL &#8212; OPERATOR DRIVES</text>
+<text x="870" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">AI drafts, synthesizes, scaffolds</text>
 
 <!-- Column 1 chips: HITL categories -->
-<rect x="100" y="150" width="460" height="46" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5" rx="4"/>
-<text x="330" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Recurring automation</text>
-<text x="330" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">AI carries almost fully</text>
+<rect x="100" y="170" width="460" height="72" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5" rx="4"/>
+<text x="330" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Recurring automation</text>
+<text x="330" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">AI carries almost fully</text>
 
-<rect x="100" y="206" width="460" height="46" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5" rx="4"/>
-<text x="330" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Technical dev</text>
-<text x="330" y="244" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#94A3B8" text-anchor="middle">AI scaffolds execution; operator directs</text>
+<rect x="100" y="256" width="460" height="72" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5" rx="4"/>
+<text x="330" y="286" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Technical dev</text>
+<text x="330" y="314" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">AI scaffolds; operator directs</text>
 
 <!-- Column 2 chips: AITL categories (8 items) -->
-<rect x="640" y="150" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Strategic thinking</text>
-<text x="870" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Operator leads; AI is thinking partner</text>
+<rect x="640" y="170" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Strategic thinking</text>
+<text x="870" y="228" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">Operator leads; AI partners</text>
 
-<rect x="640" y="202" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Project proposals &amp; evaluations</text>
-<text x="870" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Operator writes/decides; AI drafts and prepares</text>
+<rect x="640" y="256" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="286" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Project proposals &amp; evaluations</text>
+<text x="870" y="314" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">Operator decides; AI drafts</text>
 
-<rect x="640" y="254" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="274" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Product &amp; framework</text>
-<text x="870" y="288" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Operator authors; AI drafts research</text>
+<rect x="640" y="342" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="372" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Product &amp; framework</text>
+<text x="870" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">Operator authors; AI researches</text>
 
-<rect x="640" y="306" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Research &amp; review</text>
-<text x="870" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">AI synthesizes; operator evaluates</text>
+<rect x="640" y="428" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Research &amp; review</text>
+<text x="870" y="486" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">AI synthesizes; operator evaluates</text>
 
-<rect x="640" y="358" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Long-form writing</text>
-<text x="870" y="392" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Operator authors; AI is scaffold</text>
+<rect x="640" y="514" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="544" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Long-form writing</text>
+<text x="870" y="572" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">Operator authors; AI scaffolds</text>
 
-<rect x="640" y="410" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Talk prep</text>
-<text x="870" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Operator authors; AI is thinking partner</text>
+<rect x="640" y="600" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="630" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Talk prep</text>
+<text x="870" y="658" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">Operator authors; AI partners</text>
 
-<rect x="640" y="462" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="482" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Content &amp; distribution</text>
-<text x="870" y="496" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Operator directs voice; AI drafts</text>
+<rect x="640" y="686" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="716" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Content &amp; distribution</text>
+<text x="870" y="744" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">Operator directs voice; AI drafts</text>
 
-<rect x="640" y="514" width="460" height="42" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
-<text x="870" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Learning &amp; reading</text>
-<text x="870" y="548" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">Operator learns; AI is study partner</text>
+<rect x="640" y="772" width="460" height="72" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="4"/>
+<text x="870" y="802" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Learning &amp; reading</text>
+<text x="870" y="830" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#94A3B8" text-anchor="middle">Operator learns; AI is study partner</text>
 </g>
 </svg>
