@@ -1,7 +1,7 @@
-<svg viewBox="0 -110 1200 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -110 1200 670" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The essential minimum: five components of mission-driven AI evaluation</title>
 <desc>Horizontal 5-part visual showing the essential-minimum evaluation discipline for mission-driven AI. Five numbered items across the width: task decomposition, ground-truth benchmarking, deployment-context evaluation, downstream impact evaluation, escalation and handoff. Each item has a navy numbered circle, a two-line label, and a one-line essence. A teal connecting line underneath binds them as one discipline. Signature at bottom.</desc>
-<rect x="0" y="-110" width="1200" height="620" fill="#FFFFFF"/>
+<rect x="0" y="-110" width="1200" height="670" fill="#FFFFFF"/>
 <text x="600" y="-70" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">The essential minimum</text>
 <g transform="translate(0, -212)">
 <!-- HEADER -->
@@ -64,9 +64,9 @@
 <!-- Connecting line binding the five as one discipline -->
 <g>
   <line x1="168" y1="500" x2="1032" y2="500" stroke="#0EA5E9" stroke-width="1.5"/>
-  <line x1="168" y1="500" x2="168" y2="515" stroke="#0EA5E9" stroke-width="1.5"/>
-  <line x1="1032" y1="500" x2="1032" y2="515" stroke="#0EA5E9" stroke-width="1.5"/>
-
+  <line x1="168" y1="500" x2="168" y2="520" stroke="#0EA5E9" stroke-width="1.5"/>
+  <line x1="1032" y1="500" x2="1032" y2="520" stroke="#0EA5E9" stroke-width="1.5"/>
+  <text x="600" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#0EA5E9" text-anchor="middle">one discipline</text>
 </g>
 </g>
 </svg>
