@@ -1,23 +1,23 @@
 <svg viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t">
 <title id="t">Same scope, or a guess: one honest division and three that look fine and mean nothing</title>
-<desc>A division of cost by outcomes is only honest when both numbers carry the same keys. The top row divides cost and outcomes both keyed to Graham WORKS, Fall 2025 — same slice, defensible. The three rows below divide mismatched slices: this year's cost over last year's placements, one site's cost over every site's outcomes, a full year's cost over a half-year cohort. Each is trivial arithmetic and means nothing.</desc>
+<desc>A division of cost by outcomes is only honest when both numbers carry the same keys. The top row divides cost and outcomes both keyed to the same program and cohort — same slice, defensible. The three rows below divide mismatched slices: this year's cost over last year's placements, one site's cost over every site's outcomes, a full year's cost over a half-year cohort. Each is trivial arithmetic and means nothing.</desc>
 <rect width="1200" height="520" fill="#FFFFFF"/>
 
-<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Same scope, or a guess</text>
+<text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#0F2A4A" text-anchor="middle">Same scope, or a guess</text>
 
 <!-- column headers -->
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
-<text x="255" y="92" font-size="11" letter-spacing="2" fill="#94A3B8" text-anchor="middle">COST</text>
-<text x="570" y="92" font-size="11" letter-spacing="2" fill="#94A3B8" text-anchor="middle">OUTCOMES</text>
+<text x="255" y="92" font-size="14" letter-spacing="2" fill="#94A3B8" text-anchor="middle">COST</text>
+<text x="570" y="92" font-size="14" letter-spacing="2" fill="#94A3B8" text-anchor="middle">OUTCOMES</text>
 
 <!-- ROW 1 — the honest division (teal) -->
 <rect x="90" y="104" width="1020" height="76" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
 <rect x="90" y="104" width="6" height="76" fill="#0EA5E9"/>
 <rect x="130" y="125" width="250" height="34" rx="17" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5"/>
-<text x="255" y="147" font-size="17" fill="#0F2A4A" text-anchor="middle">GW · Fall '25</text>
+<text x="255" y="147" font-size="17" fill="#0F2A4A" text-anchor="middle">Program · Fall '25</text>
 <text x="412" y="151" font-size="26" fill="#0F2A4A" text-anchor="middle">÷</text>
 <rect x="445" y="125" width="250" height="34" rx="17" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5"/>
-<text x="570" y="147" font-size="17" fill="#0F2A4A" text-anchor="middle">GW · Fall '25</text>
+<text x="570" y="147" font-size="17" fill="#0F2A4A" text-anchor="middle">Program · Fall '25</text>
 <text x="728" y="149" font-size="22" fill="#0EA5E9" text-anchor="middle">→</text>
 <text x="760" y="148" font-size="18" font-weight="600" fill="#0F2A4A">same slice — a defensible number</text>
 

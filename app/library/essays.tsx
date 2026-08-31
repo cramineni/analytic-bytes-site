@@ -2709,7 +2709,7 @@ export const ESSAYS: Essay[] = [
           Two design truths close the loop, and both cut against instinct.
         </P>
         <P>
-          The first: do not rely on the model to keep itself safe. The temptation is to make the model careful, with better instructions and sterner prompts. But a system whose safety depends on the model choosing well, every single time, has no safety at all. Safety has to be built into the <a href="/library#artifact-agent-system" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><ArtifactLink slug="agent-system">structure around the model</ArtifactLink></a> . Start with reversibility: an action designed to be undone has margin for the other layers to fail. Then hard limits the agent cannot cross because they are coded in, not requested in a prompt. Then an independent second check that does not share the first model&rsquo;s blind spots. Then a human escalation path more than one person deep. Layered defense, because any single layer will eventually fail, and the design has to assume it.
+          The first: do not rely on the model to keep itself safe. The temptation is to make the model careful, with better instructions and sterner prompts. But a system whose safety depends on the model choosing well, every single time, has no safety at all. Safety has to be built into the <ArtifactLink slug="agent-system">structure around the model</ArtifactLink>. Start with reversibility: an action designed to be undone has margin for the other layers to fail. Then hard limits the agent cannot cross because they are coded in, not requested in a prompt. Then an independent second check that does not share the first model&rsquo;s blind spots. Then a human escalation path more than one person deep. Layered defense, because any single layer will eventually fail, and the design has to assume it.
         </P>
         <P>
           For AB’s Deliver Signal workflow, that stack looks specific. The
@@ -3585,7 +3585,7 @@ export const ESSAYS: Essay[] = [
           That is the gap I want to focus on. Integration is two questions stacked on top of each other, and institutions have been treating them as one. The first is engineering: do the bytes move from where they were written to where they will be read, in the right shape, on a defensible cadence, without breaking? The second is governance: when the bytes arrive, can anyone act on them? Who is allowed to read them, who is allowed to write them, on what cadence, under what consent envelope, with what authority, with what reversibility, with what audit trail if they are wrong? The first question has good answers in every era&rsquo;s stack. The second has not been answered in almost any institution I have worked with, in any era.
         </p>
           <p>
-          Those second-question elements together are what I will call the governance contract: the explicit, named understanding that turns integrated bytes into something a stakeholder can act on with authority — an operational agreement the institution writes for itself and enforces internally, not a legal document. This essay is about that contract, and about what it has looked like across three eras of integration: legacy, modern, and the agentic era now arriving. The engineering changes. The contract has to change with it. The governance gap, in most institutions, does not. I have named this same gap, in a field note, a <a href="/library/blown-assignment" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="blown-assignment">blown assignment</InternalLink></a>: the dashboard runs and nobody wrote the contract that says who acts on the number, with what authority, on what cadence.
+          Those second-question elements together are what I will call the governance contract: the explicit, named understanding that turns integrated bytes into something a stakeholder can act on with authority — an operational agreement the institution writes for itself and enforces internally, not a legal document. This essay is about that contract, and about what it has looked like across three eras of integration: legacy, modern, and the agentic era now arriving. The engineering changes. The contract has to change with it. The governance gap, in most institutions, does not. I have named this same gap, in a field note, a <InternalLink slug="blown-assignment">blown assignment</InternalLink>: the dashboard runs and nobody wrote the contract that says who acts on the number, with what authority, on what cadence.
         </p>
         </Brief>
 
@@ -5179,9 +5179,7 @@ export const ESSAYS: Essay[] = [
         <H2>Design the rules for the failure mode</H2>
 
         <P>
-          The best institutional rules aren&rsquo;t written to describe normal play; they&rsquo;re written to prevent predictable failure. Goodhart&rsquo;s law (<I>a measure that becomes a target stops being a good measure</I>) isn&rsquo;t a slogan for a poster. It&rsquo;s a design constraint. If a measure will be gamed, the system has to protect the construct before someone hollows it out by chasing the proxy. That&rsquo;s a whole essay of its own — see <a href="/library/why-the-rules-look-weird" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><InternalLink slug="why-the-rules-look-weird">
-            Why the rules look weird
-          </InternalLink></a>. For the decision-system, the corollary is simple: write the weird rule first.
+          The best institutional rules aren&rsquo;t written to describe normal play; they&rsquo;re written to prevent predictable failure. Goodhart&rsquo;s law (<I>a measure that becomes a target stops being a good measure</I>) isn&rsquo;t a slogan for a poster. It&rsquo;s a design constraint. If a measure will be gamed, the system has to protect the construct before someone hollows it out by chasing the proxy. That&rsquo;s a whole essay of its own — see <InternalLink slug="why-the-rules-look-weird">Why the rules look weird</InternalLink>. For the decision-system, the corollary is simple: write the weird rule first.
         </P>
 
         <P>
@@ -8371,7 +8369,6 @@ export const ESSAYS: Essay[] = [
       "Educational measurement requires an instrument to argue for itself before it decides something about a person. A résumé screen is an assessment under that definition and carries no such argument. This note finds three failures at three locations: the construct is never specified, the outcome does not identify its own cause, and the error the screen makes cannot be observed by the party who made it. It ends with three remedies, one for each failure, and three numbers any applicant tracking system already holds.",
     cover: "/library/covers/seven-causes-one-bit.svg",
     arc: "measurement",
-    draft: true,
     body: (
       <>
         <Brief>
@@ -8397,7 +8394,7 @@ export const ESSAYS: Essay[] = [
           Messick wrote the consequences of use into the definition rather than appending them to it. Validity, in his words, is &ldquo;an integrated evaluative judgment of the degree to which empirical evidence and theoretical rationales support the adequacy and appropriateness of inferences and actions based on test scores or other modes of assessment&rdquo; (Messick, <I>Educational Measurement</I>, 3rd ed., 1989, p. 13).
         </P>
         <P>
-          Two phrases carry the weight here. <B>Actions</B>, which puts what a score is used to do inside the definition. And <B>other modes of assessment</B>, which is Messick declining to restrict any of this to instruments that happen to be called tests.
+          Two phrases carry the weight here. <B>Actions</B>, which puts what a score is used to do inside the definition. And <B>other modes of assessment</B>, which is Messick extending validity to means beyond tests.
         </P>
         <P>
           A r&eacute;sum&eacute; screen sits inside that definition. It produces information about a person, and that information supports a decision. Whether the information is a number, a rank, a knockout rule or a recruiter&rsquo;s read does not change the position it occupies.
@@ -8406,25 +8403,25 @@ export const ESSAYS: Essay[] = [
           Two of his threat categories transfer without modification.
         </P>
         <P>
-          <B>Construct underrepresentation.</B> A prior question has to be asked first. What is the screen measuring? Present capability. Evidence of specific prior experience. Probability of performing the role well. Or whether the person is worth assessing further. Those are four different constructs and a requisition rarely says which one is meant &mdash; the question <InternalLink slug="what-is-this-system-measuring">this library keeps asking of every system that scores something</InternalLink>.
+          <B>Construct underrepresentation.</B> A prior question has to be asked first. What is the screen measuring? Present capability? Evidence of specific prior experience? Probability of performing the role well? Or whether the person is worth assessing further? Those are four different constructs and a requisition rarely says which one is meant &mdash; the question <InternalLink slug="what-is-this-system-measuring">this library keeps asking of every system that scores something</InternalLink>.
         </P>
         <P>
-          Whichever one is meant, the screen samples keyword presence, title adjacency, and continuity of employment, inside one document written in a specific genre. That is a narrow sample of any of the four.
+          Whichever one is meant, the screen samples keyword presence, title adjacency, and continuity of employment, inside one document written in a specific genre. That is a narrow sample of any of the four constructs.
         </P>
         <P>
-          <B>Construct-irrelevant variance.</B> R&eacute;sum&eacute;-writing skill. Formatting compatibility. Prestige of prior employers. Name effects. All of these vary across candidates. None of them is the construct, and none of them is detected.
+          <B>Construct-irrelevant variance.</B> R&eacute;sum&eacute;-writing skill. Formatting compatibility. Prestige of prior employers and institutions. Name effects. All of these vary across candidates. None of them is the construct, and none of them is detected.
         </P>
         <P>
-          Kane supplies the apparatus. He reframed validation as an argument you write down: state how the score will be interpreted and used, then evaluate each inference in the chain. Apply that to a screen and four inferences need backing, which is <InternalLink slug="the-valid-dollar">the same chain I ran against a spending decision</InternalLink>, pointed at a person.
+          Kane supplies the apparatus. He reframed validation as an argument you write down: state how the score will be interpreted and used, then evaluate each inference in the chain (Kane, &ldquo;Validating the interpretations and uses of test scores,&rdquo; <I>Journal of Educational Measurement</I>, 50(1), 2013). Apply that to a screen and four inferences need backing, which is <InternalLink slug="the-valid-dollar">the same chain I ran against a spending decision</InternalLink>, pointed at a person.
         </P>
         <P>
           The document becomes a match score. The score stands in for the candidate&rsquo;s typical work. The score predicts performance on the job. The score justifies the decision.
         </P>
         <P>
-          There is a large literature showing that r&eacute;sum&eacute;-derived variables correlate with later outcomes. That literature does not finish this argument, and pointing at it is the usual way of avoiding the question. Kane&rsquo;s question is narrower. Does this screen, applied to this requisition, support each of those four steps, for this population, at this threshold, for this decision. A general result about predictors is not a validity argument for a particular instrument in a particular use.
+          There is a large literature showing that r&eacute;sum&eacute;-derived variables correlate with later outcomes (Schmidt &amp; Hunter, &ldquo;The validity and utility of selection methods in personnel psychology: Practical and theoretical implications of 85 years of research findings,&rdquo; <I>Psychological Bulletin</I>, 124(2), 1998). That literature does not finish this argument, and pointing at it is the usual way of avoiding the question. Kane&rsquo;s question is narrower. Does this screen, applied to this requisition, support each of those four steps, for this population, at this threshold, for this decision. A general result about predictors is not a validity argument for a particular instrument in a particular use.
         </P>
         <P>
-          That particular argument is what is rarely written down anywhere a reader can see it.
+          That particular argument is what is rarely written down anywhere a reader can see it &mdash; including at the standard the field itself names (Society for Industrial and Organizational Psychology, <I>Principles for the Validation and Use of Personnel Selection Procedures</I>, 5th ed., 2018).
         </P>
 
         <H2>The requirement has no time index</H2>
@@ -8455,19 +8452,19 @@ export const ESSAYS: Essay[] = [
           A rejection is a binary outcome produced by a system with many causes. At least seven distinct states sit behind it. The role was cancelled. An internal candidate existed. The budget froze. The requirements changed. The screen misread the document. A stronger candidate applied. The person could not do the work.
         </P>
         <P>
+          The claim is narrower than saying the other six have nothing to do with them. Some of them partly do. It is about what the signal licenses. Nothing in the outcome warrants an inference about their capability, and that inference is the one the outcome invites.
+        </P>
+        <P>
           The mapping from those states to the outcome is many-to-one. The inverse problem is therefore underdetermined. That is the property that matters, and it holds whatever notation is used to describe it.
         </P>
         <P>
           The information-theoretic version is the short way to say the same thing. A binary outcome carries at most one bit. Seven states cannot be recovered from one bit, because seven states need close to three. And one bit is a generous ceiling here rather than a tight figure. A signal carries less information the more expected it is, and rejection is what almost every application returns, so the real quantity is smaller than the ceiling.
         </P>
         <P>
-          The recipient is left to supply the cause herself. Of the seven, only one supports the conclusion a rejection most readily invites: I could not do the work.
+          The recipient is left to supply the cause themselves. Of the seven, only one supports the conclusion a rejection most readily invites: I could not do the work.
         </P>
         <P>
-          The claim is narrower than saying the other six have nothing to do with her. Some of them partly do. It is about what the signal licenses. Nothing in the outcome warrants an inference about her capability, and that inference is the one the outcome invites.
-        </P>
-        <P>
-          Repeat that across a job search and a second consequence appears. She cannot learn. A near miss and a mismatch produce the same outcome, so there is nothing to correct against. The rational response to an uninformative signal is to send more applications rather than better ones. That raises the volume employers cite when they explain why screening had to be automated in the first place.
+          Repeat that across a job search and a second consequence appears. They cannot learn. A near miss and a mismatch produce the same outcome, so there is nothing to correct against. The rational response to an uninformative signal is to send more applications rather than better ones. That raises the volume employers cite when they explain why screening had to be automated in the first place.
         </P>
         <P>
           Whether that loop runs at scale is an empirical question and I am not asserting it here. The point is narrower. Messick put the consequences of use inside the definition of validity rather than beside it. These are consequences of use. They fall on the person being assessed, and no part of the hiring apparatus is chartered to measure them.
@@ -8475,8 +8472,8 @@ export const ESSAYS: Essay[] = [
 
         <Figure
           src="/library/figures/seven-causes-one-bit.svg"
-          alt="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal is the state the recipient is most likely to assume, and the only one the signal cannot distinguish from the other six."
-          caption="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because inverting one bit has no unique solution. The one marked in teal is the state the recipient is most likely to assume, and the only one the signal cannot distinguish from the other six."
+          alt="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because one bit gives no way to tell which one applied. The one marked in teal is the state the recipient is most likely to assume, and the only one the signal cannot distinguish from the other six."
+          caption="Seven causes of a rejection converge on a single box reading NO — one bit, no reason attached. Dashed arrows fan back out to the same seven causes, all still live, because one bit gives no way to tell which one applied. The one marked in teal is the state the recipient is most likely to assume, and the only one the signal cannot distinguish from the other six."
         />
 
         <H2>A reason travels when there is a score behind it</H2>
@@ -8493,7 +8490,13 @@ export const ESSAYS: Essay[] = [
           A r&eacute;sum&eacute; screen may well hold plenty behind its decision. Knockout results, ranking scores, extracted fields, recruiter notes, disposition codes. The difference is narrower than it first looks. Both systems hold a record. Only one holds a record built to be interpreted, and so only one holds a record that converts into a reason.
         </P>
         <P>
-          One post is an observation and not a rate, and I am treating it as one. It also cuts against reading this note as an argument about automation. Here the automated step is the one that explained itself.
+          An operations leader wrote publicly the same month about her own search. Two hundred applications, ten replies, two offers on the table by the end of the cycle. She took the one from the employer whose people had been candid throughout &mdash; where she stood, how many others were in the pool, when a decision was coming. Her own summary was that the volume of applications an employer received was not the point. There were still ways to be respectful of the people who took the time to apply, and one of the two employers had used them.
+        </P>
+        <P>
+          Two different mechanisms, both returning something the candidate could act on. In one case a machine returned a reason. In the other, humans returned candor about the process. Neither turns on who spoke. Both turn on whether anyone did.
+        </P>
+        <P>
+          Two posts are observations and not a rate, and I am treating them as such. Together they cut against reading this note as an argument about automation. In one case the automated step was the one that explained itself. In the other, the humans were.
         </P>
 
         <H2>The error nobody inside can see</H2>
@@ -8501,7 +8504,7 @@ export const ESSAYS: Essay[] = [
           Criterion validation runs on people who were hired.
         </P>
         <P>
-          That sample is restricted by construction. A person screened out generates no performance record, no tenure data, and no manager rating. Whether that person would have done the work well is recorded nowhere, and it is recorded nowhere because the screen decided she would not be given the chance.
+          That sample is restricted by construction. A person screened out generates no performance record, no tenure data, and no manager rating. Whether that person would have done the work well is recorded nowhere, and it is recorded nowhere because the screen decided they would not be given the chance.
         </P>
         <P>
           Note what that rules out. The employer cannot label its own rejections as errors, because labelling them would require the observation the screen prevented. A bad hire eventually becomes observable. A rejected candidate who would have succeeded does not. One of the two errors can be managed and the other cannot be seen.
@@ -8517,6 +8520,9 @@ export const ESSAYS: Essay[] = [
           So the harm is invisible to the party positioned to fix it. Ordinary post-hire performance data cannot reveal it, because the screen decides who enters that data.
         </P>
         <P>
+          Range restriction is a known problem, not a novel one (Sackett &amp; Yang, &ldquo;Correction for range restriction: An expanded typology,&rdquo; <I>Journal of Applied Psychology</I>, 85(1), 2000). Corrections exist. They require observing performance on rejected candidates, which is exactly the observation the screen prevents.
+        </P>
+        <P>
           There are ways around this. Audit sampling. Following rejected candidates who were hired elsewhere. Quasi-experimental designs that admit a few people below the threshold. Each of them works. None of them is ordinary practice, and none of them is what a validity coefficient computed on hires is doing.
         </P>
 
@@ -8528,7 +8534,7 @@ export const ESSAYS: Essay[] = [
           The seam between an organization and the labor market is one where the contract was never written, and where the counterparty does not see the terms. It is not alone in that. Credit scoring, insurance underwriting and admissions all have the same shape. What makes this seam worth pulling on is that every organization has one, and almost none of them treats it as a contract at all.
         </P>
         <P>
-          An unwritten contract does not stay empty. A market grows in the gap and sells the candidate a guess at the terms. It used to arrive as a document someone else wrote for her. Now it arrives as a tool that rewrites her own document against the job description. A job description is a guess at the criteria. Nobody in that transaction has seen the definition being matched against &mdash; not the vendor, not the candidate, not the employer reading the result. A model writes the r&eacute;sum&eacute; and a model reads it, and neither one has been told what the job requires.
+          An unwritten contract does not stay empty. A market grows in the gap and sells the candidate a guess at the terms. It used to arrive as a document someone else wrote for them. Now it arrives as a tool that rewrites their own document against the job description. A job description is a guess at the criteria. Nobody in that transaction has seen the definition being matched against &mdash; not the vendor, not the candidate, not the employer reading the result. A model writes the r&eacute;sum&eacute; and a model reads it, and neither one has been told what the job requires.
         </P>
         <P>
           Three things would help here. This note has named three failures in three places, and each one needs its own repair. A single remedy for all three would be a remedy for none of them.
@@ -8622,7 +8628,7 @@ export const ESSAYS: Essay[] = [
   {
     kind: "field-note",
     slug: "the-floor-is-the-frontier",
-    number: "15",
+    number: "14",
     title: "The floor is the frontier.",
     subtitle:
       "If powerful AI raises the floor at all, that's not a side effect. It's the whole point.",
@@ -8720,22 +8726,21 @@ export const ESSAYS: Essay[] = [
   {
     kind: "field-note",
     slug: "the-spend-trap",
-    number: "16",
+    number: "15",
     title: "The spend trap.",
     subtitle:
       "Why a clean ledger and a real outcomes system still can't tell you cost per outcome — until both resolve to the same governed keys.",
-    date: "2026-08-29",
+    date: "2026-09-01",
     readingTime: "6 min read",
     summary:
       "A CFO can have a clean chart of accounts and a program team can have a real evidence spine, and neither one, alone or together, produces a defensible cost per outcome. The missing piece is not a better report or a better metric. It is the shared, governed keys that let spend and outcomes divide same-scope. This is the finance-side companion to The Reach Trap and The Valid Dollar: the reach trap says build the second system, the valid dollar says score the number it makes, and this note is about the wire between them.",
     cover: "/library/covers/the-spend-trap.svg",
     arc: "measurement",
-    draft: true,
     body: (
       <>
         <Brief>
           <p>
-            Picture a finance leader who has done everything right. The chart of accounts is clean. Every transaction is tagged to a program. And the program team, separately, has done everything right too: a real outcome measure, defined and durable, not a reach count. Two good systems, both working. Now the board asks what a result costs, and the answer is still a shrug. Not because either system is weak, but because nothing connects them. Cost per outcome is two numbers divided, and the division is only honest if both numbers describe the same slice &mdash; the same program, cohort, site, and period. That shared, governed identity is the whole subject of this note. The reach trap said build the outcome system. The valid dollar said score the number it produces. This is about the wire between them.
+            Picture a finance leader who has done everything right. The chart of accounts is clean. Every transaction is tagged to a program. And the program team, separately, has done everything right too: a real outcome measure, defined and durable, not a reach count. Two good systems, both working. Now the board asks what a result costs, and the answer is still a shrug. Not because either system is weak, but because nothing connects them. Cost per outcome is two numbers divided, and the division is only honest if both numbers describe the same slice &mdash; the same program, cohort, site, and period. That shared, governed identity is the whole subject of this note. <InternalLink slug="the-reach-trap">The reach trap</InternalLink> said build the outcome system. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> said score the number it produces. This is about the wire between them.
           </p>
         </Brief>
 
@@ -8770,7 +8775,7 @@ export const ESSAYS: Essay[] = [
 
         <Figure
           src="/library/figures/spend-trap-same-scope-or-guess.svg"
-          alt="Four rows comparing a cost divided by outcomes. The top row divides GW · Fall '25 cost by GW · Fall '25 outcomes — same slice, a defensible number. The three rows below divide mismatched slices: FY26 cost over FY25 placements, one site's cost over all sites' outcomes, and twelve months of cost over a six-month cohort."
+          alt="Four rows comparing a cost divided by outcomes. The top row divides Program · Fall '25 cost by Program · Fall '25 outcomes — same slice, a defensible number. The three rows below divide mismatched slices: FY26 cost over FY25 placements, one site's cost over all sites' outcomes, and twelve months of cost over a six-month cohort."
           caption="A division of cost by outcomes is only honest when both numbers carry the same keys. The top row divides same-slice and is defensible. The three below divide mismatched slices — each is trivial arithmetic and means nothing."
         />
 
@@ -8786,7 +8791,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>One join, three seats</H2>
         <P>
-          Build the wire once and it pays out at every altitude. A <B>program director</B> reads one cohort and asks whether it is working; the join returns cost per outcome as outcomes mature, rather than at an annual post-mortem. A <B>CFO</B> reads across programs and asks where the next dollar goes; same-scope cost and outcome evidence gives that question a denominator instead of leaving it anchored to spend alone. The join does not make the allocation decision &mdash; capacity, population difficulty, and strategy still sit on top of it. It makes the allocation question answerable. A <B>board chair</B> reads the same structure and can finally put a number to the donor&rsquo;s question &mdash; what does a result cost here &mdash; that holds up, rather than an overhead ratio that does not. Three readers, three questions, one governed join.
+          Build the wire once and it pays out at every altitude. A <B>program director</B> reads one cohort and asks whether it is working; the join returns cost per outcome as outcomes mature, rather than at an annual post-mortem. A <B>CFO</B> reads across programs and asks where the next dollar goes; same-scope cost and outcome evidence gives that question a denominator instead of leaving it anchored to spend alone. The join does not make the allocation decision. Capacity, population difficulty, and strategy still sit on top of it. It makes the allocation question answerable. A <B>board chair</B> reads the same structure and can finally put a number to the donor&rsquo;s question &mdash; what does a result cost here &mdash; that holds up, rather than an overhead ratio that does not. Three readers, three questions, one governed join.
         </P>
 
         <H2>Where to start</H2>
