@@ -5,7 +5,7 @@
 <text x="780" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="43" font-weight="700" fill="#0F2A4A" text-anchor="middle">Range restriction in a hiring screen</text>
 <text x="130" y="100" font-size="28" fill="#0F2A4A" text-anchor="start" font-weight="600" letter-spacing="1.6">A · THE RELATIONSHIP YOU WOULD NEED TO SEE</text>
 <text x="130" y="132" font-size="28" fill="#94A3B8" text-anchor="start" font-weight="500">every applicant — simulated data</text>
-<text x="690" y="76" font-size="38" fill="#475569" text-anchor="end" font-weight="700">r = 0.50</text>
+<text x="680" y="180" font-size="26" fill="#475569" text-anchor="end" font-weight="700">r = 0.50</text>
 <rect x="130" y="150.0" width="308.4" height="159.4" fill="#F0F9FF"/>
 <rect x="130" y="150.0" width="308.4" height="159.4" fill="none" stroke="#0EA5E9" stroke-width="1.6" stroke-dasharray="6 5"/>
 <rect x="130" y="150" width="560" height="374" fill="none" stroke="#E2E8F0" stroke-width="1.4"/>
@@ -441,7 +441,7 @@
 <text x="162" y="680" font-size="28" fill="#0EA5E9" text-anchor="start" font-weight="600">threshold, above the median hire's performance.</text>
 <text x="870" y="100" font-size="28" fill="#0F2A4A" text-anchor="start" font-weight="600" letter-spacing="1.6">B · THE SAMPLE THE COEFFICIENT USES</text>
 <text x="870" y="132" font-size="28" fill="#94A3B8" text-anchor="start" font-weight="500">hires only — x-axis rescaled</text>
-<text x="1430" y="76" font-size="38" fill="#0F2A4A" text-anchor="end" font-weight="700">r = 0.30</text>
+<text x="1420" y="180" font-size="26" fill="#0F2A4A" text-anchor="end" font-weight="700">r = 0.30</text>
 <rect x="870" y="150" width="560" height="374" fill="none" stroke="#E2E8F0" stroke-width="1.4"/>
 <text x="872" y="550" font-size="28" fill="#94A3B8" text-anchor="start" font-weight="500" letter-spacing="1">threshold</text>
 <text x="1428" y="550" font-size="28" fill="#94A3B8" text-anchor="end" font-weight="500" letter-spacing="1">high</text>
