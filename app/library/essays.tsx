@@ -8758,7 +8758,7 @@ export const ESSAYS: Essay[] = [
           This is where most teams go looking, and it fails here. The instinct is reasonable: we just migrated to a real platform, it tags every transaction to a program, surely cost per outcome is one report away. A modern finance system is genuinely good at the numerator. Tag a transaction to a program dimension and you can isolate what that program spent, cleanly, across direct and allocated cost. That is a real and necessary job.
         </P>
         <P>
-          You can even bolt a statistical account onto the ledger and store an outcome count next to the dollars. Some teams do, and that can solve storage. It does not solve definition, comparability, or ownership &mdash; the work of saying what a placement is, keeping it comparable across programs that each describe success in their own words, and naming who governs the value. That work lives in the evidence spine, not the ledger. Location does not confer governance. Putting the outcome model where the dollars live is a storage decision dressed up as a measurement one.
+          You can even bolt a statistical account onto the ledger and store an outcome count next to the dollars. Some teams do, and that can solve storage. It does not solve definition, comparability, or ownership &mdash; the work of saying what a placement is, keeping it comparable across programs that each describe success in their own words, and naming who governs the value. That work lives in the evidence spine, not the ledger. Location does not confer governance. Putting the outcome model where the dollars live is a storage decision, not a measurement one.
         </P>
 
         <H2>The overhead ratio is the shortcut everyone takes</H2>
