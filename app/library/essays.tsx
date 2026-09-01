@@ -8797,7 +8797,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Where to start</H2>
         <P>
-          You do not rip out the finance system, and you do not wait for a perfect outcomes model. You decide one thing before anyone runs a report: every dollar and every outcome you intend to compare must be written against the same governed program, cohort, site, and period. Name those dimensions. Give the value lists an owner. Then hold one standing rule: a spend-only ratio never stands in as an effectiveness claim. That is the whole discipline, and it is cheapest to install at a migration, when the structure is still soft. It is the difference between two clean systems that cannot talk and one join that lets you reason about the next dollar instead of guess at it.
+          You do not rip out the finance system, and you do not wait for a perfect outcomes model. You decide one thing before anyone runs a report: every dollar and every outcome you intend to compare must be written against the same governed program, cohort, site, and period. Name those dimensions. Give the value lists one owner &mdash; and put that owner across both systems, not inside either, since a registry governed from the ledger bends toward what is easy to book and one governed from the program toward what is easy to report. Then hold one standing rule: a spend-only ratio never stands in as an effectiveness claim. That is the whole discipline, and it is cheapest to install at a migration, when the structure is still soft. It is the difference between two clean systems that cannot talk and one join that lets you reason about the next dollar instead of guess at it.
         </P>
 
         <SeeAlso>
