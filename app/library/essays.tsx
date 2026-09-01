@@ -8362,7 +8362,7 @@ export const ESSAYS: Essay[] = [
     number: "16",
     title: "Seven causes, one bit.",
     subtitle:
-      "A hiring screen decides something about a person and returns a single bit. At least seven states produce that same bit, only one of them supports the conclusion she will draw, and nothing requires anyone to say which applied.",
+      "A hiring screen decides something about a person and returns a single bit. At least seven states produce that same bit, only one of them supports the conclusion they will draw, and nothing requires anyone to say which applied.",
     date: "2026-08-27",
     readingTime: "14 min read",
     summary:
@@ -8601,7 +8601,7 @@ export const ESSAYS: Essay[] = [
           <SeeAlsoItem
             slug="who-writes-the-contract"
             title="Who writes the contract."
-            gloss="The same requisition document, read from the employer's side of the door. That piece asks who owns the role definition. This one asks what the person on the other side is told when the definition is applied to her."
+            gloss="The same requisition document, read from the employer's side of the door. That piece asks who owns the role definition. This one asks what the person on the other side is told when the definition is applied to them."
           />
           <SeeAlsoItem
             slug="the-valid-dollar"
