@@ -155,7 +155,8 @@
       <text x="470" y="20" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="1" fill="#64748B">MONITOR</text>
     </g>
 
-    <text x="18" y="356" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#64748B">Sorted by absolute gap. Action from prior-year lift.</text>
+    <text x="18" y="338" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#64748B">Sorted by absolute gap. Recommended action drawn from</text>
+    <text x="18" y="366" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#64748B">prior-year conversion lift per outreach hour.</text>
   </g>
 
   <!-- Named fields - stacked rows -->
