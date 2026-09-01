@@ -4915,7 +4915,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-07-01",
     readingTime: "13 min read",
     summary:
-      "Most “data problems” are decision-system problems. Three things fail at the faucet — meaning, authority, and validity — and detach any one from the other two and the system produces confident nonsense at speed. This is the umbrella framework that unifies the Analytic Bytes library.",
+      "Most “data problems” are decision-system problems. Three things fail at the faucet — meaning, authority, and validity — and detach any one from the other two and the system produces confident output that cannot close a decision. This is the umbrella framework that unifies the Analytic Bytes library.",
     cover: "/library/covers/the-decision-system.svg",
     arc: "integration-governance",
     hidden: false,
@@ -4990,7 +4990,7 @@ export const ESSAYS: Essay[] = [
           that consistent signal, and when. Validity asks whether the
           consistent thing is true enough to be worth acting on at all.
           Detach any one from the other two and the system doesn’t
-          degrade gracefully — it produces confident nonsense at speed.
+          degrade gracefully — it produces confident output that cannot close a decision.
           Get all three right and the flag becomes a decision. Miss any
           one and you have a very expensive way of producing a red dot.
         </P>

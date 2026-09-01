@@ -1,6 +1,6 @@
 <svg viewBox="0 -140 1200 800" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>The Decision System: three anchors — meaning, authority, validity — that must all hold together</title>
-<desc>Triangular arrangement of three navy-bordered anchor nodes labeled MEANING, AUTHORITY, and VALIDITY, connected pairwise by navy lines to form a triangle. Each node carries a two-line gloss: the definition holds, an owner acts on cadence, and the claim holds for this use. Inside the triangle a teal label reads DECISION-READY. Below, a small caveat notes that detaching any one anchor produces confident nonsense at speed.</desc>
+<desc>Triangular arrangement of three navy-bordered anchor nodes labeled MEANING, AUTHORITY, and VALIDITY, connected pairwise by navy lines to form a triangle. Each node carries a two-line gloss: the definition holds, an owner acts on cadence, and the claim holds for this use. Inside the triangle a teal label reads DECISION-READY. Below, a small caveat notes that detaching any one anchor produces confident output that cannot close a decision.</desc>
 <rect x="0" y="-140" width="1200" height="800" fill="#FFFFFF"/>
 <text x="600" y="-90" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">The three anchors</text>
 <g transform="translate(0, -40)">
@@ -40,5 +40,5 @@
 </g>
 
 <!-- Caveat below triangle -->
-<text x="600" y="620" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#64748B" text-anchor="middle">Detach any one anchor and the system produces confident nonsense at speed.</text>
+<text x="600" y="620" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-style="italic" fill="#64748B" text-anchor="middle">Detach any one anchor and the system produces confident output that cannot close a decision.</text>
 </svg>
