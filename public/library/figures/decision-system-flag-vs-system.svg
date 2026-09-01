@@ -56,7 +56,9 @@
   <line x1="0" y1="0" x2="55" y2="0" stroke="#0F2A4A" stroke-width="1.75"/>
   <path d="M51,-6 L61,0 L51,6 z" fill="#0F2A4A"/>
   <text x="30" y="-16" font-size="18" font-weight="700" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">SYSTEM</text>
-  <text x="30" y="22" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">meaning &#183; authority &#183; validity</text>
+  <text x="30" y="22" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">meaning</text>
+  <text x="30" y="42" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">authority</text>
+  <text x="30" y="62" font-size="16" font-style="italic" fill="#475569" text-anchor="middle">validity</text>
 </g>
 
 <!-- RIGHT PANEL: The decision system triangle -->

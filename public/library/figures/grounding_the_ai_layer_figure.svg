@@ -1,65 +1,64 @@
-<svg viewBox="0 -110 1200 508" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg viewBox="0 -150 1200 900" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Grounding the AI layer: where AI reaches and what it reaches through</title>
 <desc>Two side-by-side vertical stack diagrams. Left stack shows AI reaching directly into raw warehouse tables through an ungoverned SQL path — labeled "ungrounded" with a teal warning marker. Right stack shows AI reaching through the semantic layer, calling governed metrics by name — labeled "grounded" with the semantic layer highlighted in teal. Below, a one-line caption names the difference.</desc>
-<rect x="0" y="-110" width="1200" height="508" fill="#FFFFFF"/>
-<text x="600" y="-82" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="16" font-weight="700" fill="#0F2A4A" text-anchor="middle">Grounding the AI layer</text>
-<g transform="translate(0, -202)">
-<!-- HEADER -->
+<rect x="0" y="-150" width="1200" height="900" fill="#FFFFFF"/>
+<text x="600" y="-100" font-family="-apple-system, BlinkMacSystemFont, &apos;Helvetica Neue&apos;, Arial, sans-serif" font-size="30" font-weight="700" fill="#0F2A4A" text-anchor="middle">Grounding the AI layer</text>
 
 <!-- LEFT STACK — UNGROUNDED -->
 <g>
-  <text x="300" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#94A3B8" text-anchor="middle">UNGROUNDED — AI WRITES RAW SQL</text>
-  <!-- AI surface -->
-  <rect x="180" y="220" width="240" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-  <text x="300" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">AI surface</text>
-  <text x="300" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">agent / assistant / chat</text>
+  <text x="300" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">UNGROUNDED</text>
+  <text x="300" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="1.5" fill="#94A3B8" text-anchor="middle">AI WRITES RAW SQL</text>
 
-  <!-- Uncontrolled arrow (dashed, slate, chaotic) straight to warehouse -->
-  <line x1="300" y1="275" x2="300" y2="435" stroke="#94A3B8" stroke-width="1.2" stroke-dasharray="4 4"/>
-  <polygon points="296,435 300,443 304,435" fill="#94A3B8"/>
+  <!-- AI surface -->
+  <rect x="60" y="110" width="480" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="300" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">AI surface</text>
+  <text x="300" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">agent / assistant / chat</text>
+
+  <!-- Uncontrolled arrow (dashed, slate) straight to warehouse -->
+  <line x1="300" y1="230" x2="300" y2="530" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <polygon points="292,530 300,545 308,530" fill="#94A3B8"/>
 
   <!-- Warning marker -->
-  <circle cx="300" cy="355" r="10" fill="#0EA5E9"/>
-  <text x="300" y="359" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">!</text>
-  <text x="360" y="359" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="start">ungoverned path</text>
+  <circle cx="180" cy="380" r="18" fill="#0EA5E9"/>
+  <text x="180" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">!</text>
+  <text x="210" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="start">ungoverned path</text>
 
   <!-- Warehouse -->
-  <rect x="180" y="450" width="240" height="65" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-  <text x="300" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Raw warehouse</text>
-  <text x="300" y="497" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">tables · schemas · rows</text>
+  <rect x="60" y="560" width="480" height="140" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="300" y="615" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Raw warehouse</text>
+  <text x="300" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">tables · schemas · rows</text>
 </g>
 
 <!-- Divider between stacks -->
-<line x1="600" y1="200" x2="600" y2="520" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5"/>
+<line x1="600" y1="40" x2="600" y2="720" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5"/>
 
 <!-- RIGHT STACK — GROUNDED -->
 <g>
-  <text x="900" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#0EA5E9" text-anchor="middle">GROUNDED — AI CALLS METRICS BY NAME</text>
+  <text x="900" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">GROUNDED</text>
+  <text x="900" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="1.5" fill="#0EA5E9" text-anchor="middle">AI CALLS METRICS BY NAME</text>
+
   <!-- AI surface -->
-  <rect x="780" y="220" width="240" height="55" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-  <text x="900" y="245" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">AI surface</text>
-  <text x="900" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">agent / assistant / chat</text>
+  <rect x="660" y="110" width="480" height="120" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="900" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">AI surface</text>
+  <text x="900" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">agent / assistant / chat</text>
 
   <!-- Controlled arrow (solid navy) -->
-  <line x1="900" y1="275" x2="900" y2="315" stroke="#0F2A4A" stroke-width="1.5"/>
-  <polygon points="896,315 900,323 904,315" fill="#0F2A4A"/>
+  <line x1="900" y1="230" x2="900" y2="285" stroke="#0F2A4A" stroke-width="1.75"/>
+  <polygon points="892,285 900,300 908,285" fill="#0F2A4A"/>
 
   <!-- Semantic layer (grounded, teal accent) -->
-  <rect x="780" y="325" width="240" height="70" fill="none" stroke="#0EA5E9" stroke-width="2" rx="3"/>
-  <text x="900" y="352" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Semantic layer</text>
-  <text x="900" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">governed metrics · canonical</text>
-  <text x="900" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">definitions · access rules</text>
+  <rect x="660" y="310" width="480" height="180" fill="none" stroke="#0EA5E9" stroke-width="2" rx="3"/>
+  <text x="900" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Semantic layer</text>
+  <text x="900" y="410" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">governed metrics · canonical</text>
+  <text x="900" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">definitions · access rules</text>
 
   <!-- Arrow down -->
-  <line x1="900" y1="395" x2="900" y2="440" stroke="#0F2A4A" stroke-width="1.5"/>
-  <polygon points="896,440 900,448 904,440" fill="#0F2A4A"/>
+  <line x1="900" y1="490" x2="900" y2="545" stroke="#0F2A4A" stroke-width="1.75"/>
+  <polygon points="892,545 900,560 908,545" fill="#0F2A4A"/>
 
   <!-- Warehouse -->
-  <rect x="780" y="450" width="240" height="65" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
-  <text x="900" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" fill="#0F2A4A" text-anchor="middle">Warehouse</text>
-  <text x="900" y="497" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle">tables · schemas · rows</text>
-</g>
-
-<!-- Caption below -->
+  <rect x="660" y="560" width="480" height="140" fill="none" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="900" y="615" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">Warehouse</text>
+  <text x="900" y="660" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#475569" text-anchor="middle">tables · schemas · rows</text>
 </g>
 </svg>
