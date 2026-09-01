@@ -8458,7 +8458,7 @@ export const ESSAYS: Essay[] = [
           The mapping from those states to the outcome is many-to-one. The inverse problem is therefore underdetermined. That is the property that matters, and it holds whatever notation is used to describe it.
         </P>
         <P>
-          The information-theoretic version is the short way to say the same thing. A binary outcome carries at most one bit. Seven states cannot be recovered from one bit, because seven states need close to three. And one bit is a generous ceiling here rather than a tight figure. A signal carries less information the more expected it is, and rejection is what almost every application returns, so the real quantity is smaller than the ceiling.
+          The information-theoretic version is the short way to say the same thing. A binary outcome carries at most one bit. Seven states cannot be recovered from one bit, because seven states need close to three. And one bit is a generous ceiling here. As rejections compound, each one arrives with the same missing information as the last. The signal does not deepen by being repeated. But its reading does.
         </P>
         <P>
           The recipient is left to supply the cause themselves. Of the seven, only one supports the conclusion a rejection most readily invites: I could not do the work.
