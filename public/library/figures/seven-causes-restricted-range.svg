@@ -613,11 +613,5 @@
 <text x="1422" y="222" font-size="28" fill="#475569" text-anchor="end" font-weight="700">true</text>
 <text x="897" y="720" font-size="28" fill="#94A3B8" text-anchor="start" font-weight="400">The truncation is not visible from inside</text>
 <text x="897" y="754" font-size="28" fill="#94A3B8" text-anchor="start" font-weight="400">the panel. The software returns a number.</text>
-<text x="755.0" y="284.0" font-size="28" fill="#94A3B8" text-anchor="middle" font-weight="400">same</text>
-<text x="755.0" y="316.0" font-size="28" fill="#94A3B8" text-anchor="middle" font-weight="400">instrument</text>
-<text x="755.0" y="360.0" font-size="38" fill="#475569" text-anchor="middle" font-weight="700">0.50</text>
-<path d="M745.0,378.0 L755.0,394.0 L765.0,378.0" fill="none" stroke="#0F2A4A" stroke-width="2"/>
-<text x="755.0" y="428.0" font-size="38" fill="#0F2A4A" text-anchor="middle" font-weight="700">0.30</text>
-<text x="755.0" y="464.0" font-size="28" fill="#94A3B8" text-anchor="middle" font-weight="400">40% gone</text>
 <text x="130" y="800" font-size="28" fill="#94A3B8" text-anchor="start" font-weight="400">Simulated. Selection set at 38%, true correlation at 0.50; a conservative version of the effect.</text>
 </svg>
