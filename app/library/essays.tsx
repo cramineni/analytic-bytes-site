@@ -8458,6 +8458,9 @@ export const ESSAYS: Essay[] = [
           The claim is narrower than saying the other six have nothing to do with them. Some of them partly do. It is about what the signal licenses. Nothing in the outcome warrants an inference about their capability, and that inference is the one the outcome invites.
         </P>
         <P>
+          It is also narrower in a second way. Some rejections do name a cause. The role was cancelled, or the budget froze, and the message says so. Where that happens the problem described here does not arise, because the candidate knows which state applied. This section is about the rejection that names nothing. Nobody currently counts how often that happens, which is why the third remedy below asks for the number.
+        </P>
+        <P>
           The mapping from those states to the outcome is many-to-one. The inverse problem is therefore underdetermined. That is the property that matters, and it holds whatever notation is used to describe it.
         </P>
         <P>
@@ -8579,7 +8582,13 @@ export const ESSAYS: Essay[] = [
           <B>Publish the numbers.</B> Enforcement is publication. Three numbers per search. Applications received. Decisions issued with no stated cause. Applications that received no response of any kind.
         </P>
         <P>
-          Stated cause needs defining, or the second number is trivial to game. A message saying we have decided to move forward with other candidates states no cause. It restates the outcome. A stated cause names something about the application: a requirement not met, a stage not reached, a comparison lost. Anything that names none of those counts toward the second number, including every well-written template.
+          Stated cause needs defining, or the second number is trivial to game. A message saying we have decided to move forward with other candidates states no cause. It restates the outcome. A stated cause names something about the application: a requirement not met, a stage not reached, a comparison lost against named criteria. Anything that names none of those counts toward the second number, including every well-written template.
+        </P>
+        <P>
+          One case sits awkwardly under that definition and is worth naming. Some rejections do state a cause on the requisition side. The role was cancelled, the budget froze, the search is on hold. That is a real answer for the candidate, and it settles which of the seven applied. It still counts toward the second number.
+        </P>
+        <P>
+          The second number does not measure whether the candidate learned anything. It measures whether the employer said anything about the screen. A cancelled requisition says nothing about the screen, so it counts as a decision issued with no stated cause, like any other. Counting it as a stated cause instead would let an employer lower the number without ever saying what the screen did.
         </P>
         <P>
           Be clear about what these three do not do. They say nothing about whether the screen is valid. An employer could publish two thousand applications, nineteen hundred and forty causeless rejections and no silences at all, and still be running an instrument that measures nothing.
