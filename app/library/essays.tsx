@@ -8397,9 +8397,6 @@ export const ESSAYS: Essay[] = [
           Two phrases carry the weight here. <B>Actions</B>, which puts what a score is used to do inside the definition. And <B>other modes of assessment</B>, which is Messick extending validity to means beyond tests.
         </P>
         <P>
-          He was explicit that this was not an addition to validity. In his words, it is &ldquo;simply not the case that values are being added to validity in this unified view.&rdquo; The unified view &ldquo;exposes the inherent value aspects of score meaning and outcome to open examination&rdquo; rather than treating them &ldquo;as an adjunct or supplement&rdquo; (same paper, p. 748).
-        </P>
-        <P>
           A r&eacute;sum&eacute; screen sits inside that definition. It produces information about a person, and that information supports a decision. Whether the information is a number, a rank, a knockout rule or a recruiter&rsquo;s read does not change the position it occupies.
         </P>
         <P>
@@ -8473,7 +8470,13 @@ export const ESSAYS: Essay[] = [
           Repeat that across a job search and a second consequence appears. They cannot learn. A near miss and a mismatch produce the same outcome, so there is nothing to correct against. The rational response to an uninformative signal is to send more applications rather than better ones. That raises the volume employers cite when they explain why screening had to be automated in the first place.
         </P>
         <P>
-          Whether that loop runs at scale is an empirical question and I am not asserting it here. The point is narrower. Messick put the consequences of use inside the definition of validity rather than beside it. These are consequences of use. They fall on the person being assessed, and no part of the hiring apparatus is chartered to measure them.
+          Whether that loop runs at scale is an empirical question and I am not asserting it here. The point is narrower. Messick put the consequences of use inside the definition of validity rather than beside it.
+        </P>
+        <P>
+          He was explicit that this was not an addition to validity. In his words, it is &ldquo;simply not the case that values are being added to validity in this unified view.&rdquo; The unified view &ldquo;exposes the inherent value aspects of score meaning and outcome to open examination&rdquo; rather than treating them &ldquo;as an adjunct or supplement&rdquo; (same paper, p. 748).
+        </P>
+        <P>
+          These are consequences of use. They fall on the person being assessed, and no part of the hiring apparatus is chartered to measure them.
         </P>
 
         <Figure
