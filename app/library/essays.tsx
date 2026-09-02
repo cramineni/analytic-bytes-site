@@ -8391,10 +8391,13 @@ export const ESSAYS: Essay[] = [
           I spent my early career in educational measurement. In that field, before an instrument is used to decide something about a person, you are required to argue for it.
         </P>
         <P>
-          Messick wrote the consequences of use into the definition rather than appending them to it. Validity, in his words, is &ldquo;an integrated evaluative judgment of the degree to which empirical evidence and theoretical rationales support the adequacy and appropriateness of inferences and actions based on test scores or other modes of assessment&rdquo; (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick</a>, &ldquo;Validity of psychological assessment,&rdquo; <I>American Psychologist</I>, 50(9), 1995).
+          Messick wrote the consequences of use into the definition rather than appending them to it. Validity, in his words, is &ldquo;an overall evaluative judgment of the degree to which empirical evidence and theoretical rationales support the adequacy and appropriateness of interpretations and actions on the basis of test scores or other modes of assessment&rdquo; (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick</a>, &ldquo;Validity of psychological assessment,&rdquo; <I>American Psychologist</I>, 50(9), 1995, p. 741).
         </P>
         <P>
           Two phrases carry the weight here. <B>Actions</B>, which puts what a score is used to do inside the definition. And <B>other modes of assessment</B>, which is Messick extending validity to means beyond tests.
+        </P>
+        <P>
+          He was explicit that this was not an addition to validity. In his words, it is &ldquo;simply not the case that values are being added to validity in this unified view.&rdquo; The unified view &ldquo;exposes the inherent value aspects of score meaning and outcome to open examination&rdquo; rather than treating them &ldquo;as an adjunct or supplement&rdquo; (same paper, p. 748).
         </P>
         <P>
           A r&eacute;sum&eacute; screen sits inside that definition. It produces information about a person, and that information supports a decision. Whether the information is a number, a rank, a knockout rule or a recruiter&rsquo;s read does not change the position it occupies.
