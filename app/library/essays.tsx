@@ -8473,7 +8473,7 @@ export const ESSAYS: Essay[] = [
           Whether that loop runs at scale is an empirical question and I am not asserting it here. The point is narrower. Messick put the consequences of use inside the definition of validity rather than beside it.
         </P>
         <P>
-          He was explicit that this was not an addition to validity. In his words, it is &ldquo;simply not the case that values are being added to validity in this unified view.&rdquo; The unified view &ldquo;exposes the inherent value aspects of score meaning and outcome to open examination&rdquo; rather than treating them &ldquo;as an adjunct or supplement&rdquo; (same paper, p. 748).
+          He was explicit that this was not an addition to validity. In his words, it is &ldquo;simply not the case that values are being added to validity in this unified view.&rdquo; The unified view &ldquo;exposes the inherent value aspects of score meaning and outcome to open examination&rdquo; rather than treating them &ldquo;as an adjunct or supplement&rdquo; (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">same paper</a>, p. 748).
         </P>
         <P>
           These are consequences of use. They fall on the person being assessed, and no part of the hiring apparatus is chartered to measure them.
