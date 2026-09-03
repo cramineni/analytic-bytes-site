@@ -8526,7 +8526,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          So the harm is invisible to the party positioned to fix it. Ordinary post-hire performance data cannot reveal it, because the screen decides who enters that data.
+          So the harm is invisible to the party positioned to fix it. The instrument censors the evidence needed to validate one class of its own decisions. Ordinary post-hire performance data cannot reveal it, because the screen decides who enters that data.
         </P>
         <P>
           Range restriction is a known problem, not a novel one (<a href="https://psycnet.apa.org/doi/10.1037/0021-9010.85.1.112" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Sackett &amp; Yang</a>, &ldquo;Correction for range restriction: An expanded typology,&rdquo; <I>Journal of Applied Psychology</I>, 85(1), 2000). Corrections exist. They require observing performance on rejected candidates, which is exactly the observation the screen prevents.
