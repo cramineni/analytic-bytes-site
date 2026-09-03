@@ -8366,7 +8366,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-27",
     readingTime: "14 min read",
     summary:
-      "Educational measurement requires an instrument to argue for itself before it decides something about a person. A résumé screen is an assessment under that definition and carries no such argument. This note finds three failures at three locations: the construct is never specified, the outcome does not identify its own cause, and the error the screen makes cannot be observed by the party who made it. It ends with three remedies, one for each failure, and three numbers any applicant tracking system already holds.",
+      "Educational measurement requires an instrument to argue for itself before it decides something about a person. A résumé screen carries no such argument. Three failures — the construct is unspecified, the outcome does not identify its cause, and the screen's errors are invisible to its author — and three remedies, one for each.",
     cover: "/library/covers/seven-causes-one-bit.svg",
     arc: "measurement",
     body: (
