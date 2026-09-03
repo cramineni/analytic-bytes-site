@@ -2831,7 +2831,7 @@ export const ESSAYS: Essay[] = [
     title: "What is this system actually measuring?",
     subtitle: "The evaluation gap in higher education’s AI moment.",
     date: "2026-05-31",
-    readingTime: "8 min read",
+    readingTime: "10 min read",
     summary:
       "Universities have built the scaffolding to govern AI and skipped the evaluation layer. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
     cover: "/library/covers/what-is-this-system-measuring.svg",
@@ -3354,7 +3354,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Why information and analytics governance lives or dies on shared definitions.",
     date: "2026-06-09",
-    readingTime: "7 min read",
+    readingTime: "10 min read",
     summary:
       "Two people read different student-persistence numbers from the same data. The governance council is functioning. The framework looks complete. What's broken is definitional, and the work to fix it is the work most councils skip.",
     cover: "/library/covers/numbers-dont-agree.svg",
@@ -5792,7 +5792,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "The compression institutions ran on for centuries is finally cheap to relax. That’s not a technology story. It’s a decision-architecture question.",
     date: "2026-07-17",
-    readingTime: "5 min read",
+    readingTime: "4 min read",
     summary:
       "For most of human history, every institution carried you as a thumbnail: a name, a category, a score. That compression wasn’t malice, it was budget, and the price of the full picture has now collapsed. The choice institutions face isn’t whether to keep sorting faster or to hold people at higher resolution; it is whether they can answer the validity question underneath it.",
     cover: "/library/covers/we-used-to-settle-for-thumbnails.svg",
@@ -5937,7 +5937,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Field notes on the stages of working with generative AI across tools.",
     date: "2026-07-30",
-    readingTime: "9 min read",
+    readingTime: "12 min read",
     summary:
       "A personal field note on twenty months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. Maturity transferred across tools; capability expanded with the tool that could hold more.",
     cover: "/library/covers/my-relationship-with-ai.svg",
@@ -6396,7 +6396,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Why the hybrid is the sophisticated answer, and the seam contracts between domains are what make it coherent.",
     date: "2026-07-09",
-    readingTime: "12 min read",
+    readingTime: "15 min read",
     summary:
       "Every institution standing up AI in 2026 is making a model-layer bet, vendor-anchored or federated, whether or not it has named it as one. For institutions running both administrative and research-flavored work, the honest answer is a deliberate hybrid calibrated by domain. What makes the hybrid coherent is a third set of contracts nobody writes by default: the seam contracts between the two bets.",
     cover: "/library/covers/two-bets-one-institution.svg",
@@ -6632,7 +6632,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Why the role the institution needs is the one the hiring rubric can’t see.",
     date: "2026-07-13",
-    readingTime: "12 min read",
+    readingTime: "17 min read",
     summary:
       "The contracts that govern integrated data have to be written by someone, named, inside the institution. But the hiring rubric fuses two roles — engineering and governance — into one job description and screens only for the first. The person who can actually do the work almost never scores well on the rubric written to find them.",
     cover: "/library/covers/who-writes-the-contract.svg",
