@@ -9055,6 +9055,297 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+
+  // ===================================================================
+  // ESSAY 17 — Required for what? (DRAFT)
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "required-for-what",
+    number: "17",
+    title: "Required for what?",
+    subtitle:
+      "Forty-two of sixty-five senior data postings require attributes and name no decision.",
+    date: "2026-09-02",
+    readingTime: "22 min read",
+    summary:
+      "Sixty-six senior data and AI leadership postings, read against the three anchors of a decision system. Ninety-eight percent name what the person must be. Thirty-five percent name what the person may decide. Eleven percent name how anyone will know the person's calls were good. And across eight hundred and thirteen items in the candidate-requirements sections of sixty-four documents, not one names a decision the hire may make.",
+    cover: "/library/covers/required-for-what.svg",
+    arc: "ai-systems",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            A job posting is the first document that says what a role is. It is not the most authoritative one. Delegation memos, committee charters and RAPID grids all outrank it, and none of them is public. The requisition comes first, it survives in writing, and anyone can read it.
+          </p>
+          <p>
+            Sixty-six were collected &mdash; director level and above, data, analytics and AI leadership, captured across four months of 2026. Sixty-five could be read end to end; one arrived truncated and is excluded from every count here. Each of the sixty-five was coded against three questions fixed in writing before any posting was opened. Does the document name an attribute the person must have? Does it name a decision the person may make? Does it name a measure of whether the person&rsquo;s calls were any good?
+          </p>
+          <p>
+            Ninety-eight percent. Thirty-five percent. Eleven percent. One posting in sixty-five states a number the post-holder will be held to.
+          </p>
+        </Brief>
+
+        <H2>Three questions, asked of one document</H2>
+        <P>
+          The three questions are not arbitrary. They are what a decision system needs in order to be a system rather than a set of intentions. Something has to define the construct: what this is, and what counts as it. Then the call has to be allocated &mdash; who settles the thing when the evidence runs out. And the loop has to close, so that anyone can tell afterwards whether the calls were good. Take any one away and the other two stop working. Define a construct nobody may act on and you have a definition. Allocate a call with no measure behind it and you have an opinion with a signature.
+        </P>
+        <P>
+          None of those three functions is directly observable in a job posting, so each is read here through a single marker: a candidate attribute, a named decision, and a measure of the role&rsquo;s own work. The markers are narrower than the functions they stand for. A required master&rsquo;s degree is not a construct definition, and the count below is a count of the marker.
+        </P>
+        <P>
+          Job postings are an unusually clean place to test this, because a requisition is the founding document of a working relationship and it is written before anyone has a stake in softening it. I have read hiring artifacts this way before, <InternalLink slug="the-take-home-test">going through a decade of take-home tasks to see what they revealed about the teams that set them</InternalLink>. A posting is the same kind of evidence one step earlier, and there are more of them.
+        </P>
+        <P>
+          Sixty-four of sixty-five codable postings name at least one attribute required of the person. That is ninety-eight percent. The rule was written to make the finding hard rather than easy: one named attribute clears the bar, and the same grain was used for all three anchors, so the comparison could not be rigged by setting a low bar for one and a high bar for another.
+        </P>
+        <P>
+          Twenty-three of the sixty-five name a decision the hire may make. Thirty-five percent, double-coded blind by two coders working from the same evidence packet. The false-negative sweep then ran across all sixty-six (the truncated posting included, since a sweep runs over whatever text exists). It found five postings both coders had missed, which is the honest measure of what a double-coding is worth on its own.
+        </P>
+        <P>
+          Seven name a measure of the role&rsquo;s own work. Eleven percent &mdash; this is <InternalLink slug="what-is-this-system-measuring">the same gap I went after in the evaluation of AI systems</InternalLink>, arriving here one document earlier and about a person instead. Inside those seven there are thirty-three enumerated success items, and exactly one carries a number: a target net promoter score, above 0.70, at a consultancy. That is the only threshold applied to a post-holder&rsquo;s own work anywhere in the corpus. Everything else is a state of the world with no reading attached &mdash; stakeholders trust the numbers, dashboards are widely adopted, time-to-insight comes down.
+        </P>
+        <P>
+          Read down the three and the shape is a descent. Four postings of sixty-five found all three anchors. Twenty-one found two, forty found one, and none found zero.
+        </P>
+
+        <Figure
+          src="/library/figures/three-anchors-one-descent.svg"
+          alt="Three panels of sixty-five squares each. Sixty-four filled for an attribute the person must have, twenty-three for a decision the person may make, seven for a measure of the person's own work."
+          caption="Each panel is the same sixty-five codable postings. The solid frame marks the question these documents do answer; the dashed frames mark the two they almost never do."
+        />
+
+        <H2>What the requirements are for</H2>
+        <P>
+          That descent was the finding for about a week. Then a question that sounds like housekeeping turned into the thing underneath it.
+        </P>
+        <P>
+          Sixty-four of the sixty-five codable postings have a section where the employer states what the role requires. It is headed <I>Requirements</I>, or <I>Qualifications</I>, or <I>Minimum Qualifications</I>, or <I>What You Bring</I>, and it is usually followed by a preferred block. Ten years of this, a degree in that, fluency in these tools, the ability to influence across functions.
+        </P>
+        <P>
+          A requirement is a claim of necessity, and necessity is always relative to a task. Ten years of data engineering is required <I>in order to do what</I>. So a requirements section is not a list. It is an inference, and it needs a stated job on the other end of it to be an inference about anything.
+        </P>
+        <P>
+          Forty-two of the sixty-five name what the person must be and name no decision anywhere in the document. Not in a scope paragraph, not in responsibilities, not anywhere. These are director-level roles and above. From here the argument needs an assumption the corpus does not measure: that at this level, settling things is most of the work. Grant that, and those items are being asserted as necessary for a job the document has not stated.
+        </P>
+        <P>
+          That is a claim about the document and it stops there. A job analysis may well exist somewhere &mdash; in a competency model, in a hiring manager&rsquo;s head, in the conversation that produced the requisition. Nothing here says otherwise. What the corpus supports is narrower: these documents specify the candidate and mostly leave the role&rsquo;s decision scope unstated. Whether something else in the document supplies a warrant for those requirements is a different question, and not one I coded.
+        </P>
+        <P>
+          Before any of this was a corpus, I sat with one job description and counted its and/or constructions. There were four. Every one of them sat at the point where the document had to say whether the role decided something or assisted with it. The slash is the document arriving at the question and declining to answer it. One document proves nothing and I have not counted this marker across the sixty-five. It did change what I thought I was looking at.
+        </P>
+        <P>
+          The claim under test was written down before coding, in the form most likely to be wrong: <I>the requirements section is composed of credentials, skills and capabilities, and does not carry decision rights.</I> Any material rate of authority inside those sections would have falsified it.
+        </P>
+        <P>
+          Sixty-four postings carry a requirements section. Across them there are eight hundred and thirteen items &mdash; one bullet or one sentence apiece &mdash; and <B>not one names a decision the hire may make.</B> Not in the required block, not in the preferred block. Fifty-seven items came close enough to be pulled into an adjudication packet by a deliberately over-inclusive filter, and every one of the fifty-seven was read by hand and coded false. Forty-four were read three times, by me and by two coders working blind from the same packet. Thirteen were read once, by me, and seven of those come from postings the blind coders never saw. That is the thinnest part of the zero, and it sits at thirteen items out of eight hundred and thirteen.
+        </P>
+        <P>
+          What the eight hundred and thirteen are made of, roughly: three quarters are abilities and dispositions, then tools, then domain knowledge, then years, then degrees, then a thin tail of certifications. The abilities category is the largest and the least falsifiable in content, which is a finding in itself and should not be smoothed over.
+        </P>
+        <P>
+          The count is not clean, and the shape of the dirt matters. About eight percent of the items resist categorising, and a handful are not requirements at all &mdash; one posting contributes a payroll code and a recruiting mailbox address, both swept up as items because they sat inside the section. The split between the required block and the preferred block is worse than that: on two postings the extraction ignored the employer&rsquo;s own preferred heading, so I would not quote a required-versus-preferred ratio from this pass. None of that moves the zero, because a payroll code cannot be a decision and a misfiled bullet is still a counted bullet. It does mean the eight hundred and thirteen is a working count rather than a clean one, which is the same disclosure the meaning number carries a paragraph earlier.
+        </P>
+        <P>
+          Getting to sixty-four took a repair that nearly became a finding of its own. The first build reported nine postings with no requirements section at all. Checking those nine against their source files, seven had one, under headings a list built from the common cases could not see. <I>What Experience We Need.</I> <I>What We Require.</I> <I>You Need to Have.</I> <I>You should definitely have.</I> One posting&rsquo;s headings had been glued onto the tail of the preceding bullet by the text extraction, so no heading list of any size would have found it. Employers who write informally were being dropped, and the drop looked exactly like employer silence.
+        </P>
+        <P>
+          Two postings still sit outside the sixty-four, and one of them cuts against me. The first is the truncation defect in my own pipeline. The second writes no requirements section at all &mdash; and it is the same posting the next section holds up as the one employer here who states decision rights carefully. So the strongest counter-example to this argument is not in the denominator of its headline number. The exclusion is real and the reason for it was written down before the count was run. A reader is still entitled to both facts in the same place.
+        </P>
+
+        <H2>What happens when the decision does exist</H2>
+        <P>
+          An absence is a weak finding on its own, and there is an easy answer to this one. Requirements describe the person, responsibilities describe the work, so of course the decision is in the other section. Filing is not a fault, and I am not claiming a grant belongs in one place rather than another.
+        </P>
+        <P>
+          What is worth looking at is the twenty-three postings where the employer did settle a decision, because there the document had something to be required <I>for</I> and you can watch what it does with it.
+        </P>
+        <P>
+          Twenty-two of the twenty-three also carry a requirements section. In four of them the same decision appears in both, and the transformation is the thing to look at. An insurer&rsquo;s responsibilities block says the role will <I>resolve cross-stream data dependencies and tradeoffs&hellip;</I>. Its requirements block asks for <I>experience resolving cross-team data dependencies and tradeoffs&hellip;</I>. Both items run on past that point, and both run on in different directions. The decision has become a credential. What the person will do has been rewritten as something the person should already have done, somewhere else, for somebody else.
+        </P>
+
+        <Figure
+          src="/library/figures/decision-becomes-a-credential.svg"
+          alt="Two quoted panels from one posting. The responsibilities block grants the role a decision; the requirements block asks for experience of the same decision."
+          caption="One employer, two sections, the same decision. Four of the twenty-three postings that grant a decision restate it in requirements as prior experience."
+        />
+
+        <P>
+          The word <I>authority</I> appears eight times inside requirements sections across seven postings. Five of the eight are explicit negations, and the phrases inside those five items run: <I>influence without direct authority</I>, <I>create alignment even without direct authority</I>, <I>influence without authority</I>, <I>influencing without formal authority</I>, <I>in positions without formal positional authority</I>.
+        </P>
+        <P>
+          Those five are not silence. They name work the role must accomplish beyond whatever positional authority it carries, and select for the candidate&rsquo;s ability to operate there. That is not the same as an absence of decision rights, though it would be easy to read it that way. It is still the most specific thing any requirements section in the corpus says about authority, and what it asks for is the capacity to work without leaning on it.
+        </P>
+        <P>
+          And the sharpest single item in the corpus, from a research university: <I>Experience establishing enterprise governance structures with formal decision rights.</I> The candidate is required to have held formal decision rights somewhere. None is granted here.
+        </P>
+        <P>
+          One posting inverts the whole pattern, and it is worth reading closely because it cuts against the easy version of this argument. A quantum computing company&rsquo;s requisition carries a section headed <I>What You Won&rsquo;t Own (by design)</I>, an operating-model section, and a sentence naming what the role holds and what functional owners retain. It is careful, specific writing of the kind this essay is asking for. It is also the single posting in sixty-five that names no attribute required of the person &mdash; the only meaning FALSE in the corpus, verified by hand against the complete twelve-thousand-character source. One employer chose the other anchor.
+        </P>
+
+        <H2>The count that changed when the rule changed</H2>
+        <P>
+          These sixty-six documents were coded twice, and the second pass is the one this essay reports.
+        </P>
+        <P>
+          The first pass ran while the corpus was still being read. Its markers were built out of what was in front of me, so the rule for a decision the hire may make was narrow. It looked for a particular way of writing the grant, and it found four postings in sixty-six. That number sat on disk for a week. It is now retired.
+        </P>
+        <P>
+          The second pass started with three rules written out in full before any posting was reopened. One grain for all three anchors: a single named item clears the bar, whether the item is an attribute, a decision or a measure. Setting an easy bar for meaning and a hard one for authority is the obvious way to manufacture this comparison, so the grain was fixed in advance to close that off. Authority came back at twenty-three.
+        </P>
+        <P>
+          The documents did not change and neither did the employer prose. Nothing was added to the corpus between the two passes, and the whole difference is the rule.
+        </P>
+        <P>
+          The second rule stands because of how it was built, not because it is newer. A rule written after reading encodes the examples it has already seen, then goes and finds more of those. A rule written beforehand can be wrong in public. This one went to two coders working blind from an identical evidence packet, disagreements were adjudicated in writing against a stated line, and the result was swept back across all sixty-six for postings both coders had missed. The authority sweep found five. The validity sweep found one.
+        </P>
+        <P>
+          Four would have been the better number for this argument. Twenty-three is the number the rule produced.
+        </P>
+        <P>
+          One consequence of coding twice is that every count here has to say what it is a count of. Sixty-six were collected. Sixty-five are codable, since one posting&rsquo;s extract is a truncation defect in my own pipeline and gets reported as a defect rather than as employer silence. Sixty-four carry a requirements section (the sixty-fifth genuinely writes none, checked against its full source). The three anchors report over sixty-five; the composition finding reports over sixty-four. Anything computed under the first pass is retired and is not in this piece.
+        </P>
+
+        <H2>What this evidence will not carry</H2>
+        <P>
+          The strongest objection to all of it was raised before the coding started, and it has not gone away.
+        </P>
+        <P>
+          If a role exists to build a governance function, then a requisition that does not contain decision rules is not failing. It is a work order. You cannot fault a document for omitting the deliverable of the job it advertises, and the ambiguity language in these postings &mdash; one wants someone <I>comfortable with ambiguity</I>, another someone who <I>enjoys creating structure where none exists</I> &mdash; is arguably the employer being honest about that rather than hiding it.
+        </P>
+        <P>
+          That objection is largely right and it changes what the counts can be used for. It does not reach the warrant question, though. A work order still has to say what the person is required for, and a posting that asks for ten years of a named skill has already made a necessity claim whether or not the decisions are the deliverable. The four conversion cases are the sharper version: those employers had settled the decision and still wrote it into requirements as something the candidate should have done elsewhere. But nothing in this corpus separates an employer who never thought about it from one who thought about it and chose to leave it open. No marker coded here can, and I am not going to estimate it.
+        </P>
+        <P>
+          Three further limits, stated rather than discovered. A job posting is not a governance document; an organization can run a rigorous model-risk committee and put none of it in a requisition, and reading these counts as a claim about internal practice would be the category error this library keeps objecting to. The sampling is worse than the coding: these sixty-six are roles one person selected and in most cases applied to, across four months, leaning toward education, nonprofit and health-adjacent employers, so selection bias is total and runs in a known direction. And the corpus has no outcome variable, so it supports no claim about what any of this causes downstream. The causal literature connecting unclear decision rights to churn and failed restructures is real and it is borrowed; the join between that literature and this evidence does not exist in this design.
+        </P>
+        <P>
+          One piece of that sampling objection can be checked rather than conceded. If these employers were simply too early for any of this, the silence would be a maturity artifact and little else. So each posting was coded for whether the role holds an AI or machine-learning system in its remit. Twenty-six of the sixty-five do. Within those twenty-six, thirteen name a decision the hire may make and thirteen do not. Among the thirty-nine holding no such system, ten name one. Handing someone an AI system roughly doubles the chance the document says what they get to decide, at an odds ratio near three, and a two-tailed exact test on that table returns p = 0.064, which is suggestive rather than established. It cuts both ways. Half the roles built around an AI system still never say what the person may decide.
+        </P>
+
+        <Figure
+          src="/library/figures/decision-named-by-ai-remit.svg"
+          alt="Two rows of squares, one per posting. Twenty-six postings hand the role an AI system and thirteen of them name a decision. Thirty-nine hand it no such system and ten name a decision."
+          caption="The maturity objection, tested inside the corpus. Handing a role an AI system doubles the rate at which a decision is written down, at an odds ratio of 2.90 and an exact-test p of 0.064."
+        />
+
+        <P>
+          A fourth limit belongs with them, and it is the one I would attack if this were someone else&rsquo;s essay. Decision-absence is standing in for something broader. The corpus measured whether a document names a decision the role may make. The argument wants to know whether the document says what work its requirements are for. Those are not the same question. The study that would close the gap has not been run: for each of the eight hundred and thirteen items, is there employer prose establishing what work makes that attribute necessary. It would need its own coding rule, its own double-coding and its own adjudication, so it is a second study rather than a repair to this one. Until it exists, the forty-two counts documents that name no decision, and the step from there to a job unstated is the assumption stated earlier and not a finding.
+        </P>
+        <P>
+          A second arm is being collected against that objection: roughly thirty postings drawn mechanically from an enumerated set rather than picked by me, with the coding rules frozen as they stand. Thirty is enough to catch a large shift and not enough to settle a small one. The falsifier is declared in advance, it sits on the same anchor the argument does, and it is written down where I cannot move it later without the move showing.
+        </P>
+
+        <H2>Why an undefined boundary got expensive</H2>
+        <P>
+          None of this was a problem for as long as the thing on the other side of the boundary was a person.
+        </P>
+        <P>
+          People negotiate an undefined boundary after they arrive. They read the room, decide something small, see whether anyone objects, and settle into a working answer nobody ever writes down. That absorption is why the line could go unwritten for decades without anyone filing a complaint. It is also why hiring into ambiguity is rational on the day. Writing the boundary down requires several senior people to agree in advance about something each of them would rather keep flexible. Hiring someone into the gap produces a headcount instead, which is a form of progress that shows up in a plan.
+        </P>
+        <P>
+          A system also carries on, and this is the part to be careful about. The expected version of this argument is that machines fail loudly and people fail quietly. That is not what happens. The workflow continues. Nothing is raised, nothing settles, and the point where the premises ran out is not surfaced anywhere. Someone has to go looking for it, and whether looking is part of the workflow is usually not established.
+        </P>
+        <P>
+          So the claim here is narrow and worth keeping narrow: agents are not better at governance than people. They remove the absorbing layer without putting a signal in its place. What used to be a cost paid quietly by whoever was standing at the ambiguous boundary is now a defect nobody has been told to find. I have made the general version of this argument elsewhere &mdash; <InternalLink slug="actions-not-answers">the checkpoint that came free with every answer has to be built back in once the system produces actions</InternalLink>. The posting is where you can see whether anyone did.
+        </P>
+        <P>
+          There is a second machine in this story and it arrives earlier, at the other end of the same document. A screening tool can read the whole posting; that is not the constraint. The constraint is that requirements are already written in the grammar of selection. Ten years, a named degree, a listed tool &mdash; each one is an attribute a candidate can be compared against, and eight hundred and thirteen of them (over sixty-four documents) is the shape a scoring system wants. Decision scope is not usually written that way. Where it exists it sits in prose in another section as a description of the job, not as a variable anyone is selected on, and where it does not exist it is something a person infers from the title and works out after they arrive.
+        </P>
+        <P>
+          So the automation lands on the specified half and misses the unspecified half, and it misses it silently, because nothing in the pipeline is asking. A person reading a requisition reconstructs the implied scope without noticing they are doing it. A system matching against enumerated attributes has nothing to reconstruct from and no reason to try.
+        </P>
+        <P>
+          That much of the argument is crowded, and it should be conceded rather than defended. Microsoft put the execution and decision split in the standfirst of its 2026 Work Trend Index. Deloitte built a chapter of its 2026 Human Capital Trends on who is accountable when humans and machines are both deciding. Both are vendor and consultancy research with commercial interests in their own conclusions, and both are worth reading anyway.
+        </P>
+        <P>
+          What neither of them does is run backward to the door. Microsoft&rsquo;s talent-practices variable contains no selection and no hiring at all, and the report says so plainly: leaders focus on hiring the right people, and their data points at the conditions created afterwards instead. Deloitte&rsquo;s seven chapters have no hiring chapter. Both redesign decision rights for people already inside the building. Neither touches the decision that put them there, or the document that recorded it.
+        </P>
+        <P>
+          One institution does look at the document. In June 2026 the Labor Department opened a request for information on modernizing O*NET, the federal occupational database, and closed it in August. Part of what it asks is whether to draw more of O*NET&rsquo;s skills data from job postings. One of its questions asks how far postings accurately reflect real work requirements, and where they are misleading or incomplete. This corpus answers one narrow part of that, for one slice of one labor market. Forty-two of these documents state requirements and name no decision the role may make.
+        </P>
+        <P>
+          There is one more asymmetry in the corpus that belongs here. Five postings of sixty-five name a standard applied to an AI or ML system&rsquo;s outputs: evaluation frameworks, drift monitoring, human-in-the-loop review. Seven name a measure of the person&rsquo;s own work. So the machine gets a measurement regime about as often as the person does, and no posting in the corpus names both. The machine-side version of that regime is a solved problem in the sense that people have written down what it should contain, <InternalLink slug="grounding-the-ai-layer">down to the contract every AI feature has to hold to</InternalLink>. Nobody has written the person-side one, and these documents are where it would go.
+        </P>
+        <P>
+          One posting shows both machines on the same page, and it is the only place in the corpus where a boundary between human and machine judgment is written down cleanly.
+        </P>
+        <P>
+          An insurer&rsquo;s requisition closes with a notice about the hiring process the reader is standing in. The company may use AI to sort and filter applicants during preliminary screening, it says. Then: <I>&ldquo;we do not use AI Tools to substantially assist or replace human judgment or discretionary decision making in our hiring process.&rdquo;</I> All hiring decisions, it adds, are made by its own colleagues. The paragraphs around that sentence offer a route to request an alternative process, and commit to publishing the most recent bias-audit results.
+        </P>
+        <P>
+          Read it next to New York City&rsquo;s Local Law 144. The law took effect at the start of 2023 and has been enforced since that July. It bars an employer from using an automated employment decision tool in the city without three things: an annual independent bias audit, a published summary of the results, and notice to candidates ten business days before the tool is used. The statute defines such a tool on three prongs, and the third is whether it &ldquo;substantially assists or replaces discretionary decision-making.&rdquo;
+        </P>
+        <P>
+          The posting does not cite the law, so that connection is an inference, and it is drawn from three features: the third prong quoted almost word for word, the route to request an alternative process, and the commitment to publish bias-audit results. The law permits the notice to be delivered in a job posting, which is why any of it sits in a requisition at all.
+        </P>
+        <P>
+          The posting also names ten business days, and that one is not evidence. The statute&rsquo;s ten days is notice to the candidate before the tool runs. The posting&rsquo;s ten days is the applicant&rsquo;s own deadline to write in and opt out after applying. Same number, opposite direction, and I nearly counted it.
+        </P>
+        <P>
+          Now look at what the law asks for, because it lands in a particular place. The notice must tell the candidate which job qualifications the tool will assess. The audit must calculate selection rates and impact ratios by sex, race and ethnicity, and DCWP&rsquo;s own guidance says the law requires no specific action based on what the audit finds. The definition contemplates a tool predicting a candidate&rsquo;s fit for the job.
+        </P>
+        <P>
+          So the qualifications get published, the distribution gets measured every year, and nothing in the statute asks anyone to establish that those qualifications are what the job needs. Fit for the job is the thing being predicted, and the role&rsquo;s decision scope is not among the things anyone has to write down. The regulator reached the specified half of the document too.
+        </P>
+        <P>
+          Job-relatedness has sat in federal employment law, which is why a municipal audit statute never needed to carry it. That settlement is moving: in June 2026 the Justice Department advised the EEOC that its disparate-impact guidelines are unconstitutional. The detail sits outside this essay&rsquo;s question. Neither regime asks what decisions the role holds.
+        </P>
+        <P>
+          That is a claim about where Local Law 144 reaches, not a claim that the law is badly built. It was written to catch disparate impact and it does that. But sixty-six documents about running AI systems, and the one place where a boundary between human and machine judgment is written down cleanly is a compliance notice about the screening of the person reading it &mdash; governing the machine at the door, in the regulator&rsquo;s words, and silent about the decisions on the other side.
+        </P>
+
+        <H2>What has to be written down</H2>
+        <P>
+          Three asks, addressed to three different people. The second one answers the title.
+        </P>
+        <P>
+          <B>To whoever is leading the transformation.</B> An AI redesign is mostly a redesign of decisions: one moves from a person to a system, or from three people to one, or from a weekly meeting to a threshold in a config file. When a decision moves, the role document that used to hold it has to change in the same cycle, and the change has to name who settles it now. Not who owns the area, not who is accountable for the outcome &mdash; who settles it. Ownership is a different question with its own answer, and <InternalLink slug="where-should-data-sit">the one I would give is about where a function reports rather than what it is called</InternalLink>. If that edit does not happen, the redesign exists in the design deck and the organization&rsquo;s founding documents still describe the operating model you replaced.
+        </P>
+        <P>
+          This is deliberately a low bar. It is one sentence per moved decision, and it is a statement about the job rather than about the candidate. It is low because the failure mode in this corpus is not thin governance but no governance at all, and a bar that requires a working group will not clear.
+        </P>
+        <P>
+          <B>To whoever writes or approves the requisition.</B> A requirements section states what a person must be. Add one line stating what the role settles without another signature, and put it next to the requirements rather than in a section further down. Then what the document asks of the candidate and what it grants the role sit on the same page. That line is what a screening tool has no way to infer, and what a new hire currently reconstructs by trying something and seeing whether anyone objects.
+        </P>
+        <P>
+          It can be written badly, which is the point of it being a field rather than a principle. A vague version &mdash; <I>owns data strategy</I> &mdash; is checkable against the standard and fails it, because owning an area is not settling a question. That is what makes it something to adopt rather than agree with.
+        </P>
+        <P>
+          One limit sits between these two asks. The person who can see that a decision moved is usually not the person who can edit the requisition. Nothing in this corpus says who the handoff goes to, and neither flagship report does either, since neither goes near hiring. Sponsor, talent officer, works council in a European context: I do not know. The ask stands anyway. A document nobody has been assigned to change is the condition being described.
+        </P>
+        <P>
+          <B>To whoever does organizational design or leadership development.</B> You can run this against your own house in an afternoon. Take your ten most senior data and analytics role documents and ask three questions of each. Does it name an attribute required of the person? Does it name a decision that person settles without another signature? Does it name how anyone will know their calls were good? Then compare against ninety-eight, thirty-five and eleven, and treat the comparison as the beginning of a conversation rather than the end of one. If your organization looks like the corpus, the finding is not that you are behind everyone else. The middle number and the last number are the ones your leadership development programme has been compensating for all along.
+        </P>
+        <P>
+          Whoever takes one of these sixty-six roles will work out what they are allowed to decide the way people always have. They will try something and see whether anyone objects. That repair has always been done by a person, and it is worth asking what happens to it when the thing on the other side of the boundary is not one. The attributes were written down. In forty-two of these documents, what the role may settle was not.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="actions-not-answers"
+            title="Actions, Not Answers"
+            gloss="Makes the argument this piece tests. If an agentic system removes the human checkpoint, someone has to design it back in; sixty-five requisitions are one place to check whether anyone did."
+          />
+          <SeeAlsoItem
+            slug="what-is-this-system-measuring"
+            title="What is this system actually measuring?"
+            gloss="The eleven percent has a companion. That piece asks the validity question of an AI system. This one finds the same question unasked of the person running it."
+          />
+          <SeeAlsoItem
+            slug="the-take-home-test"
+            title="The Take-Home Test"
+            gloss="The method's older sibling. Hiring artifacts read as evidence about how an organization treats its own decisions, one step later in the same process."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Sixty-six postings for director-level and above data, analytics and AI leadership roles, captured between 29 April and 28 August 2026 and bounded per posting. Thirty-two were segmented from two source documents; thirty-four were recovered verbatim from working session transcripts. Only employer prose was coded, and every coding rule was written down before any posting was opened for that marker. The authority anchor was double-coded blind by two coders against an identical evidence packet, adjudicated in writing, then swept across all sixty-six for false negatives. The validity anchor used the same design and its sweep recovered a posting both coders had missed. The meaning anchor was coded mechanically with three hand-audits and four implementation repairs recorded; its binary is solid and its density number carries a measured eight percent false-positive rate. The requirements-composition pass over-captured on a deliberately wide net &mdash; twenty-five distinct patterns, several matching more than one surface form, covering decision rights, authority, authorise, approve, veto, final say, sign-off, mandate, empowered, discretion, autonomy, setting or defining a standard or policy, govern, accountable for, own, escalate, arbitrate, adjudicate, control over, steward, make the call, and directly responsible for. All fifty-seven candidates it returned were adjudicated by hand, twice independently, because a low count is the condition under which a mechanical coder is most likely to be believed while being wrong. The net is stated in full because the finding is a zero, and a zero is only as good as the width of the search that produced it. None of the coders was blind to the corpus, since the same session had read these postings for earlier markers. That is a shared blind spot rather than an independent check, and the false-negative sweeps exist because of it. An earlier pass over the same sixty-six used narrower markers built during reading. Its counts are superseded and are not cited here or anywhere else; the retirement is recorded with the corpus. Local Law 144 of 2021, its three obligations and the three-prong definition of an automated employment decision tool, verified against the New York City Department of Consumer and Worker Protection&rsquo;s AEDT page and its Automated Employment Decision Tools FAQ dated 29 June 2023. The link between the quoted posting and the statute is an inference and is stated as one in the text. Two further external facts were verified against primary sources before use. The Office of Legal Counsel opinion is <I>Constitutionality of Disparate-Impact Liability Under Title VII</I>, issued to the EEOC on 9 June 2026 and published by the Department of Justice. The Labor Department request for information is <I>Modernizing Federal Workforce Information Tools</I>, 91 FR 34833, published 9 June 2026 with comments closing 10 August 2026; the question referred to in the text is question E.2 of its O*NET section, which is paraphrased rather than quoted. No employer is named. Every quotation is verbatim. Full coding rules, disagreements and adjudication lines are in the corpus folder.
+        </MetaNote>
+      </>
+    ),
+  },
 ];
 
 // ---------------------------------------------------------------------
