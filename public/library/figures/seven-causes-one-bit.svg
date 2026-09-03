@@ -15,13 +15,13 @@
 
   <!-- Converging lines -->
   <g stroke="#CBD5E1" stroke-width="1" fill="none">
-    <path d="M340,77 L515,272"/>
-    <path d="M340,142 L515,272"/>
-    <path d="M340,207 L515,272"/>
-    <path d="M340,272 L515,272"/>
-    <path d="M340,337 L515,272"/>
-    <path d="M340,402 L515,272"/>
-    <path d="M340,467 L515,272"/>
+    <path d="M440,77 L515,272"/>
+    <path d="M440,142 L515,272"/>
+    <path d="M440,207 L515,272"/>
+    <path d="M440,272 L515,272"/>
+    <path d="M440,337 L515,272"/>
+    <path d="M440,402 L515,272"/>
+    <path d="M440,467 L515,272"/>
   </g>
 
   <!-- Diverging lines -->
@@ -37,13 +37,13 @@
 
   <!-- LEFT: causes, known to the employer -->
   <g fill="none" stroke="#0F2A4A" stroke-width="1.2">
-    <rect x="50" y="54" width="290" height="46" rx="3"/>
-    <rect x="50" y="119" width="290" height="46" rx="3"/>
-    <rect x="50" y="184" width="290" height="46" rx="3"/>
-    <rect x="50" y="249" width="290" height="46" rx="3"/>
-    <rect x="50" y="314" width="290" height="46" rx="3"/>
-    <rect x="50" y="379" width="290" height="46" rx="3"/>
-    <rect x="50" y="444" width="290" height="46" rx="3"/>
+    <rect x="50" y="54" width="390" height="46" rx="3"/>
+    <rect x="50" y="119" width="390" height="46" rx="3"/>
+    <rect x="50" y="184" width="390" height="46" rx="3"/>
+    <rect x="50" y="249" width="390" height="46" rx="3"/>
+    <rect x="50" y="314" width="390" height="46" rx="3"/>
+    <rect x="50" y="379" width="390" height="46" rx="3"/>
+    <rect x="50" y="444" width="390" height="46" rx="3"/>
   </g>
   <g font-size="22" fill="#0F2A4A">
     <text x="66" y="83">The role was cancelled</text>
