@@ -5286,7 +5286,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-10",
     readingTime: "20 min read",
     summary:
-      "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. The essay argues that a big impact number is not yet a valid number — the argument from the number to the claim it makes needs its own gate. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average, an arithmetic this essay adds rather than one Kane prescribes. Separates the verbs a number earns (supports, contributed to, produced) by the strength of the counterfactual behind it. Closes by proposing that a fund publish per-pathway warrant beside the composite: a common unit makes dollars comparable, not the evidence behind them. Written in the same spirit as the Dollars in Pockets authors' own invitation to apply the measure to the field's work.",
+      "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average. Separates the verbs a number earns — supports, contributed to, produced — by the strength of the counterfactual behind it. Closes by asking that funds publish per-pathway warrant beside the composite.",
     cover: "/library/covers/the-valid-dollar.svg",
     arc: "measurement",
     body: (
@@ -5567,7 +5567,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-14",
     readingTime: "22 min read",
     summary:
-      "Why responsible-AI rubrics in mental health are necessary, and what they need underneath.",
+      "Responsible-AI frameworks in mental health check privacy, accountability, equity, and monitoring. What they don't ask is whether the system measures the mental-health construct it claims to. Four validity questions sit underneath the responsible-AI floor and decide whether the rest earns its place.",
     cover: "/library/covers/validity-layer-beneath-responsible-ai.svg",
     arc: "measurement",
     body: (
@@ -8749,7 +8749,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-09-01",
     readingTime: "6 min read",
     summary:
-      "A CFO can have a clean chart of accounts and a program team can have a real evidence spine, and neither one, alone or together, produces a defensible cost per outcome. The missing piece is not a better report or a better metric. It is the shared, governed keys that let spend and outcomes divide same-scope. This is the finance-side companion to The Reach Trap and The Valid Dollar: the reach trap says build the second system, the valid dollar says score the number it makes, and this note is about the wire between them.",
+      "A CFO can have a clean chart of accounts and a program team can have a real evidence spine, and neither one produces a defensible cost per outcome. The missing piece is the shared, governed keys that let spend and outcomes divide same-scope. The finance-side companion to The Reach Trap and The Valid Dollar — the wire between them.",
     cover: "/library/covers/the-spend-trap.svg",
     arc: "measurement",
     body: (
