@@ -9065,7 +9065,7 @@ export const ESSAYS: Essay[] = [
     number: "17",
     title: "Required for what?",
     subtitle:
-      "Forty-two of sixty-five senior data postings require attributes and name no decision.",
+      "Forty-two of sixty-five senior data postings require attributes and never say what the role may decide.",
     date: "2026-09-02",
     readingTime: "22 min read",
     summary:
@@ -9127,7 +9127,7 @@ export const ESSAYS: Essay[] = [
           A requirement is a claim of necessity, and necessity is always relative to a task. Ten years of data engineering is required <I>in order to do what</I>. So a requirements section is not a list. It is an inference, and it needs a stated job on the other end of it to be an inference about anything.
         </P>
         <P>
-          Forty-two of the sixty-five name what the person must be and name no decision anywhere in the document. Not in a scope paragraph, not in responsibilities, not anywhere. These are director-level roles and above. From here the argument needs an assumption the corpus does not measure: that at this level, settling things is most of the work. Grant that, and those items are being asserted as necessary for a job the document has not stated.
+          Forty-two of the sixty-five name what the person must be and never say what the role may decide. Not in a scope paragraph, not in responsibilities, not anywhere. These are director-level roles and above. From here the argument needs an assumption the corpus does not measure: that at this level, settling things is most of the work. Grant that, and those items are being asserted as necessary for a job the document has not stated.
         </P>
         <P>
           That is a claim about the document and it stops there. A job analysis may well exist somewhere &mdash; in a competency model, in a hiring manager&rsquo;s head, in the conversation that produced the requisition. Nothing here says otherwise. What the corpus supports is narrower: these documents specify the candidate and mostly leave the role&rsquo;s decision scope unstated. Whether something else in the document supplies a warrant for those requirements is a different question, and not one I coded.
