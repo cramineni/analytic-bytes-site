@@ -1,13 +1,13 @@
 <svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl desc">
 <title id="ttl">Naming a decision, by AI remit</title>
-<desc id="desc">Two rows of small squares, one square per posting. The upper row is the twenty-six postings that hand the role an artificial intelligence or machine learning system: thirteen squares are filled navy, marking the postings that also name a decision the hire may make, and thirteen are left empty. The lower row is the thirty-nine postings that hand the role no such system: ten are filled and twenty-nine are empty. The lower row is visibly longer and visibly emptier. Square position carries no meaning.</desc>
+<desc id="desc">Two rows of small squares, one square per posting. The upper row is the twenty-seven postings that hand the role an artificial intelligence or machine learning system: thirteen squares are filled navy, marking the postings that also name a decision the hire may make, and fourteen are left empty. The lower row is the thirty-eight postings that hand the role no such system: ten are filled and twenty-eight are empty. The lower row is visibly longer and visibly emptier. Square position carries no meaning.</desc>
 <rect width="1200" height="400" fill="#FFFFFF"/>
 <text x="600" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Naming a decision, by AI remit</text>
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 <line x1="60" y1="232" x2="1140" y2="232" stroke="#E2E8F0" stroke-width="1.5"/>
 <text x="60" y="150" font-size="22" fill="#475569">Holds an AI system</text>
-<text x="60" y="190" font-size="30" font-weight="600" fill="#0F2A4A">13 of 26</text>
-<text x="196" y="190" font-size="22" fill="#0EA5E9">50%</text>
+<text x="60" y="190" font-size="30" font-weight="600" fill="#0F2A4A">13 of 27</text>
+<text x="196" y="190" font-size="22" fill="#0EA5E9">48%</text>
 <rect x="340" y="158" width="16" height="16" rx="2" fill="#0F2A4A"/>
 <rect x="361" y="158" width="16" height="16" rx="2" fill="#0F2A4A"/>
 <rect x="382" y="158" width="16" height="16" rx="2" fill="#0F2A4A"/>
@@ -34,8 +34,9 @@
 <rect x="823" y="158" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
 <rect x="844" y="158" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
 <rect x="865" y="158" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<rect x="886" y="158" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
 <text x="60" y="272" font-size="22" fill="#475569">Holds no AI system</text>
-<text x="60" y="312" font-size="30" font-weight="600" fill="#0F2A4A">10 of 39</text>
+<text x="60" y="312" font-size="30" font-weight="600" fill="#0F2A4A">10 of 38</text>
 <text x="196" y="312" font-size="22" fill="#0EA5E9">26%</text>
 <rect x="340" y="280" width="16" height="16" rx="2" fill="#0F2A4A"/>
 <rect x="361" y="280" width="16" height="16" rx="2" fill="#0F2A4A"/>
@@ -75,6 +76,5 @@
 <rect x="1075" y="280" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
 <rect x="1096" y="280" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
 <rect x="1117" y="280" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-<rect x="1138" y="280" width="16" height="16" rx="2" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
 <text x="340" y="128" font-size="21" fill="#94A3B8">each square is one posting; filled squares name a decision the hire may make</text>
 </g></svg>
