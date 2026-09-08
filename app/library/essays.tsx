@@ -1510,6 +1510,11 @@ export const ESSAYS: Essay[] = [
             title="The contracts between systems"
             gloss="What the agentic-era contract has to specify, beyond engineering integration."
           />
+          <SeeAlsoItem
+            slug="required-for-what"
+            title="Required for what?"
+            gloss="Grounding validity at the requirements level, before any AI system reads the posting."
+          />
         </SeeAlso>
 
         <MetaNote>
@@ -2546,6 +2551,11 @@ export const ESSAYS: Essay[] = [
             title="Three Surfaces, One Keystone"
             gloss="The reporting surfaces the function owes once it has the right seat."
           />
+          <SeeAlsoItem
+            slug="required-for-what"
+            title="Required for what?"
+            gloss="The decision-rights version of the placement question — who settles what, before the tooling layer even matters."
+          />
         </SeeAlso>
 
         <MetaNote>
@@ -2801,6 +2811,11 @@ export const ESSAYS: Essay[] = [
             slug="burden-disparity-and-the-next-dollar"
             title="Burden, Disparity, and the Next Dollar"
             gloss="A disparity signal that needed an action, not an answer."
+          />
+          <SeeAlsoItem
+            slug="required-for-what"
+            title="Required for what?"
+            gloss="When agentic-AI language enters postings that already fail to name what the role decides — the three-anchors question sharpened."
           />
         </SeeAlso>
 
@@ -3137,6 +3152,11 @@ export const ESSAYS: Essay[] = [
             title="The numbers don’t agree because the words don’t"
             gloss="The cousin question one layer down: when the words underneath a number were never settled to begin with."
           />
+          <SeeAlsoItem
+            slug="required-for-what"
+            title="Required for what?"
+            gloss="The measurement lens applied to job postings themselves: what a requirements document actually specifies vs. what it claims to select for."
+          />
         </SeeAlso>
 
         <MetaNote>
@@ -3334,6 +3354,11 @@ export const ESSAYS: Essay[] = [
             slug="blown-assignment"
             title="It’s a blown assignment"
             gloss="What gets called a data problem on the surface and turns out not to be."
+          />
+          <SeeAlsoItem
+            slug="required-for-what"
+            title="Required for what?"
+            gloss="The same instrument-earns-its-place discipline pointed at senior-role postings: forty-two of sixty-five require attributes and never say what the role may decide."
           />
         </SeeAlso>
 
@@ -9057,7 +9082,7 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 17 — Required for what? (DRAFT)
+  // ESSAY 17 — Required for what?
   // ===================================================================
   {
     kind: "essay",
@@ -9072,7 +9097,6 @@ export const ESSAYS: Essay[] = [
       "Sixty-six senior data and AI leadership postings, read against the three anchors of a decision system. Ninety-eight percent name what the person must be. Thirty-five percent name what the person may decide. Eleven percent name how anyone will know the person's calls were good. And across eight hundred and thirteen items in the candidate-requirements sections of sixty-four documents, not one names a decision the hire may make.",
     cover: "/library/covers/required-for-what.svg",
     arc: "ai-systems",
-    draft: true,
     body: (
       <>
         <Brief>
@@ -9234,7 +9258,7 @@ export const ESSAYS: Essay[] = [
           A fourth limit belongs with them, and it is the one I would attack if this were someone else&rsquo;s essay. Decision-absence is standing in for something broader. The corpus measured whether a document names a decision the role may make. The argument wants to know whether the document says what work its requirements are for. Those are not the same question. The study that would close the gap has not been run: for each of the eight hundred and thirteen items, is there employer prose establishing what work makes that attribute necessary. It would need its own coding rule, its own double-coding and its own adjudication, so it is a second study rather than a repair to this one. Until it exists, the forty-two counts documents that name no decision, and the step from there to a job unstated is the assumption stated earlier and not a finding.
         </P>
         <P>
-          A second arm is being collected against that objection: roughly thirty postings drawn mechanically from an enumerated set rather than picked by me, with the coding rules frozen as they stand. Thirty is enough to catch a large shift and not enough to settle a small one. The falsifier is declared in advance, it sits on the same anchor the argument does, and it is written down where I cannot move it later without the move showing.
+          A second arm is designed against that objection and has not been collected yet. It is fifty-six postings, drawn mechanically from an enumerated set rather than picked by me, with the coding rules frozen as they stand. That size can catch a moderate shift and not a small one, so it will not measure whether the two arms differ. The falsifier is declared in advance, it sits on the same anchor the argument does, and it is written down where I cannot move it later without the move showing.
         </P>
 
         <H2>Why an undefined boundary got expensive</H2>
@@ -9341,7 +9365,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Sixty-six postings for director-level and above data, analytics and AI leadership roles, captured between 29 April and 28 August 2026 and bounded per posting. Thirty-two were segmented from two source documents; thirty-four were recovered verbatim from working session transcripts. Only employer prose was coded, and every coding rule was written down before any posting was opened for that marker. The authority anchor was double-coded blind by two coders against an identical evidence packet, adjudicated in writing, then swept across all sixty-six for false negatives. The validity anchor used the same design and its sweep recovered a posting both coders had missed. The meaning anchor was coded mechanically with three hand-audits and four implementation repairs recorded; its binary is solid and its density number carries a measured eight percent false-positive rate. The requirements-composition pass over-captured on a deliberately wide net &mdash; twenty-five distinct patterns, several matching more than one surface form, covering decision rights, authority, authorise, approve, veto, final say, sign-off, mandate, empowered, discretion, autonomy, setting or defining a standard or policy, govern, accountable for, own, escalate, arbitrate, adjudicate, control over, steward, make the call, and directly responsible for. All fifty-seven candidates it returned were adjudicated by hand, twice independently, because a low count is the condition under which a mechanical coder is most likely to be believed while being wrong. The net is stated in full because the finding is a zero, and a zero is only as good as the width of the search that produced it. None of the coders was blind to the corpus, since the same session had read these postings for earlier markers. That is a shared blind spot rather than an independent check, and the false-negative sweeps exist because of it. An earlier pass over the same sixty-six used narrower markers built during reading. Its counts are superseded and are not cited here or anywhere else; the retirement is recorded with the corpus. Local Law 144 of 2021, its three obligations and the three-prong definition of an automated employment decision tool, verified against the New York City Department of Consumer and Worker Protection&rsquo;s AEDT page and its Automated Employment Decision Tools FAQ dated 29 June 2023. The link between the quoted posting and the statute is an inference and is stated as one in the text. Two further external facts were verified against primary sources before use. The Office of Legal Counsel opinion is <I>Constitutionality of Disparate-Impact Liability Under Title VII</I>, issued to the EEOC on 9 June 2026 and published by the Department of Justice. The Labor Department request for information is <I>Modernizing Federal Workforce Information Tools</I>, 91 FR 34833, published 9 June 2026 with comments closing 10 August 2026; the question referred to in the text is question E.2 of its O*NET section, which is paraphrased rather than quoted. No employer is named. Every quotation is verbatim. Full coding rules, disagreements and adjudication lines are in the corpus folder.
+          Written September 2026 for the Analytic Bytes Library. Sixty-six postings for director-level and above data, analytics and AI leadership roles, captured between 29 April and 28 August 2026 and bounded per posting. Thirty-two were segmented from two source documents; thirty-four were recovered verbatim from working session transcripts. Only employer prose was coded, and every coding rule was written down before any posting was opened for that marker. The authority anchor was double-coded blind by two coders against an identical evidence packet, adjudicated in writing, then swept across all sixty-six for false negatives. The validity anchor used the same design and its sweep recovered a posting both coders had missed. The meaning anchor was coded mechanically with three hand-audits and four implementation repairs recorded; its binary is solid and its density number carries a measured eight percent false-positive rate. The requirements-composition pass over-captured on a deliberately wide net &mdash; twenty-five distinct patterns, several matching more than one surface form, covering decision rights, authority, authorise, approve, veto, final say, sign-off, mandate, empowered, discretion, autonomy, setting or defining a standard or policy, govern, accountable for, own, escalate, arbitrate, adjudicate, control over, steward, make the call, and directly responsible for. All fifty-seven candidates it returned were adjudicated by hand, twice independently, because a low count is the condition under which a mechanical coder is most likely to be believed while being wrong. The net is stated in full because the finding is a zero, and a zero is only as good as the width of the search that produced it. None of the coders was blind to the corpus, since the same session had read these postings for earlier markers. That is a shared blind spot rather than an independent check, and the false-negative sweeps exist because of it. An earlier pass over the same sixty-six used narrower markers built during reading. Its counts are superseded and are not cited here or anywhere else; the retirement is recorded with the corpus. Local Law 144 of 2021, its three obligations and the three-prong definition of an automated employment decision tool, verified against the New York City Department of Consumer and Worker Protection&rsquo;s AEDT page and its Automated Employment Decision Tools FAQ dated 29 June 2023. The link between the quoted posting and the statute is an inference and is stated as one in the text. Two further external facts were verified against primary sources before use. The Office of Legal Counsel opinion is <I>Constitutionality of Disparate-Impact Liability Under Title VII</I>, issued to the EEOC on 9 June 2026 and published by the Department of Justice. The Labor Department request for information is <I>Modernizing Federal Workforce Information Tools</I>, 91 FR 34833, published 9 June 2026 with comments closing 10 August 2026; the question referred to in the text is question E.2 of its O*NET section, which is paraphrased rather than quoted. No employer is named. Every quotation is verbatim. Full coding rules, disagreements and adjudication lines are in the corpus folder.
         </MetaNote>
       </>
     ),
