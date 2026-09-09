@@ -9094,7 +9094,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-09-08",
     readingTime: "22 min read",
     summary:
-      "Sixty-six senior data and AI leadership postings, read against the three anchors of a decision system. Ninety-eight percent name what the person must bring. Thirty-five percent name what the person may decide. Eleven percent name how anyone will know the person's calls were good. And across eight hundred and thirteen items in the candidate-requirements sections of sixty-four documents, not one names a decision the hire may make.",
+      "Sixty-six senior data and AI leadership postings, read against the three anchors of a decision system. Ninety-eight percent name what the person must bring. Thirty-five percent name what the person may decide. Eleven percent name how anyone will know the person's calls were good. And across eight hundred and thirteen items in the candidate-requirements sections of sixty-four documents, not one of those items names a decision the hire may make.",
     cover: "/library/covers/required-for-what.svg",
     arc: "ai-systems",
     body: (
