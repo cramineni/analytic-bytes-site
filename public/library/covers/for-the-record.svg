@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- eyebrow -->
+  <text x="600" y="90" text-anchor="middle" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9">Essay  ·  No. 18</text>
+
+  <!-- motif: a worker's sheet on the left, the institutional record on the right, the crosswalk between -->
+  <g transform="translate(600, 235)">
+    <!-- left: the spreadsheet, for themselves -->
+    <g transform="translate(-230, -60)">
+      <rect x="0" y="0" width="150" height="120" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
+      <g stroke="#0F2A4A" stroke-width="1" opacity="0.7">
+        <line x1="0" y1="30" x2="150" y2="30"/><line x1="0" y1="60" x2="150" y2="60"/><line x1="0" y1="90" x2="150" y2="90"/>
+        <line x1="50" y1="0" x2="50" y2="120"/><line x1="100" y1="0" x2="100" y2="120"/>
+      </g>
+      <!-- one cell edited by hand: the owner's override -->
+      <rect x="102" y="62" width="46" height="26" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
+      <text x="75" y="148" text-anchor="middle" font-size="11" letter-spacing="1.6" fill="#475569">FOR THEMSELVES</text>
+    </g>
+
+    <!-- right: the record, for someone else -->
+    <g transform="translate(80, -60)">
+      <rect x="0" y="0" width="150" height="120" rx="3" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
+      <g stroke="#0F2A4A" stroke-width="1" opacity="0.7">
+        <line x1="18" y1="28" x2="132" y2="28"/><line x1="18" y1="50" x2="132" y2="50"/><line x1="18" y1="72" x2="110" y2="72"/><line x1="18" y1="94" x2="90" y2="94"/>
+      </g>
+      <!-- the arrow out to the state / funder -->
+      <line x1="150" y1="60" x2="205" y2="60" stroke="#0F2A4A" stroke-width="1.5"/>
+      <path d="M205 60 l-9 -5 v10 z" fill="#0F2A4A"/>
+      <text x="75" y="148" text-anchor="middle" font-size="11" letter-spacing="1.6" fill="#475569">FOR THE RECORD</text>
+      <text x="212" y="52" font-size="10" letter-spacing="1" fill="#475569">STATE ·</text>
+      <text x="212" y="66" font-size="10" letter-spacing="1" fill="#475569">FUNDER</text>
+    </g>
+
+    <!-- the crosswalk: teal, both directions, one disc where the rule is confirmed -->
+    <g stroke="#0EA5E9" stroke-width="1.6" fill="none" stroke-dasharray="6 5">
+      <path d="M-78 -12 H78"/>
+      <path d="M78 12 H-78"/>
+    </g>
+    <path d="M78 -12 l-9 -5 v10 z" fill="#0EA5E9"/>
+    <path d="M-78 12 l9 -5 v10 z" fill="#0EA5E9"/>
+    <circle cx="0" cy="0" r="9" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.6"/>
+    <circle cx="0" cy="0" r="3.5" fill="#0EA5E9"/>
+    <text x="0" y="-34" text-anchor="middle" font-size="10" letter-spacing="1.4" fill="#475569">CROSSWALK</text>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="450" text-anchor="middle" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A">For the record.</text>
+
+  <!-- subtitle -->
+  <text x="600" y="495" text-anchor="middle" font-size="18" font-style="italic" fill="#475569">The systems keep the record for someone else. The people keep their spreadsheets.</text>
+
+  <!-- short divider -->
+  <line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+
+  <!-- footer -->
+  <text x="600" y="585" text-anchor="middle" font-size="13" letter-spacing="3" fill="#94A3B8">Analytic Bytes  ·  2026</text>
+</svg>

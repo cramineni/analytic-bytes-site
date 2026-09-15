@@ -1,0 +1,53 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Four jobs, three teams</title>
+<desc>Three navy-outlined columns labeled Research, Operations and Development. Job 1, design the measurement, sits in Research. Job 2, analyse for operations, sits in Operations. Job 3, analyse for the funder, sits in Development. Navy arrows fork from job 1 to both job 2 and job 3. Below the columns, a dashed box labeled Job 4, revise the measurement, marked no team; thin navy lines run down from jobs 2 and 3 into it. A teal dashed return from job 4 back to job 1 is drawn broken at the Research column wall.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<defs>
+  <marker id="navyArrowF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 0 L 10 5 L 0 10 z" fill="#0F2A4A"/>
+  </marker>
+</defs>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+  <text x="600" y="58" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Four jobs, three teams</text>
+
+  <rect x="90" y="110" width="320" height="250" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" rx="4"/>
+  <rect x="440" y="110" width="320" height="250" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" rx="4"/>
+  <rect x="790" y="110" width="320" height="250" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" rx="4"/>
+
+  <text x="250" y="145" font-size="21" letter-spacing="2" fill="#475569" text-anchor="middle">RESEARCH</text>
+  <text x="600" y="145" font-size="21" letter-spacing="2" fill="#475569" text-anchor="middle">OPERATIONS</text>
+  <text x="950" y="145" font-size="21" letter-spacing="2" fill="#475569" text-anchor="middle">DEVELOPMENT</text>
+
+  <rect x="115" y="200" width="270" height="96" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="250" y="238" font-size="22" fill="#0F2A4A" text-anchor="middle">Job 1</text>
+  <text x="250" y="270" font-size="21" fill="#475569" text-anchor="middle">Design the measurement</text>
+
+  <rect x="465" y="200" width="270" height="96" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="600" y="238" font-size="22" fill="#0F2A4A" text-anchor="middle">Job 2</text>
+  <text x="600" y="270" font-size="21" fill="#475569" text-anchor="middle">Analyse for operations</text>
+
+  <rect x="815" y="200" width="270" height="96" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
+  <text x="950" y="238" font-size="22" fill="#0F2A4A" text-anchor="middle">Job 3</text>
+  <text x="950" y="270" font-size="21" fill="#475569" text-anchor="middle">Analyse for the funder</text>
+
+  <!-- fork from job 1: to job 2 (straight) and to job 3 (arc over job 2) -->
+  <line x1="385" y1="248" x2="461" y2="248" stroke="#0F2A4A" stroke-width="1.5" marker-end="url(#navyArrowF)"/>
+  <path d="M 385 232 L 420 232 L 420 175 L 780 175 L 780 232 L 811 232" fill="none" stroke="#0F2A4A" stroke-width="1.5" marker-end="url(#navyArrowF)"/>
+
+  <!-- job 4: nobody -->
+  <rect x="465" y="430" width="270" height="96" fill="none" stroke="#0F2A4A" stroke-width="1.5" stroke-dasharray="6 5" rx="3"/>
+  <text x="600" y="468" font-size="22" fill="#0F2A4A" text-anchor="middle">Job 4</text>
+  <text x="600" y="500" font-size="21" fill="#475569" text-anchor="middle">Revise the measurement</text>
+  <text x="600" y="565" font-size="21" letter-spacing="2" fill="#94A3B8" text-anchor="middle">NO TEAM</text>
+
+  <!-- 2 -> 4 and 3 -> 4 -->
+  <line x1="600" y1="296" x2="600" y2="426" stroke="#0F2A4A" stroke-width="1.2" marker-end="url(#navyArrowF)"/>
+  <path d="M 950 296 L 950 478 L 739 478" fill="none" stroke="#0F2A4A" stroke-width="1.2" marker-end="url(#navyArrowF)"/>
+
+  <!-- return 4 -> 1, broken at the Research wall -->
+  <path d="M 461 478 L 250 478 L 250 372" fill="none" stroke="#0EA5E9" stroke-width="1.6" stroke-dasharray="6 5"/>
+  <line x1="250" y1="340" x2="250" y2="300" stroke="#0EA5E9" stroke-width="1.6" stroke-dasharray="6 5" opacity="0.35"/>
+  <circle cx="250" cy="360" r="6" fill="#0EA5E9"/>
+  <text x="290" y="392" font-size="21" fill="#0EA5E9" text-anchor="start">return breaks here</text>
+</g>
+</svg>

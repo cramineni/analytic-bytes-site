@@ -1,0 +1,34 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>The door and the seat</title>
+<desc>Two horizontal lanes. The upper lane, labelled the door, runs left to right through three navy boxes: years, tools and titles, then screen, then hire. The lower lane, labelled the seat, holds one teal-outlined box reading the question this seat answers first. A dashed teal connector runs between the two lanes and is broken in the middle, with the gap marked unstated.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<text x="600" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle" dominant-baseline="hanging">The door and the seat</text>
+
+<text x="100" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" letter-spacing="1.5" fill="#94A3B8">The door</text>
+
+<rect x="280" y="150" width="250" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5"/>
+<text x="405" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#0F2A4A" text-anchor="middle">Years, tools, titles</text>
+<line x1="530" y1="190" x2="596" y2="190" stroke="#0F2A4A" stroke-width="1.5"/>
+<path d="M596 185 L606 190 L596 195 Z" fill="#0F2A4A"/>
+
+<rect x="610" y="150" width="180" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5"/>
+<text x="700" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#0F2A4A" text-anchor="middle">Screen</text>
+<line x1="790" y1="190" x2="856" y2="190" stroke="#0F2A4A" stroke-width="1.5"/>
+<path d="M856 185 L866 190 L856 195 Z" fill="#0F2A4A"/>
+
+<rect x="870" y="150" width="180" height="80" fill="none" stroke="#0F2A4A" stroke-width="1.5"/>
+<text x="960" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#0F2A4A" text-anchor="middle">Hire</text>
+
+<line x1="520" y1="230" x2="520" y2="312" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="4 5"/>
+<circle cx="520" cy="312" r="4" fill="#0EA5E9"/>
+<circle cx="520" cy="368" r="4" fill="#0EA5E9"/>
+<line x1="520" y1="368" x2="520" y2="430" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="556" y="347" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" letter-spacing="1.5" fill="#0EA5E9">unstated</text>
+
+<text x="100" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" letter-spacing="1.5" fill="#94A3B8">The seat</text>
+
+<rect x="280" y="430" width="560" height="80" fill="none" stroke="#0EA5E9" stroke-width="1.5"/>
+<text x="560" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#0F2A4A" text-anchor="middle">The question this seat answers first</text>
+
+</svg>

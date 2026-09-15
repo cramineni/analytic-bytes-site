@@ -9370,6 +9370,971 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+  // ===================================================================
+  // ESSAY 18 — Three trainings, three questions. (DRAFT)
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "three-trainings",
+    number: "18",
+    title: "Three trainings, three questions.",
+    subtitle:
+      "Why the third question becomes non-optional once an output is used as evidence.",
+    date: "2026-09-13",
+    readingTime: "12 min read",
+    summary:
+      "Forty-two of sixty-five senior data postings name what the person must be and never what the role may decide. This essay asks what that absence does to sorting. Three trainings answer these postings — engineering, business and measurement — and with no decision named, the only thing separating them is which proxies each accumulated.",
+    cover: "/library/covers/three-trainings.svg",
+    arc: "ai-systems",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            In <InternalLink slug="required-for-what">Required for what?</InternalLink> I counted sixty-five senior data and AI leadership postings. Forty-two name what the person must be and never say what the role may decide. Across eight hundred and thirteen items in their requirements sections, not one names a decision the hire may make.
+          </p>
+          <p>
+            This essay asks what that absence does at the other end of the document, where people apply.
+          </p>
+          <p>
+            Three trainings answer these postings: engineering, business, and measurement. With no decision named, there is nothing to compare them against except the attributes each has already accumulated, so they get read as three grades on one scale and the most familiar proxies sort highest.
+          </p>
+          <p>
+            They are not on one scale. Each carries a different answer to the question of what would count as this working. Will the system run? Will the spend return? Does the number mean what the decision assumes it means?
+          </p>
+          <p>
+            That is the thing the missing decision actually hides. It does not only leave the scope of the job unstated. It leaves unstated which standard of correctness the seat is answerable to, and the three trainings are three candidate standards.
+          </p>
+          <p>
+            When a data, AI or reporting output becomes evidence for a decision, the third question stops being optional. This essay says why, and ends with the second line a sponsor adds to the requisition.
+          </p>
+        </Brief>
+
+        <H2>What the absence does to sorting</H2>
+        <P>
+          The requirements section is a claim of necessity. Ten years of data engineering is required in order to do what. Once the second half of that sentence is missing, the items in the list still have to do something, and what they do is sort.
+        </P>
+        <P>
+          Sorting on attributes is not a neutral fallback. It selects for whoever has accumulated the attributes that resemble the last person to hold a similar title somewhere else. One item in that corpus states the position cleanly: <I>experience establishing enterprise governance structures with formal decision rights.</I> The candidate is required to have held decision rights. None are granted here.
+        </P>
+        <P>
+          Kyle Brink argued in <I>MIT Sloan Management Review</I> that organizations declaring their hiring meritocratic have mostly never validated the instruments they use to measure merit. What passes for merit, on his account, is a set of unvalidated proxies: pedigree, tenure, an interview impression (<a href="https://sloanreview.mit.edu/article/the-elusiveness-of-merit-based-hiring/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Brink, <I>MIT Sloan Management Review</I>, August 2026</a>). A degree is a proxy of that kind, asked to carry a construct nobody wrote down.
+        </P>
+        <P>
+          <InternalLink slug="seven-causes-one-bit">Seven causes, one bit</InternalLink> follows what happens to the applicant once that screen runs. <InternalLink slug="who-writes-the-contract">Who writes the contract</InternalLink> asks who inside the organization owns the definition in the first place. The question here sits between them: given that the decision went unnamed, what are the three being compared on, and what would it take to compare them on something else.
+        </P>
+        <P>
+          I want to be careful about what follows from this. It does not follow that the three are equal, or that credentials carry no information. A credential carries a great deal of information about what somebody was trained to do. The failure is in using it to answer a question that was never asked.
+        </P>
+
+        <H2>Will it run, will it return, is it supportable</H2>
+        <P>
+          Here are the three, each at its strongest. They are not exclusive jurisdictions. They are dominant reflexes &mdash; the question each formation makes non-optional, rather than the only question anyone in it ever asks.
+        </P>
+        <P>
+          <B>Engineering training answers whether the system will work.</B> Not whether it works once, on clean inputs, in a demo. Whether it holds under load, under change, under the person who inherits it in two years. An engineer who has run a migration knows things about failure that no amount of strategy reading supplies: which dependencies break silently, what a rollback actually costs on a Friday, why the thing that worked in staging did not survive contact with the production schema. The evidence standard is that it runs, and keeps running.
+        </P>
+        <P>
+          <B>Business training answers whether this is worth continuing.</B> That is one question, not several, and it is narrower than it sounds: given what has been spent and what has come back, does the next increment get funded. This one gets caricatured and the caricature is wrong. An MBA program is training in allocation under uncertainty; the case method is repetition on deciding with incomplete information and a clock. Sequencing and coalition belong to it because an initiative nobody adopts returns nothing, so adoption enters as a condition of the return rather than as a second standard. A general manager who has taken a program through two budget cycles knows how to kill an initiative that is not working, which is a specific skill and a rare one. The evidence standard is that the next increment gets funded on the strength of the last one.
+        </P>
+        <P>
+          <B>Measurement training answers whether a claim is supportable.</B> Given this evidence, what can you assert, and what can you not? That question sounds academic until you notice that it is the only one of the three questions that asks what a number is a claim <I>about</I>. The evidence standard is that the argument survives a reader who is trying to break it.
+        </P>
+        <P>
+          I mean something narrower than a doctorate, and the narrowing is the point. A molecular biologist and a historian are both research-trained, and neither is necessarily trained to ask whether a metric supports a particular consequential use. The tradition that asks it by default is measurement and evaluation: psychometrics, program evaluation, assessment. People arrive at that reflex without the background, and people hold the credential without the reflex.
+        </P>
+        <P>
+          Two features of it are worth separating from any credential, because they are the parts that transfer. The first is that stating the strongest case against your own position, in public, is a graded requirement rather than a virtue. Most professional settings never ask anyone to do it; a stakeholder review does not, because nobody in the room is rewarded for finding the fault. The second is that the reader is someone whose job is to find it. Code review, audit and model-risk validation all put a reader on that side of the table, so the arrangement is not unique. What is distinctive is that the adversarial reading is constitutive rather than occasional; the training treats the claim as unfinished until it has survived one.
+        </P>
+        <P>
+          Neither is unique to a doctorate, and the version of this argument that leads with grit or persistence should be cut. An engineer who carried a migration through eighteen months has those. A general manager who held a turnaround together has those.
+        </P>
+        <P>
+          None of the three is a general-purpose problem-solving ability. Each is a trained response to a recurring kind of problem, and the response transfers to problems of that kind.
+        </P>
+
+        <Figure
+          src="/library/figures/three-trainings-evidence-standards.svg"
+          alt="Three rows. Will it run, evidenced by holding under load, under change, and under whoever inherits it. Will it return, evidenced by the next increment being funded on the strength of the last one. Is it supportable, evidenced by the argument surviving a reader who is trying to break it."
+          caption="Each training carries its own standard for what would count as this working. The first two reveal failure through operation. The third can fail while the system keeps working."
+        />
+
+        <P>
+          So the sorting question is which of the three the seat has to answer first. That is a property of the work, and the sponsor knows it before anyone applies. It goes unwritten because the requisition form does not have a field for it.
+        </P>
+
+        <H2>What each training costs</H2>
+        <P>
+          Every one of the three trainings buys its strength by not training something else. I will take mine first, because it is the one I am least neutral about.
+        </P>
+        <P>
+          <B>The measurement-trained hire can over-warrant before anyone has decided anything.</B> The reflex is to make the construct, the inference and the evidence explicit before the number gets used. Where a measurement carries consequences for a person, that burden is the right one and the training is right to install it. In an operating seat it can turn a decision that needs a bounded provisional answer into one that appears to require publication-grade warrant. A quarter goes into defining something the organization would have accepted in a week, and the definition arrives so careful that nobody uses it. The worse version is treating the deadline as the variable. A warrant can always be strengthened, so there is always a reason not to close, and in a seat where the alternative to a partial answer is no answer that habit does real damage.
+        </P>
+        <P>
+          <B>The engineering failure is that the specification sits outside the test.</B> Testing checks the system against the specification. It does not check the specification against the decision. A pipeline can pass every test it has and still deliver a number that will not carry the weight the executive puts on it. Good engineers do interrogate semantics, observability and downstream use, and the best do it better than most analysts. The point is narrower: the discipline&rsquo;s primary tests can all pass without that question having been answered.
+        </P>
+        <P>
+          <B>The business failure is that the metric arrives as a given.</B> The metric is what the board reads, so it becomes the object. Plenty of strong operators challenge a KPI and challenge it hard. What the training does not supply is a standing obligation to ask whether the measure still supports the reading being taken from it. I have watched programs get run well against a measure that had already stopped meaning what everyone assumed it meant. Nobody in the room was doing anything wrong. The question of whether the measure still held was not anyone&rsquo;s question.
+        </P>
+        <P>
+          Read those three together and a pattern shows up. The failure of the first is slowness. The failure of the other two is a claim that nobody checked. Each training can be right by its own standard and still be wrong for the seat, which is why the standard has to be named before the comparison starts.
+        </P>
+
+        <H2>When the output becomes evidence</H2>
+        <P>
+          Many operational transformations deliver a capability, and you can watch whether the capability works.
+        </P>
+        <P>
+          A supply chain transformation delivers goods arriving on time. A finance transformation delivers a close that runs in three days instead of eleven. If the thing does not work, the organization finds out, because the failure shows up in the world as a shipment that is late or a close that overruns. The feedback is slow and noisy, but it exists.
+        </P>
+        <P>
+          A data, AI or reporting transformation often delivers a capability too. A pipeline that moves data, a platform that stays up, a retrieval layer that answers in time &mdash; those are capabilities, and you can watch them work.
+        </P>
+        <P>
+          The difference arrives at a specific point. When the output becomes evidence for a decision, the transformation stops delivering only a capability and starts delivering a claim. That threshold is where validity enters; a great deal of data and AI work crosses it on the day it ships.
+        </P>
+        <P>
+          You cannot watch whether a claim is true by watching the system run. That is the difficulty once the output becomes evidentiary. The dashboard refreshes on schedule. The pipeline passes its tests. The model returns a score with four decimal places. Every operational signal says the transformation succeeded, and the number can still mean something other than what the decision assumed it meant.
+        </P>
+        <P>
+          I have written that failure up three times from three directions. <InternalLink slug="numbers-dont-agree">The numbers don&rsquo;t agree</InternalLink> works the case where one metric is put to eight different uses and stops supporting most of them. <InternalLink slug="what-is-this-system-measuring">What is this system measuring?</InternalLink> works the gap between the construct named and the construct actually captured. <InternalLink slug="validity-layer-beneath-responsible-ai">Validity is the layer beneath responsible AI</InternalLink> works what happens when the measuring instrument changes underneath a published number and nobody is required to say so.
+        </P>
+        <P>
+          Those are validity failures. The measure works and the inference does not.
+        </P>
+        <P>
+          Validity of interpretation and use is not the central object of either of the other two disciplines, and I mean that as a description rather than a complaint. Engineering has validation traditions of its own, and testing is one of them: a discipline for checking a system against its specification, with the specification arriving as an input. Business has audit, experiment design and the business case, disciplines for checking a return against a forecast, with the metric arriving as an input. In both, the validity of the underlying construct can enter as an assumption rather than as the thing the discipline is built to interrogate.
+        </P>
+        <P>
+          Educational measurement is the field that made the question explicit, and it did so across decades rather than in one paper. Messick established that what gets validated is the interpretation and use of a score, consequences included, rather than the instrument itself (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1995</a>). Kane treats validation as an evaluation of that proposed interpretation and use: make the inferential chain and its assumptions explicit, then ask whether the evidence supports them (<a href="https://onlinelibrary.wiley.com/doi/10.1111/jedm.12000" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 2013</a>, <I>Journal of Educational Measurement</I> 50(1), 1&ndash;73). That is the training, and it turns out to be a training in the failure that data and AI work produces.
+        </P>
+        <P>
+          Neither of them wrote about a requisition. The chain is theirs; reading a job specification as the instrument, and asking which standard of correctness that document leaves unnamed, is the extension I am making here.
+        </P>
+        <P>
+          This is the narrow lane, and I would rather state it narrowly than broadly. Measurement training does not make somebody better at transformation. It makes the inference question a default rather than an initiative, and that is the question this particular kind of transformation turns on.
+        </P>
+        <P>
+          The federal graduation rate is the example I keep coming back to, because nothing about it is broken. It counts students who started full time, first time, at one institution, and finished at that same institution. Part-time entrants are outside the cohort by definition. So are transfer-ins. A student who leaves and finishes her degree somewhere else does not become a graduate of the college she started at, in that rate (<a href="https://nces.ed.gov/ipeds/use-the-data/student-cohorts-and-subgroups" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCES, IPEDS Graduation Rates component</a>). Nationally that cohort covers about forty-seven percent of new undergraduates each fall (<a href="https://www.ihep.org/new-postsecdata-explainer-on-student-outcome-metrics-in-ipeds/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IHEP</a>). At an open-access college serving working students the share is smaller still, and the published rate gets read in the room as how well the college serves the students it has.
+        </P>
+        <P>
+          The arithmetic is right. The definition is public and anyone can look it up, which is the part people find hardest to believe afterwards. What fails is the step from the rate to the sentence said about it, and there is no test that goes red when that step is wrong.
+        </P>
+
+        <H2>The door and the seat are not the same test</H2>
+        <P>
+          A requisition is two documents, and nobody notices they are separate.
+        </P>
+        <P>
+          The requirements section is the door. It selects on attributes already accumulated: years, tools, degrees, headcount managed, titles held somewhere else. The seat is the work. It turns on one of the three questions, and which one it turns on is a property of what is already built and what the organization has already committed to.
+        </P>
+        <P>
+          Those two do not have to agree. Across sixty-five postings the door names attributes and never names a decision, so the document cannot demonstrate that its requirements are job-relevant. It never states the problem against which their relevance could be judged. An organization may well establish that connection somewhere else, in an interview, a case exercise, a hiring manager&rsquo;s head. None of that is in the specification, which is the only part the candidate and the screening tool ever see.
+        </P>
+        <P>
+          The consequence is not that the wrong people apply. The screen works, in the narrow sense that it reliably finds somebody who clears the door. Whether that person can hold the seat is a separate matter, because the two tests were never connected to each other.
+        </P>
+
+        <Figure
+          src="/library/figures/three-trainings-door-and-seat.svg"
+          alt="An upper lane labelled the door runs through three boxes: years, tools and titles, then screen, then hire. A lower lane labelled the seat holds one box reading the question this seat answers first. The dashed connector between the two lanes is broken, and the gap is marked unstated."
+          caption="Both tests are run. Neither one is connected to the other, and the requisition is where that connection would have been written."
+        />
+
+        <P>
+          What makes this expensive is the delay. Someone who clears an attribute screen looks correct for as long as the job is still being learned, and nothing in that stretch distinguishes learning the seat from failing to hold it. By the time the difference is legible, a good deal of a transformation has been spent, and the sponsor reads the result as a hiring mistake.
+        </P>
+        <P>
+          It was a specification mistake, and it was made before anyone applied.
+        </P>
+        <P>
+          It is worth being precise about what is missing here, because the standard is not it. Personnel selection has had one for decades &mdash; the SIOP Principles for the Validation and Use of Personnel Selection Procedures reached a third edition in 1987 and a fifth in 2018, the current one approved by the APA Council of Representatives and aligned to the 2014 <I>Standards for Educational and Psychological Testing</I>. Fred Oswald, who edits <I>Psychological Methods</I>, makes the point that those Principles govern a screening instrument whether or not the instrument happens to be a language model (<a href="https://workingthingsout.com/p/the-genai-arms-race-in-hiring" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Oswald, <I>Working Things Out</I>, August 2026</a>). A method for validating a selection procedure has been written down and published by the relevant professional society, through five editions. The documents in this corpus do not reach it.
+        </P>
+        <P>
+          That is the version of this worth being honest about. A search can fail while selecting a strong candidate. The candidate clears a screen that looks valid, for a construct nobody specified, and the strength is what can mask the mismatch: a capable person may perform around it long enough that the failure gets attributed to execution rather than to the specification.
+        </P>
+
+        <H2>Which question does this seat answer first</H2>
+        <P>
+          <I>Required for what?</I> asks the requisition writer to add one line naming what the role settles without another signature. This is the second line, and it goes in the same place.
+        </P>
+        <P>
+          Of the three &mdash; will the system run, will the spend return, does the number support the decision &mdash; <B>which one does this seat have to answer first?</B> Not which ones matter. Which one is first, in the first year, given what is already in place.
+        </P>
+        <P>
+          If that keeps returning <I>all of them</I>, ask the harder version. Suppose the person you hire is excellent at two of the three and weak at one. <B>Which weakness sinks the transformation anyway?</B> That question has one answer, and the answer is the binding constraint you are hiring against.
+        </P>
+        <P>
+          If the system is not built, the answer is the first question and you should hire an engineer. If the system runs and nobody will fund the next phase, the answer is the second and you should hire the general manager. If the system runs, the money is committed, and executives are already making decisions off numbers whose meaning nobody has argued for, the answer is the third.
+        </P>
+        <P>
+          In that third case the seat needs demonstrated capability to validate an interpretation and its use. Somebody with measurement training may have unusually direct preparation for it. The selection procedure should still test the capability rather than read it off the credential &mdash; an essay that spends three thousand words on unvalidated proxies does not get to finish by recommending one.
+        </P>
+        <P>
+          If the honest answer is that all three come first, the requisition is describing more than one role. That is a real finding and it is better to have it before the search than eleven months into it.
+        </P>
+        <P>
+          This connects to the repair in <InternalLink slug="seven-causes-one-bit">Seven causes, one bit</InternalLink>, where every requirement carries three attributes: what capability, what would count as evidence of it, and when it has to be true. The question above sits one level up from that list. Attributes tell you whether a candidate meets a requirement. The question tells you whether the requirement was the right one to write.
+        </P>
+        <P>
+          Two things this does not do, and I would rather say them than let a reader discover them.
+        </P>
+        <P>
+          It does not tell you who to hire. A sponsor can name the problem correctly and still choose badly, and naming the problem makes that error visible rather than preventing it. That is an improvement and it is not a solution.
+        </P>
+        <P>
+          And it does not close the seam it sits on. The candidate still cannot see the definition being applied to her. Publishing the sentence would change that, and almost nobody will, because a stated construct is a thing you can later be measured against.
+        </P>
+        <P>
+          What it does is smaller and worth having. It converts a comparison between three credentials into a comparison against one stated problem. Three people trained differently can be read against a problem. Against a title, only the accumulated proxies are legible, and none of them was validated for the job it is being asked to do.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="required-for-what"
+            title="Required for what?"
+            gloss="Carries the corpus this piece stands on. That essay counts what the requisition leaves out; this one asks what the omission does at the end where people apply."
+          />
+          <SeeAlsoItem
+            slug="seven-causes-one-bit"
+            title="Seven causes, one bit."
+            gloss="The same requisition from the other side of the screen. That piece follows the applicant after the sort has run; this one stays with the sponsor who wrote the sort."
+          />
+          <SeeAlsoItem
+            slug="numbers-dont-agree"
+            title="The numbers don't agree."
+            gloss="The third question at metric level rather than hiring level. One definition put to eight uses is the failure this essay says no screen can select against."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written September 2026 for the Analytic Bytes Library. Standing practice: no employer, client or vendor is named in this piece.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 19 — Four jobs, one loop. (DRAFT)
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "four-jobs-one-loop",
+    number: "19",
+    title: "Four jobs, one loop.",
+    subtitle:
+      "Why measurement design, operational analysis, the external claim and measurement revision belong in one charter.",
+    date: "2026-09-09",
+    readingTime: "11 min read",
+    summary:
+      "A measurement function has four jobs: design what to collect, analyse so operations can act this month, analyse so the funder gets a claim they can check, and revise the measurement for the next round. Split the four across research, operations and development, and nobody holds the question of what the data licenses you to say.",
+    cover: "/library/covers/four-jobs-one-loop.svg",
+    arc: "measurement",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            <I>Organisations keep adding measurement and dropping the part that turns it into a claim. The fix is one accountable charter for the loop. That is the charter that keeps getting split.</I>
+          </p>
+        </Brief>
+
+        <P>
+          More measurement has a bad reputation right now, and it has earned it. Organisations adopt another survey, another dashboard, another data platform, and the claims they can make at the end do not get stronger. Often they get weaker, because there is more to defend and nobody designed any of it against what would need defending. What got dropped was the reasoning part: how to design a measurement, and how to analyse it so that it serves the people running the programme, the funder reading the report, and the measurement itself next round.
+        </P>
+        <P>
+          I have held that seat under four reporting lines, and each placement broke a different job. In one organisation the role was written to hold all four, then rewritten and moved inside research. Research kept the instrument and lost the month: jobs 1 and 4 survived, and the people running the programme waited a year for a number they needed in a week. In a school network the role sat a level down under instructional technology and became system access. Job 2 survived as dashboards; job 1 went, because what got collected was what the systems already captured, and job 4 went with it. In a behavioral-health agency the role sat under compliance, with grant reporting as the main deliverable. Job 3 survived in its narrowest form, the report the funder required, and the other three went, because the funder had already chosen the measures. In a fourth organisation the role was eliminated and the work folded into a platform build, which is <InternalLink slug="the-absorbed-data-role">the absorption pattern</InternalLink> with engineering as the absorber. The dashboards got built. Nobody designed against a claim, nobody owed a partner a claim they could check, and nobody revised anything.
+        </P>
+        <P>
+          Four placements, four breaks, and in none of them was the loop anyone&rsquo;s job. I argued in <InternalLink slug="where-should-data-sit">Where should data sit?</InternalLink> that where a data function reports decides what it is allowed to become, and that it should report to the integration seat rather than to any single function. The four seats above are four single functions. Each kept the job it understood and let the others go.
+        </P>
+
+        <H2>Four jobs across the measurement cycle</H2>
+        <P>
+          A measurement function has four jobs, and they are easier to see as a loop than as a list. The first feeds two uses side by side, and the fourth feeds the first.
+        </P>
+
+        <NumList>
+          <NumItem n={1}>
+            <B>Design the measurement.</B> Decide what to collect before collecting it, against the decisions and claims the evidence will have to support, limit or rule out. This is where the construct gets named and the instrument gets chosen or built. The design exists so the organisation can know, at the end, what it may act on and what it may say.
+          </NumItem>
+          <NumItem n={2}>
+            <B>Analyse so it serves operations.</B> The people running the programme can act on the result this month. A no-show pattern a clinician can read; a cohort a state team can call.
+          </NumItem>
+          <NumItem n={3}>
+            <B>Analyse so it serves the external party.</B> A funder, a partner, a board gets a claim they can check, with the evidence stated and the strength matched to it.
+          </NumItem>
+          <NumItem n={4}>
+            <B>Revise the measurement.</B> The next round measures better because of what this round showed. Sometimes that is an item that stopped discriminating. More often it is a definition that drifted across sites, a collection protocol, a threshold, or a metric dropped. When the instrument itself is fixed by a funder or a statute, the revision moves to everything around it that decides what the number means.
+          </NumItem>
+        </NumList>
+
+        <P>
+          I use measurement broadly here: the instruments and the metrics, and the evidence design around them (sample, comparison, counterfactual) that decides what the observations can support. Job 4 returns to job 1. That is the loop, and it is what separates a measurement function from a reporting function. A reporting function runs jobs 2 and 3 on whatever arrives. A measurement function decides what arrives, and changes it when it fails.
+        </P>
+        <P>
+          Florence Randari makes the same cut one job earlier: producing evidence and preparing it for use &ldquo;are not the same thing.&rdquo; Her five moves for preparing it are jobs 2 and 3 in working form (<a href="https://www.linkedin.com/pulse/preparing-evidence-use-what-do-when-already-exists-florence-randari-z4vvf/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Randari, LinkedIn, August 2026</a>). Nobody in her list decides what gets collected or revises the measurement. Her premise is evidence that already exists, so that is fair on her terms; on the terms of this note it is the whole subject.
+        </P>
+        <P>
+          Two debts pile up around a broken loop, and they are the two I kept meeting. Data debt builds upstream, where collection outruns design: fields nobody can define, instrument versions nobody can reconcile. Dashboard debt builds downstream, where display outruns interpretation and ownership: the number moves and nobody can say whether to act.
+        </P>
+
+        <H2>A different cause than the one on the table</H2>
+        <P>
+          Rashi Trivedi&rsquo;s <a href="https://www.linkedin.com/pulse/impact-decision-gap-rashi-trivedi-xyexf/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>The Impact Decision Gap</I></a> (LinkedIn, August 2026) is the sharpest recent statement of the problem from the funder side. The symptom is the same as here, so I want to say where this note departs from it. Her case is an evaluation that is technically strong, a report that is credible, and a decision that was almost predetermined before either arrived. Funding committed, targets announced, years of relationships to protect. Sometimes, she writes, &ldquo;we don&rsquo;t have an evidence problem at all. We have an institutional incentive problem.&rdquo;
+        </P>
+        <P>
+          That is one room. In it, good evidence enters and gets overridden. The room this note is about is the other one. The evidence that enters was never built to answer the question being asked, because nobody held job 1 when the collecting started and nobody will hold job 4 when it ends. The report is credible about something adjacent to the decision. No incentive has to be corrupt for that to happen. Max Yurkofsky went looking for the gaming and distortion that Goodhart and Campbell predict, in school improvement teams in two districts, and did not find them. What he found were teachers gravitating to the more measurable parts of their work, with no pressure from leadership behind it (<a href="https://maxyurkofsky.substack.com/p/the-paradox-of-measurement" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Yurkofsky, Substack, August 2026</a>). That is an observation from two districts, not a finding, and it has the shape this note expects: distortion without leadership pressure, which is what you would expect where nobody holds job 1. His observation is consistent with that; it does not demonstrate it. It is a capability problem, and behind it an org-design problem. The four jobs were split from each other, and the question of what the data licenses you to say fell between the pieces. That is a different cut from keeping the measurement function independent of the programmes it measures, and I come back to the difference below.
+        </P>
+        <P>
+          The two causes need different repairs. Hers needs a decision named before the evaluation is commissioned, and she says so. This one needs an owner for the loop: one charter that holds all four jobs, whoever does the work inside each.
+        </P>
+
+        <H2>Construct to consequence, and back</H2>
+        <P>
+          The four jobs are validity reasoning turned into operating work.
+        </P>
+        <P>
+          Messick (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1995</a>) moved validity away from the instrument alone and toward the interpretations and uses made of a score, consequences among them. Kane (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1992</a>) made the chain explicit: a claim depends on the warrants that connect what was observed to what is concluded. Reading that chain at its weakest link is the operator&rsquo;s rule I applied in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, and <InternalLink slug="the-construct-keeps-moving">The construct keeps moving</InternalLink> runs on the same two references. Job 1 is the construct and the observation design. Jobs 2 and 3 are the interpretation and the use; they pull in different directions. Job 2 needs the signal this month, at the grain of a site or a caseload, and can act on something provisional. Job 3 needs stability, comparability and restraint about inference, because the claim will be checked. The same data can license &ldquo;call these twenty-two sites this week&rdquo; and not license &ldquo;the programme improved outcomes.&rdquo; Job 4 closes the loop: what the interpretation, the use and their consequences showed about the measurement, written into the next design.
+        </P>
+        <P>
+          Read that way, splitting the jobs breaks the continuity the chain depends on. Research holds job 1, and its output is a validated scale that operations cannot act on this month. Operations holds job 2 and builds the dashboard on fields research did not design and cannot vouch for. Development holds job 3 and writes the funder report at whatever verb the deadline allows. Job 4 belongs to nobody, so the measurement does not change, and next year the same fields carry the same debt. Yurkofsky&rsquo;s third dynamic is what the missing return looks like from the ground: practical measurement systems built to drive improvement, which the teachers found impractical and rarely used. A system nobody uses sends nothing back to whoever built it, and job 4 never starts. Each team is doing its job well (I have sat in three of them). The chain is still broken, because the chain was never any one team&rsquo;s job.
+        </P>
+
+        <Figure
+          src="/library/figures/four-jobs-one-loop-three-teams.svg"
+          alt="Four jobs, three teams"
+          caption="Each team holds one job and does it well. The return from job 4 to job 1 belongs to no team, so the measurement never changes."
+        />
+
+        <P>
+          <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> shows the cost at one fund. A pathway is capped at the contribution link because there is no counterfactual behind it. The fund buys a better instrument, which improves a link that was already strong, and the claim stays where it was. That is what a broken loop spends money on: the link that is easy to improve rather than the one holding the claim back.
+        </P>
+
+        <H2>Which split breaks it</H2>
+        <P>
+          An objection arrives here from anyone who has built an independent M&amp;E function, and it is a fair one. Measurement is supposed to be split from the programmes it measures. Put the people who count outcomes inside the team whose outcomes they count, and the numbers drift toward what the team needs them to be. So is this note arguing against independence?
+        </P>
+        <P>
+          No, because there are two different axes you can cut on. One cut splits the four jobs from each other: design into research, dashboards into operations, the funder report into development, revision into nobody. That is the split that breaks the loop. The other cut splits the function from the programmes it measures: all four jobs stay in one charter, and that charter reports outside the teams whose numbers it audits. That is the split that protects the loop.
+        </P>
+        <P>
+          One charter does not have to mean one team. Research can own the instrument and operations the dashboard. What cannot be distributed is the question of what the data licenses you to say. One accountable owner has to hold it and be able to send the answer back to job 1. A council can govern the work, the way the council in <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink> governs who may change a definition; it cannot stand in for the person accountable for the answer, and a committee is often how that accountability disappears. What the four seats above had in common is that nobody held it.
+        </P>
+        <P>
+          One posting makes the distinction cleanly, and it is worth quoting because whoever wrote it was trying to fill a seat. A head-of-data-and-M&amp;E role at an Indian education nonprofit, as captured in May 2026, lists four things under one job. Design the data architecture &ldquo;from field input to impact indicators &mdash; definitions, collection protocols, validation logic, and storage.&rdquo; Build dashboards and report packs for the CEO, state teams and donors. Produce impact reports and evidence briefs. Ensure &ldquo;field learning feeds into policy redesign, process improvement and product updates.&rdquo; That is jobs 1, 2 and 3 under one head, and the learning that job 4 runs on. What the posting does not spell out is the last step, revising the measurement itself; its fourth item feeds learning into the programme, not back into the indicators. The role reports to the founder and chief executive, which is the integration seat. The posting says three times that the function must be independent of the programme teams it measures, and lists &ldquo;sit under state programs whose performance it must assess&rdquo; under what the role does not do. Its six-month success criteria include &ldquo;at least two key program design changes in direct response to M&amp;E evidence,&rdquo; which is the learning half of the loop written as a hiring metric.
+        </P>
+        <P>
+          That is one document, and it stops one step short of the full loop. I have not found a second that separates the axes this cleanly. The distinction holds on its own logic. What the posting shows is that at least one organisation wrote most of it down.
+        </P>
+
+        <H2>Job 2 already has a name</H2>
+        <P>
+          The for-profit world industrialised the middle of this loop and called it business intelligence: operational data turned into something a manager can act on this week, at the level they manage. Job 2 is that discipline in a mission-driven organisation. Businesses fight over constructs too (churn, engagement and quality are all contested). The difference is the distance between what an impact organisation can observe and the social outcome it has to make claims about. Add the evidence regimes, funder and statutory, that those claims have to survive. BI industrialised much of the operational middle. It did not solve the measurement-and-claim loop around it. In <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink> I described the leader looking for institutional intelligence (a 360 view for the CEO, a number a district officer can act on this week). The integration ran, and the institution still could not make the decision. The gap there was governance: who reads the number, who can change its definition, who has to be told. This note is the other half. Governance decides who may act on a number. The four jobs decide whether the number was ever built to be acted on.
+        </P>
+
+        <H2>Vehicles carry the middle</H2>
+        <P>
+          Data infrastructure and AI tools make production inside the loop cheap, most of all through its middle. They do not make ownership of the loop cheap.
+        </P>
+        <P>
+          A warehouse, a semantic layer and a dashboard tool make job 2&rsquo;s output cheap. A reporting pipeline with a model drafting the narrative does the same for job 3. Matching the strength of a claim to its evidence is not made cheaper by any of that; it is made easier to skip. Bridgespan&rsquo;s practitioner guide to nonprofit MEL, written from work in Africa, Asia and the United States, grants that technology can cut the burden of collection. The same sentence calls collecting more and more data &ldquo;a temptation generally to be avoided&rdquo; (<a href="https://www.bridgespan.org/insights/nonprofit-organizational-effectiveness/a-practical-guide-to-nonprofit-measurement-evaluation-and-learning" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Searle et al., The Bridgespan Group, 2025</a>). Its test for a proposed metric puts a decision question beside the burden question: what decision can&rsquo;t we make because we are missing this information today? That is job 1 as a screen, written before the drafting models made the middle cheaper still.
+        </P>
+        <P>
+          This note started after watching what happens next. The organisation adopts more measurement because collecting and displaying it costs almost nothing now, and the claims do not get stronger, because nothing in the stack owns the loop. A model can propose what to collect, flag an item that stopped discriminating, and draft a replacement; that part is not scarce. What no tool holds is the decision that follows. Does the revised measure still represent the construct? Did the change break the trend line? Does the evidence now license the claim the funder is about to read? Those decisions sit at jobs 1, 3 and 4, and none of them belongs to the stack. They need an owner, and the cheaper production gets, the easier it is to run an organisation that never names one.
+        </P>
+        <P>
+          The vehicles do their job. They carry jobs 2 and 3 faster than any team could. They also make a broken loop look like a working one, because the dashboards refresh nightly and the reports go out on time. <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink> is about who ends up holding the plumbing when nobody is hired for it. The four jobs sit one step further along. Even a funded plumbing role, the bucket-3 role that note argues for, does not hold job 1 or job 4. Curation is not design. Governance is not revision. The charter that holds the loop is a different charter, and it is the one that keeps getting written and then split.
+        </P>
+
+        <H2>What to do with this</H2>
+        <P>
+          Two readers can use this directly.
+        </P>
+        <P>
+          <B>If you write the requisition for a measurement, M&amp;E or data role</B>, list the four jobs and check which ones the posting holds. A posting that holds jobs 2 and 3 is hiring a reporting function, whatever the title says. If jobs 1 and 4 are held elsewhere, name where, and name who carries the question between them. If nobody does, the posting is the place to fix that, before the hire.
+        </P>
+        <P>
+          <B>If you fund or govern an organisation</B>, ask four questions of its measurement, in this order. Who decided what to collect, and against what question? Who can act on the result this month? What claim can we check, and on what evidence? What changed in the measurement since last round, and who changed it? An organisation that answers the first from research, the second from operations, the third from development, and the fourth with silence has split the loop. Its dashboards may still be very good.
+        </P>
+        <P>
+          The independence question stays separate. Ask it second. A function can hold all four jobs and still report outside the teams it measures; that is the arrangement the posting above describes, and it is the one I would write.
+        </P>
+        <P>
+          I have watched the charter that holds all four be written, and then split four different ways. Each split was reasonable on its own terms. The loop was the thing nobody wrote down.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="where-should-data-sit"
+            title="Where should data sit?"
+            gloss="The placement principle; this note shows what each single-function placement does to the four jobs."
+          />
+          <SeeAlsoItem
+            slug="the-valid-dollar"
+            title="The valid dollar."
+            gloss="The loop applied to one fund's evaluation spend: money went to the link that was not holding the claim back."
+          />
+          <SeeAlsoItem
+            slug="the-absorbed-data-role"
+            title="The absorbed data role."
+            gloss="Who holds the plumbing when nobody is hired for it; this note is about the two jobs that sit outside even a funded plumbing role."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems."
+            gloss="The governance half of institutional intelligence; this note is the measurement half."
+          />
+        </SeeAlso>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 20 — The checkpoint runs one way. (DRAFT)
+  // ===================================================================
+  {
+    kind: "field-note",
+    slug: "the-checkpoint-runs-one-way",
+    number: "20",
+    title: "The checkpoint runs one way.",
+    subtitle:
+      "Verification is becoming a condition of AI risk claims and still optional for benefit claims.",
+    date: "2026-09-14",
+    readingTime: "8 min read",
+    summary:
+      "We Must Pace the Frontier proposes the architecture of an acceptance test for risk: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge, and the right to publish. The benefits the essay opens with have evaluators and methods but no equivalent default gate, and pacing the frontier cannot supply one, because it cannot make a two-year outcome arrive in six months.",
+    cover: "/library/covers/the-checkpoint-runs-one-way.svg",
+    arc: "measurement",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            <I>AB Field Note</I>
+          </p>
+        </Brief>
+
+        <P>
+          In August I read <InternalLink slug="the-floor-is-the-frontier">Machines of Loving Grace</InternalLink> as a specification with the acceptance criteria left out. Dario Amodei has now published something closer to them. <a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">We Must Pace the Frontier</a>, his September essay, argues that capability development should slow so that safety work can keep up, and it describes how anyone would check that it had. Not the finished test; the architecture of one. A trigger, an evidence requirement, an independent verifier with access to the production process, and the standing to say in public what the verifier found. All of it is written for the other half of the specification.
+        </P>
+        <P>
+          The rest of this note is what the architecture looks like, why it is the right shape, and what it means that the floor still has none.
+        </P>
+
+        <H2>What he wrote down</H2>
+        <P>
+          The essay proposes three steps. The first is a unilateral Anthropic commitment: a team of embedded third-party evaluators with &ldquo;ongoing, employee-like access,&rdquo; whose job is &ldquo;to verify adherence to safety practices and commitments, report incidents, and help assess the alignment of not just completed AI models but training pipelines and processes&rdquo; (<a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Amodei, September 2026</a>). The access is spelled out: desks, badges, company laptops, permissions mostly comparable to those of internal risk teams. The contract gives reviewers &ldquo;the right to publish key findings about risk levels, incidents, practices, and the access they received or didn&rsquo;t receive.&rdquo; Anthropic keeps a narrow redaction right and gives up the right to redact a finding for being unfavorable.
+        </P>
+        <P>
+          On 12 September, with the essay newly published, Sam Altman posted that he agreed with pacing and that OpenAI would take embedded evaluators from organizations like METR as well (<a href="https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">TechCrunch, 12 September 2026</a>). What he committed to in that post was the access. Publication rights and redaction terms were not part of it, and &ldquo;more to share soon&rdquo; is where the detail sits. Two labs are not a norm. But the same governance form crossed from one frontier lab to another within days, which makes it more than one CEO&rsquo;s proposal. It is a candidate industry practice.
+        </P>
+        <P>
+          The second step is where the checkpoint lives. He describes &ldquo;a series of &lsquo;checkpoints&rsquo;: if models have capability X, then they need to be accompanied by certifications of alignment properties Y and Z.&rdquo; His worked example: X is a model able to defeat most common sandboxing methods; Y is whatever makes it very unlikely the model has a propensity to break out and take over a large number of computers. He calls it one possible scheme, and the thresholds and decision rules are not in the essay. A measurement person should want them and should not pretend they are there.
+        </P>
+        <P>
+          What is there is the architecture, and read as architecture it is the right shape. A trigger condition, stated in observable terms. An evidence requirement that must be met before the system moves. A third party with access to the pipeline, not just the finished model, and the standing to publish. He even names the failure the test has to survive: &ldquo;More intelligent models are more capable of deceiving tests, and thus may appear aligned while having serious problems that go undetected.&rdquo;
+        </P>
+        <P>
+          This is good design. Many of the people who worry about AI risk have asked for years for something checkable, and this is the outline of something checkable. My argument is about direction, and I will come to it.
+        </P>
+
+        <H2>The same sentence, read from the other side</H2>
+        <P>
+          <I>May appear aligned while having serious problems that go undetected.</I> Swap one word and the sentence still holds. May appear beneficial while having serious problems that go undetected. A system that reports the same number every quarter with superhuman consistency can still be <InternalLink slug="what-is-this-system-measuring">scoring the wrong thing</InternalLink>, because <InternalLink slug="validity-layer-beneath-responsible-ai">consistency is not validity</InternalLink>. Amodei has written that principle into his plan for the harm side. He has not written it for the benefit side, and the benefit side is where he opens.
+        </P>
+        <P>
+          The first paragraph of the essay restates the promise: cure most major diseases in five to ten years, accelerate growth, &ldquo;usher in a renaissance of democracy and freedom.&rdquo; These are claims about outcomes for people. The essay then builds a gate that covers none of them. The certifications are of alignment properties; the evaluators verify safety practices; the global agreements he ranks by difficulty are about weapons, pre-release risk testing, speed limits on self-improvement, and a pause he calls unlikely. Nowhere in the plan is there a condition of the form: if the deployment claims outcome X for population P, it must carry evidence Y and Z before the claim is made.
+        </P>
+        <P>
+          Safety is the essay&rsquo;s subject, and a safety essay is allowed to leave benefit alone. What the essay shows, by doing one half so well, is how little the other half has. Even at the level of architecture, the risk side has begun designing a gate. The benefit side has a sentence in paragraph one.
+        </P>
+        <P>
+          The gap matters most at the floor. The people a floor-raising deployment is meant to reach are often the people for whom aggregate performance says the least, so a gate built on the average can pass while the floor does not move. Michael Podgortsev&rsquo;s account of enterprise AI failure puts the mechanism in one line: test sets are drawn from the well-represented part of the distribution, so &ldquo;the populations where the model is least reliable often have the least targeted evaluation&rdquo; (<a href="https://www.cdomagazine.tech/opinion-analysis/ai-strategys-most-expensive-assumption-the-average-customer" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Podgortsev, CDO Magazine, July 2026</a>). His case is an underwriting tool. The dashboards were green for a year (accuracy, satisfaction, throughput, all on target) while one regional team, serving self-employed and multi-income applicants, kept escalating cases by hand.
+        </P>
+
+        <H2>Pacing cannot shorten the wait</H2>
+        <P>
+          The field note this one follows drew two loops. The capability loop turns fast; the evaluation loop that would tell you whether the capability helped anyone turns slowly, because you cannot observe a two-year outcome in six months. Pacing the frontier is a proposal to slow the first loop. It is worth asking what that buys the second.
+        </P>
+        <P>
+          For the harm loop, it buys a great deal. Alignment evaluation is gated on capability: a more capable model is harder to test, so slowing capability gives the test time to catch up. Amodei says this directly, and it is the strongest part of his case. An extra year or two before models reach critical capability is an extra year or two of interpretability and evaluation work against a target that holds still.
+        </P>
+        <P>
+          For the benefit loop, it buys something smaller, and it is worth being exact about what. A slower frontier means fewer model versions mid-study, a treatment that stays the same treatment across the observation window, and some calendar room for the people running the evaluation. Those are real. What pacing cannot do is compress the outcome. Whether a child reads at grade level two years after a tutoring deployment takes two years to observe, whichever model did the tutoring and however slowly the next one arrives. Pacing can hold the intervention still. It cannot make a two-year outcome arrive in six months. It does not name the construct, and it does not reach the people the deployment was meant to reach.
+        </P>
+        <P>
+          So the two loops respond to the same intervention differently, and that is a reason to take pacing seriously on its own terms. It is also the reason pacing cannot stand in for the missing gate. Slowing the capability loop does not stop anyone scaling deployments whose claimed benefits we still cannot see.
+        </P>
+
+        <H2>The form should travel</H2>
+        <P>
+          The fair objection is that this is a category error. Amodei is writing about a frontier lab, a model, and catastrophic risk. I have moved to a funder, a deployed program, and a child&rsquo;s reading score. Of course Anthropic does not certify whether a district raised third-grade proficiency; that is the district&rsquo;s job, or the vendor&rsquo;s.
+        </P>
+        <P>
+          I accept that. My proposal is smaller. The actors change downstream. The governance requirement should not. Whoever makes the outcome claim inherits the burden of saying what would make the claim true and who gets to inspect the evidence. That is the kind of burden Amodei has accepted for risk claims, and the OpenAI response shows the form can travel from one institution to another. The question is why it should stop at the line between a model&rsquo;s risk and a person&rsquo;s benefit.
+        </P>
+        <P>
+          The essay itself does not stop there. It makes the benefit claim in its first paragraph and again in its last: &ldquo;the benefits will only be achieved if we build the technology in the right way.&rdquo; That sentence gates benefit on safety. It does not check benefit. A deployment can clear every alignment certification he describes and still raise nobody&rsquo;s floor, and nothing in the plan would notice.
+        </P>
+
+        <H2>Who holds the seat</H2>
+        <P>
+          The part of the essay I keep returning to is the desk. Embedded evaluators get a desk, a badge, a laptop, and roughly the same permissions as the internal team. That is an unusual thing for a company to offer, and he says so. It is also a precise description of what evaluating an outcome claim requires. Access to the pipeline behind the number. The standing to ask the people who ran it what they did. The right to say afterward what was found.
+        </P>
+        <P>
+          I have sat in the access half of that seat, for a benefit claim rather than a risk claim. I ran data for a K-8 charter network in the Bronx, and the question was whether we were reaching the children who needed us. I was inside the organisation, not an independent evaluator with the right to publish; but I had the desk, and I could see the pipeline. What I did not have was a pipeline that could answer the question. Elementary grades lived in one system and middle school in another. Persistence had been recalculated eight or more times that year, off roughly fifty files, each version correct under its own definition. The seat existed because someone had hired for it. The acceptance criteria did not exist, so the seat had nothing to check against, and I could not get there. Access on its own did not settle the claim.
+        </P>
+        <P>
+          That is the state of the benefit side now. The harm side is getting the seat by commitment, in writing, at two labs, as a condition of proceeding. The benefit side has seats: impact evaluators, trialists, the evaluation a funder requires, a measurement person a school network happened to hire. What it does not have is the seat as a condition of making the claim.
+        </P>
+        <P>
+          If you fund or run a deployment that claims to raise a floor, take Amodei&rsquo;s architecture and write it in the other direction. The claim carries a gate of its own, and the gate has four parts. <B>Outcome:</B> the construct, named before the build, with the size of change that would count as the floor rising, declared before anyone sees a result. <B>Population:</B> who the deployment was meant to reach, and a count of who it did reach, so the average cannot stand in for the tail. <B>Evidence:</B> the comparison the claim is being made against (what would have happened without the deployment, which is the <InternalLink slug="the-valid-dollar">additionality</InternalLink> question) and the observation window, with the date it closes, so a six-month number is not reported as a two-year outcome. <B>Evaluator:</B> who outside the delivery team sees the pipeline, and whether they can publish what they find.
+        </P>
+
+        <Figure
+          src="/library/figures/the-checkpoint-runs-one-way-both-directions.svg"
+          alt="Two rows of four gate boxes. The top row, in solid navy, is the risk claim as Amodei describes it: a model with capability X passes through certification of alignment Y and Z, an embedded evaluator, access to the pipeline, and the right to publish, and then the model moves. The bottom row, in dashed teal, is the benefit claim as this note proposes it: the floor rose passes through outcome, population, evidence, and evaluator, and comes out with the verb it earned. Dashed means not in place."
+          caption="Risk claims now pass through a gate before the model moves. The same four positions, written for a benefit claim, are what this note proposes; what comes out decides the verb."
+        />
+
+        <P>
+          The gate makes the claim evaluable. The evidence decides which verb it has earned. A deployment that specifies all four has earned the right to have its benefit claim evaluated; it earns <I>beneficial</I> only when the result clears the declared threshold, at the level of attribution the design can support, which is the difference between <I>produced</I> and <I>supported</I>. A deployment that specifies none of them is <I>deployed</I>, and should be reported as that. This is a rule for a funder writing an AI-for-good grant, or a program lead about to put &ldquo;impact&rdquo; on a slide. It can be adopted wrongly, which is how you know it is specific enough to adopt.
+        </P>
+        <P>
+          Amodei closes by saying the measures he proposes will not be easy, and that &ldquo;we owe it to humanity to try.&rdquo; He is right, and he has begun building one side of the test into an institution. The other side has evaluators and whole disciplines. What it still lacks is the same default obligation: make the claim, inherit the test. I do not expect a frontier lab to write that one, because the floor is not where a lab&rsquo;s risk sits. It is where mine does.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-floor-is-the-frontier"
+            title="The floor is the frontier."
+            gloss="The note this one continues: two loops, and why beneficial is a claim about an outcome rather than a capability."
+          />
+          <SeeAlsoItem
+            slug="validity-layer-beneath-responsible-ai"
+            title="The validity layer beneath responsible AI."
+            gloss="Why a system that is consistent is not therefore valid, which is the same failure Amodei names for alignment tests."
+          />
+          <SeeAlsoItem
+            slug="the-valid-dollar"
+            title="The valid dollar."
+            gloss="What evidence lets a claim say produced rather than supported, the comparison the benefit gate has to carry."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written September 2026 for the Analytic Bytes Library. This is a measurement read of a published essay, not a position on AI policy. Claims about what We Must Pace the Frontier argues were checked against the essay itself, snapshot taken 14 September 2026. The OpenAI response is cited from press coverage; the post itself was not loaded. Claims about evaluation practice come from the AB measurement arc linked above.
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 21 — The number between evaluations. (DRAFT)
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "the-number-between-evaluations",
+    number: "21",
+    title: "The number between evaluations.",
+    subtitle:
+      "What a dashboard number is allowed to say about an outcome, and for how long.",
+    date: "2026-09-14",
+    readingTime: "14 min read",
+    summary:
+      "The evaluation report arrives after the cohort has passed. The dashboard arrives after the event and carries no warrant. Between the two there is nothing an organisation can act on and defend. A validated relationship between an early signal and a later outcome should be treated as infrastructure: the semantic layer carries the claim the metric is licensed to support, the evidence and date behind it, and the condition under which it must be re-established.",
+    cover: "/library/covers/the-number-between-evaluations.svg",
+    arc: "measurement",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            <I>AB Library Essay</I>
+          </p>
+        </Brief>
+
+        <P>
+          Two organisations, one shape. At a national mental health nonprofit the role I held was written as data strategy and impact analytics, reporting to the chief design and impact officer. After it was eliminated, the same responsibilities were advertised again under research and evaluation. Eighteen of the twenty-three statements survived. What changed was the verb ([JD comparison, 19 Aug 2026 &mdash; author record; prose candidates not yet gated]). At a child-welfare agency I am advising this month, the reports and dashboards used across programs are relied on without a governed way to verify them, and the impact report the agency publishes counts what was delivered rather than what moved. [GW &mdash; pattern only; confirm]
+        </P>
+        <P>
+          Both organisations have an evaluation function. Both have a reporting function. Neither can act this quarter on a number it could also defend. That is the gap this essay is about, and I want to be careful about what it is not. It is not the gap Rashi Trivedi describes in <a href="https://www.linkedin.com/pulse/impact-decision-gap-rashi-trivedi-xyexf/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>The Impact Decision Gap</I></a>, where good evidence arrives and the decision was already made ([cite &mdash; Trivedi, Purpose Ledger, Aug 2026]). It is not the loop-ownership gap in <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink>. It is a gap in time. The evidence that would answer the question exists at two moments, and neither moment is the one the decision is made in.
+        </P>
+
+        <H2>Both arrive after the fact</H2>
+        <P>
+          An impact evaluation arrives after the cohort. That is what the method is for. A randomised trial or a matched comparison answers whether the program changed the outcome for the people who went through it, and the outcome has to have happened for the answer to exist. For a workforce program that means a year of employment data. For a housing program it means twelve months without a shelter re-entry. The report is credible about people the organisation has already finished serving.
+        </P>
+        <P>
+          A dashboard arrives after the event. Enrolment yesterday, attendance this week, a no-show pattern a clinician can read this month. It is current, and in most systems the warrant for reading it is nowhere in the layer that carries the number. A dashboard can hold a validated risk score; what the usual architecture does not hold is where that validation came from, for whom it holds, and what it permits. Nothing in the layer says what the number is allowed to be read as. Whether attendance in month two tells you anything about employment in month fourteen is a claim, and the dashboard does not make it. So the organisation gets one number it can act on and cannot defend, and one number it can defend and cannot act on.
+        </P>
+        <P>
+          The evaluation field knows this. J-PAL&rsquo;s playbook for AI-enabled programs says that engagement, monitoring and technical-performance data &ldquo;alone cannot show whether an intervention improves real-world outcomes&rdquo; ([cite &mdash; J-PAL AI Evidence Playbook, Feb 2026, living doc]). That sentence is honest, and it is the whole problem stated from one side. The field split monitoring from impact evaluation on purpose, and the split is reasonable. What happens next is organisational rather than intellectual. In practice the evaluation gets a design, a counterfactual, a pre-registered outcome and a warrant for its claim. Monitoring gets governed as a data-quality problem (accuracy, completeness, timeliness). Those are properties of the data. Validity is a property of the inference, and in the organisations I have worked in it became explicit only on the evaluation side, never on the half of the system that runs every day.
+        </P>
+        <P>
+          The funder side has noticed the gap in time from its own end. Lucy Brainard, writing about how foundations evaluate the capacity building they pay for, proposes three horizons: satisfaction at the end of the engagement, behaviour change at six to twelve months, and performance at a year or more. The middle horizon, she says, is the one funders routinely skip, and it is the one where the learning is ([cite &mdash; Brainard, SSIR, Aug 2026]). That middle horizon is the number between evaluations, seen from the grant side.
+        </P>
+
+        <H2>One argument, two halves</H2>
+        <P>
+          Kane&rsquo;s argument-based approach gives the general principle ([cite &mdash; Kane 2013, JEM; Kane 1992 atoms verified in essay 13]). Validity attaches to an interpretation and a use rather than to an instrument, and it is established by a chain of inferences: from the observation to a score, from the score to the wider domain, from the domain to the construct, from the construct to the decision. Each link needs a warrant. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> read that chain at its weakest link for one fund&rsquo;s evaluation spend, and <InternalLink slug="the-construct-keeps-moving">The construct keeps moving</InternalLink> followed what happens to the chain when the construct itself shifts under a measurement architecture that does not.
+        </P>
+        <P>
+          Translate the chain onto a data stack and the pipeline steps can be read through the same logic. The collection protocol and the validation rule have the structure of a scoring claim. The dashboard rollup by site or cohort has the structure of a generalisation claim; it asserts that this aggregate speaks for those people. The semantic-layer definition, where an aggregate of observed fields is read as &ldquo;housing stability,&rdquo; has the structure of an extrapolation, from what was counted to the construct the organisation cares about. The funder decision the dashboard drives is the use. Every one of those steps changes what the number means, and in most stacks I have seen none of them is treated as a claim. I am borrowing Kane&rsquo;s scaffolding. His inferences do not describe a data pipeline one for one, and they do not by themselves say how an early signal is tied to a later outcome. That empirical problem has its own traditions, and they split along the same line as the two claims below. Prognostic modelling and leading-indicator work address whether an early signal predicts a later outcome well enough to act on. Surrogate-endpoint validation addresses the much stronger question of whether movement in an intermediate measure can stand in for movement in the final one. Kane says a claim needs a warrant, and those traditions say how one is built. None of them puts the warrant where the organisation reads the number.
+        </P>
+
+        <Figure
+          src="/library/figures/the-number-between-evaluations-chain-across-the-stack.svg"
+          alt="The chain across the stack"
+          caption="One link in the chain runs from an early signal to a later outcome. Evidence can establish it, the infrastructure carries it, and the three fields this essay proposes sit on it."
+        />
+
+        <P>
+          The link the dashboard cannot warrant on its own is that one: from a proximal signal the organisation can observe every week to the distal outcome it exists to produce. Two different claims can sit on it, and they need different evidence. The first is operational: month-two attendance predicts month-fourteen employment well enough, in this program and this population, to flag risk and direct attention. The second is an impact claim: movement in attendance can be read as movement in employment, or as the program producing it. A prognostic signal licenses the first without licensing the second. Attendance may predict employment because it travels with transport, health, family support or prior work history, and raising attendance may move none of those. A dashboard can be worth a great deal with only the first claim, so long as nobody reads it as the second.
+        </P>
+        <P>
+          Whether evidence establishes either claim depends on what the study measured. A trial that shows the program raised employment has not tested attendance at all unless it collected attendance and asked the question. Most were not designed to. So the honest statement is narrower than the one I would like to make: evaluation can establish the link when the study is designed to test it, and the design decision is made before the data system that will carry the signal exists. That is the division of labour the two halves were never given. The study establishes what a continuous signal may be read as, and which of the two claims it earns. The infrastructure carries the signal, between studies, at the grain a program director or a state lead acts on. The number then carries a dated warrant, and the date matters, because the conditions that supported the relationship change. Populations shift, eligibility rules change, a trusted staff member leaves, the program itself is redesigned in response to what the last study showed. Each of those can move the link. The evidence does not become false on a date; what lapses is the permission to rely on it without checking. Somebody has to decide when that check is due. That decision is governance work, and it sits in neither the evaluation team nor the data team as either is chartered today.
+        </P>
+        <P>
+          There is a known objection here, and it strengthens the case. Acting on a signal changes the process that produced the relationship; that is Goodhart&rsquo;s and Campbell&rsquo;s warning, and it applies to a month-two number a program manager is now steering by. The relationship may survive the intervention or break under it. Either way the original warrant can no longer be assumed, and the signal becoming a target is itself one of the conditions that puts a recheck due.
+        </P>
+
+        <H2>The requisition got there first</H2>
+        <P>
+          Organisations are already hiring for the join, even where nobody has written down what the join is. Eight postings since May, seven of them captured this week, describe the seat. Four are worth reading closely.
+        </P>
+        <P>
+          A pan-African education and workforce group is hiring a head of impact to lead &ldquo;the evolution of our Impact function from a reporting and monitoring function into a world-class evidence, learning, validation, and impact intelligence capability.&rdquo; The posting wants randomised and quasi-experimental methods, tracer studies and longitudinal research from the same person it wants to strengthen &ldquo;data pipelines and verification systems&rdquo; across surveys, platform data, the CRM and employer feedback. It asks for an impact team that is &ldquo;proactive, responsive, and embedded across the organization rather than functioning as a retrospective reporting unit.&rdquo; And it writes the dated-warrant idea straight into a dashboard requirement: data products that can &ldquo;distinguish between actuals, estimates, projections, and externally validated outcomes&rdquo; ([JD, ALG Head of Impact, captured 14 Sep 2026 &mdash; URL owed]). Four grades of warrant on one screen, written by a hiring manager.
+        </P>
+        <P>
+          A New York social-services nonprofit with a staff of nine hundred is hiring a vice president of program evaluation and quality assurance who will set &ldquo;the vision of business intelligence and performance analytics,&rdquo; share responsibility for &ldquo;the organization&rsquo;s data ecosystem and analytics architecture&rdquo; with the chief information officer, and run quality assurance, program evaluation and incident management. The seat reports to the vice president of IT ([JD, Project Renewal VP PEQA, posted 18 Aug 2026 &mdash; URL owed]). The placement, under IT, is the question <InternalLink slug="where-should-data-sit">Where should data sit?</InternalLink> was written about. And the incident half is fully built out in the text (reporting tools, workflows, dashboards, regulatory standards, trend analysis) while the outcome half is &ldquo;evaluation findings&rdquo; to be translated. The risk claim has continuous machinery; the benefit claim has a report. That is the asymmetry <InternalLink slug="the-checkpoint-runs-one-way">The checkpoint runs one way</InternalLink> describes at the AI frontier, sitting inside one department of a homeless-services agency.
+        </P>
+        <P>
+          A funder this library has already written about, which is why it is the one I name, is hiring for the calibration itself. GitLab Foundation, co-author of the <a href="https://www.gitlabfoundation.org/our-journey/dollars-in-pockets" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Dollars in Pockets</I></a> metric that <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> responded to, wants an impact modeling analyst to build the ROI models behind its target of more than $100 in lifetime earnings per dollar spent, with &ldquo;appropriate counterfactual assumptions,&rdquo; and in the same seat to manage &ldquo;the Foundation&rsquo;s core datasets of grantee impact data&rdquo; ([JD, GitLab Foundation Impact Modeling Analyst, captured 14 Sep 2026 &mdash; URL owed]). One duty appears in no other posting in the set: &ldquo;Compare modeled expectations with realized investment outcomes and use findings to strengthen future models, assumptions, and investment decisions.&rdquo; That is the recheck, written as a job. What the posting does not say is when. Assumptions are refined &ldquo;based on investment outcomes, new data, research findings, and organizational learning,&rdquo; a list of triggers with no schedule and no threshold.
+        </P>
+        <P>
+          The fourth comes closest to the method. A senior program officer for data and AI infrastructure at a large foundation is to identify and broker the dependencies between two portfolios, among them &ldquo;the need for evaluation approaches to be designed in concert with the data systems that will collect outcomes&rdquo; ([JD, Gates Foundation SPO Data &amp; AI Infrastructure Integration, captured 14 Sep 2026 &mdash; URL owed]). Read after the previous section, that clause is the hinge of this essay. If the study is to establish the link the dashboard will carry, the study has to be designed with the dashboard&rsquo;s signal in it. The posting names that as a coordination problem between two portfolios, to be brokered. It is written as nobody&rsquo;s method.
+        </P>
+        <P>
+          The other four postings put evaluation, dashboards, governance and data infrastructure into one seat and disagree about where it reports: a New York anti-poverty organisation places it under the chief program officer, a large family foundation under the head of finance and operations, and the same foundation&rsquo;s principal officer for measurement is to maintain a &ldquo;ladder of outcomes&rdquo; with leading indicators on it, without saying what licenses an indicator to stand on the ladder ([JDs, VOA-GNY, Dell Foundation, Gates PO MLE, RightWalk &mdash; snapshots in source pack]). Three reporting lines for one seat. Where a function reports decides what it is allowed to become, and nobody has decided yet what this one is.
+        </P>
+        <P>
+          Eight postings I went looking for cannot show a trend. What they show is the same shape appearing across eight organisations and three reporting lines, before its operating method has a name. I have not found that method in the field. The evaluation literature has the warrant and no infrastructure practice. Semantic-layer practice is good at recording what a metric means and rarely records what claim the metric is licensed to support. Whoever takes these seats will be writing the join themselves. The organisation that eliminated the seat I held moved the role under research, where the evaluation half is comfortable and the infrastructure half is somebody else&rsquo;s ([JD comparison, 19 Aug 2026]). The postings above move the other way. Both directions exist in the same year, and neither has the method.
+        </P>
+
+        <H2>Why the constrained organisation needs it most</H2>
+        <P>
+          The objection is that this is a rich organisation&rsquo;s problem. A foundation with a data science team can afford a ladder of outcomes and a recheck schedule. A homeless-services agency with nine hundred staff and a $140 million budget cannot, and should keep its evaluation function and its reporting function and get on with the work.
+        </P>
+        <P>
+          I think the opposite, and the reason is time. Every participant passes through once, whoever funds the program. What money buys is slack: a next cohort, a budget to redesign for it, room to absorb the wait for a fourteen-month outcome. Where slack is scarce, the cost of waiting is harder to absorb, and the organisation acts on the month-two number anyway, with or without a warrant. The person in the shelter bed, the young adult six months out of foster care, is served now or not served, and by the time the outcome study reports, that person is gone. A dashboard that says attendance is falling in month two, carrying an operational warrant from a study that tested it, is the difference between an intervention in month three and a finding in month fourteen. The organisations with the least room are the ones for whom a warranted early signal is worth the most. They are also the ones least likely to have anyone chartered to build it, which is why they end up where <InternalLink slug="the-reach-trap">The reach trap</InternalLink> left them: back-breaking collection, reach to show for it, and no claim about what moved.
+        </P>
+        <P>
+          That is the practice I have built across higher education, K-12, mental health and MEL. In everything I do I am infrastructure-practice native, building from construct to consequence. I want the modern stack and the infrastructure as part of my practice alongside the measurement, not either/or. And I care about the consequence for the humans at both ends: the frontline worker providing the service and the person receiving it. I sit in the seams between research, technology and program, and what I work well inside is a box of constraints. Give me the constraints of a nonprofit and I get creative with the tools, the stack and the validity discipline, whether the job is an integration, a dashboard or a signal somebody can act on. Messy data is easier to work through when construct-to-consequence tells you which of the mess matters. The evaluation-only version of this discipline cannot by itself serve the decision in month two. The infrastructure-only version cannot defend what the month-two number means. The person in month two needs both.
+        </P>
+
+        <H2>What AI changes, and what it does not</H2>
+        <P>
+          Data infrastructure and AI make the middle of the loop cheap, and <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> already argues that cheaper production does not supply an owner. I will not repeat that here. What this essay adds is narrower: how often the link can be re-established.
+        </P>
+        <P>
+          A recheck is expensive today because it is a study. Someone has to design it, collect the outcome, wait for it, and analyse it. That cost is why organisations run one every few years and treat the result as permanent. AI does not remove the wait. Month-fourteen employment still arrives in month fourteen, and no model compresses it into month three. What has changed is what happens once cohorts mature continuously and the outcome arrives through administrative rails: wage records, enrolment feeds, employer platforms, the CRM the organisation already runs. The pan-African posting above lists &ldquo;financial or KYC rails, LinkedIn/digital trace data&rdquo; as sources it expects its impact function to use. With rolling cohorts and those feeds, the relationship between month-two attendance and month-fourteen employment can, where volume permits, be re-estimated each quarter on the cohorts whose fourteenth month has now arrived, and automation can rerun that analysis against the semantic layer at the grain of a site. The re-estimation stops waiting for a bespoke study cycle. It does not stop waiting for the outcome.
+        </P>
+        <P>
+          What no tool decides is whether the recheck is due, and what to do when the answer changes. Those are the questions <InternalLink slug="the-construct-keeps-moving">The construct keeps moving</InternalLink> raised about the measurement architecture, and they land here on the warrant. When the re-estimate shows the link has weakened, somebody has to decide whether the population shifted, the program changed, or the indicator was never as good as the first study made it look. Then they decide whether the dashboard number keeps its licence, loses it, or drops from an impact claim to an operational one. That decision is validity reasoning. A model can draft the memo. It cannot own the claim. The one piece of empirical work I owe on this is the simulation logged in the AB idea log as <I>Twenty cases and a rhythm</I>: how fast a warranted signal decays without a recheck rhythm, and what the rhythm catches ([internal &mdash; Idea Log Entry 6, Direction 3; not built]). Until that exists, the cadence argument is a design claim and not a measured one.
+        </P>
+
+        <H2>What to write on the metric</H2>
+        <P>
+          Semantic layers already carry what a metric means. <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink> argued that the definition, and who may change it, belong there. This essay asks the layer to carry one thing more. For a MEL lead or a data lead who owns a semantic layer, the adoption surface is three fields on every metric that is being read as if it said something about an outcome.
+        </P>
+
+        <NumList>
+          <NumItem n={1}>
+            <B>The claim it is licensed to support.</B> Stated as a claim, in the organisation&rsquo;s own words, and graded. &ldquo;Month-two attendance is validated as an early-risk indicator for month-fourteen employment&rdquo; is one claim. &ldquo;Rising attendance is evidence that employment is rising&rdquo; is a different and stronger one. If nobody can fill this field, the metric is a count, and the dashboard should say so.
+          </NumItem>
+          <NumItem n={2}>
+            <B>The evidence behind it, and the date.</B> The study or analysis that established the relationship, its design, the population it was established in, the strength of the relationship, and when. A citation, an internal analysis with a date, or the word <I>none</I>. The pan-African posting&rsquo;s four grades (actuals, estimates, projections, externally validated) are a coarser version of this field, and a good one.
+          </NumItem>
+          <NumItem n={3}>
+            <B>When it must be rechecked, and who decides.</B> The condition or date that puts a recheck due: a program redesign, a change in eligibility, a population shift above some threshold, the signal becoming a target, or a fixed interval. And the name of the person who owns the decision when it fires. Operationally this is an expiry. What lapses on the date is not the evidence but the permission to rely on it unchecked. Without the owner, the trigger fires into the same silence <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> describes; with it, the field forces the decision that neither the evaluation team nor the data team is chartered to make today.
+          </NumItem>
+        </NumList>
+
+        <P>
+          Three fields, on the metric, in the layer the dashboards read from. An evaluation report in a shared drive cannot carry them, and a data dictionary describes the column, not the claim. A funder can ask the same three things of any dashboard number a grantee shows them. A grantee who cannot fill the second field has told the funder what the number is: a count, reported on time. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> has the table for which verb the second field earns; this essay is about where the field lives.
+        </P>
+
+        <H2>Two floors away</H2>
+        <P>
+          At the national nonprofit, the reporting prototype I built ran a model against the semantic layer and mapped its output to the theory-of-change domains, so that an impact narrative could be drafted from live evidence rather than written after the fact and back-justified with the metrics that happened to move. It worked. What it could not do was tell the reader which of those live numbers had ever been shown to say anything about the outcome in the domain heading above it, or which claim each one was licensed to support. The prototype had the second half of the argument and not the first. The evaluation team, two floors away, had the first half and no way to put it into the layer the prototype read from. Nobody was chartered to carry the warrant across. The requisition that replaced the role moved it under research, where the first half is comfortable, and the layer is somebody else&rsquo;s.
+        </P>
+        <P>
+          The evidence establishes the warrant. The infrastructure carries it. Somebody decides when it must be checked again. Those three sentences are the whole method, and none of the eight postings has hired for the third.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="four-jobs-one-loop"
+            title="Four jobs, one loop."
+            gloss="The ownership half; this essay is the time half."
+          />
+          <SeeAlsoItem
+            slug="the-construct-keeps-moving"
+            title="The construct keeps moving."
+            gloss="Why the warrant lapses; this essay puts the recheck on the metric."
+          />
+          <SeeAlsoItem
+            slug="the-checkpoint-runs-one-way"
+            title="The checkpoint runs one way."
+            gloss="The same asymmetry at the AI frontier; risk gets machinery, benefit gets a claim."
+          />
+        </SeeAlso>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 22 — For the record. (DRAFT)
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "for-the-record",
+    number: "22",
+    title: "For the record.",
+    subtitle:
+      "The systems in human-serving organizations keep the record for someone else. The people doing the work keep their spreadsheets. Where AI can carry one into the other.",
+    date: "2026-09-15",
+    readingTime: "15 min read",
+    summary:
+      "In schools, clinics, campuses and nonprofits, the systems exist to produce the state's, the funder's or the accreditor's report. The people doing the work stop trusting them and keep their own spreadsheets. This essay names that mechanism, lists the constraints it produces, and asks, for each, what AI changes. The move it argues for is to keep the decentralized spreadsheets and let AI carry them into the record. What AI does not supply is an owner for the result.",
+    cover: "/library/covers/for-the-record.svg",
+    arc: "ai-systems",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            <I>The systems in human-serving organizations keep the record for someone else. The people doing the work keep their spreadsheets. Where AI can carry one into the other.</I>
+          </p>
+        </Brief>
+
+        <P>
+          [OPENING &mdash; needs one real disagreement, not a burden story: the official count said X, the owner&rsquo;s sheet said Y, and everyone in the room waited for her sheet before signing. Use the same sheet or count again at the close. Placeholder shape below.]
+        </P>
+        <P>
+          At [a behavioral-health agency / a charter network], the [clinicians / teachers] entered the day&rsquo;s notes at [5:30], after the last [client / student] had left. The system they entered them into had been chosen because the [state / funder] required it. It was good at producing the report the state wanted. It was not good at telling a clinician on Tuesday morning what had happened to her client on Monday, and nobody had expected it to be. The people came first. The system came second, for the record.
+        </P>
+        <P>
+          That ordering is correct, and I would not argue with it. When the mission is a person in front of you, the system that documents the encounter loses to the encounter every time. The consequence is a particular kind of organization, one I have worked inside in K&ndash;12, higher education, community behavioral health and a national youth mental-health nonprofit. This essay is about what that ordering does to the systems, and what the people do in response. Then it asks what AI changes, when there is no budget to replace the system, no data team to run it, and no talent market to hire from.
+        </P>
+
+        <H2>Kept for the record</H2>
+        <P>
+          The systems in these organizations are kept for the record. I do not mean that every one was bought for that reason; a student information system or an EHR is bought to run the place. I mean that what gets funded, configured and maintained in it, and what the institution relies on it for, is the part that produces a report someone outside requires. The state&rsquo;s enrollment census. The funder&rsquo;s quarterly outcomes. The accreditor&rsquo;s file. The compliance submission for a Certified Community Behavioral Health Clinic. The system is judged by whether that report comes out on time and in the required shape. It is not judged by whether a teacher can use it at three in the afternoon, and it was not configured with that in mind.
+        </P>
+        <P>
+          This is not a criticism of the people who set it up. Often they configured what the funder or the state required, with money from a grant that has since ended, and many of them have since left. What I want to hold on to is that the diagnosis usually gets this wrong. The usual reading is that the organization chose the wrong system or configured it badly. The reading I hold is that the system is doing what it was bought to do. Viral Gandhi describes the enterprise version: AI-enabled applications are converting systems of record into systems of action, and if the workflow redesign is not accompanied by governance, the risk is automating tasks without improving anything (<a href="https://www.cio.com/article/4187315/how-ai-agents-are-turning-enterprise-apps-into-decision-systems.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Gandhi, CIO.com</a>, June 2026). The governance those systems have was built for software that stores; it does not follow the decision to where the software now makes it. In a human-serving organization the gap is older and simpler. The system was never designed around the workday, so little in it serves the workday now.
+        </P>
+
+        <H2>Where the trust went</H2>
+        <P>
+          What the people do in response is the part most writing about these organizations misses, and it is the mechanism this essay turns on.
+        </P>
+        <P>
+          They keep their own spreadsheets. Systems for the record, spreadsheets for themselves. Not out of laziness, and not because nobody trained them. The enrollment director keeps a sheet because the system&rsquo;s applicant count does not match what she knows from the call center. The program manager keeps a sheet because the code she needs was added to the system in [month] and half her staff still log the old one. The finance lead keeps a sheet because Intacct was never connected to anything else and the numbers in the warehouse are a copy of a copy. Each owner trusts the sheet they built, because they can see every row and they know what each column means. They do not trust the system, because it was built for someone else&rsquo;s report and it changes under them.
+        </P>
+        <P>
+          Once that happens, four things follow, and I have watched all four in every sector I have worked in.
+        </P>
+        <P>
+          Compliance reporting becomes its own workflow, fed from the local spreadsheets and their owners, and only partly from the systems, because the owners are the ones who have to sign the submission and they will only sign what they trust.
+        </P>
+        <P>
+          Dashboards multiply. There is one in the CRM, one in the student information system, and one in the BI tool, each built by a different team from a different source, and the local spreadsheets still prevail because that is where the owners look. Sometimes there is more than one BI tool. In one network finance worked in Looker and the school leaders in Tableau, each with its own version of the number. <InternalLink slug="numbers-dont-agree">The numbers don&rsquo;t agree because the words don&rsquo;t</InternalLink> is about why the versions disagree; this is about why there are so many versions in the first place.
+        </P>
+        <P>
+          Finance and HR stay walled off. In the name of security, the accounting system and the talent system are not integrated with the rest and not loaded into the warehouse. Some of that caution is right. Much of it is a narrative that nobody has been asked to make specific: which fields, to whom, under what contract. So the two systems that hold what the organization spends and who it employs sit outside every analysis of what it does.
+        </P>
+        <P>
+          And every change loses something. When policy changes (the state issues new chronic-absenteeism codes, say), three things have to happen. The codes get configured in the system. Staff get told where the new field is and who logs it. And the old records get mapped to the new ones, or the trend line breaks. Under the turnover schools and nonprofits run at, the people who were trained on the last change are gone before the next one. At year-end rollover, the system archives what it was told to archive, and what nobody thought to preserve is what the longitudinal question needed three years later.
+        </P>
+        <P>
+          That is the box. It is not that the organization has no data. It has too many versions of it, held by people who trust their own version for good reasons, in systems that were never built to be the one they trust.
+        </P>
+
+        <H2>The constraints, listed</H2>
+        <P>
+          Read from the operator&rsquo;s chair, the box produces a fixed set of problems, and the advice the field gives usually assumes at least one of them away. Entry is manual and late, because the system captures what the funder counts as a form filled in after the encounter. Training never ends, because turnover takes the skill with it and each policy change resets it; when staff are already saturated with change, another round of training stalls rather than lands (<a href="https://sloanreview.mit.edu/article/when-employees-are-drowning-in-change/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">MIT Sloan Management Review</a>, 2026). Integration is partial, so the portal, the student information system and the CRM each hold part of a family&rsquo;s record and someone carries the rest over by hand. Identity lives in unwritten rules. Exports are shaped for a report template rather than a question, with columns that went dead in 2023 and what the program knows about a person sitting in free text. And the outside context that would give the organization&rsquo;s numbers their meaning sits elsewhere: the region&rsquo;s enrollment trend, the county&rsquo;s suicide rate, what happened to last year&rsquo;s graduates. It lives in [the National Student Clearinghouse, NYSED, CDC WONDER, the regional health information exchange, NSDUH]. Few of those can be connected to by one person at a school or a clinic.
+        </P>
+
+        <H2>What the box does to the standard advice</H2>
+        <P>
+          The advice comes in two forms, and both assume capacity the box does not have.
+        </P>
+        <P>
+          The first is to replace or properly integrate the systems. Correct, and not available. The systems are the ones the funder or the state requires. Healthcare has larger budgets than anywhere else I have worked. There, a Carta Healthcare survey found EHR integration difficulty the leading barrier to AI adoption, cited by 44 percent of respondents, well ahead of clinician trust and regulatory concerns at 26 percent each (<a href="https://www.healthcareitnews.com/news/hospitals-must-prove-they-can-make-ai-operational-scale" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Siwicki, Healthcare IT News</a>, August 2026). If integration is still the first thing in the way at health systems with real budgets, &ldquo;integrate properly first&rdquo; is not a credible prerequisite for a community clinic or a charter network.
+        </P>
+        <P>
+          The second is to clean the data before adopting AI, because AI amplifies a weak foundation rather than repairing it (<a href="https://www.i-mtechnology.com/2026/07/20/ai-wont-fix-messy-data-why-your-nonprofit-needs-a-strong-foundation-before-adopting-ai/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">I-M Technology</a>, July 2026). NYU Langone&rsquo;s chief digital and information officer puts it as a principle: if you want high-quality data in the intelligence layer, you fix it at the transactional systems first (<a href="https://www.databricks.com/blog/data-quality-ai-strategy" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mherabi, via Databricks</a>, May 2026). I agree with the description of what goes wrong. What the advice assumes is that someone is funded to clean. Inside the box, &ldquo;clean first&rdquo; means never, because cleaning is already the work nobody has hours for. And it assumes the cleaned system will be trusted once it is clean, which the spreadsheet owners have already decided it will not be.
+        </P>
+        <P>
+          So the question I want to ask is narrower than whether the organization should adopt AI. It is whether AI changes the cost of each constraint in place, without replacing the system, without hiring a team, and without asking the owners to give up the sheet they trust. My answer, from having done the work both ways, is that one mechanism moves most of them, and that one thing does not move at all.
+        </P>
+
+        <H2>Keep the spreadsheet. Carry it in.</H2>
+        <P>
+          The move I would make first is the one that respects where the trust went.
+        </P>
+        <P>
+          Do not ask the enrollment director to abandon her sheet. Let it stay the working record, because it is the thing she trusts and the thing she maintains. But be exact about what that trust is. The sheet is the surface she works on. It is not, by itself, the truth. It can carry the same faults as the system: a formula copied one row short, a code that stopped meaning what it meant, an override nobody remembers making. What the sheet has that the system lacks is an owner who can see every row. That is worth keeping, and it is not the same as being right.
+        </P>
+        <P>
+          So the move is a round trip, and both halves matter. A model reads her columns, maps them to the system&rsquo;s fields and codes through a crosswalk she has confirmed, flags the rows that do not map, and drafts the system entry. She reviews the flagged rows and confirms. The record gets written in the system&rsquo;s vocabulary, from the source she trusts, on the day. Then the model carries the other direction: the system&rsquo;s export comes back to her in the shape of her sheet, with the rows where the record and her working version disagree marked. She resolves them, or the disagreement is logged with a reason. That second half is the point. For the first time the gap between what the worker trusts and what the institution holds is something you can see, count and assign, instead of something you find out about at the board meeting.
+        </P>
+        <P>
+          Veronika Durgin, writing from the warehouse side, reached the same place from the opposite direction. A warehouse that was good enough for her team turned out not to be good enough for a model, because people know how to deal with imperfections and a model does not; the decisions about which of several legitimate sources of truth applied had lived in people&rsquo;s memories, and &ldquo;there isn&rsquo;t always a correct answer sitting somewhere waiting for AI to find it&rdquo; (<a href="https://thinksolverepeat.substack.com/p/a-piece-of-humble-pie" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Durgin, Think Solve Repeat</a>, September 2026). Her conclusion is that a model should sometimes ask rather than guess. The flagged rows are that. The model does not resolve the disagreement between the sheet and the record. It surfaces it to the one person who can.
+        </P>
+        <P>
+          Compliance rejoins the rest here. If the sheets the owners sign from are the sheets the model carries into the system, and the disagreements have been resolved or logged, the compliance report and the system report draw from one source. The owner still signs. What she signs is now also what the system holds.
+        </P>
+
+        <H2>Why a model, and not another connector</H2>
+        <P>
+          A careful reader will ask why this needs AI at all. Field mappings, crosswalks, record matching and reconciliation have existed for decades. Scripts and integration tools do all of it. That reader is right, and the answer says what the model is for.
+        </P>
+        <P>
+          Deterministic tools work once the rule exists. What has been expensive in these organizations is getting from the local meaning of a column to a rule explicit enough to automate, for fifty sheets, each maintained by a different person, each changing when a code or a person changes. Writing that rule down has always been an afternoon per sheet, and there was never an afternoon. A model reads the sheet and the system side by side and proposes the rule: this column is that field, this value is that code, these rows do not fit. It will be wrong in places. It is still a first draft that nobody had before.
+        </P>
+        <P>
+          So the architecture has three parts, and the model is only one of them. The model proposes the translation. A person who knows the sheet confirms it, and adds the exception the model could not know. Then ordinary deterministic code runs the confirmed translation every cycle, the same way every time, and raises a flag when something no longer fits. Ordinary integration was too expensive to build and keep for small, changing, one-person-per-system environments. What has fallen is the cost of getting to an executable rule: the model drafts the mapping, and it drafts the script that runs the mapping too. The middle part, the confirming, has not changed at all, and it is the part that decides whether the result can be trusted.
+        </P>
+        <P>
+          Two conditions ride with this, and they are not optional in a school or a clinic. The model works inside the organization&rsquo;s own approved environment, with the minimum access the task needs, and where the record is sensitive it proposes the write and a person commits it. And the crosswalk is versioned: confirmed, dated, owned, and checked again whenever either side changes. &ldquo;Confirmed once&rdquo; is not a state these organizations get to stay in, because codes change, policies change and people change. Anthropic&rsquo;s own data team reports what happens when the written sources of truth behind an analytics agent go untended. Offline accuracy that had launched at about 95 percent drifted to about 65 percent over a month. Without those documents at all, accuracy on the team&rsquo;s evals did not exceed 21 percent (<a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Cherry et al., Anthropic</a>, June 2026). The maintenance does not disappear. It moves from reconstructing what a column meant, every time someone asks, to keeping one explicit seam current. That is a much smaller job, and it has to be someone&rsquo;s.
+        </P>
+
+        <H2>Move record-making inside</H2>
+        <P>
+          There is a picture I keep drawing for this, and it is worth putting on the page.
+        </P>
+
+        <Figure
+          src="/library/figures/for-the-record-systems-box.svg"
+          alt="The systems box, outside and inside"
+          caption="On the left, record-keeping sits outside the program, people and process boxes, and each box fills with its own spreadsheets until the borders give. On the right, record-keeping sits inside the work: one working sheet per box, a versioned crosswalk as the seam, the record written from what the workers already keep. The software has not moved. Where the record gets made has."
+        />
+
+        <P>
+          In most of the organizations I have worked in, the systems box sits outside the boxes where the work happens. Each of those boxes fills with its own spreadsheets, because that is where the trust went. Headcount grows and the sheets grow with it. Coordination gets harder, because there are more versions and more people keeping them. Eventually the borders give: the program cannot say what it did last year, the people cannot find what the previous person knew, the process is whatever the current spreadsheet says it is.
+        </P>
+        <P>
+          The round trip puts record-making inside the work. The working sheet stays; it becomes the surface through which the record is written, and the crosswalk is the seam. Once the seam exists, the boxes have less reason to inflate. The version they trust and the version the system holds are reconciled on a schedule. The places where they legitimately differ (a local note, a timing gap, an override with a reason) are written down rather than hidden. Side sheets will still appear. The difference is that their relationship to the record is now explicit. Over time the borders get stronger, because what each box knows survives the people in it.
+        </P>
+        <P>
+          I want to be careful about one word. The instinct is to say AI blurs the boundary between the trusted sheet and the official record. I think the opposite happens when the move works. The boundary was blurry before; nobody could say where the sheet ended and the system began, which is why nobody trusted the system. The crosswalk draws the line. It is written, it has an owner, it has a version, and it can be checked. What AI changes is that the line gets drawn cheaply and crossed on purpose.
+        </P>
+
+        <H2>Same architecture, different seams</H2>
+        <P>
+          Once you see the three parts (a model proposes meaning, a person confirms it, deterministic code preserves it), most of the other constraints in the box turn out to be the same architecture applied at a different seam. Not every seam is a round trip between a trusted sheet and a record; the outside-data case below is closer to access, translation and provenance. The division of labor is the same. I will take three, at different lengths, because the second is the one that shows most clearly what is being converted.
+        </P>
+        <P>
+          <B>Policy change and rollover.</B> When the state issues new absenteeism codes, three pieces of work follow: configure the codes, map the old ones to the new so the trend does not break, and tell the people at the front where the field is and who logs it. Today that is three people, and the third job repeats for every new hire until the next change. Given the policy memo, the current configuration and the crosswalk, a model drafts all three in one pass; a person checks each; the note goes where the next hire will find it. Rollover is the same shape run backwards: given last year&rsquo;s schema and this year&rsquo;s, the model lists what will not survive the archive, and the loss becomes a decision someone makes on purpose rather than a discovery three years later.
+        </P>
+        <P>
+          <B>Identity.</B> Matching one person across the portal, the student information system and the CRM has been done by rules nobody wrote. Same birth date, last name within two characters, except the cohort where the front desk entered the birth year wrong for a month. A model can propose the matches and, more usefully, propose the rules it is using in plain language. The person who has done the match by hand for three years reads them, adds the exception, and the rules become a versioned file the next person inherits. Some knowledge really is tacit. James Scott&rsquo;s point that every production process depends on informal knowledge that resists full codification stands (Scott, <I>Seeing like a state</I>, Yale University Press, 1998, ch. 9 [page numbers and quotation pending print check; no URL until verified]). Thea Snow is right that a home visit reveals things a database does not; her social worker&rsquo;s test is whether there is food in the fridge and whether the carpet is sticky (<a href="https://notesfromashoulderseason.substack.com/p/the-meaning-of-metis" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Snow, Notes from a Shoulder Season</a>, August 2026). But organizations routinely call knowledge tacit that is only undocumented. The rule that &ldquo;an applicant is who SchoolMint says they are unless HubSpot has them flagged,&rdquo; which I described in <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink>, was never uncodifiable. It was unrecorded, because recording it cost an afternoon nobody had. The front-desk cohort is the same. Much of what these organizations call institutional knowledge was not impossible to write down; it was nobody&rsquo;s funded job to write it down. What AI changes is the cost of finding out which kind you are holding, and identity is where the answer is usually &ldquo;the recordable kind.&rdquo;
+        </P>
+        <P>
+          <B>The outside.</B> An organization&rsquo;s number means little alone; an enrollment decline is a fact about the school or a fact about the region, and the context sits in [the National Student Clearinghouse, NYSED, CDC WONDER, the regional health information exchange, NSDUH]. Pulling it, reshaping it and keeping it current was a job, and the job was nobody&rsquo;s. One person can now do it, because I did: the <a href="/pdds/governance-scorecard.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> panels pull public sources through a dbt pipeline with a model drafting the narrative and deterministic gates checking every claim (<InternalLink slug="extending-the-gates">Extending the gates</InternalLink>). Two limits stay: a download behind a login still needs a person, and provisional data gets revised, so a context number needs its vintage on it.
+        </P>
+        <P>
+          That is enough cases. The export that nobody can read, the definition that lives in cell D14, the free text no dashboard sees: each is the same division of labor at another seam. <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink> is about who has been carrying all of them on top of a real job.
+        </P>
+
+        <H2>What AI does not do about the wall</H2>
+        <P>
+          I should be direct about the finance and HR wall, because the pitch will imply a model dissolves it and it does not.
+        </P>
+        <P>
+          A model does not open Intacct. The security narrative is a governance position, and the only thing that answers a governance position is a specific one: these fields, to this warehouse, read by these roles, under this contract, with this audit trail. That is the governance contract <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink> describes, and it is written by people with authority. What a model can do is draft the specific proposal, from the two schemas and the questions the organization wants answered, so the conversation is about a named list of fields rather than about &ldquo;security&rdquo; in general. In my experience the narrative has survived because nobody made it specific. Making it specific is cheap now. Deciding is not.
+        </P>
+
+        <H2>The thing that does not move</H2>
+        <P>
+          Every gain above carries the same condition. The crosswalk needs a confirmer and a version. The policy map needs a checker. The preservation list needs a decider. The identity rules need someone who knows the exception, the context needs a vintage, and the field list for finance needs someone with the authority to sign it.
+        </P>
+        <P>
+          The cost of producing each of those artifacts has dropped. The cost of owning them has not, and the numbers suggest most organizations are taking the first and skipping the second. dbt Labs&rsquo; 2026 survey of analytics engineers found 72 percent prioritizing AI-assisted coding and 24 percent prioritizing AI-assisted pipeline management (<a href="https://www.getdbt.com/resources/state-of-analytics-engineering-2026" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">dbt Labs, <I>State of Analytics Engineering 2026</I></a>). Among 346 nonprofits surveyed in late 2025, 92 percent use AI, 81 percent use it on an ad hoc basis, and 7 percent report major improvement in their ability to achieve their mission (<a href="https://virtuous.org/blog/2026-nonprofit-ai-adoption-report/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Virtuous and Fundraising.AI, 2026 Nonprofit AI Adoption Report</a>). Put those together and the picture is one owner at a desk, using a model to get through Tuesday faster, and writing nothing down. The constraints ease for that person. The organization keeps the same box, with one more version of the number in it.
+        </P>
+        <P>
+          <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> makes the general form of this argument at the level of a measurement function: infrastructure and AI make production through the middle of the loop cheap and supply no owner for the reasoning that keeps it whole. This is the same argument one level down, at the desk where the sheet lives. AI makes crossing the boundary between the worker&rsquo;s record and the institution&rsquo;s cheap. It does not decide what is allowed to cross, what becomes authoritative once it has, or who owns the mapping.
+        </P>
+
+        <H2>Capacity, and where it has to land</H2>
+        <P>
+          I have argued across this library that organizations fail when decision load exceeds decision capacity, and that capacity is an architecture you build rather than a headcount you hire (<ArtifactLink slug="decision-load-vs-capacity">Decision load vs decision capacity</ArtifactLink>). The question this essay has been circling is whether AI adds capacity inside the box.
+        </P>
+        <P>
+          It does, and the seam is where. But capacity only counts if it lands in the architecture. A model that drafts a crosswalk for one owner who keeps it on her desktop has added capacity to her Tuesday. A crosswalk that is confirmed, versioned, filed where the next person finds it, and run by the system entry every cycle has added capacity to the organization, because the next owner inherits it and the compliance report draws from it. What separates the two is whether anyone was given the authority to make the model&rsquo;s draft the organization&rsquo;s record.
+        </P>
+        <P>
+          In <InternalLink slug="plumbing-got-upgraded-water-didnt">Plumbing got upgraded. The water didn&rsquo;t.</InternalLink> I said the pipe now carries speed cheaply and that resolution and context were the two knobs left at their defaults. The seam is what turning those knobs looks like from the operator&rsquo;s chair: the record at the resolution the owner already keeps, and the context the outside data was always holding. The pipe can carry it now. The organization still has to decide that it will.
+        </P>
+
+        <H2>What to ask for</H2>
+        <P>
+          For whoever runs a program, a school or an agency with no data team, and for whoever holds the absorbed role inside it, the ask comes in an order.
+        </P>
+        <P>
+          Point AI at the seam between the trusted spreadsheet and the system of record, before pointing it at the analytics. Keep the working sheets. Let the model propose the translation, let the owner confirm it, and let ordinary code run it. A dashboard built on top of a system the owners route around inherits everything that did not get entered.
+        </P>
+        <P>
+          Then change what counts as the output of that work. The number for the board is not the deliverable. The file is. I am using &ldquo;file&rdquo; loosely, and on purpose: one maintained record of what the organization&rsquo;s data means, kept where the next person can find it, readable by a person and usable by a machine. Some of it is prose, such as what a status code meant and who decided. Some of it should be a table a program can run, such as the crosswalk and the identity rules. It carries the crosswalk from each owner&rsquo;s sheet to the system&rsquo;s fields, with its version. It carries the identity rules with their exceptions, and what each field and code means in the words of someone who checked. It carries the old-to-new map for each policy change, the preservation list from each rollover, and the definition and vintage behind each reported number. A model drafts every part. A person confirms each part and signs. The compliance report cites it, and when a code changes, the file changes first.
+        </P>
+        <P>
+          That is a small ask and it can be adopted wrongly, which is the sign it is specific enough. One wrong adoption is the file as a documentation project: write down everything, make the systems &ldquo;AI-ready.&rdquo; Durgin is right that this is impossible and misses the point, and that the place to start is the problem you are trying to solve. The file is scoped the same way. It covers the numbers the organization reports and the decisions it makes on them, and nothing else until a new number or a new decision needs it. The other wrong adoption is a file the model wrote and nobody read, saved beside the fifty sheets as the fifty-first. The test is whether a stranger, handed the file and the exports, could reproduce Thursday&rsquo;s number. If they cannot, the work has been made faster and not recorded.
+        </P>
+        <P>
+          For a funder or a board, the ask is smaller and it is not another report. Do not ask for the file; that would make it one more thing built for someone outside, which is where this essay started. Ask whether it exists, and whether the number in front of you can be traced back to it. An organization that can answer yes has turned its owners&rsquo; private trust into something the organization holds. An organization that cannot has a better-looking report, three BI tools, and the same sheets.
+        </P>
+        <P>
+          [CLOSE &mdash; needs your memory, and it should be the same object as the opening: the sheet, the cohort, the number someone would only sign after reconciling it to her own workbook. Placeholder below.]
+        </P>
+        <P>
+          [The file I am describing is the one she would have written if anyone had given her the afternoon. AI gives the next person the afternoon. What it cannot give is a place for what she knows to go, and an owner for it once it is there. That was never a technical question, and it is the one the organization has to answer.]
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-absorbed-data-role"
+            title="The absorbed data role."
+            gloss="The seat the constraints land on, and why it has no funded home."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems."
+            gloss="The governance contract that answers the security narrative, and the unwritten identity rule this essay says can now be written."
+          />
+          <SeeAlsoItem
+            slug="extending-the-gates"
+            title="Extending the gates."
+            gloss="The worked case for outside context pulled by one operator, with a model drafting and gates checking."
+          />
+          <SeeAlsoItem
+            slug="four-jobs-one-loop"
+            title="Four jobs, one loop."
+            gloss="Cheap production, no owner, one level up from the desk."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Method note. External sources were verified on 2026-09-15 against the live pages for Anthropic (Cherry, Peng, Jiao, Leder and Chang, June 3, 2026), Healthcare IT News (Siwicki, August 7, 2026, reporting a Carta Healthcare survey), dbt Labs (State of Analytics Engineering 2026, fielded December 2025 to February 2026), Virtuous and Fundraising.AI (346 nonprofits, December 2025), Databricks (Mherabi, May 13, 2026), CIO.com (Gandhi, June 22, 2026), Snow (August 27, 2026) and Durgin (Think Solve Repeat, September 13, 2026; added after the Standard pass at Chaitanya&rsquo;s pointer, not yet in the knowledge repo). The MIT Sloan Management Review piece is cited from the AB knowledge repo entry; the page blocks automated fetch and should be read by hand before publication. Scott is cited from the repo entry, which was itself verified against secondary sources; the chapter 9 claim needs a print check and page numbers before this ships. Two rounds of external adversarial review (GPT, 2026-09-15) shaped v0.4 and v0.5. [Bracketed details in the body are unverified until filled.]
+        </MetaNote>
+      </>
+    ),
+  },
+
 ];
 
 // ---------------------------------------------------------------------
