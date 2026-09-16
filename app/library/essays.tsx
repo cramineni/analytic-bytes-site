@@ -5374,7 +5374,16 @@ export const ESSAYS: Essay[] = [
           It would be easy, and wrong, to say the field just needs more rigor. Dollars in Pockets already does most of what a naive critic would demand, and the authors describe the practice in their own words: they &ldquo;mark down optimistic projections, and weight every assumption by the strength of the evidence behind it.&rdquo; Each modelled return is set against a researched counterfactual, and only the difference is counted. After the money moves, the estimate is checked again. NextLadder works with Opportunity Insights using independent methods, and GitLab Foundation resources its grantees to run their own measurement and evaluation, including direct feedback from the people served. The authors give these as examples rather than a complete validation design.
         </P>
         <P>
-          Two further choices deserve more credit than a critic would naturally give them. The first is the benchmark. NextLadder sets its ten-to-one target against direct cash transfers, on the reasoning that a dollar handed to someone is a dollar received, and that any more complicated intervention should have to clear that floor. A fund that picks a benchmark that unflattering has made one of the most disciplined choices in the framework. Most skeptics arrive expecting the opposite. The second is volume. GitLab Foundation reports having applied the underlying ROI method across more than three hundred pre-investment impact models, and across two hundred grants, with sixty-five early grantees reporting results and two-thirds of those meeting internal return targets. That is an empirical base.
+          Two further choices deserve more credit than a critic would naturally give them. The first is the benchmark. NextLadder sets its ten-to-one target against direct cash transfers, on the reasoning that a dollar handed to someone is a dollar received, and that any more complicated intervention should have to clear that floor. A fund that picks a benchmark that unflattering has made one of the most disciplined choices in the framework. Most skeptics arrive expecting the opposite. The second is volume. GitLab Foundation reports applying the underlying ROI method across more than three hundred pre-investment impact models and two hundred grants. That is an empirical base, not a paper exercise.
+        </P>
+        <P>
+          The lineage named earlier has gone further than this, and it is worth being exact about how far. Y Analytics, TPG&rsquo;s impact research arm, published its climate methodology in November 2025. It works pathway by pathway, and it grades the evidence behind each one. The risk rubric covers, in its own words, &ldquo;rigor of evidence (i.e., RCT vs. observational study), geographical similarity, and number of linkages between company output and impact.&rdquo; The result is a risk adjustment factor for each pathway.
+        </P>
+        <P>
+          Read that rubric again. Rigor of evidence is the distinction the three verbs below are built on. Number of linkages is the length of the chain. Y Analytics is already producing, pathway by pathway, most of the judgment this essay says a fund should publish. It then multiplies that judgment into the magnitude and reports one figure, the Carbon Yield.
+        </P>
+        <P>
+          That is a different problem from averaging, and the arithmetic is not the fault. Multiplying serial links is defensible. What the multiplication costs is the separation GRADE insists on, certainty rated apart from the strength of what is recommended. Fold a confidence grade into a magnitude and a reader can no longer tell a large number with thin evidence from a smaller number with strong evidence.
         </P>
         <P>
           The authors also name a limit of their own. Under the heading of what they still cannot measure, they say Dollars in Pockets addresses economic success but not empowerment or dignity, and that they are still building yardsticks for those. That is an honest admission, and it is a different admission from the one this essay is pressing. Theirs is a limit of <B>scope</B>: which parts of a life the unit covers. Mine is a limit of <B>inference</B>: whether the number, inside the scope it already covers, supports the claim being made on it. A measure can have perfect scope and still fail the second test. Adding dignity to the unit would not close the gap named here. It would apply the same inference problem to more of a person&rsquo;s life.
@@ -5418,6 +5427,19 @@ export const ESSAYS: Essay[] = [
           src="/library/figures/valid-dollar-weakest-link-not-average.svg"
           alt="Four inference links behind an impact number shown as bars. Three are strong; the fourth — did our capital contribute — is weak. An averaged verdict sits high and reads healthy. The minimum verdict sits down at the weak link. The distance between the two is what a composite figure conceals."
           caption="The score is the weakest link, not the average."
+        />
+
+        <P>
+          Averaging is not the only rival, and the strongest one deserves naming. If each link has some independent chance of holding, the product of the four is the joint chance the whole chain holds. That is an expected value, and it answers a real question: how likely is this claim to be true. The minimum answers a different one: what can this claim say out loud. It is a bound rather than an expectation, and a fund is entitled to say so.
+        </P>
+        <P>
+          The two rarely disagree by much. Multiply three strong links against one weak one and the strong links barely move the result, so the product lands just under the weak link&rsquo;s own value. Minimum and product converge whenever the links that are not capping the claim are healthy, which is the case this essay is about. The difference is not in the number. A product gives a fund one more figure to report. A minimum gives it a word it has to defend.
+        </P>
+
+        <Figure
+          src="/library/figures/valid-dollar-five-operators-one-chain.svg"
+          alt="The four inference links above, scored five different ways. MAX returns 1.00, AVG returns 0.83, MIN returns 0.35 and PRODUCT returns 0.33. Minimum and product land two hundredths apart. SUM runs off the scale, because confidence does not add. Values are illustrative."
+          caption="The rule a fund never states is the one doing the work."
         />
 
         <P>
@@ -5573,7 +5595,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026; contributing authors Kyle Nelson, Tamsin Chen, Rhett Dornbach-Bender, and Ellie Bertani), offered in the spirit of the authors&rsquo; own invitation to apply the measure and report where it breaks. Every description of Dollars in Pockets is drawn from that published announcement; the complete methodology had not been published at the time of writing. The Indian regulation text was read in a secondary brief quoting it verbatim, as SEBI&rsquo;s attached PDF could not be opened directly. The failure condition in the warrant section was named by Rashi Trivedi in correspondence after publication and is used with her permission.
+          Written August 2026 for the Analytic Bytes Library as a response to &ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo; (NextLadder Ventures &amp; GitLab Foundation, July 2026; contributing authors Kyle Nelson, Tamsin Chen, Rhett Dornbach-Bender, and Ellie Bertani), offered in the spirit of the authors&rsquo; own invitation to apply the measure and report where it breaks. Every description of Dollars in Pockets is drawn from that published announcement; the complete methodology had not been published at the time of writing. The Indian regulation text was read in a secondary brief quoting it verbatim, as SEBI&rsquo;s attached PDF could not be opened directly. The failure condition in the warrant section was named by Rashi Trivedi in correspondence after publication and is used with her permission. The Y Analytics material is drawn from <I>Evidence-based Impact in Climate</I> (Y Analytics and TPG Rise Climate, November 2025), the firm&rsquo;s own published account of its approach rather than an independent evaluation of it.
         </MetaNote>
       </>
     ),

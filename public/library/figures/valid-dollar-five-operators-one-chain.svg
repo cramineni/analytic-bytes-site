@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-labelledby="titleFiveOps descFiveOps">
+  <title id="titleFiveOps">Five operators, one chain</title>
+  <desc id="descFiveOps">The same four inference links from the figure above, scored five different ways. MAX returns 1.00, AVG returns 0.83, MIN returns 0.35 and PRODUCT returns 0.33. Minimum and product land two hundredths apart. SUM runs off the scale entirely, because confidence does not add. Values are illustrative.</desc>
+
+  <rect width="1200" height="560" fill="#FFFFFF"/>
+
+  <text x="600" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Five operators, one chain</text>
+
+  <!-- AXIS -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <line x1="260" y1="140" x2="1100" y2="140" stroke="#0F2A4A" stroke-width="1.4"/>
+    <line x1="260" y1="132" x2="260" y2="148" stroke="#0F2A4A" stroke-width="1.4"/>
+    <line x1="470" y1="136" x2="470" y2="144" stroke="#94A3B8" stroke-width="1.2"/>
+    <line x1="680" y1="136" x2="680" y2="144" stroke="#94A3B8" stroke-width="1.2"/>
+    <line x1="890" y1="136" x2="890" y2="144" stroke="#94A3B8" stroke-width="1.2"/>
+    <line x1="1100" y1="132" x2="1100" y2="148" stroke="#0F2A4A" stroke-width="1.4"/>
+    <text x="260" y="174" font-size="21" fill="#94A3B8" text-anchor="middle">0</text>
+    <text x="680" y="174" font-size="21" fill="#94A3B8" text-anchor="middle">0.5</text>
+    <text x="1100" y="174" font-size="21" fill="#94A3B8" text-anchor="middle">1.0</text>
+  </g>
+
+  <!-- LANE LABELS -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" fill="#0F2A4A">
+    <text x="40" y="223">MAX()</text>
+    <text x="40" y="281">AVG()</text>
+    <text x="40" y="339">MIN()</text>
+    <text x="40" y="397">PRODUCT()</text>
+    <text x="40" y="455">SUM()</text>
+  </g>
+
+  <!-- LANE GUIDES -->
+  <g stroke="#E2E8F0" stroke-width="1.2">
+    <line x1="260" y1="215" x2="1100" y2="215"/>
+    <line x1="260" y1="273" x2="1100" y2="273"/>
+    <line x1="260" y1="331" x2="1100" y2="331"/>
+    <line x1="260" y1="389" x2="1100" y2="389"/>
+  </g>
+
+  <!-- MARKERS -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21">
+    <circle cx="1100" cy="215" r="9" fill="#0F2A4A"/>
+    <text x="1078" y="208" fill="#0F2A4A" text-anchor="end" font-weight="600">1.00</text>
+
+    <circle cx="953" cy="273" r="9" fill="#0F2A4A"/>
+    <text x="931" y="266" fill="#0F2A4A" text-anchor="end" font-weight="600">0.83</text>
+
+    <circle cx="554" cy="331" r="9" fill="#0EA5E9"/>
+    <text x="576" y="324" fill="#0EA5E9" font-weight="600">0.35</text>
+
+    <circle cx="539" cy="389" r="9" fill="#0EA5E9"/>
+    <text x="561" y="411" fill="#0EA5E9" font-weight="600">0.33</text>
+  </g>
+
+  <!-- CONVERGENCE BRACKET -->
+  <g stroke="#0EA5E9" stroke-width="1.6" fill="none">
+    <path d="M 508 331 L 496 331 L 496 389 L 508 389"/>
+  </g>
+  <text x="484" y="367" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#0EA5E9" text-anchor="end">0.02 apart</text>
+
+  <!-- SUM: off scale -->
+  <g>
+    <line x1="260" y1="447" x2="1120" y2="447" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="7 6"/>
+    <path d="M 1120 439 L 1140 447 L 1120 455 Z" fill="#94A3B8"/>
+    <text x="700" y="483" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#94A3B8" text-anchor="middle">3.30 — off the scale, because confidence does not add</text>
+  </g>
+
+  <text x="1160" y="536" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#94A3B8" text-anchor="end">Link values from the figure above. Illustrative.</text>
+</svg>
