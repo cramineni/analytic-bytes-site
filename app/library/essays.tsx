@@ -5311,7 +5311,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-10",
     readingTime: "20 min read",
     summary:
-      "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average. Separates the verbs a number earns — supports, contributed to, produced — by the strength of the counterfactual behind it. Closes by asking that funds publish per-pathway warrant beside the composite.",
+      "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. The essay argues that a big impact number is not yet a valid number — the argument from the number to the claim it makes needs its own gate. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average, an arithmetic this essay adds rather than one Kane prescribes. Separates the verbs a number earns (supports, contributed to, produced) by the strength of the counterfactual behind it. Closes by proposing that a fund publish per-pathway warrant beside the composite: a common unit makes dollars comparable, not the evidence behind them. Written in the same spirit as the Dollars in Pockets authors' own invitation to apply the measure to the field's work.",
     cover: "/library/covers/the-valid-dollar.svg",
     arc: "measurement",
     body: (
@@ -5517,7 +5517,7 @@ export const ESSAYS: Essay[] = [
           The table also shows where evaluation spending went nowhere. Under the minimum rule, only evidence at the link that caps a pathway can move the verb. Take a pathway capped at link four, contribution, because there is no counterfactual behind it. The fund then buys a better instrument, one that measures the outcome more precisely. That is link one, and link one was already strong. The cap is still link four, so the verb stays at <I>supports</I>. The fund paid to improve a link that was not holding the claim back. <InternalLink slug="the-decision-system">A dashboard of indicators does not show that</InternalLink>. A table stating what each pathway&rsquo;s claim rests on does.
         </P>
         <P>
-          Goodhart&rsquo;s law has less room to work here. Suppose a fund publishes <ArtifactLink slug="validity-grid">warrant per pathway</ArtifactLink>. If it then grows its total by leaning on the softest one, the table shows a bigger number at a weaker verb. Anyone reading the table can see the trade.
+          Goodhart&rsquo;s law has less room to work here. Suppose a fund publishes warrant per pathway. If it then grows its total by leaning on the softest one, the table shows a bigger number at a weaker verb. Anyone reading the table can see the trade.
         </P>
         <P>
           GRADE has one more move worth borrowing, and it comes before the arithmetic. Not every outcome enters its summary rating. Only the outcomes a panel has judged critical to the decision are counted toward overall certainty; the rest are reported and set aside.
