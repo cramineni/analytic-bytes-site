@@ -5311,7 +5311,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-10",
     readingTime: "20 min read",
     summary:
-      "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. The essay argues that a big impact number is not yet a valid number — the argument from the number to the claim it makes needs its own gate. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average, an arithmetic this essay adds rather than one Kane prescribes. Separates the verbs a number earns (supports, contributed to, produced) by the strength of the counterfactual behind it. Closes by proposing that a fund publish per-pathway warrant beside the composite: a common unit makes dollars comparable, not the evidence behind them. Written in the same spirit as the Dollars in Pockets authors' own invitation to apply the measure to the field's work.",
+      "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average. Separates the verbs a number earns — supports, contributed to, produced — by the strength of the counterfactual behind it. Closes by asking that funds publish per-pathway warrant beside the composite.",
     cover: "/library/covers/the-valid-dollar.svg",
     arc: "measurement",
     body: (
