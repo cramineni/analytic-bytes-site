@@ -10130,7 +10130,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-09-15",
     readingTime: "14 min read",
     summary:
-      "In schools, clinics, campuses and nonprofits, the people come first and the systems come second, by design. The systems that result exist to produce the state's, the funder's or the accreditor's report, so the people doing the work stop trusting them and keep their own spreadsheets. The spreadsheet is not the truth. It is where the worker's knowledge currently lives. This essay argues that AI makes it cheap to translate that knowledge into explicit rules, that a person has to decide whether those rules are right, that deterministic code should preserve them, and that reconciling the two records is what stops them separating again. What was scarce was never the execution. It was the afternoon required to make local meaning explicit, and AI still does not supply the owner.",
+      "In schools, clinics, campuses and nonprofits, systems exist to produce reports for someone else, so the people doing the work keep their own spreadsheets. AI makes it cheap to translate that local knowledge into explicit rules. It does not supply the person who decides whether the rules are right, or the discipline that reconciles the two records.",
     cover: "/library/covers/for-the-record.svg",
     arc: "ai-systems",
     draft: true,
@@ -10376,7 +10376,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-09-16",
     readingTime: "11 min read",
     summary:
-      "A state reissues its attendance codes. A counselor leaves in March. The vendor's release lands two quarters late. The year rolls over and a field goes with it. Each of these creates the same three jobs — reconfigure, re-teach, re-map — and each lands on whoever is capable and present. This essay argues that the recurring cost in a human-serving organization is not running the system but keeping it matched to a world that will not hold still, that AI makes the translation component of that work cheap while leaving the judgment, the ownership and the vendor dependency where they were, and that AI is now itself one of the change events it is being bought to absorb.",
+      "A state reissues attendance codes. A counselor leaves. A vendor's release lands two quarters late. Each triggers the same jobs — reconfigure, re-teach, re-map — and each lands on whoever is present. The recurring cost in human-serving organizations isn't running systems but keeping them matched to a world that won't hold still. AI makes that translation cheap. It also becomes one of the change events it's being bought to absorb.",
     cover: "/library/covers/the-delta-nobody-budgeted.svg",
     arc: "ai-systems",
     draft: true,
