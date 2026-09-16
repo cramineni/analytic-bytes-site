@@ -10128,9 +10128,9 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "The systems in human-serving organizations keep the record for someone else. The people doing the work keep their spreadsheets. Where AI can carry one into the other.",
     date: "2026-09-15",
-    readingTime: "15 min read",
+    readingTime: "14 min read",
     summary:
-      "In schools, clinics, campuses and nonprofits, the systems exist to produce the state's, the funder's or the accreditor's report. The people doing the work stop trusting them and keep their own spreadsheets. This essay names that mechanism, lists the constraints it produces, and asks, for each, what AI changes. The move it argues for is to keep the decentralized spreadsheets and let AI carry them into the record. What AI does not supply is an owner for the result.",
+      "In schools, clinics, campuses and nonprofits, the people come first and the systems come second, by design. The systems that result exist to produce the state's, the funder's or the accreditor's report, so the people doing the work stop trusting them and keep their own spreadsheets. The spreadsheet is not the truth. It is where the worker's knowledge currently lives. This essay argues that AI makes it cheap to translate that knowledge into explicit rules, that a person has to decide whether those rules are right, that deterministic code should preserve them, and that reconciling the two records is what stops them separating again. What was scarce was never the execution. It was the afternoon required to make local meaning explicit, and AI still does not supply the owner.",
     cover: "/library/covers/for-the-record.svg",
     arc: "ai-systems",
     draft: true,
@@ -10149,18 +10149,16 @@ export const ESSAYS: Essay[] = [
           At [a behavioral-health agency / a charter network], the [clinicians / teachers] entered the day&rsquo;s notes at [5:30], after the last [client / student] had left. The system they entered them into had been chosen because the [state / funder] required it. It was good at producing the report the state wanted. It was not good at telling a clinician on Tuesday morning what had happened to her client on Monday, and nobody had expected it to be. The people came first. The system came second, for the record.
         </P>
         <P>
-          That ordering is correct, and I would not argue with it. When the mission is a person in front of you, the system that documents the encounter loses to the encounter every time. The consequence is a particular kind of organization, one I have worked inside in K&ndash;12, higher education, community behavioral health and a national youth mental-health nonprofit. This essay is about what that ordering does to the systems, and what the people do in response. Then it asks what AI changes, when there is no budget to replace the system, no data team to run it, and no talent market to hire from.
+          That ordering is correct, and I would not argue with it. When the mission is a person in front of you, the system that documents the encounter loses to the encounter every time. The consequence is a particular kind of organization, one I have worked inside in K&ndash;12, higher education, community behavioral health and a national youth mental-health nonprofit. This essay is about what that ordering does to the systems, and what the people do in response. Then it asks what AI changes, when there is no budget to replace the system and no funded data role to run it.
         </P>
 
-        <H2>Kept for the record</H2>
+        <H2>Where the trust went</H2>
         <P>
           The systems in these organizations are kept for the record. I do not mean that every one was bought for that reason; a student information system or an EHR is bought to run the place. I mean that what gets funded, configured and maintained in it, and what the institution relies on it for, is the part that produces a report someone outside requires. The state&rsquo;s enrollment census. The funder&rsquo;s quarterly outcomes. The accreditor&rsquo;s file. The compliance submission for a Certified Community Behavioral Health Clinic. The system is judged by whether that report comes out on time and in the required shape. It is not judged by whether a teacher can use it at three in the afternoon, and it was not configured with that in mind.
         </P>
         <P>
           This is not a criticism of the people who set it up. Often they configured what the funder or the state required, with money from a grant that has since ended, and many of them have since left. What I want to hold on to is that the diagnosis usually gets this wrong. The usual reading is that the organization chose the wrong system or configured it badly. The reading I hold is that the system is doing what it was bought to do. Viral Gandhi describes the enterprise version: AI-enabled applications are converting systems of record into systems of action, and if the workflow redesign is not accompanied by governance, the risk is automating tasks without improving anything (<a href="https://www.cio.com/article/4187315/how-ai-agents-are-turning-enterprise-apps-into-decision-systems.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Gandhi, CIO.com</a>, June 2026). The governance those systems have was built for software that stores; it does not follow the decision to where the software now makes it. In a human-serving organization the gap is older and simpler. The system was never designed around the workday, so little in it serves the workday now.
         </P>
-
-        <H2>Where the trust went</H2>
         <P>
           What the people do in response is the part most writing about these organizations misses, and it is the mechanism this essay turns on.
         </P>
@@ -10168,13 +10166,13 @@ export const ESSAYS: Essay[] = [
           They keep their own spreadsheets. Systems for the record, spreadsheets for themselves. Not out of laziness, and not because nobody trained them. The enrollment director keeps a sheet because the system&rsquo;s applicant count does not match what she knows from the call center. The program manager keeps a sheet because the code she needs was added to the system in [month] and half her staff still log the old one. The finance lead keeps a sheet because Intacct was never connected to anything else and the numbers in the warehouse are a copy of a copy. Each owner trusts the sheet they built, because they can see every row and they know what each column means. They do not trust the system, because it was built for someone else&rsquo;s report and it changes under them.
         </P>
         <P>
-          Once that happens, four things follow, and I have watched all four in every sector I have worked in.
+          Once that happens, four things follow. I have watched some version of all four across the sectors I have worked in.
         </P>
         <P>
           Compliance reporting becomes its own workflow, fed from the local spreadsheets and their owners, and only partly from the systems, because the owners are the ones who have to sign the submission and they will only sign what they trust.
         </P>
         <P>
-          Dashboards multiply. There is one in the CRM, one in the student information system, and one in the BI tool, each built by a different team from a different source, and the local spreadsheets still prevail because that is where the owners look. Sometimes there is more than one BI tool. In one network finance worked in Looker and the school leaders in Tableau, each with its own version of the number. <InternalLink slug="numbers-dont-agree">The numbers don&rsquo;t agree because the words don&rsquo;t</InternalLink> is about why the versions disagree; this is about why there are so many versions in the first place.
+          Dashboards multiply. There is one in the CRM, one in the student information system, and one in the BI tool, each built by a different team from a different source, and the local spreadsheets still prevail because that is where the owners look. Sometimes there is more than one BI tool. In one network finance worked in Looker and the school leaders in Tableau, each with its own version of the number. <InternalLink slug="numbers-dont-agree"><I>The numbers don&rsquo;t agree because the words don&rsquo;t</I></InternalLink> is about why the versions disagree; this is about why there are so many versions in the first place.
         </P>
         <P>
           Finance and HR stay walled off. In the name of security, the accounting system and the talent system are not integrated with the rest and not loaded into the warehouse. Some of that caution is right. Much of it is a narrative that nobody has been asked to make specific: which fields, to whom, under what contract. So the two systems that hold what the organization spends and who it employs sit outside every analysis of what it does.
@@ -10186,23 +10184,21 @@ export const ESSAYS: Essay[] = [
           That is the box. It is not that the organization has no data. It has too many versions of it, held by people who trust their own version for good reasons, in systems that were never built to be the one they trust.
         </P>
 
-        <H2>The constraints, listed</H2>
+        <H2>What the standard advice assumes away</H2>
         <P>
-          Read from the operator&rsquo;s chair, the box produces a fixed set of problems, and the advice the field gives usually assumes at least one of them away. Entry is manual and late, because the system captures what the funder counts as a form filled in after the encounter. Training never ends, because turnover takes the skill with it and each policy change resets it; when staff are already saturated with change, another round of training stalls rather than lands (<a href="https://sloanreview.mit.edu/article/when-employees-are-drowning-in-change/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">MIT Sloan Management Review</a>, 2026). Integration is partial, so the portal, the student information system and the CRM each hold part of a family&rsquo;s record and someone carries the rest over by hand. Identity lives in unwritten rules. Exports are shaped for a report template rather than a question, with columns that went dead in 2023 and what the program knows about a person sitting in free text. And the outside context that would give the organization&rsquo;s numbers their meaning sits elsewhere: the region&rsquo;s enrollment trend, the county&rsquo;s suicide rate, what happened to last year&rsquo;s graduates. It lives in [the National Student Clearinghouse, NYSED, CDC WONDER, the regional health information exchange, NSDUH]. Few of those can be connected to by one person at a school or a clinic.
+          Read from the operator&rsquo;s chair, the box produces a fixed set of problems, and the advice the field gives usually assumes at least one of them away. Entry is manual and late, because the system captures what the funder counts as a form filled in after the encounter. Training never ends, because turnover takes the skill with it and each policy change resets it; and the appetite for it is finite, because employees absorb one or two major changes a year while leaders plan three or four (Grossman, <a href="https://sloanreview.mit.edu/article/when-employees-are-drowning-in-change/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>MIT Sloan Management Review</I></a>, May 2026, reporting a Grossman Group survey with The Harris Poll). Integration is partial, so the portal, the student information system and the CRM each hold part of a family&rsquo;s record and someone carries the rest over by hand. Identity lives in unwritten rules. Exports are shaped for a report template rather than a question, with columns that went dead in 2023 and what the program knows about a person sitting in free text. And the outside context that would give the organization&rsquo;s numbers their meaning sits elsewhere: the region&rsquo;s enrollment trend, the county&rsquo;s suicide rate, what happened to last year&rsquo;s graduates. It lives in [the National Student Clearinghouse, NYSED, CDC WONDER, the regional health information exchange, NSDUH]. Few of those can be connected to by one person at a school or a clinic.
         </P>
-
-        <H2>What the box does to the standard advice</H2>
         <P>
           The advice comes in two forms, and both assume capacity the box does not have.
         </P>
         <P>
-          The first is to replace or properly integrate the systems. Correct, and not available. The systems are the ones the funder or the state requires. Healthcare has larger budgets than anywhere else I have worked. There, a Carta Healthcare survey found EHR integration difficulty the leading barrier to AI adoption, cited by 44 percent of respondents, well ahead of clinician trust and regulatory concerns at 26 percent each (<a href="https://www.healthcareitnews.com/news/hospitals-must-prove-they-can-make-ai-operational-scale" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Siwicki, Healthcare IT News</a>, August 2026). If integration is still the first thing in the way at health systems with real budgets, &ldquo;integrate properly first&rdquo; is not a credible prerequisite for a community clinic or a charter network.
+          The first is to replace or properly integrate the systems. Correct, and not available. The reporting obligation usually constrains which system can be used and how it must be configured, even where no funder named the vendor. Healthcare has larger budgets than anywhere else I have worked. There, a Carta Healthcare survey found EHR integration difficulty the leading barrier to AI adoption, cited by 44 percent of respondents, well ahead of clinician trust and regulatory concerns at 26 percent each (<a href="https://www.healthcareitnews.com/news/hospitals-must-prove-they-can-make-ai-operational-scale" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Siwicki, Healthcare IT News</a>, August 2026). If integration is still the first thing in the way at health systems with real budgets, &ldquo;integrate properly first&rdquo; is not a credible prerequisite for a community clinic or a charter network.
         </P>
         <P>
           The second is to clean the data before adopting AI, because AI amplifies a weak foundation rather than repairing it (<a href="https://www.i-mtechnology.com/2026/07/20/ai-wont-fix-messy-data-why-your-nonprofit-needs-a-strong-foundation-before-adopting-ai/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">I-M Technology</a>, July 2026). NYU Langone&rsquo;s chief digital and information officer puts it as a principle: if you want high-quality data in the intelligence layer, you fix it at the transactional systems first (<a href="https://www.databricks.com/blog/data-quality-ai-strategy" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mherabi, via Databricks</a>, May 2026). I agree with the description of what goes wrong. What the advice assumes is that someone is funded to clean. Inside the box, &ldquo;clean first&rdquo; means never, because cleaning is already the work nobody has hours for. And it assumes the cleaned system will be trusted once it is clean, which the spreadsheet owners have already decided it will not be.
         </P>
         <P>
-          So the question I want to ask is narrower than whether the organization should adopt AI. It is whether AI changes the cost of each constraint in place, without replacing the system, without hiring a team, and without asking the owners to give up the sheet they trust. My answer, from having done the work both ways, is that one mechanism moves most of them, and that one thing does not move at all.
+          So the question I want to ask is narrower than whether the organization should adopt AI. It is whether AI changes the cost of each constraint in place, without replacing the system, without hiring a team, and without asking the owners to give up the sheet they trust. My answer, from having done the work both ways, is that one mechanism moves a good many of them, and that one thing does not move at all.
         </P>
 
         <H2>Keep the spreadsheet. Carry it in.</H2>
@@ -10227,13 +10223,31 @@ export const ESSAYS: Essay[] = [
           A careful reader will ask why this needs AI at all. Field mappings, crosswalks, record matching and reconciliation have existed for decades. Scripts and integration tools do all of it. That reader is right, and the answer says what the model is for.
         </P>
         <P>
-          Deterministic tools work once the rule exists. What has been expensive in these organizations is getting from the local meaning of a column to a rule explicit enough to automate, for fifty sheets, each maintained by a different person, each changing when a code or a person changes. Writing that rule down has always been an afternoon per sheet, and there was never an afternoon. A model reads the sheet and the system side by side and proposes the rule: this column is that field, this value is that code, these rows do not fit. It will be wrong in places. It is still a first draft that nobody had before.
+          Deterministic tools work once the rule exists. What has been expensive in these organizations is getting from the local meaning of a column to a rule explicit enough to automate, for fifty sheets, each maintained by a different person, each changing when a code or a person changes. Writing that rule down has always been an afternoon per sheet, and there was never an afternoon. A model reads the sheet and the system side by side and proposes the rule: this column is that field, this value is that code, these rows do not fit. It will be wrong in places. It is still a first draft that nobody had before, and it drafts the script that runs the rule as well as the rule. What has not changed is the confirming, which is the part that decides whether any of it can be trusted.
         </P>
         <P>
-          So the architecture has three parts, and the model is only one of them. The model proposes the translation. A person who knows the sheet confirms it, and adds the exception the model could not know. Then ordinary deterministic code runs the confirmed translation every cycle, the same way every time, and raises a flag when something no longer fits. Ordinary integration was too expensive to build and keep for small, changing, one-person-per-system environments. What has fallen is the cost of getting to an executable rule: the model drafts the mapping, and it drafts the script that runs the mapping too. The middle part, the confirming, has not changed at all, and it is the part that decides whether the result can be trusted.
+          So the architecture has three parts, and the model is only one of them. The model proposes the translation. A person who knows the sheet confirms it, and adds the exception the model could not know. Then ordinary deterministic code runs the confirmed translation every cycle, the same way every time, and raises a flag when something no longer fits.
         </P>
         <P>
-          Two conditions ride with this, and they are not optional in a school or a clinic. The model works inside the organization&rsquo;s own approved environment, with the minimum access the task needs, and where the record is sensitive it proposes the write and a person commits it. And the crosswalk is versioned: confirmed, dated, owned, and checked again whenever either side changes. &ldquo;Confirmed once&rdquo; is not a state these organizations get to stay in, because codes change, policies change and people change. Anthropic&rsquo;s own data team reports what happens when the written sources of truth behind an analytics agent go untended. Offline accuracy that had launched at about 95 percent drifted to about 65 percent over a month. Without those documents at all, accuracy on the team&rsquo;s evals did not exceed 21 percent (<a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Cherry et al., Anthropic</a>, June 2026). The maintenance does not disappear. It moves from reconstructing what a column meant, every time someone asks, to keeping one explicit seam current. That is a much smaller job, and it has to be someone&rsquo;s.
+          Two of those three are not new here. I named them in <InternalLink slug="when-genai-redesigned-my-dashboard"><I>When GenAI redesigned my dashboard</I></InternalLink> as a discipline for dashboards: AI proposes, human curates. What this essay adds is the third part and a different object. A dashboard can be curated once and left. A record is written every cycle, so the confirmed translation has to become something a machine executes the same way each time.
+        </P>
+        <P>
+          That division is also a position on how much the model is allowed to do on its own, and it is a specific one. In <InternalLink slug="actions-not-answers"><I>Actions, not answers</I></InternalLink> I argued that the checkpoint which used to come free with every answer disappears the moment a model acts rather than replies, and has to be designed back in deliberately. The crosswalk is that checkpoint, built at the seam. The model never writes to the record unsupervised. What runs unsupervised is deterministic code executing a rule a person already confirmed.
+        </P>
+        <P>
+          The usual way to get more out of an agent is to move it up the autonomy range and build safeguards around the new position. In this seat the better move is the other one: hold the model at propose-and-wait, and push the confirmed rule down into code that runs the same way every cycle. That buys the cadence without the exposure, and it is available because the expensive part here was never the execution. It was the meaning.
+        </P>
+        <P>
+          That is a claim about who carries the work rather than who watches it, the load-carrier distinction I used in <InternalLink slug="auditing-an-ai-native-practice"><I>Auditing an AI-native practice</I></InternalLink> to measure my own. Human in the loop and AI in the loop are its two ends, and one question separates them: if the person stopped, would the record still get written? Where the answer is yes, the AI carries the load and the person checks it. Here the answer has to be no, because meaning cannot be overseen from outside.
+        </P>
+        <P>
+          Where the model sits and what it is grounded against is the placement question <InternalLink slug="grounding-the-ai-layer"><I>Grounding the AI layer</I></InternalLink> asks of the whole stack; here the placement is the seam and the crosswalk is the grounding. Two conditions ride with it, and they are not optional in a school or a clinic. The model works inside the organization&rsquo;s own approved environment, with the minimum access the task needs, and where the record is sensitive it proposes the write and a person commits it. And the crosswalk is versioned: confirmed, dated, owned, and checked again whenever either side changes. &ldquo;Confirmed once&rdquo; is not a state these organizations get to stay in, because codes change, policies change and people change.
+        </P>
+        <P>
+          It also has to be a governed definition rather than a note, because the failure it prevents is a quiet one. Dmitry Ustimov built a deliberately messy test warehouse and found that bad SQL was the cheap failure. The expensive one was wrong selection: the agent picks a column whose name matches the question and whose definition does not, writes valid SQL, and the chart renders with nothing raised (<a href="https://decisionspine.com/blog/why-ai-analysts-pick-the-wrong-metric" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ustimov, Decision Spine</a>, August 2026). The person at the desk has been making that same selection by hand for years. A written definition can be tested; a habit cannot.
+        </P>
+        <P>
+          Untended, it stops being testable. Anthropic&rsquo;s own data team watched offline accuracy behind an analytics agent drift from about 95 percent at launch to about 65 percent over a month once nobody maintained the written sources of truth (<a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Cherry et al., Anthropic</a>, June 2026). The maintenance does not disappear. It moves from reconstructing what a column meant every time someone asks, to keeping one explicit seam current. That is a much smaller job, and it has to be someone&rsquo;s.
         </P>
 
         <H2>Move record-making inside</H2>
@@ -10259,49 +10273,36 @@ export const ESSAYS: Essay[] = [
 
         <H2>Same architecture, different seams</H2>
         <P>
-          Once you see the three parts (a model proposes meaning, a person confirms it, deterministic code preserves it), most of the other constraints in the box turn out to be the same architecture applied at a different seam. Not every seam is a round trip between a trusted sheet and a record; the outside-data case below is closer to access, translation and provenance. The division of labor is the same. I will take three, at different lengths, because the second is the one that shows most clearly what is being converted.
+          Once you see the three parts (a model proposes meaning, a person confirms it, deterministic code preserves it), the other constraints in the box turn out to be the same architecture applied at a different seam. Not every seam is a round trip between a trusted sheet and a record; the outside-data case below is closer to access, translation and provenance. The division of labor is the same. I take two here, and the companion essay takes four more. The first of the two shows most clearly what is being converted.
         </P>
         <P>
-          <B>Policy change and rollover.</B> When the state issues new absenteeism codes, three pieces of work follow: configure the codes, map the old ones to the new so the trend does not break, and tell the people at the front where the field is and who logs it. Today that is three people, and the third job repeats for every new hire until the next change. Given the policy memo, the current configuration and the crosswalk, a model drafts all three in one pass; a person checks each; the note goes where the next hire will find it. Rollover is the same shape run backwards: given last year&rsquo;s schema and this year&rsquo;s, the model lists what will not survive the archive, and the loss becomes a decision someone makes on purpose rather than a discovery three years later.
+          <B>Identity.</B> Matching one person across the portal, the student information system and the CRM has been done by rules nobody wrote. Same birth date, last name within two characters, except the cohort where the front desk entered the birth year wrong for a month. A model can propose the matches and, more usefully, propose the rules it is using in plain language. The person who has done the match by hand for three years reads them, adds the exception, and the rules become a versioned file the next person inherits. Some knowledge really is tacit. James Scott&rsquo;s point that every production process depends on informal knowledge that resists full codification stands (Scott, <I>Seeing like a state</I>, Yale University Press, 1998, ch. 9 [page numbers and quotation pending print check; no URL until verified]). Thea Snow is right that a home visit reveals things a database does not; her social worker&rsquo;s test is whether there is food in the fridge and whether the carpet is sticky (<a href="https://notesfromashoulderseason.substack.com/p/the-meaning-of-metis" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Snow, Notes from a Shoulder Season</a>, August 2026). But organizations routinely call knowledge tacit that is only undocumented. The rule that &ldquo;an applicant is who SchoolMint says they are unless HubSpot has them flagged,&rdquo; which I described in <InternalLink slug="the-contracts-between-systems"><I>The contracts between systems</I></InternalLink>, was never uncodifiable. It was unrecorded, because recording it cost an afternoon nobody had. The front-desk cohort is the same. Much of what these organizations call institutional knowledge was not impossible to write down; it was nobody&rsquo;s funded job to write it down. What AI lowers is the cost of attempting to make the rule explicit. Where codification stops is still something a person finds out, by use and by exception. Identity is where the attempt usually succeeds.
         </P>
         <P>
-          <B>Identity.</B> Matching one person across the portal, the student information system and the CRM has been done by rules nobody wrote. Same birth date, last name within two characters, except the cohort where the front desk entered the birth year wrong for a month. A model can propose the matches and, more usefully, propose the rules it is using in plain language. The person who has done the match by hand for three years reads them, adds the exception, and the rules become a versioned file the next person inherits. Some knowledge really is tacit. James Scott&rsquo;s point that every production process depends on informal knowledge that resists full codification stands (Scott, <I>Seeing like a state</I>, Yale University Press, 1998, ch. 9 [page numbers and quotation pending print check; no URL until verified]). Thea Snow is right that a home visit reveals things a database does not; her social worker&rsquo;s test is whether there is food in the fridge and whether the carpet is sticky (<a href="https://notesfromashoulderseason.substack.com/p/the-meaning-of-metis" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Snow, Notes from a Shoulder Season</a>, August 2026). But organizations routinely call knowledge tacit that is only undocumented. The rule that &ldquo;an applicant is who SchoolMint says they are unless HubSpot has them flagged,&rdquo; which I described in <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink>, was never uncodifiable. It was unrecorded, because recording it cost an afternoon nobody had. The front-desk cohort is the same. Much of what these organizations call institutional knowledge was not impossible to write down; it was nobody&rsquo;s funded job to write it down. What AI changes is the cost of finding out which kind you are holding, and identity is where the answer is usually &ldquo;the recordable kind.&rdquo;
+          <B>The outside.</B> An enrollment decline is a fact about the school or a fact about the region, and the context that settles which sits in [the National Student Clearinghouse, NYSED, CDC WONDER, NSDUH]. Pulling it and keeping it current was a job, and the job was nobody&rsquo;s. One person can now do it, because I did: the <a href="/pdds/governance-scorecard.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> panels pull public sources through a dbt pipeline with a model drafting and deterministic gates checking every claim (<InternalLink slug="extending-the-gates"><I>Extending the gates</I></InternalLink>). Two limits stay. A download behind a login still needs a person, and provisional data gets revised, so a context number needs its vintage on it.
         </P>
         <P>
-          <B>The outside.</B> An organization&rsquo;s number means little alone; an enrollment decline is a fact about the school or a fact about the region, and the context sits in [the National Student Clearinghouse, NYSED, CDC WONDER, the regional health information exchange, NSDUH]. Pulling it, reshaping it and keeping it current was a job, and the job was nobody&rsquo;s. One person can now do it, because I did: the <a href="/pdds/governance-scorecard.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> panels pull public sources through a dbt pipeline with a model drafting the narrative and deterministic gates checking every claim (<InternalLink slug="extending-the-gates">Extending the gates</InternalLink>). Two limits stay: a download behind a login still needs a person, and provisional data gets revised, so a context number needs its vintage on it.
-        </P>
-        <P>
-          That is enough cases. The export that nobody can read, the definition that lives in cell D14, the free text no dashboard sees: each is the same division of labor at another seam. <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink> is about who has been carrying all of them on top of a real job.
+          That is enough cases here. A third set sits one piece over: what happens when the world changes and the configuration does not. A state policy that reissues the codes. A vendor release that lands two quarters late. A year-end rollover that drops the field a trend needed. A model upgrade that arrives with no notes at all. Same division of labor, applied to change rather than to distance. That is the subject of the companion to this essay, <InternalLink slug="the-delta-nobody-budgeted"><I>The delta nobody budgeted.</I></InternalLink> <InternalLink slug="the-absorbed-data-role"><I>The absorbed data role</I></InternalLink> is about who has been carrying all of them on top of a real job.
         </P>
 
-        <H2>What AI does not do about the wall</H2>
+        <H2>What does not move</H2>
         <P>
-          I should be direct about the finance and HR wall, because the pitch will imply a model dissolves it and it does not.
+          Every gain above carries the same condition. The crosswalk needs a confirmer and a version. The identity rules need someone who knows the exception. The context needs a vintage, and the field list for finance needs someone with the authority to sign it. The same holds for the artifacts the companion essay produces, the policy map and the preservation list, because the file below is one artifact spanning both.
         </P>
         <P>
-          A model does not open Intacct. The security narrative is a governance position, and the only thing that answers a governance position is a specific one: these fields, to this warehouse, read by these roles, under this contract, with this audit trail. That is the governance contract <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink> describes, and it is written by people with authority. What a model can do is draft the specific proposal, from the two schemas and the questions the organization wants answered, so the conversation is about a named list of fields rather than about &ldquo;security&rdquo; in general. In my experience the narrative has survived because nobody made it specific. Making it specific is cheap now. Deciding is not.
-        </P>
-
-        <H2>The thing that does not move</H2>
-        <P>
-          Every gain above carries the same condition. The crosswalk needs a confirmer and a version. The policy map needs a checker. The preservation list needs a decider. The identity rules need someone who knows the exception, the context needs a vintage, and the field list for finance needs someone with the authority to sign it.
+          The cost of producing each of those artifacts has dropped. The cost of owning them has not. Two surveys of different populations show the shape of the risk rather than its size. dbt Labs asked analytics engineers what they prioritize and found 72 percent on AI-assisted coding against 24 percent on AI-assisted pipeline management (<a href="https://www.getdbt.com/resources/state-of-analytics-engineering-2026" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">dbt Labs, <I>State of Analytics Engineering 2026</I></a>). Among 346 nonprofits surveyed in late 2025, 92 percent use AI, 81 percent use it on an ad hoc basis, and 7 percent report major improvement in their ability to achieve their mission (<a href="https://virtuous.org/blog/2026-nonprofit-ai-adoption-report/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Virtuous and Fundraising.AI, 2026 Nonprofit AI Adoption Report</a>). Neither survey measures what I am claiming, and read together they are consistent with it. My reading is one owner at a desk, using a model to get through Tuesday faster, and writing nothing down. The constraints ease for that person. The organization keeps the same box, with one more version of the number in it.
         </P>
         <P>
-          The cost of producing each of those artifacts has dropped. The cost of owning them has not, and the numbers suggest most organizations are taking the first and skipping the second. dbt Labs&rsquo; 2026 survey of analytics engineers found 72 percent prioritizing AI-assisted coding and 24 percent prioritizing AI-assisted pipeline management (<a href="https://www.getdbt.com/resources/state-of-analytics-engineering-2026" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">dbt Labs, <I>State of Analytics Engineering 2026</I></a>). Among 346 nonprofits surveyed in late 2025, 92 percent use AI, 81 percent use it on an ad hoc basis, and 7 percent report major improvement in their ability to achieve their mission (<a href="https://virtuous.org/blog/2026-nonprofit-ai-adoption-report/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Virtuous and Fundraising.AI, 2026 Nonprofit AI Adoption Report</a>). Put those together and the picture is one owner at a desk, using a model to get through Tuesday faster, and writing nothing down. The constraints ease for that person. The organization keeps the same box, with one more version of the number in it.
+          <InternalLink slug="four-jobs-one-loop"><I>Four jobs, one loop</I></InternalLink> makes the general form of this argument at the level of a measurement function: infrastructure and AI make production through the middle of the loop cheap and supply no owner for the reasoning that keeps it whole. This is the same argument one level down, at the desk where the sheet lives. AI makes crossing the boundary between the worker&rsquo;s record and the institution&rsquo;s cheap. It does not decide what is allowed to cross, what becomes authoritative once it has, or who owns the mapping.
         </P>
         <P>
-          <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> makes the general form of this argument at the level of a measurement function: infrastructure and AI make production through the middle of the loop cheap and supply no owner for the reasoning that keeps it whole. This is the same argument one level down, at the desk where the sheet lives. AI makes crossing the boundary between the worker&rsquo;s record and the institution&rsquo;s cheap. It does not decide what is allowed to cross, what becomes authoritative once it has, or who owns the mapping.
-        </P>
-
-        <H2>Capacity, and where it has to land</H2>
-        <P>
-          I have argued across this library that organizations fail when decision load exceeds decision capacity, and that capacity is an architecture you build rather than a headcount you hire (<ArtifactLink slug="decision-load-vs-capacity">Decision load vs decision capacity</ArtifactLink>). The question this essay has been circling is whether AI adds capacity inside the box.
+          The finance and HR wall is that in its hardest form, and the pitch will imply a model dissolves it. A model does not open Intacct. The security narrative is a governance position, and the only thing that answers a governance position is a specific one: these fields, to this warehouse, read by these roles, under this contract, with this audit trail. That is the governance contract <InternalLink slug="the-contracts-between-systems"><I>The contracts between systems</I></InternalLink> describes, and it is written by people with authority. What a model can do is draft the specific proposal, from the two schemas and the questions the organization wants answered, so the conversation is about a named list of fields rather than about &ldquo;security&rdquo; in general. In my experience the narrative has survived because nobody made it specific. Making it specific is cheap now. Deciding is not.
         </P>
         <P>
-          It does, and the seam is where. But capacity only counts if it lands in the architecture. A model that drafts a crosswalk for one owner who keeps it on her desktop has added capacity to her Tuesday. A crosswalk that is confirmed, versioned, filed where the next person finds it, and run by the system entry every cycle has added capacity to the organization, because the next owner inherits it and the compliance report draws from it. What separates the two is whether anyone was given the authority to make the model&rsquo;s draft the organization&rsquo;s record.
+          I have argued across this library that organizations fail when decision load exceeds decision capacity, and that capacity is an architecture you build rather than a headcount you hire (<ArtifactLink slug="decision-load-vs-capacity">Decision load vs decision capacity</ArtifactLink>). So: does AI add capacity inside the box? It does, and the seam is where. But capacity only counts if it lands in the architecture. A model that drafts a crosswalk for one owner who keeps it on her desktop has added capacity to her Tuesday. A crosswalk that is confirmed, versioned, filed where the next person finds it, and run by the system entry every cycle has added capacity to the organization, because the next owner inherits it and the compliance report draws from it.
         </P>
         <P>
-          In <InternalLink slug="plumbing-got-upgraded-water-didnt">Plumbing got upgraded. The water didn&rsquo;t.</InternalLink> I said the pipe now carries speed cheaply and that resolution and context were the two knobs left at their defaults. The seam is what turning those knobs looks like from the operator&rsquo;s chair: the record at the resolution the owner already keeps, and the context the outside data was always holding. The pipe can carry it now. The organization still has to decide that it will.
+          In <InternalLink slug="plumbing-got-upgraded-water-didnt"><I>Plumbing got upgraded. The water didn&rsquo;t.</I></InternalLink> I said the pipe now carries speed cheaply and that resolution and context were the two knobs left at their defaults. The seam is what turning those knobs looks like from the operator&rsquo;s chair: the record at the resolution the owner already keeps, and the context the outside data was always holding. The pipe can carry it now. The organization still has to decide that it will.
         </P>
 
         <H2>What to ask for</H2>
@@ -10312,7 +10313,7 @@ export const ESSAYS: Essay[] = [
           Point AI at the seam between the trusted spreadsheet and the system of record, before pointing it at the analytics. Keep the working sheets. Let the model propose the translation, let the owner confirm it, and let ordinary code run it. A dashboard built on top of a system the owners route around inherits everything that did not get entered.
         </P>
         <P>
-          Then change what counts as the output of that work. The number for the board is not the deliverable. The file is. I am using &ldquo;file&rdquo; loosely, and on purpose: one maintained record of what the organization&rsquo;s data means, kept where the next person can find it, readable by a person and usable by a machine. Some of it is prose, such as what a status code meant and who decided. Some of it should be a table a program can run, such as the crosswalk and the identity rules. It carries the crosswalk from each owner&rsquo;s sheet to the system&rsquo;s fields, with its version. It carries the identity rules with their exceptions, and what each field and code means in the words of someone who checked. It carries the old-to-new map for each policy change, the preservation list from each rollover, and the definition and vintage behind each reported number. A model drafts every part. A person confirms each part and signs. The compliance report cites it, and when a code changes, the file changes first.
+          Then change what counts as the output of that work. The number for the board is not the deliverable. The file is. I am using &ldquo;file&rdquo; loosely, and on purpose: one maintained record of what the organization&rsquo;s data means, kept where the next person can find it, readable by a person and usable by a machine. Some of it is prose, such as what a status code meant and who decided. Some of it should be a table a program can run, such as the crosswalk and the identity rules. It carries the crosswalk from each owner&rsquo;s sheet to the system&rsquo;s fields, with its version. It carries the identity rules with their exceptions, and what each field and code means in the words of someone who checked. It carries the definition and vintage behind each reported number. And because it is one artifact across both essays, it is also where the old-to-new map for each policy change and the preservation list from each rollover belong. A model drafts every part. A person confirms each part and signs. The compliance report cites it, and when a code changes, the file changes first.
         </P>
         <P>
           That is a small ask and it can be adopted wrongly, which is the sign it is specific enough. One wrong adoption is the file as a documentation project: write down everything, make the systems &ldquo;AI-ready.&rdquo; Durgin is right that this is impossible and misses the point, and that the place to start is the problem you are trying to solve. The file is scoped the same way. It covers the numbers the organization reports and the decisions it makes on them, and nothing else until a new number or a new decision needs it. The other wrong adoption is a file the model wrote and nobody read, saved beside the fifty sheets as the fifty-first. The test is whether a stranger, handed the file and the exports, could reproduce Thursday&rsquo;s number. If they cannot, the work has been made faster and not recorded.
@@ -10344,6 +10345,11 @@ export const ESSAYS: Essay[] = [
             gloss="The worked case for outside context pulled by one operator, with a model drafting and gates checking."
           />
           <SeeAlsoItem
+            slug="the-delta-nobody-budgeted"
+            title="The delta nobody budgeted."
+            gloss="The companion, and the other axis: not the distance between two records at one moment, but the gap a changing world opens in a system that stands still."
+          />
+          <SeeAlsoItem
             slug="four-jobs-one-loop"
             title="Four jobs, one loop."
             gloss="Cheap production, no owner, one level up from the desk."
@@ -10351,7 +10357,243 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Method note. External sources were verified on 2026-09-15 against the live pages for Anthropic (Cherry, Peng, Jiao, Leder and Chang, June 3, 2026), Healthcare IT News (Siwicki, August 7, 2026, reporting a Carta Healthcare survey), dbt Labs (State of Analytics Engineering 2026, fielded December 2025 to February 2026), Virtuous and Fundraising.AI (346 nonprofits, December 2025), Databricks (Mherabi, May 13, 2026), CIO.com (Gandhi, June 22, 2026), Snow (August 27, 2026) and Durgin (Think Solve Repeat, September 13, 2026; added after the Standard pass at Chaitanya&rsquo;s pointer, not yet in the knowledge repo). The MIT Sloan Management Review piece is cited from the AB knowledge repo entry; the page blocks automated fetch and should be read by hand before publication. Scott is cited from the repo entry, which was itself verified against secondary sources; the chapter 9 claim needs a print check and page numbers before this ships. Two rounds of external adversarial review (GPT, 2026-09-15) shaped v0.4 and v0.5. [Bracketed details in the body are unverified until filled.]
+          Method note. External sources were verified on 2026-09-15 against the live pages for Anthropic (Cherry, Peng, Jiao, Leder and Chang, June 3, 2026), Healthcare IT News (Siwicki, August 7, 2026, reporting a Carta Healthcare survey), dbt Labs (State of Analytics Engineering 2026, fielded December 2025 to February 2026), Virtuous and Fundraising.AI (346 nonprofits, December 2025), Databricks (Mherabi, May 13, 2026), CIO.com (Gandhi, June 22, 2026), Snow (August 27, 2026), Ustimov (Decision Spine, August 21, 2026) and Durgin (Think Solve Repeat, September 13, 2026; added after the Standard pass at Chaitanya&rsquo;s pointer, not yet in the knowledge repo). The MIT Sloan Management Review piece was read in full on 2026-09-16 (Grossman, May 28, 2026); the claim in the text was narrowed to the survey figure the article actually reports, and the survey is the author&rsquo;s own firm&rsquo;s, run with The Harris Poll, which is stated in the text. Scott is cited from the repo entry, which was itself verified against secondary sources; this essay paraphrases chapter 9 and quotes nothing, and chapter-level attribution is accepted for the paraphrase (Chaitanya, 2026-09-16). Two rounds of external adversarial review (GPT, 2026-09-15) shaped v0.4 and v0.5: trusted surface distinguished from authoritative truth, the round trip made central, the model-proposes / human-confirms / code-preserves division stated, the seam versioned, a write boundary added, the second half compressed, the funder ask reversed. The keep-the-spreadsheet-and-carry-it-in move and the systems-box picture are Chaitanya&rsquo;s, from the drafting pours of 2026-09-15. Seat examples reuse details already published in <I>The contracts between systems</I>, <I>The numbers don&rsquo;t agree because the words don&rsquo;t</I> and <I>Extending the gates</I>. [Bracketed details in the body are unverified until filled.]
+        </MetaNote>
+      </>
+    ),
+  },
+
+  // ===================================================================
+  // ESSAY 23 — The delta nobody budgeted. (DRAFT)
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "the-delta-nobody-budgeted",
+    number: "23",
+    title: "The delta nobody budgeted.",
+    subtitle:
+      "Keeping a system matched to a moving world has never been anyone's job.",
+    date: "2026-09-16",
+    readingTime: "11 min read",
+    summary:
+      "A state reissues its attendance codes. A counselor leaves in March. The vendor's release lands two quarters late. The year rolls over and a field goes with it. Each of these creates the same three jobs — reconfigure, re-teach, re-map — and each lands on whoever is capable and present. This essay argues that the recurring cost in a human-serving organization is not running the system but keeping it matched to a world that will not hold still, that AI makes the translation component of that work cheap while leaving the judgment, the ownership and the vendor dependency where they were, and that AI is now itself one of the change events it is being bought to absorb.",
+    cover: "/library/covers/the-delta-nobody-budgeted.svg",
+    arc: "ai-systems",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            <I>Keeping a system matched to a moving world has never been anyone&rsquo;s job.</I>
+          </p>
+        </Brief>
+
+        <P>
+          [OPENING &mdash; needs one real change event of yours. The strongest shape is a policy change you had to absorb: the state reissued a definition, and you can name what it cost in weeks, in re-teaching, and in what happened to the trend line. Placeholder below carries the shape, not the facts.]
+        </P>
+        <P>
+          In [year] the state changed how [chronic absenteeism] was counted. The memo was three pages. The work it created took [months] and was spread across four people, none of whom had it in their job description. The [student information system] had to be reconfigured, and that meant filing a ticket with a vendor. Every school secretary who logged attendance had to be told where the new field was. And the [six] years of records already sitting in the system had to be mapped to the new definition, or the trend the board looked at every spring would break without anyone noticing.
+        </P>
+        <P>
+          Nobody budgeted for any of it. Nobody does, anywhere, because the work has no name.
+        </P>
+
+        <H2>Nobody owns the transition</H2>
+        <P>
+          The systems in schools, clinics, campuses and nonprofits are built once and then stand still. The world they describe does not.
+        </P>
+        <P>
+          Organizations budget for the state and hide the cost of the transition. The student information system, the electronic health record, the CRM, the warehouse, the licences and the analyst all have line items. The work of getting from one configuration to the next has none. So it is paid in labour, by whoever can bridge the old world and the new one.
+        </P>
+        <P>
+          A state reissues a definition. A funder changes a reporting template. A counselor leaves in March and takes with her the only complete understanding of how intake codes were being used. The vendor ships a release that renames a field. The year rolls over and the system archives what it was told to archive. Every one of these opens a gap between how the world now works and how the system is configured, and every one of them produces the same three jobs.
+        </P>
+        <P>
+          <B>Reconfigure.</B> The system has to be changed to match the new rule.
+        </P>
+        <P>
+          <B>Re-teach.</B> The people entering data have to be told what changed, where, and who is responsible now.
+        </P>
+        <P>
+          <B>Re-map.</B> What was recorded under the old rule has to be reconciled with the new one, or the comparison across years stops meaning anything without ever announcing that it has.
+        </P>
+        <P>
+          Together those three jobs are one recurring task: keeping the organization&rsquo;s representation of the world synchronized with a world that keeps moving. Call it <B>change maintenance</B>. Naming it is not branding. Work without a name does not get a budget line, an owner, or a sentence in anyone&rsquo;s job description, and that is exactly the condition this work has been in.
+        </P>
+
+        <Figure
+          src="/library/figures/the-delta-nobody-budgeted-change-maintenance.svg"
+          alt="Change maintenance, and the model inside it"
+          caption="Four kinds of change event, three jobs each, and one record that says what the boundary was. The model sits inside the loop, and is also one of the events that opens it."
+        />
+
+        <P>
+          I have watched this in a K&ndash;8 charter network, a research university, a community behavioral-health agency and a national youth mental-health nonprofit. The change events differ. The three jobs do not. And in none of those organizations was there a person whose job was to absorb them. The work went to whoever was capable and present, on top of what they were already doing. That is the absorption pattern I described in <InternalLink slug="the-absorbed-data-role"><I>The absorbed data role</I></InternalLink>, and it is the same seat that carries everything in <InternalLink slug="for-the-record"><I>For the record.</I></InternalLink>
+        </P>
+        <P>
+          The two essays split on where the gap sits. That one is about distance: the spreadsheet an owner trusts and the record the institution holds, two versions of the same thing at the same moment. This one is about time: one system, and a world that keeps moving while the configuration stays where it was put.
+        </P>
+        <P>
+          <B>The reason this matters more than it sounds:</B> an organization can survive a bad configuration. It cannot easily survive a broken trend line, because the trend is what every claim it makes to a funder, a board or a state depends on. The re-map is the job most likely to be skipped and the one whose failure takes longest to surface.
+        </P>
+
+        <H2>When the rule changes and the vendor has a roadmap</H2>
+        <P>
+          Take the policy change all the way through, because the parts that are hard are not the parts people expect.
+        </P>
+        <P>
+          The reconfiguration is not something the organization does. It is something the organization <I>asks for</I>. The attendance codes live in a student information system that serves several hundred districts, and the change goes into a queue. It lands in the next release, or the one after. Meanwhile the state&rsquo;s deadline does not move, and the staff at the front desk keep logging the old code because the new one does not exist yet in the only place they can enter it.
+        </P>
+        <P>
+          <B>This is the part nobody writes about, and every operator has lived it.</B> The gap between when the world changes and when your system can represent the change is a vendor&rsquo;s roadmap, and you do not control it. It is the integration governance question from <InternalLink slug="the-contracts-between-systems"><I>The contracts between systems</I></InternalLink> pointed at time rather than at data: what the vendor owes you, and by when, is a term of the contract nobody wrote down. You are one customer among hundreds, your ticket is one of thousands, and the person who has to explain the delay to a superintendent is you.
+        </P>
+        <P>
+          What a model changes here is narrow and real. Given the policy memo, the system&rsquo;s current configuration and the mapping you already hold, it drafts three things in one pass. The configuration specification to send the vendor. The old-to-new mapping, so the trend survives. And the one-page note that tells the front desk where the field is and who logs it. A person checks each. That compresses weeks of coordination into an afternoon of review.
+        </P>
+        <P>
+          What it does not change is the release date. <B>A model cannot move a vendor&rsquo;s roadmap.</B> It can make the interim survivable (a documented workaround, a holding field, an explicit note that these three months were recorded under the old definition); the queue stays the queue.
+        </P>
+        <P>
+          Rollover is the same shape running backwards. Before the system archives the year, a model given last year&rsquo;s schema and this year&rsquo;s can list what will not survive: the fields being dropped, the codes being retired, the links that will break. That list turns a silent loss into a decision somebody makes on purpose. It is the cheapest work in this essay and the one with the longest tail, because the field nobody thought to preserve is always the one a longitudinal question needs three years later.
+        </P>
+        <P>
+          <B>And one judgment stays human, permanently.</B> Whether the new definition is comparable to the old one is a measurement question, not a mapping question. It is the question <InternalLink slug="what-is-this-system-measuring"><I>What is this system measuring?</I></InternalLink> asks of an AI system, asked here of an attendance code. A model can produce a crosswalk between two code sets, and it can do more than that. It can read both definitions, name where the construct shifted, and propose the sensitivity check that would test whether the shift matters. What it cannot do is own the answer. Whether a trend spanning the boundary is a trend or an artifact is a claim the organization makes to a board, a funder or a state, and a claim has to carry somebody&rsquo;s name. Get it wrong and the error is invisible, because the chart still renders.
+        </P>
+
+        <H2>The daily version</H2>
+        <P>
+          The change events above arrive a few times a year and open a gap measured in quarters. One arrives every day and opens a gap measured in hours. It is the same delta at a shorter interval. The world moved at two in the afternoon, the record caught up at half past five, and what fell into the interval was everything the person could no longer recall.
+        </P>
+        <P>
+          The gap between what happened and what got recorded is the oldest version of this problem. A clinician sees a client at two and enters the note at half past five, after the last person has left, from memory, into fields designed to produce a report for the state. A teacher logs an intervention three days later. What gets written is what the form asks for, and what the form asks for is what someone outside needed counted.
+        </P>
+        <P>
+          A model sitting at that seam changes the economics. The person speaks or types a short note in her own words; the model drafts the structured entry in the system&rsquo;s fields and codes; she corrects it and confirms. The form still gets filled. It gets filled on the day, by the person who was there, from what she actually observed rather than from what she can still recall at 5:30.
+        </P>
+        <P>
+          This pattern is already spreading through solo mental-health practice as ambient note-taking, at $19 to $99 a month (<a href="https://www.npr.org/2026/05/26/nx-s1-5826943/talk-therapy-mental-health-ai-artificial-intelligence-privacy-trust" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Johnston, NPR</a>, May 2026). The same reporting carries a caution that has to travel with it, and it should not be buried. On a YouGov survey it quotes, about 11 percent of Americans say they would be open to using AI in mental-health care and 8 percent say they trust it; on a KFF survey, 77 percent are worried about how their health information would be stored and used by such systems (same report). So the design has to answer that directly. The person stays the author of the record. The model drafts and the human signs. The data does not leave the organization&rsquo;s contracted environment. Under those conditions what changes is not sophistication. The record becomes contemporaneous, which is a different and larger thing.
+        </P>
+        <P>
+          <B>And one thing becomes possible that has nothing to do with speed.</B> Case notes, intake narratives and the box that says <I>anything else you would like to tell us</I> hold most of what a program actually knows about a person, and none of it has ever been readable in bulk, so programs report the structured fields and lose the rest. A model can read it: coded against a reference set that subject-matter experts validated by hand, with a person as the final judge, free text becomes a field. What that does to the richness of what an organization can say about the people it serves is a bigger argument than this essay carries, and it needs its own piece.
+        </P>
+
+        <H2>What a model does with change work, and what it does not</H2>
+        <P>
+          One division of labor runs through all of this, and it is the same one <InternalLink slug="for-the-record"><I>For the record.</I></InternalLink> argues for at the other seam.
+        </P>
+        <P>
+          <B>The model proposes.</B> It reads the memo and the configuration, or the note and the form, or the old schema and the new one, and it drafts the translation. The lineage of that move is <InternalLink slug="when-genai-redesigned-my-dashboard"><I>When GenAI redesigned my dashboard</I></InternalLink>, where the heading was AI proposes, human curates; what is added here is the third step below, which is what keeps the proposal from dying on one person&rsquo;s desktop.
+        </P>
+        <P>
+          <B>A person confirms.</B> Someone who knows the domain reads the draft, corrects it, and adds the exception the model could not know.
+        </P>
+        <P>
+          <B>Deterministic code preserves.</B> The confirmed rule runs the same way every cycle and raises a flag when something stops fitting. That is the gate pattern from <InternalLink slug="extending-the-gates"><I>Extending the gates</I></InternalLink>: a model drafts, and code that cannot be talked round checks.
+        </P>
+        <P>
+          Change maintenance suits this division well, because a large component of it is translation. An old code set to a new one. A policy memo to a configuration. A spoken observation to a structured field. A schema to its successor. Translation is exactly what got cheap.
+        </P>
+        <P>
+          The rest does not get cheap, and it is worth being precise about what the rest is. Deciding whether the new definition measures the same thing as the old one is measurement judgment. Deciding who owns intake coding now that the counselor has gone is organizational design. Getting the field built is dependency management. Persuading a staff already tired of changes to enter data a new way is change management. A model touches the translation component and leaves those four roughly where they were.
+        </P>
+        <P>
+          That is still a large win, because the translation component is the one that recurs on every change event without exception, and the one nobody has ever had an afternoon for. The expensive part was never doing the translation once. It was that there was never an afternoon to write it down in a form a machine could run.
+        </P>
+        <P>
+          This is also where two problems nobody files under change work turn out to belong here. <B>Missing data</B> and <B>inaccurate data</B> have many causes. A form that is hard to use. A definition two people read differently. A workload that makes data entry the thing that slips. An extraction that failed quietly. But a recognisable share of them are old changes whose lineage was lost: something changed, nobody recorded what, and the residue is what shows up in the export years later. A column that stopped being populated in 2023 stopped because something changed and nobody wrote it down. A status code that means one thing in the fall and another during the spring campaign is two rules under one name, which is the failure <InternalLink slug="numbers-dont-agree"><I>The numbers don&rsquo;t agree because the words don&rsquo;t</I></InternalLink> works through at length. Profiling an export to find these is the cheapest thing a model does, and in twenty years I have almost never seen it done, because it takes a day and produces no report.
+        </P>
+        <P>
+          The limits are worth stating plainly, because the pitch will imply there are none.
+        </P>
+        <P>
+          A model cannot move a vendor&rsquo;s release date. It can argue about whether a redefined measure is comparable across the boundary, and it cannot own the answer. It drafts the document and does not maintain it. Anthropic&rsquo;s own data team reports what untended documentation does to an analytics agent: offline accuracy drifted from about 95 percent at launch to about 65 percent within a month (<a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Cherry et al., Anthropic</a>, June 2026). The maintenance does not disappear. It moves from reconstructing what a column meant every time somebody asks, to keeping one explicit set of rules current. That is a much smaller job. It still has to be somebody&rsquo;s.
+        </P>
+
+        <H2>The model is a change event too</H2>
+        <P>
+          Here is where the argument has to finish honestly.
+        </P>
+        <P>
+          Everything above says: the world keeps changing, and a model absorbs the translation work that change creates. Left there it is a sales pitch. <B>The model is now one of the things that changes.</B>
+        </P>
+        <P>
+          The version you drafted your mappings with gets upgraded, or deprecated, or swapped out behind an API without notice. It behaves differently. Whether your confirmed translations still hold is not announced anywhere. For an organization with no data team, a model upgrade is indistinguishable from a vendor release. One difference runs the wrong way: <B>the vendor release comes with notes and a date.</B>
+        </P>
+        <P>
+          So the thing bought to stop the organization absorbing deltas by hand arrives carrying one of its own, and a less legible one than the vendor&rsquo;s.
+        </P>
+        <P>
+          <B>The reason it is hard to see is structural rather than organizational.</B> A 2026 validity study of generative-AI essay scoring reports its agreement statistics on a held-out half of the corpus, 6,514 argumentative essays written by students in grades six through twelve. The language models agreed with themselves across runs at a quadratic weighted kappa of about .97. They agreed with the adjudicated human score at about .52 (<a href="https://arxiv.org/abs/2603.19280" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Casabianca, McCaffrey, Johnson, Alper and Zubenko, arXiv preprint</a>, March 2026; not peer reviewed, and the authors name a mismatch between the rubric and the corpus, so the pair reads as a gap between reliability and agreement rather than as a score for the models). A model is highly consistent with itself, and self-consistency is not agreement with anything outside itself. Those are separate properties.
+        </P>
+        <P>
+          That study measures one version against itself, so it cannot on its own tell you what happens across versions. It establishes the weaker and more useful thing. Version A can be near-perfectly consistent with itself, version B can be near-perfectly consistent with itself, and the two can still differ systematically from each other, because nothing in either one&rsquo;s internal steadiness is anchored to an external standard. Internal consistency is not evidence of stability across a version change. It is what makes a version change feel like nothing from the inside. You cannot detect drift by watching the model, because the model looks as steady as it ever did.
+        </P>
+        <P>
+          You detect it by holding something still outside it.
+        </P>
+        <P>
+          <B>The instrument is small enough for a school to run.</B> Keep a fixed set of real cases whose answers you already know (twenty rows an experienced person can vouch for) and re-run them whenever the model changes. If the answers move, the mappings need re-confirming before the next cycle writes anything to the record. That is an anchor set, and it is the same discipline a measurement program uses to detect scoring drift across years (<a href="https://arxiv.org/abs/2603.19280" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Casabianca et al., 2026</a>, on trend scoring against a fixed anchor response set). It is also the instrument <InternalLink slug="auditing-an-ai-native-practice"><I>Auditing an AI-native practice</I></InternalLink> runs on a practice of one, scaled down far enough for a school to hold.
+        </P>
+        <P>
+          And an anchor-set run is a change event like any other, so it leaves the same thing behind: the model version changed on this date, these reference cases moved, these mappings were re-confirmed, and this is what the trend can and cannot claim across that boundary. The instrument that governs the AI is the instrument that already governs the state&rsquo;s redefinition. One artifact, two kinds of change.
+        </P>
+        <P>
+          It is also, for whatever it is worth, a discipline I already run on myself. The editorial standard behind this library caps a punctuation habit on the basis of how models write, and the rule carries its own instruction: re-check on the next model release. A rule written against a model has a shelf life. So does a crosswalk.
+        </P>
+
+        <H2>What to ask for</H2>
+        <P>
+          Two people can use this directly.
+        </P>
+        <P>
+          <B>If you run a program, a school or an agency</B>, stop treating change events as interruptions to the real work and start treating them as the recurring cost they are. Count them. In a normal year, how many times did a definition change, a vendor release land, a key person leave, or a year roll over? That number is the size of a job nobody holds.
+        </P>
+        <P>
+          Then point AI at the three jobs each event creates, in order: draft the configuration request, draft the old-to-new mapping, draft the note that tells the front desk what changed. Have a person confirm each. <B>The deliverable is not the faster turnaround. It is that the mapping is written down</B>, which means the next change starts from a record instead of from someone&rsquo;s memory of what happened last time.
+        </P>
+        <P>
+          <B>If you are the person who has been absorbing these</B>, there is one artifact, and everything above is an instance of it. Every change should leave behind a record of the boundary it created. That record is the change log: what changed, when, what it was mapped to, who confirmed it, and what the trend can and cannot claim across the boundary. A model will draft it from the memo and the schema in an afternoon. What it cannot do is decide whether the comparison holds. That judgment is the reason the role should exist, and writing it down is the only way it survives you.
+        </P>
+        <P>
+          <B>And for whoever is evaluating a tool</B>: ask what happens when the model changes. Not whether the vendor has a governance policy. What happens to <I>your</I> confirmed mappings, how you would find out, and who re-runs the anchor set. A vendor who has not thought about it will tell you their model is stable. That is the answer of somebody who has only ever watched the model.
+        </P>
+        <P>
+          [CLOSE &mdash; same change event as the opening, but do not land on how long it took. Land on what the organization kept. The four people got through it; what survived afterwards was the new configuration and nothing else. Not why the boundary moved, not how the old world was mapped to the new one, not which claims could still be made across it. Placeholder below carries that shape.]
+        </P>
+        <P>
+          [We got through it. What the organization retained was the new configuration, and only that. Nobody recorded why the definition changed, what the old codes had been mapped to, or which of the six years could still be compared to the seventh. The next time the state changes the definition, whoever is in the chair will start where I started, which is from nothing. The afternoon to write it down is available now. What is still missing is anyone whose job it is to spend it.]
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="for-the-record"
+            title="For the record."
+            gloss="The same division of labor at the other seam: the spreadsheet an owner trusts against the record the institution holds."
+          />
+          <SeeAlsoItem
+            slug="the-absorbed-data-role"
+            title="The absorbed data role."
+            gloss="Who ends up carrying the change work, and why the role has no funded home."
+          />
+          <SeeAlsoItem
+            slug="the-contracts-between-systems"
+            title="The contracts between systems."
+            gloss="The same dependency read as governance: what one system owes another, and what happens when nobody wrote the term down."
+          />
+          <SeeAlsoItem
+            slug="actions-not-answers"
+            title="Actions, not answers."
+            gloss="Why the checkpoint has to be designed back in once a model acts rather than replies, which is what holds the model at propose-and-wait here."
+          />
+          <SeeAlsoItem
+            slug="extending-the-gates"
+            title="Extending the gates."
+            gloss="The deterministic half of the division of labor, running as code that checks what a model drafted."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Method note. External sources were verified on 2026-09-16 against the live pages. Anthropic&rsquo;s analytics-agent accuracy figures are from Cherry, Peng, Jiao, Leder and Chang (June 3, 2026). The ambient note-taking price range and the survey figures are from Windsor Johnston, NPR (May 26, 2026), which quotes YouGov for the 11 and 8 percent and KFF for the 77 percent; that report is <C>kr-2026-05-28-003</C> in the knowledge repo and was also verified against the live page, which returned the same three figures. The scoring-consistency figures are from Casabianca, McCaffrey, Johnson, Alper and Zubenko, arXiv:2603.19280 (submitted March 1, 2026), cited as a preprint; Casabianca&rsquo;s affiliation is BroadMetrics and the other four authors are ETS, and the agreement statistics are on the held-out half of the corpus (n = 6,514), not on the full 13,032. The repo entry for that paper flags a construct mismatch the authors themselves acknowledge, so the two kappa values are carried as a reliability-versus-agreement gap and never as a benchmark for the models. The anchor-set instrument is an Adopt flagged in the knowledge repo against that entry, previously unclaimed; it is claimed here and should be marked so in the repo. Seat details in square brackets are unverified until Chaitanya fills them. One round of external adversarial review (GPT, 2026-09-16) shaped v0.2; the verdict, including three items held against the reviewer, is filed in the piece&rsquo;s working file. The change-maintenance frame and the model-upgrade case are Chaitanya&rsquo;s, from the drafting exchange of 2026-09-16.
         </MetaNote>
       </>
     ),
