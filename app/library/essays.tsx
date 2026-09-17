@@ -2556,6 +2556,11 @@ export const ESSAYS: Essay[] = [
             title="Required for what?"
             gloss="The decision-rights version of the placement question — who settles what, before the tooling layer even matters."
           />
+          <SeeAlsoItem
+            slug="four-jobs-one-loop"
+            title="Four jobs, one loop."
+            gloss="What each single-function placement does to a measurement function's four jobs, and why the loop between them needs one owner."
+          />
         </SeeAlso>
 
         <MetaNote>
@@ -3874,6 +3879,11 @@ export const ESSAYS: Essay[] = [
             slug="numbers-dont-agree"
             title="The numbers don’t agree because the words don’t"
             gloss="The shared definitions the contracts have to govern."
+          />
+          <SeeAlsoItem
+            slug="four-jobs-one-loop"
+            title="Four jobs, one loop."
+            gloss="The measurement half of institutional intelligence: whether the number the council governs was ever built to be acted on."
           />
         </SeeAlso>
 
@@ -5597,6 +5607,16 @@ export const ESSAYS: Essay[] = [
             title="Every metric is a claim."
             gloss="Where the warrant lives: the three fields a semantic layer carries so a dashboard number can say what the evidence earned it."
           />
+          <SeeAlsoItem
+            slug="four-jobs-one-loop"
+            title="Four jobs, one loop."
+            gloss="The org-design cause behind the fund's spend: the four jobs were split, so money went to the link that was not holding the claim back."
+          />
+          <SeeAlsoItem
+            slug="the-checkpoint-runs-one-way"
+            title="The checkpoint runs one way."
+            gloss="The same weakest-link reading turned toward AI benefit claims: the four-part gate a floor-raising deployment would have to carry."
+          />
         </SeeAlso>
 
         <MetaNote>
@@ -5819,6 +5839,11 @@ export const ESSAYS: Essay[] = [
             slug="the-floor-is-the-frontier"
             title="The floor is the frontier."
             gloss="What happens to this layer when the capability loop accelerates and the evaluation loop does not."
+          />
+          <SeeAlsoItem
+            slug="the-checkpoint-runs-one-way"
+            title="The checkpoint runs one way."
+            gloss="Amodei's own version of consistency is not validity, written for alignment tests and not yet for benefit claims."
           />
         </SeeAlso>
 
@@ -7731,6 +7756,11 @@ export const ESSAYS: Essay[] = [
             title="When the stakes are the mission."
             gloss="The AI-eval-specific version of the same infrastructure gap, and the load-bearing minimum that has to run on top of the role this piece argues for."
           />
+          <SeeAlsoItem
+            slug="four-jobs-one-loop"
+            title="Four jobs, one loop."
+            gloss="One step past the plumbing role: the two jobs, measurement design and revision, that even a funded bucket-3 role does not hold."
+          />
         </SeeAlso>
 
         <MetaNote>
@@ -8779,6 +8809,11 @@ export const ESSAYS: Essay[] = [
             title="We Used to Settle for Thumbnails"
             gloss="The compression argument in full: what our systems drop when they carry a person as a name and a score."
           />
+          <SeeAlsoItem
+            slug="the-checkpoint-runs-one-way"
+            title="The checkpoint runs one way."
+            gloss="The note that continues this one: the risk side now has the architecture of an acceptance test, and the floor still has none."
+          />
         </SeeAlso>
 
         <MetaNote>
@@ -8789,7 +8824,7 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 16 — The spend trap
+  // FIELD NOTE 15 — The spend trap
   // ===================================================================
   {
     kind: "field-note",
@@ -9649,22 +9684,21 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 19 — Four jobs, one loop. (DRAFT)
+  // FIELD NOTE 16 — Four jobs, one loop.
   // ===================================================================
   {
     kind: "field-note",
     slug: "four-jobs-one-loop",
-    number: "19",
+    number: "16",
     title: "Four jobs, one loop.",
     subtitle:
       "Why measurement design, operational analysis, the external claim and measurement revision belong in one charter.",
-    date: "2026-09-09",
+    date: "2026-09-11",
     readingTime: "11 min read",
     summary:
       "A measurement function has four jobs: design what to collect, analyse so operations can act this month, analyse so the funder gets a claim they can check, and revise the measurement for the next round. Split the four across research, operations and development, and nobody holds the question of what the data licenses you to say.",
     cover: "/library/covers/four-jobs-one-loop.svg",
     arc: "measurement",
-    draft: true,
     body: (
       <>
         <Brief>
@@ -9729,7 +9763,7 @@ export const ESSAYS: Essay[] = [
           The four jobs are validity reasoning turned into operating work.
         </P>
         <P>
-          Messick (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1995</a>) moved validity away from the instrument alone and toward the interpretations and uses made of a score, consequences among them. Kane (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1992</a>) made the chain explicit: a claim depends on the warrants that connect what was observed to what is concluded. Reading that chain at its weakest link is the operator&rsquo;s rule I applied in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, and <InternalLink slug="the-construct-keeps-moving">The construct keeps moving</InternalLink> runs on the same two references. Job 1 is the construct and the observation design. Jobs 2 and 3 are the interpretation and the use; they pull in different directions. Job 2 needs the signal this month, at the grain of a site or a caseload, and can act on something provisional. Job 3 needs stability, comparability and restraint about inference, because the claim will be checked. The same data can license &ldquo;call these twenty-two sites this week&rdquo; and not license &ldquo;the programme improved outcomes.&rdquo; Job 4 closes the loop: what the interpretation, the use and their consequences showed about the measurement, written into the next design.
+          Messick (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1995</a>) moved validity away from the instrument alone and toward the interpretations and uses made of a score, consequences among them. Kane (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1992</a>) made the chain explicit: a claim depends on the warrants that connect what was observed to what is concluded. Reading that chain at its weakest link is the operator&rsquo;s rule I applied in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, and <I>The construct keeps moving</I> runs on the same two references. Job 1 is the construct and the observation design. Jobs 2 and 3 are the interpretation and the use; they pull in different directions. Job 2 needs the signal this month, at the grain of a site or a caseload, and can act on something provisional. Job 3 needs stability, comparability and restraint about inference, because the claim will be checked. The same data can license &ldquo;call these twenty-two sites this week&rdquo; and not license &ldquo;the programme improved outcomes.&rdquo; Job 4 closes the loop: what the interpretation, the use and their consequences showed about the measurement, written into the next design.
         </P>
         <P>
           Read that way, splitting the jobs breaks the continuity the chain depends on. Research holds job 1, and its output is a validated scale that operations cannot act on this month. Operations holds job 2 and builds the dashboard on fields research did not design and cannot vouch for. Development holds job 3 and writes the funder report at whatever verb the deadline allows. Job 4 belongs to nobody, so the measurement does not change, and next year the same fields carry the same debt. Yurkofsky&rsquo;s third dynamic is what the missing return looks like from the ground: practical measurement systems built to drive improvement, which the teachers found impractical and rarely used. A system nobody uses sends nothing back to whoever built it, and job 4 never starts. Each team is doing its job well (I have sat in three of them). The chain is still broken, because the chain was never any one team&rsquo;s job.
@@ -9825,27 +9859,30 @@ export const ESSAYS: Essay[] = [
             gloss="The time half of the same problem: what a metric is licensed to say between evaluations, and who decides when that licence is rechecked."
           />
         </SeeAlso>
+
+        <MetaNote>
+          Written September 2026 for the Analytic Bytes Library. The four placements are from the author&rsquo;s own record; sectors are named and employers are not. The job posting is quoted as captured in May 2026 and the organisation is not named. The Randari, Trivedi, Yurkofsky and Bridgespan pieces were checked against the published pages, with snapshots held in the piece&rsquo;s source pack. The Messick and Kane citations are carried over from the AB measurement arc, where they were verified.
+        </MetaNote>
       </>
     ),
   },
 
   // ===================================================================
-  // ESSAY 20 — The checkpoint runs one way. (DRAFT)
+  // FIELD NOTE 17 — The checkpoint runs one way.
   // ===================================================================
   {
     kind: "field-note",
     slug: "the-checkpoint-runs-one-way",
-    number: "20",
+    number: "17",
     title: "The checkpoint runs one way.",
     subtitle:
       "Verification is becoming a condition of AI risk claims and still optional for benefit claims.",
-    date: "2026-09-14",
+    date: "2026-09-17",
     readingTime: "8 min read",
     summary:
       "We Must Pace the Frontier proposes the architecture of an acceptance test for risk: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge, and the right to publish. The benefits the essay opens with have evaluators and methods but no equivalent default gate, and pacing the frontier cannot supply one, because it cannot make a two-year outcome arrive in six months.",
     cover: "/library/covers/the-checkpoint-runs-one-way.svg",
     arc: "measurement",
-    draft: true,
     body: (
       <>
         <Brief>
@@ -9975,12 +10012,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 21 — Every metric is a claim.
+  // ESSAY 19 — Every metric is a claim.
   // ===================================================================
   {
     kind: "essay",
     slug: "every-metric-is-a-claim",
-    number: "21",
+    number: "19",
     title: "Every metric is a claim.",
     subtitle:
       "What a dashboard number is allowed to say about an outcome, and for how long.",
@@ -10143,12 +10180,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 22 — For the record. (DRAFT)
+  // ESSAY 20 — For the record. (DRAFT)
   // ===================================================================
   {
     kind: "essay",
     slug: "for-the-record",
-    number: "22",
+    number: "20",
     title: "For the record.",
     subtitle:
       "The systems in human-serving organizations keep the record for someone else. The people doing the work keep their spreadsheets. Where AI can carry one into the other.",
@@ -10389,12 +10426,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 23 — The delta nobody budgeted. (DRAFT)
+  // ESSAY 21 — The delta nobody budgeted. (DRAFT)
   // ===================================================================
   {
     kind: "essay",
     slug: "the-delta-nobody-budgeted",
-    number: "23",
+    number: "21",
     title: "The delta nobody budgeted.",
     subtitle:
       "Keeping a system matched to a moving world has never been anyone's job.",
