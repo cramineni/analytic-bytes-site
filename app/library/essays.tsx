@@ -9953,20 +9953,20 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 21 — The number between evaluations. (DRAFT)
+  // ESSAY 21 — Every metric is a claim. (DRAFT)
   // ===================================================================
   {
     kind: "essay",
-    slug: "the-number-between-evaluations",
+    slug: "every-metric-is-a-claim",
     number: "21",
-    title: "The number between evaluations.",
+    title: "Every metric is a claim.",
     subtitle:
       "What a dashboard number is allowed to say about an outcome, and for how long.",
     date: "2026-09-14",
     readingTime: "14 min read",
     summary:
-      "The evaluation report arrives after the cohort has passed. The dashboard arrives after the event and carries no warrant. Between the two there is nothing an organisation can act on and defend. A validated relationship between an early signal and a later outcome should be treated as infrastructure: the semantic layer carries the claim the metric is licensed to support, the evidence and date behind it, and the condition under which it must be re-established.",
-    cover: "/library/covers/the-number-between-evaluations.svg",
+      "The evaluation report arrives after the cohort has passed. The dashboard arrives after the event and carries no warrant. Between the two there is nothing an organisation can act on and defend. Across eight postings the same organisational shape keeps appearing, one seat asked to hold evaluation and infrastructure together, before its operating method has a name. An operational system makes inferential claims every day that its architecture records only as metric definitions. A validated relationship between an early signal and a later outcome should be treated as infrastructure: the semantic layer carries the claim the metric is licensed to support, the evidence and date behind it, and the condition under which it must be re-established.",
+    cover: "/library/covers/every-metric-is-a-claim.svg",
     arc: "measurement",
     draft: true,
     body: (
@@ -10007,7 +10007,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <Figure
-          src="/library/figures/the-number-between-evaluations-chain-across-the-stack.svg"
+          src="/library/figures/every-metric-is-a-claim-chain-across-the-stack.svg"
           alt="The chain across the stack"
           caption="One link in the chain runs from an early signal to a later outcome. Evidence can establish it, the infrastructure carries it, and the three fields this essay proposes sit on it."
         />
