@@ -9255,12 +9255,12 @@ export const ESSAYS: Essay[] = [
     ),
   },
   // ===================================================================
-  // ESSAY 18 — Three trainings, three questions. (DRAFT)
+  // ESSAY 19 — Three trainings, three questions. (DRAFT)
   // ===================================================================
   {
     kind: "essay",
     slug: "three-trainings",
-    number: "18",
+    number: "19",
     title: "Three trainings, three questions.",
     subtitle:
       "Why the third question becomes non-optional once an output is used as evidence.",
@@ -9812,12 +9812,12 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 19 — Every metric is a claim.
+  // ESSAY 18 — Every metric is a claim.
   // ===================================================================
   {
     kind: "essay",
     slug: "every-metric-is-a-claim",
-    number: "19",
+    number: "18",
     title: "Every metric is a claim.",
     subtitle:
       "What a dashboard number is allowed to say about an outcome, and for how long.",
