@@ -9965,7 +9965,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-09-14",
     readingTime: "14 min read",
     summary:
-      "The evaluation report arrives after the cohort has passed. The dashboard arrives after the event and carries no warrant. Between the two there is nothing an organisation can act on and defend. Across eight postings the same organisational shape keeps appearing, one seat asked to hold evaluation and infrastructure together, before its operating method has a name. An operational system makes inferential claims every day that its architecture records only as metric definitions. A validated relationship between an early signal and a later outcome should be treated as infrastructure: the semantic layer carries the claim the metric is licensed to support, the evidence and date behind it, and the condition under which it must be re-established.",
+      "The evaluation report arrives after the cohort has passed. The dashboard arrives after the event and carries no warrant. Between the two there is nothing an organisation can act on and defend. An operational system makes inferential claims every day that its architecture records only as metric definitions. A validated link between an early signal and a later outcome should be treated as infrastructure: the semantic layer carries the claim, the evidence and date behind it, and the condition under which it must be re-established.",
     cover: "/library/covers/every-metric-is-a-claim.svg",
     arc: "measurement",
     draft: true,
