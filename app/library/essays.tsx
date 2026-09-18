@@ -5544,6 +5544,18 @@ export const ESSAYS: Essay[] = [
     arc: "measurement",
     body: (
       <>
+        <Brief>
+          <p>
+            A round of frameworks for governing AI in mental health has appeared in the last fifteen months: Polaris, the NAM Code of Conduct, APA guidance, VERA-MH, ASL-MH, a WHO workshop, and a thirteen-question procurement handbook from Trovane. They ask where inference happens, who the accountable clinician is, how detection performs across groups, what monitoring runs after launch, and whether a buyer can reach the clinical lead. Those are the right floor, and an institution that can answer them is well ahead of one that has not asked.
+          </p>
+          <p>
+            A vendor can answer all of them cleanly and still never have been asked what the detector detects. That is the question the rubrics leave out: does the system measure the mental-health construct it claims to? In mental health the question runs hardest, because every construct these systems score is latent, and the field has said on the record since 2010 that its own diagnostic categories lack validity.
+          </p>
+          <p>
+            This essay names four questions that sit beneath the rubric, and argues that the rubric earns its place only once they are answered.
+          </p>
+        </Brief>
+
         <H2>The rubrics, and what they assume</H2>
         <P>
           A round of frameworks for governing AI in mental health has appeared in the last fifteen months. <a href="https://www.lyrahealth.com/blog/the-polaris-principles/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lyra Health&rsquo;s Polaris Principles</a> articulated the industry-side posture. The <a href="https://nam.edu/our-work/programs/leadership-consortium/health-care-artificial-intelligence-code-of-conduct/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">National Academy of Medicine published its AI Code of Conduct for Health and Medicine</a> in May 2025 with six commitments including monitoring performance. The American Psychological Association (APA) released <a href="https://www.apa.org/topics/artificial-intelligence-machine-learning/ethical-guidance-ai-professional-practice" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">ethical guidance for AI in health service psychology</a> in 2025 and followed with a <a href="https://www.apa.org/topics/artificial-intelligence-machine-learning/health-advisory-chatbots-wellness-apps" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2026 health advisory</a> whose plain-language judgment about consumer AI in mental health was blunt: the chatbots and wellness apps lack the testing and safety measures needed for quality mental health support. <a href="https://www.springhealth.com/news/spring-health-expert-council-vera-mh-first-open-source-evaluation-ai-mental-health" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">VERA-MH (Validation of Ethical and Responsible AI in Mental Health)</a> appeared as an open-source AI safety evaluation built around conversation simulation and clinician judging. <a href="https://neuromodec.org/2025/10/toward-a-framework-for-ai-safety-in-mental-health-ai-safety-levels-mental-health-asl-mh/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">ASL-MH (AI Safety Levels for Mental Health)</a> proposed AI safety levels for mental health applications. The WHO convened an <a href="https://www.who.int/news/item/20-03-2026-towards-responsible-ai-for-mental-health-and-well-being--experts-chart-a-way-forward" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">expert workshop on responsible AI for mental health</a> in January 2026 with explicit recommendations about embedding mental health into AI impact assessments. <a href="https://trovane.com.au/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Trovane</a>, the Australian company behind the Lumara platform, published a thirteen-question handbook for evaluating any AI mental-health tool before deployment, written so that a clinical lead or a foundation program officer can carry it into a procurement conversation. The rubrics are necessary. This essay credits the work being done and names the layer the rubrics do not yet include.
@@ -8562,6 +8574,15 @@ export const ESSAYS: Essay[] = [
     arc: "measurement",
     body: (
       <>
+        <Brief>
+          <p>
+            I read Machines of Loving Grace from the measurement seat. What could happen is half the question; how we would know it did is the half I get paid for. Dario Amodei&rsquo;s five areas mostly raise the ceiling. Economic development is the one that raises the floor, and the essay treats it as a downstream beneficiary of breakthroughs made elsewhere. I would invert that. If AI raises the floor at all, distribution belongs in the causal model from the start.
+          </p>
+          <p>
+            Then the harder part. The floor rose is a claim, not a result. Rose for whom, by how much, and did the capability cause it? Beneficial is a claim about an outcome, defined before the build and re-measured as the capability loop outruns the evaluation that would check it.
+          </p>
+        </Brief>
+
         <P>
           I read <a href="https://www.darioamodei.com/essay/machines-of-loving-grace" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Machines of Loving Grace</a> the way I read most things, from the measurement seat. What could happen is half the question. How we would know it did is the half I get paid for. Dario Amodei lays out five areas where powerful AI could change a human life: biology and health, neuroscience and mind, economic development and poverty, peace and governance, and work and meaning. The one that stayed with me was economic development, and it is also the one where I would push back the hardest.
         </P>
@@ -9518,7 +9539,13 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            <I>Organisations keep adding measurement and dropping the part that turns it into a claim. The fix is one accountable charter for the loop. That is the charter that keeps getting split.</I>
+            Organisations keep adding measurement and dropping the part that turns it into a claim. The fix is one accountable charter for the loop. That is the charter that keeps getting split.
+          </p>
+          <p>
+            A measurement function has four jobs. Design what to collect, against the claims it will have to support. Analyse so the people running the programme can act this month. Analyse so a funder gets a claim they can check. Revise the measurement for the next round. The fourth feeds the first; a reporting function never runs it.
+          </p>
+          <p>
+            I have held that seat under four reporting lines, and each placement broke a different job. This note is about what breaks, which split does the breaking, and what to ask of a requisition or a grantee to find out.
           </p>
         </Brief>
 
@@ -9690,6 +9717,18 @@ export const ESSAYS: Essay[] = [
     arc: "measurement",
     body: (
       <>
+        <Brief>
+          <p>
+            In August I read Machines of Loving Grace as a specification with the acceptance criteria left out. In September Dario Amodei published the architecture of a test: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge and the right to publish. OpenAI said within days it would take embedded evaluators too.
+          </p>
+          <p>
+            The gate is well designed, and it covers the risk claim only. The benefit claim the essay opens with passes through no condition of the form: if the deployment claims outcome X for population P, it must carry evidence Y before the claim is made. Pacing the frontier cannot supply that condition, because it cannot make a two-year outcome arrive in six months.
+          </p>
+          <p>
+            This note takes his four positions and writes them for the other side.
+          </p>
+        </Brief>
+
         <P>
           In August I read <InternalLink slug="the-floor-is-the-frontier">Machines of Loving Grace</InternalLink> as a specification with the acceptance criteria left out. Dario Amodei has now published something closer to them. <a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">We Must Pace the Frontier</a>, his September essay, argues that capability development should slow so that safety work can keep up, and it describes how anyone would check that it had. Not the finished test; the architecture of one. A trigger, an evidence requirement, an independent verifier with access to the production process, and the standing to say in public what the verifier found. All of it is written for the other half of the specification.
         </P>
@@ -9823,6 +9862,18 @@ export const ESSAYS: Essay[] = [
     arc: "measurement",
     body: (
       <>
+        <Brief>
+          <p>
+            An impact evaluation arrives after the cohort. A dashboard arrives after the event. The first can be defended and cannot be acted on this quarter; the second can be acted on today and carries no warrant for what it is read as. Between the two there is a gap in time.
+          </p>
+          <p>
+            The evaluation field split monitoring from impact evaluation on purpose, and the split is reasonable. What it left unassigned is the link between them: whether attendance in month two says anything about employment in month fourteen, for this program and this population. That link is a claim. Evidence can establish it, and when it does, the claim belongs in the layer the dashboards read from, with the evidence and date behind it and a condition that puts a recheck due.
+          </p>
+          <p>
+            This essay makes that case from two organisations, eight job postings already hiring for the seat, and Kane&rsquo;s argument-based approach to validity. It ends with three fields to write on any metric that is being read as if it said something about an outcome.
+          </p>
+        </Brief>
+
         <P>
           Two organisations, one shape. At a national mental health nonprofit the role I held was written as data strategy and impact analytics, reporting to the chief design and impact officer. After it was eliminated, the same responsibilities were advertised again under research and evaluation. Eighteen of the twenty-three statements survived. What changed was the verb. At a child-welfare agency I am advising this month, the reports and dashboards used across programs are relied on without a governed way to verify them, and the impact report the agency publishes counts what was delivered rather than what moved.
         </P>
