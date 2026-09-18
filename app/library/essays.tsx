@@ -9690,12 +9690,6 @@ export const ESSAYS: Essay[] = [
     arc: "measurement",
     body: (
       <>
-        <Brief>
-          <p>
-            <I>AB Field Note</I>
-          </p>
-        </Brief>
-
         <P>
           In August I read <InternalLink slug="the-floor-is-the-frontier">Machines of Loving Grace</InternalLink> as a specification with the acceptance criteria left out. Dario Amodei has now published something closer to them. <a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">We Must Pace the Frontier</a>, his September essay, argues that capability development should slow so that safety work can keep up, and it describes how anyone would check that it had. Not the finished test; the architecture of one. A trigger, an evidence requirement, an independent verifier with access to the production process, and the standing to say in public what the verifier found. All of it is written for the other half of the specification.
         </P>
@@ -9829,12 +9823,6 @@ export const ESSAYS: Essay[] = [
     arc: "measurement",
     body: (
       <>
-        <Brief>
-          <p>
-            <I>AB Library Essay</I>
-          </p>
-        </Brief>
-
         <P>
           Two organisations, one shape. At a national mental health nonprofit the role I held was written as data strategy and impact analytics, reporting to the chief design and impact officer. After it was eliminated, the same responsibilities were advertised again under research and evaluation. Eighteen of the twenty-three statements survived. What changed was the verb. At a child-welfare agency I am advising this month, the reports and dashboards used across programs are relied on without a governed way to verify them, and the impact report the agency publishes counts what was delivered rather than what moved.
         </P>
