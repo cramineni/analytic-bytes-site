@@ -9719,7 +9719,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In August I read Machines of Loving Grace as a specification with the acceptance criteria left out. In September Dario Amodei published the architecture of a test: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge and the right to publish. OpenAI said within days it would take embedded evaluators too.
+            In August, I read Machines of Loving Grace as a specification with the acceptance criteria left out. In September, Dario Amodei published the architecture of a test: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge and the right to publish. OpenAI said within days it would take embedded evaluators too.
           </p>
           <p>
             The gate is well designed, and it covers the risk claim only. The benefit claim the essay opens with passes through no condition of the form: if a deployment claims outcome O for population P, it must carry evidence E before the claim is made. Pacing the frontier cannot supply that condition, because it cannot make a two-year outcome arrive in six months.
