@@ -1,8 +1,8 @@
 <svg viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>The checkpoint, both directions</title>
+<title>The gate, both directions</title>
 <desc>Two rows. Top row, navy solid: a risk claim (model has capability X) passes through four gate boxes, certify alignment Y and Z, embedded evaluator, access to the pipeline, publish findings, and then the model moves. Bottom row, teal dashed: a benefit claim (the floor rose) would pass through four gate boxes, outcome, population, evidence, evaluator, and come out with the verb it earned. The bottom row is dashed because it is proposed, not in place.</desc>
 <rect width="1200" height="520" fill="#FFFFFF"/>
-<text x="600" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">The checkpoint, both directions</text>
+<text x="600" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">The gate, both directions</text>
 <text x="40" y="136.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="600" fill="#0F2A4A">Risk claim<tspan font-weight="400" fill="#94A3B8">  Amodei, 2026, one possible scheme</tspan></text>
 <rect x="40" y="152.0" width="130" height="96" rx="6" fill="#F8FAFC" stroke="#0F2A4A" stroke-width="1.6"/>
 <text x="105.0" y="195.0" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#0F2A4A" text-anchor="middle">Model has</text>

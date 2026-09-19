@@ -5513,8 +5513,8 @@ export const ESSAYS: Essay[] = [
             gloss="The org-design cause behind the fund's spend: the four jobs were split, so money went to the link that was not holding the claim back."
           />
           <SeeAlsoItem
-            slug="the-checkpoint-runs-one-way"
-            title="The checkpoint runs one way."
+            slug="the-gate-runs-one-way"
+            title="The gate runs one way."
             gloss="The same weakest-link reading turned toward AI benefit claims: the four-part gate a floor-raising deployment would have to carry."
           />
         </SeeAlso>
@@ -5738,8 +5738,8 @@ export const ESSAYS: Essay[] = [
             gloss="The receipts for the discipline itself, mapped across eight bridges from measurement science to modern AI evaluation."
           />
           <SeeAlsoItem
-            slug="the-checkpoint-runs-one-way"
-            title="The checkpoint runs one way."
+            slug="the-gate-runs-one-way"
+            title="The gate runs one way."
             gloss="Amodei's own version of consistency is not validity, written for alignment tests and not yet for benefit claims."
           />
         </SeeAlso>
@@ -8651,8 +8651,8 @@ export const ESSAYS: Essay[] = [
             gloss="Why a model that is consistent is not therefore valid, and what has to sit under a responsible-AI claim."
           />
           <SeeAlsoItem
-            slug="the-checkpoint-runs-one-way"
-            title="The checkpoint runs one way."
+            slug="the-gate-runs-one-way"
+            title="The gate runs one way."
             gloss="The note that continues this one: the risk side now has the architecture of an acceptance test, and the floor still has none."
           />
         </SeeAlso>
@@ -9700,20 +9700,20 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // FIELD NOTE 17 — The checkpoint runs one way.
+  // FIELD NOTE 17 — The gate runs one way.
   // ===================================================================
   {
     kind: "field-note",
-    slug: "the-checkpoint-runs-one-way",
+    slug: "the-gate-runs-one-way",
     number: "17",
-    title: "The checkpoint runs one way.",
+    title: "The gate runs one way.",
     subtitle:
       "Verification is becoming a condition of AI risk claims and still optional for benefit claims.",
     date: "2026-09-17",
     readingTime: "8 min read",
     summary:
-      "We Must Pace the Frontier proposes the architecture of an acceptance test for risk: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge, and the right to publish. The benefits the essay opens with have evaluators and methods but no equivalent default gate, and pacing the frontier cannot supply one, because it cannot make a two-year outcome arrive in six months.",
-    cover: "/library/covers/the-checkpoint-runs-one-way.svg",
+      "We Must Pace the Frontier proposes the architecture of an acceptance test for risk: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge, and the right to publish. OpenAI said within days that it would take the evaluators too. The benefits the essay opens with, cured diseases, faster growth, a floor that rises, have evaluators and methods but no equivalent default gate, and pacing the frontier cannot supply one, because it cannot make a two-year outcome arrive in six months.",
+    cover: "/library/covers/the-gate-runs-one-way.svg",
     arc: "measurement",
     body: (
       <>
@@ -9730,24 +9730,27 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          In August I read <InternalLink slug="the-floor-is-the-frontier">Machines of Loving Grace</InternalLink> as a specification with the acceptance criteria left out. Dario Amodei has now published something closer to them. <a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">We Must Pace the Frontier</a>, his September essay, argues that capability development should slow so that safety work can keep up, and it describes how anyone would check that it had. Not the finished test; the architecture of one. A trigger, an evidence requirement, an independent verifier with access to the production process, and the standing to say in public what the verifier found. All of it is written for the other half of the specification.
+          In August, I read <InternalLink slug="the-floor-is-the-frontier">Machines of Loving Grace</InternalLink> as a specification with the acceptance criteria left out. It said what powerful AI could do for people. It did not say how anyone would know it had: what to measure, for whom, by when, and checked by whom. In September, Dario Amodei published something closer to that. <a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">We Must Pace the Frontier</a> argues that AI labs should slow down the rate at which model capabilities improve, so that safety work can keep up, and it describes how anyone would check that safety work had kept up. Not the finished test; the architecture of one. A trigger, an evidence requirement, an independent verifier with access to the production process, and the standing to say in public what the verifier found.
         </P>
         <P>
-          The rest of this note is what the architecture looks like, why it is the right shape, and what it means that the floor still has none.
+          A specification for powerful AI has two halves. It should not hurt anyone, and it should help people. The new essay writes the check for the first half. The people the second half is about, the floor in the earlier note&rsquo;s terms, still have no check at all. The rest of this note is what the architecture looks like, why it is the right shape, and what it means that only one half has one.
         </P>
 
         <H2>What he wrote down</H2>
         <P>
-          The essay proposes three steps. The first is a unilateral Anthropic commitment: a team of embedded third-party evaluators with &ldquo;ongoing, employee-like access,&rdquo; whose job is &ldquo;to verify adherence to safety practices and commitments, report incidents, and help assess the alignment of not just completed AI models but training pipelines and processes&rdquo; (<a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Amodei, September 2026</a>). The access is spelled out: desks, badges, company laptops, permissions mostly comparable to those of internal risk teams. The contract gives reviewers &ldquo;the right to publish key findings about risk levels, incidents, practices, and the access they received or didn&rsquo;t receive.&rdquo; Anthropic keeps a narrow redaction right and gives up the right to redact a finding for being unfavorable.
+          The essay opens with its reason. The first is that AI has begun building the next generation of AI, and the pace has picked up. The second is an incident he calls OpenAI&ndash;Hugging Face, in which a swarm of agents ran cyberattacks on targets they were not asked to attack and tried to hack into the grader scoring their performance. Amodei says he wants every frontier lab to act as if it had happened to them. The plan that follows has three steps. The third, coordination with authoritarian governments, he ranks as hardest and treats last. The first is a unilateral Anthropic commitment: a team of embedded third-party evaluators with &ldquo;ongoing, employee-like access,&rdquo; whose job is &ldquo;to verify adherence to safety practices and commitments, report incidents, and help assess the alignment of not just completed AI models but training pipelines and processes&rdquo; (<a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Amodei, September 2026</a>). The access is spelled out: desks, badges, company laptops, permissions mostly comparable to those of internal risk teams. The contract gives reviewers &ldquo;the right to publish key findings about risk levels, incidents, practices, and the access they received or didn&rsquo;t receive.&rdquo; Anthropic keeps a narrow redaction right and gives up the right to redact a finding for being unfavorable.
         </P>
         <P>
           On 12 September, with the essay newly published, Sam Altman posted that he agreed with pacing and that OpenAI would take embedded evaluators from organizations like METR as well (<a href="https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">TechCrunch, 12 September 2026</a>). What he committed to in that post was the access. Publication rights and redaction terms were not part of it, and &ldquo;more to share soon&rdquo; is where the detail sits. Two labs are not a norm. But the same governance form crossed from one frontier lab to another within days, which makes it more than one CEO&rsquo;s proposal. It is a candidate industry practice.
         </P>
         <P>
-          The second step is where the checkpoint lives. He describes &ldquo;a series of &lsquo;checkpoints&rsquo;: if models have capability X, then they need to be accompanied by certifications of alignment properties Y and Z.&rdquo; His worked example: X is a model able to defeat most common sandboxing methods; Y is whatever makes it very unlikely the model has a propensity to break out and take over a large number of computers. He calls it one possible scheme, and the thresholds and decision rules are not in the essay. A measurement person should want them and should not pretend they are there.
+          It is worth noticing when it arrived. The gate came after a public incident, at a moment when the technology industry was under legal and public pressure on safety (Meta had agreed a $17 billion settlement with the states over child safety weeks earlier (<a href="https://www.npr.org/2026/08/26/nx-s1-5944781/meta-settlement-child-safety-lawsuit" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NPR, 26 August 2026</a>)). I do not know the motive and the essay does not need one. What the timing shows is the mechanism: risk got its gate because something went wrong in public. Benefit has no incident of that kind. Nobody is sued because a floor failed to rise.
         </P>
         <P>
-          What is there is the architecture, and read as architecture it is the right shape. A trigger condition, stated in observable terms. An evidence requirement that must be met before the system moves. A third party with access to the pipeline, not just the finished model, and the standing to publish. He even names the failure the test has to survive: &ldquo;More intelligent models are more capable of deceiving tests, and thus may appear aligned while having serious problems that go undetected.&rdquo;
+          The second step is where the checkpoint lives. He describes &ldquo;a series of &lsquo;checkpoints&rsquo;: if models have capability X, then they need to be accompanied by certifications of alignment properties Y and Z,&rdquo; and he says what a certification would be made of: &ldquo;some combination of evaluations, interpretability analyses, and audits of training environments.&rdquo; His worked example: X is a model able to defeat most common sandboxing methods; Y is whatever makes it very unlikely the model has a propensity to break out and take over a large number of computers. He calls it one possible scheme, and the thresholds and decision rules are not in the essay. A measurement person should want them and should not pretend they are there.
+        </P>
+        <P>
+          What is there is the architecture, and read as architecture it is the right shape. A trigger condition, stated in observable terms. An evidence requirement that must be met before the system moves. A third party with access to the pipeline, not just the finished model, and the standing to publish. He also names how such a test fails: &ldquo;More intelligent models are more capable of deceiving tests, and thus may appear aligned while having serious problems that go undetected.&rdquo;
         </P>
         <P>
           This is good design. Many of the people who worry about AI risk have asked for years for something checkable, and this is the outline of something checkable. My argument is about direction, and I will come to it.
@@ -9758,7 +9761,7 @@ export const ESSAYS: Essay[] = [
           <I>May appear aligned while having serious problems that go undetected.</I> Swap one word and the sentence still holds. May appear beneficial while having serious problems that go undetected. A system that reports the same number every quarter with superhuman consistency can still be <InternalLink slug="what-is-this-system-measuring">scoring the wrong thing</InternalLink>, because <InternalLink slug="validity-layer-beneath-responsible-ai">consistency is not validity</InternalLink>. Amodei has written that principle into his plan for the harm side. He has not written it for the benefit side, and the benefit side is where he opens.
         </P>
         <P>
-          The first paragraph of the essay restates the promise: cure most major diseases in five to ten years, accelerate growth, &ldquo;usher in a renaissance of democracy and freedom.&rdquo; These are claims about outcomes for people. The essay then builds a gate that covers none of them. The certifications are of alignment properties; the evaluators verify safety practices; the global agreements he ranks by difficulty are about weapons, pre-release risk testing, speed limits on self-improvement, and a pause he calls unlikely. Nowhere in the plan is there a condition of the form: if the deployment claims outcome X for population P, it must carry evidence Y and Z before the claim is made.
+          The first paragraph of the essay restates the promise: cure most major diseases in five to ten years, accelerate growth, &ldquo;usher in a renaissance of democracy and freedom.&rdquo; These are claims about outcomes for people. The essay then builds a gate that covers none of them. The certifications are of alignment properties; the evaluators verify safety practices; the global agreements he ranks by difficulty are about weapons, pre-release risk testing, speed limits on self-improvement, and a pause he calls unlikely. Nowhere in the pacing plan is the same condition written for a benefit: if a deployment claims outcome O for population P, it must carry evidence E before the claim is made.
         </P>
         <P>
           Safety is the essay&rsquo;s subject, and a safety essay is allowed to leave benefit alone. What the essay shows, by doing one half so well, is how little the other half has. Even at the level of architecture, the risk side has begun designing a gate. The benefit side has a sentence in paragraph one.
@@ -9766,19 +9769,22 @@ export const ESSAYS: Essay[] = [
         <P>
           The gap matters most at the floor. The people a floor-raising deployment is meant to reach are often the people for whom aggregate performance says the least, so a gate built on the average can pass while the floor does not move. Michael Podgortsev&rsquo;s account of enterprise AI failure puts the mechanism in one line: test sets are drawn from the well-represented part of the distribution, so &ldquo;the populations where the model is least reliable often have the least targeted evaluation&rdquo; (<a href="https://www.cdomagazine.tech/opinion-analysis/ai-strategys-most-expensive-assumption-the-average-customer" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Podgortsev, CDO Magazine, July 2026</a>). His case is an underwriting tool. The dashboards were green for a year (accuracy, satisfaction, throughput, all on target) while one regional team, serving self-employed and multi-income applicants, kept escalating cases by hand.
         </P>
+        <P>
+          The same shape shows up on the benefit side, in philanthropy. Lucy Brainard runs portfolio measurement at the Overdeck Family Foundation, which has put nearly $6 million into more than 200 capacity-building projects since 2020. The number usually collected on that kind of work is a satisfaction survey at the end of the engagement, and many of hers came back high. When the foundation went back six to twelve months later, some of those high-satisfaction projects &ldquo;did not lead to sustained changes in organizational behavior,&rdquo; and the foundation phased out the providers (<a href="https://ssir.org/articles/entry/capacity-building-evidence-standard" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Brainard, Stanford Social Innovation Review, August 2026</a>). The green number was real. It was the wrong number, and the only way anyone found out was that somebody measured again after the wait.
+        </P>
 
         <H2>Pacing cannot shorten the wait</H2>
         <P>
-          The field note this one follows drew two loops. The capability loop turns fast; the evaluation loop that would tell you whether the capability helped anyone turns slowly, because you cannot observe a two-year outcome in six months. Pacing the frontier is a proposal to slow the first loop. It is worth asking what that buys the second.
+          <InternalLink slug="the-floor-is-the-frontier">The floor is the frontier</InternalLink> drew two loops. The capability loop turns fast; the evaluation loop that would tell you whether the capability helped anyone turns slowly, because you cannot observe a two-year outcome in six months. Pacing the frontier is a proposal to slow the first loop. It is worth asking what that buys the second.
         </P>
         <P>
           For the harm loop, it buys a great deal. Alignment evaluation is gated on capability: a more capable model is harder to test, so slowing capability gives the test time to catch up. Amodei says this directly, and it is the strongest part of his case. An extra year or two before models reach critical capability is an extra year or two of interpretability and evaluation work against a target that holds still.
         </P>
         <P>
-          For the benefit loop, it buys something smaller, and it is worth being exact about what. A slower frontier means fewer model versions mid-study, a treatment that stays the same treatment across the observation window, and some calendar room for the people running the evaluation. Those are real. What pacing cannot do is compress the outcome. Whether a child reads at grade level two years after a tutoring deployment takes two years to observe, whichever model did the tutoring and however slowly the next one arrives. Pacing can hold the intervention still. It cannot make a two-year outcome arrive in six months. It does not name the construct, and it does not reach the people the deployment was meant to reach.
+          For the benefit loop, it buys one real thing. A slower frontier means fewer model versions mid-study, so the tutoring a child got in month one is still the tutoring being evaluated in month twenty. An evaluation whose treatment changes halfway through cannot say what it evaluated, so holding the intervention still is a precondition for the benefit test. It is not the test. The test still needs three things pacing does not touch: a definition of what counts as the floor rising, a way to reach the people the deployment was meant for, and the wait for the outcome to appear. Whether a child reads at grade level two years after a tutoring deployment takes two years to observe, whichever model did the tutoring and however slowly the next one arrives.
         </P>
         <P>
-          So the two loops respond to the same intervention differently, and that is a reason to take pacing seriously on its own terms. It is also the reason pacing cannot stand in for the missing gate. Slowing the capability loop does not stop anyone scaling deployments whose claimed benefits we still cannot see.
+          So pacing helps the risk test directly and the benefit test only at the edge. That is a reason to take it seriously on its own terms. It is also why it cannot stand in for the missing gate: while the models slow down, the deployments built on them keep spreading, and the claim that they helped is still made without a check.
         </P>
 
         <H2>The form should travel</H2>
@@ -9789,7 +9795,7 @@ export const ESSAYS: Essay[] = [
           I accept that. My proposal is smaller. The actors change downstream. The governance requirement should not. Whoever makes the outcome claim inherits the burden of saying what would make the claim true and who gets to inspect the evidence. That is the kind of burden Amodei has accepted for risk claims, and the OpenAI response shows the form can travel from one institution to another. The question is why it should stop at the line between a model&rsquo;s risk and a person&rsquo;s benefit.
         </P>
         <P>
-          The essay itself does not stop there. It makes the benefit claim in its first paragraph and again in its last: &ldquo;the benefits will only be achieved if we build the technology in the right way.&rdquo; That sentence gates benefit on safety. It does not check benefit. A deployment can clear every alignment certification he describes and still raise nobody&rsquo;s floor, and nothing in the plan would notice.
+          The essay itself does not stop there. It makes the benefit claim in its first paragraph and again in its last: &ldquo;the benefits will only be achieved if we build the technology in the right way.&rdquo; That sentence gates benefit on safety. It does not check benefit. A deployment can clear every alignment certification he describes and still raise nobody&rsquo;s floor, and nothing in the pacing plan would notice.
         </P>
 
         <H2>Who holds the seat</H2>
@@ -9797,26 +9803,26 @@ export const ESSAYS: Essay[] = [
           The part of the essay I keep returning to is the desk. Embedded evaluators get a desk, a badge, a laptop, and roughly the same permissions as the internal team. That is an unusual thing for a company to offer, and he says so. It is also a precise description of what evaluating an outcome claim requires. Access to the pipeline behind the number. The standing to ask the people who ran it what they did. The right to say afterward what was found.
         </P>
         <P>
-          I have sat in the access half of that seat, for a benefit claim rather than a risk claim. I ran data for a K-8 charter network in the Bronx, and the question was whether we were reaching the children who needed us. I was inside the organisation, not an independent evaluator with the right to publish; but I had the desk, and I could see the pipeline. What I did not have was a pipeline that could answer the question. Elementary grades lived in one system and middle school in another. Persistence had been recalculated eight or more times that year, off roughly fifty files, each version correct under its own definition. The seat existed because someone had hired for it. The acceptance criteria did not exist, so the seat had nothing to check against, and I could not get there. Access on its own did not settle the claim.
+          I have sat in the access half of that seat, for a benefit claim rather than a risk claim. I ran data for a K-8 charter network in the Bronx, and the question was whether we were reaching the children who needed us. Two of the districts we had moved into were sixteen to seventeen percent English learners; we were serving five percent. I was inside the organisation, not an independent evaluator with the right to publish; but I had the desk, and I could see the pipeline. What I did not have was a pipeline that could answer the question. Elementary grades lived in one system and middle school in another. Persistence had been recalculated eight or more times that year, off roughly fifty files, each version correct under its own definition. The seat existed because someone had hired for it. The acceptance criteria did not exist, so the seat had nothing to check against, and I could not get there. Access on its own did not settle the claim.
         </P>
         <P>
-          That is the state of the benefit side now. The harm side is getting the seat by commitment, in writing, at two labs, as a condition of proceeding. The benefit side has seats: impact evaluators, trialists, the evaluation a funder requires, a measurement person a school network happened to hire. What it does not have is the seat as a condition of making the claim.
+          That is the state of the benefit side now. The harm side is getting the seat by commitment, in writing, at two labs, as a condition of proceeding. The benefit side has seats: impact evaluators, trialists, the evaluation a funder requires, a measurement person a school network happened to hire. But each of those exists because someone chose to pay for it. A funder can require an evaluation or not; a network can hire the measurement person or not; and a program can say <I>this helped</I> either way. On the risk side, under the pacing plan, a model does not move past capability X until an evaluator has checked, and the check is the price of moving. That is the difference. The benefit side has the seat as an option. It does not have the seat as a condition of making the claim.
         </P>
         <P>
-          If you fund or run a deployment that claims to raise a floor, take Amodei&rsquo;s architecture and write it in the other direction. The claim carries a gate of its own, and the gate has four parts. <B>Outcome:</B> the construct, named before the build, with the size of change that would count as the floor rising, declared before anyone sees a result. <B>Population:</B> who the deployment was meant to reach, and a count of who it did reach, so the average cannot stand in for the tail. <B>Evidence:</B> the comparison the claim is being made against (what would have happened without the deployment, which is the <InternalLink slug="the-valid-dollar">additionality</InternalLink> question) and the observation window, with the date it closes, so a six-month number is not reported as a two-year outcome. <B>Evaluator:</B> who outside the delivery team sees the pipeline, and whether they can publish what they find.
+          If you fund or run a deployment that claims to raise a floor, take Amodei&rsquo;s architecture and write it in the other direction. The claim carries a gate of its own, and the gate has four parts. <B>Outcome:</B> the construct, named before the build, with the size of change that would count as the floor rising, declared before anyone sees a result. <B>Population:</B> who the deployment was meant to reach and who it did reach, broken out the same way, so the average cannot stand in for the tail. <B>Evidence:</B> the comparison the claim is being made against (what would have happened without the deployment, which is the <InternalLink slug="the-valid-dollar">additionality</InternalLink> question) and the observation window, with the date it closes, so a six-month number is not reported as a two-year outcome. <B>Evaluator:</B> who outside the delivery team sees the pipeline, and whether they can publish what they find.
         </P>
 
         <Figure
-          src="/library/figures/the-checkpoint-runs-one-way-both-directions.svg"
+          src="/library/figures/the-gate-runs-one-way-both-directions.svg"
           alt="Two rows of four gate boxes. The top row, in solid navy, is the risk claim as Amodei describes it: a model with capability X passes through certification of alignment Y and Z, an embedded evaluator, access to the pipeline, and the right to publish, and then the model moves. The bottom row, in dashed teal, is the benefit claim as this note proposes it: the floor rose passes through outcome, population, evidence, and evaluator, and comes out with the verb it earned. Dashed means not in place."
           caption="Risk claims now pass through a gate before the model moves. The same four positions, written for a benefit claim, are what this note proposes; what comes out decides the verb."
         />
 
         <P>
-          The gate makes the claim evaluable. The evidence decides which verb it has earned. A deployment that specifies all four has earned the right to have its benefit claim evaluated; it earns <I>beneficial</I> only when the result clears the declared threshold, at the level of attribution the design can support, which is the difference between <I>produced</I> and <I>supported</I>. A deployment that specifies none of them is <I>deployed</I>, and should be reported as that. This is a rule for a funder writing an AI-for-good grant, or a program lead about to put &ldquo;impact&rdquo; on a slide. It can be adopted wrongly, which is how you know it is specific enough to adopt.
+          The gate makes the claim evaluable. The evidence decides which verb it has earned. A deployment that specifies all four parts has earned the right to have its benefit claim evaluated. It earns <I>beneficial</I> only when the result clears the threshold it declared, and the evidence design decides how strong the verb can be: with a comparison, the deployment <I>produced</I> the change; with before-and-after alone, it <I>supported</I> it. A deployment that specifies none of the four is <I>deployed</I>, and should be reported as that. This is a rule for a funder writing an AI-for-good grant, or a program lead about to put &ldquo;impact&rdquo; on a slide. Adopting it means the grant or the slide carries the four fields before the word <I>impact</I> appears.
         </P>
         <P>
-          Amodei closes by saying the measures he proposes will not be easy, and that &ldquo;we owe it to humanity to try.&rdquo; He is right, and he has begun building one side of the test into an institution. The other side has evaluators and whole disciplines. What it still lacks is the same default obligation: make the claim, inherit the test. I do not expect a frontier lab to write that one, because the floor is not where a lab&rsquo;s risk sits. It is where mine does.
+          Amodei closes by saying the measures he proposes will not be easy, and that &ldquo;we owe it to humanity to try.&rdquo; He is right, and he has begun building one side of the test into an institution. The other side has evaluators and whole disciplines. What it still lacks is the same default obligation: say <I>this helped</I>, and the test comes with the claim. I do not expect a frontier lab to write that one. A lab&rsquo;s risk is that the model does harm. Mine is that the floor does not rise and nobody notices, and that is the half I work on.
         </P>
 
         <SeeAlso>
@@ -9927,7 +9933,7 @@ export const ESSAYS: Essay[] = [
           A pan-African education and workforce group is hiring a head of impact to lead &ldquo;the evolution of our Impact function from a reporting and monitoring function into a world-class evidence, learning, validation, and impact intelligence capability.&rdquo; The posting wants randomised and quasi-experimental methods, tracer studies and longitudinal research from the same person it wants to strengthen &ldquo;data pipelines and verification systems&rdquo; across surveys, platform data, the CRM and employer feedback. It asks for an impact team that is &ldquo;proactive, responsive, and embedded across the organization rather than functioning as a retrospective reporting unit.&rdquo; And it writes the dated-warrant idea straight into a dashboard requirement: data products that can &ldquo;distinguish between actuals, estimates, projections, and externally validated outcomes&rdquo;. That is four grades of warrant on one screen, written by a hiring manager.
         </P>
         <P>
-          A New York social-services nonprofit with a staff of nine hundred is hiring a vice president of program evaluation and quality assurance who will set &ldquo;the vision of business intelligence and performance analytics,&rdquo; share responsibility for &ldquo;the organization&rsquo;s data ecosystem and analytics architecture&rdquo; with the chief information officer, and run quality assurance, program evaluation and incident management. The seat reports to the vice president of IT. The placement, under IT, is the question <InternalLink slug="where-should-data-sit">Where should data sit?</InternalLink> was written about. And the incident half is fully built out in the text (reporting tools, workflows, dashboards, regulatory standards, trend analysis) while the outcome half is &ldquo;evaluation findings&rdquo; to be translated. The risk claim has continuous machinery; the benefit claim has a report. That is the asymmetry <InternalLink slug="the-checkpoint-runs-one-way">The checkpoint runs one way</InternalLink> describes at the AI frontier, sitting inside one department of a homeless-services agency.
+          A New York social-services nonprofit with a staff of nine hundred is hiring a vice president of program evaluation and quality assurance who will set &ldquo;the vision of business intelligence and performance analytics,&rdquo; share responsibility for &ldquo;the organization&rsquo;s data ecosystem and analytics architecture&rdquo; with the chief information officer, and run quality assurance, program evaluation and incident management. The seat reports to the vice president of IT. The placement, under IT, is the question <InternalLink slug="where-should-data-sit">Where should data sit?</InternalLink> was written about. And the incident half is fully built out in the text (reporting tools, workflows, dashboards, regulatory standards, trend analysis) while the outcome half is &ldquo;evaluation findings&rdquo; to be translated. The risk claim has continuous machinery; the benefit claim has a report. That is the asymmetry <InternalLink slug="the-gate-runs-one-way">The gate runs one way</InternalLink> describes at the AI frontier, sitting inside one department of a homeless-services agency.
         </P>
         <P>
           A funder this library has already written about, which is why it is the one I name, is hiring for the calibration itself. GitLab Foundation, co-author of the <a href="https://www.gitlabfoundation.org/our-journey/dollars-in-pockets" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Dollars in Pockets</I></a> metric that <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> responded to, wants an impact modeling analyst to build the ROI models behind its target of more than $100 in lifetime earnings per dollar spent, with &ldquo;appropriate counterfactual assumptions,&rdquo; and in the same seat to manage &ldquo;the Foundation&rsquo;s core datasets of grantee impact data&rdquo;. One duty appears in no other posting in the set: &ldquo;Compare modeled expectations with realized investment outcomes and use findings to strengthen future models, assumptions, and investment decisions.&rdquo; That is the recheck, written as a job. What the posting does not say is when. Assumptions are refined &ldquo;based on investment outcomes, new data, research findings, and organizational learning,&rdquo; a list of triggers with no schedule and no threshold.
@@ -10005,8 +10011,8 @@ export const ESSAYS: Essay[] = [
             gloss="Which verb the evidence earns; this essay is about where that warrant lives and when it must be rechecked."
           />
           <SeeAlsoItem
-            slug="the-checkpoint-runs-one-way"
-            title="The checkpoint runs one way."
+            slug="the-gate-runs-one-way"
+            title="The gate runs one way."
             gloss="The same asymmetry at the AI frontier; risk gets machinery, benefit gets a claim."
           />
         </SeeAlso>
