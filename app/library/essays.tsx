@@ -9241,6 +9241,24 @@ export const ESSAYS: Essay[] = [
         <P>
           A gap sits between that ask and the one before it. The person who can see that a decision moved is usually not the person who can edit the requisition. Nothing in this corpus says who the handoff goes to, and neither the Microsoft nor the Deloitte report says either, since neither goes near hiring. Sponsor, talent officer, works council in a European context: I do not know. The ask stands anyway. A document nobody has been assigned to change is the condition being described.
         </P>
+        {/* Visual primer — 60s silent captioned video, employer-side, pairs with the ask below */}
+        <div className="my-10">
+          <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+            The 60-second version
+          </div>
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+          <video
+            src="/videos/AB_PlumbingFallacy_v6_6_HIRE.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_6_HIRE_poster.jpg"
+            muted
+            playsInline
+            preload="metadata"
+            controls
+            className="w-full h-auto rounded-lg border border-line"
+            aria-label="A 60-second silent visual primer: the requisition as an unvalidated assessment, and what a requisition looks like once the decision it governs is written down."
+          />
+        </div>
+
         <P>
           <B>To whoever does organizational design or leadership development.</B> You can run this against your own house in an afternoon. Take your ten most senior data and analytics role documents and ask three questions of each. Does it name an attribute required of the person? Does it name a decision that person settles without another signature? Does it name how anyone will know their calls were good? Then compare against ninety-eight, thirty-five and eleven, and treat the comparison as the beginning of a conversation rather than the end of one. If your organization looks like the corpus, the finding is not that you are behind everyone else. The middle number and the last number are the ones your leadership development programme has been compensating for all along.
         </P>
