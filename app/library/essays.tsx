@@ -8701,8 +8701,8 @@ export const ESSAYS: Essay[] = [
           </div>
           {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
           <video
-            src="/videos/AB_PlumbingFallacy_v6_7_FIN.mp4"
-            poster="/videos/AB_PlumbingFallacy_v6_7_FIN_poster.jpg"
+            src="/videos/AB_PlumbingFallacy_v6_8_FIN.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_8_FIN_poster.jpg"
             muted
             playsInline
             preload="metadata"
@@ -9275,8 +9275,8 @@ export const ESSAYS: Essay[] = [
           </div>
           {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
           <video
-            src="/videos/AB_PlumbingFallacy_v6_7_HIRE.mp4"
-            poster="/videos/AB_PlumbingFallacy_v6_7_HIRE_poster.jpg"
+            src="/videos/AB_PlumbingFallacy_v6_8_HIRE.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_8_HIRE_poster.jpg"
             muted
             playsInline
             preload="metadata"
