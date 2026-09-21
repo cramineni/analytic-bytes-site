@@ -8685,6 +8685,24 @@ export const ESSAYS: Essay[] = [
           </p>
         </Brief>
 
+        {/* Visual primer — 60s silent captioned video, finance cut, pairs with this note */}
+        <div className="my-10">
+          <div className="font-mono text-[11px] text-accent tracking-[0.18em] uppercase mb-4">
+            The 60-second version
+          </div>
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+          <video
+            src="/videos/AB_PlumbingFallacy_v6_6_FIN.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_6_FIN_poster.jpg"
+            muted
+            playsInline
+            preload="metadata"
+            controls
+            className="w-full h-auto rounded-lg border border-line"
+            aria-label="A 60-second silent visual primer: both systems get new plumbing and the cost-per-outcome number still will not come, because it needs the same governed keys on both sides."
+          />
+        </div>
+
         <H2>Spend is what falls out for free</H2>
         <P>
           Every finance stack pulls toward spend. Salaries paid, stipends cut, rent allocated, grants closed. These numbers are not wrong, and a nonprofit that cannot say what a program cost has a real problem. But ask <I>why</I> they are always the numbers you have. They are byproducts of transactions the organization was already recording for other reasons. The check cleared, so the cost is booked. The invoice posted, so the line exists.
