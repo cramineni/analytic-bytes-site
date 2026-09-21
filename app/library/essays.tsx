@@ -7,9 +7,18 @@ import type { ReactNode } from "react";
 // `kind` distinguishes essays (standalone arguments) from field notes (reports
 // from specific practice). Each kind carries its own number sequence.
 //
-// Every piece here has passed AB_Editorial_Standard.md — the eight-gate
-// pre-publish standard (soul, voice, de-AI, overreach, facts, balance, rigor,
-// sourcing). Edit copy in the body JSX directly; re-run the standard after.
+// Every piece here has passed AB_Editorial_Standard.md — the twelve-gate
+// pre-publish standard: soul and lane, voice, de-AI, overreach, facts,
+// balance, rigor, sensitivity and sourcing, cross-references, idiosyncratic
+// voice moment, visual scaffolding, adoption surface.
+//
+// Gates 9-12 were added after some of these pieces shipped (Gate 9 on
+// 2026-06-27, Gates 10-12 on 2026-08-25), so the older pieces passed the
+// standard as it stood then rather than as it stands now.
+//
+// The standard lives at ~/Desktop/Claude/AB Library Drafting Project Pack/
+// AB_Editorial_Standard.md, and that is the only copy of it. Edit copy in
+// the body JSX directly; re-run the standard after.
 // =====================================================================
 
 // ---------------------------------------------------------------------
@@ -8692,8 +8701,8 @@ export const ESSAYS: Essay[] = [
           </div>
           {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
           <video
-            src="/videos/AB_PlumbingFallacy_v6_6_FIN.mp4"
-            poster="/videos/AB_PlumbingFallacy_v6_6_FIN_poster.jpg"
+            src="/videos/AB_PlumbingFallacy_v6_7_FIN.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_7_FIN_poster.jpg"
             muted
             playsInline
             preload="metadata"
@@ -9266,8 +9275,8 @@ export const ESSAYS: Essay[] = [
           </div>
           {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
           <video
-            src="/videos/AB_PlumbingFallacy_v6_6_HIRE.mp4"
-            poster="/videos/AB_PlumbingFallacy_v6_6_HIRE_poster.jpg"
+            src="/videos/AB_PlumbingFallacy_v6_7_HIRE.mp4"
+            poster="/videos/AB_PlumbingFallacy_v6_7_HIRE_poster.jpg"
             muted
             playsInline
             preload="metadata"
