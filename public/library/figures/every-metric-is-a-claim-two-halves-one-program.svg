@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+  <rect width="1200" height="530" fill="#FFFFFF"/>
+  <text x="600" y="48" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Two halves, one program</text>
+
+  <!-- evaluation half -->
+  <rect x="40" y="100" width="300" height="400" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="190" y="142" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">The evaluation half</text>
+  <text x="190" y="170" font-size="22" fill="#475569" text-anchor="middle" letter-spacing="1">once, after the cohort</text>
+  <g font-size="22" fill="#0F2A4A" text-anchor="middle">
+    <text x="190" y="230">a design</text>
+    <text x="190" y="266">a counterfactual</text>
+    <text x="190" y="302">an outcome, month fourteen</text>
+    <text x="190" y="338">a warrant for its claim</text>
+  </g>
+  <text x="190" y="460" font-size="22" fill="#475569" text-anchor="middle">can say what a signal means</text>
+  <text x="190" y="486" font-size="22" fill="#475569" text-anchor="middle">cannot serve month two</text>
+
+  <!-- infrastructure half -->
+  <rect x="860" y="100" width="300" height="400" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="1010" y="142" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">The infrastructure half</text>
+  <text x="1010" y="170" font-size="22" fill="#475569" text-anchor="middle" letter-spacing="1">every week</text>
+  <g font-size="22" fill="#0F2A4A" text-anchor="middle">
+    <text x="1010" y="230">collect</text>
+    <text x="1010" y="266">define</text>
+    <text x="1010" y="302">roll up</text>
+    <text x="1010" y="338">display</text>
+  </g>
+  <text x="1010" y="460" font-size="22" fill="#475569" text-anchor="middle">can serve month two</text>
+  <text x="1010" y="486" font-size="22" fill="#475569" text-anchor="middle">cannot say what it means</text>
+
+  <!-- the program in between -->
+  <rect x="430" y="180" width="340" height="240" rx="6" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5"/>
+  <text x="600" y="220" font-size="22" font-weight="600" fill="#0F2A4A" text-anchor="middle">The program</text>
+  <text x="600" y="246" font-size="22" fill="#475569" text-anchor="middle" letter-spacing="1">needs, from both</text>
+  <g font-size="22" fill="#0F2A4A" text-anchor="middle">
+    <text x="600" y="296">client reports</text>
+    <text x="600" y="332">a signal to act on this month</text>
+    <text x="600" y="368">evidence for the next redesign</text>
+  </g>
+  
+  <text x="600" y="458" font-size="22" fill="#0EA5E9" text-anchor="middle" letter-spacing="1">the warrant, crossing with no carrier</text>
+
+  <!-- the warrant crossing -->
+  <line x1="340" y1="338" x2="430" y2="338" stroke="#0EA5E9" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <line x1="770" y1="338" x2="860" y2="338" stroke="#0EA5E9" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <polygon points="852,332 862,338 852,344" fill="#0EA5E9"/>
+  <circle cx="385" cy="338" r="6" fill="#0EA5E9"/>
+</svg>

@@ -35,15 +35,15 @@
   <circle cx="722" cy="182" r="7" fill="#0EA5E9"/>
 
   <!-- inference names above links -->
-  <g font-size="21" fill="#475569" text-anchor="middle" letter-spacing="1">
+  <g font-size="22" fill="#475569" text-anchor="middle" letter-spacing="1">
     <text x="232" y="134">scoring</text>
-    <text x="477" y="134">generalisation</text>
+    <text x="477" y="134">generalization</text>
     <text x="722" y="134" fill="#0EA5E9">extrapolation</text>
     <text x="967" y="134">use</text>
   </g>
 
   <!-- stack steps below nodes -->
-  <g font-size="21" fill="#475569" text-anchor="middle">
+  <g font-size="22" fill="#475569" text-anchor="middle">
     <text x="110" y="250">collection rule,</text>
     <text x="110" y="276">validation</text>
     <text x="355" y="250">metric</text>
@@ -61,30 +61,30 @@
     <line x1="20" y1="318" x2="690" y2="318"/>
     <line x1="757" y1="318" x2="1180" y2="318"/>
   </g>
-  <g font-size="21" fill="#475569" text-anchor="middle" letter-spacing="1">
+  <g font-size="22" fill="#475569" text-anchor="middle" letter-spacing="1">
     <text x="355" y="348">carried by the infrastructure, every day</text>
     <text x="968" y="348">acted on</text>
   </g>
   <line x1="722" y1="189" x2="722" y2="372" stroke="#0EA5E9" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="722" y="398" font-size="21" fill="#0EA5E9" text-anchor="middle" letter-spacing="1">established by evidence, dated</text>
+  <text x="722" y="398" font-size="22" fill="#0EA5E9" text-anchor="middle" letter-spacing="1">established by evidence, dated</text>
 
   <!-- three fields on the link -->
   <g>
-    <rect x="392" y="420" width="200" height="78" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
-    <rect x="392" y="420" width="5" height="78" fill="#0EA5E9"/>
-    <rect x="622" y="420" width="200" height="78" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
-    <rect x="622" y="420" width="5" height="78" fill="#0EA5E9"/>
-    <rect x="852" y="420" width="200" height="78" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
-    <rect x="852" y="420" width="5" height="78" fill="#0EA5E9"/>
+    <rect x="342" y="420" width="240" height="78" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="342" y="420" width="5" height="78" fill="#0EA5E9"/>
+    <rect x="602" y="420" width="240" height="78" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="602" y="420" width="5" height="78" fill="#0EA5E9"/>
+    <rect x="862" y="420" width="240" height="78" rx="4" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="862" y="420" width="5" height="78" fill="#0EA5E9"/>
   </g>
   <g font-size="22" fill="#0F2A4A" text-anchor="middle">
-    <text x="495" y="453">1  Claim licensed</text>
-    <text x="725" y="453">2  Evidence, date</text>
-    <text x="955" y="453">3  Recheck, owner</text>
+    <text x="466" y="453">1  Claim licensed</text>
+    <text x="726" y="453">2  Evidence, date</text>
+    <text x="986" y="453">3  Recheck, owner</text>
   </g>
-  <g font-size="21" fill="#475569" text-anchor="middle">
-    <text x="495" y="482">operational or impact</text>
-    <text x="725" y="482">study, population, when</text>
-    <text x="955" y="482">trigger and who decides</text>
+  <g font-size="22" fill="#475569" text-anchor="middle">
+    <text x="466" y="482">operational or impact</text>
+    <text x="726" y="482">study, population, date</text>
+    <text x="986" y="482">trigger, decision owner</text>
   </g>
-  </svg>
+</svg>
