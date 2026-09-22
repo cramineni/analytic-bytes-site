@@ -9826,6 +9826,9 @@ export const ESSAYS: Essay[] = [
           For the benefit loop, it buys one real thing. A slower frontier means fewer model versions mid-study, so the model tutoring a child in month one is still the model being evaluated in month twenty. An evaluation whose treatment changes halfway through cannot say what it evaluated, so holding the intervention still is a precondition for the benefit test. It is not the test. The test still needs three things pacing does not touch: a definition of what counts as the floor rising, a way to reach the people the deployment was meant for, and the wait for the outcome to appear. Whether a child reads at grade level two years after a tutoring deployment takes two years to observe, whichever model did the tutoring and however slowly the next one arrives.
         </P>
         <P>
+          The objection usually arrives as continuous evaluation: embed the evaluators throughout deployment and validate in real time, without waiting years. Embedded evaluators can watch the process continuously (the model, the prompts, the retrieval sources, the risk flags), and that is worth having. They cannot shorten how long the outcome takes to appear. Two clocks, then: a process clock that runs all the time, and an outcome clock that still waits. The claim <I>this helped</I> belongs to the second.
+        </P>
+        <P>
           So pacing helps the risk test directly and the benefit test only at the edge. That is a reason to take it seriously on its own terms. It is also why it cannot stand in for the missing gate: while the models slow down, the deployments built on them keep spreading, and the claim that they helped is still made without a check.
         </P>
 
