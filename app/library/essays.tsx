@@ -9752,7 +9752,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Verification is becoming a condition of AI risk claims and still optional for benefit claims.",
     date: "2026-09-17",
-    readingTime: "8 min read",
+    readingTime: "14 min read",
     summary:
       "We Must Pace the Frontier proposes an acceptance test for risk: a capability trigger, an evidence requirement, and an independent evaluator with a desk and the right to publish. The benefits it opens with, cured diseases, a floor that rises, have evaluators and methods but no equivalent default gate. This note writes the same gate in the other direction.",
     cover: "/library/covers/the-gate-runs-one-way.svg",
