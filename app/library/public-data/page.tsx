@@ -118,12 +118,11 @@ export default function PublicDataPage() {
                         loading="lazy"
                       />
                       <figcaption className="mt-3 px-1 text-ink-3 text-[12.5px] sm:text-[13px] leading-[1.55] italic">
-                        The test a measure has to pass before it is admitted here. The marks
-                        are an editorial reading of each measure&rsquo;s own documentation,
-                        not pipeline output &mdash; the one thing on this page that is
-                        judged rather than computed. The three conditions are necessary, not
-                        sufficient. A measure that fails one should not carry stakes; a
-                        measure that passes all three still has to be watched once it does.
+                        Groups means whatever each panel puts side by side. All three
+                        conditions are necessary. None of them is sufficient: the last row
+                        met all three, and the number still improved partly because it got
+                        easier to satisfy. The marks are an editorial reading of each
+                        measure&rsquo;s own documentation, not pipeline output.
                       </figcaption>
                     </figure>
 
