@@ -80,6 +80,23 @@ export default function PublicDataPage() {
           <div className="max-w-page mx-auto px-5 sm:px-8">
             <Reveal>
               <div className="max-w-[820px] mx-auto">
+                <figure className="my-9 border border-line rounded-md bg-bg-alt p-4 sm:p-5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/library/figures/public-data-three-conditions.svg"
+                    alt="Six published measures read against three conditions: comparable across groups, definition holds over time, and grain matches the decision. Drug overdose deaths by race fail comparability; NAEP grade 8 mathematics fails grain; New Jersey chronic absenteeism fails stability of definition; child flourishing in the NSCH and adolescent mental health in the YRBSS each fail on stability and grain; Medicare 30-day readmissions hold on all three."
+                    className="w-full h-auto block rounded-sm"
+                    loading="lazy"
+                  />
+                  <figcaption className="mt-3 px-1 text-ink-3 text-[12.5px] sm:text-[13px] leading-[1.55] italic">
+                    Groups means whatever each panel puts side by side. All three
+                    conditions are necessary. None of them is sufficient: the last row
+                    met all three, and the number still improved partly because it got
+                    easier to satisfy. The marks are an editorial reading of each
+                    measure&rsquo;s own documentation, not pipeline output.
+                  </figcaption>
+                </figure>
+
                 <HeadlineCards cards={data.headlines} />
 
                 {data.panels.map((p) => (
@@ -108,23 +125,6 @@ export default function PublicDataPage() {
                       axis</em> and named explicitly instead of smuggled
                       into a chart.
                     </p>
-
-                    <figure className="my-9 border border-line rounded-md bg-bg-alt p-4 sm:p-5">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src="/library/figures/public-data-three-conditions.svg"
-                        alt="Six published measures read against three conditions: comparable across groups, definition holds over time, and grain matches the decision. Drug overdose deaths by race fail comparability; NAEP grade 8 mathematics fails grain; New Jersey chronic absenteeism fails stability of definition; child flourishing in the NSCH and adolescent mental health in the YRBSS each fail on stability and grain; Medicare 30-day readmissions hold on all three."
-                        className="w-full h-auto block rounded-sm"
-                        loading="lazy"
-                      />
-                      <figcaption className="mt-3 px-1 text-ink-3 text-[12.5px] sm:text-[13px] leading-[1.55] italic">
-                        Groups means whatever each panel puts side by side. All three
-                        conditions are necessary. None of them is sufficient: the last row
-                        met all three, and the number still improved partly because it got
-                        easier to satisfy. The marks are an editorial reading of each
-                        measure&rsquo;s own documentation, not pipeline output.
-                      </figcaption>
-                    </figure>
 
                     {ext.panels.map((p) => (
                       <DecisionPanel key={p.panel_id} panel={p} />
