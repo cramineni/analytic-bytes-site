@@ -121,9 +121,9 @@ export default function PublicDataPage() {
                         The test a measure has to pass before it is admitted here. The marks
                         are an editorial reading of each measure&rsquo;s own documentation,
                         not pipeline output &mdash; the one thing on this page that is
-                        judged rather than computed. The last row is the caution: meeting
-                        all three is what makes a measure admissible before stakes attach,
-                        not what keeps it honest after they do.
+                        judged rather than computed. The three conditions are necessary, not
+                        sufficient. A measure that fails one should not carry stakes; a
+                        measure that passes all three still has to be watched once it does.
                       </figcaption>
                     </figure>
 
