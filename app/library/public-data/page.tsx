@@ -109,6 +109,24 @@ export default function PublicDataPage() {
                       into a chart.
                     </p>
 
+                    <figure className="my-9 border border-line rounded-md bg-bg-alt p-4 sm:p-5">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/library/figures/public-data-three-conditions.svg"
+                        alt="Six published measures read against three conditions: comparable across groups, definition holds over time, and grain matches the decision. Drug overdose deaths by race fail comparability; NAEP grade 8 mathematics fails grain; New Jersey chronic absenteeism fails stability of definition; child flourishing in the NSCH and adolescent mental health in the YRBSS each fail on stability and grain; Medicare 30-day readmissions hold on all three."
+                        className="w-full h-auto block rounded-sm"
+                        loading="lazy"
+                      />
+                      <figcaption className="mt-3 px-1 text-ink-3 text-[12.5px] sm:text-[13px] leading-[1.55] italic">
+                        The test a measure has to pass before it is admitted here. The marks
+                        are an editorial reading of each measure&rsquo;s own documentation,
+                        not pipeline output &mdash; the one thing on this page that is
+                        judged rather than computed. The last row is the caution: meeting
+                        all three is what makes a measure admissible before stakes attach,
+                        not what keeps it honest after they do.
+                      </figcaption>
+                    </figure>
+
                     {ext.panels.map((p) => (
                       <DecisionPanel key={p.panel_id} panel={p} />
                     ))}
