@@ -75,7 +75,7 @@ const CASE_STUDIES: CaseStudy[] = [
     missing:
       "A semantic dataset across multi-year surveys. An executive analytics surface for program operations. An impact-reporting workflow that mapped data back to the theory-of-change, instead of being authored alongside it. A targeted-funding view surfacing where burden and disparity diverge across states, sized against public-health datasets.",
     weBuilt:
-      "Activated the stalled warehouse with DevOps: turned on the Fivetran connections, validated freshness, brought the dev/staging/prod schemas into analytical use. Designed the semantic dataset architecture for multi-year survey analysis so the data team could build the report-ready layer underneath. Stood up a ThoughtSpot trial as a demonstration vehicle for executive dashboards on Salesforce program operations and national dataset DWH analytics — proof of value ahead of any procurement decision. Brought CDC Wonder data into the warehouse, moving multi-year trend and subgroup analyses from piece-meal Google Sheets queries into DWH-based workflow. Extended the same data into a targeted-funding view: a burden-vs-disparity quadrant by state, framing where need and underinvestment co-occur for grant-strategy use. Prototyped AI-assisted impact reporting using Snowflake Cortex, Streamlit, Gemini, and Python, mapping outputs to the theory-of-change domains so impact narrative could be drafted from data instead of authored separately.",
+      "Activated the stalled warehouse with DevOps: turned on the Fivetran connections, validated freshness, brought the dev/staging/prod schemas into analytical use. Designed the semantic dataset architecture for multi-year survey analysis so the data team could build the report-ready layer underneath. Stood up a ThoughtSpot trial as a demonstration vehicle for executive dashboards on Salesforce program operations and national dataset DWH analytics — proof of value ahead of any procurement decision. Brought CDC Wonder data into the warehouse, moving multi-year trend and subgroup analyzes from piece-meal Google Sheets queries into DWH-based workflow. Extended the same data into a targeted-funding view: a burden-vs-disparity quadrant by state, framing where need and underinvestment co-occur for grant-strategy use. Prototyped AI-assisted impact reporting using Snowflake Cortex, Streamlit, Gemini, and Python, mapping outputs to the theory-of-change domains so impact narrative could be drafted from data instead of authored separately.",
     stack:
       "Fivetran + Snowflake + Snowflake Cortex + Streamlit + Gemini + Python + ThoughtSpot + PowerBI + Looker + Google Sheets + CDC Wonder.",
     stackFlow: {
@@ -89,7 +89,7 @@ const CASE_STUDIES: CaseStudy[] = [
       "A semantic survey dataset spanning instrument versions",
       "Executive analytics on program operations",
       "AI-drafted impact reporting tied directly to the theory-of-change",
-      "CDC Wonder data warehoused, enabling multi-year trend and subgroup analyses to run from DWH instead of piece-meal Google Sheets queries",
+      "CDC Wonder data warehoused, enabling multi-year trend and subgroup analyzes to run from DWH instead of piece-meal Google Sheets queries",
       "Targeted-funding analytics, burden-vs-disparity by state, demonstrated as a grant-strategy view",
     ],
     nextLayerVideo: {
@@ -210,7 +210,7 @@ const CASE_STUDIES: CaseStudy[] = [
     missing:
       "A BI platform of record. Repeatable booking analytics across six product lines and six channels. Efficacy research the marketing and product teams could actually use. Cross-functional decision support across A/B testing, customer profiling, cancel/refund analysis, scheduling, and location-level enrollment.",
     weBuilt:
-      "Authored an Analytics & Reporting 2.0 strategic proposal: diagnosed the legacy environment, captured stakeholder voices, ran a six-vendor BI evaluation (Tableau, Spotfire, Sisense, Domo, Periscope, Looker), and presented tiered investment scenarios. Selected Sisense as the platform of record. Implemented Sisense ElastiCube ETL across booking analytics for six product lines: daily/monthly pacing, budget-vs-actual, YoY trends, channel attribution, product mix. Conducted efficacy research on test-prep products, running score-gain analyses across SAT, GRE, MCAT by instructor, location/PSO, and product tier. Delivered cross-functional decision support: A/B testing, high-value customer profiling, cancel/refund driver analysis, promotional-campaign performance, scheduling optimization, location-level enrollment data for leasing decisions.",
+      "Authored an Analytics & Reporting 2.0 strategic proposal: diagnosed the legacy environment, captured stakeholder voices, ran a six-vendor BI evaluation (Tableau, Spotfire, Sisense, Domo, Periscope, Looker), and presented tiered investment scenarios. Selected Sisense as the platform of record. Implemented Sisense ElastiCube ETL across booking analytics for six product lines: daily/monthly pacing, budget-vs-actual, YoY trends, channel attribution, product mix. Conducted efficacy research on test-prep products, running score-gain analyzes across SAT, GRE, MCAT by instructor, location/PSO, and product tier. Delivered cross-functional decision support: A/B testing, high-value customer profiling, cancel/refund driver analysis, promotional-campaign performance, scheduling optimization, location-level enrollment data for leasing decisions.",
     stack:
       "SQL Server (storage, views, marts) + Sisense (ElastiCubes, dashboards) + R/SPSS (efficacy research).",
     stackFlow: {
@@ -244,7 +244,7 @@ const CASE_STUDIES: CaseStudy[] = [
     missing:
       "A defensible set of log-data measures. A platform-design frame the product team could build against. A defensible analytical frame for comparing student outcomes between traditional and hybrid sections of the same course.",
     weBuilt:
-      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts, with enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyses between traditional and hybrid sections of the same course.",
+      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts, with enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyzes between traditional and hybrid sections of the same course.",
     stack: "Log data + SPSS + R + conceptual dashboard designs as simulated charts.",
     stackFlow: {
       sources: ["Platform log data", "Course outcome data"],

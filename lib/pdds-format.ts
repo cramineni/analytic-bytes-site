@@ -1,8 +1,8 @@
 // Presentation config + formatting for PDDS panels. This is the ONE place panel
-// titles, colours, and number formats live, so the render layer stays a single
+// titles, colors, and number formats live, so the render layer stays a single
 // source of truth (the data itself comes from pdds-dashboard.json).
 //
-// Colour convention (locked 2026-07-10):
+// Color convention (locked 2026-07-10):
 //   AB visual grammar is navy = structure, teal = signal / accent claim.
 //   In PDDS every bar is a data point of equal weight — the distribution
 //   IS the claim, so no single bar earns teal. All bars render navy

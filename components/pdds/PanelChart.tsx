@@ -2,7 +2,7 @@ import type { Panel } from "@/types/dashboard";
 import { formatAxis, formatFull, panelStyle } from "@/lib/pdds-format";
 
 // Horizontal SVG bar chart. Server-rendered (no client hydration, no chart
-// library). Single-period panels colour each bar individually (accent for
+// library). Single-period panels color each bar individually (accent for
 // highlighted groups); multi-period panels (e.g. overdose 2023 vs 2024) draw
 // one bar per period per group. Sits inside the surrounding <section>; sizes
 // itself to fit whatever the container gives it.

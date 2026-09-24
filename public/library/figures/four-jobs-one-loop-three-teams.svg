@@ -1,6 +1,6 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Four jobs, three teams</title>
-<desc>Three navy-outlined columns labeled Research, Operations and Development. Job 1, design the measurement, sits in Research. Job 2, analyse for operations, sits in Operations. Job 3, analyse for the funder, sits in Development. Navy arrows fork from job 1 to both job 2 and job 3. Below the columns, a dashed box labeled Job 4, revise the measurement, marked no team; thin navy lines run down from jobs 2 and 3 into it. A teal dashed return from job 4 back to job 1 is drawn broken at the Research column wall.</desc>
+<desc>Three navy-outlined columns labeled Research, Operations and Development. Job 1, design the measurement, sits in Research. Job 2, analyze for operations, sits in Operations. Job 3, analyze for the funder, sits in Development. Navy arrows fork from job 1 to both job 2 and job 3. Below the columns, a dashed box labeled Job 4, revise the measurement, marked no team; thin navy lines run down from jobs 2 and 3 into it. A teal dashed return from job 4 back to job 1 is drawn broken at the Research column wall.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
 <defs>
   <marker id="navyArrowF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -24,11 +24,11 @@
 
   <rect x="465" y="200" width="270" height="96" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
   <text x="600" y="238" font-size="22" fill="#0F2A4A" text-anchor="middle">Job 2</text>
-  <text x="600" y="270" font-size="21" fill="#475569" text-anchor="middle">Analyse for operations</text>
+  <text x="600" y="270" font-size="21" fill="#475569" text-anchor="middle">Analyze for operations</text>
 
   <rect x="815" y="200" width="270" height="96" fill="#FFFFFF" stroke="#0F2A4A" stroke-width="1.5" rx="3"/>
   <text x="950" y="238" font-size="22" fill="#0F2A4A" text-anchor="middle">Job 3</text>
-  <text x="950" y="270" font-size="21" fill="#475569" text-anchor="middle">Analyse for the funder</text>
+  <text x="950" y="270" font-size="21" fill="#475569" text-anchor="middle">Analyze for the funder</text>
 
   <!-- fork from job 1: to job 2 (straight) and to job 3 (arc over job 2) -->
   <line x1="385" y1="248" x2="461" y2="248" stroke="#0F2A4A" stroke-width="1.5" marker-end="url(#navyArrowF)"/>
