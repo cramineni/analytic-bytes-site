@@ -9938,7 +9938,7 @@ export const ESSAYS: Essay[] = [
           At a national mental health nonprofit the role I held was written as data strategy and impact analytics, reporting to the chief design and impact officer. After it was eliminated, the same responsibilities were advertised again under research and evaluation. By my count, eighteen of the twenty-three responsibility statements in the posting I was hired against are still being advertised across the three that replaced it. What changed was the verb. Lead became inform; design and maintain became leverage.
         </P>
         <P>
-          The organization kept its evaluation function and its reporting function. What it could not do, before or after, was act this quarter on a number it could also defend. That is the gap this essay is about, and I want to be careful about what it is not. It is not the incentive gap or the ownership gap that <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> takes up. It is a gap in time. The evidence that would answer the question exists at two moments, and neither moment is the one the decision is made in.
+          The organization kept its evaluation function and its reporting function. What it could not do, before or after, was act this quarter on a number it could also defend. That is the gap this essay is about, and I want to be careful about what it is not. It is not the ownership gap that <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> takes up. It is a gap in time. The evidence that would answer the question exists at two moments, and neither moment is the one the decision is made in.
         </P>
 
         <H2>Both arrive after the fact</H2>
