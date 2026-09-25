@@ -9123,7 +9123,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Forty-two of sixty-five senior data postings name what the person must be and never what the role may decide. Three trainings answer them — engineering, business and measurement — and with no decision named, the only thing separating them is which proxies each accumulated. They were built to answer different questions: will it run, will it return, does the number mean what the decision assumes.",
     cover: "/library/covers/three-trainings.svg",
-    arc: "ai-systems",
+    arc: "measurement",
     body: (
       <>
         <Brief>
