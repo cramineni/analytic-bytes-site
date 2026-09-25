@@ -9121,7 +9121,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-09-22",
     readingTime: "14 min read",
     summary:
-      "Forty-two of sixty-five senior data postings name what the person must be and never what the role may decide. This essay asks what that absence does to sorting. Three trainings answer these postings — engineering, business and measurement — and with no decision named, the only thing separating them is which proxies each accumulated. The three were built to answer different questions. When a data or AI output becomes evidence for a decision, the work starts delivering a claim rather than only a capability, and a claim can stay wrong while every operational signal reads green. The door and the seat are then two different tests, and a search can fail while selecting a strong candidate.",
+      "Forty-two of sixty-five senior data postings name what the person must be and never what the role may decide. Three trainings answer them — engineering, business and measurement — and with no decision named, the only thing separating them is which proxies each accumulated. They were built to answer different questions: will it run, will it return, does the number mean what the decision assumes.",
     cover: "/library/covers/three-trainings.svg",
     arc: "ai-systems",
     body: (
