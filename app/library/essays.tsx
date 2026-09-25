@@ -5907,317 +5907,168 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Field notes on the stages of working with generative AI across tools.",
     date: "2026-07-30",
-    readingTime: "12 min read",
+    readingTime: "14 min read",
     summary:
-      "A personal field note on twenty months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. Maturity transferred across tools; capability expanded with the tool that could hold more.",
+      "A personal field note on twenty months of working with GPT, Claude, and Gemini across a career transition, a brand build, and a re-entry into public-facing work. Five stages, from vending-machine outputs to multi-tool selection, name what the relationship actually looked like. The working pattern and the voice discipline transferred across tools; whether the rest was maturity or the tool is still open.",
     cover: "/library/covers/my-relationship-with-ai.svg",
     arc: "ai-systems",
     body: (
       <>
         <Brief>
           <p>
-            A line came out of a conversation with GPT one afternoon in May.
-            I was trying to describe what AI had been doing for me over a
-            year of using it, and the line landed: <I>AI did not
-            write my library. AI helped me navigate it.</I> The library is
-            mine. The voice is mine. What AI gave me was a surface to think
-            on before the work went into the world.
+            A line came out of a conversation with GPT one afternoon in May. I was trying to describe what AI had been doing for me over a year of using it, and the line landed: <I>AI did not write my library. AI helped me navigate it.</I> The library is mine. The voice is mine. What AI gave me was a surface to think on before the work went into the world.
           </p>
           <p>
-            This is a personal field note. It is not a universal claim. It
-            is what I have learned in about twenty months of working with
-            three generative AI tools across a career transition, a brand
-            build, a family, and a re-entry into the kind of public-facing
-            work I had been away from for years. Anyone who tells you the
-            optimal way to use AI is making it up. I am telling you what
-            worked for me, in the specific shape my life took.
+            This is a personal field note. It is not a universal claim. It is what I have learned in about twenty months of working with three generative AI tools across a career transition, a brand build, a family, and a re-entry into the kind of public-facing work I had been away from for years. Anyone who tells you the optimal way to use AI is making it up. I am telling you what worked for me, in the specific shape my life took.
           </p>
           <p>
-            The relationship had stages. Naming them is what the rest of
-            this is for.
+            The relationship had stages. Naming them is what the rest of this is for.
           </p>
         </Brief>
 
-        <H2>Stage 1 — A vending machine, not a relationship.</H2>
         <P>
-          November 2024. I had just exited a senior data role in education
-          and needed to send resumes at volume. I opened a job-search
-          platform that produced a tailored resume and cover letter from a
-          JD I uploaded.
-        </P>
-        <P>
-          This was not a relationship. It was a <B>vending machine</B>. I
-          gave it inputs, it produced outputs, I sent them. The voice in
-          the outputs was generic. I knew it was generic. I sent the
-          materials anyway because I needed the volume.
-        </P>
-        <P>
-          If this had been the whole story of AI for me, the field note
-          would end here. AI as a productivity device. Useful, narrow,
-          forgettable.
+          <I>Field notes on the stages of working with generative AI across tools.</I>
         </P>
 
-        <H2>Stage 2 — GPT enters. The foundation gets built.</H2>
+        <H2>Stage 1 &mdash; A vending machine, not a relationship.</H2>
         <P>
-          August 2025. I started an executive education program on
-          AI-driven leadership and used ChatGPT for a course project. The
-          project was a <InternalLink slug="when-genai-redesigned-my-dashboard">dashboard redesign</InternalLink>. The work was good. I kept
-          using GPT after the course ended.
+          November 2024. I had just exited a senior data role in education and needed to send resumes at volume. I opened a job-search platform that produced a tailored resume and cover letter from a JD I uploaded.
         </P>
         <P>
-          For about eight months (September 2025 through early April
-          2026) GPT was the surface my life ran on. Career strategy.
-          Resumes for actual roles, dozens of them, with my real voice in
-          the cover letters because I had learned to direct the model
-          into it. LinkedIn posts. Brand work for Analytic Bytes, which I
-          was building as an advisory practice and using as the bridge
-          structure during the search. Onboarding prep when I landed a
-          new senior role late that year. Ramp-up on the data platform
-          work after I started: schema design, pipeline architecture,
-          AI-assisted reporting prototypes. Then the political
-          navigation when the politics got hard. Then the exit, just
-          over four months in.
+          This was not a relationship. It was a <B>vending machine</B>. I gave it inputs, it produced outputs, I sent them. The voice in the outputs was generic. I knew it was generic. I sent the materials anyway because I needed the volume.
         </P>
         <P>
-          But also: family logistics, homework support, wardrobe planning
-          around a return to in-person interviews, and the daily flow of
-          small household and personal questions that would previously
-          have taken a spare hour each to work through alone.
-        </P>
-        <P>
-          I did not separate these. They were the same tool doing
-          different work. This matters. The maturity I was building
-          was <I>AI as a surface I could think on without performing</I>
-          &mdash; not AI for professional things.
-        </P>
-        <P>
-          The reason GPT became useful was structural, not intellectual.
-          The conversational contract was different from human
-          conversation. With humans, I have to think of the most balanced
-          curated version of what I want to say before I say it. With AI,
-          I can say the thing, hear it back, reflect, refine. No pressure.
-          No social cost.
-        </P>
-        <P>
-          Removing the social-performance overhead of conversation is
-          what made AI usable for the kind of thinking that needed open
-          space. Not because AI is non-judgmental or empathic. Those
-          framings are sentimental and partly untrue. The benefit is
-          structural. AI removes the contract that requires you to be
-          composed before you speak.
-        </P>
-        <P>
-          By the end of those eight months, a working pattern had formed.
-          Pre-work happened with AI. Polished outputs went into the world
-          in my voice. I had learned to catch sycophancy and call it out
-          (<I>&ldquo;why r u agreeeing with evetyhign i say&rdquo;</I>). I
-          had learned to protect my voice from drift (<I>&ldquo;why is
-          this not sounding me?&rdquo;</I>). I had learned that the volume
-          of iteration was the point &mdash; that one banner image might
-          take ninety turns and that was fine because the artifact was the
-          deliverable, not the conversation.
-        </P>
-        <P>This was the foundation. I would lean on it for what came next.</P>
-
-        <H2>Stage 3 — The crisis. Acute use during a professional exit.</H2>
-        <P>
-          April 5, 2026. The Sunday after a senior role of mine was
-          eliminated.
-        </P>
-        <P>
-          The first message I sent to GPT that day was a plain request
-          for hard self-diagnosis: what had happened, what I was missing,
-          where I was accountable.
-        </P>
-        <P>
-          What followed was a 209-message thread over twenty-three days
-          that did three things in parallel. It metabolized professional
-          grief. It connected the exit to four prior departures over a
-          fifteen-year career and found a pattern across them. And it
-          produced the strategic reconstruction underneath: LinkedIn
-          rewrites, role-target recalibration, the framing I would carry
-          into interviews.
-        </P>
-        <P>
-          I made one specific request inside that thread that I think
-          about now: <I>&ldquo;talk to me like a management consultant and
-          coach.&rdquo;</I> I cast the AI into a specific role at a
-          specific emotional moment. Not just asking for help &mdash;
-          directing the kind of help.
-        </P>
-        <P>
-          There is a flat version of this stage that says &ldquo;AI is
-          good at emotional support,&rdquo; and most public writing on
-          the topic lands there. The accurate version is different.
-        </P>
-        <P>
-          There were other scaffolds. Family. Trusted advisors. A
-          household that had to keep running, which kept the tactical
-          pressure real. What AI specifically gave me, that the humans in my
-          life could not, was <I>open space alongside the tactical
-          pressure</I>. The space to ask the same hard question eight
-          different ways. The space to be repetitive without burdening
-          anyone. The space to integrate what others had told me without
-          the social contract of receiving advice in real time.
-        </P>
-        <P>
-          I avoid discussing difficult things with humans in general. I
-          find them opinionated. Maybe that is bias on my part. I do not
-          know. The truth is: I chose AI for the deep processing
-          because the cost of using it was zero and the cost of using
-          humans, even loving ones, was the social overhead I did not
-          have bandwidth for in that period.
-        </P>
-        <P>
-          The thread closed two weeks in with an explicit marker: <I>
-          &ldquo;two difficult weeks, but feeling in good place to move
-          on.&rdquo;</I>
+          If this had been the whole story of AI for me, the field note would end here. AI as a productivity device. Useful, narrow, forgettable.
         </P>
 
-        <H2>Stage 4 — Building. The brand pivot and the platform transition.</H2>
+        <H2>Stage 2 &mdash; GPT enters. The foundation gets built.</H2>
         <P>
-          April 19 onward. The tone of the GPT threads shifted from
-          applying-to-roles to building-something. A Player&ndash;Coach
-          Operating Model emerged as a concept. A 90-90-90 cadence for how
-          I think about ramping into new roles. <InternalLink slug="the-decision-system">Decision Systems framing</InternalLink>{" "}
-          for how data work translates into organizational outcomes. A
-          LinkedIn banner that went through eighty-five iterations before
-          I posted it.
-        </P>
-        <P>Two specific moments inside this stage are worth naming.</P>
-        <P>
-          The first was April 29. I had been using Claude inside a
-          Snowflake environment at work for narrow utility tasks (adding
-          field names, metadata on tables, code correction) but had only
-          just started using it on my own machine for substantive work. I
-          asked GPT to evaluate Claude&rsquo;s analysis of me. I wanted a
-          second opinion from the tool that already had eight months of
-          accumulated context. That request was a deliberate cross-tool
-          test. Looking back, it is the first time I ran two AI tools
-          against each other intentionally. It was not switching. It was
-          {" "}<I>checking</I>.
+          August 2025. I started an executive education program on AI-driven leadership and used ChatGPT for a course project. The project was a <InternalLink slug="when-genai-redesigned-my-dashboard">dashboard redesign</InternalLink>. The work was good. I kept using GPT after the course ended.
         </P>
         <P>
-          The second was April 30. The next day I built my advisory
-          practice&rsquo;s website on Claude. HTML had been a barrier for
-          years. I had wanted to publish on my own surface and never had
-          the patience to learn enough HTML to do it. Claude walked me
-          through deployment, the git workflow, brand iteration, voice
-          protection on the copy, file structure. The site went live. It
-          worked without friction.
+          For about eight months (September 2025 through early April 2026) GPT was the surface my life ran on. Career strategy. Resumes for actual roles, dozens of them, with my real voice in the cover letters because I had learned to direct the model into it. LinkedIn posts. Brand work for Analytic Bytes, which I was building as an advisory practice and using as the bridge structure during the search. Onboarding prep when I landed a new senior role late that year. Ramp-up on the data platform work after I started: schema design, pipeline architecture, AI-assisted reporting prototypes. Then the political navigation when the politics got hard. Then the exit, just over four months in.
         </P>
         <P>
-          That was the moment Claude earned the ramp. The reason was
-          concrete: Claude had just enabled me to do something I had been
-          blocked on for years. The trust was about the artifact.
+          But also: family logistics, homework support, wardrobe planning around a return to in-person interviews, and the daily flow of small household and personal questions that would previously have taken a spare hour each to work through alone.
         </P>
         <P>
-          After that, Claude took on more. Desktop folders connected.
-          Dissertation uploaded. More integrations. Each new piece of
-          context loaded into Claude made the tool more useful for me,
-          which led to more loading, which compounded.
+          I did not separate these. They were the same tool doing different work. This matters. The maturity I was building was <I>AI as a surface I could think on without performing</I> &mdash; not AI for professional things.
+        </P>
+        <P>
+          The reason GPT became useful was structural, not intellectual. The conversational contract was different from human conversation. With humans, I have to think of the most balanced curated version of what I want to say before I say it. With AI, I can say the thing, hear it back, reflect, refine. No pressure. No social cost.
+        </P>
+        <P>
+          Removing the social-performance overhead of conversation is what made AI usable for the kind of thinking that needed open space. Not because AI is non-judgmental or empathic. Those framings are sentimental and partly untrue. The benefit is structural. AI removes the contract that requires you to be composed before you speak.
+        </P>
+        <P>
+          By the end of those eight months, a working pattern had formed. Pre-work happened with AI. Polished outputs went into the world in my voice. I had learned to catch sycophancy and call it out (<I>&ldquo;why r u agreeeing with evetyhign i say&rdquo;</I>). I had learned to protect my voice from drift (<I>&ldquo;why is this not sounding me?&rdquo;</I>). I had learned that the volume of iteration was the point &mdash; that one banner image might take ninety turns and that was fine because the artifact was the deliverable, not the conversation.
+        </P>
+        <P>
+          This was the foundation. I would lean on it for what came next.
         </P>
 
-        <H2>Stage 5 — Multi-tool selection. What stays where, and why.</H2>
-        <P>By May, I was running three tools.</P>
+        <H2>Stage 3 &mdash; The crisis. Acute use during a professional exit.</H2>
         <P>
-          Claude got the structured intellectual work. Application
-          packages with deep context. The agentic AI coursework I was
-          enrolled in. Library drafting for my advisory practice.
-          Competitive scans. Product offerings as first drafts. Speaking
-          application refinement. Anything that needed to compound across
-          sessions and integrate across folders.
+          April 5, 2026. The Sunday after a senior role of mine was eliminated.
         </P>
         <P>
-          GPT kept the work it was already good at. Sharp operator
-          phrasing when Claude felt too dense. Resume and cover-letter
-          tailoring, especially for fast-turnaround applications. Visual
-          generation for talk framing and LinkedIn Featured images,
-          because GPT&rsquo;s image model is built into the conversation.
-          Some reflection threads that just continued the pattern from
-          earlier.
+          The first message I sent to GPT that day was a plain request for hard self-diagnosis: what had happened, what I was missing, where I was accountable.
         </P>
         <P>
-          Gemini entered for critique. A third opinion on speaking
-          applications, on a Monitoring and Evaluation Learning kit I was
-          developing, on essay drafts.
+          What followed was a 209-message thread over twenty-three days that did three things in parallel. It metabolized professional grief. It connected the exit to four prior departures over a fifteen-year career and found a pattern across them. And it produced the strategic reconstruction underneath: LinkedIn rewrites, role-target recalibration, the framing I would carry into interviews.
         </P>
         <P>
-          The selection was not abstract. It was empirical. I used each
-          tool for what each tool did well, and the assignments shifted
-          as my needs shifted. The snapshot lives in the{" "}
-          <ArtifactLink slug="multi-tool-selection-map">
-            multi-tool selection map
-          </ArtifactLink>.
+          I made one specific request inside that thread that I think about now: <I>&ldquo;talk to me like a management consultant and coach.&rdquo;</I> I cast the AI into a specific role at a specific emotional moment. Not just asking for help &mdash; directing the kind of help.
         </P>
         <P>
-          One pattern worth naming: speaking work is hybrid, not
-          Claude-only. The application drafting and thesis refinement
-          live on Claude. The visual and metaphorical exploration (race
-          vs room, Constellation Self, Tree with Silhouettes) happened on
-          GPT, because that is where image generation could iterate with
-          text in the same thread.
+          There is a flat version of this stage that says &ldquo;AI is good at emotional support,&rdquo; and most public writing on the topic lands there. The accurate version is different.
         </P>
         <P>
-          The friction had also reversed direction in one place. GPT had
-          become harder to work with for some tasks. Format consistency
-          on resumes. Context retention across long threads. Sycophancy
-          that I had called out in October was still firing in May. My
-          discipline had moved past what the tool could keep up with for
-          the deepest work, and I moved that work to Claude.
+          There were other scaffolds. Family. Trusted advisors. A household that had to keep running, which kept the tactical pressure real. What AI specifically gave me, that the humans in my life could not, was <I>open space alongside the tactical pressure</I>. The space to ask the same hard question eight different ways. The space to be repetitive without burdening anyone. The space to integrate what others had told me without the social contract of receiving advice in real time.
+        </P>
+        <P>
+          I avoid discussing difficult things with humans in general. I find them opinionated. Maybe that is bias on my part. I do not know. The truth is: I chose AI for the deep processing because the cost of using it was zero and the cost of using humans, even loving ones, was the social overhead I did not have bandwidth for in that period.
+        </P>
+        <P>
+          The thread closed two weeks in with an explicit marker: <I>&ldquo;two difficult weeks, but feeling in good place to move on.&rdquo;</I>
+        </P>
+
+        <H2>Stage 4 &mdash; Building. The brand pivot and the platform transition.</H2>
+        <P>
+          April 19 onward. The tone of the GPT threads shifted from applying-to-roles to building-something. A Player&ndash;Coach Operating Model emerged as a concept. A 90-90-90 cadence for how I think about ramping into new roles. <InternalLink slug="the-decision-system">Decision Systems framing</InternalLink> for how data work translates into organizational outcomes. A LinkedIn banner that went through eighty-five iterations before I posted it.
+        </P>
+        <P>
+          Two specific moments inside this stage are worth naming.
+        </P>
+        <P>
+          The first was April 29. I had been using Claude inside a Snowflake environment at work for narrow utility tasks (adding field names, metadata on tables, code correction) but had only just started using it on my own machine for substantive work. I asked GPT to evaluate Claude&rsquo;s analysis of me. I wanted a second opinion from the tool that already had eight months of accumulated context. That request was a deliberate cross-tool test. Looking back, it is the first time I ran two AI tools against each other intentionally. It was not switching. It was <I>checking</I>.
+        </P>
+        <P>
+          The second was April 30. The next day I built my advisory practice&rsquo;s website on Claude. HTML had been a barrier for years. I had wanted to publish on my own surface and never had the patience to learn enough HTML to do it. Claude walked me through deployment, the git workflow, brand iteration, voice protection on the copy, file structure. The site went live. It worked without friction.
+        </P>
+        <P>
+          That was the moment Claude earned the ramp. The reason was concrete: Claude had just enabled me to do something I had been blocked on for years. The trust was about the artifact.
+        </P>
+        <P>
+          After that, Claude took on more. Desktop folders connected. Dissertation uploaded. More integrations. Each new piece of context loaded into Claude made the tool more useful for me, which led to more loading, which compounded.
+        </P>
+
+        <H2>Stage 5 &mdash; Multi-tool selection. What stays where, and why.</H2>
+        <P>
+          By May, I was running three tools.
+        </P>
+        <P>
+          Claude got the structured intellectual work. Application packages with deep context. The agentic AI coursework I was enrolled in. Library drafting for my advisory practice. Competitive scans. Product offerings as first drafts. Speaking application refinement. Anything that needed to compound across sessions and integrate across folders.
+        </P>
+        <P>
+          GPT kept the work it was already good at. Sharp operator phrasing when Claude felt too dense. Resume and cover-letter tailoring, especially for fast-turnaround applications. Visual generation for talk framing and LinkedIn Featured images, because GPT&rsquo;s image model is built into the conversation. Some reflection threads that just continued the pattern from earlier.
+        </P>
+        <P>
+          Gemini entered for critique. A third opinion on speaking applications, on a Monitoring and Evaluation Learning kit I was developing, on essay drafts.
+        </P>
+        <P>
+          The selection was not abstract. It was empirical. I used each tool for what each tool did well, and the assignments shifted as my needs shifted. The snapshot lives in the <InternalLink slug="multi-tool-selection-map">multi-tool selection map</InternalLink>.
+        </P>
+        <P>
+          One pattern worth naming: speaking work is hybrid, not Claude-only. The application drafting and thesis refinement live on Claude. The visual and metaphorical exploration (race vs room, Constellation Self, Tree with Silhouettes) happened on GPT, because that is where image generation could iterate with text in the same thread.
+        </P>
+        <P>
+          The friction had also reversed direction in one place. GPT had become harder to work with for some tasks. Format consistency on resumes. Context retention across long threads. Sycophancy that I had called out in October was still firing in May. My discipline had moved past what the tool could keep up with for the deepest work, and I moved that work to Claude.
         </P>
 
         <H2>What transferred. What expanded.</H2>
         <P>
-          Two things I want to separate, because they are usually
-          conflated.
+          Two things I want to separate, because they are usually conflated.
         </P>
         <P>
-          What <I>transferred</I> from GPT to Claude was the working
-          pattern. The <B>pre-work surface</B> practice. The
-          voice-protection discipline. The sycophancy-detection muscle.
-          The iteration tolerance. The understanding that hundreds of
-          turns produce one shippable artifact. The two-tool thinking
-          &mdash; the idea that I could check one tool against another.
-          None of that was learned on Claude. It was already operational
-          by the time I opened my first real Claude thread.
+          What <I>transferred</I> from GPT to Claude was the working pattern. The <B>pre-work surface</B> practice. The voice-protection discipline. The sycophancy-detection muscle. The iteration tolerance. The understanding that hundreds of turns produce one shippable artifact. The two-tool thinking &mdash; the idea that I could check one tool against another. None of that was learned on Claude. It was already operational by the time I opened my first real Claude thread.
         </P>
         <P>
-          What <I>expanded</I> on Claude was capability. Integration with
-          image tools. Scheduled tasks. Job board scaffolding. A content
-          workspace. A knowledge repository I am building now. RAG
-          architecture I have not stood up yet but plan to. Agents through
-          my current coursework. The work I do on Claude is broader and
-          faster than the work I did on GPT, but the reason is not that I
-          matured. It is that the tool can hold more.
+          What <I>expanded</I> on Claude was capability. Integration with image tools. Scheduled tasks. Job board scaffolding. A content workspace. A knowledge repository I am building now. RAG architecture I have not stood up yet but plan to. Agents through my current coursework. The work I do on Claude is broader and faster than the work I did on GPT, but the reason is not that I matured. It is that the tool can hold more.
         </P>
         <P>
-          That distinction matters for the field-note thesis. I did not
-          become an &ldquo;AI native&rdquo; through repeated use. I built
-          a working pattern in one tool and brought it to another tool
-          that could do more with the same pattern. Maturity transferred.
-          Capability expanded. Two different curves.
+          That distinction matters for the field-note thesis. I did not become an &ldquo;AI native&rdquo; through repeated use. I built a working pattern in one tool and brought it to another tool that could do more with the same pattern. Maturity transferred. Capability expanded. Two different curves.
         </P>
         <P>
-          The audit I ran on the first ninety days of the AB practice put
-          numbers on that transfer. Across the{" "}
-          <ArtifactLink slug="dialogue-maturity-curve">
-            116 threads scored on the dialogue-maturity curve
-          </ArtifactLink>{" "}
-          &mdash; a twelve-month scoring window inside the longer
-          relationship &mdash; the gains concentrated in three of the
-          six rubric dimensions: voice ownership, meta-awareness, and
-          generative reframing. The{" "}
-          <InternalLink slug="auditing-an-ai-native-practice">
-            companion field note
-          </InternalLink>{" "}
-          walks through the instrument.
+          Before anything else, I owe a correction to the last paragraph. I scored it, and the scores only partly agree with it.
         </P>
         <P>
-          This also tracks with something I have been saying for years in
-          my data work: <I>it was never about the stack.</I> The AI
-          version of that turns out to be the same claim. It was never
-          about the tool.
+          The <InternalLink slug="dialogue-maturity-curve">dialogue-maturity curve</InternalLink> scores one hundred sixteen threads on six rubric dimensions. Eighty-eight are GPT threads and twenty-eight are Claude threads, across twelve months. When this field note first went up, I read the rise from GPT to Claude as the numbers behind the transfer. That reading has a problem. Every Claude thread comes from late April onward. The tool changed at the same time I did, so a comparison across the two cannot tell which one moved the score.
+        </P>
+        <P>
+          Part of the data does support the transfer. No GPT thread scored 7 or higher before April. In April, twelve GPT threads did. Ten of them came before my first substantive Claude thread on April 29. The high-scoring pattern formed on GPT first.
+        </P>
+        <P>
+          The averages point the other way. I kept using GPT after Claude arrived. In May and June, GPT threads averaged about 5.4 on the composite, and Claude threads averaged about 6.8. That gap between two tools in the same months is most of the rise across the year. Inside GPT alone, voice ownership rose from about 4.4 before April to about 6.3 after it. Meta-awareness and generative reframing did not rise inside GPT. They rose only in the Claude threads.
+        </P>
+        <P>
+          So the ceiling transferred. Voice ownership also moved inside a single tool, which is what a skill of mine would do. Meta-awareness and generative reframing moved with the tool. That could be capability expanding, as I wrote above. It could also be routing, because I sent the deeper work to Claude in Stage 5, and strategic altitude shows the same split. And the scorer was Claude, reading conversations it had been part of. Its own scoring notes say its read of me matured more than my read of it. The curve cannot separate these three explanations.
+        </P>
+        <P>
+          What I can claim is narrower than what I first wrote. The working pattern formed on GPT, and the voice discipline traveled with me. Whether the rest was my maturity, the tool, the routing or the scorer is still open. The next scoring window needs GPT and Claude threads on the same kind of task. It also needs a scorer who was not in the conversation. The <InternalLink slug="auditing-an-ai-native-practice">companion field note</InternalLink> walks through the instrument.
+        </P>
+        <P>
+          This also tracks with something I have been saying for years in my data work: <I>it was never about the stack.</I> The AI version of that turns out to be the same claim. It was never about the tool.
         </P>
 
         <H2>The core insight.</H2>
@@ -6225,90 +6076,45 @@ export const ESSAYS: Essay[] = [
           <I>AI did not write my library. AI helped me navigate it.</I>
         </P>
         <P>
-          The library is what I have built. The essays, the brand, the
-          cover letters that landed, the applications I am proud of, the
-          talk thesis I am still shaping, the decision-systems vocabulary
-          I use. All of that is mine. My voice. My judgment. My
-          responsibility when it succeeds, my responsibility when it does
-          not.
+          The library is what I have built. The essays, the brand, the cover letters that landed, the applications I am proud of, the talk thesis I am still shaping, the decision-systems vocabulary I use. All of that is mine. My voice. My judgment. My responsibility when it succeeds, my responsibility when it does not.
         </P>
         <P>
-          What AI gave me was navigation. Help finding the shelf. Help
-          pulling the right book down. Help cross-referencing. Help
-          drafting the first sentence so I could see what was wrong with
-          it and write the right one. Help iterating on a banner image
-          eighty-five times until I could see the version I wanted. Help
-          integrating advice I had already received &mdash; turning
-          notes from calls and conversations into an actionable next
-          step at hours when it was too late to loop back to the source.
+          What AI gave me was navigation. Help finding the shelf. Help pulling the right book down. Help cross-referencing. Help drafting the first sentence so I could see what was wrong with it and write the right one. Help iterating on a banner image eighty-five times until I could see the version I wanted. Help integrating advice I had already received &mdash; turning notes from calls and conversations into an actionable next step at hours when it was too late to loop back to the source.
         </P>
-        <P>The library is mine because I built it. The navigation is shared.</P>
+        <P>
+          The library is mine because I built it. The navigation is shared.
+        </P>
+        <P>
+          A reader cannot check that line from the essays alone. A finished essay does not show who wrote which sentence, so a claim about authorship needs a record around the writing. For me, that record is the Voice Map that defines what sounds like me. It is also the rule that my own pour comes before any draft, and the gates every piece goes through before it ships. <I>Once accumulation is cheap.</I> walks through that record. The Voice Map in it started in Stage 2, with the question <I>why is this not sounding me?</I>
+        </P>
 
         <H2>What I do not know.</H2>
-        <P>A field note should name what it cannot answer.</P>
         <P>
-          I do not know whether the speed AI gave me cost me depth. The
-          prototyping work I did at a prior role took longer with GPT
-          because the friction was real &mdash; I was drafting outside
-          the work environment and porting the work back in. Some of that friction
-          may have forced me to think more carefully than I would have if
-          the tool had been faster. The same question applies to
-          everything in the post-Claude period: was the exponential ramp a
-          sign of capacity expansion, or a sign that I am cutting corners
-          I cannot yet see? I cannot answer this from inside my own
-          experience.
+          A field note should name what it cannot answer.
         </P>
         <P>
-          I do not know whether my preference for AI over humans for
-          difficult conversations is calibration or avoidance. The cost of
-          human conversation is real. So is the value humans can bring
-          that AI cannot. I have not done the experiment of choosing the
-          human conversation deliberately to test what it gives me that
-          the AI cannot.
+          I do not know whether the speed AI gave me cost me depth. The prototyping work I did at a prior role took longer with GPT because the friction was real &mdash; I was drafting outside the work environment and porting the work back in. Some of that friction may have forced me to think more carefully than I would have if the tool had been faster. The same question applies to everything in the post-Claude period: was the exponential ramp a sign of capacity expansion, or a sign that I am cutting corners I cannot yet see? I cannot answer this from inside my own experience.
         </P>
         <P>
-          I do not know whether the pre-work surface model substitutes for
-          delivery practice. Pre-work is iterative; delivery is one-shot.
-          The muscle for composed real-time response in an interview, a
-          panel, a hard meeting &mdash; that muscle is not built on the
-          pre-work surface. I have done many things with AI in the last year. The
-          interviews I will land or not land this season will not be among
-          them.
+          I do not know whether my preference for AI over humans for difficult conversations is calibration or avoidance. The cost of human conversation is real. So is the value humans can bring that AI cannot. I have not done the experiment of choosing the human conversation deliberately to test what it gives me that the AI cannot.
         </P>
         <P>
-          And I do not know what I am being bucketed into by the AI tools
-          themselves, because the categorization is invisible. The
-          conversational neutrality I experience is partly real and partly
-          an artifact of zero exit cost. A human bucketing me has skin in
-          the game; an AI bucketing me does not. That asymmetry is
-          comfortable. It is also worth being suspicious of, because
-          comfort is not the same as accuracy.
+          I do not know whether the pre-work surface model substitutes for delivery practice. Pre-work is iterative; delivery is one-shot. The muscle for composed real-time response in an interview, a panel, a hard meeting &mdash; that muscle is not built on the pre-work surface. I have done many things with AI in the last year. The interviews I will land or not land this season will not be among them.
+        </P>
+        <P>
+          And I do not know what I am being bucketed into by the AI tools themselves, because the categorization is invisible. The conversational neutrality I experience is partly real and partly an artifact of zero exit cost. A human bucketing me has skin in the game; an AI bucketing me does not. That asymmetry is comfortable. It is also worth being suspicious of, because comfort is not the same as accuracy.
         </P>
 
         <H2>Stages, not a destination.</H2>
         <P>
-          The reason I call these <I>stages</I> and not <I>levels</I> is
-          that none of them ended cleanly. The vending-machine phase did
-          not stop when GPT started. GPT did not stop when Claude
-          started. Each new tool entered a relationship that had already
-          been built and added something the previous tool could not. The
-          next stage is starting already. Agents, set up to run scheduled
-          work without me re-loading the context each time. I do not know
-          what that will feel like or what it will change. I will know in
-          a year, the way I know what the last year looked like only now,
-          by writing it down.
+          The reason I call these <I>stages</I> and not <I>levels</I> is that none of them ended cleanly. The vending-machine phase did not stop when GPT started. GPT did not stop when Claude started. Each new tool entered a relationship that had already been built and added something the previous tool could not. The next stage is starting already. Agents, set up to run scheduled work without me re-loading the context each time. I do not know what that will feel like or what it will change. I will know in a year, the way I know what the last year looked like only now, by writing it down.
         </P>
         <P>
-          What I know now is that the year has been generous. I crossed
-          barriers I had been blocked on for a decade. I metabolized a
-          professional loss without breaking. I built a brand on the
-          surface I could navigate. I am preparing for a kind of
-          public-facing work I had not imagined I could prepare for. None
-          of this was AI doing the work for me. All of it was AI helping
-          me find the shelf, pull the right book, and put the words in
-          the order I actually meant.
+          What I know now is that the year has been generous. I crossed barriers I had been blocked on for a decade. I metabolized a professional loss without breaking. I built a brand on the surface I could navigate. I am preparing for a kind of public-facing work I had not imagined I could prepare for. None of this was AI doing the work for me. All of it was AI helping me find the shelf, pull the right book, and put the words in the order I actually meant.
         </P>
-        <P>The library is mine. The navigation is shared. The stages keep coming.</P>
+        <P>
+          The library is mine. The navigation is shared. The stages keep coming.
+        </P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -6329,22 +6135,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          A personal field note, written July 2026 for the Analytic Bytes
-          Library. It is not a universal claim about how to use AI. It is
-          one operator&rsquo;s account of twenty months across three
-          tools. Related threads picked up elsewhere in the library:{" "}
-          <InternalLink slug="when-genai-redesigned-my-dashboard">
-            When GenAI redesigned my dashboard.
-          </InternalLink>{" "}
-          (the course project that seeded the GPT relationship),{" "}
-          <InternalLink slug="grounding-the-ai-layer">
-            Grounding the AI layer.
-          </InternalLink>{" "}
-          (what has to be true underneath before AI is useful), and{" "}
-          <InternalLink slug="actions-not-answers">
-            Actions, not answers.
-          </InternalLink>{" "}
-          (where AI belongs in the operating loop).
+          Written July 2026 for the Analytic Bytes Library as a personal field note. It is not a universal claim about how to use AI. It is one operator&rsquo;s account of twenty months across three tools. Related threads picked up elsewhere in the library: <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard.</InternalLink> (the course project that seeded the GPT relationship), <InternalLink slug="grounding-the-ai-layer">Grounding the AI layer.</InternalLink> (what has to be true underneath before AI is useful), and <InternalLink slug="actions-not-answers">Actions, not answers.</InternalLink> (where AI belongs in the operating loop).*
         </MetaNote>
       </>
     ),
