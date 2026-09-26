@@ -103,6 +103,15 @@ export default function LibraryPage() {
                 names which.
               </p>
               <p className="text-ink-3 text-[14.5px] sm:text-[15px] max-w-[600px] mt-3 leading-[1.6]">
+                <ArtifactLink slug="the-decision-chain">
+                  The decision chain
+                </ArtifactLink>{" "}
+                is what the diagnostic pieces trace &mdash; construct, representation,
+                inference, decision, action, consequence, and the return leg back.
+                Each piece names where it stops working; the line under the
+                subtitle says which link.
+              </p>
+              <p className="text-ink-3 text-[14.5px] sm:text-[15px] max-w-[600px] mt-3 leading-[1.6]">
                 Also live:{" "}
                 <a
                   href="/library/public-data"
