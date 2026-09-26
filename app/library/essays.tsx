@@ -748,9 +748,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. Tool capabilities and
-          product names cited reflect that period; the architectural argument is
-          intended to outlast specific vendor features.
+          Written May 2026 for the Analytic Bytes Library. Tool capabilities and product names cited reflect that period; the architectural argument is intended to outlast specific vendor features. The three surfaces and the drift case behind the keystone argument are from the author&rsquo;s own record of building reporting stacks, with organizations and specifics abstracted; no client or employer is named.
         </MetaNote>
       </>
     ),
@@ -1522,10 +1520,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. Tool capabilities,
-          product names, and feature specifics cited reflect that period; the
-          architectural argument is intended to outlast specific vendor
-          features.
+          Written May 2026 for the Analytic Bytes Library. Tool capabilities, product names and feature specifics cited reflect that period; the architectural argument is intended to outlast specific vendor features, and a reader should check current products before relying on any named capability. No client, employer or vendor engagement is described, and the stack described is a general pattern rather than any one organization&rsquo;s build.
         </MetaNote>
       </>
     ),
@@ -2545,9 +2540,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. An argued position
-          piece; the honest case for each alternative is made in earnest before
-          the argument lands.
+          Written May 2026 for the Analytic Bytes Library. An argued position piece; the honest case for each alternative is made in earnest before the argument lands. The reporting-line patterns and what each one did to the work are from the author&rsquo;s own record across four organizations and from operators she has worked alongside, not from a survey; no organization is named. The piece argues where the function should sit and makes no claim about how organizations distribute in practice.
         </MetaNote>
       </>
     ),
@@ -3306,10 +3299,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written May 2026 for the Analytic Bytes Library. Drawn from interview
-          performance tasks completed between 2017 and 2026; organizations and
-          task specifics are abstracted throughout, and no individual
-          organization’s task, scenario detail, or data is reproduced.
+          Written May 2026 for the Analytic Bytes Library. Drawn from interview performance tasks completed between 2017 and 2026; organizations and task specifics are abstracted throughout, and no individual organization&rsquo;s task, scenario detail or data is reproduced. The set is the author&rsquo;s own, gathered by applying rather than by sampling: a dozen organizations that were hiring, in the sectors she works in, all read by the same person. It supports a claim about what recurred across those dozen and no claim about how common these failures are in the field.
         </MetaNote>
       </>
     ),
@@ -8309,7 +8299,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written August 2026 for the Analytic Bytes Library. Standing practice: no employer, client or vendor is named in this piece.
+          Written August 2026 for the Analytic Bytes Library. No employer, client or vendor is named, per standing practice. The measurement sources were checked against their published pages: Messick (1995) and the companion paper on consequences, Kane (2013), Schmidt and Hunter (1998) on the predictive literature, Sackett and Yang (2000) on range restriction, and the SIOP Principles at the standard the field names for itself. The rejection experiences behind the argument are from the author&rsquo;s own record and from accounts shared with her, not from a sampled study; the seven causes are a structural enumeration of what a single bit can conceal, not a measured distribution of how often each occurs.
         </MetaNote>
       </>
     ),
@@ -8534,7 +8524,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written August 2026 for the Analytic Bytes Library. Standing practice: no client, employer or vendor is named in this piece. Companion to The Valid Dollar and The Reach Trap; the finance-side wire between them.
+          Written August 2026 for the Analytic Bytes Library. No client, employer or vendor is named, per standing practice. The Overhead Myth letter was checked against the Nonprofit Quarterly page. The argument is structural rather than empirical: it names why a cost-per-outcome number cannot be computed without shared governed keys, and reports no measured cost per outcome of its own. Companion to The valid dollar and The reach trap, and the finance-side wire between them.
         </MetaNote>
       </>
     ),
