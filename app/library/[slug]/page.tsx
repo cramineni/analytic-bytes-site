@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ESSAYS, getEssay, isEssayVisible } from "../essays";
+import { ESSAYS, getEssay, isEssayVisible, ARC_LABELS, ARC_LABELS_INLINE, CHAIN_LABELS } from "../essays";
 
 // Pre-render every essay route at build time. Hidden essays are skipped —
 // they 404 in production until their `hidden` flag is removed.
@@ -112,6 +112,27 @@ export default function EssayPage({
                 <p className="text-ink-2 text-[17px] sm:text-[20px] italic leading-[1.5] mt-5">
                   {essay.subtitle}
                 </p>
+                {(essay.arcSecondary || essay.chainLink) ? (
+                  <div className="mt-6 border-t border-line pt-4 font-mono text-[12px] text-ink-3 tracking-[0.04em] space-y-1.5">
+                    {essay.arcSecondary ? (
+                      <p className="m-0">
+                        <span className="text-ink-2">{ARC_LABELS[essay.arc]}</span>, applied to{" "}
+                        <span className="text-ink-2">
+                          {ARC_LABELS_INLINE[essay.arcSecondary]}
+                        </span>
+                      </p>
+                    ) : null}
+                    {essay.chainLink && essay.chainLink.length > 0 ? (
+                      <p className="m-0">
+                        Breaks at{" "}
+                        <span className="text-ink-2">
+                          {essay.chainLink.map((l) => CHAIN_LABELS[l]).join(", then ")}
+                        </span>
+                        {essay.failurePoint ? <> &nbsp;·&nbsp; {essay.failurePoint}</> : null}
+                      </p>
+                    ) : null}
+                  </div>
+                ) : null}
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-7 font-mono text-[12px] text-ink-3 tracking-[0.03em]">
                   <span className="text-ink-2 font-medium not-italic">
                     Chaitanya Ramineni, PhD

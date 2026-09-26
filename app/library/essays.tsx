@@ -332,6 +332,30 @@ function SeeAlsoItem({
  * frame they live inside, not the layer they touch. The umbrella itself
  * is the library, not a slice of it. Used to render the arc pill on
  * /library and as a future filter dimension. */
+// The decision chain the library's diagnostic pieces trace. Ordered and closed:
+// a break sits somewhere on it, including on the return leg.
+export type ChainLink =
+  | "construct"
+  | "construct-representation"
+  | "representation-inference"
+  | "inference-decision"
+  | "decision-action"
+  | "action-consequence"
+  | "return-leg";
+
+export const CHAIN_LABELS: Record<ChainLink, string> = {
+  construct: "construct",
+  "construct-representation": "construct \u2192 representation",
+  "representation-inference": "representation \u2192 inference",
+  "inference-decision": "inference \u2192 decision",
+  "decision-action": "decision \u2192 action",
+  "action-consequence": "action \u2192 consequence",
+  "return-leg": "the return leg",
+};
+
+// The three failure points named by The Decision System, the library's umbrella.
+export type FailurePoint = "meaning" | "authority" | "validity";
+
 export type Arc =
   | "measurement"
   | "integration-governance"
@@ -343,6 +367,14 @@ export const ARC_LABELS: Record<Arc, string> = {
   "integration-governance": "Integration governance",
   "ai-systems": "AI systems",
   "data-foundations": "Data foundations",
+};
+
+// Mid-sentence form, for the "applied to ..." line. Lower case except the acronym.
+export const ARC_LABELS_INLINE: Record<Arc, string> = {
+  measurement: "measurement",
+  "integration-governance": "integration governance",
+  "ai-systems": "AI systems",
+  "data-foundations": "data foundations",
 };
 
 // Four canonical disciplines of AB's Decision-System Architecture frame.
@@ -370,6 +402,8 @@ export type Essay = {
   cover: string; // /library/covers/[file].svg
   arc: Arc; // primary arc for navigation + future filtering
   arcSecondary?: Arc; // second discipline the piece genuinely sits in; set only where justified
+  chainLink?: ChainLink[]; // where the decision chain breaks. Two links is the normal case.
+  failurePoint?: FailurePoint; // which of the umbrella framework's three fails
   hidden?: boolean; // if true, hidden everywhere (dev + prod). Use for retired or archived pieces.
   draft?: boolean; // if true, hidden in production but visible in local dev (npm run dev). Use for pieces you're still reading/iterating on before publishing.
   body: ReactNode;
@@ -391,6 +425,8 @@ export const ESSAYS: Essay[] = [
       "Why BI tool selection is the last decision, not the first — and the three reporting surfaces most analytics products owe their audiences.",
     cover: "/library/covers/three-surfaces-one-keystone.svg",
     arc: "data-foundations",
+    chainLink: ["construct"],
+    failurePoint: "meaning",
     body: (
       <>
         <Brief>
@@ -772,6 +808,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/when-genai-redesigned-my-dashboard.svg",
     arc: "ai-systems",
     arcSecondary: "data-foundations",
+    chainLink: ["decision-action"],
+    failurePoint: "meaning",
     body: (
       <>
         <Brief>
@@ -1036,6 +1074,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/grounding-the-ai-layer.svg",
     arc: "ai-systems",
     arcSecondary: "data-foundations",
+    chainLink: ["construct"],
+    failurePoint: "meaning",
     body: (
       <>
         <Brief>
@@ -1545,6 +1585,8 @@ export const ESSAYS: Essay[] = [
       "Why national education data, classroom assessments, and local instruments are most useful stitched together — and what the integration architecture looks like.",
     cover: "/library/covers/lo-2-0-stitching-the-layers.svg",
     arc: "data-foundations",
+    chainLink: ["representation-inference"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -1948,6 +1990,8 @@ export const ESSAYS: Essay[] = [
       "Burden and disparity are two different signals in the same CDC mortality data. The priority list you build from one is not the list you build from the other — and a framework that shows both changes where the next prevention dollar goes.",
     cover: "/library/covers/burden-disparity-and-the-next-dollar.svg",
     arc: "measurement",
+    chainLink: ["representation-inference"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -2191,6 +2235,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/where-should-data-sit.svg",
     arc: "data-foundations",
     arcSecondary: "integration-governance",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -2566,6 +2612,8 @@ export const ESSAYS: Essay[] = [
       "Agentic AI produces actions, not answers — and the human checkpoint that came free with every answer is gone unless you design it back in. Why agentic adoption is a decision-system question, not a technology one.",
     cover: "/library/covers/actions-not-answers.svg",
     arc: "ai-systems",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -2830,6 +2878,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/what-is-this-system-measuring.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
+    chainLink: ["construct-representation"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -3138,6 +3188,8 @@ export const ESSAYS: Essay[] = [
       "More than a dozen interview take-home tasks, done cold across a decade, read as one experiment. The same few failures showed up in almost every one — and none of them was a skills gap.",
     cover: "/library/covers/the-take-home-test.svg",
     arc: "data-foundations",
+    chainLink: ["inference-decision"],
+    failurePoint: "authority",
     hidden: false,
     body: (
       <>
@@ -3323,6 +3375,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/numbers-dont-agree.svg",
     arc: "integration-governance",
     arcSecondary: "data-foundations",
+    chainLink: ["construct"],
+    failurePoint: "meaning",
     hidden: false,
     body: (
       <>
@@ -3539,6 +3593,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/the-contracts-between-systems.svg",
     arc: "integration-governance",
     arcSecondary: "ai-systems",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     hidden: false,
     body: (
       <>
@@ -3847,6 +3903,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/plumbing-got-upgraded-water-didnt.svg",
     arc: "integration-governance",
     arcSecondary: "data-foundations",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -4096,6 +4154,8 @@ export const ESSAYS: Essay[] = [
       "Most cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead: alignment, assignment, execution. Each phase fails differently, and a communication-issue diagnosis collapses all three.",
     cover: "/library/covers/blown-assignment.svg",
     arc: "integration-governance",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -4241,6 +4301,8 @@ export const ESSAYS: Essay[] = [
       "The mismatch between horizontal work and vertical org charts is structural. Multiple honest forms can carry it: councils that deliberate and hand playbooks back to functions, flash teams that merge for the deliverable, standing squads drawn permanently from across functions. All rely on the same seam contract underneath. Without that contract, none of them holds.",
     cover: "/library/covers/functions-dont-run-plays.svg",
     arc: "integration-governance",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -4407,6 +4469,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/the-reach-trap.svg",
     arc: "measurement",
     arcSecondary: "data-foundations",
+    chainLink: ["construct-representation"],
+    failurePoint: "meaning",
     body: (
       <>
         <Brief>
@@ -4590,6 +4654,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/why-the-rules-look-weird.svg",
     arc: "integration-governance",
     arcSecondary: "measurement",
+    chainLink: ["construct"],
+    failurePoint: "meaning",
     body: (
       <>
         <Brief>
@@ -5209,6 +5275,8 @@ export const ESSAYS: Essay[] = [
       "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average. Separates the verbs a number earns — supports, contributed to, produced — by the strength of the counterfactual behind it. Closes by asking that funds publish per-pathway warrant beside the composite.",
     cover: "/library/covers/the-valid-dollar.svg",
     arc: "measurement",
+    chainLink: ["representation-inference"],
+    failurePoint: "validity",
     body: (
       <>
         <P>
@@ -5508,6 +5576,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/validity-layer-beneath-responsible-ai.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
+    chainLink: ["construct-representation"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -5737,6 +5807,8 @@ export const ESSAYS: Essay[] = [
       "For most of human history, every institution carried you as a thumbnail: a name, a category, a score. That compression wasn’t malice, it was budget, and the price of the full picture has now collapsed. The choice institutions face isn’t whether to keep sorting faster or to hold people at higher resolution; it is whether they can answer the validity question underneath it.",
     cover: "/library/covers/we-used-to-settle-for-thumbnails.svg",
     arc: "measurement",
+    chainLink: ["construct-representation"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -6118,6 +6190,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/two-bets-one-institution.svg",
     arc: "integration-governance",
     arcSecondary: "ai-systems",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -6348,6 +6422,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/who-writes-the-contract.svg",
     arc: "data-foundations",
     arcSecondary: "integration-governance",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -6805,6 +6881,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/when-the-stakes-are-the-mission.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
+    chainLink: ["representation-inference", "action-consequence"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -7072,6 +7150,8 @@ export const ESSAYS: Essay[] = [
       "Data work in mission-driven organizations decomposes into three buckets — entry, interpretation, and curation/governance — and the third one, the specialized semantic-layer role, almost never has a funded home. It gets absorbed by whoever is capable with numbers: a math teacher, a clinician, a director of instructional technology. This piece names the absorption pattern across four sectors and argues for the three-layer architecture that would replace it.",
     cover: "/library/covers/the-absorbed-data-role.svg",
     arc: "data-foundations",
+    chainLink: ["decision-action"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -7882,6 +7962,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/extending-the-gates.svg",
     arc: "measurement",
     arcSecondary: "data-foundations",
+    chainLink: ["return-leg"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -8053,6 +8135,8 @@ export const ESSAYS: Essay[] = [
       "Educational measurement requires an instrument to argue for itself before it decides something about a person. A résumé screen carries no such argument. Three failures — the construct is unspecified, the outcome does not identify its cause, and the screen's errors are invisible to its author — and three remedies, one for each.",
     cover: "/library/covers/seven-causes-one-bit.svg",
     arc: "measurement",
+    chainLink: ["representation-inference", "construct"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -8338,6 +8422,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/the-floor-is-the-frontier.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
+    chainLink: ["action-consequence", "construct"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -8447,6 +8533,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/the-spend-trap.svg",
     arc: "measurement",
     arcSecondary: "integration-governance",
+    chainLink: ["construct"],
+    failurePoint: "meaning",
     body: (
       <>
         <Brief>
@@ -8565,6 +8653,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/before-it-was-called-ai-evaluation.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
+    chainLink: ["representation-inference"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -8782,6 +8872,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/required-for-what.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
+    chainLink: ["inference-decision"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -9097,6 +9189,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/three-trainings.svg",
     arc: "measurement",
     arcSecondary: "data-foundations",
+    chainLink: ["construct", "representation-inference"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -9333,6 +9427,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/four-jobs-one-loop.svg",
     arc: "measurement",
     arcSecondary: "data-foundations",
+    chainLink: ["return-leg"],
+    failurePoint: "authority",
     body: (
       <>
         <Brief>
@@ -9520,6 +9616,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/the-gate-runs-one-way.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
+    chainLink: ["action-consequence"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -9678,6 +9776,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/every-metric-is-a-claim.svg",
     arc: "measurement",
     arcSecondary: "data-foundations",
+    chainLink: ["representation-inference", "return-leg"],
+    failurePoint: "validity",
     body: (
       <>
         <Brief>
@@ -9861,6 +9961,8 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/for-the-record.svg",
     arc: "ai-systems",
     arcSecondary: "data-foundations",
+    chainLink: ["construct-representation"],
+    failurePoint: "meaning",
     body: (
       <>
         <Brief>
