@@ -1954,26 +1954,13 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          A funder with a fixed prevention budget, or a state health officer with one, faces the same question every cycle: where does the next dollar go? The instinct is to follow the headline and fund the states with the highest suicide rate. That instinct isn&rsquo;t wrong, but on its own it sends money to the wrong map. This is a field note, not a study. It is an exploratory, reliability-filtered read of seven years of CDC WONDER mortality data, and its only real claim is structural: burden and disparity are two different signals, the priority list you build from one is not the list you build from the other, and a framework showing both — while staying honest about what it can&rsquo;t see — changes the allocation decision. Written for the person who has to defend that decision after it&rsquo;s made.
-        </p>
+            A funder with a fixed prevention budget, or a state health officer with one, faces the same question every cycle: where does the next dollar go? The instinct is to follow the headline and fund the states with the highest suicide rate. That instinct is not wrong, but on its own it sends money to the wrong map.
+          </p>
           <p>
-            This is a field note, not a study. It is an exploratory,
-            reliability-filtered read of{" "}
-            <a
-              href="https://wonder.cdc.gov/"
-              target="_blank"
-              rel="noopener"
-              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-            >
-              CDC WONDER
-            </a>{" "}
-            mortality data from 2021 to 2024, and its only real claim is
-            structural: burden and disparity are two different signals, the
-            priority list you would build from one is not the list you would
-            build from the other, and a prioritization framework that shows
-            both, and stays honest about what it can’t see, changes the
-            allocation decision. This piece is for the person who has to
-            defend that decision after it’s made.
+            This is a field note, not a study: an exploratory, reliability-filtered read of CDC WONDER mortality data from 2021 to 2024. Its only real claim is structural. Burden and disparity are two different signals, the priority list you build from one is not the list you build from the other, and a framework showing both &mdash; while staying honest about what it cannot see &mdash; changes the allocation decision.
+          </p>
+          <p>
+            Written for the person who has to defend that decision after it is made.
           </p>
         </Brief>
 
@@ -2849,36 +2836,14 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          By the start of 2026, most universities had done the visible work of responding to artificial intelligence. They had written policies on student and faculty use. They had stood up AI committees and working groups. They had run pilots: assistants for student services, drafting tools for administrative staff, models that flag students who might be slipping. The scaffolding went up quickly, under real pressure. Enrollment is contracting as the <a
-              href="https://www.press.jhu.edu/books/title/11859/demographics-and-demand-higher-education"
-              target="_blank"
-              rel="noopener"
-              className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-            >
-              demographic cliff
-            </a> arrives. The public is questioning the return on a degree. Federal funding and tax conditions have tightened.{" "}
-          <a
-            href="https://www.deloitte.com/us/en/insights/industry/articles-on-higher-education/2026-higher-education-trends.html"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            Deloitte&rsquo;s 2026 higher education outlook
-          </a>{" "}
-          describes a sector moving from a long period of growth into one of disciplined focus on core priorities, with the business model itself under scrutiny and risk management demanding tighter coordination across offices that once operated apart. AI arrived in the middle of all of it, as both another pressure and a promised relief.
-        </p>
+            By the start of 2026, most universities had done the visible work of responding to artificial intelligence. They had written policies on student and faculty use, stood up committees, run pilots: assistants for student services, drafting tools for staff, models that flag students who might be slipping. The scaffolding went up quickly, under real pressure &mdash; a contracting enrollment cliff, public questioning of the return on a degree, tightened federal funding.
+          </p>
           <p>
-          The role of the technology executive has shifted with it. In{" "}
-          <a
-            href="https://www.deloitte.com/us/en/programs/chief-information-officer/articles/global-technology-leadership-study.html"
-            target="_blank"
-            rel="noopener"
-            className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
-          >
-            Deloitte&rsquo;s 2026 Global Technology Leadership Study
-          </a>
-          , the large majority of CIOs described their primary job as implementing AI across the institution or serving as evangelists for it, moving, in the report&rsquo;s phrase, from keeping the lights on to lighting the way forward. That shift is real and, on balance, healthy. But there is a cost. When the mandate becomes adoption, we assume evaluation instead of performing it.
-        </p>
+            The role of the technology executive shifted with it. In Deloitte&rsquo;s 2026 Global Technology Leadership Study, the large majority of CIOs described their primary job as implementing AI across the institution or serving as evangelists for it, moving, in the report&rsquo;s phrase, from keeping the lights on to lighting the way forward.
+          </p>
+          <p>
+            That shift is real and, on balance, healthy. But there is a cost. When the mandate becomes adoption, we assume evaluation instead of performing it.
+          </p>
         </Brief>
 
         <H2>The question that gets skipped</H2>
@@ -3180,19 +3145,13 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          The interview take-home is a strange little genre. A stranger hands you their messiest data situation, gives you somewhere between two hours and five days, and asks you to diagnose it and design something. Cold — no colleagues, no institutional memory, a clock running. Most people do one or two over a career and never think about them again. Over the past decade I did more than a dozen, for organizations across K-12 charter networks, national education nonprofits, youth mental health, and assessment. Read one at a time, they were job interviews. Read as a set, they are something more useful: the same diagnostic, run on a dozen organizations, by the same person, under the same constraints. A natural experiment, and it has a result. A small number of failures showed up in almost every one. This piece is what the set revealed. It is written for any leader who has opened a data role, approved a dashboard, and wondered why the decisions never got sharper.
-        </p>
+            The interview take-home is a strange little genre. A stranger hands you their messiest data situation, gives you somewhere between two hours and five days, and asks you to diagnose it and design something. Cold &mdash; no colleagues, no institutional memory, a clock running. Most people do one or two over a career and never think about them again.
+          </p>
           <p>
-            Over the past decade I did more than a dozen, for organizations
-            across K-12 charter networks, national education nonprofits, youth
-            mental health, and assessment. Read one at a time, they were job
-            interviews. Read as a set, they are something more useful: the same
-            diagnostic, run on a dozen organizations, by the same person, under
-            the same constraints. A natural experiment, and it has a result. A
-            small number of failures showed up in almost every one. This piece
-            is what the set revealed. It is written for any leader who has
-            opened a data role, approved a dashboard, and wondered why the
-            decisions never got sharper.
+            Over the past decade I did more than a dozen, for organizations across K-12 charter networks, national education nonprofits, youth mental health, and assessment. Read one at a time, they were job interviews. Read as a set, they are the same diagnostic run on a dozen organizations, by the same person, under the same constraints. A natural experiment, and it has a result: a small number of failures showed up in almost every one.
+          </p>
+          <p>
+            This piece is what the set revealed. It is written for any leader who has opened a data role, approved a dashboard, and wondered why the decisions never got sharper.
           </p>
         </Brief>
 
@@ -3588,14 +3547,14 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          Universities, school networks, foundations, and behavioral-health agencies have been buying integration for a long time. Warehouses get built. Pipes get connected. Connectors ship. The bytes move from the system that wrote them to the system that reads them. And then, very often, the leader looking for institutional intelligence — a 360 view for the CEO, role-specific intelligence for a program officer or a principal or a clinician or a dean, a number a District Education Officer can act on this week — discovers that the integration ran and the institution still cannot make the decision.
-        </p>
+            Universities, school networks, foundations and behavioral-health agencies have been buying integration for a long time. Warehouses get built, pipes get connected, and the bytes move from the system that wrote them to the system that reads them. Then the leader looking for institutional intelligence discovers that the integration ran and the institution still cannot make the decision.
+          </p>
           <p>
-          That is the gap I want to focus on. Integration is two questions stacked on top of each other, and institutions have been treating them as one. The first is engineering: do the bytes move from where they were written to where they will be read, in the right shape, on a defensible cadence, without breaking? The second is governance: when the bytes arrive, can anyone act on them? Who is allowed to read them, who is allowed to write them, on what cadence, under what consent envelope, with what authority, with what reversibility, with what audit trail if they are wrong? The first question has good answers in every era&rsquo;s stack. The second has not been answered in almost any institution I have worked with, in any era.
-        </p>
+            Integration is two questions stacked on top of each other, and institutions treat them as one. The first is engineering: do the bytes move, in the right shape, on a defensible cadence, without breaking? The second is governance: when they arrive, can anyone act on them &mdash; who may read, who may write, with what authority, with what audit trail if they are wrong? Every era&rsquo;s stack answers the first. Almost no institution I have worked with has answered the second.
+          </p>
           <p>
-          Those second-question elements together are what I will call the governance contract: the explicit, named understanding that turns integrated bytes into something a stakeholder can act on with authority — an operational agreement the institution writes for itself and enforces internally, not a legal document. This essay is about that contract, and about what it has looked like across three eras of integration: legacy, modern, and the agentic era now arriving. The engineering changes. The contract has to change with it. The governance gap, in most institutions, does not. I have named this same gap, in a field note, a <InternalLink slug="blown-assignment">blown assignment</InternalLink>: the dashboard runs and nobody wrote the contract that says who acts on the number, with what authority, on what cadence.
-        </p>
+            Those second-question elements are the governance contract, and this essay follows it across three eras of integration: legacy, modern, and the agentic era now arriving. The engineering changes. The contract has to change with it. The gap, in most institutions, does not.
+          </p>
         </Brief>
 
         <Figure
@@ -6161,11 +6120,14 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          Every institution standing up artificial intelligence in 2026 is making a model-layer bet, whether or not it has named it as one. The shorthand the field has settled on (vendor-anchored versus federated) captures the surface of the choice. The deeper question is whether the institution delegates orchestration to a vendor-controlled platform or owns the orchestration layer itself: who decides which model handles which workload, who evaluates whether each model is doing what it claims, who writes the contracts for read, write, cadence, consent, and reversibility, and who is responsible at the seams when the institution inevitably runs both choices in different parts of itself. The consequences of this choice are different from the same choice for tools, and most institutions have not yet articulated what they are choosing. They choose anyway. The bet is inside every AI procurement, every pilot, every campus rollout, every internal portal. It decides more than any single tool choice does — it shapes what the institution&rsquo;s AI posture will look like in three years.
-        </p>
+            Every institution standing up artificial intelligence in 2026 is making a model-layer bet, whether or not it has named it as one. Vendor-anchored versus federated captures the surface of the choice. The deeper question is whether the institution delegates orchestration to a vendor-controlled platform or owns that layer itself: who decides which model handles which workload, who evaluates whether each is doing what it claims, and who is responsible at the seams when the institution runs both.
+          </p>
           <p>
-          This essay is about that bet: what each side buys, what it trades, where it shows up one layer down inside the data stack, and why the institutions handling this moment well are not choosing one bet for everything. They are calibrating different bets to different domains. The calibration, when it is done deliberately, is the architecturally honest answer. When it happens by accident, it shows up later as a governance gap: the seam contracts between the vendor-anchored and federated domains. Neither bet owns them. Nobody writes them by default.
-        </p>
+            Most institutions have not articulated what they are choosing. They choose anyway, and the bet shapes what their AI posture will look like in three years.
+          </p>
+          <p>
+            This essay is about what each side buys, what it trades, and why the institutions handling this well calibrate different bets to different domains. When that happens by accident rather than deliberately, it shows up later as a governance gap: the seam contracts between the vendor-anchored and federated domains. Neither bet owns them. Nobody writes them by default.
+          </p>
         </Brief>
 
         <H2>What the vendor-anchored bet buys, and what it trades</H2>
@@ -8598,16 +8560,16 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In 2017, I co-authored a paper published in <I>Assessing Writing</I> that opened with a claim I have not been able to un-see since. The claim was small, technical, and &mdash; for the automated-writing-evaluation field it was written into (automated writing evaluation, or AWE) &mdash; unfashionable. It read: &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo;
+            In 2017, I co-authored a paper in Assessing Writing that opened with a claim I have not been able to un-see since: agreement with human scores on the same essays should not be the only validity criterion, because such agreement is merely a reliability indicator and not a proper validation strategy.
           </p>
           <p>
-            The reference was Bennett &amp; Bejar (1997), and the argument was already twenty years old when we wrote it. Two more decades have passed. The modern AI evaluation discussion is now rebuilding that same argument in a different vocabulary, mostly without the source lineage that produced it the first time. Large-language-model-as-judge (LLM-as-judge) validation studies, disparate-performance benchmarks, red-teaming methodologies, benchmark contamination detection &mdash; the current wave of AI eval is rediscovering the discipline of measurement science with the frame that this is a new field.
+            The reference was Bennett and Bejar (1997), and the argument was already twenty years old when we wrote it. Two more decades have passed, and the modern AI evaluation discussion is rebuilding it in a different vocabulary, mostly without the lineage that produced it the first time.
           </p>
           <p>
-            I spent seven years at Educational Testing Service (ETS) evaluating AI-driven scoring systems for essays and speech, on assessments like the GRE (Graduate Record Examinations), TOEFL (Test of English as a Foreign Language), and Praxis (educator licensure tests). That work forced me to notice something the modern framing tends to obscure. The discipline for evaluating whether AI systems measure what they claim already existed &mdash; inside measurement science and psychometrics, developed against automated scoring engines a decade or two before &ldquo;AI eval&rdquo; was a term. The vocabulary was different. The problems were the same.
+            I spent seven years at Educational Testing Service evaluating AI-driven scoring systems for essays and speech. The discipline for evaluating whether AI systems measure what they claim already existed, developed against automated scoring engines a decade or two before AI eval was a term. The vocabulary was different. The problems were the same.
           </p>
           <p>
-            This essay maps eight of those disciplines to their modern AI-evaluation equivalents. Each carries a citation from my published record as the receipt. The claim I am making is not that I did all of the work modern AI evaluation needs. It is that the work modern AI evaluation is doing has a longer history than most current framings acknowledge, and it is worth reading before it is reinvented.
+            This essay maps eight of those disciplines to their modern equivalents, each with a citation from my published record as the receipt.
           </p>
         </Brief>
 
@@ -9369,7 +9331,7 @@ export const ESSAYS: Essay[] = [
             A measurement function has four jobs. Job 1 is to design what to collect, against the claims it will have to support. Job 2 is to analyze so the people running the program can act this month. Job 3 is to analyze so a funder gets a claim they can check. Job 4 is to revise the measurement for the next round. Job 4 feeds job 1. A reporting function never runs job 4.
           </p>
           <p>
-            I have held a data leadership role in four organizations. In the first, the role was written to run the reporting and hold the seams to the teams that did the other jobs, and it was eliminated before the loop could close. In the other three, the jobs were treated as a list and handed to different teams, and the data role was seen mainly as a reporting function that fed jobs 2 and 3. Where the role sat mattered, but two missing things did more damage: nobody held the four jobs as one charter, and there were no clear seams carrying what jobs 2 and 3 learned into job 4, and from job 4 back into job 1. Seen as a loop, the four jobs need one owner at the integration seat, and the data function becomes how the organization runs it.
+            I have held a data leadership role in four organizations. In the first, the role was written to run the reporting and hold the seams to the teams that did the other jobs, and it was eliminated before the loop could close. In the other three, the jobs were treated as a list and handed to different teams. Where the role sat mattered, but two absences did more damage: nobody held the four jobs as one charter, and no seam carried what jobs 2 and 3 learned into job 4, or job 4 back into job 1.
           </p>
         </Brief>
 
