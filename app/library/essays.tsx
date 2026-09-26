@@ -9337,7 +9337,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written September 2026 for the Analytic Bytes Library. Standing practice: no employer, client or vendor is named in this piece.
+          Written September 2026 for the Analytic Bytes Library. No employer, client or vendor is named, per standing practice. The counts in the opening are from the sixty-five-posting corpus built for Required for what?, and the coding rules and adjudication lines are held with that corpus rather than repeated here. The SIOP Principles, Messick, Kane and the Oswald piece were checked against their published sources. The three trainings are read from the author&rsquo;s own record of working alongside all three, not from a survey of practitioners, and the essay makes no claim about how common each background is in these seats.
         </MetaNote>
       </>
     ),
