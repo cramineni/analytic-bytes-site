@@ -31,6 +31,13 @@ export type Artifact = {
 
 export const ARTIFACTS: Artifact[] = [
   {
+    title: "The decision chain",
+    summary:
+      "The chain every diagnostic piece in the library traces, and the links a piece can name as the place it stops working: construct, representation, inference, decision, action, consequence, and the return leg that carries what the outcome showed back into the next measurement. Beneath it, where the three failure points named in The Decision System \u2014 meaning, authority, validity \u2014 sit along the chain. The \u201cbreaks at\u201d line on each essay page points here.",
+    image: "/library/artifacts/the-decision-chain.svg",
+    slug: "the-decision-chain",
+  },
+  {
     title: "Decision-System Architecture — the four disciplines",
     summary:
       "The umbrella frame of the Analytic Bytes Library at a glance. A central node — Decision-System Architecture — surrounded by the four disciplines that compose it: Measurement, Integration governance, Data foundations, and AI systems. Each cluster names three load-bearing concepts inside its discipline. The arc pill on every library card maps to one of these four. For the technical stack the disciplines describe, see the reference architecture below.",

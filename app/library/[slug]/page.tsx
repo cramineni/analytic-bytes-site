@@ -124,7 +124,12 @@ export default function EssayPage({
                     ) : null}
                     {essay.chainLink && essay.chainLink.length > 0 ? (
                       <p className="m-0">
-                        Breaks at{" "}
+                        <a
+                          href="/library/artifacts/the-decision-chain"
+                          className="text-ink-3 hover:text-accent no-underline border-b border-line-2 hover:border-accent pb-px"
+                        >
+                          Breaks at
+                        </a>{" "}
                         <span className="text-ink-2">
                           {essay.chainLink.map((l) => CHAIN_LABELS[l]).join(", then ")}
                         </span>
