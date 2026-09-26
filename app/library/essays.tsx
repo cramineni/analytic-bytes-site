@@ -369,6 +369,7 @@ export type Essay = {
   summary: string; // 1–2 lines, for the /library index
   cover: string; // /library/covers/[file].svg
   arc: Arc; // primary arc for navigation + future filtering
+  arcSecondary?: Arc; // second discipline the piece genuinely sits in; set only where justified
   hidden?: boolean; // if true, hidden everywhere (dev + prod). Use for retired or archived pieces.
   draft?: boolean; // if true, hidden in production but visible in local dev (npm run dev). Use for pieces you're still reading/iterating on before publishing.
   body: ReactNode;
@@ -770,6 +771,7 @@ export const ESSAYS: Essay[] = [
       "A GenAI redesign of my own dashboard came back uglier — and clearer. What that taught me about data teams and AI tools.",
     cover: "/library/covers/when-genai-redesigned-my-dashboard.svg",
     arc: "ai-systems",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -1033,6 +1035,7 @@ export const ESSAYS: Essay[] = [
       "Where AI belongs in the modern data stack, and the single contract that keeps every AI feature honest.",
     cover: "/library/covers/grounding-the-ai-layer.svg",
     arc: "ai-systems",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -1541,7 +1544,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "Why national education data, classroom assessments, and local instruments are most useful stitched together — and what the integration architecture looks like.",
     cover: "/library/covers/lo-2-0-stitching-the-layers.svg",
-    arc: "integration-governance",
+    arc: "data-foundations",
     body: (
       <>
         <Brief>
@@ -2187,6 +2190,7 @@ export const ESSAYS: Essay[] = [
       "Who owns data infrastructure is one of the org chart’s most muddled questions. The fix is not a better title; it is a principle — report to the integration seat, never to a single function.",
     cover: "/library/covers/where-should-data-sit.svg",
     arc: "data-foundations",
+    arcSecondary: "integration-governance",
     body: (
       <>
         <Brief>
@@ -2825,6 +2829,7 @@ export const ESSAYS: Essay[] = [
       "Universities have built the scaffolding to govern AI and skipped the evaluation layer. The measurement-science question every adopted system should face — what is this actually measuring, and is that what we meant?",
     cover: "/library/covers/what-is-this-system-measuring.svg",
     arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -3317,6 +3322,7 @@ export const ESSAYS: Essay[] = [
       "Two people read different student-persistence numbers from the same data. The governance council is functioning. The framework looks complete. What's broken is definitional, and the work to fix it is the work most councils skip.",
     cover: "/library/covers/numbers-dont-agree.svg",
     arc: "integration-governance",
+    arcSecondary: "data-foundations",
     hidden: false,
     body: (
       <>
@@ -3532,6 +3538,7 @@ export const ESSAYS: Essay[] = [
       "Integration is two questions stacked on top of each other: do the bytes move, and when they arrive, can anyone act on them. Institutions have answered the first across three eras and skipped the second, and the agentic era is about to make that gap load-bearing.",
     cover: "/library/covers/the-contracts-between-systems.svg",
     arc: "integration-governance",
+    arcSecondary: "ai-systems",
     hidden: false,
     body: (
       <>
@@ -3839,6 +3846,7 @@ export const ESSAYS: Essay[] = [
       "The data integration layer is mostly solved — the pipes have been industrialized. The work that remains is closer to running a water authority: sourcing, testing, pressure, authority, who’s allowed to drink. The unglamorous part isn’t the pipes anymore. It’s the water.",
     cover: "/library/covers/plumbing-got-upgraded-water-didnt.svg",
     arc: "integration-governance",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -4232,7 +4240,7 @@ export const ESSAYS: Essay[] = [
     summary:
       "The mismatch between horizontal work and vertical org charts is structural. Multiple honest forms can carry it: councils that deliberate and hand playbooks back to functions, flash teams that merge for the deliverable, standing squads drawn permanently from across functions. All rely on the same seam contract underneath. Without that contract, none of them holds.",
     cover: "/library/covers/functions-dont-run-plays.svg",
-    arc: "data-foundations",
+    arc: "integration-governance",
     body: (
       <>
         <Brief>
@@ -4398,6 +4406,7 @@ export const ESSAYS: Essay[] = [
       "A program officer, a portfolio manager, and a CSR lead can all report reach, but none can say whether it worked or where the next dollar should go. The usual diagnosis is a reporting problem. It isn’t. It’s a category error: a system of record for activity asked to behave like a system of record for outcomes.",
     cover: "/library/covers/the-reach-trap.svg",
     arc: "measurement",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -4579,7 +4588,8 @@ export const ESSAYS: Essay[] = [
     summary:
       "Most rules in a system describe normal behavior. The handful that look weird — that interrupt, that constrain, that pre-resolve a specific exploit — are the rules doing the structural work. Five sports rules, five structural lessons for institutional design.",
     cover: "/library/covers/why-the-rules-look-weird.svg",
-    arc: "data-foundations",
+    arc: "integration-governance",
+    arcSecondary: "measurement",
     body: (
       <>
         <Brief>
@@ -5497,6 +5507,7 @@ export const ESSAYS: Essay[] = [
       "Responsible-AI frameworks in mental health check privacy, accountability, equity, and monitoring. What they don't ask is whether the system measures the mental-health construct it claims to. Four validity questions sit underneath the responsible-AI floor and decide whether the rest earns its place.",
     cover: "/library/covers/validity-layer-beneath-responsible-ai.svg",
     arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -6106,6 +6117,7 @@ export const ESSAYS: Essay[] = [
       "Every institution standing up AI in 2026 is making a model-layer bet, vendor-anchored or federated, whether or not it has named it as one. For institutions running both administrative and research-flavored work, the honest answer is a deliberate hybrid calibrated by domain. What makes the hybrid coherent is a third set of contracts nobody writes by default: the seam contracts between the two bets.",
     cover: "/library/covers/two-bets-one-institution.svg",
     arc: "integration-governance",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -6335,6 +6347,7 @@ export const ESSAYS: Essay[] = [
       "The contracts that govern integrated data have to be written by someone, named, inside the institution. But the hiring rubric fuses two roles — engineering and governance — into one job description and screens only for the first. The person who can actually do the work almost never scores well on the rubric written to find them.",
     cover: "/library/covers/who-writes-the-contract.svg",
     arc: "data-foundations",
+    arcSecondary: "integration-governance",
     body: (
       <>
         <Brief>
@@ -6791,6 +6804,7 @@ export const ESSAYS: Essay[] = [
       "When enterprise AI gets a signal wrong, someone loses money; when mission-driven AI gets it wrong, someone loses the intervention meant to reach them. This piece names the evaluation gap opening as mission-driven organizations adopt frontier AI, proposes a five-part essential minimum, and points toward shared infrastructure that could make it sustainable at sector scale.",
     cover: "/library/covers/when-the-stakes-are-the-mission.svg",
     arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -7397,6 +7411,7 @@ export const ESSAYS: Essay[] = [
       "AB spent ninety days operating as an AI-native practice. This is the public report from the audit that followed, and the case for practitioner AI governance as a discipline the field has not yet named clearly. Introduces HITL/AITL as a signal-informed proxy for the load-carrier axis, and demonstrates methodology documentation done inline.",
     cover: "/library/covers/auditing-an-ai-native-practice.svg",
     arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -7866,6 +7881,7 @@ export const ESSAYS: Essay[] = [
       "A method note from the PDDS project. The first six panels used clean administrative counts and point-in-time policy levers. Extending into survey data (weighted estimates, confidence intervals, suppression) and continuous levers (Title V, ESSA) forced a revision of the gates. This note documents what changed, and why the revisions tightened rather than loosened the discipline.",
     cover: "/library/covers/extending-the-gates.svg",
     arc: "measurement",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -8321,6 +8337,7 @@ export const ESSAYS: Essay[] = [
       "Amodei's five areas mostly raise the ceiling; economic development is the one that raises the floor, and it belongs in the causal model from the start. But the floor rose is a claim, not a result. Beneficial is a claim about an outcome — defined before the build, and re-measured as the loop accelerates.",
     cover: "/library/covers/the-floor-is-the-frontier.svg",
     arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -8429,6 +8446,7 @@ export const ESSAYS: Essay[] = [
       "A CFO can have a clean chart of accounts and a program team can have a real evidence spine, and neither one produces a defensible cost per outcome. The missing piece is the shared, governed keys that let spend and outcomes divide same-scope. The finance-side companion to The Reach Trap and The Valid Dollar — the wire between them.",
     cover: "/library/covers/the-spend-trap.svg",
     arc: "measurement",
+    arcSecondary: "integration-governance",
     body: (
       <>
         <Brief>
@@ -8546,6 +8564,7 @@ export const ESSAYS: Essay[] = [
       "The classical automated-scoring literature already worked through most of what modern AI evaluation is now rebuilding — fairness across subgroups, adversarial testing, a priori thresholds, risk-tiered deployment, population-matched corpora, prompt curation, cross-domain generalization, and responsible framing. Eight bridges, with the receipts.",
     cover: "/library/covers/before-it-was-called-ai-evaluation.svg",
     arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -8761,7 +8780,8 @@ export const ESSAYS: Essay[] = [
     summary:
       "Sixty-six senior data and AI leadership postings, read against the three anchors of a decision system. Ninety-eight percent name what the person must bring. Thirty-five percent name what the person may decide. Eleven percent name how anyone will know the person's calls were good.",
     cover: "/library/covers/required-for-what.svg",
-    arc: "ai-systems",
+    arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -9076,6 +9096,7 @@ export const ESSAYS: Essay[] = [
       "Forty-two of sixty-five senior data postings name what the person must be and never what the role may decide. Three trainings answer them — engineering, business and measurement — and with no decision named, the only thing separating them is which proxies each accumulated. They were built to answer different questions: will it run, will it return, does the number mean what the decision assumes.",
     cover: "/library/covers/three-trainings.svg",
     arc: "measurement",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -9311,6 +9332,7 @@ export const ESSAYS: Essay[] = [
       "A measurement function has four jobs: design what to collect, analyze so operations can act this month, analyze so the funder gets a claim they can check, and revise the measurement for the next round. Split the four across research, operations and development, and nobody holds the question of what the data licenses the organization to say.",
     cover: "/library/covers/four-jobs-one-loop.svg",
     arc: "measurement",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -9497,6 +9519,7 @@ export const ESSAYS: Essay[] = [
       "We Must Pace the Frontier proposes the architecture of an acceptance test for risk: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge, and the right to publish. OpenAI said within days that it would take the evaluators too. The benefits the essay opens with, cured diseases, faster growth, a floor that rises, have evaluators and methods but no equivalent default gate, and pacing the frontier cannot supply one, because it cannot make a two-year outcome arrive in six months.",
     cover: "/library/covers/the-gate-runs-one-way.svg",
     arc: "measurement",
+    arcSecondary: "ai-systems",
     body: (
       <>
         <Brief>
@@ -9654,6 +9677,7 @@ export const ESSAYS: Essay[] = [
       "The evaluation report arrives after the cohort has passed. The dashboard arrives after the event, and no layer carries its warrant. Between the two there is nothing an organization can act on and defend. A validated link between an early signal and a later outcome should be treated as infrastructure: the semantic layer carries the claim, the evidence and date behind it, and when it must be rechecked.",
     cover: "/library/covers/every-metric-is-a-claim.svg",
     arc: "measurement",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -9836,6 +9860,7 @@ export const ESSAYS: Essay[] = [
       "In schools, clinics, campuses and nonprofits, systems exist to produce reports for someone else, so the people doing the work keep their own spreadsheets. AI makes it cheap to translate that local knowledge into explicit rules. It does not supply the person who decides whether the rules are right, or the discipline that reconciles the two records.",
     cover: "/library/covers/for-the-record.svg",
     arc: "ai-systems",
+    arcSecondary: "data-foundations",
     body: (
       <>
         <Brief>
@@ -10117,7 +10142,8 @@ export const ESSAYS: Essay[] = [
     summary:
       "A state reissues attendance codes. A counselor leaves. A vendor's release lands two quarters late. Each triggers the same jobs — reconfigure, re-teach, re-map — and each lands on whoever is present. The recurring cost in human-serving organizations isn't running systems but keeping them matched to a world that won't hold still. AI makes that translation cheap. It also becomes one of the change events it's being bought to absorb.",
     cover: "/library/covers/the-delta-nobody-budgeted.svg",
-    arc: "ai-systems",
+    arc: "data-foundations",
+    arcSecondary: "ai-systems",
     draft: true,
     body: (
       <>
