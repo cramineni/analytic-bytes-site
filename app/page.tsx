@@ -148,6 +148,17 @@ export default function Home() {
             </Reveal>
 
             <Reveal>
+              <p className="text-ink-2 text-[16px] sm:text-[17px] max-w-[640px] leading-[1.6] mt-8">
+                Every decision runs a chain{" "}
+                <span className="text-ink">from construct to consequence</span>{" "}
+                &mdash; what we are trying to know, what stands for it, what
+                gets read off it, who settles it, what gets done, and what
+                followed. Most of the failures people call data problems are a
+                break somewhere along it. Every piece here names where.
+              </p>
+            </Reveal>
+
+            <Reveal>
               <div className="grid grid-cols-1 mt-12">
                 {RECENT_LIBRARY.map((e, i) => (
                   <a
