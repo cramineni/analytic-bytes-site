@@ -9951,6 +9951,12 @@ export const ESSAYS: Essay[] = [
         <P>
           So the move is a round trip, and both halves matter. A model reads her columns, maps them to the system&rsquo;s fields and codes through a crosswalk she has confirmed, flags the rows that do not map, and drafts the system entry. She reviews the flagged rows and confirms. The record gets written in the system&rsquo;s vocabulary, from the source she trusts, on the day. Then the model carries the other direction: the system&rsquo;s export comes back to her in the shape of her sheet, with the rows where the record and her working version disagree marked. She resolves them, or the disagreement is logged with a reason. That second half is the point. For the first time the gap between what the worker trusts and what the institution holds is something you can see, count and assign, instead of something you find out about at the board meeting.
         </P>
+
+        <Figure
+          src="/library/figures/for-the-record-round-trip.svg"
+          alt="The round trip between the sheet and the record"
+          caption="The first half writes the record from the source the owner already trusts. The second half is the one organizations skip, and it is the half that makes the gap countable: the export comes back in the shape of her sheet, and the rows where the two versions disagree are marked rather than discovered later."
+        />
         <P>
           Veronika Durgin, writing from the warehouse side, reached the same place from the opposite direction. A warehouse that was good enough for her team turned out not to be good enough for a model, because people know how to deal with imperfections and a model does not; the decisions about which of several legitimate sources of truth applied had lived in people&rsquo;s memories, and &ldquo;there isn&rsquo;t always a correct answer sitting somewhere waiting for AI to find it&rdquo; (<a href="https://thinksolverepeat.substack.com/p/a-piece-of-humble-pie" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Durgin, Think Solve Repeat</a>, September 2026). Her conclusion is that a model should sometimes ask rather than guess. The flagged rows are that. The model does not resolve the disagreement between the sheet and the record. It surfaces it to the one person who can.
         </P>
