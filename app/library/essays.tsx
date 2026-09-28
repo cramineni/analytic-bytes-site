@@ -9296,7 +9296,7 @@ export const ESSAYS: Essay[] = [
           A data, AI or reporting transformation often delivers a capability too. A pipeline that moves data, a platform that stays up, a retrieval layer that answers in time &mdash; those are capabilities, and you can watch them work.
         </P>
         <P>
-          The difference arrives at a specific point. When the output becomes evidence for a decision, the transformation stops delivering only a capability and starts delivering a claim. That threshold is where validity enters &mdash; the third of the three things <InternalLink slug="the-decision-system">a decision system</InternalLink> has to hold, after meaning and authority &mdash; and a great deal of data and AI work crosses it on the day it ships.
+          The difference arrives at a specific point. When the output becomes evidence for a decision, the transformation stops delivering only a capability and starts delivering a claim. That threshold is where validity enters, and a great deal of data and AI work crosses it on the day it ships. Validity is the third of the three things <InternalLink slug="the-decision-system">a decision system</InternalLink> has to hold, after meaning and authority.
         </P>
         <P>
           You cannot watch whether a claim is true by watching the system run. That is the difficulty once the output becomes evidentiary. The dashboard refreshes on schedule. The pipeline passes its tests. The model returns a score with four decimal places. Every operational signal says the transformation succeeded, and the number can still mean something other than what the decision assumed it meant.
