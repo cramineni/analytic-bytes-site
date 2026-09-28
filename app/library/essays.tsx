@@ -443,7 +443,7 @@ export const ESSAYS: Essay[] = [
             changes how the organization acts come earlier, and they are not
             technology decisions. They are decisions about which calls your
             teams are trying to make, and whether everyone is working from the
-            same numbers. This is a decision-system question misread as a
+            same numbers. This is a <InternalLink slug="the-decision-system">decision-system question</InternalLink> misread as a
             procurement question.
           </p>
           <p>
@@ -1930,7 +1930,7 @@ export const ESSAYS: Essay[] = [
           stitch them into decision surfaces for the people who have to act.
         </P>
         <P>
-          That is decision-systems architecture at state-government scale: start
+          That is <InternalLink slug="the-decision-system">decision-systems architecture</InternalLink> at state-government scale: start
           from the assets already in place rather than the ones that are
           missing, route each decision to the layer that can answer it, and give
           every decision-maker (teacher, headmaster, district officer, ministry)
@@ -2169,7 +2169,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>What this is really about</H2>
         <P>
-          Underneath the subject matter, this is a decision-systems problem.
+          Underneath the subject matter, this is a <InternalLink slug="the-decision-system">decision-systems problem</InternalLink>.
           An organization has a real decision to make (where prevention
           resources go), and the data it holds is being read through a single
           number that cannot carry the decision. The fix is not more data. It is
@@ -3326,7 +3326,7 @@ export const ESSAYS: Essay[] = [
           Read together, more than a dozen take-homes point at one thing, and it is not a skills gap. These organizations had analysts, tools, and dashboards. They did not have the connective tissue between analysis and decision: a canonical definition of each measure, a surface built backward from a specific recurring call, a distribution system that speaks to every audience without redoing the work, and an architecture that keeps working after the person who built it leaves.
         </P>
         <P>
-          That layer has a name. It is the decision system. And the take-home is an honest instrument because it catches an organization reaching for more analysis, under real pressure and in good faith, when the thing missing is the system that connects analysis to a decision.
+          That layer has a name. It is <InternalLink slug="the-decision-system">the decision system</InternalLink>. And the take-home is an honest instrument because it catches an organization reaching for more analysis, under real pressure and in good faith, when the thing missing is the system that connects analysis to a decision.
         </P>
 
         <H2>The reframe</H2>
@@ -6705,7 +6705,7 @@ export const ESSAYS: Essay[] = [
           the signal, support the decision, own the decision. Each
           cell shows how heavily the role loads that arc position.
           Loading here describes where the role&rsquo;s authority sits
-          in the decision-system architecture, not what the individual
+          in the <InternalLink slug="the-decision-system">decision-system architecture</InternalLink>, not what the individual
           leader personally performs &mdash; a role loads on
           &ldquo;interpret the signal&rdquo; when it owns the layer
           (semantic definitions, crosswalks, reconciliation) that
@@ -9506,7 +9506,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Construct to consequence, and back</H2>
         <P>
-          The four jobs are validity reasoning turned into operating work. They are also the decision chain run as a job description: job 1 defines the construct, jobs 2 and 3 draw inferences from what stands for it, and job 4 is the return leg, the only one of the four that carries what happened back into how the next round measures.
+          The four jobs are validity reasoning turned into operating work. They are also the <InternalLink slug="the-decision-chain">decision chain</InternalLink> run as a job description: job 1 defines the construct, jobs 2 and 3 draw inferences from what stands for it, and job 4 is the return leg, the only one of the four that carries what happened back into how the next round measures.
         </P>
         <P>
           Messick (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1995</a>) moved validity away from the instrument alone and toward the interpretations and uses made of a score, consequences among them. Kane (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1992</a>) made the chain explicit: a claim depends on the warrants that connect what was observed to what is concluded. Reading that chain at its weakest link is the operator&rsquo;s rule I applied in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, and <I>The construct keeps moving</I> runs on the same two references. Job 1 is the construct and the observation design. Jobs 2 and 3 are the interpretation and the use; they pull in different directions. Job 2 needs the signal this month, at the grain of a site or a caseload, and can act on something provisional. Job 3 needs stability, comparability and restraint about inference, because the claim will be checked. The same data can license &ldquo;follow up with these twenty-two sites this week&rdquo; and not license &ldquo;the program improved outcomes.&rdquo; Job 4 closes the loop: what the interpretation, the use and their consequences showed about the measurement, written into the next design.
