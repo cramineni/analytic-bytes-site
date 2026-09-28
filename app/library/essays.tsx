@@ -4520,7 +4520,7 @@ export const ESSAYS: Essay[] = [
           unless you build the second system deliberately.
         </P>
         <P>
-          None of this says measurement people have ignored use. Utilization-focused evaluation has argued for decades that an evaluation nobody acts on has failed; the conviction here is inherited, not invented. What changes is where you put it. Shared-measurement frameworks reach comparability by making every grantee report the same indicators up front; metric catalogs like IRIS+ do it by prescribing a common dictionary to pick from. Both work when a portfolio shares one goal or one asset class. A grant book rarely does. Forty grantees carry forty theories of change, so the spine runs the other way: let each keep its own language, then place it on one scale afterward. The results-framework world already tried the alternative. The <a href="https://www.oecd.org/en/topics/results-based-management.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">OECD</a>&rsquo;s review of results-based management found a familiar pattern: data gets collected, but rarely reaches the decision. The easy read is a culture problem — teams never build the habit of looking. The real read is structural: the data was never shaped to be read as a decision. The second system is what shapes it.
+          None of this says measurement people have ignored use. Utilization-focused evaluation has argued for decades that an evaluation nobody acts on has failed; the conviction here is inherited, not invented. What changes is where you put it. Shared-measurement frameworks reach comparability by making every grantee report the same indicators up front; metric catalogs like IRIS+ do it by prescribing a common dictionary to pick from. Both work when a portfolio shares one goal or one asset class. A grant book rarely does. Forty grantees carry forty theories of change, so the spine runs the other way: let each keep its own language, then place it on one scale afterward. Define it once works where one party owns the point of capture. A funder does not; the grantee writes the words, so the definitional work has to happen at the placement rather than at the source. The results-framework world already tried the alternative. The <a href="https://www.oecd.org/en/topics/results-based-management.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">OECD</a>&rsquo;s review of results-based management found a familiar pattern: data gets collected, but rarely reaches the decision. The easy read is a culture problem — teams never build the habit of looking. The real read is structural: the data was never shaped to be read as a decision. The second system is what shapes it.
         </P>
 
         <H2>What the rubric actually is</H2>
@@ -8135,7 +8135,7 @@ export const ESSAYS: Essay[] = [
       "Educational measurement requires an instrument to argue for itself before it decides something about a person. A résumé screen carries no such argument. Three failures — the construct is unspecified, the outcome does not identify its cause, and the screen's errors are invisible to its author — and three remedies, one for each.",
     cover: "/library/covers/seven-causes-one-bit.svg",
     arc: "measurement",
-    chainLink: ["representation-inference", "construct"],
+    chainLink: ["representation-inference", "construct", "return-leg"],
     failurePoint: "validity",
     body: (
       <>
@@ -8294,7 +8294,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          So the harm is invisible to the party positioned to fix it. The instrument censors the evidence needed to validate one class of its own decisions. Ordinary post-hire performance data cannot reveal it, because the screen decides who enters that data.
+          So the harm is invisible to the party positioned to fix it. The instrument censors the evidence needed to validate one class of its own decisions. That is the return leg failing a second time, facing the other way: nothing travels back to the candidate that would let them apply better, and nothing travels back to the employer that would let them screen better. The screen runs every cycle on whatever it believed at the start. Ordinary post-hire performance data cannot reveal it, because the screen decides who enters that data.
         </P>
         <P>
           Range restriction is a known problem, not a novel one (<a href="https://psycnet.apa.org/doi/10.1037/0021-9010.85.1.112" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Sackett &amp; Yang</a>, &ldquo;Correction for range restriction: An expanded typology,&rdquo; <I>Journal of Applied Psychology</I>, 85(1), 2000). Corrections exist. They require observing performance on rejected candidates, which is exactly the observation the screen prevents.
