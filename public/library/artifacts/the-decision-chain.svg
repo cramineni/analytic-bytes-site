@@ -1,6 +1,6 @@
 <svg viewBox="0 0 1200 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 <title id="t">The decision chain, and where a piece can break it</title>
-<desc id="d">Six nodes run left to right: construct, representation, inference, decision, action, then consequence set below the row. A dashed teal return leg runs from consequence back to construct. Beneath the chain, three bands mark where the library's three failure points sit along it: meaning at the front, validity across the middle, authority across the back half. Every diagnostic piece in the library names one or two links where the chain stops working.</desc>
+<desc id="d">Six nodes run left to right: construct, representation, inference, decision, action, then consequence set below the row. A dashed teal return leg runs from consequence back to construct. Beneath the chain, three bands mark where each of the three failure points breaks along it: meaning at the front, validity across the middle, authority across the back half. Every diagnostic piece in the library names one or two links where the chain stops working.</desc>
 <rect width="1200" height="640" fill="#FFFFFF"/>
 
 <text x="600" y="54" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">THE AB LIBRARY FRAMEWORK</text>
@@ -51,7 +51,7 @@
 <text x="525" y="400" font-size="15" fill="#475569" text-anchor="middle">what the outcome showed, written into the next measurement</text>
 
 <line x1="90" y1="458" x2="1110" y2="458" stroke="#E2E8F0" stroke-width="1"/>
-<text x="90" y="494" font-size="18" font-weight="500" fill="#0F2A4A">Where the three failure points sit along it</text>
+<text x="90" y="494" font-size="18" font-weight="500" fill="#0F2A4A">Where each of the three breaks along it</text>
 
 <g font-size="15">
   <rect x="90" y="516" width="280" height="5" rx="2.5" fill="#0F2A4A" opacity="0.85"/>
