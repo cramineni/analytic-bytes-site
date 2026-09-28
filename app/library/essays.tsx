@@ -9205,9 +9205,6 @@ export const ESSAYS: Essay[] = [
             In <InternalLink slug="required-for-what">Required for what?</InternalLink> I counted sixty-five senior data and AI leadership postings. Forty-two never say what the role may decide. Twenty-three do, somewhere in the document. And across eight hundred and thirteen items in the sixty-four requirements sections, not one names a decision the hire may make, including in the twenty-three that settle one elsewhere.
           </p>
           <p>
-            That last count is not a filing complaint. A requirements section is an inventory of attributes, which is what it is for, and where the decision sits in the document is the employer&rsquo;s business. It matters because the inventory is the part that sorts.
-          </p>
-          <p>
             Three trainings answer these postings: engineering, business, and measurement. Sorted on attributes, there is nothing to compare them against except what each has already accumulated, so they get read as three grades on one scale and the most familiar proxies sort highest. They are not on one scale. Each carries a different answer to what would count as this working: will the system run, will the spend return, does the number mean what the decision assumes it means.
           </p>
           <p>
@@ -9338,6 +9335,10 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Those two do not have to agree. In every requirements section in that corpus, attributes are named and a decision is not, so the part that sorts carries no statement of the problem those attributes are for. Forty-two documents say it nowhere at all. The other twenty-three do state it, in another section, written as a description of the work rather than as something a candidate is scored against. So it is present in the document and absent from the part that sorts.
+        </P>
+
+        <P>
+          That last count is not a filing complaint. A requirements section is an inventory of attributes, which is what it is for, and where the decision sits in the document is the employer&rsquo;s business. It matters because the inventory is the part that sorts.
         </P>
         <P>
           An organization may well establish the connection somewhere else &mdash; in an interview, a case exercise, a hiring manager&rsquo;s head. None of it is in the document, which is all the candidate has before applying.
