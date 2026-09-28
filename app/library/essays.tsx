@@ -9190,7 +9190,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Why the third question becomes non-optional once an output is used as evidence.",
     date: "2026-09-22",
-    readingTime: "14 min read",
+    readingTime: "16 min read",
     summary:
       "Forty-two of sixty-five senior data postings name what the person must be and never what the role may decide. Three trainings answer them — engineering, business and measurement — and with no decision named, the only thing separating them is which proxies each accumulated. They were built to answer different questions: will it run, will it return, does the number mean what the decision assumes.",
     cover: "/library/covers/three-trainings.svg",
@@ -9202,14 +9202,16 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In <InternalLink slug="required-for-what">Required for what?</InternalLink> I counted sixty-five senior data and AI leadership postings. Forty-two name what the person must be and never say what the role may decide. Across eight hundred and thirteen items in their requirements sections, not one names a decision the hire may make.
+            In <InternalLink slug="required-for-what">Required for what?</InternalLink> I counted sixty-five senior data and AI leadership postings. Forty-two never say what the role may decide. Twenty-three do, somewhere in the document. And across eight hundred and thirteen items in the sixty-four requirements sections, not one names a decision the hire may make, including in the twenty-three that settle one elsewhere.
           </p>
           <p>
-            Three trainings answer these postings: engineering, business, and measurement. With no decision named, there is nothing to compare them against except the attributes each has already accumulated, so they get read as three grades on one scale and the most familiar proxies sort highest. They are not on one scale. Each carries a different answer to what would count as this working: will the system run, will the spend return, does the number mean what the decision assumes it means.
+            That last count is not a filing complaint. A requirements section is an inventory of attributes, which is what it is for, and where the decision sits in the document is the employer&rsquo;s business. It matters because the inventory is the part that sorts.
           </p>
           <p>
-            That is what the missing decision hides. Not only the scope of the job, but which standard of correctness the seat is answerable to. When a data, AI or reporting output becomes evidence for a decision, the third question stops being optional. This essay says why, and ends with the second line a sponsor adds to the requisition.
----
+            Three trainings answer these postings: engineering, business, and measurement. Sorted on attributes, there is nothing to compare them against except what each has already accumulated, so they get read as three grades on one scale and the most familiar proxies sort highest. They are not on one scale. Each carries a different answer to what would count as this working: will the system run, will the spend return, does the number mean what the decision assumes it means.
+          </p>
+          <p>
+            That is what the missing decision hides. Not only the scope of the job, but which standard of correctness the seat is answerable to. When a data, AI or reporting output becomes evidence for a decision, the third question stops being optional.
           </p>
         </Brief>
 
@@ -9218,7 +9220,7 @@ export const ESSAYS: Essay[] = [
           The requirements section is a claim of necessity. Ten years of data engineering is required in order to do what. Once the second half of that sentence is missing, the items in the list still have to do something, and what they do is sort.
         </P>
         <P>
-          Sorting on attributes is not a neutral fallback. It selects for whoever has accumulated the attributes that resemble the last person to hold a similar title somewhere else. One item in that corpus states the position cleanly: <I>experience establishing enterprise governance structures with formal decision rights.</I> The candidate is required to have held decision rights. None are granted here.
+          Sorting on attributes is not a neutral fallback. It selects for whoever has accumulated the attributes that resemble the last person to hold a similar title somewhere else. One item in that corpus states the position cleanly: <I>experience establishing enterprise governance structures with formal decision rights.</I> Read it closely and the rights belong to the structures, not to the candidate &mdash; what is required is experience building the thing that carries them. This posting grants none of its own.
         </P>
         <P>
           Kyle Brink argued in <I>MIT Sloan Management Review</I> that organizations declaring their hiring meritocratic have mostly never validated the instruments they use to measure merit. What passes for merit, on his account, is a set of unvalidated proxies: pedigree, tenure, an interview impression (<a href="https://sloanreview.mit.edu/article/the-elusiveness-of-merit-based-hiring/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Brink, <I>MIT Sloan Management Review</I>, August 2026</a>). A degree is a proxy of that kind, asked to carry a construct nobody wrote down.
@@ -9232,7 +9234,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>Will it run, will it return, is it supportable</H2>
         <P>
-          Here are the three, each at its strongest. These are dominant reflexes rather than exclusive jurisdictions, meaning the question each formation makes non-optional rather than the only question anyone in it ever asks.
+          Three backgrounds turn up in the pool for a senior data, analytics or AI leadership seat: engineering, business, and measurement. That list is from working alongside all three rather than from a survey, and nothing here depends on how common each one is.
+        </P>
+        <P>
+          Here are the three, each at its strongest. Each training makes one of these questions automatic. None of them stops a person asking the other two.
         </P>
         <P>
           <B>Engineering training answers whether the system will work.</B> Not whether it works once, on clean inputs, in a demo. Whether it holds under load, under change, under the person who inherits it in two years. An engineer who has run a migration knows things about failure that no amount of strategy reading supplies: which dependencies break silently, what a rollback actually costs on a Friday, why the thing that worked in staging did not survive contact with the production schema. The evidence standard is that it runs, and keeps running.
@@ -9244,16 +9249,16 @@ export const ESSAYS: Essay[] = [
           <B>Measurement training answers whether a claim is supportable.</B> Given this evidence, what can you assert, and what can you not? That question sounds academic until you notice that it is the only one of the three questions that asks what a number is a claim <I>about</I>. The evidence standard is that the argument survives a reader who is trying to break it.
         </P>
         <P>
-          I mean something narrower than a doctorate, and the narrowing is the point. A molecular biologist and a historian are both research-trained, and neither is necessarily trained to ask whether a metric supports a particular consequential use. The tradition that asks it by default is measurement and evaluation: psychometrics, program evaluation, assessment. People arrive at that reflex without the background, and people hold the credential without the reflex.
+          I mean a specialization inside research training, not the whole of it. A molecular biologist and a historian are both research-trained, and neither is necessarily trained to ask whether a metric supports a particular consequential use. The tradition that asks it by default is measurement and evaluation: psychometrics, program evaluation, assessment. Some people do it without ever training for it. Others hold the degree and never built the habit.
         </P>
         <P>
-          Two features of it are worth separating from any credential, because they are the parts that transfer. The first is that stating the strongest case against your own position, in public, is a graded requirement rather than a virtue. Most professional settings never ask anyone to do it; a stakeholder review does not, because nobody in the room is rewarded for finding the fault. The second is that the reader is someone whose job is to find it. Code review, audit and model-risk validation all put a reader on that side of the table, so the arrangement is not unique. What is distinctive is that the adversarial reading is constitutive rather than occasional; the training treats the claim as unfinished until it has survived one.
+          One thing about that training is worth separating from the credential, because it is the part that transfers. You are graded on stating the strongest case against your own claim, and you do it knowing a reader is coming who is paid to find what you missed. Neither half works alone. Audit and code review put that reader in place but never ask the writer to make the case against themselves. Most workplaces supply neither half &mdash; a stakeholder review least of all, because nobody in that room gains anything by finding the flaw.
         </P>
         <P>
-          Neither is unique to a doctorate, and the version of this argument that leads with grit or persistence should be cut. An engineer who carried a migration through eighteen months has those. A general manager who held a turnaround together has those.
+          None of that is unique to a doctorate. An engineer who carried a migration through eighteen months has argued against her own plan in public. A general manager who held a turnaround together has done it in front of a board.
         </P>
         <P>
-          None of the three is a general-purpose problem-solving ability. Each is a trained response to a recurring kind of problem, and the response transfers to problems of that kind.
+          None of the three trainings is a general-purpose problem-solving ability. Each is a trained response to a recurring kind of problem, and the response transfers to problems of that kind.
         </P>
         <P>
           <Figure
@@ -9294,7 +9299,7 @@ export const ESSAYS: Essay[] = [
           A data, AI or reporting transformation often delivers a capability too. A pipeline that moves data, a platform that stays up, a retrieval layer that answers in time &mdash; those are capabilities, and you can watch them work.
         </P>
         <P>
-          The difference arrives at a specific point. When the output becomes evidence for a decision, the transformation stops delivering only a capability and starts delivering a claim. That threshold is where validity enters &mdash; the third of the three things a decision system has to hold, after meaning and authority &mdash; and a great deal of data and AI work crosses it on the day it ships.
+          The difference arrives at a specific point. When the output becomes evidence for a decision, the transformation stops delivering only a capability and starts delivering a claim. That threshold is where validity enters &mdash; the third of the three things <InternalLink slug="the-decision-system">a decision system</InternalLink> has to hold, after meaning and authority &mdash; and a great deal of data and AI work crosses it on the day it ships.
         </P>
         <P>
           You cannot watch whether a claim is true by watching the system run. That is the difficulty once the output becomes evidentiary. The dashboard refreshes on schedule. The pipeline passes its tests. The model returns a score with four decimal places. Every operational signal says the transformation succeeded, and the number can still mean something other than what the decision assumed it meant.
@@ -9309,7 +9314,7 @@ export const ESSAYS: Essay[] = [
           Validity of interpretation and use is not the central object of either of the other two disciplines. Engineering has validation traditions of its own, and testing is one of them: a discipline for checking a system against its specification, with the specification arriving as an input. Business has audit, experiment design and the business case, disciplines for checking a return against a forecast, with the metric arriving as an input. In both, the validity of the underlying construct can enter as an assumption rather than as the thing the discipline is built to interrogate.
         </P>
         <P>
-          Educational measurement is the field that made the question explicit, and it did so across decades rather than in one paper. Messick established that what gets validated is the interpretation and use of a score, consequences included, rather than the instrument itself (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1995</a>). Kane treats validation as an evaluation of that proposed interpretation and use: make the inferential chain and its assumptions explicit, then ask whether the evidence supports them (<a href="https://onlinelibrary.wiley.com/doi/10.1111/jedm.12000" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 2013</a>, <I>Journal of Educational Measurement</I> 50(1), 1&ndash;73). That is the training, and it turns out to be a training in the failure that data and AI work produces.
+          Educational measurement is the field that made the question explicit, and it did so across decades rather than in one paper. Messick established that what gets validated is the interpretation and use of a score, consequences included, rather than the instrument itself (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1995</a>). Kane treats validation as an evaluation of that proposed interpretation and use: make the inferential chain and its assumptions explicit, then ask whether the evidence supports them (<a href="https://onlinelibrary.wiley.com/doi/10.1111/jedm.12000" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 2013</a>, <I>Journal of Educational Measurement</I> 50(1), 1&ndash;73). That is the training. What it teaches you to catch is exactly what goes wrong when a number gets used as evidence.
         </P>
         <P>
           Neither of them wrote about a requisition. The chain is theirs; reading a job specification as the instrument, and asking which standard of correctness that document leaves unnamed, is the extension I am making here.
@@ -9318,7 +9323,7 @@ export const ESSAYS: Essay[] = [
           Measurement training does not make somebody better at transformation. It makes the inference question a default rather than an initiative, and that is the question this particular kind of transformation turns on.
         </P>
         <P>
-          The federal graduation rate is the example I keep coming back to, because nothing about it is broken. It counts students who started full time, first time, at one institution, and finished at that same institution. Part-time entrants are outside the cohort by definition. So are transfer-ins. A student who leaves and finishes her degree somewhere else does not become a graduate of the college she started at, in that rate (<a href="https://nces.ed.gov/ipeds/use-the-data/student-cohorts-and-subgroups" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCES, IPEDS Graduation Rates component</a>). Nationally that cohort covers about forty-seven percent of new undergraduates each fall (<a href="https://www.ihep.org/new-postsecdata-explainer-on-student-outcome-metrics-in-ipeds/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IHEP</a>). At an open-access college serving working students the share is smaller still, and the published rate gets read in the room as how well the college serves the students it has.
+          The federal graduation rate is the example I keep coming back to, because nothing about it is broken. It counts students who started full time, first time, at one institution, and finished at that same institution. Part-time entrants are outside the cohort by definition. So are transfer-ins. A student who leaves and finishes her degree somewhere else does not become a graduate of the college she started at, in that rate (<a href="https://nces.ed.gov/ipeds/use-the-data/student-cohorts-and-subgroups" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCES, IPEDS Graduation Rates component</a>). Nationally the cohort takes in about forty-seven percent of new undergraduates each fall (<a href="https://www.ihep.org/new-postsecdata-explainer-on-student-outcome-metrics-in-ipeds/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IHEP</a>). That is a count of who gets measured, not of who finished. The rate is computed on those students and is silent about the rest. At an open-access college serving working students the share is smaller still, and the published rate gets read in the room as how well the college serves the students it has.
         </P>
         <P>
           The arithmetic is right. The definition is public and anyone can look it up, which is the part people find hardest to believe afterwards. What fails is the step from the rate to the sentence said about it, and there is no test that goes red when that step is wrong.
@@ -9332,7 +9337,10 @@ export const ESSAYS: Essay[] = [
           The requirements section is the door. It selects on attributes already accumulated: years, tools, degrees, headcount managed, titles held somewhere else. The seat is the work. It turns on one of the three questions, and which one it turns on is a property of what is already built and what the organization has already committed to.
         </P>
         <P>
-          Those two do not have to agree. Across sixty-five postings the door names attributes and never names a decision, so the document cannot demonstrate that its requirements are job-relevant. It never states the problem against which their relevance could be judged. An organization may well establish that connection somewhere else, in an interview, a case exercise, a hiring manager&rsquo;s head. None of that is in the specification, which is the only part the candidate and the screening tool ever see.
+          Those two do not have to agree. In every requirements section in that corpus, attributes are named and a decision is not, so the part that sorts carries no statement of the problem those attributes are for. Forty-two documents say it nowhere at all. The other twenty-three do state it, in another section, written as a description of the work rather than as something a candidate is scored against. So it is present in the document and absent from the part that sorts.
+        </P>
+        <P>
+          An organization may well establish the connection somewhere else &mdash; in an interview, a case exercise, a hiring manager&rsquo;s head. None of it is in the document, which is all the candidate has before applying.
         </P>
         <P>
           The consequence is not that the wrong people apply. The screen works, in the narrow sense that it reliably finds somebody who clears the door. Whether that person can hold the seat is a separate matter, because the two tests were never connected to each other.
@@ -9371,6 +9379,15 @@ export const ESSAYS: Essay[] = [
           If the system is not built, the answer is the first question and you should hire an engineer. If the system runs and nobody will fund the next phase, the answer is the second and you should hire the general manager. If the system runs, the money is committed, and executives are already making decisions off numbers whose meaning nobody has argued for, the answer is the third.
         </P>
         <P>
+          One caution about order. Getting the first two wrong announces itself &mdash; the system stops, or the money stops. Getting the third wrong does not.
+        </P>
+        <P>
+          It also does not arrive all at once. Whether a number supports a decision can only be tested once someone uses it. But what gets collected, at what grain, defined how, is settled while the system is being built, and settled by default if nobody is assigned to it. So an engineer-first answer is right about the build and still leaves open who holds those definitions while the building happens. <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> is about what happens when nobody does.
+        </P>
+        <P>
+          The second answer has its own version. A general manager needs a number showing the last phase worked, and the one that gets picked is the one that will fund the next. That is what the job rewards rather than a failure of it. But a figure that has funded a phase is hard to retire afterwards, because it now sits in the record as the thing that worked. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> works that problem at fund scale.
+        </P>
+        <P>
           In that third case the seat needs demonstrated capability to validate an interpretation and its use. Somebody with measurement training may have unusually direct preparation for it. The selection procedure should still test the capability rather than read it off the credential &mdash; an essay that spends three thousand words on unvalidated proxies does not get to finish by recommending one.
         </P>
         <P>
@@ -9383,7 +9400,7 @@ export const ESSAYS: Essay[] = [
           Two things this does not do.
         </P>
         <P>
-          It does not tell you who to hire. A sponsor can name the problem correctly and still choose badly, and naming the problem makes that error visible rather than preventing it. That is an improvement and it is not a solution.
+          It does not tell you who to hire. A sponsor can name the problem correctly and still choose badly. Naming it correctly makes that error checkable afterwards, which is an improvement and not a solution.
         </P>
         <P>
           And it does not close the seam it sits on. The candidate still cannot see the definition being applied to her. Publishing the sentence would change that, and almost nobody will, because a stated construct is a thing you can later be measured against.
