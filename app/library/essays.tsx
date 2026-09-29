@@ -9190,7 +9190,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Why the third question becomes non-optional once an output is used as evidence.",
     date: "2026-09-22",
-    readingTime: "16 min read",
+    readingTime: "17 min read",
     summary:
       "Forty-two of sixty-five senior data postings name what the person must be and never what the role may decide. Three trainings answer them — engineering, business and measurement — and with no decision named, the only thing separating them is which proxies each accumulated. They were built to answer different questions: will it run, will it return, does the number mean what the decision assumes.",
     cover: "/library/covers/three-trainings.svg",
@@ -9217,13 +9217,19 @@ export const ESSAYS: Essay[] = [
           The requirements section is a claim of necessity. Ten years of data engineering is required in order to do what. Once the second half of that sentence is missing, the items in the list still have to do something, and what they do is sort.
         </P>
         <P>
-          Sorting on attributes is not a neutral fallback. It selects for whoever has accumulated the attributes that resemble the last person to hold a similar title somewhere else. One item in that corpus states the position cleanly: <I>experience establishing enterprise governance structures with formal decision rights.</I> Read it closely and the rights belong to the structures, not to the candidate &mdash; what is required is experience building the thing that carries them. This posting grants none of its own.
+          Sorting on attributes is not a neutral fallback, and the corpus shows why. Roughly three quarters of those eight hundred and thirteen items are abilities and dispositions, which is the largest category and the least falsifiable. Nothing checks <I>comfortable with ambiguity</I>. What can be checked is the rest: tools, domain knowledge, years, degrees, a thin tail of certifications. So the sort concentrates in the part of the list that has a truth value, and that part is mostly about duration and credential. Nobody decided to rank people by years. Years are what is left once the unfalsifiable items are set aside.
+        </P>
+        <P>
+          One item in that corpus states the position cleanly: <I>experience establishing enterprise governance structures with formal decision rights.</I> Read it closely and the rights belong to the structures, not to the candidate. What is required is experience building the thing that carries them. This posting grants none of its own.
         </P>
         <P>
           Kyle Brink argued in <I>MIT Sloan Management Review</I> that organizations declaring their hiring meritocratic have mostly never validated the instruments they use to measure merit. What passes for merit, on his account, is a set of unvalidated proxies: pedigree, tenure, an interview impression (<a href="https://sloanreview.mit.edu/article/the-elusiveness-of-merit-based-hiring/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Brink, <I>MIT Sloan Management Review</I>, August 2026</a>). A degree is a proxy of that kind, asked to carry a construct nobody wrote down.
         </P>
         <P>
-          <InternalLink slug="seven-causes-one-bit">Seven causes, one bit</InternalLink> follows what happens to the applicant once that screen runs. <InternalLink slug="who-writes-the-contract">Who writes the contract</InternalLink> asks who inside the organization owns the definition in the first place. The question here sits between them: given that the decision went unnamed, what are the three being compared on, and what would it take to compare them on something else.
+          That is the gap <InternalLink slug="seven-causes-one-bit">Seven causes, one bit</InternalLink> is written to close. Its repair asks every requirement to carry three things: what capability, what would count as evidence of it, and when it has to be true. Supply those and <I>comfortable with ambiguity</I> becomes checkable and sorts on its merits. Leave them out and it cannot sort at all, so the credential items sort by default.
+        </P>
+        <P>
+          <InternalLink slug="who-writes-the-contract">Who writes the contract</InternalLink> asks who inside the organization owns the definition in the first place. The question here sits between them: given that the decision went unnamed, what are the three being compared on, and what would it take to compare them on something else.
         </P>
         <P>
           It does not follow that the three are equal, or that credentials carry no information. A credential carries a great deal of information about what somebody was trained to do. The failure is in using it to answer a question that was never asked.
@@ -9249,7 +9255,7 @@ export const ESSAYS: Essay[] = [
           I mean a specialization inside research training, not the whole of it. A molecular biologist and a historian are both research-trained, and neither is necessarily trained to ask whether a metric supports a particular consequential use. The tradition that asks it by default is measurement and evaluation: psychometrics, program evaluation, assessment. Some people do it without ever training for it. Others hold the degree and never built the habit.
         </P>
         <P>
-          One thing about that training is worth separating from the credential, because it is the part that transfers. You are graded on stating the strongest case against your own claim, and you do it knowing a reader is coming who is paid to find what you missed. Neither half works alone. Audit and code review put that reader in place but never ask the writer to make the case against themselves. Most workplaces supply neither half &mdash; a stakeholder review least of all, because nobody in that room gains anything by finding the flaw.
+          One thing about that training is worth separating from the credential, because it is the part that transfers. You are graded on stating the strongest case against your own claim, and you do it knowing a reader is coming who is paid to find what you missed. Neither half works alone. Audit and code review put that reader in place but never ask the writer to make the case against themselves. Most workplaces supply neither half, and a stakeholder review least of all, because nobody in that room gains anything by finding the flaw.
         </P>
         <P>
           None of that is unique to a doctorate. An engineer who carried a migration through eighteen months has argued against her own plan in public. A general manager who held a turnaround together has done it in front of a board.
@@ -9282,7 +9288,7 @@ export const ESSAYS: Essay[] = [
           <B>The business failure is that the metric arrives as a given.</B> The metric is what the board reads, so it becomes the object. Strong operators do challenge a KPI. What the training does not supply is a standing obligation to ask whether the measure still supports the reading being taken from it. I have watched programs get run well against a measure that had already stopped meaning what everyone assumed it meant. Nobody in the room was doing anything wrong. The question of whether the measure still held was not anyone&rsquo;s question.
         </P>
         <P>
-          Read those three together and a pattern shows up. The failure of the first is slowness. The failure of the other two is a claim that nobody checked. Each training can be right by its own standard and still be wrong for the seat, which is why the standard has to be named before the comparison starts.
+          Read those three together and a pattern shows up. The failure of the first is slowness. The failure of the other two is a claim that nobody checked. Each training can be right by its own standard and still be wrong for the seat, which is why the seat&rsquo;s standard has to be named before the comparison starts.
         </P>
 
         <H2>When the output becomes evidence</H2>
@@ -9317,13 +9323,16 @@ export const ESSAYS: Essay[] = [
           Neither of them wrote about a requisition. The chain is theirs; reading a job specification as the instrument, and asking which standard of correctness that document leaves unnamed, is the extension I am making here.
         </P>
         <P>
-          Measurement training does not make somebody better at transformation. It makes the inference question a default rather than an initiative, and that is the question this particular kind of transformation turns on.
+          Measurement training does not make somebody better at transformation. What it makes automatic is one question: does this number support the decision somebody is about to take.
+        </P>
+        <P>
+          And once the output is evidence, the question reaches the transformation itself, because the proof that it worked is produced by the very system under review.
         </P>
         <P>
           The federal graduation rate is the example I keep coming back to, because nothing about it is broken. It counts students who started full time, first time, at one institution, and finished at that same institution. Part-time entrants are outside the cohort by definition. So are transfer-ins. A student who leaves and finishes her degree somewhere else does not become a graduate of the college she started at, in that rate (<a href="https://nces.ed.gov/ipeds/use-the-data/student-cohorts-and-subgroups" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCES, IPEDS Graduation Rates component</a>). Nationally the cohort takes in about forty-seven percent of new undergraduates each fall (<a href="https://www.ihep.org/new-postsecdata-explainer-on-student-outcome-metrics-in-ipeds/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IHEP</a>). That is a count of who gets measured, not of who finished. The rate is computed on those students and is silent about the rest. At an open-access college serving working students the share is smaller still, and the published rate gets read in the room as how well the college serves the students it has.
         </P>
         <P>
-          The arithmetic is right. The definition is public and anyone can look it up, which is the part people find hardest to believe afterwards. What fails is the step from the rate to the sentence said about it, and there is no test that goes red when that step is wrong.
+          The arithmetic is right. The definition is public and anyone can look it up, which is the part people find hardest to believe once the gap surfaces. What fails is the step from the rate to the sentence said about it, and there is no test that goes red when that step is wrong.
         </P>
 
         <H2>The door and the seat are not the same test</H2>
@@ -9336,12 +9345,11 @@ export const ESSAYS: Essay[] = [
         <P>
           Those two do not have to agree. In every requirements section in that corpus, attributes are named and a decision is not, so the part that sorts carries no statement of the problem those attributes are for. Forty-two documents say it nowhere at all. The other twenty-three do state it, in another section, written as a description of the work rather than as something a candidate is scored against. So it is present in the document and absent from the part that sorts.
         </P>
-
         <P>
           That last count is not a filing complaint. A requirements section is an inventory of attributes, which is what it is for, and where the decision sits in the document is the employer&rsquo;s business. It matters because the inventory is the part that sorts.
         </P>
         <P>
-          An organization may well establish the connection somewhere else &mdash; in an interview, a case exercise, a hiring manager&rsquo;s head. None of it is in the document, which is all the candidate has before applying.
+          An organization may well establish the connection somewhere else: in an interview, a case exercise, a hiring manager&rsquo;s head. None of it is in the document, which is all the candidate has before applying.
         </P>
         <P>
           The consequence is not that the wrong people apply. The screen works, in the narrow sense that it reliably finds somebody who clears the door. Whether that person can hold the seat is a separate matter, because the two tests were never connected to each other.
@@ -9360,7 +9368,7 @@ export const ESSAYS: Essay[] = [
           It was a specification mistake, and it was made before anyone applied.
         </P>
         <P>
-          The standard is not what is missing. Personnel selection has had one for decades. The SIOP Principles for the Validation and Use of Personnel Selection Procedures reached a third edition in 1987 and a fifth in 2018, the current one approved by the APA Council of Representatives and aligned to the 2014 <I>Standards for Educational and Psychological Testing</I>. Fred Oswald, who edits <I>Psychological Methods</I>, makes the point that those Principles govern a screening instrument whether or not the instrument happens to be a language model (<a href="https://workingthingsout.com/p/the-genai-arms-race-in-hiring" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Oswald, <I>Working Things Out</I>, August 2026</a>). A method for validating a selection procedure has been written down and published by the relevant professional society, through five editions. The documents in this corpus do not reach it.
+          A validation standard is not what is missing. Personnel selection has had one for decades. The SIOP Principles for the Validation and Use of Personnel Selection Procedures reached a third edition in 1987 and a fifth in 2018, the current one approved by the APA Council of Representatives and aligned to the 2014 <I>Standards for Educational and Psychological Testing</I>. Fred Oswald, who edits <I>Psychological Methods</I>, makes the point that those Principles govern a screening instrument whether or not the instrument happens to be a language model (<a href="https://workingthingsout.com/p/the-genai-arms-race-in-hiring" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Oswald, <I>Working Things Out</I>, August 2026</a>). A method for validating a selection procedure has been written down and published by the relevant professional society, through five editions. The documents in this corpus do not reach it.
         </P>
         <P>
           A search can fail while selecting a strong candidate. The candidate clears a screen that looks valid, for a construct nobody specified, and the strength is what can mask the mismatch: a capable person may perform around it long enough that the failure gets attributed to execution rather than to the specification.
@@ -9371,16 +9379,19 @@ export const ESSAYS: Essay[] = [
           <I>Required for what?</I> asks the requisition writer to add one line naming what the role settles without another signature. This is the second line, and it goes in the same place.
         </P>
         <P>
-          Of the three &mdash; will the system run, will the spend return, does the number support the decision &mdash; <B>which one does this seat have to answer first?</B> Not which ones matter. Which one is first, in the first year, given what is already in place.
+          Of the three (will the system run, will the spend return, does the number support the decision), <B>which one does this seat have to answer first?</B> Not which ones matter. Which one is first, in the first year, given what is already in place.
         </P>
         <P>
           If that keeps returning <I>all of them</I>, ask the harder version. Suppose the person you hire is excellent at two of the three and weak at one. <B>Which weakness sinks the transformation anyway?</B> That question has one answer, and the answer is the binding constraint you are hiring against.
         </P>
         <P>
+          That is a choice selection measurement already has a name for. A compensatory rule lets strength on two dimensions offset weakness on a third, and a conjunctive rule does not: some dimensions are hurdles you clear or fail regardless of the rest. Most hiring runs compensatory by default, because a list of attributes invites a tally. The question above asks the sponsor to say which of the three is not compensatory. I made the same move on a different object in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, scoring a composite on its weakest inference link rather than on the average; the rule is borrowed from that literature and applying it to a seat&rsquo;s three competencies is mine.
+        </P>
+        <P>
           If the system is not built, the answer is the first question and you should hire an engineer. If the system runs and nobody will fund the next phase, the answer is the second and you should hire the general manager. If the system runs, the money is committed, and executives are already making decisions off numbers whose meaning nobody has argued for, the answer is the third.
         </P>
         <P>
-          One caution about order. Getting the first two wrong announces itself &mdash; the system stops, or the money stops. Getting the third wrong does not.
+          One caution about order. Getting the first two wrong announces itself: the system stops, or the money stops. Getting the third wrong does not.
         </P>
         <P>
           It also does not arrive all at once. Whether a number supports a decision can only be tested once someone uses it. But what gets collected, at what grain, defined how, is settled while the system is being built, and settled by default if nobody is assigned to it. So an engineer-first answer is right about the build and still leaves open who holds those definitions while the building happens. <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> is about what happens when nobody does.
@@ -9388,14 +9399,16 @@ export const ESSAYS: Essay[] = [
         <P>
           The second answer has its own version. A general manager needs a number showing the last phase worked, and the one that gets picked is the one that will fund the next. That is what the job rewards rather than a failure of it. But a figure that has funded a phase is hard to retire afterwards, because it now sits in the record as the thing that worked. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> works that problem at fund scale.
         </P>
+
+        <H2>What to select for</H2>
         <P>
-          In that third case the seat needs demonstrated capability to validate an interpretation and its use. Somebody with measurement training may have unusually direct preparation for it. The selection procedure should still test the capability rather than read it off the credential &mdash; an essay that spends three thousand words on unvalidated proxies does not get to finish by recommending one.
+          Where the third question comes first, the seat needs demonstrated capability to validate an interpretation and its use. Somebody with measurement training may have unusually direct preparation for it. The selection procedure should still test the capability rather than read it off the credential &mdash; an essay that spends three thousand words on unvalidated proxies does not get to finish by recommending one.
         </P>
         <P>
           If the honest answer is that all three come first, the requisition is describing more than one role. That is a real finding and it is better to have it before the search than eleven months into it.
         </P>
         <P>
-          This connects to the repair in <InternalLink slug="seven-causes-one-bit">Seven causes, one bit</InternalLink>, where every requirement carries three attributes: what capability, what would count as evidence of it, and when it has to be true. The question above sits one level up from that list. Attributes tell you whether a candidate meets a requirement. The question tells you whether the requirement was the right one to write.
+          Attributes tell you whether a candidate meets a requirement. Naming the question tells you whether the requirement was the right one to write.
         </P>
         <P>
           Two things this does not do.
