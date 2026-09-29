@@ -5285,7 +5285,13 @@ export const ESSAYS: Essay[] = [
 
         <Brief>
           <p>
-            NextLadder Ventures and GitLab Foundation just handed the economic-mobility field something it long lacked: a common unit. Dollars in Pockets converts wages gained, fees avoided, time saved, benefits accessed, and savings built into one comparable figure &mdash; the way global health built the DALY to compare a vaccine against a surgery. That is real progress and it earns its place. It also surfaces a sharper question, the one that arrives the moment the number is on the table: does the argument from that number to <I>&ldquo;our capital produced this&rdquo;</I> hold? A magnitude tells you how big a claim is. It does not tell you whether the claim is sound. This essay is about that difference, and about the small discipline that closes it.
+            NextLadder Ventures and GitLab Foundation just handed the economic-mobility field something it long lacked: a common unit. Dollars in Pockets converts wages gained, fees avoided, time saved, benefits accessed, and savings built into one comparable figure &mdash; the way global health built the DALY to compare a vaccine against a surgery. That is real progress and it earns its place.
+          </p>
+          <p>
+            It also surfaces a sharper question, the one that arrives the moment the number is on the table: does the argument from that number to &ldquo;our capital produced this&rdquo; hold? A magnitude tells you how big a claim is. It does not tell you whether the claim is sound.
+          </p>
+          <p>
+            This essay is about that difference, and about the small discipline that closes it.
           </p>
         </Brief>
 
