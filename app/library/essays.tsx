@@ -9329,6 +9329,9 @@ export const ESSAYS: Essay[] = [
           And once the output is evidence, the question reaches the transformation itself, because the proof that it worked is produced by the very system under review.
         </P>
         <P>
+          Which means the three are not a sequence. The second question rests on the third. A return gets claimed on the strength of a number, so whether the spend returned is only ever as good as whether that number supports the claim.
+        </P>
+        <P>
           The federal graduation rate is the example I keep coming back to, because nothing about it is broken. It counts students who started full time, first time, at one institution, and finished at that same institution. Part-time entrants are outside the cohort by definition. So are transfer-ins. A student who leaves and finishes her degree somewhere else does not become a graduate of the college she started at, in that rate (<a href="https://nces.ed.gov/ipeds/use-the-data/student-cohorts-and-subgroups" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCES, IPEDS Graduation Rates component</a>). Nationally the cohort takes in about forty-seven percent of new undergraduates each fall (<a href="https://www.ihep.org/new-postsecdata-explainer-on-student-outcome-metrics-in-ipeds/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IHEP</a>). That is a count of who gets measured, not of who finished. The rate is computed on those students and is silent about the rest. At an open-access college serving working students the share is smaller still, and the published rate gets read in the room as how well the college serves the students it has.
         </P>
         <P>
