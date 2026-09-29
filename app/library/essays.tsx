@@ -5270,7 +5270,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "A validity gate for Dollars in Pockets and the impact numbers that follow.",
     date: "2026-08-10",
-    readingTime: "20 min read",
+    readingTime: "25 min read",
     summary:
       "A response to Dollars in Pockets, the common-unit impact metric from NextLadder Ventures and GitLab Foundation. Applies Kane and Messick's validity discipline to composite ROI figures, and proposes scoring them on the weakest inference link rather than the average. Separates the verbs a number earns — supports, contributed to, produced — by the strength of the counterfactual behind it. Closes by asking that funds publish per-pathway warrant beside the composite.",
     cover: "/library/covers/the-valid-dollar.svg",
@@ -5288,6 +5288,13 @@ export const ESSAYS: Essay[] = [
             NextLadder Ventures and GitLab Foundation just handed the economic-mobility field something it long lacked: a common unit. Dollars in Pockets converts wages gained, fees avoided, time saved, benefits accessed, and savings built into one comparable figure &mdash; the way global health built the DALY to compare a vaccine against a surgery. That is real progress and it earns its place. It also surfaces a sharper question, the one that arrives the moment the number is on the table: does the argument from that number to <I>&ldquo;our capital produced this&rdquo;</I> hold? A magnitude tells you how big a claim is. It does not tell you whether the claim is sound. This essay is about that difference, and about the small discipline that closes it.
           </p>
         </Brief>
+
+        <P>
+          <I>A validity gate for Dollars in Pockets and the impact numbers that follow.</I>
+        </P>
+        <P>
+          <I>A response to <B><a href="https://www.gitlabfoundation.org/our-journey/dollars-in-pockets" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">&ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo;</a></B> &mdash; NextLadder Ventures &amp; GitLab Foundation, July 2026.</I>
+        </P>
 
         <H2>Getting to a common unit was the hard part</H2>
         <P>
@@ -5337,13 +5344,13 @@ export const ESSAYS: Essay[] = [
           It would be easy, and wrong, to say the field just needs more rigor. Dollars in Pockets already does most of what a naive critic would demand, and the authors describe the practice in their own words: they &ldquo;mark down optimistic projections, and weight every assumption by the strength of the evidence behind it.&rdquo; Each modeled return is set against a researched counterfactual, and only the difference is counted. After the money moves, the estimate is checked again. NextLadder works with Opportunity Insights using independent methods, and GitLab Foundation resources its grantees to run their own measurement and evaluation, including direct feedback from the people served. The authors give these as examples rather than a complete validation design.
         </P>
         <P>
-          Two further choices deserve more credit than a critic would naturally give them. The first is the benchmark. NextLadder sets its ten-to-one target against direct cash transfers, on the reasoning that a dollar handed to someone is a dollar received, and that any more complicated intervention should have to clear that floor. A fund that picks a benchmark that unflattering has made one of the most disciplined choices in the framework. Most skeptics arrive expecting the opposite. The second is volume. GitLab Foundation reports applying the underlying ROI method across more than three hundred pre-investment impact models and two hundred grants. That is an empirical base, not a paper exercise.
+          Two further choices deserve more credit than a critic would naturally give them. The first is the benchmark. NextLadder sets its ten-to-one target against direct cash transfers, on the reasoning that a dollar handed to someone is a dollar received, and that any more complicated intervention should have to clear that floor. A fund that picks a benchmark that unflattering has made one of the most disciplined choices in the framework. Most skeptics arrive expecting the opposite. The move has a lineage. GiveWell, the charity evaluator, compares programs in multiples of cash transfers. A floor set against cash is only as fair as the counting behind it: cash and the program have to be measured the same way. The second is volume. GitLab Foundation reports applying the underlying ROI method across more than three hundred pre-investment impact models and two hundred grants. That is an empirical base, not a paper exercise.
         </P>
         <P>
           The lineage named earlier has gone further than this, and it is worth being exact about how far. Y Analytics, TPG&rsquo;s impact research arm, published its climate methodology in November 2025. It works pathway by pathway, and it grades the evidence behind each one. The risk rubric covers, in its own words, &ldquo;rigor of evidence (i.e., RCT vs. observational study), geographical similarity, and number of linkages between company output and impact.&rdquo; The result is a risk adjustment factor for each pathway.
         </P>
         <P>
-          Read that rubric again. Rigor of evidence is the distinction the three verbs below are built on. Number of linkages is the length of the chain. Y Analytics is already producing, pathway by pathway, most of the judgment this essay says a fund should publish. It then multiplies that judgment into the magnitude and reports one figure, the Carbon Yield.
+          Read that rubric again. Rigor of evidence is the distinction the three verbs below are built on. Number of linkages is the length of the chain. Y Analytics is already producing, pathway by pathway, most of the judgment this essay says a fund should publish. It then multiplies that judgment into the magnitude and reports one figure, the Carbon Yield. The Carbon Yield is built on the same method as the Impact Multiple of Money (IMM), the ratio TPG developed for its Rise Funds. Y Analytics calls the approach &ldquo;a decision tool&rdquo; and says its purpose is different from accounting. That is the line GRADE draws: a number can support a funding decision without licensing an outcome claim.
         </P>
         <P>
           That is a different problem from averaging, and the arithmetic is not the fault. Multiplying serial links is defensible. What the multiplication costs is the separation GRADE insists on, certainty rated apart from the strength of what is recommended. Fold a confidence grade into a magnitude and a reader can no longer tell a large number with thin evidence from a smaller number with strong evidence.
@@ -5359,6 +5366,7 @@ export const ESSAYS: Essay[] = [
         <P>
           Testing solved a version of this problem long ago. Since Kane&rsquo;s 1992 paper, high-stakes assessment has increasingly treated a decision as a chain of inferences to be examined link by link (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 1992</a>: validation as an argument, with evidence aimed at the weakest assumption), and has insisted that validity is a property of the <I>use</I> of a number, consequences included, not of the number itself (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1995</a>: unified construct validity). Point that machinery at an impact figure and you get a small, hard discipline. Four questions, in operator language &mdash; a translation of the argument-based approach for impact capital, not Kane&rsquo;s own four inferences restated:
         </P>
+
         <NumList>
           <NumItem n={1}>
             <B>Measure it right</B> &mdash; is the underlying quantity captured correctly?
@@ -5373,6 +5381,7 @@ export const ESSAYS: Essay[] = [
             <B>Ours, not adjacent</B> &mdash; did our capital contribute to the effect, or did it ride alongside something that would have happened anyway?
           </NumItem>
         </NumList>
+
         <P>
           Magnitude (<I>is the effect big enough to act on</I>) is deliberately not one of the four. It is a policy threshold, set by a fund&rsquo;s own bar for what counts as worth doing. The four ask whether the number means what it says. How large a meaningful number has to be before it justifies capital is a separate decision, and mixing the two lets a fund answer the easy question in place of the hard one.
         </P>
@@ -5428,7 +5437,6 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <H2>Validity tells you which verb the number earned</H2>
-
         <Figure
           src="/library/figures/valid-dollar-verb-the-number-earned.svg"
           alt="Three rows ordered by the strength of the verb an impact number earns. No counterfactual earns supports. Contribution analysis, where rival explanations are tested and defeated, earns contributed to; that row is emphasized because the cost of a controlled comparison, the years its effects take to compound, and the methodological expertise it requires put most claims here. A controlled comparison earns produced, and how far produced reaches depends on whether the design was matched, quasi-experimental, or randomized."
@@ -5445,13 +5453,13 @@ export const ESSAYS: Essay[] = [
           Dollars in Pockets already does counterfactual work at that dimension, which is what a strong verb is bought with. So the discipline does not slow the claim down. It tells a fund how much weight a given number can carry:
         </P>
         <P>
-          &mdash; No counterfactual behind the contribution link &rarr; the number <I>supports</I>, is consistent with, the outcome.
+          &mdash; No counterfactual behind the contribution link → the number <I>supports</I>, is consistent with, the outcome.
         </P>
         <P>
-          &mdash; No controlled comparison available, but rival explanations tested and defeated &rarr; <I>contributed to</I> is earned.
+          &mdash; No controlled comparison available, but rival explanations tested and defeated → <I>contributed to</I> is earned.
         </P>
         <P>
-          &mdash; A matched, quasi-experimental, or randomized comparison behind it &rarr; <I>produced</I> is earned. How far <I>produced</I> reaches depends on which of those it was; a matched comparison and a randomized one do not license the same sentence, and a fund should say which it has.
+          &mdash; A matched, quasi-experimental, or randomized comparison behind it → <I>produced</I> is earned. How far <I>produced</I> reaches depends on which of those it was; a matched comparison and a randomized one do not license the same sentence, and a fund should say which it has.
         </P>
         <P>
           The middle row deserves more than a footnote. A controlled comparison is expensive, and the effects it is trying to detect often take years to compound. It also asks for a particular expertise: knowing how to set up a quasi-experiment, and knowing how to read what comes out of one. Most organizations do not hold that in-house, and cannot buy it at the scale their reporting asks for. So it is reasonable to expect that many funders and grantees are in the middle row. The cost of the method predicts it. It also means a great many impact claims will be settled in that row or not settled at all. That is the situation <a href="https://doi.org/10.1177/1356389012451663" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">contribution analysis (Mayne, 2012)</a> was built for: assemble the contribution story, then test it against the rival explanations that would make the outcome happen without you.
@@ -5461,6 +5469,9 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Mayne does not run his method backwards to pick a verb. This essay does. Start with the strongest verb you would like to claim and let the rivals knock it down. Say the claim is that a record-clearing tool produced a wage gain. The rivals: the local labor market tightened that year, the person would have found a free legal-aid clinic within a few months anyway, the employers who hired them never ran a record check. Each rival you cannot defeat kills a stronger verb. <I>Contributed to</I> is what stands when you run out of rivals &mdash; the strongest verb none of them could defeat, which is a different thing from the strongest verb you can defend in a meeting.
+        </P>
+        <P>
+          Education writes a version of this ladder into law. The <a href="https://www.law.cornell.edu/uscode/text/20/7801" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Every Student Succeeds Act</a> (2015) grades school interventions by the kind of study behind them, from an experiment down to a research-backed rationale, and it has no tier for a claim whose rival explanations were tested and defeated: the row where cost puts most claims.
         </P>
         <P>
           &ldquo;Here is our return, and here is how much of it we can stand behind, and where it is thin&rdquo; is a stronger thing to say to a skeptical funder or board than a bigger number with no gate behind it. Validity is what survives the next question.
