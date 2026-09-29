@@ -4475,8 +4475,14 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          A program officer, a portfolio manager, and a CSR (corporate social responsibility) lead all hit the same problem. Each can tell you how many people were reached, how much money went out, how many sessions were delivered. None can tell you, across the whole book, whether it worked or where the next rupee or dollar should go. The usual diagnosis is a reporting problem: buy a better dashboard, tighten the template. The real problem is a category error. You bought a system of record for <I>activity</I> and asked it to behave like a system of record for <I>outcomes</I>. This note is about that difference. It&rsquo;s also about the missing category — the evidence spine — that turns reach into a decision. It&rsquo;s a field note. It makes one structural claim.
-        </p>
+            A program officer, a portfolio manager, and a CSR (corporate social responsibility) lead all hit the same problem. Each can tell you how many people were reached, how much money went out, how many sessions were delivered. None can tell you, across the whole book, whether it worked or where the next rupee or dollar should go.
+          </p>
+          <p>
+            The usual diagnosis is a reporting problem: buy a better dashboard, tighten the template. The real problem is a category error. You bought a system of record for <I>activity</I> and asked it to behave like a system of record for <I>outcomes</I>.
+          </p>
+          <p>
+            This note is about that difference. It&rsquo;s also about the missing category — the evidence spine — that turns reach into a decision. It&rsquo;s a field note. It makes one structural claim.
+          </p>
         </Brief>
 
         <H2>Reach is what falls out for free</H2>
