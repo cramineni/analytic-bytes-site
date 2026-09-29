@@ -8556,7 +8556,13 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Picture a finance leader who has done everything right. The chart of accounts is clean. Every transaction is tagged to a program. And the program team, separately, has done everything right too: a real outcome measure, defined and durable, not a reach count. Two good systems, both working. Now the board asks what a result costs, and the answer is still a shrug. Not because either system is weak, but because nothing connects them. Cost per outcome is two numbers divided, and the division is only honest if both numbers describe the same slice &mdash; the same program, cohort, site, and period. That shared, governed identity is the whole subject of this note. <InternalLink slug="the-reach-trap">The reach trap</InternalLink> said build the outcome system. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> said score the number it produces. This is about the wire between them.
+            Picture a finance leader who has done everything right. The chart of accounts is clean. Every transaction is tagged to a program. And the program team, separately, has done everything right too: a real outcome measure, defined and durable, not a reach count. Two good systems, both working.
+          </p>
+          <p>
+            Now the board asks what a result costs, and the answer is still a shrug. Not because either system is weak, but because nothing connects them. Cost per outcome is two numbers divided, and the division is only honest if both numbers describe the same slice &mdash; the same program, cohort, site, and period. That shared, governed identity is the whole subject of this note.
+          </p>
+          <p>
+            <InternalLink slug="the-reach-trap">The reach trap</InternalLink> said build the outcome system. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> said score the number it produces. This is about the wire between them.
           </p>
         </Brief>
 
