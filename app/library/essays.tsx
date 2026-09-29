@@ -5286,7 +5286,7 @@ export const ESSAYS: Essay[] = [
     body: (
       <>
         <P>
-          <I>A response to <B><a href="https://www.gitlabfoundation.org/our-journey/dollars-in-pockets" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">&ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo;</a></B> &mdash; NextLadder Ventures &amp; GitLab Foundation, July 2026.</I>
+          <I>A response to <a href="https://www.gitlabfoundation.org/our-journey/dollars-in-pockets" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">&ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo;</a> &mdash; NextLadder Ventures &amp; GitLab Foundation, July 2026.</I>
         </P>
 
         <Brief>
@@ -5297,16 +5297,9 @@ export const ESSAYS: Essay[] = [
             It also surfaces a sharper question, the one that arrives the moment the number is on the table: does the argument from that number to &ldquo;our capital produced this&rdquo; hold? A magnitude tells you how big a claim is. It does not tell you whether the claim is sound.
           </p>
           <p>
-            This essay is about that difference, and about the small discipline that closes it.
+            The gap is closed by a small discipline: keep the unit, and publish the warrant beside it.
           </p>
         </Brief>
-
-        <P>
-          <I>A validity gate for Dollars in Pockets and the impact numbers that follow.</I>
-        </P>
-        <P>
-          <I>A response to <B><a href="https://www.gitlabfoundation.org/our-journey/dollars-in-pockets" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">&ldquo;Dollars in Pockets: A New Way to Measure What Matters&rdquo;</a></B> &mdash; NextLadder Ventures &amp; GitLab Foundation, July 2026.</I>
-        </P>
 
         <H2>Getting to a common unit was the hard part</H2>
         <P>
@@ -5322,7 +5315,11 @@ export const ESSAYS: Essay[] = [
           The analogy holds in a second way that matters more. The DALY arrived unsettled, and the argument about it ran for three decades. The disability weight (the number for how bad a given health state is) is elicited from surveys, not measured, and critics have argued the resulting figure has no clear meaning and overstates how much the world agrees (<a href="https://pubmed.ncbi.nlm.nih.gov/23608637/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Nord, 2013</a>). Two of the original parameters, age-weighting and time discounting, were contested for the better part of two decades and then dropped in the <a href="https://pubmed.ncbi.nlm.nih.gov/23245608/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">GBD 2010 revision</a>. That they could be removed at all showed how much of the unit was normative choice made to look like measurement.
         </P>
         <P>
-          The contested history is part of what makes the analogy useful. Global health built the unit first and did the validity work afterward, slowly, under pressure from people who kept asking what the weights meant. Dollars in Pockets is at the front of that arc. The authors have done the hard part. The long part is still ahead of them, and it is the part this essay is about.
+          The contested history is part of what makes the analogy useful. Global health built the unit first and did the validity work afterward, slowly, under pressure from people who kept asking what the weights meant.{" "}
+          <InternalLink slug="burden-disparity-and-the-next-dollar">
+            Burden, disparity, and the next dollar
+          </InternalLink>{" "}
+          worked through what that question costs in practice: two defensible readings of the same mortality data produce two different priority lists. Dollars in Pockets is at the front of that arc. The authors have done the hard part. The long part, the validity work, is still ahead of them.
         </P>
 
         <H2>A magnitude is not a validity</H2>
@@ -5333,7 +5330,11 @@ export const ESSAYS: Essay[] = [
           The arithmetic can be correct and the inference behind it still weak. When a fund sums its pathways, the weak one disappears into the total. The total reads healthy while part of it does work the evidence cannot support.
         </P>
         <P>
-          It matters exactly what the weak part damages. A soft housing-stability estimate does not make a hard fees-avoided estimate any softer, and each pathway keeps whatever standing its own evidence gives it. What the weak part damages is the composite claim &mdash; the sentence a fund says out loud about the whole figure. That sentence asserts every dollar in the total, so it carries only as much weight as the weakest dollar in it. Blending preserves the arithmetic and loses the warrant.
+          It matters exactly what the weak part damages. A soft housing-stability estimate does not make a hard fees-avoided estimate any softer, and each pathway keeps whatever standing its own evidence gives it. What the weak part damages is the composite claim &mdash; the sentence a fund says out loud about the whole figure. That sentence asserts every dollar in the total, so it carries only as much weight as the weakest dollar in it. Blending preserves the arithmetic and loses the warrant.{" "}
+          <InternalLink slug="every-metric-is-a-claim">
+            Every metric is a claim
+          </InternalLink>{" "}
+          argued that a number with nothing behind it cannot be acted on. A composite is that problem with the warrant averaged away.
         </P>
         <P>
           It also hides which pathway is the soft one, and that matters most the moment the number becomes a target. <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Goodhart&rsquo;s law</a> is the standing warning: once a fund optimizes toward its Dollars in Pockets ratio, optimization pressure will eventually find the softest pathway &mdash; the very one the blend has hidden. A metric that cannot show its weakest inference rewards inflating it.
@@ -5348,7 +5349,7 @@ export const ESSAYS: Essay[] = [
           Look at the three pathways side by side and they are not equally certain. Fees avoided is close to immediate and direct &mdash; the record is cleared, the fee is not paid. But &ldquo;wage gains that follow a cleared record&rdquo; and &ldquo;savings from more stable housing&rdquo; each depend on a chain of contribution holding: that the clearance causes the job, that the job causes the housing, and that none of it would have happened anyway. Those are the softer links. Sum the three into one figure and the near-certainty of pathway one underwrites the causal reach of pathways two and three. The composite cannot tell you which pathway carries the weakest inference. Adding does that to any set of numbers, whatever their quality, and Rasa Legal is not the problem here.
         </P>
         <P>
-          One caveat, and it matters. The three pathways above are named in the published article, but the complete methodology behind them is not yet public &mdash; the authors say they intend to publish it. So the question this essay raises cannot be settled from outside. Does that methodology already report per-pathway confidence, grading fees-avoided, wage-gain, and housing-stability separately rather than only in the blend? If it does, the point here narrows from &ldquo;the composite hides the weak link&rdquo; to &ldquo;surface that per-pathway confidence next to the headline number, where a reader can see it.&rdquo; Either way the discipline is the same, and the last section of this essay sets out what showing it would look like. The open question is whether it is already being done and not shown.
+          One caveat, and it matters. The three pathways above are named in the published article, but the complete methodology behind them is not yet public &mdash; the authors say they intend to publish it. So the question cannot be settled from outside. Does that methodology already report per-pathway confidence, grading fees-avoided, wage-gain, and housing-stability separately rather than only in the blend? If it does, the point here narrows from &ldquo;the composite hides the weak link&rdquo; to &ldquo;surface that per-pathway confidence next to the headline number, where a reader can see it.&rdquo; Either way the discipline is the same. The open question is whether it is already being done and not shown.
         </P>
 
         <H2>What Dollars in Pockets already gets right &mdash; and where the gap is</H2>
@@ -5362,13 +5363,13 @@ export const ESSAYS: Essay[] = [
           The lineage named earlier has gone further than this, and it is worth being exact about how far. Y Analytics, TPG&rsquo;s impact research arm, published its climate methodology in November 2025. It works pathway by pathway, and it grades the evidence behind each one. The risk rubric covers, in its own words, &ldquo;rigor of evidence (i.e., RCT vs. observational study), geographical similarity, and number of linkages between company output and impact.&rdquo; The result is a risk adjustment factor for each pathway.
         </P>
         <P>
-          Read that rubric again. Rigor of evidence is the distinction the three verbs below are built on. Number of linkages is the length of the chain. Y Analytics is already producing, pathway by pathway, most of the judgment this essay says a fund should publish. It then multiplies that judgment into the magnitude and reports one figure, the Carbon Yield. The Carbon Yield is built on the same method as the Impact Multiple of Money (IMM), the ratio TPG developed for its Rise Funds. Y Analytics calls the approach &ldquo;a decision tool&rdquo; and says its purpose is different from accounting. That is the line GRADE draws: a number can support a funding decision without licensing an outcome claim.
+          Read that rubric again. Rigor of evidence is the distinction the three verbs below are built on. Number of linkages is the length of the chain. Y Analytics is already producing, pathway by pathway, most of the judgment a fund should publish. It then multiplies that judgment into the magnitude and reports one figure, the Carbon Yield. The Carbon Yield is built on the same method as the Impact Multiple of Money (IMM), the ratio TPG developed for its Rise Funds. Y Analytics calls the approach &ldquo;a decision tool&rdquo; and says its purpose is different from accounting. That is the line drawn by GRADE, the evidence-rating system used by <a href="https://www.cochrane.org/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Cochrane</a>, the WHO and many national guideline bodies: a number can support a funding decision without licensing an outcome claim.
         </P>
         <P>
           That is a different problem from averaging, and the arithmetic is not the fault. Multiplying serial links is defensible. What the multiplication costs is the separation GRADE insists on, certainty rated apart from the strength of what is recommended. Fold a confidence grade into a magnitude and a reader can no longer tell a large number with thin evidence from a smaller number with strong evidence.
         </P>
         <P>
-          The authors also name a limit of their own. Under the heading of what they still cannot measure, they say Dollars in Pockets addresses economic success but not empowerment or dignity, and that they are still building yardsticks for those. That is an honest admission, and it is a different admission from the one this essay is pressing. Theirs is a limit of <B>scope</B>: which parts of a life the unit covers. Mine is a limit of <B>inference</B>: whether the number, inside the scope it already covers, supports the claim being made on it. A measure can have perfect scope and still fail the second test. Adding dignity to the unit would not close the gap named here. It would apply the same inference problem to more of a person&rsquo;s life.
+          The authors also name a limit of their own. Under the heading of what they still cannot measure, they say Dollars in Pockets addresses economic success but not empowerment or dignity, and that they are still building yardsticks for those. That is an honest admission, and it is a different admission from the one I am pressing. Theirs is a limit of <B>scope</B>: which parts of a life the unit covers. Mine is a limit of <B>inference</B>: whether the number, inside the scope it already covers, supports the claim being made on it. A measure can have perfect scope and still fail the second test. Adding dignity to the unit would not close the gap named here. It would apply the same inference problem to more of a person&rsquo;s life.
         </P>
         <P>
           The rigor is real. The composite is where it breaks. All of that rigor still resolves into a single reported magnitude, and contribution (additionality, the &ldquo;would this have happened anyway&rdquo; question) is the one link a blended ratio is built to hide. A fund can do the work and still report a number that does not show it.
@@ -5417,7 +5418,7 @@ export const ESSAYS: Essay[] = [
           Averaging is not the only rival, and the strongest one deserves naming. If each link has some independent chance of holding, the product of the four is the joint chance the whole chain holds. That is an expected value, and it answers a real question: how likely is this claim to be true. The minimum answers a different one: what can this claim say out loud. It is a bound rather than an expectation, and a fund is entitled to say so.
         </P>
         <P>
-          The two rarely disagree by much. Multiply three strong links against one weak one and the strong links barely move the result, so the product lands just under the weak link&rsquo;s own value. Minimum and product converge whenever the links that are not capping the claim are healthy, which is the case this essay is about. The difference is not in the number. A product gives a fund one more figure to report. A minimum gives it a word it has to defend.
+          The two rarely disagree by much. Multiply three strong links against one weak one and the strong links barely move the result, so the product lands just under the weak link&rsquo;s own value. Minimum and product converge whenever the links that are not capping the claim are healthy, which is the usual case. The difference is not in the number. A product gives a fund one more figure to report. A minimum gives it a word it has to defend.
         </P>
 
         <Figure
@@ -5430,7 +5431,7 @@ export const ESSAYS: Essay[] = [
           Read the four as a chain rather than a scorecard and the asymmetry becomes obvious. The first three links are work a fund can do with its own data: define the measure, check it is not noise, argue it tracks what matters. Contribution is different in kind. It requires a comparison the fund&rsquo;s own records cannot supply, and it is the link that has to carry the word <I>produced</I>. Averaging lets the first three pay for the fourth. The minimum does not allow that trade.
         </P>
         <P>
-          Medicine worked through a version of this two decades ago. GRADE, the system <a href="https://www.cochrane.org/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Cochrane</a>, the WHO and many national guideline bodies use to rate evidence, does two things that matter here. It rates the certainty of the evidence separately from the strength of the recommendation (<a href="https://pubmed.ncbi.nlm.nih.gov/18436948/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Guyatt et al., BMJ, 2008</a>). And when it summarizes certainty across several outcomes, it generally takes the lowest of the ones judged critical (<a href="https://pubmed.ncbi.nlm.nih.gov/22542023/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Guyatt et al., <I>J Clin Epidemiol</I>, 2013</a>). The GRADE Working Group&rsquo;s stated rationale is that the lowest rating among critical outcomes will generally provide an upper limit on certainty in the net benefit (<a href="https://pubmed.ncbi.nlm.nih.gov/28529184/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Hultcrantz et al., <I>J Clin Epidemiol</I>, 2017</a>).
+          Medicine worked through a version of this two decades ago. GRADE does two things that matter here. It rates the certainty of the evidence separately from the strength of the recommendation (<a href="https://pubmed.ncbi.nlm.nih.gov/18436948/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Guyatt et al., BMJ, 2008</a>). And when it summarizes certainty across several outcomes, it generally takes the lowest of the ones judged critical (<a href="https://pubmed.ncbi.nlm.nih.gov/22542023/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Guyatt et al., <I>J Clin Epidemiol</I>, 2013</a>). The GRADE Working Group&rsquo;s stated rationale is that the lowest rating among critical outcomes will generally provide an upper limit on certainty in the net benefit (<a href="https://pubmed.ncbi.nlm.nih.gov/28529184/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Hultcrantz et al., <I>J Clin Epidemiol</I>, 2017</a>).
         </P>
         <P>
           So the minimum is a familiar move. A field with more at stake handles the same arithmetic problem the same way.
@@ -5480,7 +5481,11 @@ export const ESSAYS: Essay[] = [
           Mayne&rsquo;s own logic is argument. Contribution analysis assembles a verified theory of change and accounts for the other factors at work. Mayne calls the result a warrant: a case a reasonable person would accept from the evidence and the reasoning. This essay has been borrowing that word.
         </P>
         <P>
-          Mayne does not run his method backwards to pick a verb. This essay does. Start with the strongest verb you would like to claim and let the rivals knock it down. Say the claim is that a record-clearing tool produced a wage gain. The rivals: the local labor market tightened that year, the person would have found a free legal-aid clinic within a few months anyway, the employers who hired them never ran a record check. Each rival you cannot defeat kills a stronger verb. <I>Contributed to</I> is what stands when you run out of rivals &mdash; the strongest verb none of them could defeat, which is a different thing from the strongest verb you can defend in a meeting.
+          Mayne does not run his method backwards to pick a verb. This essay does. Start with the strongest verb you would like to claim and let the rivals knock it down. Say the claim is that a record-clearing tool produced a wage gain. The rivals: the local labor market tightened that year, the person would have found a free legal-aid clinic within a few months anyway, the employers who hired them never ran a record check. Each rival you cannot defeat kills a stronger verb.{" "}
+          <InternalLink slug="seven-causes-one-bit">
+            Seven causes, one bit
+          </InternalLink>{" "}
+          made the same point about a hiring screen: an outcome that does not identify its cause cannot license a claim about what produced it. <I>Contributed to</I> is what stands when you run out of rivals &mdash; the strongest verb none of them could defeat, which is a different thing from the strongest verb you can defend in a meeting.
         </P>
         <P>
           Education writes a version of this ladder into law. The <a href="https://www.law.cornell.edu/uscode/text/20/7801" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Every Student Succeeds Act</a> (2015) grades school interventions by the kind of study behind them, from an experiment down to a research-backed rationale, and it has no tier for a claim whose rival explanations were tested and defeated: the row where cost puts most claims.
