@@ -5334,7 +5334,7 @@ export const ESSAYS: Essay[] = [
           <InternalLink slug="every-metric-is-a-claim">
             Every metric is a claim
           </InternalLink>{" "}
-          argued that a number with nothing behind it cannot be acted on. A composite is that problem with the warrant averaged away.
+          works that problem through for a single number. A composite is the same problem with the warrant averaged away.
         </P>
         <P>
           It also hides which pathway is the soft one, and that matters most the moment the number becomes a target. <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Goodhart&rsquo;s law</a> is the standing warning: once a fund optimizes toward its Dollars in Pockets ratio, optimization pressure will eventually find the softest pathway &mdash; the very one the blend has hidden. A metric that cannot show its weakest inference rewards inflating it.
@@ -5485,7 +5485,7 @@ export const ESSAYS: Essay[] = [
           <InternalLink slug="seven-causes-one-bit">
             Seven causes, one bit
           </InternalLink>{" "}
-          made the same point about a hiring screen: an outcome that does not identify its cause cannot license a claim about what produced it. <I>Contributed to</I> is what stands when you run out of rivals &mdash; the strongest verb none of them could defeat, which is a different thing from the strongest verb you can defend in a meeting.
+          puts a hiring screen to the same test: an outcome that does not identify its cause cannot license a claim about what produced it. <I>Contributed to</I> is what stands when you run out of rivals &mdash; the strongest verb none of them could defeat, which is a different thing from the strongest verb you can defend in a meeting.
         </P>
         <P>
           Education writes a version of this ladder into law. The <a href="https://www.law.cornell.edu/uscode/text/20/7801" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Every Student Succeeds Act</a> (2015) grades school interventions by the kind of study behind them, from an experiment down to a research-backed rationale, and it has no tier for a claim whose rival explanations were tested and defeated: the row where cost puts most claims.
