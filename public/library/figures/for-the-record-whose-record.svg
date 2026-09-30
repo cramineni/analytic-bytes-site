@@ -12,32 +12,34 @@
   <text x="315" y="124" font-size="21" letter-spacing="2" fill="#475569" text-anchor="middle">FROM OUTSIDE THE PLATFORM</text>
   <text x="885" y="124" font-size="21" letter-spacing="2" fill="#475569" text-anchor="middle">ONLY FROM INSIDE IT</text>
 
-  <rect x="70" y="148" width="490" height="162" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-  <rect x="70" y="148" width="4" height="162" fill="#0F2A4A"/>
-  <text x="315" y="186" font-size="22" fill="#0F2A4A" text-anchor="middle">Attendance</text>
-  <text x="315" y="224" font-size="22" fill="#0F2A4A" text-anchor="middle">Behavior incidents</text>
-  <text x="315" y="262" font-size="22" fill="#0F2A4A" text-anchor="middle">Classroom observations</text>
-  <text x="315" y="300" font-size="22" fill="#0F2A4A" text-anchor="middle">Notes fields and the BI layer</text>
+  <rect x="70" y="148" width="490" height="176" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="70" y="148" width="4" height="176" fill="#0F2A4A"/>
+  <text x="315" y="182" font-size="22" fill="#0F2A4A" text-anchor="middle">Attendance</text>
+  <text x="315" y="215" font-size="22" fill="#0F2A4A" text-anchor="middle">Behavior incidents</text>
+  <text x="315" y="248" font-size="22" fill="#0F2A4A" text-anchor="middle">Classroom observations</text>
+  <text x="315" y="281" font-size="22" fill="#0F2A4A" text-anchor="middle">Advising notes</text>
+  <text x="315" y="314" font-size="22" fill="#0F2A4A" text-anchor="middle">Notes fields and the BI layer</text>
 
-  <rect x="640" y="148" width="490" height="162" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
-  <rect x="640" y="148" width="4" height="162" fill="#0F2A4A"/>
-  <text x="885" y="205" font-size="22" fill="#0F2A4A" text-anchor="middle">Special-education billing</text>
-  <text x="885" y="253" font-size="22" fill="#0F2A4A" text-anchor="middle">Enrollment, transfers, discharges</text>
+  <rect x="640" y="148" width="490" height="176" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="640" y="148" width="4" height="176" fill="#0F2A4A"/>
+  <text x="885" y="196" font-size="22" fill="#0F2A4A" text-anchor="middle">Special-education billing</text>
+  <text x="885" y="243" font-size="22" fill="#0F2A4A" text-anchor="middle">Enrollment, transfers, discharges</text>
+  <text x="885" y="290" font-size="22" fill="#0F2A4A" text-anchor="middle">Financial aid disbursements</text>
 
-  <line x1="315" y1="318" x2="315" y2="352" stroke="#0F2A4A" stroke-width="1.6" marker-end="url(#wnavy)"/>
-  <line x1="885" y1="318" x2="885" y2="352" stroke="#0F2A4A" stroke-width="1.6" marker-end="url(#wnavy)"/>
+  <line x1="315" y1="330" x2="315" y2="364" stroke="#0F2A4A" stroke-width="1.6" marker-end="url(#wnavy)"/>
+  <line x1="885" y1="330" x2="885" y2="364" stroke="#0F2A4A" stroke-width="1.6" marker-end="url(#wnavy)"/>
 
-  <text x="315" y="386" font-size="21" fill="#475569" text-anchor="middle">the record is made elsewhere</text>
-  <text x="315" y="414" font-size="21" fill="#475569" text-anchor="middle">and fed in whenever</text>
-  <text x="885" y="386" font-size="21" fill="#475569" text-anchor="middle">somebody logs in, because the money</text>
-  <text x="885" y="414" font-size="21" fill="#475569" text-anchor="middle">is calculated off that entry</text>
+  <text x="315" y="398" font-size="21" fill="#475569" text-anchor="middle">the record is made elsewhere</text>
+  <text x="315" y="426" font-size="21" fill="#475569" text-anchor="middle">and fed in whenever</text>
+  <text x="885" y="398" font-size="21" fill="#475569" text-anchor="middle">somebody logs in, because the money</text>
+  <text x="885" y="426" font-size="21" fill="#475569" text-anchor="middle">is calculated off that entry</text>
 
-  <rect x="120" y="442" width="390" height="52" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
-  <text x="315" y="475" font-size="22" fill="#0F2A4A" text-anchor="middle">The platform goes sparse</text>
-  <rect x="690" y="442" width="390" height="52" fill="none" stroke="#0EA5E9" stroke-width="1.6"/>
-  <text x="885" y="475" font-size="22" fill="#0EA5E9" text-anchor="middle">The platform is kept current</text>
+  <rect x="120" y="454" width="390" height="52" fill="none" stroke="#0F2A4A" stroke-width="1.6"/>
+  <text x="315" y="487" font-size="22" fill="#0F2A4A" text-anchor="middle">The platform goes sparse</text>
+  <rect x="690" y="454" width="390" height="52" fill="none" stroke="#0EA5E9" stroke-width="1.6"/>
+  <text x="885" y="487" font-size="22" fill="#0EA5E9" text-anchor="middle">The platform is kept current</text>
 
-  <line x1="885" y1="498" x2="885" y2="528" stroke="#0EA5E9" stroke-width="1.6" marker-end="url(#wteal)"/>
-  <text x="885" y="562" font-size="21" fill="#0EA5E9" text-anchor="middle">and it usually belongs to the state,</text>
-  <text x="885" y="590" font-size="21" fill="#0EA5E9" text-anchor="middle">the district or the payer</text>
+  <line x1="885" y1="510" x2="885" y2="540" stroke="#0EA5E9" stroke-width="1.6" marker-end="url(#wteal)"/>
+  <text x="885" y="574" font-size="21" fill="#0EA5E9" text-anchor="middle">and it usually belongs to the state,</text>
+  <text x="885" y="602" font-size="21" fill="#0EA5E9" text-anchor="middle">the district or the payer</text>
 </svg>
