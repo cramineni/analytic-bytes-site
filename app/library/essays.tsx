@@ -10030,7 +10030,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "The systems in human-serving organizations keep the record for someone else. The people doing the work keep their spreadsheets. Where AI can carry one into the other.",
     date: "2026-09-25",
-    readingTime: "30 min read",
+    readingTime: "32 min read",
     summary:
       "In schools, clinics, campuses and nonprofits, systems exist to produce reports for someone else, so the people doing the work keep their own spreadsheets. AI makes it cheap to translate that local knowledge into explicit rules. It does not supply the person who decides whether the rules are right, or the discipline that reconciles the two records.",
     cover: "/library/covers/for-the-record.svg",
@@ -10078,16 +10078,16 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>Whose record is it</H2>
         <P>
-          There is a sharper version of this, and it sorts an organization&rsquo;s own platforms rather than its systems in general. Walk the portfolio and two groups come apart. The line between them is not compliance. Student discipline is collected federally, by a mandatory survey of all public school districts that covers discipline alongside enrollment and school climate (<a href="https://www.ed.gov/laws-and-policy/civil-rights-laws/civil-rights-data-collection-crdc" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Civil Rights Data Collection</a>, U.S. Department of Education). Where a state requires classroom observations, that is an obligation too. Both groups carry one.
+          There is a sharper version of this, and it sorts an organization&rsquo;s own platforms rather than its systems in general. Walk the portfolio and two groups come apart. The line between them is not compliance. Student discipline is collected federally, by a mandatory survey of all public school districts, generally collected every two years, that covers discipline alongside enrollment and school climate (<a href="https://www.ed.gov/laws-and-policy/civil-rights-laws/civil-rights-data-collection-crdc" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Civil Rights Data Collection</a>, U.S. Department of Education). Where a state requires classroom observations, that is an obligation too. Both groups carry one.
         </P>
         <P>
-          One group is kept current, even where every entry is manual. These are the systems an obligation can only be discharged inside. A special-education billing claim is filed from within the billing system, against each entry, and nothing outside it files the claim. Enrollment events, a transfer in or a discharge or a withdrawal, are recorded in the district&rsquo;s own student information system, which school staff reach with credentials that district issues, and the count that matters for funding is the one in there, not the copy the school holds in its own system. Higher education runs the same way, with a clock attached. A school has fifteen calendar days to report a Pell or Direct Loan disbursement into the Department of Education&rsquo;s Common Origination and Disbursement system, which the school does not own, and on the advance payment method it draws those funds down from the Department rather than from anything it holds itself (<a href="https://fsapartners.ed.gov/knowledge-center/fsa-handbook/2025-2026/vol4/ch2-disbursing-title-iv-funds" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Federal Student Aid Handbook 2025-26, volume 4</a>). In each case the money is calculated off an entry made in somebody else&rsquo;s system. That is what makes the obligation undischargeable from outside. A local file satisfies none of them, however carefully it is kept, so somebody has to log in.
+          One group is kept current, even where every entry is manual. These are the systems an obligation can only be discharged inside. A special-education billing claim is filed from within the billing system, against each entry, and nothing outside it files the claim. Enrollment events, a transfer in or a discharge or a withdrawal, are recorded in the district&rsquo;s own student information system, which school staff reach with credentials that district issues, and the count that matters for funding is the one in there, not the copy the school holds in its own system. Higher education runs the same way, with a clock attached. A school has fifteen calendar days to report a Pell or Direct Loan disbursement into the Department of Education&rsquo;s Common Origination and Disbursement system, which the school does not own, and on the advance payment method it draws those funds down from the Department rather than from anything it holds itself (<a href="https://fsapartners.ed.gov/knowledge-center/fsa-handbook/2025-2026/vol4/ch2-disbursing-title-iv-funds" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Federal Student Aid Handbook 2025-26, volume 4</a>). In each case the money sits on the other side of an entry made in somebody else&rsquo;s system, whether it is paid against that entry, counted from it, or drawn from the party the entry is owed to. That is what makes the obligation undischargeable from outside. A local file satisfies none of them, however carefully it is kept, so somebody has to log in.
         </P>
         <P>
           The other group can be fed later, and nothing governs how much later. Attendance is taken on paper or in a sheet and entered at the end of the day, or the next day, or at the end of the week. A behavior incident is written down somewhere and entered in retrospect. An advising note gets written between appointments, or after the term, or not at all. Nothing breaks when any of that slips, so nothing decides when it happens.
         </P>
         <P>
-          The difference is not that one group is entered by hand and the other is not. Both are. A service delivered and a transfer recorded also begin as somebody&rsquo;s local note, before anyone logs in to file them. What changes is how long the note is allowed to sit there. Where a payment is calculated off the entry, the timing is not left to local habit, because somebody is waiting to be paid. Where nothing is calculated off it, the timing is whatever the week allows.
+          The difference is not that one group is entered by hand and the other is not. Both are. A service delivered and a transfer recorded also begin as somebody&rsquo;s local note, before anyone logs in to file them. What changes is how long the note is allowed to sit there. Where money is waiting on the entry, the timing is not left to local habit, because somebody is waiting to be paid. Where nothing is waiting on it, the timing is whatever the week allows.
         </P>
         <P>
           So in both cases what the platform receives is a record that was made somewhere else. The sheet is the working copy and the platform is where it eventually lands, which is the pattern this essay is named for, showing up between platforms rather than between one owner and her system.
@@ -10231,7 +10231,7 @@ export const ESSAYS: Essay[] = [
           <B>The outside.</B> An enrollment decline can mean the school is losing families, or it can mean the region has fewer children in it, and the context that settles which sits in the state education department&rsquo;s reporting and in the National Student Clearinghouse. Pulling it and keeping it current was a job, and the job was nobody&rsquo;s. One person can now do it, because I did: the <a href="/pdds/governance-scorecard.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> panels pull public sources through a dbt pipeline with a model drafting and deterministic gates checking every claim (<InternalLink slug="extending-the-gates">Extending the gates</InternalLink>). Two limits stay. Where a source keeps its download behind a login, a person still has to go and get it, and provisional data gets revised, so a context number needs its vintage on it.
         </P>
         <P>
-          That is enough cases here. The four the companion takes sit one piece over: what happens when the world changes and the configuration does not. A state policy that reissues the codes. A vendor release that lands two quarters late. A year-end rollover that drops the field a trend needed. A model upgrade that arrives with no notes at all. Same division of labor, applied to change rather than to distance. That is the subject of the companion to this essay, <I>The delta nobody budgeted.</I> <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink> is about who has been carrying all of them on top of a real job.
+          That is enough cases here. The four the companion takes sit one piece over: what happens when the world changes and the configuration does not. A state policy that reissues the codes. A vendor release that lands two quarters late. A year-end rollover that drops the field a trend needed. A model upgrade that arrives with no notes at all. Same division of labor, applied to change rather than to distance. That is the subject of the companion to this essay, <InternalLink slug="the-delta-nobody-budgeted">The delta nobody budgeted.</InternalLink> <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink> is about who has been carrying all of them on top of a real job.
         </P>
         <H2>What does not move</H2>
         <P>
@@ -10260,7 +10260,33 @@ export const ESSAYS: Essay[] = [
           For whoever runs a program, a school or an agency with no data team, and for whoever holds the absorbed role inside it, the ask comes in an order.
         </P>
         <P>
-          Start by finding out which of your platforms is a point of discharge. For each one, write down what obligation it carries, whether that obligation can be discharged from outside the platform or only from inside it, who holds the credentials, whether your copy is upstream or downstream of the authoritative version, and how many hands the record passes through between that version and whoever reports on it. A platform carrying no obligation that can only be discharged inside it is discretionary, whatever the procurement memo said, and should be resourced on that basis or retired. Where your copy is downstream, say so on the dashboard. A number carried across by hand from somebody else&rsquo;s system has a vintage in the same way a public data release does, and nobody reading it can tell unless you write it down.
+          Start by finding out which of your platforms is a point of discharge. Take the platform list, and write down five things about each one.
+        </P>
+        <NumList>
+          <NumItem n={1}>
+            <B>The obligation.</B> What is owed out of this platform, and to whom: a claim, a count, a report, a filing, or nothing at all.
+          </NumItem>
+          <NumItem n={2}>
+            <B>Inside or outside.</B> Whether that obligation can be discharged from a record made somewhere else, or only from an entry made in this platform.
+          </NumItem>
+          <NumItem n={3}>
+            <B>The credentials.</B> Who can log in and file, named as people rather than as a department.
+          </NumItem>
+          <NumItem n={4}>
+            <B>Upstream or downstream.</B> Whether your copy is the one the event was first recorded in, or a copy of a version held somewhere else.
+          </NumItem>
+          <NumItem n={5}>
+            <B>The hops.</B> How many hands the record passes through between that version and whoever reports on it.
+          </NumItem>
+        </NumList>
+        <P>
+          Then read the answers. A platform carrying no obligation that can only be discharged inside it is discretionary, whatever the procurement memo said, and should be resourced on that basis or retired. Where your copy is downstream, say so on the dashboard. A number carried across by hand from somebody else&rsquo;s system has a vintage in the same way a public data release does, and nobody reading it can tell unless you write it down.
+        </P>
+        <P>
+          The audit is not an argument for owning fewer platforms. Discretionary does not mean worthless, and the working sheets this essay spends its length defending are discretionary by this test. What the audit tells you is which platforms stay current on their own and which do not, and the two groups need different things.
+        </P>
+        <P>
+          A platform on the discharge side keeps itself current, because a payment or a filing is waiting on the entry. It is still making the record twice, once in the sheet where the work happens and once in the platform where the obligation is discharged, and the round trip is what removes the second making. On the other side nothing is waiting, so the platform stays current only if somebody is given the step, the time and the reason to make the entry. That is a staffing and process question rather than a software one, and the two places to answer it are procurement and implementation. The round trip belongs here too, because part of why the entry does not get made is that making it is a second job nobody was given. The alternative is to answer all of this a year later, when the platform is empty and the explanations still available are that people need more training, or that another system would fill the gap.
         </P>
         <P>
           Point AI at the seam between the trusted spreadsheet and the system of record, before pointing it at the analytics. Keep the working sheets. Let the model propose the translation, let the owner confirm it, and let ordinary code run it. A dashboard built on top of a system the owners route around inherits everything that did not get entered.
