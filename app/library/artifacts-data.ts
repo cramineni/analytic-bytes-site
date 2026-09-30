@@ -36,6 +36,12 @@ export const ARTIFACTS: Artifact[] = [
       "The chain every diagnostic piece in the library traces, and the links a piece can name as the place it stops working: construct, representation, inference, decision, action, consequence, and the return leg that carries what the outcome showed back into the next measurement. Beneath it, where the three failure points named in The Decision System \u2014 meaning, authority, validity \u2014 sit along the chain. The \u201cbreaks at\u201d line on each essay page points here.",
     image: "/library/artifacts/the-decision-chain.svg",
     slug: "the-decision-chain",
+    referencedIn: [
+      {
+        slug: "four-jobs-one-loop",
+        title: "Four jobs, one loop.",
+      },
+    ],
   },
   {
     title: "Decision-System Architecture — the four disciplines",
@@ -53,18 +59,24 @@ export const ARTIFACTS: Artifact[] = [
     referencedIn: [
       {
         slug: "the-contracts-between-systems",
-        title: "The contracts between systems",
+        title: "The contracts between systems.",
       },
       {
         slug: "blown-assignment",
-        title:
-          "It’s not a communication issue. It’s a blown assignment.",
+        title: "It’s not a communication issue. It’s a blown assignment.",
       },
       {
         slug: "functions-dont-run-plays",
         title: "Functions don’t run plays.",
       },
-      { slug: "the-decision-system", title: "The Decision System" },
+      {
+        slug: "the-decision-system",
+        title: "The Decision System",
+      },
+      {
+        slug: "plumbing-got-upgraded-water-didnt",
+        title: "Plumbing got upgraded. The water didn’t.",
+      },
     ],
   },
   {
@@ -104,6 +116,12 @@ export const ARTIFACTS: Artifact[] = [
       "AI raises both an organization's decision load and its decision capacity. Whether the gap closes or opens is a design choice. Deploy without redesign and a leader quietly becomes the buffer the system never built. Design for capacity expansion and the system absorbs what was previously personal.",
     image: "/library/artifacts/decision-load-vs-capacity.svg",
     slug: "decision-load-vs-capacity",
+    referencedIn: [
+      {
+        slug: "for-the-record",
+        title: "For the record.",
+      },
+    ],
   },
   {
     title: "The Data Role Landscape",

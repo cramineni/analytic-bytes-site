@@ -47,9 +47,9 @@
     <text x="250" y="475" font-size="22" fill="#0F2A4A" text-anchor="middle">The record</text>
     <text x="250" y="500" font-size="18" fill="#475569" text-anchor="middle">made outside the work</text>
     <!-- arrow out to the audit -->
-    <path d="M370 480 H450" stroke="#0F2A4A" stroke-width="1.4" fill="none"/>
-    <path d="M450 480 l-10 -6 v12 z" fill="#0F2A4A"/>
-    <text x="460" y="486" font-size="18" fill="#475569">state, funder</text>
+    <path d="M370 480 H470" stroke="#0F2A4A" stroke-width="1.4" fill="none"/>
+    <path d="M470 480 l-10 -6 v12 z" fill="#0F2A4A"/>
+    <text x="470" y="508" font-size="18" fill="#475569" text-anchor="middle">state, funder</text>
   </g>
 
   <!-- divider -->
