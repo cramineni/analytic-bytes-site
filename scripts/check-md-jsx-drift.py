@@ -134,12 +134,26 @@ def md_units(md):
     return [x for x in out if len(x)>25]
 
 def orphans(A,B,cut=0.93):
-    pool=list(B); out=[]
+    return pair(A,B,cut)[0]
+
+
+def pair(A,B,cut=0.93):
+    """Return (orphans, edited_pairs).
+
+    A fuzzy match at 0.93 pairs a paragraph with its counterpart even when a
+    sentence inside it has been rewritten, which is how v1.24 of For the record
+    reported 'in sync' while two paragraphs had changed. Paragraph-level orphans
+    catch additions and deletions; EDITED catches rewrites inside a paired
+    paragraph. Both are needed."""
+    pool=list(B); orph=[]; edited=[]
     for x in A:
         m=difflib.get_close_matches(x,pool,n=1,cutoff=cut)
-        if m: pool.remove(m[0])
-        else: out.append(x)
-    return out
+        if m:
+            pool.remove(m[0])
+            if m[0]!=x: edited.append((x,m[0]))
+        else:
+            orph.append(x)
+    return orph, edited
 
 def match(f):
     md=open(f).read(); fm=md.split('\n---\n',1)[0]
@@ -157,9 +171,9 @@ fail=[]
 for tf in TESTS:
     slug,md=match(os.path.join(D,tf))
     J,M=jsx_units(REG[slug]['blk']),md_units(md)
-    mo,jo=orphans(M,J),orphans(J,M)
-    ok = (len(mo)+len(jo))==0
-    print("SELF-TEST %-38s MD %-3d JSX %-3d orphans %d/%d  %s"%(tf,len(M),len(J),len(mo),len(jo),"PASS" if ok else "FAIL"))
+    mo,ed=pair(M,J); jo=orphans(J,M)
+    ok = (len(mo)+len(jo)+len(ed))==0
+    print("SELF-TEST %-38s MD %-3d JSX %-3d orphans %d/%d edited %d  %s"%(tf,len(M),len(J),len(mo),len(jo),len(ed),"PASS" if ok else "FAIL"))
     if not ok: fail.append(tf)
 if fail:
     print("\nParser fails its own known-good cases (%s). Not reporting library numbers."%", ".join(fail)); sys.exit(1)
@@ -170,19 +184,23 @@ for f in sorted(glob.glob(D+"/*.md")):
     slug,md=match(f)
     if not slug: unm.append(os.path.basename(f)); continue
     J,M=jsx_units(REG[slug]['blk']),md_units(md)
-    mo,jo=orphans(M,J),orphans(J,M)
-    rows.append(dict(f=os.path.basename(f),slug=slug,J=len(J),M=len(M),mo=len(mo),jo=len(jo),
+    mo,ed=pair(M,J); jo=orphans(J,M)
+    rows.append(dict(f=os.path.basename(f),slug=slug,J=len(J),M=len(M),mo=len(mo),jo=len(jo),ed=len(ed),
                      ver=bool(re.search(r'status:\s*"v',md)),draft=REG[slug]['draft'],
                      mo_ex=mo[:1],jo_ex=jo[:1]))
-rows.sort(key=lambda r:-(r['mo']+r['jo']))
-print("%-40s %-8s %-8s %-9s %s"%("markdown file","MD/JSX","MD-only","JSX-only","verdict"))
-print("-"*96)
+rows.sort(key=lambda r:-(r['mo']+r['jo']+r['ed']))
+print("%-40s %-8s %-8s %-9s %-7s %s"%("markdown file","MD/JSX","MD-only","JSX-only","edited","verdict"))
+print("-"*104)
 import collections; c=collections.Counter()
 for r in rows:
-    n=r['mo']+r['jo']
-    v=("in sync" if n==0 else "both ways" if r['mo'] and r['jo'] else "MD ahead" if r['mo'] else "JSX ahead")
+    n=r['mo']+r['jo']+r['ed']
+    if n==0: v="in sync"
+    elif r['mo'] and r['jo']: v="both ways"
+    elif r['mo']: v="MD ahead"
+    elif r['jo']: v="JSX ahead"
+    else: v="edited in place - fold owed"
     c[v]+=1
-    print("%-40s %-8s %-8d %-9d %s%s"%(r['f'][:39],"%d/%d"%(r['M'],r['J']),r['mo'],r['jo'],v,"  [DRAFT]" if r['draft'] else ""))
+    print("%-40s %-8s %-8d %-9d %-7d %s%s"%(r['f'][:39],"%d/%d"%(r['M'],r['J']),r['mo'],r['jo'],r['ed'],v,"  [DRAFT]" if r['draft'] else ""))
 print("\n",dict(c))
 print("files carrying a status/version line: %d of %d"%(sum(1 for r in rows if r['ver']),len(rows)))
 print("markdown not matched to the registry: %d"%len(unm))
