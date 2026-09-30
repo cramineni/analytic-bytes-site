@@ -10257,7 +10257,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>What to ask for</H2>
         <P>
-          For whoever runs a program, a school or an agency with no data team, and for whoever holds the absorbed role inside it, the ask comes in an order.
+          For whoever runs a program, a school, a clinic, an agency or a campus unit with no data team of its own, and for whoever holds the absorbed role inside it, the ask comes in an order.
         </P>
         <P>
           Start by finding out which of your platforms is a point of discharge. Take the platform list, and write down five things about each one.
@@ -10286,7 +10286,7 @@ export const ESSAYS: Essay[] = [
           The audit is not an argument for owning fewer platforms. Discretionary does not mean worthless, and the working sheets this essay spends its length defending are discretionary by this test. What the audit tells you is which platforms stay current on their own and which do not, and the two groups need different things.
         </P>
         <P>
-          A platform on the discharge side keeps itself current, because a payment or a filing is waiting on the entry. It is still making the record twice, once in the sheet where the work happens and once in the platform where the obligation is discharged, and the round trip is what removes the second making. On the other side nothing is waiting, so the platform stays current only if somebody is given the step, the time and the reason to make the entry. That is a staffing and process question rather than a software one, and the two places to answer it are procurement and implementation. The round trip belongs here too, because part of why the entry does not get made is that making it is a second job nobody was given. The alternative is to answer all of this a year later, when the platform is empty and the explanations still available are that people need more training, or that another system would fill the gap.
+          A platform on the discharge side keeps itself current, because a payment or a filing is waiting on the entry. It is still making the record twice, once in the sheet where the work happens and once in the platform where the obligation is discharged, and the round trip, which writes the record once from the sheet, is what removes the second making. On the other side nothing is waiting, so the platform stays current only if somebody is given the step, the time and the reason to make the entry. That is a staffing and process question rather than a software one, and the two places to answer it are procurement and implementation. The round trip belongs here too, because part of why the entry does not get made is that making it is a second job nobody was given. The alternative is to answer all of this a year later, when the platform is empty and the explanations still available are that people need more training, or that another system would fill the gap.
         </P>
         <P>
           Point AI at the seam between the trusted spreadsheet and the system of record, before pointing it at the analytics. Keep the working sheets. Let the model propose the translation, let the owner confirm it, and let ordinary code run it. A dashboard built on top of a system the owners route around inherits everything that did not get entered.

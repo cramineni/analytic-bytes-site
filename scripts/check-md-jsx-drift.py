@@ -165,18 +165,73 @@ def match(f):
             if v['title'].strip().lower()==ti.group(1).strip().lower(): return s,md
     return None,md
 
-# ---- SELF TEST: two files independently verified as 1:1 must come out clean
-TESTS=('for_the_record.md','valid_dollar.md','three_trainings_three_questions.md')
-fail=[]
-for tf in TESTS:
-    slug,md=match(os.path.join(D,tf))
-    J,M=jsx_units(REG[slug]['blk']),md_units(md)
-    mo,ed=pair(M,J); jo=orphans(J,M)
-    ok = (len(mo)+len(jo)+len(ed))==0
-    print("SELF-TEST %-38s MD %-3d JSX %-3d orphans %d/%d edited %d  %s"%(tf,len(M),len(J),len(mo),len(jo),len(ed),"PASS" if ok else "FAIL"))
-    if not ok: fail.append(tf)
-if fail:
-    print("\nParser fails its own known-good cases (%s). Not reporting library numbers."%", ".join(fail)); sys.exit(1)
+# ---- SELF TEST -----------------------------------------------------------
+# A synthetic fixture, not live files. Earlier versions self-tested against
+# for_the_record.md and valid_dollar.md, which meant any legitimate edit to
+# those essays failed the test and blocked the whole library report. The
+# fixture exercises one case per parser bug found on 2026-09-30.
+
+_FIX_MD = """---
+title: "Fixture"
+cover: "/library/covers/__fixture__.svg"
+---
+
+# Fixture.
+
+## In brief
+
+Brief paragraph one, long enough to clear the twenty-five character floor.
+
+Brief paragraph two, also long enough to clear the twenty-five character floor.
+---
+
+Lede paragraph that follows a rule glued to the paragraph above it, which is the
+bug that discarded every lede in the corpus.
+
+## A heading long enough to count
+
+Body paragraph with an [internal link](/library/somewhere) and *italic* text in it.
+
+![Alt text](/library/figures/x.svg)
+
+*A figure caption in italics, which must be skipped without swallowing deks.*
+
+*A standalone italic line that is a dek, not a caption, and must be kept.*
+
+<NumList>
+1. **First item.** Numbered lists sit inside NumList wrappers on both sides.
+2. **Second item.** So a list must pair item-for-item, not as one block.
+</NumList>
+"""
+
+_FIX_JSX = '''
+    <Brief>
+      <p>Brief paragraph one, long enough to clear the twenty-five character floor.</p>
+      <p>Brief paragraph two, also long enough to clear the twenty-five character floor.</p>
+    </Brief>
+    <P>Lede paragraph that follows a rule glued to the paragraph above it, which is the bug that discarded every lede in the corpus.</P>
+    <H2>A heading long enough to count</H2>
+    <P>Body paragraph with an <InternalLink slug="somewhere">internal link</InternalLink> and <I>italic</I> text in it.</P>
+    <Figure src="/library/figures/x.svg" alt="Alt text" caption="A figure caption in italics, which must be skipped without swallowing deks." />
+    <P><I>A standalone italic line that is a dek, not a caption, and must be kept.</I></P>
+    <NumList>
+      <NumItem n={1}><B>First item.</B> Numbered lists sit inside NumList wrappers on both sides.</NumItem>
+      <NumItem n={2}><B>Second item.</B> So a list must pair item-for-item, not as one block.</NumItem>
+    </NumList>
+'''
+
+_fj, _fm = jsx_units(_FIX_JSX), md_units(_FIX_MD)
+_mo, _ed = pair(_fm, _fj)
+_jo = orphans(_fj, _fm)
+print("SELF-TEST %-38s MD %-3d JSX %-3d orphans %d/%d edited %d  %s"
+      % ("(synthetic fixture)", len(_fm), len(_fj), len(_mo), len(_jo), len(_ed),
+         "PASS" if not (_mo or _jo or _ed) else "FAIL"))
+if _mo or _jo or _ed:
+    for x in _mo: print("   fixture MD-only :", x[:110])
+    for x in _jo: print("   fixture JSX-only:", x[:110])
+    for a_,b_ in _ed: print("   fixture edited  :", a_[:80], "||", b_[:80])
+    print("\nParser fails its own fixture. Not reporting library numbers.")
+    sys.exit(2)
 print()
 
 rows=[];unm=[]
