@@ -17,14 +17,33 @@ That makes two failure directions possible, and only one of them is visible:
 Only one markdown file carries a status/version line, so for the rest there is no
 provenance record to break the tie. That is the underlying problem this reports.
 
-Why the self-test: this comparison is easy to get quietly wrong. Earlier versions
-of this script reported 35 and then 36 "divergences" that were almost entirely
-parser bugs - the body split threw away everything after a mid-document rule, a
-'## In brief' heading was not recognised so Brief text leaked into the comparison,
-and numbered lists sat inside <NumList> wrappers on both sides. So the script
-first checks itself against files independently verified as 1:1 and REFUSES to
-print library numbers if it cannot reproduce them. A wrong number here is worse
-than no number, because it invites a fold that destroys live text.
+Why the self-test: this comparison is easy to get quietly wrong. Five separate
+parser bugs produced false verdicts before this settled, and each one looked
+plausible:
+
+  1. the body split discarded everything after a mid-document '---' rule
+  2. '## In brief' was not matched (the '##' was not stripped), so Brief text
+     leaked into the comparison as body prose
+  3. numbered lists sit inside <NumList> wrappers on BOTH sides, so a list read
+     as one markdown unit against four JSX ones
+  4. a '---' rule with no blank line above it glues to the paragraph before it,
+     so it never registers as its own block and the In-brief flag never resets -
+     this alone invented four "JSX ahead" essays
+  5. italic lines were skipped as figure captions even when they were deks or
+     closing lines
+
+Bugs 2 and 4 were both about finding the end of the markdown's In-brief block,
+which different files close with a rule, a whitespace-only line, or nothing. That
+guess is now gone: the JSX Brief is INCLUDED and compared Brief-to-Brief.
+
+So the script checks itself against files independently verified as 1:1 and
+REFUSES to print library numbers if it cannot reproduce them. A wrong number here
+is worse than no number, because it misdirects effort and can invite a fold that
+destroys live text.
+
+Read the counts with the right confidence: entries with many orphans on both
+sides are real divergences. Entries with one or two are near the noise floor and
+should be eyeballed before anyone acts on them.
 
 Usage:
     python3 scripts/check-md-jsx-drift.py
@@ -69,9 +88,13 @@ for a,b in zip(bl,bl[1:]):
     REG[s.group(1)]={'blk':k,'title':ti.group(1) if ti else '','draft':'draft: true' in k}
 
 def jsx_units(k):
-    br=re.search(r'<Brief>.*?</Brief>',k,re.S)
-    scan=k.replace(br.group(0),'') if br else k
-    scan=re.split(r'<SeeAlso>',scan)[0]
+    # The Brief is INCLUDED. Trying to locate the end of the markdown's In-brief
+    # block was the single largest source of false verdicts: some files close it
+    # with a rule, some with a whitespace-only line, some not at all. Comparing
+    # Brief-to-Brief removes the guess.
+    scan=re.split(r'<SeeAlso>',k)[0]
+    scan=scan.replace('<Brief>','').replace('</Brief>','')
+    scan=re.sub(r'<p>(.*?)</p>',r'<P>\1</P>',scan,flags=re.S)
     # NumItem carries numbered-list prose that the markdown writes as "1. ..."
     return [x for x in (norm(m.group(1) or m.group(2) or m.group(3))
             for m in re.finditer(r'<H2>(.*?)</H2>|<P>(.*?)</P>|<NumItem[^>]*>(.*?)</NumItem>',scan,re.S)) if len(x)>25]
@@ -79,21 +102,28 @@ def jsx_units(k):
 def md_units(md):
     body = md.split('\n---\n',1)[1] if '\n---\n' in md else md
     body = re.sub(r'<!--.*?-->','',body,flags=re.S)
+    # Horizontal rules are not always blank-line separated. Left glued to the
+    # paragraph above, a rule never registers as its own block, so the In-brief
+    # flag never resets and the whole lede gets skipped as Brief text. That
+    # produced four false "JSX ahead" verdicts before it was caught.
+    body = re.sub(r'(?m)^[ \t]*(-{3,}|\*{3,}|_{3,})[ \t]*$', '\n\n---\n\n', body)
     body = re.split(r'<SeeAlso>|<MetaNote>',body)[0]
-    out=[]; ib=False
+    out=[]; after_fig=False
     for p in re.split(r'\n\s*\n',body):
         p=re.sub(r'</?(NumList|NumItem|Brief)>','',p).strip()   # list wrappers sit in the MD too
         if not p: continue
-        if set(p)<=set('-*_ ') and len(p)>=3: ib=False; continue
+        if set(p)<=set('-*_ ') and len(p)>=3: continue
         if p.startswith('# '): continue
-        low=p.lstrip('#').strip('*').strip().lower()   # '## In brief' and '**IN BRIEF**'
-        if low.startswith('in brief'): ib=True; continue
-        if p.startswith('## '): ib=False; out.append(norm(p[3:])); continue   # <-- the reset
-        if p.startswith(('>','![','|','- ','* ','+ ')): continue      # blockquote, figure, table, Read-next list
+        low=p.lstrip('#').strip('*').strip().lower()
+        if low in ('in brief','ab field note') or low.startswith('in brief'): continue
+        if p.startswith('## '): out.append(norm(p[3:])); continue
+        if p.startswith('!['): after_fig=True; continue
+        if p.startswith(('>','|','- ','* ','+ ')): continue
         if '\u00b7' in p and 'analytic bytes' in p.lower(): continue   # byline line
         if re.match(r'^(chaitanya ramineni|analytic bytes)\b',p,re.I): continue
-        if ib: continue
-        if p.startswith('*') and p.endswith('*') and '](' not in p and len(p)<400: continue
+        if after_fig and p.startswith('*') and p.endswith('*'):
+            after_fig=False; continue          # figure caption only
+        after_fig=False
         clean=norm(re.sub(r'\[([^\]]+)\]\([^)]+\)',r'\1',re.sub(r'[*_`#]','',p)))
         if len(re.findall(r'(?m)^\s*\d+\.\s',p))>=2:
             for item in re.split(r'(?m)^\s*\d+\.\s+',p):
