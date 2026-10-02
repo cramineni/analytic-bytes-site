@@ -5610,7 +5610,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            A round of frameworks for governing AI in mental health has appeared in the last fifteen months: Polaris, the NAM Code of Conduct, APA guidance, VERA-MH, ASL-MH, a WHO workshop, and a thirteen-question procurement handbook from Trovane. They ask where inference happens, who the accountable clinician is, how detection performs across groups, what monitoring runs after launch, and whether a buyer can reach the clinical lead. Those are the right floor, and an institution that can answer them is well ahead of one that has not asked.
+            The last fifteen months have produced a round of frameworks for governing AI in mental health: Polaris, the NAM Code of Conduct, APA guidance, VERA-MH, ASL-MH, a WHO workshop, and a thirteen-question procurement handbook from Trovane. They ask where inference happens, who the accountable clinician is, how detection performs across groups, what monitoring runs after launch, and whether a buyer can reach the clinical lead. Those are the right floor, and an institution that can answer them is well ahead of one that has not asked.
           </p>
           <p>
             A vendor can answer all of them cleanly and still never have been asked what the detector detects. That is the question the rubrics leave out: does the system measure the mental-health construct it claims to? In mental health the question runs hardest, because every construct these systems score is latent, and the field has said on the record since 2010 that its own diagnostic categories lack validity.
@@ -5799,7 +5799,6 @@ export const ESSAYS: Essay[] = [
 
         <MetaNote>
           Written August 2026 for the Analytic Bytes Library as the third piece in the measurement-validity arc, following What is this system actually measuring? (higher education) and The valid dollar (impact investing). The rubric material is drawn from Trovane&rsquo;s handbook for evaluating AI mental-health tools (v1.2, 2026), including its author-disclosure appendix, and from the published description of the governance layer underneath the Lumara platform, which is the company&rsquo;s own account and is cited as such. Matthew Krome, co-founder of Trovane, read a draft and contributed the governance-latency argument in the third question; the clock-start caution attached to it is mine. Trovane was known as Mental Health Chat until 13 August 2026; the handbook, the preview post, and the platform described here are the same work under the current name. Krome read the final draft and confirmed he is comfortable being named.
-          <I>Four studies carry an argument here about how a number was produced: McBain et al., JAMA Pediatrics, June 2026 (DOI 10.1001/jamapediatrics.2026.2015), a RAND-led nationally representative survey; Ibrahim et al., 2026 (arXiv 2605.07912); Obermeyer et al., Science, 2019; and Weilnhammer et al., Nature Medicine, 7 August 2026. The VERA-MH human-validation study is cited as the February 2026 preprint, arXiv 2602.05088, which is the version this essay worked from and the version the Jester analysis responds to. The Bryan Jester analysis is a single secondary account and is attributed as such in the text rather than treated as an independent result. Other citations &mdash; Parente Health (July 2026), the NIMH RDoC framework (2010), the APA, NAM, WHO, Polaris, and ASL-MH documents &mdash; are used for their stated positions rather than for how a number was produced.</I>
         </MetaNote>
       </>
     ),
@@ -8676,20 +8675,20 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            A paper I co-authored in 2017 opened on a claim I have not been able to un-see since: human-machine agreement is a reliability indicator, not a validity strategy.
+            A paper I co-authored in 2017 opened on a claim I have worked from ever since: human-machine agreement is a reliability indicator, not a validity strategy.
           </p>
           <p>
             The reference was Bennett and Bejar (1997), and the argument was already twenty years old when we wrote it. In the years since, the modern AI evaluation discussion has been rebuilding it in a different vocabulary, often without the lineage that produced it the first time.
           </p>
           <p>
-            I spent seven years at Educational Testing Service evaluating AI-driven scoring systems for essays and speech. The discipline for evaluating whether AI systems measure what they claim already existed, developed against automated scoring engines a decade or two before AI eval was a term. The vocabulary was different. The problems were the same.
+            I spent seven years at Educational Testing Service evaluating AI-driven scoring systems for essays and spoken responses. The discipline for evaluating whether AI systems measure what they claim already existed, developed against automated scoring engines a decade or two before AI eval was a term. The vocabulary was different. The problems were the same.
           </p>
           <p>
             This essay maps eight of those disciplines to their modern equivalents, each with a citation from my published record as the receipt.
           </p>
         </Brief>
         <P>
-          &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo; That is the opening claim of a paper I co-authored with Brent Bridgeman in <I>Assessing Writing</I> in 2017 (Bridgeman &amp; Ramineni, 2017). Today the same question sits inside large-language-model-as-judge (LLM-as-judge) validation studies, disparate-performance benchmarks, red-teaming methods and benchmark contamination detection. My claim is that this work has a longer history than many current framings acknowledge, and that the history is worth reading before it is reinvented. The bridges below draw on my ETS work on scoring systems for the GRE (Graduate Record Examinations), TOEFL (Test of English as a Foreign Language) and Praxis (educator licensure tests).
+          &ldquo;Agreement with human scores on the same essays should not be the only validity criterion; indeed, it can be argued that such agreement is merely a reliability indicator, and not a proper validation strategy.&rdquo; That is the opening claim of a paper I co-authored with Brent Bridgeman (Bridgeman &amp; Ramineni, 2017). Today the same question sits inside large-language-model-as-judge (LLM-as-judge) validation studies, disparate-performance benchmarks, red-teaming methods and benchmark contamination detection. My claim is that this work has a longer history than many current framings acknowledge, and that the history is worth reading before it is reinvented. The bridges below draw on my ETS work on scoring systems for the GRE (Graduate Record Examinations), TOEFL (Test of English as a Foreign Language) and Praxis (educator licensure tests).
         </P>
         <Figure
           src="/library/figures/eight-bridges-classical-to-modern.svg"
