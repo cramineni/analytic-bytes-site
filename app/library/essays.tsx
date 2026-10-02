@@ -8446,7 +8446,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            I read Machines of Loving Grace from the measurement seat. What could happen is half the question; how we would know it did is the half I get paid for. Dario Amodei&rsquo;s five areas mostly raise the ceiling. Economic development is the one that raises the floor, and the essay treats it as a downstream beneficiary of breakthroughs made elsewhere. I would invert that. If AI raises the floor at all, distribution belongs in the causal model from the start.
+            Dario Amodei names five areas where powerful AI could change a human life. Four of them raise the ceiling, where the first gains reach whoever is already best served. Economic development is the one that raises the baseline for the people furthest from it, and the essay puts it last, as what the science eventually reaches. I would put it in the design. Which of those two orderings is right decides what gets specified, and only what gets specified can be checked.
           </p>
           <p>
             Then the harder part. The floor rose is a claim, not a result. Rose for whom, by how much, and did the capability cause it? Beneficial is a claim about an outcome, defined before the build and re-measured as the capability loop outruns the evaluation that would check it.
@@ -9676,7 +9676,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            In August, I read Machines of Loving Grace as a specification with the acceptance criteria left out. In September, Dario Amodei published the architecture of a test: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge and the right to publish. OpenAI said within days it would take embedded evaluators too.
+            In September, Dario Amodei published the architecture of a test: a capability trigger, an evidence requirement, and an independent evaluator with a desk, a badge and the right to publish. OpenAI said within days it would take embedded evaluators too. Both are commitments about model capability, made by the labs building it.
           </p>
           <p>
             The gate is well designed, and it covers the risk claim only. The benefit claim the essay opens with passes through no condition of the form: if a deployment claims outcome O for population P, it must carry evidence E before the claim is made. Pacing the frontier cannot supply that condition, because it cannot make a two-year outcome arrive in six months.
