@@ -8432,7 +8432,7 @@ export const ESSAYS: Essay[] = [
     number: "14",
     title: "The floor is the frontier.",
     subtitle:
-      "If powerful AI raises the floor at all, distribution belongs in the causal model from the start.",
+      "If powerful AI raises the floor at all, that’s not a side effect. It’s the whole point.",
     date: "2026-08-21",
     readingTime: "6 min read",
     summary:
@@ -8529,7 +8529,7 @@ export const ESSAYS: Essay[] = [
 
         <MetaNote>
           Written August 2026 for the Analytic Bytes Library. This is a measurement read of a published essay, not a forecast. Claims about what Machines of Loving Grace does and does not argue were checked against the essay itself; claims about evaluation practice come from the AB measurement arc linked above.
-          <I>Revision, 1 October 2026. Post-publication. The English-learner sentence now names the population behind each figure: sixteen to seventeen percent of students in the district the network was expanding into, against seven or eight percent of the network&rsquo;s enrollment there. The earlier version described two districts already moved into. The subtitle was also reworded.</I>
+          <I>Revision, 1 October 2026. Post-publication. The English-learner sentence now names the population behind each figure: sixteen to seventeen percent of students in the district the network was expanding into, against seven or eight percent of the network&rsquo;s enrollment there. The earlier version described two districts already moved into.</I>
         </MetaNote>
       </>
     ),
