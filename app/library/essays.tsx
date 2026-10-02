@@ -8444,10 +8444,10 @@ export const ESSAYS: Essay[] = [
             Then the harder part. The floor rose is a claim, not a result. Rose for whom, by how much, and did the capability cause it? Beneficial is a claim about an outcome, defined before the build and re-measured as the capability loop outruns the evaluation that would check it.
           </p>
         </Brief>
-
         <P>
           I read <a href="https://www.darioamodei.com/essay/machines-of-loving-grace" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Machines of Loving Grace</a> the way I read most things, from the measurement seat. What could happen is half the question. How we would know it did is the half I get paid for. Dario Amodei lays out five areas where powerful AI could change a human life: biology and health, neuroscience and mind, economic development and poverty, peace and governance, and work and meaning. The one that stayed with me was economic development, and it is also the one where I would push back the hardest.
         </P>
+        <H2>Most of it raises the ceiling</H2>
         <P>
           Most of the essay raises the ceiling. Biology and neuroscience are frontier moves: take the most advanced thing we can do and accelerate it. Curing a disease that has no cure saves lives, and nothing here argues against that. The people it reaches first are the people already best served. Development is the inverse. Its whole promise is lifting the baseline capability of the underserved many. That is the version of powerful AI I have spent a career trying to build, in education and in health, and it is the version the essay treats as an afterthought.
         </P>
@@ -8460,12 +8460,14 @@ export const ESSAYS: Essay[] = [
         <P>
           I would also expect the two areas Amodei is least sure of, governance and meaning, to get easier once baseline capacity rises. And I would expect the reverse where the floor does not rise: capability compounds where it lands, so unequal access becomes unequal capacity, and the distance is wider for the generation after. I cannot show either one, and the essay does not show them. Someone would have to say what that looks like in observable terms, and how they would measure it, before any of us could put weight on it.
         </P>
+        <H2>Education is the tell</H2>
         <P>
           Education is nearly absent, and the absence is the tell. The development section runs on the distribution of health interventions, economic growth, food security, mitigating climate change, inequality within countries, and what he calls the opt-out problem. Education is not one of the six. The word appears once in the essay, in the section on peace and governance, where Amodei expects improvements in mental health, well-being, and education to increase democracy, since all three are negatively correlated with support for authoritarian leaders. Education enters as a correlate of a political outcome. I would have given it the other seat. A capability does not reach a person just by existing. Somebody has to learn to use it, and education is that step. Leave education out and the capability still arrives, but it arrives at institutions before it arrives at people. That matters, because of how institutions carry people.
         </P>
         <P>
           Our institutions have always <InternalLink slug="we-used-to-settle-for-thumbnails">carried people as thumbnails</InternalLink>: a name, a score, a category standing in for a whole person. We compressed because carrying the full picture was expensive. That cost has now collapsed. So we face a choice the essay does not quite name: run the old compression faster, or rebuild our systems to carry more of the person forward to the human who has to act. Powerful AI makes both cheaper. Only one of them raises the floor.
         </P>
+        <H2>Attribution, then validity</H2>
         <P>
           And that is the part the essay leaves for someone else to do. <I>The floor rose</I> is a claim, not a result. Rose for whom? By how much? And did the capability cause it, or merely coincide with a change already underway?
         </P>
@@ -8484,16 +8486,15 @@ export const ESSAYS: Essay[] = [
         <P>
           What a model can do now that I could not do then is real. The most expensive thing I did on that engagement was copy years of NYSED district demographic data by hand. One table at a time, to see how the population around us had changed. A model does that in an afternoon. It can also reconcile the same child across systems that spell her name differently, and pull the attributes out of the spreadsheets where they were living. What it cannot do is tell me which of those eight persistence numbers my question needed. Each was correct under its own definition, and each definition existed because a different obligation required it. Choosing among them is a judgment about what persistence should mean for this question, this network, this year, after the population shifted underneath it. Nobody had done that <InternalLink slug="numbers-dont-agree">definitional reconciliation</InternalLink> yet, and no model does it for you. That work did not get faster, and it is the work the claim depends on.
         </P>
+        <H2>Where the acceptance criteria go</H2>
         <P>
           There is a loop hiding in the essay. Powerful AI accelerates its own improvement: measure, evaluate, learn, repeat, faster each turn. The same loop is available for the outcomes we actually care about, whether the floor is rising and for whom. But the two loops do not run at the same speed. Capability compounds quickly. The evaluation that tells us whether the capability was beneficial compounds slowly, because building a valid measure of a real-world outcome is patient work. The fair objection is that AI speeds up evaluation as well. It does, in parts. Drafting an instrument, cleaning a sample, running the analysis: all of that gets faster. The waiting does not. You cannot observe a two-year outcome in six months, and the part that stays slow is the part the warrant depends on. The faster the capability loop turns, the more load it puts on an evaluation layer that was already the harder half. If the eval cannot keep pace, we are scaling something we can no longer see.
         </P>
-
         <Figure
           src="/library/figures/the-floor-is-the-frontier-two-loops.svg"
           alt="Two tracks running over the same elapsed time. The capability loop on top — build, release, measure the model, improve — is drawn as eight blocks that narrow left to right, because each turn shortens the next. The evaluation loop below is a single turn split into four wide segments: define the construct, reach the right people, observe the outcome, establish the warrant. A dashed line marks where that first evaluation turn closes. Seven capability turns close inside its span. The cadence is illustrative; no cycle times are claimed."
-          caption="Two tracks running over the same elapsed time. The capability loop on top — build, release, measure the model, improve — is drawn as eight blocks that narrow left to right, because each turn shortens the next. The evaluation loop below is a single turn split into four wide segments: define the construct, reach the right people, observe the outcome, establish the warrant. A dashed line marks where that first evaluation turn closes. Seven capability turns close inside its span. The cadence is illustrative; no cycle times are claimed."
+          caption=""
         />
-
         <P>
           So I read this essay as a specification with the acceptance criteria left out. Beneficial is where the acceptance criteria go &mdash; a set of conditions somebody writes down before the build, checks after, and checks again as the system that produced the outcome shifts beneath them.
         </P>
