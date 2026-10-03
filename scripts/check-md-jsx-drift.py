@@ -234,10 +234,12 @@ if _mo or _jo or _ed:
     sys.exit(2)
 print()
 
-rows=[];unm=[]
+rows=[];unm=[];superseded=[]
 for f in sorted(glob.glob(D+"/*.md")):
     slug,md=match(f)
     if not slug: unm.append(os.path.basename(f)); continue
+    if re.search(r'(?m)^superseded:', md.split('\n---\n',1)[0]):
+        superseded.append((os.path.basename(f),slug)); continue
     J,M=jsx_units(REG[slug]['blk']),md_units(md)
     mo,ed=pair(M,J); jo=orphans(J,M)
     rows.append(dict(f=os.path.basename(f),slug=slug,J=len(J),M=len(M),mo=len(mo),jo=len(jo),ed=len(ed),
@@ -259,4 +261,7 @@ for r in rows:
 print("\n",dict(c))
 print("files carrying a status/version line: %d of %d"%(sum(1 for r in rows if r['ver']),len(rows)))
 print("markdown not matched to the registry: %d"%len(unm))
+if superseded:
+    print("\nmarkdown flagged SUPERSEDED (live essay is canonical; not compared): %d"%len(superseded))
+    for f,sl in superseded: print("   %-54s -> /library/%s"%(f,sl))
 sys.exit(0 if c["in sync"]==len(rows) else 1)
