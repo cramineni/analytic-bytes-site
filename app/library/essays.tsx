@@ -440,9 +440,7 @@ export const ESSAYS: Essay[] = [
             It isn’t. The reason deserves a leader’s attention before the
             signature goes on. The tool is the last decision in the sequence,
             not the first. The decisions that determine whether your reporting
-            changes how the organization acts come earlier, and they are not
-            technology decisions. They are decisions about which calls your
-            teams are trying to make, and whether everyone is working from the
+            changes how the organization acts come earlier than any technology choice. They are about which calls your teams are trying to make, and whether everyone is working from the
             same numbers. This is a <InternalLink slug="the-decision-system">decision-system question</InternalLink> misread as a
             procurement question.
           </p>
@@ -553,8 +551,7 @@ export const ESSAYS: Essay[] = [
         <P>
           No single tool is good at all three surfaces. What most teams end up
           with is a tool that is strong on one and just acceptable on the
-          others, accepted as “the BI stack” by default. That is not a tool
-          problem. It is what the org chart produces: one person who owns
+          others, accepted as “the BI stack” by default. The org chart produces this: one person who owns
           “BI,” one tool that owns “all reporting.” It will reproduce with
           whichever vendor you pick next, until the structure changes.
         </P>
@@ -2138,7 +2135,7 @@ export const ESSAYS: Essay[] = [
           The overlap group is where the argument is easiest. Alaska, South Dakota, Montana, Arizona, and Hawaii satisfy both commitments simultaneously, and for most funders that is where a first tranche belongs. The harder and more revealing conversations are the off-diagonal ones. Is a Minnesota — an unremarkable statewide rate hiding a more-than-threefold disparity — a priority for your mission? A burden ranking already answered “no” on your behalf before anyone in the room weighed in. The quadrant&rsquo;s value is that it puts the state back on the table and forces the answer to be given on purpose.
         </P>
 
-        <H2>The honest version</H2>
+        <H2>What the data cannot do</H2>
         <P>
           This is a field note, and being precise about what the data cannot do is part of the method — not a disclaimer bolted to the end.
         </P>
@@ -2174,7 +2171,7 @@ export const ESSAYS: Essay[] = [
           resources go), and the data it holds is being read through a single
           number that cannot carry the decision. The fix is not more data. It is
           a framework that disaggregates the signals the decision
-          rests on, shows them together, and stays disciplined about its own
+          depends on, shows them together, and stays disciplined about its own
           limits.
         </P>
         <P>
@@ -2639,8 +2636,7 @@ export const ESSAYS: Essay[] = [
           That interpretive shift, plus the tools, is the whole of it.
         </P>
         <P>
-          It sounds small. It is not. It is the difference between a tool you
-          use and a system you manage, and most of what a leader needs to weigh
+          It sounds small, but it is the difference between a tool you use and a system you manage, and most of what a leader needs to weigh
           follows from that one line.
         </P>
         <P>
@@ -2985,9 +2981,7 @@ export const ESSAYS: Essay[] = [
           hasn’t.
         </P>
         <P>
-          This is not an argument against keeping humans in the loop. It is an
-          argument against confusing two different roles humans play in that
-          loop. Humans as decision-makers are the people who act on a score,
+          This argues for keeping humans in the loop, and against confusing two different roles they play there. Humans as decision-makers are the people who act on a score,
           who decide what an early-alert flag means in a specific student’s
           life, who weigh the AI’s output against the rest of what they know.
           They should stay, and should stay clearly in charge. Humans as the
@@ -3498,13 +3492,13 @@ export const ESSAYS: Essay[] = [
         <H2>Granularity is its own governance problem</H2>
 
         <P>
-          Granularity is its own governance problem, and aggregation is where many institutions quietly compromise it. At the same K–8 network, daily attendance was a single data stream with at least three different operational lives. A single absence on a given day triggered an immediate workflow (outreach, follow-up, resolution), owned by an operations coordinator. Three consecutive days of absence triggered a different workflow, owned by a teacher or student-support counselor. Chronic absenteeism (eighteen or more days in a year, or more than ten percent of school days as a running rate) triggered a third workflow, owned by the principal. The same data, three aggregations, three views, three sets of decision rights, three stakeholders. Governance at the granularity layer was not deciding whether to compute these numbers. It was deciding which view triggered which workflow, who owned each decision, and what the legitimate translation among them was, knowing that you cannot break a chronic-absenteeism rate back into daily counts without losing what it measured.
+          Granularity is its own governance problem, and aggregation is where many institutions quietly compromise it. At the same K–8 network, daily attendance was a single data stream with at least three different operational lives. A single absence on a given day triggered an immediate workflow (outreach, follow-up, resolution), owned by an operations coordinator. Three consecutive days of absence triggered a different workflow, owned by a teacher or student-support counselor. Chronic absenteeism (eighteen or more days in a year, or more than ten percent of school days as a running rate) triggered a third workflow, owned by the principal. The same data, three aggregations, three views, three sets of decision rights, three stakeholders. At the granularity layer, the numbers were already being computed. Governance meant deciding which view triggered which workflow, who owned each decision, and how to translate between them legitimately, knowing that you cannot break a chronic-absenteeism rate back into daily counts without losing what it measured.
         </P>
 
         <H2>Architecture is governance</H2>
 
         <P>
-          Architecture is governance too. When a student-information system is replaced, or a behavioral-health electronic record is migrated to a new platform, the definitional question is not the migration. It is whether what the new system records is the same thing the old one recorded. You have to make field mappings explicit, add new fields where the schema changed, retire legacy fields only after every use case is covered, and train data-entry personnel on the new system&rsquo;s expectations for completeness, accuracy, and timeliness. None of that is technical work — it is definitional work at the architectural layer, the layer{" "}
+          Architecture is governance too. When a student-information system is replaced, or a behavioral-health electronic record is migrated to a new platform, the migration raises a definitional question of its own: does the new system record the same thing the old one recorded? You have to make field mappings explicit, add new fields where the schema changed, retire legacy fields only after every use case is covered, and train data-entry personnel on the new system&rsquo;s expectations for completeness, accuracy, and timeliness. None of that is technical work — it is definitional work at the architectural layer, the layer{" "}
           <InternalLink slug="the-contracts-between-systems">
             the contract between systems
           </InternalLink>{" "}
@@ -3514,7 +3508,7 @@ export const ESSAYS: Essay[] = [
         <H2>Stewardship is what makes it stick</H2>
 
         <P>
-          Quality is a continuous practice owned by the people closest to the data. The principal dashboard adoption rate of 70 percent at the K–8 network was not just a usage statistic. It was evidence of distributed stewardship. The principals did more than consume their numbers. They noticed anomalies, raised corrections, pushed back on definitions that did not serve their schools, and held the institution to its own standards. A central data office that owns quality alone is fragile. A network of stewards who own their own data, with shared definitions they help refresh, is durable. This is the model that survives leadership turnover, budget cycles, and reorganization.
+          Quality is a continuous practice owned by the people closest to the data. The 70 percent principal dashboard adoption rate at the K–8 network was a usage statistic, and it was also evidence of distributed stewardship. The principals did more than consume their numbers. They noticed anomalies, raised corrections, pushed back on definitions that did not serve their schools, and held the institution to its own standards. A central data office that owns quality alone is fragile. A network of stewards who own their own data, with shared definitions they help refresh, is durable. This is the model that survives leadership turnover, budget cycles, and reorganization.
         </P>
 
         <P>
@@ -3536,9 +3530,7 @@ export const ESSAYS: Essay[] = [
           definition relates to last year’s, and how the system that
           produces it connects to the systems that consume it, governance
           is working. When the policy document is elegant and the numbers
-          still do not agree, it is not. The work to do is not a better
-          framework. It is the slow, distributed work that lives inside
-          the framework: definitional reconciliation, crosswalks,
+          still do not agree, it is not. The remaining work happens inside the framework, and it is slow and distributed: definitional reconciliation, crosswalks,
           aggregation governance, architectural mapping, and stewardship.
           That work turns fragmented words about the institution into
           decision-ready meaning. It is the work most governance councils
@@ -3589,7 +3581,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-06-16",
     readingTime: "13 min read",
     summary:
-      "Integration is two questions stacked on top of each other: do the bytes move, and when they arrive, can anyone act on them. Institutions have answered the first across three eras and skipped the second, and the agentic era is about to make that gap load-bearing.",
+      "Integration is two questions stacked on top of each other: do the bytes move, and when they arrive, can anyone act on them. Institutions have answered the first across three eras and skipped the second, and the agentic era is about to make that gap consequential.",
     cover: "/library/covers/the-contracts-between-systems.svg",
     arc: "integration-governance",
     arcSecondary: "ai-systems",
@@ -3831,7 +3823,7 @@ export const ESSAYS: Essay[] = [
           </a></a>, only about one in five reported a mature governance model for agentic AI, while adoption ran well ahead of it. Who is allowed to write a gradebook entry on behalf of an AI tutor? What is the consent envelope under which a financial-aid agent moves a student between aid scenarios? When the advising assistant writes a recommendation into a student&rsquo;s record that the advisor never reviewed, what is the reversibility window, and who tells the advisor? The architectural question is the same one the behavioral-health case faces. The systems differ. The contract questions are identical.
         </P>
 
-        <H2>The freshness contract becomes load-bearing</H2>
+        <H2>The freshness contract becomes critical</H2>
 
         <P>
           The freshness contract (the discipline of treating timestamps
@@ -3972,7 +3964,7 @@ export const ESSAYS: Essay[] = [
           the old sense. Most modern houses have it. It’s table stakes.
         </P>
         <P>
-          The work that determines whether you can drink the water, cook with it, give it to a child, wash a wound — that work isn&rsquo;t in the pipes. It&rsquo;s: What&rsquo;s the source. Is the source clean. Did anything get added or removed upstream. What&rsquo;s the pressure at the faucet: too high and it sprays, too low and you can&rsquo;t fill a pot. Who&rsquo;s allowed to open which tap, what happens when the system fails, who notices.
+          The work that determines whether you can drink the water, cook with it, give it to a child, wash a wound, is a different set of questions: What’s the source. Is the source clean. Did anything get added or removed upstream. What&rsquo;s the pressure at the faucet: too high and it sprays, too low and you can&rsquo;t fill a pot. Who&rsquo;s allowed to open which tap, what happens when the system fails, who notices.
         </P>
         <P>
           None of that is plumbing. All of it is what having water actually feels like.
@@ -4465,7 +4457,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-07-03",
     readingTime: "7 min read",
     summary:
-      "A program officer, a portfolio manager, and a CSR lead can all report reach, but none can say whether it worked or where the next dollar should go. The usual diagnosis is a reporting problem. It isn’t. It’s a category error: a system of record for activity asked to behave like a system of record for outcomes.",
+      "A program officer, a portfolio manager, and a CSR lead can all report reach, but none can say whether it worked or where the next dollar should go. The usual diagnosis is a reporting problem, but the cause is a category error: a system of record for activity asked to behave like a system of record for outcomes.",
     cover: "/library/covers/the-reach-trap.svg",
     arc: "measurement",
     arcSecondary: "data-foundations",
@@ -4496,7 +4488,7 @@ export const ESSAYS: Essay[] = [
           of the system for free. They are byproducts of transactions the
           organization was already logging for other reasons: the grant
           was disbursed, so the dollars are counted; the session happened,
-          so attendance is counted. Reach is the exhaust of operations.
+          so attendance is counted.
         </P>
         <P>
           Outcomes are not exhaust. Nobody&rsquo;s operational system logs “and it worked” as a side effect of cutting a check. Whether a program actually moved its outcome has to be <I>constructed</I> — the outcome defined, placed on a scale, and made comparable to the next program that defines success in its own words. Reach is counted. Evidence is built. The reach trap is mistaking the first for the second, and then blaming the reporting when the second never shows up.
@@ -4564,7 +4556,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>What the spine actually is</H2>
         <P>
-          The rubric tells you where one grantee lands. The spine is what makes the whole book a book. It is the shared record shape — the same handful of columns for every grantee, every cycle: the outcome tier from the rubric, the leading signal you are watching, the confidence you have in the evidence behind it. That consistency isn&rsquo;t clerical tidiness — the shared columns <I>are</I> the structure. They are what a CRM&rsquo;s per-grantee custom fields can never be. One of those columns earns a definition the others assume. Confidence isn&rsquo;t a mood. It&rsquo;s how much weight the evidence behind a placement can bear: how strong it is, how recent, whether it is comparable to the grantee in the next row. Keep it vague and one officer&rsquo;s “high” is another&rsquo;s “medium.” Define it and the column carries actual weight.
+          The rubric tells you where one grantee lands. The spine is what makes the whole book a book. It is the shared record shape — the same handful of columns for every grantee, every cycle: the outcome tier from the rubric, the leading signal you are watching, the confidence you have in the evidence behind it. The shared columns are the structure, and a CRM’s per-grantee custom fields cannot provide it. One of those columns earns a definition the others assume. Confidence needs a definition: how much weight the evidence behind a placement can bear, meaning how strong it is, how recent, and whether it compares to the grantee in the next row. Keep it vague and one officer&rsquo;s “high” is another&rsquo;s “medium.” Define it and the column carries actual weight.
         </P>
 
         <Figure
@@ -4603,7 +4595,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Where to start</H2>
         <P>
-          You do not start by ripping out the CRM. You start by admitting it&rsquo;s a system of record for activity and will never be more. Then you build the small second system beside it. Name the four-point scale before you argue about metrics. Write down the semantic layer — the mapping from each grantee&rsquo;s language to the scale — because that is the part everyone wants to skip and the part that makes the rest work. Fix the three or four columns that will be identical for every grantee, forever. That is a spine. It is less software than people fear and more discipline than they hope. But it&rsquo;s the difference between a stack that hands you reach and a system that hands you decisions.
+          You do not start by ripping out the CRM. You start by admitting it&rsquo;s a system of record for activity and will never be more. Then you build the small second system beside it. Name the four-point scale before you argue about metrics. Write down the semantic layer — the mapping from each grantee&rsquo;s language to the scale — because that is the part everyone wants to skip and the part that makes the rest work. Fix the three or four columns that will be identical for every grantee, forever. That is a spine. Most of the work in it is agreeing on definitions rather than buying software, and it is what turns a stack that reports reach into a system that supports a decision.
         </P>
         <P>
           <I>
@@ -4809,9 +4801,7 @@ export const ESSAYS: Essay[] = [
           play.
         </P>
         <P>
-          The rules that matter most in any <InternalLink slug="the-decision-system">decision system</InternalLink> are not the
-          ones that tell people what to do. They are the ones that prevent
-          optimization from destroying the thing the system was built to
+          The rules that matter most in any <InternalLink slug="the-decision-system">decision system</InternalLink> are the ones that prevent optimization from destroying the thing the system was built to
           preserve. The Infield Fly Rule pre-resolves an exploit. The Free
           Guard Zone prevents convergent over-optimization. Offside
           preserves distributed structure. The Advantage Rule defends the
@@ -5137,7 +5127,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The failure has a shape, and the shape travels. A behavioral-health risk model trained on prior service utilization doesn&rsquo;t predict who is <I>at risk</I>; it predicts <I>who the system has already served</I>. Different sector, same mistake: accuracy against a proxy, mistaken for measurement of the construct. When the same error shows up in a school and a clinic, it isn&rsquo;t a domain quirk. It&rsquo;s a recurring failure mode, and the framework is what lets you name it before it ships.
+          The failure has a shape, and the shape travels. A behavioral-health risk model trained on prior service utilization doesn&rsquo;t predict who is <I>at risk</I>; it predicts <I>who the system has already served</I>. Different sector, same mistake: accuracy against a proxy, mistaken for measurement of the construct. When the same error shows up in a school and a clinic, it is a recurring failure mode rather than a domain quirk, and the framework is what lets you name it before it goes live.
         </P>
 
         <P>
@@ -5186,11 +5176,11 @@ export const ESSAYS: Essay[] = [
         <H2>Design the rules for the failure mode</H2>
 
         <P>
-          The best institutional rules aren&rsquo;t written to describe normal play; they&rsquo;re written to prevent predictable failure. Goodhart&rsquo;s law (<I>a measure that becomes a target stops being a good measure</I>) isn&rsquo;t a slogan for a poster. It&rsquo;s a design constraint. If a measure will be gamed, the system has to protect the construct before someone hollows it out by chasing the proxy. That&rsquo;s a whole essay of its own — see <InternalLink slug="why-the-rules-look-weird">Why the rules look weird</InternalLink>. For the decision-system, the corollary is simple: write the weird rule first.
+          The best institutional rules aren&rsquo;t written to describe normal play; they&rsquo;re written to prevent predictable failure. Goodhart&rsquo;s law (<I>a measure that becomes a target stops being a good measure</I>) works as a design constraint. If a measure will be gamed, the system has to protect the construct before someone hollows it out by chasing the proxy. That&rsquo;s a whole essay of its own — see <InternalLink slug="why-the-rules-look-weird">Why the rules look weird</InternalLink>. For the decision-system, the corollary is simple: write the weird rule first.
         </P>
 
         <P>
-          There&rsquo;s a payoff worth naming, and a temptation worth refusing. The marginal cost of storing and processing data has collapsed; the cost of making it <I>mean</I> something has not. That collapse tempts institutions toward a fantasy of total visibility: seeing each person <I>whole</I>. They can&rsquo;t, and shouldn&rsquo;t pretend to. The real move is smaller and harder: stop mistaking the fragment you measure for the person in front of you. For years a student showed up in our systems as a postage stamp: a score, a category, an enrollment number. The point of the architecture isn&rsquo;t to replace that thumbnail with a full portrait. It&rsquo;s to keep the institution honest about how little of her it sees, and to make that partial view legible to a decision instead of merely stored.
+          There&rsquo;s a payoff worth naming, and a temptation worth refusing. The marginal cost of storing and processing data has collapsed; the cost of making it <I>mean</I> something has not. That collapse tempts institutions toward a fantasy of total visibility: seeing each person <I>whole</I>. They can&rsquo;t, and shouldn&rsquo;t pretend to. The real move is smaller and harder: stop mistaking the fragment you measure for the person in front of you. For years a student showed up in our systems as a postage stamp: a score, a category, an enrollment number. The point of the architecture is more modest than a full portrait: to keep the institution honest about how little of her it sees, and to make that partial view legible to a decision instead of merely stored.
         </P>
 
         <H2>What the system is for</H2>
@@ -5964,7 +5954,7 @@ export const ESSAYS: Essay[] = [
             A line came out of a conversation with GPT one afternoon in May. I was trying to describe what AI had been doing for me over a year of using it, and the line landed: <I>AI did not write my library. AI helped me navigate it.</I> The library is mine. The voice is mine. What AI gave me was a surface to think on before the work went into the world.
           </p>
           <p>
-            This is a personal field note. It is not a universal claim. It is what I have learned in about twenty months of working with three generative AI tools across a career transition, a brand build, a family, and a re-entry into the kind of public-facing work I had been away from for years. Anyone who tells you the optimal way to use AI is making it up. I am telling you what worked for me, in the specific shape my life took.
+            This is a personal field note about what I have learned in about twenty months of working with three generative AI tools across a career transition, a brand build, a family, and a re-entry into the kind of public-facing work I had been away from for years. Anyone who tells you the optimal way to use AI is making it up. I am telling you what worked for me, in the specific shape my life took.
           </p>
           <p>
             The relationship had stages. Naming them is what the rest of this is for.
@@ -6068,7 +6058,7 @@ export const ESSAYS: Essay[] = [
           Gemini entered for critique. A third opinion on speaking applications, on a Monitoring and Evaluation Learning kit I was developing, on essay drafts.
         </P>
         <P>
-          The selection was not abstract. It was empirical. I used each tool for what each tool did well, and the assignments shifted as my needs shifted. The snapshot lives in the <ArtifactLink slug="multi-tool-selection-map">multi-tool selection map</ArtifactLink>.
+          The selection was empirical. I used each tool for what each tool did well, and the assignments shifted as my needs shifted. The snapshot lives in the <ArtifactLink slug="multi-tool-selection-map">multi-tool selection map</ArtifactLink>.
         </P>
         <P>
           One pattern worth naming: speaking work is hybrid, not Claude-only. The application drafting and thesis refinement live on Claude. The visual and metaphorical exploration (race vs room, Constellation Self, Tree with Silhouettes) happened on GPT, because that is where image generation could iterate with text in the same thread.
@@ -6085,7 +6075,7 @@ export const ESSAYS: Essay[] = [
           What <I>transferred</I> from GPT to Claude was the working pattern. The <B>pre-work surface</B> practice. The voice-protection discipline. The sycophancy-detection muscle. The iteration tolerance. The understanding that hundreds of turns produce one shippable artifact. The two-tool thinking &mdash; the idea that I could check one tool against another. None of that was learned on Claude. It was already operational by the time I opened my first real Claude thread.
         </P>
         <P>
-          What <I>expanded</I> on Claude was capability. Integration with image tools. Scheduled tasks. Job board scaffolding. A content workspace. A knowledge repository I am building now. RAG architecture I have not stood up yet but plan to. Agents through my current coursework. The work I do on Claude is broader and faster than the work I did on GPT, but the reason is not that I matured. It is that the tool can hold more.
+          What <I>expanded</I> on Claude was capability. Integration with image tools. Scheduled tasks. Job board scaffolding. A content workspace. A knowledge repository I am building now. RAG architecture I have not stood up yet but plan to. Agents through my current coursework. The work I do on Claude is broader and faster than the work I did on GPT. Part of that is the tool, which can hold more, and I cannot yet separate how much is the tool and how much is me.
         </P>
         <P>
           That distinction matters for the field-note thesis. I did not become an &ldquo;AI native&rdquo; through repeated use. I built a working pattern in one tool and brought it to another tool that could do more with the same pattern. Maturity transferred. Capability expanded. Two different curves.
@@ -6176,7 +6166,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written July 2026 for the Analytic Bytes Library as a personal field note. It is not a universal claim about how to use AI. It is one operator&rsquo;s account of twenty months across three tools. Related threads picked up elsewhere in the library: <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard.</InternalLink> (the course project that seeded the GPT relationship), <InternalLink slug="grounding-the-ai-layer">Grounding the AI layer.</InternalLink> (what has to be true underneath before AI is useful), and <InternalLink slug="actions-not-answers">Actions, not answers.</InternalLink> (where AI belongs in the operating loop).*
+          Written July 2026 for the Analytic Bytes Library as a personal field note: one operator’s account of twenty months across three tools. Related threads picked up elsewhere in the library: <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard.</InternalLink> (the course project that seeded the GPT relationship), <InternalLink slug="grounding-the-ai-layer">Grounding the AI layer.</InternalLink> (what has to be true underneath before AI is useful), and <InternalLink slug="actions-not-answers">Actions, not answers.</InternalLink> (where AI belongs in the operating loop).*
         </MetaNote>
       </>
     ),
@@ -6357,11 +6347,11 @@ export const ESSAYS: Essay[] = [
         <H2>The seam is where the hybrid is earned or paid for</H2>
 
         <P>
-          Both bets create governance contracts. The vendor-anchored domain inherits the vendor&rsquo;s contracts and supplements them with institutional rules. The federated domain owns its contracts end to end. The hybrid creates two sets of contracts plus a third set the institution most often misses: the seam contracts between the two domains. What data flows from the administrative side into the research side, under what de-identification rule, against what consent envelope. What inference the research side returns into the administrative side — and whether the administrative side is allowed to act on it. What freshness the seam guarantees, how the seam is audited, what happens when a record on one side is corrected after a downstream decision on the other side has already been made. These contracts are not theoretical. They are the failure mode of every hybrid that ran for two years before surfacing a governance breach nobody owned. The seam is where the institution either earns the hybrid or pays for the accident.
+          Both bets create governance contracts. The vendor-anchored domain inherits the vendor&rsquo;s contracts and supplements them with institutional rules. The federated domain owns its contracts end to end. The hybrid creates two sets of contracts plus a third set the institution most often misses: the seam contracts between the two domains. What data flows from the administrative side into the research side, under what de-identification rule, against what consent envelope. What inference the research side returns into the administrative side — and whether the administrative side is allowed to act on it. What freshness the seam guarantees, how the seam is audited, what happens when a record on one side is corrected after a downstream decision on the other side has already been made. These contracts describe the failure mode of every hybrid that ran for two years before surfacing a governance breach nobody owned. The seam is where the institution either earns the hybrid or pays for the accident.
         </P>
 
         <P>
-          What does a seam contract look like in operation, before the institution has it written down? Imagine an R1 running a vendor-anchored portal for undergraduate advising drafts alongside a federated internal stack for institutional-research retention forecasting. The seam contract specifies directionality first. The federated retention score can be read by the vendor portal to prompt the advisor in real time. The advisor&rsquo;s response, drafted with vendor-anchored AI assistance, cannot be written back to the core student-information system as a record-of-action without a twenty-four-hour human-in-the-loop reversibility window and an explicit second human review before commit. Retention rules come next: the vendor portal is allowed to retain the prompt, not the underlying retention vector that produced it; the federated stack is allowed to learn from the inference outcome, not the advisor&rsquo;s identity. Cadence sits on top of that: the retention score handed to the portal is refreshed nightly, and any advisor acting on a score older than seventy-two hours is alerted to re-check before continuing. Escalation is the last piece: any disagreement between the vendor-anchored draft and the federated risk signal flags a senior reviewer rather than auto-resolving to either side. Writing this out is not glamorous. It is what an R1 will wish it had done, before the first vendor portal silently commits a recommendation into a student record no advisor reviewed and no auditor can trace.
+          What does a seam contract look like in operation, before the institution has it written down? Imagine an R1 running a vendor-anchored portal for undergraduate advising drafts alongside a federated internal stack for institutional-research retention forecasting. The seam contract specifies directionality first. The federated retention score can be read by the vendor portal to prompt the advisor in real time. The advisor&rsquo;s response, drafted with vendor-anchored AI assistance, cannot be written back to the core student-information system as a record-of-action without a twenty-four-hour human-in-the-loop reversibility window and an explicit second human review before commit. Retention rules come next: the vendor portal is allowed to retain the prompt, not the underlying retention vector that produced it; the federated stack is allowed to learn from the inference outcome, not the advisor&rsquo;s identity. Cadence sits on top of that: the retention score handed to the portal is refreshed nightly, and any advisor acting on a score older than seventy-two hours is alerted to re-check before continuing. Escalation is the last piece: any disagreement between the vendor-anchored draft and the federated risk signal flags a senior reviewer rather than auto-resolving to either side. Writing this out takes time, and it is what an R1 will wish it had done, before the first vendor portal silently commits a recommendation into a student record no advisor reviewed and no auditor can trace.
         </P>
 
         <P>
@@ -6836,7 +6826,7 @@ export const ESSAYS: Essay[] = [
           for is not the role it has been screening for.
         </P>
         <P>
-          When a leader asks what they should do differently this time, the answer isn&rsquo;t tougher engineering screens or better recruiters. It&rsquo;s a rubric that names both halves of the role honestly, an interview process that assesses for both, and a reporting line that lets the governance half hold authority across the institution rather than defer to whichever function it reports into. Without those pieces, the screen keeps hiring engineers to do work half of which is not engineering. (For the paired argument on what the institution is actually betting on when it makes this hire, see{" "}
+          When a leader asks what they should do differently this time, the answer is a rubric that names both halves of the role, an interview process that assesses for both, and a reporting line that lets the governance half hold authority across the institution rather than defer to whichever function it reports into. Without those pieces, the screen keeps hiring engineers to do work half of which is not engineering. (For the paired argument on what the institution is actually betting on when it makes this hire, see{" "}
           <InternalLink slug="two-bets-one-institution">
             Two bets, one institution
           </InternalLink>
@@ -7133,7 +7123,7 @@ export const ESSAYS: Essay[] = [
           behavioral-health CCBHCs, national youth mental-health
           philanthropy, and educational measurement), and from
           watching the same evaluation-infrastructure gap surface in
-          each. The five-part load-bearing minimum is what the
+          each. The five-part essential minimum is what the
           organizations that have kept AI deployments honest actually
           run; the shared-infrastructure path is what the sector will
           need if the essential minimum is going to be sustainable at
@@ -7175,9 +7165,7 @@ export const ESSAYS: Essay[] = [
             informal, unowned, and one departure away from collapse.
           </p>
           <p>
-            The fix is not one more data-literacy program. It is a
-            three-layer architecture that respects what each kind of
-            data work actually requires: entry stays distributed
+            The fix is a three-layer architecture that respects what each kind of data work requires: entry stays distributed
             across delivery, interpretation stays decentralized with
             delivery roles who know context, and curation, integration,
             and governance get centralized in a specialized function
@@ -8889,7 +8877,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Three questions, asked of one document</H2>
         <P>
-          The three questions are not arbitrary. They are what <InternalLink slug="the-decision-system">a decision system</InternalLink> needs in order to be a system rather than a set of intentions: meaning, authority and validity. Something has to define the construct: what this is, and what counts as it. Then the call has to be allocated to whoever settles the thing when the evidence runs out. And the loop has to close, so that anyone can tell afterwards whether the calls were good. Take any one away and the other two stop working. Define a construct nobody may act on and you have a definition. Allocate a call with no measure behind it and you have an opinion with a signature. Settle and measure a question nobody has defined and you have an exact answer to a question nobody framed.
+          The three questions come from what <InternalLink slug="the-decision-system">a decision system</InternalLink> needs in order to be a system rather than a set of intentions: meaning, authority and validity. Something has to define the construct: what this is, and what counts as it. Then the call has to be allocated to whoever settles the thing when the evidence runs out. And the loop has to close, so that anyone can tell afterwards whether the calls were good. Take any one away and the other two stop working. Define a construct nobody may act on and you have a definition. Allocate a call with no measure behind it and you have an opinion with a signature. Settle and measure a question nobody has defined and you have an exact answer to a question nobody framed.
         </P>
         <P>
           None of those three functions is directly observable in a job posting, so each is read here through a single marker: a candidate attribute, a named decision, and a measure of the role&rsquo;s own work. The markers are narrower than the functions they stand for. A required master&rsquo;s degree is not a construct definition, and the count below is a count of the marker.
@@ -9301,7 +9289,7 @@ export const ESSAYS: Essay[] = [
           A data, AI or reporting transformation often delivers a capability too. A pipeline that moves data, a platform that stays up, a retrieval layer that answers in time &mdash; those are capabilities, and you can watch them work.
         </P>
         <P>
-          The difference arrives at a specific point. When the output becomes evidence for a decision, the transformation stops delivering only a capability and starts delivering a claim. That threshold is where validity enters, and a great deal of data and AI work crosses it on the day it ships. Validity is the third of the three things <InternalLink slug="the-decision-system">a decision system</InternalLink> has to hold, after meaning and authority.
+          The difference arrives at a specific point. When the output becomes evidence for a decision, the transformation stops delivering only a capability and starts delivering a claim. That threshold is where validity enters, and a great deal of data and AI work crosses it on the day it goes live. Validity is the third of the three things <InternalLink slug="the-decision-system">a decision system</InternalLink> has to hold, after meaning and authority.
         </P>
         <P>
           You cannot watch whether a claim is true by watching the system run. That is the difficulty once the output becomes evidentiary. The dashboard refreshes on schedule. The pipeline passes its tests. The model returns a score with four decimal places. Every operational signal says the transformation succeeded, and the number can still mean something other than what the decision assumed it meant.
@@ -9328,7 +9316,7 @@ export const ESSAYS: Essay[] = [
           And once the output is evidence, the question reaches the transformation itself, because the proof that it worked is produced by the very system under review.
         </P>
         <P>
-          Which means the three are not a sequence. The second question rests on the third. A return gets claimed on the strength of a number, so whether the spend returned is only ever as good as whether that number supports the claim.
+          Which means the three are not a sequence. The second question depends on the third. A return gets claimed on the strength of a number, so whether the spend returned is only ever as good as whether that number supports the claim.
         </P>
         <P>
           The federal graduation rate is the example I keep coming back to, because nothing about it is broken. It counts students who started full time, first time, at one institution, and finished at that same institution. Part-time entrants are outside the cohort by definition. So are transfer-ins. A student who leaves and finishes her degree somewhere else does not become a graduate of the college she started at, in that rate (<a href="https://nces.ed.gov/ipeds/use-the-data/student-cohorts-and-subgroups" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCES, IPEDS Graduation Rates component</a>). Nationally the cohort takes in about forty-seven percent of new undergraduates each fall (<a href="https://www.ihep.org/new-postsecdata-explainer-on-student-outcome-metrics-in-ipeds/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">IHEP</a>). That is a count of who gets measured, not of who finished. The rate is computed on those students and is silent about the rest. At an open-access college serving working students the share is smaller still, and the published rate gets read in the room as how well the college serves the students it has.
@@ -9404,7 +9392,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>What to select for</H2>
         <P>
-          Where the third question comes first, the seat needs demonstrated capability to validate an interpretation and its use. Somebody with measurement training may have unusually direct preparation for it. The selection procedure should still test the capability rather than read it off the credential &mdash; an essay that spends three thousand words on unvalidated proxies does not get to finish by recommending one.
+          Where the third question comes first, the seat needs demonstrated capability to validate an interpretation and its use. Somebody with measurement training may have direct preparation for it. The selection procedure should still test the capability rather than read it off the credential &mdash; an essay that spends three thousand words on unvalidated proxies does not get to finish by recommending one.
         </P>
         <P>
           If the honest answer is that all three come first, the requisition is describing more than one role. That is a real finding and it is better to have it before the search than eleven months into it.
@@ -10058,7 +10046,7 @@ export const ESSAYS: Essay[] = [
           So in both cases what the platform receives is a record that was made somewhere else. The sheet is the working copy and the platform is where it eventually lands, which is the pattern this essay is named for, showing up between platforms rather than between one owner and her system.
         </P>
         <P>
-          So the test is not what the obligation collects, or how often it is collected. It is whether the obligation can be discharged from outside the platform or only from inside it. That test has an uncomfortable consequence, because the systems that only work from inside are usually not the organization&rsquo;s. They belong to the state, the district or the payer.
+          So the test is whether the obligation can be discharged from outside the platform or only from inside it, whatever it collects and however often. That test has an uncomfortable consequence, because the systems that only work from inside are usually not the organization&rsquo;s. They belong to the state, the district or the payer.
         </P>
         <Figure
           src="/library/figures/for-the-record-whose-record.svg"
