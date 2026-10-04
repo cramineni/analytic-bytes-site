@@ -3915,7 +3915,7 @@ export const ESSAYS: Essay[] = [
           what it used to mean.
         </P>
         <P>
-          When I started in this work, <I>plumbing</I> was the hard part. Moving data between two enterprise systems took months. Integration was a strategic asset. Today the pipes have been industrialized — Fivetran, dbt, Snowflake, the cloud data platforms. The difficulty is no longer engineering the pipe; it&rsquo;s mostly paying the subscription and managing the configuration. The plumbing got upgraded. It&rsquo;s a solved problem class, even if individual lines still get clogged.
+          When I started in this work, <I>plumbing</I> was the hard part. Moving data between two enterprise systems took months. Integration was a strategic asset. Today the pipes have been industrialized — Fivetran, dbt, Snowflake, the cloud data platforms. The difficulty is no longer engineering the pipe; it&rsquo;s mostly paying the subscription and managing the configuration. The plumbing got upgraded. The pipes are mostly a commodity now. They still take work to assemble and keep running, but they are rarely where a decision breaks.
         </P>
         <P>
           So if “plumbing” was what I called the hard part of the work,
@@ -3943,7 +3943,7 @@ export const ESSAYS: Essay[] = [
           in all this.
         </P>
         <P>
-          For a long time, the only knob most data systems could really turn was speed. Faster pipes, more frequent refreshes, real-time dashboards. Speed got cheap — that&rsquo;s most of what the modern stack delivered.
+          For a long time, the knob most data systems turned hardest was speed. Faster pipes, more frequent refreshes, real-time dashboards. Speed got cheap — that&rsquo;s most of what the modern stack delivered.
         </P>
         <P>But speed isn’t the only knob. Two others have been sitting there the whole time.</P>
         <P>
@@ -3976,8 +3976,7 @@ export const ESSAYS: Essay[] = [
           faucet — who’s allowed to act on what comes out, at what
           resolution, on what cadence, and what kind of decision the
           architecture is built to support. An institution can have
-          mature data governance and almost no decision governance, and
-          the seam still fails.
+          mature data governance and almost no decision governance, and the seam still fails. Decision rights are an old idea in IT governance (<a href="https://store.hbr.org/product/it-governance-how-top-performers-manage-it-decision-rights-for-superior-results/2535" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Weill and Ross, 2004</a>), and decision intelligence points the same way. What that work rarely asks is the measurement question: is the signal still valid when someone acts on it?
         </P>
         <P>
           The same Thursday afternoon happens in a clinic. In a
@@ -4004,8 +4003,7 @@ export const ESSAYS: Essay[] = [
           authority. This is the contract at the seam: the point where
           the architecture stops and a person has to act on what comes
           through. Most institutions have a contract for the pipes:
-          vendor SLAs, integration agreements, data-sharing terms. Few
-          have one for what happens at the faucet.
+          vendor SLAs, integration agreements, data-sharing terms. In the institutions I have worked with, few have one for what happens at the faucet.
         </P>
         <P>
           The faucet itself is the moment someone turns the handle.
@@ -4030,7 +4028,7 @@ export const ESSAYS: Essay[] = [
         <P><I>On what cadence</I> the signal reaches them.</P>
         <P><I>What kind of decision</I> the system is built to support.</P>
         <P>
-          Most institutions skip the last piece: what kind of decision.
+          In my experience, most institutions skip the last piece: what kind of decision.
           They build for monitoring, then ask the same plumbing to
           support intervention, and the seam fails. The work is
           matching the architecture to the decision the institution
@@ -4048,11 +4046,10 @@ export const ESSAYS: Essay[] = [
           But the truth is, the unglamorous part isn’t the pipes
           anymore. The unglamorous part is the water — what’s in it,
           who decided what gets in, who’s responsible if it makes
-          someone sick. The pipes are fine. The pipes were never the
-          problem most institutions thought they were.
+          someone sick. The pipes are fine. The pipes were the hard part once. They are not the hard part now.
         </P>
         <P>
-          If I had to describe what I do now without picking a clever new name for it, I&rsquo;d just say it&rsquo;s water authority work: sourcing, testing, pressure, authority, and who’s allowed to drink. The integration layer is solved enough to not need most senior people&rsquo;s time. The layer that decides whether what comes out of the faucet is fit for purpose is barely staffed at most institutions, barely contracted for, barely measured. It&rsquo;s the gap between “we have a data warehouse” and “we can make a decision.”
+          If I had to describe what I do now without picking a clever new name for it, I&rsquo;d just say it&rsquo;s water authority work: sourcing, testing, pressure, authority, and who’s allowed to drink. The integration layer is solved enough to not need most senior people&rsquo;s time. The layer that decides whether what comes out of the faucet is fit for purpose is barely staffed at many institutions, barely contracted for, barely measured. It&rsquo;s the gap between “we have a data warehouse” and “we can make a decision.”
         </P>
         <P>Plumbing got upgraded. The water didn’t.</P>
         <P>That’s the work.</P>
@@ -4109,7 +4106,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-06-27",
     readingTime: "3 min read",
     summary:
-      "Most cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead: alignment, assignment, execution. Each phase fails differently, and a communication-issue diagnosis collapses all three.",
+      "Many cross-functional breakdowns get diagnosed as a communication issue and answered with another meeting. They’re a football play instead: alignment, assignment, execution. Each phase fails differently, and a communication-issue diagnosis collapses all three.",
     cover: "/library/covers/blown-assignment.svg",
     arc: "integration-governance",
     chainLink: ["decision-action"],
@@ -4118,7 +4115,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            Most cross-functional breakdowns get diagnosed as a communication
+            Many cross-functional breakdowns get diagnosed as a communication
             issue and answered with another meeting. The diagnosis collapses
             three different failure modes into one, and the meeting can name
             the breakdown without repairing any of them.
@@ -4138,7 +4135,7 @@ export const ESSAYS: Essay[] = [
           single coordinated burst against a defense built to break it.
         </P>
         <P>
-          Football coaches drill the same three-word mantra every year.
+          Football coaches drill a short sequence every season: alignment, assignment, execution. In plain words:
         </P>
         <P>Know where you stand. Know what you do. Run the play.</P>
         <P>
@@ -4177,7 +4174,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Why “a communication issue” is the wrong diagnosis</H2>
         <P>
-          Most institutions diagnose all three as the same problem.{" "}
+          Many institutions diagnose all three as the same problem.{" "}
           <I>We have a communication issue.</I> And schedule another meeting.
         </P>
         <P>
@@ -4191,7 +4188,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Where the AB lane sits</H2>
         <P>
-          Most of the work we get pulled into looks like a data problem on the surface. A dashboard nobody uses. A handoff that doesn&rsquo;t stick. A metric stuck in someone&rsquo;s email instead of a workflow. None of those are data problems. They are alignment problems, assignment problems, or execution problems misread as data problems.
+          Most of the work we get pulled into looks like a data problem on the surface. A dashboard nobody uses. A handoff that doesn&rsquo;t stick. A metric stuck in someone&rsquo;s email instead of a workflow. Most of those turn out not to be data problems. They are alignment problems, assignment problems, or execution problems misread as data problems.
         </P>
         <P>
           The fix is the play, written down, owned by named roles, with the contingencies designed in. That&rsquo;s the <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>. That&rsquo;s the artifact the modern data stack does not ship in the box.
@@ -4220,7 +4217,7 @@ export const ESSAYS: Essay[] = [
         <MetaNote>
           Written June 2026 for the Analytic Bytes Library. Composite of
           cross-functional patterns observed across K-12, behavioral health,
-          and higher-ed engagements; specific examples are abstracted. The
+          and higher-ed engagements; specific examples are abstracted. The reframe away from “a communication problem” has a long consulting history; <a href="https://managementblog.org/2021/10/06/not-a-communication-problem/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Tom Foster has argued for years</a> that the real issue is usually accountability and authority. The
           longer arguments referenced here live in companion pieces:{" "}
           <InternalLink slug="plumbing-got-upgraded-water-didnt">
             Plumbing got upgraded. The water didn’t.
@@ -4263,7 +4260,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-          Most modern work is cross-functional and time-bound. Most org charts are functional and indefinite. I keep coming back to that mismatch.
+          Much of modern work is cross-functional and time-bound. Most org charts are functional and indefinite. I keep coming back to that mismatch. Geary Rummler and Alan Brache named it in 1990: the white space on the organization chart.
         </p>
           <p>
             More than one honest structural form can carry that mismatch:
@@ -4289,7 +4286,7 @@ export const ESSAYS: Essay[] = [
         <P>
           There is more than one honest structural answer to the mismatch, and the field of practice is diverse: councils, steering committees, advisory boards, working groups, task forces, tiger teams, flash teams, agile squads, product teams and centers of excellence. Each one differs on permanence, authority, composition, and purpose. Each has a legitimate place.
         </P>
-        <P>Three archetypes cover most of the actual practice.</P>
+        <P>In my experience, three archetypes cover most of the practice.</P>
 
         <P>
           <I>Deliberate together, execute locally.</I> A cross-functional
@@ -4306,9 +4303,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          <I>Merge for the deliverable.</I> Flash teams (Melissa Valentine
-          and her collaborators at Stanford named this pattern), tiger
-          teams, project teams, task forces. Expertise is drawn from
+          <I>Merge for the deliverable.</I> Flash teams (a term from <a href="https://www.cs.rochester.edu/hci/pubs/pdfs/flashteams.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Retelny, Valentine, Bernstein and colleagues at Stanford, 2014</a>, for expert teams hired on demand from online talent markets; here the shape is borrowed for teams drawn from inside the institution), tiger teams, project teams, task forces. Expertise is drawn from
           across functions and merged into a single team for the duration
           of the work. When the work is done, the team dissolves and
           people go back to their functions. More common in tech, product,
@@ -4377,9 +4372,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written June 2026 for the Analytic Bytes Library. The flash-team
-          construct comes from Melissa Valentine and collaborators at
-          Stanford; the council, squad, and product-team archetypes reflect
+          Written June 2026 for the Analytic Bytes Library. The flash-team construct comes from Retelny, Valentine, Bernstein and colleagues at Stanford (UIST 2014), whose teams were hired from online talent markets; this note borrows the shape for internal teams. The ladder of lateral structures goes back to Galbraith (1973); the council, squad, and product-team archetypes reflect
           standard practice across higher education, foundations,
           healthcare, and tech. The longer arguments referenced here live
           in companion pieces:{" "}
@@ -5909,7 +5902,7 @@ export const ESSAYS: Essay[] = [
             A line came out of a conversation with GPT one afternoon in May. I was trying to describe what AI had been doing for me over a year of using it, and the line landed: <I>AI did not write my library. AI helped me navigate it.</I> The library and the voice are mine. What AI gave me was a surface to think on before the work went into the world.
           </p>
           <p>
-            This is a personal field note about what I have learned in about twenty months of working with three generative AI tools across a career transition, a brand build, a family, and a re-entry into the kind of public-facing work I had been away from for years. Anyone who tells you the optimal way to use AI is making it up. I am telling you what worked for me, in the specific shape my life took.
+            This is a personal field note about what I have learned in about twenty months of working with three generative AI tools across a career transition, a brand build, a family, and a re-entry into the kind of public-facing work I had been away from for years. Nobody has a settled answer on the best way to use AI. I am telling you what worked for me, in the specific shape my life took.
           </p>
           <p>
             The relationship had stages. Naming them is what the rest of this is for.
@@ -5944,7 +5937,7 @@ export const ESSAYS: Essay[] = [
           The reason GPT became useful was structural, not intellectual. The conversational contract was different from human conversation. With humans, I have to think of the most balanced curated version of what I want to say before I say it. With AI, I can say the thing, hear it back, reflect, refine. There was no pressure and no social cost.
         </P>
         <P>
-          Removing the social-performance overhead of conversation is what made AI usable for the kind of thinking that needed open space. Not because AI is non-judgmental or empathic. Those framings are sentimental and partly untrue. The benefit is structural. AI removes the contract that requires you to be composed before you speak.
+          Removing the social-performance overhead of conversation is what made AI usable for the kind of thinking that needed open space. Not because AI is non-judgmental or empathic. Those framings are sentimental and partly untrue. The benefit is structural. AI removes the contract that requires you to be composed before you speak. <a href="https://ict.usc.edu/?p=9601" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lucas and colleagues found a related effect in 2014</a>: people disclosed more to a virtual interviewer they believed was automated.
         </P>
         <P>
           By the end of those eight months, a working pattern had formed. Pre-work happened with AI. Polished outputs went into the world in my voice. I had learned to catch sycophancy and call it out (<I>&ldquo;why r u agreeeing with evetyhign i say&rdquo;</I>). I had learned to protect my voice from drift (<I>&ldquo;why is this not sounding me?&rdquo;</I>). I had learned that the volume of iteration was the point &mdash; that one banner image might take ninety turns and that was fine because the artifact was the deliverable, not the conversation.
@@ -5967,7 +5960,7 @@ export const ESSAYS: Essay[] = [
           I made one specific request inside that thread that I think about now: <I>&ldquo;talk to me like a management consultant and coach.&rdquo;</I> I cast the AI into a specific role at a specific emotional moment. Not just asking for help &mdash; directing the kind of help.
         </P>
         <P>
-          There is a flat version of this stage that says &ldquo;AI is good at emotional support,&rdquo; and most public writing on the topic lands there. The accurate version is different.
+          There is a flat version of this stage that says &ldquo;AI is good at emotional support,&rdquo; and much of the public writing on the topic lands there. The accurate version is different.
         </P>
         <P>
           There were other scaffolds: family, trusted advisors, and a household that had to keep running, which kept the tactical pressure real. What AI specifically gave me, that the humans in my life could not, was <I>open space alongside the tactical pressure</I>. The space to ask the same hard question eight different ways. The space to be repetitive without burdening anyone. The space to integrate what others had told me without the social contract of receiving advice in real time.
@@ -5976,7 +5969,7 @@ export const ESSAYS: Essay[] = [
           I avoid discussing difficult things with humans in general. I find them opinionated. Maybe that is bias on my part. I do not know. The truth is: I chose AI for the deep processing because the cost of using it was zero and the cost of using humans, even loving ones, was the social overhead I did not have bandwidth for in that period.
         </P>
         <P>
-          The thread closed two weeks in with an explicit marker: <I>&ldquo;two difficult weeks, but feeling in good place to move on.&rdquo;</I>
+          Two weeks in, on April 18, the thread reached an explicit marker: <I>&ldquo;two difficult weeks, but feeling in good place to move on.&rdquo;</I>
         </P>
 
         <H2>Stage 4 &mdash; Building. The brand pivot and the platform transition.</H2>
@@ -6010,7 +6003,7 @@ export const ESSAYS: Essay[] = [
           GPT kept the work it was already good at. Sharp operator phrasing when Claude felt too dense. Resume and cover-letter tailoring, especially for fast-turnaround applications. Visual generation for talk framing and LinkedIn Featured images, because GPT&rsquo;s image model is built into the conversation. Some reflection threads that just continued the pattern from earlier.
         </P>
         <P>
-          Gemini entered for critique. A third opinion on speaking applications, on a Monitoring and Evaluation Learning kit I was developing, on essay drafts.
+          Gemini entered for critique. A third opinion on speaking applications, on a Monitoring, Evaluation and Learning (MEL) kit I was developing, on essay drafts.
         </P>
         <P>
           The selection was empirical. I used each tool for what each tool did well, and the assignments shifted as my needs shifted. The snapshot lives in the <ArtifactLink slug="multi-tool-selection-map">multi-tool selection map</ArtifactLink>.
@@ -6024,7 +6017,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>What transferred. What expanded.</H2>
         <P>
-          Two things I want to separate, because they are usually conflated.
+          Two things I want to separate, because they are easy to conflate.
         </P>
         <P>
           What <I>transferred</I> from GPT to Claude was the working pattern. The <B>pre-work surface</B> practice. The voice-protection discipline. The sycophancy-detection muscle. The iteration tolerance. The understanding that hundreds of turns produce one shippable artifact. The two-tool thinking &mdash; the idea that I could check one tool against another. None of that was learned on Claude. It was already operational by the time I opened my first real Claude thread.
@@ -6048,7 +6041,7 @@ export const ESSAYS: Essay[] = [
           The averages point the other way. I kept using GPT after Claude arrived. In May and June, GPT threads averaged about 5.4 on the composite, and Claude threads averaged about 6.8. That gap between two tools in the same months is most of the rise across the year. Inside GPT alone, voice ownership rose from about 4.4 before April to about 6.3 after it. Meta-awareness and generative reframing did not rise inside GPT. They rose only in the Claude threads.
         </P>
         <P>
-          So the ceiling transferred. Voice ownership also moved inside a single tool, which is what a skill of mine would do. Meta-awareness and generative reframing moved with the tool. That could be capability expanding, as I wrote above. It could also be routing, because I sent the deeper work to Claude in Stage 5, and strategic altitude shows the same split. And the scorer was Claude, reading conversations it had been part of. Its own scoring notes say its read of me matured more than my read of it. The curve cannot separate these three explanations.
+          So the ceiling transferred. Voice ownership also moved inside a single tool, which is what a skill of mine would do. Meta-awareness and generative reframing moved with the tool. That could be capability expanding, as I wrote above. It could also be routing, because I sent the deeper work to Claude in Stage 5, and strategic altitude shows the same split. And the scorer was Claude, reading conversations it had been part of. Model scorers are known to favor their own text (<a href="https://arxiv.org/abs/2404.13076" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Panickssery et al., 2024</a>). Its own scoring notes say its read of me matured more than my read of it. The curve cannot separate these three explanations.
         </P>
         <P>
           What I can claim is narrower than what I first wrote. The working pattern formed on GPT, and the voice discipline traveled with me. Whether the rest was my maturity, the tool, the routing or the scorer is still open. The next scoring window needs GPT and Claude threads on the same kind of task. It also needs a scorer who was not in the conversation. The <InternalLink slug="auditing-an-ai-native-practice">companion field note</InternalLink> walks through the instrument.
@@ -6121,7 +6114,7 @@ export const ESSAYS: Essay[] = [
         </SeeAlso>
 
         <MetaNote>
-          Written July 2026 for the Analytic Bytes Library as a personal field note: one operator’s account of twenty months across three tools. Related threads picked up elsewhere in the library: <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard.</InternalLink> (the course project that seeded the GPT relationship), <InternalLink slug="grounding-the-ai-layer">Grounding the AI layer.</InternalLink> (what has to be true underneath before AI is useful), and <InternalLink slug="actions-not-answers">Actions, not answers.</InternalLink> (where AI belongs in the operating loop).*
+          Written July 2026 for the Analytic Bytes Library as a personal field note, and revised September 2026 to correct the dialogue-maturity reading: one operator’s account of twenty months across three tools. Related threads picked up elsewhere in the library: <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard.</InternalLink> (the course project that seeded the GPT relationship), <InternalLink slug="grounding-the-ai-layer">Grounding the AI layer.</InternalLink> (what has to be true underneath before AI is useful), and <InternalLink slug="actions-not-answers">Actions, not answers.</InternalLink> (where AI belongs in the operating loop).
         </MetaNote>
       </>
     ),
@@ -7456,7 +7449,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>How AI-work is typically measured, and what this audit does differently</H2>
         <P>
-          Most reporting on AI use at the practitioner level is
+          Much of the public reporting on AI use at the practitioner level is
           testimonial. &ldquo;It saved me hours.&rdquo; &ldquo;It writes
           my drafts.&rdquo; The claims are common, but the evidence base
           is usually one anecdote.
@@ -7514,8 +7507,8 @@ export const ESSAYS: Essay[] = [
         <P>
           Cutting across the three lenses is a fourth distinction the
           audit uses to describe the shape of AI engagement per
-          category. This is the naming contribution:{" "}
-          <B>HITL / AITL</B> used as a paired framework.
+          category. The audit uses{" "}
+          <B>HITL / AITL</B> as a paired frame. The pairing comes from <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35083" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Natarajan and colleagues (AAAI 2025)</a>. What this audit adds is placing each category from session signals.
         </P>
         <P>
           <B>HITL (Human-in-the-Loop).</B> AI drives; the human
@@ -7530,12 +7523,10 @@ export const ESSAYS: Essay[] = [
           thinking partner, drafts scaffolding, or synthesizes.
         </P>
         <P>
-          The two frames are standard AI-ops vocabulary. The move that
+          HITL is standard vocabulary. AITL is newer, and this piece uses Natarajan and colleagues’ definition. The move that
           matters here is using them as a <I>signal-informed</I> proxy
           for the load-carrier axis. HITL and AITL name who or what
-          carries the primary work. That axis was previously described
-          in prose (AI leads versus AI assists) without an operational
-          way to name it per category. Placement per category was
+          carries the primary work. Anthropic’s Economic Index makes a similar split between automation and augmentation across millions of conversations (<a href="https://arxiv.org/abs/2503.04761" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Handa et al., 2025</a>). This audit makes the split per category, for one practice. Placement per category was
           informed by token distribution, message volume, and
           user-turn patterns per session &mdash; categories where AI
           carried the output with few user turns landed HITL;
@@ -7584,7 +7575,7 @@ export const ESSAYS: Essay[] = [
           market-identity work &mdash; took another fifteen percent.
           Producing the practice&rsquo;s actual output &mdash; product,
           library, brand, talks, website &mdash; took about
-          thirty-eight percent. That mix reads as a
+          thirty-eight percent. Learning and reading took the remaining two percent. That mix reads as a
           practice-in-formation. Naming which stage you are in is the
           discipline.
         </P>
@@ -7706,8 +7697,7 @@ export const ESSAYS: Essay[] = [
           operator&rsquo;s own outputs. It runs whether or not an
           organization has written a policy or stood up a data
           governance team. Every operator working with AI is already
-          doing practitioner AI governance, badly or well. Almost none
-          are doing it with measurement discipline attached.
+          doing practitioner AI governance, badly or well. Few are doing it with measurement discipline attached.
         </P>
         <P>
           The claim this audit stands on is that measurement-validity
@@ -7760,8 +7750,7 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Kane&rsquo;s four-inference validity discipline.</B> The
           four inferences are scoring, generalization, extrapolation,
-          and implication. The stack applies unchanged to agent
-          evaluation. Scoring: did the agent&rsquo;s action correspond
+          and implication. The same four inferences should apply to agent evaluation. That is untested. Scoring: did the agent&rsquo;s action correspond
           to the intended output? Generalization: does the action hold
           across the agent&rsquo;s task family? Extrapolation: does it
           hold in production contexts the eval did not reach?
@@ -7830,7 +7819,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           <ArtifactLink slug="ab-three-lenses">Three Lenses</ArtifactLink>{" "}
-          &mdash; six task categories read through session count,
+          &mdash; the six largest of the ten task categories, read through session count,
           weighted-proxy volume, and token share, mapped to HITL and AITL
           bands.
         </P>
@@ -7953,7 +7942,7 @@ export const ESSAYS: Essay[] = [
           are complex-sample surveys. Their published values are <I>weighted estimates with confidence intervals</I>, suppressed below cell-size thresholds, and occasionally reset by an instrument redesign. A survey estimate is not a count you can re-tally from records; it carries uncertainty and provenance that a count does not.
         </P>
         <P>
-          <B>The levers stop having a date.</B> Title V and ESSA accountability are <I>continuous</I>. The money has attached for years. There is no 2012-penalty moment to measure a number against, the way HRRP gave us one. The pipeline&rsquo;s &ldquo;did the number move after the lever?&rdquo; engine assumes a point in time, and these levers don&rsquo;t have one.
+          <B>The levers stop having a date.</B> Title V and ESSA accountability have start dates, but no single moment separates before from after. In that sense they are <I>continuous</I>. The money has attached for years. There is no 2012-penalty moment to measure a number against, the way HRRP gave us one. The pipeline&rsquo;s &ldquo;did the number move after the lever?&rdquo; engine assumes a point in time, and these levers don&rsquo;t have one.
         </P>
 
         <H2>The clarifying principle, stated first</H2>
@@ -7972,7 +7961,7 @@ export const ESSAYS: Essay[] = [
           <B>1. Ingest-not-compute provenance tier.</B> Every value now carries a provenance class, record-derived or published-estimate. The grounding gate accepts both; the export records which. A published estimate arrives with its confidence interval, and the interval is a first-class value the note may cite. This is the primitive that makes NSCH and YRBSS panels possible without writing survey-variance code we&rsquo;d then have to defend.
         </P>
         <P>
-          <B>2. Suppression as a cell state.</B> A survey cell is one of three things: present, suppressed (below the disclosure threshold), or missing (the state didn&rsquo;t field it). It is never zero, and zero is never allowed to stand in for either of the other two. A new gate fails the build if a suppressed or missing cell renders as a number or as a bar of height zero. Small cells at state by race by poverty-band are the rule rather than the exception, so this gate earns its keep immediately.
+          <B>2. Suppression as a cell state.</B> A survey cell is one of three things: present, suppressed (below the disclosure threshold), or missing (the state didn&rsquo;t field it). It is never zero, and zero is never allowed to stand in for either of the other two. A new gate fails the build if a suppressed or missing cell renders as a number or as a bar of height zero. Small cells at state by race by poverty band are common, so this gate earns its keep immediately. The rule follows federal practice, such as the <a href="https://stacks.cdc.gov/view/cdc/47786" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCHS data presentation standards for proportions (Parker et al., 2017)</a>.
         </P>
         <P>
           <B>3. Version crosswalk.</B> When an instrument is redesigned, series that cross the redesign are not comparable. NSCH&rsquo;s 2016 redesign is the worked example: any flourishing chart that spans 2016 is simply wrong. The extension track enforces this structurally: the warehouse ingests only from the current instrument version onward (raw_flourishing_ext starts at 2016), so a series cannot cross an instrument boundary because the pre-boundary data is not present. Registering a documented crosswalk before extending the warehouse back across a boundary is the discipline; promoting the check to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. Same discipline applies within-series for item drift: if an item&rsquo;s wording or response options changed between releases, pooling across the change is disallowed until the change is disclosed. The crosswalk is the semantic layer that keeps two differently-worded instruments from being silently averaged into one trend.
@@ -7986,7 +7975,7 @@ export const ESSAYS: Essay[] = [
           <B>5. Lever typing.</B> A lever is now typed as point-in-time or continuous. The timing gate &mdash; the one that checks a number moved <I>after</I> its lever, not before &mdash; runs only on point-in-time levers and is marked explicitly not-applicable on continuous ones. This replaces the quiet dishonesty of inventing a pre/post for Title V just because the gate wanted a date. Naming the lever type is itself a finding the page should state.
         </P>
         <P>
-          <B>6. Uncertainty-aware &ldquo;did it move?&rdquo;</B> The NAEP panel already forces the note to say that a one- or two-point move isn&rsquo;t statistically distinguishable from noise. That logic generalizes: when a value carries a confidence interval, a change whose intervals overlap is reported as &ldquo;not distinguishable,&rdquo; full stop. The significance check stops being a NAEP special case and becomes a general CI-overlap caveat every survey panel must disclose &mdash; enforced by the required-caveats gate, which fails the build if the mandated significance phrase is missing from the panel&rsquo;s movement note.
+          <B>6. Uncertainty-aware &ldquo;did it move?&rdquo;</B> The NAEP panel already forces the note to name sampling error before it reads a one- or two-point move. That logic generalizes: when a value carries a confidence interval, a change whose intervals overlap is reported as “not distinguishable.” Overlap is a conservative screen. Two estimates can differ significantly even when their intervals overlap (<a href="https://jpsm.umd.edu/publication/schenker%2C-n%2C-and-gentleman%2C-jf-%282001%29%2C-judging-significance-differences-examining" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Schenker &amp; Gentleman, 2001</a>), so the phrase means the screen did not show a difference. The significance check stops being a NAEP special case and becomes a general CI-overlap caveat every survey panel must disclose &mdash; enforced by the required-caveats gate, which fails the build if the mandated significance phrase is missing from the panel&rsquo;s movement note.
         </P>
 
         <H2>Implementation note: shapes of enforcement</H2>
@@ -8008,7 +7997,7 @@ export const ESSAYS: Essay[] = [
           <B>Within New Jersey is the anchor.</B> A within-NJ trend, over years where NJ&rsquo;s own definition held constant, is the primary chart. This is the one comparison that needs no reconciliation layer, because the denominator is the same on both ends. Where NJ changed its own definition mid-series, the break is shown rather than smoothed.
         </P>
         <P>
-          <B>Neighbors come second, and only gated.</B> New York, Pennsylvania, Delaware &mdash; a comparison to neighboring states is allowed <I>only</I> with the definitional-variance layer (gate 4) attached, because the federal reporting itself calls these definitions inconsistent across states. Each state&rsquo;s denominator rule (enrolled days versus membership days, the minimum-enrollment cutoff before a student counts, treatment of mid-year transfers, excused versus unexcused) is shown beside its number. If we can&rsquo;t assemble the neighbors&rsquo; definitions from published state documentation, the neighbor comparison ships narrower or not at all; the within-NJ panel stands alone regardless.
+          <B>Neighbors come second, and only gated.</B> New York, Pennsylvania, Delaware &mdash; a comparison to neighboring states is allowed <I>only</I> with the definitional-variance layer (gate 4) attached, because states define an absent day differently (<a href="https://edweek.org/policy-politics/absenteeism-data-is-inconsistent-across-states-but-its-improving/2023/06" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Attendance Works, reported by EdWeek, 2023</a>). GAO has since found that federal chronic-absenteeism data cannot reliably be compared across schools or tracked over time (<a href="https://www.k12dive.com/news/chronic-absenteeism-calculation-unreliable-at-federal-level-gao-says/831430/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">GAO-26-107920, September 2026</a>). Each state&rsquo;s denominator rule (enrolled days versus membership days, the minimum-enrollment cutoff before a student counts, treatment of mid-year transfers, excused versus unexcused) is shown beside its number. If we can&rsquo;t assemble the neighbors&rsquo; definitions from published state documentation, the neighbor comparison ships narrower or not at all; the within-NJ panel stands alone regardless.
         </P>
         <P>
           <B>Private schools are outside the frame &mdash; say so.</B> EDFacts and state report-card collections cover public schools; private schools don&rsquo;t report into these accountability systems, so they are structurally absent from the data. That&rsquo;s a stated exclusion rather than a silent drop.
@@ -8022,7 +8011,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>What this panel set must still refuse to claim</H2>
         <P>
-          A falling chronic-absenteeism rate does not mean students are attending more, absent evidence that the definition and coding practice held constant. A cross-state difference reflects how each state defines the number at least as much as it reflects policy quality. A charter-vs-district gap reflects who enrolls where before it reflects any school effect. And none of this pushes down to community grain: the best national flourishing instrument publishes at state grain, and the only child indicator that reaches school grain is the one with accountability money attached and no stable cross-state definition. That gap is the argument.
+          A falling chronic-absenteeism rate does not mean students are attending more, absent evidence that the definition and coding practice held constant. A cross-state difference reflects how each state defines the number at least as much as it reflects policy quality. A charter-vs-district gap reflects who enrolls where before it reflects any school effect. And none of this pushes down to community grain: the best national flourishing instrument publishes at state grain, and the one child well-being indicator in this set that reaches school grain is the one tied to ESSA accountability, and it has no stable cross-state definition. That gap is the argument.
         </P>
 
         <H2>Status and provenance</H2>
