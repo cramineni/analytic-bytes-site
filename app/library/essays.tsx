@@ -2882,7 +2882,7 @@ export const ESSAYS: Essay[] = [
             By the start of 2026, most universities had done the visible work of responding to artificial intelligence. They had written policies on student and faculty use, stood up committees, run pilots: assistants for student services, drafting tools for staff, models that flag students who might be slipping. The scaffolding went up quickly, under real pressure &mdash; a contracting enrollment cliff, public questioning of the return on a degree, tightened federal funding.
           </p>
           <p>
-            The role of the technology executive shifted with it. In Deloitte&rsquo;s 2026 Global Technology Leadership Study, the large majority of CIOs described their primary job as implementing AI across the institution or serving as evangelists for it, moving, in the report&rsquo;s phrase, from keeping the lights on to lighting the way forward.
+            The role of the technology executive shifted with it. In Deloitte&rsquo;s <a href="https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/ai-future-it-function.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Tech Trends 2026</I></a>, 70% of CIOs surveyed said their primary role with generative AI was implementing it across the enterprise or serving as an evangelist for it. The report&rsquo;s phrase for the shift is from &ldquo;keep the lights on&rdquo; to &ldquo;light the way forward.&rdquo;
           </p>
           <p>
             That shift is real and, on balance, healthy. But there is a cost. When the mandate becomes adoption, we assume evaluation instead of performing it.
@@ -2950,8 +2950,7 @@ export const ESSAYS: Essay[] = [
           Validating an AI scoring engine against that relationship is a
           different question than validating it against immediate rater
           agreement on the timed essay itself. The relationship question is
-          whether the AI’s score on the timed essay predicts instructor
-          evaluations of the student’s actual coursework writing. Both
+          whether the AI’s score on the timed essay predicts instructor evaluations of the student&rsquo;s actual coursework writing. Brent Bridgeman and I ran that comparison at ETS with coursework from 194 graduate students (Bridgeman &amp; Ramineni, <a href="https://www.sciencedirect.com/science/article/abs/pii/S1075293517300399" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2017</a>). A model weighted to predict the coursework did no better than one weighted to match human raters, but the two favored different demographic subgroups. Equal accuracy against a criterion did not mean equal treatment of the people being scored. Both
           questions involve human judgment. The difference is where it sits:
           at the immediate output, where the human is the rater the AI is
           trained to match, or at the downstream construct expression, where
@@ -2975,7 +2974,7 @@ export const ESSAYS: Essay[] = [
           integration of the last decade, has also lowered the cost of running
           the harder question. The validity work that was once prohibitively
           expensive is newly affordable. The methodology was built for an older
-          cost structure. The cost structure has moved, and the methodology hasn’t.
+          cost structure. The cost structure has moved. Most validation practice still runs on the older one, even as ETS researchers argue that generative-AI scoring needs more validity evidence than the systems before it (Casabianca et al., <a href="https://arxiv.org/abs/2501.02334" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2025</a>).
         </P>
         <P>
           This argues for keeping humans in the loop, and against confusing two different roles they play there. Humans as decision-makers are the people who act on a score,
@@ -3030,7 +3029,7 @@ export const ESSAYS: Essay[] = [
           >
             EDUCAUSE&rsquo;s 2026 priorities
           </a>{" "}
-          name the human edge of AI, and data analytics for institutional decision-making, among the issues that matter most. University technology leaders have been clear that the next phase of AI work is operational, moving from written policy to running practice. Evaluation is the easiest part of that practice to skip, because it is invisible when it is working and expensive to do well. It also decides whether everything else is real.
+          name the human edge of AI, and data analytics for operational and financial insights, among the issues that matter most. In <a href="https://www.insidehighered.com/reports/2026/05/11/2026-survey-campus-chief-technologyinformation-officers" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Inside Higher Ed&rsquo;s 2026 survey of campus technology officers</a>, 54 percent said their AI work was still in the pilot phase, and 8 percent had moved it into core operations. Evaluation is the easiest part of that move to skip, because it is invisible when it is working and expensive to do well. It also decides whether everything else is real.
         </P>
         <P>
           Applying the discipline does not mean slowing adoption, and it does not mean another layer of bureaucracy. It means a small set of hard questions, asked consistently: before a system is trusted, and periodically after. Is the system measuring the intended construct, or a proxy for it? When it is wrong, what happens downstream, and to whom? Does it perform consistently across the different groups of people it touches, or does its accuracy concentrate where the training data was richest? What human decision is the system meant to support, and does its output improve that decision? None of these questions is exotic. They are the ordinary questions of measurement. A university that has an institutional research office and an assessment culture already employs people who know how to ask them. No one has pointed them at the AI systems moving into administrative use yet.
@@ -3419,7 +3418,7 @@ export const ESSAYS: Essay[] = [
           >
             EDUCAUSE&rsquo;s data-empowered-institution model
           </a>{" "}
-          distills the higher-education version to five components — data quality, integration, governance, management, and literacy. Both frames are correct about what to build. Both are necessary, and neither is sufficient. The operational work that makes governance stick — getting the registrar, financial aid, institutional research, and the deans into the same room to decide which version of “persistence” gets used where, and why each version exists — is slow, unglamorous, and often unwritten. Most councils never do it, so the framework looks complete and the numbers still do not agree.
+          points the higher-education version at a shorter list: data quality and integration, governance, literacy, and the staff to carry them. Both frames are correct about what to build. Both are necessary, and neither is sufficient. The operational work that makes governance stick — getting the registrar, financial aid, institutional research, and the deans into the same room to decide which version of “persistence” gets used where, and why each version exists — is slow, unglamorous, and often unwritten. Many councils never do it, so the framework looks complete and the numbers still do not agree.
         </P>
 
         <H2>Three definitions, one number, eight recalculations</H2>
@@ -3792,9 +3791,7 @@ export const ESSAYS: Essay[] = [
           patient consent to LLM-inferred annotations on their record? Did
           the clinician supervise the inference? Can the inference be
           reversed? What is the audit trail that lets a regulator answer
-          “what wrote this, and when” months after the fact? The
-          data-integration era’s contracts did not have to answer any of
-          those questions. The agentic era’s contracts do, before any
+          “what wrote this, and when” months after the fact? Provenance standards existed in the data-integration era, but few integration contracts required anyone to answer those questions. The agentic era’s contracts do, before any
           agent goes into production rather than after.
         </P>
 
@@ -5023,8 +5020,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The most common failure in an early-warning system isn&rsquo;t a
-          bad model. It&rsquo;s a{" "}
+          In the early-warning systems I have worked with, the most common failure was a{" "}
           <B>
             <InternalLink slug="blown-assignment">blown assignment</InternalLink>
           </B>{" "}
@@ -5078,7 +5074,7 @@ export const ESSAYS: Essay[] = [
         <P>The flag can still be measuring the wrong thing.</P>
 
         <P>
-          This is the hardest layer, and the one institutions skip.{" "}
+          This is the hardest layer, and the one institutions most often skip.{" "}
           <B>
             <InternalLink slug="what-is-this-system-measuring">Construct validity</InternalLink>
           </B>{" "}
@@ -5087,8 +5083,7 @@ export const ESSAYS: Essay[] = [
           wellbeing, quality), or merely a surface proxy that correlates
           with it? Train an “at-risk” model on enough history and it will
           learn to predict the proxy: the zip code, the demographic
-          pattern, the prior-discipline record. It will be accurate. It
-          will also be measuring the wrong student.
+          pattern, the prior-discipline record. It will be accurate. It will also be measuring the wrong student. <a href="https://arxiv.org/abs/2304.06205" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Perdomo and colleagues found a version of this in Wisconsin’s statewide early-warning system (2023)</a>: targeting by school and district worked about as well as the individual risk scores.
         </P>
 
         <P>
@@ -5113,7 +5108,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The failure has a shape, and the shape travels. A behavioral-health risk model trained on prior service utilization doesn&rsquo;t predict who is <I>at risk</I>; it predicts <I>who the system has already served</I>. Different sector, same mistake: accuracy against a proxy, mistaken for measurement of the construct. When the same error shows up in a school and a clinic, it is a recurring failure mode rather than a domain quirk, and the framework is what lets you name it before it goes live.
+          The failure has a shape, and the shape travels. A behavioral-health risk model trained on prior service utilization doesn&rsquo;t predict who is <I>at risk</I>; it predicts <I>who the system has already served</I>. <a href="https://www.science.org/doi/10.1126/science.aax2342" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Obermeyer and colleagues documented the same mechanism in a commercial health-risk algorithm (2019)</a>, which predicted spending in place of illness. Different sector, same mistake: accuracy against a proxy, mistaken for measurement of the construct. When the same error shows up in a school and a clinic, it is a recurring failure mode rather than a domain quirk, and the framework is what lets you name it before it goes live.
         </P>
 
         <P>
@@ -6240,7 +6235,7 @@ export const ESSAYS: Essay[] = [
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             Cal State University renewed its system-wide OpenAI deal
-          </a></a> in May 2026, at $13 million a year for three years, the largest active higher-ed enterprise agreement OpenAI carries, extending coverage across 470,000 students and 63,000 faculty and staff. These institutions made a defensible call. They also, by making it, accepted the trades.
+          </a></a> in May 2026, at $13 million a year for three years, one of the largest higher-ed enterprise agreements OpenAI carries, extending coverage across 470,000 students and 63,000 faculty and staff. These institutions made a defensible call. They also, by making it, accepted the trades.
         </P>
 
         <H2>What the federated bet buys, and what it trades</H2>
@@ -6344,8 +6339,7 @@ export const ESSAYS: Essay[] = [
         <P>
           K-12 learned this through Ed-Fi &mdash; the federation
           vendor lock-in forced into existence. The healthcare sector
-          learned it through HL7 v2 and FHIR, through the regulation
-          that mandated interoperability after decades of
+          learned it through HL7 v2 and FHIR, through the <a href="https://www.healthit.gov/sites/default/files/page/2022-03/Cures-Update-Fact-Sheet.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">ONC Cures Act Final Rule</a>, which required certified health IT to offer FHIR APIs by the end of 2022, after decades of
           Epic-and-Cerner consolidation. Both sectors learned, at
           substantial cost, that the contract layer matters more than
           the technology layer. Higher education and philanthropy can
@@ -6466,9 +6460,7 @@ export const ESSAYS: Essay[] = [
           interview questions for <I>&ldquo;can you author the contract
           that makes a $50M aid scenario reversible at machine cadence
           when the AI assistant gets the recommendation wrong?&rdquo;</I>{" "}
-          So the screen defaults to what it can measure. The engineering
-          half passes the rubric. The governance half is treated as
-          either implicit or as a soft skill that will fill itself in.
+          So the screen defaults to what it can measure. The engineering half passes the rubric. The governance half is treated as either implicit or as a soft skill that will fill itself in. <a href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/analytics-translator" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">McKinsey named part of this half in 2018 as the analytics translator</a>, a role it placed beside the data team; this piece argues the senior role has to hold it.
         </P>
         <P>
           The result is predictable. The institution hires a senior data engineer, who builds the integration. The integration runs and the dashboards work. The schemas are tight, the freshness SLAs hold, the lineage tooling reports green. And then the Provost still cannot get a 360 view, the program officer still cannot answer the funder when the number moves, and the clinician still cannot act on the population-health view because nobody has written the contract that says they are allowed to. The engineering succeeded, and the decision interface stayed unowned. The role failed at the half of its work that mattered.
@@ -6615,7 +6607,7 @@ export const ESSAYS: Essay[] = [
           service provider, and traditional enterprise.
         </P>
         <P>
-          The reporting line is the first signal the scan reveals. The roles overwhelmingly sit inside engineering functions. Director of Data Platforms postings at technology and ed-tech companies report into the CTO, VP of Engineering, or Chief Product and Technology Officer. Director of Data Analytics and Engineering postings at technology companies report into the CTO or VP of Engineering, and at media and ed-tech companies often into a Chief Product Officer or Chief Product and Technology Officer. At universities, Chief Data Officer or Associate CIO for Data roles report into the CIO. VP of Analytics roles at enterprise organizations report into IT or operations. Director of Data Analytics roles at K-8 networks and operationally-heavy mission-driven organizations often report into the COO. The exception, when it appears, is a small subset of foundations and MEL-anchored organizations where the role has been placed under a Chief Impact Officer or SVP for Design and Impact rather than a CIO. At a national mission-driven foundation, for example, a Director of Data Strategy and Impact Analytics (a MEL / Impact Measurement role in the map&rsquo;s general vocabulary) was structured to report into an SVP for design and impact rather than into IT. When the role sits under an impact function, the rubric can reflect both halves: governance and stakeholder fluency are named explicitly, the skill tier includes program evaluation and mission alignment, the stated outcomes include funder reporting and partner-facing analytics. But this placement is champion-dependent. When the chief impact officer who wrote the role leaves, the placement often does not survive. Without sustained investment in the cross-functional work the integrated role required, the organization reverts to its silos. Data governance and architecture get pulled back into technology or digital-products. Research and evaluation regroups into its own specialist cluster. Delivery work is sometimes outsourced to contractors. The integrated rubric dissolves into whichever silo&rsquo;s rubric is dominant. The champion papered over the rubric problem. Structure never resolved it.
+          The reporting line is the first signal the scan reveals. The roles overwhelmingly sit inside engineering functions. Director of Data Platforms postings at technology and ed-tech companies report into the CTO, VP of Engineering, or Chief Product and Technology Officer. Director of Data Analytics and Engineering postings at technology companies report into the CTO or VP of Engineering, and at media and ed-tech companies often into a Chief Product Officer or Chief Product and Technology Officer. At universities, Chief Data Officer or Associate CIO for Data roles often report into the CIO. VP of Analytics roles at enterprise organizations report into IT or operations. Director of Data Analytics roles at K-8 networks and operationally-heavy mission-driven organizations often report into the COO. The exception, when it appears, is a small subset of foundations and MEL-anchored organizations where the role has been placed under a Chief Impact Officer or SVP for Design and Impact rather than a CIO. At a national mission-driven foundation, for example, a Director of Data Strategy and Impact Analytics (a MEL / Impact Measurement role in the map&rsquo;s general vocabulary) was structured to report into an SVP for design and impact rather than into IT. When the role sits under an impact function, the rubric can reflect both halves: governance and stakeholder fluency are named explicitly, the skill tier includes program evaluation and mission alignment, the stated outcomes include funder reporting and partner-facing analytics. But this placement is champion-dependent. When the chief impact officer who wrote the role leaves, the placement often does not survive. Without sustained investment in the cross-functional work the integrated role required, the organization reverts to its silos. Data governance and architecture get pulled back into technology or digital-products. Research and evaluation regroups into its own specialist cluster. Delivery work is sometimes outsourced to contractors. The integrated rubric dissolves into whichever silo&rsquo;s rubric is dominant. The champion papered over the rubric problem. Structure never resolved it.
         </P>
         <P>
           The skills tier is the second signal. The engineering tier is
@@ -6910,7 +6902,7 @@ export const ESSAYS: Essay[] = [
           When an enterprise deployment produces a wrong signal, someone loses money, and the enterprise typically has room for a redo — retrain, re-run the pilot, adjust the model. When a mission-driven deployment produces a wrong signal, someone loses the intervention that was supposed to reach them, and the redo is often not available — the funder moves on, the beneficiary window closes, the trust breaks. A behavioral-health chatbot that recommends the wrong framing to an at-risk beneficiary is a mission problem, not a P&L one. So is a grant-intelligence tool that suggests reallocation based on drifted metric definitions, a program-evaluation AI that generates impact narratives reinforcing sponsor preferences over program reality, and an educational AI tutor adapting to student behavior in ways that reinforce inequitable expectations. Few sector frameworks size their evaluation to that distinction.
         </P>
         <P>
-          <InternalLink slug="the-reach-trap">The Reach Trap piece in this library</InternalLink> argued that mistaking activity data for outcome data produces misallocation at scale. In AI deployments, the same failure mode shows up one layer up: mistaking model output for validated signal produces mission misallocation at machine cadence. The stakes are different from enterprise stakes. Responsible-AI frameworks are rarely tuned to what mission-driven deployments actually risk. The closest prior work is the four-level AI evaluation framework from IDinsight, the Agency Fund and colleagues (<a href="https://www.povertyactionlab.org/pt-br/node/8136869" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">J-PAL, 2025</a>). It already flags high-stakes errors. This note asks what a small domestic organization can run without an evaluation team.
+          <InternalLink slug="the-reach-trap">The Reach Trap piece in this library</InternalLink> argued that mistaking activity data for outcome data produces misallocation at scale. In AI deployments, the same failure mode shows up one layer up: mistaking model output for validated signal produces mission misallocation at machine cadence. The stakes are different from enterprise stakes. Responsible-AI frameworks are rarely tuned to what mission-driven deployments actually risk. The closest prior work is the four-level AI evaluation framework from IDinsight, the Agency Fund and colleagues (<a href="https://www.povertyactionlab.org/blog/4-16-25/ai-evaluation-framework-development-sector" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">J-PAL, 2025</a>). It already flags high-stakes errors. This note asks what a small domestic organization can run without an evaluation team.
         </P>
 
         <H2>The constraint</H2>
@@ -8755,7 +8747,7 @@ export const ESSAYS: Essay[] = [
           Bejar, I. I., Flor, M., Futagi, Y., &amp; Ramineni, C. (2014). On the vulnerability of automated scoring to construct-irrelevant response strategies (CIRS): An illustration. <I>Assessing Writing, 22</I>, 48&ndash;59.
         </P>
         <P>
-          Bennett, R. E., &amp; Bejar, I. I. (1997). <I>Validity and automated scoring: It&rsquo;s not only the scoring.</I> ETS Research Report Series, RR-97-19. (Also published in <I>Educational Measurement: Issues and Practice, 17</I>(4), 9&ndash;17, 1998.)
+          Bennett, R. E., &amp; Bejar, I. I. (1997). <I>Validity and automated scoring: It&rsquo;s not only the scoring.</I> ETS Research Report Series, RR-97-13. (Also published in <I>Educational Measurement: Issues and Practice, 17</I>(4), 9&ndash;17, 1998.)
         </P>
         <P>
           Bridgeman, B., &amp; Ramineni, C. (2017). Design and evaluation of automated writing evaluation models: Relationships with writing in naturalistic settings. <I>Assessing Writing, 34</I>, 62&ndash;71.
