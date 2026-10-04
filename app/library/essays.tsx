@@ -835,7 +835,7 @@ export const ESSAYS: Essay[] = [
           asked them what they would change. The redesign was uglier than my
           original. It was also clearer to school leaders. The meter charts went
           away. The filters got fewer. The headline metric got bigger and
-          earlier. The dashboard turned into something a busy principal could read in fifteen seconds and act on. Stephen Few made the case against dashboard gauges in 2006, in <I>Information Dashboard Design</I>.
+          earlier. The dashboard turned into something a busy principal could read in fifteen seconds and act on. Stephen Few made the case against dashboard gauges years ago (<a href="https://www.perceptualedge.com/articles/misc/WhyMostDashboardsFail.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Few, 2007</a>).
         </P>
         <Pull>
           I had been designing for sophistication. The AI tools were designing
@@ -997,7 +997,7 @@ export const ESSAYS: Essay[] = [
           the intended outcome the dashboard exists to support: a better
           decision, made sooner, by the person it
           was built for. A dashboard can be flawless at the first and useless at
-          the second. AI tools help here because their biases differ from ours. They are not free of bias: research on GPT-4 found its chart preferences diverge from what human-subject experiments support (<a href="https://arxiv.org/abs/2408.06845" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Wang et al., 2024</a>). A different bias is still useful, because it shows you yours. Letting them
+          the second. AI tools help here because their biases differ from ours. They are not free of bias: research on large language models found their chart preferences diverge from what human-subject experiments support (<a href="https://arxiv.org/abs/2408.06845" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Wang et al., 2024</a>). A different bias is still useful, because it shows you yours. Letting them
           propose first surfaces the gap between sophistication and usefulness,
           and in my experience, data teams often default to the wrong side of that gap.
         </P>
@@ -1193,7 +1193,7 @@ export const ESSAYS: Essay[] = [
           call <C>get_domain_score(school_id, domain_id, wave_id)</C> instead of
           writing SQL. That move removes the largest source of hallucination in a portal chatbot, invented metric definitions, and much of the setup work is already done. The
           remaining decision is that the dbt semantic layer serves as the
-          canonical contract every AI feature reads through. dbt Labs has made the same case (<a href="https://www.getdbt.com/blog/semantic-layer-as-the-data-interface-for-llms" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ganz, 2024</a>), and its <a href="https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2026 benchmark</a> found that semantic-layer queries fail with an error while text-to-SQL fails with a plausible wrong answer. This piece carries the argument from one query to every AI surface in a portal.
+          canonical contract every AI feature reads through. dbt Labs has made the same case (<a href="https://www.getdbt.com/blog/semantic-layer-as-the-data-interface-for-llms" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ganz, 2023</a>), and its <a href="https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2026 benchmark</a> found that semantic-layer queries fail with an error while text-to-SQL fails with a plausible wrong answer. This piece carries the argument from one query to every AI surface in a portal.
         </P>
         <P>
           <B>BI tools.</B> Tableau Pulse, Power BI Copilot, ThoughtSpot Spotter,
@@ -1607,7 +1607,7 @@ export const ESSAYS: Essay[] = [
           for composite ranking, SEQI for composite quality. Below that, schools
           have classroom assessments, board exam results, NCERT-aligned learning
           materials, and increasingly digital assessment platforms in some
-          districts. The layers exist, and some states have started joining them through <a href="https://www.medianama.com/2023/09/223-what-are-vidya-samiksha-kendras-min-asking-states-to-implement/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Vidya Samiksha Kendras</a>, state data hubs funded since 2022. What is still thin is the join itself: validity checks, growth metrics, and surfaces built for a teacher’s weekly decisions.
+          districts. The layers exist, and some states have started joining them through <a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1843168" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Vidya Samiksha Kendras</a>, state data hubs funded since 2022. What is still thin is the join itself: validity checks, growth metrics, and surfaces built for a teacher’s weekly decisions.
         </P>
         <P>
           The pattern is familiar from US K-12 too. A district runs its SIS
@@ -1882,7 +1882,7 @@ export const ESSAYS: Essay[] = [
         <H2>Closing note</H2>
         <P>
           Education-policy debates often frame “national data systems vs.
-          classroom assessments” as a binary, but each layer does something the other can’t. The assessment field made a version of this case in 2001: in <a href="https://nap.nationalacademies.org/catalog/10019/knowing-what-students-know-the-science-and-design-of-educational" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Knowing What Students Know</I></a>, the National Research Council argued that classroom, district and state assessments serve different decisions and should form one coherent system. LO 2.0 applies that idea to the data plumbing. The real question is what integration architecture
+          classroom assessments” as a binary, but each layer does something the other can’t. The assessment field made a version of this case in 2001: in <a href="https://nap.nationalacademies.org/catalog/10019/knowing-what-students-know-the-science-and-design-of-educational" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Knowing What Students Know</I></a>, the National Research Council argued that classroom, district and state assessments serve different decisions and should form a comprehensive, coherent and continuous system. LO 2.0 applies that idea to the data plumbing. The real question is what integration architecture
           lets them serve different decision-makers running different decisions
           at different cadences.
         </P>
@@ -1895,7 +1895,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           The integration argument is illustrative. State-level findings reflect
-          NAS 2021 and PGI 2022–23; NAS has since become PARAKH Rashtriya Sarvekshan, and its 2024 round tested Classes 3, 6 and 9, so a refresh would shift the grade focus without changing the architecture. Pilot timing
+          NAS 2021 and PGI 2022–23; NAS has since become <a href="https://parakh.ncert.gov.in/sites/default/files/2025-07/REPORT_India_IND.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PARAKH Rashtriya Sarvekshan</a>, and its 2024 round tested Classes 3, 6 and 9, so a refresh would shift the grade focus without changing the architecture. Pilot timing
           and scope are sketched for orientation; an actual engagement would
           scale to the district’s existing assessment infrastructure and
           academic calendar.
@@ -2022,7 +2022,7 @@ export const ESSAYS: Essay[] = [
           Burden and disparity are different instruments, and they answer to
           different commitments. A funder optimizing to prevent the most deaths
           leans on burden. A funder optimizing to close the widest gap leans on
-          disparity. Many prioritization exercises pick one, usually burden, because it is the number that sorts cleanly into a ranked list, and never see the other. CDC’s own <a href="https://www.cdc.gov/suicide/pdf/FAQ_RFA-CE22-2204_508C.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">suicide-prevention funding guidance</a> already names both: a population can qualify by a higher rate or by a large share of deaths. <a href="https://doi.org/10.1186/s12939-018-0731-2" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kindig and colleagues showed in 2018</a> that state health rankings shift with the weight given to inequality. This note applies that idea to suicide prevention and keeps the two signals apart rather than combining them.
+          disparity. Many prioritization exercises pick one, usually burden, because it is the number that sorts cleanly into a ranked list, and never see the other. CDC’s own <a href="https://www.cdc.gov/suicide/pdf/FAQ_RFA-CE22-2204_508C.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">suicide-prevention funding guidance</a> already looks past a single number: a population can qualify by a rate higher than the general population, or by a large share of deaths. <a href="https://doi.org/10.1186/s12939-018-0731-2" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kindig and colleagues showed in 2018</a> that state health rankings shift with the weight given to inequality. This note applies that idea to suicide prevention and keeps the two signals apart rather than combining them.
         </P>
 
         <H2>The map burden draws, and the map disparity draws</H2>
@@ -2100,7 +2100,7 @@ export const ESSAYS: Essay[] = [
           limited budget first.
         </P>
         <P>
-          One pattern runs through nearly every disparity signal on the map. In six of the seven states with a reliable signal, the most-affected group is American Indian and Alaska Native communities; in Hawaii, it is residents of more than one race. That is the clearest pattern the disparity signals show. It should shape not only where the dollar goes, but who helps design what it funds; a prevention dollar spent <I>on</I> a community tends to underperform a dollar spent <I>with</I> one. The signal is also likely understated: death certificates misclassify the race of about 40 percent of American Indian and Alaska Native decedents (<a href="https://www.cdc.gov/nchs/data/series/sr_02/sr02_172.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Arias, Heron &amp; Hakes, 2016</a>).
+          One pattern runs through nearly every disparity signal on the map. In six of the seven states with a reliable signal, the most-affected group is American Indian and Alaska Native communities; in Hawaii, it is residents of more than one race. That is the clearest pattern the disparity signals show. It should shape not only where the dollar goes, but who helps design what it funds; a prevention dollar spent <I>on</I> a community tends to underperform a dollar spent <I>with</I> one. The signal is also likely understated: death certificates under-count American Indian and Alaska Native deaths by about 40 percent (<a href="https://www.cdc.gov/nchs/data/series/sr_02/sr02_172.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Arias, Heron &amp; Hakes, 2016</a>).
         </P>
 
         <H2>Where the next dollar goes</H2>
@@ -3002,7 +3002,7 @@ export const ESSAYS: Essay[] = [
           >
             EDUCAUSE&rsquo;s 2026 priorities
           </a>{" "}
-          name the human edge of AI, and data analytics for operational and financial insights, among the issues that matter most. In <a href="https://www.insidehighered.com/reports/2026/05/11/2026-survey-campus-chief-technologyinformation-officers" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Inside Higher Ed&rsquo;s 2026 survey of campus technology officers</a>, 54 percent said their AI work was still in the pilot phase, and 8 percent had moved it into core operations. Evaluation is the easiest part of that move to skip, because it is invisible when it is working and expensive to do well. It also decides whether everything else is real.
+          name the human edge of AI, and data analytics for operational and financial insights, among the issues that matter most. In <a href="https://www.insidehighered.com/reports/2026/05/11/2026-survey-campus-chief-technologyinformation-officers" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Inside Higher Ed&rsquo;s 2026 survey of campus technology officers</a>, 54 percent said their AI work was still in the pilot phase, 21 percent were beginning to scale pilots, and 8 percent had moved it into core operations. Evaluation is the easiest part of that move to skip, because it is invisible when it is working and expensive to do well. It also decides whether everything else is real.
         </P>
         <P>
           Applying the discipline does not mean slowing adoption, and it does not mean another layer of bureaucracy. It means a small set of hard questions, asked consistently: before a system is trusted, and periodically after. Is the system measuring the intended construct, or a proxy for it? When it is wrong, what happens downstream, and to whom? Does it perform consistently across the different groups of people it touches, or does its accuracy concentrate where the training data was richest? What human decision is the system meant to support, and does its output improve that decision? None of these questions is exotic. They are the ordinary questions of measurement. A university that has an institutional research office and an assessment culture already employs people who know how to ask them. No one has pointed them at the AI systems moving into administrative use yet.
