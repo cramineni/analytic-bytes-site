@@ -549,7 +549,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          No single tool is good at all three surfaces. What most teams end up
+          In my experience, no single tool is good at all three surfaces. What most teams end up
           with is a tool that is strong on one and just acceptable on the
           others, accepted as “the BI stack” by default. The org chart produces this: one person who owns
           “BI,” one tool that owns “all reporting.” It will reproduce with
@@ -567,8 +567,7 @@ export const ESSAYS: Essay[] = [
           a screen rendered live against a data source. The publication problem
           needs the inverse: a templated document with branded typography,
           headers, footers, footnotes, and language that comms or design owns
-          separately from the analyst. PDF export from a BI tool produces a
-          screenshot, not a structured document. The artifact a board member
+          separately from the analyst. PDF export from a dashboard tool usually produces a screenshot, not a structured document. The artifact a board member
           emails to a colleague is a Word file, or a PDF that looks like one.
           Nobody forwards a dashboard URL with a login prompt behind it.
         </P>
@@ -577,8 +576,7 @@ export const ESSAYS: Essay[] = [
           owns the visual layout because the layout is the dashboard. In a real
           publication system, comms or design owns the template and the analyst
           owns the data. Those should be different people with different review
-          authority and different release cadences. BI vendors don’t have a
-          credible answer for that split, and most don’t attempt one.
+          authority and different release cadences. Dashboard-first BI tools rarely support that split. Paginated-report tools such as Power BI Report Builder and Oracle BI Publisher come closer, but the template still lives inside the BI tool rather than with comms.
         </P>
         <P>
           The right architecture for Surface A is the one formal-publication
@@ -593,9 +591,8 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           This is unglamorous plumbing. It has no vendor logo. But it gives you
-          four things no BI tool can match. The output is reproducible: the same
-          metric snapshot and the same template produce a byte-identical file
-          forever. The layout is independent: comms can rewrite the template
+          four things a dashboard tool does not give you. The output is reproducible: the same
+          metric snapshot and the same template produce the same content every time. The layout is independent: comms can rewrite the template
           without involving engineering. The governance reaches sentence level:
           every published string has a known author, reviewer, and timestamp.
           And it stays LLM-safe: a model can fill narrative tokens from a single
@@ -619,7 +616,7 @@ export const ESSAYS: Essay[] = [
           from a single semantic layer where every metric is defined exactly
           once, in code, tested, and version-controlled. <C>dbt</C> is the
           dominant choice for this on the warehouse side, but the principle is
-          older than the tool. It is just one canonical computation per concept.
+          older than the tool. Kimball called it conformed facts in the 1990s, <a href="https://benn.substack.com/p/metrics-layer" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Benn Stancil named the gap in the modern data stack in 2021</a>, and Airbnb built Minerva to close it. It is just one canonical computation per concept.
           The{" "}
           <ArtifactLink slug="decision-system-reference-architecture">
             reference architecture
@@ -673,7 +670,7 @@ export const ESSAYS: Essay[] = [
           and any one of them can drift on its own.
         </P>
         <P>
-          This is one of the most common failure modes in analytics products.
+          This is a common failure mode in analytics products.
           It’s slow. It rarely triggers a single alarm. It degrades the
           credibility of every artifact the team produces, until people stop
           quoting numbers in meetings and start saying “I’d want to verify
@@ -690,8 +687,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The semantic layer prevents drift by removing the alternative. If the
           only way to compute “Domain 4 score” is to read{" "}
-          <C>marts.f_school_domain_wave</C>, drift cannot happen between
-          surfaces, because there is no second definition to drift toward. That
+          <C>marts.f_school_domain_wave</C>, definitions cannot drift between surfaces, because there is no second definition to drift toward. Refresh timing still can, so each surface should show its data date. That
           is the keystone property. It is not that everyone agrees to be
           careful; it is that there is nothing to be careless about.
         </P>
@@ -824,8 +820,7 @@ export const ESSAYS: Essay[] = [
             tool propose what the audience needs to see before the team’s craft
             instincts lock in, then curate from there. The claim is not that AI
             designs better. AI doesn’t yet share your team’s aesthetic habits,
-            which makes it a useful mirror for a bias every data team has and
-            few can see in themselves.
+            which makes it a useful mirror for a bias most data teams carry and few can see in themselves.
           </p>
         </Brief>
 
@@ -836,13 +831,11 @@ export const ESSAYS: Essay[] = [
           weeks to get right. I was proud of it.
         </P>
         <P>
-          For my Stanford AI-Driven Leadership capstone, I put a similar
-          dashboard back in front of GenAI tools (ChatGPT, Claude, Gemini) and
+          For my Stanford AI-Driven Leadership capstone, I put a similar dashboard, the enrollment view shown below, back in front of GenAI tools (ChatGPT, Claude, Gemini) and
           asked them what they would change. The redesign was uglier than my
           original. It was also clearer to school leaders. The meter charts went
           away. The filters got fewer. The headline metric got bigger and
-          earlier. The dashboard turned into something a busy principal could
-          read in fifteen seconds and act on.
+          earlier. The dashboard turned into something a busy principal could read in fifteen seconds and act on. Stephen Few made the case against dashboard gauges in 2006, in <I>Information Dashboard Design</I>.
         </P>
         <Pull>
           I had been designing for sophistication. The AI tools were designing
@@ -895,8 +888,7 @@ export const ESSAYS: Essay[] = [
               Take the AI’s first proposal seriously even when it’s uglier than
               what you would have built.
             </B>{" "}
-            The AI won’t reach for a meter chart unless asked. It will reach for
-            the simplest visualization that answers the question. That
+            In my capstone, the tools didn't reach for a meter chart unless asked. They reached for the simplest visualization that answered the question. That
             simplicity is usually what the stakeholder needs.
           </NumItem>
           <NumItem n={3}>
@@ -926,7 +918,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           <B>Claude is strong at the curation and narrative-overlay step.</B>{" "}
-          Once the dashboard structure is clear, Claude is better at writing the
+          In my capstone, once the dashboard structure was clear, Claude was better at writing the
           audience-appropriate headline copy, the metric definitions, and the
           interpretive callouts that turn a chart into a decision surface.
         </P>
@@ -1005,10 +997,9 @@ export const ESSAYS: Essay[] = [
           the intended outcome the dashboard exists to support: a better
           decision, made sooner, by the person it
           was built for. A dashboard can be flawless at the first and useless at
-          the second. AI tools help here not because they are better designers,
-          but because they don’t share our aesthetic biases. Letting them
+          the second. AI tools help here because their biases differ from ours. They are not free of bias: research on GPT-4 found its chart preferences diverge from what human-subject experiments support (<a href="https://arxiv.org/abs/2408.06845" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Wang et al., 2024</a>). A different bias is still useful, because it shows you yours. Letting them
           propose first surfaces the gap between sophistication and usefulness,
-          and most data teams default to the wrong side of that gap.
+          and in my experience, data teams often default to the wrong side of that gap.
         </P>
         <Pull>
           Beautiful dashboards are not the same as decision-driving ones. Used
@@ -1094,7 +1085,7 @@ export const ESSAYS: Essay[] = [
             authority and trust; vendor selection is the small choice that comes
             after. Treat them in that order and AI compounds. Treat them in
             reverse and it drifts. And because the drift shows up as confident
-            language rather than wrong numbers, nobody catches it for months.
+            language rather than wrong numbers, it can go unnoticed for months.
           </p>
         </Brief>
 
@@ -1147,9 +1138,7 @@ export const ESSAYS: Essay[] = [
         <P>Working bottom up.</P>
         <P>
           <B>Fivetran, or whatever your ingestion layer is.</B> The temptation
-          is to do “AI-driven data quality” at the connector. Resist it. Use the
-          vendor’s AI features for what they are good at: schema-drift alerts,
-          anomaly detection on row counts, AI-assisted connector creation. Stop
+          is to do “AI-driven data quality” at the connector. Resist it. Use the ingestion layer for what it is good at: handling schema changes and AI-assisted connector creation. Row-count anomaly checks belong in a data-observability tool. Stop
           there. Data-quality logic with semantic stakes (this respondent
           is suspicious, this batch should be excluded from reports, this null
           means absent rather than unknown) belongs in dbt, where it is
@@ -1177,17 +1166,15 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Cortex Analyst, or whichever text-to-SQL surface your warehouse
-          offers, for analyst-facing exploration, only when fed your dbt
-          semantic layer as the YAML model. Without that grounding it
-          invents metric names. Don’t expose it to clients in v1.
+          offers, for analyst-facing exploration, only when fed a semantic view or model built from your dbt semantic layer. With a thin semantic model it guesses at metric names. Don’t expose it to clients in v1.
         </P>
         <P>
-          Cortex COMPLETE / SUMMARIZE / EMBED_TEXT for narrative generation and
+          Cortex AI functions (AI_COMPLETE, AI_SUMMARIZE_AGG, AI_EMBED) for narrative generation and
           embeddings, used inside warehouse-native apps when PHI needs to stay
           in place.
         </P>
         <P>
-          Document AI if you have any PDF intake (consent forms, partner
+          AI_EXTRACT, which replaced Document AI in 2026, if you have any PDF intake (consent forms, partner
           packets, prior reports) that you’d otherwise extract by hand.
         </P>
         <P>
@@ -1204,14 +1191,13 @@ export const ESSAYS: Essay[] = [
           description, every domain a typed entity, every test a guardrail. The
           MCP server pattern, or whatever your equivalent is, lets a chatbot
           call <C>get_domain_score(school_id, domain_id, wave_id)</C> instead of
-          writing SQL. That move eliminates most of the hallucination risk in
-          a portal chatbot, and much of the setup work is already done. The
+          writing SQL. That move removes the largest source of hallucination in a portal chatbot, invented metric definitions, and much of the setup work is already done. The
           remaining decision is that the dbt semantic layer serves as the
-          canonical contract every AI feature reads through.
+          canonical contract every AI feature reads through. dbt Labs has made the same case (<a href="https://www.getdbt.com/blog/semantic-layer-as-the-data-interface-for-llms" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ganz, 2024</a>), and its <a href="https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2026 benchmark</a> found that semantic-layer queries fail with an error while text-to-SQL fails with a plausible wrong answer. This piece carries the argument from one query to every AI surface in a portal.
         </P>
         <P>
           <B>BI tools.</B> Tableau Pulse, Power BI Copilot, ThoughtSpot Spotter,
-          Looker Explore Assistant are all variants of “ask a question, get a
+          Looker’s Conversational Analytics are all variants of “ask a question, get a
           chart.” Useful for internal exploration. Bad for client-facing
           surfaces, for the same reason BI tools are bad at the publication
           problem: they read directly from BI semantic models, which drift from
@@ -1222,8 +1208,7 @@ export const ESSAYS: Essay[] = [
           interface. AI goes around the BI tool, not through it.
         </P>
         <P>
-          That is the placement story, one paragraph per layer. Grounding,
-          addressed next, is where most stacks fail.
+          That is the placement story, one paragraph per layer. Grounding, addressed next, is where many stacks fail.
         </P>
 
         <H2>The semantic layer is also the AI contract</H2>
@@ -1257,7 +1242,7 @@ export const ESSAYS: Essay[] = [
           <B>The drift symptom is language, not numbers.</B> When two dashboards
           show different numbers, somebody notices. When a chatbot says “Domain
           4 is improving at most schools” and an alert email says “Domain 4 has
-          plateaued,” nobody catches it for months. The discrepancy is buried in
+          plateaued,” it can go unnoticed for months. The discrepancy is buried in
           prose, and prose is harder to diff than numbers.
         </P>
         <P>
@@ -1284,8 +1269,7 @@ export const ESSAYS: Essay[] = [
         <P>
           This is the discipline that makes the rest of the AI architecture
           safe. Without it, every AI feature is a small bet that nobody on the
-          team will let it drift. With it, drift is structurally prevented
-          because there is nothing to drift toward.
+          team will let it drift. With it, numeric drift is structurally prevented because there is nothing to drift toward. Language drift is reduced. Two summaries can still frame the same row differently, which is why the audit trail matters.
         </P>
 
         <H2>In the portal: three AI surfaces</H2>
@@ -1323,8 +1307,7 @@ export const ESSAYS: Essay[] = [
           snapshotted in the audit log alongside the alert ID.
         </P>
         <P>
-          The pattern across all three: detection is deterministic,
-          interpretation is generative. Don’t let the LLM decide what to alert
+          The pattern across all three: detection is deterministic, interpretation is generative. <a href="https://www.tableau.com/blog/tableau-pulse-and-tableau-ai" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Tableau Pulse</a> is built the same way: a statistical service finds and ranks insights, and generative AI phrases them. Don’t let the LLM decide what to alert
           on. Let it decide how to phrase the alert, given a structured event
           payload.
         </P>
@@ -1348,7 +1331,7 @@ export const ESSAYS: Essay[] = [
 
         <H3>Chatbot</H3>
         <P>
-          Most portal chatbots fail because they try to be helpful about
+          Many portal chatbots fail because they try to be helpful about
           everything. The version that works has narrow, explicit scope, and the
           LLM is wrapped in tool-use, not given freeform SQL. In practice the
           scope shrinks to a handful of permitted intents.
@@ -1624,8 +1607,7 @@ export const ESSAYS: Essay[] = [
           for composite ranking, SEQI for composite quality. Below that, schools
           have classroom assessments, board exam results, NCERT-aligned learning
           materials, and increasingly digital assessment platforms in some
-          districts. The layers exist, but the integration architecture isn’t
-          yet built.
+          districts. The layers exist, and some states have started joining them through <a href="https://www.medianama.com/2023/09/223-what-are-vidya-samiksha-kendras-min-asking-states-to-implement/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Vidya Samiksha Kendras</a>, state data hubs funded since 2022. What is still thin is the join itself: validity checks, growth metrics, and surfaces built for a teacher’s weekly decisions.
         </P>
         <P>
           The pattern is familiar from US K-12 too. A district runs its SIS
@@ -1648,7 +1630,7 @@ export const ESSAYS: Essay[] = [
         <Figure
           src="/library/figures/lo_2_0_stitched_layers_figure.svg"
           alt="LO 2.0 — the layers exist, the stitching does not"
-          caption="The layers exist. The stitching contracts between them are what LO 2.0 proposes and what most systems have not yet built."
+          caption="The layers exist. The stitching contracts between them are what LO 2.0 proposes and what many systems have not yet built."
         />
 
         <P>
@@ -1708,7 +1690,7 @@ export const ESSAYS: Essay[] = [
           </B>{" "}
           (Performance Grading Index). Built for state-level
           comparison, federal incentive frameworks, and publicly visible
-          accountability. A composite index that combines UDISE+ and NAS into
+          accountability. A composite index that draws on UDISE+, NAS and other national data to produce
           ranking grades across 73 indicators on a 1,000-point scale. It is not
           the right tool when the question is operational or
           improvement-shaped.
@@ -1864,8 +1846,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           <B>Funding and resource allocation grounded in granular need.</B>{" "}
-          Federal allocation has historically run on UDISE+ infrastructure data
-          and PGI rankings. Stitched data lets allocation also reflect
+          Allocation planning has leaned heavily on UDISE+ infrastructure data. Stitched data lets allocation also reflect
           classroom-level outcome trajectories, closer to where the need is.
         </P>
         <P>
@@ -1901,8 +1882,7 @@ export const ESSAYS: Essay[] = [
         <H2>Closing note</H2>
         <P>
           Education-policy debates often frame “national data systems vs.
-          classroom assessments” as a binary, but each layer does something
-          the other can’t. The real question is what integration architecture
+          classroom assessments” as a binary, but each layer does something the other can’t. The assessment field made a version of this case in 2001: in <a href="https://nap.nationalacademies.org/catalog/10019/knowing-what-students-know-the-science-and-design-of-educational" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Knowing What Students Know</I></a>, the National Research Council argued that classroom, district and state assessments serve different decisions and should form one coherent system. LO 2.0 applies that idea to the data plumbing. The real question is what integration architecture
           lets them serve different decision-makers running different decisions
           at different cadences.
         </P>
@@ -1910,14 +1890,12 @@ export const ESSAYS: Essay[] = [
           Healthcare has spent decades building toward this, integrating CDC +
           NSDUH + claims + EHR + patient-reported outcomes through
           population-health platforms and clinical decision-support systems,
-          and it is still not finished. Education hasn’t yet built the
-          equivalent. LO 2.0 is one shape that integration architecture could
+          and it is still not finished. Education has started: India’s Vidya Samiksha Kendras and US state longitudinal data systems are early versions. Few yet reach the classroom with timely, valid signal. LO 2.0 is one shape that integration architecture could
           take.
         </P>
         <P>
           The integration argument is illustrative. State-level findings reflect
-          NAS 2021 and PGI 2022–23; a refresh against the NAS 2024 cycle would
-          update the picture without changing the architecture. Pilot timing
+          NAS 2021 and PGI 2022–23; NAS has since become PARAKH Rashtriya Sarvekshan, and its 2024 round tested Classes 3, 6 and 9, so a refresh would shift the grade focus without changing the architecture. Pilot timing
           and scope are sketched for orientation; an actual engagement would
           scale to the district’s existing assessment infrastructure and
           academic calendar.
@@ -1963,7 +1941,7 @@ export const ESSAYS: Essay[] = [
             NCERT PARAKH NAS 2021 dashboard
           </a>{" "}
           (Andhra Pradesh &rsaquo; Class 10 &rsaquo; By Range of Performance).
-          Subsequent NAS 2024 and PGI releases would refine the picture. The
+          Later PARAKH Rashtriya Sarvekshan and PGI releases would refine the picture. The
           integration-architecture argument is intended to outlast specific
           cycle data.
         </MetaNote>
@@ -2022,13 +2000,13 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          A single national rate blends those opposite movements into one number, and because the youngest bands are falling fast, that number still reads as progress. The blend hides the reversal inside it: for every age band past 35, the trend has already turned. An average cannot tell a funder that, and a funder who reads only the average will not know to look. The lesson isn&rsquo;t really about age — it is that any rolled-up number is a decision hazard. It blends signals moving in opposite directions, and the blend erases the contrast a resource decision depends on. You have to disaggregate before you can allocate. Age is one cut. The one this note is about is harder.
+          A single national rate blends those opposite movements into one number, and because the youngest bands are falling fast, that number still reads as progress. The blend hides the reversal inside it: for both mid-life bands in this window, 35–44 and 45–54, the trend has already turned. An average cannot tell a funder that, and a funder who reads only the average will not know to look. The lesson isn&rsquo;t really about age — it is that any rolled-up number is a decision hazard. It blends signals moving in opposite directions, and the blend erases the contrast a resource decision depends on. You have to disaggregate before you can allocate. Age is one cut. The one this note is about is harder.
         </P>
 
         <H2>Two signals, not one</H2>
         <P>
           When prevention dollars get prioritized by geography, the working
-          number is almost always <I>burden</I>: the state’s overall suicide
+          number is usually <I>burden</I>: the state’s overall suicide
           rate, deaths relative to population. It is the obvious signal, and a
           sound one. It answers a real question: how large is the problem here.
         </P>
@@ -2044,9 +2022,7 @@ export const ESSAYS: Essay[] = [
           Burden and disparity are different instruments, and they answer to
           different commitments. A funder optimizing to prevent the most deaths
           leans on burden. A funder optimizing to close the widest gap leans on
-          disparity. Most prioritization exercises pick one, usually burden,
-          because it is the number that sorts cleanly into a ranked list, and
-          never see the other at all.
+          disparity. Many prioritization exercises pick one, usually burden, because it is the number that sorts cleanly into a ranked list, and never see the other. CDC’s own <a href="https://www.cdc.gov/suicide/pdf/FAQ_RFA-CE22-2204_508C.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">suicide-prevention funding guidance</a> already names both: a population can qualify by a higher rate or by a large share of deaths. <a href="https://doi.org/10.1186/s12939-018-0731-2" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kindig and colleagues showed in 2018</a> that state health rankings shift with the weight given to inequality. This note applies that idea to suicide prevention and keeps the two signals apart rather than combining them.
         </P>
 
         <H2>The map burden draws, and the map disparity draws</H2>
@@ -2124,7 +2100,7 @@ export const ESSAYS: Essay[] = [
           limited budget first.
         </P>
         <P>
-          One pattern runs through nearly every disparity signal on the map. In six of the seven states with a reliable signal, the most-affected group is American Indian and Alaska Native communities; in Hawaii, it is residents of more than one race. That is the clearest pattern the disparity signals show. It should shape not only where the dollar goes, but who helps design what it funds; a prevention dollar spent <I>on</I> a community tends to underperform a dollar spent <I>with</I> one.
+          One pattern runs through nearly every disparity signal on the map. In six of the seven states with a reliable signal, the most-affected group is American Indian and Alaska Native communities; in Hawaii, it is residents of more than one race. That is the clearest pattern the disparity signals show. It should shape not only where the dollar goes, but who helps design what it funds; a prevention dollar spent <I>on</I> a community tends to underperform a dollar spent <I>with</I> one. The signal is also likely understated: death certificates misclassify the race of about 40 percent of American Indian and Alaska Native decedents (<a href="https://www.cdc.gov/nchs/data/series/sr_02/sr02_172.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Arias, Heron &amp; Hakes, 2016</a>).
         </P>
 
         <H2>Where the next dollar goes</H2>
@@ -2150,7 +2126,7 @@ export const ESSAYS: Essay[] = [
           Montana and South Dakota among them, carry a suppression-caution flag:
           the comparison is real but thin, built on few enough visible groups
           that it should be read carefully. And “no reliable disparity signal”
-          almost never means a state has no disparity. It usually means the
+          rarely means a state has no disparity. It usually means the
           affected groups are too small, in that state, for this dataset to
           surface one safely.
         </P>
@@ -2160,8 +2136,7 @@ export const ESSAYS: Essay[] = [
           sharper questions, not a number that should move money on its own. A
           measure that triggers investigation and a measure that drives
           allocation are not the same instrument, and treating the first as if
-          it were the second is one of the most common ways well-meant analysis
-          does harm.
+          it were the second is a common way well-meant analysis does harm.
         </P>
 
         <H2>What this is really about</H2>
@@ -2632,7 +2607,7 @@ export const ESSAYS: Essay[] = [
           read. The same text a chatbot would hand back as a reply, an agent
           treats as a program — an instruction to go do something. Read as a
           reply, the output is an answer. Read as a program, it is an action.
-          That interpretive shift, plus the tools, is the whole of it.
+          That interpretive shift, plus the tools and the loop that plans the next step, is most of it.
         </P>
         <P>
           It sounds small, but it is the difference between a tool you use and a system you manage, and most of what a leader needs to weigh
@@ -2696,8 +2671,7 @@ export const ESSAYS: Essay[] = [
           handing to an agent, <ArtifactLink slug="decision-rights-at-the-door">draw the line three ways</ArtifactLink>. Where may the agent
           act entirely on its own? Where must it stop and pass the decision up
           to a human? And where must the human start the decision in the first
-          place, with the agent not acting at all, only assisting? Most teams
-          never draw this map. They let the vendor’s default draw it, which
+          place, with the agent not acting at all, only assisting? Many teams never draw this map. They let the vendor’s default draw it, which
           means the line ends up wherever the demo happened to put it.
         </P>
         <P>
@@ -2745,7 +2719,7 @@ export const ESSAYS: Essay[] = [
           Two design truths close the loop, and both cut against instinct.
         </P>
         <P>
-          The first: do not rely on the model to keep itself safe. The temptation is to make the model careful, with better instructions and sterner prompts. But a system whose safety depends on the model choosing well, every single time, has no safety at all. Safety has to be built into the <ArtifactLink slug="agent-system">structure around the model</ArtifactLink>. Start with reversibility: an action designed to be undone has margin for the other layers to fail. Then hard limits the agent cannot cross because they are coded in, not requested in a prompt. Then an independent second check that does not share the first model&rsquo;s blind spots. Then a human escalation path more than one person deep. Layered defense, because any single layer will eventually fail, and the design has to assume it.
+          The first: do not rely on the model to keep itself safe. The temptation is to make the model careful, with better instructions and sterner prompts. But a system whose safety depends on the model choosing well, every single time, has no reliable safety. Safety has to be built into the <ArtifactLink slug="agent-system">structure around the model</ArtifactLink>. Start with reversibility: an action designed to be undone has margin for the other layers to fail. Then hard limits the agent cannot cross because they are coded in, not requested in a prompt. Then an independent second check that does not share the first model&rsquo;s blind spots. Then a human escalation path more than one person deep. Layered defense, because any single layer will eventually fail, and the design has to assume it.
         </P>
         <P>
           For AB’s Deliver Signal workflow, that stack looks specific. The
@@ -2761,7 +2735,7 @@ export const ESSAYS: Essay[] = [
           answer.
         </P>
         <P>
-          The second design truth is the comparison the conversation most often gets wrong. The question to ask of an agent is not “does it make mistakes?” Of course it does. So does the human process it would replace. The real question is whether this agent, with its safeguards, produces better decisions than the process it replaces, on the dimensions that matter. That reframe keeps the conversation off a fantasy (agent versus perfection) and on the real choice: the agent and its safeguards together, weighed against a status quo that had its own error rate all along, usually unmeasured.
+          The second design truth is a comparison the conversation often gets wrong. The question to ask of an agent is not “does it make mistakes?” Of course it does. So does the human process it would replace. The real question is whether this agent, with its safeguards, produces better decisions than the process it replaces, on the dimensions that matter. That reframe keeps the conversation off a fantasy (agent versus perfection) and on the real choice: the agent and its safeguards together, weighed against a status quo that had its own error rate all along, usually unmeasured.
         </P>
         <P>
           This is also where AB’s ed-tech and behavioral-health client
@@ -2770,25 +2744,24 @@ export const ESSAYS: Essay[] = [
           a teacher draft a lesson, and the comparison is straightforward,
           against the lesson the teacher would have written. In
           behavioral-health, “agent” gets confused with regulated staff roles
-          (intake agent, case management agent) or with RPA (robotic process automation) bots already
-          approved under HIPAA review. The comparison cannot be made until
+          (intake agent, case management agent) or with RPA (robotic process automation) bots that already passed the organization’s own HIPAA security review. The comparison cannot be made until
           that definitional confusion is cleared with the Chief Clinical
           Officer or whoever holds the regulated-data accountability.
         </P>
         <P>
-          Evaluation does not end at launch. Because the model drifts, an agent has to be watched continuously: its override rate, its disagreement signals, its slow drift as conditions change. Monitoring is no longer a quarterly report; it is an ongoing conversation with a system that continues to make decisions in your name.
+          Evaluation does not end at launch. Because conditions change and vendors swap the model underneath, an agent has to be watched continuously: its override rate, its disagreement signals, its slow drift as conditions change. Monitoring is no longer a quarterly report; it is an ongoing conversation with a system that continues to make decisions in your name.
         </P>
 
         <H2>The job becomes management, not use</H2>
         <P>
-          This is the consequence leaders most often miss. When AI produced
+          This is a consequence leaders often miss. When AI produced
           answers, the human’s relationship to it was use, the way you use a
           calculator or a search box. When AI produces actions, that
           relationship has to become management. Every agent has to have a
           named owner: a specific person accountable for what it does.
         </P>
         <P>
-          Managing an agent is a new job, with new responsibilities that no prior role quite contained. The owner calibrates the thresholds as the agent&rsquo;s behavior drifts, and it will drift, because the model underneath gets upgraded by a vendor on a schedule nobody consulted you about. The owner decides which patterns the agent should retain and which it should drop. And the owner does the hardest thing of all: refuses to let the agent act. Deciding, in real time, that a particular case is one the agent should not touch, and being able to defend that call.
+          Managing an agent is a job most organizations have not yet named. It looks more like supervising automation than using software. The owner calibrates the thresholds as the agent&rsquo;s behavior drifts, and it will drift, because the model underneath gets upgraded by a vendor on a schedule nobody consulted you about. The owner decides which patterns the agent should retain and which it should drop. And the owner does the hardest thing of all: refuses to let the agent act. Deciding, in real time, that a particular case is one the agent should not touch, and being able to defend that call.
         </P>
         <P>
           For AB’s first agentic workflow, I’m the day-to-day owner. That’s
@@ -2810,7 +2783,7 @@ export const ESSAYS: Essay[] = [
           The leader’s real question was never “should we adopt agentic AI.”
           It is narrower and harder, and it is a list: for which decisions,
           at what point on the autonomy range, with what checkpoint, owned by
-          whom, watched how. Not one of those is a technology question. Every
+          whom, watched how. None of those is mainly a technology question. Every
           one is a decision-system question, and they were the right
           questions to ask long before agents existed. Agentic AI’s real
           effect is that it removed the option of leaving them unasked.
@@ -2842,10 +2815,10 @@ export const ESSAYS: Essay[] = [
 
         <MetaNote>
           Written May 2026 for the Analytic Bytes Library. The argument adapts
-          several frameworks from MIT Sloan’s Agentic AI Development program:
+          several frameworks from MIT Sloan Executive Education’s Agentic AI Implementation Playbook program:
           the autonomy spectrum, the four safeguard layers, the
           human-in-the-loop threshold pattern, the comparison-that-matters
-          reframe, and the “every agent needs a manager” positioning. The
+          reframe, and the “every agent needs a manager” positioning. Several have earlier roots: the autonomy range in Parasuraman, Sheridan and Wickens’s levels of automation (2000); autonomy as a design choice separate from capability in <a href="https://arxiv.org/abs/2506.12469" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Feng, McDonald and Zhang (2025)</a>; and the safeguard layers and named accountability in <a href="https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Shavit et al. at OpenAI (2023)</a>. The
           working definition and the AB Deliver Signal worked example come
           from the author’s program capstone playbook. The original
           contribution here is the “free checkpoint” framing and the
