@@ -1,10 +1,11 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ct cd">
+  <title>Essay No. 17: Required for what?</title>
 <title id="ct">Required for what?</title>
 <desc id="cd">Two boxes of the same size sit side by side in navy outline. The left one is labeled requirements and is filled with three full rows of small navy dots, the enumerated items the document asks for. A short navy arrow runs from it to the right-hand box, labeled decision scope. That box holds one row of navy dots, roughly a third of what the left box holds, because about a third of these postings name a decision the role may make. Where its other two rows would sit there are dashed teal lines. The arrow carries the title's question; the dashed lines are what is not written down.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
 <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
 
-<text x="600" y="90" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  &#183;  No. 17</text>
+<text x="600" y="90" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Essay  ·  No. 17</text>
 
 <g transform="translate(600, 245)">
 
@@ -35,7 +36,7 @@
 <text x="600" y="450" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Required for what?</text>
 <text x="600" y="495" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">They require the attributes and never say what the role may decide.</text>
 <line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
-<text x="600" y="585" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  &#183;  2026</text>
+<text x="600" y="585" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
 
 </g>
 </svg>

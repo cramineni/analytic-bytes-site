@@ -95,18 +95,38 @@ def parse_jsx_entries(essays_tsx_path: Path):
 
 
 def parse_cover_svg(cover_path: Path):
-    """Extract (eyebrow_kind, eyebrow_num, title_num) from a cover SVG."""
+    """Extract (eyebrow_kind, eyebrow_num, title_num, has_title) from a cover SVG.
+
+    Two hard-won details:
+
+    SEPARATOR FORM. The middle dot between the kind and the number may be
+    written as a literal `·` or as the entity `&#183;` (or `&middot;`).
+    Both render identically, so the audit must treat them as equivalent.
+    Matching only the literal form made required-for-what.svg report
+    `missing-eyebrow` for weeks when its eyebrow was correct and merely
+    entity-encoded — a false failure that trained the eye to ignore the
+    one line of output that mattered.
+
+    MISSING <title>. A cover with no <title> element used to yield
+    title_num=None, which the caller skipped silently. That turned an
+    accessibility gap into a non-event: four covers shipped without one.
+    `has_title` is returned separately so absence is reported rather than
+    treated as agreement.
+    """
     if not cover_path.exists():
-        return None, None, None
+        return None, None, None, False
     svg = cover_path.read_text()
+    # Normalise both encodings of the separator before matching.
+    norm = svg.replace("&#183;", "·").replace("&middot;", "·")
     # Eyebrow: `>Essay  ·  No. NN<` or `>Field note  ·  No. NN<`
-    e = re.search(r'>\s*(Essay|Field note)\s+·\s+No\.\s+(\d+)', svg, re.IGNORECASE)
+    e = re.search(r'>\s*(Essay|Field note)\s+·\s+No\.\s+(\d+)', norm, re.IGNORECASE)
     eyebrow_kind = e.group(1).lower() if e else None
     eyebrow_num = int(e.group(2)) if e else None
     # Title: `<title>Essay No. NN...` or `<title>Field Note No. NN...`
+    has_title = "<title>" in svg
     t = re.search(r'<title>\s*(?:Essay|Field Note)\s+No\.\s+(\d+)', svg, re.IGNORECASE)
     title_num = int(t.group(1)) if t else None
-    return eyebrow_kind, eyebrow_num, title_num
+    return eyebrow_kind, eyebrow_num, title_num, has_title
 
 
 def next_num(nums):
@@ -155,7 +175,7 @@ def main(repo_root: Path) -> int:
             drifts.append((e["slug"], e["kind"], e["number"], "no-cover-path"))
             continue
         cover_path = repo_root / "public" / e["cover"].lstrip("/")
-        eye_kind, eye_num, title_num = parse_cover_svg(cover_path)
+        eye_kind, eye_num, title_num, has_title = parse_cover_svg(cover_path)
         issues = []
         if eye_kind is None:
             issues.append("missing-eyebrow")
@@ -163,7 +183,11 @@ def main(repo_root: Path) -> int:
             issues.append(f"eyebrow-kind={eye_kind}")
         if eye_num is not None and eye_num != e["number"]:
             issues.append(f"eyebrow-num={eye_num}")
-        if title_num is not None and title_num != e["number"]:
+        if not has_title:
+            issues.append("missing-title-element")
+        elif title_num is None:
+            issues.append("title-element-unparseable")
+        elif title_num != e["number"]:
             issues.append(f"title-num={title_num}")
         if issues:
             drifts.append((e["slug"], e["kind"], e["number"], ", ".join(issues)))
