@@ -85,7 +85,9 @@ for a,b in zip(bl,bl[1:]):
     k=t[a:b]; s=re.search(r'slug: "([^"]+)"',k)
     if not s: continue
     ti=re.search(r'title: "([^"]+)"',k)
-    REG[s.group(1)]={'blk':k,'title':ti.group(1) if ti else '','draft':'draft: true' in k}
+    su=re.search(r'subtitle:\s*\n?\s*"([^"]+)"',k)
+    REG[s.group(1)]={'blk':k,'title':ti.group(1) if ti else '','draft':'draft: true' in k,
+                     'subtitle':su.group(1) if su else ''}
 
 def jsx_units(k):
     # The Brief is INCLUDED. Trying to locate the end of the markdown's In-brief
@@ -241,6 +243,17 @@ for f in sorted(glob.glob(D+"/*.md")):
     if re.search(r'(?m)^superseded:', md.split('\n---\n',1)[0]):
         superseded.append((os.path.basename(f),slug)); continue
     J,M=jsx_units(REG[slug]['blk']),md_units(md)
+    # THE DEK IS NOT BODY. The italic line under the H1 is the piece's subtitle;
+    # it lives in the JSX `subtitle:` field and md2jsx deliberately never emits it
+    # as a paragraph. Counting it as a markdown body unit reported a permanent
+    # one-paragraph "MD ahead" on every file whose dek is long enough to survive
+    # the 25-character filter -- including both essays published on 2026-10-05,
+    # which were in fact fully in sync. Same family of false positive as the
+    # required-for-what eyebrow: a standing phantom that trains the eye to skip
+    # the report.
+    sub=norm(REG[slug].get('subtitle',''))
+    if sub:
+        M=[u for u in M if u!=sub]
     mo,ed=pair(M,J); jo=orphans(J,M)
     rows.append(dict(f=os.path.basename(f),slug=slug,J=len(J),M=len(M),mo=len(mo),jo=len(jo),ed=len(ed),
                      ver=bool(re.search(r'status:\s*"v',md)),draft=REG[slug]['draft'],
