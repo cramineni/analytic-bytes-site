@@ -33,7 +33,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     title: "The decision chain",
     summary:
-      "The chain every diagnostic piece in the library traces, and the links a piece can name as the place it stops working: construct, representation, inference, decision, action, consequence, and the return leg that carries what the outcome showed back into the next measurement. Beneath it, where the three failure points named in The Decision System \u2014 meaning, authority, validity \u2014 sit along the chain. The \u201cbreaks at\u201d line on each essay page points here.",
+      "The chain every diagnostic piece in the library traces, and the links a piece can name as the place it stops working: construct, representation, inference, decision, action, consequence, and the return leg that carries what the outcome showed back into the next measurement. Beneath it, where the three failure points named in The decision system \u2014 meaning, authority, validity \u2014 sit along the chain. The \u201cbreaks at\u201d line on each essay page points here.",
     image: "/library/artifacts/the-decision-chain.svg",
     slug: "the-decision-chain",
     referencedIn: [
@@ -71,7 +71,7 @@ export const ARTIFACTS: Artifact[] = [
       },
       {
         slug: "the-decision-system",
-        title: "The Decision System",
+        title: "The decision system.",
       },
       {
         slug: "plumbing-got-upgraded-water-didnt",
@@ -88,9 +88,9 @@ export const ARTIFACTS: Artifact[] = [
     referencedIn: [
       {
         slug: "three-surfaces-one-keystone",
-        title: "Three Surfaces, One Keystone",
+        title: "Three surfaces, one keystone.",
       },
-      { slug: "the-decision-system", title: "The Decision System" },
+      { slug: "the-decision-system", title: "The decision system." },
     ],
   },
   {
@@ -107,7 +107,7 @@ export const ARTIFACTS: Artifact[] = [
     image: "/library/artifacts/agent-system.svg",
     slug: "agent-system",
     referencedIn: [
-      { slug: "actions-not-answers", title: "Actions, Not Answers" },
+      { slug: "actions-not-answers", title: "Actions, not answers." },
     ],
   },
   {

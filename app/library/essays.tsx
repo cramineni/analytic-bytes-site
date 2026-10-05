@@ -762,12 +762,12 @@ export const ESSAYS: Essay[] = [
                 <SeeAlso>
           <SeeAlsoItem
             slug="where-should-data-sit"
-            title="Where Should Data Sit?"
+            title="Where should data sit?"
             gloss="Who owns the function that owes these surfaces, and where it sits on the org chart."
           />
           <SeeAlsoItem
             slug="the-take-home-test"
-            title="The Take-Home Test"
+            title="The take-home test."
             gloss="What it looks like when an organization asks for a dashboard instead of a decision."
           />
           <SeeAlsoItem
@@ -1019,17 +1019,17 @@ export const ESSAYS: Essay[] = [
                 <SeeAlso>
           <SeeAlsoItem
             slug="three-surfaces-one-keystone"
-            title="Three Surfaces, One Keystone"
+            title="Three surfaces, one keystone."
             gloss="Why the surface mattered in the first place — and which of the three this redesign served."
           />
           <SeeAlsoItem
             slug="the-take-home-test"
-            title="The Take-Home Test"
+            title="The take-home test."
             gloss="The pattern this redesign worked against: organizations asking for a dashboard instead of a decision."
           />
           <SeeAlsoItem
             slug="actions-not-answers"
-            title="Actions, Not Answers"
+            title="Actions, not answers."
             gloss="The related discipline: a surface should drive action, not just describe."
           />
         </SeeAlso>
@@ -1213,8 +1213,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The semantic layer is also the AI contract</H2>
         <P>
-          The keystone argument from the companion piece, <I>Three Surfaces, One
-          Keystone</I>, extends one step. There, the claim was that all three
+          The keystone argument from the companion piece, <I>Three surfaces, one keystone</I>, extends one step. There, the claim was that all three
           reporting surfaces (program report, operator console, executive view)
           must read from a single dbt-defined semantic layer or they drift,
           and drift is the failure mode that erodes trust.
@@ -1532,7 +1531,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="lo-2-0-stitching-the-layers"
-            title="LO 2.0, Stitching the Layers"
+            title="Stitching the layers."
             gloss="How the layers below the AI layer get composed into something usable."
           />
           <SeeAlsoItem
@@ -1556,9 +1555,9 @@ export const ESSAYS: Essay[] = [
     kind: "field-note",
     slug: "lo-2-0-stitching-the-layers",
     number: "02",
-    title: "LO 2.0 — Stitching the Layers",
+    title: "Stitching the layers.",
     subtitle:
-      "Why national education data, classroom assessments, and local instruments are most useful when used together, and what the integration architecture looks like.",
+      "Why national education data, classroom assessments, and local instruments are most useful when used together, and what the integration architecture, LO 2.0, looks like.",
     date: "2026-05-18",
     readingTime: "8 min read",
     summary:
@@ -1918,12 +1917,12 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="grounding-the-ai-layer"
-            title="Grounding the AI Layer"
+            title="Grounding the AI layer."
             gloss="Why the AI layer needs the layers beneath it to actually hold."
           />
           <SeeAlsoItem
             slug="three-surfaces-one-keystone"
-            title="Three Surfaces, One Keystone"
+            title="Three surfaces, one keystone."
             gloss="The three surfaces the stitched-together layers exist to feed."
           />
         </SeeAlso>
@@ -2169,7 +2168,7 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="actions-not-answers"
-            title="Actions, Not Answers"
+            title="Actions, not answers."
             gloss="What it takes to turn a disparity signal into a decision someone owns."
           />
           <SeeAlsoItem
@@ -2543,7 +2542,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="three-surfaces-one-keystone"
-            title="Three Surfaces, One Keystone"
+            title="Three surfaces, one keystone."
             gloss="The reporting surfaces the function owes once it has the right seat."
           />
           <SeeAlsoItem
@@ -2791,12 +2790,12 @@ export const ESSAYS: Essay[] = [
                 <SeeAlso>
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="What the agentic-era contract has to specify so an action a machine takes is one a human can stand behind."
           />
           <SeeAlsoItem
             slug="burden-disparity-and-the-next-dollar"
-            title="Burden, Disparity, and the Next Dollar"
+            title="Burden, disparity, and the next dollar."
             gloss="A disparity signal that needed an action, not an answer."
           />
           <SeeAlsoItem
@@ -3099,12 +3098,12 @@ export const ESSAYS: Essay[] = [
                 <SeeAlso>
           <SeeAlsoItem
             slug="grounding-the-ai-layer"
-            title="Grounding the AI Layer"
+            title="Grounding the AI layer."
             gloss="What grounding means before any measurement question gets asked."
           />
           <SeeAlsoItem
             slug="burden-disparity-and-the-next-dollar"
-            title="Burden, Disparity, and the Next Dollar"
+            title="Burden, disparity, and the next dollar."
             gloss="Measurement discipline applied to a real dataset — defining the construct, filtering for reliability, naming what the data cannot do."
           />
           <SeeAlsoItem
@@ -3293,12 +3292,12 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="three-surfaces-one-keystone"
-            title="Three Surfaces, One Keystone"
+            title="Three surfaces, one keystone."
             gloss="The surface the take-home asks for vs. the surface that would actually serve a decision."
           />
           <SeeAlsoItem
             slug="where-should-data-sit"
-            title="Where Should Data Sit?"
+            title="Where should data sit?"
             gloss="The placement question that the take-home brief rarely names."
           />
           <SeeAlsoItem
@@ -3500,12 +3499,12 @@ export const ESSAYS: Essay[] = [
                 <SeeAlso>
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="The integration governance that sits on top of definitional reconciliation."
           />
           <SeeAlsoItem
             slug="where-should-data-sit"
-            title="Where Should Data Sit?"
+            title="Where should data sit?"
             gloss="The seat that has the standing to make a shared definition stick."
           />
           <SeeAlsoItem
@@ -3812,7 +3811,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
-            title="The numbers don’t agree because the words don’t"
+            title="The numbers don’t agree because the words don’t."
             gloss="The shared definitions the contracts have to govern."
           />
           <SeeAlsoItem
@@ -4047,12 +4046,12 @@ export const ESSAYS: Essay[] = [
                 <SeeAlso>
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="What the water-authority layer actually has to specify across three eras."
           />
           <SeeAlsoItem
             slug="blown-assignment"
-            title="It’s a blown assignment"
+            title="It’s not a communication issue. It’s a blown assignment."
             gloss="Why the dashboard runs and the play doesn’t."
           />
           <SeeAlsoItem
@@ -4067,7 +4066,7 @@ export const ESSAYS: Essay[] = [
           Bytes Library. The longer arguments referenced here live in
           other library pieces:{" "}
           <InternalLink slug="what-is-this-system-measuring">
-            What Is This System Actually Measuring?
+            What is this system actually measuring?
           </InternalLink>{" "}
           (the water-safety question),{" "}
           <InternalLink slug="numbers-dont-agree">
@@ -4075,7 +4074,7 @@ export const ESSAYS: Essay[] = [
           </InternalLink>{" "}
           (when two pipes feed the same tap),{" "}
           <InternalLink slug="the-contracts-between-systems">
-            The Contracts Between Systems
+            The contracts between systems
           </InternalLink>{" "}
           and related work on who writes the contract (authority at the
           seam).
@@ -4194,7 +4193,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="What lives inside a seam contract."
           />
           <SeeAlsoItem
@@ -4214,13 +4213,13 @@ export const ESSAYS: Essay[] = [
           </InternalLink>{" "}
           (why integration isn’t the decision),{" "}
           <InternalLink slug="the-contracts-between-systems">
-            The Contracts Between Systems
+            The contracts between systems
           </InternalLink>{" "}
-          and <I>Who Writes the Contract</I> (what lives in a seam contract),{" "}
-          <I>Two Bets, One Institution</I> (how to decide whether to build
+          and <I>Who writes the contract</I> (what lives in a seam contract),{" "}
+          <I>Two bets, one institution</I> (how to decide whether to build
           the play in-house or partner for it), and{" "}
           <InternalLink slug="what-is-this-system-measuring">
-            What Is This System Actually Measuring?
+            What is this system actually measuring?
           </InternalLink>{" "}
           (whether the construct is still the right one).
         </MetaNote>
@@ -4323,7 +4322,7 @@ export const ESSAYS: Essay[] = [
         <P>
           <InternalLink slug="blown-assignment">The football piece</InternalLink> in the library named the artifact underneath all of this: the <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>. The <InternalLink slug="plumbing-got-upgraded-water-didnt">plumbing piece</InternalLink> described the same artifact at a different layer, between architecture and human. <I><InternalLink slug="the-contracts-between-systems">
             Contracts Between Systems
-          </InternalLink></I> and <I>Two Bets, One Institution</I> describe it at still other layers. Seams all the way down, each with its own contract. This piece is about the one that runs across the org chart when people, not systems, do the handoffs.
+          </InternalLink></I> and <I>Two bets, one institution</I> describe it at still other layers. Seams all the way down, each with its own contract. This piece is about the one that runs across the org chart when people, not systems, do the handoffs.
         </P>
 
         <H2>The agentic era intensifies this</H2>
@@ -4351,12 +4350,12 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="where-should-data-sit"
-            title="Where Should Data Sit?"
+            title="Where should data sit?"
             gloss="Which seat has standing to authorize the play to form."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The Contracts Between Systems"
+            title="The contracts between systems."
             gloss="The seam contract at the system-to-system layer."
           />
         </SeeAlso>
@@ -4376,14 +4375,14 @@ export const ESSAYS: Essay[] = [
           </InternalLink>{" "}
           (the play as the unit of cross-functional work),{" "}
           <InternalLink slug="where-should-data-sit">
-            Where Should Data Sit?
+            Where should data sit?
           </InternalLink>{" "}
           (the seat that authorizes the play to form),{" "}
           <InternalLink slug="the-contracts-between-systems">
-            The Contracts Between Systems
+            The contracts between systems
           </InternalLink>{" "}
           (the seam contract at the system-to-system layer), and{" "}
-          <I>Two Bets, One Institution</I> (seam contracts between
+          <I>Two bets, one institution</I> (seam contracts between
           institutional domains).
         </MetaNote>
       </>
@@ -4548,17 +4547,17 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="what-is-this-system-measuring"
-            title="What is this system measuring?"
+            title="What is this system actually measuring?"
             gloss="The construct question underneath every rubric."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The Contracts Between Systems"
+            title="The contracts between systems."
             gloss="Comparability as a governance feature, not a storage feature."
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
-            title="When the numbers don’t agree."
+            title="The numbers don’t agree because the words don’t."
             gloss="What happens when forty grantees report in forty shapes."
           />
         </SeeAlso>
@@ -4816,7 +4815,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The Contracts Between Systems"
+            title="The contracts between systems."
             gloss="The seam contract at the system-to-system layer — a structural rule made explicit."
           />
         </SeeAlso>
@@ -4841,7 +4840,7 @@ export const ESSAYS: Essay[] = [
     kind: "essay",
     slug: "the-decision-system",
     number: "08",
-    title: "The Decision System",
+    title: "The decision system.",
     subtitle:
       "The Analytic Bytes framework for turning fragmented data into institutional action.",
     date: "2026-07-01",
@@ -5154,12 +5153,12 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
-            title="The numbers don’t agree because the words don’t"
+            title="The numbers don’t agree because the words don’t."
             gloss="Definitional reconciliation is the foundation of the meaning layer."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="The seam contract, extended: who acts on the signal, on what cadence, with what authority."
           />
         </SeeAlso>
@@ -5820,17 +5819,17 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="what-is-this-system-measuring"
-            title="What Is This System Actually Measuring?"
+            title="What is this system actually measuring?"
             gloss="Whether a system is looking at the person or just at a proxy."
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
-            title="The Numbers Don’t Agree Because the Words Don’t"
+            title="The numbers don’t agree because the words don’t."
             gloss="Why two systems describing the same person disagree about who they are."
           />
           <SeeAlsoItem
             slug="the-decision-system"
-            title="The Decision System"
+            title="The decision system."
             gloss="What the picture needs to look like to inform the twenty minutes."
           />
         </SeeAlso>
@@ -5839,11 +5838,11 @@ export const ESSAYS: Essay[] = [
           Written July 2026 for the Analytic Bytes Library. The argument here
           is compact by design; the longer versions live in companion pieces:{" "}
           <InternalLink slug="what-is-this-system-measuring">
-            What Is This System Actually Measuring?
+            What is this system actually measuring?
           </InternalLink>{" "}
           (the validity question applied to an institutional system),{" "}
           <InternalLink slug="numbers-dont-agree">
-            The Numbers Don&rsquo;t Agree Because the Words Don&rsquo;t
+            The numbers don&rsquo;t agree because the words don&rsquo;t
           </InternalLink>{" "}
           (why two systems that both claim to describe the same person
           disagree), and{" "}
@@ -6301,12 +6300,12 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="The governance layer this essay's seam contracts are a specific case of."
           />
           <SeeAlsoItem
             slug="who-writes-the-contract"
-            title="Who writes the contract"
+            title="Who writes the contract."
             gloss="Where the seam-contract author has to sit inside the institution."
           />
           <SeeAlsoItem
@@ -6759,7 +6758,7 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="The anatomy of the contract the role is being hired to write — who reads, who writes, on what cadence, under what authority."
           />
           <SeeAlsoItem
@@ -6769,7 +6768,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="two-bets-one-institution"
-            title="Two bets, one institution"
+            title="Two bets, one institution."
             gloss="The sibling argument on what the institution is wagering when it fills this seat — and what it is wagering when it does not."
           />
         </SeeAlso>
@@ -7015,12 +7014,12 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="the-reach-trap"
-            title="The Reach Trap"
+            title="The reach trap."
             gloss="The same failure mode one layer down: mistaking activity data for outcome data, applied here to AI output versus validated signal."
           />
           <SeeAlsoItem
             slug="the-absorbed-data-role"
-            title="The absorbed data role"
+            title="The absorbed data role."
             gloss="The org-design version of the same infrastructure gap: what happens when the specialized role AI evaluation depends on has no funded home."
           />
         </SeeAlso>
@@ -7719,7 +7718,7 @@ export const ESSAYS: Essay[] = [
           and human-in-loop boundaries in agent systems. The taxonomy is
           the same, though the stakes are higher. This is the argument{" "}
           <InternalLink slug="actions-not-answers">
-            Actions, Not Answers
+            Actions, not answers
           </InternalLink>{" "}
           made for agentic deployments: the free human checkpoint has to
           be designed back in.
@@ -8379,12 +8378,12 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="the-valid-dollar"
-            title="The Valid Dollar"
+            title="The valid dollar."
             gloss="Additionality as the test that separates what an intervention produced from what it only accompanied."
           />
           <SeeAlsoItem
             slug="validity-layer-beneath-responsible-ai"
-            title="The Validity Layer Beneath Responsible AI"
+            title="Validity is the layer beneath responsible AI."
             gloss="Why a model that is consistent is not therefore valid, and what has to sit under a responsible-AI claim."
           />
           <SeeAlsoItem
@@ -8485,7 +8484,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          Whether the resulting number then earns a strong claim &mdash; <I>supported</I>, <I>contributed to</I>, <I>produced</I> &mdash; is a separate question, and it has its own answer in <InternalLink slug="the-valid-dollar">The Valid Dollar</InternalLink>. The join makes the division same-scope. The warrant makes it honest about causation. They are <ArtifactLink slug="validity-grid">two different gates</ArtifactLink>, and a number needs both.
+          Whether the resulting number then earns a strong claim &mdash; <I>supported</I>, <I>contributed to</I>, <I>produced</I> &mdash; is a separate question, and it has its own answer in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>. The join makes the division same-scope. The warrant makes it honest about causation. They are <ArtifactLink slug="validity-grid">two different gates</ArtifactLink>, and a number needs both.
         </P>
 
         <Figure
@@ -9032,7 +9031,7 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="actions-not-answers"
-            title="Actions, Not Answers"
+            title="Actions, not answers."
             gloss="Makes the argument this piece tests. If an agentic system removes the human checkpoint, someone has to design it back in; sixty-five requisitions are one place to check whether anyone did."
           />
           <SeeAlsoItem
@@ -9042,7 +9041,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="the-take-home-test"
-            title="The Take-Home Test"
+            title="The take-home test."
             gloss="The method's older sibling. Hiring artifacts read as evidence about how an organization treats its own decisions, one step later in the same process."
           />
         </SeeAlso>
@@ -9313,7 +9312,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="numbers-dont-agree"
-            title="The numbers don't agree."
+            title="The numbers don’t agree because the words don’t."
             gloss="The third question at metric level rather than hiring level. One definition put to eight uses is the failure this essay says no screen can select against."
           />
         </SeeAlso>
@@ -9497,7 +9496,7 @@ export const ESSAYS: Essay[] = [
           />
           <SeeAlsoItem
             slug="the-valid-dollar"
-            title="The valid dollar"
+            title="The valid dollar."
             gloss="The loop applied to one fund's evaluation spend: money went to the link that was not holding the claim back."
           />
           <SeeAlsoItem
@@ -9652,17 +9651,17 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="the-floor-is-the-frontier"
-            title="The floor is the frontier"
+            title="The floor is the frontier."
             gloss="The note this one continues: two loops, and why *beneficial* is a claim about an outcome rather than a capability."
           />
           <SeeAlsoItem
             slug="validity-layer-beneath-responsible-ai"
-            title="The validity layer beneath responsible AI"
+            title="Validity is the layer beneath responsible AI."
             gloss="Why a system that is consistent is not therefore valid, which is the same failure Amodei names for alignment tests."
           />
           <SeeAlsoItem
             slug="the-valid-dollar"
-            title="The valid dollar"
+            title="The valid dollar."
             gloss="What evidence lets a claim say *produced* rather than *supported*, the comparison the benefit gate has to carry."
           />
         </SeeAlso>
@@ -9837,17 +9836,17 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="four-jobs-one-loop"
-            title="Four jobs, one loop"
+            title="Four jobs, one loop."
             gloss="The ownership half; this essay is the time half."
           />
           <SeeAlsoItem
             slug="the-valid-dollar"
-            title="The valid dollar"
+            title="The valid dollar."
             gloss="Which verb the evidence earns; this essay is about where that warrant lives and when it must be rechecked."
           />
           <SeeAlsoItem
             slug="the-gate-runs-one-way"
-            title="The gate runs one way"
+            title="The gate runs one way."
             gloss="The same asymmetry at the AI frontier; risk gets machinery, benefit gets a claim."
           />
         </SeeAlso>
@@ -10150,17 +10149,17 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="the-absorbed-data-role"
-            title="The absorbed data role"
+            title="The absorbed data role."
             gloss="The seat the constraints land on, and why it has no funded home."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="The governance contract that answers the security narrative, and the unwritten identity rule this essay says can now be written."
           />
           <SeeAlsoItem
             slug="four-jobs-one-loop"
-            title="Four jobs, one loop"
+            title="Four jobs, one loop."
             gloss="Cheap production, no owner, one level up from the desk."
           />
         </SeeAlso>
