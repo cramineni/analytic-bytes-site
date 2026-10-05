@@ -3142,9 +3142,7 @@ export const ESSAYS: Essay[] = [
         </Brief>
 
         <P>
-          A take-home is short, and the pressure keeps the organization
-          honest. The clock is short, so the organization cannot dress
-          the problem up. It hands you the thing it wants help with.
+          A take-home is short, and the clock keeps the organization honest: it cannot dress the problem up, so it hands you the thing it wants help with.
           And what an organization reaches for when it wants help tells
           you, with some precision, how it understands its own data.
           Do enough of them and the individual scenarios blur, but the
@@ -3152,10 +3150,9 @@ export const ESSAYS: Essay[] = [
           things are wrong, and wrong in the same order.
         </P>
         <P>
-          First, plainly: none of these organizations was bad at data.
-          Sit with that for a moment. Most had real systems, real
+          First: none of these organizations was bad at data. Most had real systems, real
           analysts, real dashboards. They were good at data and still
-          stuck. That is the point, and the rest of this piece is why.
+          stuck. The rest of this piece is why.
         </P>
 
         <H2>The brief that names everything but the decision</H2>
@@ -3169,10 +3166,10 @@ export const ESSAYS: Essay[] = [
           the last line: anything else you find interesting.
         </P>
         <P>
-          It is a completely reasonable request. Read closely, it is also a request for outputs, not a decision. Six questions, a slide deck, an hour, and nothing about what gets <I>done</I> differently once the slides go up. “Anything else you find interesting” gives it away. If a decision were driving the request, “interesting” would already be defined — interesting <I>toward what.</I> Its absence means the analysis is the point, not a decision it feeds.
+          It is a completely reasonable request. Read closely, it is also a request for outputs, not a decision. Six questions, a slide deck, an hour, and nothing about what gets <I>done</I> differently once the slides go up. “Anything else you find interesting” gives it away. If a decision were driving the request, “interesting” would already be defined — interesting <I>toward what.</I> Its absence means the analysis is the point.
         </P>
         <P>
-          Nearly every take-home had this shape. Build the dashboard, write the trends report, produce the plan. A surprising share did not ask for analysis-toward-a-decision at all. They asked for <I>compliance:</I> get the new state attendance codes computing correctly, get the course-collection feed accurate and auditable — necessary work, but compliance is the purest form of the pattern, an output the organization must produce with no decision attached to it at all. When most of what a data function is handed is outputs and filings, it becomes a service desk — and a service desk never gets to the decision, however fast it moves.
+          Nearly every take-home had this shape. Build the dashboard, write the trends report, produce the plan. A surprising share did not ask for analysis-toward-a-decision at all. They asked for <I>compliance:</I> get the new state attendance codes computing correctly, get the course-collection feed accurate and auditable — necessary work, but compliance is the purest form of the pattern, an output the organization must produce with no decision attached to it at all. When most of what a data function is handed is outputs and filings, it becomes a service desk, and a service desk never gets to the decision, however fast it moves.
         </P>
 
         <H2>The two-line change that touches seven systems</H2>
@@ -3222,8 +3219,7 @@ export const ESSAYS: Essay[] = [
           Several take-homes asked for leadership-grade systems thinking: a first-ninety-days plan, a risk-and-change-management plan for replacing core systems across several regions at once, a strategy for collecting and safeguarding sensitive personal data. Anticipate resistance, build buy-in.
         </P>
         <P>
-          These are the right things to ask of a senior hire. But the
-          implication is quiet and worth catching. The organization knows it has
+          These are the right things to ask of a senior hire. The implication is easy to miss: The organization knows it has
           a systems gap, and its plan for closing it is to hire a person who
           will carry the system in their head: hold the definitions, broker the
           cross-functional agreements, remember the edge cases, watch the
@@ -4112,8 +4108,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>Know where you stand. Know what you do. Run the play.</P>
         <P>
-          That’s the whole frame. It does most of what cross-functional teams
-          actually need.
+          That’s the whole frame. It does most of what cross-functional teams need.
         </P>
 
         <H2>Three phases, three failure modes</H2>
@@ -4155,7 +4150,7 @@ export const ESSAYS: Essay[] = [
           flat thing, but they aren’t. An alignment failure needs a clearer
           organizational map. An assignment failure needs a written contract.
           An execution failure needs operational redundancy — a backup when
-          the named person is out. Each needs a different fix, a different conversation and a different artifact.
+          the named person is out. Each needs a different conversation and a different artifact.
         </P>
         <P>The meeting can name the breakdown. It can’t fix any of them.</P>
 
@@ -4167,7 +4162,6 @@ export const ESSAYS: Essay[] = [
           The fix is the play, written down, owned by named roles, with the contingencies designed in. That&rsquo;s the <ArtifactLink slug="contract-at-the-seam">seam contract</ArtifactLink>. That&rsquo;s the artifact the modern data stack does not ship in the box.
         </P>
         <P>The plumbing got upgraded. The play didn’t.</P>
-        <P>That’s the work.</P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -4582,7 +4576,7 @@ export const ESSAYS: Essay[] = [
           Most rule books in any organization read like a description of normal behavior. Show up on time, document the decision, get the approval, follow the policy. They are the rules that explain how to do the thing. They are necessary. They are not the rules that decide whether the institution holds together under pressure.
         </p>
           <p>
-          The interesting rules are the others. The ones that look weird at first reading. The ones a new player has to have explained twice. The ones that seem to interrupt the flow of the game rather than describe it. Those are the rules doing the structural work. Once you start noticing them, you see the same problem inside every institution.
+          The interesting rules are the others: the ones that look weird at first reading, that a new player needs explained twice, that seem to interrupt the flow of the game rather than describe it. Those are the rules doing the structural work. Once you start noticing them, you see the same problem inside every institution.
         </p>
         </Brief>
 
@@ -4605,7 +4599,7 @@ export const ESSAYS: Essay[] = [
           intentional drop.
         </P>
         <P>
-          That move (pre-resolving an exploit before it can be exploited) is the most underused discipline in institutional design. Every governance document I have read at scale describes what people should do. Almost none of them name the specific exploits the structure would otherwise reward, and pre-resolve them. The Infield Fly Rule is what a rule book looks like when someone actually asked what the rules are for — closing the loopholes the obvious would otherwise create.
+          That move (pre-resolving an exploit before it can be exploited) is the most underused discipline in institutional design. Every governance document I have read at scale describes what people should do. Almost none of them name the specific exploits the structure would otherwise reward, and pre-resolve them. The Infield Fly Rule is what a rule book looks like when someone asked what the rules are for: closing the loopholes that ordinary play would otherwise open.
         </P>
 
         <H2>The Free Guard Zone</H2>
@@ -4616,8 +4610,7 @@ export const ESSAYS: Essay[] = [
           in the 1990s after every team converged on the same strategy:
           take out, take out, take out. It has been widened since. The current five-rock version has been in force in international play since the 2018&ndash;19 season. The dominant strategy
           worked. It also collapsed the game &mdash; low scores, sterile
-          play. The rule was added not to tell players what to do, but to
-          prevent rational optimization from destroying the thing the game
+          play. The rule was added to stop rational optimization from destroying the thing the game
           was built to be.
         </P>
         <P>
@@ -4628,10 +4621,10 @@ export const ESSAYS: Essay[] = [
             className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"
           >
             Goodhart&rsquo;s Law
-          </a> built into the rules, not just cited as a warning. (Originally Charles Goodhart&rsquo;s 1975 observation that statistical regularities collapse once they are targeted for policy, popularly reformulated by Marilyn Strathern in 1997 as <I>“when a measure becomes a target, it ceases to be a good measure.”</I>) Every metric eventually gets gamed. Every KPI eventually rewards the behavior that hits the number rather than the behavior the number was meant to encourage. Every growth-at-all-costs strategy eventually hollows the product. The discipline isn&rsquo;t asking whether the metric will get gamed — it will. The discipline is writing the rule that stops the gaming from destroying what the metric was meant to measure. A funder whose impact metric inadvertently rewards risk-averse program design needs the Free Guard Zone equivalent: the rule that prevents the rational pursuit of the metric from killing what the metric was meant to encourage. Almost no funder has that rule written down.
+          </a> built into the rules, not just cited as a warning. (Originally Charles Goodhart&rsquo;s 1975 observation that statistical regularities collapse once they are targeted for policy, popularly reformulated by Marilyn Strathern in 1997 as <I>“when a measure becomes a target, it ceases to be a good measure.”</I>) Every metric eventually gets gamed. Every KPI eventually rewards the behavior that hits the number rather than the behavior the number was meant to encourage. The metric will get gamed. The discipline is writing the rule that stops the gaming from destroying what the metric was meant to measure. A funder whose impact metric inadvertently rewards risk-averse program design needs the Free Guard Zone equivalent: the rule that prevents the rational pursuit of the metric from killing what the metric was meant to encourage. In my experience, few funders have that rule written down.
         </P>
         <P>
-          Measurement scientists have a name for the pattern the Free Guard Zone was written to prevent: <B>construct-irrelevant strategies</B> — responses that hit the score without demonstrating the thing the score was built to measure. <a href="https://en.wikipedia.org/wiki/Samuel_Messick" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Samuel Messick</a> built the modern validity framework around exactly this failure mode. In automated essay scoring, my colleagues and I called one version of it construct-irrelevant response strategies; <InternalLink slug="before-it-was-called-ai-evaluation"><I>Before it was called AI evaluation</I></InternalLink> tells that story. The AI benchmark community has been rediscovering it under other names — reward hacking, specification gaming, Goodhart taxonomy — as models learn to score high on evaluations without learning the underlying skill. Same problem, different domain. That&rsquo;s why the weird rule has to be written before the metric goes live.
+          Measurement scientists have a name for the pattern the Free Guard Zone was written to prevent: <B>construct-irrelevant strategies</B> — responses that hit the score without demonstrating the thing the score was built to measure. <a href="https://en.wikipedia.org/wiki/Samuel_Messick" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Samuel Messick</a> named construct-irrelevant variance as one of the two main threats to validity. In automated essay scoring, my colleagues and I called one version of it construct-irrelevant response strategies; <InternalLink slug="before-it-was-called-ai-evaluation"><I>Before it was called AI evaluation</I></InternalLink> tells that story. The AI benchmark community has been rediscovering it under other names — reward hacking, specification gaming, Goodhart taxonomy — as models learn to score high on evaluations without learning the underlying skill. Same problem, different domain. That&rsquo;s why the weird rule has to be written before the metric goes live.
         </P>
 
         <H2>Soccer Offside</H2>
@@ -4655,8 +4648,7 @@ export const ESSAYS: Essay[] = [
           team that goes around the process because it is faster)
           eventually discover that the structure has dissolved. The rule
           that prevents cherry-picking is not a rule about how to play. It
-          is a rule about preserving the playing field. The cross-functional processes I have watched fail, failed because
-          the rule that protected the structure was not written. The
+          is a rule about preserving the playing field. The cross-functional processes I have watched fail did so because the rule that protected the structure was never written. The
           cherry-pickers won, and the field collapsed.
         </P>
 
@@ -4694,8 +4686,7 @@ export const ESSAYS: Essay[] = [
           and the system depends on their discretion to function. The rule
           that names that discretion, and gives the operator formal
           authority to use it without breaking the rules, is one of the
-          most useful rules an institution can have. Almost no
-          institution has it.
+          most useful rules an institution can have. In my experience, few institutions have it.
         </P>
 
         <H2>The Baton Exchange Zone</H2>
@@ -4760,7 +4751,7 @@ export const ESSAYS: Essay[] = [
           defeat their own purpose.
         </P>
         <P>
-          When a leader asks me what they should be writing down that their predecessors did not, this is the answer. Not more policies for the normal case. The weird-looking rules — the ones that pre-resolve exploits, prevent optimization collapse, preserve distributed structure, protect the mission from process, and make interfaces themselves accountable. Those rules will not look like a strategy document. They will look like a baseball umpire calling a batter out for a ball that was never caught. That is what working governance looks like up close.
+          When a leader asks me what they should be writing down that their predecessors did not, this is the answer. The answer is the weird-looking rules, not more policies for the normal case. Those rules will not look like a strategy document. They will look like a baseball umpire calling a batter out for a ball that was never caught. That is what working governance looks like up close.
         </P>
         <P>
           One corollary.{" "}
@@ -4780,10 +4771,7 @@ export const ESSAYS: Essay[] = [
           cost, the exploit the rule was there to close.
         </P>
         <P>
-          The most important systems are not designed to optimize
-          performance. They are designed to prevent predictable failure.
-          The rules that do that work look weird at first reading, and
-          they are doing the job.
+          The rules that prevent predictable failure look weird at first reading. That is how to recognize them.
         </P>
 
         <SeeAlso>
