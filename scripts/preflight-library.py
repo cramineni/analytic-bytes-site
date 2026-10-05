@@ -201,6 +201,14 @@ def check_piece(e, repo):
         warn("metanote", "%d words, reads as a stub"
              % len(strip_tags(meta).split()))
 
+    # Decision chain. Both essays published on 2026-10-05 shipped without these
+    # because nothing checked for them -- 34 of 39 pieces carried them and the
+    # two new ones did not, which is precisely the gap a per-piece eyeball misses.
+    if not re.search(r"chainLink\s*:", w):
+        warn("chain", "no chainLink -- where does the decision chain break?")
+    if not re.search(r"failurePoint\s*:", w):
+        warn("chain", "no failurePoint (meaning | authority | validity)")
+
     sa = len(re.findall(r"<SeeAlsoItem", w))
     if sa == 0:
         err("seealso", "no <SeeAlso> block")
