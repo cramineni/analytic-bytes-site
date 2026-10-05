@@ -10077,18 +10077,18 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="the-absorbed-data-role"
-            title="The absorbed data role."
-            gloss="The seat the constraints land on, and why it has no funded home."
+            title="The absorbed data role"
+            gloss="the seat the constraints land on, and why it has no funded home."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems."
-            gloss="The governance contract that answers the security narrative, and the unwritten identity rule this essay says can now be written."
+            title="The contracts between systems"
+            gloss="the governance contract that answers the security narrative, and the unwritten identity rule this essay says can now be written."
           />
           <SeeAlsoItem
-            slug="four-jobs-one-loop"
-            title="Four jobs, one loop."
-            gloss="Cheap production, no owner, one level up from the desk."
+            slug="the-delta-nobody-budgeted"
+            title="The delta nobody budgeted"
+            gloss="the companion: the same organization a year later, when the world moves and the configuration does not."
           />
         </SeeAlso>
 
@@ -10118,7 +10118,18 @@ export const ESSAYS: Essay[] = [
     arcSecondary: "ai-systems",
     body: (
       <>
-                <P>
+                <Brief>
+          <p>
+            A compliance director leaves, and with her goes the only working map from a student&rsquo;s status to a billing code. Nobody wrote it down, and a document would not have held, because the mapping moved whenever a student&rsquo;s services did. Reconstructing it is a month of work no budget line anticipated.
+          </p>
+          <p>
+            A state reissues its codes. A vendor&rsquo;s release lands two quarters late. A rollover drops a field a trend needed. Each one sets off the same three jobs, and each lands on whoever happens to be there. The recurring cost in these organizations is not running the systems. It is keeping them matched to a world that does not hold still.
+          </p>
+          <p>
+            AI makes that translation cheap, which is the first real change in this work in years. It also arrives as one more thing that changes underneath, with its own upgrades and its own drift, and nobody has budgeted for that either.
+          </p>
+        </Brief>
+        <P>
           The special-education compliance director was the only person who could turn a student&rsquo;s status into a billing code.
         </P>
         <P>
