@@ -1572,10 +1572,7 @@ export const ESSAYS: Essay[] = [
             problem: the layers exist and don’t talk to each other, so no
             decision-maker sees the whole picture at the granularity their own
             decision requires. The fix is an architecture that stitches the
-            layers you already have into decision surfaces for the people who
-            have to act — not another portal. Different surface, same
-            discipline — the one that applies as readily to a behavioral-health
-            nonprofit or a charter network as to a state education ministry.
+            layers you already have into decision surfaces for the people who have to act, rather than another portal. The same discipline applies as readily to a behavioral-health nonprofit or a charter network as to a state education ministry.
           </p>
         </Brief>
 
@@ -1841,7 +1838,7 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Policy that can read both signals.</B> A state ministry reading
           aggregated district patterns alongside aggregated classroom signal can
-          design policy that targets the gap, not just measures it.
+          design policy that targets the gap as well as measuring it.
         </P>
         <P>
           This is the same parallel as healthcare. CDC + NSDUH + claims + EHR +
@@ -3557,7 +3554,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The harder question is who can vouch for the number when the principal calls and asks why their applicant count moved by twelve in a week. Someone has to know which of the source systems was reconciled when, which sheet version held the most recent definition of “applicant” versus “enrolled,” which call-center status code rolled up to which funnel stage, and what changed in the overnight refresh. In the legacy era that someone is a steward. The contracts were not absent — they were everywhere, in vendor documentation, in file format conventions, in batch cadences, in the append-versus-delete semantics buried in scheduled jobs, in the implicit understanding that “an applicant is who SchoolMint says they are unless HubSpot has them flagged for follow-up.” They were tacit institutional knowledge, held in the head of the steward who could vouch for a number when a stakeholder was about to act on it. That is not a failure of engineering. It is what legacy-era integration governance was. When the steward left, the integration still ran. The number stopped being actionable, because the contract that connected the integration to the decision left with the steward.
+          The harder question is who can vouch for the number when the principal calls and asks why their applicant count moved by twelve in a week. Someone has to know which of the source systems was reconciled when, which sheet version held the most recent definition of “applicant” versus “enrolled,” which call-center status code rolled up to which funnel stage, and what changed in the overnight refresh. In the legacy era that someone is a steward. The contracts were not absent — they were everywhere, in vendor documentation, in file format conventions, in batch cadences, in the append-versus-delete semantics buried in scheduled jobs, in the implicit understanding that “an applicant is who SchoolMint says they are unless HubSpot has them flagged for follow-up.” They were tacit institutional knowledge, held in the head of the steward who could vouch for a number when a stakeholder was about to act on it. That was legacy-era integration governance, working as designed. When the steward left, the integration still ran. The number stopped being actionable, because the contract that connected the integration to the decision left with the steward.
         </P>
 
         <P>
@@ -4216,7 +4213,7 @@ export const ESSAYS: Essay[] = [
           Much of modern work is cross-functional and time-bound. Most org charts are functional and indefinite. I keep coming back to that mismatch. Geary Rummler and Alan Brache named it in 1990: the white space on the organization chart.
         </p>
           <p>
-            More than one honest structural form can carry that mismatch:
+            More than one structural form can carry that mismatch:
             councils that deliberate and hand a playbook back to each
             function; flash teams that merge across functions for a
             deliverable and dissolve; standing squads drawn permanently from
@@ -4237,7 +4234,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>More than one honest answer</H2>
         <P>
-          There is more than one honest structural answer to the mismatch, and the field of practice is diverse: councils, steering committees, advisory boards, working groups, task forces, tiger teams, flash teams, agile squads, product teams and centers of excellence. Each one differs on permanence, authority, composition, and purpose. Each has a legitimate place.
+          There is more than one structural answer to the mismatch, and the field of practice is diverse: councils, steering committees, advisory boards, working groups, task forces, tiger teams, flash teams, agile squads, product teams and centers of excellence. Each one differs on permanence, authority, composition, and purpose. Each has a legitimate place.
         </P>
         <P>In my experience, three archetypes cover most of the practice.</P>
 
@@ -6177,16 +6174,13 @@ export const ESSAYS: Essay[] = [
         <H2>The hybrid is the honest answer</H2>
 
         <P>
-          The institutions handling this moment well are not treating
-          the bet as a binary choice. They are calibrating different
-          bets to different domains. The same institution runs
+          The bet does not have to be binary. An institution can calibrate different bets to different domains. The same institution runs
           vendor-anchored for the use cases where standardization,
           compliance, and lower risk tolerance reward the vendor&rsquo;s
           pre-built scaffolding, and runs federated for the use cases
           where research-flavored work, multi-stakeholder collaboration,
           and innovation velocity reward the institution&rsquo;s own
-          orchestration. The deliberate hybrid is the architecturally
-          honest answer for institutions that have both kinds of work.
+          orchestration. The deliberate hybrid is the right architecture for institutions that have both kinds of work.
           The accidental hybrid, the one that grew across both domains
           because no one made an active calibration, doubles the
           governance surface area without buying safety. An institution
@@ -6244,8 +6238,7 @@ export const ESSAYS: Essay[] = [
           Epic-and-Cerner consolidation. Both sectors learned, at
           substantial cost, that the contract layer matters more than
           the technology layer. Higher education and philanthropy can
-          skip part of the pain. Recognize the hybrid as the honest
-          answer up front. Write the seam contracts before the
+          skip part of the pain. Recognize the hybrid as the answer up front. Write the seam contracts before the
           architecture drifts.
         </P>
 
@@ -6338,7 +6331,7 @@ export const ESSAYS: Essay[] = [
           The senior data leadership posting at most institutions — whether titled Director of Data Platforms, Director of Data Analytics and Engineering, Director of Data Systems, VP of Analytics, Head of Data or Head of Analytics, Chief Data Officer, Chief Data and Analytics Officer, or Chief AI Officer — is two roles fused into one job description. One role is engineering: build and operate the warehouse, the ETL, the semantic layer, the lineage tooling. Stand up the dbt models, maintain the Snowflake schemas, configure the Fivetran connectors, keep the freshness SLAs in line. That is a senior data-engineering role the field knows how to define, screen for, and reward. The screens know what to look for.
         </P>
         <P>
-          The other role is governance and subject-matter expertise: own the contracts on top of the warehouse, the decision interface those contracts feed, and the relationships with the stakeholders whose decisions the contracts have to support. Write the explicit, named understanding that turns integrated bytes into something a stakeholder can actually act on. Know what a principal needs to act on a recruitment funnel. Know what a clinician needs to act on a no-show count. Know what a District Education Officer needs to act on multiple state systems&rsquo; incompatible cycles. Know what a program officer needs to stand behind a quarterly figure when a funder asks. That is a senior governance-and-domain role. Organizations that have it know what it looks like, but the screens for it are underdeveloped and the rubric rarely names it as its own thing.
+          The other role is governance and subject-matter expertise: own the contracts on top of the warehouse, the decision interface those contracts feed, and the relationships with the stakeholders whose decisions the contracts have to support. Write the explicit, named understanding that turns integrated bytes into something a stakeholder can act on. Know what a principal needs to act on a recruitment funnel. Know what a clinician needs to act on a no-show count. Know what a District Education Officer needs to act on multiple state systems&rsquo; incompatible cycles. Know what a program officer needs to stand behind a quarterly figure when a funder asks. That is a senior governance-and-domain role. Organizations that have it know what it looks like, but the screens for it are underdeveloped and the rubric rarely names it as its own thing.
         </P>
         <P>
           The institutional posting names both roles. The screens assess
@@ -6374,7 +6367,7 @@ export const ESSAYS: Essay[] = [
           .)
         </P>
         <P>
-          A senior engineer who has built three warehouses does not, by default, know any of this. There is no reason they would. That knowledge doesn&rsquo;t come from warehouse-building. You pick it up by sitting inside institutions for years, watching what decisions get made, what contracts hold, who stakeholders trust. That isn&rsquo;t engineering experience. It&rsquo;s subject-matter experience with operational depth — the half the rubric assumes without checking.
+          A senior engineer who has built three warehouses does not, by default, know any of this. There is no reason they would. You pick it up by sitting inside institutions for years, watching what decisions get made, what contracts hold, who stakeholders trust. That is subject-matter experience with operational depth, the half the rubric assumes without checking.
         </P>
 
         <H2>Two architectures, one honest choice</H2>
@@ -6523,12 +6516,11 @@ export const ESSAYS: Essay[] = [
           assessable. A candidate without dbt experience cannot fake
           their way through a technical interview. A candidate without
           governance-authoring experience can describe stakeholder
-          management plausibly without ever having written a governance
-          contract that actually held in production. The screen catches
+          management plausibly without ever having written a governance contract that held in production. The screen catches
           the engineering gap. It cannot catch the governance gap.
         </P>
         <P>
-          The emerging AI-native roles show the same pattern in a newer register. Recent postings for Director of AI Transformation or Director of AI Center of Excellence, sometimes reporting into an SVP for Data rather than into a CTO or CAIO, name the engineering tier with production-grade specificity — model registries, integrations, single sign-on, data-loss prevention, agentic systems, large-language-model tooling — while the governance and SME tiers are named as traits rather than as capabilities that can be screened: “strong governance instincts,” “proven ability to influence across an organization,” “ability to make complex technical topics clear to non-technical audiences.” The AI-native version of the role has not resolved the rubric problem. If anything, the governance gap is more consequential here than it was in the pre-AI role: engineering-tier specificity has grown, governance and SME tiers have stayed as trait-language, and the stakes of a governance failure at machine cadence are higher than they were at pipeline cadence. Regulated sectors — health (HIPAA, HITECH, 42 CFR Part 2), education (FERPA), commercial data platforms (SOC2), financial services (GLBA, PCI) — are the partial exception, because compliance frameworks force specificity in the compliance tier regardless of reporting line. But compliance specificity is not the same as governance specificity. A JD can name HIPAA or FERPA carefully while leaving “strong governance instincts” as the only signal for the semantic-and-decision-authoring tier that the role actually needs. Where the two coincide — a small number of academic medical center governance postings, or Fortune-scale enterprise CDO roles that name semantic layer, knowledge graphs, and RAG readiness explicitly — the rubric is meaningfully better. When compliance is named but the semantic layer stays abstract, regulatory language masks the rubric problem without solving it.
+          The emerging AI-native roles show the same pattern in a newer register. Recent postings for Director of AI Transformation or Director of AI Center of Excellence, sometimes reporting into an SVP for Data rather than into a CTO or CAIO, name the engineering tier with production-grade specificity (model registries, integrations, single sign-on, data-loss prevention, agentic systems, large-language-model tooling) while the governance and SME tiers are named as traits rather than as capabilities that can be screened: “strong governance instincts,” “proven ability to influence across an organization,” “ability to make complex technical topics clear to non-technical audiences.” The AI-native version of the role has not resolved the rubric problem. If anything, the governance gap is more consequential here than it was in the pre-AI role: engineering-tier specificity has grown, governance and SME tiers have stayed as trait-language, and the stakes of a governance failure at machine cadence are higher than they were at pipeline cadence. Regulated sectors — health (HIPAA, HITECH, 42 CFR Part 2), education (FERPA), commercial data platforms (SOC2), financial services (GLBA, PCI) — are the partial exception, because compliance frameworks force specificity in the compliance tier regardless of reporting line. But compliance specificity is not the same as governance specificity. A JD can name HIPAA or FERPA carefully while leaving “strong governance instincts” as the only signal for the semantic-and-decision-authoring tier that the role needs. Where the two coincide — a small number of academic medical center governance postings, or Fortune-scale enterprise CDO roles that name semantic layer, knowledge graphs, and RAG readiness explicitly — the rubric is meaningfully better. When compliance is named but the semantic layer stays abstract, regulatory language masks the rubric problem without solving it.
         </P>
         <P>
           The stated outcomes are the third signal. Engineering-anchored postings name engineering KPIs: pipeline uptime, data freshness, schema reliability, lineage coverage, time-to-insight. MEL-anchored postings name decision-quality outcomes: program officer ability to act on the data, funder reporting that lands, partner-facing analytics that drives decisions, evaluation findings that inform program design. The MEL postings are the contrast case the scan reveals most clearly. They show what the rubric looks like when the institution has structured the role around the decision interface rather than around the engineering stack. They are also the rarest pattern in the corpus.
@@ -6623,16 +6615,13 @@ export const ESSAYS: Essay[] = [
           project management). Both roles are sometimes described in
           the trade press as &ldquo;unicorn&rdquo; roles because they
           require capability ranges most candidates do not bring. They
-          aren&rsquo;t unicorns. They&rsquo;re what the role actually
-          needs at most institutions. They&rsquo;re rare because most
+          aren&rsquo;t unicorns. They're what the role needs at most institutions. They&rsquo;re rare because most
           institutions haven&rsquo;t structured the role to demand both
           halves, so they&rsquo;ve never screened for both.
         </P>
 
         <P>
-          <I>The pattern across postings.</I> The sector breadth these
-          observations draw on is what makes the pattern legible.
-          Reading Director, Head, VP, and
+          <I>The pattern across postings.</I> Reading Director, Head, VP, and
           Chief-level data leadership
           postings across sectors &mdash; K-12 networks and
           public-sector education, behavioral-health agencies and
@@ -6704,7 +6693,7 @@ export const ESSAYS: Essay[] = [
           for is not the role it has been screening for.
         </P>
         <P>
-          When a leader asks what they should do differently this time, the answer is a rubric that names both halves of the role, an interview process that assesses for both, and a reporting line that lets the governance half hold authority across the institution rather than defer to whichever function it reports into. Without those pieces, the screen keeps hiring engineers to do work half of which is not engineering. (For the paired argument on what the institution is actually betting on when it makes this hire, see{" "}
+          When a leader asks what they should do differently this time, the answer is a rubric that names both halves of the role, an interview process that assesses for both, and a reporting line that lets the governance half hold authority across the institution rather than defer to whichever function it reports into. Without those pieces, the screen keeps hiring engineers to do work half of which is not engineering. (For the paired argument on what the institution is betting on when it makes this hire, see{" "}
           <InternalLink slug="two-bets-one-institution">
             Two bets, one institution
           </InternalLink>
