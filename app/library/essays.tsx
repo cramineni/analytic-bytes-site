@@ -2877,7 +2877,7 @@ export const ESSAYS: Essay[] = [
           When you build an automated scoring model, the obvious way to judge it is agreement: how often does the machine&rsquo;s score match a trained human rater&rsquo;s score? It is a clean number, and it is reassuring. It is also not sufficient. A model can agree with human raters at a high rate and still be measuring the wrong thing. It can learn that longer essays tend to score higher, and quietly reward length. It can lean on vocabulary, sentence count, surface fluency: features that correlate with quality without being quality. The scores look right. The agreement statistics look right. And the system is measuring something other than what its label claims.
         </P>
         <P>
-          The discipline of measurement science exists, in large part, to catch exactly that. The question it trains you to ask is the one I have used in every kind of data work since: what is this system actually measuring, and does that match what we say it measures? Not whether the output looks plausible, but whether the thing being measured is the thing we intended. An automated scoring engine that earns its agreement by rewarding length is not a writing-quality measure. It is a length measure with a writing-quality label. The difference looks small in aggregate. It is decisive for{" "}
+          The discipline of measurement science exists, in large part, to catch exactly that. The question it trains you to ask is the one I have used in every kind of data work since: what is this system actually measuring, and does that match what we say it measures? An automated scoring engine that earns its agreement by rewarding length is not a writing-quality measure. It is a length measure with a writing-quality label. The difference looks small in aggregate. It is decisive for{" "}
           <ArtifactLink slug="fair-for-whom">
             the writers the correlation doesn&rsquo;t hold for
           </ArtifactLink>
@@ -2929,8 +2929,7 @@ export const ESSAYS: Essay[] = [
           conversation has mostly been running on the easier question.
         </P>
         <P>
-          There is a second reason it has stayed there, and it is honest to
-          name. The harder validity work was historically expensive. It
+          There is a second reason it has stayed there. The harder validity work was historically expensive. It
           required gathering downstream outcomes, running instructor
           evaluations of subsequent coursework, tracking students
           longitudinally. Reliability-against-human-raters was what could be
@@ -2939,8 +2938,7 @@ export const ESSAYS: Essay[] = [
           scoring possible, the cheap compute and cheap storage and cheap data
           integration of the last decade, has also lowered the cost of running
           the harder question. The validity work that was once prohibitively
-          expensive is newly affordable. The methodology was built for an older
-          cost structure. The cost structure has moved. Most validation practice still runs on the older one, even as ETS researchers argue that generative-AI scoring needs more validity evidence than the systems before it (Casabianca et al., <a href="https://arxiv.org/abs/2501.02334" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2025</a>).
+          expensive is newly affordable. Most validation practice still runs on the older cost structure, even as ETS researchers argue that generative-AI scoring needs more validity evidence than the systems before it (Casabianca et al., <a href="https://arxiv.org/abs/2501.02334" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2025</a>).
         </P>
         <P>
           This argues for keeping humans in the loop, and against confusing two different roles they play there. Humans as decision-makers are the people who act on a score,
@@ -2958,13 +2956,13 @@ export const ESSAYS: Essay[] = [
 
         <H2>Every system makes a claim</H2>
         <P>
-          Every AI system a university adopts makes a claim like that label, and most of the claims are never written down. An early-alert model claims to identify students at academic risk. An advising assistant claims to surface the guidance a student needs. An admissions-support tool claims to predict yield, or fit, or success. A staff-facing assistant claims to produce work accurate enough to act on. Each is a statement about an intended outcome. And each can be wrong the way an automated scoring engine can be wrong — tracking a surface signal, missing the substance, because the claim was implicit and no one was assigned to check it.
+          Every AI system a university adopts makes a claim like the scoring engine's label, and most of the claims are never written down. An early-alert model claims to identify students at academic risk. An advising assistant claims to surface the guidance a student needs. An admissions-support tool claims to predict yield, or fit, or success. A staff-facing assistant claims to produce work accurate enough to act on. Each is a statement about an intended outcome. And each can be wrong the way an automated scoring engine can be wrong — tracking a surface signal, missing the substance, because the claim was implicit and no one was assigned to check it.
         </P>
         <P>
           The early-alert model is the cleanest example. Built without care, it can learn that the strongest predictor of risk in the historical record is a demographic pattern, or a single missed assignment, or enrollment in one difficult course. It will flag students, and the flags will even be partly accurate. But a model that flags students by proxy measures the proxy, not the risk — and sends the institution&rsquo;s attention and resources there instead. No one set out to build that system. It is what results when a tool is adopted on plausibility and never asked the intended-outcome question.
         </P>
         <P>
-          Generative and agentic tools make the problem harder, not easier. A
+          Generative and agentic tools make the problem harder. A
           predictive model at least produces a score that can be tested against
           an outcome. A generative assistant produces fluent, confident prose
           whose quality is difficult to assess at a glance, and fluency is
@@ -2998,12 +2996,12 @@ export const ESSAYS: Essay[] = [
           name the human edge of AI, and data analytics for operational and financial insights, among the issues that matter most. In <a href="https://www.insidehighered.com/reports/2026/05/11/2026-survey-campus-chief-technologyinformation-officers" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Inside Higher Ed&rsquo;s 2026 survey of campus technology officers</a>, 54 percent said their AI work was still in the pilot phase, 21 percent were beginning to scale pilots, and 8 percent had moved it into core operations. Evaluation is the easiest part of that move to skip, because it is invisible when it is working and expensive to do well. It also decides whether everything else is real.
         </P>
         <P>
-          Applying the discipline does not mean slowing adoption, and it does not mean another layer of bureaucracy. It means a small set of hard questions, asked consistently: before a system is trusted, and periodically after. Is the system measuring the intended construct, or a proxy for it? When it is wrong, what happens downstream, and to whom? Does it perform consistently across the different groups of people it touches, or does its accuracy concentrate where the training data was richest? What human decision is the system meant to support, and does its output improve that decision? None of these questions is exotic. They are the ordinary questions of measurement. A university that has an institutional research office and an assessment culture already employs people who know how to ask them. No one has pointed them at the AI systems moving into administrative use yet.
+          Applying the discipline means a small set of hard questions, asked consistently: before a system is trusted, and periodically after. It does not require slowing adoption or adding a layer of bureaucracy. Is the system measuring the intended construct, or a proxy for it? When it is wrong, what happens downstream, and to whom? Does it perform consistently across the different groups of people it touches, or does its accuracy concentrate where the training data was richest? What human decision is the system meant to support, and does its output improve that decision? None of these questions is exotic. They are the ordinary questions of measurement. A university that has an institutional research office and an assessment culture already employs people who know how to ask them. No one has pointed them at the AI systems moving into administrative use yet.
         </P>
 
         <H2>Seeing the student whole</H2>
         <P>
-          There is a deeper version of the intended-outcome question, and in a university it is the one that matters most. When we ask what a system is actually measuring, we are often really asking whether it sees a person whole. An early-alert model that optimizes a retention number reduces the student to the outcome the institution wants to protect. A model built to help the institution understand and support a student treats the number as a signal that points back toward a person, one with a context, a trajectory, and reasons. Asked seriously, the intended-outcome question is a check against measuring students as proxies for the metrics we happen to collect. A university, of all institutions, should want its systems to see students whole. That is an evaluation standard, not a sentiment — it is answerable, and it is the standard worth holding AI to.
+          There is a deeper version of the intended-outcome question, and in a university it is the one that matters most. When we ask what a system is actually measuring, we are often asking whether it sees a person whole. An early-alert model that optimizes a retention number reduces the student to the outcome the institution wants to protect. A model built to help the institution understand and support a student treats the number as a signal that points back toward a person, one with a context, a trajectory, and reasons. Asked seriously, the intended-outcome question is a check against measuring students as proxies for the metrics we happen to collect. A university, of all institutions, should want its systems to see students whole. That is an evaluation standard: it is answerable, and it is the standard worth holding AI to.
         </P>
         <P>
           One clarification, because the easiest misread of this argument is
@@ -3013,8 +3011,7 @@ export const ESSAYS: Essay[] = [
           underneath them — knowing which construct each proxy stands in for,
           which part of the construct it actually captures, and where the
           proxy quietly substitutes itself for the construct it was supposed
-          to serve. Pro-proxy, with the validity work done out loud. That is
-          the standard.
+          to serve. Pro-proxy, with the validity work done out loud.
         </P>
 
         <H2>An old discipline, a new set of systems</H2>
@@ -3027,7 +3024,7 @@ export const ESSAYS: Essay[] = [
           been shaping decisions, unnoticed, for two years.
         </P>
         <P>
-          That discipline does not need to be invented. Higher education has spent decades building the science of measuring hard things well and holding the measurements accountable to what they claim. It has a name, validity, and two statements worth reading before anyone rebuilds it. <a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane (1992)</a> treats validation as an argument: a chain of inferences examined link by link, with the evidence aimed at whichever link is weakest rather than spread evenly across all of them. <a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick (1995)</a> locates validity in the interpretation and use of a score rather than in the score itself, consequences included. That second point is why two of the questions above, the one about what happens downstream and to whom and the one about which human decision the system is meant to improve, are not additions to the measurement question. They are the measurement question. The same rigor that asks whether an essay score reflects writing or length can ask whether an early-alert flag reflects risk or a proxy for it. It is the same question. Higher education&rsquo;s AI moment does not need a new framework so much as it needs to turn an old and well-tested one toward a new set of systems, and to ask, of every system it adopts, the plain and demanding question: what is this actually measuring, and is that what we meant?
+          That discipline does not need to be invented. Higher education has spent decades building the science of measuring hard things well and holding the measurements accountable to what they claim. It has a name, validity, and two statements worth reading before anyone rebuilds it. <a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane (1992)</a> treats validation as an argument: a chain of inferences examined link by link, with the evidence aimed at whichever link is weakest rather than spread evenly across all of them. <a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick (1995)</a> locates validity in the interpretation and use of a score rather than in the score itself, consequences included. That second point is why two of the questions above, the one about what happens downstream and to whom and the one about which human decision the system is meant to improve, are not additions to the measurement question. They are the measurement question. The same rigor that asks whether an essay score reflects writing or length can ask whether an early-alert flag reflects risk or a proxy for it. Higher education&rsquo;s AI moment does not need a new framework so much as it needs to turn an old and well-tested one toward a new set of systems, and to ask, of every system it adopts, the plain and demanding question: what is this actually measuring, and is that what we meant?
         </P>
 
         {/* DOWNLOAD BUNDLE — three operating documents that turn this essay's
@@ -4864,8 +4861,7 @@ export const ESSAYS: Essay[] = [
             And nothing happens.
           </p>
           <p>
-            It isn&rsquo;t because anyone is negligent. It&rsquo;s because
-            the flag is the easy part. The flag traveled from a student
+            No one was negligent. The flag is the easy part. The flag traveled from a student
             information system to a screen. Then it stopped. Nobody was
             assigned to close the gap between <I>knowing</I> and{" "}
             <I>acting</I>. The counselor assumed the teacher saw it. The
@@ -4923,8 +4919,6 @@ export const ESSAYS: Essay[] = [
           institution internally consistent. Authority decides who acts on
           that consistent signal, and when. Validity asks whether the
           consistent thing is true enough to be worth acting on at all.
-          Detach any one from the other two and the system doesn’t
-          degrade gracefully — it produces confident output that cannot close a decision.
           Get all three right and the flag becomes a decision. Miss any
           one and you have a very expensive way of producing a red dot.
         </P>
@@ -4959,7 +4953,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The fix is structural, not a directive. You build a <B><ArtifactLink slug="decision-system-reference-architecture">semantic keystone</ArtifactLink></B>: a single layer, governed in code, where every metric is defined once. <I>On-track</I> is computed in one place, and every surface (the teacher&rsquo;s console, the school&rsquo;s program report, the district&rsquo;s executive view, and every AI feature downstream) reads from that one computation. There&rsquo;s no <I>sanctioned</I> second definition for the number to drift toward. The slow, unglamorous work that makes this real is <B><InternalLink slug="numbers-dont-agree">definitional reconciliation</InternalLink></B>: getting the registrar and the dean, or the program officer and the grantee, to commit to the same canonical meaning before anyone builds a chart on top of it. It is tedious, and it is also the foundation.
+          The fix is structural, not a directive. You build a <B><ArtifactLink slug="decision-system-reference-architecture">semantic layer</ArtifactLink></B>: a single layer, governed in code, where every metric is defined once. <I>On-track</I> is computed in one place, and every surface (the teacher&rsquo;s console, the school&rsquo;s program report, the district&rsquo;s executive view, and every AI feature downstream) reads from that one computation. There&rsquo;s no <I>sanctioned</I> second definition for the number to drift toward. The slow, unglamorous work that makes this real is <B><InternalLink slug="numbers-dont-agree">definitional reconciliation</InternalLink></B>: getting the registrar and the dean, or the program officer and the grantee, to commit to the same canonical meaning before anyone builds a chart on top of it. It is tedious, and it is also the foundation.
         </P>
 
         <P>
@@ -4979,8 +4973,7 @@ export const ESSAYS: Essay[] = [
           </B>{" "}
           — nobody named to receive the signal. This is a seam problem: the
           failure lives in the handoff between specialists, not inside any
-          one of them. The cleanest sprinter on the team loses the race if
-          the baton hits the ground.
+          one of them.
         </P>
 
         <P>
@@ -5012,8 +5005,7 @@ export const ESSAYS: Essay[] = [
           The recursion is the reason the three layers can&rsquo;t run
           independently. A decision system isn&rsquo;t a pipeline that ends
           at an action. The action becomes part of the data that trains the
-          next signal. A drifting definition doesn&rsquo;t just produce one
-          bad number. It trains the next model on that drift, and the error
+          next signal. A drifting definition produces more than one bad number: it trains the next model on that drift, and the error
           compounds. What that does to validity is the next section.
         </P>
 
@@ -5040,8 +5032,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          The unfairness is real, but it isn&rsquo;t the biggest cost.
-          The bigger cost is that the institution now misallocates at
+          The unfairness is real, and there is a second cost: the institution now misallocates at
           scale — pouring intervention dollars at a proxy while the
           actual construct goes unseen: the student who is slipping
           but doesn&rsquo;t match the historical pattern. You can
@@ -5050,7 +5041,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <P>
-          And recursion makes this worse, not better. Once an
+          Recursion makes this worse. Once an
           intervention becomes a predictor, the model can no longer
           cleanly separate <I>risk</I> from <I>service received</I> from{" "}
           <I>institutional attention</I>. The student who finally got
@@ -5094,7 +5085,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The fix isn&rsquo;t a new procurement rubric. An autonomous agent is a specialist that moves faster than you can read. Specialists need <InternalLink slug="the-contracts-between-systems">
             seam contracts
-          </InternalLink>. The agent&rsquo;s contract has to make four things explicit that a human&rsquo;s could leave implicit. An <B>autonomy range</B> — how much it may do unsupervised, from <I>return only verified responses</I> to <I>act review-by-exception</I>, set by the stakes of the decision, not the cleverness of the model. A <B>reversibility envelope</B> — how and when its action can be undone, and who is told when a record someone already acted on gets corrected. <B>A named human owner</B> who answers for what it does. And a <B>consumption contract</B>, so metered spend lands on the department that generated it. And like every other reader, the agent reads through the same semantic keystone — because <InternalLink slug="grounding-the-ai-layer">
+          </InternalLink>. The agent&rsquo;s contract has to make four things explicit that a human&rsquo;s could leave implicit. An <B>autonomy range</B> — how much it may do unsupervised, from <I>return only verified responses</I> to <I>act review-by-exception</I>, set by the stakes of the decision, not the cleverness of the model. A <B>reversibility envelope</B> — how and when its action can be undone, and who is told when a record someone already acted on gets corrected. <B>A named human owner</B> who answers for what it does. And a <B>consumption contract</B>, so metered spend lands on the department that generated it. And like every other reader, the agent reads through the same semantic layer — because <InternalLink slug="grounding-the-ai-layer">
             an AI ungrounded in canonical definitions will cheerfully
             invent metric names and answer questions no one can reconcile
           </InternalLink>.
@@ -5548,7 +5539,7 @@ export const ESSAYS: Essay[] = [
         </Brief>
         <H2>The rubrics, and what they assume</H2>
         <P>
-          The frameworks in that round come from different corners of the field. <a href="https://www.lyrahealth.com/blog/the-polaris-principles/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lyra Health&rsquo;s Polaris Principles</a> articulated the industry-side posture. The <a href="https://nam.edu/our-work/programs/leadership-consortium/health-care-artificial-intelligence-code-of-conduct/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">National Academy of Medicine published its AI Code of Conduct for Health and Medicine</a> in May 2025 with six commitments including monitoring performance. The American Psychological Association (APA) released <a href="https://www.apa.org/topics/artificial-intelligence-machine-learning/ethical-guidance-ai-professional-practice" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">ethical guidance for AI in health service psychology</a> in 2025 and followed with a <a href="https://www.apa.org/topics/artificial-intelligence-machine-learning/health-advisory-chatbots-wellness-apps" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2026 health advisory</a> whose plain-language judgment about consumer AI in mental health was blunt: the chatbots and wellness apps lack the testing and safety measures needed for quality mental health support. <a href="https://www.springhealth.com/news/spring-health-expert-council-vera-mh-first-open-source-evaluation-ai-mental-health" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">VERA-MH (Validation of Ethical and Responsible AI in Mental Health)</a> appeared as an open-source AI safety evaluation built around conversation simulation and clinician judging. <a href="https://neuromodec.org/2025/10/toward-a-framework-for-ai-safety-in-mental-health-ai-safety-levels-mental-health-asl-mh/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">ASL-MH (AI Safety Levels for Mental Health)</a> proposed AI safety levels for mental health applications. The WHO convened an <a href="https://www.who.int/news/item/20-03-2026-towards-responsible-ai-for-mental-health-and-well-being--experts-chart-a-way-forward" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">expert workshop on responsible AI for mental health</a> in January 2026 with explicit recommendations about embedding mental health into AI impact assessments. <a href="https://trovane.com.au/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Trovane</a>, the Australian company behind the Lumara platform, published a thirteen-question handbook for evaluating any AI mental-health tool before deployment, written so that a clinical lead or a foundation program officer can carry it into a procurement conversation.
+          Industry groups, professional bodies, researchers and vendors have each published frameworks for governing AI in mental health. <a href="https://www.lyrahealth.com/blog/the-polaris-principles/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lyra Health&rsquo;s Polaris Principles</a> articulated the industry-side posture. The <a href="https://nam.edu/our-work/programs/leadership-consortium/health-care-artificial-intelligence-code-of-conduct/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">National Academy of Medicine published its AI Code of Conduct for Health and Medicine</a> in May 2025 with six commitments including monitoring performance. The American Psychological Association (APA) released <a href="https://www.apa.org/topics/artificial-intelligence-machine-learning/ethical-guidance-ai-professional-practice" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">ethical guidance for AI in health service psychology</a> in 2025 and followed with a <a href="https://www.apa.org/topics/artificial-intelligence-machine-learning/health-advisory-chatbots-wellness-apps" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2026 health advisory</a> whose plain-language judgment about consumer AI in mental health was blunt: the chatbots and wellness apps lack the testing and safety measures needed for quality mental health support. <a href="https://www.springhealth.com/news/spring-health-expert-council-vera-mh-first-open-source-evaluation-ai-mental-health" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">VERA-MH (Validation of Ethical and Responsible AI in Mental Health)</a> appeared as an open-source AI safety evaluation built around conversation simulation and clinician judging. <a href="https://neuromodec.org/2025/10/toward-a-framework-for-ai-safety-in-mental-health-ai-safety-levels-mental-health-asl-mh/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">ASL-MH (AI Safety Levels for Mental Health)</a> proposed AI safety levels for mental health applications. The WHO convened an <a href="https://www.who.int/news/item/20-03-2026-towards-responsible-ai-for-mental-health-and-well-being--experts-chart-a-way-forward" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">expert workshop on responsible AI for mental health</a> in January 2026 with explicit recommendations about embedding mental health into AI impact assessments. <a href="https://trovane.com.au/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Trovane</a>, the Australian company behind the Lumara platform, published a thirteen-question handbook for evaluating any AI mental-health tool before deployment, written so that a clinical lead or a foundation program officer can carry it into a procurement conversation.
         </P>
         <P>
           Of that set, the handbook is the most operationally detailed, written as a scoring instrument rather than a statement of principles. Each of its thirteen questions is scored on three tiers: Basic, Better, Best Practice. Five of the thirteen are gate questions, where a Basic score means the buyer does not proceed until the gap is resolved, and more than one Basic anywhere means the buyer does not deploy at all. The authors also publish an appendix naming where their own product falls below their own bar, which I have rarely seen in vendor-authored guidance.
@@ -5703,7 +5694,7 @@ export const ESSAYS: Essay[] = [
           Measurement validity is one of the oldest questions in measurement science. It is the discipline higher education has been working with for a century in assessment, and the discipline ETS has been engaging with for decades in automated scoring. That lineage is mapped in <InternalLink slug="before-it-was-called-ai-evaluation">Before it was called AI evaluation</InternalLink> across eight bridges from that literature to modern AI eval. It is also the discipline the FDA applies through its post-market surveillance frameworks for diagnostics. Mental health has engaged construct-validity questions at the level of the underlying construct since NIMH launched the RDoC initiative in 2010. It did so explicitly because the DSM&rsquo;s weakness was its lack of validity: its diagnostic categories did not map cleanly to the underlying biology and behavior they claimed to describe. The discipline the responsible-AI rubrics need is not new. The task is to apply it to the specific systems now being deployed at consumer scale against populations whose mental health was already underserved, and to name validity as the central question the rubrics inherit at the point of deployment.
         </P>
         <P>
-          The institutions that handle this moment well will be the ones that ask the validity question before the responsible-AI question, for the users whose mental health depends on the answer.
+          The validity question has to come before the responsible-AI question, for the users whose mental health depends on the answer.
         </P>
 
         <SeeAlso>
@@ -5779,7 +5770,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The choice.</H2>
         <P>
-          So now every institution faces a choice it didn&rsquo;t have before.
+          So every institution has two ways to spend the discount.
         </P>
         <P>
           It can use the discount to sort you faster. More candidates screened, more students flagged, more patients triaged. Same thumbnails: just more of them, generated more quickly. That&rsquo;s the obvious move. Efficiency has a clear ROI. And the metrics most institutions already track (volume, throughput, latency) reward more of what they&rsquo;re already doing.
@@ -5808,7 +5799,7 @@ export const ESSAYS: Essay[] = [
           </I>
         </P>
         <P>
-          That&rsquo;s not sentiment. It&rsquo;s a measurement standard. The discipline is called <InternalLink slug="what-is-this-system-measuring">
+          This is a measurement standard. The discipline is called <InternalLink slug="what-is-this-system-measuring">
               validity
             </InternalLink>, and it has decades of track record from the world of high-stakes testing. Its central claim is stricter than it sounds: a score is never valid on its own. What gets validated is a particular reading of that score, put to a particular use, judged partly by what happens to the people it lands on (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1995</a>). A number that tracks length, fluency, demographics, or the candidate tested just before you fails that standard twice. It isn&rsquo;t measuring what it says it is, and the decision made with it isn&rsquo;t the decision anyone signed up for. The standard isn&rsquo;t new. It&rsquo;s been ready for a while.
         </P>
@@ -6840,22 +6831,19 @@ export const ESSAYS: Essay[] = [
           The mission-driven sector produces a recurring pattern I have watched from inside multiple senior data roles: strong proof of concept, incomplete infrastructure, no runway to production. The idea worked, the dashboard ran and the scale was validated. Then the acquisition happened, or the budget was cut, or the champion left. Or the parent company decided the BI costs did not pencil. Or the collaborative building the shared measurement infrastructure moved at the pace its participating organizations could sustain, which was slower than any single adopting institution could wait.
         </P>
         <P>
-          This is not a story about individual failure. It is a story
-          about a pattern the mission-driven sector runs on. And it is
+          The failure is not individual. It is a pattern the mission-driven sector runs on. And it is
           the pattern that AI adoption is now walking into.
         </P>
 
         <H2>The stakes</H2>
         <P>
-          Enterprise AI adopters and mission-driven AI adopters are
-          fielding the same models. What differs is what happens when
-          a model gets it wrong.
+          Both kinds of adopter are fielding the same models. The difference is what a wrong output costs.
         </P>
         <P>
           When an enterprise deployment produces a wrong signal, someone loses money, and the enterprise typically has room for a redo — retrain, re-run the pilot, adjust the model. When a mission-driven deployment produces a wrong signal, someone loses the intervention that was supposed to reach them, and the redo is often not available — the funder moves on, the beneficiary window closes, the trust breaks. A behavioral-health chatbot that recommends the wrong framing to an at-risk beneficiary is a mission problem, not a P&L one. So is a grant-intelligence tool that suggests reallocation based on drifted metric definitions, a program-evaluation AI that generates impact narratives reinforcing sponsor preferences over program reality, and an educational AI tutor adapting to student behavior in ways that reinforce inequitable expectations. Few sector frameworks size their evaluation to that distinction.
         </P>
         <P>
-          <InternalLink slug="the-reach-trap">The Reach Trap piece in this library</InternalLink> argued that mistaking activity data for outcome data produces misallocation at scale. In AI deployments, the same failure mode shows up one layer up: mistaking model output for validated signal produces mission misallocation at machine cadence. The stakes are different from enterprise stakes. Responsible-AI frameworks are rarely tuned to what mission-driven deployments actually risk. The closest prior work is the four-level AI evaluation framework from IDinsight, the Agency Fund and colleagues (<a href="https://www.povertyactionlab.org/blog/4-16-25/ai-evaluation-framework-development-sector" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">J-PAL, 2025</a>). It already flags high-stakes errors. This note asks what a small domestic organization can run without an evaluation team.
+          <InternalLink slug="the-reach-trap">The reach trap</InternalLink> argued that mistaking activity data for outcome data produces misallocation at scale. In AI deployments, the same failure mode shows up one layer up: mistaking model output for validated signal produces mission misallocation at machine cadence. The closest prior work is the four-level AI evaluation framework from IDinsight, the Agency Fund and colleagues (<a href="https://www.povertyactionlab.org/blog/4-16-25/ai-evaluation-framework-development-sector" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">J-PAL, 2025</a>). It already flags high-stakes errors. This note asks what a small domestic organization can run without an evaluation team.
         </P>
 
         <H2>The constraint</H2>
@@ -6895,17 +6883,15 @@ export const ESSAYS: Essay[] = [
           contexts, it is not.
         </P>
         <P>
-          When there is no funded data infrastructure role, the work gets absorbed by whoever in the organization is capable with numbers or interested in them. A math teacher building professional-development slides. A writing faculty member logging automated-scoring results. A clinician maintaining a caseload tracker. A program coordinator running the grantee spreadsheet. What emerges is an absorption pattern. The primary job (teaching, delivering care, running operations) competes with the absorbed data work, and both suffer. It also produces the spreadsheet sprawl every mission-driven organization has: multiple versions of the same data, maintained by different people, none of it reconcilable at the org level. The distinction between data entry (part of every delivery role) and data curation, integration, and quality assurance (specialized capacity requiring dedicated funding) is where mission-driven org design keeps failing. The absorbed model works until it breaks. When it breaks, both the delivery and the data go with it.
+          When there is no funded data infrastructure role, the work gets absorbed by whoever in the organization is capable with numbers or interested in them. A math teacher building professional-development slides. A writing faculty member logging automated-scoring results. A clinician maintaining a caseload tracker. A program coordinator running the grantee spreadsheet. What emerges is an absorption pattern. The primary job (teaching, delivering care, running operations) competes with the absorbed data work, and both suffer. It also produces the spreadsheet sprawl most mission-driven organizations have: multiple versions of the same data, maintained by different people, none of it reconcilable at the org level. The distinction between data entry (part of every delivery role) and data curation, integration, and quality assurance (specialized capacity requiring dedicated funding) is where mission-driven org design keeps failing. The absorbed model works until it breaks. When it breaks, both the delivery and the data go with it.
         </P>
         <P>
-          <InternalLink slug="what-is-this-system-measuring">
-            What Is This System Actually Measuring
-          </InternalLink>, the earlier piece in this library, named the discipline: measurement validity is what the field has been doing for a hundred years and what AI evaluation is a new application of. WITSAM assumed the reader had institutional research capacity or its equivalent. This piece names what happens when they don&rsquo;t. The discipline does not go away when the infrastructure to run it is absent. The failure mode does not go away either. It just becomes invisible until the mission drift accumulates and something breaks.
+          The earlier piece <InternalLink slug="what-is-this-system-measuring">What is this system actually measuring?</InternalLink> named the discipline: measurement validity is what the field has been doing for a hundred years and what AI evaluation is a new application of. That piece assumed the reader had institutional research capacity or its equivalent. This piece names what happens when they don&rsquo;t. The discipline does not go away when the infrastructure to run it is absent. The failure mode does not go away either. It just becomes invisible until the mission drift accumulates and something breaks.
         </P>
 
         <H2>The essential minimum</H2>
         <P>
-          Given the constraint, the question is not how to build enterprise-grade evaluation inside a mission-driven organization. The question is what the minimum discipline looks like when that infrastructure does not exist. The answer, drawn from the work I have watched succeed and fail across four sectors, is five things.
+          Given the constraint, the question is what the minimum discipline looks like when enterprise-grade evaluation infrastructure does not exist. The answer, drawn from the work I have watched succeed and fail across four sectors, is five things.
         </P>
 
         <Figure
@@ -6915,10 +6901,10 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          <I>Task decomposition.</I> Before the deployment goes live, name what the AI is doing under the hood. Not what the vendor pitch says. What the workflow is actually asking it to do — at what step, with what inputs, against what standard. This is the WITSAM discipline restated: what is this system measuring, and does that match what we say it measures? A behavioral-health screening chatbot is often doing three things at once: intake triage, symptom classification, and referral recommendation. Each has a different evaluation standard. Naming them separately lets you evaluate each; leaving them fused as “the chatbot” means you evaluate none. Most mission-driven adopters skip this step because the vendor pitch is comfortable and the deployment pressure is real. The cost of skipping it is that no one inside the organization can say what the AI is being evaluated against.
+          <I>Task decomposition.</I> Before the deployment goes live, name what the AI is doing under the hood. Not what the vendor pitch says. What the workflow is actually asking it to do — at what step, with what inputs, against what standard. This is the discipline from <I>What is this system actually measuring?</I>, restated: what is this system measuring, and does that match what we say it measures? A behavioral-health screening chatbot is often doing three things at once: intake triage, symptom classification, and referral recommendation. Each has a different evaluation standard. Naming them separately lets you evaluate each; leaving them fused as “the chatbot” means you evaluate none. Most mission-driven adopters skip this step because the vendor pitch is comfortable and the deployment pressure is real. The cost of skipping it is that no one inside the organization can say what the AI is being evaluated against.
         </P>
         <P>
-          <I>Ground-truth benchmarking with constrained data.</I> Enterprise adopters run large held-out evaluation sets on standardized data they own end to end. Mission-driven adopters usually have neither. Their deployment populations are small — a K-8 network of four hundred students, a CCBHC (Certified Community Behavioral Health Clinic) caseload in the hundreds, a foundation portfolio of forty grantees. Their operational data is messy in ways enterprise benchmarks are engineered against. I saw a version of this at ETS: the measurement framework that worked for GRE and TOEFL at scale did not transfer intact to just-in-time remediation contexts or to writing-validity studies with smaller populations. Even with clean data, moving a validated framework to a new use case required rebuilding parts of it. In mission-driven contexts, the data is neither clean nor standardized, and the framework has to be rebuilt from the smaller sample up. What organizations can do is build the smallest defensible benchmark: twenty to fifty cases from their actual deployment context, hand-labeled by a domain expert, held back from any AI training or fine-tuning. For a K-8 tutor deployment, that benchmark might be thirty real student writing samples the tutor was asked to help with, hand-scored by a teacher against a rubric the network already uses for its own writing curriculum — not synthetic prompts, not vendor-provided examples, but actual samples from the deployment context, labeled by the person whose judgment the AI is meant to support. The benchmark carries diagnostic weight at small n. When the model changes and the benchmark score moves, someone should notice. Refreshing it at every model update is not a special AI cadence. It is the same operational rhythm the organization already runs for accountability reporting or quarterly dashboard refreshes, applied to a new kind of asset. The talent question is not “who will build the evaluation.” It is “who has the data literacy and coaching capacity to keep the rhythm running after the deployment goes live.” Without that rhythm, the deployment decays. The frontline absorbs the decay. That is the burnout pattern the sector already knows.
+          <I>Ground-truth benchmarking with constrained data.</I> Enterprise adopters run large held-out evaluation sets on standardized data they own end to end. Mission-driven adopters usually have neither. Their deployment populations are small — a K-8 network of four hundred students, a CCBHC (Certified Community Behavioral Health Clinic) caseload in the hundreds, a foundation portfolio of forty grantees. Their operational data is messy in ways enterprise benchmarks are engineered against. I saw a version of this at ETS: the measurement framework that worked for GRE and TOEFL at scale did not transfer intact to just-in-time remediation contexts or to writing-validity studies with smaller populations. Even with clean data, moving a validated framework to a new use case required rebuilding parts of it. In mission-driven contexts, the data is neither clean nor standardized, and the framework has to be rebuilt from the smaller sample up. What organizations can do is build the smallest defensible benchmark: twenty to fifty cases from their actual deployment context, hand-labeled by a domain expert, held back from any AI training or fine-tuning. For a K-8 tutor deployment, that benchmark might be thirty real student writing samples the tutor was asked to help with, hand-scored by a teacher against a rubric the network already uses for its own writing curriculum — not synthetic prompts, not vendor-provided examples, but actual samples from the deployment context, labeled by the person whose judgment the AI is meant to support. The benchmark carries diagnostic weight at small n. When the model changes and the benchmark score moves, someone should notice. Refreshing it at every model update uses the same operational rhythm the organization already runs for accountability reporting or quarterly dashboard refreshes, applied to a new kind of asset. The talent question is who has the data literacy and coaching capacity to keep the rhythm running after the deployment goes live. Without that rhythm, the deployment decays. The frontline absorbs the decay. That is the burnout pattern the sector already knows.
         </P>
         <P>
           <I>Deployment-context evaluation.</I> Generic model
@@ -6936,8 +6922,7 @@ export const ESSAYS: Essay[] = [
         <P>
           <I>Downstream impact evaluation.</I> Are the actions taken
           based on the AI output producing the intended impact, or
-          drifting from it? This is the Reach Trap discipline applied
-          to AI. Activity metrics (queries answered, sessions run,
+          drifting from it? This is the discipline from <I>The reach trap</I>, applied to AI. Activity metrics (queries answered, sessions run,
           students triaged) are not outcome metrics. Track what shifts
           in the mission the deployment was supposed to advance.
           Anchor that tracking both internally (the
@@ -6954,9 +6939,7 @@ export const ESSAYS: Essay[] = [
           <I>Escalation and human-in-the-loop discipline.</I> Where
           does the AI hand off to a human, and how is that handoff
           calibrated?{" "}
-          <InternalLink slug="actions-not-answers">
-            Actions, Not Answers
-          </InternalLink>{" "}
+          <InternalLink slug="actions-not-answers">Actions, not answers</InternalLink>{" "}
           argued that agentic AI removes the free human checkpoint
           and requires organizations to design the checkpoint back
           in. That
@@ -6991,7 +6974,7 @@ export const ESSAYS: Essay[] = [
           The pattern generalizes, and the mission-driven AI moment needs it to. If frontier AI adoption in mission-driven contexts is going to happen without producing mission drift, the evaluation infrastructure required to catch drift has to be built as a shared good, jointly by frontier AI providers who benefit from responsible deployment of their models and by philanthropic infrastructure that treats evaluation methodology as sector plumbing, not proprietary advantage. This is the coordination problem the sector faces, and it is not solvable org by org.
         </P>
         <P>
-          Two flags before this argument lands as easy. Shared
+          Two cautions before the argument sounds too easy. Shared
           infrastructure is champion-dependent, and champions leave.
           Mission-driven collaboratives have collapsed before, when
           the chief impact officer or program officer who was carrying
@@ -7000,11 +6983,10 @@ export const ESSAYS: Essay[] = [
           founder leaves, is the hardest part of the model and the
           sector has not solved it. And the collaborative model runs
           at the pace its slowest participants can sustain, which is
-          slower than the model release cadence. That gap is going to
-          widen before it narrows.
+          slower than the model release cadence. That gap is likely to widen before it narrows.
         </P>
         <P>
-          One more thing worth naming, because the Center for Effective Philanthropy has written about it publicly (<a href="https://cep.org/blog/you-cant-build-ecosystems-on-burnout/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Hennighausen, CEP, July 2026</a>): the facilitation and coordination work that keeps a shared-infrastructure model alive is itself unfunded labor, and its cost is usually absorbed by the same operational leaders already running the mission. When that cost stays invisible, small organizations get excluded from the collaborative because they cannot afford to participate; larger organizations dominate the shared infrastructure, and the eval discipline the model was supposed to build ends up shaped by the contexts of the biggest participants. The intermediary that holds the coordination work (a backbone organization, a third-party facilitator, an embedded eval-methodology lead from the frontier lab&rsquo;s side) is essential infrastructure. Call it overhead and the whole model collapses. The coordination cost gets absorbed by operational leaders &mdash; the same pattern{" "}
+          The Center for Effective Philanthropy has written about one more cost (<a href="https://cep.org/blog/you-cant-build-ecosystems-on-burnout/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Hennighausen, CEP, July 2026</a>): the facilitation and coordination work that keeps a shared-infrastructure model alive is itself unfunded labor, and its cost is usually absorbed by the same operational leaders already running the mission. When that cost stays invisible, small organizations get excluded from the collaborative because they cannot afford to participate; larger organizations dominate the shared infrastructure, and the eval discipline the model was supposed to build ends up shaped by the contexts of the biggest participants. The intermediary that holds the coordination work (a backbone organization, a third-party facilitator, an embedded eval-methodology lead from the frontier lab&rsquo;s side) is essential infrastructure. Call it overhead and the whole model collapses. It is the same pattern{" "}
           <InternalLink slug="the-absorbed-data-role">
             The absorbed data role
           </InternalLink>{" "}
@@ -7014,8 +6996,7 @@ export const ESSAYS: Essay[] = [
         <H2>Close</H2>
         <P>
           Mission-driven organizations are adopting frontier AI
-          whether the evaluation infrastructure keeps pace or not.
-          Adoption is happening. The question is whether it produces
+          whether the evaluation infrastructure keeps pace or not. The question is whether it produces
           mission acceleration or mission drift. The essential
           minimum names what has to be true for adoption to earn its
           keep. The shared-infrastructure path names how the minimum
@@ -7023,8 +7004,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Evaluation is what turns a deployed AI into a decision the
-          mission can stand behind. It is the difference between
-          mission acceleration and mission drift.
+          mission can stand behind.
         </P>
 
         <SeeAlso>
@@ -8479,7 +8459,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>What the ledger can hold, and what it can't</H2>
         <P>
-          The obvious place to look is the new platform. The instinct is reasonable: we just migrated to a real platform, it tags every transaction to a program, surely cost per outcome is one report away. A modern finance system is genuinely good at the numerator. Tag a transaction to a program dimension and you can isolate what that program spent, cleanly, across direct and allocated cost. That is a real and necessary job.
+          The obvious place to look is the finance platform itself. The instinct is reasonable: we just migrated to a real platform, it tags every transaction to a program, surely cost per outcome is one report away. A modern finance system is genuinely good at the numerator. Tag a transaction to a program dimension and you can isolate what that program spent, cleanly, across direct and allocated cost. That is a real and necessary job.
         </P>
         <P>
           You can even bolt a statistical account onto the ledger and store an outcome count next to the dollars. Some teams do, and that can solve storage. It does not solve definition, comparability, or ownership &mdash; the work of saying what a placement is, keeping it comparable across programs that each describe success in their own words, and naming who governs the value. That work lives in the evidence spine, not the ledger.
