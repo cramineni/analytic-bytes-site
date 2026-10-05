@@ -10311,7 +10311,7 @@ export const ESSAYS: Essay[] = [
           <B>If you are the person who has been absorbing these</B>, every change should leave behind a record of the boundary it created. That record is the change log: what changed, when, what it was mapped to, who confirmed it, and what the trend can and cannot claim across the boundary. The entry depends on the event. A policy change leaves a policy map, old code to new, with the name of whoever confirmed it, and a vendor release that renames a field leaves the same kind of map. A rollover leaves its preservation list. A model upgrade leaves an anchor-set run. When someone leaves, the entries she confirmed need a new name beside them, or they stop being confirmed by anyone. The change log belongs inside the file <InternalLink slug="for-the-record">For the record.</InternalLink> asks for. It is the part of that file that deals with time: that essay&rsquo;s crosswalk records what the organization&rsquo;s data means across its systems, and the change log records what it meant across its years. A model will draft each entry from the memo and the schema. What it cannot do is decide whether the comparison holds. That judgment is the reason the role should exist, and it survives you only if it is written down.
         </P>
         <P>
-          <B>And for whoever is evaluating a tool</B>: ask what happens when the model changes. The question is narrower than whether the vendor has a governance policy: what happens to <I>your</I> confirmed mappings, how you would find out, and who re-runs the anchor set. A vendor who has not thought about it will tell you their model is stable. That is the answer of somebody who has only ever watched the model.
+          <B>And for whoever is evaluating a tool</B>: ask what happens when the model changes. The question is narrower than whether the vendor has a governance policy: what happens to <I>your</I> confirmed mappings, how you would find out, and who re-runs the anchor set. A vendor who has not thought about it will tell you their model is stable. That is the answer of somebody who has only ever watched the model. <InternalLink slug="partnership-is-a-handoff">Partnership is a handoff.</InternalLink> takes that conversation back to the purchase itself, where the seam between what the vendor supplies and what you supply is still open to negotiation.
         </P>
         <P>
           I tried to write the derivation down. I could not reconstruct it closely enough to codify, the reporting could not wait, and so I did what the organization had done before me. I relied on the number the new compliance director gave me.
@@ -10326,18 +10326,18 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="for-the-record"
-            title="For the record."
-            gloss="The same division of labor at the other seam: the spreadsheet an owner trusts against the record the institution holds."
+            title="For the record"
+            gloss="the same division of labor at the other seam: the spreadsheet an owner trusts against the record the institution holds."
+          />
+          <SeeAlsoItem
+            slug="the-absorbed-data-role"
+            title="The absorbed data role"
+            gloss="who ends up carrying the change work, and why the role has no funded home."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems."
-            gloss="The same dependency read as governance: what one system owes another, and what happens when nobody wrote the term down."
-          />
-          <SeeAlsoItem
-            slug="actions-not-answers"
-            title="Actions, not answers."
-            gloss="Why the checkpoint has to be designed back in once a model acts rather than replies, which is what holds the model at propose-and-wait here."
+            title="The contracts between systems"
+            gloss="the same dependency read as governance: what one system owes another, and what happens when nobody wrote the term down."
           />
         </SeeAlso>
 
@@ -10366,7 +10366,6 @@ export const ESSAYS: Essay[] = [
     cover: "/library/covers/partnership-is-a-handoff.svg",
     arc: "integration-governance",
     arcSecondary: "data-foundations",
-    draft: true,
     body: (
       <>
         <Brief>
