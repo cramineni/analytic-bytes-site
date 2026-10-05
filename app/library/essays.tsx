@@ -1191,7 +1191,7 @@ export const ESSAYS: Essay[] = [
           description, every domain a typed entity, every test a guardrail. The
           MCP server pattern, or whatever your equivalent is, lets a chatbot
           call <C>get_domain_score(school_id, domain_id, wave_id)</C> instead of
-          writing SQL. That move removes the largest source of hallucination in a portal chatbot, invented metric definitions, and much of the setup work is already done. The
+          writing SQL. That move removes the largest source of invented answers in a portal chatbot: made-up metric definitions, and much of the setup work is already done. The
           remaining decision is that the dbt semantic layer serves as the
           canonical contract every AI feature reads through. dbt Labs has made the same case (<a href="https://www.getdbt.com/blog/semantic-layer-as-the-data-interface-for-llms" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ganz, 2023</a>), and its <a href="https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2026 benchmark</a> found that semantic-layer queries fail with an error while text-to-SQL fails with a plausible wrong answer. This piece carries the argument from one query to every AI surface in a portal.
         </P>
@@ -1513,8 +1513,7 @@ export const ESSAYS: Essay[] = [
         </Pull>
         <P>The keystone hasn’t changed, but the surface has.</P>
         <P>
-          Every AI feature is a small delegation of a decision to a model.
-          The architecture’s whole job is
+          Each of those features hands a small decision to a model. The architecture's whole job is
           to keep those delegations deliberate: placed on purpose, grounded
           against one source of truth, observable after the fact. Where AI
           authority sits in a workflow is a design choice. Make it, rather than
@@ -1989,7 +1988,7 @@ export const ESSAYS: Essay[] = [
           one of them moving the right direction.
         </P>
         <P>
-          Now split the same dataset differently. The mid-life bands moved the other way over the same three years: ages 35--44 up roughly 3 percent, and 45--54 up about 3.5 percent. The decline among the young and the rise after 35 are happening at the same time, in the same country, in the same data.
+          Now split the same dataset differently. The mid-life bands moved the other way over the same three years: ages 35–44 up roughly 3 percent, and 45–54 up about 3.5 percent. The decline among the young and the rise after 35 are happening at the same time, in the same country, in the same data.
         </P>
 
         <Figure
@@ -1999,7 +1998,7 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          A single national rate blends those opposite movements into one number, and because the youngest bands are falling fast, that number still reads as progress. The blend hides the reversal inside it: for both mid-life bands in this window, 35–44 and 45–54, the trend has already turned. An average cannot tell a funder that, and a funder who reads only the average will not know to look. The lesson isn&rsquo;t really about age — it is that any rolled-up number is a decision hazard. It blends signals moving in opposite directions, and the blend erases the contrast a resource decision depends on. You have to disaggregate before you can allocate. Age is one cut. The one this note is about is harder.
+          A single national rate blends those opposite movements into one number, and because the youngest bands are falling fast, that number still reads as progress. The blend hides the reversal inside it: for both mid-life bands in this window, 35–44 and 45–54, the trend has already turned. An average cannot tell a funder that, and a funder who reads only the average will not know to look. The lesson reaches past age: any rolled-up number is a decision hazard. It blends signals moving in opposite directions, and the blend erases the contrast a resource decision depends on. You have to disaggregate before you can allocate. Age is one cut. The one this note is about is harder.
         </P>
 
         <H2>Two signals, not one</H2>
@@ -2026,7 +2025,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The map burden draws, and the map disparity draws</H2>
         <P>
-          Rank states by burden for 2024, ages 10--54, and the top of the list is Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4), New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado, Oklahoma, Maine, Arkansas, Idaho. It is, broadly, a Mountain-West and rural map.
+          Rank states by burden for 2024, ages 10–54, and the top of the list is Alaska (a rate of 36.4 per 100,000), Wyoming (31.5), Montana (30.4), New Mexico (29.8), South Dakota (26.9), then North Dakota, Colorado, Oklahoma, Maine, Arkansas, Idaho. It is, broadly, a Mountain-West and rural map.
         </P>
 
         <Figure
@@ -2099,7 +2098,7 @@ export const ESSAYS: Essay[] = [
           limited budget first.
         </P>
         <P>
-          One pattern runs through nearly every disparity signal on the map. In six of the seven states with a reliable signal, the most-affected group is American Indian and Alaska Native communities; in Hawaii, it is residents of more than one race. That is the clearest pattern the disparity signals show. It should shape not only where the dollar goes, but who helps design what it funds; a prevention dollar spent <I>on</I> a community tends to underperform a dollar spent <I>with</I> one. The signal is also likely understated: death certificates under-count American Indian and Alaska Native deaths by about 40 percent (<a href="https://www.cdc.gov/nchs/data/series/sr_02/sr02_172.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Arias, Heron &amp; Hakes, 2016</a>).
+          One pattern runs through nearly every disparity signal on the map. In six of the seven states with a reliable signal, the most-affected group is American Indian and Alaska Native communities; in Hawaii, it is residents of more than one race. It should shape not only where the dollar goes, but who helps design what it funds; a prevention dollar spent <I>on</I> a community tends to underperform a dollar spent <I>with</I> one. The signal is also likely understated: death certificates under-count American Indian and Alaska Native deaths by about 40 percent (<a href="https://www.cdc.gov/nchs/data/series/sr_02/sr02_172.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Arias, Heron &amp; Hakes, 2016</a>).
         </P>
 
         <H2>Where the next dollar goes</H2>
@@ -2112,10 +2111,10 @@ export const ESSAYS: Essay[] = [
 
         <H2>What the data cannot do</H2>
         <P>
-          This is a field note, and being precise about what the data cannot do is part of the method — not a disclaimer bolted to the end.
+          Being precise about what the data cannot do is part of the method.
         </P>
         <P>
-          The figures are <I>provisional.</I> CDC WONDER mortality counts for 2018--2024 are revised over time; the picture will shift.
+          The figures are <I>provisional.</I> CDC WONDER mortality counts for 2018–2024 are revised over time; the picture will shift.
         </P>
         <P>
           The disparity signals are <I>reliability-filtered.</I> A signal counted here only if there were at least 20 deaths in both the comparison group and the White comparison group, a relative risk of at least 1.25, and a positive absolute rate difference. Below those thresholds, small counts produce rates that swing wildly from year to year, and an unfiltered ranking would look precise without being so.
@@ -2130,9 +2129,7 @@ export const ESSAYS: Essay[] = [
           surface one safely.
         </P>
         <P>
-          Most important: this is an <I>exploratory prioritization signal</I>,
-          not an allocation formula. It is a map of where to look harder and ask
-          sharper questions, not a number that should move money on its own. A
+          Most important: this is an <I>exploratory prioritization signal</I>: a map of where to look harder and ask sharper questions. It should not move money on its own. A
           measure that triggers investigation and a measure that drives
           allocation are not the same instrument, and treating the first as if
           it were the second is a common way well-meant analysis does harm.
@@ -2151,8 +2148,7 @@ export const ESSAYS: Essay[] = [
         <P>
           That move is the same whether the decision is a state’s prevention
           budget, a school district’s intervention dollars, or a clinical
-          network’s capacity plan: name the decision, find the distinct signals
-          it truly depends on, and refuse to let one rolled-up average stand in
+          network’s capacity plan: name the decision, find the distinct signals it depends on, and refuse to let one rolled-up average stand in
           for all of them.
         </P>
         <P>
@@ -2222,8 +2218,7 @@ export const ESSAYS: Essay[] = [
           <p>
             That accident has consequences. Where data infrastructure reports
             decides what the function is allowed to become, and it also drives
-            a hiring problem that looks unrelated. This piece argues there is a
-            right answer. Not a right title; a right principle. It is written
+            a hiring problem that looks unrelated. This piece argues there is a right answer, and that it is a principle rather than a title. It is written
             for anyone drawing, or redrawing, an org chart with a data function
             on it, and it is an argued position: I will make the case for each
             alternative before I make mine.
@@ -2235,8 +2230,7 @@ export const ESSAYS: Essay[] = [
           organizations who owns data infrastructure and you get a tour of the
           alphabet: the CIO, the CTO, the CFO, the COO, the CPO, a CDO, a CDAO,
           a Chief Innovation Officer, sometimes a Chief Impact Officer, a CAIDO. Several of those titles mean
-          different things at different organizations. The acronym soup is not a
-          trivia problem; it is the symptom. The field has not agreed what this
+          different things at different organizations. The acronym soup is the symptom. The field has not agreed what this
           function <I>is</I>, so it has not agreed who should own it. Many organizations improvise. Bill Franks heard the same in 2014: asked who owned analytics, executives most often said “Nobody” or “I don’t know” (<a href="https://hbr.org/2014/09/do-you-know-who-owns-analytics-at-your-company" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Franks, HBR, 2014</a>).
         </P>
         <P>
@@ -2282,8 +2276,7 @@ export const ESSAYS: Essay[] = [
           as a system to keep running, and what gets resourced is what the CTO
           is measured on — reliability, security, uptime. The semantic layer —
           what makes data <I>mean</I> something to a program lead or a board —
-          becomes nobody’s priority. The function slowly turns into a
-          service desk — requests arrive through a ticketing queue, analysts
+          becomes nobody’s priority. The function slowly turns into a service desk: requests arrive through a ticketing queue, analysts
           close them quickly, and the decision happens somewhere else without
           them.
         </P>
@@ -2394,7 +2387,7 @@ export const ESSAYS: Essay[] = [
           under-used, an orphan with a good address.
         </P>
         <P>
-          There is one real exception, and it matters, because it describes most
+          There is one real exception, and it describes most
           of the organizations I work with. Many organizations have no COO. In
           smaller and mission-driven organizations, the executive director or
           CEO <I>is</I> the operating integrator. There is no second seat to
@@ -2422,8 +2415,7 @@ export const ESSAYS: Essay[] = [
           clinical analytics, even though the title looks sector-specific.
         </P>
         <P>
-          That is the principle, and it is worth stating without a single
-          acronym in it:
+          Stated without a single acronym, the principle is this:
         </P>
         <Pull>
           Data infrastructure should report to the integration seat, never to a
@@ -2432,8 +2424,7 @@ export const ESSAYS: Essay[] = [
         <P>
           That seat is the COO by default, the CEO or executive director where
           there is no COO, and ownership should move between them as the
-          organization formalizes. The title changes from org to org, and over
-          time. The principle does not. That is the real resolution of the
+          organization formalizes. The title changes from org to org and over time, but the principle stays fixed. That is the real resolution of the
           acronym soup. The field keeps trying to settle a <I>function</I>{" "}
           question with a <I>naming</I> answer, and it rarely works, because the answer was never a name.
         </P>
@@ -2448,8 +2439,7 @@ export const ESSAYS: Essay[] = [
           The principle is not anti-CTO. The CTO owns the pipes: the engineering
           of the platform, the security, the uptime, and owns them well. Data
           infrastructure, placed at the integration seat, owns the semantic
-          layer and the decision-serving built on top of those pipes. Two
-          functions, one clean handoff. Placing data at the integration seat
+          layer and the decision-serving built on top of those pipes. Placing data at the integration seat
           does not take it away from engineering. It ends the pretense that the
           semantic-and-decision layer is an engineering by-product.
         </P>
@@ -2468,8 +2458,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The unicorn that isn’t</H2>
         <P>
-          There is a hiring problem that looks unrelated to all of this. It
-          isn’t.
+          A hiring problem that looks unrelated comes from the same source.
         </P>
         <P>
           Mission-driven organizations keep writing job descriptions for data
@@ -2480,8 +2469,7 @@ export const ESSAYS: Essay[] = [
           role cannot be filled.
         </P>
         <P>
-          Most of the time, the unicorn is not a talent problem. What looks
-          like a talent problem is a placement problem. When data
+          Most of the time, what looks like a talent problem is a placement problem. When data
           infrastructure is buried under IT, or scattered across programs, or
           housed in finance, the person hired to lead it has to personally span
           every layer the org chart failed to connect. They are the only
@@ -2509,18 +2497,15 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           In my experience, the climb has mostly reached large enterprises. Mid-size and
-          mission-driven organizations are still placing data by accident. And
-          the churn of titles is the field, again, trying to solve a function
-          problem with a naming solution.
+          mission-driven organizations are still placing data by accident.
         </P>
         <P>
           Agentic AI is about to make the question impossible to keep
-          improvising. Agents do not just inform decisions; they make them, and
+          improvising. Agents make decisions as well as inform them, and
           every agent needs a manager and an owner. An organization that never
           decided where its <I>data</I> infrastructure sits is now going to be
           asked where its <I>agents</I> sit, and who is accountable when one
-          acts. The placement question does not get easier &mdash; it gets
-          unavoidable.
+          acts.
         </P>
         <P>
           The answer, when an organization finally faces it, will not be a
@@ -2606,11 +2591,11 @@ export const ESSAYS: Essay[] = [
           follows from that one line.
         </P>
         <P>
-          A working definition, the kind you would say at the start of a meeting (I drafted this for my MIT capstone playbook and use it now in client conversations): agentic AI is a software system that takes a goal, plans its own next moves across your tools and data, and produces actions rather than answers. Hold onto “actions rather than answers.” Everything else follows from it.
+          A working definition, the kind you would say at the start of a meeting (I drafted this for my MIT capstone playbook and use it now in client conversations): agentic AI is a software system that takes a goal, plans its own next moves across your tools and data, and produces actions rather than answers. Hold onto “actions rather than answers.”
         </P>
 
         <P>
-          Throughout the rest of this piece, I&rsquo;ll keep coming back to one workflow as the worked example: AB&rsquo;s “Deliver Signal,” the first ninety days of how I take a mission-driven client from fragmented sources to one decision-ready surface an executive and a frontline operator can both act on. It is the candidate workflow I worked through in detail for my MIT capstone, and it is also the work I am doing, currently end-to-end myself, with AI augmentation in code, prose, and analysis. It surfaces every decision this essay will walk through: where the human checkpoint is, where the agent&rsquo;s autonomy ends, what safeguards are required, and who owns the result.
+          Throughout the rest of this piece, I&rsquo;ll keep coming back to one workflow as the worked example: “Deliver Signal” at Analytic Bytes (AB), the first ninety days of how I take a mission-driven client from fragmented sources to one decision-ready surface an executive and a frontline operator can both act on. It is the candidate workflow I worked through in detail for my MIT capstone, and it is also the work I am doing, currently end-to-end myself, with AI augmentation in code, prose, and analysis. It surfaces every decision this essay will walk through: where the human checkpoint is, where the agent&rsquo;s autonomy ends, what safeguards are required, and who owns the result.
         </P>
 
         <H2>The checkpoint that used to be free</H2>
@@ -2625,7 +2610,7 @@ export const ESSAYS: Essay[] = [
           deliberately designed into the path.
         </P>
         <P>
-          The real shift is a relocation. Agentic AI does not add a
+          Agentic AI does not add a
           decision to your organization; it relocates one. It takes a decision
           that used to belong, by default, to a human who got it for free, and
           hands it, by default, to a model. Every “let the agent handle that” is
@@ -2633,7 +2618,7 @@ export const ESSAYS: Essay[] = [
           anyone in the room noticed they were making it.
         </P>
         <P>
-          That is why this is a decision-system redesign and not a tooling upgrade. A tooling upgrade changes how a step is performed; this changes who decides.
+          A tooling upgrade changes how a step is performed. This changes who decides.
         </P>
 
         <H2>Most data problems are still decision problems</H2>
@@ -2650,7 +2635,7 @@ export const ESSAYS: Essay[] = [
           The unexamined decision system does not get fixed. It gets automated.
         </Pull>
         <P>
-          So the readiness question for agentic AI is not “is the technology good enough.” The technology is good enough to force the governance question, though not good enough for every action. The question is whether the underlying decision system is clear enough to be worth speeding up.
+          So the readiness question for agentic AI is whether the underlying decision system is clear enough to be worth speeding up. The technology is good enough to force the governance question, though not good enough for every action.
         </P>
 
         <H2>Putting the checkpoint back, on purpose</H2>
@@ -2677,11 +2662,10 @@ export const ESSAYS: Essay[] = [
           the decision before the agent touches any metadata when the source
           carries regulated data: student PII, EHR records, claims data. The
           same workflow has different lines for different decisions inside
-          it. Drawing the map once is not the discipline. Drawing it per
-          decision is.
+          it. The discipline is to draw the map per decision.
         </P>
         <P>
-          The second move is recognizing that autonomy isn&rsquo;t a binary setting. An agent isn&rsquo;t “autonomous” or “not.” For each task, in each context, it sits somewhere on a range: from only returning pre-verified responses, to acting within tight rules, to acting with every consequential move reviewed first, to acting freely and checked only by exception. The discipline is to calibrate that range per decision, by stakes, not once and globally by habit. A low-stakes, highly repeatable decision can be placed well along the range. A decision that is rare, hard to reverse, or lands on a vulnerable person should not, however capable the model looks in a demo.
+          The second discipline is treating autonomy as a range rather than a setting. For each task, in each context, it sits somewhere on a range: from only returning pre-verified responses, to acting within tight rules, to acting with every consequential move reviewed first, to acting freely and checked only by exception. The discipline is to calibrate that range per decision, by stakes, not once and globally by habit. A low-stakes, highly repeatable decision can be placed well along the range. A decision that is rare, hard to reverse, or lands on a vulnerable person should not, however capable the model looks in a demo.
         </P>
         <P>
           In AB’s case, that calibration looks different across the same
@@ -2741,19 +2725,19 @@ export const ESSAYS: Essay[] = [
           Officer or whoever holds the regulated-data accountability.
         </P>
         <P>
-          Evaluation does not end at launch. Because conditions change and vendors swap the model underneath, an agent has to be watched continuously: its override rate, its disagreement signals, its slow drift as conditions change. Monitoring is no longer a quarterly report; it is an ongoing conversation with a system that continues to make decisions in your name.
+          Evaluation does not end at launch. Because conditions change and vendors swap the model underneath, an agent has to be watched continuously: its override rate, its disagreement signals, its slow drift as conditions change. Monitoring becomes an ongoing conversation with a system that continues to make decisions in your name.
         </P>
 
         <H2>The job becomes management, not use</H2>
         <P>
-          This is a consequence leaders often miss. When AI produced
+          When AI produced
           answers, the human’s relationship to it was use, the way you use a
           calculator or a search box. When AI produces actions, that
           relationship has to become management. Every agent has to have a
           named owner: a specific person accountable for what it does.
         </P>
         <P>
-          Managing an agent is a job most organizations have not yet named. It looks more like supervising automation than using software. The owner calibrates the thresholds as the agent&rsquo;s behavior drifts, and it will drift, because the model underneath gets upgraded by a vendor on a schedule nobody consulted you about. The owner decides which patterns the agent should retain and which it should drop. And the owner does the hardest thing of all: refuses to let the agent act. Deciding, in real time, that a particular case is one the agent should not touch, and being able to defend that call.
+          Managing an agent is a job most organizations have not yet named. It looks more like supervising automation than using software. The owner calibrates the thresholds as the agent&rsquo;s behavior drifts, and it will drift, because the model underneath gets upgraded by a vendor on a schedule nobody consulted you about. The owner decides which patterns the agent should retain and which it should drop. And the owner does the hardest thing of all: refuses to let the agent act, deciding in real time that a particular case is one the agent should not touch, and being able to defend that call.
         </P>
         <P>
           For AB’s first agentic workflow, I’m the day-to-day owner. That’s
@@ -3740,7 +3724,7 @@ export const ESSAYS: Essay[] = [
         <H2>The agentic era: provenance, consent, reversibility</H2>
 
         <P>
-          The agentic era changes what the contract has to specify and raises what the stakes are when it does not exist. The freshness-contract pattern that was already central to modern-era clinical loops becomes more demanding when an agent enters the cycle, because the agent acts at machine cadence and the human stakeholder still has to stand behind the action. The earliest agentic example I have worked on is a reporting prototype where Snowflake Cortex reads from governed Snowflake schemas, Streamlit fronts a Python pattern that reads against the warehouse, and Gemini is used at a bounded scope to verify significance-test results and the interpretation of those tests before a human program officer acts on them. Even at that bounded scope — LLM-inferred verification of a statistical claim a human is about to act on — the provenance question already arrives. Was this confidence-interval check produced by a human, by a deterministic test, or by an LLM that may have hallucinated it? Once agentic deployments scale beyond verification into drafting and writing (which is the direction reporting pipelines are heading), the contract has to extend to provenance categories the data-integration era did not have to name. Was this paragraph human-authored, deterministic-pipeline-generated, or LLM-inferred? On the warehouse side, was this record written by a human program officer, by the nightly ingestion job, or by the agent acting on the program officer&rsquo;s behalf? Provenance now has to sit inside the data, not alongside it as metadata. A program officer reading the impact report has to know which sentences were synthesized and which were sourced, because the question “can I stand behind this when a funder asks” depends on the answer.
+          The agentic era changes what the contract has to specify and raises what the stakes are when it does not exist. The freshness-contract pattern that was already central to modern-era clinical loops becomes more demanding when an agent enters the cycle, because the agent acts at machine cadence and the human stakeholder still has to stand behind the action. The earliest agentic example I have worked on is a reporting prototype where Snowflake Cortex reads from governed Snowflake schemas, Streamlit fronts a Python pattern that reads against the warehouse, and Gemini is used at a bounded scope to verify significance-test results and the interpretation of those tests before a human program officer acts on them. Even at that bounded scope — LLM-inferred verification of a statistical claim a human is about to act on — the provenance question already arrives. Was this confidence-interval check produced by a human, by a deterministic test, or by an LLM that may have invented it? Once agentic deployments scale beyond verification into drafting and writing (which is the direction reporting pipelines are heading), the contract has to extend to provenance categories the data-integration era did not have to name. Was this paragraph human-authored, deterministic-pipeline-generated, or LLM-inferred? On the warehouse side, was this record written by a human program officer, by the nightly ingestion job, or by the agent acting on the program officer&rsquo;s behalf? Provenance now has to sit inside the data, not alongside it as metadata. A program officer reading the impact report has to know which sentences were synthesized and which were sourced, because the question “can I stand behind this when a funder asks” depends on the answer.
         </P>
 
         <P>
@@ -4175,7 +4159,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>The meeting can name the breakdown. It can’t fix any of them.</P>
 
-        <H2>Where the AB lane sits</H2>
+        <H2>Where the Analytic Bytes lane sits</H2>
         <P>
           Most of the work we get pulled into looks like a data problem on the surface. A dashboard nobody uses. A handoff that doesn&rsquo;t stick. A metric stuck in someone&rsquo;s email instead of a workflow. Most of those turn out not to be data problems. They are alignment problems, assignment problems, or execution problems misread as data problems.
         </P>
@@ -4688,7 +4672,7 @@ export const ESSAYS: Essay[] = [
           them. The referee has the authority to say: not now.
         </P>
         <P>
-          The AB audience runs into this rule constantly. Foundations
+          Readers of this library run into this rule constantly. Foundations
           enforce reporting requirements that consume the program
           officer&rsquo;s
           week and prevent the program officer from doing the work the
@@ -5954,7 +5938,7 @@ export const ESSAYS: Essay[] = [
           April 19 onward. The tone of the GPT threads shifted from applying-to-roles to building-something. A Player&ndash;Coach Operating Model emerged as a concept. A 90-90-90 cadence for how I think about ramping into new roles. <InternalLink slug="the-decision-system">Decision Systems framing</InternalLink> for how data work translates into organizational outcomes. A LinkedIn banner that went through eighty-five iterations before I posted it.
         </P>
         <P>
-          Two specific moments inside this stage are worth naming.
+          Two moments inside this stage stand out.
         </P>
         <P>
           The first was April 29. I had been using Claude inside a Snowflake environment at work for narrow utility tasks (adding field names, metadata on tables, code correction) but had only just started using it on my own machine for substantive work. I asked GPT to evaluate Claude&rsquo;s analysis of me. I wanted a second opinion from the tool that already had eight months of accumulated context. That request was a deliberate cross-tool test. Looking back, it is the first time I ran two AI tools against each other intentionally. It was not switching. It was <I>checking</I>.
@@ -5986,7 +5970,7 @@ export const ESSAYS: Essay[] = [
           The selection was empirical. I used each tool for what each tool did well, and the assignments shifted as my needs shifted. The snapshot lives in the <ArtifactLink slug="multi-tool-selection-map">multi-tool selection map</ArtifactLink>.
         </P>
         <P>
-          One pattern worth naming: speaking work is hybrid, not Claude-only. The application drafting and thesis refinement live on Claude. The visual and metaphorical exploration (race vs room, Constellation Self, Tree with Silhouettes) happened on GPT, because that is where image generation could iterate with text in the same thread.
+          Speaking work is hybrid, not Claude-only. The application drafting and thesis refinement live on Claude. The visual and metaphorical exploration (race vs room, Constellation Self, Tree with Silhouettes) happened on GPT, because that is where image generation could iterate with text in the same thread.
         </P>
         <P>
           The friction had also reversed direction in one place. GPT had become harder to work with for some tasks. Format consistency on resumes. Context retention across long threads. Sycophancy that I had called out in October was still firing in May. My discipline had moved past what the tool could keep up with for the deepest work, and I moved that work to Claude.
@@ -6403,7 +6387,7 @@ export const ESSAYS: Essay[] = [
           interview questions for <I>&ldquo;can you author the contract
           that makes a $50M aid scenario reversible at machine cadence
           when the AI assistant gets the recommendation wrong?&rdquo;</I>{" "}
-          So the screen defaults to what it can measure. The engineering half passes the rubric. The governance half is treated as either implicit or as a soft skill that will fill itself in. <a href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/analytics-translator" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">McKinsey named part of this half in 2018 as the analytics translator</a>, a role it placed beside the data team. The senior role has to hold it.
+          So the screen defaults to what it can measure: the engineering half clears it, and the governance half is assumed, or filed as a soft skill that will develop on the job. <a href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/analytics-translator" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">McKinsey named part of this half in 2018 as the analytics translator</a>, a role it placed beside the data team. The senior role has to hold it.
         </P>
         <P>
           The result is predictable. The institution hires a senior data engineer, who builds the integration. The integration runs and the dashboards work. The schemas are tight, the freshness SLAs hold, the lineage tooling reports green. And then the Provost still cannot get a 360 view, the program officer still cannot answer the funder when the number moves, and the clinician still cannot act on the population-health view because nobody has written the contract that says they are allowed to. The engineering succeeded, and the decision interface stayed unowned. The role failed at the half of its work that mattered.
@@ -6454,8 +6438,7 @@ export const ESSAYS: Essay[] = [
           engineering half, and a separate Director of Decision Systems,
           Chief Data Governance Officer, or equivalent for the
           governance and SME half. Both roles report into the same
-          independent function. The engineering role builds and runs
-          the substrate. The governance role writes and enforces the
+          independent function. The engineering role builds and runs the platform. The governance role writes and enforces the
           contracts on top, supports the stakeholders acting on the
           data, and owns the decision interface. The roles work
           together, but each has its own rubric and its own authority.
@@ -6501,8 +6484,7 @@ export const ESSAYS: Essay[] = [
           designation, and reporting into IT leadership with an
           academic-side coordination line. The title names both halves:
           enterprise data strategy, governance and policy infrastructure,
-          data stewardship culture, and the technological substrate the
-          strategy sits on. The dual reporting line signals institutional
+          data stewardship culture, and the technology the strategy sits on. The dual reporting line signals institutional
           awareness that the role serves both academic strategic
           decision-making and IT delivery, not only the engineering
           function.
@@ -7375,7 +7357,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-08-02",
     readingTime: "10 min read",
     summary:
-      "AB spent ninety days operating as an AI-native practice. This is the public report from the audit that followed, and the case for practitioner AI governance as a discipline the field has not yet named clearly. Introduces HITL/AITL as a signal-informed proxy for the load-carrier axis, and demonstrates methodology documentation done inline.",
+      "Analytic Bytes (AB) spent ninety days operating as an AI-native practice. This is the public report from the audit that followed, and the case for practitioner AI governance as a discipline the field has not yet named clearly. Introduces HITL/AITL as a signal-informed proxy for the load-carrier axis, and demonstrates methodology documentation done inline.",
     cover: "/library/covers/auditing-an-ai-native-practice.svg",
     arc: "measurement",
     arcSecondary: "ai-systems",
@@ -7383,7 +7365,7 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            AB spent ninety days operating as an AI-native practice, with
+            Analytic Bytes (AB) spent ninety days operating as an AI-native practice, with
             Claude in the loop for planning, drafting, research, code,
             and reflection. The question afterward was whether that
             operating model actually did what an AI-native practice is
@@ -7604,8 +7586,7 @@ export const ESSAYS: Essay[] = [
         <H2>Handling the N=1</H2>
         <P>
           A field note built on one practice invites the obvious
-          objection: N=1 is not generalizable. That objection is correct
-          and worth naming up front.
+          objection: N=1 is not generalizable. That objection is correct.
         </P>
         <P>Two responses.</P>
         <P>
@@ -7935,7 +7916,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Implementation note: shapes of enforcement</H2>
         <P>
-          These revisions differ in shape, and the difference is worth naming. Three ship as new discrete gates on the extension track (<code>assert_suppressed_never_zero_ext</code>, <code>assert_cross_unit_reconciled_ext</code>, <code>assert_lever_typing_ext</code>) &mdash; any failure stops the build. The CI-overlap check (gate 6) is enforced inside the required-caveats gate as a mandated disclosure: the panel&rsquo;s movement note must carry the significance caveat, or the build fails. It is a <I>disclosure gate</I>, not a numeric-comparison gate &mdash; and for a public dashboard, the disclosure is the point. The provenance-class distinction (gate 1) is a data-structure primitive underneath the extension track (raw_*_ext vs raw_*). Version crosswalk (gate 3) is enforced structurally: the extension warehouse only ingests from the current instrument version onward, so a chart cannot cross a boundary because the pre-boundary data is not present. Promoting the crosswalk to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. All six are inspectable in the repo; the shapes differ on purpose.
+          These revisions differ in shape. Three ship as new discrete gates on the extension track (<code>assert_suppressed_never_zero_ext</code>, <code>assert_cross_unit_reconciled_ext</code>, <code>assert_lever_typing_ext</code>) &mdash; any failure stops the build. The CI-overlap check (gate 6) is enforced inside the required-caveats gate as a mandated disclosure: the panel&rsquo;s movement note must carry the significance caveat, or the build fails. It is a <I>disclosure gate</I>, not a numeric-comparison gate &mdash; and for a public dashboard, the disclosure is the point. The provenance-class distinction (gate 1) is a data-structure primitive underneath the extension track (raw_*_ext vs raw_*). Version crosswalk (gate 3) is enforced structurally: the extension warehouse only ingests from the current instrument version onward, so a chart cannot cross a boundary because the pre-boundary data is not present. Promoting the crosswalk to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. All six are inspectable in the repo; the shapes differ on purpose.
         </P>
 
         <Figure
@@ -8086,7 +8067,7 @@ export const ESSAYS: Essay[] = [
           Few requisitions mark the difference. The list arrives undifferentiated, and a screen reads all of it as conditions to be met at the moment of measurement.
         </P>
         <P>
-          The clearest evidence that the list is not a day-one list is that it routinely holds things no outside candidate could have on day one. Familiarity with the internal data model. Experience with the student information system this particular organization runs. Everyone involved knows those get learned after hire. They sit in the same undifferentiated list as the requirements that genuinely cannot wait.
+          The clearest evidence that the list is not a day-one list is that it routinely holds things no outside candidate could have on day one. Familiarity with the internal data model. Experience with the student information system this particular organization runs. Everyone involved knows those get learned after hire. They sit in the same undifferentiated list as the requirements that cannot wait.
         </P>
         <P>
           So the screen is not failing at something it set out to do. It measures current capability across every listed item, which is exactly what it claims to measure. The difficulty is that current capability across every listed item is not the quantity the decision needs. The decision needs a judgment about performance over the life of the role, and part of that performance rests on capabilities the organization intends to build after hire. The screen is a sound measure of the wrong quantity.
@@ -8239,7 +8220,7 @@ export const ESSAYS: Essay[] = [
           Stated cause needs defining, or the second number is trivial to game. A message saying we have decided to move forward with other candidates states no cause. It restates the outcome. A stated cause names something about the application: a requirement not met, a stage not reached, a comparison lost against named criteria. Anything that names none of those counts toward the second number, including every well-written template.
         </P>
         <P>
-          One case sits awkwardly under that definition and is worth naming. Some rejections do state a cause on the requisition side. The role was canceled, the budget froze, the search is on hold. That is a real answer for the candidate, and it settles which of the seven applied. It still counts toward the second number.
+          One case sits awkwardly under that definition. Some rejections do state a cause on the requisition side. The role was canceled, the budget froze, the search is on hold. That is a real answer for the candidate, and it settles which of the seven applied. It still counts toward the second number.
         </P>
         <P>
           The second number does not measure whether the candidate learned anything. It measures whether the employer said anything about the screen. A canceled requisition says nothing about the screen, so it counts as a decision issued with no stated cause, like any other. Counting it as a stated cause instead would let an employer lower the number without ever saying what the screen did.
@@ -8885,7 +8866,7 @@ export const ESSAYS: Essay[] = [
           Twenty-three depends on a judgment call about one pattern, and that pattern is common in these documents. It counts a posting where the role both sets a standard and can hold others to it. A stricter reader rejects that, on the grounds that a duty to enforce a rule is something you must do about other people rather than a decision you get to settle. The strictest reading gives eleven. Those eleven name an actual decision: approve this spend, select this platform, hold decision rights over this architecture. Eleven would make the forty-two a fifty-four. This essay uses twenty-three throughout, and anyone who rejects the enforce pattern should read eleven wherever it appears.
         </P>
         <P>
-          One consequence of coding twice is that every count here has to say what it is a count of. Sixty-six were collected. Sixty-five are codable, since one posting&rsquo;s extract is a truncation defect in my own pipeline and gets reported as a defect rather than as employer silence. Sixty-four carry a requirements section (the sixty-fifth genuinely writes none, checked against its full source). The three anchors report over sixty-five; the composition finding reports over sixty-four. Anything computed under the first pass is retired and is not in this piece.
+          One consequence of coding twice is that every count here has to say what it is a count of. Sixty-six were collected. Sixty-five are codable, since one posting&rsquo;s extract is a truncation defect in my own pipeline and gets reported as a defect rather than as employer silence. Sixty-four carry a requirements section (the sixty-fifth writes none, checked against its full source). The three anchors report over sixty-five; the composition finding reports over sixty-four. Anything computed under the first pass is retired and is not in this piece.
         </P>
 
         <H2>What this evidence will not carry</H2>
@@ -9715,7 +9696,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Both arrive after the fact</H2>
         <P>
-          An impact evaluation arrives after the cohort. That is what the method is for. A randomized trial or a matched comparison answers whether the program changed the outcome for the people who went through it, and the outcome has to have happened for the answer to exist. For a workforce program that means a year of employment data. For a housing program it means twelve months without a shelter re-entry. The report is credible about people the organization has already finished serving.
+          Start with the impact evaluation, which by design reports after the cohort has finished. That is what the method is for. A randomized trial or a matched comparison answers whether the program changed the outcome for the people who went through it, and the outcome has to have happened for the answer to exist. For a workforce program that means a year of employment data. For a housing program it means twelve months without a shelter re-entry. The report is credible about people the organization has already finished serving.
         </P>
         <P>
           A dashboard arrives after the event. Enrollment yesterday, attendance this week, a no-show pattern a clinician can read this month. It is current, and in most systems the warrant for reading it is nowhere in the layer that carries the number. A dashboard can hold a validated risk score; what the usual architecture does not hold is where that validation came from, for whom it holds, and what it permits. Nothing in the layer says what the number is allowed to be read as. Whether attendance in month two tells you anything about employment in month fourteen is a claim, and the dashboard does not make it. So the organization gets one number it can act on and cannot defend, and one number it can defend and cannot act on.
@@ -9801,7 +9782,7 @@ export const ESSAYS: Essay[] = [
           A recheck is expensive today because it is a study. Someone has to design it, collect the outcome, wait for it, and analyze it. That cost is why organizations run one every few years and treat the result as permanent. AI does not remove the wait. Month-fourteen employment still arrives in month fourteen, and no model compresses it into month three. What has changed is what happens once cohorts mature continuously and the outcome arrives through administrative rails: wage records, enrollment feeds, employer platforms, the CRM the organization already runs. The pan-African posting above lists &ldquo;financial or KYC rails, LinkedIn/digital trace data&rdquo; as sources it expects its impact function to use. With rolling cohorts and those feeds, the relationship between month-two attendance and month-fourteen employment can be re-estimated each quarter, where volume permits, on the cohorts whose fourteenth month has now arrived. Automation reruns that analysis against the semantic layer at the grain of a site. The re-estimation stops waiting for a bespoke study cycle. It does not stop waiting for the outcome.
         </P>
         <P>
-          What no tool decides is whether the recheck is due, and what to do when the answer changes. Those are the questions <I>The construct keeps moving</I> raised about the measurement architecture, and they land here on the warrant. When the re-estimate shows the link has weakened, somebody has to decide whether the population shifted, the program changed, or the indicator was never as good as the first study made it look. Then they decide whether the dashboard number keeps its license, loses it, or drops from an impact claim to an operational one. That decision is validity reasoning. A model can draft the memo. It cannot own the claim. The one piece of empirical work I owe on this is the simulation logged in the AB idea log as <I>Twenty cases and a rhythm</I>: how fast a warranted signal decays without a recheck rhythm, and what the rhythm catches. Until that exists, the cadence argument is a design claim and not a measured one.
+          What no tool decides is whether the recheck is due, and what to do when the answer changes. Those are the questions <I>The construct keeps moving</I> raised about the measurement architecture, and they land here on the warrant. When the re-estimate shows the link has weakened, somebody has to decide whether the population shifted, the program changed, or the indicator was never as good as the first study made it look. Then they decide whether the dashboard number keeps its license, loses it, or drops from an impact claim to an operational one. That decision is validity reasoning. A model can draft the memo. It cannot own the claim. The one piece of empirical work I owe on this is the simulation logged in my idea log as <I>Twenty cases and a rhythm</I>: how fast a warranted signal decays without a recheck rhythm, and what the rhythm catches. Until that exists, the cadence argument is a design claim and not a measured one.
         </P>
 
         <H2>What to write on the metric</H2>
@@ -10312,7 +10293,7 @@ export const ESSAYS: Essay[] = [
           This is also where two problems nobody files under change work turn out to belong here. <B>Missing data</B> and <B>inaccurate data</B> have many causes. A form that is hard to use. A definition two people read differently. A workload that makes data entry the thing that slips. An extraction that failed quietly. But a recognisable share of them are old changes whose lineage was lost: something changed, nobody recorded what, and the residue is what shows up in the export years later. A column that stopped being populated in 2023 stopped because something changed and nobody wrote it down. A status code that means one thing in the fall and another during the spring campaign is two rules under one name, which is the failure <InternalLink slug="numbers-dont-agree"><I>The numbers don&rsquo;t agree because the words don&rsquo;t</I></InternalLink> works through at length. Profiling an export to find these is the cheapest thing a model does, and in twenty years I have almost never seen it done, because it takes a day and produces no report.
         </P>
         <P>
-          The limits are worth stating plainly, because the pitch will imply there are none.
+          The limits are worth stating, because the pitch will imply there are none.
         </P>
         <P>
           A model cannot move a vendor&rsquo;s release date. It can argue about whether a redefined measure is comparable across the boundary, and it cannot own the answer. It drafts the document and does not maintain it. Anthropic&rsquo;s own data team reports what untended documentation does to an analytics agent: offline accuracy drifted from about 95 percent at launch to about 65 percent within a month (<a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Chang et al., Anthropic</a>, June 2026). The maintenance does not disappear. It moves from reconstructing what a column meant every time somebody asks, to keeping one explicit set of rules current. That is a much smaller job. It still has to be somebody&rsquo;s.
