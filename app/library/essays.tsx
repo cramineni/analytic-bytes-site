@@ -8256,7 +8256,7 @@ export const ESSAYS: Essay[] = [
           So my first disagreement is the ordering. Amodei leads frontier-first and treats development as where the science eventually lands, a downstream beneficiary of breakthroughs made elsewhere. There is a real case for that sequence. You cannot schedule a breakthrough, and you cannot deliver something that does not exist yet. So you fund the frontier, and distribution looks like the easier problem to take second.
         </P>
         <P>
-          I would still invert it. Treating distribution as a later stage puts it outside the design, and a thing outside the design does not get specified, budgeted, or measured. If AI raises the floor at all, global development belongs in the causal model from the start (a design claim, not a moral one). It is what floor-raising means. The floor is the frontier.
+          I would still invert it. Treating distribution as a later stage puts it outside the design, and a thing outside the design does not get specified, budgeted, or measured. If AI raises the floor at all, global development belongs in the causal model from the start (a design claim, not a moral one). It is what floor-raising means. <B>The floor is the frontier.</B>
         </P>
         <P>
           I would also expect the two areas Amodei is least sure of, governance and meaning, to get easier once baseline capacity rises. And I would expect the reverse where the floor does not rise: capability compounds where it lands, so unequal access becomes unequal capacity, and the distance is wider for the generation after. I cannot show either one, and the essay does not show them. Someone would have to say what that looks like in observable terms, and how they would measure it, before any of us could put weight on it.
@@ -8273,10 +8273,10 @@ export const ESSAYS: Essay[] = [
           And that is the part the essay leaves for someone else to do. <I>The floor rose</I> is a claim, not a result. Rose for whom? By how much? And did the capability cause it, or merely coincide with a change already underway?
         </P>
         <P>
-          Attribution is the first problem. <InternalLink slug="the-valid-dollar">Additionality</InternalLink> is the contribution dimension that separates what an intervention produced from what it only supported. Without it, a number can be large and still be wrong. A program can run alongside a rising trend for years and report the whole rise.
+          <B>Attribution is the first problem.</B> <InternalLink slug="the-valid-dollar">Additionality</InternalLink> is the contribution dimension that separates what an intervention produced from what it only supported. Without it, a number can be large and still be wrong. A program can run alongside a rising trend for years and report the whole rise.
         </P>
         <P>
-          Validity is the second. A model can apply a measure with superhuman consistency and still be <InternalLink slug="what-is-this-system-measuring">scoring the wrong thing</InternalLink>, because <InternalLink slug="validity-layer-beneath-responsible-ai">consistency is not validity</InternalLink>. The faster and more reliably the system reports, the more easily a stable number passes for a true one. Beneficial is a claim about an outcome, and it is harder to establish than the capability that was supposed to deliver it.
+          <B>Validity is the second.</B> A model can apply a measure with superhuman consistency and still be <InternalLink slug="what-is-this-system-measuring">scoring the wrong thing</InternalLink>, because <InternalLink slug="validity-layer-beneath-responsible-ai">consistency is not validity</InternalLink>. The faster and more reliably the system reports, the more easily a stable number passes for a true one. Beneficial is a claim about an outcome, and it is harder to establish than the capability that was supposed to deliver it.
         </P>
         <P>
           I ran data for a K-8 charter network in the Bronx, five schools, about 1,800 children. We were expanding into a district where sixteen to seventeen percent of students were English learners. We enrolled seven or eight percent there. Whether we were reaching the children who needed us, and whether that was changing, was the question I could not answer.
