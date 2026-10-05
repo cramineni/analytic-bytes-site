@@ -4422,7 +4422,7 @@ export const ESSAYS: Essay[] = [
             The usual diagnosis is a reporting problem: buy a better dashboard, tighten the template. The real problem is a category error. You bought a system of record for <I>activity</I> and asked it to behave like a system of record for <I>outcomes</I>.
           </p>
           <p>
-            This note is about that difference. It&rsquo;s also about the missing category — the evidence spine — that turns reach into a decision. It&rsquo;s a field note. It makes one structural claim.
+            The missing category is the evidence spine, the structure that turns reach into a decision.
           </p>
         </Brief>
 
@@ -4461,13 +4461,12 @@ export const ESSAYS: Essay[] = [
           feature. Add a free-text “impact” field and, across forty
           grantees, you get forty differently-worded fields that do not
           read across. The seam you were trying to close reopens, now
-          with a database license attached. The CRM was never the wrong
-          tool. Treating it as your evidence layer is the category error.
+          with a database license attached.
           Reach falls out of it for free; comparability does not exist
           unless you build the second system deliberately.
         </P>
         <P>
-          None of this says measurement people have ignored use. Utilization-focused evaluation has argued for decades that an evaluation nobody acts on has failed; the conviction here is inherited, not invented. What changes is where you put it. Shared-measurement frameworks reach comparability by making every grantee report the same indicators up front; metric catalogs like IRIS+ do it by prescribing a common dictionary to pick from. Both work when a portfolio shares one goal or one asset class. A grant book rarely does. Forty grantees carry forty theories of change, so the spine runs the other way: let each keep its own language, then place it on one scale afterward. Define it once works where one party owns the point of capture. A funder does not; the grantee writes the words, so the definitional work has to happen at the placement rather than at the source. The results-framework world already tried the alternative. The <a href="https://www.oecd.org/en/topics/results-based-management.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">OECD</a>&rsquo;s review of results-based management found a familiar pattern: data gets collected, but rarely reaches the decision. The easy read is a culture problem — teams never build the habit of looking. The real read is structural: the data was never shaped to be read as a decision. The second system is what shapes it.
+          None of this says measurement people have ignored use. Utilization-focused evaluation has argued for decades that an evaluation nobody acts on has failed; the conviction here is inherited, not invented. What changes is where you put it. Shared-measurement frameworks reach comparability by making every grantee report the same indicators up front; metric catalogs like IRIS+ do it by prescribing a common dictionary to pick from. Both work when a portfolio shares one goal or one asset class. A grant book rarely does. Forty grantees carry forty theories of change, so the spine runs the other way: let each keep its own language, then place it on one scale afterward. Define it once works where one party owns the point of capture. A funder does not; the grantee writes the words, so the definitional work has to happen at the placement rather than at the source. The results-framework world already tried the alternative. The <a href="https://www.oecd.org/en/topics/results-based-management.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">OECD</a>&rsquo;s review of results-based management found a familiar pattern: data gets collected, but rarely reaches the decision. It is tempting to call that a culture problem. The pattern is structural: the data was never shaped to be read as a decision, and the second system is what shapes it.
         </P>
 
         <H2>What the rubric actually is</H2>
@@ -4491,11 +4490,10 @@ export const ESSAYS: Essay[] = [
         />
 
         <P>
-          To illustrate: Grantee A says “kids reading at grade level.” Grantee B says “literacy gains held two years.” Grantee C says “fewer kids need remediation.” On their own, those are three incomparable sentences. Run them through the semantic layer and they become placements on one scale — B at sustained, C at established, A at building. Different words in; one comparable placement out. Without the semantic layer, a rubric is just a fourth dialect nobody speaks. With it, forty theories of change finally line up on a single axis.
+          To illustrate: Grantee A says “kids reading at grade level.” Grantee B says “literacy gains held two years.” Grantee C says “fewer kids need remediation.” On their own, those are three incomparable sentences. Run them through the semantic layer and they become placements on one scale — B at sustained, C at established, A at building. Different words go in, and one comparable placement comes out. Without the semantic layer, a rubric is just a fourth dialect nobody speaks. With it, forty theories of change finally line up on a single axis.
         </P>
         <P>
-          People imagine that mapping is automatic. It isn&rsquo;t.
-          Funder and grantee co-author it: they agree, in advance,
+          The mapping is not automatic. Funder and grantee co-author it: they agree, in advance,
           what evidence justifies each placement. The layer doesn&rsquo;t
           remove the judgment about whether “held two years” outranks
           “reading at grade level.” It forces that judgment to be made
@@ -4520,8 +4518,7 @@ export const ESSAYS: Essay[] = [
         <H2>One spine, three decisions</H2>
         <P>
           The reason this is worth building once is that the same spine
-          serves three different seats without being rebuilt. The
-          vocabulary changes; the architecture does not. A{" "}
+          serves three different seats without being rebuilt. The vocabulary changes, but the architecture does not. A{" "}
           <B>program officer</B> reads a single grantee’s row and asks
           whether it is working. The spine gives them the leading signal
           before the post-mortem, not just the status the CRM already
@@ -4547,10 +4544,7 @@ export const ESSAYS: Essay[] = [
         <P>
           <I>
             Reach is a number. The decision is the system you architect
-            around it. Analytic Bytes helps funders, portfolios, and CSR
-            teams build that evidence spine — the rubric, the semantic
-            layer, and the shared record shape — and move from
-            fragmented to decision-ready.
+            around it.
           </I>
         </P>
 
@@ -8399,7 +8393,7 @@ export const ESSAYS: Essay[] = [
           So I read this essay as a specification with the acceptance criteria left out. Beneficial is where the acceptance criteria go &mdash; a set of conditions somebody writes down before the build, checks after, and checks again as the system that produced the outcome shifts beneath them.
         </P>
         <P>
-          That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. Pointing AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and letting it do good is the easy reading. The harder reading instruments the benefit, and measures it against the people it was meant to reach. <I>The floor rose</I> is where the work starts. Somebody has to stay in the room after the capability is deployed and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
+          That is what I take beneficial deployment to mean, and it is more demanding than the phrase sounds. It is not enough to point AI at <InternalLink slug="when-the-stakes-are-the-mission">good sectors</InternalLink> and let it do good. Beneficial deployment instruments the benefit and measures it against the people it was meant to reach. <I>The floor rose</I> is where the work starts. Somebody has to stay in the room after the capability is deployed and keep asking whether the floor actually rose, for whom, and whether the number still means what it meant last quarter.
         </P>
 
         <SeeAlso>
@@ -8453,10 +8447,10 @@ export const ESSAYS: Essay[] = [
             Picture a finance leader who has done everything right. The chart of accounts is clean. Every transaction is tagged to a program. And the program team, separately, has done everything right too: a real outcome measure, defined and durable, not a reach count. Two good systems, both working.
           </p>
           <p>
-            Now the board asks what a result costs, and the answer is still a shrug. Not because either system is weak, but because nothing connects them. Cost per outcome is two numbers divided, and the division is only honest if both numbers describe the same slice &mdash; the same program, cohort, site, and period. That shared, governed identity is the whole subject of this note.
+            Now the board asks what a result costs, and the answer is still a shrug. Not because either system is weak, but because nothing connects them. Cost per outcome is two numbers divided, and the division is only honest if both numbers describe the same slice &mdash; the same program, cohort, site, and period.
           </p>
           <p>
-            <InternalLink slug="the-reach-trap">The reach trap</InternalLink> said build the outcome system. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> said score the number it produces. This is about the wire between them.
+            <InternalLink slug="the-reach-trap">The reach trap</InternalLink> said build the outcome system. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> said score the number it produces. What connects them is the wire between the two systems.
           </p>
         </Brief>
 
@@ -8478,25 +8472,22 @@ export const ESSAYS: Essay[] = [
           />
         </div>
 
-        <H2>Spend is what falls out for free</H2>
+        <H2>Why the ledger stops at spend</H2>
         <P>
-          Every finance stack pulls toward spend. Salaries paid, stipends cut, rent allocated, grants closed. These numbers are not wrong, and a nonprofit that cannot say what a program cost has a real problem. But ask <I>why</I> they are always the numbers you have. They are byproducts of transactions the organization was already recording for other reasons. The check cleared, so the cost is booked. The invoice posted, so the line exists.
-        </P>
-        <P>
-          Effectiveness is not a byproduct. No accounting system logs &ldquo;and it worked&rdquo; as a side effect of paying an invoice. Whether a program moved its outcome has to be built &mdash; the outcome defined, placed on a scale, counted the same way next year. Spend is recorded as a side effect of transactions, while evidence has to be constructed. The first step out of the trap is to stop expecting the finance system to hand you the second thing for free.
+          <InternalLink slug="the-reach-trap">The reach trap</InternalLink> traced why reach falls out of a CRM for free. Spend falls out of a ledger the same way. Salaries, stipends, rent and grants are booked because the money moved, and a nonprofit that cannot say what a program cost has a real problem. Effectiveness is never booked that way. Whether a program moved its outcome has to be built: the outcome defined, placed on a scale, and counted the same way next year.
         </P>
 
-        <H2>Why the finance system can't save you</H2>
+        <H2>What the ledger can hold, and what it can't</H2>
         <P>
-          This is where most teams go looking, and it fails here. The instinct is reasonable: we just migrated to a real platform, it tags every transaction to a program, surely cost per outcome is one report away. A modern finance system is genuinely good at the numerator. Tag a transaction to a program dimension and you can isolate what that program spent, cleanly, across direct and allocated cost. That is a real and necessary job.
+          The obvious place to look is the new platform. The instinct is reasonable: we just migrated to a real platform, it tags every transaction to a program, surely cost per outcome is one report away. A modern finance system is genuinely good at the numerator. Tag a transaction to a program dimension and you can isolate what that program spent, cleanly, across direct and allocated cost. That is a real and necessary job.
         </P>
         <P>
-          You can even bolt a statistical account onto the ledger and store an outcome count next to the dollars. Some teams do, and that can solve storage. It does not solve definition, comparability, or ownership &mdash; the work of saying what a placement is, keeping it comparable across programs that each describe success in their own words, and naming who governs the value. That work lives in the evidence spine, not the ledger. Location does not confer governance. Putting the outcome model where the dollars live is a storage decision, not a measurement one.
+          You can even bolt a statistical account onto the ledger and store an outcome count next to the dollars. Some teams do, and that can solve storage. It does not solve definition, comparability, or ownership &mdash; the work of saying what a placement is, keeping it comparable across programs that each describe success in their own words, and naming who governs the value. That work lives in the evidence spine, not the ledger.
         </P>
 
         <H2>The overhead ratio is the shortcut everyone takes</H2>
         <P>
-          Because spend is the number that falls out for free, spend-only ratios get promoted to stand in for effectiveness. The program-expense ratio &mdash; the share of the budget that reaches &ldquo;programs&rdquo; rather than &ldquo;overhead&rdquo; &mdash; is the clearest case. Easy to compute, feels like accountability, says nothing about whether a program worked. Two workforce programs can post the same low ratio while one places people in lasting jobs and the other places no one. The ratio never looked at the outcome; it only looked at the shape of the spend. The sector said this out loud years ago. In 2013 the three leading charity-information services (GuideStar, Charity Navigator, and the BBB Wise Giving Alliance) signed an open letter to the donors of America calling overhead &ldquo;a poor measure of a charity&rsquo;s performance&rdquo; (<a href="https://nonprofitquarterly.org/the-overhead-myth/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">The Overhead Myth, Nonprofit Quarterly, 2013</a>). The argument is right and the reflex persists, and one reason matters here: the ratio is free. The join is not.
+          Because spend is the number that falls out for free, spend-only ratios get promoted to stand in for effectiveness. The program-expense ratio &mdash; the share of the budget that reaches &ldquo;programs&rdquo; rather than &ldquo;overhead&rdquo; &mdash; is the clearest case. It is easy to compute and feels like accountability, but it says nothing about whether a program worked. Two workforce programs can post the same low ratio while one places people in lasting jobs and the other places no one. The ratio never looked at the outcome; it only looked at the shape of the spend. The sector said this out loud years ago. In 2013 the three leading charity-information services (GuideStar, Charity Navigator, and the BBB Wise Giving Alliance) signed an open letter to the donors of America calling overhead &ldquo;a poor measure of a charity&rsquo;s performance&rdquo; (<a href="https://nonprofitquarterly.org/the-overhead-myth/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">The Overhead Myth, Nonprofit Quarterly, 2013</a>). The argument is right and the reflex persists, and one reason matters here: the ratio is free, and the join is not.
         </P>
 
         <H2>What the join actually is</H2>
@@ -8523,9 +8514,9 @@ export const ESSAYS: Essay[] = [
           caption="Two gates, not one. Same-scope makes the division honest about what is being compared. Warrant makes it honest about causation. A defensible cost per outcome has to pass both."
         />
 
-        <H2>One join, three seats</H2>
+        <H2>Who reads the join</H2>
         <P>
-          Build the wire once and it pays out at every altitude. A <B>program director</B> reads one cohort and asks whether it is working; the join returns cost per outcome as outcomes mature, rather than at an annual post-mortem. A <B>CFO</B> reads across programs and asks where the next dollar goes; same-scope cost and outcome evidence gives that question a denominator instead of leaving it anchored to spend alone. The join does not make the allocation decision. Capacity, population difficulty, and strategy still sit on top of it. It makes the allocation question answerable. A <B>board chair</B> reads the same structure and can finally put a number to the donor&rsquo;s question &mdash; what does a result cost here &mdash; that holds up, rather than an overhead ratio that does not. The three readers ask three different questions of the same governed join.
+          Once the keys exist, the same join serves three readers. A <B>program director</B> reads one cohort and asks whether it is working; the join returns cost per outcome as outcomes mature, rather than at an annual post-mortem. A <B>CFO</B> reads across programs and asks where the next dollar goes; same-scope cost and outcome evidence gives that question a denominator instead of leaving it anchored to spend alone. The join does not make the allocation decision. Capacity, population difficulty, and strategy still sit on top of it. It makes the allocation question answerable. A <B>board chair</B> reads the same structure and can finally put a number to the donor&rsquo;s question &mdash; what does a result cost here &mdash; that holds up, rather than an overhead ratio that does not. The three readers ask three different questions of the same governed join.
         </P>
 
         <H2>Where to start</H2>
