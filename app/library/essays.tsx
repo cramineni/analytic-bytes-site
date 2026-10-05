@@ -3941,7 +3941,6 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <H2>The water authority</H2>
-        <P></P>
         <P>
           The water treatment plant is the place that decides what
           counts as drinkable water and tests every batch. That’s the
