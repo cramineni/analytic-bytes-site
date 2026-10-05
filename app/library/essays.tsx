@@ -468,9 +468,7 @@ export const ESSAYS: Essay[] = [
           kinds of reporting need different surfaces.
         </P>
         <P>
-          In most product organizations I’ve watched, skipping that step
-          produces sprawl. Multiple tool licenses, no cohesion across reports
-          and dashboards, users still running workarounds because no single
+          In most product organizations I’ve watched, skipping that step produces sprawl: multiple tool licenses, no cohesion across reports and dashboards, and users still running workarounds because no single
           tool quite fit the job it was handed. AI features amplify it. More
           vendors offer more in-tool AI, there is more incentive to bolt
           features in across the stack, and more risk of overpaying for AI
@@ -489,8 +487,7 @@ export const ESSAYS: Essay[] = [
           The first decision is not which BI tool. It is recognizing that the
           surfaces are different products, and giving each the architecture it
           deserves. The second decision is the semantic layer feeding all
-          three, and it matters more than any surface choice. Vendor selection
-          comes last. Once the rest is done, it barely matters.
+          three, and it matters more than any surface choice. Vendor selection comes last.
         </P>
 
         <Figure
@@ -527,9 +524,7 @@ export const ESSAYS: Essay[] = [
           in a meeting, occasionally exported to a PDF nobody reads carefully.
         </P>
         <P>
-          These are three different products. Who reads them, how often, under
-          what review, with what access, how long the output must last — they
-          differ on every dimension, and none of them bend gracefully.
+          These are three different products, and they differ on every one of the five dimensions.
         </P>
 
         <EssayTable
@@ -608,8 +603,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The keystone: one canonical computation per concept</H2>
         <P>
-          The keystone argument is non-negotiable. It is the difference between
-          a system that scales and a system that loses credibility over time.
+          One canonical computation per concept is the difference between a system that scales and one that loses credibility over time.
         </P>
         <P>
           Whatever combination of surfaces gets built, all of them should read
@@ -643,8 +637,7 @@ export const ESSAYS: Essay[] = [
           adding shadow definitions.
         </P>
         <P>
-          That discipline is the part that fails. Which is why the architecture
-          has to do the enforcing.
+          That discipline is the part that fails, which is why the architecture has to do the enforcing.
         </P>
 
         <H2>The drift war story</H2>
@@ -670,16 +663,14 @@ export const ESSAYS: Essay[] = [
           and any one of them can drift on its own.
         </P>
         <P>
-          This is a common failure mode in analytics products.
-          It’s slow. It rarely triggers a single alarm. It degrades the
+          This is a common failure mode in analytics products, and a slow one. It degrades the
           credibility of every artifact the team produces, until people stop
           quoting numbers in meetings and start saying “I’d want to verify
           that.” Once that phrase shows up, the product has failed even if
           it’s still being maintained.
         </P>
         <P>
-          This is what a decision-system problem looks like at the root: not a
-          missing dashboard, but a missing source of truth that adds
+          This is what a decision-system problem looks like at the root: a missing source of truth that adds
           re-verification cost to every downstream decision. Every number
           arrives with a question attached, and the decision-maker has to
           resolve it before they can act.
@@ -7430,10 +7421,7 @@ export const ESSAYS: Essay[] = [
           engagement frequency. Both are needed.
         </P>
         <P>
-          Cutting across the three lenses is a fourth distinction the
-          audit uses to describe the shape of AI engagement per
-          category. The audit uses{" "}
-          <B>HITL / AITL</B> as a paired frame. The pairing comes from <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35083" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Natarajan and colleagues (AAAI 2025)</a>, who call the two frames HIL and AI2L; the HITL and AITL labels are this essay&rsquo;s. What this audit adds is placing each category from session signals.
+          Cutting across the three lenses is a fourth distinction: a paired <B>HITL / AITL</B> frame that describes the shape of AI engagement per category. The pairing comes from <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35083" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Natarajan and colleagues (AAAI 2025)</a>, who call the two frames HIL and AI2L. HITL is the common spelling of the first; AITL is this essay's label for the second. What this audit adds is placing each category from session signals.
         </P>
         <P>
           <B>HITL (Human-in-the-Loop).</B> AI drives; the human
@@ -7448,7 +7436,7 @@ export const ESSAYS: Essay[] = [
           thinking partner, drafts scaffolding, or synthesizes.
         </P>
         <P>
-          HITL is standard vocabulary. AITL is this essay&rsquo;s label for what Natarajan and colleagues call AI2L, and it uses their definition. The move that
+          The move that
           matters here is using them as a <I>signal-informed</I> proxy
           for the load-carrier axis. HITL and AITL name who or what
           carries the primary work. Anthropic’s Economic Index makes a similar split between automation and augmentation across millions of conversations (<a href="https://arxiv.org/abs/2503.04761" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Handa et al., 2025</a>). This audit makes the split per category, for one practice. Placement per category was
@@ -7456,9 +7444,7 @@ export const ESSAYS: Essay[] = [
           user-turn patterns per session &mdash; categories where AI
           carried the output with few user turns landed HITL;
           categories carried by high-turn operator iteration landed
-          AITL. No shared-middle option, because a category that reads
-          shared on the surface typically has one side actually
-          carrying the decision when you look closely. (The signals
+          AITL. There is no shared-middle option: a category that looks shared usually has one side carrying the decision. (The signals
           informed operator judgment on band placement; formalizing
           them into a per-session assignment rule with reliability
           data is a next-cycle instrument.)
@@ -7530,8 +7516,7 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>5. The infrastructure has five active layers.</B> Data,
           tooling, workflows, artifacts, and governance, each with
-          named components, connected by five workflow loops. Two
-          components are honestly dormant (Card Maker, Content HQ).
+          named components, connected by five workflow loops. Two components are dormant (Card Maker, Content HQ).
           <a href="/library/public-data" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">PDDS</a> is a working, public example of measurement-validity
           discipline expressed in code and policy. It runs a
           two-component LLM-as-judge setup (narrator and judge
@@ -7596,8 +7581,7 @@ export const ESSAYS: Essay[] = [
           self-refuting. The audit documented its own methodology
           before publishing its findings on AB &mdash; twenty-three
           discipline moves and seven emergent principles logged as
-          they happened during the Jul 30&ndash;31 close (self-selected
-          and self-catalogued; Section 9 of the internal document).
+          they happened during the Jul 30&ndash;31 close (self-selected and self-catalogued).
           That work is methodology documentation, done inline, dated,
           and available for peer review. Replication is the invitation
           this piece extends.
@@ -7626,9 +7610,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The claim this audit stands on is that measurement-validity
           discipline for AI governance, at practitioner scale, is a
-          distinct discipline worth naming. This audit argues it sits
-          as a third slice alongside data governance and enterprise
-          AI governance, with its own scope and instruments. The discipline has its own
+          distinct discipline worth naming. The discipline has its own
           instruments: session classification, three-lens measurement,
           HITL/AITL mapping, dispatch guidance. It runs on its own
           validity spine: Kane-framed inference, construct-definition
@@ -7644,12 +7626,7 @@ export const ESSAYS: Essay[] = [
         <P>
           Practitioner AI governance behaves like DevOps in software
           engineering: an operating discipline that the other task
-          categories depend on, rather than a category of work
-          alongside them. The instruments a practitioner uses to run
-          this discipline &mdash; session classification, three-lens
-          measurement, HITL/AITL mapping, dispatch guidance &mdash;
-          apply across whatever categories the practice happens to
-          work in.
+          categories depend on, rather than a category of work alongside them, and its instruments apply across whatever categories the practice happens to work in.
         </P>
 
         <H2>From operator governance to agent governance</H2>
@@ -7708,8 +7685,7 @@ export const ESSAYS: Essay[] = [
         <P>
           The reason practitioner-level discipline matters for agent
           governance is architectural. Operator-level and agent-level
-          practice share the same instruments; the operator level is
-          where those instruments are calibrated first.
+          practice share the same instruments.
           Practitioner-level discipline is where instruments get built
           and tested before they run inside systems without a human at
           the keyboard.
@@ -7830,7 +7806,7 @@ export const ESSAYS: Essay[] = [
             panels were the clean case on purpose: administrative counts published at their reported grain, each attached to a policy lever with a clean before-and-after. Overdose deaths, NAEP scores, maternal mortality, Medicare readmissions, two earnings panels &mdash; clean numbers, clean levers.
           </p>
           <p>
-            This note records the first deliberate step off that easy ground and exactly how the gates were revised to survive it. The honest interest is not a seventh panel; it is the framework growing a new capability in the open, with the revisions named rather than smuggled in.
+            This note records the first deliberate step off that easy ground and exactly how the gates were revised to survive it. The interest is less a seventh panel than the framework growing a new capability in the open, with the revisions named rather than smuggled in.
           </p>
         </Brief>
 
@@ -7874,7 +7850,7 @@ export const ESSAYS: Essay[] = [
           The house rule has always been &ldquo;do statistics in code, not in the model.&rdquo; That rule permits deterministic code to compute statistics all day; what is forbidden is the <I>model</I> doing arithmetic. The model only narrates numbers it was handed.
         </P>
         <P>
-          Bringing in survey data adds a second honest way a number can reach the page, and it is worth being precise that this is a <B>tightening, not a loosening</B>. <B>Record-derived</B> values are computed deterministically in the warehouse from raw records; these are the original six panels. <B>Published-estimate</B> values are ingested verbatim from the agency&rsquo;s own published table, confidence interval and all, and never recomputed.
+          Bringing in survey data adds a second honest way a number can reach the page, and it is a <B>tightening, not a loosening</B>. <B>Record-derived</B> values are computed deterministically in the warehouse from raw records; these are the original six panels. <B>Published-estimate</B> values are ingested verbatim from the agency&rsquo;s own published table, confidence interval and all, and never recomputed.
         </P>
         <P>
           Both are honest, and neither is the model doing math. For a weighted survey estimate the second is the more conservative choice: rather than re-implement replicate-weight variance in DuckDB and ask the reader to trust our arithmetic, we stand strictly downstream of the official statistic. The grounding gate &mdash; which today whitelists a number only if it traces to a bar or a registered figure &mdash; is extended to accept an official published estimate as a first-class value, tagged with its provenance class. Nothing about the model&rsquo;s leash changes.
@@ -7888,7 +7864,7 @@ export const ESSAYS: Essay[] = [
           <B>2. Suppression as a cell state.</B> A survey cell is one of three things: present, suppressed (below the disclosure threshold), or missing (the state didn&rsquo;t field it). It is never zero, and zero is never allowed to stand in for either of the other two. A new gate fails the build if a suppressed or missing cell renders as a number or as a bar of height zero. Small cells at state by race by poverty band are common, so this gate earns its keep immediately. The rule follows federal practice, such as the <a href="https://stacks.cdc.gov/view/cdc/47786" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">NCHS data presentation standards for proportions (Parker et al., 2017)</a>.
         </P>
         <P>
-          <B>3. Version crosswalk.</B> When an instrument is redesigned, series that cross the redesign are not comparable. NSCH&rsquo;s 2016 redesign is the worked example: any flourishing chart that spans 2016 is simply wrong. The extension track enforces this structurally: the warehouse ingests only from the current instrument version onward (raw_flourishing_ext starts at 2016), so a series cannot cross an instrument boundary because the pre-boundary data is not present. Registering a documented crosswalk before extending the warehouse back across a boundary is the discipline; promoting the check to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. Same discipline applies within-series for item drift: if an item&rsquo;s wording or response options changed between releases, pooling across the change is disallowed until the change is disclosed. The crosswalk is the semantic layer that keeps two differently-worded instruments from being silently averaged into one trend.
+          <B>3. Version crosswalk.</B> When an instrument is redesigned, series that cross the redesign are not comparable. NSCH&rsquo;s 2016 redesign is the worked example: any flourishing chart that spans 2016 is wrong. The extension track enforces this structurally: the warehouse ingests only from the current instrument version onward (raw_flourishing_ext starts at 2016), so a series cannot cross an instrument boundary because the pre-boundary data is not present. Registering a documented crosswalk before extending the warehouse back across a boundary is the discipline; promoting the check to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. Same discipline applies within-series for item drift: if an item&rsquo;s wording or response options changed between releases, pooling across the change is disallowed until the change is disclosed. The crosswalk is the semantic layer that keeps two differently-worded instruments from being silently averaged into one trend.
         </P>
 
         <H2>Comparison honesty: three more gate revisions</H2>
@@ -7904,7 +7880,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Implementation note: shapes of enforcement</H2>
         <P>
-          These revisions differ in shape. Three ship as new discrete gates on the extension track (<code>assert_suppressed_never_zero_ext</code>, <code>assert_cross_unit_reconciled_ext</code>, <code>assert_lever_typing_ext</code>) &mdash; any failure stops the build. The CI-overlap check (gate 6) is enforced inside the required-caveats gate as a mandated disclosure: the panel&rsquo;s movement note must carry the significance caveat, or the build fails. It is a <I>disclosure gate</I>, not a numeric-comparison gate &mdash; and for a public dashboard, the disclosure is the point. The provenance-class distinction (gate 1) is a data-structure primitive underneath the extension track (raw_*_ext vs raw_*). Version crosswalk (gate 3) is enforced structurally: the extension warehouse only ingests from the current instrument version onward, so a chart cannot cross a boundary because the pre-boundary data is not present. Promoting the crosswalk to a runtime assert that would fire on future ingest attempts is on the near-term roadmap. All six are inspectable in the repo; the shapes differ on purpose.
+          These revisions differ in shape. Three ship as new discrete gates on the extension track (<code>assert_suppressed_never_zero_ext</code>, <code>assert_cross_unit_reconciled_ext</code>, <code>assert_lever_typing_ext</code>) &mdash; any failure stops the build. The CI-overlap check (gate 6) is enforced inside the required-caveats gate as a mandated disclosure: the panel&rsquo;s movement note must carry the significance caveat, or the build fails. It is a <I>disclosure gate</I>, not a numeric-comparison gate &mdash; and for a public dashboard, the disclosure is the point. The provenance-class distinction (gate 1) is a data-structure primitive underneath the extension track (raw_*_ext vs raw_*). Version crosswalk (gate 3) is enforced structurally, as described above. All six are inspectable in the repo; the shapes differ on purpose.
         </P>
 
         <Figure
@@ -7915,7 +7891,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>The worked case: chronic absenteeism, New Jersey first</H2>
         <P>
-          Chronic absenteeism is the strongest construct to carry these revisions, for the same reason HRRP is the strongest panel already on the page: it is a <InternalLink slug="why-the-rules-look-weird">Goodhart case with money and consequences attached</InternalLink>, and it is reported at school and district grain, which is finally the grain communities actually decide at. The share of students absent 10 percent or more of enrolled days sits inside most states&rsquo; ESSA accountability systems as a School Quality / Student Success indicator. Once an indicator sits in an accountability system, its reported value can move through definition, coding, or enrollment practice rather than through student behavior. That is the whole exhibit.
+          Chronic absenteeism is the strongest construct to carry these revisions, for the same reason HRRP is the strongest panel already on the page: it is a <InternalLink slug="why-the-rules-look-weird">Goodhart case with money and consequences attached</InternalLink>, and it is reported at school and district grain, the grain communities decide at. The share of students absent 10 percent or more of enrolled days sits inside most states&rsquo; ESSA accountability systems as a School Quality / Student Success indicator. Once an indicator sits in an accountability system, its reported value can move through definition, coding, or enrollment practice rather than through student behavior. That is the whole exhibit.
         </P>
         <P>
           <B>Within New Jersey is the anchor.</B> A within-NJ trend, over years where NJ&rsquo;s own definition held constant, is the primary chart. This is the one comparison that needs no reconciliation layer, because the denominator is the same on both ends. Where NJ changed its own definition mid-series, the break is shown rather than smoothed.
@@ -7927,7 +7903,7 @@ export const ESSAYS: Essay[] = [
           <B>Private schools are outside the frame &mdash; say so.</B> EDFacts and state report-card collections cover public schools; private schools don&rsquo;t report into these accountability systems, so they are structurally absent from the data. That&rsquo;s a stated exclusion rather than a silent drop.
         </P>
         <P>
-          <B>Charter versus traditional-district is available but confounded.</B> New Jersey reports charter schools, so the breakout exists and cell sizes usually permit it. Charters and district schools serve different populations, so a raw charter-vs-district gap is a composition difference at least as much as an attendance difference. The two are shown adjacent with that selection caveat stated plainly; we never compute or headline a &ldquo;charters do better/worse&rdquo; claim from it. Same discipline as gate 6: show them side by side, don&rsquo;t subtract what isn&rsquo;t defensibly subtractable.
+          <B>Charter versus traditional-district is available but confounded.</B> New Jersey reports charter schools, so the breakout exists and cell sizes usually permit it. Charters and district schools serve different populations, so a raw charter-vs-district gap is a composition difference at least as much as an attendance difference. The two are shown adjacent with that selection caveat stated; we never compute or headline a &ldquo;charters do better/worse&rdquo; claim from it. Same discipline as gate 6: show them side by side, don&rsquo;t subtract what isn&rsquo;t defensibly subtractable.
         </P>
         <P>
           <B>The pandemic years break the series.</B> 2020&ndash;21 and 2021&ndash;22 attendance-taking under remote and hybrid instruction is non-comparable to either side. The break is shown; it is never interpolated across.
