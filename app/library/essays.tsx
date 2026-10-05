@@ -9989,7 +9989,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>Same architecture, different seams</H2>
         <P>
-          Once you see the three parts (a model proposes meaning, a person confirms it, deterministic code preserves it), the other constraints in the box turn out to be the same architecture applied at a different seam. Not every seam is a round trip between a trusted sheet and a record; the outside-data case below is closer to access, translation and provenance. The division of labor is the same. I take two here, and the companion essay, <I>The delta nobody budgeted.</I>, takes four more. The first of the two shows most clearly what is being converted.
+          Once you see the three parts (a model proposes meaning, a person confirms it, deterministic code preserves it), the other constraints in the box turn out to be the same architecture applied at a different seam. Not every seam is a round trip between a trusted sheet and a record; the outside-data case below is closer to access, translation and provenance. The division of labor is the same. I take two here, and the companion essay, <InternalLink slug="the-delta-nobody-budgeted">The delta nobody budgeted.</InternalLink>, takes four more. The first of the two shows most clearly what is being converted.
         </P>
         <P>
           <B>Identity.</B> Matching one person across the portal, the student information system and the CRM has been done by rules nobody wrote. Same birth date, last name within two characters, except for the students enrolled during the few weeks when the front desk was typing the wrong birth year. A model can propose the matches and, more usefully, propose the rules it is using in plain language. The person who has done the match by hand for three years reads them, adds the exception, and the rules become a versioned file the next person inherits. Some knowledge really is tacit. James Scott&rsquo;s point that every production process depends on informal knowledge that resists full codification stands (Scott, <I>Seeing like a state</I>, Yale University Press, 1998, ch. 9). Thea Snow is right that a home visit reveals things a database does not; her social worker&rsquo;s test is whether there is food in the fridge and whether the carpet is sticky (<a href="https://notesfromashoulderseason.substack.com/p/the-meaning-of-metis" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Snow, Notes from a Shoulder Season</a>, August 2026). But there is a difference between knowledge that resists being written down and knowledge that nobody has written down, and organizations routinely treat the second as though it were the first. The rule that &ldquo;an applicant is who SchoolMint says they are unless HubSpot has them flagged,&rdquo; which I described in <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink>, was never uncodifiable. It was unrecorded, because recording it cost an afternoon nobody had. So is the front-desk exception. In the organizations I have worked in, what got called institutional knowledge was often not impossible to write down; it was nobody&rsquo;s funded job to write it down. What AI lowers is the cost of attempting to make the rule explicit. Where codification stops is still something a person finds out, by use and by exception. Identity is where the attempt usually succeeds, because the rules are comparisons between fields plus a list of exceptions. It is also where to start, because the counts and the reports downstream depend on knowing which records are the same person.
@@ -10100,7 +10100,7 @@ export const ESSAYS: Essay[] = [
   },
 
   // ===================================================================
-  // ESSAY 21 — The delta nobody budgeted. (DRAFT)
+  // ESSAY 21 — The delta nobody budgeted.
   // ===================================================================
   {
     kind: "essay",
@@ -10108,95 +10108,107 @@ export const ESSAYS: Essay[] = [
     number: "21",
     title: "The delta nobody budgeted.",
     subtitle:
-      "Keeping a system matched to a moving world has never been anyone's job.",
-    date: "2026-09-16",
-    readingTime: "11 min read",
+      "Keeping a system matched to a moving world has never been anyone’s job.",
+    date: "2026-10-05",
+    readingTime: "22 min read",
     summary:
       "A state reissues attendance codes. A counselor leaves. A vendor's release lands two quarters late. Each triggers the same jobs — reconfigure, re-teach, re-map — and each lands on whoever is present. The recurring cost in human-serving organizations isn't running systems but keeping them matched to a world that won't hold still. AI makes that translation cheap. It also becomes one of the change events it's being bought to absorb.",
     cover: "/library/covers/the-delta-nobody-budgeted.svg",
     arc: "data-foundations",
     arcSecondary: "ai-systems",
-    draft: true,
     body: (
       <>
-        <Brief>
-          <p>
-            <I>Keeping a system matched to a moving world has never been anyone&rsquo;s job.</I>
-          </p>
-        </Brief>
-
-        <P>
-          [OPENING &mdash; needs one real change event of yours. The strongest shape is a policy change you had to absorb: the state reissued a definition, and you can name what it cost in weeks, in re-teaching, and in what happened to the trend line. Placeholder below carries the shape, not the facts.]
+                <P>
+          The special-education compliance director was the only person who could turn a student&rsquo;s status into a billing code.
         </P>
         <P>
-          In [year] the state changed how [chronic absenteeism] was counted. The memo was three pages. The work it created took [months] and was spread across four people, none of whom had it in their job description. The [student information system] had to be reconfigured, and that meant filing a ticket with a vendor. Every school secretary who logged attendance had to be told where the new field was. And the [six] years of records already sitting in the system had to be mapped to the new definition, or the trend the board looked at every spring would break without anyone noticing.
+          The student information system carried the broad designation, which is what the state&rsquo;s reporting asks for. A claim needs something finer than that: which service was actually provided, at what frequency, by whom, in that week. Getting from one to the other took a derivation she made from the service records, and no field in either system held it.
         </P>
         <P>
-          Nobody budgeted for any of it. Nobody does, anywhere, because the work has no name.
+          Then she left.
         </P>
-
+        <P>
+          The question arrived not long after, from the chief executive. He suspected that the year before the network had not billed correctly, and that money it was owed for services it had actually delivered had stayed with the state. The network was budgeting deliberately for special-education and English-language services. It hired for them and it protected the time to deliver them well. What it was not doing reliably was recovering the reimbursement, so the full cost of those services sat in its own budget and the revenue that should have offset them did not arrive.
+        </P>
+        <P>
+          Answering that question meant reconstructing what she had been maintaining.
+        </P>
+        <P>
+          She had not written the mapping down. A document would not have been enough anyway, because the mapping did not hold still. It moved when a student&rsquo;s services changed, when the state revised its designations, and when the codes themselves were reissued. She was holding the work of keeping that mapping current, which is a different thing from holding a fact, and it is the part a handover rarely captures.
+        </P>
+        <P>
+          Nobody budgeted for any of it. In the organizations I have worked in, nobody ever did, because the work has no name.
+        </P>
         <H2>Nobody owns the transition</H2>
         <P>
           The systems in schools, clinics, campuses and nonprofits are built once and then stand still. The world they describe does not.
         </P>
         <P>
-          Organizations budget for the state and hide the cost of the transition. The student information system, the electronic health record, the CRM, the warehouse, the licenses and the analyst all have line items. The work of getting from one configuration to the next has none. So it is paid in labor, by whoever can bridge the old world and the new one.
+          Organizations budget for the state and hide the cost of the transition. The student information system, the electronic health record, the CRM, the warehouse, the licenses and the analyst all have line items. The work of getting from one configuration to the next has none. So the cost does not disappear. It moves to places that are not labeled as cost. Most of it is paid in labor, by whoever can bridge the old world and the new one, in hours that are rarely recorded as change work. Some of it can be paid in revenue, as the special-education case suggests: when nobody maintains the derivation behind a claim, money earned for services already delivered can stay with the payer. And some of it is paid in the record itself, as a trend line that breaks without announcing that it has. None of these appears in a budget as the cost of a change, so the change looks free.
         </P>
         <P>
-          A state reissues a definition. A funder changes a reporting template. A counselor leaves in March and takes with her the only complete understanding of how intake codes were being used. The vendor ships a release that renames a field. The year rolls over and the system archives what it was told to archive. Every one of these opens a gap between how the world now works and how the system is configured, and every one of them produces the same three jobs.
+          A state reissues a definition. A funder changes a reporting template. A counselor leaves in March. A student demonstrates English proficiency on the state&rsquo;s official test and comes off English-language status, and the record has to follow her. The vendor ships a release that renames a field. The year rolls over and the system archives what it was told to archive. Each of these opens a gap between how the world now works and how the system is configured, and most of them produce some version of the same three jobs.
+        </P>
+        <P>
+          They do not all arrive on the same clock, either. A definition can be reissued every few years. In the network I worked in, a student had two or three internal assessment windows across the school year, which showed her progress against the network&rsquo;s own goals. Her official status could change only after she demonstrated proficiency on the official test, on a schedule the state sets rather than the school. So the record had to carry two clocks for one student: an internal level that moved several times a year, and an official status that moved only when the state&rsquo;s test said so.
         </P>
         <P>
           <B>Reconfigure.</B> The system has to be changed to match the new rule.
+<B>Re-teach.</B> The people entering data have to be told what changed, where, and who is responsible now.
+<B>Re-map.</B> What was recorded under the old rule has to be reconciled with the new one, or the comparison across years stops meaning anything without ever announcing that it has.
         </P>
         <P>
-          <B>Re-teach.</B> The people entering data have to be told what changed, where, and who is responsible now.
+          Together those three jobs are one recurring task: keeping the organization&rsquo;s representation of the world synchronized with a world that keeps moving. Call it <B>change maintenance</B>. The name matters for a practical reason. Work without a name does not get a budget line, an owner, or a sentence in anyone&rsquo;s job description, and that is the condition this work has been in.
         </P>
         <P>
-          <B>Re-map.</B> What was recorded under the old rule has to be reconciled with the new one, or the comparison across years stops meaning anything without ever announcing that it has.
+          Ankit Saxena makes the same observation about ontology work in data teams. In his account it &ldquo;was never missing. It was just never <I>funded</I>,&rdquo; and the effort &ldquo;always existed &mdash; as a wiki nobody updated, a data dictionary in someone&rsquo;s laptop&rdquo; (<a href="https://medium.com/@ankit.techfreak/ontology-isnt-new-it-s-just-finally-being-paid-for-392464475a27" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Saxena, Medium</a>, July 2026). Change maintenance has the same history. What this essay adds is the clock: ontology records what the data means, and change maintenance is the work of keeping that meaning current each time the world moves.
         </P>
-        <P>
-          Together those three jobs are one recurring task: keeping the organization&rsquo;s representation of the world synchronized with a world that keeps moving. Call it <B>change maintenance</B>. Naming it is not branding. Work without a name does not get a budget line, an owner, or a sentence in anyone&rsquo;s job description, and that is exactly the condition this work has been in.
-        </P>
-
         <Figure
           src="/library/figures/the-delta-nobody-budgeted-change-maintenance.svg"
           alt="Change maintenance, and the model inside it"
-          caption="Four kinds of change event, three jobs each, and one record that says what the boundary was. The model sits inside the loop, and is also one of the events that opens it."
+          caption="Figure caption (JSX prop): Four kinds of change event, three jobs each, and one record that says what the boundary was. The model sits inside the loop, and is also one of the events that opens it."
         />
-
         <P>
-          I have watched this in a K&ndash;8 charter network, a research university, a community behavioral-health agency and a national youth mental-health nonprofit. The change events differ. The three jobs do not. And in none of those organizations was there a person whose job was to absorb them. The work went to whoever was capable and present, on top of what they were already doing. That is the absorption pattern I described in <InternalLink slug="the-absorbed-data-role"><I>The absorbed data role</I></InternalLink>, and it is the same seat that carries everything in <InternalLink slug="for-the-record"><I>For the record.</I></InternalLink>
+          I have watched this in a K&ndash;8 charter network, a research university, a community behavioral-health agency and a national youth mental-health nonprofit. The change events differ. The three jobs do not. And in none of those organizations was there a person whose job was to absorb them. The work went to whoever was capable and present, on top of what they were already doing. That is the absorption pattern I described in <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink>, and it is the same seat that carries everything in <InternalLink slug="for-the-record">For the record.</InternalLink>
         </P>
         <P>
           The two essays split on where the gap sits. That one is about distance: the spreadsheet an owner trusts and the record the institution holds, two versions of the same thing at the same moment. This one is about time: one system, and a world that keeps moving while the configuration stays where it was put.
         </P>
         <P>
-          <B>The reason this matters more than it sounds:</B> an organization can survive a bad configuration. It cannot easily survive a broken trend line, because the trend is what every claim it makes to a funder, a board or a state depends on. The re-map is the job most likely to be skipped and the one whose failure takes longest to surface.
+          <B>The re-map matters most.</B> An organization can survive a bad configuration. It cannot easily survive a broken trend line, because most of what it claims to a funder, a board or a state depends on the trend. The re-map is also the job most likely to be skipped, and the one whose failure takes longest to surface.
         </P>
-
         <H2>When the rule changes and the vendor has a roadmap</H2>
         <P>
-          Take the policy change all the way through, because the parts that are hard are not the parts people expect.
+          Take the policy change all the way through, because the hard parts sit where few people look.
         </P>
         <P>
-          The reconfiguration is not something the organization does. It is something the organization <I>asks for</I>. The attendance codes live in a student information system that serves several hundred districts, and the change goes into a queue. It lands in the next release, or the one after. Meanwhile the state&rsquo;s deadline does not move, and the staff at the front desk keep logging the old code because the new one does not exist yet in the only place they can enter it.
+          The organization can only <I>ask for</I> the reconfiguration. The attendance codes live in a student information system that serves several hundred districts, and the change goes into a queue. It lands in the next release, or the one after. Meanwhile the state&rsquo;s deadline does not move, and the staff at the front desk keep logging the old code because the new one does not exist yet in the only place they can enter it.
         </P>
         <P>
-          <B>This is the part that rarely gets written about, and most operators have lived it.</B> The gap between when the world changes and when your system can represent the change is a vendor&rsquo;s roadmap, and you do not control it. It is the integration governance question from <InternalLink slug="the-contracts-between-systems"><I>The contracts between systems</I></InternalLink> pointed at time rather than at data: what the vendor owes you, and by when, is a term of the contract nobody wrote down. You are one customer among hundreds, your ticket is one of thousands, and the person who has to explain the delay to a superintendent is you.
+          The gap between when the world changes and when your system can represent the change is a vendor&rsquo;s roadmap, and you do not control it. It is the integration governance question from <InternalLink slug="the-contracts-between-systems">The contracts between systems</InternalLink> pointed at time rather than at data: what the vendor owes you, and by when, is a term of the contract nobody wrote down. You are one customer among hundreds, your ticket is one of thousands, and the person who has to explain the delay to a superintendent is you.
         </P>
         <P>
-          What a model changes here is narrow and real. Given the policy memo, the system&rsquo;s current configuration and the mapping you already hold, it drafts three things in one pass. The configuration specification to send the vendor. The old-to-new mapping, so the trend survives. And the one-page note that tells the front desk where the field is and who logs it. A person checks each. That compresses weeks of coordination into an afternoon of review.
+          What a model changes here is narrow and real. Given the policy memo, the system&rsquo;s current configuration and the mapping you already hold, it drafts three things in one pass. The configuration specification to send the vendor. The old-to-new policy map, so the trend survives. And the one-page note that tells the front desk where the field is and who logs it. A person checks each. What used to be weeks of back-and-forth becomes three drafts a person can check line by line.
         </P>
         <P>
           What it does not change is the release date. <B>A model cannot move a vendor&rsquo;s roadmap.</B> It can make the interim survivable (a documented workaround, a holding field, an explicit note that these three months were recorded under the old definition); the queue stays the queue.
         </P>
         <P>
-          Rollover is the same shape running backwards. Before the system archives the year, a model given last year&rsquo;s schema and this year&rsquo;s can list what will not survive: the fields being dropped, the codes being retired, the links that will break. That list turns a silent loss into a decision somebody makes on purpose. It is the cheapest work in this essay and the one with the longest tail, because the field nobody thought to preserve is always the one a longitudinal question needs three years later.
+          <B>And one judgment stays human, permanently.</B> Whether the new definition is comparable to the old one is a measurement question, not a mapping question. It is the question <InternalLink slug="what-is-this-system-measuring">What is this system measuring?</InternalLink> asks of an AI system, asked here of an attendance code. A model can produce a crosswalk between two code sets, and it can do more than that. It can read both definitions, name where the construct shifted, and propose the sensitivity check that would test whether the shift matters. What it cannot do is own the answer. Whether a trend spanning the boundary is a trend or an artifact is a claim the organization makes to a board, a funder or a state, and a claim has to carry somebody&rsquo;s name. Get it wrong and the error is invisible, because the chart still renders.
+        </P>
+        <H2>What the rollover keeps</H2>
+        <P>
+          The year-end rollover arrives on a date everybody knows. The student information system closes the year, promotes students, ends enrollments and archives sections. The settings that decide what carries forward were chosen once, usually from the vendor&rsquo;s defaults or by whoever ran the rollover the year before. After that they tend to run every year without anybody deciding them again, and when the person who chose them has left, nobody can say what they were chosen to protect.
         </P>
         <P>
-          <B>And one judgment stays human, permanently.</B> Whether the new definition is comparable to the old one is a measurement question, not a mapping question. It is the question <InternalLink slug="what-is-this-system-measuring"><I>What is this system measuring?</I></InternalLink> asks of an AI system, asked here of an attendance code. A model can produce a crosswalk between two code sets, and it can do more than that. It can read both definitions, name where the construct shifted, and propose the sensitivity check that would test whether the shift matters. What it cannot do is own the answer. Whether a trend spanning the boundary is a trend or an artifact is a claim the organization makes to a board, a funder or a state, and a claim has to carry somebody&rsquo;s name. Get it wrong and the error is invisible, because the chart still renders.
+          So the rollover makes a decision about what the organization will be able to ask later, and it makes that decision silently. A field that was not set to carry forward does not disappear in any way that raises an alarm. It is absent from next year&rsquo;s records. Nobody notices in September, because nobody needs it in September. The loss shows up years later. Someone asks, for example, whether students in a program attended more than students outside it. The field that marked participation turns out to exist for the latest cohort and for no one before it.
         </P>
-
+        <P>
+          Of the change events in this essay, the rollover is the one an organization can see coming, because it is on the calendar. It still has no budget line. The work happens in the last weeks of a school year, on top of closing that year, and it falls to whoever knows where the settings are.
+        </P>
+        <P>
+          What changes the cost is a list made before the rollover runs. Call it the <B>preservation list</B>. A model given last year&rsquo;s schema and this year&rsquo;s can draft it: the fields that will not carry forward, the codes being retired, and the links between records that will break. A person then marks each item. Keep it, archive it with a map to what replaces it, or let it go on purpose. After the rollover, a short script checks that everything marked <I>keep</I> is still there. The list turns a silent loss into a decision somebody made and signed, and it becomes the rollover&rsquo;s entry in the organization&rsquo;s change log.
+        </P>
         <H2>The daily version</H2>
         <P>
           The change events above arrive a few times a year and open a gap measured in quarters. One arrives every day and opens a gap measured in hours. It is the same delta at a shorter interval. The world moved at two in the afternoon, the record caught up at half past five, and what fell into the interval was everything the person could no longer recall.
@@ -10205,51 +10217,42 @@ export const ESSAYS: Essay[] = [
           The gap between what happened and what got recorded is the oldest version of this problem. A clinician sees a client at two and enters the note at half past five, after the last person has left, from memory, into fields designed to produce a report for the state. A teacher logs an intervention three days later. What gets written is what the form asks for, and what the form asks for is what someone outside needed counted.
         </P>
         <P>
-          A model sitting at that seam changes the economics. The person speaks or types a short note in her own words; the model drafts the structured entry in the system&rsquo;s fields and codes; she corrects it and confirms. The form still gets filled. It gets filled on the day, by the person who was there, from what she actually observed rather than from what she can still recall at 5:30.
+          A model sitting at that seam changes who writes the record and when. The person speaks or types a short note in her own words; the model drafts the structured entry in the system&rsquo;s fields and codes; she corrects it and confirms. The form still gets filled. It gets filled on the day, by the person who was there, from what she observed rather than from what she can still recall at 5:30.
         </P>
         <P>
-          This pattern is already spreading through solo mental-health practice as ambient note-taking, at $19 to $99 a month (<a href="https://www.npr.org/2026/05/26/nx-s1-5826943/talk-therapy-mental-health-ai-artificial-intelligence-privacy-trust" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Johnston, NPR</a>, May 2026). The same reporting carries a caution that has to travel with it, and it should not be buried. On a YouGov survey it quotes, about 11 percent of Americans say they would be open to using AI in mental-health care and 8 percent say they trust it; on a KFF survey, 77 percent are worried about how their health information would be stored and used by such systems (same report). So the design has to answer that directly. The person stays the author of the record. The model drafts and the human signs. The data does not leave the organization&rsquo;s contracted environment. Under those conditions what changes is not sophistication. The record becomes contemporaneous, which is a different and larger thing.
+          This pattern is already sold to solo mental-health practitioners as ambient note-taking, at $19 to $99 a month (<a href="https://www.npr.org/2026/05/26/nx-s1-5826943/talk-therapy-mental-health-ai-artificial-intelligence-privacy-trust" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Johnston, NPR</a>, May 2026). The same reporting carries a caution that has to travel with it, and it should not be buried. On a YouGov survey it quotes, about 11 percent of Americans say they would be open to using AI in mental-health care and 8 percent say they trust it. On a KFF survey, about 77 percent are worried about how their health information would be stored and used by AI systems (same report). So the design has to answer that directly. The person stays the author of the record. The model drafts and the human signs. The data does not leave the organization&rsquo;s contracted environment. Under those conditions the record becomes contemporaneous, and that matters more than any added sophistication.
         </P>
         <P>
-          <B>And one thing becomes possible that has nothing to do with speed.</B> Case notes, intake narratives and the box that says <I>anything else you would like to tell us</I> hold most of what a program actually knows about a person, and none of it has ever been readable in bulk, so programs report the structured fields and lose the rest. A model can read it: coded against a reference set that subject-matter experts validated by hand, with a person as the final judge, free text becomes a field. What that does to the richness of what an organization can say about the people it serves is a bigger argument than this essay carries, and it needs its own piece.
+          <B>And one thing becomes possible that has nothing to do with speed.</B> Case notes, intake narratives and the box that says <I>anything else you would like to tell us</I> hold most of what a program knows about a person, and very little of it has been readable in bulk, so programs report the structured fields and lose the rest. A model can read it: coded against a reference set that subject-matter experts validated by hand, with a person as the final judge, free text becomes a field. What that does to the richness of what an organization can say about the people it serves is a bigger argument than this essay carries, and it needs its own piece.
         </P>
-
         <H2>What a model does with change work, and what it does not</H2>
         <P>
-          One division of labor runs through all of this, and it is the same one <InternalLink slug="for-the-record"><I>For the record.</I></InternalLink> argues for at the other seam.
+          One division of labor runs through all of this, and it is the same one <InternalLink slug="for-the-record">For the record.</InternalLink> argues for at the other seam.
         </P>
         <P>
-          <B>The model proposes.</B> It reads the memo and the configuration, or the note and the form, or the old schema and the new one, and it drafts the translation. The lineage of that move is <InternalLink slug="when-genai-redesigned-my-dashboard"><I>When GenAI redesigned my dashboard</I></InternalLink>, where the heading was AI proposes, human curates; what is added here is the third step below, which is what keeps the proposal from dying on one person&rsquo;s desktop.
+          <B>The model proposes.</B> It reads the memo and the configuration, or the note and the form, or the old schema and the new one, and it drafts the translation. The lineage of that move is <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard</InternalLink>, where the heading was AI proposes, human curates; what is added here is the third step below, which is what keeps the proposal from dying on one person&rsquo;s desktop.
+<B>A person confirms.</B> Someone who knows the domain reads the draft, corrects it, and adds the exception the model could not know.
+<B>Deterministic code preserves.</B> The confirmed rule runs the same way every cycle and raises a flag when something stops fitting. That is the gate pattern from <InternalLink slug="extending-the-gates">Extending the gates</InternalLink>: a model drafts, and code that cannot be talked around checks.
         </P>
         <P>
-          <B>A person confirms.</B> Someone who knows the domain reads the draft, corrects it, and adds the exception the model could not know.
+          The third part is the one people try to skip, and there is now evidence about what happens when they do. Dmitry Ustimov gave an agent two legitimate definitions of the same measure, a tool for asking which was meant, and an instruction to ask. Across 51 attempts it never asked and never showed both values; it picked one and said nothing about the other. What fixed it was moving the disclosure out of the model: comparing both definitions at runtime and inserting the missing one before the answer reached anybody (<a href="https://decisionspine.com/blog/where-the-ambiguity-in-your-warehouse-comes-from" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ustimov, Decision Spine</a>, September 2026). A confirmed rule running in code is the same move at the seam this essay is about.
         </P>
         <P>
-          <B>Deterministic code preserves.</B> The confirmed rule runs the same way every cycle and raises a flag when something stops fitting. That is the gate pattern from <InternalLink slug="extending-the-gates"><I>Extending the gates</I></InternalLink>: a model drafts, and code that cannot be talked round checks.
+          Change maintenance suits this division well, because a large component of it is translation. An old code set to a new one. A policy memo to a configuration. A spoken observation to a structured field. A schema to its successor. Translation is the part a model can now draft.
         </P>
         <P>
-          Change maintenance suits this division well, because a large component of it is translation. An old code set to a new one. A policy memo to a configuration. A spoken observation to a structured field. A schema to its successor. Translation is exactly what got cheap.
+          The rest of change maintenance does not get easier with a model. Deciding whether the new definition measures the same thing as the old one is measurement judgment. Deciding who owns intake coding now that the counselor has gone is organizational design. Getting the field built is dependency management. Persuading a staff already tired of changes to enter data a new way is change management. A model touches the translation component and leaves those four roughly where they were.
         </P>
         <P>
-          The rest does not get cheap, and it is worth being precise about what the rest is. Deciding whether the new definition measures the same thing as the old one is measurement judgment. Deciding who owns intake coding now that the counselor has gone is organizational design. Getting the field built is dependency management. Persuading a staff already tired of changes to enter data a new way is change management. A model touches the translation component and leaves those four roughly where they were.
+          That is still a large gain. The translation component recurs on almost every change event, and the expensive part was never doing it once. It was that nobody had the time to write it down in a form a machine could run.
         </P>
         <P>
-          That is still a large win, because the translation component is the one that recurs on every change event without exception, and the one nobody has ever had an afternoon for. The expensive part was never doing the translation once. It was that there was never an afternoon to write it down in a form a machine could run.
+          This is also where two problems nobody files under change work turn out to belong here. <B>Missing data</B> and <B>inaccurate data</B> have many causes. A form that is hard to use. A definition two people read differently. A workload that makes data entry the thing that slips. An extraction that failed quietly. But a recognizable share of them are old changes whose lineage was lost: something changed, nobody recorded what, and the residue is what shows up in the export years later. A field that is blank for every record before a particular fall is blank because something changed that term and nobody wrote down what. A status code that means one thing in the fall and another during the spring campaign is two rules under one name, which is the failure <InternalLink slug="numbers-dont-agree">The numbers don&rsquo;t agree because the words don&rsquo;t</InternalLink> works through at length. Profiling an export to find these is among the simplest things a model does, and in twenty years I have almost never seen it done, because it takes a day and produces no report.
         </P>
         <P>
-          This is also where two problems nobody files under change work turn out to belong here. <B>Missing data</B> and <B>inaccurate data</B> have many causes. A form that is hard to use. A definition two people read differently. A workload that makes data entry the thing that slips. An extraction that failed quietly. But a recognisable share of them are old changes whose lineage was lost: something changed, nobody recorded what, and the residue is what shows up in the export years later. A column that stopped being populated in 2023 stopped because something changed and nobody wrote it down. A status code that means one thing in the fall and another during the spring campaign is two rules under one name, which is the failure <InternalLink slug="numbers-dont-agree"><I>The numbers don&rsquo;t agree because the words don&rsquo;t</I></InternalLink> works through at length. Profiling an export to find these is the cheapest thing a model does, and in twenty years I have almost never seen it done, because it takes a day and produces no report.
+          A model cannot move a vendor&rsquo;s release date. It can argue about whether a redefined measure is comparable across the boundary, and it cannot own the answer. It drafts the document and does not maintain it. Anthropic&rsquo;s own data team reports what untended documentation does to an analytics agent: offline accuracy drifted from about 95 percent at launch to about 65 percent over a month (<a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Chang et al., Anthropic</a>, June 2026). The maintenance does not disappear. It moves from reconstructing what a column meant every time somebody asks, to keeping one explicit set of rules current. That is a much smaller job. It still has to be somebody&rsquo;s.
         </P>
-        <P>
-          The limits are worth stating, because the pitch will imply there are none.
-        </P>
-        <P>
-          A model cannot move a vendor&rsquo;s release date. It can argue about whether a redefined measure is comparable across the boundary, and it cannot own the answer. It drafts the document and does not maintain it. Anthropic&rsquo;s own data team reports what untended documentation does to an analytics agent: offline accuracy drifted from about 95 percent at launch to about 65 percent within a month (<a href="https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Chang et al., Anthropic</a>, June 2026). The maintenance does not disappear. It moves from reconstructing what a column meant every time somebody asks, to keeping one explicit set of rules current. That is a much smaller job. It still has to be somebody&rsquo;s.
-        </P>
-
         <H2>The model is a change event too</H2>
-        <P>
-          Here is where the argument has to finish honestly.
-        </P>
         <P>
           Everything above says: the world keeps changing, and a model absorbs the translation work that change creates. Left there it is a sales pitch. <B>The model is now one of the things that changes.</B>
         </P>
@@ -10260,7 +10263,7 @@ export const ESSAYS: Essay[] = [
           So the thing bought to stop the organization absorbing deltas by hand arrives carrying one of its own, and a less legible one than the vendor&rsquo;s.
         </P>
         <P>
-          <B>The reason it is hard to see is structural rather than organizational.</B> A 2026 validity study of generative-AI essay scoring reports its agreement statistics on a held-out half of the corpus, 6,514 argumentative essays written by students in grades six through twelve. The language models agreed with themselves across runs at a quadratic weighted kappa of about .97. They agreed with the adjudicated human score at about .52 (<a href="https://arxiv.org/abs/2603.19280" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Casabianca, McCaffrey, Johnson, Alper and Zubenko, arXiv preprint</a>, March 2026; not peer reviewed, and the authors name a mismatch between the rubric and the corpus, so the pair reads as a gap between reliability and agreement rather than as a score for the models). A model is highly consistent with itself, and self-consistency is not agreement with anything outside itself. Those are separate properties.
+          <B>The reason it is hard to see is structural.</B> A 2026 validity study of generative-AI essay scoring reports its agreement statistics on 6,514 of the 13,032 argumentative essays it analyzed, written by students in grades six through twelve. Two runs of GPT-4o agreed with each other at a quadratic weighted kappa of about .97. They agreed with the adjudicated human score at about .52, and Gemini 1.5 Pro did about .05 better (<a href="https://arxiv.org/abs/2603.19280" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Casabianca, McCaffrey, Johnson, Alper and Zubenko, arXiv preprint</a>, March 2026; not peer reviewed, and the authors note that the models weighted basic writing quality more heavily than the rubric does, so the pair reads as a gap between reliability and agreement rather than as a score for the models). A model can be highly consistent with itself and still disagree with everything outside it, because those are separate properties.
         </P>
         <P>
           That study measures one version against itself, so it cannot on its own tell you what happens across versions. It establishes the weaker and more useful thing. Version A can be near-perfectly consistent with itself, version B can be near-perfectly consistent with itself, and the two can still differ systematically from each other, because nothing in either one&rsquo;s internal steadiness is anchored to an external standard. Internal consistency is not evidence of stability across a version change. It is what makes a version change feel like nothing from the inside. You cannot detect drift by watching the model, because the model looks as steady as it ever did.
@@ -10269,36 +10272,44 @@ export const ESSAYS: Essay[] = [
           You detect it by holding something still outside it.
         </P>
         <P>
-          <B>The instrument is small enough for a school to run.</B> Keep a fixed set of real cases whose answers you already know (twenty rows an experienced person can vouch for) and re-run them whenever the model changes. If the answers move, the mappings need re-confirming before the next cycle writes anything to the record. That is an anchor set, and it is the same discipline a measurement program uses to detect scoring drift across years (<a href="https://arxiv.org/abs/2603.19280" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Casabianca et al., 2026</a>, on trend scoring against a fixed anchor response set). It is also the instrument <InternalLink slug="auditing-an-ai-native-practice"><I>Auditing an AI-native practice</I></InternalLink> runs on a practice of one, scaled down far enough for a school to hold.
+          <B>The instrument is small enough for a school to run.</B> Keep a fixed set of real cases whose answers you already know (twenty rows an experienced person can vouch for) and re-run them whenever the model changes. If the answers move, the mappings need re-confirming before the next cycle writes anything to the record. That is an anchor set. Human scoring programs call the same check trend scoring, and the study above recommends it for language models: score the same set of responses in each scoring period, so that a change in the model is not mistaken for a change in the students (<a href="https://arxiv.org/abs/2603.19280" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Casabianca et al., 2026</a>). It is also the discipline behind the golden lock in <InternalLink slug="extending-the-gates">Extending the gates</InternalLink>, where six frozen panels are golden-locked and any drift stops the build, scaled down far enough for a school to hold.
         </P>
         <P>
-          And an anchor-set run is a change event like any other, so it leaves the same thing behind: the model version changed on this date, these reference cases moved, these mappings were re-confirmed, and this is what the trend can and cannot claim across that boundary. The instrument that governs the AI is the instrument that already governs the state&rsquo;s redefinition. One artifact, two kinds of change.
+          And an anchor-set run is a change event like any other, so it leaves the same thing behind: the model version changed on this date, these reference cases moved, these mappings were re-confirmed, and this is what the trend can and cannot claim across that boundary. The instrument that governs the AI is the instrument that already governs the state&rsquo;s redefinition. The same log covers both kinds of change.
+        </P>
+        <P>
+          Healthcare governance has already specified a version of this, at a scale most of these organizations do not have. Thomas F. O&rsquo;Neil III, a managing director at BRG, argues that when a tool updates its model or changes its logic, the organization has to be able to reconstruct what the tool produced at the time of a given patient encounter. That means tracking model versions, prompt versions and the configurations that affect output, and writing into the vendor contract that material changes get notified. The same report adds that the audit trail should preserve a chain of custody from generation through clinician review to adoption or rejection (<a href="https://www.healthcareitnews.com/news/build-ai-audit-trail-now-anyone-asks-it" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">O&rsquo;Neil, quoted in Siwicki, Healthcare IT News</a>, September 2026).
+        </P>
+        <P>
+          Two things differ here. The instrument above is twenty rows an experienced person can vouch for, because a school or an agency has no governance function to run the health-system version. And this essay proposes no separate regime for AI. The model upgrade goes in the same change log as the state&rsquo;s redefinition, because to the person who has to answer for the trend they are the same kind of event.
         </P>
         <P>
           It is also, for whatever it is worth, a discipline I already run on myself. The editorial standard behind this library caps a punctuation habit on the basis of how models write, and the rule carries its own instruction: re-check on the next model release. A rule written against a model has a shelf life. So does a crosswalk.
         </P>
-
         <H2>What to ask for</H2>
         <P>
-          Two people can use this directly.
+          Three people can use this directly.
         </P>
         <P>
-          <B>If you run a program, a school or an agency</B>, stop treating change events as interruptions to the real work and start treating them as the recurring cost they are. Count them. In a normal year, how many times did a definition change, a vendor release land, a key person leave, or a year roll over? That number is the size of a job nobody holds.
+          <B>If you run a program, a school or an agency</B>, stop treating change events as interruptions to the real work and start treating them as the recurring cost they are. Rory McDonald and Will Drover make this case for AI in large companies. An organization that treats a continuous process &ldquo;as a string of episodes&rdquo; fatigues its people. And &ldquo;the work of tracking, translating, and triaging AI&rsquo;s churn should be somebody&rsquo;s actual job rather than a standing favor&rdquo; (<a href="https://sloanreview.mit.edu/article/when-ai-disruption-never-ends/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">McDonald and Drover, <I>MIT Sloan Management Review</I></a>, September 2026). In a school or a clinic, AI is one stream of that change among several, and there is usually no AI unit to hand it to. Count the change events. In a normal year, how many times did a definition change, a vendor release land, a key person leave, or a year roll over? That number is the size of a job nobody holds.
         </P>
         <P>
-          Then point AI at the three jobs each event creates, in order: draft the configuration request, draft the old-to-new mapping, draft the note that tells the front desk what changed. Have a person confirm each. <B>The deliverable is not the faster turnaround. It is that the mapping is written down</B>, which means the next change starts from a record instead of from someone&rsquo;s memory of what happened last time.
+          Then point AI at the three jobs each event creates, in order: draft the configuration request, draft the old-to-new mapping, draft the note that tells the front desk what changed. Have a person confirm each. <B>The deliverable is a mapping that is written down</B>, which means the next change starts from a record instead of from someone&rsquo;s memory of what happened last time.
         </P>
         <P>
-          <B>If you are the person who has been absorbing these</B>, there is one artifact, and everything above is an instance of it. Every change should leave behind a record of the boundary it created. That record is the change log: what changed, when, what it was mapped to, who confirmed it, and what the trend can and cannot claim across the boundary. A model will draft it from the memo and the schema in an afternoon. What it cannot do is decide whether the comparison holds. That judgment is the reason the role should exist, and writing it down is the only way it survives you.
+          <B>If you are the person who has been absorbing these</B>, every change should leave behind a record of the boundary it created. That record is the change log: what changed, when, what it was mapped to, who confirmed it, and what the trend can and cannot claim across the boundary. The entry depends on the event. A policy change leaves a policy map, old code to new, with the name of whoever confirmed it, and a vendor release that renames a field leaves the same kind of map. A rollover leaves its preservation list. A model upgrade leaves an anchor-set run. When someone leaves, the entries she confirmed need a new name beside them, or they stop being confirmed by anyone. The change log belongs inside the file <InternalLink slug="for-the-record">For the record.</InternalLink> asks for. It is the part of that file that deals with time: that essay&rsquo;s crosswalk records what the organization&rsquo;s data means across its systems, and the change log records what it meant across its years. A model will draft each entry from the memo and the schema. What it cannot do is decide whether the comparison holds. That judgment is the reason the role should exist, and it survives you only if it is written down.
         </P>
         <P>
-          <B>And for whoever is evaluating a tool</B>: ask what happens when the model changes. Not whether the vendor has a governance policy. What happens to <I>your</I> confirmed mappings, how you would find out, and who re-runs the anchor set. A vendor who has not thought about it will tell you their model is stable. That is the answer of somebody who has only ever watched the model.
+          <B>And for whoever is evaluating a tool</B>: ask what happens when the model changes. The question is narrower than whether the vendor has a governance policy: what happens to <I>your</I> confirmed mappings, how you would find out, and who re-runs the anchor set. A vendor who has not thought about it will tell you their model is stable. That is the answer of somebody who has only ever watched the model.
         </P>
         <P>
-          [CLOSE &mdash; same change event as the opening, but do not land on how long it took. Land on what the organization kept. The four people got through it; what survived afterwards was the new configuration and nothing else. Not why the boundary moved, not how the old world was mapped to the new one, not which claims could still be made across it. Placeholder below carries that shape.]
+          I tried to write the derivation down. I could not reconstruct it closely enough to codify, the reporting could not wait, and so I did what the organization had done before me. I relied on the number the new compliance director gave me.
         </P>
         <P>
-          [We got through it. What the organization retained was the new configuration, and only that. Nobody recorded why the definition changed, what the old codes had been mapped to, or which of the six years could still be compared to the seventh. The next time the state changes the definition, whoever is in the chair will start where I started, which is from nothing. The afternoon to write it down is available now. What is still missing is anyone whose job it is to spend it.]
+          She was maintaining her own sheet. She pulled what she needed out of the billing system and sent me the figures when a report was due. The claims went out and the dashboard showed a number. How that number had been arrived at lived in her sheet and in her working memory, and nowhere else.
+        </P>
+        <P>
+          The network had not solved the problem so much as rehired it. Whoever comes after her will start where I did, with a derivation to rebuild and no record of how the last person made it. And what the organization was depending on in the meantime was a spreadsheet, maintained by one person, holding a rule that nobody else could state.
         </P>
 
         <SeeAlso>
