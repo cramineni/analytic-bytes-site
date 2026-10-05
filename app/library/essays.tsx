@@ -3315,7 +3315,7 @@ export const ESSAYS: Essay[] = [
           </p>
           <p>
             Most “data problems” are not data problems. They are
-            definitional disagreements misread as technical ones &mdash; meaning, the first of the three things that fail, and the one that fails before any data moves.
+            definitional disagreements misread as technical ones— a failure of meaning, which comes before any data moves.
             “Student persistence” (the rate at which enrolled students
             continue from one period to the next) can mean keeping a
             student from the first day of the school year to the last day.
@@ -3406,8 +3406,7 @@ export const ESSAYS: Essay[] = [
           work of bringing parallel collection platforms together — for
           example two survey-collection environments feeding the
           same warehouse — is itself a definitional discipline before it is
-          an engineering one. The framework is not the answer. The
-          semantic layer, the crosswalks, and the discipline of owning
+          an engineering one. The semantic layer, the crosswalks, and the discipline of owning
           every definitional change are what hold the reporting foundation
           honest as the underlying questions keep evolving.
         </P>
@@ -3421,13 +3420,13 @@ export const ESSAYS: Essay[] = [
         <H2>Granularity is its own governance problem</H2>
 
         <P>
-          Granularity is its own governance problem, and aggregation is where many institutions quietly compromise it. At the same K–8 network, daily attendance was a single data stream with at least three different operational lives. A single absence on a given day triggered an immediate workflow (outreach, follow-up, resolution), owned by an operations coordinator. Three consecutive days of absence triggered a different workflow, owned by a teacher or student-support counselor. Chronic absenteeism (eighteen or more days in a year, or more than ten percent of school days as a running rate) triggered a third workflow, owned by the principal. The same data, three aggregations, three views, three sets of decision rights, three stakeholders. At the granularity layer, the numbers were already being computed. Governance meant deciding which view triggered which workflow, who owned each decision, and how to translate between them legitimately, knowing that you cannot break a chronic-absenteeism rate back into daily counts without losing what it measured.
+          Aggregation is where many institutions quietly compromise granularity. At the same K–8 network, daily attendance was a single data stream with at least three different operational lives. A single absence on a given day triggered an immediate workflow (outreach, follow-up, resolution), owned by an operations coordinator. Three consecutive days of absence triggered a different workflow, owned by a teacher or student-support counselor. Chronic absenteeism (eighteen or more days in a year, or more than ten percent of school days as a running rate) triggered a third workflow, owned by the principal. The same data, three aggregations, three views, three sets of decision rights, three stakeholders. At the granularity layer, the numbers were already being computed. Governance meant deciding which view triggered which workflow, who owned each decision, and how to translate between them legitimately, knowing that you cannot break a chronic-absenteeism rate back into daily counts without losing what it measured.
         </P>
 
         <H2>Architecture is governance</H2>
 
         <P>
-          Architecture is governance too. When a student-information system is replaced, or a behavioral-health electronic record is migrated to a new platform, the migration raises a definitional question of its own: does the new system record the same thing the old one recorded? You have to make field mappings explicit, add new fields where the schema changed, retire legacy fields only after every use case is covered, and train data-entry personnel on the new system&rsquo;s expectations for completeness, accuracy, and timeliness. None of that is technical work — it is definitional work at the architectural layer, the layer{" "}
+          When a student-information system is replaced, or a behavioral-health electronic record is migrated to a new platform, the migration raises a definitional question of its own: does the new system record the same thing the old one recorded? You have to make field mappings explicit, add new fields where the schema changed, retire legacy fields only after every use case is covered, and train data-entry personnel on the new system&rsquo;s expectations for completeness, accuracy, and timeliness. That is definitional work as much as technical work, at the architectural layer, the layer{" "}
           <InternalLink slug="the-contracts-between-systems">
             the contract between systems
           </InternalLink>{" "}
@@ -3447,7 +3446,7 @@ export const ESSAYS: Essay[] = [
         <H2>Why universities need this most</H2>
 
         <P>
-          Universities are structurally decentralized in ways most organizations are not. School autonomy, faculty governance, and distributed authority are how the institution is designed to work. Governance imposed from the center has a poor track record in higher education because the autonomy is rightly defended. Governance embedded through definitions has a much better one. A definition agreed across the registrar, financial aid, institutional research, and the relevant deans is much harder to walk back, because each domain steward owns it. A policy written by the governance council, however thorough, can be politely ignored by a department running its own numbers. The framework&rsquo;s real authority is the working set of shared definitions that domain leaders maintain together — not the document itself.
+          Universities are structurally decentralized in ways most organizations are not. School autonomy, faculty governance, and distributed authority are how the institution is designed to work. In my experience, governance imposed from the center has a poor track record in higher education because the autonomy is rightly defended. Governance embedded through definitions has a much better one. A definition agreed across the registrar, financial aid, institutional research, and the relevant deans is much harder to walk back, because each domain steward owns it. A policy written by the governance council, however thorough, can be politely ignored by a department running its own numbers. The framework&rsquo;s real authority is the working set of shared definitions that domain leaders maintain together — not the document itself.
         </P>
 
         <H2>What working governance actually looks like</H2>
@@ -3463,8 +3462,7 @@ export const ESSAYS: Essay[] = [
           aggregation governance, architectural mapping, and stewardship.
           That work turns fragmented words about the institution into
           decision-ready meaning. It is the work most governance councils
-          skip, and the work the institution’s hardest questions cannot be
-          answered until someone does.
+          skip, and until someone does it, the institution's hardest questions cannot be answered.
         </P>
 
                 <SeeAlso>
@@ -3875,7 +3873,7 @@ export const ESSAYS: Essay[] = [
           what it used to mean.
         </P>
         <P>
-          When I started in this work, <I>plumbing</I> was the hard part. Moving data between two enterprise systems took months. Integration was a strategic asset. Today the pipes have been industrialized — Fivetran, dbt, Snowflake, the cloud data platforms. The difficulty is no longer engineering the pipe; it&rsquo;s mostly paying the subscription and managing the configuration. The plumbing got upgraded. The pipes are mostly a commodity now. They still take work to assemble and keep running, but they are rarely where a decision breaks.
+          When I started in this work, <I>plumbing</I> was the hard part. Moving data between two enterprise systems took months. Integration was a strategic asset. Today that work runs on commodity tools. The difficulty is no longer engineering the pipe; it&rsquo;s mostly paying the subscription and managing the configuration. The plumbing got upgraded. The pipes are mostly a commodity now. They still take work to assemble and keep running, but they are rarely where a decision breaks.
         </P>
         <P>
           So if “plumbing” was what I called the hard part of the work,
@@ -3894,7 +3892,7 @@ export const ESSAYS: Essay[] = [
           The work that determines whether you can drink the water, cook with it, give it to a child, wash a wound, is a different set of questions: What’s the source. Is the source clean. Did anything get added or removed upstream. What&rsquo;s the pressure at the faucet: too high and it sprays, too low and you can&rsquo;t fill a pot. Who&rsquo;s allowed to open which tap, what happens when the system fails, who notices.
         </P>
         <P>
-          None of that is plumbing. All of it is what having water actually feels like.
+          None of that is plumbing. All of it is what having water feels like.
         </P>
 
         <H2>Speed was the only knob we turned</H2>
@@ -3915,7 +3913,7 @@ export const ESSAYS: Essay[] = [
           number actually means.
         </P>
         <P>
-          AI made all three knobs more accessible. The speed knob was already turned up; that&rsquo;s the part most institutions invested in. The resolution and context knobs are still mostly at their default positions. The gap is not speed. It is the other two we have not spent. <I>(A fourth dimension deserves its own piece: whether the construct in the pipe is still the construct you sampled last quarter. That one gets its own treatment in “The construct keeps moving.”)</I>
+          AI made all three knobs more accessible. The speed knob was already turned up; that&rsquo;s the part most institutions invested in. The resolution and context knobs are still mostly at their default positions. The gap is in the other two. <I>(A fourth dimension deserves its own piece: whether the construct in the pipe is still the construct you sampled last quarter. That one gets its own treatment in “The construct keeps moving.”)</I>
         </P>
 
         <H2>The Thursday afternoon</H2>
@@ -3927,8 +3925,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>That’s not plumbing. That’s closer to running a water authority.</P>
         <P>
-          The distinction matters, so name it directly: Most
-          institutions have invested heavily in <I>data governance</I>:
+          Most institutions have invested heavily in <I>data governance</I>:
           the policies that decide who can access which table, how a
           field is defined in the catalog, how lineage is tracked. That
           work is real and necessary. But data governance is governance
@@ -3947,7 +3944,7 @@ export const ESSAYS: Essay[] = [
         </P>
 
         <H2>The water authority</H2>
-        <P>The analogy keeps holding up.</P>
+        <P></P>
         <P>
           The water treatment plant is the place that decides what
           counts as drinkable water and tests every batch. That’s the
@@ -4003,16 +4000,14 @@ export const ESSAYS: Essay[] = [
           That register matters in a field full of overselling.
         </P>
         <P>
-          But the truth is, the unglamorous part isn’t the pipes
-          anymore. The unglamorous part is the water — what’s in it,
+          But the unglamorous part isn't the pipes anymore. The unglamorous part is the water — what’s in it,
           who decided what gets in, who’s responsible if it makes
-          someone sick. The pipes are fine. The pipes were the hard part once. They are not the hard part now.
+          someone sick.
         </P>
         <P>
-          If I had to describe what I do now without picking a clever new name for it, I&rsquo;d just say it&rsquo;s water authority work: sourcing, testing, pressure, authority, and who’s allowed to drink. The integration layer is solved enough to not need most senior people&rsquo;s time. The layer that decides whether what comes out of the faucet is fit for purpose is barely staffed at many institutions, barely contracted for, barely measured. It&rsquo;s the gap between “we have a data warehouse” and “we can make a decision.”
+          If I had to describe what I do now without picking a clever new name for it, I'd say it's water authority work. The integration layer is solved enough to not need most senior people&rsquo;s time. The layer that decides whether what comes out of the faucet is fit for purpose is barely staffed at many institutions, barely contracted for, barely measured.
         </P>
         <P>Plumbing got upgraded. The water didn’t.</P>
-        <P>That’s the work.</P>
 
                 <SeeAlso>
           <SeeAlsoItem
@@ -5871,13 +5866,13 @@ export const ESSAYS: Essay[] = [
           But also: family logistics, homework support, wardrobe planning around a return to in-person interviews, and the daily flow of small household and personal questions that would previously have taken a spare hour each to work through alone.
         </P>
         <P>
-          I did not separate these. They were the same tool doing different work. This matters. The maturity I was building was <I>AI as a surface I could think on without performing</I> &mdash; not AI for professional things.
+          I did not separate these. They were the same tool doing different work. The maturity I was building was <I>AI as a surface I could think on without performing</I> &mdash; not AI for professional things.
         </P>
         <P>
           The reason GPT became useful was structural, not intellectual. The conversational contract was different from human conversation. With humans, I have to think of the most balanced curated version of what I want to say before I say it. With AI, I can say the thing, hear it back, reflect, refine. There was no pressure and no social cost.
         </P>
         <P>
-          Removing the social-performance overhead of conversation is what made AI usable for the kind of thinking that needed open space. Not because AI is non-judgmental or empathic. Those framings are sentimental and partly untrue. The benefit is structural. AI removes the contract that requires you to be composed before you speak. <a href="https://doi.org/10.1016/j.chb.2014.04.043" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lucas and colleagues found a related effect in 2014</a>: people disclosed more to a virtual interviewer they believed was automated.
+          Removing the social-performance overhead of conversation is what made AI usable for the kind of thinking that needed open space. Not because AI is non-judgmental or empathic. Those framings are sentimental and partly untrue. AI removes the contract that requires you to be composed before you speak. <a href="https://doi.org/10.1016/j.chb.2014.04.043" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lucas and colleagues found a related effect in 2014</a>: people disclosed more to a virtual interviewer they believed was automated.
         </P>
         <P>
           By the end of those eight months, a working pattern had formed. Pre-work happened with AI. Polished outputs went into the world in my voice. I had learned to catch sycophancy and call it out (<I>&ldquo;why r u agreeeing with evetyhign i say&rdquo;</I>). I had learned to protect my voice from drift (<I>&ldquo;why is this not sounding me?&rdquo;</I>). I had learned that the volume of iteration was the point &mdash; that one banner image might take ninety turns and that was fine because the artifact was the deliverable, not the conversation.
@@ -5906,7 +5901,7 @@ export const ESSAYS: Essay[] = [
           There were other scaffolds: family, trusted advisors, and a household that had to keep running, which kept the tactical pressure real. What AI specifically gave me, that the humans in my life could not, was <I>open space alongside the tactical pressure</I>. The space to ask the same hard question eight different ways. The space to be repetitive without burdening anyone. The space to integrate what others had told me without the social contract of receiving advice in real time.
         </P>
         <P>
-          I avoid discussing difficult things with humans in general. I find them opinionated. Maybe that is bias on my part. I do not know. The truth is: I chose AI for the deep processing because the cost of using it was zero and the cost of using humans, even loving ones, was the social overhead I did not have bandwidth for in that period.
+          I avoid discussing difficult things with humans in general. I find them opinionated. Maybe that is bias on my part. I do not know. I chose AI for the deep processing because the cost of using it was zero and the cost of using humans, even loving ones, was the social overhead I did not have bandwidth for in that period.
         </P>
         <P>
           Two weeks in, on April 18, the thread reached an explicit marker: <I>&ldquo;two difficult weeks, but feeling in good place to move on.&rdquo;</I>
@@ -5960,7 +5955,7 @@ export const ESSAYS: Essay[] = [
           Two things I want to separate, because they are easy to conflate.
         </P>
         <P>
-          What <I>transferred</I> from GPT to Claude was the working pattern. The <B>pre-work surface</B> practice. The voice-protection discipline. The sycophancy-detection muscle. The iteration tolerance. The understanding that hundreds of turns produce one shippable artifact. The two-tool thinking &mdash; the idea that I could check one tool against another. None of that was learned on Claude. It was already operational by the time I opened my first real Claude thread.
+          What <I>transferred</I> from GPT to Claude was the working pattern: the <B>pre-work surface</B> practice, the voice-protection discipline, the sycophancy-detection muscle, the iteration tolerance, the understanding that hundreds of turns produce one shippable artifact, and the two-tool thinking —the idea that I could check one tool against another. None of that was learned on Claude. It was already operational by the time I opened my first real Claude thread.
         </P>
         <P>
           What <I>expanded</I> on Claude was capability: integration with image tools, scheduled tasks, job-board scaffolding, a content workspace, the knowledge repository I am building now, a RAG architecture I plan to stand up, and agents through my current coursework. The work I do on Claude is broader and faster than the work I did on GPT. Part of that is the tool, which can hold more, and I cannot yet separate how much is the tool and how much is me.
@@ -5969,7 +5964,7 @@ export const ESSAYS: Essay[] = [
           That distinction matters for the field-note thesis. I did not become an &ldquo;AI native&rdquo; through repeated use. I built a working pattern in one tool and brought it to another tool that could do more with the same pattern. The working pattern transferred and the capability expanded, which are two different curves.
         </P>
         <P>
-          Before anything else, I owe a correction to the last paragraph. I scored it, and the scores only partly agree with it.
+          I owe a correction to that paragraph. I scored it, and the scores only partly agree with it.
         </P>
         <P>
           The <ArtifactLink slug="dialogue-maturity-curve">dialogue-maturity curve</ArtifactLink> scores one hundred sixteen threads on six rubric dimensions. Eighty-eight are GPT threads and twenty-eight are Claude threads, across twelve months. When this field note first went up, I read the rise from GPT to Claude as the numbers behind the transfer. That reading has a problem. Every Claude thread comes from late April onward. The tool changed at the same time I did, so a comparison across the two cannot tell which one moved the score.
@@ -6026,7 +6021,7 @@ export const ESSAYS: Essay[] = [
 
         <H2>Stages, not a destination.</H2>
         <P>
-          The reason I call these <I>stages</I> and not <I>levels</I> is that none of them ended cleanly. The vending-machine phase did not stop when GPT started. GPT did not stop when Claude started. Each new tool entered a relationship that had already been built and added something the previous tool could not. The next stage is starting already. Agents, set up to run scheduled work without me re-loading the context each time. I do not know what that will feel like or what it will change. I will know in a year, the way I know what the last year looked like only now, by writing it down.
+          The reason I call these <I>stages</I> and not <I>levels</I> is that none of them ended cleanly. The vending-machine phase did not stop when GPT started. GPT did not stop when Claude started. Each new tool entered a relationship that had already been built and added something the previous tool could not. The next stage is starting already: agents, set up to run scheduled work without me re-loading the context each time. I do not know what that will feel like or what it will change. I will know in a year, the way I know what the last year looked like only now, by writing it down.
         </P>
         <P>
           What I know now is that the year has been generous. I crossed barriers I had been blocked on for a decade. I metabolized a professional loss without breaking. I built a brand on the surface I could navigate. I am preparing for a kind of public-facing work I had not imagined I could prepare for. None of this was AI doing the work for me. All of it was AI helping me find the shelf, pull the right book, and put the words in the order I actually meant.
