@@ -10401,7 +10401,9 @@ export const ESSAYS: Essay[] = [
           was going to be running the system for a network of schools, and the way that skill entered the building was one hour at a time on a screen-share, from a rep who was quietly discounting his own time to make it possible.
         </P>
         <P>
-          I want to hold on to that image because it is the whole essay. Nothing about the vendor was wrong. The support was real; the rep did his job better than his job required; and the tool did most of what it was sold to do. The reason I was on those calls at all was that the system had to be run by someone who held the school&rsquo;s definitions in their head; that person had to be me, and nobody at the vendor could do that part. What he could teach was PowerSchool. What he could not teach was what <I>enrolled</I> meant here.
+          I want to hold on to that image because it is the whole essay. Nothing about the vendor was wrong. The support was real; the rep did his job better than his job required; and the tool did most of what it was sold to do. The reason I was on those calls at all was that the system had to be run by someone who held the school&rsquo;s definitions in their head; that person had to be me, and nobody at the vendor could do that part. What he could teach was how to work the platform all the way down, into the
+          configurations that decide what the system can actually be asked. What he could
+          not teach was what <I>enrolled</I> meant here.
         </P>
         <P>
           Vendors talk about partnership. What partnership names, most of the time, is labor the vendor cannot supply and the buyer&rsquo;s team must absorb.
