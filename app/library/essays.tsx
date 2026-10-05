@@ -10109,7 +10109,7 @@ export const ESSAYS: Essay[] = [
     title: "The delta nobody budgeted.",
     subtitle:
       "Keeping a system matched to a moving world has never been anyone’s job.",
-    date: "2026-10-05",
+    date: "2026-09-30",
     readingTime: "22 min read",
     summary:
       "A state reissues attendance codes. A counselor leaves. A vendor's release lands two quarters late. Each triggers the same jobs — reconfigure, re-teach, re-map — and each lands on whoever is present. The recurring cost in human-serving organizations isn't running systems but keeping them matched to a world that won't hold still. AI makes that translation cheap. It also becomes one of the change events it's being bought to absorb.",
@@ -10348,6 +10348,188 @@ export const ESSAYS: Essay[] = [
     ),
   },
 
+
+  // ===================================================================
+  // ESSAY 22 — Partnership is a handoff.
+  // ===================================================================
+  {
+    kind: "essay",
+    slug: "partnership-is-a-handoff",
+    number: "22",
+    title: "Partnership is a handoff.",
+    subtitle:
+      "The buyer’s team catches what no vendor can carry.",
+    date: "2026-10-07",
+    readingTime: "15 min read",
+    summary:
+      "Vendors, implementation partners, customer success managers, funders and technical assistance orgs all describe their relationship with a small buyer as partnership. What that language names, in most cases, is labor the vendor cannot supply and the buyer’s team absorbs — org logic, the working definition of enrolled, engaged, in the funnel, which no CSM, workshop or services contract can hold on the org’s behalf. Marketing research mapped the buyer’s cast fifty years ago, up to the signature and from the seller’s side; the same cast catches whatever the contract did not name, and when a purchase stalls each seat asks for more of its own lane while nobody asks who holds the join. The remedy is not a stronger partnership. It is naming the labor as a line item, respecting the operating capacity of the party being asked, and defining the seam between what the vendor supplies and what the org must supply — including which internal seat holds the join once the contract is live — before signing.",
+    cover: "/library/covers/partnership-is-a-handoff.svg",
+    arc: "integration-governance",
+    arcSecondary: "data-foundations",
+    draft: true,
+    body: (
+      <>
+        <Brief>
+          <p>
+            Vendors, implementation partners, customer success managers, funders and technical assistance organizations all call the relationship with a small buyer a partnership. What the word usually names is labor the vendor cannot supply and the buyer&rsquo;s team absorbs: the org&rsquo;s own logic, and the working definition of enrolled, engaged, in the funnel.
+          </p>
+          <p>
+            Marketing research mapped the buyer&rsquo;s cast fifty years ago, from the seller&rsquo;s side and only as far as the signature. The same cast is still there afterwards, catching whatever the contract did not name. When a purchase stalls, each seat asks for more of its own lane and nobody asks who holds the join.
+          </p>
+          <p>
+            A stronger partnership does not fix this. What does is naming the labor as a line item, asking only what the other party has the capacity to do, and defining the seam before signing: what the vendor supplies, what the organization must supply, and which internal seat holds the join once the contract is live.
+          </p>
+        </Brief>
+        <P>
+          At one K&ndash;8 network I worked with, I learned to use PowerSchool by booking one-on-one hours with a technical support rep at the vendor. He was patient and he was kind. He kept charging fewer hours than we actually spent, so that I could keep going without running the ticket dry. I was the person who was going to be running the system for a network of schools, and the way that skill entered the building was one hour at a time on a screen-share, from a rep who was quietly discounting his own time to make it possible.
+        </P>
+        <P>
+          I want to hold on to that image because it is the whole essay. Nothing about the vendor was wrong. The support was real; the rep did his job better than his job required; and the tool did most of what it was sold to do. The reason I was on those calls at all was that the system had to be run by someone who held the school&rsquo;s definitions in their head; that person had to be me, and nobody at the vendor could do that part. What he could teach was PowerSchool. What he could not teach was what <I>enrolled</I> meant here.
+        </P>
+        <P>
+          Vendors talk about partnership. What partnership names, most of the time, is labor the vendor cannot supply and the buyer&rsquo;s team must absorb.
+        </P>
+        <P>
+          Marketing research has mapped who does the buying inside an organization since the early 1970s. Webster and Wind&rsquo;s <I>buying center</I> named five roles that shape a purchase decision: users, influencers, buyers, deciders and gatekeepers (<a href="https://doi.org/10.1177/002224297203600204" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Webster &amp; Wind, <I>Journal of Marketing</I>, 1972</a>). That map runs from the seller&rsquo;s side, up to the signature. This essay follows the same cast past the signature, from the buyer&rsquo;s side, where the labor lands.
+        </P>
+        <H2>The stack of partners</H2>
+        <P>
+          The handoff runs through three different relationships, and holding them apart matters. Only some of them explicitly call themselves partnerships, but the labor mechanism runs through all three. There is the transactional vendor who sells you a tool (a student information system, a CRM) and offers support because the contract requires it, without pretending to share your outcome. There is the strategic partner who claims to share your outcome, often with compensation tied to a metric: outcomes-based contracts, some ed-tech providers, some funder-and-technical-assistance relationships. And there is the consultant or service provider you bring in to do work &mdash; a marketing consultant, an implementation partner, a strategy firm &mdash; whose own deliverable depends on data your systems already carry. The labor transfer runs through all three. Partnership language is what makes the transfer feel like a shared achievement rather than a purchase.
+        </P>
+        <P>
+          You buy the vendor. The vendor assigns a customer success manager, and often a technical solutions manager; workshops, trainings and a ticket queue come with the contract. All of that is real and often responsive. Then you find out that the CSM cannot configure the tool to your org&rsquo;s use cases, because your org&rsquo;s use cases live in the head of whoever runs the program. So you contract an implementation partner: a third-party services firm that logs into your instance and sets up the data sheets and the field structure. That is a second vendor, chosen because the first vendor could not do the work.
+        </P>
+        <P>
+          Then you find out that the implementation partner cannot maintain the instance once they hand it over, because they do not sit in the meetings where the definitions get argued about. So you hire an internal associate to manage it. That is a third role, funded because the second vendor could not do the work.
+        </P>
+        <P>
+          Then you find out that the internal associate cannot answer the question your CEO asked on Tuesday, because the associate does not hold the twenty pieces of context that make the question mean what it means. So you open a spreadsheet and answer it there, so that the report goes out on time. That is where you started, and now there are four people between you and the answer, and the answer is in a spreadsheet.
+        </P>
+        <P>
+          Each of those layers was sold as a way to reduce the load. Each did take away a piece of the work. What none of them eliminated was the need for someone internal to hold the pieces together, and every new layer added an interface for that person to manage.
+        </P>
+        <H2>What the CSM cannot do</H2>
+        <P>
+          The piece that stays internal is org logic.
+        </P>
+        <P>
+          It is the working definition of <I>enrolled</I> at your school this year, given that the summer program feeds directly in and the state&rsquo;s cutoff moved. It is the working definition of <I>engaged</I> in your case-management system, given that your funder wants two touchpoints a month and your clinicians know that a text at 10pm is not the same as a call at 3pm and neither has a checkbox. It is the working definition of <I>in the funnel</I> in your CRM, given that the advancement team is small and half the leads live in the executive director&rsquo;s inbox.
+        </P>
+        <P>
+          A CSM can inform any of it, and a good one will &mdash; the vendor&rsquo;s people help you reason through what a definition should be all the time. What no CSM can do is resolve an org question on the org&rsquo;s behalf. The tool questions belong to the vendor. The org questions stay with you.
+        </P>
+        <P>
+          This is the mechanism <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink> names as the missing funded seat, and <InternalLink slug="the-delta-nobody-budgeted">The delta nobody budgeted</InternalLink> names as change maintenance. Both are about the same absence. This piece is about what fills the absence rhetorically, from the outside, which is the language of partnership.
+        </P>
+        <P>
+          The vendors know this, even when the language they use out loud is partnership. Once I had been running PowerSchool for a while at the same K&ndash;8 network, the vendor&rsquo;s account team stopped routing questions through the executive who had signed the contract and started calling me directly. I was not the customer of record. I was the person who could answer whether a proposed configuration would break something on Monday, and they had figured that out on their own. HubSpot did the same at another organization I ran systems for; the account manager worked out within a quarter that the person on the receiving end of her calls could not answer her questions, and I could. What that pattern is honest about is where the work lives. The account-level partnership eventually resolves into a person-level dependency: the vendor learns who inside the org actually carries the definitions, and it is that person the vendor calls.
+        </P>
+        <H2>What partnership cannot see</H2>
+        <P>
+          When a vendor speaks to <I>the organization</I>, the organization is often six or seven people, and the person who signs is rarely the person who will run the tool. Some of this the vendor&rsquo;s customer-success team learns on its own &mdash; the account record has a name inside a quarter, and the name on the line is rarely the name on the signature. Underneath that, a rougher shape moves inside the buyer&rsquo;s building, and it stays invisible to the vendor because it only shows up when a purchase stalls.
+        </P>
+        <P>
+          At the same K&ndash;8 network, a COO brought in a marketing consultant to hit enrollment targets. The consultant asked for the numbers a consultant asks for. Where inquiries came from. Which campaigns converted. Where families dropped out of the application funnel. How many current families planned to return. Those answers were the inputs to every decision the consultant had been hired to make about budget, ads and spend.
+        </P>
+        <P>
+          Nobody could supply them. The data existed, but it sat in three systems that did not talk to each other &mdash; HubSpot for prospects, SchoolMint for applications, PowerSchool for current families &mdash; and the CRM had never been fully set up. When the consultant could not deliver, the question of why went around the room. The COO said the work needed more budget. The enrollment manager said it needed more headcount, to set up the CRM properly and to run the campaigns, the Mailchimp sends and the tabling. The superintendent, pulled in by the CEO as the school-side leader, said plainly that they had never done enrollment or marketing and did not know. The junior associates kept working.
+        </P>
+        <P>
+          Every answer was true, and that was what made the round hard to break. Budget is the COO&rsquo;s lane. Headcount is the manager&rsquo;s. Experience is the superintendent&rsquo;s. Each person named the resource their own seat would need to do more, and each was right about their own seat. What nobody named was the join. The consultant&rsquo;s questions could only be answered by pulling records out of three systems and matching them, and the join was not in anyone&rsquo;s job. It went, as it usually does, to the seat that could carry it &mdash; the data lead&rsquo;s, on top of a different job, with hands borrowed from ops and the data analyst who reported to them. They built a call-center worksheet outside the CRM to hold the answers the consultant needed. It did not rescue the season. Targets were missed while the marketing spend continued, and the CEO eventually cut the spend. The blame for the consultant&rsquo;s results came back to the internal team, for not supplying what the consultant had asked for.
+        </P>
+        <P>
+          That is the shape a partnership frame does not carry. Sponsorship often sits with someone who has no budget. The budget sits with someone who signs the contract and decides how much is enough, without running the system. The expertise sits with the running seat &mdash; the vendor calls that seat, the executive team trusts its outputs, and it has no signing authority. In a small nonprofit the three can collapse into a single executive director who sponsors, signs and runs. In every organization larger than that, they rarely do; a vendor&rsquo;s contract still speaks to the organization as one party. The seat that catches the handoff often catches it without a say in what was bought.
+        </P>
+        <H2>The tier with no partner at all</H2>
+        <P>
+          Some systems do not even come with the offer.
+        </P>
+        <P>
+          There are tools your organization uses every day where the tier a small school can actually access returns fixed downloads and not a working API. The National Student Clearinghouse&rsquo;s StudentTracker workflow at the school-user tier. Applicant tracking systems in the same tier. Some state systems that release data as fixed PDFs. To use these, someone on your team logs in every day, checks whether new records arrived, transfers them into your student information system by hand, and matches them against the roster in a spreadsheet because the fields do not line up. It is the same absorbed seat from <InternalLink slug="for-the-record">For the record.</InternalLink>, taking the round trip manually because no round trip exists.
+        </P>
+        <P>
+          Nobody promises partnership here, because there is no one on the other side. The load is fully visible, and it is also unbudgeted, because it sits on the same absorbed seat. When the labor is at least honest about being labor, it still lands on the person who was already carrying the rest.
+        </P>
+        <P>
+          The contrast clarifies what partnership language is doing where it does exist. The friendlier vendor&rsquo;s CSM and workshops do not remove the internal labor; they add a layer of responsiveness on top of it. The unfriendlier vendor&rsquo;s silence makes the internal burden easier to see. Support changes how much of the labor remains. It does not eliminate the category, and the category lives inside.
+        </P>
+        <H2>The buyer runs the training too</H2>
+        <P>
+          There is one more layer of the handoff that the vendor&rsquo;s own materials do not name. The vendor sells professional development, ships onboarding videos, runs webinars, and lists training as part of the package. Inside the org, once a knowledgeable internal person has been running the tool for a while, much of that vendor material gets replaced at scale by locally-made versions. What gets used are the videos and sheets that person made herself, in the org&rsquo;s own vocabulary, showing the ten fields that actually matter.
+        </P>
+        <P>
+          At the same K&ndash;8 network, the person who signed the vendor contracts made a call in later years that the vendor&rsquo;s own trainings were more than the school needed. Print grade reports, log attendance, run the basic longitudinal pull &mdash; that was the working set, and there was already someone internal who had distilled the vendor&rsquo;s material into short videos and sheets for the front office. The choice was a functional adaptation and it saved the school real money. What it did was move the training function from the vendor&rsquo;s line item to the internal person&rsquo;s uncounted hours, and neither the contract nor the org chart recorded that the shift had happened.
+        </P>
+        <P>
+          Partnership language covers the running, the configuration, the training, and the interpretation. Every layer requires local translation from generic capability into what this specific school does on Tuesday, and only someone internal can do that translation. The vendor&rsquo;s material stays generic because it has to. The org&rsquo;s real training material is the local translation, which lives as a folder of screen recordings on someone&rsquo;s Drive. When that person leaves, so does the translation.
+        </P>
+        <P>
+          The training labor runs further out than the vendor&rsquo;s own materials. You buy hours from the vendor&rsquo;s solutions architect. You attend the community of practice the vendor organizes for its customers, or the one an adjacent foundation convenes for the sector &mdash; CSGF for charter networks, similar cohorts in behavioral health and higher ed. You receive the playbook and the templates and the deck. You send 1:1 outreach to peers in other organizations who look like they might have figured out the piece you are stuck on. Every one of those channels is real, and most are generous. Almost all of them are still organized around the same vendor ecosystem you already bought into. The ecosystem is rich with knowledge and thin on operationalization, and the operationalization is yours.
+        </P>
+        <H2>When the measurement ask is the partner</H2>
+        <P>
+          The pattern is not vendor-only. Funders and technical assistance organizations run it too, and the seat I have sat in has been on both sides.
+        </P>
+        <P>
+          I have watched an organization I worked for issue long overlapping surveys to schools, sections of which could go to different teams inside a school, none of which mapped to a single system the school already ran. Meanwhile the schools were completing compliance reports for the state, outcomes reports for other funders, and a separate parent-and-student survey they had already licensed from a measurement vendor (Panorama, in most cases). The overlap was not checked. The redundancy was not priced. The design assumed the school had a person whose job was to answer surveys, and no school I have worked in has that person.
+        </P>
+        <P>
+          The language around this kind of ask is often partnership. We are your partner in improvement. We are learning alongside you. That language describes the funder&rsquo;s or the TA org&rsquo;s own experience of the relationship. On the school side, it reads as one more request from someone whose staff do not have to fill it out. Every partnership promise moves labor. This one moves it from the funder&rsquo;s evaluation team to the school&rsquo;s front office.
+        </P>
+        <P>
+          Kelly Sia, the CEO of Curriculum Associates, made the same partnership argument recently in <I>The 74</I>, this time about outcomes-based contracting: the contract creates accountability, the partnership creates improvement, both sides align around student success (<a href="https://www.the74million.org/article/outcomes-based-contracting-requires-not-just-accountability-but-partnership/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Sia, The 74</a>, September 11, 2026). OBC as a model was designed to fix the exact vendor-accountability problem this essay is describing. It emerged from Tom Kane&rsquo;s work at Harvard&rsquo;s Center for Education Policy Research in the early 2020s and is now housed at the Southern Education Foundation&rsquo;s <a href="https://centerforobc.org/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Center for Outcomes Based Contracting</a>, with the stated purpose of tying vendor payment to student outcomes because more than 65 percent of purchased ed-tech licenses typically go unused and traditional contracts create no financial consequence for that underuse (<a href="https://centerforobc.org/about-the-center-for-outcomes-based-contracting/what-is-outcomes-based-contracting/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">What is Outcomes Based Contracting? &mdash; Center for OBC</a>; <a href="https://www.the74million.org/article/schools-are-paying-for-ed-tech-that-students-never-use-could-a-new-contract-model-change-that/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Toppo, The 74</a>, April 6, 2026).
+        </P>
+        <P>
+          Read closely, Sia&rsquo;s specific recommendation is that rather than expecting every enrolled student to achieve the same outcome, districts and providers should measure &ldquo;overall class or school-level growth, such as the median percentage of progress toward each growth target,&rdquo; because holding a vendor to every enrolled student meeting a target is unrealistic (Sia, same article). From the district seat, that reads as the vendor writing the accountability definition. The redefinition softens vendor exposure while keeping the language of shared accountability, and it does that at exactly the point where the district would need a funded measurement seat to negotiate a definition of its own. Sia&rsquo;s other recommendations to districts &mdash; regular governance meetings, shared data reviews, continuous course correction &mdash; are the labor this essay is naming, presented as though nobody had to pay for it. OBC was designed to fix vendor accountability; what Sia&rsquo;s argument shows is how quickly the definition can be redefined from inside the vendor tier once partnership language is on the table. Where the seat does not exist, the vendor&rsquo;s proposed outcome definition arrives with no equally equipped institutional counterparty, and partnership becomes a longer word for one-sided accounting.
+        </P>
+        <H2>What actually reduces the load</H2>
+        <P>
+          This starts, most of the time, as a build-versus-buy decision, and it loses track of the seam. The build option was rejected because it required internal capacity nobody wanted to fund. The buy option was chosen because it appeared to eliminate that requirement. Neither was true. Buy did not eliminate the internal capacity requirement. It moved it from the labor of building the tool to the labor of bending internal knowledge to fit the tool the vendor built for everyone. That second labor is smaller than the first, and it is not zero, and it rarely appears in the purchase decision at its full internal cost.
+        </P>
+        <P>
+          The field&rsquo;s usual repair is to ask for more professional development or a longer support contract. That is the wrong repair. It buys more of the same category of thing the vendor already supplies, when the missing capacity is local translation on the buyer&rsquo;s side. More support can improve the vendor side of the seam. It cannot staff the buyer side of it.
+        </P>
+        <P>
+          Three things reduce the load, and none of them is a better partnership.
+        </P>
+        <P>
+          The first is naming the labor and pricing it. When you buy a tool, the invisible labor is the internal person who translates org logic into system configuration and back, every day, forever. If the purchase case does not name that labor, the organization is approving a partial cost. If your board&rsquo;s budget does not name it, your board is approving that partial cost knowingly. The remedy is not a stronger CSM. It is a line item on your side that says: <I>this system requires N hours a week of an internal role that holds our definitions</I>. Fund it or do not buy the system. This is the same argument <InternalLink slug="the-absorbed-data-role">The absorbed data role</InternalLink> makes for the specialized bucket-3 seat, run against the vendor conversation instead of the org chart.
+        </P>
+        <P>
+          The second is that measurement asks respect what is already running. Before a funder or a TA organization designs a survey, they should ask: what does the school already field, and can our question ride on that instrument or that submission. If it cannot, the ask has a cost, and the cost belongs on the asker&rsquo;s side of the ledger. That takes the form of a shorter instrument, a shared administration, or a stipend to the school for the additional staff time. The third is naming the seam before signing. Every purchase creates a seam between what the vendor supplies and what the org must supply to make the vendor&rsquo;s product usable. The build-versus-buy decision loses track of that seam because the buy option is priced as though the seam did not exist. A vendor contract that names the seam explicitly &mdash; what the vendor owns, what the buyer owns, and which internal seat holds the join once the contract is live &mdash; is a contract that acknowledges the internal role instead of pretending it away.
+        </P>
+        <P>
+          Partnership language without a labor accounting is a rhetorical move. Partnership language with a labor accounting is a contract.
+        </P>
+        <H2>The rep who charged fewer hours</H2>
+        <P>
+          The PowerSchool rep who charged me fewer hours than he worked was doing what he could. He knew what the load looked like from where he was sitting, and he tried to reduce it by giving me his own time back. I remember him with real affection, and I think about him often when a vendor tells me they are my partner. He is what it looks like when one person on the vendor side sees the seam the commercial arrangement failed to price. Almost nobody talks that way in a sales conversation. Almost every buyer&rsquo;s team is carrying the difference.
+        </P>
+
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-absorbed-data-role"
+            title="The absorbed data role"
+            gloss="the funded seat inside the org that would hold what partnership language keeps trying to transfer outward."
+          />
+          <SeeAlsoItem
+            slug="the-delta-nobody-budgeted"
+            title="The delta nobody budgeted"
+            gloss="change maintenance as the specific labor the internal seat absorbs when a policy, a vendor release or a definition moves."
+          />
+          <SeeAlsoItem
+            slug="for-the-record"
+            title="For the record"
+            gloss="the trust gap between the spreadsheet the owner keeps and the record the institution holds, which is where every handoff eventually lands."
+          />
+        </SeeAlso>
+
+        <MetaNote>
+          Written October 2026 for the Analytic Bytes Library. No employer, client or vendor relationship is named beyond products in general use; every seat is described by role and in de-identified form, per standing practice. The PowerSchool support hours, the three-system enrollment case and the stalled purchase are from the author&rsquo;s own record. External sources were verified against their live pages in October 2026: Webster and Wind (1972) read from the published paper rather than a summary, and the outcomes-based contracting material read from the Center for OBC&rsquo;s own pages alongside the two reports in The 74.
+        </MetaNote>
+      </>
+    ),
+  },
 ];
 
 // ---------------------------------------------------------------------
