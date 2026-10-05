@@ -10362,7 +10362,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-10-07",
     readingTime: "15 min read",
     summary:
-      "Vendors, implementation partners, customer success managers, funders and technical assistance orgs all describe their relationship with a small buyer as partnership. What that language names, in most cases, is labor the vendor cannot supply and the buyer’s team absorbs — org logic, the working definition of enrolled, engaged, in the funnel, which no CSM, workshop or services contract can hold on the org’s behalf. Marketing research mapped the buyer’s cast fifty years ago, up to the signature and from the seller’s side; the same cast catches whatever the contract did not name, and when a purchase stalls each seat asks for more of its own lane while nobody asks who holds the join. The remedy is not a stronger partnership. It is naming the labor as a line item, respecting the operating capacity of the party being asked, and defining the seam between what the vendor supplies and what the org must supply — including which internal seat holds the join once the contract is live — before signing.",
+      "Vendors, implementation partners, customer success managers and funders all call the relationship a partnership. What the word usually names is labor the vendor cannot supply and the buyer’s team absorbs — the org logic, and the working definition of enrolled or engaged. The fix is a line item for that labor, and a seam defined before signing.",
     cover: "/library/covers/partnership-is-a-handoff.svg",
     arc: "integration-governance",
     arcSecondary: "data-foundations",
