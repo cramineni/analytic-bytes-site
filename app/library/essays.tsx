@@ -10125,7 +10125,7 @@ export const ESSAYS: Essay[] = [
             A compliance director leaves, and with her goes the only working map from a student&rsquo;s status to a billing code. Nobody wrote it down, and a document would not have held, because the mapping moved whenever a student&rsquo;s services did. Rebuilding it was work no budget line anticipated.
           </p>
           <p>
-            A state reissues its codes. A vendor&rsquo;s release lands two quarters late. A rollover drops a field a trend needed. Each one leaves someone with three jobs: reconfigure the system, re-teach the people who enter the data, and re-map what was already recorded. The work lands on whoever happens to be there. In these organizations the recurring cost sits less in running the systems than in keeping them matched to a world that keeps moving.
+            A state reissues its codes. A vendor&rsquo;s release lands two quarters late. A rollover drops a field a trend needed. Each one leaves someone with three jobs: reconfigure the system, re-teach the people who enter the data, and re-map what was already recorded. The work lands on whoever happens to be there. In schools, clinics, campuses and nonprofits, the recurring cost sits less in running the systems than in keeping them matched to a world that keeps moving.
           </p>
           <p>
             A model can now draft much of that translation, which changes the work. It also arrives as one more thing that changes underneath, with its own upgrades and its own drift, and that needs a budget line too.
@@ -10141,7 +10141,7 @@ export const ESSAYS: Essay[] = [
           Then she left.
         </P>
         <P>
-          The question arrived not long after, from the chief executive. He suspected that the year before the network had not billed correctly, and that money it was owed for services it had actually delivered had stayed with the state. The network was budgeting deliberately for special-education and English-language services. It hired for them and it protected the time to deliver them well. What it was not doing reliably was recovering the reimbursement, so the full cost of those services sat in its own budget and the revenue that should have offset them did not arrive.
+          The question arrived not long after, from the chief executive, who suspected that the year before the network had not billed correctly, and that money it was owed for services it had actually delivered had stayed with the state. The network was budgeting deliberately for special-education and English-language services. It hired for them and it protected the time to deliver them well. What it was not doing reliably was recovering the reimbursement, so the full cost of those services sat in its own budget and the revenue that should have offset them did not arrive.
         </P>
         <P>
           Answering that question meant reconstructing what she had been maintaining.
@@ -10154,7 +10154,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>Nobody owns the transition</H2>
         <P>
-          The systems in schools, clinics, campuses and nonprofits get set up once, and the hope is that the setup is done, so people can go back to serving the students, patients and families in front of them. The world those systems describe does not stand still.
+          The systems in schools, clinics, campuses and nonprofits get set up once, and the hope is that the setup is done, so people can go back to serving the students, patients and families in front of them. The world those systems record does not stand still.
         </P>
         <P>
           Budgets in these organizations cover the systems as they stand. The student information system, the electronic health record, the CRM, the warehouse, the licenses and the analyst all have line items. The work of getting from one configuration to the next has none. So the cost does not disappear. It moves to places that are not labeled as cost. Most of it is paid in labor, by whoever can bridge the old world and the new one, in hours that are rarely recorded as change work. Some of it can be paid in revenue, as the special-education case suggests: when nobody maintains the derivation behind a claim, money earned for services already delivered can stay with the payer. And some of it is paid in the record itself, as a trend line that breaks without announcing that it has. None of these appears in a budget as the cost of a change, so the change looks free.
@@ -10165,11 +10165,17 @@ export const ESSAYS: Essay[] = [
         <P>
           They do not all arrive on the same clock, either. A definition can be reissued every few years. In the network I worked in, a student had two or three internal assessment windows across the school year, which showed her progress against the network&rsquo;s own goals. Her official status could change only after she demonstrated proficiency on the official test, on a schedule the state sets rather than the school. So the record had to carry two clocks for one student: an internal level that moved several times a year, and an official status that moved only when the state&rsquo;s test said so.
         </P>
-        <P>
-          Reconfigure. The system has to be changed to match the new rule.
-Re-teach. The people entering data have to be told what changed, where, and who is responsible now.
-Re-map. What was recorded under the old rule has to be reconciled with the new one, or the comparison across years stops meaning anything without ever announcing that it has.
-        </P>
+        <NumList>
+          <NumItem n={1}>
+            <I>Reconfigure.</I> The system has to be changed to match the new rule.
+          </NumItem>
+          <NumItem n={2}>
+            <I>Re-teach.</I> The people entering data have to be told what changed, where, and who is responsible now.
+          </NumItem>
+          <NumItem n={3}>
+            <I>Re-map.</I> What was recorded under the old rule has to be reconciled with the new one, or the comparison across years stops meaning anything without ever announcing that it has.
+          </NumItem>
+        </NumList>
         <P>
           Together those three jobs are one recurring task: keeping the organization&rsquo;s representation of the world synchronized with a world that keeps moving. Call it change maintenance. The name matters for a practical reason. Work without a name does not get a budget line, an owner, or a sentence in anyone&rsquo;s job description. Change maintenance has had none of the three.
         </P>
@@ -10217,7 +10223,7 @@ Re-map. What was recorded under the old rule has to be reconciled with the new o
           So the rollover makes a decision about what the organization will be able to ask later, and it makes that decision silently. A field that was not set to carry forward does not disappear in any way that raises an alarm. It is absent from next year&rsquo;s records. Nobody notices in September, because nobody needs it in September. The loss shows up years later. Someone asks, for example, whether students in a tutoring program came to school more often than students outside it. The field that marked who was in the program turns out to exist for the latest cohort and for no one before it.
         </P>
         <P>
-          Of the change events in this essay, the rollover is the one an organization can see coming, because it is on the calendar. In a larger organization it belongs to a director of systems, so the technical step has an owner. The decision inside it often does not. Which fields a question three years from now will need is a program and measurement question, and the person running the rollover is often not the person who will ask it. In a smaller organization there is no such director, and the work falls to whoever knows where the settings are, in the last weeks of a school year, on top of closing that year.
+          Of the change events in this essay, the rollover is the one an organization can see coming, because it is on the calendar. In a larger organization it belongs to a director of systems, so the technical step has an owner. The decision inside it often does not. Which fields a question three years from now will need is a program and measurement question, and the person running the rollover is often not the person who will ask it. Large organizations tend to split the work the same way. The system change, the training and the definitions each have an owner, and the question that joins them, whether the trend still holds across the change, often has none. In a smaller organization there is no such director, and the work falls to whoever knows where the settings are, in the last weeks of a school year, on top of closing that year.
         </P>
         <P>
           What changes the cost is a list made before the rollover runs. Call it the preservation list. A model given last year&rsquo;s schema and this year&rsquo;s can draft it: the fields that will not carry forward, the codes being retired, and the links between records that will break. A person then marks each item. Keep it, archive it with a map to what replaces it, or let it go on purpose. After the rollover, a short script checks that everything marked <I>keep</I> is still there. The list turns a silent loss into a decision somebody made and signed, and it becomes the rollover&rsquo;s entry in the organization&rsquo;s change log.
@@ -10242,13 +10248,22 @@ Re-map. What was recorded under the old rule has to be reconciled with the new o
         <P>
           One division of labor runs through all of this, and it is the same one <InternalLink slug="for-the-record">For the record</InternalLink> argues for at the other seam.
         </P>
+        <NumList>
+          <NumItem n={1}>
+            <I>The model proposes.</I> It reads the memo and the configuration, or the note and the form, or the old schema and the new one, and it drafts the translation.
+          </NumItem>
+          <NumItem n={2}>
+            <I>A person confirms.</I> Someone who knows the domain reads the draft, corrects it, and adds the exception the model could not know.
+          </NumItem>
+          <NumItem n={3}>
+            <I>Deterministic code preserves.</I> The confirmed rule runs the same way every cycle and raises a flag when something stops fitting.
+          </NumItem>
+        </NumList>
         <P>
-          The model proposes. It reads the memo and the configuration, or the note and the form, or the old schema and the new one, and it drafts the translation. The lineage of that move is <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard</InternalLink>, where the heading was AI proposes, human curates; what is added here is the third step below, which is what keeps the proposal from dying on one person&rsquo;s desktop.
-A person confirms. Someone who knows the domain reads the draft, corrects it, and adds the exception the model could not know.
-Deterministic code preserves. The confirmed rule runs the same way every cycle and raises a flag when something stops fitting. That is the gate pattern from <InternalLink slug="extending-the-gates">Extending the gates</InternalLink>: a model drafts, and code that cannot be talked around checks.
+          The first two steps come from <InternalLink slug="when-genai-redesigned-my-dashboard">When GenAI redesigned my dashboard</InternalLink>, where the heading was AI proposes, human curates. What is added here is the third step, which keeps the proposal from dying on one person&rsquo;s desktop. It is the gate pattern from <InternalLink slug="extending-the-gates">Extending the gates</InternalLink>: a model drafts, and code that cannot be talked around checks.
         </P>
         <P>
-          The third part, running the confirmed rule in code instead of asking the model again each time, tends to get skipped. There is now evidence of what goes wrong without it. Dmitry Ustimov gave an agent two legitimate definitions of the same measure, a tool for asking which was meant, and an instruction to ask. Across 51 attempts it never asked and never showed both values; it picked one and said nothing about the other. What fixed it was moving the disclosure out of the model: comparing both definitions at runtime and inserting the missing one before the answer reached anybody (<a href="https://decisionspine.com/blog/where-the-ambiguity-in-your-warehouse-comes-from" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ustimov, Decision Spine</a>, September 2026). A confirmed rule running in code is the same move at the seam this essay is about.
+          The third step, running the confirmed rule in code instead of asking the model again each time, tends to get skipped. There is now evidence of what goes wrong without it. Dmitry Ustimov gave an agent two legitimate definitions of the same measure, a tool for asking which was meant, and an instruction to ask. Across 51 attempts it never asked and never showed both values; it picked one and said nothing about the other. What fixed it was moving the disclosure out of the model: comparing both definitions at runtime and inserting the missing one before the answer reached anybody (<a href="https://decisionspine.com/blog/where-the-ambiguity-in-your-warehouse-comes-from" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ustimov, Decision Spine</a>, September 2026). A confirmed rule running in code is the same move at the seam this essay is about.
         </P>
         <P>
           Change maintenance suits this division well, because a large component of it is translation. An old code set to a new one. A policy memo to a configuration. A spoken observation to a structured field. A schema to its successor. Translation is the part a model can now draft.
