@@ -83,6 +83,16 @@ RETIRED = [
     "operator console", "goes to die", "features, not bugs",
 ]
 
+# Gate 3 item 7 (intensifier adverbs) and the Voice Map's spatial-metaphor ban.
+# Reported separately from RETIRED because these words have legitimate uses and
+# the call is the author's: "actually provided" draws a real contrast with what
+# was claimed, while "what actually reduces the load" is an intensifier doing no
+# work. "Underneath X sits Y" is the banned spatial construction; "changes
+# underneath" is adverbial and ordinary. The check names every instance with its
+# surrounding text so the distinction can be made by reading rather than by
+# counting, and never edits on its own.
+FLAGGED_WORDS = ["actually", "underneath", "simply", "truly", "merely"]
+
 REQUIRED_FIELDS = ["kind", "slug", "number", "title", "subtitle",
                    "date", "readingTime", "summary", "cover", "arc"]
 
@@ -282,6 +292,12 @@ def check_piece(e, repo):
     hits = [r for r in RETIRED if r in low]
     if hits:
         warn("vocabulary", "retired: " + ", ".join(hits))
+
+    for word in FLAGGED_WORDS:
+        n = len(re.findall(r"\b%s\b" % word, low))
+        if n:
+            warn("flagged", "%s x%d (intensifier / spatial metaphor -- author's call)"
+                 % (word, n))
 
     # --- cover + OG ---------------------------------------------------------
     cover = field(w, "cover")
