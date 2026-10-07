@@ -10397,10 +10397,10 @@ export const ESSAYS: Essay[] = [
           </p>
         </Brief>
         <P>
-          At one school network I worked with, I learned to administer PowerSchool by booking one-on-one hours with a technical support rep at the vendor. He was patient and he was kind. He kept charging fewer hours than we actually spent, so that I could keep going without running the ticket dry. What those hours bought was the configuration depth a student information system like PowerSchool actually holds &mdash; the reporting layer, and SQL extraction run straight against the database. Onboarding does not reach that. Neither does ops training, which teaches the workflow rather than the system underneath it. I was the person who was going to be running the system for a network of schools, and the way that skill entered the building was one hour at a time on a screen-share, from a rep who was quietly discounting his own time to make it possible.
+          At one school network I worked with, I learned to administer PowerSchool by booking one-on-one hours with a technical support rep at the vendor. He was patient and he was kind. He kept extending our sessions, giving me more time than the package was built to provide, so I could keep going without running the ticket dry. What those hours bought was the configuration depth a student information system (SIS) like PowerSchool, or an EHR in a clinic, holds &mdash; the reporting layer, and SQL extraction run straight against the database. Onboarding does not reach that. Neither does ops training, which teaches the workflow rather than the system that supports it. I was the person who was going to be running the system for a network of schools, and the way that skill entered the building was one hour at a time on a screen-share, from a rep who was quietly giving more than the package was built to provide.
         </P>
         <P>
-          I want to hold on to that image because it is the whole essay. Nothing about the vendor was wrong. The support was real; the rep gave more hours than the contract priced in; and the tool did most of what it was sold to do. The reason I was on those calls at all was that the system had to be run by someone who held the school&rsquo;s definitions in their head; that person had to be me, and nobody at the vendor could do that part. What he could teach was how to work the platform all the way down, into the configurations that decide what the system can actually be asked. What he could not teach was what <I>enrolled</I> meant here.
+          I want to hold on to that image because it is the whole essay. Nothing about the vendor was wrong. The support was real; the rep gave more time than the package was built to provide; and the tool did most of what it was sold to do. The reason I was on those calls at all was that the system had to be run by someone who held the school&rsquo;s definitions in their head; that person had to be me, and nobody at the vendor could do that part. What he could teach was how to work the platform all the way down, into the configurations that decide what the system can be asked. What he could not teach was what <I>enrolled</I> meant here.
         </P>
         <P>
           Vendors talk about partnership. What partnership names, most of the time, is labor the vendor cannot supply and the buyer&rsquo;s team must absorb.
@@ -10429,7 +10429,7 @@ export const ESSAYS: Essay[] = [
           That piece is org logic.
         </P>
         <P>
-          The working definition is the one the org actually uses day to day, which rarely matches the field the vendor built. <I>Enrolled</I> at your school is not what the SIS counts, because the summer program feeds in before the year starts and the state&rsquo;s cutoff moved. <I>Engaged</I> in your case-management system is not what the system&rsquo;s field counts, because the funder wants two touchpoints a month and your clinicians know a text at 10pm is not the same as a call at 3pm. <I>In the funnel</I> in your CRM is not what the CRM column counts, because the advancement team is small and half the leads live in the executive director&rsquo;s inbox.
+          The working definition is the one the org uses day to day, which rarely matches the field the vendor built. <I>Enrolled</I> at your school is not what the SIS counts, because the summer program feeds in before the year starts and the state&rsquo;s cutoff moved. <I>Engaged</I> in your case-management system is not what the system&rsquo;s field counts, because the funder wants two touchpoints a month and your clinicians know a text at 10pm is not the same as a call at 3pm. <I>In the funnel</I> in your CRM is not what the CRM column counts, because the advancement team is small and half the leads live in the executive director&rsquo;s inbox.
         </P>
         <P>
           A vendor&rsquo;s team can inform any of it, and a good one will &mdash; the vendor&rsquo;s people help you reason through what a definition should be all the time. What no vendor can do is resolve an org question on the org&rsquo;s behalf. The tool questions belong to the vendor. The org questions stay with you.
@@ -10442,7 +10442,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>What partnership cannot see</H2>
         <P>
-          When a vendor speaks to <I>the organization</I>, the organization is often six or seven people, and the person who signs is rarely the person who will run the tool. Some of this the vendor&rsquo;s customer-success team learns on its own &mdash; the account record has a name inside a quarter, and the name on the line is rarely the name on the signature. Underneath that, a rougher shape moves inside the buyer&rsquo;s building, and it stays invisible to the vendor because it only shows up when the work stalls.
+          When a vendor speaks to <I>the organization</I>, the organization is often six or seven people, and the person who signs is rarely the person who will run the tool. Some of this the vendor&rsquo;s customer-success team learns on its own &mdash; the account record has a name inside a quarter, and the name on the line is rarely the name on the signature. What the vendor doesn&rsquo;t see is a rougher shape moving inside the buyer&rsquo;s building, which only shows up when the work stalls.
         </P>
         <P>
           At the same network, a COO brought in a marketing consultant to hit enrollment targets. The consultant asked for the standard marketing numbers. Where inquiries came from. Which campaigns converted. How many families attended an event. Where families dropped out of the application funnel. How many current families planned to return. Those answers were the inputs to every decision the consultant had been hired to make about budget, ads and spend.
@@ -10476,7 +10476,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>The buyer runs the training too</H2>
         <P>
-          There is one more layer of the handoff that the vendor&rsquo;s own materials do not name. The vendor sells professional development, ships onboarding videos, runs webinars, and lists training as part of the package. Inside the org, once a knowledgeable internal person has been running the tool for a while, much of that vendor material gets replaced at scale by locally-made versions. What gets used are the videos and sheets that person made herself, in the org&rsquo;s own vocabulary, showing the ten fields that actually matter.
+          There is one more layer of the handoff that the vendor&rsquo;s own materials do not name. The vendor sells professional development, ships onboarding videos, runs webinars, and lists training as part of the package. Inside the org, once a knowledgeable internal person has been running the tool for a while, much of that vendor material gets replaced at scale by locally-made versions. What gets used are the videos and sheets that person made herself, in the org&rsquo;s own vocabulary, showing the ten fields that matter.
         </P>
         <P>
           At the same network, the person who signed the vendor contracts made a call in later years that the vendor&rsquo;s own trainings were more than the school needed. Print grade reports, log attendance, run the basic longitudinal pull &mdash; that was the working set, and there was already someone internal who had distilled the vendor&rsquo;s material into short videos and sheets for the front office. The choice was a functional adaptation and it saved the school real money. What it did was move the training function from the vendor&rsquo;s line item to the internal person&rsquo;s uncounted hours, and neither the contract nor the org chart recorded that the shift had happened.
@@ -10522,9 +10522,9 @@ export const ESSAYS: Essay[] = [
         <P>
           Partnership language without a labor accounting is a rhetorical move. Partnership language with a labor accounting is a contract.
         </P>
-        <H2>The rep who charged fewer hours</H2>
+        <H2>The rep who gave more time</H2>
         <P>
-          The PowerSchool rep who charged me fewer hours than he worked was doing what he could. He knew what the load looked like from where he was sitting, and he tried to reduce it by giving me his own time back. I remember him with real affection, and I think about him often when a vendor tells me they are my partner. He is what it looks like when one person on the vendor side sees the seam the commercial arrangement failed to price. Almost nobody talks that way in a sales conversation. Almost every buyer&rsquo;s team is carrying the difference.
+          The PowerSchool rep who gave me more time than the package was built to provide was doing what he could. He knew what the load looked like from where he was sitting, and he tried to reduce it by giving me his own time back. I remember him with real affection, and I think about him often when a vendor tells me they are my partner. He is what it looks like when one person on the vendor side sees the seam the commercial arrangement failed to price. Almost nobody talks that way in a sales conversation. Almost every buyer&rsquo;s team is carrying the difference.
         </P>
         <SeeAlso>
           <SeeAlsoItem
