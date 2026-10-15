@@ -63,9 +63,11 @@ def norm(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
-def ocr(png):
+def ocr(png, crop=None):
+    """OCR the card, or only a band of it when `crop` is "WxH+X+Y"."""
     base = tempfile.mktemp()
-    subprocess.run(["convert", str(png), "-colorspace", "Gray",
+    pre = ["-crop", crop, "+repage"] if crop else []
+    subprocess.run(["convert", str(png)] + pre + ["-colorspace", "Gray",
                     "-resize", "200%", "-sharpen", "0x1", base + ".png"],
                    check=True, capture_output=True)
     subprocess.run(["tesseract", base + ".png", base, "--psm", "6"],
@@ -162,22 +164,23 @@ def main():
             continue
         card = ocr(png)
         issues = []
-        if not contains(card, title):
-            # A cover may deliberately abridge the title: blown-assignment's
-            # artwork carries "It's a blown assignment." where the JSX title is
-            # "It's not a communication issue. It's a blown assignment.", and
-            # that abridgement is the author's call. What matters is that the
-            # card matches the COVER, so fall back to the title line the SVG
-            # actually paints before calling it a defect.
-            painted = [t for t in svg_lines(svg)
-                       if len(t.split()) >= 2 and "analytic bytes" not in t.lower()
-                       and not re.match(r"^\s*(Essay|Field note)", t, re.I)
-                       and not t.isupper()]
-            if not any(contains(card, t) for t in painted):
-                issues.append("title not found in card")
-            else:
-                soft.append("%s: JSX title not in card, but the cover's own "
-                            "title line is (abridged cover title)" % slug)
+        # THE TITLE RULE IS STRICT (Cover Framework, Title section). The
+        # title painted on the cover must match the JSX title character for
+        # character. Only the SUBTITLE may be abridged. So two checks, and
+        # neither falls back to "some other line on the card is close enough":
+        #
+        # 1. Text, no OCR: the SVG's painted title line equals the JSX title.
+        svg_title = re.search(r'font-size="3\d" font-weight="500"[^>]*>([^<]+)</text>',
+                              svg.read_text().replace("&#8217;", "’"))
+        if not svg_title or norm(svg_title.group(1)) != norm(title):
+            issues.append("cover SVG title %r != JSX title %r"
+                          % (svg_title.group(1) if svg_title else None, title))
+        # 2. Pixels: the card shows that title. Full-card OCR in psm 6 can drop
+        #    the title line when the motif is a multi-column diagram (seen on
+        #    the-reach-trap), so on a miss, re-read the title band alone
+        #    (y 400-470 at 1200x630) before calling it a defect.
+        if not contains(card, title) and not contains(ocr(png, "1200x70+0+400"), title):
+            issues.append("title not found in card")
         # EYEBROW IS INFORMATIONAL, NOT A FAILURE.
         # It is 11px, wide-tracked and set in light blue on white, which is the
         # combination OCR handles worst. Six cards were flagged whose eyebrows
