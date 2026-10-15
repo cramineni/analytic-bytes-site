@@ -150,6 +150,22 @@ def main():
             entries.append((mm.group(1), cov.group(1), ttl.group(1),
                             num.group(1), kind.group(1)))
 
+    # ARTIFACTS ARE A SECOND REGISTRY WITH THE SAME HAZARD.
+    # They live in artifacts-data.ts with a title and an SVG, and their OG twin
+    # follows the same -og.png convention. Nothing was checking them, so all 25
+    # could have drifted from their artwork unnoticed. They carry no eyebrow or
+    # number, so only the title is compared.
+    art = (repo / "app" / "library" / "artifacts-data.ts")
+    artifacts = []
+    if art.exists():
+        at = art.read_text()
+        for blk in re.split(r"\n  \{", at):
+            ti = re.search(r'title:\s*"((?:[^"\\]|\\.)*)"', blk)
+            im = re.search(r'image:\s*"([^"]+)"', blk)
+            sl = re.search(r'slug:\s*"([^"]+)"', blk)
+            if ti and im and sl:
+                artifacts.append((sl.group(1), im.group(1), ti.group(1)))
+
     seen, bad, missing, soft, ok = set(), [], [], [], 0
     for slug, cov, title, number, kind in entries:
         if slug in seen:
@@ -217,7 +233,36 @@ def main():
         else:
             ok += 1
 
-    print("=== OG CARD vs COVER SVG ===\n")
+    for slug, image, title in artifacts:
+        if slug in seen:
+            continue
+        seen.add(slug)
+        # Not every artifact is an SVG: at least one is a standalone .html, and
+        # the .svg -> -og.png swap silently left that path pointing at the HTML,
+        # which convert then tried to rasterise. Only vector artifacts are
+        # comparable this way.
+        if not image.endswith(".svg"):
+            continue
+        svg = repo / "public" / image.lstrip("/")
+        png = svg.with_name(svg.name.replace(".svg", "-og.png"))
+        if not svg.exists():
+            continue
+        if not png.exists():
+            missing.append("artifact:" + slug)
+            continue
+        card = ocr(png)
+        if contains(card, title):
+            ok += 1
+        else:
+            painted = [t for t in svg_lines(svg) if len(t.split()) >= 2]
+            if any(contains(card, t) for t in painted):
+                soft.append("artifact:%s: registry title not in card, but a "
+                            "painted line is" % slug)
+                ok += 1
+            else:
+                bad.append(("artifact:" + slug, ["title not found in card"]))
+
+    print("=== OG CARD vs COVER / ARTIFACT SVG ===\n")
     for slug, issues in bad:
         print("  MISMATCH  %s" % slug)
         for i in issues:
