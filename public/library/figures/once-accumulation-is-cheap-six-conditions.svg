@@ -1,0 +1,40 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Six conditions across three dimensions</title>
+<desc>A three-column diagram. Each column is one dimension for reading an artifact, with two conditions stacked beneath it. Use: Active, consulted or executed now; Dormant, kept for reuse but not running. Transformation: Embedded, the rule still runs from another surface; Absorbed, the logic moved into practice and the scaffold is no longer needed. Retirement condition: Deprecated, superseded and kept for the record; Orphaned, still exists and nobody can say why. Orphaned is marked in teal as the failure state to catch.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<text x="600" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Six conditions across three dimensions</text>
+
+<g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+<text x="50" y="122" font-size="21" font-weight="600" letter-spacing="2" fill="#94A3B8">USE</text>
+<text x="426" y="122" font-size="21" font-weight="600" letter-spacing="2" fill="#94A3B8">TRANSFORMATION</text>
+<text x="802" y="122" font-size="21" font-weight="600" letter-spacing="2" fill="#94A3B8">RETIREMENT CONDITION</text>
+
+<!-- Use -->
+<rect x="50" y="145" width="348" height="180" fill="none" stroke="#0F2A4A" stroke-width="1.4" rx="3"/>
+<text x="78" y="193" font-size="26" font-weight="600" fill="#0F2A4A">Active</text>
+<text x="78" y="238" font-size="21" fill="#475569"><tspan x="78" dy="0">Consulted or</tspan><tspan x="78" dy="28">executed now.</tspan></text>
+
+<rect x="50" y="345" width="348" height="180" fill="none" stroke="#0F2A4A" stroke-width="1.4" rx="3"/>
+<text x="78" y="393" font-size="26" font-weight="600" fill="#0F2A4A">Dormant</text>
+<text x="78" y="438" font-size="21" fill="#475569"><tspan x="78" dy="0">Kept for reuse,</tspan><tspan x="78" dy="28">not currently running.</tspan></text>
+
+<!-- Transformation -->
+<rect x="426" y="145" width="348" height="180" fill="none" stroke="#0F2A4A" stroke-width="1.4" rx="3"/>
+<text x="454" y="193" font-size="26" font-weight="600" fill="#0F2A4A">Embedded</text>
+<text x="454" y="238" font-size="21" fill="#475569"><tspan x="454" dy="0">The rule still runs,</tspan><tspan x="454" dy="28">from another surface.</tspan></text>
+
+<rect x="426" y="345" width="348" height="180" fill="none" stroke="#0F2A4A" stroke-width="1.4" rx="3"/>
+<text x="454" y="393" font-size="26" font-weight="600" fill="#0F2A4A">Absorbed</text>
+<text x="454" y="438" font-size="21" fill="#475569"><tspan x="454" dy="0">Logic moved into practice.</tspan><tspan x="454" dy="28">Scaffold no longer needed.</tspan></text>
+
+<!-- Retirement condition -->
+<rect x="802" y="145" width="348" height="180" fill="none" stroke="#0F2A4A" stroke-width="1.4" rx="3"/>
+<text x="830" y="193" font-size="26" font-weight="600" fill="#0F2A4A">Deprecated</text>
+<text x="830" y="238" font-size="21" fill="#475569"><tspan x="830" dy="0">Superseded, kept</tspan><tspan x="830" dy="28">for the audit trail.</tspan></text>
+
+<rect x="802" y="345" width="348" height="180" fill="none" stroke="#0EA5E9" stroke-width="1.8" rx="3"/>
+<text x="830" y="393" font-size="26" font-weight="600" fill="#0EA5E9">Orphaned</text>
+<text x="830" y="438" font-size="21" fill="#475569"><tspan x="830" dy="0">Still exists. Nobody</tspan><tspan x="830" dy="28">can say why.</tspan></text>
+</g>
+</svg>

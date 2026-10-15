@@ -9620,13 +9620,13 @@ export const ESSAYS: Essay[] = [
       <>
         <Brief>
           <p>
-            I counted the pieces in early August. About 155 of them, across ten layers: voice maps and editorial standards, framework templates, interaction protocols, ops trackers, library maps, scheduled tasks, pinned artifacts. The first question was not whether 155 was too many, but how many were still carrying a decision and how many were fossils I had never retired.
+            In early August I counted the pieces of my AI operating layer: about 155, across ten layers running from voice maps to the content corpus. The first question was not whether 155 was too many, but how many were still carrying a decision and how many were fossils I had never retired.
           </p>
           <p>
             AI made accumulation cheap, and judgment about the accumulation became the scarce thing. An operating layer that grows without a way to inspect itself drifts the way a platform drifts, one reasonable decision at a time.
           </p>
           <p>
-            What makes the accumulation engineerable is measurement design and a decision layer beneath it. The unit that matters is the decision, not the artifact holding it. Six conditions &mdash; active, dormant, embedded, absorbed, deprecated, orphaned &mdash; separate the pieces still doing work from the ones occupying the count.
+            What makes the accumulation engineerable is measurement design, tied to a decision layer. The unit that matters is the decision, not the artifact holding it. Six conditions &mdash; active, dormant, embedded, absorbed, deprecated, orphaned &mdash; separate the pieces still doing work from the ones occupying the count.
           </p>
         </Brief>
         <P>
@@ -9684,7 +9684,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>The inventory, and what each layer preserves</H2>
         <P>
-          The pinned <I>AB Infrastructure Architecture</I> artifact is the visual of what this section describes, rendered as an eleven-layer diagram. The table below is the version that fits in prose.
+          The August count, by layer:
         </P>
         <EssayTable
           headers={["Layer", "Items", "Carrying weight"]}
@@ -9791,6 +9791,11 @@ export const ESSAYS: Essay[] = [
         <P>
           <B>Orphaned.</B> Still exists but nobody, including me, knows why. This is the failure state to catch, and every audit turns some of these up.
         </P>
+        <Figure
+          src="/library/figures/once-accumulation-is-cheap-six-conditions.svg"
+          alt="Six conditions across three dimensions: use (active, dormant), transformation (embedded, absorbed), and retirement condition (deprecated, orphaned)."
+          caption="Each column is one dimension, and a single artifact can be read against more than one of them at a time. Orphaned is the failure state to catch."
+        />
         <P>
           The reason the distinctions matter is that &ldquo;fossils&rdquo; was doing too much work in my head. Not all fossils are orphans. Some are absorbed, which is to say their logic has propagated into the practice and their scaffold is no longer needed to carry it. Some are embedded, which means the rule still runs but from another surface. Others are orphans that exist because retirement takes effort. The move the language makes possible is not &ldquo;leave the absorbed alone&rdquo; &mdash; an absorbed scaffold is often safe to archive once its provenance has been captured &mdash; but &ldquo;do not mistake absorbed infrastructure for orphaned infrastructure.&rdquo; One did its job. The other never had one that anyone can name.
         </P>
