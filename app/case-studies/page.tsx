@@ -111,16 +111,16 @@ const CASE_STUDIES: CaseStudy[] = [
       signals:
         "Three reporting platforms consolidated into a governed Tableau Cloud foundation; semantic data layer built on Google Sheets around the missing BigQuery ETL.",
       intelligence:
-        "Enrollment forecasting at 99% accuracy via ARIMA; dashboards refocused from daily attendance onto chronic absenteeism and persistence.",
+        "Enrollment forecasting via ARIMA; BEDS-day enrollment (New York’s official count day) landed within 1% of target. Dashboards refocused from daily attendance onto chronic absenteeism and persistence.",
       execution:
         "Recruitment funnel that ops, enrollment, and the call center could act on through the cycle: zipcode-targeted, tiered, delivered on a reduced budget.",
     },
     alreadyThere:
       "Three reporting platforms running in parallel: Looker, Tableau Cloud, Tableau Public. Tableau Cloud licenses on the books for two years, mostly unused. Student-level academic dashboards on public infrastructure with no governance. Daily attendance reporting that duplicated what the SIS already showed. Google Sheets workflows running quietly under most decisions. HubSpot, SchoolMint, PowerSchool, NWEA MAP, Illuminate, Google Forms, MailChimp, and a call center workflow, all real, all uneven.",
     missing:
-      "A consolidated, governed reporting environment. A semantic data foundation that didn't depend on a missing BigQuery ETL layer. Dashboards refocused from daily attendance to chronic absenteeism, persistence, and school-health trends. An enrollment funnel principals and ops teams could act on through the recruitment cycle.",
+      "A consolidated, governed reporting environment. A semantic data foundation that didn’t depend on a missing BigQuery ETL layer. Dashboards refocused from daily attendance to chronic absenteeism, persistence, and school-health trends. An enrollment funnel principals and ops teams could act on through the recruitment cycle.",
     weBuilt:
-      "Authored a data maturity assessment and phased roadmap (Stage 0 Siloed → Stage 1 Developing → Stage 2 Predictive). Consolidated three platforms into Tableau Cloud, operationalizing the licenses already on the books. Migrated student-level dashboards off Tableau Public for governance. Built the semantic data foundation on Google Sheets → Tableau, working around the missing BigQuery ETL. Drove enrollment forecasting at 99% accuracy via ARIMA — correcting an inherited attrition-rate error in the Looker model. Modernized recruitment from ad-hoc tabling into a measurable acquisition funnel integrating HubSpot, SchoolMint, PowerSchool, lead scoring, zipcode-based digital marketing, MailChimp, and the call center workflow with tiered ops/enrollment-team follow-ups.",
+      "Authored a data maturity assessment and phased roadmap (Stage 0 Siloed → Stage 1 Developing → Stage 2 Predictive). Consolidated three platforms into Tableau Cloud, operationalizing the licenses already on the books. Migrated student-level dashboards off Tableau Public for governance. Built the semantic data foundation on Google Sheets → Tableau, working around the missing BigQuery ETL. Built ARIMA enrollment forecasting, correcting an inherited attrition-rate error in the Looker model. School, operations and enrollment leaders tracked against it weekly. Modernized recruitment from ad-hoc tabling into a measurable acquisition funnel integrating HubSpot, SchoolMint, PowerSchool, lead scoring, zipcode-based digital marketing, MailChimp, and the call center workflow with tiered ops/enrollment-team follow-ups.",
     stack:
       "BigQuery + Google Sheets + Tableau Cloud + Looker, consolidated from three reporting platforms running in parallel.",
     stackFlow: {
@@ -134,7 +134,7 @@ const CASE_STUDIES: CaseStudy[] = [
       "Daily-refresh dashboards on key reports (enrollment and academic), faster turnaround on ad-hoc reports, and metric banks codified for compliance reporting cycles",
       "70% lift in dashboard adoption across Principals/ADs and School/Network Ops",
       "Ad-hoc reporting from 100% to <30%",
-      "Enrollment forecasting at 99% accuracy, informing capacity, staffing, and real-estate obligation decisions across the network's facility portfolio",
+      "BEDS-day enrollment within 1% of target, informing capacity, staffing, and real-estate obligation decisions across the network’s facility portfolio",
       "Zipcode-targeted recruitment across digital marketing, promotional campaigns, and tabling events, delivered on a reduced budget",
     ],
     nextLayerVideo: {
@@ -161,7 +161,7 @@ const CASE_STUDIES: CaseStudy[] = [
         "Mitram measurement-based care workflow with Otsuka: +40% engagement across two pilot waves after reminder automation and follow-ups.",
     },
     alreadyThere:
-      "Validated psychometric instruments (PHQ-9, GAD-7, C-SSRS Adult and Child, NIDA Quick Screen, CAGE-AID, plus SIS, PAQ, Q-LES-Q, FIBSER) historically captured at 3-month visits only. A smartphone app being piloted to collect these as patient-reported every 2 to 4 weeks instead, supporting measurement-based care between visits. 837i claims feeds across multiple payers (Beacon Health, Fidelis Care NY, Health First, Partners Health Plan, United Healthcare) sitting separately. HL7/CCDA hospital encounter feeds from regional EDs, uncoordinated. Program operations data across Article 31, OnTrack NY, and Health Home. HR and financials in their own systems. Demographic and zipcode-level data the org had access to but wasn't analyzing.",
+      "Validated psychometric instruments (PHQ-9, GAD-7, C-SSRS Adult and Child, NIDA Quick Screen, CAGE-AID, plus SIS, PAQ, Q-LES-Q, FIBSER) historically captured at 3-month visits only. A smartphone app being piloted to collect these as patient-reported every 2 to 4 weeks instead, supporting measurement-based care between visits. 837i claims feeds across multiple payers (Beacon Health, Fidelis Care NY, Health First, Partners Health Plan, United Healthcare) sitting separately. HL7/CCDA hospital encounter feeds from regional EDs, uncoordinated. Program operations data across Article 31, OnTrack NY, and Health Home. HR and financials in their own systems. Demographic and zipcode-level data the org had access to but wasn’t analyzing.",
     missing:
       "A HIPAA-compliant patient-360 foundation. Real-time care coordination off ED and hospital encounter feeds. Instrument-level dashboards back in front of clinicians. A measurement-based care workflow that closed the loop after the visit. SDOH and chronic-condition risk scoring. NSDUH state-level prevalence integrated into population-health analytics.",
     weBuilt:
@@ -206,7 +206,7 @@ const CASE_STUDIES: CaseStudy[] = [
         "Sisense as platform of record after a six-vendor evaluation; location-level enrollment data feeding leasing decisions; promotional-campaign performance feeding marketing.",
     },
     alreadyThere:
-      "A legacy SQL Server environment with 300+ ad-hoc requests for reports and insights in the queue. Three analytics FTEs plus roughly 10% of 30+ business-side FTEs spending time on manual data wrangling. A 55% annual reporting completion rate. A standing 8–12-request weekly inventory. Booking data flowing through six channels (Internet, Inbound Call, Local Office, Enrollment Advisor, Service Center, Marketing) across SAT/ACT/MCAT/GRE/GMAT/LSAT product lines. Score-gain data sitting unused for cross-tier analysis. Stakeholder voices across Product, Ops, Marketing that hadn't been collected into a single proposal.",
+      "A legacy SQL Server environment with 300+ ad-hoc requests for reports and insights in the queue. Three analytics FTEs plus roughly 10% of 30+ business-side FTEs spending time on manual data wrangling. A 55% annual reporting completion rate. A standing 8–12-request weekly inventory. Booking data flowing through six channels (Internet, Inbound Call, Local Office, Enrollment Advisor, Service Center, Marketing) across SAT/ACT/MCAT/GRE/GMAT/LSAT product lines. Score-gain data sitting unused for cross-tier analysis. Stakeholder voices across Product, Ops, Marketing that hadn’t been collected into a single proposal.",
     missing:
       "A BI platform of record. Repeatable booking analytics across six product lines and six channels. Efficacy research the marketing and product teams could actually use. Cross-functional decision support across A/B testing, customer profiling, cancel/refund analysis, scheduling, and location-level enrollment.",
     weBuilt:
@@ -244,7 +244,7 @@ const CASE_STUDIES: CaseStudy[] = [
     missing:
       "A defensible set of log-data measures. A platform-design frame the product team could build against. A defensible analytical frame for comparing student outcomes between traditional and hybrid sections of the same course.",
     weBuilt:
-      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts, with enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn't built yet. On the university side: student outcomes analyzes between traditional and hybrid sections of the same course.",
+      "Designed log-data measures and contributed to the NextGen test-prep platform design. Built conceptual dashboard designs as simulated charts, with enough fidelity for product and stakeholder decisions, without waiting for the warehouse that wasn’t built yet. On the university side: student outcomes analyzes between traditional and hybrid sections of the same course.",
     stack: "Log data + SPSS + R + conceptual dashboard designs as simulated charts.",
     stackFlow: {
       sources: ["Platform log data", "Course outcome data"],
