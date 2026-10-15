@@ -1,12 +1,12 @@
 <svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Field Note No. 18: Once accumulation is cheap.</title>
-<desc>White background with a small navy line-drawing of a scaffold — a horizontal top surface resting on five vertical uprights connected by two horizontal cross-braces. Two of the uprights and their joints are teal, marking the load-bearing structural elements currently carrying the work; the rest are navy, present but not load-bearing at this moment. Title and italic subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
+<desc>White background with a small navy line-drawing of a scaffold — a horizontal top surface resting on five vertical uprights connected by two horizontal cross-braces. Two of the uprights and their joints are teal, marking the structural elements currently carrying the weight; the rest are navy, present but not carrying weight at this moment. Title and italic subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
 <rect width="1200" height="630" fill="#FFFFFF"/>
 
 <!-- Eyebrow -->
 <text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field Note  ·  No. 18</text>
 
-<!-- Motif: scaffold structure — horizontal top surface, five uprights, two cross-braces, two teal load-bearing uprights -->
+<!-- Motif: scaffold structure — horizontal top surface, five uprights, two cross-braces, two teal weight-carrying uprights -->
 <g transform="translate(600, 240)">
 
 <!-- Top surface (the practice being held up) -->
@@ -15,13 +15,13 @@
 <!-- Upright 1 (navy — dormant) -->
 <line x1="-140" y1="-60" x2="-140" y2="50" stroke="#0F2A4A" stroke-width="1.2"/>
 
-<!-- Upright 2 (teal — load-bearing) -->
+<!-- Upright 2 (teal — carrying weight) -->
 <line x1="-70" y1="-60" x2="-70" y2="50" stroke="#0EA5E9" stroke-width="1.8"/>
 
 <!-- Upright 3 (navy — dormant) -->
 <line x1="0" y1="-60" x2="0" y2="50" stroke="#0F2A4A" stroke-width="1.2"/>
 
-<!-- Upright 4 (teal — load-bearing) -->
+<!-- Upright 4 (teal — carrying weight) -->
 <line x1="70" y1="-60" x2="70" y2="50" stroke="#0EA5E9" stroke-width="1.8"/>
 
 <!-- Upright 5 (navy — dormant) -->
@@ -36,7 +36,7 @@
 <!-- Baseline -->
 <line x1="-160" y1="50" x2="160" y2="50" stroke="#0F2A4A" stroke-width="1.2" stroke-linecap="round"/>
 
-<!-- Joint dots at top of load-bearing uprights (teal, emphasized) -->
+<!-- Joint dots at top of weight-carrying uprights (teal, emphasized) -->
 <circle cx="-70" cy="-60" r="3.5" fill="#0EA5E9"/>
 <circle cx="70" cy="-60" r="3.5" fill="#0EA5E9"/>
 
@@ -46,7 +46,7 @@
 <circle cx="140" cy="-60" r="2.5" fill="#0F2A4A"/>
 
 <!-- Small label beneath the baseline -->
-<text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1" fill="#475569" text-anchor="middle">load-bearing  ·  the rest</text>
+<text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1" fill="#475569" text-anchor="middle">carrying weight  ·  the rest</text>
 
 </g>
 
