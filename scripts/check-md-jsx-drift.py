@@ -120,7 +120,15 @@ def md_units(md):
         if low in ('in brief','ab field note') or low.startswith('in brief'): continue
         if p.startswith('## '): out.append(norm(p[3:])); continue
         if p.startswith('!['): after_fig=True; continue
-        if p.startswith(('>','|','- ','* ','+ ')): continue
+        if p.startswith(('>','|')): continue        # tables render via EssayTable, not as prose units
+        # Bullet items ARE prose and the converter now emits one <P> each, so
+        # they must count on the markdown side too. Skipping them here made
+        # every piece with a bullet list report a permanent "JSX ahead."
+        if re.match(r'^\s*[-*+] ',p):
+            for item in re.split(r'(?m)^\s*[-*+] ',p):
+                it=norm(re.sub(r'\[([^\]]+)\]\([^)]+\)',r'\1',re.sub(r'[*_`#]','',item)))
+                if it: out.append(it)
+            continue
         if '\u00b7' in p and 'analytic bytes' in p.lower(): continue   # byline line
         if re.match(r'^(chaitanya ramineni|analytic bytes)\b',p,re.I): continue
         if after_fig and p.startswith('*') and p.endswith('*'):

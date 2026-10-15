@@ -56,6 +56,11 @@ def _emph(x):
 
 
 def inline(md):
+    # Backticks map to the registry's <C> code primitive (21 existing uses).
+    # Left literal they reach the page as backtick characters, and the drift
+    # check reports the paragraph as edited forever, because md_units strips
+    # backticks while the JSX side kept them.
+    md = re.sub(r'`([^`]+)`', r'<C>\1</C>', md)
     slots = []
 
     def link(m):
@@ -117,6 +122,32 @@ def convert(md_path, brief_jsx, tail_jsx):
             out.append('\n        <Figure\n          src="%s"\n          alt="%s"\n          caption="%s"\n        />'
                        % (src, smart(alt), smart(cap)))
             continue
+        # TABLES. A markdown pipe table has no <P> equivalent: emitted as a
+        # paragraph it reaches the page as raw "| layer | items |" text. The
+        # registry already carries EssayTable (headers, rows) for exactly this.
+        if p.lstrip().startswith('|') and p.count('\n') >= 2:
+            lines = [l.strip() for l in p.strip().split('\n') if l.strip()]
+            cells = lambda l: [c.strip() for c in l.strip('|').split('|')]
+            headers = cells(lines[0])
+            rows = [cells(l) for l in lines[2:]]      # line 1 is the --- rule
+            fmt = lambda xs: '[' + ', '.join('"%s"' % inline(x) for x in xs) + ']'
+            out.append('\n        <EssayTable\n          headers={%s}\n          rows={[\n%s\n          ]}\n        />'
+                       % (fmt(headers),
+                          '\n'.join('            %s,' % fmt(r) for r in rows)))
+            continue
+
+        # BULLET LISTS. The library has no bullet primitive and does not want
+        # one: labelled enumerations are written as one paragraph per item with
+        # the label bolded, which is the same pattern as the Reconfigure /
+        # Re-teach / Re-map triad. Emitting the block as a single <P> ran all
+        # the items together into one run-on paragraph.
+        if len(re.findall(r'(?m)^\s*[-*+] ', p)) >= 2:
+            for item in re.split(r'(?m)^\s*[-*+] ', p):
+                item = item.strip()
+                if item:
+                    out.append('\n        <P>\n          %s\n        </P>' % inline(item))
+            continue
+
         if len(re.findall(r'(?m)^\s*\d+\.\s', p)) >= 2:
             items = [x for x in re.split(r'(?m)^\s*\d+\.\s+', p) if x.strip()]
             inner = '\n'.join('          <NumItem n={%d}>\n            %s\n          </NumItem>'

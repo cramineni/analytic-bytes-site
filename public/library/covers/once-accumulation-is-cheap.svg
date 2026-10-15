@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Field Note No. 18: Once accumulation is cheap.</title>
+<desc>White background with a small navy line-drawing of a scaffold — a horizontal top surface resting on five vertical uprights connected by two horizontal cross-braces. Two of the uprights and their joints are teal, marking the load-bearing structural elements currently carrying the work; the rest are navy, present but not load-bearing at this moment. Title and italic subtitle in sans-serif beneath, Analytic Bytes signature at the bottom.</desc>
+<rect width="1200" height="630" fill="#FFFFFF"/>
+
+<!-- Eyebrow -->
+<text x="600" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.5" fill="#0EA5E9" text-anchor="middle">Field Note  ·  No. 18</text>
+
+<!-- Motif: scaffold structure — horizontal top surface, five uprights, two cross-braces, two teal load-bearing uprights -->
+<g transform="translate(600, 240)">
+
+<!-- Top surface (the practice being held up) -->
+<line x1="-160" y1="-60" x2="160" y2="-60" stroke="#0F2A4A" stroke-width="1.5" stroke-linecap="round"/>
+
+<!-- Upright 1 (navy — dormant) -->
+<line x1="-140" y1="-60" x2="-140" y2="50" stroke="#0F2A4A" stroke-width="1.2"/>
+
+<!-- Upright 2 (teal — load-bearing) -->
+<line x1="-70" y1="-60" x2="-70" y2="50" stroke="#0EA5E9" stroke-width="1.8"/>
+
+<!-- Upright 3 (navy — dormant) -->
+<line x1="0" y1="-60" x2="0" y2="50" stroke="#0F2A4A" stroke-width="1.2"/>
+
+<!-- Upright 4 (teal — load-bearing) -->
+<line x1="70" y1="-60" x2="70" y2="50" stroke="#0EA5E9" stroke-width="1.8"/>
+
+<!-- Upright 5 (navy — dormant) -->
+<line x1="140" y1="-60" x2="140" y2="50" stroke="#0F2A4A" stroke-width="1.2"/>
+
+<!-- Cross-brace 1 (upper) -->
+<line x1="-160" y1="-20" x2="160" y2="-20" stroke="#0F2A4A" stroke-width="1" opacity="0.55"/>
+
+<!-- Cross-brace 2 (lower) -->
+<line x1="-160" y1="20" x2="160" y2="20" stroke="#0F2A4A" stroke-width="1" opacity="0.55"/>
+
+<!-- Baseline -->
+<line x1="-160" y1="50" x2="160" y2="50" stroke="#0F2A4A" stroke-width="1.2" stroke-linecap="round"/>
+
+<!-- Joint dots at top of load-bearing uprights (teal, emphasized) -->
+<circle cx="-70" cy="-60" r="3.5" fill="#0EA5E9"/>
+<circle cx="70" cy="-60" r="3.5" fill="#0EA5E9"/>
+
+<!-- Joint dots at top of dormant uprights (navy, small) -->
+<circle cx="-140" cy="-60" r="2.5" fill="#0F2A4A"/>
+<circle cx="0" cy="-60" r="2.5" fill="#0F2A4A"/>
+<circle cx="140" cy="-60" r="2.5" fill="#0F2A4A"/>
+
+<!-- Small label beneath the baseline -->
+<text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11" letter-spacing="1" fill="#475569" text-anchor="middle">load-bearing  ·  the rest</text>
+
+</g>
+
+<!-- Title -->
+<text x="600" y="450" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="500" letter-spacing="-0.5" fill="#0F2A4A" text-anchor="middle">Once accumulation is cheap.</text>
+
+<!-- Subtitle -->
+<text x="600" y="495" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-style="italic" fill="#475569" text-anchor="middle">Field notes on the operating layer of an AI-native practice.</text>
+
+<!-- Short divider -->
+<line x1="570" y1="555" x2="630" y2="555" stroke="#94A3B8" stroke-width="1"/>
+
+<!-- Footer -->
+<text x="600" y="585" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13" letter-spacing="3" fill="#94A3B8" text-anchor="middle">Analytic Bytes  ·  2026</text>
+
+</svg>
