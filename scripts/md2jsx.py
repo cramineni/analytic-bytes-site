@@ -130,7 +130,18 @@ def convert(md_path, brief_jsx, tail_jsx):
             cells = lambda l: [c.strip() for c in l.strip('|').split('|')]
             headers = cells(lines[0])
             rows = [cells(l) for l in lines[2:]]      # line 1 is the --- rule
-            fmt = lambda xs: '[' + ', '.join('"%s"' % inline(x) for x in xs) + ']'
+            # CELLS ARE PLAIN STRINGS, NOT JSX.
+            # EssayTable renders headers/rows as React text, so anything inline()
+            # produces arrives on the page literally: "**Total**" came through as
+            # "<B>Total</B>" and "Voice & Editorial" as "Voice &amp; Editorial".
+            # Cells take the same treatment as alt and caption -- curled quotes,
+            # raw Unicode, markdown emphasis stripped rather than converted.
+            def cell(x):
+                x = re.sub(r'\*\*(.+?)\*\*', r'\1', x)      # bold
+                x = re.sub(r'(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)', r'\1', x)   # italic
+                x = re.sub(r'`([^`]+)`', r'\1', x)          # code
+                return smart(x).replace('"', '\\"')
+            fmt = lambda xs: '[' + ', '.join('"%s"' % cell(x) for x in xs) + ']'
             out.append('\n        <EssayTable\n          headers={%s}\n          rows={[\n%s\n          ]}\n        />'
                        % (fmt(headers),
                           '\n'.join('            %s,' % fmt(r) for r in rows)))

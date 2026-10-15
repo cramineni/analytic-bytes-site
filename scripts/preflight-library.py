@@ -299,6 +299,17 @@ def check_piece(e, repo):
             warn("flagged", "%s x%d (intensifier / spatial metaphor -- author's call)"
                  % (word, n))
 
+    # --- table cells --------------------------------------------------------
+    # EssayTable renders its headers and rows as React text, so a tag or an
+    # HTML entity in a cell reaches the page literally. The drift check cannot
+    # catch this because it skips tables entirely, which is how "<B>Total</B>"
+    # and "Voice &amp; Editorial" shipped visible in a published table.
+    for tbl in re.findall(r"<EssayTable(.*?)/>", w, re.S):
+        if re.search(r"<[A-Za-z/]", tbl):
+            err("table", "JSX tag inside a table cell; cells are plain text")
+        if re.search(r"&[a-zA-Z]+;|&#\d+;", tbl):
+            err("table", "HTML entity inside a table cell; cells take raw Unicode")
+
     # --- cover + OG ---------------------------------------------------------
     cover = field(w, "cover")
     if cover:

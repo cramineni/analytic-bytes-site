@@ -9689,7 +9689,7 @@ export const ESSAYS: Essay[] = [
         <EssayTable
           headers={["Layer", "Items", "Carrying weight"]}
           rows={[
-            ["Voice &amp; Editorial", "5", "3"],
+            ["Voice & Editorial", "5", "3"],
             ["Framework Templates", "4", "0"],
             ["Interaction Protocols", "3", "3"],
             ["Ops Tracking", "5", "3"],
@@ -9699,7 +9699,7 @@ export const ESSAYS: Essay[] = [
             ["Website + Tech Dev", "9", "6"],
             ["Audio / Podcast", "9", "9"],
             ["Content Kits + Corpus", "~88", "~42"],
-            ["<B>Total</B>", "<B>~155</B>", "<B>~76</B>"],
+            ["Total", "~155", "~76"],
           ]}
         />
         <P>
