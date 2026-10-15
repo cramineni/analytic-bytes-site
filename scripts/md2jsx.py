@@ -129,7 +129,12 @@ def convert(md_path, brief_jsx, tail_jsx):
             lines = [l.strip() for l in p.strip().split('\n') if l.strip()]
             cells = lambda l: [c.strip() for c in l.strip('|').split('|')]
             headers = cells(lines[0])
-            rows = [cells(l) for l in lines[2:]]      # line 1 is the --- rule
+            # Line 1 is the separator and carries alignment: "---:" means the
+            # column is right-aligned. Dropping it left numeric columns
+            # left-aligned inside full-width cells.
+            align = ['right' if c.strip().endswith(':') else 'left'
+                     for c in cells(lines[1])]
+            rows = [cells(l) for l in lines[2:]]
             # CELLS ARE PLAIN STRINGS, NOT JSX.
             # EssayTable renders headers/rows as React text, so anything inline()
             # produces arrives on the page literally: "**Total**" came through as
@@ -142,8 +147,9 @@ def convert(md_path, brief_jsx, tail_jsx):
                 x = re.sub(r'`([^`]+)`', r'\1', x)          # code
                 return smart(x).replace('"', '\\"')
             fmt = lambda xs: '[' + ', '.join('"%s"' % cell(x) for x in xs) + ']'
-            out.append('\n        <EssayTable\n          headers={%s}\n          rows={[\n%s\n          ]}\n        />'
-                       % (fmt(headers),
+            extra = ('\n          align={%s}' % fmt(align)) if 'right' in align else ''
+            out.append('\n        <EssayTable\n          headers={%s}%s\n          rows={[\n%s\n          ]}\n        />'
+                       % (fmt(headers), extra,
                           '\n'.join('            %s,' % fmt(r) for r in rows)))
             continue
 

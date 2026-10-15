@@ -111,23 +111,44 @@ function NumItem({ n, children }: { n: number; children: ReactNode }) {
   );
 }
 
-/** Comparison table. */
+/** Comparison table.
+ *
+ * `align` is optional and per-column. Without it every column is left-aligned
+ * and `w-full` shares the width equally, which is right for a comparison of
+ * prose cells but wrong for numbers: a three-column count table stretched its
+ * two numeric columns across half the page, leaving the figures floating at
+ * the far left of very wide cells with no relationship to their headers.
+ *
+ * A column marked "right" is right-aligned AND shrinks to its content
+ * (`w-[1%] whitespace-nowrap`), so the first column absorbs the leftover width
+ * and the numbers sit together in a readable block. Markdown already carries
+ * this intent in its separator row (`|---|---:|---:|`); md2jsx now passes it
+ * through instead of discarding it.
+ */
 function EssayTable({
   headers,
   rows,
+  align,
 }: {
   headers: string[];
   rows: string[][];
+  align?: ("left" | "right")[];
 }) {
+  const colClass = (i: number) =>
+    align?.[i] === "right" ? "text-right w-[1%] whitespace-nowrap" : "text-left";
   return (
     <div className="my-9 overflow-x-auto">
-      <table className="w-full border-collapse text-left">
+      <table className="w-full border-collapse">
         <thead>
           <tr>
             {headers.map((h, i) => (
               <th
                 key={i}
-                className="border-b-2 border-line-2 py-2.5 pr-4 align-bottom font-mono text-[10.5px] text-accent tracking-[0.08em] uppercase"
+                className={`border-b-2 border-line-2 py-2.5 ${
+                  align?.[i] === "right" ? "pl-6" : "pr-4"
+                } align-bottom font-mono text-[10.5px] text-accent tracking-[0.08em] uppercase ${colClass(
+                  i
+                )}`}
               >
                 {h}
               </th>
@@ -140,9 +161,11 @@ function EssayTable({
               {row.map((cell, ci) => (
                 <td
                   key={ci}
-                  className={`border-b border-line py-2.5 pr-4 text-[13px] sm:text-[14px] leading-[1.5] ${
+                  className={`border-b border-line py-2.5 ${
+                    align?.[ci] === "right" ? "pl-6" : "pr-4"
+                  } text-[13px] sm:text-[14px] leading-[1.5] ${
                     ci === 0 ? "font-semibold text-ink" : "text-ink-2"
-                  }`}
+                  } ${colClass(ci)}`}
                 >
                   {cell}
                 </td>
@@ -9688,6 +9711,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <EssayTable
           headers={["Layer", "Items", "Carrying weight"]}
+          align={["left", "right", "right"]}
           rows={[
             ["Voice & Editorial", "5", "3"],
             ["Framework Templates", "4", "0"],
