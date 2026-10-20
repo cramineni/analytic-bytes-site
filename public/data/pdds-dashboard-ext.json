@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T20:36:36",
+  "generated_at": "2026-10-20T19:47:17",
   "track": "extension",
   "round": "anchor-only",
   "note": "Extension track: messy survey and heterogeneous administrative panels. FIELD_NOTE_gates_for_messy_data.md documents how the governance gates were revised to admit these panels without weakening what the gates require. Every panel declares a data_class (survey | administrative) and a lever_type (point | continuous), which together decide which gates apply to it.",
@@ -149,7 +149,7 @@
         "lever": "Title V Maternal and Child Health Services Block Grant (state child-health plans)",
         "status_badge": "ongoing",
         "movement_note": "Across the 2022-2023 National Survey of Children's Health, the share of children ages 6 to 17 who meet all three flourishing items nationally is 60.4 percent (confidence interval 59.6 to 61.1). This is a caregiver-reported survey estimate: a parent or guardian answers on the child's behalf, so the number reflects how caregivers read and report these items, not a direct observation of the child. The states shown here are a disclosed illustration, not a leaderboard: they show how to read a caregiver-reported estimate against its confidence interval, not who flourishes most. Illinois at 66.4 percent (62.9 to 69.7) sits clear of the national figure and Montana at 53.9 percent (49.6 to 58.1) sits below it, while New Jersey at 64.5 percent, Texas at 61.9 percent, and Michigan at 58.1 percent all carry confidence intervals that overlap the national interval. As a statistical matter those three are not distinguishable from the nation, which is why the intervals are shown rather than the bare percentages, and no state here should be read as ranked against another. Two comparability cautions bound any trend reading: the NSCH was redesigned in 2016, so estimates are not comparable to earlier survey years, and item wording and administration have drifted enough since then that any across-year comparison needs a documented crosswalk rather than a straight subtraction. Coverage is also partial: household response rates run near 39.1 percent and 35.8 percent in recent waves, so nonresponse, not only sampling, shapes who is represented. On the lever: flourishing is measured by the NSCH but is not itself a Title V National Performance Measure, so the Title V Block Grant is the adjacent standing program, not a control set to it; it is a continuous lever with no enactment date, and movement should read as a trend, not a before/after snapshot. Decision: present the national estimate alongside a disclosed illustrative set of states, always show the confidence intervals, describe overlapping states as not distinguishable, and make no ranking or program-attribution claim. A community dashboard for thriving cannot be built from the best national flourishing instrument in the country, because that instrument reports at state grain and communities decide at sub-county grain.",
-        "source_url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-mch-services-block-grant",
+        "source_url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-services-block-grant-program",
         "data_class": "survey",
         "lever_type": "continuous"
       },
@@ -164,22 +164,76 @@
         "2023": [
           {
             "group": "Persistent sadness or hopelessness",
-            "value": 39.7,
+            "value": 40.0,
+            "ci": [
+              38.0,
+              42.0
+            ],
             "provenance": "published-estimate"
           },
           {
             "group": "Poor mental health",
-            "value": 28.5,
+            "value": 29.0,
+            "ci": [
+              27.0,
+              30.0
+            ],
             "provenance": "published-estimate"
           },
           {
             "group": "Seriously considered suicide",
-            "value": 20.4,
+            "value": 20.0,
+            "ci": [
+              19.0,
+              22.0
+            ],
             "provenance": "published-estimate"
           },
           {
             "group": "Attempted suicide",
-            "value": 9.5,
+            "value": 9.0,
+            "ci": [
+              8.0,
+              11.0
+            ],
+            "provenance": "published-estimate"
+          }
+        ],
+        "2025": [
+          {
+            "group": "Persistent sadness or hopelessness",
+            "value": 33.0,
+            "ci": [
+              31.0,
+              35.0
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Poor mental health",
+            "value": 23.0,
+            "ci": [
+              21.0,
+              25.0
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Seriously considered suicide",
+            "value": 14.0,
+            "ci": [
+              13.0,
+              16.0
+            ],
+            "provenance": "published-estimate"
+          },
+          {
+            "group": "Attempted suicide",
+            "value": 6.0,
+            "ci": [
+              6.0,
+              7.0
+            ],
             "provenance": "published-estimate"
           }
         ]
@@ -188,7 +242,7 @@
         "panel_id": "yrbss",
         "lever": "CDC Division of Adolescent and School Health (DASH) What Works in Schools program",
         "status_badge": "ongoing",
-        "movement_note": "Among U.S. high school students in 2023, 39.7 percent reported persistent feelings of sadness or hopelessness, 28.5 percent reported poor mental health, 20.4 percent had seriously considered attempting suicide, and 9.5 percent had attempted suicide. These are self-report figures from the Youth Risk Behavior Survey: students answer for themselves, so each number reflects what students report, not observed behavior. The same survey also fields protective factors, first added in 2021, among them school connectedness and parental monitoring. Within 2023, students who reported high school connectedness had markedly lower prevalence of every mental health and suicide-risk indicator, and students who reported high parental monitoring had lower prevalence of all of them except poor mental health. That is a cross-sectional association within a single year, not evidence that either factor causes the other. On direction over time, the harm indicator did ease slightly: persistent sadness or hopelessness moved from 42.3 percent in 2021 to 39.7 percent in 2023, a two-cycle comparison CDC itself publishes. The protective side cannot be read the same way. School connectedness was 61.5 percent in its first cycle in 2021, but CDC does not publish a 2021-to-2023 national trend for it, and the 2023 survey changed administration mode from paper to tablet, so a connectedness before-and-after would be a comparison the source declines to make. Coverage is thin as well: the 2023 national survey rests on 20,103 usable questionnaires at an overall response rate of 35.4 percent, the lowest in the survey's history, and the sampling frame is enrolled high-school students, so youth who have disconnected from school sit structurally outside it. The standing federal lever adjacent to these indicators, CDC's What Works in Schools program, is a continuous one with no single enactment date, so any movement reads as a trend across cycles, not a before-and-after. Decision: a school mental-health program needs to know whether protection is rising or falling, and this instrument cannot answer that at the national grain across the mode change; present the 2023 harm cross-section and the within-year protective association, name the enrolled-student frame and the response-rate floor, and make no protective-trend or causal claim. The number that would tell a district whether its own students are becoming more connected is exactly the number this national survey, across a mode break it will not trend, cannot give.",
+        "movement_note": "Among U.S. high school students in 2025, 33 percent reported persistent feelings of sadness or hopelessness, 23 percent reported poor mental health, 14 percent had seriously considered attempting suicide, and 6 percent had attempted suicide. In 2023 the four figures were 40, 29, 20 and 9 percent, and CDC reports each 2023-to-2025 change as a statistically significant decrease. Both cycles were administered on tablets (2025 also offered a web version to absent or late students), so the comparison does not cross a change in survey mode. The figures are shown at the whole-percent grain of CDC's 2023-to-2025 comparison table. These are student self-report figures, not observed behavior. Over 2015 to 2025, CDC's trend analysis finds that persistent sadness or hopelessness worsened, and finds no linear trend for seriously considering or attempting suicide. Sadness had already fallen from 42 percent in 2021 to 40 percent in 2023. It was the only one of these indicators CDC reported as changing across those two cycles, which spanned its 2023 change from paper booklets to tablets. The 2025 questionnaire still asks about school connectedness and parental monitoring. CDC's 2025 Youth Health in Focus report and tables and its 2025 MMWR supplement publish no estimate or 2023-to-2025 comparison for either. CDC's 2023 analysis found that students who reported high school connectedness had lower risk on every mental health and suicide-risk indicator. That is an association within one year, not evidence that connectedness causes the difference. The 2025 survey rests on 10,710 usable questionnaires at an overall response rate of 30.6 percent, the lowest in the survey's history. Its sampling frame is enrolled high-school students, so youth who have disconnected from school sit outside it. The adjacent federal lever, CDC's What Works in Schools program, is continuous with no single enactment date, so movement reads as a trend across cycles, not a before-and-after attributable to the program. Decision: a school mental-health program can read the 2023-to-2025 decline as a change CDC itself tested, set against a decade in which sadness rose overall, but it cannot yet read whether protection is rising or falling.",
         "source_url": "https://www.cdc.gov/healthy-youth/what-works-in-schools/program-impact.html",
         "data_class": "survey",
         "lever_type": "continuous"
@@ -242,9 +296,17 @@
       "source_id": "titlev_mchb_block_grant",
       "title": "Title V Maternal and Child Health Services Block Grant Program",
       "publisher": "Health Resources & Services Administration, Maternal & Child Health Bureau",
-      "url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-mch-services-block-grant",
+      "url": "https://mchb.hrsa.gov/programs-impact/title-v-maternal-child-health-services-block-grant-program",
       "table_ref": "National Performance Measures (NPM) framework and state Title V plans",
       "release_date": "2025-01-01"
+    },
+    {
+      "source_id": "yhif_2025_tn",
+      "title": "Technical Notes and Data Tables for Youth Health in Focus: Findings From the National Youth Risk Behavior Survey, 2015-2025",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/yrbs/yhif/files/2025/YHIF-Technical-Notes-Data-Tables-508.pdf",
+      "table_ref": "Table 55: 2023 and 2025 prevalence with 95% CI and pairwise t tests, mental health and suicide risks (all four decreased, Improved); Table 56: 2015-2025 linear trend (only linear trends tested). Release date is the Youth Health in Focus landing page first-published date; the PDF is a living file (server last-modified 2026-10-07)",
+      "release_date": "2026-09-21"
     },
     {
       "source_id": "yrbs_2021_su7201a2",
@@ -267,8 +329,32 @@
       "title": "Mental Health and Suicide Risk Among High School Students and Protective Factors - Youth Risk Behavior Survey, United States, 2023",
       "publisher": "Centers for Disease Control and Prevention (MMWR Supplement 73(4))",
       "url": "https://www.cdc.gov/mmwr/volumes/73/su/su7304a9.htm",
-      "table_ref": "National prevalences (abstract); Table 1 item definitions; Figure adjusted prevalence ratios for protective factors",
+      "table_ref": "Within-2023 cross-sectional association of school connectedness and parental monitoring with mental health and suicide-risk indicators (adjusted prevalence ratios)",
       "release_date": "2024-10-10"
+    },
+    {
+      "source_id": "yrbs_2025_dug",
+      "title": "2025 YRBS Data User's Guide",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/yrbs/files/2025/2025-YRBS-Data-Users-Guide-Final.pdf",
+      "table_ref": "2025 national questionnaire items Q103 (feel close to people at school) and Q104 (parental monitoring); response rates and usable N",
+      "release_date": "2026-09-21"
+    },
+    {
+      "source_id": "yrbs_2025_su7501a1",
+      "title": "Overview and Methods for the Youth Risk Behavior Surveillance System - United States, 2025",
+      "publisher": "Centers for Disease Control and Prevention (MMWR Supplement 75(1))",
+      "url": "https://www.cdc.gov/mmwr/volumes/75/su/su7501a1.htm",
+      "table_ref": "Response rates: overall 30.6% (lowest in survey history), school 47.0%, student 65.2%; 10,710 usable questionnaires; tablet administration for the second consecutive cycle",
+      "release_date": "2026-10-15"
+    },
+    {
+      "source_id": "yrbs_dstr_2013_2023",
+      "title": "Youth Risk Behavior Survey Data Summary & Trends Report: 2013-2023",
+      "publisher": "Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "table_ref": "Progress at a Glance, Mental Health: persistent sadness or hopelessness 42% (2021) to 40% (2023), 2-year decrease; all other mental health indicators no change",
+      "release_date": "2024-08-06"
     }
   ]
 }
