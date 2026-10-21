@@ -18,7 +18,12 @@ export default function Footer() {
         <div className="flex flex-wrap items-end justify-between gap-8">
           <div>
             <div className="flex items-center gap-3">
-              <Logo height={48} gradientId="abG-foot" />
+              {/* 28, not 48. The crop removed 77% padding that had been
+                  counted toward the height, so the same number drew a mark
+                  2.7x taller -- 4.4x the 11px wordmark beside it, where it
+                  had been 1.6x. At 28 the pair reads as a lockup and the
+                  counters in the A and B still hold. */}
+              <Logo height={28} gradientId="abG-foot" />
               <Wordmark height={11} />
             </div>
             <div className="text-accent text-sm font-semibold mt-3.5 tracking-[-0.005em]">
