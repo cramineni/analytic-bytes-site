@@ -7,7 +7,7 @@ import { panelMeta } from "@/lib/pdds-format";
 // extension-track panels — the comparison-withheld callout that names
 // what governance decision was made to keep this panel honest.
 export default function DecisionPanel({ panel }: { panel: Panel }) {
-  const meta = panelMeta(panel.panel_id);
+  const meta = panelMeta(panel.panel_id, Object.keys(panel.series ?? {}));
   const cw = panel.comparison_withheld;
 
   return (

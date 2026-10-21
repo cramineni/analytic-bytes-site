@@ -90,7 +90,12 @@ const STYLES: Record<string, PanelStyle> = {
   yrbss: {
     base: "#0F2A4A",
     accent: "#0EA5E9",
-    seriesColors: ["#0F2A4A"],
+    // Two periods since the 2025 release. seriesColors carried one entry
+    // while the panel was single-period, so the second bar fell through to
+    // `base` -- the same navy -- and the two years were indistinguishable
+    // with a legend that claimed otherwise. Muted-grey baseline + navy
+    // current, matching every other two-period panel here.
+    seriesColors: ["#B4C0CC", "#0F2A4A"],
     highlight: [],
   },
 };
@@ -147,12 +152,32 @@ export const PANEL_META: Record<string, { title: string; subtitle: string }> = {
   yrbss: {
     title: "Adolescent mental-health indicators",
     subtitle:
-      "Share of U.S. high-school students reporting each condition, 2023 (Youth Risk Behavior Surveillance System, CDC)",
+      "Share of U.S. high-school students reporting each condition, {years} (Youth Risk Behavior Surveillance System, CDC)",
   },
 };
 
-export function panelMeta(id: string) {
-  return PANEL_META[id] ?? { title: id, subtitle: "" };
+/** Render a period list the way the subtitles read: "2023", "2023 vs 2025",
+ *  "2019-2024" for three or more. */
+export function formatPeriods(periods: string[]): string {
+  const p = [...periods].sort();
+  if (p.length === 0) return "";
+  if (p.length === 1) return p[0];
+  if (p.length === 2) return `${p[0]} vs ${p[1]}`;
+  return `${p[0]}\u2013${p[p.length - 1]}`;
+}
+
+/** Panel title and subtitle.
+ *
+ * Subtitles may carry a {years} token, which is filled from the panel's own
+ * series. A hard-coded year goes stale the moment the panel gains a cycle,
+ * silently and in the one place a reader checks what they are looking at:
+ * the YRBS subtitle still read "2023" after the 2025 data landed beside it.
+ * Passing `periods` keeps the label and the bars sourced from one place.
+ */
+export function panelMeta(id: string, periods?: string[]) {
+  const meta = PANEL_META[id] ?? { title: id, subtitle: "" };
+  if (!periods || !meta.subtitle.includes("{years}")) return meta;
+  return { ...meta, subtitle: meta.subtitle.replace("{years}", formatPeriods(periods)) };
 }
 
 // Compact axis label.
