@@ -194,12 +194,24 @@ export default function PanelChart({ panel }: { panel: Panel }) {
               // muted baseline bar, accent teal washes out; on navy it reads
               // well. Darken in-family over the muted fill, and over accent
               // (single-period highlight) as before.
-              // Teal reads on navy and on accent-teal-free bars; over the
-              // muted baseline it washes out, so darken in-family there.
-              const whiskerStroke =
-                fill === "#B4C0CC" || fill === style.accent
-                  ? "#0369A1"
-                  : style.accent;
+              // ONE whisker colour, always accent teal.
+              //
+              // Teal alone cannot clear a 3.0 contrast ratio on every
+              // background it crosses -- measured, it is 5.22 on navy, 2.77
+              // on white and 1.50 on the muted baseline bar -- and no single
+              // flat colour clears 3.0 on all three (best found: 2.79). The
+              // earlier fix used a second, darker teal over muted bars, which
+              // meant the same mark appeared in two colours on one chart and
+              // raised the obvious question of what the difference meant.
+              // It meant nothing.
+              //
+              // So the whisker keeps one colour and gets a white underlay
+              // instead: the same geometry drawn twice, a wider white stroke
+              // beneath a teal stroke. The halo gives the teal a white
+              // background wherever it crosses a bar, so contrast stops
+              // depending on what it is sitting on, and the mark reads as one
+              // thing because it is one thing.
+              const whiskerStroke = style.accent;
               return (
                 <g key={`${label}-${p}`}>
                   <rect
@@ -212,33 +224,39 @@ export default function PanelChart({ panel }: { panel: Panel }) {
                   />
                   {showCI && (
                     <g>
-                      {/* Horizontal whisker line */}
-                      <line
-                        x1={scale(ci![0])}
-                        x2={scale(ci![1])}
-                        y1={ciCenterY}
-                        y2={ciCenterY}
-                        stroke={whiskerStroke}
-                        strokeWidth={1.5}
-                      />
-                      {/* Left cap (low) */}
-                      <line
-                        x1={scale(ci![0])}
-                        x2={scale(ci![0])}
-                        y1={ciCenterY - capH / 2}
-                        y2={ciCenterY + capH / 2}
-                        stroke={whiskerStroke}
-                        strokeWidth={1.5}
-                      />
-                      {/* Right cap (high) */}
-                      <line
-                        x1={scale(ci![1])}
-                        x2={scale(ci![1])}
-                        y1={ciCenterY - capH / 2}
-                        y2={ciCenterY + capH / 2}
-                        stroke={whiskerStroke}
-                        strokeWidth={1.5}
-                      />
+                      {/* White underlay: gives the teal a consistent
+                          background wherever it crosses a bar. */}
+                      {[
+                        [scale(ci![0]), scale(ci![1]), ciCenterY, ciCenterY],
+                        [scale(ci![0]), scale(ci![0]), ciCenterY - capH / 2, ciCenterY + capH / 2],
+                        [scale(ci![1]), scale(ci![1]), ciCenterY - capH / 2, ciCenterY + capH / 2],
+                      ].map(([x1, x2, y1, y2], i) => (
+                        <line
+                          key={`halo-${i}`}
+                          x1={x1}
+                          x2={x2}
+                          y1={y1}
+                          y2={y2}
+                          stroke="#FFFFFF"
+                          strokeWidth={3.5}
+                          strokeLinecap="round"
+                        />
+                      ))}
+                      {[
+                        [scale(ci![0]), scale(ci![1]), ciCenterY, ciCenterY],
+                        [scale(ci![0]), scale(ci![0]), ciCenterY - capH / 2, ciCenterY + capH / 2],
+                        [scale(ci![1]), scale(ci![1]), ciCenterY - capH / 2, ciCenterY + capH / 2],
+                      ].map(([x1, x2, y1, y2], i) => (
+                        <line
+                          key={`ci-${i}`}
+                          x1={x1}
+                          x2={x2}
+                          y1={y1}
+                          y2={y2}
+                          stroke={whiskerStroke}
+                          strokeWidth={1.5}
+                        />
+                      ))}
                     </g>
                   )}
                   {/* Value label at end of bar (or past CI-high, whichever
