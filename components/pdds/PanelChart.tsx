@@ -173,7 +173,7 @@ export default function PanelChart({ panel }: { panel: Panel }) {
               const fill = multi
                 ? style.seriesColors[pi] ?? style.base
                 : style.highlight.includes(label)
-                  ? style.accent
+                  ? style.highlightFill ?? style.accent
                   : style.base;
               // CI whisker: only survey bars carry a ci tuple, only
               // present it on the single-period layout (multi-period
@@ -194,12 +194,12 @@ export default function PanelChart({ panel }: { panel: Panel }) {
               // muted baseline bar, accent teal washes out; on navy it reads
               // well. Darken in-family over the muted fill, and over accent
               // (single-period highlight) as before.
+              // Teal reads on navy and on accent-teal-free bars; over the
+              // muted baseline it washes out, so darken in-family there.
               const whiskerStroke =
-                fill === style.accent
+                fill === "#B4C0CC" || fill === style.accent
                   ? "#0369A1"
-                  : fill === "#B4C0CC"
-                    ? "#0369A1"
-                    : style.accent;
+                  : style.accent;
               return (
                 <g key={`${label}-${p}`}>
                   <rect

@@ -16,7 +16,13 @@ export interface PanelStyle {
   base: string;
   accent: string;
   seriesColors: string[]; // by period order; used when a panel has >1 period
-  highlight: string[]; // group names drawn in accent (single-period panels)
+  highlight: string[]; // group names drawn in highlightFill (single-period panels)
+  // Fill for highlighted groups. Defaults to `accent` where unset, which is
+  // how this started: the highlight and the CI whisker were both accent teal,
+  // so one colour carried two meanings on the same chart -- "this is the
+  // reference group" and "this is uncertainty". Setting it to navy leaves
+  // teal meaning only the second.
+  highlightFill?: string;
 }
 
 const STYLES: Record<string, PanelStyle> = {
@@ -83,6 +89,8 @@ const STYLES: Record<string, PanelStyle> = {
     accent: "#0EA5E9",
     seriesColors: ["#B4C0CC"],
     highlight: ["Nationwide"],
+    // Navy anchor, muted states, teal reserved for the whisker.
+    highlightFill: "#0F2A4A",
   },
   // Extension track — YRBSS mental-health indicators (Panel 09). Single-period,
   // survey data across four adolescent mental-health items. Same navy palette;
