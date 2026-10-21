@@ -103,7 +103,13 @@ export function Wordmark({ className = "", height = 13 }: { className?: string; 
 export function Brand() {
   return (
     <div className="flex items-center gap-3">
-      <Logo height={64} />
+      {/* 36, not 64. Same crop consequence as the footer: the number used to
+          include 77% padding, so it drew a ~24px mark; after the crop it drew
+          64 and the mark ran at 2.4x the 27px text block beside it, which read
+          as a logo with a caption. At 36 the mark still leads -- it should, in
+          a header -- and the wordmark and descriptor read as part of the same
+          lockup. */}
+      <Logo height={36} />
       <div className="flex flex-col gap-[3px]">
         <Wordmark height={13} />
         <div className="font-mono text-[11px] text-ink-3 tracking-[0.04em] uppercase whitespace-nowrap hidden md:block">

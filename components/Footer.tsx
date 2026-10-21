@@ -24,7 +24,9 @@ export default function Footer() {
                   had been 1.6x. At 28 the pair reads as a lockup and the
                   counters in the A and B still hold. */}
               <Logo height={28} gradientId="abG-foot" />
-              <Wordmark height={11} />
+              {/* 13 to match the header. The two were 13 and 11 for no
+                  reason, and at 11 the wordmark read thin beside the mark. */}
+              <Wordmark height={13} />
             </div>
             <div className="text-accent text-sm font-semibold mt-3.5 tracking-[-0.005em]">
               From fragmented to decision-ready.
