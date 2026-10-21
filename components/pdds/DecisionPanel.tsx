@@ -9,6 +9,12 @@ import { panelMeta } from "@/lib/pdds-format";
 export default function DecisionPanel({ panel }: { panel: Panel }) {
   const meta = panelMeta(panel.panel_id, Object.keys(panel.series ?? {}));
   const cw = panel.comparison_withheld;
+  // Explain the whisker where the whisker is, not in the movement note. The
+  // question a reader asks of an interval is what it covers, and the honest
+  // answer on a survey at a 30.6% response rate is: less than you think.
+  const hasCI = Object.values(panel.series ?? {}).some((rows) =>
+    (rows as { ci?: number[] }[]).some((b) => Array.isArray(b.ci))
+  );
 
   return (
     <section className="pt-8 pb-6 border-t border-line">
@@ -53,6 +59,15 @@ export default function DecisionPanel({ panel }: { panel: Panel }) {
       </header>
       <div className="my-4">
         <PanelChart panel={panel} />
+        {hasCI && (
+          <p className="text-[12px] text-ink-3 mt-2 leading-[1.5] m-0">
+            Whiskers are 95% confidence intervals: the range sampling error
+            alone leaves around each estimate. They do not cover who answered.
+            A narrow interval means the sample was large enough to pin the
+            number down, not that the number is free of bias from who was
+            missing.
+          </p>
+        )}
       </div>
       <LeverBox lever={panel.lever} />
       {cw && (

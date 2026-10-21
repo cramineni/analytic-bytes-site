@@ -36,8 +36,14 @@ export default function PanelChart({ panel }: { panel: Panel }) {
   const multi = periods.length > 1;
   // Does any bar in the latest period carry a CI tuple? If so we render
   // whiskers on the bars and drop a small legend row at the bottom.
-  const hasCI =
-    !multi && panel.series[latest].some((b) => Array.isArray(b.ci));
+  // Intervals are drawn wherever the data carries them, single- or
+  // multi-period. This was gated on !multi with a note that multi-period
+  // data had no CIs; the 2025 YRBS release made that false -- that panel
+  // carries a ci on all eight bars across two years, and the gate silently
+  // suppressed every one of them.
+  const hasCI = periods.some((p) =>
+    panel.series[p].some((b) => Array.isArray(b.ci))
+  );
 
   // SVG geometry
   const width = 720;
@@ -57,13 +63,23 @@ export default function PanelChart({ panel }: { panel: Panel }) {
   //     panels) at height - 14
   // Previously bottomPad was 34, which put both on the same line and
   // the year labels stacked directly on top of the tick numbers.
-  const bottomPad = multi ? 56 : hasCI ? 52 : 34;
+  // Two legend rows can now coexist: year swatches and the interval glyph.
+  // They used to be mutually exclusive, so both were written at height-14.
+  const bottomPad = multi && hasCI ? 74 : multi ? 56 : hasCI ? 52 : 34;
   const height = topPad + rowH * groups.length + bottomPad;
 
   // Compute max across all values for x-axis scale. Filter out null cells
   // (extension-track "missing" bars) so they don't confuse the domain.
+  // CI upper bounds belong in the domain. Scaling to values alone lets a
+  // whisker extend past the axis: NSCH tops out at 66.4 with an upper bound
+  // of 69.7, YRBS at 40.0 with 42.0. Both happen to survive today because
+  // niceCeil rounds to 100 and 50, but that is the rounding saving it, not
+  // the code. A cycle that crosses a rounding boundary would clip the
+  // whisker with no error.
   const allVals = Object.values(panel.series)
-    .flatMap((s) => s.map((b) => b.value))
+    .flatMap((s) =>
+      s.flatMap((b) => [b.value, ...(Array.isArray(b.ci) ? b.ci : [])])
+    )
     .filter((v): v is number => typeof v === "number");
   const maxV = allVals.length > 0 ? Math.max(...allVals) : 1;
   // Round up to a nice number for the axis
@@ -168,11 +184,22 @@ export default function PanelChart({ panel }: { panel: Panel }) {
               // drawn in accent (highlighted anchor), the whisker would
               // go teal-on-teal — darken it a couple stops in-family so
               // it still reads without leaving the accent palette.
-              const ci = !multi ? latestBar?.ci : undefined;
-              const showCI = !multi && Array.isArray(ci);
+              const barRec = panel.series[p].find((x) => x.group === label);
+              const ci = barRec?.ci;
+              const showCI = Array.isArray(ci);
               const ciCenterY = barY + barH / 2;
               const capH = 8;
-              const whiskerStroke = fill === style.accent ? "#0369A1" : style.accent;
+              // The whisker has to read against whatever bar it sits on and
+              // against the white it extends onto past the bar tip. On the
+              // muted baseline bar, accent teal washes out; on navy it reads
+              // well. Darken in-family over the muted fill, and over accent
+              // (single-period highlight) as before.
+              const whiskerStroke =
+                fill === style.accent
+                  ? "#0369A1"
+                  : fill === "#B4C0CC"
+                    ? "#0369A1"
+                    : style.accent;
               return (
                 <g key={`${label}-${p}`}>
                   <rect
@@ -251,9 +278,10 @@ export default function PanelChart({ panel }: { panel: Panel }) {
         </text>
       ))}
 
-      {/* Legend for multi-period */}
+      {/* Legend for multi-period. When the interval legend is also present it
+          sits a row above it rather than on top of it. */}
       {multi && (
-        <g transform={`translate(${labelW}, ${height - 14})`}>
+        <g transform={`translate(${labelW}, ${height - (hasCI ? 34 : 14)})`}>
           {periods.map((p, pi) => (
             <g key={`legend-${p}`} transform={`translate(${pi * 90}, 0)`}>
               <rect
@@ -292,7 +320,7 @@ export default function PanelChart({ panel }: { panel: Panel }) {
             fill="#475569"
             fontFamily="Inter,Helvetica,Arial,sans-serif"
           >
-            95% confidence interval
+            95% confidence interval (sampling error only)
           </text>
         </g>
       )}
