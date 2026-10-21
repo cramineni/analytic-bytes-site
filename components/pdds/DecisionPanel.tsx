@@ -15,6 +15,21 @@ export default function DecisionPanel({ panel }: { panel: Panel }) {
   const hasCI = Object.values(panel.series ?? {}).some((rows) =>
     (rows as { ci?: number[] }[]).some((b) => Array.isArray(b.ci))
   );
+  // Does any estimate sit exactly on a bound of its own interval? That only
+  // happens when the source rounds the estimate and the bounds separately:
+  // YRBS attempted suicide 2025 publishes as 6 (6-7) at CDC's whole-percent
+  // grain, so the whisker draws one-sided, as though the number can rise but
+  // not fall. It can fall; the grain hid it. The sentence appears only where
+  // the artifact is actually present rather than being asserted on every
+  // panel, so it stays true as the data changes.
+  const roundedToBound = Object.values(panel.series ?? {}).some((rows) =>
+    (rows as { value?: number; ci?: number[] }[]).some(
+      (b) =>
+        Array.isArray(b.ci) &&
+        typeof b.value === "number" &&
+        (b.value === b.ci[0] || b.value === b.ci[1])
+    )
+  );
 
   return (
     <section className="pt-8 pb-6 border-t border-line">
@@ -66,6 +81,15 @@ export default function DecisionPanel({ panel }: { panel: Panel }) {
             A narrow interval means the sample was large enough to pin the
             number down, not that the number is free of bias from who was
             missing.
+            {roundedToBound && (
+              <>
+                {" "}
+                Intervals are shown at the source&rsquo;s published grain. Where
+                that grain is whole percentages, rounding can place a bound on
+                the estimate itself, which draws the interval one-sided; the
+                estimate is not pinned to that end of it.
+              </>
+            )}
           </p>
         )}
       </div>
