@@ -3,10 +3,18 @@
 import { useState } from "react";
 
 /**
- * AB monogram. Tries to load /public/logo.png first.
- * If logo.png is missing, falls back to the inline SVG approximation.
+ * AB monogram. Loads /public/logo-mark.png, falling back to the inline SVG.
  *
- * To use your real artwork: drop your monogram as `public/logo.png`.
+ * logo-mark.png is the mark cropped to its ink. The previous logo.png was a
+ * 1254x1254 square in which 77% of the canvas was white padding, and because
+ * this component sizes by height with width auto, that padding was counted as
+ * part of the height -- so a logo asked to render at 64px drew a mark about
+ * 24px tall inside an invisible box. Cropping makes the requested height the
+ * height of the mark.
+ *
+ * It also carries alpha, so it sits on a tinted surface without a white card
+ * behind it, and at 480x290 it is 8x smaller than the file it replaces while
+ * still being 4x the pixels needed at the sizes used here.
  */
 
 type LogoProps = { className?: string; height?: number; gradientId?: string };
@@ -22,7 +30,7 @@ export default function Logo({
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src="/logo.png"
+        src="/logo-mark.png"
         alt="Analytic Bytes"
         style={{ height: `${height}px`, width: "auto", display: "block" }}
         className={className}

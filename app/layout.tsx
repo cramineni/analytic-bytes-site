@@ -38,13 +38,16 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   themeColor: "#FFFFFF",
+  // Favicons were pointed at logo.png: a 1254x1254, 801KB PNG served as the
+  // tab icon on every page load, and as the Apple touch icon, where a
+  // non-square source gets letterboxed. The correctly sized assets were
+  // already in public/ and simply unused.
   icons: {
     icon: [
-      { url: "/logo.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
     ],
-    apple: [
-      { url: "/logo.png" },
-    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 
