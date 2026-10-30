@@ -9896,6 +9896,202 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+  {
+    kind: "field-note",
+    slug: "measurement-arrives-after-the-build",
+    number: "19",
+    title: "When measurement arrives after the build.",
+    subtitle:
+      "What a team cannot show a buyer if nobody decided what to record.",
+    date: "2026-10-21",
+    readingTime: "16 min read",
+    summary:
+      "Early teams building health and education platforms usually have someone who knows the domain, someone who owns the product and someone who builds it, and no one deciding what the product should record. In standardized testing, measurement drives the build. In the newer systems, engineering does, and evidence that was never recorded cannot be produced later. What to write down and record before the first pilot, and a rule for which validation work has to come first.",
+    cover: "/library/covers/measurement-arrives-after-the-build.svg",
+    arc: "measurement",
+    chainLink: ["construct", "construct-representation"],
+    failurePoint: "validity",
+    body: (
+      <>
+        <Brief>
+          <p>
+            In my conversations with vendors and teams building products and platforms for health and education, I have seen the same team shape: a person who knows the domain, a person who owns the product, and a person who builds it. What I have rarely seen is anyone whose work is to decide what the product should record, so that its claims can be checked later.
+          </p>
+          <p>
+            Founders often name the result themselves: they keep meeting questions in buyer conversations that the platform was not built to answer. When a buyer asks for evidence, a team like this adapts its story to the platform it already has. The story holds until the team tries to enter a market, win share in a crowded one, or extend to a new use. At that point the claims have no evidence behind them. Evidence for the claims can still be built from the next pilot onward. Evidence about what already happened cannot, if nothing kept the record at the time.
+          </p>
+          <p>
+            This note is for founders deciding when measurement work starts. It closes with what to write down and what to record before the first pilot, and a rule for which validation work has to come first.
+          </p>
+        </Brief>
+        <P>
+          I talk with a fair number of vendors and early teams building products and platforms for health and education. The teams vary, but the shape repeats. There is someone who knows the domain, often a clinician or an educator. There is someone who owns the product, and someone who builds it.
+        </P>
+        <P>
+          The questions I ask are the ones a testing program asks before it lets a score be used: what decision an output feeds, for whom it was checked, and what happens when it is wrong. Often the founders raise these questions before I do, and say they have been coming across them. That is the pain point they name, and it is a real one. They learn the questions when they sit down for buyer conversations: a pilot partner&rsquo;s review, a procurement form, a clinical lead asking how the product was checked. By then the platform is built. The buyer&rsquo;s side of the same conversation is in <InternalLink slug="partnership-is-a-handoff">Partnership is a handoff</InternalLink>, where the buyer&rsquo;s team ends up absorbing what the vendor could not supply.
+        </P>
+        <P>
+          I come to that conversation from the measurement side, and from a change in my own work. At ETS, a validation study started from a clean dataset: a defined sample, scored responses, documented variables. In the health and education settings I moved into afterward, nobody handed me that dataset. Before any validation study could begin, I had to learn the platform and the systems behind it, and work out how to assemble data accurate and complete enough for the question being asked. That reconstruction was often slow and hard, and it came before the study, not in place of it. In my design work since, what a buyer asks for has usually traced back to a place in the build where something was not captured, logged or built in.
+        </P>
+        <P>
+          These teams need an engineer first, and they say so. That is reasonable, since nothing can be tested before it exists. What they rarely have is someone whose work is to decide, during the build, what the platform should record. By measurement work I mean deciding what each output claims about a person, what record would show that the claim holds, and checking that it does. Product analytics, which counts what users did, is a different job. This note is about products whose output is a claim about a person: a score, a flag, a recommendation. Where the product makes no such claim, most of it does not apply. J-PAL draws the same line for AI programs: engagement, monitoring and technical-performance data are useful, but &ldquo;these signals alone cannot show whether an intervention improves outcomes in the real world&rdquo; (<a href="https://www.povertyactionlab.org/ai-evidence-playbook" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">J-PAL, <I>AI Evidence Playbook</I>, 2026</a>).
+        </P>
+        <H2>Who drives the build</H2>
+        <P>
+          My own work has moved the way these products are moving, from tests that measure a person at one point in time to systems that bring in more about a person over time. In a standardized assessment, where a score decides a placement or a pass, measurement tends to drive the build. The construct, the items, the scoring rules and the evidence for reliability and validity come first, and much of that evidence is published. Engineering shapes the result too, especially in adaptive and automated testing, but the claims come first. Assessment design has a name for this order, evidence-centered design: decide what the scores must support and what evidence would show it, then design the tasks that produce that evidence (<a href="https://www.ets.org/research/policy_research_reports/publications/report/2003/hsgs.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mislevy, Almond and Lukas, ETS, 2003</a>).
+        </P>
+        <P>
+          When I worked on automated essay scoring at ETS, one scoring model drew on several kinds of expertise before it touched anyone&rsquo;s score. People who defined the construct wrote the tasks and rubrics. Natural language processing scientists built the scoring features. Psychometricians checked how the scores behaved, and validity researchers tested what the scores meant and for whom. The criteria the model had to meet were set before it was evaluated: agreement with human scores, differences in score distributions, differences across subgroups, and association with external measures. I co-wrote the paper that set those criteria out in print, and its conclusion was about &ldquo;the a priori establishment of performance expectations&rdquo; before a system is used operationally (<a href="https://doi.org/10.1016/j.asw.2012.10.004" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Assessing Writing</I>, 2013</a>). The teams I described at the start cover that ground with three roles: the domain, the product and the build.
+        </P>
+        <P>
+          Many newer platforms tend to run the other way. Some mental-health platforms no longer rely on a PHQ-9 score and its cut points alone to say whether someone is depressed, and how severely. They combine chatbot messages, daily wellness check-ins, measures of social needs, comorbidities, primary care records, and the PHQ-9 and GAD-7, gathered in different formats at different times, to flag a patient at risk. Learning platforms do the same with class work, quizzes, assessments and behavior on the platform, to decide that a student needs more help. In these systems engineering usually drives the build, and the measurement work a test would have had at the start comes later, if it comes.
+        </P>
+        <P>
+          The difference is not only one of order. A PHQ-9 uses technology only to deliver it, and the same nine questions work on paper. The risk a platform&rsquo;s flag estimates exists apart from the platform, but the flag itself does not. What the platform logs, how it handles missing inputs, how it combines them and when it computes the flag are part of what the flag means. In these systems engineering decisions are measurement decisions, whether or not anyone treats them that way. Automated scoring was the same case in testing, which is why the scoring engine itself had to meet criteria before anyone&rsquo;s score depended on it.
+        </P>
+        <Figure
+          src="/library/figures/measurement-arrives-after-the-build-who-drives-the-build.svg"
+          alt="Two rows of three boxes showing a typical order, not a fixed one. The top row, a standardized assessment, runs measurement first (construct, scoring, evidence), then engineering (delivery and data collection), then the decision (placement, pass or fail). The bottom row, a platform combining many inputs, runs engineering first, then the decision (an at-risk flag, needs help), then measurement, drawn dashed because it comes later, if at all. Measurement is teal in both rows."
+          caption="The same three kinds of work, in the order each kind of system tends to take them. Measurement tends to move from first to last."
+        />
+        <P>
+          The combination is a new decision system. It may claim a construct, such as depression severity, a prediction, such as risk of crisis within a month, or a rule for what to do next. Whichever it is, it needs evidence of its own. Evidence about each input helps, but it does not establish how the combination performs. A PHQ-9 validated for depression screening carries no evidence about a risk flag it has been folded into. Assessment has worked on this problem for decades. Evidence-centered design treats combining evidence from many tasks into one inference about a person as a modeling problem in its own right. It asks for an explicit account of how each piece of evidence bears on the claim (<a href="https://www.ets.org/research/policy_research_reports/publications/report/2003/hsgs.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mislevy, Almond and Lukas, ETS, 2003</a>). In health, a combined risk flag is a clinical prediction model, and there are reporting standards for developing and validating such models (<a href="https://www.bmj.com/node/1095803" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Collins et al., <I>BMJ</I>, 2024</a>). Either way the combination needs its own answers: what <I>at risk</I> means and by when, how inputs on different scales and schedules are put together, whose data goes missing, and whether the flag holds for each group. In the teams I talk with, this work is rarely planned into the build.
+        </P>
+        <P>
+          The case for combining is real. Models built from health records and routinely administered depression questionnaires predicted suicide attempts and deaths better than existing risk tools did (<a href="https://pubmed.ncbi.nlm.nih.gov/29792051/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Simon et al., <I>American Journal of Psychiatry</I>, 2018</a>). The question is whether the combination gets its own development and testing.
+        </P>
+        <H2>What the story is asked to cover</H2>
+        <P>
+          When a buyer, a funder or a pilot partner asks what the product does for its users, an early team answers with what it has: a demonstration, some usage figures and an account of the clinical or teaching design. The team learns which framing a hospital responds to and which one a school district responds to, and it reshapes the story around the platform it already built.
+        </P>
+        <P>
+          Some of that is ordinary market learning, and useful. The difficulty is what the story is being asked to carry. A story cannot cover the gap left by data the product does not have. If the platform did not record something, the team cannot produce evidence for a claim that depends on it, however the claim is framed. The people asking are the ones deciding whether to put the product in front of patients or students. A user has to make a decision before acting on what the product shows. If that decision cannot be made because the evidence is missing, the gap is in what was built, and in what is being sold.
+        </P>
+        <P>
+          So the first cost of late measurement is evidence. Time is the second cost, and it follows from the first: months go into adapting the story to the market instead of producing what the market will eventually ask for.
+        </P>
+        <H2>Where the story stops working</H2>
+        <P>
+          In my experience the story holds until one of three points. The first is entry into the market. A hospital, a school system or a government service will often ask for evidence before it signs, through a procurement questionnaire, a clinical review or a data-protection assessment. Guo and colleagues describe this step for digital health companies: early sales tend to follow close relationships with an early adopter, but &ldquo;wider implementation requires robust evidence of benefit&rdquo; (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7453198/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Guo et al., <I>npj Digital Medicine</I>, 2020</a>).
+        </P>
+        <P>
+          The second is share in a crowded market, where a buyer comparing similar claims looks for the product that can show its claim. The third is extension to a new use or population, such as adolescents, a school or a second language. The story travels easily; the evidence was collected for the first population and does not come with it.
+        </P>
+        <P>
+          At each point the team has to revise what it built, and how much depends on the roadmap. A short roadmap aimed at quick commercialization gets small fixes: a new field, a new log, a study for the buyer in front of it. A longer roadmap needs foundational fixes, because the platform has to produce evidence repeatedly and for more than one population.
+        </P>
+        <H2>What can be rebuilt and what cannot</H2>
+        <P>
+          The roadmap decides how much of the platform gets rebuilt. How much evidence can still be produced depends on what was recorded, and on what kind of evidence is needed.
+        </P>
+        <P>
+          Evidence for the product&rsquo;s claim can usually be built late. Definitions can be written after launch, thresholds re-examined, and the next pilot designed as a study, with the records the first one lacked. It costs time, and in my experience much of that time goes into reconstructing the data before the study can start.
+        </P>
+        <P>
+          Evidence about what already happened is different. Which safety checks failed open during the first pilot, letting a message through when a check could not run? What happened to the people who were escalated to a human, and did anyone follow up? Who stopped using the product, and what was going on for them? If the platform did not keep these at the time, and no other system did, no later study recovers them. A new study can only describe the pilots that come after it.
+        </P>
+        <P>
+          In a mental-health app pilot I worked on, the platform logged logins and assessment submissions, so we could see engagement fall with each new group of registrants and see that many patients stopped partway through the month. It did not record why they stopped. The follow-up calls to bring people back lived in a spreadsheet outside the platform, so the platform&rsquo;s record ended where the follow-up began. For one patient, the app showed a last login that the usage data had no record of.
+        </P>
+        <P>
+          The strongest objection comes from health research. Real-world evidence is assembled after the fact from records kept for other purposes, such as health records and insurance claims (<a href="https://cioms.ch/wp-content/uploads/2017/11/jama_CorriganCuray_2018_vp_180087.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Corrigan-Curay, Sacks and Woodcock, <I>JAMA</I>, 2018</a>). That shows evidence can be built late when a second system recorded the event. Some product events do leave traces elsewhere, in a partner&rsquo;s records, a message system or an audit log, and a careful reconstruction looks there first. Which of the startup&rsquo;s own checks failed open is rarely among them.
+        </P>
+        <H2>One study, or validation the platform runs</H2>
+        <P>
+          Once a team decides to fill the gap, it can commission a single validation study. Or it can build validation into the platform, so that the platform keeps what each claim needs and rechecks the claim as the product and its users change.
+        </P>
+        <P>
+          The single study is familiar, and for some claims it is right. Its limit is that the product keeps changing after the study ends, and the study does not move with it. Researchers in behavioral intervention technology noted more than a decade ago that a technology&rsquo;s shelf life may be shorter than the time it takes to evaluate it. They proposed evaluating such technologies continuously as they change (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3828034" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mohr et al., <I>American Journal of Preventive Medicine</I>, 2013</a>). Guo and colleagues add that because a study typically takes two to three years, &ldquo;evidence published today may reflect a product that has been updated and refined multiple times.&rdquo;
+        </P>
+        <P>
+          Validation built into the platform costs more during the build, because someone has to decide what each output claims, what record would support it, and what should trigger a recheck. The cost comes back at each of the three points above, because the evidence already exists when the buyer asks.
+        </P>
+        <P>
+          Stakes decide how much of this has to come before deployment. A low-stakes feature with an easy way back can carry its validation through monitoring after launch. Crisis detection, clinical decision support, anything involving children, and anything that acts without a person in the loop cannot. That is the calibration argument in <InternalLink slug="validity-layer-beneath-responsible-ai">Validity is the layer beneath responsible AI</InternalLink>, applied to a team deciding what to build first.
+        </P>
+        <H2>Doesn&rsquo;t the team already have this covered?</H2>
+        <P>
+          The strongest objection is that the team already has the people: a domain expert who knows what good looks like, user research on what people want and can use, and analytics on what they did. Plenty of successful products were built without anyone trained in measurement. The lean startup method puts measurement inside the loop: build something small, measure how people respond, learn, and change it (<a href="https://openlibrary.org/books/OL24982481M" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ries, <I>The Lean Startup</I>, 2011</a>). For claims about adoption, usability and willingness to pay, that loop produces real evidence.
+        </P>
+        <P>
+          Each is needed, and each answers a different question from the one a buyer in health or education eventually asks. Analytics records only the behavior someone chose to log, and as J-PAL notes, those signals do not show that anyone is better off. A district buying a product does not show that it improves learning. None of these asks whether the product&rsquo;s output supports the decision it is used for, for whom, and with how much error.
+        </P>
+        <P>
+          That work can sit with someone already on the team. What matters is that it happens during the build. It is the first of the jobs in <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink>, designing what to collect against the claims it will have to support, applied to a product before its first pilot. One caution: the person who defines what the product should detect is not well placed to be the only person checking whether it does.
+        </P>
+        <P>
+          The questions I ask did not start with me. Testing programs have worked through rater disagreement, cut scores, population shift and scoring drift for decades. A project I worked on proposed calibrating automated scores against an external criterion that matters for the user&rsquo;s own local use, rather than against the human scores the system was built to reproduce (NCME, 2014). Startups meet these problems one at a time. Having the work on the team means reaching the next question before a pilot partner or a procurement form raises it.
+        </P>
+        <H2>What to record before the first pilot</H2>
+        <P>
+          This part is for founders, and for whoever on the team ends up owning the work.
+        </P>
+        <P>
+          Deciding what to record is quick next to a validation study. Building the records takes real engineering, and it is still the part that cannot move later, because the first pilot happens once. European law asks high-risk AI systems to &ldquo;technically allow for the automatic recording of events (logs) over the lifetime of the system&rdquo; (<a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Regulation (EU) 2024/1689, Article 12</a>). Logs of that kind trace the system. The records below keep that trace and add the people the system acts on.
+        </P>
+        <P>
+          Before a pilot starts, I would want seven things in place, adjusted to the claims the product makes. Three are decisions written down before the first user, starting, as evidence-centered design does, from what each output claims.
+        </P>
+        <NumList>
+          <NumItem n={1}>
+            <I>The claim and the decision.</I> For each output, the claim it makes, the decision it feeds, and who makes that decision.
+          </NumItem>
+          <NumItem n={2}>
+            <I>The outcome.</I> The criterion each claim will be checked against, and the baseline or comparison it needs.
+          </NumItem>
+          <NumItem n={3}>
+            <I>What counts as completing.</I> A definition of completion and expected use, so that stopping can be told apart from finishing.
+          </NumItem>
+        </NumList>
+        <P>
+          Four are records the platform keeps from the first day of the pilot.
+        </P>
+        <NumList>
+          <NumItem n={1}>
+            <I>The output and its version.</I> What the system produced for each person, and which model, thresholds and content were live at the time.
+          </NumItem>
+          <NumItem n={2}>
+            <I>Failures and fallbacks.</I> Every check that could not run and what the system did instead (including each time it failed open).
+          </NumItem>
+          <NumItem n={3}>
+            <I>What people did with it.</I> Every escalation or handoff to a person, whether anyone acted on or overrode the system, and what happened next where that can be known.
+          </NumItem>
+          <NumItem n={4}>
+            <I>Who was reached and who stopped.</I> Who the pilot was meant for and who used it, described the same way, and who left before completing, and when. A denominator and group-level characteristics are often enough.
+          </NumItem>
+        </NumList>
+        <P>
+          Keep the minimum each claim needs, at the level it needs, on the legal basis the setting requires, whether that is HIPAA, FERPA or GDPR. None of these needs a validation study. The written decisions can be revisited later; the records cannot be reconstructed if no system kept them.
+        </P>
+        <P>
+          Putting the study off while demand is still uncertain can be a sound strategy. Putting off the decision about what to record is the part that cannot be made up later.
+        </P>
+        <P>
+          The timing follows from stakes first. Where the product informs a consequential decision about a person, such as crisis detection, a clinical recommendation or a placement, the validation work starts before deployment, and the pilot can be designed as the study. Where stakes are low, buyer demand and the time an outcome takes to show set the pace. If the first buyer will ask for evidence before signing, as hospitals, school systems and government services often do, the study comes before the pilot. If the outcome takes months to observe, the study has to start before a buyer asks, or the answer arrives a year late. Otherwise it can wait until a buyer asks. In every case the records start on the first day of the pilot, since any later study depends on them.
+        </P>
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="validity-layer-beneath-responsible-ai"
+            title="Validity is the layer beneath responsible AI"
+            gloss="the calibration argument this note applies to a team’s build order: stakes decide which validation work has to come first."
+          />
+          <SeeAlsoItem
+            slug="partnership-is-a-handoff"
+            title="Partnership is a handoff"
+            gloss="the buyer’s side of the same gap: what the buyer’s team absorbs when the vendor cannot supply it."
+          />
+          <SeeAlsoItem
+            slug="the-delta-nobody-budgeted"
+            title="The delta nobody budgeted"
+            gloss="why a one-off study goes stale as the product and its users change."
+          />
+        </SeeAlso>
+        <MetaNote>
+          Written October 2026 for the Analytic Bytes Library. No company is named. Published sources were checked against the sources themselves in October 2026. The mental-health app pilot is described from the author&rsquo;s own internal analysis, which is not public and is not cited.
+        </MetaNote>
+      </>
+    ),
+  },
 
   // ===================================================================
   // ESSAY 18 — Every metric is a claim.
