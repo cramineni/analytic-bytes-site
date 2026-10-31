@@ -9904,7 +9904,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "What a team cannot show a buyer if nobody decided what to record.",
     date: "2026-10-28",
-    readingTime: "16 min read",
+    readingTime: "15 min read",
     summary:
       "Teams building health and education platforms usually have someone who knows the domain, someone who owns the product and someone who builds it, and rarely anyone whose work is to decide what the product should record. In testing, measurement tends to come first; in these platforms it tends to come last. Evidence for a claim can still be built from the next pilot on; evidence about what already happened cannot, if nothing kept the record at the time. What to write down and record before the first pilot, and a rule for which validation work cannot wait.",
     cover: "/library/covers/measurement-arrives-after-the-build.svg",
@@ -9972,7 +9972,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <H2>Where the story stops working</H2>
         <P>
-          In my experience the story holds until one of three points. The first is entry into the market. A hospital, a school system or a government service will often ask for evidence before it signs, through a procurement questionnaire, a clinical review or a data-protection assessment. Guo and colleagues describe this step for digital health companies: early sales tend to follow close relationships with an early adopter, but &ldquo;wider implementation requires robust evidence of benefit&rdquo; (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7453198/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Guo et al., <I>npj Digital Medicine</I>, 2020</a>).
+          In my experience the story holds until one of three points. The first is entry into the market. A hospital, a school system or a government service will often ask for evidence before it signs, through a procurement questionnaire, a clinical review or a data-protection assessment. Guo and colleagues describe this step for digital health companies: early sales tend to follow close relationships with an early adopter, but &ldquo;wider implementation requires robust evidence of benefit&rdquo; (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7453198/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Guo et al., <I>npj Digital Medicine</I>, 2020</a>). Education buyers are moving the same way. Among the 53 percent of states that have published guidance on buying AI-enabled tools, 79 percent now include the evidence-based quality indicator, up from 45 percent in 2025. Yet 68 percent of state leaders say it is difficult to verify vendors&rsquo; claims about AI products independently, and 52 percent say their state collects no data on whether ed-tech tools are used or effective (<a href="https://www.setda.org/priorities/state-trends/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">SETDA, <I>2026 State EdTech Trends Report</I></a>, a survey of state education agency leaders in 45 states and one territory).
         </P>
         <P>
           The second is share in a crowded market, where a buyer comparing similar claims looks for the product that can show its claim. The third is extension to a new use or population, such as adolescents, a school or a second language. The story travels easily; the evidence was collected for the first population and does not come with it.
@@ -10867,7 +10867,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "The buyer’s team catches what no vendor can carry.",
     date: "2026-10-07",
-    readingTime: "17 min read",
+    readingTime: "18 min read",
     summary:
       "Vendors, implementation partners, customer success managers and funders all call the relationship a partnership. What the word usually names is labor the vendor cannot supply and the buyer’s team absorbs — the org logic, and the working definition of enrolled or engaged. The fix is a line item for that labor, and a seam defined before signing.",
     cover: "/library/covers/partnership-is-a-handoff.svg",
