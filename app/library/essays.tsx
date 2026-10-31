@@ -9906,7 +9906,7 @@ export const ESSAYS: Essay[] = [
     date: "2026-10-28",
     readingTime: "16 min read",
     summary:
-      "In teams building health and education platforms there is usually someone who knows the domain, someone who owns the product and someone who builds it, and rarely anyone whose work is to decide what the product should record. Measurement tends to move from first to last in these systems. Evidence for a claim can still be built from the next pilot onward; evidence about what already happened cannot, if nothing kept the record at the time. What to write down before the first pilot, and a rule for which validation work has to come first.",
+      "Teams building health and education platforms usually have someone who knows the domain, someone who owns the product and someone who builds it, and rarely anyone whose work is to decide what the product should record. In testing, measurement tends to come first; in these platforms it tends to come last. Evidence for a claim can still be built from the next pilot on; evidence about what already happened cannot, if nothing kept the record at the time. What to write down and record before the first pilot, and a rule for which validation work cannot wait.",
     cover: "/library/covers/measurement-arrives-after-the-build.svg",
     arc: "measurement",
     chainLink: ["construct", "construct-representation"],
