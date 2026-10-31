@@ -259,25 +259,43 @@ for f in sorted(glob.glob(D+"/*.md")):
     # which were in fact fully in sync. Same family of false positive as the
     # required-for-what eyebrow: a standing phantom that trains the eye to skip
     # the report.
+    # FIGURES AND TABLES ARE NOT PROSE UNITS, SO COUNT THEM SEPARATELY.
+    # md_units skips image lines, their captions and pipe tables, which is
+    # right -- they are not paragraphs. But it means a figure added to the
+    # markdown and never folded leaves the file reporting "in sync" with the
+    # figure missing from the page. That is exactly what happened to FN19:
+    # a second inline figure sat unfolded while every drift run said clean.
+    md_figs = len(re.findall(r'(?m)^!\[', md))
+    jsx_figs = len(re.findall(r'<Figure\b', REG[slug]['blk']))
+    md_tabs = len([x for x in re.split(r'\n\s*\n', md) if x.strip().startswith('|')])
+    jsx_tabs = len(re.findall(r'<EssayTable\b', REG[slug]['blk']))
+    asset_gap = []
+    if md_figs != jsx_figs:
+        asset_gap.append('figures MD %d / JSX %d' % (md_figs, jsx_figs))
+    if md_tabs != jsx_tabs:
+        asset_gap.append('tables MD %d / JSX %d' % (md_tabs, jsx_tabs))
+
     sub=norm(REG[slug].get('subtitle',''))
     if sub:
         M=[u for u in M if u!=sub]
     mo,ed=pair(M,J); jo=orphans(J,M)
     rows.append(dict(f=os.path.basename(f),slug=slug,J=len(J),M=len(M),mo=len(mo),jo=len(jo),ed=len(ed),
                      ver=bool(re.search(r'status:\s*"v',md)),draft=REG[slug]['draft'],
-                     mo_ex=mo[:1],jo_ex=jo[:1]))
+                     mo_ex=mo[:1],jo_ex=jo[:1],gap=asset_gap))
 rows.sort(key=lambda r:-(r['mo']+r['jo']+r['ed']))
 print("%-40s %-8s %-8s %-9s %-7s %s"%("markdown file","MD/JSX","MD-only","JSX-only","edited","verdict"))
 print("-"*104)
 import collections; c=collections.Counter()
 for r in rows:
     n=r['mo']+r['jo']+r['ed']
-    if n==0: v="in sync"
+    if n==0 and not r['gap']: v="in sync"
+    elif n==0: v="assets owed: "+", ".join(r['gap'])
     elif r['mo'] and r['jo']: v="both ways"
     elif r['mo']: v="MD ahead"
     elif r['jo']: v="JSX ahead"
     else: v="edited in place - fold owed"
-    c[v]+=1
+    if n and r['gap']: v += "  +assets: "+", ".join(r['gap'])
+    c[v.split('  +')[0]]+=1
     print("%-40s %-8s %-8d %-9d %-7d %s%s"%(r['f'][:39],"%d/%d"%(r['M'],r['J']),r['mo'],r['jo'],r['ed'],v,"  [DRAFT]" if r['draft'] else ""))
 print("\n",dict(c))
 print("files carrying a status/version line: %d of %d"%(sum(1 for r in rows if r['ver']),len(rows)))

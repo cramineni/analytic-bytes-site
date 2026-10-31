@@ -10069,6 +10069,11 @@ export const ESSAYS: Essay[] = [
         <P>
           The timing follows from stakes first. Where the product informs a consequential decision about a person, such as crisis detection, a clinical recommendation or a placement, the validation work starts before deployment, and the pilot can be designed as the study. Where stakes are low, buyer demand and the time an outcome takes to show set the pace. If the first buyer will ask for evidence before signing, as hospitals, school systems and government services often do, the study comes before the pilot. If the outcome takes months to observe, the study has to start before a buyer asks, or the answer arrives a year late. Otherwise it can wait until a buyer asks. In every case the records start on the first day of the pilot, since any later study depends on them.
         </P>
+        <Figure
+          src="/library/figures/measurement-arrives-after-the-build-timing-rule.svg"
+          alt="A decision flow titled The timing rule. First question: does the output inform a consequential decision about a person? If yes, validate before deployment and design the pilot as the study. If no: will the first buyer ask for evidence before signing? If yes, the study comes before the pilot. If no: does the outcome take months to observe? If yes, start the study before a buyer asks. If no, the study can wait until a buyer asks. A teal band underneath applies to every path: three decisions written down before the first user, and four records kept from the first day of the pilot."
+          caption="Stakes decide first, then buyer demand and how long the outcome takes to show. The records start on the first day either way."
+        />
         <SeeAlso>
           <SeeAlsoItem
             slug="validity-layer-beneath-responsible-ai"
