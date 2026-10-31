@@ -9903,10 +9903,10 @@ export const ESSAYS: Essay[] = [
     title: "When measurement arrives after the build.",
     subtitle:
       "What a team cannot show a buyer if nobody decided what to record.",
-    date: "2026-10-21",
+    date: "2026-10-28",
     readingTime: "16 min read",
     summary:
-      "Early teams building health and education platforms usually have someone who knows the domain, someone who owns the product and someone who builds it, and no one deciding what the product should record. In standardized testing, measurement drives the build. In the newer systems, engineering does, and evidence that was never recorded cannot be produced later. What to write down and record before the first pilot, and a rule for which validation work has to come first.",
+      "In teams building health and education platforms there is usually someone who knows the domain, someone who owns the product and someone who builds it, and rarely anyone whose work is to decide what the product should record. Measurement tends to move from first to last in these systems. Evidence for a claim can still be built from the next pilot onward; evidence about what already happened cannot, if nothing kept the record at the time. What to write down before the first pilot, and a rule for which validation work has to come first.",
     cover: "/library/covers/measurement-arrives-after-the-build.svg",
     arc: "measurement",
     chainLink: ["construct", "construct-representation"],
