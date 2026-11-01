@@ -9897,9 +9897,9 @@ export const ESSAYS: Essay[] = [
     ),
   },
   {
-    kind: "field-note",
+    kind: "essay",
     slug: "measurement-arrives-after-the-build",
-    number: "19",
+    number: "23",
     title: "When measurement arrives after the build.",
     subtitle:
       "What a team cannot show a buyer if nobody decided what to record.",
