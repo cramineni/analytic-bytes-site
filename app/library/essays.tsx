@@ -9876,17 +9876,17 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="auditing-an-ai-native-practice"
-            title="Auditing an AI-native practice"
+            title="Auditing an AI-native practice."
             gloss="the ninety-day audit that put numbers on what this operating layer produces."
           />
           <SeeAlsoItem
             slug="my-relationship-with-ai"
-            title="My relationship with AI"
+            title="My relationship with AI."
             gloss="earlier in the same arc: the point at which AI started carrying work across professional and personal life."
           />
           <SeeAlsoItem
             slug="extending-the-gates"
-            title="Extending the gates"
+            title="Extending the gates."
             gloss="the gate pattern applied to a public-data build, which is the discipline this piece asks the operating layer to run on itself."
           />
         </SeeAlso>
@@ -10111,17 +10111,17 @@ export const ESSAYS: Essay[] = [
         <SeeAlso>
           <SeeAlsoItem
             slug="validity-layer-beneath-responsible-ai"
-            title="Validity is the layer beneath responsible AI"
+            title="Validity is the layer beneath responsible AI."
             gloss="the calibration argument this note applies to a team’s build order: stakes decide which validation work has to come first."
           />
           <SeeAlsoItem
             slug="partnership-is-a-handoff"
-            title="Partnership is a handoff"
+            title="Partnership is a handoff."
             gloss="the buyer’s side of the same gap: what the buyer’s team absorbs when the vendor cannot supply it."
           />
           <SeeAlsoItem
             slug="the-delta-nobody-budgeted"
-            title="The delta nobody budgeted"
+            title="The delta nobody budgeted."
             gloss="why a one-off study goes stale as the product and its users change."
           />
         </SeeAlso>
@@ -10331,17 +10331,17 @@ Return. Who decides how far upstream a change has to go (the action, the thresho
         <SeeAlso>
           <SeeAlsoItem
             slug="the-decision-system"
-            title="The Decision System"
+            title="The decision system."
             gloss="part one: meaning, authority and validity, and the ninth-grader flag this essay follows."
           />
           <SeeAlsoItem
             slug="four-jobs-one-loop"
-            title="Four jobs, one loop"
+            title="Four jobs, one loop."
             gloss="the return leg as an organizational job, and what happens when nobody holds it."
           />
           <SeeAlsoItem
             slug="every-metric-is-a-claim"
-            title="Every metric is a claim"
+            title="Every metric is a claim."
             gloss="Kane’s chain read onto a data stack, from collection protocol to the funder decision."
           />
         </SeeAlso>
@@ -11057,17 +11057,17 @@ All sources are public. Kane 2013 was read in full and is quoted from the articl
         <SeeAlso>
           <SeeAlsoItem
             slug="the-absorbed-data-role"
-            title="The absorbed data role"
+            title="The absorbed data role."
             gloss="the seat the constraints land on, and why it has no funded home."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="the governance contract that answers the security narrative, and the unwritten identity rule this essay says can now be written."
           />
           <SeeAlsoItem
             slug="the-delta-nobody-budgeted"
-            title="The delta nobody budgeted"
+            title="The delta nobody budgeted."
             gloss="the companion: the same organization a year later, when the world moves and the configuration does not."
           />
         </SeeAlso>
@@ -11322,17 +11322,17 @@ All sources are public. Kane 2013 was read in full and is quoted from the articl
         <SeeAlso>
           <SeeAlsoItem
             slug="for-the-record"
-            title="For the record"
+            title="For the record."
             gloss="the same division of labor at the other seam: the spreadsheet an owner trusts against the record the institution holds."
           />
           <SeeAlsoItem
             slug="the-absorbed-data-role"
-            title="The absorbed data role"
+            title="The absorbed data role."
             gloss="who ends up carrying the change work, and why the role has no funded home."
           />
           <SeeAlsoItem
             slug="the-contracts-between-systems"
-            title="The contracts between systems"
+            title="The contracts between systems."
             gloss="the same dependency read as governance: what one system owes another, and what happens when nobody wrote the term down."
           />
         </SeeAlso>
@@ -11509,17 +11509,17 @@ All sources are public. Kane 2013 was read in full and is quoted from the articl
         <SeeAlso>
           <SeeAlsoItem
             slug="the-absorbed-data-role"
-            title="The absorbed data role"
+            title="The absorbed data role."
             gloss="the funded seat inside the org that would hold what partnership language keeps trying to transfer outward."
           />
           <SeeAlsoItem
             slug="the-delta-nobody-budgeted"
-            title="The delta nobody budgeted"
+            title="The delta nobody budgeted."
             gloss="change maintenance as the specific labor the internal seat absorbs when a policy, a vendor release or a definition moves."
           />
           <SeeAlsoItem
             slug="for-the-record"
-            title="For the record"
+            title="For the record."
             gloss="the trust gap between the spreadsheet the owner keeps and the record the institution holds, which is where every handoff eventually lands."
           />
         </SeeAlso>

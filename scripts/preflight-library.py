@@ -163,6 +163,9 @@ def block(w, tag):
 
 
 # --- checks -----------------------------------------------------------------
+REGISTRY_TITLES = {}
+
+
 def check_piece(e, repo):
     """Return a list of (level, code, message)."""
     w, slug = e["src"], e["slug"]
@@ -218,6 +221,18 @@ def check_piece(e, repo):
         warn("chain", "no chainLink -- where does the decision chain break?")
     if not re.search(r"failurePoint\s*:", w):
         warn("chain", "no failurePoint (meaning | authority | validity)")
+
+    # See also titles must match the registry exactly, terminal period included
+    # (Title Framework). The build script I reused for every fold called
+    # .rstrip('.') on the title it parsed out of the markdown link, which
+    # stripped the period the rule requires -- 15 items across the library
+    # before this check existed.
+    _sa = re.search(r"<SeeAlso>(.*?)</SeeAlso>", w, re.S)
+    if _sa:
+        for _s, _t in re.findall(r'slug="([^"]+)"\s*\n\s*title="([^"]*)"', _sa.group(1)):
+            _rt = REGISTRY_TITLES.get(_s)
+            if _rt and _rt != _t:
+                err("seealso", "title %r does not match the registry's %r" % (_t, _rt))
 
     sa = len(re.findall(r"<SeeAlsoItem", w))
     if sa == 0:
@@ -417,6 +432,7 @@ def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     strict = "--strict" in sys.argv
     entries = parse_entries(tsx.read_text())
+    REGISTRY_TITLES.update({x["slug"]: field(x["src"], "title") for x in entries})
     if args:
         entries = [e for e in entries if e["slug"] in args]
 
