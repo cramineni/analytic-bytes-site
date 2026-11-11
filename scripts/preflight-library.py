@@ -288,7 +288,14 @@ def check_piece(e, repo):
              % len(hot))
 
     # --- retired vocabulary -------------------------------------------------
-    low = strip_tags(body).lower()
+    # Retired words inside a piece's own title are not the retired usage.
+    # "Three surfaces, one keystone." is a published title, so every essay that
+    # links to it trips the keystone rule. Strip link text and italicised titles
+    # before scanning, so the check sees prose rather than proper nouns.
+    prose = re.sub(r"<InternalLink[^>]*>.*?</InternalLink>", " ", body, flags=re.S)
+    prose = re.sub(r"<ArtifactLink[^>]*>.*?</ArtifactLink>", " ", prose, flags=re.S)
+    prose = re.sub(r"<I>.*?</I>", " ", prose, flags=re.S)
+    low = strip_tags(prose).lower()
     hits = [r for r in RETIRED if r in low]
     if hits:
         warn("vocabulary", "retired: " + ", ".join(hits))

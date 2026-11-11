@@ -10131,6 +10131,226 @@ export const ESSAYS: Essay[] = [
       </>
     ),
   },
+  {
+    kind: "essay",
+    slug: "the-decision-chain",
+    number: "24",
+    title: "The decision chain.",
+    subtitle:
+      "Part two of The Decision System, from construct to consequence and back.",
+    date: "2026-11-05",
+    readingTime: "24 min read",
+    summary:
+      "The Decision System named three things that fail: meaning, authority and validity. This essay names the chain they fail along, from construct to representation, inference, decision, action and consequence, and back. Validity theory, decision intelligence and decision governance each cover part of it. It joins them to the validity of the target itself, so a data leader can ask in one pass whether the number supports the decision, whether anyone can act on it, and what the consequence taught. Most data and analytics work lands on two of its links.",
+    cover: "/library/covers/the-decision-chain.svg",
+    arc: "integration-governance",
+    chainLink: ["construct", "construct-representation", "representation-inference", "inference-decision", "decision-action", "action-consequence", "return-leg"],
+    failurePoint: "validity",
+    body: (
+      <>
+        <Brief>
+          <p>
+            <InternalLink slug="the-decision-system">The Decision System</InternalLink> named three things that fail when data does not become action: meaning, authority and validity. This essay names the chain they fail along. A decision runs from construct to representation, inference, decision, action and consequence, and a return leg carries what the consequence showed into the next round.
+          </p>
+          <p>
+            A decision system is everything it takes to carry one recurring decision the whole length of that chain and back. None of its parts are new. Validity theory, decision intelligence and organizational design each cover part of the road. Practitioners have begun to put them on one path by governing the decision rather than the dataset. What this essay adds is the chain that joins them to the validity of the target itself.
+          </p>
+          <p>
+            The chain is a way to build, deploy, audit and validate a decision system from construct to consequence and back, checking at each link whether the reasoning holds and whether someone has the authority to act. It also separates this architecture from two it borrows from: data and analytics work, which mostly delivers at two links, and measurement design, which stops at the claim and leaves the decision to someone else. The essay ends with a first-version audit a data leader can run on one decision.
+          </p>
+        </Brief>
+        <H2>One flag, followed the whole way</H2>
+        <P>
+          Go back to the ninth grader from <InternalLink slug="the-decision-system">The Decision System</InternalLink>, the first part of this framework. An early-warning flag has fired on her. Follow it link by link, and ask at each one what question is being answered, who answers it, and what evidence they have.
+        </P>
+        <P>
+          Construct. What are we trying to know? Here it is academic risk: the chance that she does not graduate on time. Someone has to decide that this is the thing worth knowing, and state it precisely enough that two buildings mean the same thing by it.
+Representation. What stands for it? Attendance, course grades and discipline records, combined into a score. Someone chose those fields and that formula, and the choice carries an assumption that they track risk and not something else.
+Inference. What do we read off it? A score above the threshold is read as &ldquo;at risk.&rdquo; Someone set the threshold and decided what the score is allowed to mean.
+Decision. What choice is being made, under what rule, and who settles it? Here the choice is a meeting, a referral, or nothing this week, and a named counselor makes it. That person needs the authority to decide and the time to do it.
+Action. What gets done? The meeting happens, or the referral goes out, or the case waits. The action is a separate link because a decision can be made and never carried out.
+Consequence. What followed? She stayed on track, or she did not. The support helped, or it did not, or it was never given.
+        </P>
+        <P>
+          Then the return leg. What did the consequence show about the construct and the representation? If students who got the meeting stayed on track, that is what followed. Whether the meeting caused it is a further claim, and how much evidence that claim needs depends on the decision riding on it. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> grades it by verb: the evidence supports the outcome, contributed to it, or produced it. If the flag kept firing on students who went on to graduate with no support at all, that is a signal about the representation.
+        </P>
+        <P>
+          Two different things travel back along this leg, and only one of them is chosen. The first is learning: someone looks at what followed and deliberately changes a definition, a threshold or an intervention. The second happens whether anyone chooses it or not. The school&rsquo;s own decisions change the records that next year&rsquo;s flag is built from. If the support she received is recorded next year as one more risk factor, the system now reads help given as evidence that she was the problem. A school can run a careful review every term and still feed that distortion into its data, unless its records keep the student&rsquo;s condition apart from the school&rsquo;s response to it. The first essay ended on that clause. The return leg is where it lives, as a route for learning and as a route for distortion.
+        </P>
+        <P>
+          Separate from both, things change without the school doing anything, and the chain helps tell two kinds of change apart. When a state reissues its attendance codes, the recording rules have changed. The representation moved, and the thing the school is trying to know may not have. When what counts as risk for a fourteen-year-old shifts with the years she is growing up in, the target itself has moved. The first needs the fields remapped. The second needs the construct rewritten. Either way the chain has to keep pace with a world that will not hold still, which is the recurring cost <InternalLink slug="the-delta-nobody-budgeted">The delta nobody budgeted</InternalLink> puts a name to. [<I>The construct keeps moving</I>] follows the larger case. [link when it ships]
+        </P>
+        <P>
+          The return leg can also stop short. Argyris and Schön separated learning that corrects the action from learning that changes the goals and decision rules behind it, and called them single-loop and double-loop (Argyris &amp; Schön, <I>Organizational Learning: A Theory of Action Perspective</I>, Addison-Wesley, 1978). A school that sees flagged students still falling behind after one meeting, and adds a second meeting within the same rules, has closed a single loop. A school that asks whether the flag should include discipline records at all has closed a double loop. The return leg goes as far upstream as the evidence warrants. Sometimes that is the action protocol, sometimes the threshold or the fields, and occasionally the construct itself. The figure draws it to the construct because that is the farthest it can reach.
+        </P>
+        <P>
+          The chain has six points and seven places it can break: the construct itself, the five steps between the points, and the return leg. This essay calls those seven the links. Every link needs an owner and evidence, and either one can be missing. The flag in the first essay failed at decision to action. The data was clean and the model was accurate, and nobody was named to receive the signal. That is one break at one link. A decision system is the arrangement that makes all seven hold at once.
+        </P>
+        <P>
+          The three failure points from the first essay fall along this chain in a pattern. Meaning fails at the front, when the construct is undefined or defined differently in different places. Validity fails across the middle, when the number does not support the claim being read off it. Authority fails across the back half, when nobody owns the call or nobody is permitted to act.
+        </P>
+        <Figure
+          src="/library/figures/the-decision-chain-inline.svg"
+          alt="The decision chain: construct, representation, inference, decision and action in a row, consequence below action, a dashed return leg back to construct, and three bands marking where meaning, validity and authority fail"
+          caption="Six nodes from construct to consequence, and the return leg that carries what the outcome showed into the next measurement. The bands beneath mark where meaning, validity and authority fail. A fuller version is published on its own as a library artifact, and the “breaks at” line on each essay page points to it."
+        />
+        <H2>What Messick and Kane already wrote down</H2>
+        <P>
+          None of this chain is new at the front, and the lineage should be stated before the extension.
+        </P>
+        <P>
+          Messick moved validity from the instrument to what is done with it. In his 1995 condensation of the framework he defines validity as &ldquo;an overall evaluative judgment of the degree to which empirical evidence and theoretical rationales support the adequacy and appropriateness of interpretations and actions on the basis of test scores or other modes of assessment&rdquo; (<a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick, 1995</a>, p. 741). The word <I>actions</I> is in the definition. Messick also drew a two-by-two that crosses two sources of justification, the evidential and the consequential, with two functions of testing, interpretation and use (<a href="https://doi.org/10.1093/oso/9780197654965.003.0004" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lane &amp; Marion, 2025</a>, pp. 204&ndash;205). The bottom-right cell of that matrix is the social consequences of using the score. Read as a chain, Messick&rsquo;s matrix already runs from construct to consequence.
+        </P>
+        <P>
+          Kane turned that judgment into an argument you write down. In his account, validation lays out the chain of inferences that leads from an observed performance to a conclusion and a decision, and then examines each one (<a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 1992</a>; <a href="https://doi.org/10.1111/jedm.12000" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 2013</a>). The inferences are scoring, generalization, extrapolation, and a final step Kane calls the decision inference, which &ldquo;takes us from a person&rsquo;s score to a decision about the person&rdquo; (<a href="https://doi.org/10.1111/jedm.12000" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 2013</a>, p. 11). The argument is only as strong as its weakest link, and the evidence should go there. <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink> and <InternalLink slug="every-metric-is-a-claim">Every metric is a claim</InternalLink> both run on that rule.
+        </P>
+        <P>
+          Kane is also wary of the word this chain starts with. He rarely uses construct language, he wrote, because the word &ldquo;has acquired so many meanings&rdquo; that talk about constructs can mask &ldquo;the fact that what is being measured is not well defined&rdquo; (<a href="https://doi.org/10.1080/15366367.2012.681977" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 2012</a>, <I>Measurement</I> 10, 66&ndash;70, p. 67). That warning is the reason the chain starts where it does. Construct here means what the organization is trying to know, stated precisely enough that two sites read it the same way, rather than a trait embedded in a theory. When nobody has written that sentence down, the construct link has already failed, whatever the instruments downstream look like.
+        </P>
+        <P>
+          The current statement of the field goes further than either. Lane and Marion&rsquo;s chapter in the fifth edition of <I>Educational Measurement</I> says that &ldquo;score meaning cannot be evaluated without considering use and resulting consequences&rdquo; (<a href="https://doi.org/10.1093/oso/9780197654965.003.0004" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Lane &amp; Marion, 2025</a>, p. 221).
+        </P>
+        <P>
+          So the validity tradition already covers most of this road, the decision and its consequences included. What I am adding is narrower, and I want to keep it separate from what I am borrowing.
+        </P>
+        <P>
+          Validity theory treats the decision as the use of a score and asks whether the use is justified. It can do that without making the allocation of the decision a separate point to audit, so the score can be valid, the use justified, and nobody holding the call. In the testing programs this theory grew up with, such as admission, placement and licensure, the use is named before the score exists, and whoever uses the score for that purpose is the one deciding. In the organizations I have worked in, where the score comes from a dashboard, a model or an agent, the two are often held by different teams, and the call falls between them. That is why the chain on this site carries decision as its own node, and why authority is one of the three failure points.
+        </P>
+        <P>
+          The second addition is the return leg as an organizational job. Messick&rsquo;s consequences feed back into validity as evidence, and the <I>Standards</I> narrow that. Evidence about consequences counts toward validity when it can be traced to a source of invalidity in the measure, and otherwise it does not (<a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/standards_2014edition.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">AERA, APA &amp; NCME, <I>Standards for Educational and Psychological Testing</I>, 2014</a>, p. 20). That is a return leg for the measurement argument. An organization also needs one for its own measurement system, with someone whose work it is to act on what the consequence showed. <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> calls that job 4 and finds that, in the organizations it describes, it belongs to nobody.
+        </P>
+        <P>
+          The rest of the chain has lineages outside measurement. Decision intelligence, in Lorien Pratt&rsquo;s <I>Link</I> (2019), organizes information around the decision rather than the data, and Pratt and Malcolm&rsquo;s <I>Decision Intelligence Handbook</I> (O&rsquo;Reilly, 2023) ends on a decision review meant to improve the next round. Organizational economics asks who should hold a decision. Jensen and Meckling argued that decision rights work best when they sit with whoever holds the knowledge the decision needs (Jensen &amp; Meckling, &ldquo;Specific and general knowledge, and organizational structure,&rdquo; in Werin &amp; Wijkander (Eds.), <I>Contract Economics</I>, Blackwell, 1992, pp. 251&ndash;274). Matt Hennessey, chief data and analytics officer for NHS Greater Manchester, makes it an infrastructure principle: &ldquo;decision rights should be the north star of NHS data infrastructure,&rdquo; and the test of success is whether the right decision-maker receives trusted intelligence where action is possible (<a href="https://www.linkedin.com/pulse/nhs-does-need-one-data-platform-rule-them-all-needs-matt-hennessey-srdee/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Hennessey, LinkedIn, August 2026</a>). Elinor Ostrom, studying communities that share a forest or a fishery, separated the rules written down from the rules in use, meaning the shared understanding of who may or must act, and who must not, and found that lasting institutions let most people affected by a rule take part in changing it (<a href="https://doi.org/10.1257/aer.100.3.641" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ostrom, 2010</a>, <I>American Economic Review</I> 100(3)). Each of these covers part of the back half. None of them asks whether the number in front of the decision-maker measures what it claims to. [<I>Cronbach wrote both halves</I>] makes a related observation about one author in 1955 and 1957. [link when that piece ships]
+        </P>
+        <P>
+          Closer to this library&rsquo;s own ground, research on data use in schools has drawn much of the chain already. Mandinach, Honey and Light (2006) set out data becoming information and then knowledge, followed by a decision, its implementation and its impact, with feedback loops back to the earlier steps (<a href="https://cct.edc.org/sites/cct.edc.org/files/publications/DataFrame_AERA06.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mandinach, Honey &amp; Light, AERA, 2006</a>). They do not carry a validity argument along that sequence, and they point to Cronbach and Messick for it. Coburn and Turner (2011) added that using data is an interpretive act inside organizational conditions, where data can be a source of power (<a href="https://doi.org/10.1080/15366367.2011.626729" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Coburn &amp; Turner, 2011</a>, <I>Measurement: Interdisciplinary Research and Perspectives</I> 9(4), 173&ndash;206). So the steps of this chain are not new, and neither is the observation that power runs through them. The nearest practitioner version is recent. Karthikeyan Kaliyaperumal, writing on enterprise AI governance in July 2026, argues that &ldquo;the governed unit is the decision,&rdquo; not the dataset, the model or the agent. He joins data, model, risk and decision governance on one spine and proposes decision replay: reconstructing what the system knew, who had authority, what action occurred and what outcome followed (<a href="https://www.linkedin.com/pulse/integrated-ai-governance-framework-karthikeyan-kaliyaperumal-rwbxf/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kaliyaperumal, &ldquo;The Integrated AI Governance Framework: From Trusted Data to Accountable Decisions,&rdquo; LinkedIn, July 2026</a>). That is much of this chain&rsquo;s back half, built out for a large enterprise, including a return leg he calls outcome-time governance. What it makes explicit is model evaluation against a specified target: performance, calibration and drift. What it does not make explicit is whether that target, and the number standing for it, support the reading the decision puts on them. A model can be well calibrated against an operational label that stands poorly for the thing the organization is trying to know.
+        </P>
+        <P>
+          What this essay adds is a synthesis: measurement validity, decision authority, execution and organizational learning on one path that can be audited. The point of putting them on one path is practical. An organization can have strong evidence at the representation and the inference and still lack the authority, the capacity to act or the evidence about consequences that the intended benefit depends on. Seeing that changes where its next unit of effort goes.
+        </P>
+        <H2>One chain, counted three ways</H2>
+        <P>
+          Other pieces in this library count the chain differently, and a reader who moves between them should be able to translate. This essay is where the chain is named, so the translation lives here.
+        </P>
+        <P>
+          Kane&rsquo;s chain and this one are different kinds of object, so the translation is not one to one. The decision chain is a build sequence. It asks what has to be built, carried and governed, starting from the construct. Kane&rsquo;s is a justification sequence. It asks which steps from what was observed to what is claimed have to be warranted, starting from the observation. All of Kane&rsquo;s inferences are made once a representation exists, so none of them sits on the construct → representation link. That link is a design choice, and extrapolation evidence is one of the ways to test it. Kane also offers his four as examples rather than a template (2013, p. 11), which is part of why pieces in this library have counted the chain in different ways.
+        </P>
+        <P>
+          Two kinds of checking run along the chain. One asks whether a defined transformation was carried out faithfully: given these fields and these rules, does the score follow from the record? The other asks whether a step is warranted, and it applies wherever the step rests on assumptions that could fail. That starts earlier than it looks. Scoring is already an inference in Kane&rsquo;s account, because a rubric or a scoring rule can be wrong even when it is applied without error. Data engineering and the semantic layer carry most of the first kind of checking; the second runs from the scoring rule onward. Kane writes each inference in Toulmin&rsquo;s (1958) form, with a warrant that licenses the step and backing for the warrant (Kane, 2013, p. 12). In that sense every reading taken off the number is a claim, which is the argument of <InternalLink slug="every-metric-is-a-claim">Every metric is a claim</InternalLink>. [<I>The bound moved</I>] takes up what happens to the conditions under which those steps fail. [link when it ships]
+        </P>
+        <EssayTable
+          headers={["On the decision chain", "Kane’s inferences", "The four questions in The bound moved", "The eight links in Cronbach wrote both halves"]}
+          rows={[
+            ["Construct", "Not an inference. It is the interpretation the argument states at the outset", "Has a person written down what this means?", "Assumed"],
+            ["Construct → representation", "No inference. A design choice; extrapolation evidence is one test of it", "Not asked directly", "Assumed"],
+            ["Representation, the node itself", "Scoring, generalization", "Was it recorded right? Does it hold up?", "1 Scoring, 2 Generalization"],
+            ["Representation → inference", "Extrapolation", "Does it reflect what matters?", "3 Extrapolation"],
+            ["Inference → decision", "Decision, Kane’s “decision inference”", "Does it support the decision?", "4 Transmission"],
+            ["Decision → action", "Outside the chain", "Outside the chain", "5 Action"],
+            ["Action → consequence", "Outside the chain. Messick’s consequential basis reaches it", "Outside the chain", "6 Improvement, 7 Economy"],
+            ["The return leg", "Outside the chain", "Outside the chain", "8 Durability"],
+          ]}
+        />
+        <P>
+          Two things follow from the table. Kane&rsquo;s four inferences end at the decision, and everything after it is the extension. <I>Cronbach wrote both halves</I> breaks his fourth into five. And when a piece says a claim fails &ldquo;at link three,&rdquo; it means extrapolation: the reading taken off the number reaches past what the evidence supports. On this chain that shows at representation → inference, and the cause is often one link upstream, in the choice of what stands for the construct. The fourth question in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, whether the fund&rsquo;s capital contributed, is a causal claim read off the evidence, so it too sits at representation → inference.
+        </P>
+        <H2>The objection from inside validity theory</H2>
+        <P>
+          The strongest objection to this chain comes from measurement people, and it deserves its full form.
+        </P>
+        <P>
+          Borsboom, Mellenbergh and van Heerden (2004) argued that validity should mean something small and exact. A test is valid for measuring an attribute if the attribute exists and variation in it causes variation in the scores (<a href="https://doi.org/10.1037/0033-295X.111.4.1061" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Borsboom, Mellenbergh &amp; van Heerden, 2004</a>, <I>Psychological Review</I> 111(4), 1061&ndash;1071). Everything about use and consequences, on this view, is a different question. Cizek (2012) made a related split: validating what a score means and justifying what a test is used for are two different tasks (<a href="https://doi.org/10.1037/a0026975" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Cizek, 2012</a>, <I>Psychological Methods</I> 17(1), 31&ndash;43).
+        </P>
+        <P>
+          I think the objection is right about the word and does not touch the chain. If consequences are not called validity, they still have to be evaluated by someone, and the decision still has to be held by someone. Kane put the cost of the narrow reading plainly: if validity covers only the interpretation, then validation &ldquo;does not justify the use of the decision procedure&rdquo; (<a href="https://doi.org/10.1080/15366367.2012.681977" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane, 2012</a>, p. 69). The dispute is over which discipline does that work. Either way, someone has to do it. A decision system does not need that dispute settled. It needs every link to have an owner and evidence, whatever the field calls the evidence at the back half.
+        </P>
+        <P>
+          The objection does sharpen one thing, which I am glad to take. Borsboom&rsquo;s test is written for measures, where the thing we mean is supposed to cause the scores. Many representations in a decision system are predictors instead. Attendance, grades and discipline records go into the ninth grader&rsquo;s score because they forecast not graduating, not because her risk produces them. The causal test does not carry over to a predictor, and the chain should not pretend it does. For a predictor the question is whether the relationship holds for this population, this outcome and this way of acting on it. Two things can break it. One is variation that has nothing to do with the student&rsquo;s risk. Discipline records move with who does the disciplining, which Messick called construct-irrelevant variation, and the first essay&rsquo;s zip-code example is the same problem. That does not show the records carry no signal about her; it shows they carry something else as well. The other is the decision itself. Once the school acts on the flag, it changes the outcomes the flag was trained to predict. A flag can correctly pick out students who would have fallen behind without help, and still look miscalibrated against what happened once they got help. The relationship it was built on no longer holds under the new policy, even though its predictions were useful, and judging it on this year&rsquo;s outcomes alone would mistake the help for the flag&rsquo;s error.
+        </P>
+        <H2>Where data, analytics and measurement architectures land on the chain</H2>
+        <P>
+          Data and analytics has a definition of itself, and it claims the whole road. Gartner defines the field as &ldquo;the ways data is managed to support all uses of data, and the analysis of data to drive improved decisions, business processes and outcomes,&rdquo; and says it &ldquo;can improve decision outcomes for all types of decisions&rdquo; (<a href="https://www.gartner.com/en/topics/data-and-analytics" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Gartner, &ldquo;Data and analytics,&rdquo; accessed 2026-11-06</a>). Decisions and outcomes are in the definition, the same way actions are in Messick&rsquo;s.
+        </P>
+        <P>
+          The deliverable is where the definition and the chain part. Place the usual outputs of a data team on the chain and most of them land on two links. The data model, the pipeline and the semantic definitions are work at construct to representation. The dashboard, the report, the analysis and the model score are work at representation to inference. The field&rsquo;s own maturity ladder runs from descriptive to diagnostic to predictive to prescriptive, and its top rung is a recommendation about what to do. A recommendation is an inference about a decision. It is still upstream of the question of who settles the call, what gets done, and what followed.
+        </P>
+        <P>
+          None of this criticizes the work at those links; a good semantic layer and a good dashboard are necessary. The point is about scope. Some data work does reach further. Experimentation programs, optimization and automated decision systems act and measure what followed. But the artifacts most data teams are hired to produce sit at the front, even when the charter names decisions and outcomes, and the job postings below say the same. A team whose work lands mostly on two links while its charter names all seven will be judged on outcomes it has no way to reach. When the outcomes do not move, the usual response is another dashboard.
+        </P>
+        <P>
+          Measurement has an architecture of its own, and it runs further than a dashboard. Evidence-centered design, set out by Mislevy, Steinberg and Almond (2003), builds an assessment from the construct forward: what is to be claimed about a student, what evidence would support the claim, and what tasks would produce that evidence. The authors open by calling an assessment &ldquo;a machine for reasoning about what students know, can do, or have accomplished, based on a handful of things they say, do, or make in particular settings&rdquo; (<a href="https://cresst.org/wp-content/uploads/TR597.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mislevy, Steinberg &amp; Almond, 2003</a>, CSE Technical Report 597, p. 1; published in <I>Measurement: Interdisciplinary Research and Perspectives</I> 1(1), 3&ndash;62). That covers the front of this chain with more rigor than most data work does. Its product is a claim about the student. An assessment can be designed with its intended use in view, and Kane&rsquo;s argument extends to justifying the decision. Neither is, by itself, a framework for authorizing that decision inside an organization, carrying it out, and checking what followed.
+        </P>
+        <P>
+          The same shape shows up in how the seat is written. <InternalLink slug="required-for-what">Required for what?</InternalLink> coded sixty-five senior data and AI leadership postings. Ninety-eight percent named what the person must bring. Thirty-five percent named what the role may decide. Eleven percent named how anyone would know the role&rsquo;s calls were good. Read along the chain, the postings specify the front and leave the decision and the consequence unwritten. A seat specified that way will deliver at the front, because that is all anyone asked of it. This library leans the same way. Each diagnostic piece on the site names the link where its chain breaks, and about half of those links sit at the first three, while two sit at the step from inference to decision. The coding is my own reading of my own pieces, so it says where the next pieces are owed rather than anything about the framework. [The count by link is on the artifact page.]
+        </P>
+        <H2>The layer that sets what the stack has to carry</H2>
+        <P>
+          AB&rsquo;s name for the work across the whole chain is the measurement and decision layer. It is easiest to define by what it does to the rest of the stack, which is data infrastructure, analytics and AI. The layer sets what the stack has to carry, and then it checks what the stack&rsquo;s output did. On the chain, measurement and infrastructure are a close-up of the representation link: they are how a construct gets recorded, moved and kept.
+        </P>
+        <P>
+          From the construct end, it writes the specification, the way evidence-centered design does for an assessment. What are we trying to know, for which recurring decision, stated precisely enough that the representation can be checked against it? That specification tells infrastructure what to collect and keep, tells analytics what the metric definitions must be, and tells an AI system what it is being asked to predict or do. Without it, each of those is built against what is available rather than against what the decision needs. This is the meaning work from the first essay, and <InternalLink slug="three-surfaces-one-keystone">Three surfaces, one keystone</InternalLink> is where it gets built. <InternalLink slug="measurement-arrives-after-the-build">When measurement arrives after the build</InternalLink> shows what a team cannot show a buyer later when nobody decided early what to record.
+        </P>
+        <P>
+          From the consequence end, it checks what the stack&rsquo;s output did. Did the flag reach an owner? Did the owner act? What followed, for whom, and what evidence would show the action caused it, at the strength the decision needs? What should the next version of the construct, the fields or the threshold be? None of those questions can be answered from the analytic output alone. The answers sit in routing logs, workflow records and outcome records, so the system has to keep those, linked to the flag that started them. It should keep the minimum those claims and obligations need. In schools and clinics, linking records carries privacy, retention and surveillance risks of its own.
+        </P>
+        <P>
+          Between the two ends, the layer holds the validity argument: whether the reading being taken off the number is warranted for this use. That is Kane&rsquo;s chain, run on the organization&rsquo;s own measures.
+        </P>
+        <P>
+          AI makes this sharper. An agent that acts on a flag joins inference, decision and action into one step, and runs it faster than anyone reads it. <InternalLink slug="actions-not-answers">Actions, not answers</InternalLink> describes what the agent&rsquo;s contract then has to carry. On the chain, an agent can remove the pause between inference and action, which was often the one place a human caught a bad reading. Approval gates and review can keep it, but only if the layer puts them back on purpose, as an autonomy range and a named owner.
+        </P>
+        <H2>A chain audit for one decision</H2>
+        <P>
+          This is written for a head of data or analytics, and for the executive who commissions that team. It is a first version. The questions come from the chain and from the cases in this library, and they have not yet been run as a full audit inside an organization. Pick one recurring decision the team&rsquo;s work is meant to inform. It should be a call someone makes every week or every month, with a named action at the end. Then answer seven questions, one per link, and write down two things for each: who owns it, and what evidence they have. Each question is named for a point on the chain, but it tests the step into that point. The representation question asks about construct → representation, which includes what the organization collects, what is missing and what it is willing or able to observe. The action question asks about decision → action. That is how the questions line up with the links the library codes.
+        </P>
+        <P>
+          Construct. What are we trying to know, in one sentence two sites would read the same way?
+Representation. Which fields stand for it, what is missing or never collected, and what would show that they track it rather than something next to it?
+Inference. What is the score allowed to mean, at what threshold, and who set it?
+Decision. What choice is being made, under what rule or discretion, and who settles it, by name or seat, with the authority and the time to do it? Is that the rule in use, in Ostrom&rsquo;s sense, or only the rule on paper? And does the right to decide sit with the person who holds the knowledge the call needs, which is Jensen and Meckling&rsquo;s test, at a level where action is possible, which is Hennessey&rsquo;s?
+Action. What happens after the call, who controls the resources it needs, who answers when it does not happen, and how would anyone know it did not? A counselor can authorize a referral that a provider with no capacity cannot take.
+Consequence. What followed, for whom and by when, and what evidence would show the action caused it, at the strength this decision needs? For a high-stakes call, or one where the person who acted has reason to report success, the record should be written by someone else. For a routine call, the system&rsquo;s own logs may be enough.
+Return. Who decides how far upstream a change has to go (the action, the threshold, the fields or the construct), and when did that last happen?
+        </P>
+        <P>
+          The audit finds gaps. It does not rank them, and the ranking comes from the decision, working backward from what a failure would cost the person the decision is about. Kaliyaperumal makes the same point about human involvement, which he would tier to consequence rather than add after every step. A missing owner on a routine step can wait. A weak inference feeding a high-stakes action cannot, even when every link has a name beside it. Once the order is set, the kind of gap says what to do. A link with no owner needs a name. A link with an owner and no evidence needs a measurement. A link where an automated step acts on more than its evidence supports needs a narrower range of autonomy. Any of those can matter more than another dashboard. And having evidence is not the same as having enough. A documented rationale at every link answers all seven questions. So does independently tested evidence, checked by subgroup, with execution logs and an outcome evaluation matched to the decision. The two give very different assurance, and the evidence at each link should be sufficient for the claim or decision made there, which is the same standard the validity argument sets.
+        </P>
+        <P>
+          The clearest time I saw the chain run end to end was an enrollment decision at a K&ndash;8 network with five schools. The construct was concrete: how many students would be in seats on the state&rsquo;s census day, because the facility lease depended on it. I built the forecast from three models of past enrollment and applied the share of families who usually did not return. Leadership chose to aim for the number the lease required rather than a surplus, and that choice became weekly targets for each school leader and for the enrollment and operations teams. Each school tracked its number every week, tried things, and changed what was not working. The forecast was 1,450. First-day enrollment came in near 1,520, and the census-day count met the target. I cannot say how much of that the weekly loop caused. It was an operating chain, not an audit of all seven links. I can name who made the forecast, who chose the target and who carried the weekly numbers, and the return leg ran every week instead of once a year, even if all it ever adjusted was the action.
+        </P>
+        <P>
+          A data team does not have to own all seven links. It has to know which ones it holds, and someone in the organization has to hold the rest. The audit makes that division visible, and it gives the data leader a way to say, in the next conversation about outcomes, which links the outcome depends on and who holds them.
+        </P>
+        <H2>Back to the ninth grader</H2>
+        <P>
+          The first essay ended on four conditions for her flag to become help: the definition held, a named counselor owned it by Tuesday, the measure found her and not her zip code, and the support she got was recorded as help given. Read on the chain, those are the construct, the decision, the representation and the return leg. The dashboard carried one link of that, the one between the score and the screen, and it carried it well.
+        </P>
+        <P>
+          The decision system is all seven. Most of the seven have nothing on a screen to show for them, which makes them easy to leave unowned, and that is where her flag was lost.
+        </P>
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="the-decision-system"
+            title="The Decision System"
+            gloss="part one: meaning, authority and validity, and the ninth-grader flag this essay follows."
+          />
+          <SeeAlsoItem
+            slug="four-jobs-one-loop"
+            title="Four jobs, one loop"
+            gloss="the return leg as an organizational job, and what happens when nobody holds it."
+          />
+          <SeeAlsoItem
+            slug="every-metric-is-a-claim"
+            title="Every metric is a claim"
+            gloss="Kane’s chain read onto a data stack, from collection protocol to the funder decision."
+          />
+        </SeeAlso>
+        <MetaNote>
+          Written between September and November 2026 for the Analytic Bytes Library, as the second part of the Decision System framework. The K&ndash;8 enrollment case is from the author&rsquo;s own record, and the network is not named, by standing practice. The figure is the library&rsquo;s decision chain artifact, and the library coding it points to is the author&rsquo;s own reading of each piece rather than an independent measure. The audit is a first version and has not yet been run in full inside an organization. Sources and how each was checked are in the piece&rsquo;s source pack.
+        </MetaNote>
+      </>
+    ),
+  },
 
   // ===================================================================
   // ESSAY 18 — Every metric is a claim.

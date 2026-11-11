@@ -110,12 +110,21 @@ def md_units(md):
     # produced four false "JSX ahead" verdicts before it was caught.
     body = re.sub(r'(?m)^[ \t]*(-{3,}|\*{3,}|_{3,})[ \t]*$', '\n\n---\n\n', body)
     body = re.split(r'<SeeAlso>|<MetaNote>',body)[0]
-    out=[]; after_fig=False
+    out=[]; after_fig=False; seen_h1=False
     for p in re.split(r'\n\s*\n',body):
-        p=re.sub(r'</?(NumList|NumItem|Brief)>','',p).strip()   # list wrappers sit in the MD too
+        p=re.sub(r'</?(NumList|NumItem|Brief|Table)>','',p).strip()  # wrappers sit in the MD too
         if not p: continue
         if set(p)<=set('-*_ ') and len(p)>=3: continue
-        if p.startswith('# '): continue
+        if p.startswith('# '): seen_h1=True; continue
+        # THE LINE AFTER THE H1 IS A DEK OR KICKER, NEVER BODY.
+        # md2jsx drops it. The earlier fix here only excluded one that matched
+        # the subtitle exactly, so a kicker whose wording differs -- "*The
+        # Decision System, part two*" against a subtitle of "Part two of The
+        # Decision System, from construct to consequence and back." -- still
+        # counted as a missing paragraph.
+        if seen_h1 and p.startswith('*') and p.endswith('*') and '](' not in p and len(p)<300:
+            seen_h1=False; continue
+        seen_h1=False
         low=p.lstrip('#').strip('*').strip().lower()
         if low in ('in brief','ab field note') or low.startswith('in brief'): continue
         if p.startswith('## '): out.append(norm(p[3:])); continue
@@ -265,9 +274,15 @@ for f in sorted(glob.glob(D+"/*.md")):
     # markdown and never folded leaves the file reporting "in sync" with the
     # figure missing from the page. That is exactly what happened to FN19:
     # a second inline figure sat unfolded while every drift run said clean.
-    md_figs = len(re.findall(r'(?m)^!\[', md))
+    md_figs = len(re.findall(r'(?m)^!\[', re.sub(r'<!--.*?-->', '', md, flags=re.S)))
     jsx_figs = len(re.findall(r'<Figure\b', REG[slug]['blk']))
-    md_tabs = len([x for x in re.split(r'\n\s*\n', md) if x.strip().startswith('|')])
+    # Count assets in the body the converter will actually emit: comments are
+    # stripped before conversion, so a table or figure parked inside a <!-- -->
+    # block is not owed. the_decision_chain keeps a full tally section commented
+    # out as reversible, and counting its table reported a gap that did not exist.
+    md_live = re.sub(r'<!--.*?-->', '', md, flags=re.S)
+    md_tabs = len([x for x in re.split(r'\n\s*\n', md_live)
+                   if x.strip().startswith('|') or x.strip().startswith('<Table>')])
     jsx_tabs = len(re.findall(r'<EssayTable\b', REG[slug]['blk']))
     asset_gap = []
     if md_figs != jsx_figs:

@@ -95,7 +95,13 @@ def convert(md_path, brief_jsx, tail_jsx):
     paras = re.split(r'\n\s*\n', body)
     k = 0
     while k < len(paras):
-        p = re.sub(r'</?(NumList|NumItem|Brief)>', '', paras[k]).strip(); k += 1
+        # <Table> wrappers sit around pipe tables in the markdown the same way
+        # <NumList> sits around numbered lists. Left in place the block does not
+        # start with "|", so the table handler never sees it and the whole thing
+        # reaches the page as a paragraph containing a literal <Table> tag --
+        # which tsc catches as an undefined component, but only because the name
+        # happens to look like one.
+        p = re.sub(r'</?(NumList|NumItem|Brief|Table)>', '', paras[k]).strip(); k += 1
         if not p:
             continue
         if set(p) <= set('-*_ ') and len(p) >= 3:
@@ -117,8 +123,15 @@ def convert(md_path, brief_jsx, tail_jsx):
             alt, src, cap = m.group(1), m.group(2), ''
             if k < len(paras):
                 nxt = paras[k].strip()
-                if nxt.startswith('*') and nxt.endswith('*') and '](' not in nxt:
-                    cap = nxt.strip('*').strip(); k += 1
+                # A caption may contain a markdown link. Figure takes caption as
+                # a plain string, so the link cannot render -- but the previous
+                # guard rejected the whole line when it saw one, which dropped
+                # the caption silently and pushed it into the body as a
+                # paragraph. Keep the sentence, flatten the link to its text,
+                # the same treatment table cells get.
+                if nxt.startswith('*') and nxt.endswith('*'):
+                    cap = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', nxt.strip('*').strip())
+                    k += 1
             out.append('\n        <Figure\n          src="%s"\n          alt="%s"\n          caption="%s"\n        />'
                        % (src, smart(alt), smart(cap)))
             continue
