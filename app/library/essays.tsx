@@ -5120,7 +5120,7 @@ export const ESSAYS: Essay[] = [
           turns.
         </P>
 
-        <P>The flag was always the easy part. The system is the work.</P>
+        <P>The flag was always the easy part. The system is the work. <InternalLink slug="the-decision-chain">The decision chain</InternalLink> is part two: the chain those three failures run along, from construct to consequence and back.</P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -10156,7 +10156,7 @@ export const ESSAYS: Essay[] = [
             A decision system is everything it takes to carry one recurring decision the whole length of that chain and back. None of its parts are new. Validity theory, decision intelligence and organizational design each cover part of the road. Practitioners have begun to put them on one path by governing the decision rather than the dataset. What this essay adds is the chain that joins them to the validity of the target itself.
           </p>
           <p>
-            The chain is a way to build, deploy, audit and validate a decision system from construct to consequence and back, checking at each link whether the reasoning holds and whether someone has the authority to act. It also separates this architecture from two it borrows from: data and analytics work, which mostly delivers at two links, and measurement design, which stops at the claim and leaves the decision to someone else. The essay ends with a first-version audit a data leader can run on one decision.
+            The chain is a way to build, deploy, audit and validate a decision system from construct to consequence and back, checking at each link whether the reasoning holds and whether someone has the authority to act. It separates that architecture from the two it borrows from, which each stop short of one end of it. The essay ends with a first-version audit a data leader can run on one decision.
           </p>
         </Brief>
         <H2>One flag, followed the whole way</H2>
@@ -10371,7 +10371,7 @@ Return. Who decides how far upstream a change has to go (the action, the thresho
       <>
         <Brief>
           <p>
-            In 1955, Lee Cronbach and Paul Meehl gave measurement the question of construct validity: does a test measure what it claims to? Two years later, Cronbach and Goldine Gleser worked out the other half, which asks whether using a test leaves you better off, given the base rate, how many cases you can act on, and what each kind of error costs. The first organized a field. The second traveled mostly as a name, and when measurement theory reached AI benchmarking, the first half traveled more readily.
+            In 1955, Lee Cronbach and Paul Meehl gave measurement the question of construct validity: does a test measure what it claims to? Two years later, Cronbach and Goldine Gleser worked out the other half, which asks whether using a test leaves you better off. The first organized a field. The second traveled mostly as a name, and when measurement theory reached AI benchmarking, the first half traveled more readily.
           </p>
           <p>
             That matters because evidence can justify a decision only if what was measured bears on the quantity the decision requires. A benchmark can say what its score means. Only the organization deploying the model knows the decision it has to make, its base rate, its capacity to act and its costs. The bridge between the two has to be built by someone, and benchmarking has built only one side of it.
@@ -10739,7 +10739,7 @@ All sources are public. Kane 2013 was read in full and is quoted from the articl
         </P>
         <P>
           The evidence establishes the warrant. The infrastructure carries it. Somebody decides when it must be checked again. Those three sentences are the whole method. Split them across two seats, as the organization I left did, and the warrant falls between them. Put them in one seat, as the postings do, and that seat still needs the third sentence written into its charter: who decides when the evidence must be checked again. None of the eight says. Until one does, the number on the dashboard is still a claim, and nobody has signed it.
-        </P>
+         <InternalLink slug="the-decision-chain">The decision chain</InternalLink> puts that signature question on one link of a longer chain, and asks the same of the other six.</P>
 
         <SeeAlso>
           <SeeAlsoItem
