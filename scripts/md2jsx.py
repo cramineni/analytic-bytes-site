@@ -63,6 +63,22 @@ def inline(md):
     md = re.sub(r'`([^`]+)`', r'<C>\1</C>', md)
     slots = []
 
+    # SOME MARKDOWN CARRIES RAW JSX, NOT MARKDOWN LINKS.
+    # cronbach_wrote_both_halves writes its cross-references as literal
+    # <InternalLink slug="x">text</InternalLink> rather than [text](/library/x).
+    # Everything downstream here curls quotes and escapes entities, which turned
+    # slug="x" into slug=&ldquo;x&rdquo; and produced JSX that does not parse.
+    # Park the opening tags before any of that runs and restore them after, so
+    # attributes survive verbatim while the text between tags is still processed.
+    tags = []
+
+    def _park(m):
+        tags.append(m.group(0))
+        return '\x02TAG%d\x02' % (len(tags) - 1)
+
+    md = re.sub(r'<(?:InternalLink|ArtifactLink|C|I|B)\b[^>]*>|</(?:InternalLink|ArtifactLink|C|I|B)>',
+                _park, md)
+
     def link(m):
         text, url = m.group(1), m.group(2)
         if url.startswith('/library/') and text.startswith('*') and text.endswith('*'):
@@ -81,7 +97,10 @@ def inline(md):
     s = _emph(entities(s))
     for n, r in enumerate(slots):
         s = s.replace('\x00%d\x00' % n, r)
-    return s
+    out = s
+    for i, t in enumerate(tags):
+        out = out.replace('\x02TAG%d\x02' % i, t)
+    return out
 
 
 def convert(md_path, brief_jsx, tail_jsx):

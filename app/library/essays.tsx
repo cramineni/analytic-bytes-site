@@ -8606,7 +8606,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Human-machine agreement is a reliability indicator, not a validity strategy. That claim was in a 2017 manuscript. The infrastructure for what a validity strategy actually looks like &mdash; for AI systems, for automated scoring, for any measurement system that stands in for human judgment &mdash; was built alongside it. The AI eval field does not need to invent that infrastructure. It needs to find it and turn it toward the systems being built now.
-        </P>
+         <InternalLink slug="cronbach-wrote-both-halves">Cronbach wrote both halves</InternalLink> follows the same inheritance one step later: which half of validity theory reached AI benchmarking, and what the adopter has to build because the other half did not.</P>
         <H2>References</H2>
         <P>
           Bejar, I. I., Flor, M., Futagi, Y., &amp; Ramineni, C. (2014). On the vulnerability of automated scoring to construct-irrelevant response strategies (CIRS): An illustration. <I>Assessing Writing, 22</I>, 48&ndash;59.
@@ -8977,7 +8977,7 @@ export const ESSAYS: Essay[] = [
         </P>
         <P>
           Whoever takes one of these sixty-six roles will work out what they are allowed to decide the way people always have. They will try something and see whether anyone objects. That repair has always been done by a person, and it is worth asking what happens to it when the thing on the other side of the boundary is not one. The attributes were written down. In forty-two of these documents, what the role may settle was not.
-        </P>
+         <InternalLink slug="cronbach-wrote-both-halves">Cronbach wrote both halves</InternalLink> traces the decision half of validity from 1957 to benchmark reporting, where the same absence turns up at the evidence end.</P>
 
         <SeeAlso>
           <SeeAlsoItem
@@ -10178,7 +10178,7 @@ Consequence. What followed? She stayed on track, or she did not. The support hel
           Two different things travel back along this leg, and only one of them is chosen. The first is learning: someone looks at what followed and deliberately changes a definition, a threshold or an intervention. The second happens whether anyone chooses it or not. The school&rsquo;s own decisions change the records that next year&rsquo;s flag is built from. If the support she received is recorded next year as one more risk factor, the system now reads help given as evidence that she was the problem. A school can run a careful review every term and still feed that distortion into its data, unless its records keep the student&rsquo;s condition apart from the school&rsquo;s response to it. The first essay ended on that clause. The return leg is where it lives, as a route for learning and as a route for distortion.
         </P>
         <P>
-          Separate from both, things change without the school doing anything, and the chain helps tell two kinds of change apart. When a state reissues its attendance codes, the recording rules have changed. The representation moved, and the thing the school is trying to know may not have. When what counts as risk for a fourteen-year-old shifts with the years she is growing up in, the target itself has moved. The first needs the fields remapped. The second needs the construct rewritten. Either way the chain has to keep pace with a world that will not hold still, which is the recurring cost <InternalLink slug="the-delta-nobody-budgeted">The delta nobody budgeted</InternalLink> puts a name to. [<I>The construct keeps moving</I>] follows the larger case. [link when it ships]
+          Separate from both, things change without the school doing anything, and the chain helps tell two kinds of change apart. When a state reissues its attendance codes, the recording rules have changed. The representation moved, and the thing the school is trying to know may not have. When what counts as risk for a fourteen-year-old shifts with the years she is growing up in, the target itself has moved. The first needs the fields remapped. The second needs the construct rewritten. Either way the chain has to keep pace with a world that will not hold still, which is the recurring cost <InternalLink slug="the-delta-nobody-budgeted">The delta nobody budgeted</InternalLink> puts a name to.
         </P>
         <P>
           The return leg can also stop short. Argyris and Schön separated learning that corrects the action from learning that changes the goals and decision rules behind it, and called them single-loop and double-loop (Argyris &amp; Schön, <I>Organizational Learning: A Theory of Action Perspective</I>, Addison-Wesley, 1978). A school that sees flagged students still falling behind after one meeting, and adds a second meeting within the same rules, has closed a single loop. A school that asks whether the flag should include discipline records at all has closed a double loop. The return leg goes as far upstream as the evidence warrants. Sometimes that is the action protocol, sometimes the threshold or the fields, and occasionally the construct itself. The figure draws it to the construct because that is the farthest it can reach.
@@ -10220,7 +10220,7 @@ Consequence. What followed? She stayed on track, or she did not. The support hel
           The second addition is the return leg as an organizational job. Messick&rsquo;s consequences feed back into validity as evidence, and the <I>Standards</I> narrow that. Evidence about consequences counts toward validity when it can be traced to a source of invalidity in the measure, and otherwise it does not (<a href="https://www.testingstandards.net/uploads/7/6/6/4/76643089/standards_2014edition.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">AERA, APA &amp; NCME, <I>Standards for Educational and Psychological Testing</I>, 2014</a>, p. 20). That is a return leg for the measurement argument. An organization also needs one for its own measurement system, with someone whose work it is to act on what the consequence showed. <InternalLink slug="four-jobs-one-loop">Four jobs, one loop</InternalLink> calls that job 4 and finds that, in the organizations it describes, it belongs to nobody.
         </P>
         <P>
-          The rest of the chain has lineages outside measurement. Decision intelligence, in Lorien Pratt&rsquo;s <I>Link</I> (2019), organizes information around the decision rather than the data, and Pratt and Malcolm&rsquo;s <I>Decision Intelligence Handbook</I> (O&rsquo;Reilly, 2023) ends on a decision review meant to improve the next round. Organizational economics asks who should hold a decision. Jensen and Meckling argued that decision rights work best when they sit with whoever holds the knowledge the decision needs (Jensen &amp; Meckling, &ldquo;Specific and general knowledge, and organizational structure,&rdquo; in Werin &amp; Wijkander (Eds.), <I>Contract Economics</I>, Blackwell, 1992, pp. 251&ndash;274). Matt Hennessey, chief data and analytics officer for NHS Greater Manchester, makes it an infrastructure principle: &ldquo;decision rights should be the north star of NHS data infrastructure,&rdquo; and the test of success is whether the right decision-maker receives trusted intelligence where action is possible (<a href="https://www.linkedin.com/pulse/nhs-does-need-one-data-platform-rule-them-all-needs-matt-hennessey-srdee/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Hennessey, LinkedIn, August 2026</a>). Elinor Ostrom, studying communities that share a forest or a fishery, separated the rules written down from the rules in use, meaning the shared understanding of who may or must act, and who must not, and found that lasting institutions let most people affected by a rule take part in changing it (<a href="https://doi.org/10.1257/aer.100.3.641" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ostrom, 2010</a>, <I>American Economic Review</I> 100(3)). Each of these covers part of the back half. None of them asks whether the number in front of the decision-maker measures what it claims to. [<I>Cronbach wrote both halves</I>] makes a related observation about one author in 1955 and 1957. [link when that piece ships]
+          The rest of the chain has lineages outside measurement. Decision intelligence, in Lorien Pratt&rsquo;s <I>Link</I> (2019), organizes information around the decision rather than the data, and Pratt and Malcolm&rsquo;s <I>Decision Intelligence Handbook</I> (O&rsquo;Reilly, 2023) ends on a decision review meant to improve the next round. Organizational economics asks who should hold a decision. Jensen and Meckling argued that decision rights work best when they sit with whoever holds the knowledge the decision needs (Jensen &amp; Meckling, &ldquo;Specific and general knowledge, and organizational structure,&rdquo; in Werin &amp; Wijkander (Eds.), <I>Contract Economics</I>, Blackwell, 1992, pp. 251&ndash;274). Matt Hennessey, chief data and analytics officer for NHS Greater Manchester, makes it an infrastructure principle: &ldquo;decision rights should be the north star of NHS data infrastructure,&rdquo; and the test of success is whether the right decision-maker receives trusted intelligence where action is possible (<a href="https://www.linkedin.com/pulse/nhs-does-need-one-data-platform-rule-them-all-needs-matt-hennessey-srdee/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Hennessey, LinkedIn, August 2026</a>). Elinor Ostrom, studying communities that share a forest or a fishery, separated the rules written down from the rules in use, meaning the shared understanding of who may or must act, and who must not, and found that lasting institutions let most people affected by a rule take part in changing it (<a href="https://doi.org/10.1257/aer.100.3.641" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ostrom, 2010</a>, <I>American Economic Review</I> 100(3)). Each of these covers part of the back half. None of them asks whether the number in front of the decision-maker measures what it claims to. <InternalLink slug="cronbach-wrote-both-halves">Cronbach wrote both halves</InternalLink> makes a related observation about one author in 1955 and 1957.
         </P>
         <P>
           Closer to this library&rsquo;s own ground, research on data use in schools has drawn much of the chain already. Mandinach, Honey and Light (2006) set out data becoming information and then knowledge, followed by a decision, its implementation and its impact, with feedback loops back to the earlier steps (<a href="https://cct.edc.org/sites/cct.edc.org/files/publications/DataFrame_AERA06.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mandinach, Honey &amp; Light, AERA, 2006</a>). They do not carry a validity argument along that sequence, and they point to Cronbach and Messick for it. Coburn and Turner (2011) added that using data is an interpretive act inside organizational conditions, where data can be a source of power (<a href="https://doi.org/10.1080/15366367.2011.626729" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Coburn &amp; Turner, 2011</a>, <I>Measurement: Interdisciplinary Research and Perspectives</I> 9(4), 173&ndash;206). So the steps of this chain are not new, and neither is the observation that power runs through them. The nearest practitioner version is recent. Karthikeyan Kaliyaperumal, writing on enterprise AI governance in July 2026, argues that &ldquo;the governed unit is the decision,&rdquo; not the dataset, the model or the agent. He joins data, model, risk and decision governance on one spine and proposes decision replay: reconstructing what the system knew, who had authority, what action occurred and what outcome followed (<a href="https://www.linkedin.com/pulse/integrated-ai-governance-framework-karthikeyan-kaliyaperumal-rwbxf/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kaliyaperumal, &ldquo;The Integrated AI Governance Framework: From Trusted Data to Accountable Decisions,&rdquo; LinkedIn, July 2026</a>). That is much of this chain&rsquo;s back half, built out for a large enterprise, including a return leg he calls outcome-time governance. What it makes explicit is model evaluation against a specified target: performance, calibration and drift. What it does not make explicit is whether that target, and the number standing for it, support the reading the decision puts on them. A model can be well calibrated against an operational label that stands poorly for the thing the organization is trying to know.
@@ -10236,7 +10236,7 @@ Consequence. What followed? She stayed on track, or she did not. The support hel
           Kane&rsquo;s chain and this one are different kinds of object, so the translation is not one to one. The decision chain is a build sequence. It asks what has to be built, carried and governed, starting from the construct. Kane&rsquo;s is a justification sequence. It asks which steps from what was observed to what is claimed have to be warranted, starting from the observation. All of Kane&rsquo;s inferences are made once a representation exists, so none of them sits on the construct → representation link. That link is a design choice, and extrapolation evidence is one of the ways to test it. Kane also offers his four as examples rather than a template (2013, p. 11), which is part of why pieces in this library have counted the chain in different ways.
         </P>
         <P>
-          Two kinds of checking run along the chain. One asks whether a defined transformation was carried out faithfully: given these fields and these rules, does the score follow from the record? The other asks whether a step is warranted, and it applies wherever the step rests on assumptions that could fail. That starts earlier than it looks. Scoring is already an inference in Kane&rsquo;s account, because a rubric or a scoring rule can be wrong even when it is applied without error. Data engineering and the semantic layer carry most of the first kind of checking; the second runs from the scoring rule onward. Kane writes each inference in Toulmin&rsquo;s (1958) form, with a warrant that licenses the step and backing for the warrant (Kane, 2013, p. 12). In that sense every reading taken off the number is a claim, which is the argument of <InternalLink slug="every-metric-is-a-claim">Every metric is a claim</InternalLink>. [<I>The bound moved</I>] takes up what happens to the conditions under which those steps fail. [link when it ships]
+          Two kinds of checking run along the chain. One asks whether a defined transformation was carried out faithfully: given these fields and these rules, does the score follow from the record? The other asks whether a step is warranted, and it applies wherever the step rests on assumptions that could fail. That starts earlier than it looks. Scoring is already an inference in Kane&rsquo;s account, because a rubric or a scoring rule can be wrong even when it is applied without error. Data engineering and the semantic layer carry most of the first kind of checking; the second runs from the scoring rule onward. Kane writes each inference in Toulmin&rsquo;s (1958) form, with a warrant that licenses the step and backing for the warrant (Kane, 2013, p. 12). In that sense every reading taken off the number is a claim, which is the argument of <InternalLink slug="every-metric-is-a-claim">Every metric is a claim</InternalLink>.
         </P>
         <EssayTable
           headers={["On the decision chain", "Kane’s inferences", "The four questions in The bound moved", "The eight links in Cronbach wrote both halves"]}
@@ -10281,7 +10281,7 @@ Consequence. What followed? She stayed on track, or she did not. The support hel
           Measurement has an architecture of its own, and it runs further than a dashboard. Evidence-centered design, set out by Mislevy, Steinberg and Almond (2003), builds an assessment from the construct forward: what is to be claimed about a student, what evidence would support the claim, and what tasks would produce that evidence. The authors open by calling an assessment &ldquo;a machine for reasoning about what students know, can do, or have accomplished, based on a handful of things they say, do, or make in particular settings&rdquo; (<a href="https://cresst.org/wp-content/uploads/TR597.pdf" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Mislevy, Steinberg &amp; Almond, 2003</a>, CSE Technical Report 597, p. 1; published in <I>Measurement: Interdisciplinary Research and Perspectives</I> 1(1), 3&ndash;62). That covers the front of this chain with more rigor than most data work does. Its product is a claim about the student. An assessment can be designed with its intended use in view, and Kane&rsquo;s argument extends to justifying the decision. Neither is, by itself, a framework for authorizing that decision inside an organization, carrying it out, and checking what followed.
         </P>
         <P>
-          The same shape shows up in how the seat is written. <InternalLink slug="required-for-what">Required for what?</InternalLink> coded sixty-five senior data and AI leadership postings. Ninety-eight percent named what the person must bring. Thirty-five percent named what the role may decide. Eleven percent named how anyone would know the role&rsquo;s calls were good. Read along the chain, the postings specify the front and leave the decision and the consequence unwritten. A seat specified that way will deliver at the front, because that is all anyone asked of it. This library leans the same way. Each diagnostic piece on the site names the link where its chain breaks, and about half of those links sit at the first three, while two sit at the step from inference to decision. The coding is my own reading of my own pieces, so it says where the next pieces are owed rather than anything about the framework. [The count by link is on the artifact page.]
+          The same shape shows up in how the seat is written. <InternalLink slug="required-for-what">Required for what?</InternalLink> coded sixty-five senior data and AI leadership postings. Ninety-eight percent named what the person must bring. Thirty-five percent named what the role may decide. Eleven percent named how anyone would know the role&rsquo;s calls were good. Read along the chain, the postings specify the front and leave the decision and the consequence unwritten. A seat specified that way will deliver at the front, because that is all anyone asked of it. This library leans the same way. Each diagnostic piece on the site names the link where its chain breaks, and about half of those links sit at the first three, while two sit at the step from inference to decision. The coding is my own reading of my own pieces, so it says where the next pieces are owed rather than anything about the framework. The count by link is on <ArtifactLink slug="the-decision-chain">the artifact page</ArtifactLink>.
         </P>
         <H2>The layer that sets what the stack has to carry</H2>
         <P>
@@ -10347,6 +10347,235 @@ Return. Who decides how far upstream a change has to go (the action, the thresho
         </SeeAlso>
         <MetaNote>
           Written between September and November 2026 for the Analytic Bytes Library, as the second part of the Decision System framework. The K&ndash;8 enrollment case is from the author&rsquo;s own record, and the network is not named, by standing practice. The figure is the library&rsquo;s decision chain artifact, and the library coding it points to is the author&rsquo;s own reading of each piece rather than an independent measure. The audit is a first version and has not yet been run in full inside an organization. Sources and how each was checked are in the piece&rsquo;s source pack.
+        </MetaNote>
+      </>
+    ),
+  },
+  {
+    kind: "essay",
+    slug: "cronbach-wrote-both-halves",
+    number: "25",
+    title: "Cronbach wrote both halves.",
+    subtitle:
+      "Who builds the bridge from what a benchmark measured to what a decision needs.",
+    date: "2026-11-11",
+    readingTime: "17 min read",
+    summary:
+      "Construct validity and decision utility were published two years apart, with Cronbach on both. One organized a field. The other traveled as a name without its apparatus: no base rates, no selection ratios, no cost of being wrong. A 2025 audit of 445 LLM benchmarks scores them against six kinds of validity, and nothing takes over to ask what the score licenses. A benchmark can say what its score means; only the organization deploying the model knows what its decision requires, and nothing in standard reporting asks it to build that bridge.",
+    cover: "/library/covers/cronbach-wrote-both-halves.svg",
+    arc: "measurement",
+    arcSecondary: "ai-systems",
+    chainLink: ["inference-decision", "decision-action"],
+    failurePoint: "validity",
+    body: (
+      <>
+        <Brief>
+          <p>
+            In 1955, Lee Cronbach and Paul Meehl gave measurement the question of construct validity: does a test measure what it claims to? Two years later, Cronbach and Goldine Gleser worked out the other half, which asks whether using a test leaves you better off, given the base rate, how many cases you can act on, and what each kind of error costs. The first organized a field. The second traveled mostly as a name, and when measurement theory reached AI benchmarking, the first half traveled more readily.
+          </p>
+          <p>
+            That matters because evidence can justify a decision only if what was measured bears on the quantity the decision requires. A benchmark can say what its score means. Only the organization deploying the model knows the decision it has to make, its base rate, its capacity to act and its costs. The bridge between the two has to be built by someone, and benchmarking has built only one side of it.
+          </p>
+          <p>
+            This essay is for organizations deciding whether to deploy a model on the strength of a benchmark score, and for the people who publish those benchmarks. It closes with three fields a benchmark result should carry, and three things the adopting organization has to do with them.
+          </p>
+        </Brief>
+        <P>
+          A test with a validity coefficient of .50 can be worth more than a perfect test.
+        </P>
+        <P>
+          <a href="https://doi.org/10.1037/h0057079" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Taylor and Russell, Journal of Applied Psychology</a> worked this out in 1939, and said so in the article: a validity of .50 at a selection ratio of .20 is more useful than perfect validity at a selection ratio of .65. If you can only take a fifth of the applicants, a mediocre test sorting a large pool beats a flawless test sorting a small one. Their tables cross three things (the base rate of success, the selection ratio and the correlation), and practical value falls out of the combination, not out of the correlation alone. In their tables, validity is one of the inputs to practical value.
+        </P>
+        <P>
+          Eighty-seven years later, standard benchmark reporting has no place to put that sentence. Benchmark cards carry no field for the base rate, for how many cases the reader can act on, or for what it costs to be wrong in each direction. The score is reported, and the score is what travels.
+        </P>
+        <P>
+          The machinery for saying it exists. It is old, and it was built by the person whose other work the field did adopt.
+        </P>
+        <H2>Two years apart</H2>
+        <P>
+          In 1955, Lee Cronbach and Paul Meehl published <a href="https://doi.org/10.1037/h0040957" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">construct validity</a> in <I>Psychological Bulletin</I>. It asks whether a test measures the thing it claims to measure. It organized a field, and it is still organizing one.
+        </P>
+        <P>
+          In 1957, Cronbach published <I>Psychological Tests and Personnel Decisions</I> with Goldine Gleser (University of Illinois Press; second edition 1965). Its first chapter is called &ldquo;The Tester and Decision Theory,&rdquo; and the index runs through selection ratio, payoff matrix, cost of testing, cutting score and gain in utility.
+        </P>
+        <P>
+          That is the other half. It asks whether using the measure leaves you better off than not using it, given what you can act on and what each mistake costs.
+        </P>
+        <P>
+          Read that way, the second half is economics translated into measurement. Utilities, payoffs and choice under uncertainty are decision theory&rsquo;s questions, and the book puts them to a test score. Economics was asking the same kind of question from its own side. <a href="https://doi.org/10.1214/aoms/1177729032" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Blackwell, Annals of Mathematical Statistics</a> showed in 1953 that one source of information is better than another for every decision-maker, whatever their payoffs, exactly when the second can be produced from the first by adding noise. In that result, informativeness is defined by what a signal does to decisions.
+        </P>
+        <P>
+          What is striking, once the two histories are put side by side, is that Cronbach appears in both. The field took the 1955 question and built its theory of validity on it, and the 1957 book became a specialist reference.
+        </P>
+        <H2>What traveled was the name</H2>
+        <P>
+          The obvious objection is that decision utility was never neglected, and it is partly right.
+        </P>
+        <P>
+          Messick&rsquo;s 1989 chapter in <I>Educational Measurement</I> built the unified framework the field still works inside, and it reserved a cell for this question. The evidential basis of test use in his two-by-two is labeled construct validity plus relevance and utility, and Cronbach and Gleser&rsquo;s 1965 second edition is cited for it. <a href="https://doi.org/10.1111/jedm.12000" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane&rsquo;s argument-based validity</a> goes further than a citation. His 2013 article credits Cronbach with giving consequences &ldquo;a major role in evaluating decision rules&rdquo; (p. 60), and it takes a side on the question this essay is about. Under one option, Kane writes, the consequences of score use would be evaluated &ldquo;under some heading other than validity (e.g., &rsquo;utility&rsquo;).&rdquo; He is &ldquo;clearly in favor&rdquo; of the other, which keeps the evaluation of score-based decision rules inside validity (p. 61). His chain of inferences ends in a decision inference, the step that &ldquo;takes us from a person&rsquo;s score to a decision about the person&rdquo; (p. 11).
+        </P>
+        <P>
+          So the half was not lost. It was named, cited, given a slot, and in Kane&rsquo;s case given a step of its own and an argument for keeping it inside validity.
+        </P>
+        <P>
+          The apparatus is what did not come with it. Kane names the Taylor&ndash;Russell tables once, as a method that goes back over seventy years (p. 49), and his framework does not use them. Messick&rsquo;s <a href="https://doi.org/10.1037/0003-066x.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">1995 condensation</a> of that framework contains no occurrence of <I>base rate</I>, <I>selection ratio</I>, <I>cost</I> or <I>payoff</I>. The <a href="https://www.testingstandards.net/open-access-files.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">2014 Standards for Educational and Psychological Testing</a> are more explicit, and they put the question outside the boundary. Where sufficient evidence of validity exists, they say, the decision whether to administer a test takes additional considerations into account, framed in different subdisciplines as utility analysis or as consideration of negative consequences. On that reading, utility analysis is something you weigh after validity is settled.
+        </P>
+        <P>
+          Kane presents keeping decision rules inside validity as one of two options, and the Standards, by filing utility analysis under additional considerations, lean toward the other. That disagreement over what the word should cover is the subject of <a href="https://doi.org/10.1080/0969594X.2015.1037241" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Newton and Shaw, Assessment in Education</a>, and the 2016 issue that carried their paper gathered positions on both sides of it. The argument here does not depend on which side is right. Whether a score warrants a decision is a question with evidence of its own, whatever heading it is filed under.
+        </P>
+        <P>
+          <a href="https://doi.org/10.1007/978-3-031-10370-4_3" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Meijer, Niessen and Neumann</a> put it plainly in 2023: testing practice is rooted in decision-making, but test theory &ldquo;has been mainly developed as a measurement theory,&rdquo; with Taylor and Russell and Cronbach and Gleser named as a few exceptions. They add that presentations on test use and decision-making at the field&rsquo;s own conferences are almost nonexistent.
+        </P>
+        <P>
+          The decision side kept its own specialists, and the gap had been noticed before them. <a href="https://doi.org/10.1007/978-94-009-2195-5_5" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Van der Linden</a> was writing on decision theory for test-based decisions in 1991. Newton and Shaw note that utility has been theorized apart from validity since Cronbach and Gleser. The diagnosis is not new. What follows is the route the idea took afterwards, and where it ended up.
+        </P>
+        <P>
+          One more thing cuts against the tidy version of this story: the decision-utility strand was contested inside its home discipline too. Latham and Whyte titled a 1994 <I>Personnel Psychology</I> article <a href="https://doi.org/10.1111/j.1744-6570.1994.tb02408.x" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">&ldquo;The futility of utility analysis&rdquo;</a>, having found that presenting managers with utility estimates made them <I>less</I> likely to adopt a valid selection procedure. So this is the story of half a theory that stayed hard to use, and then stopped being taught as part of the theory at all.
+        </P>
+        <H2>The empty cell in AI benchmarking</H2>
+        <P>
+          When measurement theory entered AI benchmarking, construct validity traveled more readily than decision utility.
+        </P>
+        <P>
+          In 2025, twenty-nine expert reviewers published <a href="https://doi.org/10.48550/arXiv.2511.04703" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">a systematic review of 445 large language model (LLM) benchmarks</a> at NeurIPS. Its codebook scores benchmarks against face, predictive, content, ecological, convergent and discriminant validity, and it cites Cronbach and Meehl 1955 by name.
+        </P>
+        <P>
+          Across the whole paper, the word <I>Gleser</I> does not appear. Neither does <I>base rate</I>, <I>net benefit</I>, <I>cost asymmetry</I>, <I>decision curve</I> or <I>consequential</I>. The words <I>utility</I> and <I>decision</I> occur together twice in the entire document.
+        </P>
+        <P>
+          The fair objection is that a construct-validity audit owes no one a utility question. That is right, and this audit did what it said it would do. The problem comes after it, because when a construct-validity audit finishes, nothing takes over to ask what the score licenses. In clinical prediction work that handoff has a named place in the reporting guideline. In benchmarking it has no receiving end, so the construct audit is both the first word and the last.
+        </P>
+        <P>
+          The same pattern shows up in the papers that brought measurement theory into the field. <a href="https://doi.org/10.1145/3442188.3445901" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Jacobs and Wallach&rsquo;s <I>Measurement and Fairness</I></a> brought it into AI fairness work, and its fifty-five-item reference list holds no Cronbach, no Gleser, no Taylor and Russell and no Brogden. <a href="https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/084b6fbb10729ed4da8c3d3f5a3ae7c9-Abstract-round2.html" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Raji and colleagues</a> devote a section to construct validity without those names, and <a href="https://doi.org/10.18653/v1/2021.naacl-main.385" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Bowman and Dahl</a> do not use the phrase at all.
+        </P>
+        <P>
+          Jacobs and Wallach do have a section on consequential validity, and it is the strongest counter to this argument. Consequential validity, as they use it, asks what happens in the world when a measurement is put to use: to whom, and with what normative weight. Decision utility asks something narrower and more operational. Given a decision rule, a population and a payoff structure, does using the measure improve expected outcomes? You can answer the first at length and still have nothing to say about the second.
+        </P>
+        <P>
+          A scope note, because the wider claim would be wrong: machine learning has its own decision analysis. <a href="https://doi.org/10.1023/A:1007601015854" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Provost and Fawcett</a> built the receiver operating characteristic (ROC) convex hull in 2001 to compare classifiers under uncertain class distributions and misclassification costs, five years before medicine&rsquo;s version. Decision-focused learning optimizes predictions for the decisions they feed, as <a href="https://doi.org/10.1287/mnsc.2020.3922" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Elmachtoub and Grigas</a> formalized, and <a href="https://aclanthology.org/2020.emnlp-main.393/" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Ethayarajh and Jurafsky</a> put a utility critique of leaderboards into EMNLP in 2020. None of it became part of the standard benchmark-evaluation apparatus. Individual papers use costs and base rates; what is missing is a reporting convention that expects them.
+        </P>
+        <P>
+          The closest work to this essay is in that literature as well. <a href="https://doi.org/10.1017/psa.2026.10280" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Freiesleben and Zezulka, Philosophy of Science</a> have adapted Kane&rsquo;s argument-based validity to machine-learning benchmarking, and decision is one of the five inference types they list. <a href="https://doi.org/10.3390/jintelligence14060101" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Pedraja-Rejas, Araneda-Guirriman and Rodríguez-Ponce, Journal of Intelligence</a> have carried decision utility and net benefit into educational testing. The idea has reached the benchmarking literature as theory. It has not reached benchmark reports as a field anyone has to fill.
+        </P>
+        <H2>Medicine made it operational</H2>
+        <P>
+          One field did give the missing half a recognized place, and the way it got there is the interesting part.
+        </P>
+        <P>
+          In 2006, <a href="https://doi.org/10.1177/0272989X06295361" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Vickers and Elkin</a> published decision curve analysis in <I>Medical Decision Making</I>. The threshold probability at which a patient would opt for treatment reveals how that patient weighs a false positive against a false negative, and that exchange rate converts false positives into true-positive equivalents. Net benefit follows, plotted across the range of plausible thresholds against treating everyone and treating nobody.
+        </P>
+        <P>
+          What makes it usable is a constraint the authors put on themselves: the method requires only the data set the models are already tested on. No extra outcome data, no elicitation study, nothing a working group has to commission. That constraint is doing more work than the arithmetic, because a method needing new data is a method that waits on a budget line. Utility analysis in personnel selection had an adoption problem of its own, and Latham and Whyte found its estimates made managers less willing to act.
+        </P>
+        <P>
+          Read the reference list and you find twenty-two items, none of them psychometric. The ancestry runs through <a href="https://doi.org/10.1056/NEJM198005153022003" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Pauker and Kassirer, New England Journal of Medicine</a> and the threshold approach they set out in 1980, along with clinical decision analysis and work on utility in prognostics. That list shows which tradition Vickers and Elkin were building from, though not that no idea passed between the fields, and I am not claiming independent invention.
+        </P>
+        <P>
+          Machine learning had the same arithmetic. <a href="https://arxiv.org/abs/2509.24608" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Millard and Flach</a> have shown that net benefit and the Brier curve, one of the cost curves used in machine learning, choose the same model at any given threshold. What medicine added was the convention, a named place in the write-up for the question.
+        </P>
+        <P>
+          Then it gave the question a place in reporting guidance. <a href="https://doi.org/10.1136/bmj-2023-078378" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Collins et al., BMJ</a> published TRIPOD+AI in 2024 for prediction models, machine-learning ones included. Item 12e asks authors to &ldquo;specify all measures and plots used (and their rationale) to evaluate model performance,&rdquo; naming clinical utility as one of three examples; the glossary names decision curve analysis. The guideline stops short of requiring it. <a href="https://doi.org/10.48550/arXiv.2412.10288" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Van Calster and colleagues</a> went further that December, recommending net benefit with decision curve analysis and concluding that accuracy and F1 are improper measures at clinically relevant thresholds.
+        </P>
+        <P>
+          Two qualifications. The lag was eighteen years, from a 2006 method to 2024 guidance framed around AI. And a reporting norm is not yet a practice; compliance is a separate argument.
+        </P>
+        <P>
+          Even so, the contrast holds where it matters. Clinical prediction guidance has a recognized place to report clinical utility, and methodological guidance on how to evaluate it. Standard benchmark reporting has neither.
+        </P>
+        <H2>The chain that stops before the reader</H2>
+        <P>
+          Kane&rsquo;s contribution was to treat validation as an argument rather than a property. A score reaches a decision through a chain of inferences (scoring, generalization, extrapolation and the decision inference), and the argument is only as strong as its weakest link. Kane offers those four as examples, not as a template or a complete list (p. 11). AB has used that chain before, in <InternalLink slug="what-is-this-system-measuring">What is this system actually measuring?</InternalLink> and in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, where the rule that evidence goes to the weakest link does most of the work.
+        </P>
+        <P>
+          The extension I want to make is mine, and I want to keep it separate from Kane&rsquo;s. Kane takes the chain through a decision inference. A decision-system view takes that step apart and continues downstream, because in a decision system the person who receives the score, and what they then do, are components someone has to build. Run that way, the chain has eight links:
+        </P>
+        <P>
+          Scoring &mdash; the signal comes out right.
+Generalization &mdash; it holds on the distribution you deploy into, not the one you tested on.
+Extrapolation &mdash; it relates to the quantity the decision needs.
+Transmission &mdash; it reaches the person deciding, inside the attention they have.
+Action &mdash; the decision changes.
+Improvement &mdash; it changes in the right direction.
+Economy &mdash; the total cost falls, verification included.
+Durability &mdash; the chain still holds after everyone has re-optimized against it.
+        </P>
+        <P>
+          The first three follow Kane&rsquo;s first three examples, and they are where benchmark evaluation puts its effort. Model cards, contamination checks and construct audits are work on links one to three. That says where the work goes, not that those links hold. The last five take Kane&rsquo;s decision inference apart and continue past it, and standard benchmark evaluation has comparatively little pointed at them.
+        </P>
+        <P>
+          This library&rsquo;s chain runs from construct to consequence and back, and <InternalLink slug="the-decision-chain">The decision chain</InternalLink> maps these eight links onto it. On that chain, construct validity is the question at the construct end. Decision utility is the question at the other end, where a reading becomes a decision and the decision has consequences. This essay needs only the stretch Cronbach and Gleser&rsquo;s machinery was built to price: transmission, action, improvement and economy.
+        </P>
+        <P>
+          That asymmetry is the one Kane warned about, arriving in a new field: evidence piling up on the link that was already secure. It is also the shape <InternalLink slug="required-for-what">Required for what?</InternalLink> found in sixty-six senior data postings, where ninety-eight percent name what a person must bring, thirty-five percent what they may decide, and eleven percent how anyone will know the calls were good. Decisions go unspecified, and what goes unspecified tends to go unmeasured.
+        </P>
+        <H2>Two sides of the handoff</H2>
+        <P>
+          The claim this essay makes is short. Evidence can justify a decision only if what was measured bears on the quantity the decision requires. Construct validity establishes what a score means. Extrapolation establishes whether that meaning bears on what the decision needs to know. Decision utility asks whether acting on it leaves the organization better off. The principle is Kane&rsquo;s: a strongly supported interpretation &ldquo;does not in itself justify a decision rule&rdquo; (p. 64). What this essay adds is the question of who builds the bridge.
+        </P>
+        <P>
+          A benchmark result offered for a deployment starts out short of that test, through no one&rsquo;s carelessness. Whoever built the benchmark can say what the score means and under which conditions. Only the organization deploying the model knows the decision it has to make, the outcome it cares about and the conditions it operates under. The bridge between the two has to be built by one of them, and benchmarking has built only one side of the handoff.
+        </P>
+        <P>
+          What follows is addressed to benchmark results offered as evidence for a deployment decision in a case-level system: the score someone cites to justify putting a model in front of students, patients, applicants or cases, where each case gets flagged or not, escalated or not. A leaderboard comparing coding or summarization models is making a different kind of claim. Its base rate and cost ratio may have analogues, but Taylor and Russell&rsquo;s machinery does not transfer to it literally, and I am not asking it to.
+        </P>
+        <P>
+          <B>What the benchmark should send.</B> A benchmark result used that way should carry three fields that standard reporting does not require. The decision it is claimed to inform, named specifically enough that someone could act differently on Tuesday. The base rate and the action capacity that claim assumes: what fraction of cases are positive, and how many can the reader act on. And the cost ratio at which the claim holds, or a statement that the claim is insensitive to it across a named range.
+        </P>
+        <P>
+          The second field needs its lineage stated. Taylor and Russell&rsquo;s selection ratio is the proportion hired from a candidate pool. For decision systems I treat it as an action-capacity constraint: of the cases the system surfaces, how many can receive the intervention? The constraint originates in their selection ratio, and treating it as action capacity is my extension; their arithmetic does not carry over unchanged to intervention or escalation queues. A psychometrician is entitled to hold me to the difference.
+        </P>
+        <P>
+          <B>What the adopter has to do with it.</B> The sender cannot finish the bridge, because only the adopter knows its decision, the outcome it needs, its base rate, its capacity to act and its costs. So the receiving organization owes three things of its own. It has to check what it received: whether what the benchmark measured bears on what its decision needs to know, and whether the base rate, capacity and cost ratio the claim assumed are close to its own. It has to show that the outside evidence transfers to its own decision and setting, and generate local evidence where it does not. And it has to budget that work. <InternalLink slug="partnership-is-a-handoff">Partnership is a handoff</InternalLink> argued that labor a vendor cannot supply gets absorbed by the buyer&rsquo;s team, and that the fix is a line item for it. Building the bridge from outside evidence to a local decision is that kind of labor, and <InternalLink slug="measurement-arrives-after-the-build">When measurement arrives after the build</InternalLink> made the point that evidence for a claim can still be built from the next pilot on.
+        </P>
+        <Figure
+          src="/library/figures/cronbach-wrote-both-halves-two-sides-of-the-handoff.svg"
+          alt="Two columns joined by a bridge. Left, what a benchmark should send: the decision it claims to inform, the base rate and action capacity it assumed, and the cost ratio where the claim holds. Right, what the adopter has to do: check that what was measured bears on its decision, show the evidence transfers or build it locally, and budget the work."
+          caption="A benchmark can state what its score means and what it assumed. Only the adopter can finish the bridge to its own decision."
+        />
+        <P>
+          The cheapest place to start building is at transmission and action. Where a person makes the call and the model assists (AI in the loop, or AITL), switch percentage asks how often a person changed an initial call that disagreed with the model, as <a href="https://doi.org/10.1145/3351095.3372852" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Zhang, Liao and Bellamy</a> used it at FAT* in 2020; the advice-taking literature has a continuous version, weight of advice. Where the model makes the call and a person oversees it (human in the loop, or HITL), the matching measure is how often the person overrides. Both are cheap, since they need only a record of what would have happened without the output. Neither measures decision utility: they say whether the score reaches an action, and utility needs outcomes. Read them as locators. Near-zero switch means the model seldom changes the categorical call, though it may still change confidence or speed. High switch with flat outcomes sends you to decision quality, where the model may still be persuading people toward calls no better than their own.
+        </P>
+        <P>
+          If the receiving organization cannot fund that evidence, what it holds is a claim about a property of a model. That is a legitimate thing to measure, and it is not, by itself, evidence for a use.
+        </P>
+        <P>
+          Other routes can establish a use without the three fields. A randomized trial skips part of the chain: instead of arguing from what a score means to what a decision needs, it estimates whether deploying the system changes an outcome that matters. When <a href="https://doi.org/10.1038/s41591-026-04503-6" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Agweyu and colleagues</a> tested LLM decision support across sixteen primary care clinics in Kenya, treatment failure within fourteen days did not differ significantly between arms. That null result is still evidence about the use. A score that measures something else can be evidence too, once a bridge to the decision has been validated, but it cannot establish the use by itself. For operators, <InternalLink slug="the-decision-chain">The decision chain</InternalLink> closes with a chain audit for one recurring decision.
+        </P>
+        <P>
+          The strongest objection to all of this was made in 1988, in <a href="https://doi.org/10.1126/science.3287615" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px"><I>Science</I>, by Swets</a>. Swets compared diagnostic accuracy across fields, aptitude testing among them, and argued that general measures of accuracy have to come before any judgment of efficacy, because people differ in the priors and costs they bring. For comparing instruments in general he is right, and nothing here argues against reporting accuracy first.
+        </P>
+        <P>
+          Blackwell&rsquo;s result shows where that reasoning stops. A scalar accuracy measure can rank two systems without showing that one is more informative for every decision problem. Blackwell gives the stronger condition: the ranking holds across decision problems only when one instrument can be produced from the other by adding noise. Otherwise, which one is better can depend on the decision problem and its payoffs. Once a score is offered as evidence for a particular deployment, the priors and costs belong to a known user, and the decision Swets deferred is on the table. That is why the second half cannot be completed without the receiving side, and why standard benchmark reporting, which has no receiving side, has no step where it gets picked up.
+        </P>
+        <H2>What the second half asks</H2>
+        <P>
+          This matters because AI evaluation is increasingly evaluating systems that act. <InternalLink slug="the-decision-system">The Decision System</InternalLink> described the flag that no longer waits to be read: &ldquo;it enrolls the student, escalates the case, moves the resource.&rdquo; <InternalLink slug="actions-not-answers">Actions, not answers</InternalLink> argued that the checkpoint which used to come free with every answer now has to be built. A field in that position has taken up a validity framework with the decision half named and unfilled. What the score alone cannot tell you is whether a decision made on it is warranted: whether the thing it measured is what this decision needs to know, and whether acting on it leaves this organization better off. The field has standardized the first question and left the second to inference.
+        </P>
+        <P>
+          Cronbach and Gleser put the machinery for asking this question into a theory of test use in 1957. Their index files it under <I>gain in utility</I>.
+        </P>
+        <SeeAlso>
+          <SeeAlsoItem
+            slug="before-it-was-called-ai-evaluation"
+            title="Before it was called AI evaluation."
+            gloss="the same inheritance problem from another direction: what classical automated scoring already knew under different names before AI evaluation named itself."
+          />
+          <SeeAlsoItem
+            slug="required-for-what"
+            title="Required for what?"
+            gloss="the hiring-side evidence that decisions go unspecified while attributes are specified exhaustively."
+          />
+          <SeeAlsoItem
+            slug="the-decision-chain"
+            title="The decision chain."
+            gloss="maps this essay’s eight links onto the library’s chain from construct to consequence and back, and closes with the chain audit an operator can run on one recurring decision."
+          />
+        </SeeAlso>
+        <MetaNote>
+          Written 17 September 2026 and revised through November 2026. Verification changed this essay more than once. An early draft said the decision-utility strand stayed inside personnel selection; Messick&rsquo;s citation of Cronbach and Gleser and Kane&rsquo;s 2013 article show that it did not, and the claim that survived, that the name traveled and the apparatus did not, is the stronger one. Another draft said medicine inherited the decision half; Vickers and Elkin&rsquo;s reference list contains no psychometrics, so the essay claims only that medicine gave it a recognized place. A third implied switch rate was new; it has existed as switch percentage since 2020. The errors all pointed toward the argument, which is why they are recorded rather than smoothed over.
+
+All sources are public. Kane 2013 was read in full and is quoted from the article. Figures from Taylor and Russell, Bean et al., Messick 1995 and Vickers and Elkin were read off the documents. A prior-art search found that the diagnosis is not new, and that Freiesleben and Zezulka, and Pedraja-Rejas and colleagues, have carried decision utility into benchmarking theory and educational testing. The essay credits them, credits Kane for the principle behind its claim, and claims the handoff: who builds the bridge from what a benchmark measured to what a decision needs. The same search found no one remarking that Cronbach appears in both histories, so the essay offers that as an observation, not a priority claim.
         </MetaNote>
       </>
     ),

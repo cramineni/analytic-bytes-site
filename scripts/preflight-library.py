@@ -306,6 +306,23 @@ def check_piece(e, repo):
             warn("flagged", "%s x%d (intensifier / spatial metaphor -- author's call)"
                  % (word, n))
 
+    # --- deploy scaffolding left in the prose --------------------------------
+    # A draft carries pointers to pieces that are not out yet, written as
+    # "[*Some title*]" with a "[link when it ships]" note beside them. Both are
+    # instructions to the deploy step, not prose. The decision chain shipped
+    # with three of each rendering as literal text on the live page, because
+    # the fold removed them from the piece being folded and nothing checked the
+    # piece being linked FROM.
+    plain = strip_tags(body)
+    notes = re.findall(r"\[link[^\]]*\]", plain)
+    if notes:
+        err("scaffold", "%d deploy note(s) rendering as text: %s"
+            % (len(notes), ", ".join(sorted(set(notes))[:3])))
+    brackets = re.findall(r"\[\s*[A-Z][^\]]{4,60}\s*\]", plain)
+    if brackets:
+        err("scaffold", "%d unresolved [Title] bracket(s): %s"
+            % (len(brackets), "; ".join(b.strip()[:40] for b in brackets[:3])))
+
     # --- table cells --------------------------------------------------------
     # EssayTable renders its headers and rows as React text, so a tag or an
     # HTML entity in a cell reaches the page literally. The drift check cannot

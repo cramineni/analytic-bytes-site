@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title>Two sides of the handoff</title>
+  <title id="t">Two sides of the handoff</title>
+  <desc id="d">Two columns. Left, what the benchmark should send: the decision it claims to inform, the base rate and action capacity it assumed, and the cost ratio where the claim holds. Right, what the adopter has to do: check whether what was measured bears on its decision, show the evidence transfers or build it locally, and budget the work. Between them a bridge, solid from the benchmark side and dashed teal on the adopter side, because only the adopter can finish it.</desc>
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- chart title: 1200 canvas -> 33px -->
+  <text x="600" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Two sides of the handoff</text>
+
+  <!-- column headers: 21px -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="600" fill="#0F2A4A" text-anchor="middle">
+    <text x="290" y="118">What the benchmark should send</text>
+    <text x="910" y="118">What the adopter has to do</text>
+  </g>
+
+  <!-- rows: backing panels -->
+  <g fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.4">
+    <rect x="60" y="142" width="460" height="118" rx="6"/>
+    <rect x="60" y="282" width="460" height="118" rx="6"/>
+    <rect x="60" y="422" width="460" height="118" rx="6"/>
+    <rect x="680" y="142" width="460" height="118" rx="6"/>
+    <rect x="680" y="282" width="460" height="118" rx="6"/>
+    <rect x="680" y="422" width="460" height="118" rx="6"/>
+  </g>
+  <!-- navy left rule on each panel (structure, not accent) -->
+  <g stroke="#0F2A4A" stroke-width="1.6">
+    <line x1="60" y1="142" x2="60" y2="260"/><line x1="60" y1="282" x2="60" y2="400"/><line x1="60" y1="422" x2="60" y2="540"/>
+    <line x1="680" y1="142" x2="680" y2="260"/><line x1="680" y1="282" x2="680" y2="400"/><line x1="680" y1="422" x2="680" y2="540"/>
+  </g>
+
+  <!-- row labels: 22px -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#0F2A4A">
+    <text x="88" y="194">The decision it claims</text>
+    <text x="88" y="224">to inform</text>
+    <text x="88" y="334">The base rate and action</text>
+    <text x="88" y="364">capacity it assumed</text>
+    <text x="88" y="474">The cost ratio where</text>
+    <text x="88" y="504">the claim holds</text>
+
+    <text x="708" y="194">Check that what was measured</text>
+    <text x="708" y="224">bears on this decision</text>
+    <text x="708" y="334">Show the evidence transfers,</text>
+    <text x="708" y="364">or build it locally</text>
+    <text x="708" y="474">Budget the work</text>
+    <text x="708" y="504">as a line item</text>
+  </g>
+
+  <!-- the bridge: solid from the sender, dashed teal for the part only the adopter can finish -->
+  <line x1="520" y1="341" x2="598" y2="341" stroke="#0F2A4A" stroke-width="2.4"/>
+  <line x1="602" y1="341" x2="680" y2="341" stroke="#0EA5E9" stroke-width="2.4" stroke-dasharray="8 6"/>
+  <circle cx="600" cy="341" r="5" fill="#0EA5E9"/>
+  <text x="600" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#475569" text-anchor="middle">bridge</text>
+
+  <!-- quiet structural note under the columns -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="21" fill="#475569" text-anchor="middle">
+    <text x="290" y="584">what the score means</text>
+    <text x="910" y="584">what the decision needs</text>
+  </g>
+</svg>
