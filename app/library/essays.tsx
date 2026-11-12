@@ -10139,7 +10139,7 @@ export const ESSAYS: Essay[] = [
     subtitle:
       "Part two of The Decision System, from construct to consequence and back.",
     date: "2026-11-05",
-    readingTime: "24 min read",
+    readingTime: "23 min read",
     summary:
       "The Decision System named three things that fail: meaning, authority and validity. This essay names the chain they fail along, from construct to representation, inference, decision, action and consequence, and back. Validity theory, decision intelligence and decision governance each cover part of it. It joins them to the validity of the target itself, so a data leader can ask in one pass whether the number supports the decision, whether anyone can act on it, and what the consequence taught. Most data and analytics work lands on two of its links.",
     cover: "/library/covers/the-decision-chain.svg",
@@ -10301,16 +10301,22 @@ Consequence. What followed? She stayed on track, or she did not. The support hel
         </P>
         <H2>A chain audit for one decision</H2>
         <P>
-          This is written for a head of data or analytics, and for the executive who commissions that team. It is a first version. The questions come from the chain and from the cases in this library, and they have not yet been run as a full audit inside an organization. Pick one recurring decision the team&rsquo;s work is meant to inform. It should be a call someone makes every week or every month, with a named action at the end. Then answer seven questions, one per link, and write down two things for each: who owns it, and what evidence they have. Each question is named for a point on the chain, but it tests the step into that point. The representation question asks about construct → representation, which includes what the organization collects, what is missing and what it is willing or able to observe. The action question asks about decision → action. That is how the questions line up with the links the library codes.
+          This is written for a head of data or analytics, and for the executive who commissions that team. It is a first version. The questions come from the chain and from the cases in this library, and they have not yet been run as a full audit inside an organization. Pick one recurring decision the team&rsquo;s work is meant to inform. It should be a call someone makes every week or every month, with a named action at the end. Then answer seven questions, one per link, and write down two things for each: who owns it, and what evidence they have.
         </P>
+        <EssayTable
+          headers={["Link", "Question", "Owner to name", "Evidence to show"]}
+          rows={[
+            ["Construct", "What are we trying to know, in one sentence two sites would read the same way?", "Whoever wrote the definition", "Two sites read it the same way"],
+            ["Construct → representation", "Which fields stand for it, and what is missing, never collected or not observable?", "Whoever chose the fields", "The fields track the construct rather than something next to it"],
+            ["Representation → inference", "What is the score allowed to mean, and at what threshold?", "Whoever set the threshold", "Support for that meaning at that threshold"],
+            ["Inference → decision", "What choice is being made, under what rule or discretion?", "The person or seat that settles it, with the authority and the time to do it", "It is the rule in use, in Ostrom’s sense, and not only the rule on paper"],
+            ["Decision → action", "What happens after the call?", "Whoever controls the resources it needs, and whoever answers when it does not happen", "A way to know when it did not happen"],
+            ["Action → consequence", "What followed, for whom and by when?", "For a high-stakes call, someone other than the person who acted", "The action caused it, at the strength this decision needs"],
+            ["The return leg", "How far upstream does a change have to go: the action, the threshold, the fields or the construct?", "Whoever decides that", "When it last happened"],
+          ]}
+        />
         <P>
-          Construct. What are we trying to know, in one sentence two sites would read the same way?
-Representation. Which fields stand for it, what is missing or never collected, and what would show that they track it rather than something next to it?
-Inference. What is the score allowed to mean, at what threshold, and who set it?
-Decision. What choice is being made, under what rule or discretion, and who settles it, by name or seat, with the authority and the time to do it? Is that the rule in use, in Ostrom&rsquo;s sense, or only the rule on paper? And does the right to decide sit with the person who holds the knowledge the call needs, which is Jensen and Meckling&rsquo;s test, at a level where action is possible, which is Hennessey&rsquo;s?
-Action. What happens after the call, who controls the resources it needs, who answers when it does not happen, and how would anyone know it did not? A counselor can authorize a referral that a provider with no capacity cannot take.
-Consequence. What followed, for whom and by when, and what evidence would show the action caused it, at the strength this decision needs? For a high-stakes call, or one where the person who acted has reason to report success, the record should be written by someone else. For a routine call, the system&rsquo;s own logs may be enough.
-Return. Who decides how far upstream a change has to go (the action, the threshold, the fields or the construct), and when did that last happen?
+          Two rows need more than a cell. At the decision link, ask whether the right to decide sits with the person who holds the knowledge the call needs, which is Jensen and Meckling&rsquo;s test, at a level where action is possible, which is Hennessey&rsquo;s. At the action link, the common failure is a gap between authority and capacity. A counselor can authorize a referral that a provider with no capacity cannot take. At the consequence link, a routine call can rely on the system&rsquo;s own logs.
         </P>
         <P>
           The audit finds gaps. It does not rank them, and the ranking comes from the decision, working backward from what a failure would cost the person the decision is about. Kaliyaperumal makes the same point about human involvement, which he would tier to consequence rather than add after every step. A missing owner on a routine step can wait. A weak inference feeding a high-stakes action cannot, even when every link has a name beside it. Once the order is set, the kind of gap says what to do. A link with no owner needs a name. A link with an owner and no evidence needs a measurement. A link where an automated step acts on more than its evidence supports needs a narrower range of autonomy. Any of those can matter more than another dashboard. And having evidence is not the same as having enough. A documented rationale at every link answers all seven questions. So does independently tested evidence, checked by subgroup, with execution logs and an outcome evaluation matched to the decision. The two give very different assurance, and the evidence at each link should be sufficient for the claim or decision made there, which is the same standard the validity argument sets.
@@ -10386,6 +10392,11 @@ Return. Who decides how far upstream a change has to go (the action, the thresho
         <P>
           <a href="https://doi.org/10.1037/h0057079" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Taylor and Russell, Journal of Applied Psychology</a> worked this out in 1939, and said so in the article: a validity of .50 at a selection ratio of .20 is more useful than perfect validity at a selection ratio of .65. If you can only take a fifth of the applicants, a mediocre test sorting a large pool beats a flawless test sorting a small one. Their tables cross three things (the base rate of success, the selection ratio and the correlation), and practical value falls out of the combination, not out of the correlation alone. In their tables, validity is one of the inputs to practical value.
         </P>
+        <Figure
+          src="/library/figures/cronbach-wrote-both-halves-taylor-russell.svg"
+          alt="A line chart at a base rate of 50 percent. A test with validity .50 yields 78 percent successful hires when the top fifth of applicants is accepted. A perfect test yields 77 percent when two thirds are accepted."
+          caption="With half of applicants able to succeed, a test with validity .50 applied to the top fifth yields 78 percent successful hires. A perfect test applied to two thirds yields 77."
+        />
         <P>
           Eighty-seven years later, standard benchmark reporting has no place to put that sentence. Benchmark cards carry no field for the base rate, for how many cases the reader can act on, or for what it costs to be wrong in each direction. The score is reported, and the score is what travels.
         </P>
@@ -10483,6 +10494,11 @@ Return. Who decides how far upstream a change has to go (the action, the thresho
         <P>
           Even so, the contrast holds where it matters. Clinical prediction guidance has a recognized place to report clinical utility, and methodological guidance on how to evaluate it. Standard benchmark reporting has neither.
         </P>
+        <Figure
+          src="/library/figures/cronbach-wrote-both-halves-name-and-apparatus.svg"
+          alt="A table of five sources. Messick 1995, Kane 2013, the 2014 Standards and Bean and colleagues' 2025 benchmark audit each name the decision half of validity in some form but carry none of its machinery, or mention it once as history. TRIPOD+AI 2024 names clinical utility in its checklist and decision curve analysis in its glossary."
+          caption="The decision half is named across the field. Its machinery is absent or mentioned in passing, and clinical prediction guidance is where it has a named place."
+        />
         <H2>The chain that stops before the reader</H2>
         <P>
           Kane&rsquo;s contribution was to treat validation as an argument rather than a property. A score reaches a decision through a chain of inferences (scoring, generalization, extrapolation and the decision inference), and the argument is only as strong as its weakest link. Kane offers those four as examples, not as a template or a complete list (p. 11). AB has used that chain before, in <InternalLink slug="what-is-this-system-measuring">What is this system actually measuring?</InternalLink> and in <InternalLink slug="the-valid-dollar">The valid dollar</InternalLink>, where the rule that evidence goes to the weakest link does most of the work.

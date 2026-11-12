@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="t d">
+  <title id="t">The name and the apparatus</title>
+  <desc id="d">Five sources compared on whether they name the decision half of validity and whether they carry its machinery. Messick 1995 has a relevance-and-utility cell citing Cronbach and Gleser, with no base rate, selection ratio, cost or payoff in the text. Kane 2013 has a decision inference kept inside validity, and names the Taylor-Russell tables once, as history. The 2014 Standards file utility analysis outside validity, with no base rate or payoff in chapter 1. Bean and colleagues' 2025 audit of 445 LLM benchmarks scores six validity types and no consequential validity, with no base rate, net benefit or cost asymmetry. TRIPOD+AI 2024 names clinical utility as one of three examples in item 12e and names decision curve analysis in its glossary.</desc>
+  <rect width="1200" height="840" fill="#FFFFFF"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <text x="600" y="56" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">The name and the apparatus</text>
+
+    <g font-size="21" font-weight="600" fill="#0F2A4A">
+      <text x="84" y="122">Source</text>
+      <text x="364" y="122">Names the decision half</text>
+      <text x="794" y="122">Carries the machinery</text>
+    </g>
+
+    <g fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.4">
+      <rect x="60" y="144" width="1080" height="112" rx="6"/>
+      <rect x="60" y="270" width="1080" height="112" rx="6"/>
+      <rect x="60" y="396" width="1080" height="112" rx="6"/>
+      <rect x="60" y="522" width="1080" height="112" rx="6"/>
+      <rect x="60" y="648" width="1080" height="112" rx="6"/>
+    </g>
+    <g stroke="#0F2A4A" stroke-width="1.6">
+      <line x1="60" y1="144" x2="60" y2="256"/><line x1="60" y1="270" x2="60" y2="382"/>
+      <line x1="60" y1="396" x2="60" y2="508"/><line x1="60" y1="522" x2="60" y2="634"/>
+    </g>
+    <!-- the one field that gave the question a place -->
+    <rect x="60" y="648" width="6" height="112" fill="#0EA5E9"/>
+
+    <g font-size="22" fill="#0F2A4A">
+      <text x="84" y="208">Messick, 1995</text>
+      <text x="364" y="194">A relevance-and-utility cell,</text>
+      <text x="364" y="224">citing Cronbach and Gleser</text>
+      <text x="794" y="194">No base rate, selection ratio,</text>
+      <text x="794" y="224">cost or payoff in the text</text>
+
+      <text x="84" y="334">Kane, 2013</text>
+      <text x="364" y="320">A decision inference, kept</text>
+      <text x="364" y="350">inside validity (p. 61)</text>
+      <text x="794" y="320">Taylor–Russell tables named</text>
+      <text x="794" y="350">once, as history (p. 49)</text>
+
+      <text x="84" y="460">Standards, 2014</text>
+      <text x="364" y="446">Utility analysis, filed outside</text>
+      <text x="364" y="476">validity as a further consideration</text>
+      <text x="794" y="446">No base rate or payoff</text>
+      <text x="794" y="476">in chapter 1</text>
+
+      <text x="84" y="572">Bean et al., 2025</text>
+      <text x="364" y="572">Six validity types scored;</text>
+      <text x="364" y="602">no consequential validity</text>
+      <text x="794" y="572">No base rate, net benefit</text>
+      <text x="794" y="602">or cost asymmetry</text>
+
+      <text x="84" y="698">TRIPOD+AI, 2024</text>
+      <text x="364" y="698">Clinical utility, one of three</text>
+      <text x="364" y="728">examples in item 12e</text>
+      <text x="794" y="698">Decision curve analysis,</text>
+      <text x="794" y="728">named in the glossary</text>
+    </g>
+    <g font-size="19" fill="#475569">
+      <text x="84" y="602">445 LLM benchmarks</text>
+      <text x="84" y="728">clinical prediction</text>
+    </g>
+
+    <text x="1140" y="808" font-size="18" fill="#94A3B8" text-anchor="end">Sources: Messick 1995 and Kane 2013 full text; Standards 2014 chapter 1; Bean et al. 2025 full text; TRIPOD+AI 2024 checklist and glossary.</text>
+  </g>
+</svg>
