@@ -3018,7 +3018,7 @@ export const ESSAYS: Essay[] = [
           been shaping decisions, unnoticed, for two years.
         </P>
         <P>
-          That discipline does not need to be invented. Higher education has spent decades building the science of measuring hard things well and holding the measurements accountable to what they claim. It has a name, validity, and two statements worth reading before anyone rebuilds it. <a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane (1992)</a> treats validation as an argument: a chain of inferences examined link by link, with the evidence aimed at whichever link is weakest rather than spread evenly across all of them. <a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick (1995)</a> locates validity in the interpretation and use of a score rather than in the score itself, consequences included. That second point is why two of the questions above, the one about what happens downstream and to whom and the one about which human decision the system is meant to improve, are not additions to the measurement question. They are the measurement question. The same rigor that asks whether an essay score reflects writing or length can ask whether an early-alert flag reflects risk or a proxy for it. Higher education&rsquo;s AI moment does not need a new framework so much as it needs to turn an old and well-tested one toward a new set of systems, and to ask, of every system it adopts, the plain and demanding question: what is this actually measuring, and is that what we meant?
+          That discipline does not need to be invented. Higher education has spent decades building the science of measuring hard things well and holding the measurements accountable to what they claim. It has a name, validity, and two statements worth reading before anyone rebuilds it. <a href="https://doi.org/10.1037/0033-2909.112.3.527" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Kane (1992)</a> treats validation as an argument: a chain of inferences examined link by link, with the evidence aimed at whichever link is weakest rather than spread evenly across all of them. <a href="https://psycnet.apa.org/doi/10.1037/0003-066X.50.9.741" target="_blank" rel="noopener" className="text-accent hover:text-accent-2 no-underline border-b border-line-2 hover:border-accent pb-px">Messick (1995)</a> locates validity in the interpretation and use of a score rather than in the score itself, consequences included. <InternalLink slug="cronbach-wrote-both-halves">Cronbach wrote both halves</InternalLink> takes up the second half of that same science, which asks whether using a measure leaves you better off. That second point is why two of the questions above, the one about what happens downstream and to whom and the one about which human decision the system is meant to improve, are not additions to the measurement question. They are the measurement question. The same rigor that asks whether an essay score reflects writing or length can ask whether an early-alert flag reflects risk or a proxy for it. Higher education&rsquo;s AI moment does not need a new framework so much as it needs to turn an old and well-tested one toward a new set of systems, and to ask, of every system it adopts, the plain and demanding question: what is this actually measuring, and is that what we meant?
         </P>
 
         {/* DOWNLOAD BUNDLE — three operating documents that turn this essay's
@@ -5293,7 +5293,7 @@ export const ESSAYS: Essay[] = [
           The scoring rule is what separates this from a maturity score. The verdict is the <B>minimum</B> of the four. One red link caps the claim no matter how strong the other three.
         </P>
         <P>
-          Kane does not give you that rule. Argument-based validation tells you to aim evidence at the weakest assumption rather than pile it up where it is already strong. It does not prescribe an arithmetic. The minimum is the operating discipline proposed here, and it earns its place from what these four links are: they run in series. A quantity has to be captured correctly before its stability means anything. It has to be stable before construct relevance can be argued. All three have to hold before the contribution question is worth asking. Break one and every link after it has nothing to work with, so averaging lets the intact links pay for the broken one.
+          Kane does not give you that rule. Argument-based validation tells you to aim evidence at the weakest assumption rather than pile it up where it is already strong. It does not prescribe an arithmetic. The minimum is the operating discipline proposed here, and it earns its place from what these four links are: they run in series. A quantity has to be captured correctly before its stability means anything. It has to be stable before construct relevance can be argued. All three have to hold before the contribution question is worth asking. Break one and every link after it has nothing to work with, so averaging lets the intact links pay for the broken one. <InternalLink slug="cronbach-wrote-both-halves">Cronbach wrote both halves</InternalLink> runs a chain of this shape out to eight links, past the decision into action, consequence and the return leg.
         </P>
         <P>
           That series is what makes the minimum the right operator, and it is also what bounds it. The rule applies down a single pathway, where each inference depends on the one before it. It does not license reading one weak pathway as evidence against a strong one sitting beside it. A Dollars in Pockets figure sums several pathways: wages gained, fees avoided, time saved. Each has its own four links, so each carries its own minimum, and each keeps that grade. The composite claim is a separate sentence about the whole total, and it caps at the weakest pathway.
@@ -10518,14 +10518,28 @@ Consequence. What followed? She stayed on track, or she did not. The support hel
           In Kane&rsquo;s chain, the fourth link, the decision inference, carries a score to a decision in one step. The extension is not Kane&rsquo;s, and I want to keep the two apart. A decision-system view takes that fourth step apart and continues past it, because in a decision system the person who receives the score, and what they then do, are components someone has to build. Run that way, the chain has eight links: Kane&rsquo;s first three, then five in place of his fourth.
         </P>
         <P>
-          Scoring &mdash; the signal comes out right.
-Generalization &mdash; it holds on the distribution you deploy into, not the one you tested on.
-Extrapolation &mdash; it tells you something about what the decision needs to know.
-Transmission &mdash; it reaches the person deciding, inside the attention they have.
-Action &mdash; the decision changes.
-Improvement &mdash; it changes in the right direction.
-Economy &mdash; the whole decision costs less than the alternative, counting the time spent checking the model&rsquo;s output.
-Durability &mdash; the chain still holds after everyone has re-optimized against it.
+          <B>Scoring.</B> The signal comes out right.
+        </P>
+        <P>
+          <B>Generalization.</B> It holds on the distribution you deploy into, not the one you tested on.
+        </P>
+        <P>
+          <B>Extrapolation.</B> It tells you something about what the decision needs to know.
+        </P>
+        <P>
+          <B>Transmission.</B> It reaches the person deciding, inside the attention they have.
+        </P>
+        <P>
+          <B>Action.</B> The decision changes.
+        </P>
+        <P>
+          <B>Improvement.</B> It changes in the right direction.
+        </P>
+        <P>
+          <B>Economy.</B> The whole decision costs less than the alternative, counting the time spent checking the model&rsquo;s output.
+        </P>
+        <P>
+          <B>Durability.</B> The chain still holds after everyone has re-optimized against it.
         </P>
         <P>
           The first three follow Kane&rsquo;s first three examples, and they are where benchmark evaluation puts its effort. Model cards, contamination checks and construct audits are work on links one to three. That says where the work goes, not that those links hold. The last five are where a score becomes a decision, and standard benchmark evaluation has comparatively little pointed at them.
