@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="t d">
+  <title id="t">Where benchmark evaluation puts its effort</title>
+  <desc id="d">The eight links from a score to a decision. The first three, scoring, generalization and extrapolation, follow Kane's first three examples and are where benchmark work goes: model cards, contamination checks and construct audits. The last five, transmission, action, improvement, economy and durability, take Kane's decision inference apart and continue past it, and standard benchmark evaluation has comparatively little pointed at them. They are drawn dashed.</desc>
+  <rect width="1200" height="660" fill="#FFFFFF"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <text x="600" y="56" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Where benchmark evaluation puts its effort</text>
+
+    <g fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.4">
+      <rect x="60" y="100" width="400" height="54" rx="6"/>
+      <rect x="60" y="166" width="400" height="54" rx="6"/>
+      <rect x="60" y="232" width="400" height="54" rx="6"/>
+    </g>
+    <g stroke="#0F2A4A" stroke-width="1.6">
+      <line x1="60" y1="100" x2="60" y2="154"/><line x1="60" y1="166" x2="60" y2="220"/><line x1="60" y1="232" x2="60" y2="286"/>
+    </g>
+    <!-- the links with comparatively little pointed at them: dashed teal, as in the handoff figure -->
+    <g fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="8 6">
+      <rect x="60" y="298" width="400" height="54" rx="6"/>
+      <rect x="60" y="364" width="400" height="54" rx="6"/>
+      <rect x="60" y="430" width="400" height="54" rx="6"/>
+      <rect x="60" y="496" width="400" height="54" rx="6"/>
+      <rect x="60" y="562" width="400" height="54" rx="6"/>
+    </g>
+
+    <g font-size="22" fill="#0F2A4A">
+      <text x="88" y="135">1   Scoring</text>
+      <text x="88" y="201">2   Generalization</text>
+      <text x="88" y="267">3   Extrapolation</text>
+      <text x="88" y="333">4   Transmission</text>
+      <text x="88" y="399">5   Action</text>
+      <text x="88" y="465">6   Improvement</text>
+      <text x="88" y="531">7   Economy</text>
+      <text x="88" y="597">8   Durability</text>
+    </g>
+
+    <g stroke="#475569" stroke-width="1.6" fill="none">
+      <path d="M 490 104 L 500 104 L 500 282 L 490 282"/>
+      <path d="M 490 302 L 500 302 L 500 612 L 490 612"/>
+    </g>
+    <g font-size="21" fill="#475569">
+      <text x="530" y="180">Kane's first three examples</text>
+      <text x="530" y="442">Kane's decision inference, taken apart and continued</text>
+    </g>
+    <g font-size="22" fill="#0F2A4A">
+      <text x="530" y="214">Model cards, contamination checks, construct audits</text>
+      <text x="530" y="476">Comparatively little pointed at them</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Construct validity and decision utility</title>
+  <desc id="d">Two columns. Left, construct validity, which asks whether the score measures what it claims to, with four kinds of evidence: content, convergent, discriminant and predictive. Right, decision utility, which asks whether using the score leaves you better off, with four inputs: the base rate, the selection ratio, the payoff of right and wrong calls, and the cost of testing.</desc>
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
+    <text x="600" y="56" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">Construct validity and decision utility</text>
+
+    <g font-size="21" font-weight="600" fill="#0F2A4A" text-anchor="middle">
+      <text x="290" y="112">Construct validity</text>
+      <text x="910" y="112">Decision utility</text>
+    </g>
+    <g font-size="21" fill="#475569" text-anchor="middle">
+      <text x="290" y="144">Does the score measure what it claims to?</text>
+      <text x="910" y="144">Does using the score leave you better off?</text>
+    </g>
+
+    <g fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.4">
+      <rect x="60" y="170" width="460" height="84" rx="6"/>
+      <rect x="60" y="268" width="460" height="84" rx="6"/>
+      <rect x="60" y="366" width="460" height="84" rx="6"/>
+      <rect x="60" y="464" width="460" height="84" rx="6"/>
+      <rect x="680" y="170" width="460" height="84" rx="6"/>
+      <rect x="680" y="268" width="460" height="84" rx="6"/>
+      <rect x="680" y="366" width="460" height="84" rx="6"/>
+      <rect x="680" y="464" width="460" height="84" rx="6"/>
+    </g>
+    <g stroke="#0F2A4A" stroke-width="1.6">
+      <line x1="60" y1="170" x2="60" y2="254"/><line x1="60" y1="268" x2="60" y2="352"/>
+      <line x1="60" y1="366" x2="60" y2="450"/><line x1="60" y1="464" x2="60" y2="548"/>
+    </g>
+    <!-- the half this essay follows -->
+    <g fill="#0EA5E9">
+      <rect x="680" y="170" width="6" height="84"/><rect x="680" y="268" width="6" height="84"/>
+      <rect x="680" y="366" width="6" height="84"/><rect x="680" y="464" width="6" height="84"/>
+    </g>
+
+    <g font-size="22" font-weight="600" fill="#0F2A4A">
+      <text x="88" y="204">Content</text>
+      <text x="88" y="302">Convergent</text>
+      <text x="88" y="400">Discriminant</text>
+      <text x="88" y="498">Predictive</text>
+      <text x="708" y="204">Base rate</text>
+      <text x="708" y="302">Selection ratio</text>
+      <text x="708" y="400">Payoff</text>
+      <text x="708" y="498">Cost of testing</text>
+    </g>
+    <g font-size="21" fill="#475569">
+      <text x="88" y="234">covers what it claims to measure</text>
+      <text x="88" y="332">agrees with measures of the same thing</text>
+      <text x="88" y="430">differs from measures of other things</text>
+      <text x="88" y="528">forecasts the outcomes it should</text>
+      <text x="708" y="234">how many cases succeed anyway</text>
+      <text x="708" y="332">how many cases you can act on</text>
+      <text x="708" y="430">what each right and wrong call is worth</text>
+      <text x="708" y="528">what using the test costs</text>
+    </g>
+
+    <g font-size="18" fill="#94A3B8" text-anchor="middle">
+      <text x="290" y="596">Cronbach and Meehl, 1955</text>
+      <text x="910" y="596">Cronbach and Gleser, 1957, after Taylor and Russell, 1939</text>
+    </g>
+  </g>
+</svg>
