@@ -10651,7 +10651,7 @@ Consequence. What followed? She stayed on track, or she did not. The support hel
           />
         </SeeAlso>
         <MetaNote>
-          Written November 2026. All sources are public and linked where they are used. A prior-art search found that the diagnosis is not new: the essay credits Kane for the principle behind its claim, Fryback and Thornbury for the shape of its chain, and Freiesleben and Zezulka, and Pedraja-Rejas and colleagues, for carrying decision utility into benchmarking theory and educational testing. What it claims is the handoff. No one in that search remarked that Cronbach is an author on both halves, so that is offered as an observation, not a priority claim. Cronbach and Gleser&rsquo;s book was checked through its chapter titles and index, not quoted. The college-retention numbers are illustrations, not data, and the eight-link chain and the reading of selection ratio as action capacity are the author&rsquo;s own extensions, not yet tested.
+          Written November 2026. All sources are public and linked where they are used. A prior-art search found that the diagnosis is not new, and the essay credits its precedents where it uses them. What it claims is the handoff. No one in that search remarked that Cronbach is an author on both halves, so that is offered as an observation, not a priority claim. Cronbach and Gleser&rsquo;s book was checked through its chapter titles and index, not quoted. The college-retention numbers are illustrations, not data, and the eight-link chain and the reading of selection ratio as action capacity are the author&rsquo;s own extensions, not yet tested.
         </MetaNote>
       </>
     ),
