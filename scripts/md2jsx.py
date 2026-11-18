@@ -205,3 +205,52 @@ def convert(md_path, brief_jsx, tail_jsx):
         out.append('\n        <P>\n          %s\n        </P>' % inline(p))
     out.append(tail_jsx)
     return ''.join(out)
+
+
+def tail_from_md(md_path, registry_titles):
+    """Build the <SeeAlso> + <MetaNote> JSX from the MARKDOWN, not from the
+    JSX already on the page.
+
+    WHY: a fold that regenerated only the body and reused the existing JSX tail
+    shipped a REVISED MetaNote's predecessor to the live site. The markdown is
+    canonical for prose, and the MetaNote and the SeeAlso glosses are prose, so
+    reusing the old tail silently discards whatever she rewrote there. Nothing
+    catches it: the drift checker stops at <SeeAlso>, and preflight checks the
+    MetaNote's shape rather than its text.
+
+    SeeAlso TITLES COME FROM THE REGISTRY, never from the markdown link text.
+    Fifteen SeeAlso titles once lost their terminal periods because a build
+    script took the visible text and stripped punctuation. `registry_titles`
+    is {slug: title}; a slug missing from it raises rather than guesses.
+    """
+    md = open(md_path).read()
+    out = []
+    sa = re.search(r'<SeeAlso>(.*?)</SeeAlso>', md, re.S)
+    if sa:
+        items = []
+        for ln in sa.group(1).strip().split('\n'):
+            ln = ln.strip()
+            if not ln:
+                continue
+            m = re.match(r'<(?:Internal|Artifact)Link slug="([^"]+)">.*?</(?:Internal|Artifact)Link>'
+                         r'\s*[—–-]\s*(.+)$', ln, re.S)
+            if not m:
+                raise ValueError('unparsed SeeAlso line: %r' % ln[:80])
+            slug, gloss = m.group(1), m.group(2).strip()
+            # Glosses are written in the markdown as a continuation after the
+            # dash, so they arrive lowercase. Every gloss on the page is a
+            # capitalised sentence; match that.
+            gloss = gloss[:1].upper() + gloss[1:]
+            if slug not in registry_titles:
+                raise KeyError('SeeAlso slug not in registry: %s' % slug)
+            items.append('          <SeeAlsoItem\n            slug="%s"\n'
+                         '            title="%s"\n            gloss="%s"\n          />'
+                         % (slug, registry_titles[slug].replace('"', '\\"'),
+                            smart(gloss).replace('"', '\\"')))
+        out.append('        <SeeAlso>\n%s\n        </SeeAlso>' % '\n'.join(items))
+    mn = re.search(r'<MetaNote>(.*?)</MetaNote>', md, re.S)
+    if mn:
+        paras = [p.strip() for p in re.split(r'\n\s*\n', mn.group(1).strip()) if p.strip()]
+        out.append('        <MetaNote>\n%s\n        </MetaNote>'
+                   % '\n'.join('          %s' % inline(p) for p in paras))
+    return '\n'.join(out)

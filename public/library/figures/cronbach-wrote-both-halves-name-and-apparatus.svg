@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="t d">
   <title id="t">The name and the apparatus</title>
-  <desc id="d">Five sources compared on whether they name the decision half of validity and whether they carry its machinery. Messick 1995 has a relevance-and-utility cell citing Cronbach and Gleser, with no base rate, selection ratio, cost or payoff in the text. Kane 2013 has a decision inference kept inside validity, and names the Taylor-Russell tables once, as history. The 2014 Standards file utility analysis outside validity, with no base rate or payoff in chapter 1. Bean and colleagues' 2025 audit of 445 LLM benchmarks scores six validity types and no consequential validity, with no base rate, net benefit or cost asymmetry. TRIPOD+AI 2024 names clinical utility as one of three examples in item 12e and names decision curve analysis in its glossary.</desc>
+  <desc id="d">Five sources compared on whether they name the decision half of validity and whether they carry its machinery. Messick 1995 has a relevance-and-utility cell citing Cronbach and Gleser, with no base rate, selection ratio or payoff in the text. Kane 2013 has a decision inference kept inside validity, and describes formal decision theory, then sets it aside as generally not feasible. The 2014 Standards file utility analysis outside validity, with no base rate or payoff in chapter 1. Bean and colleagues' 2025 audit of 445 LLM benchmarks scores six validity types and no consequential validity, with no base rate, net benefit or cost asymmetry. TRIPOD+AI 2024 names clinical utility as one of three examples in item 12e and names decision curve analysis in its glossary.</desc>
   <rect width="1200" height="840" fill="#FFFFFF"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif">
     <text x="600" y="56" font-size="33" font-weight="700" fill="#0F2A4A" text-anchor="middle">The name and the apparatus</text>
@@ -29,14 +29,14 @@
       <text x="84" y="208">Messick, 1995</text>
       <text x="364" y="194">A relevance-and-utility cell,</text>
       <text x="364" y="224">citing Cronbach and Gleser</text>
-      <text x="794" y="194">No base rate, selection ratio,</text>
-      <text x="794" y="224">cost or payoff in the text</text>
+      <text x="794" y="194">No base rate, selection ratio</text>
+      <text x="794" y="224">or payoff in the text</text>
 
       <text x="84" y="334">Kane, 2013</text>
       <text x="364" y="320">A decision inference, kept</text>
       <text x="364" y="350">inside validity (p. 61)</text>
-      <text x="794" y="320">Taylor–Russell tables named</text>
-      <text x="794" y="350">once, as history (p. 49)</text>
+      <text x="794" y="320">Decision theory described, then</text>
+      <text x="794" y="350">set aside as not feasible (p. 47)</text>
 
       <text x="84" y="460">Standards, 2014</text>
       <text x="364" y="446">Utility analysis, filed outside</text>
